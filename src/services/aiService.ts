@@ -131,7 +131,7 @@ async function fetchWithAuth<T>(
     return { data: data as T }
   } catch (err) {
     const message =
-      err instanceof Error ? err.message : 'Network error — backend may be offline'
+      err instanceof Error ? err.message : 'Service temporarily unavailable. Please try again later.'
     return { error: message }
   }
 }

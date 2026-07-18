@@ -1,7 +1,7 @@
 'use client'
 /** HARVICS OS — Trade & Customs (Module #27) — HS codes + duty calc */
 import { useEffect, useState } from 'react'
-const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F0E8'
+const B='var(--harvics-burgundy)'; const G='var(--harvics-gold)'; const C='var(--harvics-cream)'
 interface HS{id:string;code:string;description:string;category:string|null;dutyPercent:number;notes:string|null}
 export default function TradePage(){
   const [rows,setRows]=useState<HS[]>([])

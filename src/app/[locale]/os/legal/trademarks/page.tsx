@@ -130,11 +130,11 @@ export default function TrademarksPage() {
   const getStatusBadge = (status: string) => {
     const statusStyles: Record<string, string> = {
       active: 'bg-green-100 text-green-800',
-      pending: 'bg-[#C3A35E]/20 text-[#C3A35E]',
+      pending: 'bg-harvics-gold/20 text-harvics-gold',
       expired: 'bg-red-100 text-red-800',
-      cancelled: 'bg-white text-[#C3A35E]/90'
+      cancelled: 'bg-white text-harvics-gold/90'
     }
-    return statusStyles[status] || 'bg-white text-[#C3A35E]/90'
+    return statusStyles[status] || 'bg-white text-harvics-gold/90'
   }
 
   const countries = ['US', 'GB', 'AE', 'PK', 'FR', 'DE', 'IT', 'ES', 'CN', 'JP']
@@ -147,12 +147,12 @@ export default function TrademarksPage() {
       <div className="mb-6">
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-3xl font-bold text-[#C3A35E] mb-2">Trademarks</h1>
-            <p className="text-[#C3A35E]/90">Manage trademark registrations and applications</p>
+            <h1 className="text-3xl font-bold text-harvics-gold mb-2">Trademarks</h1>
+            <p className="text-harvics-gold/90">Manage trademark registrations and applications</p>
           </div>
           <button
             onClick={handleAddNew}
-            className="bg-white text-[#C3A35E]/90 px-6 py-2 font-semibold hover:bg-white/90 transition-colors"
+            className="bg-white text-harvics-gold/90 px-6 py-2 font-semibold hover:bg-white/90 transition-colors"
           >
             + Add New Trademark
           </button>
@@ -163,7 +163,7 @@ export default function TrademarksPage() {
       <div className="bg-white border border-black200 p-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div>
-            <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">Country</label>
+            <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Country</label>
             <select
               value={filterCountry}
               onChange={(e) => setFilterCountry(e.target.value)}
@@ -176,7 +176,7 @@ export default function TrademarksPage() {
             </select>
           </div>
           <div>
-            <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">Status</label>
+            <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Status</label>
             <select
               value={filterStatus}
               onChange={(e) => setFilterStatus(e.target.value)}
@@ -194,7 +194,7 @@ export default function TrademarksPage() {
                 setFilterCountry('')
                 setFilterStatus('')
               }}
-              className="w-full px-4 py-2 text-sm text-[#C3A35E]/90 border border-gray-200 hover:bg-white transition-colors"
+              className="w-full px-4 py-2 text-sm text-harvics-gold/90 border border-gray-200 hover:bg-white transition-colors"
             >
               Clear Filters
             </button>
@@ -207,39 +207,39 @@ export default function TrademarksPage() {
         {loading ? (
           <div className="p-8 text-center">
             <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-white mx-auto mb-4"></div>
-            <p className="text-[#C3A35E]/90">Loading trademarks...</p>
+            <p className="text-harvics-gold/90">Loading trademarks...</p>
           </div>
         ) : filteredTrademarks.length === 0 ? (
           <div className="p-8 text-center">
-            <p className="text-[#C3A35E]/90">No trademarks found</p>
+            <p className="text-harvics-gold/90">No trademarks found</p>
           </div>
         ) : (
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead className="bg-white border-b border-black200">
                 <tr>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">Brand Name</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">Class</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">Country</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">Application No</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">Status</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">Expiry Date</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">Actions</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">Brand Name</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">Class</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">Country</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">Application No</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">Status</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">Expiry Date</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">Actions</th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
                 {filteredTrademarks.map((trademark) => (
                   <tr key={trademark.id} className="hover:bg-white">
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#C3A35E]/90">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-harvics-gold/90">
                       {trademark.brand_name}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-[#C3A35E]/90">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">
                       {trademark.class_number}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-[#C3A35E]/90">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">
                       {trademark.country}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-[#C3A35E]/90">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">
                       {trademark.application_no}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap">
@@ -247,19 +247,19 @@ export default function TrademarksPage() {
                         {trademark.status.charAt(0).toUpperCase() + trademark.status.slice(1)}
                       </span>
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-[#C3A35E]/90">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">
                       {trademark.expiry_date ? new Date(trademark.expiry_date).toLocaleDateString() : 'N/A'}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                       <button
                         onClick={() => handleView(trademark)}
-                        className="text-white hover:text-[#C3A35E]/90 mr-4"
+                        className="text-white hover:text-harvics-gold/90 mr-4"
                       >
                         View
                       </button>
                       <button
                         onClick={() => handleEdit(trademark)}
-                        className="text-[#C3A35E]/90 hover:text-[#C3A35E]"
+                        className="text-harvics-gold/90 hover:text-harvics-gold"
                       >
                         Edit
                       </button>
@@ -281,12 +281,12 @@ export default function TrademarksPage() {
             <div className="inline-block align-bottom bg-white text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full">
               <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-2xl font-bold text-[#C3A35E]">
+                  <h3 className="text-2xl font-bold text-harvics-gold">
                     {isEditMode ? (selectedTrademark ? 'Edit Trademark' : 'Add New Trademark') : 'View Trademark'}
                   </h3>
                   <button
                     onClick={() => setIsModalOpen(false)}
-                    className="text-[#C3A35E]/90 hover:text-[#C3A35E]/90"
+                    className="text-harvics-gold/90 hover:text-harvics-gold/90"
                   >
                     <span className="text-2xl">&times;</span>
                   </button>
@@ -295,7 +295,7 @@ export default function TrademarksPage() {
                 {isEditMode ? (
                   <div className="space-y-4">
                     <div>
-                      <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">Brand Name *</label>
+                      <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Brand Name *</label>
                       <input
                         type="text"
                         value={formData.brand_name}
@@ -306,7 +306,7 @@ export default function TrademarksPage() {
                     </div>
                     <div className="grid grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">Class Number</label>
+                        <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Class Number</label>
                         <input
                           type="text"
                           value={formData.class_number}
@@ -315,7 +315,7 @@ export default function TrademarksPage() {
                         />
                       </div>
                       <div>
-                        <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">Country *</label>
+                        <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Country *</label>
                         <select
                           value={formData.country}
                           onChange={(e) => setFormData({ ...formData, country: e.target.value })}
@@ -331,7 +331,7 @@ export default function TrademarksPage() {
                     </div>
                     <div className="grid grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">Application Number</label>
+                        <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Application Number</label>
                         <input
                           type="text"
                           value={formData.application_no}
@@ -340,7 +340,7 @@ export default function TrademarksPage() {
                         />
                       </div>
                       <div>
-                        <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">Status *</label>
+                        <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Status *</label>
                         <select
                           value={formData.status}
                           onChange={(e) => setFormData({ ...formData, status: e.target.value })}
@@ -354,7 +354,7 @@ export default function TrademarksPage() {
                       </div>
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">Expiry Date</label>
+                      <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Expiry Date</label>
                       <input
                         type="date"
                         value={formData.expiry_date}
@@ -363,12 +363,12 @@ export default function TrademarksPage() {
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">Documents</label>
+                      <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Documents</label>
                       <div className="border border-gray-200 p-4">
                         {formData.documents.length > 0 ? (
                           <ul className="space-y-2">
                             {formData.documents.map((doc, idx) => (
-                              <li key={idx} className="text-sm text-[#C3A35E]/90 flex items-center justify-between">
+                              <li key={idx} className="text-sm text-harvics-gold/90 flex items-center justify-between">
                                 <span>{doc}</span>
                                 <button
                                   onClick={() => setFormData({ ...formData, documents: formData.documents.filter((_, i) => i !== idx) })}
@@ -380,9 +380,9 @@ export default function TrademarksPage() {
                             ))}
                           </ul>
                         ) : (
-                          <p className="text-sm text-[#C3A35E]/90">No documents attached</p>
+                          <p className="text-sm text-harvics-gold/90">No documents attached</p>
                         )}
-                        <button className="mt-2 text-sm text-white hover:text-[#C3A35E]/90">
+                        <button className="mt-2 text-sm text-white hover:text-harvics-gold/90">
                           + Add Document
                         </button>
                       </div>
@@ -391,47 +391,47 @@ export default function TrademarksPage() {
                 ) : (
                   <div className="space-y-4">
                     <div>
-                      <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">Brand Name</label>
-                      <p className="text-sm text-[#C3A35E]/90">{formData.brand_name}</p>
+                      <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Brand Name</label>
+                      <p className="text-sm text-harvics-gold/90">{formData.brand_name}</p>
                     </div>
                     <div className="grid grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">Class Number</label>
-                        <p className="text-sm text-[#C3A35E]/90">{formData.class_number || 'N/A'}</p>
+                        <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Class Number</label>
+                        <p className="text-sm text-harvics-gold/90">{formData.class_number || 'N/A'}</p>
                       </div>
                       <div>
-                        <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">Country</label>
-                        <p className="text-sm text-[#C3A35E]/90">{formData.country}</p>
+                        <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Country</label>
+                        <p className="text-sm text-harvics-gold/90">{formData.country}</p>
                       </div>
                     </div>
                     <div className="grid grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">Application Number</label>
-                        <p className="text-sm text-[#C3A35E]/90">{formData.application_no || 'N/A'}</p>
+                        <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Application Number</label>
+                        <p className="text-sm text-harvics-gold/90">{formData.application_no || 'N/A'}</p>
                       </div>
                       <div>
-                        <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">Status</label>
+                        <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Status</label>
                         <span className={`inline-block px-2 py-1 text-xs font-semibold rounded-full ${getStatusBadge(formData.status)}`}>
                           {formData.status.charAt(0).toUpperCase() + formData.status.slice(1)}
                         </span>
                       </div>
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">Expiry Date</label>
-                      <p className="text-sm text-[#C3A35E]/90">{formData.expiry_date ? new Date(formData.expiry_date).toLocaleDateString() : 'N/A'}</p>
+                      <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Expiry Date</label>
+                      <p className="text-sm text-harvics-gold/90">{formData.expiry_date ? new Date(formData.expiry_date).toLocaleDateString() : 'N/A'}</p>
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">Documents</label>
+                      <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Documents</label>
                       {formData.documents.length > 0 ? (
                         <ul className="space-y-2">
                           {formData.documents.map((doc, idx) => (
-                            <li key={idx} className="text-sm text-[#C3A35E]/90">
-                              <a href="/en/os/legal" className="text-white hover:text-[#C3A35E]/90">{doc}</a>
+                            <li key={idx} className="text-sm text-harvics-gold/90">
+                              <a href="/en/os/legal" className="text-white hover:text-harvics-gold/90">{doc}</a>
                             </li>
                           ))}
                         </ul>
                       ) : (
-                        <p className="text-sm text-[#C3A35E]/90">No documents attached</p>
+                        <p className="text-sm text-harvics-gold/90">No documents attached</p>
                       )}
                     </div>
                   </div>
@@ -442,7 +442,7 @@ export default function TrademarksPage() {
                 {isEditMode && (
                   <button
                     onClick={handleSave}
-                    className="w-full inline-flex justify-center border border-transparent shadow-sm px-4 py-2 bg-white text-[#C3A35E]/90 font-semibold hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black sm:ml-3 sm:w-auto"
+                    className="w-full inline-flex justify-center border border-transparent shadow-sm px-4 py-2 bg-white text-harvics-gold/90 font-semibold hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black sm:ml-3 sm:w-auto"
                   >
                     Save
                   </button>
@@ -454,14 +454,14 @@ export default function TrademarksPage() {
                         handleEdit(selectedTrademark)
                       }
                     }}
-                    className="w-full inline-flex justify-center border border-transparent shadow-sm px-4 py-2 bg-white text-[#C3A35E]/90 font-semibold hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black sm:ml-3 sm:w-auto"
+                    className="w-full inline-flex justify-center border border-transparent shadow-sm px-4 py-2 bg-white text-harvics-gold/90 font-semibold hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black sm:ml-3 sm:w-auto"
                   >
                     Edit
                   </button>
                 )}
                 <button
                   onClick={() => setIsModalOpen(false)}
-                  className="mt-3 w-full inline-flex justify-center border border-gray-200 shadow-sm px-4 py-2 bg-white text-sm font-medium text-[#C3A35E]/90 hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black sm:mt-0 sm:ml-3 sm:w-auto"
+                  className="mt-3 w-full inline-flex justify-center border border-gray-200 shadow-sm px-4 py-2 bg-white text-sm font-medium text-harvics-gold/90 hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black sm:mt-0 sm:ml-3 sm:w-auto"
                 >
                   Close
                 </button>

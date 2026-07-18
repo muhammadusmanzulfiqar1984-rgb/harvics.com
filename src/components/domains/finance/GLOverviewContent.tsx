@@ -7,7 +7,7 @@ import { ExchangeRatesWidget } from '@/components/widgets/ExchangeRatesWidget'
 
 const fmtM = (v: number) => v >= 1_000_000 ? `$${(v / 1_000_000).toFixed(1)}M` : v >= 1000 ? `$${(v / 1000).toFixed(0)}K` : `$${v}`
 
-const expColors = ['#6B1F2B', '#007AFF', '#FF9500', '#34C759', '#8E8E93']
+const expColors = ['var(--harvics-burgundy)', '#007AFF', '#FF9500', '#34C759', '#8E8E93']
 
 export default function GLOverviewContent({ persona, locale }: { persona: string; locale: string }) {
   const { data, source, lastUpdated } = useDomainData('finance')
@@ -48,7 +48,7 @@ export default function GLOverviewContent({ persona, locale }: { persona: string
           <div className="p-5">
             <LineChart
               data={[
-                { label: 'Revenue', values: data.revenueByMonth || [], color: '#6B1F2B' },
+                { label: 'Revenue', values: data.revenueByMonth || [], color: 'var(--harvics-burgundy)' },
                 { label: 'Expenses', values: data.expenseByMonth || [], color: '#FF9500' },
               ]}
               labels={MONTHS}
@@ -56,7 +56,7 @@ export default function GLOverviewContent({ persona, locale }: { persona: string
               formatY={(v) => `$${(v / 1_000_000).toFixed(1)}M`}
             />
             <div className="flex gap-4 mt-3">
-              <div className="flex items-center gap-1.5 text-xs text-[#8E8E93]"><span className="w-3 h-0.5 bg-[#6B1F2B] rounded-full inline-block" /> Revenue</div>
+              <div className="flex items-center gap-1.5 text-xs text-[#8E8E93]"><span className="w-3 h-0.5 bg-harvics-burgundy rounded-full inline-block" /> Revenue</div>
               <div className="flex items-center gap-1.5 text-xs text-[#8E8E93]"><span className="w-3 h-0.5 bg-[#FF9500] rounded-full inline-block" /> Expenses</div>
             </div>
           </div>

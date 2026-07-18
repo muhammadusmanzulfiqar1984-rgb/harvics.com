@@ -6,12 +6,12 @@
 <title>HarvicTrade — Concept Dashboard</title>
 <style>
   :root {
-    --ink: #1A0505;
+    --ink: #3D1212;
     --gold: #C3A35E;
-    --dark: #0D0D0D;
+    --dark: #3D1212;
     --cream: #F5F0E8;
     --surface: #faf8f5;
-    --border: rgba(195,163,94,0.15);
+    --border: rgba(201,168,76,0.15);
   }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif; background: var(--surface); color: var(--ink); min-height: 100vh; }
@@ -68,7 +68,7 @@
   .cat-item.active { background: var(--surface); border-left-color: var(--ink); }
   .cat-item-name { font-size: 12px; font-weight: 600; color: var(--ink); }
   .cat-item.active .cat-item-name { color: var(--ink); }
-  .cat-item-count { font-size: 9px; font-weight: 700; color: var(--gold); background: rgba(195,163,94,0.12); padding: 2px 6px; }
+  .cat-item-count { font-size: 9px; font-weight: 700; color: var(--gold); background: rgba(201,168,76,0.12); padding: 2px 6px; }
   .sidebar-divider { height: 1px; background: var(--border); margin: 16px 20px; }
 
   /* ── MAIN ── */
@@ -112,8 +112,8 @@
     transition: border-color 0.2s;
   }
   .ai-banner:hover { border-color: var(--gold); }
-  .ai-pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 0 rgba(195,163,94,0.4); animation: pulse 2s infinite; }
-  @keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(195,163,94,0.4); } 50% { box-shadow: 0 0 0 6px rgba(195,163,94,0); } }
+  .ai-pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 0 rgba(201,168,76,0.4); animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(201,168,76,0.4); } 50% { box-shadow: 0 0 0 6px rgba(201,168,76,0); } }
   .ai-label { font-size: 9px; font-weight: 800; color: var(--gold); letter-spacing: 0.2em; text-transform: uppercase; }
   .ai-prompt { font-size: 13px; color: rgba(255,255,255,0.5); flex: 1; }
   .ai-prompt strong { color: white; }
@@ -133,14 +133,14 @@
   .product-card::after { content: ''; position: absolute; top: 0; left: 0; width: 2px; height: 0; background: var(--ink); transition: height 0.25s; }
   .product-card:hover::after { height: 100%; }
   .card-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
-  .card-badge { font-size: 9px; font-weight: 800; color: var(--gold); background: rgba(195,163,94,0.1); padding: 3px 7px; letter-spacing: 0.1em; text-transform: uppercase; }
+  .card-badge { font-size: 9px; font-weight: 800; color: var(--gold); background: rgba(201,168,76,0.1); padding: 3px 7px; letter-spacing: 0.1em; text-transform: uppercase; }
   .card-verified { font-size: 9px; font-weight: 700; color: #16a34a; }
   .card-name { font-size: 13px; font-weight: 600; color: var(--ink); line-height: 1.4; margin-bottom: 12px; min-height: 36px; }
   .card-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 14px; }
   .card-meta-item { }
   .card-meta-label { font-size: 9px; font-weight: 700; color: rgba(26,5,5,0.3); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 2px; }
   .card-meta-val { font-size: 11px; font-weight: 600; color: rgba(26,5,5,0.65); }
-  .card-bottom { display: flex; align-items: center; justify-content: space-between; padding-top: 12px; border-top: 1px solid rgba(195,163,94,0.1); }
+  .card-bottom { display: flex; align-items: center; justify-content: space-between; padding-top: 12px; border-top: 1px solid rgba(201,168,76,0.1); }
   .card-price { font-size: 14px; font-weight: 700; color: var(--ink); }
   .card-rfq-btn {
     font-size: 9px; font-weight: 800; color: rgba(26,5,5,0.3);
@@ -288,7 +288,7 @@
   /* scrollbar */
   ::-webkit-scrollbar { width: 4px; }
   ::-webkit-scrollbar-track { background: transparent; }
-  ::-webkit-scrollbar-thumb { background: rgba(195,163,94,0.3); }
+  ::-webkit-scrollbar-thumb { background: rgba(201,168,76,0.3); }
 </style>
 </head>
 <body>

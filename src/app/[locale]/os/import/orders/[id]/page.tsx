@@ -71,13 +71,13 @@ export default function ImportOrderDetailPage() {
   }
 
   const getStatusColor = (status?: string) => {
-    if (!status) return 'bg-white text-[#C3A35E]/90'
+    if (!status) return 'bg-white text-harvics-gold/90'
     const statusLower = status.toLowerCase()
     if (statusLower.includes('delivered') || statusLower === 'completed') return 'bg-green-100 text-green-800'
     if (statusLower.includes('transit') || statusLower === 'in_transit') return 'bg-blue-100 text-blue-800'
-    if (statusLower.includes('customs') || statusLower.includes('clearance')) return 'bg-[#C3A35E]/20 text-[#C3A35E]'
-    if (statusLower === 'pending' || statusLower === 'draft') return 'bg-white text-[#C3A35E]/90'
-    return 'bg-white text-[#C3A35E]/90'
+    if (statusLower.includes('customs') || statusLower.includes('clearance')) return 'bg-harvics-gold/20 text-harvics-gold'
+    if (statusLower === 'pending' || statusLower === 'draft') return 'bg-white text-harvics-gold/90'
+    return 'bg-white text-harvics-gold/90'
   }
 
   if (loading) {
@@ -85,8 +85,8 @@ export default function ImportOrderDetailPage() {
       <>
         <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
         <div className="text-center py-12">
-          <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-[#6B1F2B]"></div>
-          <p className="mt-2 text-[#C3A35E]/90">{t('common.loading') || 'Loading...'}</p>
+          <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-harvics-burgundy"></div>
+          <p className="mt-2 text-harvics-gold/90">{t('common.loading') || 'Loading...'}</p>
         </div>
       </>
     )
@@ -102,7 +102,7 @@ export default function ImportOrderDetailPage() {
           </div>
           <Link
             href={`/${locale}/os/import/orders`}
-            className="text-[#C3A35E]/90 hover:text-[#5a000c] font-medium"
+            className="text-harvics-gold/90 hover:text-[#5a000c] font-medium"
           >
             ← Back to Import Orders
           </Link>
@@ -118,7 +118,7 @@ export default function ImportOrderDetailPage() {
       <div className="mb-4">
         <Link
           href={`/${locale}/os/import/orders`}
-          className="text-[#C3A35E]/90 hover:text-[#C3A35E] font-medium text-sm"
+          className="text-harvics-gold/90 hover:text-harvics-gold font-medium text-sm"
         >
           ← {t('orders.back') || 'Back to Orders'}
         </Link>
@@ -126,47 +126,47 @@ export default function ImportOrderDetailPage() {
 
       {/* Page Header - V16 Spec */}
       <div className="mb-6">
-        <h1 className="text-3xl font-bold text-[#C3A35E] mb-2">
+        <h1 className="text-3xl font-bold text-harvics-gold mb-2">
           {t('orders.detail.title') || 'Import Order'}: {order.order_number || order.id}
         </h1>
-        <p className="text-[#C3A35E]/90">
+        <p className="text-harvics-gold/90">
           {t('orders.detail.description') || 'View import order details and documents'}
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="bg-white border border-black200 p-6">
-          <h2 className="text-xl font-semibold text-[#C3A35E]/90 mb-4">
+          <h2 className="text-xl font-semibold text-harvics-gold/90 mb-4">
             {t('orders.detail.orderInfo') || 'Order Information'}
           </h2>
           <div className="space-y-3">
             <div className="flex justify-between">
-              <span className="text-[#C3A35E]/90">{t('orders.detail.supplier') || 'Supplier'}:</span>
+              <span className="text-harvics-gold/90">{t('orders.detail.supplier') || 'Supplier'}:</span>
               <span className="font-medium">{order.supplier_name || '-'}</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-[#C3A35E]/90">{t('orders.detail.origin') || 'Origin'}:</span>
+              <span className="text-harvics-gold/90">{t('orders.detail.origin') || 'Origin'}:</span>
               <span className="font-medium">{order.origin_country || '-'}</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-[#C3A35E]/90">{t('orders.detail.destination') || 'Destination'}:</span>
+              <span className="text-harvics-gold/90">{t('orders.detail.destination') || 'Destination'}:</span>
               <span className="font-medium">{order.destination_country || '-'}</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-[#C3A35E]/90">{t('orders.detail.status') || 'Status'}:</span>
+              <span className="text-harvics-gold/90">{t('orders.detail.status') || 'Status'}:</span>
               <span className={`px-2 py-1 text-xs font-semibold rounded-full ${getStatusColor(order.status)}`}>
                 {order.status || 'Unknown'}
               </span>
             </div>
             <div className="flex justify-between">
-              <span className="text-[#C3A35E]/90">{t('orders.detail.value') || 'Total Value'}:</span>
+              <span className="text-harvics-gold/90">{t('orders.detail.value') || 'Total Value'}:</span>
               <span className="font-medium">
                 {formatCurrency(order.total_value || 0, order.currency || countryData?.currency?.code || 'USD')}
               </span>
             </div>
             {order.customs_duty && (
               <div className="flex justify-between">
-                <span className="text-[#C3A35E]/90">{t('orders.detail.customsDuty') || 'Customs Duty'}:</span>
+                <span className="text-harvics-gold/90">{t('orders.detail.customsDuty') || 'Customs Duty'}:</span>
                 <span className="font-medium">
                   {formatCurrency(order.customs_duty, order.currency || countryData?.currency?.code || 'USD')}
                 </span>
@@ -174,7 +174,7 @@ export default function ImportOrderDetailPage() {
             )}
             {order.expected_arrival_date && (
               <div className="flex justify-between">
-                <span className="text-[#C3A35E]/90">{t('orders.detail.eta') || 'Expected Arrival'}:</span>
+                <span className="text-harvics-gold/90">{t('orders.detail.eta') || 'Expected Arrival'}:</span>
                 <span className="font-medium">{formatDate(order.expected_arrival_date, locale)}</span>
               </div>
             )}
@@ -182,7 +182,7 @@ export default function ImportOrderDetailPage() {
         </div>
 
         <div className="bg-white border border-black200 p-6">
-          <h2 className="text-xl font-semibold text-[#C3A35E]/90 mb-4">
+          <h2 className="text-xl font-semibold text-harvics-gold/90 mb-4">
             {t('orders.detail.items') || 'Order Items'}
           </h2>
           {order.items && order.items.length > 0 ? (
@@ -191,11 +191,11 @@ export default function ImportOrderDetailPage() {
                 <div key={item.id} className="border-b border-black200 pb-3 last:border-b-0">
                   <div className="flex justify-between mb-1">
                     <span className="font-medium">{item.product_name}</span>
-                    <span className="text-[#C3A35E]/90">
+                    <span className="text-harvics-gold/90">
                       {formatCurrency(item.total_price, order.currency || countryData?.currency?.code || 'USD')}
                     </span>
                   </div>
-                  <div className="text-sm text-[#C3A35E]/90">
+                  <div className="text-sm text-harvics-gold/90">
                     {t('orders.detail.quantity') || 'Quantity'}: {item.quantity} × {formatCurrency(item.unit_price, order.currency || countryData?.currency?.code || 'USD')}
                     {item.hs_code && ` | HS Code: ${item.hs_code}`}
                   </div>
@@ -203,7 +203,7 @@ export default function ImportOrderDetailPage() {
               ))}
             </div>
           ) : (
-            <p className="text-[#C3A35E]/90">{t('orders.detail.noItems') || 'No items found'}</p>
+            <p className="text-harvics-gold/90">{t('orders.detail.noItems') || 'No items found'}</p>
           )}
         </div>
       </div>

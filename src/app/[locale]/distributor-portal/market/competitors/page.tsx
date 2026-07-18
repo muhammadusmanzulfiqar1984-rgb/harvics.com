@@ -34,13 +34,13 @@ export default function CompetitorReporting() {
   return (
     <div className="space-y-6">
       <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
-      <h1 className="text-2xl font-bold text-[#C3A35E]">Competitor Reporting</h1>
+      <h1 className="text-2xl font-bold text-harvics-gold">Competitor Reporting</h1>
 
       <div className="bg-white border border-black200 shadow-sm p-6">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Competitor Brand *</label>
+              <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Competitor Brand *</label>
               <input
                 required
                 type="text"
@@ -52,7 +52,7 @@ export default function CompetitorReporting() {
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">SKU *</label>
+              <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">SKU *</label>
               <input
                 required
                 type="text"
@@ -64,7 +64,7 @@ export default function CompetitorReporting() {
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Observed Price (USD) *</label>
+              <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Observed Price (USD) *</label>
               <input
                 required
                 type="number"
@@ -77,7 +77,7 @@ export default function CompetitorReporting() {
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Promo Type *</label>
+              <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Promo Type *</label>
               <select
                 required
                 value={formData.promoType}
@@ -94,7 +94,7 @@ export default function CompetitorReporting() {
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Retailer/Outlet Name *</label>
+              <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Retailer/Outlet Name *</label>
               <input
                 required
                 type="text"
@@ -106,7 +106,7 @@ export default function CompetitorReporting() {
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">City *</label>
+              <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">City *</label>
               <input
                 required
                 type="text"
@@ -118,7 +118,7 @@ export default function CompetitorReporting() {
             </div>
 
             <div className="md:col-span-2">
-              <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Photo Upload</label>
+              <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Photo Upload</label>
               <input
                 type="file"
                 accept="image/*"
@@ -127,7 +127,7 @@ export default function CompetitorReporting() {
             </div>
 
             <div className="md:col-span-2">
-              <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Notes</label>
+              <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Notes</label>
               <textarea
                 rows={4}
                 value={formData.notes}
@@ -156,7 +156,7 @@ export default function CompetitorReporting() {
                 city: '',
                 notes: ''
               })}
-              className="bg-white text-[#C3A35E]/90 px-8 py-3 font-semibold hover:bg-white transition-colors"
+              className="bg-white text-harvics-gold/90 px-8 py-3 font-semibold hover:bg-white transition-colors"
             >
               Clear
             </button>

@@ -112,7 +112,7 @@ function ReportsScreen() {
               </div>
               <div className="flex items-center gap-2">
                 <span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1A1A1A]" style={{ borderRadius: 0 }}>{r.status}</span>
-                <button className="px-4 py-2 text-sm font-bold text-white" style={{ background: '#6B1F2B', borderRadius: 0 }}>Download PDF</button>
+                <button className="px-4 py-2 text-sm font-bold text-white" style={{ background: 'var(--harvics-burgundy)', borderRadius: 0 }}>Download PDF</button>
               </div>
             </div>
           ))}

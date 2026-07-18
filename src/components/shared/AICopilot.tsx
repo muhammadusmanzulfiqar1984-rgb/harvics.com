@@ -90,10 +90,10 @@ export default function AICopilot() {
   return (
     <div className="flex flex-col h-screen bg-white">
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#6B1F2B] to-[#ffffff] text-white p-4">
+      <div className="bg-gradient-to-r from-harvics-burgundy to-[#ffffff] text-white p-4">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-2xl font-bold mb-2">🤖 Harvics AI Copilot</h1>
-          <p className="text-sm text-[#C3A35E]/90">
+          <p className="text-sm text-harvics-gold/90">
             Level 4 Architecture - AI Copilot & Workflow Orchestration
           </p>
           {copilotData && (
@@ -144,7 +144,7 @@ export default function AICopilot() {
       </div>
 
       {/* Input */}
-      <div className="bg-white/90 border-t border-[#C3A35E]/30 p-4">
+      <div className="bg-white/90 border-t border-harvics-gold/30 p-4">
         <div className="max-w-4xl mx-auto flex space-x-2">
           <input
             type="text"
@@ -152,7 +152,7 @@ export default function AICopilot() {
             onChange={(e) => setInput(e.target.value)}
             onKeyPress={(e) => e.key === 'Enter' && handleSend()}
             placeholder="Ask me anything about orders, inventory, sales, or logistics..."
-            className="flex-1 px-4 py-2 border border-[#C3A35E]/30 rounded-lg focus:ring-2 focus:ring-black focus:border-white bg-white text-black"
+            className="flex-1 px-4 py-2 border border-harvics-gold/30 rounded-lg focus:ring-2 focus:ring-black focus:border-white bg-white text-black"
             disabled={loading}
           />
           <button
@@ -167,7 +167,7 @@ export default function AICopilot() {
 
       {/* Quick Actions */}
       {copilotData?.panels?.suggestions && copilotData.panels.suggestions.length > 0 && (
-        <div className="bg-white/90 border-t border-[#C3A35E]/30 p-4">
+        <div className="bg-white/90 border-t border-harvics-gold/30 p-4">
           <div className="max-w-4xl mx-auto">
             <p className="text-sm font-semibold text-black mb-2">Quick Actions:</p>
             <div className="flex flex-wrap gap-2">

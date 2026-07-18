@@ -170,16 +170,16 @@ const DistributorPortalLayout: React.FC<DistributorPortalLayoutProps> = ({ child
       <aside
         className={`${
           sidebarOpen ? 'w-64' : 'w-20'
-        } bg-white transition-all duration-300 flex flex-col border-r border-[#C3A35E]/30 shadow-sm z-20`}
+        } bg-white transition-all duration-300 flex flex-col border-r border-harvics-gold/30 shadow-sm z-20`}
       >
         {/* Sidebar Header */}
-        <div className="p-4 border-b border-[#C3A35E]/30 flex items-center justify-between">
+        <div className="p-4 border-b border-harvics-gold/30 flex items-center justify-between">
           {sidebarOpen && (
-            <h2 className="text-xl font-bold text-[#6B1F2B] font-serif">Harvics</h2>
+            <h2 className="text-xl font-bold text-harvics-burgundy font-serif">Harvics</h2>
           )}
           <button
             onClick={() => setSidebarOpen(!sidebarOpen)}
-            className="text-[#C3A35E] hover:text-[#6B1F2B] transition-colors"
+            className="text-harvics-gold hover:text-harvics-burgundy transition-colors"
           >
             {sidebarOpen ? '←' : '→'}
           </button>
@@ -191,7 +191,7 @@ const DistributorPortalLayout: React.FC<DistributorPortalLayoutProps> = ({ child
             <div key={index}>
               {item.children ? (
                 <div>
-                  <div className="flex items-center space-x-2 px-3 py-2 text-[#6B1F2B] font-semibold">
+                  <div className="flex items-center space-x-2 px-3 py-2 text-harvics-burgundy font-semibold">
                     <span>{item.icon}</span>
                     {sidebarOpen && <span>{item.label}</span>}
                   </div>
@@ -203,8 +203,8 @@ const DistributorPortalLayout: React.FC<DistributorPortalLayoutProps> = ({ child
                           href={child.href}
                           className={`block px-3 py-2 rounded-md text-sm transition-colors ${
                             isActive(child.href)
-                              ? 'bg-[#6B1F2B] text-white font-semibold'
-                              : 'text-[#6B1F2B]/70 hover:text-[#6B1F2B] hover:bg-[#C3A35E]/10'
+                              ? 'bg-harvics-burgundy text-white font-semibold'
+                              : 'text-harvics-burgundy/70 hover:text-harvics-burgundy hover:bg-harvics-gold/10'
                           }`}
                         >
                           {child.label}
@@ -218,8 +218,8 @@ const DistributorPortalLayout: React.FC<DistributorPortalLayoutProps> = ({ child
                   href={item.href}
                   className={`flex items-center space-x-2 px-3 py-2 rounded-md transition-colors ${
                     isActive(item.href)
-                      ? 'bg-[#6B1F2B] text-white font-semibold'
-                      : 'text-[#6B1F2B]/70 hover:text-[#6B1F2B] hover:bg-[#C3A35E]/10'
+                      ? 'bg-harvics-burgundy text-white font-semibold'
+                      : 'text-harvics-burgundy/70 hover:text-harvics-burgundy hover:bg-harvics-gold/10'
                   }`}
                 >
                   <span>{item.icon}</span>
@@ -234,17 +234,17 @@ const DistributorPortalLayout: React.FC<DistributorPortalLayoutProps> = ({ child
       {/* Main Content Area */}
       <div className="flex-1 flex flex-col overflow-hidden bg-[#F8F9FA]">
         {/* Top Bar */}
-        <header className="bg-white border-b border-[#C3A35E]/30 px-6 py-4 flex items-center justify-between shadow-sm sticky top-0 z-10">
+        <header className="bg-white border-b border-harvics-gold/30 px-6 py-4 flex items-center justify-between shadow-sm sticky top-0 z-10">
           <div className="flex items-center space-x-4">
-            <h1 className="text-xl font-bold text-[#6B1F2B] font-serif">{t('common.title')}</h1>
-            <div className="text-xs text-[#6B1F2B]/70 hidden md:flex items-center gap-2 px-3 py-1 bg-[#F8F9FA] rounded-full border border-[#C3A35E]/20">
-              <span className="font-semibold text-[#6B1F2B]">{distributorInfo.name}</span>
-              <span className="text-[#C3A35E]">•</span>
+            <h1 className="text-xl font-bold text-harvics-burgundy font-serif">{t('common.title')}</h1>
+            <div className="text-xs text-harvics-burgundy/70 hidden md:flex items-center gap-2 px-3 py-1 bg-[#F8F9FA] rounded-full border border-harvics-gold/20">
+              <span className="font-semibold text-harvics-burgundy">{distributorInfo.name}</span>
+              <span className="text-harvics-gold">•</span>
               <span>{distributorInfo.country}</span>
               {distributorInfo.currency && (
                 <>
-                  <span className="text-[#C3A35E]">•</span>
-                  <span className="font-semibold text-[#6B1F2B]">{distributorInfo.currency}</span>
+                  <span className="text-harvics-gold">•</span>
+                  <span className="font-semibold text-harvics-burgundy">{distributorInfo.currency}</span>
                 </>
               )}
             </div>
@@ -253,7 +253,7 @@ const DistributorPortalLayout: React.FC<DistributorPortalLayoutProps> = ({ child
           <div className="flex items-center space-x-4">
             {/* Harvey Chat Button */}
             <button
-              className="p-2 rounded-lg bg-gradient-to-r from-[#6B1F2B] to-[#50000b] text-white hover:shadow-lg transition-all border border-[#C3A35E]/30"
+              className="p-2 rounded-lg bg-gradient-to-r from-harvics-burgundy to-[#50000b] text-white hover:shadow-lg transition-all border border-harvics-gold/30"
               title={t('common.harveyAI')}
             >
               <span className="text-xl">🤖</span>
@@ -266,23 +266,23 @@ const DistributorPortalLayout: React.FC<DistributorPortalLayoutProps> = ({ child
                   setNotificationsOpen(!notificationsOpen)
                   setUserMenuOpen(false)
                 }}
-                className="relative p-2 rounded-lg hover:bg-[#F8F9FA] transition-colors text-[#6B1F2B]"
+                className="relative p-2 rounded-lg hover:bg-[#F8F9FA] transition-colors text-harvics-burgundy"
               >
                 <span className="text-2xl">🔔</span>
-                <span className="absolute top-1 right-1 w-2 h-2 bg-[#C3A35E] rounded-full border border-white"></span>
+                <span className="absolute top-1 right-1 w-2 h-2 bg-harvics-gold rounded-full border border-white"></span>
               </button>
               {notificationsOpen && (
-                <div className="absolute right-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-[#C3A35E]/30 z-50">
-                  <div className="p-4 border-b border-[#C3A35E]/20 bg-[#F8F9FA]">
-                    <h3 className="font-semibold text-[#6B1F2B]">{t('common.notifications')}</h3>
+                <div className="absolute right-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-harvics-gold/30 z-50">
+                  <div className="p-4 border-b border-harvics-gold/20 bg-[#F8F9FA]">
+                    <h3 className="font-semibold text-harvics-burgundy">{t('common.notifications')}</h3>
                   </div>
                   <div className="max-h-96 overflow-y-auto">
                     <div className="p-4 border-b border-gray-100 hover:bg-[#F8F9FA]">
-                      <div className="text-sm font-semibold text-[#6B1F2B]">{t('common.orderStatusUpdate')}</div>
+                      <div className="text-sm font-semibold text-harvics-burgundy">{t('common.orderStatusUpdate')}</div>
                       <div className="text-xs text-gray-500 mt-1">Order #12345 has been dispatched</div>
                     </div>
                     <div className="p-4 border-b border-gray-100 hover:bg-[#F8F9FA]">
-                      <div className="text-sm font-semibold text-[#6B1F2B]">{t('common.newPromotion')}</div>
+                      <div className="text-sm font-semibold text-harvics-burgundy">{t('common.newPromotion')}</div>
                       <div className="text-xs text-gray-500 mt-1">Summer promotion available</div>
                     </div>
                   </div>
@@ -297,33 +297,33 @@ const DistributorPortalLayout: React.FC<DistributorPortalLayoutProps> = ({ child
                   setUserMenuOpen(!userMenuOpen)
                   setNotificationsOpen(false)
                 }}
-                className="flex items-center space-x-2 p-2 rounded-lg hover:bg-[#F8F9FA] transition-colors border border-transparent hover:border-[#C3A35E]/20"
+                className="flex items-center space-x-2 p-2 rounded-lg hover:bg-[#F8F9FA] transition-colors border border-transparent hover:border-harvics-gold/20"
               >
-                <div className="w-8 h-8 rounded-full bg-[#6B1F2B] flex items-center justify-center text-white font-semibold border border-[#C3A35E]/50">
+                <div className="w-8 h-8 rounded-full bg-harvics-burgundy flex items-center justify-center text-white font-semibold border border-harvics-gold/50">
                   {username.charAt(0).toUpperCase()}
                 </div>
-                <span className="text-sm font-semibold text-[#6B1F2B] hidden md:inline">{username}</span>
+                <span className="text-sm font-semibold text-harvics-burgundy hidden md:inline">{username}</span>
               </button>
               {userMenuOpen && (
-                <div className="absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-[#C3A35E]/30 z-50">
+                <div className="absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-harvics-gold/30 z-50">
                   <div className="p-2">
-                    <div className="px-4 py-2 border-b border-[#C3A35E]/20">
-                      <div className="font-semibold text-[#6B1F2B] text-sm">Logged in as</div>
+                    <div className="px-4 py-2 border-b border-harvics-gold/20">
+                      <div className="font-semibold text-harvics-burgundy text-sm">Logged in as</div>
                       <div className="text-xs text-gray-500 mt-1">{username}</div>
                     </div>
                     <Link
                       href={`/${locale}/distributor-portal/account/profile`}
-                      className="block px-4 py-2 text-sm text-[#6B1F2B] hover:bg-[#F8F9FA] rounded-md hover:text-[#C3A35E]"
+                      className="block px-4 py-2 text-sm text-harvics-burgundy hover:bg-[#F8F9FA] rounded-md hover:text-harvics-gold"
                     >
                       {t('common.profile')}
                     </Link>
                     <Link
                       href={`/${locale}/distributor-portal/account/users`}
-                      className="block px-4 py-2 text-sm text-[#6B1F2B] hover:bg-[#F8F9FA] rounded-md hover:text-[#C3A35E]"
+                      className="block px-4 py-2 text-sm text-harvics-burgundy hover:bg-[#F8F9FA] rounded-md hover:text-harvics-gold"
                     >
                       {t('common.settings')}
                     </Link>
-                    <div className="border-t border-[#C3A35E]/20 my-1"></div>
+                    <div className="border-t border-harvics-gold/20 my-1"></div>
                     <button 
                       onClick={() => {
                         apiClient.clearToken()

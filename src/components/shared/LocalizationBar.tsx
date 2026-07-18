@@ -41,7 +41,7 @@ export default function LocalizationBar({
         <LanguageSwitcher />
         <CountrySelector />
         {showCurrency && (
-          <div className="flex items-center gap-1 px-3 py-2 rounded-md border border-[#C3A35E]/30 bg-white text-black text-xs font-semibold whitespace-nowrap">
+          <div className="flex items-center gap-1 px-3 py-2 rounded-md border border-harvics-gold/30 bg-white text-black text-xs font-semibold whitespace-nowrap">
             <span>{getCurrencySymbol()}</span>
             <span>{currency.code}</span>
           </div>

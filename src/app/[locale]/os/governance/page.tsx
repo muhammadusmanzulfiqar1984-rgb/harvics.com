@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react'
 
 interface Policy { id: string; name: string; scope: string; targetKey: string|null; severity: string; enabled: boolean; rule: any; createdAt: string }
 interface Decision { id: string; policyId: string; outcome: string; reason: string|null; module: string|null; route: string|null; actorId: string|null; createdAt: string }
-const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F0E8'
+const B='var(--harvics-burgundy)'; const G='var(--harvics-gold)'; const C='var(--harvics-cream)'
 const SEV: Record<string,string> = { low:'#666', medium:'#1565C0', high:'#E65100', critical:'#B71C1C' }
 const OUT: Record<string,string> = { allow:'#2E7D32', warn:'#E65100', deny:'#B71C1C' }
 

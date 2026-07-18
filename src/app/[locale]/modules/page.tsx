@@ -22,7 +22,7 @@ const BAND_COLORS: Record<string, string> = {
   'Projects & Services':       '#0E7490',
   'Platform & Infrastructure': '#1F2937',
   'Data & AI':                 '#6B21A8',
-  'HARVICS Universe':          '#6B1F2B',
+  'HARVICS Universe':          'var(--harvics-burgundy)',
   'Portals':                   '#7C2D12',
 }
 
@@ -61,8 +61,8 @@ export default function ModuleCatalogPage() {
       <div style={{ maxWidth: 1400, margin: '0 auto' }}>
         {/* Header */}
         <div style={{ marginBottom: 24 }}>
-          <div style={{ fontSize: 11, color: '#C3A35E', fontWeight: 700, letterSpacing: 1, marginBottom: 6 }}>HARVICS OS</div>
-          <h1 style={{ fontSize: 32, fontWeight: 800, color: '#6B1F2B', margin: 0 }}>Module Catalog</h1>
+          <div style={{ fontSize: 11, color: 'var(--harvics-gold)', fontWeight: 700, letterSpacing: 1, marginBottom: 6 }}>HARVICS OS</div>
+          <h1 style={{ fontSize: 32, fontWeight: 800, color: 'var(--harvics-burgundy)', margin: 0 }}>Module Catalog</h1>
           <p style={{ color: '#666', marginTop: 6, fontSize: 14 }}>
             {totalLive}/{MODULE_REGISTRY.length} modules live · 15 architecture bands · click any module to open
           </p>
@@ -91,7 +91,7 @@ export default function ModuleCatalogPage() {
 
         {/* Band quick chips */}
         <div style={{ display: 'flex', gap: 6, marginBottom: 24, flexWrap: 'wrap' }}>
-          <Chip active={activeBand === 'ALL'} color="#6B1F2B" onClick={() => setActiveBand('ALL')}>ALL · 71</Chip>
+          <Chip active={activeBand === 'ALL'} color="var(--harvics-burgundy)" onClick={() => setActiveBand('ALL')}>ALL · 71</Chip>
           {MODULE_BANDS.map(b => {
             const count = MODULE_REGISTRY.filter(m => m.band === b).length
             return (

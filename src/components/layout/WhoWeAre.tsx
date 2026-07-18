@@ -20,16 +20,16 @@ const WhoWeAre: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left — Copy */}
           <div className={revealClass(isVisible, 'left')}>
-            <div className="text-xs font-bold text-[#C3A35E] uppercase tracking-[0.2em] mb-4">
+            <div className="text-xs font-bold text-harvics-gold uppercase tracking-[0.2em] mb-4">
               WHO WE ARE
             </div>
             <h2
-              className="text-4xl md:text-5xl font-bold text-[#6B1F2B] mb-6 leading-[1.1]"
+              className="text-4xl md:text-5xl font-bold text-harvics-burgundy mb-6 leading-[1.1]"
               style={{ letterSpacing: '-0.03em' }}
             >
               Built for complex categories.
             </h2>
-            <p className="text-lg text-[#6B1F2B]/70 leading-relaxed mb-8 max-w-[540px]">
+            <p className="text-lg text-harvics-burgundy/70 leading-relaxed mb-8 max-w-[540px]">
               Harvics brings structure to high-variety trade — textiles, apparel,
               FMCG, commodities, industrial and energy — with a single quality-first
               execution model.
@@ -37,14 +37,14 @@ const WhoWeAre: React.FC = () => {
             <div className="flex gap-4 flex-wrap">
               <Link
                 href={`/${locale}/about`}
-                className="inline-block px-8 py-3.5 bg-[#6B1F2B] text-white text-sm font-semibold border border-[#6B1F2B] hover:bg-[#5a1a24] transition-colors"
+                className="inline-block px-8 py-3.5 bg-harvics-burgundy text-white text-sm font-semibold border border-harvics-burgundy hover:bg-[#5a1a24] transition-colors"
                 style={{ borderRadius: 0 }}
               >
                 Who We Are
               </Link>
               <Link
                 href={`/${locale}/contact`}
-                className="inline-block px-8 py-3.5 bg-transparent text-[#6B1F2B] text-sm font-semibold border border-[#6B1F2B] hover:bg-[#6B1F2B] hover:text-white transition-colors"
+                className="inline-block px-8 py-3.5 bg-transparent text-harvics-burgundy text-sm font-semibold border border-harvics-burgundy hover:bg-harvics-burgundy hover:text-white transition-colors"
                 style={{ borderRadius: 0 }}
               >
                 Talk to Us

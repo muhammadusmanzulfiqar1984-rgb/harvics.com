@@ -36,13 +36,13 @@ export default async function NotFound({
       <div className="text-center max-w-md">
         {/* 404 Graphic */}
         <div className="mb-8">
-          <span className="text-8xl font-bold text-[#6B1F2B] opacity-20 select-none">
+          <span className="text-8xl font-bold text-harvics-burgundy opacity-20 select-none">
             404
           </span>
         </div>
 
         {/* Harvics Logo Mark */}
-        <div className="w-16 h-1 bg-[#C3A35E] mx-auto mb-6" />
+        <div className="w-16 h-1 bg-harvics-gold mx-auto mb-6" />
 
         <h1 className="text-2xl font-bold text-black mb-3">
           {t('heading')}
@@ -55,13 +55,13 @@ export default async function NotFound({
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link
             href={`/${locale}`}
-            className="bg-[#6B1F2B] text-white px-6 py-3 font-semibold hover:bg-[#5a0012] transition-colors"
+            className="bg-harvics-burgundy text-white px-6 py-3 font-semibold hover:bg-[#5a0012] transition-colors"
           >
             {t('goHome')}
           </Link>
           <Link
             href={`/${locale}`}
-            className="border border-[#6B1F2B] text-[#6B1F2B] px-6 py-3 font-semibold hover:bg-[#6B1F2B] hover:text-white transition-colors"
+            className="border border-harvics-burgundy text-harvics-burgundy px-6 py-3 font-semibold hover:bg-harvics-burgundy hover:text-white transition-colors"
           >
             {t('goBack')}
           </Link>
@@ -69,7 +69,7 @@ export default async function NotFound({
 
         {/* Support link */}
         <p className="mt-8 text-sm text-gray-400">
-          <Link href={`/${locale}/help`} className="text-[#C3A35E] hover:underline">
+          <Link href={`/${locale}/help`} className="text-harvics-gold hover:underline">
             Contact Support
           </Link>
         </p>

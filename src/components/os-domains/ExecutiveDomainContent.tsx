@@ -112,7 +112,7 @@ export default function ExecutiveDomainContent({ persona, locale }: ExecutiveDom
                         <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{e.exc}</td>
                         <td className="px-4 py-3 text-[#8E8E93]">{e.domain}</td>
                         <td className="px-4 py-3 text-xs text-[#8E8E93]">{e.raised}</td>
-                        <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${e.priority === 'High' ? 'bg-[#6B1F2B] text-white' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{e.priority}</span></td>
+                        <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${e.priority === 'High' ? 'bg-harvics-burgundy text-white' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{e.priority}</span></td>
                         <td className="px-4 py-3">{e.owner}</td>
                         <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${e.status === 'Open' ? 'bg-[#1A1A1A] text-white' : 'bg-[#F5F5F7] text-[#8E8E93]'}`} style={{ borderRadius: 0 }}>{e.status}</span></td>
                       </tr>
@@ -139,7 +139,7 @@ export default function ExecutiveDomainContent({ persona, locale }: ExecutiveDom
                         <td className="px-4 py-3 text-xs text-[#8E8E93]">{h.date}</td>
                         <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{h.alert}</td>
                         <td className="px-4 py-3 text-[#8E8E93]">{h.domain}</td>
-                        <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${h.sev === 'Critical' ? 'bg-[#6B1F2B] text-white' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{h.sev}</span></td>
+                        <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${h.sev === 'Critical' ? 'bg-harvics-burgundy text-white' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{h.sev}</span></td>
                         <td className="px-4 py-3 text-center"><span className="px-2 py-1 text-xs font-bold bg-[#1A1A1A] text-white" style={{ borderRadius: 0 }}>✓</span></td>
                       </tr>
                     ))}
@@ -215,7 +215,7 @@ export default function ExecutiveDomainContent({ persona, locale }: ExecutiveDom
                         <td className="px-4 py-3 text-center">{r.likelihood}</td>
                         <td className="px-4 py-3 text-center">{r.impact}</td>
                         <td className="px-4 py-3 text-right font-semibold">{r.score}</td>
-                        <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${r.level === 'Critical' ? 'bg-[#6B1F2B] text-white' : r.level === 'High' ? 'bg-[#1A1A1A] text-white' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{r.level}</span></td>
+                        <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${r.level === 'Critical' ? 'bg-harvics-burgundy text-white' : r.level === 'High' ? 'bg-[#1A1A1A] text-white' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{r.level}</span></td>
                       </tr>
                     ))}
                   </tbody>

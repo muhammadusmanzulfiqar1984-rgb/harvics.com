@@ -20,19 +20,19 @@ export default function P(){
       <button onClick={create} style={btnB}>+ REGISTER</button>
     </Panel>
     <Panel title={`MENTORS (${mentors.length})`} full>
-      {mentors.map(m=>{const r=req[m.id]||{menteeId:'',topic:'',scheduledAt:'',durationMins:30};return <div key={m.id} style={{padding:10,marginBottom:8,border:'1px solid #6B1F2B22',background:'#fafafa'}}>
+      {mentors.map(m=>{const r=req[m.id]||{menteeId:'',topic:'',scheduledAt:'',durationMins:30};return <div key={m.id} style={{padding:10,marginBottom:8,border:'1px solid #3D121222',background:'#fafafa'}}>
         <div style={{display:'flex',justifyContent:'space-between'}}>
-          <div><b style={{color:'#6B1F2B'}}>{m.name}</b> <span style={{color:'#666',fontSize:11}}>· {m.yearsExp}y exp · ★ {m.rating}</span></div>
+          <div><b style={{color:'var(--harvics-burgundy)'}}>{m.name}</b> <span style={{color:'#666',fontSize:11}}>· {m.yearsExp}y exp · ★ {m.rating}</span></div>
           <Pill s={m.acceptingMentees?'Active':'Hold'}/>
         </div>
         {m.bio && <div style={{fontSize:11,marginTop:4,color:'#444'}}>{m.bio}</div>}
-        {m.expertise && <div style={{marginTop:6,fontSize:10,color:'#6B1F2B',fontWeight:600}}>{m.expertise}</div>}
+        {m.expertise && <div style={{marginTop:6,fontSize:10,color:'var(--harvics-burgundy)',fontWeight:600}}>{m.expertise}</div>}
         <div style={{marginTop:8,display:'grid',gridTemplateColumns:'80px 1fr 140px 60px auto',gap:4}}>
-          <input placeholder="mentee" value={r.menteeId} onChange={e=>setReq({...req,[m.id]:{...r,menteeId:e.target.value}})} style={{padding:4,border:'1px solid #6B1F2B55',fontSize:11}}/>
-          <input placeholder="Topic" value={r.topic} onChange={e=>setReq({...req,[m.id]:{...r,topic:e.target.value}})} style={{padding:4,border:'1px solid #6B1F2B55',fontSize:11}}/>
-          <input type="datetime-local" value={r.scheduledAt} onChange={e=>setReq({...req,[m.id]:{...r,scheduledAt:e.target.value}})} style={{padding:4,border:'1px solid #6B1F2B55',fontSize:11}}/>
-          <input type="number" placeholder="min" value={r.durationMins} onChange={e=>setReq({...req,[m.id]:{...r,durationMins:+e.target.value}})} style={{padding:4,border:'1px solid #6B1F2B55',fontSize:11}}/>
-          <button onClick={()=>request(m.id)} style={{padding:'4px 12px',background:'#6B1F2B',color:'#fff',border:0,cursor:'pointer',fontSize:11,fontWeight:700}}>REQUEST</button>
+          <input placeholder="mentee" value={r.menteeId} onChange={e=>setReq({...req,[m.id]:{...r,menteeId:e.target.value}})} style={{padding:4,border:'1px solid #3D121255',fontSize:11}}/>
+          <input placeholder="Topic" value={r.topic} onChange={e=>setReq({...req,[m.id]:{...r,topic:e.target.value}})} style={{padding:4,border:'1px solid #3D121255',fontSize:11}}/>
+          <input type="datetime-local" value={r.scheduledAt} onChange={e=>setReq({...req,[m.id]:{...r,scheduledAt:e.target.value}})} style={{padding:4,border:'1px solid #3D121255',fontSize:11}}/>
+          <input type="number" placeholder="min" value={r.durationMins} onChange={e=>setReq({...req,[m.id]:{...r,durationMins:+e.target.value}})} style={{padding:4,border:'1px solid #3D121255',fontSize:11}}/>
+          <button onClick={()=>request(m.id)} style={{padding:'4px 12px',background:'var(--harvics-burgundy)',color:'#fff',border:0,cursor:'pointer',fontSize:11,fontWeight:700}}>REQUEST</button>
         </div>
       </div>})}
     </Panel>

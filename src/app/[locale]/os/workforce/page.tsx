@@ -18,9 +18,9 @@ export default function P(){
       <Inp l="Attrition %" tp="number" v={form.attritionPct} on={v=>setForm({...form,attritionPct:+v})}/>
       <Inp l="Notes" v={form.notes} on={v=>setForm({...form,notes:v})}/>
       <button onClick={create} style={btnB}>SAVE (upsert)</button>
-      <div style={{marginTop:12,padding:10,background:'#F5F0E8',borderLeft:'4px solid #C3A35E',fontSize:12}}>
-        <div style={{color:'#6B1F2B'}}>Hiring need = (Planned − Current) + (Current × Attrition%)</div>
-        <div style={{marginTop:4,fontWeight:700,color:'#6B1F2B'}}>Preview: {Math.max(0,(form.plannedFte-form.currentFte)+(form.currentFte*form.attritionPct/100)).toFixed(1)} hires</div>
+      <div style={{marginTop:12,padding:10,background:'var(--harvics-cream)',borderLeft:'4px solid #C3A35E',fontSize:12}}>
+        <div style={{color:'var(--harvics-burgundy)'}}>Hiring need = (Planned − Current) + (Current × Attrition%)</div>
+        <div style={{marginTop:4,fontWeight:700,color:'var(--harvics-burgundy)'}}>Preview: {Math.max(0,(form.plannedFte-form.currentFte)+(form.currentFte*form.attritionPct/100)).toFixed(1)} hires</div>
       </div>
     </Panel>
     <Panel title={`${PERIOD} ROLL-UP — Current ${totals.c} → Planned ${totals.p} · Hires needed ${totals.h.toFixed(1)}`}>

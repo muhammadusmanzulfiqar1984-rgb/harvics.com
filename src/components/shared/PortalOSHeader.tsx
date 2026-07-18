@@ -39,7 +39,7 @@ export default function PortalOSHeader({
 
   const portalInfo = portalLabels[portal]
   return (
-    <header className="border-b border-[#EAE0D5] sticky top-0 z-50" style={{ background: 'rgba(255,255,255,0.88)', boxShadow: '0 1px 0 rgba(195,163,94,0.25), 0 4px 16px rgba(107,31,43,0.06)' }}>
+    <header className="border-b border-[#EAE0D5] sticky top-0 z-50" style={{ background: 'rgba(255,255,255,0.88)', boxShadow: '0 1px 0 rgba(195, 163, 94,0.25), 0 4px 16px rgba(107,31,43,0.06)' }}>
       <div className="max-w-[1920px] mx-auto px-6">
         <div className="flex items-center justify-between h-14">
           {/* Left */}

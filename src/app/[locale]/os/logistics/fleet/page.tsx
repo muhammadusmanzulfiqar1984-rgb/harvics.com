@@ -30,9 +30,9 @@ export default function FleetPage() {
     switch (status) {
       case 'In Transit': return 'bg-blue-100 text-blue-800'
       case 'Delivering': return 'bg-green-100 text-green-800'
-      case 'Returning': return 'bg-[#C3A35E]/20 text-[#C3A35E]'
-      case 'Parked': return 'bg-white text-[#C3A35E]/90'
-      default: return 'bg-white text-[#C3A35E]/90'
+      case 'Returning': return 'bg-harvics-gold/20 text-harvics-gold'
+      case 'Parked': return 'bg-white text-harvics-gold/90'
+      default: return 'bg-white text-harvics-gold/90'
     }
   }
 
@@ -43,10 +43,10 @@ export default function FleetPage() {
       <div className="mb-6">
         <div className="flex justify-between items-center">
           <div>
-            <h1 className="text-3xl font-bold text-[#C3A35E] mb-2">Fleet Management</h1>
-            <p className="text-[#C3A35E]/90">Manage vehicles and driver assignments</p>
+            <h1 className="text-3xl font-bold text-harvics-gold mb-2">Fleet Management</h1>
+            <p className="text-harvics-gold/90">Manage vehicles and driver assignments</p>
           </div>
-          <button className="bg-[#C3A35E] text-[#6B1F2B] px-4 py-2 hover:bg-[#C3A35E] transition-colors">
+          <button className="bg-harvics-gold text-harvics-burgundy px-4 py-2 hover:bg-harvics-gold transition-colors">
             + Add Vehicle
           </button>
         </div>
@@ -59,37 +59,37 @@ export default function FleetPage() {
           <table className="min-w-full divide-y divide-gray-200">
             <thead className="bg-white">
               <tr>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase">Vehicle Number</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase">Driver</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase">Status</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase">Location</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase">Route</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase">ETA</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase">Actions</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase">Vehicle Number</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase">Driver</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase">Status</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase">Location</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase">Route</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase">ETA</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase">Actions</th>
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-gray-200">
               {vehicles.length === 0 ? (
                 <tr>
-                  <td colSpan={7} className="px-6 py-8 text-center text-[#C3A35E]/90">
+                  <td colSpan={7} className="px-6 py-8 text-center text-harvics-gold/90">
                     No vehicles found
                   </td>
                 </tr>
               ) : (
                 vehicles.map((vehicle) => (
                   <tr key={vehicle.id} className="hover:bg-white">
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#C3A35E]/90">{vehicle.vehicleNumber}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-[#C3A35E]/90">{vehicle.driver}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-harvics-gold/90">{vehicle.vehicleNumber}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">{vehicle.driver}</td>
                     <td className="px-6 py-4 whitespace-nowrap">
                       <span className={`px-2 py-1 text-xs font-semibold rounded-full ${getStatusColor(vehicle.status)}`}>
                         {vehicle.status}
                       </span>
                     </td>
-                    <td className="px-6 py-4 text-sm text-[#C3A35E]/90">{vehicle.currentLocation}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-[#C3A35E]/90">{vehicle.route}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-[#C3A35E]/90">{vehicle.eta}</td>
+                    <td className="px-6 py-4 text-sm text-harvics-gold/90">{vehicle.currentLocation}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">{vehicle.route}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">{vehicle.eta}</td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm">
-                      <button className="text-[#C3A35E]/90 hover:text-[#5a000c]">View</button>
+                      <button className="text-harvics-gold/90 hover:text-[#5a000c]">View</button>
                     </td>
                   </tr>
                 ))

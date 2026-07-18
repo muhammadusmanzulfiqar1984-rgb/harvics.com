@@ -45,7 +45,7 @@ export function ConsoleShell({
 }) {
   return (
     <section className="space-y-4">
-      <div className="rounded-2xl border border-[#c3a35e]/30 bg-[linear-gradient(140deg,#1f0f14_0%,#3d161f_45%,#5e1f2d_100%)] p-5 text-white shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
+      <div className="rounded-2xl border border-harvics-gold/30 bg-[linear-gradient(140deg,#1f0f14_0%,#3d161f_45%,#5e1f2d_100%)] p-5 text-white shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div>
             <h2 className="text-2xl font-bold">{title}</h2>
@@ -63,7 +63,7 @@ export function ConsoleShell({
         {kpis && kpis.length > 0 ? (
           <div className="mt-4 grid gap-3 md:grid-cols-3 lg:grid-cols-4">
             {kpis.map(k => (
-              <div key={k.label} className="rounded-xl border border-[#c3a35e]/30 bg-white/10 p-3">
+              <div key={k.label} className="rounded-xl border border-harvics-gold/30 bg-white/10 p-3">
                 <div className="text-[11px] uppercase tracking-[0.14em] text-white/70">{k.label}</div>
                 <div className="font-mono text-2xl font-bold text-[#f2dfb5]">{k.value}</div>
                 {k.sub ? <div className="text-xs text-white/70">{k.sub}</div> : null}
@@ -73,7 +73,7 @@ export function ConsoleShell({
         ) : null}
       </div>
       {message ? (
-        <div className="rounded-xl border border-[#c3a35e]/40 bg-white px-4 py-2 text-xs text-[#5d5d5d] shadow-sm">
+        <div className="rounded-xl border border-harvics-gold/40 bg-white px-4 py-2 text-xs text-[#5d5d5d] shadow-sm">
           {message}
         </div>
       ) : null}
@@ -95,7 +95,7 @@ export function Card({ title, count, children }: { title: string; count?: number
 }
 
 export const inputCls = 'rounded-lg border border-[#d6d0c3] px-2 py-1.5 text-xs w-full'
-export const btnPrimary = 'rounded-lg border border-[#6b1f2b] bg-[#6b1f2b] px-3 py-1.5 text-xs font-bold text-white'
+export const btnPrimary = 'rounded-lg border border-harvics-burgundy bg-harvics-burgundy px-3 py-1.5 text-xs font-bold text-white'
 export const btnGhost = 'rounded border border-[#d6d0c3] bg-white px-2 py-1 text-[10px] font-bold text-[#3a3a3a]'
 export const btnDanger = 'rounded border border-[#d6d0c3] bg-white px-2 py-1 text-[10px] font-bold text-[#b42318]'
 

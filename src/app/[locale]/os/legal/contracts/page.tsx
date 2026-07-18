@@ -55,9 +55,9 @@ export default function ContractsPage() {
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'Active': return 'bg-green-100 text-green-800'
-      case 'Pending': return 'bg-[#C3A35E]/20 text-[#C3A35E]'
+      case 'Pending': return 'bg-harvics-gold/20 text-harvics-gold'
       case 'Expired': return 'bg-red-100 text-red-800'
-      default: return 'bg-white text-[#C3A35E]/90'
+      default: return 'bg-white text-harvics-gold/90'
     }
   }
 
@@ -76,8 +76,8 @@ export default function ContractsPage() {
       <div className="mb-6">
         <div className="flex justify-between items-center">
           <div>
-            <h1 className="text-3xl font-bold text-[#C3A35E] mb-2">Contracts Management</h1>
-            <p className="text-[#C3A35E]/90">Manage all legal contracts and agreements</p>
+            <h1 className="text-3xl font-bold text-harvics-gold mb-2">Contracts Management</h1>
+            <p className="text-harvics-gold/90">Manage all legal contracts and agreements</p>
           </div>
           <button
             onClick={() => setShowForm(!showForm)}
@@ -91,25 +91,25 @@ export default function ContractsPage() {
       {/* Summary Cards */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         <div className="bg-white border border-black200 p-4">
-          <div className="text-sm text-[#C3A35E]/90 mb-1">Active Contracts</div>
-          <div className="text-2xl font-bold text-[#C3A35E]">
+          <div className="text-sm text-harvics-gold/90 mb-1">Active Contracts</div>
+          <div className="text-2xl font-bold text-harvics-gold">
             {contracts.filter(c => c.status === 'Active').length}
           </div>
         </div>
         <div className="bg-white border border-black200 p-4">
-          <div className="text-sm text-[#C3A35E]/90 mb-1">Expiring Soon</div>
+          <div className="text-sm text-harvics-gold/90 mb-1">Expiring Soon</div>
           <div className="text-2xl font-bold text-white">
             {contracts.filter(c => isExpiringSoon(c.endDate)).length}
           </div>
         </div>
         <div className="bg-white border border-black200 p-4">
-          <div className="text-sm text-[#C3A35E]/90 mb-1">Pending</div>
-          <div className="text-2xl font-bold text-[#C3A35E]">
+          <div className="text-sm text-harvics-gold/90 mb-1">Pending</div>
+          <div className="text-2xl font-bold text-harvics-gold">
             {contracts.filter(c => c.status === 'Pending').length}
           </div>
         </div>
         <div className="bg-white border border-black200 p-4">
-          <div className="text-sm text-[#C3A35E]/90 mb-1">Total Value</div>
+          <div className="text-sm text-harvics-gold/90 mb-1">Total Value</div>
           <div className="text-2xl font-bold text-[#ffffff]">
             ${contracts.reduce((sum, c) => {
               const val = parseFloat(c.value?.replace('$', '').replace('M', '') || '0')
@@ -121,11 +121,11 @@ export default function ContractsPage() {
 
       {showForm && (
         <div className="bg-white border border-black200 p-6">
-          <h2 className="text-xl font-semibold text-[#C3A35E]/90 mb-4">New Contract</h2>
+          <h2 className="text-xl font-semibold text-harvics-gold/90 mb-4">New Contract</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">Contract Type *</label>
+                <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Contract Type *</label>
                 <select
                   required
                   value={formData.contract_type}
@@ -140,7 +140,7 @@ export default function ContractsPage() {
                 </select>
               </div>
               <div>
-                <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">Title *</label>
+                <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Title *</label>
                 <input
                   type="text"
                   required
@@ -150,7 +150,7 @@ export default function ContractsPage() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">Party Name *</label>
+                <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Party Name *</label>
                 <input
                   type="text"
                   required
@@ -160,7 +160,7 @@ export default function ContractsPage() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">Currency</label>
+                <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Currency</label>
                 <select
                   value={formData.currency}
                   onChange={(e) => setFormData({ ...formData, currency: e.target.value })}
@@ -173,7 +173,7 @@ export default function ContractsPage() {
                 </select>
               </div>
               <div>
-                <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">Start Date *</label>
+                <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Start Date *</label>
                 <input
                   type="date"
                   required
@@ -183,7 +183,7 @@ export default function ContractsPage() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">End Date</label>
+                <label className="block text-sm font-medium text-harvics-gold/90 mb-1">End Date</label>
                 <input
                   type="date"
                   value={formData.end_date}
@@ -192,7 +192,7 @@ export default function ContractsPage() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-[#C3A35E]/90 mb-1">Value</label>
+                <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Value</label>
                 <input
                   type="number"
                   value={formData.value}
@@ -227,39 +227,39 @@ export default function ContractsPage() {
           <table className="min-w-full divide-y divide-gray-200">
             <thead className="bg-white">
               <tr>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">Contract ID</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">Type</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">Party</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">Start Date</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">End Date</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">Value</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">Status</th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">Actions</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">Contract ID</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">Type</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">Party</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">Start Date</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">End Date</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">Value</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">Status</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">Actions</th>
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-gray-200">
               {contracts.length === 0 ? (
                 <tr>
-                  <td colSpan={8} className="px-6 py-8 text-center text-[#C3A35E]/90">
+                  <td colSpan={8} className="px-6 py-8 text-center text-harvics-gold/90">
                     No contracts found
                   </td>
                 </tr>
               ) : (
                 contracts.map((contract) => (
                   <tr key={contract.id} className={`hover:bg-white ${isExpiringSoon(contract.endDate) ? 'bg-yellow-50' : ''}`}>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#C3A35E]/90">{contract.id}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-[#C3A35E]/90">{contract.type}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-[#C3A35E]/90">{contract.party}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-[#C3A35E]/90">{contract.startDate}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-[#C3A35E]/90">{contract.endDate}</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-[#C3A35E]/90">{contract.value}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-harvics-gold/90">{contract.id}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">{contract.type}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">{contract.party}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">{contract.startDate}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">{contract.endDate}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">{contract.value}</td>
                     <td className="px-6 py-4 whitespace-nowrap">
                       <span className={`px-2 py-1 text-xs font-semibold rounded-full ${getStatusColor(contract.status)}`}>
                         {contract.status}
                       </span>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm">
-                      <button className="text-[#C3A35E]/90 hover:text-[#5a000c]">View</button>
+                      <button className="text-harvics-gold/90 hover:text-[#5a000c]">View</button>
                     </td>
                   </tr>
                 ))

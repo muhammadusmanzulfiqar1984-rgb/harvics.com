@@ -46,7 +46,15 @@ const nextConfig = {
       dynamic: 30,
       static: 180,
     },
-    optimizePackageImports: ['lucide-react', 'recharts', 'date-fns', 'lodash'],
+    optimizePackageImports: [
+      'lucide-react',
+      'recharts',
+      'date-fns',
+      'lodash',
+      'framer-motion',
+      'gsap',
+      '@react-google-maps/api',
+    ],
   },
   devIndicators: false,
   compiler: {
@@ -90,6 +98,12 @@ const nextConfig = {
   // Proxy API requests to backend (only when BACKEND_URL is set, e.g. local dev)
   // On Vercel without BACKEND_URL, /api/* hits Next.js App Router routes directly.
   async rewrites() {
+    // Temporarily disabled external rewrites for local homepage debugging.
+    // External /launch/* and backend proxies were causing "Failed to proxy" loops in next dev.
+    if (process.env.NODE_ENV === 'development') {
+      return []
+    }
+
     const rewrites = [];
 
     // Presentation decks on R2 — opt-in after upload (NEXT_PUBLIC_DECK_CDN=true).
@@ -114,7 +128,8 @@ const nextConfig = {
       { source: '/launch/harvoice/:path*', destination: 'https://harvoice.pages.dev/:path*' },
     );
 
-      const backendUrl = process.env.BACKEND_URL || process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:4000';
+      // Only proxy to backend when BACKEND_URL is explicitly set — never default to localhost:4000
+      const backendUrl = process.env.BACKEND_URL || process.env.NEXT_PUBLIC_BACKEND_URL;
     if (backendUrl) {
       const isValidUrl = backendUrl.startsWith('http://') || backendUrl.startsWith('https://');
       if (isValidUrl) {
@@ -130,10 +145,11 @@ const nextConfig = {
   },
   async redirects() {
     return [
-      // HarvyX — full-screen standalone app, bypasses website layout
-      { source: '/harvyx', destination: '/harvyx.html', permanent: false },
-      { source: '/en/harvyx', destination: '/harvyx.html', permanent: false },
-      { source: '/:locale/harvyx', destination: '/harvyx.html', permanent: false },
+      // Legacy bare paths → default locale app / marketing pages (not raw HTML shells)
+      { source: '/harvyx', destination: '/en/apps/harvyx', permanent: false },
+      { source: '/apps/harvyx', destination: '/en/apps/harvyx', permanent: false },
+      { source: '/apps/harvoice', destination: '/en/apps/harvoice', permanent: false },
+      { source: '/apps/hpay', destination: '/en/apps/hpay', permanent: false },
       // Presentation deck — serve the static HTML directly, bypassing [locale] route
       { source: '/vietnam-denim-presentation', destination: '/vietnam-denim-presentation/index.html', permanent: false },
       // Apps — redirect directory paths to index.html
@@ -143,13 +159,11 @@ const nextConfig = {
       { source: '/apps/harvics-os/', destination: '/apps/harvics-os/index.html', permanent: false },
       { source: '/apps/vatify', destination: '/apps/vatify/index.html', permanent: false },
       { source: '/apps/vatify/', destination: '/apps/vatify/index.html', permanent: false },
-      { source: '/apps/harvoice', destination: '/apps/harvoice/index.html', permanent: false },
-      { source: '/apps/harvoice/', destination: '/apps/harvoice/index.html', permanent: false },
       // Legacy launch URLs
       { source: '/launch/event-os', destination: '/apps/event-os/index.html', permanent: true },
       { source: '/launch/harvics-os', destination: '/apps/harvics-os/index.html', permanent: true },
       { source: '/launch/vatify', destination: '/apps/vatify/index.html', permanent: true },
-      { source: '/launch/harvoice', destination: '/apps/harvoice/index.html', permanent: true },
+      { source: '/launch/harvoice', destination: '/en/apps/harvoice', permanent: true },
       { source: '/:locale/presentations', destination: '/:locale/la-pres', permanent: true },
       { source: '/:locale/presentations/access', destination: '/:locale/la-pres', permanent: true },
       { source: '/:locale/presentations/lobby', destination: '/:locale/la-pres/lobby', permanent: true },
@@ -197,6 +211,20 @@ const nextConfig = {
       "wss://api.vapi.ai",
       "https://*.daily.co",
       "wss://*.daily.co",
+      // Cloudflare RealtimeKit (video meetings) — API + media/signaling
+      "https://realtime.cloudflare.com",
+      "https://api.realtime.cloudflare.com",
+      "wss://realtime.cloudflare.com",
+      "wss://api.realtime.cloudflare.com",
+      "https://*.realtime.cloudflare.com",
+      "wss://*.realtime.cloudflare.com",
+      "https://api.cluster.dyte.in",
+      "https://*.dyte.io",
+      "wss://*.dyte.io",
+      "https://*.dyte.in",
+      "wss://*.dyte.in",
+      "turn:turn.dyte.in:3478",
+      "turn:turn.dyte.in:443",
       // Common production API patterns
       ...(isProduction ? [
         "https://api.harvics.com",
@@ -242,7 +270,7 @@ const nextConfig = {
               "img-src 'self' data: blob: https: https://maps.gstatic.com https://maps.googleapis.com https://openweathermap.org https://unpkg.com",
               "media-src 'self' blob: https: data:",
               `connect-src ${connectSrc}`,
-              "frame-src 'self' https://www.youtube.com https://youtube.com https://www.google.com https://maps.google.com https://*.daily.co https://*.vapi.ai",
+              "frame-src 'self' https://www.youtube.com https://youtube.com https://www.google.com https://maps.google.com https://*.daily.co https://*.vapi.ai https://realtime.cloudflare.com https://*.realtime.cloudflare.com",
               "worker-src blob:",
               "object-src 'none'",
               "base-uri 'self'",
@@ -266,13 +294,24 @@ const nextConfig = {
 
 module.exports = withNextIntl(nextConfig);
 
-// OpenNext Cloudflare adapter — local dev integration for bindings.
-// Only run during local `next dev`, never during production builds (Vercel/Cloudflare CI).
-if (process.env.NODE_ENV === 'development' && !process.env.VERCEL && !process.env.CI) {
+// OpenNext Cloudflare adapter — opt-in only.
+// Plain `next dev` must work without Cloudflare auth.
+// Enable with: ENABLE_CF_DEV=1 npm run dev
+if (
+  process.env.ENABLE_CF_DEV === '1' &&
+  process.env.NODE_ENV === 'development' &&
+  !process.env.VERCEL &&
+  !process.env.CI
+) {
   try {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     const { initOpenNextCloudflareForDev } = require('@opennextjs/cloudflare');
-    initOpenNextCloudflareForDev();
+    Promise.resolve(initOpenNextCloudflareForDev()).catch((err) => {
+      console.warn(
+        '[dev] Cloudflare bindings unavailable — continuing with plain Next.js.',
+        err?.cause?.cause?.notes?.[0]?.text || err?.message || err
+      );
+    });
   } catch {
     /* adapter not installed — skip */
   }

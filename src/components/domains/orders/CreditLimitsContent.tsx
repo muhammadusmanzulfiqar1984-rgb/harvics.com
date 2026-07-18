@@ -74,7 +74,7 @@ export default function CreditLimitsContent({ persona, locale }: CreditLimitsCon
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <h3 className="text-sm font-semibold text-[#1A1A1A]">Credit Control Center</h3>
-        <button className="bg-white border border-[#6B1F2B] text-[#6B1F2B] px-4 py-2 rounded-lg hover:bg-[#F5F5F7]">
+        <button className="bg-white border border-harvics-burgundy text-harvics-burgundy px-4 py-2 rounded-lg hover:bg-[#F5F5F7]">
           Review Credit Holds
         </button>
       </div>
@@ -150,7 +150,7 @@ export default function CreditLimitsContent({ persona, locale }: CreditLimitsCon
                     )}
                 </td>
                 <td className="px-4 py-3">
-                  <button className="text-[#6B1F2B] hover:underline font-medium">Manage</button>
+                  <button className="text-harvics-burgundy hover:underline font-medium">Manage</button>
                 </td>
               </tr>
             ))}

@@ -137,7 +137,7 @@ export default function LogisticsDomainContent({ persona, locale }: LogisticsDom
                         <td className="px-4 py-3">{v.driver}</td>
                         <td className="px-4 py-3 text-right">{v.km.toLocaleString()} km</td>
                         <td className="px-4 py-3 text-xs">{v.service}</td>
-                        <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${v.status === 'On Route' ? 'bg-[#1A1A1A] text-white' : v.status === 'Maintenance' ? 'bg-[#6B1F2B] text-white' : 'bg-[#F5F5F7] text-[#8E8E93]'}`} style={{ borderRadius: 0 }}>{v.status}</span></td>
+                        <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${v.status === 'On Route' ? 'bg-[#1A1A1A] text-white' : v.status === 'Maintenance' ? 'bg-harvics-burgundy text-white' : 'bg-[#F5F5F7] text-[#8E8E93]'}`} style={{ borderRadius: 0 }}>{v.status}</span></td>
                       </tr>
                     ))}
                   </tbody>
@@ -217,7 +217,7 @@ export default function LogisticsDomainContent({ persona, locale }: LogisticsDom
                         <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{d.customer}</td>
                         <td className="px-4 py-3">{d.driver}</td>
                         <td className="px-4 py-3 text-xs">{d.time}</td>
-                        <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${d.pod === 'Signed' ? 'bg-[#1A1A1A] text-white' : d.pod === 'Disputed' ? 'bg-[#6B1F2B] text-white' : 'bg-[#F5F5F7] text-[#8E8E93]'}`} style={{ borderRadius: 0 }}>{d.pod}</span></td>
+                        <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${d.pod === 'Signed' ? 'bg-[#1A1A1A] text-white' : d.pod === 'Disputed' ? 'bg-harvics-burgundy text-white' : 'bg-[#F5F5F7] text-[#8E8E93]'}`} style={{ borderRadius: 0 }}>{d.pod}</span></td>
                       </tr>
                     ))}
                   </tbody>
@@ -286,7 +286,7 @@ export default function LogisticsDomainContent({ persona, locale }: LogisticsDom
                   <div key={r.reason} className="flex items-center gap-4">
                     <div className="w-48 text-sm text-[#1A1A1A] flex-shrink-0">{r.reason}</div>
                     <div className="flex-1 bg-[#F5F5F7] h-6 relative" style={{ borderRadius: 0 }}>
-                      <div className="bg-[#6B1F2B] h-6 flex items-center justify-end pr-2" style={{ width: `${r.pct}%`, borderRadius: 0 }}>
+                      <div className="bg-harvics-burgundy h-6 flex items-center justify-end pr-2" style={{ width: `${r.pct}%`, borderRadius: 0 }}>
                         <span className="text-white text-xs font-bold">{r.pct}%</span>
                       </div>
                     </div>
@@ -321,7 +321,7 @@ export default function LogisticsDomainContent({ persona, locale }: LogisticsDom
                         <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{r.month}</td>
                         <td className="px-4 py-3 text-right">{r.ret}</td>
                         <td className="px-4 py-3 text-right">{r.rate}</td>
-                        <td className="px-4 py-3 text-right font-semibold text-[#6B1F2B]">{r.value}</td>
+                        <td className="px-4 py-3 text-right font-semibold text-harvics-burgundy">{r.value}</td>
                         <td className="px-4 py-3 text-right text-[#8E8E93]">{r.top}</td>
                       </tr>
                     ))}
@@ -387,7 +387,7 @@ export default function LogisticsDomainContent({ persona, locale }: LogisticsDom
                         <td className="px-4 py-3">{f.origin}</td>
                         <td className="px-4 py-3">{f.dest}</td>
                         <td className="px-4 py-3 text-center"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1A1A1A]" style={{ borderRadius: 0 }}>{f.status}</span></td>
-                        <td className="px-4 py-3"><div className="flex items-center gap-2"><div className="w-24 bg-[#F5F5F7] h-2" style={{ borderRadius: 0 }}><div className="bg-[#6B1F2B] h-2" style={{ width: `${f.progress}%`, borderRadius: 0 }}></div></div><span className="text-xs">{f.progress}%</span></div></td>
+                        <td className="px-4 py-3"><div className="flex items-center gap-2"><div className="w-24 bg-[#F5F5F7] h-2" style={{ borderRadius: 0 }}><div className="bg-harvics-burgundy h-2" style={{ width: `${f.progress}%`, borderRadius: 0 }}></div></div><span className="text-xs">{f.progress}%</span></div></td>
                       </tr>
                     ))}
                   </tbody>

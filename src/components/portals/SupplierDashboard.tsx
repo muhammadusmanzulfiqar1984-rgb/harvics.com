@@ -102,16 +102,16 @@ export default function V16SupplierDashboard() {
 
         {/* Tabs Navigation */}
         <section className="mb-6">
-          <div className="bg-white border-b border-[#C3A35E]/30 rounded-t-lg overflow-hidden shadow-sm">
+          <div className="bg-white border-b border-harvics-gold/30 rounded-t-lg overflow-hidden shadow-sm">
             <div className="flex gap-0 overflow-x-auto">
               {tabs.map((tab) => (
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id as any)}
-                  className={`flex items-center gap-2 px-6 py-4 text-sm font-medium transition-all whitespace-nowrap border-r border-[#C3A35E]/10 ${
+                  className={`flex items-center gap-2 px-6 py-4 text-sm font-medium transition-all whitespace-nowrap border-r border-harvics-gold/10 ${
                     activeTab === tab.id
-                      ? 'text-[#6B1F2B] border-b-2 border-[#C3A35E] bg-[#F8F9FA] font-bold'
-                      : 'text-[#6B1F2B]/70 hover:text-[#6B1F2B] hover:bg-[#C3A35E]/5'
+                      ? 'text-harvics-burgundy border-b-2 border-harvics-gold bg-[#F8F9FA] font-bold'
+                      : 'text-harvics-burgundy/70 hover:text-harvics-burgundy hover:bg-harvics-gold/5'
                   }`}
                 >
                   <span className="text-lg">{tab.icon}</span>
@@ -124,55 +124,55 @@ export default function V16SupplierDashboard() {
 
         {/* Tab Content */}
         <section>
-          <div className="bg-white border border-[#C3A35E]/30 rounded-b-lg p-6 shadow-sm min-h-[400px]">
+          <div className="bg-white border border-harvics-gold/30 rounded-b-lg p-6 shadow-sm min-h-[400px]">
             {activeTab === 'rfqs' && (
               <div>
-                <h2 className="text-xl font-bold text-[#6B1F2B] mb-4 font-serif">Request for Quotations (RFQs)</h2>
-                <p className="text-[#6B1F2B]/70">No active RFQs requiring attention.</p>
+                <h2 className="text-xl font-bold text-harvics-burgundy mb-4 font-serif">Request for Quotations (RFQs)</h2>
+                <p className="text-harvics-burgundy/70">No active RFQs requiring attention.</p>
               </div>
             )}
             {activeTab === 'pos' && (
               <div>
-                <h2 className="text-xl font-bold text-[#6B1F2B] mb-4 font-serif">Purchase Orders</h2>
-                <p className="text-[#6B1F2B]/70">3 active purchase orders in process.</p>
+                <h2 className="text-xl font-bold text-harvics-burgundy mb-4 font-serif">Purchase Orders</h2>
+                <p className="text-harvics-burgundy/70">3 active purchase orders in process.</p>
               </div>
             )}
             {activeTab === 'grn' && (
               <div>
-                <h2 className="text-xl font-bold text-[#6B1F2B] mb-4 font-serif">Deliveries / GRN</h2>
-                <p className="text-[#6B1F2B]/70">Next delivery expected: Tomorrow, 10:00 AM.</p>
+                <h2 className="text-xl font-bold text-harvics-burgundy mb-4 font-serif">Deliveries / GRN</h2>
+                <p className="text-harvics-burgundy/70">Next delivery expected: Tomorrow, 10:00 AM.</p>
               </div>
             )}
             {activeTab === 'qc' && (
               <div>
-                <h2 className="text-xl font-bold text-[#6B1F2B] mb-4 font-serif">Quality Control</h2>
-                <p className="text-[#6B1F2B]/70">QC Pass Rate: 98.5% this month.</p>
+                <h2 className="text-xl font-bold text-harvics-burgundy mb-4 font-serif">Quality Control</h2>
+                <p className="text-harvics-burgundy/70">QC Pass Rate: 98.5% this month.</p>
               </div>
             )}
             {activeTab === 'payments' && (
               <div>
-                <h2 className="text-xl font-bold text-[#6B1F2B] mb-4 font-serif">Payments & Invoices</h2>
-                <p className="text-[#6B1F2B]/70">Next payment run: Friday.</p>
+                <h2 className="text-xl font-bold text-harvics-burgundy mb-4 font-serif">Payments & Invoices</h2>
+                <p className="text-harvics-burgundy/70">Next payment run: Friday.</p>
               </div>
             )}
             {activeTab === 'contracts' && (
               <div>
-                <h2 className="text-xl font-bold text-[#6B1F2B] mb-4 font-serif">Contract Management</h2>
-                <p className="text-[#6B1F2B]/70">All contracts are active and compliant.</p>
+                <h2 className="text-xl font-bold text-harvics-burgundy mb-4 font-serif">Contract Management</h2>
+                <p className="text-harvics-burgundy/70">All contracts are active and compliant.</p>
               </div>
             )}
             {activeTab === 'ai-insights' && (
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <h2 className="text-xl font-bold text-[#6B1F2B] font-serif">AI Insights</h2>
+                  <h2 className="text-xl font-bold text-harvics-burgundy font-serif">AI Insights</h2>
                   <button
                     onClick={() => setAiPanelOpen(true)}
-                    className="px-4 py-2 bg-[#C3A35E] text-[#6B1F2B] rounded-md text-sm font-bold hover:bg-[#b5952f] transition-colors shadow-sm"
+                    className="px-4 py-2 bg-harvics-gold text-harvics-burgundy rounded-md text-sm font-bold hover:bg-[#b5952f] transition-colors shadow-sm"
                   >
                     Open AI Panel
                   </button>
                 </div>
-                <p className="text-[#6B1F2B]/70 mb-4">Click "Open AI Panel" to view detailed AI insights and recommendations.</p>
+                <p className="text-harvics-burgundy/70 mb-4">Click "Open AI Panel" to view detailed AI insights and recommendations.</p>
               </div>
             )}
           </div>

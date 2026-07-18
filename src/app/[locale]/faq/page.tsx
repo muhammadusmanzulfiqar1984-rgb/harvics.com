@@ -66,7 +66,7 @@ export default async function FAQPage({ params }: FAQPageProps) {
     <main className="min-h-screen" style={{ background: '#ffffff' }}>
       
       <div className="pt-20">
-        <section className="py-12 md:py-24 px-4 md:px-6 bg-[#6B1F2B] relative overflow-hidden">
+        <section className="py-12 md:py-24 px-4 md:px-6 bg-harvics-burgundy relative overflow-hidden">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&h=600&fit=crop&q=75"
@@ -92,7 +92,7 @@ export default async function FAQPage({ params }: FAQPageProps) {
                 <h2 className="text-2xl md:text-3xl font-bold text-black mb-6">{category.category}</h2>
                 <div className="space-y-4">
                   {category.questions.map((faq, index) => (
-                    <div key={index} className="bg-white border-2 border-[#6B1F2B]/20 p-6 shadow-lg">
+                    <div key={index} className="bg-white border-2 border-harvics-burgundy/20 p-6 shadow-lg">
                       <h3 className="text-lg font-bold text-black mb-2">{faq.q}</h3>
                       <p className="text-black">{faq.a}</p>
                     </div>
@@ -101,7 +101,7 @@ export default async function FAQPage({ params }: FAQPageProps) {
               </div>
             ))}
 
-            <div className="bg-gradient-to-r from-[#6B1F2B] to-[#6B1F2B] p-8 md:p-12 text-white text-center mt-12">
+            <div className="bg-gradient-to-r from-harvics-burgundy to-harvics-burgundy p-8 md:p-12 text-white text-center mt-12">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">{t('contactCta.title')}</h2>
               <p className="mb-6 text-lg">{t('contactCta.subtitle')}</p>
               <a

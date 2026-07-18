@@ -94,8 +94,8 @@ export default function DistributorDashboard() {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#6B1F2B] mx-auto mb-4"></div>
-          <p className="text-[#C3A35E]/90">{t('loading')}</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-harvics-burgundy mx-auto mb-4"></div>
+          <p className="text-harvics-gold/90">{t('loading')}</p>
         </div>
       </div>
     )
@@ -106,7 +106,7 @@ export default function DistributorDashboard() {
       <div className="min-h-screen bg-white flex items-center justify-center px-4">
         <div className="max-w-md w-full bg-white shadow-lg p-6">
           <h2 className="text-xl font-bold text-red-600 mb-2">{tCommon('error')}</h2>
-          <p className="text-[#C3A35E]/90">{error}</p>
+          <p className="text-harvics-gold/90">{error}</p>
         </div>
       </div>
     )
@@ -116,8 +116,8 @@ export default function DistributorDashboard() {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-[#C3A35E] mb-4">No Data Available</h2>
-          <p className="text-[#C3A35E]/80">We could not find any dashboard data.</p>
+          <h2 className="text-2xl font-bold text-harvics-gold mb-4">No Data Available</h2>
+          <p className="text-harvics-gold/80">We could not find any dashboard data.</p>
         </div>
       </div>
     );
@@ -127,7 +127,7 @@ export default function DistributorDashboard() {
     <ErrorBoundary>
       <div className="min-h-screen bg-white py-8 px-4">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-3xl font-bold text-[#C3A35E] mb-8">{t('title') || 'Distributor Dashboard'}</h1>
+          <h1 className="text-3xl font-bold text-harvics-gold mb-8">{t('title') || 'Distributor Dashboard'}</h1>
 
           <pre>{JSON.stringify(data, null, 2)}</pre>
         </div>

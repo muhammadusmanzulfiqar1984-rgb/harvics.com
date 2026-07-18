@@ -31,7 +31,7 @@ export default function AutoBugDetector() {
 
   return (
     <div className="fixed bottom-4 left-4 z-40 max-w-xs">
-      <div className="bg-white rounded-lg shadow-xl border border-[#C3A35E]/20 overflow-hidden">
+      <div className="bg-white rounded-lg shadow-xl border border-harvics-gold/20 overflow-hidden">
         {/* Header - Smaller */}
         <div
           className="bg-white border-b border-black200 text-black p-2 cursor-pointer"
@@ -42,7 +42,7 @@ export default function AutoBugDetector() {
               <span className="text-base">🔍</span>
               <div>
                 <div className="font-semibold text-xs">Auto Bug Detector</div>
-                <div className="text-[10px] text-[#C3A35E]/90">
+                <div className="text-[10px] text-harvics-gold/90">
                   {stats.unfixed} unfixed • {stats.fixesApplied} fixed
                 </div>
               </div>
@@ -81,7 +81,7 @@ export default function AutoBugDetector() {
             </div>
 
             {monitorSnapshot && (
-              <div className="mb-2 border border-[#C3A35E]/30 rounded p-2 bg-white/5 text-[10px] text-black/80">
+              <div className="mb-2 border border-harvics-gold/30 rounded p-2 bg-white/5 text-[10px] text-black/80">
                 <div className="font-bold text-black mb-1 text-xs">Infrastructure</div>
                 <div className="flex justify-between">
                   <span>Backend</span>

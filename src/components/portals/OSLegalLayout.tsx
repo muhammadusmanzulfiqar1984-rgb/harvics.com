@@ -97,16 +97,16 @@ const OSLegalLayout: React.FC<OSLegalLayoutProps> = ({ children }) => {
       <aside
         className={`${
           sidebarOpen ? 'w-64' : 'w-20'
-        } bg-white text-white transition-all duration-300 flex flex-col border-r border-[#C3A35E]/30`}
+        } bg-white text-white transition-all duration-300 flex flex-col border-r border-harvics-gold/30`}
       >
         {/* Sidebar Header */}
-        <div className="p-4 border-b border-[#C3A35E]/30 flex items-center justify-between">
+        <div className="p-4 border-b border-harvics-gold/30 flex items-center justify-between">
           {sidebarOpen && (
             <h2 className="text-xl font-bold text-white">{t('sidebarTitle')}</h2>
           )}
           <button
             onClick={() => setSidebarOpen(!sidebarOpen)}
-            className="text-white hover:text-[#C3A35E]/90 transition-colors"
+            className="text-white hover:text-harvics-gold/90 transition-colors"
           >
             {sidebarOpen ? '←' : '→'}
           </button>
@@ -121,7 +121,7 @@ const OSLegalLayout: React.FC<OSLegalLayoutProps> = ({ children }) => {
               className={`flex items-center space-x-2 px-3 py-2 rounded-md transition-colors ${
                 isActive(item.href)
                   ? 'bg-white/20 text-white font-semibold'
-                  : 'text-[#C3A35E]/80 hover:text-[#C3A35E] hover:bg-white/10'
+                  : 'text-harvics-gold/80 hover:text-harvics-gold hover:bg-white/10'
               }`}
             >
               <span>{item.icon}</span>

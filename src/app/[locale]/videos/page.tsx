@@ -125,7 +125,7 @@ export default function VideosPage() {
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
           <div className="mb-12">
-            <h1 className="text-4xl sm:text-5xl font-bold text-[#6B1F2B] mb-4">
+            <h1 className="text-4xl sm:text-5xl font-bold text-harvics-burgundy mb-4">
               Video Library
             </h1>
             <p className="text-lg text-black/70 max-w-2xl">
@@ -151,26 +151,26 @@ export default function VideosPage() {
           </div>
 
           {/* Video Info */}
-          <div className="mb-12 bg-white rounded-lg p-6 shadow-md border border-[#C3A35E]/20">
-            <h2 className="text-2xl font-bold text-[#6B1F2B] mb-2">
+          <div className="mb-12 bg-white rounded-lg p-6 shadow-md border border-harvics-gold/20">
+            <h2 className="text-2xl font-bold text-harvics-burgundy mb-2">
               {selectedVideo.title}
             </h2>
             <p className="text-black/70 mb-3">{selectedVideo.description}</p>
-            <span className="inline-block px-4 py-1 bg-[#C3A35E]/20 text-[#6B1F2B] rounded-full text-sm font-medium">
+            <span className="inline-block px-4 py-1 bg-harvics-gold/20 text-harvics-burgundy rounded-full text-sm font-medium">
               {selectedVideo.category}
             </span>
           </div>
 
           {/* Category Filter */}
           <div className="mb-8">
-            <h3 className="text-lg font-semibold text-[#6B1F2B] mb-4">Filter by Category</h3>
+            <h3 className="text-lg font-semibold text-harvics-burgundy mb-4">Filter by Category</h3>
             <div className="flex flex-wrap gap-3">
               <button
                 onClick={() => setSelectedCategory('All')}
                 className={`px-4 py-2 rounded-full font-medium transition-all ${
                   selectedCategory === 'All'
-                    ? 'bg-[#6B1F2B] text-white'
-                    : 'bg-white text-[#6B1F2B] border-2 border-[#6B1F2B] hover:bg-[#6B1F2B] hover:text-white'
+                    ? 'bg-harvics-burgundy text-white'
+                    : 'bg-white text-harvics-burgundy border-2 border-harvics-burgundy hover:bg-harvics-burgundy hover:text-white'
                 }`}
               >
                 All
@@ -181,8 +181,8 @@ export default function VideosPage() {
                   onClick={() => setSelectedCategory(category)}
                   className={`px-4 py-2 rounded-full font-medium transition-all ${
                     selectedCategory === category
-                      ? 'bg-[#6B1F2B] text-white'
-                      : 'bg-white text-[#6B1F2B] border-2 border-[#6B1F2B] hover:bg-[#6B1F2B] hover:text-white'
+                      ? 'bg-harvics-burgundy text-white'
+                      : 'bg-white text-harvics-burgundy border-2 border-harvics-burgundy hover:bg-harvics-burgundy hover:text-white'
                   }`}
                 >
                   {category}
@@ -193,7 +193,7 @@ export default function VideosPage() {
 
           {/* Video Grid */}
           <div>
-            <h3 className="text-lg font-semibold text-[#6B1F2B] mb-6">
+            <h3 className="text-lg font-semibold text-harvics-burgundy mb-6">
               {selectedCategory === 'All' ? 'All Videos' : `${selectedCategory} Videos`}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -203,13 +203,13 @@ export default function VideosPage() {
                   onClick={() => setSelectedVideo(video)}
                   className={`relative overflow-hidden rounded-lg shadow-md transition-all hover:shadow-xl cursor-pointer group ${
                     selectedVideo.id === video.id
-                      ? 'ring-4 ring-[#6B1F2B]'
+                      ? 'ring-4 ring-harvics-burgundy'
                       : ''
                   }`}
                 >
                   {/* Video Thumbnail Placeholder */}
-                  <div className="relative w-full aspect-video bg-gradient-to-br from-[#6B1F2B]/20 to-[#C3A35E]/20 flex items-center justify-center">
-                    <div className="text-4xl text-[#6B1F2B]/30 group-hover:text-[#6B1F2B]/50 transition-colors">
+                  <div className="relative w-full aspect-video bg-gradient-to-br from-harvics-burgundy/20 to-harvics-gold/20 flex items-center justify-center">
+                    <div className="text-4xl text-harvics-burgundy/30 group-hover:text-harvics-burgundy/50 transition-colors">
                       ▶
                     </div>
                   </div>

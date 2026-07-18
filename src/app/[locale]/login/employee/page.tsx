@@ -18,12 +18,12 @@ export default async function EmployeeLoginPage() {
           <div className="max-w-md mx-auto">
             {/* Header */}
             <div className="text-center mb-8">
-              <div className="w-16 h-16 mx-auto mb-4 bg-[#6B1F2B] flex items-center justify-center shadow-lg">
+              <div className="w-16 h-16 mx-auto mb-4 bg-harvics-burgundy flex items-center justify-center shadow-lg">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
                 </svg>
               </div>
-              <h1 className="text-2xl sm:text-3xl font-serif font-bold text-[#6B1F2B] mb-2">
+              <h1 className="text-2xl sm:text-3xl font-serif font-bold text-harvics-burgundy mb-2">
                 {t('title')}
               </h1>
               <p className="text-sm sm:text-base text-gray-600">
@@ -39,8 +39,8 @@ export default async function EmployeeLoginPage() {
             {/* Features */}
             <div className="mt-8 space-y-4">
               <div className="flex items-start space-x-3 p-4 bg-white border border-gray-100 shadow-sm">
-                <div className="w-8 h-8 bg-[#6B1F2B]/10 flex items-center justify-center flex-shrink-0">
-                  <span className="text-[#6B1F2B] text-sm">📅</span>
+                <div className="w-8 h-8 bg-harvics-burgundy/10 flex items-center justify-center flex-shrink-0">
+                  <span className="text-harvics-burgundy text-sm">📅</span>
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 text-sm mb-1">
@@ -53,8 +53,8 @@ export default async function EmployeeLoginPage() {
               </div>
 
               <div className="flex items-start space-x-3 p-4 bg-white border border-gray-100 shadow-sm">
-                <div className="w-8 h-8 bg-[#6B1F2B]/10 flex items-center justify-center flex-shrink-0">
-                  <span className="text-[#6B1F2B] text-sm">📋</span>
+                <div className="w-8 h-8 bg-harvics-burgundy/10 flex items-center justify-center flex-shrink-0">
+                  <span className="text-harvics-burgundy text-sm">📋</span>
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 text-sm mb-1">
@@ -67,8 +67,8 @@ export default async function EmployeeLoginPage() {
               </div>
 
               <div className="flex items-start space-x-3 p-4 bg-white border border-gray-100 shadow-sm">
-                <div className="w-8 h-8 bg-[#6B1F2B]/10 flex items-center justify-center flex-shrink-0">
-                  <span className="text-[#6B1F2B] text-sm">💼</span>
+                <div className="w-8 h-8 bg-harvics-burgundy/10 flex items-center justify-center flex-shrink-0">
+                  <span className="text-harvics-burgundy text-sm">💼</span>
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 text-sm mb-1">

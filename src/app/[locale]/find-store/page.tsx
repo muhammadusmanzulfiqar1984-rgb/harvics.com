@@ -42,7 +42,7 @@ export default function FindStorePage() {
 
   return (
     <main className="min-h-screen bg-white pt-20">
-      <section className="h-[400px] relative bg-[#6B1F2B] overflow-hidden">
+      <section className="h-[400px] relative bg-harvics-burgundy overflow-hidden">
         {/* Hero Background Image */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -55,8 +55,8 @@ export default function FindStorePage() {
         {/* Decorative Elements */}
         <div className="absolute inset-0">
            <div className="absolute top-0 left-0 w-full h-full bg-[url('/patterns/grid.svg')] opacity-10"></div>
-           <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
-           <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
+           <div className="absolute -top-24 -right-24 w-96 h-96 bg-harvics-gold rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
+           <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-harvics-gold rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
         </div>
         
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
@@ -90,7 +90,7 @@ export default function FindStorePage() {
                   setSelectedCity(e.target.value)
                   setSelectedArea('')
                 }}
-                className="w-full px-4 py-3 border border-gray-200 text-gray-900 font-medium focus:border-[#6B1F2B] focus:ring-1 focus:ring-[#6B1F2B] focus:outline-none bg-white"
+                className="w-full px-4 py-3 border border-gray-200 text-gray-900 font-medium focus:border-harvics-burgundy focus:ring-1 focus:ring-harvics-burgundy focus:outline-none bg-white"
               >
                 <option value="">Select City</option>
                 {currentCities.map((city) => (
@@ -106,7 +106,7 @@ export default function FindStorePage() {
                 value={selectedArea}
                 onChange={(e) => setSelectedArea(e.target.value)}
                 disabled={!selectedCity}
-                className="w-full px-4 py-3 border border-gray-200 text-gray-900 font-medium focus:border-[#6B1F2B] focus:ring-1 focus:ring-[#6B1F2B] focus:outline-none disabled:opacity-50 bg-white"
+                className="w-full px-4 py-3 border border-gray-200 text-gray-900 font-medium focus:border-harvics-burgundy focus:ring-1 focus:ring-harvics-burgundy focus:outline-none disabled:opacity-50 bg-white"
               >
                 <option value="">Select Area</option>
                 {currentAreas.map((area) => (
@@ -124,28 +124,28 @@ export default function FindStorePage() {
               <h3 className="text-xl font-serif font-medium text-gray-900 mb-4">{store.name}</h3>
               <div className="space-y-3 text-gray-600 mb-6">
                 <p className="flex items-center">
-                  <span className="w-8 h-8 bg-[#6B1F2B]/5 flex items-center justify-center mr-3 text-lg">📍</span>
+                  <span className="w-8 h-8 bg-harvics-burgundy/5 flex items-center justify-center mr-3 text-lg">📍</span>
                   {store.address}, {store.area}, {store.city}
                 </p>
                 <p className="flex items-center">
-                  <span className="w-8 h-8 bg-[#6B1F2B]/5 flex items-center justify-center mr-3 text-lg">📞</span>
+                  <span className="w-8 h-8 bg-harvics-burgundy/5 flex items-center justify-center mr-3 text-lg">📞</span>
                   {store.phone}
                 </p>
                 <p className="flex items-center">
-                  <span className="w-8 h-8 bg-[#6B1F2B]/5 flex items-center justify-center mr-3 text-lg">🕐</span>
+                  <span className="w-8 h-8 bg-harvics-burgundy/5 flex items-center justify-center mr-3 text-lg">🕐</span>
                   {store.hours}
                 </p>
               </div>
               <div className="flex gap-4">
                 <Link
                   href={`/${locale}/contact`}
-                  className="flex-1 text-center bg-[#6B1F2B] hover:bg-[#50000b] text-white px-4 py-3 font-medium transition-all duration-300 shadow-md hover:shadow-lg"
+                  className="flex-1 text-center bg-harvics-burgundy hover:bg-[#50000b] text-white px-4 py-3 font-medium transition-all duration-300 shadow-md hover:shadow-lg"
                 >
                   Get Directions
                 </Link>
                 <Link
                   href={`tel:${store.phone}`}
-                  className="flex-1 text-center border border-gray-200 text-gray-700 hover:border-[#6B1F2B] hover:text-[#6B1F2B] px-4 py-3 font-medium transition-all duration-300"
+                  className="flex-1 text-center border border-gray-200 text-gray-700 hover:border-harvics-burgundy hover:text-harvics-burgundy px-4 py-3 font-medium transition-all duration-300"
                 >
                   Call Store
                 </Link>

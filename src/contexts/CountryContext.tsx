@@ -2,11 +2,10 @@
 
 import React, { createContext, useContext, useState, useEffect, useRef, useMemo } from 'react'
 import { useLocale } from 'next-intl'
-import { useRouter, usePathname } from 'next/navigation'
 import apiClient from '@/lib/api'
 import { UserScope } from '@/types/userScope'
 import { getCurrencyData } from '@/config/currency-mapping'
-import { getDefaultCountryForLocale, getLocaleForCountry, localeToCountryMap } from '@/config/country-mapping'
+import { getDefaultCountryForLocale, localeToCountryMap } from '@/config/country-mapping'
 
 interface LocalisedCountryData {
   countryName?: string
@@ -68,36 +67,23 @@ const CountryContext = createContext<CountryContextType | undefined>(undefined)
 
 export const CountryProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const locale = useLocale()
-  const router = useRouter()
-  const pathname = usePathname()
   const [selectedCountry, setSelectedCountryState] = useState<string>(getDefaultCountryForLocale(locale))
   const [countryData, setCountryData] = useState<LocalisedCountryData | null>(null)
   const [loading, setLoading] = useState(true)
   const [accessLoading, setAccessLoading] = useState(true)
   const [userScope, setUserScope] = useState<UserScope | null>(null)
   
-  // Refs to prevent infinite loops
+  // Ref to prevent locale-change from overriding explicit country selection
   const isUpdatingFromLocale = useRef(false)
-  const isUpdatingFromCountry = useRef(false)
 
-  // Update country when locale changes - but ONLY if user hasn't manually selected one
+  // Update default country when locale changes — unless user already picked one manually
   useEffect(() => {
-    if (isUpdatingFromCountry.current) {
-      isUpdatingFromCountry.current = false
-      return
-    }
-    
-    // Respect user's explicit country choice (stored in sessionStorage)
     if (typeof window !== 'undefined') {
       try {
         const userPickedCountry = sessionStorage.getItem('harvics_user_country')
-        if (userPickedCountry) {
-          // User previously chose a country manually — don't override it
-          return
-        }
+        if (userPickedCountry) return
       } catch { /* private browsing */ }
     }
-    
     const defaultCountryForLocale = getDefaultCountryForLocale(locale)
     if (defaultCountryForLocale && !userScope) {
       isUpdatingFromLocale.current = true
@@ -293,54 +279,9 @@ export const CountryProvider: React.FC<{ children: React.ReactNode }> = ({ child
       } catch { /* private browsing */ }
     }
     
-    // UNIFIED SYSTEM: When country changes, automatically switch to country's primary language
-    const targetLocale = getLocaleForCountry(normalized)
-    
-    // Only switch language if it's different from current locale
-    // AND we're not already updating from a locale change (to prevent loops)
-    if (targetLocale && targetLocale !== locale && !isUpdatingFromLocale.current) {
-      isUpdatingFromCountry.current = true
-      
-      // Get current path without locale
-      const pathWithoutLocale = pathname || '/'
-      const cleanPath = pathWithoutLocale.replace(/^\/+|\/+$/g, '')
-      const segments = cleanPath ? cleanPath.split('/') : []
-      
-      // Remove locale segment if present
-      if (segments.length > 0) {
-        const firstSegment = segments[0]
-        // Check if first segment is a valid locale
-        const validLocales = ['en', 'ar', 'es', 'fr', 'de', 'zh', 'hi', 'ur', 'pt', 'ru', 'it', 'tr', 'ja', 'ko', 'nl', 'pl', 'vi', 'th', 'id', 'ms', 'sw', 'uk', 'ro', 'cs', 'sv', 'da', 'fi', 'no', 'el', 'hu', 'bg', 'hr', 'sk', 'sr', 'bn', 'fa', 'ps', 'he']
-        if (validLocales.includes(firstSegment)) {
-          segments.shift()
-        }
-      }
-      
-      // Build new path with target locale
-      const newPath = segments.length > 0 
-        ? `/${targetLocale}/${segments.join('/')}`
-        : `/${targetLocale}`
-      
-      // Preserve query params and hash
-      const searchParams = typeof window !== 'undefined' ? window.location.search : ''
-      const hash = typeof window !== 'undefined' ? window.location.hash : ''
-      
-      // Navigate to new locale
-      router.push(`${newPath}${searchParams}${hash}`)
-      
-      // Also update state immediately (will be confirmed by locale change)
-      setSelectedCountryState(normalized)
-      
-      // Save preference to backend
-      if (typeof window !== 'undefined') {
-        apiClient.saveLanguagePreference(targetLocale, normalized).catch(error => {
-          console.debug('Language preference save failed (non-critical):', error)
-        })
-      }
-    } else {
-      // Just update country without changing language
+    // Country selection updates the country only — language is controlled independently
+    // via the LanguageSwitcher. This prevents the country dropdown from hijacking locale.
     setSelectedCountryState(normalized)
-    }
   }
 
   return (

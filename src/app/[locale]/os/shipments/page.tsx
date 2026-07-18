@@ -1,7 +1,7 @@
 'use client'
 /** HARVICS OS — Shipments + Tracking (Module #26) */
 import { useEffect, useState } from 'react'
-const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F0E8'
+const B='var(--harvics-burgundy)'; const G='var(--harvics-gold)'; const C='var(--harvics-cream)'
 const SS:Record<string,string>={Booked:'#666',InTransit:'#1565C0',Delivered:'#2E7D32',Exception:'#B71C1C'}
 interface Ev{id:string;location:string;status:string;description:string|null;eventTime:string}
 interface Ship{id:string;trackingNo:string;origin:string;destination:string;carrier:string|null;service:string|null;status:string;bookedAt:string;estimatedEta:string|null;actualDelivery:string|null;events:Ev[]}

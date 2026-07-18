@@ -55,10 +55,11 @@ body {
 /* Flat, premium, no-noise aesthetic from Harvics Supreme */
 :root {
   --harvics-burgundy: #3D1212;
+  --harvics-maroon: #3D1212;
   --harvics-cream: #F5F0E8;
   --harvics-gold: #C3A35E;
   --harvics-muted: #8A7D6B;
-  --harvics-dark: #0D0D0D;
+  --harvics-dark: #3D1212;
   --harvics-ease-vault: cubic-bezier(0.16, 1, 0.3, 1);
   --harvics-layout-max: 1440px;
 }
@@ -239,15 +240,13 @@ header,
   box-sizing: border-box !important;
 }
 
-/* 3. MASTER FOOTER PROTECTION LAYER (Applies Universally Across ALL Routes)
-   This directly targets your footer component. It forces a solid, opaque background
-   so the layout engine never goes transparent, fixing the bleed bug permanently. */
+/* 3. MASTER FOOTER — layout only; F1–F4 sections own background colors in Footer.tsx */
 footer {
-  background-color: #F5F0E8 !important; /* Locks premium Alabaster Cream on the footer */
   width: 100% !important;
   max-width: 100% !important;
   position: relative !important;
-  z-index: 50 !important; /* Ensures it stays on top of the layout stack */
+  z-index: 50 !important;
+  background-color: transparent !important;
 }
 
 /* 4. HIGH-PERFORMANCE CINEMATIC ENGINE
@@ -291,7 +290,7 @@ body {
   top: 0 !important;
   z-index: 100 !important;
   backdrop-filter: blur(12px) !important;
-  border-bottom: 1px solid rgba(26, 5, 5, 0.06) !important;
+  border-bottom: 1px solid rgba(61, 18, 18, 0.06) !important;
 }
 
 /* Engraved Horology Asset Container (analog clock bezel) */
@@ -305,10 +304,10 @@ body {
   border-radius: 50%;
   background: radial-gradient(circle, #F5F0E8 0%, #E6DCC8 100%);
   box-shadow:
-    inset 0 2px 4px rgba(26, 5, 5, 0.15),
+    inset 0 2px 4px rgba(61, 18, 18, 0.15),
     inset 0 -1px 2px rgba(255, 255, 255, 0.8),
-    0 1px 2px rgba(26, 5, 5, 0.05);
-  border: 1px solid rgba(201, 168, 76, 0.3);
+    0 1px 2px rgba(61, 18, 18, 0.05);
+  border: 1px solid rgba(195, 163, 94, 0.3);
 }
 
 /* 2. Premium Sector Link Layout */
@@ -334,7 +333,7 @@ body {
 
 /* Luxury minimal hover highlight style */
 .sector-nav-link:hover {
-  background-color: rgba(201, 168, 76, 0.1) !important; /* Soft gold tint fill */
+  background-color: rgba(195, 163, 94, 0.1) !important; /* Soft gold tint fill */
   color: #C3A35E !important; /* Direct brand gold shift */
 }
 
@@ -451,6 +450,30 @@ body {
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  color: var(--harvics-burgundy);
+}
+
+/* Homepage: one corridor type voice — burgundy on cream, cream on burgundy panels */
+#homepage-main .harvics-corridor-display {
+  font-family: var(--font-playfair-display), Georgia, 'Times New Roman', serif;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+}
+
+#homepage-main .harvics-corridor-eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--harvics-gold);
+}
+
+#homepage-main .harvics-corridor-body {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+  color: color-mix(in srgb, var(--harvics-burgundy) 65%, transparent);
 }
 
 #homepage-main::-webkit-scrollbar {
@@ -505,7 +528,7 @@ body {
 .harvics-victorian-telephone-fab {
   background: transparent !important;
   border: none !important;
-  box-shadow: 0 8px 24px rgba(26, 5, 5, 0.38) !important;
+  box-shadow: 0 8px 24px rgba(61, 18, 18, 0.38) !important;
 }
 
 /* Tab button improvements */
@@ -653,16 +676,16 @@ body {
 
 :root {
   /* Light Enterprise Theme Palette - Global Truth */
-  --foreground-rgb: 60, 0, 8; /* Maroon Text */
+  --foreground-rgb: 26, 5, 5;
   --background-start-rgb: 248, 249, 250; /* Light Gray Start */
   --background-end-rgb: 255, 255, 255; /* White End */
   
   /* Primary Colors - Burgundy (master palette) */
-  --primary-maroon: 26, 5, 5; /* #3D1212 — legacy var name */
+  --primary-maroon: 26, 5, 5;
   --primary-maroon-hex: #3D1212;
   
   /* Accent Colors - Gold */
-  --accent-gold: 195, 163, 94; /* #C3A35E */
+  --accent-gold: 201, 168, 76;
   --accent-gold-hex: #C3A35E;
   
   /* Background Colors */
@@ -674,12 +697,12 @@ body {
   --text-secondary: 138, 125, 107; /* Muted */
   
   /* Borders */
-  --border-gold-light: rgba(212, 175, 55, 0.3);
+  --border-gold-light: rgba(195, 163, 94, 0.3);
 }
 
 [data-theme="dark"] {
   /* Enforce Light Theme consistency even in dark mode preference */
-  --foreground-rgb: 60, 0, 8;
+  --foreground-rgb: 26, 5, 5;
   --background-start-rgb: 248, 249, 250;
   --background-end-rgb: 255, 255, 255;
 }
@@ -748,7 +771,7 @@ h6 { font-size: 0.875rem; line-height: 1.5; font-weight: 600; letter-spacing: 0.
 
 .btn-primary-theme:hover {
   background-color: #2a0a0a;
-  box-shadow: 0 4px 12px rgba(26, 5, 5, 0.28);
+  box-shadow: 0 4px 12px rgba(61, 18, 18, 0.28);
   transform: translateY(-1px);
 }
 
@@ -880,14 +903,14 @@ label {
   /* Pillar 13 Surface Classes */
   .harvics-card-light {
     background-color: var(--harvics-cream);
-    border: 1px solid rgba(26, 5, 5, 0.1);
+    border: 1px solid rgba(61, 18, 18, 0.1);
     border-radius: 0px;
-    box-shadow: 2px 2px 0px rgba(26, 5, 5, 0.05);
+    box-shadow: 2px 2px 0px rgba(61, 18, 18, 0.05);
   }
 
   .harvics-card-dark {
     background-color: var(--harvics-burgundy);
-    border: 1px solid rgba(201, 168, 76, 0.15);
+    border: 1px solid rgba(195, 163, 94, 0.15);
     border-radius: 0px;
     color: var(--harvics-cream);
     box-shadow: 4px 4px 0px rgba(13, 13, 13, 0.3);
@@ -895,12 +918,12 @@ label {
 
   /* Pillar 3 & 6 Precision Scale Override */
   .harvics-divider-gold {
-    border-color: rgba(201, 168, 76, 0.15) !important;
+    border-color: rgba(195, 163, 94, 0.15) !important;
     border-width: 1px !important;
   }
 
   .harvics-divider-burgundy {
-    border-color: rgba(26, 5, 5, 0.1) !important;
+    border-color: rgba(61, 18, 18, 0.1) !important;
     border-width: 1px !important;
   }
 
@@ -927,7 +950,7 @@ label {
     padding: 12px 16px;
     font-size: 13px;
     color: var(--harvics-burgundy);
-    border-bottom: 1px solid rgba(26, 5, 5, 0.08);
+    border-bottom: 1px solid rgba(61, 18, 18, 0.08);
   }
 
   /* Pillar 12 Strict Form Elements */
@@ -935,7 +958,7 @@ label {
   select.harvics-input-field {
     background-color: var(--harvics-cream) !important;
     color: var(--harvics-burgundy) !important;
-    border: 1px solid rgba(26, 5, 5, 0.2) !important;
+    border: 1px solid rgba(61, 18, 18, 0.2) !important;
     border-radius: 0px !important;
     padding: 8px 12px !important;
     font-size: 13px !important;
@@ -945,7 +968,7 @@ label {
   select.harvics-input-field:focus {
     border-color: var(--harvics-gold) !important;
     outline: none !important;
-    box-shadow: 0 0 0 2px rgba(201, 168, 76, 0.2) !important;
+    box-shadow: 0 0 0 2px rgba(195, 163, 94, 0.2) !important;
   }
   
   /* Global font utilities - Consistent font stack */
@@ -1238,7 +1261,7 @@ nav a:hover, nav button:hover {
 
 .hover-golden:hover {
   background: linear-gradient(135deg, #C3A35E, #d4b870, #C3A35E);
-  box-shadow: 0 6px 20px rgba(195,163,94,0.5);
+  box-shadow: 0 6px 20px rgba(195, 163, 94,0.5);
   transform: translateY(-2px);
 }
 
@@ -1718,7 +1741,7 @@ div[role="tablist"],
   align-items: center;
   justify-content: flex-start;
   gap: 0;
-  border-bottom: 2px solid rgba(212, 175, 55, 0.2);
+  border-bottom: 2px solid rgba(195, 163, 94, 0.2);
   padding: 0;
   margin: 0;
   width: 100%;
@@ -1741,7 +1764,7 @@ a[role="tab"],
   border: none;
   border-bottom: 2px solid transparent;
   background: transparent;
-  color: rgba(212, 175, 55, 0.8);
+  color: rgba(195, 163, 94, 0.8);
   font-size: 0.875rem;
   font-weight: 500;
   white-space: nowrap;
@@ -1756,7 +1779,7 @@ button[role="tab"]:hover,
 a[role="tab"]:hover,
 .tab-button:hover {
   color: #C3A35E;
-  background: rgba(212, 175, 55, 0.05);
+  background: rgba(195, 163, 94, 0.05);
 }
 
 button[role="tab"][aria-selected="true"],
@@ -1765,7 +1788,7 @@ a[role="tab"][aria-selected="true"],
   color: #C3A35E;
   border-bottom-color: #C3A35E;
   font-weight: 600;
-  background: rgba(212, 175, 55, 0.1);
+  background: rgba(195, 163, 94, 0.1);
 }
 
 /* Consistent Spacing for All Pages */
@@ -1846,13 +1869,13 @@ table td {
   padding: 0.75rem 1rem;
   text-align: left;
   vertical-align: middle;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+  border-bottom: 1px solid rgba(195, 163, 94, 0.1);
 }
 
 table th {
   font-weight: 600;
   color: #C3A35E;
-  background: rgba(212, 175, 55, 0.05);
+  background: rgba(195, 163, 94, 0.05);
 }
 
 /* Navigation Alignment */
@@ -1878,7 +1901,7 @@ nav li {
   left: 0;
   min-width: 200px;
   background: white;
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  border: 1px solid rgba(195, 163, 94, 0.2);
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 50;
@@ -1899,7 +1922,7 @@ nav li {
 }
 
 .dropdown-item:hover {
-  background: rgba(212, 175, 55, 0.1);
+  background: rgba(195, 163, 94, 0.1);
   color: #C3A35E;
 }
 
@@ -1941,7 +1964,7 @@ button,
 .bg-dark a:hover,
 .bg-maroon a:hover,
 .bg-harvics-maroon a:hover {
-  color: #FFD700;
+  color: #C3A35E;
 }
 
 /* Replace white text with gold on dark backgrounds */
@@ -1956,13 +1979,13 @@ footer .text-white {
 .bg-dark .text-white\/80,
 .bg-maroon .text-white\/80,
 .bg-harvics-maroon .text-white\/80 {
-  color: rgba(212, 175, 55, 0.8) !important;
+  color: rgba(195, 163, 94, 0.8) !important;
 }
 
 .bg-dark .text-white\/70,
 .bg-maroon .text-white\/70,
 .bg-harvics-maroon .text-white\/70 {
-  color: rgba(212, 175, 55, 0.7) !important;
+  color: rgba(195, 163, 94, 0.7) !important;
 }
 
 /* Navigation Links — handled by inline styles, no global override */
@@ -2117,7 +2140,7 @@ p {
 }
 .page-orb-1 {
   width: 700px; height: 700px;
-  background: radial-gradient(circle, rgba(195,163,94,0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(195, 163, 94,0.12) 0%, transparent 70%);
   top: 5%; left: -8%;
   animation: pageOrb1 34s ease-in-out infinite;
 }
@@ -2129,7 +2152,7 @@ p {
 }
 .page-orb-3 {
   width: 480px; height: 480px;
-  background: radial-gradient(circle, rgba(195,163,94,0.10) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(195, 163, 94,0.10) 0%, transparent 70%);
   bottom: 12%; left: 28%;
   animation: pageOrb3 28s ease-in-out infinite;
 }
@@ -2156,17 +2179,19 @@ p {
 
 .bg-harvics-burgundy { background-color: #3D1212 !important; }
 .bg-harvics-cream { background-color: #F5F0E8 !important; }
+.bg-harvics-card { background-color: var(--harvics-card) !important; }
 .text-harvics-cream { color: #F5F0E8 !important; }
 .text-harvics-burgundy { color: #3D1212 !important; }
 .text-harvics-gold { color: #C3A35E !important; }
-.border-harvics-gold\/10 { border-color: rgba(201, 168, 76, 0.1) !important; }
+.text-harvics-muted { color: #8A7D6B !important; }
+.border-harvics-gold\/10 { border-color: rgba(195, 163, 94, 0.1) !important; }
 .ease-vault { transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important; }
 
 .harvics-dropdown-panel { 
   background-color: var(--harvics-cream); 
-  border: 1px solid rgba(201, 168, 76, 0.2); 
+  border: 1px solid rgba(195, 163, 94, 0.2); 
   border-radius: 0px; 
-  box-shadow: 4px 4px 0px rgba(26, 5, 5, 0.08); 
+  box-shadow: 4px 4px 0px rgba(61, 18, 18, 0.08); 
 } 
 .harvics-dropdown-item { 
   padding: 10px 16px; 
@@ -2176,15 +2201,15 @@ p {
   cursor: pointer; 
 } 
 .harvics-dropdown-item:hover { 
-  background-color: rgba(201, 168, 76, 0.08); 
+  background-color: rgba(195, 163, 94, 0.08); 
   color: var(--harvics-gold); 
 }
 
 .harvics-dropdown-panel { 
   background-color: var(--harvics-cream); 
-  border: 1px solid rgba(201, 168, 76, 0.2); 
+  border: 1px solid rgba(195, 163, 94, 0.2); 
   border-radius: 0px; 
-  box-shadow: 4px 4px 0px rgba(26, 5, 5, 0.08); 
+  box-shadow: 4px 4px 0px rgba(61, 18, 18, 0.08); 
 } 
 .harvics-dropdown-item { 
   padding: 10px 16px; 
@@ -2194,21 +2219,21 @@ p {
   cursor: pointer; 
 } 
 .harvics-dropdown-item:hover { 
-  background-color: rgba(201, 168, 76, 0.08); 
+  background-color: rgba(195, 163, 94, 0.08); 
   color: var(--harvics-gold); 
 }
 .harvics-footer-dark-stratum {
-  background-color: #110303 !important;
+  background-color: #3D1212 !important;
 }
 .harvics-footer-metric-bg {
-  background-color: rgba(26, 5, 5, 0.4) !important;
+  background-color: rgba(61, 18, 18, 0.4) !important;
 }
 
 .harvics-dropdown-panel {
   background-color: var(--harvics-cream);
-  border: 1px solid rgba(201, 168, 76, 0.2);
+  border: 1px solid rgba(195, 163, 94, 0.2);
   border-radius: 0px;
-  box-shadow: 4px 4px 0px rgba(26, 5, 5, 0.08);
+  box-shadow: 4px 4px 0px rgba(61, 18, 18, 0.08);
 }
 
 .harvics-dropdown-item {
@@ -2220,6 +2245,6 @@ p {
 }
 
 .harvics-dropdown-item:hover {
-  background-color: rgba(201, 168, 76, 0.08);
+  background-color: rgba(195, 163, 94, 0.08);
   color: var(--harvics-gold);
 }

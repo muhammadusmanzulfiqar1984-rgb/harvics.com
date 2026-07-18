@@ -25,7 +25,7 @@ export default function P(){
     </Panel>
     <Panel title="ALL CONTRACTS" full>
       <Tbl head={['CN','TITLE','CP','TYPE','VALUE','PERIOD','STATUS','ACT']}>
-        {rows.map(r=><tr key={r.id} style={{borderBottom:'1px solid #6B1F2B11'}}>
+        {rows.map(r=><tr key={r.id} style={{borderBottom:'1px solid #3D121211'}}>
           <td style={td}><b>{r.contractNo}</b></td><td style={td}>{r.title}</td><td style={td}>{r.counterparty}</td><td style={td}>{r.type}</td>
           <td style={td}>{r.currency} {r.value.toLocaleString()}</td>
           <td style={{...td,fontSize:11}}>{new Date(r.startDate).toLocaleDateString()} – {new Date(r.endDate).toLocaleDateString()}</td>

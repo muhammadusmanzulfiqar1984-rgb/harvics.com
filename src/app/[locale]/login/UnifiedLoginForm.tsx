@@ -181,7 +181,7 @@ export default function UnifiedLoginForm() {
     'w-full px-4 py-3.5 bg-harvics-cream border border-harvics-gold/30 text-harvics-burgundy text-sm placeholder:text-harvics-muted/60 focus:outline-none focus:border-harvics-gold focus:ring-1 focus:ring-harvics-gold/40 transition-all duration-300 ease-vault'
 
   return (
-    <div className="bg-white border border-harvics-gold/25 p-7 sm:p-9 shadow-[0_24px_64px_rgba(26,5,5,0.08)]">
+    <div className="bg-white border border-harvics-gold/25 p-7 sm:p-9 shadow-[0_24px_64px_rgba(61, 18, 18,0.08)]">
       <form onSubmit={handleSubmit} method="post" className="space-y-5">
         {error && (
           <div className="px-4 py-3 border border-red-300/50 bg-red-50/80">

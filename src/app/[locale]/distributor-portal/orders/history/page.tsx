@@ -23,11 +23,11 @@ export default function OrderHistory() {
     switch(status) {
       case 'Delivered': return 'bg-green-100 text-green-800'
       case 'Dispatched': return 'bg-blue-100 text-blue-800'
-      case 'Processing': return 'bg-[#C3A35E]/20 text-[#C3A35E]'
+      case 'Processing': return 'bg-harvics-gold/20 text-harvics-gold'
       case 'Confirmed': return 'bg-purple-100 text-purple-800'
-      case 'Draft': return 'bg-white text-[#C3A35E]/90'
+      case 'Draft': return 'bg-white text-harvics-gold/90'
       case 'Cancelled': return 'bg-red-100 text-red-800'
-      default: return 'bg-white text-[#C3A35E]/90'
+      default: return 'bg-white text-harvics-gold/90'
     }
   }
 
@@ -35,10 +35,10 @@ export default function OrderHistory() {
     <div className="space-y-6">
       <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-[#C3A35E]">Order History</h1>
+        <h1 className="text-2xl font-bold text-harvics-gold">Order History</h1>
         <Link
           href={`/${locale}/distributor-portal/orders/new`}
-          className="bg-[#C3A35E] text-[#6B1F2B] px-6 py-2 font-semibold hover:opacity-90 transition-opacity"
+          className="bg-harvics-gold text-harvics-burgundy px-6 py-2 font-semibold hover:opacity-90 transition-opacity"
         >
           Place New Order
         </Link>
@@ -48,7 +48,7 @@ export default function OrderHistory() {
       <div className="bg-white p-4 border border-black200 shadow-sm">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div>
-            <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Date Range</label>
+            <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Date Range</label>
             <select
               value={dateRange}
               onChange={(e) => setDateRange(e.target.value)}
@@ -62,7 +62,7 @@ export default function OrderHistory() {
             </select>
           </div>
           <div>
-            <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Status</label>
+            <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Status</label>
             <select
               value={status}
               onChange={(e) => setStatus(e.target.value)}
@@ -78,7 +78,7 @@ export default function OrderHistory() {
             </select>
           </div>
           <div>
-            <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Country</label>
+            <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Country</label>
             <select
               value={country}
               onChange={(e) => setCountry(e.target.value)}
@@ -99,31 +99,31 @@ export default function OrderHistory() {
           <table className="w-full">
             <thead className="bg-white">
               <tr>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Order ID</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Date</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Country / Warehouse</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Total Value</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Status</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">ETA</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Action</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Order ID</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Date</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Country / Warehouse</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Total Value</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Status</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">ETA</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Action</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
               {orders.map((order) => (
                 <tr key={order.id} className="hover:bg-white">
-                  <td className="px-6 py-4 font-semibold text-[#C3A35E]/90">{order.id}</td>
-                  <td className="px-6 py-4 text-sm text-[#C3A35E]/90">{order.date}</td>
-                  <td className="px-6 py-4 text-sm text-[#C3A35E]/90">
+                  <td className="px-6 py-4 font-semibold text-harvics-gold/90">{order.id}</td>
+                  <td className="px-6 py-4 text-sm text-harvics-gold/90">{order.date}</td>
+                  <td className="px-6 py-4 text-sm text-harvics-gold/90">
                     <div>{order.country}</div>
-                    <div className="text-xs text-[#C3A35E]/90">{order.warehouse}</div>
+                    <div className="text-xs text-harvics-gold/90">{order.warehouse}</div>
                   </td>
-                  <td className="px-6 py-4 font-semibold text-[#C3A35E]/90">${order.total.toLocaleString()}</td>
+                  <td className="px-6 py-4 font-semibold text-harvics-gold/90">${order.total.toLocaleString()}</td>
                   <td className="px-6 py-4">
                     <span className={`px-3 py-1 rounded-full text-xs font-semibold ${getStatusColor(order.status)}`}>
                       {order.status}
                     </span>
                   </td>
-                  <td className="px-6 py-4 text-sm text-[#C3A35E]/90">{order.eta}</td>
+                  <td className="px-6 py-4 text-sm text-harvics-gold/90">{order.eta}</td>
                   <td className="px-6 py-4">
                     <Link
                       href={`/${locale}/distributor-portal/orders/${order.id}`}

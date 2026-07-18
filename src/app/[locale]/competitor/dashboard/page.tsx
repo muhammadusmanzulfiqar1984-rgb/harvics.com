@@ -35,7 +35,7 @@ export default function CompetitorDashboardPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-3xl font-bold text-[#C3A35E] mb-2">Competitor Dashboard</h1>
+        <h1 className="text-3xl font-bold text-harvics-gold mb-2">Competitor Dashboard</h1>
         <p className="text-white/90">Analytics and insights on competitor products</p>
       </div>
 

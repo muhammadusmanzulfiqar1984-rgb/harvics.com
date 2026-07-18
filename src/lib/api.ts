@@ -72,7 +72,7 @@ class ApiClient {
     options: RequestInit = {}
   ): Promise<ApiResponse<T>> {
     if (this.backendStatus === 'error' && endpoint !== '/health') {
-      return { error: 'Backend is offline. Please try again later.' }
+      return { error: 'Service temporarily unavailable. Please try again later.' }
     }
 
     const headers = new Headers(options.headers)

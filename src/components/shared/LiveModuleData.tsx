@@ -45,7 +45,7 @@ export default function LiveModuleData({ endpoint, title, columns, emptyMessage 
           <span className="text-xs text-gray-500">{loading ? 'Loading…' : `${rows.length} record${rows.length === 1 ? '' : 's'}`}</span>
           <button
             onClick={() => setRefreshAt(Date.now())}
-            className="text-xs px-2 py-1 bg-[#6B1F2B] text-white rounded hover:bg-[#50000b] transition"
+            className="text-xs px-2 py-1 bg-harvics-burgundy text-white rounded hover:bg-[#50000b] transition"
           >
             Refresh
           </button>

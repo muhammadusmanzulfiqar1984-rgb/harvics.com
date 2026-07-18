@@ -63,7 +63,7 @@ export default function GenerateImagePage() {
   return (
     <main className="min-h-screen bg-[#0e0e0e] pt-20 text-white">
       <section className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
-        <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-[#C9A84C]">
+        <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-harvics-gold">
           Admin · Auto-Generation Pipeline
         </p>
         <h1 className="mb-2 text-3xl font-semibold md:text-4xl">Generate Image</h1>
@@ -154,7 +154,7 @@ export default function GenerateImagePage() {
           <button
             type="submit"
             disabled={loading}
-            className="mt-2 self-start rounded bg-[#C9A84C] px-6 py-3 text-xs font-bold uppercase tracking-[0.14em] text-[#0e0e0e] disabled:opacity-50"
+            className="mt-2 self-start rounded bg-harvics-gold px-6 py-3 text-xs font-bold uppercase tracking-[0.14em] text-[#0e0e0e] disabled:opacity-50"
           >
             {loading ? 'Generating…' : 'Generate'}
           </button>
@@ -169,7 +169,7 @@ export default function GenerateImagePage() {
 
         {result && (
           <div className="mt-8 rounded border border-white/10 bg-[#141414] p-6">
-            <p className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-[#C9A84C]">
+            <p className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-harvics-gold">
               {result.engineUsed} · {result.model}
             </p>
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -186,7 +186,7 @@ export default function GenerateImagePage() {
               <div>
                 <dt className="inline font-semibold text-white/90">URL: </dt>
                 <dd className="inline break-all">
-                  <a href={result.url} target="_blank" rel="noreferrer" className="text-[#C9A84C] underline">
+                  <a href={result.url} target="_blank" rel="noreferrer" className="text-harvics-gold underline">
                     {result.url}
                   </a>
                 </dd>

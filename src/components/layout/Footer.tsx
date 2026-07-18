@@ -10,8 +10,17 @@ import { useTranslations, useLocale } from 'next-intl'
  * F1 — Newsletter on cream
  * F2 — Sitemap on burgundy (brand zone)
  * F3 — Certifications on darker burgundy
- * F4 — Legal on black
+ * F4 — Legal on deep burgundy
  */
+const FOOTER = {
+  cream: 'var(--harvics-cream)',
+  burgundy: 'var(--harvics-burgundy)',
+  burgundyDeep: 'var(--harvics-burgundy-deep)',
+  gold: 'var(--harvics-gold)',
+  creamMuted: 'rgba(245,240,232,0.7)',
+  creamSoft: 'rgba(245,240,232,0.55)',
+} as const
+
 const Footer: React.FC = () => {
   const t = useTranslations('footer')
   const locale = useLocale()
@@ -102,18 +111,18 @@ const Footer: React.FC = () => {
     <footer className="w-full">
 
       {/* ============ F1 — NEWSLETTER ON CREAM ============ */}
-      <section style={{ background: '#F5F0E8', padding: '36px 0 32px', borderTop: '1px solid rgba(201,168,76,0.25)' }}>
+      <section className="bg-harvics-cream" style={{ padding: '36px 0 32px', borderTop: '1px solid rgba(195, 163, 94,0.25)' }}>
         <div className="universal-layout-frame px-4 sm:px-6 lg:px-8 text-center">
           <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '14px', marginBottom: '14px' }}>
-            <div style={{ height: '1px', width: '32px', background: '#C3A35E' }} />
-            <span style={{ color: '#C3A35E', fontSize: '10px', fontWeight: 600, letterSpacing: '0.32em', textTransform: 'uppercase' }}>The Harvics Brief</span>
-            <div style={{ height: '1px', width: '32px', background: '#C3A35E' }} />
+            <div style={{ height: '1px', width: '32px', background: 'var(--harvics-gold)' }} />
+            <span style={{ color: 'var(--harvics-gold)', fontSize: '10px', fontWeight: 600, letterSpacing: '0.32em', textTransform: 'uppercase' }}>The Harvics Brief</span>
+            <div style={{ height: '1px', width: '32px', background: 'var(--harvics-gold)' }} />
           </div>
-          <h2 style={{ fontSize: 'clamp(22px, 3vw, 32px)', fontWeight: 200, letterSpacing: '-0.02em', color: '#3D1212', lineHeight: 1.15, marginBottom: '8px' }}>
+          <h2 className="harvics-corridor-display text-harvics-burgundy" style={{ fontSize: 'clamp(22px, 3vw, 32px)', marginBottom: '8px' }}>
             {tt('newsletterHeadline', 'Monthly intelligence.')}{' '}
-            <span style={{ color: '#3D1212', fontWeight: 400 }}>{tt('newsletterHeadline2', 'For serious buyers.')}</span>
+            <span className="text-harvics-gold font-medium">{tt('newsletterHeadline2', 'For serious buyers.')}</span>
           </h2>
-          <p style={{ color: 'rgba(26,5,5,0.55)', fontSize: '12px', marginBottom: '18px' }}>
+          <p className="harvics-corridor-body" style={{ fontSize: '12px', marginBottom: '18px' }}>
             {tt('newsletterTagline', 'Market alerts · sourcing insights · new factory verifications. One email a month. No spam.')}
           </p>
           <form onSubmit={handleNewsletterSubmit} style={{ display: 'inline-flex', gap: 0, maxWidth: '520px', width: '100%' }}>
@@ -123,18 +132,18 @@ const Footer: React.FC = () => {
               onChange={(e) => setEmail(e.target.value)}
               placeholder={tt('enterEmailPlaceholder', 'you@company.com')}
               required
-              style={{ flex: 1, padding: '11px 16px', border: '1px solid rgba(26,5,5,0.18)', borderRight: 'none', background: '#fff', fontSize: '12px', color: '#3D1212', outline: 'none' }}
+              style={{ flex: 1, padding: '11px 16px', border: '1px solid rgba(61, 18, 18,0.18)', borderRight: 'none', background: '#fff', fontSize: '12px', color: 'var(--harvics-burgundy)', outline: 'none' }}
             />
             <button
               type="submit"
               disabled={isSubmitting}
-              style={{ padding: '11px 26px', background: '#3D1212', color: '#C3A35E', border: '1px solid #3D1212', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', cursor: 'pointer' }}
+              style={{ padding: '11px 26px', background: 'var(--harvics-burgundy)', color: 'var(--harvics-gold)', border: '1px solid #3D1212', fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', cursor: 'pointer' }}
             >
               {isSubmitting ? '...' : (tt('subscribe', 'Subscribe'))}
             </button>
           </form>
           {submitMessage && (
-            <p style={{ marginTop: '12px', fontSize: '11px', color: submitMessage.includes('Thank') ? '#C3A35E' : '#a32a2a' }}>
+            <p style={{ marginTop: '12px', fontSize: '11px', color: submitMessage.includes('Thank') ? 'var(--harvics-gold)' : '#a32a2a' }}>
               {submitMessage}
             </p>
           )}
@@ -142,7 +151,7 @@ const Footer: React.FC = () => {
       </section>
 
       {/* ============ F2 — SITEMAP ON BURGUNDY ============ */}
-      <section style={{ background: '#3D1212', color: 'rgba(245,240,232,0.85)', padding: '48px 0 40px', borderTop: '1px solid rgba(201,168,76,0.2)' }}>
+      <section className="bg-harvics-burgundy text-harvics-cream" style={{ padding: '48px 0 40px', borderTop: '1px solid rgba(195, 163, 94,0.2)' }}>
         <div className="universal-layout-frame px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10" style={{ gridTemplateColumns: 'minmax(0, 1.5fr) repeat(4, minmax(0, 1fr))' }}>
 
@@ -151,27 +160,27 @@ const Footer: React.FC = () => {
               <Link href={`/${locale}`} style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
                 <Image src="/assets/brand/logo/primary.svg" alt="Harvics" width={44} height={44} style={{ width: '44px', height: 'auto', objectFit: 'contain' }} />
                 <div>
-                  <div style={{ fontSize: '20px', fontWeight: 600, color: '#fff', letterSpacing: '0.06em' }}>HARVICS</div>
-                  <div style={{ fontSize: '9px', color: '#C3A35E', letterSpacing: '0.28em', textTransform: 'uppercase' }}>Global Ventures</div>
+                  <div style={{ fontSize: '20px', fontWeight: 600, color: 'var(--harvics-cream)', letterSpacing: '0.06em' }}>HARVICS</div>
+                  <div style={{ fontSize: '9px', color: 'var(--harvics-gold)', letterSpacing: '0.28em', textTransform: 'uppercase' }}>Global Ventures</div>
                 </div>
               </Link>
               <p style={{ fontSize: '12px', color: 'rgba(245,240,232,0.55)', lineHeight: 1.7, maxWidth: '300px' }}>
                 {tt('brandStatement', 'Sovereign trade infrastructure across 10 industry verticals, 42 markets and 4 continents — built for serious buyers.')}
               </p>
-              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '5px 10px', border: '1px solid rgba(201,168,76,0.3)', fontSize: '9px', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#C3A35E', fontWeight: 600, width: 'fit-content' }}>
-                <span style={{ width: '6px', height: '6px', background: '#C3A35E', borderRadius: '50%', animation: 'harvicsPulse 2s infinite' }} />
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '5px 10px', border: '1px solid rgba(195, 163, 94,0.3)', fontSize: '9px', letterSpacing: '0.25em', textTransform: 'uppercase', color: 'var(--harvics-gold)', fontWeight: 600, width: 'fit-content' }}>
+                <span style={{ width: '6px', height: '6px', background: 'var(--harvics-gold)', borderRadius: '50%', animation: 'harvicsPulse 2s infinite' }} />
                 1,247 {tt('activeShipments', 'active shipments')}
               </div>
             </div>
 
             {/* Useful Links */}
             <div>
-              <h5 style={{ fontSize: '10px', letterSpacing: '0.24em', textTransform: 'uppercase', color: '#C3A35E', marginBottom: '18px', fontWeight: 600, paddingBottom: '8px', borderBottom: '1px solid rgba(201,168,76,0.15)' }}>
+              <h5 style={{ fontSize: '10px', letterSpacing: '0.24em', textTransform: 'uppercase', color: 'var(--harvics-gold)', marginBottom: '18px', fontWeight: 600, paddingBottom: '8px', borderBottom: '1px solid rgba(195, 163, 94,0.15)' }}>
                 {tt('usefulLinks', 'Useful Links')}
               </h5>
               {usefulLinks.map(link => (
                 <Link key={link.href} href={link.href} style={{ display: 'block', fontSize: '12.5px', color: 'rgba(245,240,232,0.7)', padding: '6px 0', lineHeight: 1.4, textDecoration: 'none', transition: 'color 0.2s' }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#C3A35E' }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--harvics-gold)' }}
                   onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(245,240,232,0.7)' }}>
                   {link.label}
                 </Link>
@@ -180,12 +189,12 @@ const Footer: React.FC = () => {
 
             {/* Company */}
             <div>
-              <h5 style={{ fontSize: '10px', letterSpacing: '0.24em', textTransform: 'uppercase', color: '#C3A35E', marginBottom: '18px', fontWeight: 600, paddingBottom: '8px', borderBottom: '1px solid rgba(201,168,76,0.15)' }}>
+              <h5 style={{ fontSize: '10px', letterSpacing: '0.24em', textTransform: 'uppercase', color: 'var(--harvics-gold)', marginBottom: '18px', fontWeight: 600, paddingBottom: '8px', borderBottom: '1px solid rgba(195, 163, 94,0.15)' }}>
                 {tt('company', 'Company')}
               </h5>
               {companyLinks.map(link => (
                 <Link key={link.href} href={link.href} style={{ display: 'block', fontSize: '12.5px', color: 'rgba(245,240,232,0.7)', padding: '6px 0', lineHeight: 1.4, textDecoration: 'none', transition: 'color 0.2s' }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#C3A35E' }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--harvics-gold)' }}
                   onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(245,240,232,0.7)' }}>
                   {link.label}
                 </Link>
@@ -194,12 +203,12 @@ const Footer: React.FC = () => {
 
             {/* Media */}
             <div>
-              <h5 style={{ fontSize: '10px', letterSpacing: '0.24em', textTransform: 'uppercase', color: '#C3A35E', marginBottom: '18px', fontWeight: 600, paddingBottom: '8px', borderBottom: '1px solid rgba(201,168,76,0.15)' }}>
+              <h5 style={{ fontSize: '10px', letterSpacing: '0.24em', textTransform: 'uppercase', color: 'var(--harvics-gold)', marginBottom: '18px', fontWeight: 600, paddingBottom: '8px', borderBottom: '1px solid rgba(195, 163, 94,0.15)' }}>
                 {tt('media', 'Media')}
               </h5>
               {mediaLinks.map(link => (
                 <Link key={link.href} href={link.href} style={{ display: 'block', fontSize: '12.5px', color: 'rgba(245,240,232,0.7)', padding: '6px 0', lineHeight: 1.4, textDecoration: 'none', transition: 'color 0.2s' }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#C3A35E' }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--harvics-gold)' }}
                   onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(245,240,232,0.7)' }}>
                   {link.label}
                 </Link>
@@ -208,12 +217,12 @@ const Footer: React.FC = () => {
 
             {/* Investors */}
             <div>
-              <h5 style={{ fontSize: '10px', letterSpacing: '0.24em', textTransform: 'uppercase', color: '#C3A35E', marginBottom: '18px', fontWeight: 600, paddingBottom: '8px', borderBottom: '1px solid rgba(201,168,76,0.15)' }}>
+              <h5 style={{ fontSize: '10px', letterSpacing: '0.24em', textTransform: 'uppercase', color: 'var(--harvics-gold)', marginBottom: '18px', fontWeight: 600, paddingBottom: '8px', borderBottom: '1px solid rgba(195, 163, 94,0.15)' }}>
                 {tt('investors', 'Investors')}
               </h5>
               {investorLinks.map(link => (
                 <Link key={link.href} href={link.href} style={{ display: 'block', fontSize: '12.5px', color: 'rgba(245,240,232,0.7)', padding: '6px 0', lineHeight: 1.4, textDecoration: 'none', transition: 'color 0.2s' }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#C3A35E' }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--harvics-gold)' }}
                   onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(245,240,232,0.7)' }}>
                   {link.label}
                 </Link>
@@ -228,14 +237,14 @@ const Footer: React.FC = () => {
       </section>
 
       {/* ============ F3 — CERTIFICATIONS ON DARKER BURGUNDY ============ */}
-      <section style={{ background: '#2D0A0A', padding: '18px 0', borderTop: '1px solid rgba(201,168,76,0.18)' }}>
+      <section style={{ background: FOOTER.burgundyDeep, padding: '18px 0', borderTop: '1px solid rgba(195, 163, 94,0.18)' }}>
         <div className="universal-layout-frame px-4 sm:px-6 lg:px-8" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 0, flexWrap: 'wrap' }}>
-          <span style={{ fontSize: '9px', letterSpacing: '0.32em', textTransform: 'uppercase', color: '#C3A35E', fontWeight: 700, paddingRight: '24px', borderRight: '1px solid rgba(201,168,76,0.2)' }}>
+          <span style={{ fontSize: '9px', letterSpacing: '0.32em', textTransform: 'uppercase', color: 'var(--harvics-gold)', fontWeight: 700, paddingRight: '24px', borderRight: '1px solid rgba(195, 163, 94,0.2)' }}>
             {tt('certifiedAudited', 'Certified & Audited')}
           </span>
           <div style={{ display: 'flex', gap: 0, flexWrap: 'wrap' }}>
             {certifications.map((cert, i) => (
-              <span key={cert} style={{ fontSize: '10px', letterSpacing: '0.22em', color: 'rgba(245,240,232,0.95)', fontWeight: 700, padding: '0 18px', borderRight: i < certifications.length - 1 ? '1px solid rgba(201,168,76,0.15)' : 'none' }}>
+              <span key={cert} style={{ fontSize: '10px', letterSpacing: '0.22em', color: 'rgba(245,240,232,0.95)', fontWeight: 700, padding: '0 18px', borderRight: i < certifications.length - 1 ? '1px solid rgba(195, 163, 94,0.15)' : 'none' }}>
                 {cert}
               </span>
             ))}
@@ -244,13 +253,13 @@ const Footer: React.FC = () => {
       </section>
 
       {/* ============ F4 — LEGAL ON BLACK ============ */}
-      <section style={{ background: '#000', padding: '16px 0' }}>
+      <section className="bg-harvics-burgundy" style={{ padding: '16px 0' }}>
         <div className="universal-layout-frame px-4 sm:px-6 lg:px-8" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px', fontSize: '10.5px', color: 'rgba(245,240,232,0.45)' }}>
           <div style={{ display: 'flex', gap: '20px', alignItems: 'center', flexWrap: 'wrap' }}>
             <span>&copy; {new Date().getFullYear()} {tt('companyName', 'Harvics Global Ventures')}</span>
             {legalLinks.map(link => (
               <Link key={link.href} href={link.href} style={{ color: 'rgba(245,240,232,0.45)', textDecoration: 'none', transition: 'color 0.2s' }}
-                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#C3A35E' }}
+                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--harvics-gold)' }}
                 onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(245,240,232,0.45)' }}>
                 {link.label}
               </Link>
@@ -258,12 +267,12 @@ const Footer: React.FC = () => {
           </div>
           <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: 'rgba(245,240,232,0.6)' }}>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#C3A35E" strokeWidth="1.5">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--harvics-gold)" strokeWidth="1.5">
                 <circle cx="12" cy="12" r="9" />
                 <path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18" />
               </svg>
-              <span style={{ letterSpacing: '0.15em', textTransform: 'uppercase', fontWeight: 600, color: '#C3A35E', fontSize: '10px' }}>Global</span>
-              <span style={{ color: 'rgba(201,168,76,0.3)' }}>·</span>
+              <span style={{ letterSpacing: '0.15em', textTransform: 'uppercase', fontWeight: 600, color: 'var(--harvics-gold)', fontSize: '10px' }}>Global</span>
+              <span style={{ color: 'rgba(195, 163, 94,0.3)' }}>·</span>
               <span>English (UK)</span>
             </span>
             <div style={{ display: 'flex', gap: '14px' }}>
@@ -275,7 +284,7 @@ const Footer: React.FC = () => {
                   rel="noopener noreferrer"
                   aria-label={social.label}
                   style={{ color: 'rgba(245,240,232,0.55)', display: 'inline-flex', alignItems: 'center', transition: 'color 0.2s' }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#C3A35E' }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--harvics-gold)' }}
                   onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(245,240,232,0.55)' }}
                 >
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">

@@ -23,9 +23,18 @@ const MarketHeatmap: React.FC = () => {
   useEffect(() => { setMounted(true); }, []);
 
   useEffect(() => {
+    const apiBase = (process.env.NEXT_PUBLIC_INTELLIGENCE_API_URL || '').trim();
+
+    // No data source configured → don't attempt a request. The widget will
+    // stay hidden rather than surfacing connection errors to end users.
+    if (!apiBase) {
+      setLoading(false);
+      return;
+    }
+
     const fetchAttackPlan = async () => {
       try {
-        const response = await fetch('http://localhost:4000/api/intelligence/attack-plan');
+        const response = await fetch(`${apiBase}/api/intelligence/attack-plan`);
         const data = await response.json();
         
         if (data.status === 'active' && data.plan) {
@@ -56,8 +65,9 @@ const MarketHeatmap: React.FC = () => {
           });
           setRegions(mappedRegions);
         }
-      } catch (error) {
-        console.error('Failed to fetch intelligence:', error);
+      } catch {
+        // Data source unreachable — fail silently. The widget hides itself
+        // when no regions are available (see render guard below).
       } finally {
         setLoading(false);
       }
@@ -91,22 +101,10 @@ const MarketHeatmap: React.FC = () => {
     );
   }
 
+  // Data source unavailable → hide the widget entirely rather than showing a
+  // broken/offline state or leaking backend configuration to end users.
   if (regions.length === 0) {
-    return (
-      <div className="p-6 bg-white rounded-xl border border-gray-200 shadow-sm">
-        <div className="flex items-center gap-2 mb-4">
-          <h2 className="text-xl font-bold text-gray-900">🌍 Global Market Heatmap</h2>
-          <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-1 bg-gray-100 text-gray-500 rounded-full">Offline</span>
-        </div>
-        <div className="flex items-center gap-3 p-4 bg-amber-50 border border-amber-200 rounded-lg">
-          <span className="text-amber-500 text-xl">⚠️</span>
-          <div>
-            <p className="text-sm font-medium text-amber-800">Intelligence engine offline</p>
-            <p className="text-xs text-amber-600">Start the backend server on port 4000 to see live market data</p>
-          </div>
-        </div>
-      </div>
-    );
+    return null;
   }
 
   return (

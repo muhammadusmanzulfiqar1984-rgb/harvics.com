@@ -156,8 +156,8 @@ export default function DistributorProfile() {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#6B1F2B] mx-auto mb-4"></div>
-          <p className="text-[#C3A35E]/90">{t('loading')}</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-harvics-burgundy mx-auto mb-4"></div>
+          <p className="text-harvics-gold/90">{t('loading')}</p>
         </div>
       </div>
     )
@@ -168,7 +168,7 @@ export default function DistributorProfile() {
       <div className="min-h-screen bg-white flex items-center justify-center px-4">
         <div className="max-w-md w-full bg-white shadow-lg p-6">
           <h2 className="text-xl font-bold text-red-600 mb-2">{tCommon('error')}</h2>
-          <p className="text-[#C3A35E]/90">{error}</p>
+          <p className="text-harvics-gold/90">{error}</p>
         </div>
       </div>
     )
@@ -178,35 +178,35 @@ export default function DistributorProfile() {
     <ErrorBoundary>
       <div className="min-h-screen bg-white py-8 px-4">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl font-bold text-[#C3A35E] mb-8">{t('title')}</h1>
+          <h1 className="text-3xl font-bold text-harvics-gold mb-8">{t('title')}</h1>
 
           {/* Profile Info (Read-only) */}
           {profile && (
             <div className="bg-white shadow p-6 mb-6">
-              <h2 className="text-xl font-bold text-[#C3A35E] mb-4">{t('accountInformation')}</h2>
+              <h2 className="text-xl font-bold text-harvics-gold mb-4">{t('accountInformation')}</h2>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-sm text-[#C3A35E]/90">{t('distributorId')}</p>
+                  <p className="text-sm text-harvics-gold/90">{t('distributorId')}</p>
                   <p className="text-lg font-semibold">{profile.distributorId}</p>
                 </div>
                 <div>
-                  <p className="text-sm text-[#C3A35E]/90">{t('territory')}</p>
+                  <p className="text-sm text-harvics-gold/90">{t('territory')}</p>
                   <p className="text-lg font-semibold">{profile.territory}</p>
                 </div>
                 {profile.geoScope.country && (
                   <div>
-                    <p className="text-sm text-[#C3A35E]/90">{t('country') || 'Country'}</p>
+                    <p className="text-sm text-harvics-gold/90">{t('country') || 'Country'}</p>
                     <p className="text-lg font-semibold">{profile.geoScope.country}</p>
                   </div>
                 )}
                 {profile.geoScope.city && (
                   <div>
-                    <p className="text-sm text-[#C3A35E]/90">{t('city') || 'City'}</p>
+                    <p className="text-sm text-harvics-gold/90">{t('city') || 'City'}</p>
                     <p className="text-lg font-semibold">{profile.geoScope.city}</p>
                   </div>
                 )}
                 <div>
-                  <p className="text-sm text-[#C3A35E]/90">{t('accountCreated')}</p>
+                  <p className="text-sm text-harvics-gold/90">{t('accountCreated')}</p>
                   <p className="text-lg font-semibold">
                     {new Date(profile.createdAt).toLocaleDateString(locale, {
                       year: 'numeric',
@@ -221,7 +221,7 @@ export default function DistributorProfile() {
 
           {/* Profile Update Form */}
           <form onSubmit={handleSubmit} className="bg-white shadow p-6">
-            <h2 className="text-xl font-bold text-[#C3A35E] mb-4">{t('updateProfile')}</h2>
+            <h2 className="text-xl font-bold text-harvics-gold mb-4">{t('updateProfile')}</h2>
 
             {successMessage && (
               <div className="mb-6 bg-green-50 border border-green-200 p-4">
@@ -237,7 +237,7 @@ export default function DistributorProfile() {
 
             <div className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-[#C3A35E]/90 mb-2">
+                <label className="block text-sm font-medium text-harvics-gold/90 mb-2">
                   {t('name')}
                 </label>
                 <input
@@ -249,7 +249,7 @@ export default function DistributorProfile() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-[#C3A35E]/90 mb-2">
+                <label className="block text-sm font-medium text-harvics-gold/90 mb-2">
                   {t('email')}
                 </label>
                 <input
@@ -264,7 +264,7 @@ export default function DistributorProfile() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-[#C3A35E]/90 mb-2">
+                <label className="block text-sm font-medium text-harvics-gold/90 mb-2">
                   {t('phone')}
                 </label>
                 <input
@@ -279,7 +279,7 @@ export default function DistributorProfile() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-[#C3A35E]/90 mb-2">
+                <label className="block text-sm font-medium text-harvics-gold/90 mb-2">
                   {t('address')}
                 </label>
                 <textarea
@@ -292,7 +292,7 @@ export default function DistributorProfile() {
 
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-[#C3A35E]/90 mb-2">
+                  <label className="block text-sm font-medium text-harvics-gold/90 mb-2">
                     {t('language')}
                   </label>
                   <select
@@ -309,7 +309,7 @@ export default function DistributorProfile() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-[#C3A35E]/90 mb-2">
+                  <label className="block text-sm font-medium text-harvics-gold/90 mb-2">
                     {t('currency')}
                   </label>
                   <select

@@ -18,7 +18,7 @@ export default function P(){
     </Panel>
     <Panel title="LEADERBOARD">
       <Tbl head={['#','NAME','POINTS','KUDOS']}>
-        {board.map((b,i)=><tr key={b.userId} style={{borderBottom:'1px solid #6B1F2B11',background:i===0?'#FFF8DC':undefined}}>
+        {board.map((b,i)=><tr key={b.userId} style={{borderBottom:'1px solid #3D121211',background:i===0?'#FFF8DC':undefined}}>
           <td style={{...td,fontWeight:700,color:B}}>{i+1}{i===0?' 🥇':i===1?' 🥈':i===2?' 🥉':''}</td>
           <td style={td}>{b.name}</td><td style={{...td,fontWeight:700,color:B}}>{b.total}</td><td style={td}>{b.count}</td>
         </tr>)}

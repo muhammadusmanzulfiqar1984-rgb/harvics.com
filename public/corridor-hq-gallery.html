@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Harvics Corridor HQ Pictures</title>
+<style>
+body { background:#3D1212; color:#F5F0E8; font-family: "DM Sans", system-ui, sans-serif; margin:0; padding:24px; }
+h1 { color:#C3A35E; margin:0 0 6px; font-weight:500; letter-spacing:-0.02em; }
+.sub { color:rgba(245,240,232,0.55); font-size:13px; margin-bottom:18px; }
+.grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(240px,1fr)); gap:12px; }
+.card { background:#120303; border:1px solid rgba(201,168,76,0.22); overflow:hidden; }
+.card img { width:100%; height:170px; object-fit:cover; display:block; background:#2a1010; }
+.card .label { padding:8px 10px; font-size:11px; color:rgba(245,240,232,0.55); word-break:break-all; }
+.count { position:fixed; top:14px; right:14px; background:#C3A35E; color:#3D1212; padding:4px 12px; border-radius:999px; font-size:12px; font-weight:600; }
+</style>
+</head>
+<body>
+<h1>Corridor HQ — Groq + FLUX.2</h1>
+<p class="sub">Fresh high-quality pack for the trial / new web. Open via local server or File → Open.</p>
+<div class="count" id="cnt">…</div>
+<div class="grid" id="g"></div>
+<script>
+const files = [
+  "assets/verticals/01-apparels/categories/apparel/hero.jpg",
+  "assets/verticals/02-fmcg/categories/food/hero.jpg",
+  "assets/verticals/03-commodities/categories/agri/hero.jpg",
+  "assets/verticals/04-industrial/categories/machinery/hero.jpg",
+  "assets/verticals/05-minerals/categories/metals/hero.jpg",
+  "assets/verticals/06-oil-gas/categories/downstream/hero.jpg",
+  "assets/harvictrade/heroes/commodities-hero.jpg",
+  "assets/harvictrade/heroes/electronics-hero.jpg",
+  "assets/harvictrade/heroes/textiles-hero.jpg",
+  "assets/harvictrade/heroes/fmcg-hero.jpg",
+  "assets/harvictrade/heroes/industrial-hero.jpg",
+  "assets/harvictrade/heroes/minerals-hero.jpg",
+  "assets/harvictrade/heroes/energy-hero.jpg",
+  "assets/shared/heroes/harvictrade-hero.jpg",
+  "assets/shared/heroes/portals-hub-hero.jpg",
+  "assets/shared/heroes/harvictrade-marketplace.jpg",
+  "assets/shared/heroes/distributor-portal-hero.jpg",
+  "assets/shared/heroes/supplier-portal-hero.jpg",
+  "assets/shared/heroes/trade-finance-hero.jpg",
+  "assets/harvictrade/products/basmati-rice.jpg",
+  "assets/harvictrade/products/safety-jacket.jpg",
+  "assets/harvictrade/products/copper-cathode.jpg",
+  "assets/harvictrade/products/iphone.jpg",
+  "assets/harvictrade/products/olive-oil.jpg",
+  "assets/harvictrade/products/diesel-tanker.jpg",
+  "assets/harvictrade/products/cement.jpg",
+  "assets/harvictrade/products/galaxy-phone.jpg",
+  "assets/harvictrade/products/chocolate.jpg",
+  "assets/harvictrade/products/denim-fabric.jpg",
+  "assets/harvictrade/products/hard-hat.jpg",
+  "assets/harvictrade/products/nitrile-gloves.jpg",
+  "assets/harvictrade/products/refined-sugar.jpg",
+  "assets/harvictrade/products/cotton-tshirt.jpg"
+];
+const grid = document.getElementById('g');
+let ok = 0;
+files.forEach(p => {
+  const card = document.createElement('div');
+  card.className = 'card';
+  const img = document.createElement('img');
+  img.src = p + '?t=' + Date.now();
+  img.onerror = () => { card.style.opacity = '0.3'; };
+  img.onload = () => { ok++; update(); };
+  const label = document.createElement('div');
+  label.className = 'label';
+  label.textContent = p.replace('assets/','');
+  card.appendChild(img);
+  card.appendChild(label);
+  grid.appendChild(card);
+});
+function update(){ document.getElementById('cnt').textContent = ok + ' / ' + files.length; }
+update();
+</script>
+</body>
+</html>

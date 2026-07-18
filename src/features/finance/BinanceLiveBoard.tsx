@@ -145,7 +145,7 @@ const BinanceLiveBoard: React.FC = () => {
           return (
             <div
               key={ticker.symbol}
-              className="p-4 rounded-xl border border-[#e6d8b8] bg-white/80 backdrop-blur-sm hover:border-[#C3A35E] transition-all duration-300 hover:shadow-lg hover:shadow-[#f2d9a6]/50"
+              className="p-4 rounded-xl border border-[#e6d8b8] bg-white/80 backdrop-blur-sm hover:border-harvics-gold transition-all duration-300 hover:shadow-lg hover:shadow-[#f2d9a6]/50"
             >
               <div className="flex items-center justify-between mb-2">
                 <span className="text-sm font-semibold text-amber-900">{ticker.symbol.replace('USDT', '')}/USDT</span>

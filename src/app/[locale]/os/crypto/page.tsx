@@ -21,12 +21,12 @@ export default function P(){
     <Panel title="EXECUTE TRADE">
       <Sel l="Asset" v={trade.symbol} on={v=>setTrade({...trade,symbol:v})} opts={['',...assets.map(a=>a.symbol)]}/>
       <Form><Sel l="Side" v={trade.side} on={v=>setTrade({...trade,side:v})} opts={['buy','sell']}/><Inp l="Qty" tp="number" v={trade.qty} on={v=>setTrade({...trade,qty:+v})}/></Form>
-      {trade.symbol&&<div style={{padding:6,background:'#F5F0E8',fontSize:11,color:B,marginTop:6}}>Est. cost: <b>${(assets.find(a=>a.symbol===trade.symbol)?.priceUsd*trade.qty||0).toFixed(2)}</b></div>}
+      {trade.symbol&&<div style={{padding:6,background:'var(--harvics-cream)',fontSize:11,color:B,marginTop:6}}>Est. cost: <b>${(assets.find(a=>a.symbol===trade.symbol)?.priceUsd*trade.qty||0).toFixed(2)}</b></div>}
       <button onClick={exec} style={btnB}>{trade.side==='buy'?'🟢 BUY':'🔴 SELL'}</button>
     </Panel>
     <Panel title="MARKET">
       <Tbl head={['SYM','NAME','PRICE','24H']}>
-        {assets.map(a=><tr key={a.id} style={{borderBottom:'1px solid #6B1F2B11'}}>
+        {assets.map(a=><tr key={a.id} style={{borderBottom:'1px solid #3D121211'}}>
           <td style={td}><b>{a.symbol}</b></td><td style={{...td,fontSize:11}}>{a.name}</td>
           <td style={{...td,fontWeight:700,color:B}}>${a.priceUsd.toLocaleString()}</td>
           <td style={{...td,fontWeight:700,color:a.change24h>0?'#2E7D32':a.change24h<0?'#B71C1C':'#666'}}>{a.change24h>0?'+':''}{a.change24h}%</td>
@@ -35,13 +35,13 @@ export default function P(){
     </Panel>
     <Panel title="MY PORTFOLIO" full>
       {!portfolio||(portfolio.data?.length||0)===0?<div style={{padding:30,textAlign:'center',color:'#888'}}>No holdings yet. Buy something! 🪙</div>:<>
-        <div style={{padding:8,background:'#F5F0E8',marginBottom:8,display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:8}}>
+        <div style={{padding:8,background:'var(--harvics-cream)',marginBottom:8,display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:8}}>
           <div><div style={{fontSize:10,color:B,fontWeight:600}}>VALUE</div><div style={{fontSize:18,fontWeight:700,color:B}}>${portfolio.totalValue.toLocaleString()}</div></div>
           <div><div style={{fontSize:10,color:B,fontWeight:600}}>COST</div><div style={{fontSize:18,fontWeight:700}}>${portfolio.totalCost.toLocaleString()}</div></div>
           <div><div style={{fontSize:10,color:B,fontWeight:600}}>UNREAL P&L</div><div style={{fontSize:18,fontWeight:700,color:portfolio.totalPnl>=0?'#2E7D32':'#B71C1C'}}>${portfolio.totalPnl.toLocaleString()}</div></div>
         </div>
         <Tbl head={['SYM','QTY','AVG COST','MKT PRICE','VALUE','UNREAL P&L']}>
-          {portfolio.data.map((h:any)=><tr key={h.symbol} style={{borderBottom:'1px solid #6B1F2B11'}}>
+          {portfolio.data.map((h:any)=><tr key={h.symbol} style={{borderBottom:'1px solid #3D121211'}}>
             <td style={td}><b>{h.symbol}</b></td>
             <td style={td}>{h.qty}</td>
             <td style={td}>${h.avgCostUsd}</td>

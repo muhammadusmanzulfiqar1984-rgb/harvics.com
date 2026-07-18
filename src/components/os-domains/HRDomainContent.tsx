@@ -283,9 +283,9 @@ export default function HRDomainContent({ persona, locale }: HRDomainContentProp
                         <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{r.region}</td>
                         <td className="px-4 py-3 text-right">{r.current}</td>
                         <td className="px-4 py-3 text-right">{r.target}</td>
-                        <td className={`px-4 py-3 text-right font-semibold ${r.gap < 0 ? 'text-[#6B1F2B]' : 'text-[#1A1A1A]'}`}>{r.gap < 0 ? r.gap : r.gap === 0 ? '—' : '+' + r.gap}</td>
+                        <td className={`px-4 py-3 text-right font-semibold ${r.gap < 0 ? 'text-harvics-burgundy' : 'text-[#1A1A1A]'}`}>{r.gap < 0 ? r.gap : r.gap === 0 ? '—' : '+' + r.gap}</td>
                         <td className="px-4 py-3 text-xs text-[#8E8E93]">{r.open}</td>
-                        <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${r.status === 'Critical' ? 'bg-[#6B1F2B] text-white' : r.status === 'Hiring' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#1A1A1A] text-white'}`} style={{ borderRadius: 0 }}>{r.status}</span></td>
+                        <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${r.status === 'Critical' ? 'bg-harvics-burgundy text-white' : r.status === 'Hiring' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#1A1A1A] text-white'}`} style={{ borderRadius: 0 }}>{r.status}</span></td>
                       </tr>
                     ))}
                   </tbody>

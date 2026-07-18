@@ -24,11 +24,11 @@ export default function P(){
     </Panel>
     <Panel title={`EVENTS (${rows.length})`} full>
       <Tbl head={['SLUG','TITLE','TYPE','WHEN','REG/CAP','REGISTER']}>
-        {rows.map(e=>{const r=reg[e.id]||{userId:'',userName:''};const regCount=e._count?.registrations||0;return <tr key={e.id} style={{borderBottom:'1px solid #6B1F2B11'}}>
+        {rows.map(e=>{const r=reg[e.id]||{userId:'',userName:''};const regCount=e._count?.registrations||0;return <tr key={e.id} style={{borderBottom:'1px solid #3D121211'}}>
           <td style={td}><b>{e.slug}</b></td><td style={td}>{e.title}</td><td style={td}><Pill s={e.type==='Webinar'?'Active':'Stretch'}/></td>
           <td style={{...td,fontSize:11}}>{new Date(e.startsAt).toLocaleString()}</td>
-          <td style={{...td,fontWeight:700,color:regCount>=e.capacity?'#B71C1C':'#6B1F2B'}}>{regCount}/{e.capacity}</td>
-          <td style={td}><input placeholder="uid" value={r.userId} onChange={ev=>setReg({...reg,[e.id]:{...r,userId:ev.target.value}})} style={{width:60,padding:3,border:'1px solid #6B1F2B55',fontSize:11}}/> <input placeholder="name" value={r.userName} onChange={ev=>setReg({...reg,[e.id]:{...r,userName:ev.target.value}})} style={{width:80,padding:3,border:'1px solid #6B1F2B55',fontSize:11}}/> <button onClick={()=>register(e.id)} style={btnA}>RSVP</button></td>
+          <td style={{...td,fontWeight:700,color:regCount>=e.capacity?'#B71C1C':'var(--harvics-burgundy)'}}>{regCount}/{e.capacity}</td>
+          <td style={td}><input placeholder="uid" value={r.userId} onChange={ev=>setReg({...reg,[e.id]:{...r,userId:ev.target.value}})} style={{width:60,padding:3,border:'1px solid #3D121255',fontSize:11}}/> <input placeholder="name" value={r.userName} onChange={ev=>setReg({...reg,[e.id]:{...r,userName:ev.target.value}})} style={{width:80,padding:3,border:'1px solid #3D121255',fontSize:11}}/> <button onClick={()=>register(e.id)} style={btnA}>RSVP</button></td>
         </tr>})}
       </Tbl>
     </Panel>

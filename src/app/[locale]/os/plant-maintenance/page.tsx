@@ -14,8 +14,8 @@ export default function P(){
   <Grid cols={2}>
     <Panel title="NEW WORK ORDER">
       <Form><Inp l="WO No *" v={form.woNo} on={v=>setForm({...form,woNo:v})}/><Sel l="Type" v={form.type} on={v=>setForm({...form,type:v})} opts={['Preventive','Corrective','Predictive','Emergency']}/></Form>
-      <label><div style={{fontSize:10,color:'#6B1F2B',fontWeight:600}}>Asset * ({assets.length} available)</div>
-        <select value={form.assetId} onChange={e=>setForm({...form,assetId:e.target.value})} style={{width:'100%',padding:6,border:'1px solid #6B1F2B55',fontSize:12}}>
+      <label><div style={{fontSize:10,color:'var(--harvics-burgundy)',fontWeight:600}}>Asset * ({assets.length} available)</div>
+        <select value={form.assetId} onChange={e=>setForm({...form,assetId:e.target.value})} style={{width:'100%',padding:6,border:'1px solid #3D121255',fontSize:12}}>
           <option value="">-- pick asset --</option>
           {assets.map(a=><option key={a.id} value={a.id}>{a.assetCode} — {a.name}</option>)}
         </select>
@@ -27,12 +27,12 @@ export default function P(){
     </Panel>
     <Panel title={`WORK ORDERS (${rows.length})`} full>
       <Tbl head={['WO','ASSET','TYPE','PRI','DESC','ASSIGNED','STATUS','COST','ACT']}>
-        {rows.map(r=>{const d=done[r.id]||{laborHours:0,partsCost:0};const a=assets.find(x=>x.id===r.assetId);return <tr key={r.id} style={{borderBottom:'1px solid #6B1F2B11'}}>
+        {rows.map(r=>{const d=done[r.id]||{laborHours:0,partsCost:0};const a=assets.find(x=>x.id===r.assetId);return <tr key={r.id} style={{borderBottom:'1px solid #3D121211'}}>
           <td style={td}><b>{r.woNo}</b></td><td style={{...td,fontSize:11}}>{a?.assetCode||r.assetId.slice(-6)}</td><td style={td}><Pill s={r.type}/></td><td style={td}><Pill s={r.priority}/></td>
           <td style={{...td,fontSize:11}}>{r.description}</td><td style={td}>{r.assignedTo||'—'}</td>
           <td style={td}><Pill s={r.status}/></td>
           <td style={td}>{r.totalCost?`$${r.totalCost}`:'—'}</td>
-          <td style={td}>{r.status!=='Completed'&&<><input type="number" placeholder="hrs" defaultValue={r.laborHours} onChange={e=>setDone({...done,[r.id]:{...d,laborHours:+e.target.value}})} style={{width:40,padding:3,border:'1px solid #6B1F2B55',fontSize:11}}/> <input type="number" placeholder="$parts" defaultValue={r.partsCost} onChange={e=>setDone({...done,[r.id]:{...d,partsCost:+e.target.value}})} style={{width:60,padding:3,border:'1px solid #6B1F2B55',fontSize:11}}/> <button onClick={()=>complete(r.id)} style={btnA}>DONE</button></>}</td>
+          <td style={td}>{r.status!=='Completed'&&<><input type="number" placeholder="hrs" defaultValue={r.laborHours} onChange={e=>setDone({...done,[r.id]:{...d,laborHours:+e.target.value}})} style={{width:40,padding:3,border:'1px solid #3D121255',fontSize:11}}/> <input type="number" placeholder="$parts" defaultValue={r.partsCost} onChange={e=>setDone({...done,[r.id]:{...d,partsCost:+e.target.value}})} style={{width:60,padding:3,border:'1px solid #3D121255',fontSize:11}}/> <button onClick={()=>complete(r.id)} style={btnA}>DONE</button></>}</td>
         </tr>})}
       </Tbl>
     </Panel>

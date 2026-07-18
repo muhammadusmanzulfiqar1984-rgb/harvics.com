@@ -55,22 +55,22 @@ export default async function LocationsPage({ params }: LocationsPageProps) {
   ]
 
   const typeColors: Record<string, string> = {
-    'Global HQ': 'bg-[#6B1F2B] text-white',
-    'European HQ': 'bg-[#6B1F2B] text-white',
-    'Regional Office': 'bg-[#C3A35E]/15 text-[#6B1F2B]',
-    'Operations Hub': 'bg-[#C3A35E]/15 text-[#6B1F2B]',
-    'Distribution Center': 'bg-[#C3A35E]/15 text-[#6B1F2B]',
-    'Sales Office': 'bg-white text-[#6B1F2B]',
-    'Sourcing Office': 'bg-white text-[#6B1F2B]',
-    'Sourcing Hub': 'bg-white text-[#6B1F2B]',
-    'West Africa Hub': 'bg-[#C3A35E]/15 text-[#6B1F2B]',
-    'East Africa Hub': 'bg-[#C3A35E]/15 text-[#6B1F2B]',
+    'Global HQ': 'bg-harvics-burgundy text-white',
+    'European HQ': 'bg-harvics-burgundy text-white',
+    'Regional Office': 'bg-harvics-gold/15 text-harvics-burgundy',
+    'Operations Hub': 'bg-harvics-gold/15 text-harvics-burgundy',
+    'Distribution Center': 'bg-harvics-gold/15 text-harvics-burgundy',
+    'Sales Office': 'bg-white text-harvics-burgundy',
+    'Sourcing Office': 'bg-white text-harvics-burgundy',
+    'Sourcing Hub': 'bg-white text-harvics-burgundy',
+    'West Africa Hub': 'bg-harvics-gold/15 text-harvics-burgundy',
+    'East Africa Hub': 'bg-harvics-gold/15 text-harvics-burgundy',
   }
 
   return (
     <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
       {/* Hero */}
-      <section className="relative bg-[#6B1F2B] py-20 px-4 border-b border-[#C3A35E]/40 overflow-hidden">
+      <section className="relative bg-harvics-burgundy py-20 px-4 border-b border-harvics-gold/40 overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=1200&h=600&fit=crop&q=75"
@@ -80,7 +80,7 @@ export default async function LocationsPage({ params }: LocationsPageProps) {
         />
         <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.85) 0%, rgba(107,31,43,0.5) 45%, rgba(107,31,43,0.25) 100%)' }} />
         <div className="max-w-[1200px] mx-auto text-center relative z-10">
-          <div className="text-xs text-[#C3A35E] font-bold uppercase tracking-[0.2em] mb-3">Worldwide</div>
+          <div className="text-xs text-harvics-gold font-bold uppercase tracking-[0.2em] mb-3">Worldwide</div>
           <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4" style={{ letterSpacing: '-0.02em' }}>
             Global Locations
           </h1>
@@ -91,7 +91,7 @@ export default async function LocationsPage({ params }: LocationsPageProps) {
       </section>
 
       {/* Stats */}
-      <section className="bg-[#5a1a24] border-b border-[#C3A35E]/20">
+      <section className="bg-[#5a1a24] border-b border-harvics-gold/20">
         <div className="max-w-[1200px] mx-auto px-4 py-6">
           <AnimatedStats
             stats={[
@@ -110,31 +110,31 @@ export default async function LocationsPage({ params }: LocationsPageProps) {
         {locations.map((region) => (
           <div key={region.region} className="mb-12">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-1 h-8 bg-[#C3A35E]" />
-              <h2 className="text-xl font-semibold text-[#6B1F2B]">{region.region}</h2>
+              <div className="w-1 h-8 bg-harvics-gold" />
+              <h2 className="text-xl font-semibold text-harvics-burgundy">{region.region}</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {region.offices.map((office) => (
                 <div
                   key={office.city}
-                  className="bg-white border border-[#C3A35E]/20 p-6 hover:border-[#C3A35E] transition-colors"
+                  className="bg-white border border-harvics-gold/20 p-6 hover:border-harvics-gold transition-colors"
                   style={{ borderRadius: 0, boxShadow: 'none' }}
                 >
                   <div className="flex items-start justify-between mb-3">
-                    <h3 className="text-base font-semibold text-[#6B1F2B]">{office.city}, {office.country}</h3>
-                    <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-1 ${typeColors[office.type] || 'bg-white text-[#6B1F2B]'}`} style={{ borderRadius: 0 }}>
+                    <h3 className="text-base font-semibold text-harvics-burgundy">{office.city}, {office.country}</h3>
+                    <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-1 ${typeColors[office.type] || 'bg-white text-harvics-burgundy'}`} style={{ borderRadius: 0 }}>
                       {office.type}
                     </span>
                   </div>
-                  <p className="text-sm text-[#6B1F2B]/55 mb-4 leading-relaxed">{office.address}</p>
-                  <div className="border-t border-[#C3A35E]/10 pt-3 space-y-1">
+                  <p className="text-sm text-harvics-burgundy/55 mb-4 leading-relaxed">{office.address}</p>
+                  <div className="border-t border-harvics-gold/10 pt-3 space-y-1">
                     <div className="text-sm">
-                      <span className="text-[#6B1F2B]/40">Tel:</span>{' '}
-                      <a href={`tel:${office.phone}`} className="text-[#6B1F2B] hover:text-[#C3A35E] transition-colors">{office.phone}</a>
+                      <span className="text-harvics-burgundy/40">Tel:</span>{' '}
+                      <a href={`tel:${office.phone}`} className="text-harvics-burgundy hover:text-harvics-gold transition-colors">{office.phone}</a>
                     </div>
                     <div className="text-sm">
-                      <span className="text-[#6B1F2B]/40">Email:</span>{' '}
-                      <a href={`mailto:${office.email}`} className="text-[#C3A35E] hover:underline">{office.email}</a>
+                      <span className="text-harvics-burgundy/40">Email:</span>{' '}
+                      <a href={`mailto:${office.email}`} className="text-harvics-gold hover:underline">{office.email}</a>
                     </div>
                   </div>
                 </div>
@@ -145,7 +145,7 @@ export default async function LocationsPage({ params }: LocationsPageProps) {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#6B1F2B] border-t border-[#C3A35E]/30">
+      <section className="bg-harvics-burgundy border-t border-harvics-gold/30">
         <div className="max-w-[1200px] mx-auto px-4 py-14 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-xl font-semibold text-white mb-2">Visit Us or Get in Touch</h3>
@@ -153,7 +153,7 @@ export default async function LocationsPage({ params }: LocationsPageProps) {
           </div>
           <Link
             href={`/${locale}/contact`}
-            className="px-8 py-3 bg-[#C3A35E] text-[#6B1F2B] text-sm font-bold hover:bg-[#d4b46e] transition-colors"
+            className="px-8 py-3 bg-harvics-gold text-harvics-burgundy text-sm font-bold hover:bg-[#d4b46e] transition-colors"
             style={{ borderRadius: 0 }}
           >
             Contact Us

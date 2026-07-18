@@ -921,7 +921,7 @@ export default function EnterpriseCRM({ persona, locale: localeProp }: Enterpris
               <span className="font-bold text-slate-900">{selectedCountryLabel}</span>
             </div>
             {countryLoading && (
-              <div className="animate-spin rounded-full h-4 w-4 border-2 border-[#C3A35E] border-t-[#6B1F2B]"></div>
+              <div className="animate-spin rounded-full h-4 w-4 border-2 border-harvics-gold border-t-[#3D1212]"></div>
             )}
           </div>
         </div>
@@ -997,7 +997,7 @@ export default function EnterpriseCRM({ persona, locale: localeProp }: Enterpris
           <div className="text-center py-16">
             <div className="relative mx-auto w-16 h-16">
               <div className="absolute inset-0 border-4 border-black/5 rounded-full"></div>
-              <div className="absolute inset-0 border-4 border-[#6B1F2B] border-t-transparent rounded-full animate-spin"></div>
+              <div className="absolute inset-0 border-4 border-harvics-burgundy border-t-transparent rounded-full animate-spin"></div>
             </div>
             <p 
               className="mt-6 text-slate-900 font-medium"
@@ -1292,14 +1292,14 @@ function OverviewTab({ data, persona, selectedCountry, countryData, aiStrategy, 
             
           >
             {/* Shimmer Effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#C3A35E]/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-harvics-gold/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
             
             <div className="relative z-10">
               <div className="flex items-center justify-between mb-3">
                 <div className="w-12 h-12 rounded-xl bg-slate-900/5 flex items-center justify-center border border-black/5 group-hover:scale-110 transition-transform duration-300 text-slate-900">
               <span className="text-2xl">{kpi.icon}</span>
             </div>
-                <span className="text-xs font-bold text-slate-900 bg-[#C3A35E]/10 px-2.5 py-1 rounded-full border border-black/5">KPI</span>
+                <span className="text-xs font-bold text-slate-900 bg-harvics-gold/10 px-2.5 py-1 rounded-full border border-black/5">KPI</span>
               </div>
               <div 
                 className="text-3xl font-bold text-slate-900 mb-2 tracking-tight"
@@ -1343,7 +1343,7 @@ function OverviewTab({ data, persona, selectedCountry, countryData, aiStrategy, 
               <a
                 key={tab}
                 href={`/${locale}/os/${domainPath}`}
-                className="flex items-center gap-2 text-xs font-medium text-slate-900 bg-white px-3 py-2 rounded border border-black/5 hover:bg-[#C3A35E]/10 hover:border-[#C3A35E]/40 transition-colors shadow-sm"
+                className="flex items-center gap-2 text-xs font-medium text-slate-900 bg-white px-3 py-2 rounded border border-black/5 hover:bg-harvics-gold/10 hover:border-harvics-gold/40 transition-colors shadow-sm"
               >
                 <span>{tabIcons[tab]}</span>
                 <span className="capitalize">{t(`tabs.${tab}`)}</span>
@@ -1448,7 +1448,7 @@ function OverviewTab({ data, persona, selectedCountry, countryData, aiStrategy, 
               <div className="text-2xl font-bold text-white capitalize">{(aiStrategy as any).coverageGaps || 'n/a'}</div>
             </div>
           </div>
-          <p className="mt-4 text-sm text-white/90 italic border-l-2 border-[#C3A35E] pl-3">{(aiStrategy as any).priceNarrative}</p>
+          <p className="mt-4 text-sm text-white/90 italic border-l-2 border-harvics-gold pl-3">{(aiStrategy as any).priceNarrative}</p>
         </div>
       )}
 
@@ -1458,7 +1458,7 @@ function OverviewTab({ data, persona, selectedCountry, countryData, aiStrategy, 
           <h4 className="text-lg font-bold text-slate-900 mb-4 font-serif">🎯 AI Recommended SKUs</h4>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {((aiStrategy as any)?.recommendedSKUs || []).map((sku: any, idx: number) => (
-              <div key={`${sku.name}-${idx}`} className="border border-black/5 rounded-lg p-4 hover:border-[#C3A35E]/50 transition-colors">
+              <div key={`${sku.name}-${idx}`} className="border border-black/5 rounded-lg p-4 hover:border-harvics-gold/50 transition-colors">
                 <div className="flex items-center justify-between mb-2">
                   <h5 className="font-bold text-slate-900">{sku.name}</h5>
                   <span
@@ -1467,7 +1467,7 @@ function OverviewTab({ data, persona, selectedCountry, countryData, aiStrategy, 
                         ? 'bg-slate-900/10 text-slate-900 border border-black/5'
                         : sku.priority === 'monitor'
                         ? 'bg-gray-100 text-gray-700 border border-gray-200'
-                        : 'bg-[#C3A35E]/10 text-slate-900 border border-black/5'
+                        : 'bg-harvics-gold/10 text-slate-900 border border-black/5'
                     }`}
                   >
                     {sku.priority || 'stable'}
@@ -1722,7 +1722,7 @@ function OrdersTab({ data, selectedCountry, countryData }: OrdersTabProps) {
           <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase tracking-wide">{t('orders.totalOrders')}</div>
           <div className="text-2xl font-bold text-slate-900">{totalOrders}</div>
         </div>
-        <div className="bg-slate-900 border border-[#6B1F2B] rounded-lg p-4 shadow-sm text-white">
+        <div className="bg-slate-900 border border-harvics-burgundy rounded-lg p-4 shadow-sm text-white">
           <div className="text-sm text-white/80 mb-1 font-medium uppercase tracking-wide">{t('orders.pending')}</div>
           <div className="text-2xl font-bold text-white">{pending}</div>
         </div>
@@ -1744,7 +1744,7 @@ function OrdersTab({ data, selectedCountry, countryData }: OrdersTabProps) {
           <div className="bg-white rounded-lg p-4 border border-black/5 shadow-sm hover:shadow-md transition-all">
             <div className="flex items-center justify-between mb-2">
               <span className="text-sm font-bold text-slate-900">Pending Approvals</span>
-              <span className="text-xs bg-[#C3A35E]/20 text-slate-900 px-2 py-1 rounded-full font-bold">3</span>
+              <span className="text-xs bg-harvics-gold/20 text-slate-900 px-2 py-1 rounded-full font-bold">3</span>
             </div>
             <div className="text-xs text-slate-900/70">Orders awaiting approval</div>
             <button className="mt-2 text-xs text-blue-600 hover:text-slate-900 font-bold uppercase tracking-wider">View All →</button>
@@ -1811,7 +1811,7 @@ function OrdersTab({ data, selectedCountry, countryData }: OrdersTabProps) {
                   <td className="px-4 py-3 text-sm">
                     <span className={`px-2 py-1 rounded text-xs font-bold uppercase tracking-wide ${
                       (order.status || '').toLowerCase() === 'completed' ? 'bg-green-100 text-green-800' :
-                      (order.status || '').toLowerCase() === 'pending' ? 'bg-[#C3A35E]/20 text-slate-900' :
+                      (order.status || '').toLowerCase() === 'pending' ? 'bg-harvics-gold/20 text-slate-900' :
                       'bg-blue-100 text-blue-800'
                     }`}>
                       {order.status || 'pending'}
@@ -1876,7 +1876,7 @@ function InventoryTab({ data, selectedCountry, countryData, retailerIntel, white
             onClick={() => setSubTab(tab)}
             className={`px-4 py-2.5 transition-all rounded-t-lg font-medium text-sm ${
               subTab === tab
-                ? 'border-b-2 border-[#6B1F2B] text-slate-900 bg-white shadow-sm'
+                ? 'border-b-2 border-harvics-burgundy text-slate-900 bg-white shadow-sm'
                 : 'text-slate-900/70 hover:text-slate-900 hover:bg-white/50 border-b border-transparent'
             }`}
             
@@ -1936,7 +1936,7 @@ function InventoryTab({ data, selectedCountry, countryData, retailerIntel, white
               <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase tracking-wide">{t('inventory.totalItems')}</div>
               <div className="text-2xl font-bold text-slate-900">{totalItems}</div>
             </div>
-            <div className="bg-slate-900 border border-[#6B1F2B] rounded-lg p-4 shadow-sm">
+            <div className="bg-slate-900 border border-harvics-burgundy rounded-lg p-4 shadow-sm">
               <div className="text-sm text-white/80 mb-1 font-medium uppercase tracking-wide">{t('inventory.lowStock')}</div>
               <div className="text-2xl font-bold text-white">{lowStock}</div>
             </div>
@@ -2023,7 +2023,7 @@ function InventoryTab({ data, selectedCountry, countryData, retailerIntel, white
                 {warehouses}
               </div>
             </div>
-            <div className="bg-slate-900 rounded-lg p-4 border border-[#6B1F2B]">
+            <div className="bg-slate-900 rounded-lg p-4 border border-harvics-burgundy">
               <div className="text-sm text-white/80 mb-1 font-medium uppercase">Total Capacity</div>
               <div className="text-xl font-bold text-white">
                 {coldChainCapacity}
@@ -2126,7 +2126,7 @@ function InventoryTab({ data, selectedCountry, countryData, retailerIntel, white
                 { action: 'Move BATCH-2024-002 to front of warehouse', reason: 'Expires in 8 days', priority: 'High' },
                 { action: 'Schedule discount promotion for BATCH-2024-003', reason: 'Expires in 16 days', priority: 'Medium' },
               ].map((rec, idx) => (
-                <div key={idx} className="flex items-start justify-between p-3 bg-[#F8F9FA] rounded-lg border border-black/5 hover:border-[#C3A35E] transition-colors">
+                <div key={idx} className="flex items-start justify-between p-3 bg-[#F8F9FA] rounded-lg border border-black/5 hover:border-harvics-gold transition-colors">
                   <div>
                     <div className="font-bold text-slate-900">{rec.action}</div>
                     <div className="text-sm text-slate-900/70 mt-1">{rec.reason}</div>
@@ -2220,7 +2220,7 @@ function InventoryTab({ data, selectedCountry, countryData, retailerIntel, white
                 { batch: 'BATCH-2024-001', chain: 'Supplier → Manufacturing → Warehouse → Distribution → Retailer', status: 'Complete' },
                 { batch: 'BATCH-2024-002', chain: 'Supplier → Manufacturing → Warehouse → Distribution', status: 'In Transit' },
               ].map((item, idx) => (
-                <div key={idx} className="p-4 bg-[#F8F9FA] rounded-lg border border-black/5 hover:border-[#C3A35E] transition-colors">
+                <div key={idx} className="p-4 bg-[#F8F9FA] rounded-lg border border-black/5 hover:border-harvics-gold transition-colors">
                   <div className="flex items-center justify-between mb-2">
                     <span className="font-bold text-slate-900">{item.batch}</span>
                     <span className={`px-2 py-1 rounded text-xs font-bold ${
@@ -2280,7 +2280,7 @@ function LogisticsTab({ data, selectedCountry, countryData, gpsIntel, gpsHeatmap
             <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">Deliveries / Month</div>
             <div className="text-2xl font-bold text-slate-900">{logisticsSummary.totalDeliveries ?? '—'}</div>
           </div>
-          <div className="bg-slate-900 rounded-lg p-4 border border-[#6B1F2B] shadow-sm">
+          <div className="bg-slate-900 rounded-lg p-4 border border-harvics-burgundy shadow-sm">
             <div className="text-sm text-white/80 mb-1 font-medium uppercase">On-time Rate</div>
             <div className="text-2xl font-bold text-white">{logisticsSummary.onTimeRate ?? '—'}%</div>
           </div>
@@ -2305,7 +2305,7 @@ function LogisticsTab({ data, selectedCountry, countryData, gpsIntel, gpsHeatmap
               {currencySymbol}{(avgSales / 1000).toFixed(1)}K
             </div>
           </div>
-          <div className="bg-slate-900 rounded-lg p-4 border border-[#6B1F2B]">
+          <div className="bg-slate-900 rounded-lg p-4 border border-harvics-burgundy">
             <div className="text-sm text-white/80 mb-1 font-medium uppercase">Heatmap Points</div>
             <div className="text-2xl font-bold text-white">{heatmap?.totalPoints || totalRetailers}</div>
           </div>
@@ -2406,7 +2406,7 @@ function LogisticsTab({ data, selectedCountry, countryData, gpsIntel, gpsHeatmap
               <h5 className="text-sm font-bold text-slate-900 mb-2 font-serif">Priority Zones</h5>
               <div className="flex flex-wrap gap-2 text-xs text-slate-900">
                 {satelliteIntel.priorityZones?.map((zone: string) => (
-                  <span key={zone} className="px-3 py-1 bg-[#C3A35E]/10 border border-black/5 rounded-full font-medium">{zone}</span>
+                  <span key={zone} className="px-3 py-1 bg-harvics-gold/10 border border-black/5 rounded-full font-medium">{zone}</span>
                 ))}
               </div>
             </div>
@@ -2417,7 +2417,7 @@ function LogisticsTab({ data, selectedCountry, countryData, gpsIntel, gpsHeatmap
               <div key={tile.tileId} className="border border-black/5 rounded-lg p-4 bg-[#F8F9FA]">
                 <div className="flex items-center justify-between mb-2">
                   <span className="font-bold text-slate-900">{tile.territory}</span>
-                  <span className="text-xs text-slate-900 bg-[#C3A35E]/20 px-2 py-0.5 rounded">White space</span>
+                  <span className="text-xs text-slate-900 bg-harvics-gold/20 px-2 py-0.5 rounded">White space</span>
                 </div>
                 <p className="text-xs text-slate-900">Lat/Lng: {tile.centerLat}, {tile.centerLng}</p>
                 <p className="text-xs text-slate-900">Coverage Score: {tile.coverageScore}</p>
@@ -2439,7 +2439,7 @@ function LogisticsTab({ data, selectedCountry, countryData, gpsIntel, gpsHeatmap
           <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">{t('logistics.deliveries')}</div>
           <div className="text-2xl font-bold text-slate-900">{data?.totalDeliveries || 0}</div>
         </div>
-        <div className="bg-slate-900 border border-[#6B1F2B] rounded-lg p-4 shadow-sm">
+        <div className="bg-slate-900 border border-harvics-burgundy rounded-lg p-4 shadow-sm">
           <div className="text-sm text-white/80 mb-1 font-medium uppercase">{t('logistics.onTime')}</div>
           <div className="text-2xl font-bold text-white">{data?.onTimeRate || 0}%</div>
         </div>
@@ -2451,7 +2451,7 @@ function LogisticsTab({ data, selectedCountry, countryData, gpsIntel, gpsHeatmap
           <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase">Tracked Retailers</div>
           <div className="text-2xl font-bold text-slate-900">{totalRetailers}</div>
         </div>
-        <div className="bg-slate-900 border border-[#6B1F2B] rounded-lg p-4 shadow-sm">
+        <div className="bg-slate-900 border border-harvics-burgundy rounded-lg p-4 shadow-sm">
           <div className="text-sm text-white/80 mb-1 font-medium uppercase">Coverage Rate</div>
           <div className="text-2xl font-bold text-white">{coverageRate}%</div>
         </div>
@@ -2564,7 +2564,7 @@ function FinanceTab({ data, selectedCountry, countryData, countryProfile, aiStra
             onClick={() => setSubTab(tab)}
             className={`px-4 py-2.5 transition-all whitespace-nowrap flex-shrink-0 rounded-t-lg font-medium text-sm ${
               subTab === tab
-                ? 'border-b-2 border-[#6B1F2B] text-slate-900 bg-white shadow-sm'
+                ? 'border-b-2 border-harvics-burgundy text-slate-900 bg-white shadow-sm'
                 : 'text-slate-900/70 hover:text-slate-900 hover:bg-white/50 border-b border-transparent'
             }`}
             
@@ -2590,7 +2590,7 @@ function FinanceTab({ data, selectedCountry, countryData, countryProfile, aiStra
                 {currency.symbol}{((data?.expenses || 0) / 1000).toFixed(1)}K
               </div>
             </div>
-            <div className="bg-slate-900 border border-[#6B1F2B] rounded-lg p-4 shadow-sm text-white">
+            <div className="bg-slate-900 border border-harvics-burgundy rounded-lg p-4 shadow-sm text-white">
               <div className="text-sm text-white/80 mb-1 font-medium uppercase tracking-wide">{t('finance.profit')}</div>
               <div className="text-2xl font-bold text-white">
                 {currency.symbol}{((data?.profit || 0) / 1000).toFixed(1)}K
@@ -2795,7 +2795,7 @@ function FinanceTab({ data, selectedCountry, countryData, countryProfile, aiStra
             <div className="bg-white rounded-lg p-4 border border-black/5 shadow-sm hover:shadow-md transition-all">
               <div className="flex items-center justify-between mb-2">
                 <span className="text-sm font-bold text-slate-900">Settlement Delays</span>
-                <span className="text-xs bg-[#C3A35E]/20 text-slate-900 px-2 py-1 rounded-full font-bold">2</span>
+                <span className="text-xs bg-harvics-gold/20 text-slate-900 px-2 py-1 rounded-full font-bold">2</span>
               </div>
               <div className="text-xs text-slate-900/70">Overdue settlements</div>
               <button className="mt-2 text-xs text-blue-600 hover:text-slate-900 font-bold uppercase tracking-wider">Follow Up →</button>
@@ -4232,7 +4232,7 @@ function LegalIPRTab({ selectedCountry, countryData, data: apiData }: any) {
               onClick={() => setActiveSubTab(tab.id as any)}
               className={`px-4 py-2.5 text-sm whitespace-nowrap border-b-2 transition-all rounded-t-lg font-medium ${
                 activeSubTab === tab.id
-                  ? 'border-[#6B1F2B] text-slate-900 bg-white shadow-sm'
+                  ? 'border-harvics-burgundy text-slate-900 bg-white shadow-sm'
                   : 'border-transparent text-gray-600 hover:text-slate-900 hover:bg-white/50'
               }`}
               

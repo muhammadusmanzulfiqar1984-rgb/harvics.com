@@ -91,7 +91,7 @@ export default function SupplyChainOSPage() {
     >
       {loading ? (
         <div className="flex items-center justify-center py-12">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#C3A35E]"></div>
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-harvics-gold"></div>
         </div>
       ) : (
         <div className="space-y-6">
@@ -104,7 +104,7 @@ export default function SupplyChainOSPage() {
           </div>
 
           {/* Interactive Network Visualization */}
-          <div className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border border-[#C3A35E]/30 rounded-lg p-6 overflow-hidden">
+          <div className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border border-harvics-gold/30 rounded-lg p-6 overflow-hidden">
             <div className="flex items-center justify-between mb-4">
               <div>
                 <h4 className="text-lg font-semibold text-white">Live Network Map</h4>
@@ -133,7 +133,7 @@ export default function SupplyChainOSPage() {
               className="absolute inset-0 opacity-20 pointer-events-none"
               style={{
                 backgroundImage:
-                  'linear-gradient(rgba(195,163,94,0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(195,163,94,0.15) 1px, transparent 1px)',
+                  'linear-gradient(rgba(195, 163, 94,0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(195, 163, 94,0.15) 1px, transparent 1px)',
                 backgroundSize: '32px 32px',
               }}
             />
@@ -189,7 +189,7 @@ export default function SupplyChainOSPage() {
               .sc-orb-3 { bottom: -100px; right: -60px; background: radial-gradient(circle, #10b981 0%, transparent 70%); animation-delay: -9s; }
               .sc-scan {
                 position: absolute; left: 0; right: 0; height: 120px;
-                background: linear-gradient(180deg, transparent 0%, rgba(195,163,94,0.18) 50%, transparent 100%);
+                background: linear-gradient(180deg, transparent 0%, rgba(195, 163, 94,0.18) 50%, transparent 100%);
                 animation: sc-scan-move 6s linear infinite;
                 mix-blend-mode: screen;
               }
@@ -202,7 +202,7 @@ export default function SupplyChainOSPage() {
                 width: 3px; height: 3px;
                 border-radius: 50%;
                 background: #C3A35E;
-                box-shadow: 0 0 8px #C3A35E, 0 0 16px rgba(195,163,94,0.6);
+                box-shadow: 0 0 8px #C3A35E, 0 0 16px rgba(195, 163, 94,0.6);
                 animation: sc-particle-rise linear infinite;
                 opacity: 0;
               }
@@ -211,7 +211,7 @@ export default function SupplyChainOSPage() {
             <svg
               viewBox="0 0 880 460"
               className="w-full h-[460px] relative z-10"
-              style={{ filter: 'drop-shadow(0 0 12px rgba(195,163,94,0.05))' }}
+              style={{ filter: 'drop-shadow(0 0 12px rgba(195, 163, 94,0.05))' }}
             >
               <defs>
                 <linearGradient id="sc-edge" x1="0" y1="0" x2="1" y2="0">
@@ -220,7 +220,7 @@ export default function SupplyChainOSPage() {
                   <stop offset="100%" stopColor="#10b981" stopOpacity="0.6" />
                 </linearGradient>
                 <linearGradient id="sc-edge-active" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0%" stopColor="#C3A35E" stopOpacity="1" />
+                  <stop offset="0%" stopColor="var(--harvics-gold)" stopOpacity="1" />
                   <stop offset="100%" stopColor="#fef08a" stopOpacity="1" />
                 </linearGradient>
                 <filter id="sc-glow">
@@ -321,9 +321,9 @@ export default function SupplyChainOSPage() {
               if (!n) return null
               const links = edges.filter((e: any) => e.from === selectedNode || e.to === selectedNode)
               return (
-                <div className="absolute bottom-4 left-4 right-4 bg-slate-950/90 backdrop-blur border border-[#C3A35E]/40 rounded-md px-4 py-3 flex items-center justify-between z-20">
+                <div className="absolute bottom-4 left-4 right-4 bg-slate-950/90 backdrop-blur border border-harvics-gold/40 rounded-md px-4 py-3 flex items-center justify-between z-20">
                   <div>
-                    <p className="text-[10px] uppercase tracking-widest text-[#C3A35E]">{n.type}</p>
+                    <p className="text-[10px] uppercase tracking-widest text-harvics-gold">{n.type}</p>
                     <p className="text-white font-semibold">{n.name}</p>
                     <p className="text-xs text-slate-400">{links.length} active flow{links.length === 1 ? '' : 's'}</p>
                   </div>

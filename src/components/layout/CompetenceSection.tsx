@@ -38,16 +38,16 @@ const CompetenceSection: React.FC = () => {
             className={`max-w-[600px] bg-white/95 p-12 ${revealClass(isVisible, 'up')}`}
             style={{ borderRadius: 0, backdropFilter: 'blur(8px)' }}
           >
-            <div className="text-xs font-bold text-[#C3A35E] uppercase tracking-[0.2em] mb-4">
+            <div className="text-xs font-bold text-harvics-gold uppercase tracking-[0.2em] mb-4">
               OUR COMPETENCE
             </div>
             <h2
-              className="text-3xl md:text-4xl font-bold text-[#6B1F2B] mb-5 leading-[1.1]"
+              className="text-3xl md:text-4xl font-bold text-harvics-burgundy mb-5 leading-[1.1]"
               style={{ letterSpacing: '-0.03em' }}
             >
               End-to-end coverage, without chaos.
             </h2>
-            <p className="text-base text-[#6B1F2B]/70 leading-relaxed">
+            <p className="text-base text-harvics-burgundy/70 leading-relaxed">
               We translate your category goals into factories, materials, compliance,
               inspection, freight and delivery — with consistent controls at every step.
             </p>

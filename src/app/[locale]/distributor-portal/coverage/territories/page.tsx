@@ -19,7 +19,7 @@ export default function MyTerritories() {
     <div className="space-y-6">
       <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-[#C3A35E]">My Territories</h1>
+        <h1 className="text-2xl font-bold text-harvics-gold">My Territories</h1>
         <Link
           href={`/${locale}/distributor-portal/coverage/request`}
           className="bg-white text-white px-6 py-2 font-semibold hover:opacity-90 transition-opacity"
@@ -33,28 +33,28 @@ export default function MyTerritories() {
           <table className="w-full">
             <thead className="bg-white">
               <tr>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Country</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Region</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">City</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Territory ID</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Routes/Outlets</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Status</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Country</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Region</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">City</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Territory ID</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Routes/Outlets</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Status</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
               {territories.map((territory, index) => (
                 <tr key={index} className="hover:bg-white">
-                  <td className="px-6 py-4 font-semibold text-[#C3A35E]/90">{territory.country}</td>
-                  <td className="px-6 py-4 text-sm text-[#C3A35E]/90">{territory.region}</td>
-                  <td className="px-6 py-4 text-sm text-[#C3A35E]/90">{territory.city}</td>
-                  <td className="px-6 py-4 text-sm font-mono text-[#C3A35E]/90">{territory.territoryId}</td>
-                  <td className="px-6 py-4 text-sm text-[#C3A35E]/90">
+                  <td className="px-6 py-4 font-semibold text-harvics-gold/90">{territory.country}</td>
+                  <td className="px-6 py-4 text-sm text-harvics-gold/90">{territory.region}</td>
+                  <td className="px-6 py-4 text-sm text-harvics-gold/90">{territory.city}</td>
+                  <td className="px-6 py-4 text-sm font-mono text-harvics-gold/90">{territory.territoryId}</td>
+                  <td className="px-6 py-4 text-sm text-harvics-gold/90">
                     <div>{territory.routes} routes</div>
-                    <div className="text-xs text-[#C3A35E]/90">{territory.outlets} outlets</div>
+                    <div className="text-xs text-harvics-gold/90">{territory.outlets} outlets</div>
                   </td>
                   <td className="px-6 py-4">
                     <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                      territory.status === 'Active' ? 'bg-green-100 text-green-800' : 'bg-white text-[#C3A35E]/90'
+                      territory.status === 'Active' ? 'bg-green-100 text-green-800' : 'bg-white text-harvics-gold/90'
                     }`}>
                       {territory.status}
                     </span>

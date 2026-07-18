@@ -31,7 +31,7 @@ export default async function AdminPortalPage({
   // Direct access - no authentication required
   // This is for development/admin access to view and make changes
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#6B1F2B' }}>
+    <div style={{ minHeight: '100vh', backgroundColor: 'var(--harvics-burgundy)' }}>
       <div style={{ backgroundColor: '#ffffff', padding: '12px 16px', borderBottom: '1px solid #e5e7eb' }}>
         <LocalizationBar compact showGeo={false} className="items-center gap-2" />
       </div>

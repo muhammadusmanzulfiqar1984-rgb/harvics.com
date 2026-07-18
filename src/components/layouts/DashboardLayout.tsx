@@ -26,8 +26,8 @@ export default function DashboardLayout({ children, portal, pageTitle }: Dashboa
         <OSDomainNavigation />
         <main className="flex-1 min-w-0 px-8 py-7">
           <div className="mb-6 pb-5" style={{
-            borderBottom: '1.5px solid rgba(195,163,94,0.4)',
-            background: 'linear-gradient(90deg, transparent, rgba(195,163,94,0.06), transparent)'
+            borderBottom: '1.5px solid rgba(195, 163, 94,0.4)',
+            background: 'linear-gradient(90deg, transparent, rgba(195, 163, 94,0.06), transparent)'
           }}>
             <h1 className="text-xl font-semibold tracking-tight" style={{ color: '#2C1810' }}>{pageTitle}</h1>
           </div>

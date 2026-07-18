@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HarvicTrade — All Generated Images (Filling the Hub)</title>
+<style>
+body { background:#111; color:#fff; font-family: system-ui, sans-serif; margin:0; padding:20px; }
+h1 { color:#C3A35E; }
+.grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap:16px; }
+.card { background:#1a1a1a; border-radius:8px; overflow:hidden; border:1px solid #333; }
+.card img { width:100%; height:180px; object-fit:cover; display:block; }
+.card .label { padding:8px 10px; font-size:12px; color:#aaa; word-break:break-word; }
+.count { position:fixed; top:20px; right:20px; background:#C3A35E; color:#111; padding:4px 12px; border-radius:20px; font-weight:bold; }
+</style>
+</head>
+<body>
+<h1>HarvicTrade Images — Filling the Trade Hub</h1>
+<div class="count" id="count"></div>
+<div class="grid" id="grid"></div>
+<script>
+const base = '/assets/harvictrade';
+const sections = {
+  'Category Heroes': `${base}/heroes`,
+  'Product Shots': `${base}/products`,
+  'Phone UI Mockups': `${base}/mobile`
+};
+
+async function load() {
+  const grid = document.getElementById('grid');
+  let total = 0;
+  for (const [title, folder] of Object.entries(sections)) {
+    const h = document.createElement('h2');
+    h.textContent = title;
+    h.style.gridColumn = '1 / -1';
+    h.style.color = '#C3A35E';
+    grid.appendChild(h);
+
+    try {
+      // We can't list dir in browser easily, so hardcode known files or fetch index if available.
+      // For now, we'll try common ones + let user see what loads.
+      const known = {
+        'Category Heroes': ['textiles-hero.jpg','fmcg-hero.jpg','commodities-hero.jpg','industrial-hero.jpg','minerals-hero.jpg','energy-hero.jpg','electronics-hero.jpg'],
+        'Product Shots': ['basmati-rice.jpg','olive-oil.jpg','safety-jacket.jpg','denim-fabric.jpg','copper-cathode.jpg','iphone.jpg','cement.jpg','chocolate.jpg','hard-hat.jpg','nitrile-gloves.jpg','cotton-tshirt.jpg','refined-sugar.jpg','diesel-tanker.jpg','galaxy-phone.jpg'],
+        'Phone UI Mockups': ['phone-marketplace-list.jpg','phone-rfq-form.jpg','phone-quotes.jpg','phone-dashboard.jpg','phone-product-detail.jpg']
+      };
+      const files = known[title] || [];
+      for (const f of files) {
+        const url = `${folder}/${f}`;
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `<img src="${url}" onerror="this.style.display='none';this.parentNode.style.display='none'"><div class="label">${f}</div>`;
+        grid.appendChild(card);
+        total++;
+      }
+    } catch(e){}
+  }
+  document.getElementById('count').textContent = total + ' images';
+}
+load();
+</script>
+</body>
+</html>

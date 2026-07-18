@@ -1,6 +1,17 @@
 // Header and Footer are provided by layout.tsx - DO NOT import them here
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import { getProductImage } from '@/data/harvictradeImages'
+
+const categoryHero: Record<string, string> = {
+  textiles: '/assets/harvictrade/heroes/textiles-hero.jpg',
+  fmcg: '/assets/harvictrade/heroes/fmcg-hero.jpg',
+  commodities: '/assets/harvictrade/heroes/commodities-hero.jpg',
+  industrial: '/assets/harvictrade/heroes/industrial-hero.jpg',
+  minerals: '/assets/harvictrade/heroes/minerals-hero.jpg',
+  energy: '/assets/harvictrade/heroes/energy-hero.jpg',
+  electronics: '/assets/harvictrade/heroes/electronics-hero.jpg',
+}
 
 const categoryData: Record<string, { name: string; icon: string; desc: string; subcategories: { name: string; count: number; products: { name: string; origin: string; moq: string; price: string; verified: boolean }[] }[] }> = {
   textiles: {
@@ -169,24 +180,31 @@ export default async function CategoryPage({ params }: { params: Promise<{ local
   return (
     <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
       {/* Hero */}
-      <section className="relative bg-[#6B1F2B] py-16 px-4 border-b border-[#C3A35E]/40 overflow-hidden">
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.95) 0%, rgba(90,26,36,0.9) 100%)' }} />
+      <section 
+        className="relative py-16 px-4 border-b border-harvics-gold/40 overflow-hidden"
+        style={{
+          backgroundImage: `url(${categoryHero[slug] || '/assets/shared/heroes/harvictrade-hero.jpg'})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="absolute inset-0 bg-harvics-burgundy/80" />
         <div className="max-w-[1200px] mx-auto relative z-10">
-          <div className="flex items-center gap-2 text-xs text-white/40 mb-4">
-            <Link href={`/${locale}/harvictrade`} className="hover:text-[#C3A35E] transition-colors">HarvicTrade</Link>
+          <div className="flex items-center gap-2 text-xs text-white/50 mb-4">
+            <Link href={`/${locale}/harvictrade`} className="hover:text-harvics-gold transition-colors">HarvicTrade</Link>
             <span>→</span>
-            <span className="text-[#C3A35E]">{cat.name}</span>
+            <span className="text-harvics-gold">{cat.name}</span>
           </div>
           <div className="flex items-center gap-4">
             <span className="text-5xl">{cat.icon}</span>
             <div>
               <h1 className="text-3xl md:text-4xl font-bold text-white mb-2" style={{ letterSpacing: '-0.02em' }}>{cat.name}</h1>
-              <p className="text-white/50 max-w-2xl">{cat.desc}</p>
+              <p className="text-white/60 max-w-2xl">{cat.desc}</p>
             </div>
           </div>
           <div className="mt-6 flex gap-6">
-            <div><span className="text-xl font-bold text-[#C3A35E]">{totalProducts.toLocaleString()}</span><span className="text-xs text-white/40 ml-2">Products</span></div>
-            <div><span className="text-xl font-bold text-[#C3A35E]">{cat.subcategories.length}</span><span className="text-xs text-white/40 ml-2">Subcategories</span></div>
+            <div><span className="text-xl font-bold text-harvics-gold">{totalProducts.toLocaleString()}</span><span className="text-xs text-white/50 ml-2">Products</span></div>
+            <div><span className="text-xl font-bold text-harvics-gold">{cat.subcategories.length}</span><span className="text-xs text-white/50 ml-2">Subcategories</span></div>
           </div>
         </div>
       </section>
@@ -198,27 +216,36 @@ export default async function CategoryPage({ params }: { params: Promise<{ local
             <div key={sub.name}>
               <div className="flex items-center justify-between mb-6">
                 <div>
-                  <h2 className="text-xl font-bold text-[#6B1F2B]">{sub.name}</h2>
-                  <span className="text-xs text-[#C3A35E] font-bold">{sub.count} products</span>
+                  <h2 className="text-xl font-bold text-harvics-burgundy">{sub.name}</h2>
+                  <span className="text-xs text-harvics-gold font-bold">{sub.count} products</span>
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 {sub.products.map((p) => (
-                  <div key={p.name} className="bg-white border border-[#C3A35E]/15 p-6 hover:border-[#C3A35E] transition-colors group cursor-pointer">
-                    <div className="flex items-center justify-between mb-3">
-                      {p.verified && <span className="text-[10px] font-bold text-green-600 bg-green-50 px-2 py-0.5">✓ Verified</span>}
+                  <div key={p.name} className="bg-white border border-harvics-gold/15 overflow-hidden hover:border-harvics-gold transition-colors group cursor-pointer">
+                    <div className="h-24 w-full overflow-hidden bg-[#f8f5f0]">
+                      <img 
+                        src={getProductImage(p.name, slug)} 
+                        className="w-full h-full object-cover group-hover:scale-[1.05] transition-transform" 
+                        alt={p.name} 
+                      />
                     </div>
-                    <h3 className="text-sm font-semibold text-[#6B1F2B] mb-3 leading-snug group-hover:text-[#C3A35E] transition-colors">{p.name}</h3>
-                    <div className="space-y-1.5 text-xs text-[#6B1F2B]/50">
-                      <div className="flex justify-between"><span>Origin</span><span className="font-semibold text-[#6B1F2B]">{p.origin}</span></div>
-                      <div className="flex justify-between"><span>MOQ</span><span className="font-semibold text-[#6B1F2B]">{p.moq}</span></div>
+                    <div className="p-6">
+                      <div className="flex items-center justify-between mb-3">
+                        {p.verified && <span className="text-[10px] font-bold text-green-600 bg-green-50 px-2 py-0.5">✓ Verified</span>}
+                      </div>
+                      <h3 className="text-sm font-semibold text-harvics-burgundy mb-3 leading-snug group-hover:text-harvics-gold transition-colors">{p.name}</h3>
+                      <div className="space-y-1.5 text-xs text-harvics-burgundy/50">
+                        <div className="flex justify-between"><span>Origin</span><span className="font-semibold text-harvics-burgundy">{p.origin}</span></div>
+                        <div className="flex justify-between"><span>MOQ</span><span className="font-semibold text-harvics-burgundy">{p.moq}</span></div>
+                      </div>
+                      <div className="mt-4 pt-3 border-t border-harvics-gold/10">
+                        <div className="text-base font-bold text-harvics-burgundy">{p.price}</div>
+                      </div>
+                      <button className="w-full mt-4 py-2.5 bg-harvics-burgundy text-white text-xs font-bold uppercase tracking-wider hover:bg-[#5a1a24] transition-colors">
+                        Request Quote
+                      </button>
                     </div>
-                    <div className="mt-4 pt-3 border-t border-[#C3A35E]/10">
-                      <div className="text-base font-bold text-[#6B1F2B]">{p.price}</div>
-                    </div>
-                    <button className="w-full mt-4 py-2.5 bg-[#6B1F2B] text-white text-xs font-bold uppercase tracking-wider hover:bg-[#5a1a24] transition-colors">
-                      Request Quote
-                    </button>
                   </div>
                 ))}
               </div>
@@ -228,14 +255,14 @@ export default async function CategoryPage({ params }: { params: Promise<{ local
       </section>
 
       {/* RFQ CTA */}
-      <section className="bg-[#6B1F2B] border-t border-[#C3A35E]/30">
+      <section className="bg-harvics-burgundy border-t border-harvics-gold/30">
         <div className="max-w-[1200px] mx-auto px-4 py-14 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-xl font-semibold text-white mb-2">Can&apos;t Find What You Need?</h3>
             <p className="text-white/50 text-sm">Submit a custom RFQ and our sourcing team will find the right supplier within 24 hours.</p>
           </div>
           <Link href={`/${locale}/harvictrade/rfq`}
-            className="px-8 py-3 bg-[#C3A35E] text-[#6B1F2B] text-sm font-bold hover:bg-[#d4b46e] transition-colors">
+            className="px-8 py-3 bg-harvics-gold text-harvics-burgundy text-sm font-bold hover:bg-[#d4b46e] transition-colors">
             Submit RFQ
           </Link>
         </div>

@@ -34,14 +34,14 @@ const SupremeIndustryGrid: React.FC = () => {
       <div className="max-w-[1200px] mx-auto">
         {/* Section Header */}
         <div className="text-center mb-14">
-          <h2 className="text-3xl font-semibold text-[#6B1F2B] mb-3" style={{ letterSpacing: '-0.02em' }}>
+          <h2 className="text-3xl font-semibold text-harvics-burgundy mb-3" style={{ letterSpacing: '-0.02em' }}>
             Industries & Markets
           </h2>
-          <p className="text-base text-[#6B1F2B]/50 max-w-[550px] mx-auto leading-relaxed">
+          <p className="text-base text-harvics-burgundy/50 max-w-[550px] mx-auto leading-relaxed">
             End-to-end supply chain solutions across 10 verticals,
             operating from sourcing through manufacturing to delivery.
           </p>
-          <div className="w-12 h-[2px] bg-[#C3A35E]/40 mx-auto mt-5" />
+          <div className="w-12 h-[2px] bg-harvics-gold/40 mx-auto mt-5" />
         </div>
 
         {/* Grid */}
@@ -53,10 +53,10 @@ const SupremeIndustryGrid: React.FC = () => {
               <Link
                 key={vertical.key}
                 href={`/${locale}${vertical.href}`}
-                className="group relative bg-white border border-[#C3A35E]/20 p-6 text-center overflow-hidden"
+                className="group relative bg-white border border-harvics-gold/20 p-6 text-center overflow-hidden"
                 style={{
                   transition: 'all 0.35s cubic-bezier(0.4, 0, 0.2, 1)',
-                  borderColor: isHovered ? '#C3A35E' : undefined,
+                  borderColor: isHovered ? 'var(--harvics-gold)' : undefined,
                   transform: isHovered ? 'translateY(-4px)' : 'translateY(0)',
                   boxShadow: isHovered ? '0 12px 32px rgba(107, 31, 43, 0.12), 0 4px 12px rgba(195, 163, 94, 0.08)' : 'none',
                 }}
@@ -65,7 +65,7 @@ const SupremeIndustryGrid: React.FC = () => {
               >
                 {/* Top gold accent line — expands on hover */}
                 <div
-                  className="absolute top-0 left-0 right-0 h-[2px] bg-[#C3A35E]"
+                  className="absolute top-0 left-0 right-0 h-[2px] bg-harvics-gold"
                   style={{
                     transform: isHovered ? 'scaleX(1)' : 'scaleX(0)',
                     transformOrigin: 'left',
@@ -88,20 +88,20 @@ const SupremeIndustryGrid: React.FC = () => {
                 <h3
                   className="text-sm font-bold uppercase tracking-wide mb-2"
                   style={{
-                    color: isHovered ? '#C3A35E' : '#6B1F2B',
+                    color: isHovered ? 'var(--harvics-gold)' : 'var(--harvics-burgundy)',
                     transition: 'color 0.25s ease',
                   }}
                 >
                   {vertical.label}
                 </h3>
 
-                <p className="text-xs text-[#6B1F2B]/45 leading-relaxed">
+                <p className="text-xs text-harvics-burgundy/45 leading-relaxed">
                   {meta.desc}
                 </p>
 
                 {/* Subtle bottom arrow that appears on hover */}
                 <div
-                  className="mt-3 text-xs font-semibold text-[#C3A35E] uppercase tracking-wider"
+                  className="mt-3 text-xs font-semibold text-harvics-gold uppercase tracking-wider"
                   style={{
                     opacity: isHovered ? 1 : 0,
                     transform: isHovered ? 'translateY(0)' : 'translateY(6px)',
@@ -116,7 +116,7 @@ const SupremeIndustryGrid: React.FC = () => {
                   className="absolute inset-0 pointer-events-none"
                   style={{
                     background: isHovered
-                      ? 'linear-gradient(135deg, rgba(195,163,94,0.04) 0%, rgba(107,31,43,0.03) 100%)'
+                      ? 'linear-gradient(135deg, rgba(195, 163, 94,0.04) 0%, rgba(107,31,43,0.03) 100%)'
                       : 'transparent',
                     transition: 'background 0.35s ease',
                   }}

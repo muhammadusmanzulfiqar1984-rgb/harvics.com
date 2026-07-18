@@ -13,11 +13,11 @@ export default function P(){
     <Panel title="CAPTURE SNAPSHOT">
       <Sel l="Source table" v={pick} on={setPick} opts={tables}/>
       <button onClick={snap} style={btnB}>📸 SNAPSHOT NOW</button>
-      <div style={{marginTop:10,padding:8,background:'#F5F0E8',borderLeft:`4px solid ${B}`,fontSize:11,color:B}}>Each snapshot counts records, estimates size, and registers it as an immutable lake artefact.</div>
+      <div style={{marginTop:10,padding:8,background:'var(--harvics-cream)',borderLeft:`4px solid ${B}`,fontSize:11,color:B}}>Each snapshot counts records, estimates size, and registers it as an immutable lake artefact.</div>
     </Panel>
     <Panel title="LAKE STATS">
       {!stats?'Loading...':<>
-        <div style={{padding:8,background:'#F5F0E8',marginBottom:8}}>
+        <div style={{padding:8,background:'var(--harvics-cream)',marginBottom:8}}>
           <div style={{fontSize:10,color:B,fontWeight:600}}>TOTAL SNAPSHOTS</div>
           <div style={{fontSize:28,fontWeight:700,color:B}}>{stats.totalSnapshots||0}</div>
           <div style={{fontSize:11,color:'#666'}}>Storage: <b>{stats.totalMB||0} MB</b></div>
@@ -29,7 +29,7 @@ export default function P(){
     </Panel>
     <Panel title={`SNAPSHOTS (${snaps.length})`} full>
       <Tbl head={['WHEN','TABLE','RECORDS','SIZE','FORMAT','STORAGE REF']}>
-        {snaps.map(s=><tr key={s.id} style={{borderBottom:'1px solid #6B1F2B11'}}>
+        {snaps.map(s=><tr key={s.id} style={{borderBottom:'1px solid #3D121211'}}>
           <td style={{...td,fontSize:11}}>{new Date(s.capturedAt).toLocaleString()}</td>
           <td style={td}><b>{s.tableName}</b></td>
           <td style={{...td,fontWeight:700,color:B}}>{s.recordCount.toLocaleString()}</td>

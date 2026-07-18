@@ -63,7 +63,7 @@ function ExportDropdown({ onExport }: { onExport: (format: 'csv' | 'excel' | 'pd
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-[#6B1F2B] bg-white border border-[#C3A35E]/30 hover:border-[#C3A35E] hover:bg-[#F5F0E8] transition-colors uppercase tracking-wider"
+        className="flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-harvics-burgundy bg-white border border-harvics-gold/30 hover:border-harvics-gold hover:bg-harvics-cream transition-colors uppercase tracking-wider"
         style={{ borderRadius: 0 }}
         title="Export data"
       >
@@ -72,24 +72,24 @@ function ExportDropdown({ onExport }: { onExport: (format: 'csv' | 'excel' | 'pd
       </button>
       {open && (
         <div
-          className="absolute right-0 top-full mt-1 bg-white border border-[#C3A35E]/30 shadow-lg z-50 min-w-[140px]"
+          className="absolute right-0 top-full mt-1 bg-white border border-harvics-gold/30 shadow-lg z-50 min-w-[140px]"
           style={{ borderRadius: 0 }}
         >
           <button
             onClick={() => { onExport('csv'); setOpen(false) }}
-            className="block w-full text-left px-4 py-2.5 text-xs text-[#6B1F2B] hover:bg-[#F5F0E8] transition-colors font-medium"
+            className="block w-full text-left px-4 py-2.5 text-xs text-harvics-burgundy hover:bg-harvics-cream transition-colors font-medium"
           >
             Export as CSV
           </button>
           <button
             onClick={() => { onExport('excel'); setOpen(false) }}
-            className="block w-full text-left px-4 py-2.5 text-xs text-[#6B1F2B] hover:bg-[#F5F0E8] transition-colors font-medium border-t border-[#C3A35E]/10"
+            className="block w-full text-left px-4 py-2.5 text-xs text-harvics-burgundy hover:bg-harvics-cream transition-colors font-medium border-t border-harvics-gold/10"
           >
             Export as Excel
           </button>
           <button
             onClick={() => { onExport('pdf'); setOpen(false) }}
-            className="block w-full text-left px-4 py-2.5 text-xs text-[#6B1F2B] hover:bg-[#F5F0E8] transition-colors font-medium border-t border-[#C3A35E]/10"
+            className="block w-full text-left px-4 py-2.5 text-xs text-harvics-burgundy hover:bg-harvics-cream transition-colors font-medium border-t border-harvics-gold/10"
           >
             Export as PDF
           </button>
@@ -113,15 +113,15 @@ function ViewModeToggle({
   ]
 
   return (
-    <div className="flex border border-[#C3A35E]/30" style={{ borderRadius: 0 }}>
+    <div className="flex border border-harvics-gold/30" style={{ borderRadius: 0 }}>
       {modes.map((m) => (
         <button
           key={m.key}
           onClick={() => onChange(m.key)}
           className={`px-2.5 py-2 text-xs transition-colors ${
             mode === m.key
-              ? 'bg-[#6B1F2B] text-[#C3A35E]'
-              : 'bg-white text-[#6B1F2B]/60 hover:bg-[#F5F0E8] hover:text-[#6B1F2B]'
+              ? 'bg-harvics-burgundy text-harvics-gold'
+              : 'bg-white text-harvics-burgundy/60 hover:bg-harvics-cream hover:text-harvics-burgundy'
           }`}
           title={m.label}
           style={{ borderRadius: 0 }}
@@ -161,32 +161,32 @@ export default function ActionBar({
   const getVariantClasses = (variant: ActionBarAction['variant'] = 'secondary') => {
     switch (variant) {
       case 'primary':
-        return 'bg-[#6B1F2B] text-white hover:bg-[#4A1520] border-[#6B1F2B]'
+        return 'bg-harvics-burgundy text-white hover:bg-[#4A1520] border-harvics-burgundy'
       case 'danger':
         return 'bg-white text-red-700 border-red-300 hover:bg-red-50 hover:border-red-400'
       case 'ai':
-        return 'bg-[#C3A35E] text-[#6B1F2B] hover:bg-[#D4B86A] border-[#C3A35E]'
+        return 'bg-harvics-gold text-harvics-burgundy hover:bg-[#D4B86A] border-harvics-gold'
       default:
-        return 'bg-white text-[#6B1F2B] border-[#C3A35E]/30 hover:border-[#C3A35E] hover:bg-[#F5F0E8]'
+        return 'bg-white text-harvics-burgundy border-harvics-gold/30 hover:border-harvics-gold hover:bg-harvics-cream'
     }
   }
 
   return (
     <div
-      className={`bg-white border border-[#C3A35E]/20 px-4 py-3 mb-4 ${className}`}
+      className={`bg-white border border-harvics-gold/20 px-4 py-3 mb-4 ${className}`}
       style={{ borderRadius: 0, boxShadow: 'none' }}
     >
       <div className="flex flex-wrap items-center gap-3">
         {/* Selection indicator */}
         {hasSelection && (
-          <div className="flex items-center gap-2 pr-3 border-r border-[#C3A35E]/30">
-            <span className="text-xs font-bold text-[#6B1F2B] bg-[#C3A35E]/20 px-2.5 py-1">
+          <div className="flex items-center gap-2 pr-3 border-r border-harvics-gold/30">
+            <span className="text-xs font-bold text-harvics-burgundy bg-harvics-gold/20 px-2.5 py-1">
               {selectedCount} selected
             </span>
             {onClearSelection && (
               <button
                 onClick={onClearSelection}
-                className="text-xs text-[#6B1F2B]/60 hover:text-[#6B1F2B] transition-colors underline"
+                className="text-xs text-harvics-burgundy/60 hover:text-harvics-burgundy transition-colors underline"
               >
                 Clear
               </button>
@@ -215,11 +215,11 @@ export default function ActionBar({
 
         {/* AI Action buttons */}
         {(onAISuggest || onAIPredict || onAIAlert) && (
-          <div className="flex items-center gap-1.5 pl-2 border-l border-[#C3A35E]/30">
+          <div className="flex items-center gap-1.5 pl-2 border-l border-harvics-gold/30">
             {onAISuggest && (
               <button
                 onClick={onAISuggest}
-                className="flex items-center gap-1 px-2.5 py-2 text-xs font-semibold text-[#6B1F2B] bg-[#C3A35E]/10 border border-[#C3A35E]/30 hover:bg-[#C3A35E]/25 transition-colors"
+                className="flex items-center gap-1 px-2.5 py-2 text-xs font-semibold text-harvics-burgundy bg-harvics-gold/10 border border-harvics-gold/30 hover:bg-harvics-gold/25 transition-colors"
                 style={{ borderRadius: 0 }}
                 title="AI Suggest — get AI recommendations"
               >
@@ -230,7 +230,7 @@ export default function ActionBar({
             {onAIPredict && (
               <button
                 onClick={onAIPredict}
-                className="flex items-center gap-1 px-2.5 py-2 text-xs font-semibold text-[#6B1F2B] bg-[#C3A35E]/10 border border-[#C3A35E]/30 hover:bg-[#C3A35E]/25 transition-colors"
+                className="flex items-center gap-1 px-2.5 py-2 text-xs font-semibold text-harvics-burgundy bg-harvics-gold/10 border border-harvics-gold/30 hover:bg-harvics-gold/25 transition-colors"
                 style={{ borderRadius: 0 }}
                 title="AI Predict — see AI forecasts"
               >
@@ -241,7 +241,7 @@ export default function ActionBar({
             {onAIAlert && (
               <button
                 onClick={onAIAlert}
-                className="flex items-center gap-1 px-2.5 py-2 text-xs font-semibold text-[#6B1F2B] bg-[#C3A35E]/10 border border-[#C3A35E]/30 hover:bg-[#C3A35E]/25 transition-colors"
+                className="flex items-center gap-1 px-2.5 py-2 text-xs font-semibold text-harvics-burgundy bg-harvics-gold/10 border border-harvics-gold/30 hover:bg-harvics-gold/25 transition-colors"
                 style={{ borderRadius: 0 }}
                 title="AI Alert — check for anomalies"
               >
@@ -263,10 +263,10 @@ export default function ActionBar({
               value={searchValue}
               onChange={(e) => onSearch(e.target.value)}
               placeholder={searchPlaceholder}
-              className="w-48 lg:w-64 px-3 py-2 text-xs text-[#6B1F2B] bg-white border border-[#C3A35E]/30 focus:border-[#C3A35E] focus:outline-none placeholder:text-[#6B1F2B]/30 transition-colors"
+              className="w-48 lg:w-64 px-3 py-2 text-xs text-harvics-burgundy bg-white border border-harvics-gold/30 focus:border-harvics-gold focus:outline-none placeholder:text-harvics-burgundy/30 transition-colors"
               style={{ borderRadius: 0 }}
             />
-            <span className="absolute right-3 top-1/2 -translate-y-1/2 text-[#6B1F2B]/30 text-xs pointer-events-none">
+            <span className="absolute right-3 top-1/2 -translate-y-1/2 text-harvics-burgundy/30 text-xs pointer-events-none">
               🔍
             </span>
           </div>
@@ -278,8 +278,8 @@ export default function ActionBar({
             onClick={onFilter}
             className={`flex items-center gap-1.5 px-3 py-2 text-xs font-semibold border transition-colors uppercase tracking-wider ${
               filterActive
-                ? 'bg-[#6B1F2B] text-[#C3A35E] border-[#6B1F2B]'
-                : 'bg-white text-[#6B1F2B] border-[#C3A35E]/30 hover:border-[#C3A35E] hover:bg-[#F5F0E8]'
+                ? 'bg-harvics-burgundy text-harvics-gold border-harvics-burgundy'
+                : 'bg-white text-harvics-burgundy border-harvics-gold/30 hover:border-harvics-gold hover:bg-harvics-cream'
             }`}
             style={{ borderRadius: 0 }}
             title="Toggle filters"
@@ -296,7 +296,7 @@ export default function ActionBar({
         {onRefresh && (
           <button
             onClick={onRefresh}
-            className="flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-[#6B1F2B] bg-white border border-[#C3A35E]/30 hover:border-[#C3A35E] hover:bg-[#F5F0E8] transition-colors"
+            className="flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-harvics-burgundy bg-white border border-harvics-gold/30 hover:border-harvics-gold hover:bg-harvics-cream transition-colors"
             style={{ borderRadius: 0 }}
             title="Refresh data"
           >

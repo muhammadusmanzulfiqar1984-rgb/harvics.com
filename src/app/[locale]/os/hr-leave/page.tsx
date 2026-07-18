@@ -1,7 +1,7 @@
 'use client'
 /** HARVICS OS — HR Leave & Attendance (Module #29) */
 import { useEffect, useState } from 'react'
-const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F0E8'
+const B='var(--harvics-burgundy)'; const G='var(--harvics-gold)'; const C='var(--harvics-cream)'
 const SS:Record<string,string>={Pending:'#B8860B',Approved:'#2E7D32',Rejected:'#B71C1C',Cancelled:'#666'}
 interface Leave{id:string;employeeId:string;leaveType:string;startDate:string;endDate:string;days:number;status:string;reason:string|null}
 interface Att{id:string;employeeId:string;date:string;clockIn:string|null;clockOut:string|null;hoursWorked:number;status:string}

@@ -20,9 +20,12 @@ set +a
 echo "Syncing secrets to Worker harvics-com..."
 
 SECRETS=(
+  OPENAI_API_KEY
+  NVIDIA_API_KEY
   GROQ_API_KEY
   HF_API_KEY
   INTERNAL_API_KEY
+  HARVYX_ACCESS_CODE
   R2_ACCESS_KEY_ID
   R2_SECRET_ACCESS_KEY
   JWT_SECRET

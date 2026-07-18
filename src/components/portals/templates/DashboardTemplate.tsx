@@ -53,7 +53,7 @@ const DashboardTemplate: React.FC<DashboardTemplateProps> = ({
   if (loading) {
     return (
       <div className="text-center py-12">
-        <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-[#6B1F2B]"></div>
+        <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-harvics-burgundy"></div>
         <p className="mt-4 text-black">Loading...</p>
       </div>
     )

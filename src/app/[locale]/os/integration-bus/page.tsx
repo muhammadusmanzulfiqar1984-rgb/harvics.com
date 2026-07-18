@@ -28,7 +28,7 @@ export default function P(){
     </Panel>
     <Panel title={`ENDPOINTS (${endpoints.length})`}>
       <Tbl head={['CODE','URL','METHOD','AUTH','DELIVERIES']}>
-        {endpoints.map(e=><tr key={e.id} style={{borderBottom:'1px solid #6B1F2B11'}}>
+        {endpoints.map(e=><tr key={e.id} style={{borderBottom:'1px solid #3D121211'}}>
           <td style={td}><b>{e.code}</b></td><td style={{...td,fontSize:10,maxWidth:200,overflow:'hidden',textOverflow:'ellipsis'}}>{e.url}</td>
           <td style={td}>{e.method}</td><td style={td}>{e.authType}</td><td style={{...td,fontWeight:700,color:B}}>{e._count?.deliveries||0}</td>
         </tr>)}
@@ -36,7 +36,7 @@ export default function P(){
     </Panel>
     <Panel title="DELIVERY LOG" full>
       <Tbl head={['WHEN','ENDPOINT','EVENT','STATUS','ATTEMPTS','HTTP','NEXT RETRY']}>
-        {deliveries.map(d=><tr key={d.id} style={{borderBottom:'1px solid #6B1F2B11'}}>
+        {deliveries.map(d=><tr key={d.id} style={{borderBottom:'1px solid #3D121211'}}>
           <td style={{...td,fontSize:11}}>{new Date(d.createdAt).toLocaleString()}</td>
           <td style={td}>{d.endpoint?.code||'—'}</td>
           <td style={td}>{d.event}</td>

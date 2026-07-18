@@ -72,12 +72,12 @@ export default function DistributorCheckout() {
       <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="h-[300px] relative bg-[#6B1F2B] overflow-hidden">
+        <section className="h-[300px] relative bg-harvics-burgundy overflow-hidden">
           {/* Decorative Elements */}
           <div className="absolute inset-0">
              <div className="absolute top-0 left-0 w-full h-full bg-[url('/patterns/grid.svg')] opacity-10"></div>
-             <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
-             <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
+             <div className="absolute -top-24 -right-24 w-96 h-96 bg-harvics-gold rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
+             <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-harvics-gold rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
           </div>
           
           <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
@@ -101,7 +101,7 @@ export default function DistributorCheckout() {
                 <div className="space-y-4">
                   {cartItems.map((item) => (
                     <div key={item.id} className="flex items-center space-x-4 p-4 bg-gray-50 border border-gray-100">
-                      <div className="w-16 h-16 bg-[#6B1F2B] flex items-center justify-center flex-shrink-0">
+                      <div className="w-16 h-16 bg-harvics-burgundy flex items-center justify-center flex-shrink-0">
                         <span className="text-white text-2xl">📦</span>
                       </div>
                       <div className="flex-1">
@@ -109,7 +109,7 @@ export default function DistributorCheckout() {
                         <p className="text-gray-500 text-xs md:text-sm mb-2">{item.description}</p>
                         <div className="flex justify-between items-center">
                           <span className="text-sm text-gray-500">Qty: {item.quantity}</span>
-                          <span className="font-bold text-[#6B1F2B] text-sm md:text-base">
+                          <span className="font-bold text-harvics-burgundy text-sm md:text-base">
                             {currency.symbol} {(item.price * item.quantity).toLocaleString()}
                           </span>
                         </div>
@@ -141,7 +141,7 @@ export default function DistributorCheckout() {
                     </div>
                     <div className="flex justify-between items-center pt-3 border-t border-gray-100">
                       <span className="text-lg font-bold text-gray-900">Total:</span>
-                      <span className="text-xl font-bold text-[#6B1F2B]">
+                      <span className="text-xl font-bold text-harvics-burgundy">
                         {currency.symbol} {total.toLocaleString()}
                       </span>
                     </div>
@@ -166,7 +166,7 @@ export default function DistributorCheckout() {
                       <input
                         type="text"
                         defaultValue={randomName}
-                        className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
+                        className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-harvics-burgundy focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
                         placeholder="Enter business name"
                       />
                     </div>
@@ -176,7 +176,7 @@ export default function DistributorCheckout() {
                       </label>
                       <input
                         type="text"
-                        className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
+                        className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-harvics-burgundy focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
                         placeholder="Enter contact person name"
                       />
                     </div>
@@ -187,7 +187,7 @@ export default function DistributorCheckout() {
                     </label>
                     <input
                       type="email"
-                      className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
+                      className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-harvics-burgundy focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
                       placeholder="business@example.com"
                     />
                   </div>
@@ -198,7 +198,7 @@ export default function DistributorCheckout() {
                     <input
                       type="tel"
                       defaultValue="+92 300 1234567"
-                      className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
+                      className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-harvics-burgundy focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
                       placeholder="+92 300 1234567"
                     />
                   </div>
@@ -209,7 +209,7 @@ export default function DistributorCheckout() {
                     <textarea
                       rows={3}
                       defaultValue="House 123, Block A, Gulberg, Lahore, Punjab, Pakistan"
-                      className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
+                      className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-harvics-burgundy focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
                       placeholder="Enter complete business address"
                     />
                   </div>
@@ -241,7 +241,7 @@ export default function DistributorCheckout() {
                       <input
                         type="text"
                         placeholder="1234 5678 9012 3456"
-                        className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
+                        className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-harvics-burgundy focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
                       />
                     </div>
                     <div className="grid grid-cols-2 gap-4">
@@ -252,7 +252,7 @@ export default function DistributorCheckout() {
                         <input
                           type="text"
                           placeholder="MM/YY"
-                          className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
+                          className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-harvics-burgundy focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
                         />
                       </div>
                       <div>
@@ -262,7 +262,7 @@ export default function DistributorCheckout() {
                         <input
                           type="text"
                           placeholder="123"
-                          className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
+                          className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-harvics-burgundy focus:border-transparent text-gray-900 bg-gray-50 placeholder-gray-400 transition-all duration-300"
                         />
                       </div>
                     </div>
@@ -300,7 +300,7 @@ export default function DistributorCheckout() {
                         <input
                           type="file"
                           accept="image/*,.pdf"
-                          className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-white file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-[#6B1F2B] file:text-white hover:file:bg-[#50000b] transition-all duration-300"
+                          className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-harvics-burgundy focus:border-transparent text-gray-900 bg-white file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-harvics-burgundy file:text-white hover:file:bg-[#50000b] transition-all duration-300"
                         />
                       </div>
                     )}
@@ -325,7 +325,7 @@ export default function DistributorCheckout() {
                       <input
                         type="text"
                         placeholder="Enter transaction hash"
-                        className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-[#6B1F2B] focus:border-transparent text-gray-900 bg-white placeholder-gray-400 transition-all duration-300"
+                        className="w-full px-4 py-3 border border-gray-200 focus:ring-2 focus:ring-harvics-burgundy focus:border-transparent text-gray-900 bg-white placeholder-gray-400 transition-all duration-300"
                       />
                     </div>
                   </div>
@@ -361,7 +361,7 @@ export default function DistributorCheckout() {
                 {/* Place Order Button */}
                 <button 
                   disabled={!selectedPaymentMethod}
-                  className="w-full mt-6 bg-[#6B1F2B] hover:bg-[#50000b] text-white font-bold py-4 px-6 transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+                  className="w-full mt-6 bg-harvics-burgundy hover:bg-[#50000b] text-white font-bold py-4 px-6 transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
                 >
                   <span>💳</span>
                   <span>

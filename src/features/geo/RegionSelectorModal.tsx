@@ -77,16 +77,16 @@ const RegionSelectorModal: React.FC<RegionSelectorModalProps> = ({ onClose }) =>
       onClick={onClose}
     >
       <div 
-        className="bg-gradient-to-br from-[#6B1F2B] via-[#6B1F2B] to-[#2a0005] border-2 border-[#C3A35E]/30 rounded-2xl shadow-2xl w-full max-w-6xl max-h-[90vh] overflow-hidden flex flex-col"
+        className="bg-gradient-to-br from-harvics-burgundy via-[#3D1212] to-[#2a0005] border-2 border-harvics-gold/30 rounded-2xl shadow-2xl w-full max-w-6xl max-h-[90vh] overflow-hidden flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="p-6 border-b border-[#C3A35E]/30">
+        <div className="p-6 border-b border-harvics-gold/30">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-2xl font-bold text-white">Select Your Location</h2>
             <button
               onClick={onClose}
-              className="text-white hover:text-[#C3A35E]/90 transition-colors p-2 rounded-lg hover:bg-white/10"
+              className="text-white hover:text-harvics-gold/90 transition-colors p-2 rounded-lg hover:bg-white/10"
               aria-label="Close"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -110,7 +110,7 @@ const RegionSelectorModal: React.FC<RegionSelectorModalProps> = ({ onClose }) =>
               placeholder="Search by country or language..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-10 pr-4 py-3 bg-black/30 border border-[#C3A35E]/30 rounded-lg text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-black/50 focus:border-white"
+              className="w-full pl-10 pr-4 py-3 bg-black/30 border border-harvics-gold/30 rounded-lg text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-black/50 focus:border-white"
             />
           </div>
         </div>
@@ -119,7 +119,7 @@ const RegionSelectorModal: React.FC<RegionSelectorModalProps> = ({ onClose }) =>
         <div className="flex-1 overflow-y-auto p-6">
           <div className="space-y-4">
             {filteredRegions.map((region) => (
-              <div key={region.id} className="border border-[#C3A35E]/20 rounded-lg overflow-hidden">
+              <div key={region.id} className="border border-harvics-gold/20 rounded-lg overflow-hidden">
                 {/* Region Header */}
                 <button
                   onClick={() => toggleRegion(region.id)}
@@ -149,18 +149,18 @@ const RegionSelectorModal: React.FC<RegionSelectorModalProps> = ({ onClose }) =>
                         <button
                           key={location.code}
                           onClick={() => handleLocationSelect(location)}
-                          className="p-3 text-left bg-white/5 hover:bg-white/15 border border-[#C3A35E]/20 hover:border-white/40 rounded-lg transition-all duration-300 hover:scale-105 group"
+                          className="p-3 text-left bg-white/5 hover:bg-white/15 border border-harvics-gold/20 hover:border-white/40 rounded-lg transition-all duration-300 hover:scale-105 group"
                         >
                           <div className="flex items-center justify-between">
                             <div className="flex-1">
-                              <div className="text-white font-semibold text-sm mb-1 group-hover:text-[#C3A35E] transition-colors">
+                              <div className="text-white font-semibold text-sm mb-1 group-hover:text-harvics-gold transition-colors">
                                 {location.name}
                               </div>
                               <div className="flex flex-wrap gap-2">
                                 {location.languages.map((lang, idx) => (
                                   <span
                                     key={idx}
-                                    className="text-xs text-[#C3A35E]/80 bg-white/10 px-2 py-1 rounded"
+                                    className="text-xs text-harvics-gold/80 bg-white/10 px-2 py-1 rounded"
                                   >
                                     {lang}
                                   </span>
@@ -168,7 +168,7 @@ const RegionSelectorModal: React.FC<RegionSelectorModalProps> = ({ onClose }) =>
                               </div>
                             </div>
                             <svg
-                              className="w-4 h-4 text-white/40 group-hover:text-[#C3A35E] transition-colors ml-2"
+                              className="w-4 h-4 text-white/40 group-hover:text-harvics-gold transition-colors ml-2"
                               fill="none"
                               stroke="currentColor"
                               viewBox="0 0 24 24"
@@ -193,7 +193,7 @@ const RegionSelectorModal: React.FC<RegionSelectorModalProps> = ({ onClose }) =>
         </div>
 
         {/* Footer */}
-        <div className="p-6 border-t border-[#C3A35E]/30 bg-black/20">
+        <div className="p-6 border-t border-harvics-gold/30 bg-black/20">
           <div className="flex items-center justify-center space-x-2 text-white/60 text-sm">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />

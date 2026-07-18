@@ -1,62 +1,73 @@
-import dynamic from 'next/dynamic'
 import LiquidGlassHero from '@/components/premium/LiquidGlassHero'
+import ManifestoSection from '@/components/home/ManifestoSection'
+import CorridorProofSection from '@/components/home/CorridorProofSection'
+import IndustriesHScrollSection from '@/components/home/IndustriesHScrollSection'
+import CorridorMarqueeSection from '@/components/home/CorridorMarqueeSection'
+import HarvicTradeGateSection from '@/components/home/HarvicTradeGateSection'
+import LiveListingsSection from '@/components/home/LiveListingsSection'
+import AppsCommercialSection from '@/components/home/AppsCommercialSection'
+import OperatingModelSection from '@/components/premium/OperatingModelSection'
+import CinematicTradeMap from '@/components/premium/CinematicTradeMap'
+import SupplyChainWheel from '@/components/layout/SupplyChainWheel'
 import ThreeDErrorBoundary from '@/components/shared/ThreeDErrorBoundary'
 import ContactSection from '@/components/layout/ContactSection'
+import HomepageLenis from '@/components/home/HomepageLenis'
 
-const EnhancedIndustryGrid = dynamic(() => import('@/components/premium/EnhancedIndustryGrid'))
-const OperatingModelSection = dynamic(() => import('@/components/premium/OperatingModelSection'))
-const Interactive3DProductViewer = dynamic(() => import('@/components/premium/CinematicTradeMap'))
-const SupplyChainWheel = dynamic(() => import('@/components/layout/SupplyChainWheel'), {
-  loading: () => (
-    <div className="min-h-[50vh] flex items-center justify-center">
-      <div className="w-10 h-10 border-4 border-harvics-burgundy border-t-transparent rounded-full animate-spin" />
-    </div>
-  ),
-})
-
+/** Local dev home — aligned with production harvics.com/en corridor stack. */
 export default function Home() {
   return (
     <>
+      <HomepageLenis />
       <div
         aria-hidden="true"
         className="fixed inset-0 pointer-events-none"
         style={{
           zIndex: -1,
           background: [
-            'radial-gradient(ellipse at 10% 6%,  rgba(107,31,43,0.07)  0%, transparent 40%)',
-            'radial-gradient(ellipse at 90% 94%, rgba(195,163,94,0.09)  0%, transparent 42%)',
-            'radial-gradient(ellipse at 88% 10%, rgba(195,163,94,0.055) 0%, transparent 36%)',
+            'radial-gradient(ellipse at 10% 6%,  rgba(61, 18, 18,0.07)  0%, transparent 40%)',
+            'radial-gradient(ellipse at 90% 94%, rgba(195, 163, 94,0.09)  0%, transparent 42%)',
+            'radial-gradient(ellipse at 88% 10%, rgba(195, 163, 94,0.055) 0%, transparent 36%)',
             'radial-gradient(ellipse at 50% 50%, rgba(255,255,255,0.5)  0%, transparent 68%)',
             'linear-gradient(160deg, #ffffff 0%, #fdfcfb 45%, #faf9f7 100%)',
           ].join(', '),
         }}
       />
 
-      <main id="homepage-main" className="w-full min-h-screen bg-transparent flex flex-col">
+      <main id="homepage-main" className="w-full min-h-screen bg-transparent flex flex-col text-harvics-burgundy">
 
-        <section className="relative overflow-hidden flex flex-col w-full min-h-screen border-b border-white/5 bg-harvics-dark">
+        <section className="relative overflow-hidden flex flex-col w-full min-h-screen border-b border-harvics-gold/10 bg-harvics-burgundy">
           <LiquidGlassHero />
         </section>
 
-        <section className="relative overflow-hidden flex flex-col w-full bg-harvics-cream">
-          <EnhancedIndustryGrid />
-        </section>
+        <ManifestoSection />
 
-        <section className="relative overflow-hidden flex flex-col w-full">
-          <Interactive3DProductViewer />
-        </section>
+        <CorridorProofSection />
 
-        <section className="relative overflow-hidden flex flex-col w-full">
-          <OperatingModelSection />
-        </section>
-
-        <section className="relative overflow-hidden flex flex-col w-full bg-harvics-cream">
+        <section id="supply-chain" className="relative overflow-hidden flex flex-col w-full bg-harvics-cream">
           <ThreeDErrorBoundary>
             <SupplyChainWheel />
           </ThreeDErrorBoundary>
         </section>
 
-        <section className="relative overflow-hidden flex flex-col w-full bg-harvics-cream">
+        <IndustriesHScrollSection />
+
+        <CorridorMarqueeSection />
+
+        <section id="network" className="relative overflow-hidden flex flex-col w-full">
+          <CinematicTradeMap />
+        </section>
+
+        <section id="operating-model" className="relative overflow-hidden flex flex-col w-full bg-harvics-cream">
+          <OperatingModelSection tone="cream" />
+        </section>
+
+        <HarvicTradeGateSection />
+
+        <LiveListingsSection />
+
+        <AppsCommercialSection />
+
+        <section id="contact" className="relative overflow-hidden flex flex-col w-full border-t border-harvics-gold/15 bg-harvics-cream">
           <ContactSection />
         </section>
 

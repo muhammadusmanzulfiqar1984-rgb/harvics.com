@@ -56,7 +56,7 @@ export default function InvestorLoginForm() {
   }
 
   return (
-    <div className="bg-gradient-to-br from-white800/40 to-white900/60 backdrop-blur-sm rounded-3xl border-2 border-[#C3A35E]/20 p-8 shadow-2xl">
+    <div className="bg-gradient-to-br from-white800/40 to-white900/60 backdrop-blur-sm rounded-3xl border-2 border-harvics-gold/20 p-8 shadow-2xl">
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
           <label htmlFor="email" className="block text-white font-semibold mb-2">

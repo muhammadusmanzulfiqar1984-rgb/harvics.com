@@ -37,23 +37,23 @@ export default function InvoicesAndPayments() {
   return (
     <div className="space-y-6">
       <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
-      <h1 className="text-2xl font-bold text-[#C3A35E]">Invoices & Payments</h1>
+      <h1 className="text-2xl font-bold text-harvics-gold">Invoices & Payments</h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
         {/* Side Info - Credit */}
         <div className="lg:col-span-1 bg-white border border-black200 shadow-sm p-6">
-          <h2 className="text-lg font-bold text-[#C3A35E] mb-4">Credit Information</h2>
+          <h2 className="text-lg font-bold text-harvics-gold mb-4">Credit Information</h2>
           <div className="space-y-4">
             <div>
-              <div className="text-sm text-[#C3A35E]/90 mb-1">Credit Limit</div>
-              <div className="text-xl font-bold text-[#C3A35E]">${(creditInfo.limit / 1000).toFixed(0)}k</div>
+              <div className="text-sm text-harvics-gold/90 mb-1">Credit Limit</div>
+              <div className="text-xl font-bold text-harvics-gold">${(creditInfo.limit / 1000).toFixed(0)}k</div>
             </div>
             <div>
-              <div className="text-sm text-[#C3A35E]/90 mb-1">Credit Utilised</div>
+              <div className="text-sm text-harvics-gold/90 mb-1">Credit Utilised</div>
               <div className="text-xl font-bold text-white">${(creditInfo.utilised / 1000).toFixed(1)}k</div>
             </div>
             <div>
-              <div className="text-sm text-[#C3A35E]/90 mb-1">Available Credit</div>
+              <div className="text-sm text-harvics-gold/90 mb-1">Available Credit</div>
               <div className="text-xl font-bold text-green-600">${(creditInfo.available / 1000).toFixed(1)}k</div>
             </div>
             <div className="w-full bg-white rounded-full h-2">
@@ -79,8 +79,8 @@ export default function InvoicesAndPayments() {
                   onClick={() => setActiveTab(tab)}
                   className={`px-6 py-4 font-semibold transition-colors ${
                     activeTab === tab
-                      ? 'border-b-2 border-white text-[#C3A35E]/90'
-                      : 'text-[#C3A35E]/90 hover:text-[#C3A35E]/90'
+                      ? 'border-b-2 border-white text-harvics-gold/90'
+                      : 'text-harvics-gold/90 hover:text-harvics-gold/90'
                   }`}
                 >
                   {tab}
@@ -94,29 +94,29 @@ export default function InvoicesAndPayments() {
             <table className="w-full">
               <thead className="bg-white">
                 <tr>
-                  <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Invoice ID</th>
-                  <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Order ID</th>
-                  <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Date</th>
-                  <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Amount</th>
-                  <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Due Date</th>
-                  <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Status</th>
-                  <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Aging</th>
-                  <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Action</th>
+                  <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Invoice ID</th>
+                  <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Order ID</th>
+                  <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Date</th>
+                  <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Amount</th>
+                  <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Due Date</th>
+                  <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Status</th>
+                  <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Aging</th>
+                  <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Action</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
                 {invoices[activeTab as keyof typeof invoices].map((invoice) => (
                   <tr key={invoice.id} className="hover:bg-white">
-                    <td className="px-6 py-4 font-semibold text-[#C3A35E]/90">{invoice.id}</td>
-                    <td className="px-6 py-4 text-sm text-[#C3A35E]/90">{invoice.orderId}</td>
-                    <td className="px-6 py-4 text-sm text-[#C3A35E]/90">{invoice.date}</td>
-                    <td className="px-6 py-4 font-semibold text-[#C3A35E]/90">${invoice.amount.toLocaleString()}</td>
-                    <td className="px-6 py-4 text-sm text-[#C3A35E]/90">{invoice.dueDate}</td>
+                    <td className="px-6 py-4 font-semibold text-harvics-gold/90">{invoice.id}</td>
+                    <td className="px-6 py-4 text-sm text-harvics-gold/90">{invoice.orderId}</td>
+                    <td className="px-6 py-4 text-sm text-harvics-gold/90">{invoice.date}</td>
+                    <td className="px-6 py-4 font-semibold text-harvics-gold/90">${invoice.amount.toLocaleString()}</td>
+                    <td className="px-6 py-4 text-sm text-harvics-gold/90">{invoice.dueDate}</td>
                     <td className="px-6 py-4">
                       <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
                         invoice.status === 'Paid' ? 'bg-green-100 text-green-800' :
                         invoice.status === 'Overdue' ? 'bg-red-100 text-red-800' :
-                        'bg-[#C3A35E]/20 text-[#C3A35E]'
+                        'bg-harvics-gold/20 text-harvics-gold'
                       }`}>
                         {invoice.status}
                       </span>

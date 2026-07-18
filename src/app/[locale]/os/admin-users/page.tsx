@@ -7,7 +7,7 @@
 import { useEffect, useState } from 'react'
 
 interface User { id: string; username: string; email: string|null; displayName: string|null; role: string; active: boolean; mfaEnabled: boolean; lastLoginAt: string|null; createdAt: string }
-const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F0E8'
+const B='var(--harvics-burgundy)'; const G='var(--harvics-gold)'; const C='var(--harvics-cream)'
 const ROLE_COLORS: Record<string,string> = { operator:'#666', manager:'#1565C0', admin:'#B8860B', superadmin:'#8B0000' }
 
 export default function AdminUsersPage() {

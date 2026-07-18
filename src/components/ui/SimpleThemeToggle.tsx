@@ -43,9 +43,9 @@ const SimpleThemeToggle: React.FC = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="relative w-14 h-7 bg-gradient-to-r from-[#C3A35E] to-[#C3A35E] rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#dc2626] focus:ring-offset-2 shadow-lg hover:shadow-xl"
+      className="relative w-14 h-7 bg-gradient-to-r from-harvics-gold to-harvics-gold rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#dc2626] focus:ring-offset-2 shadow-lg hover:shadow-xl"
       style={{
-        backgroundColor: theme === 'dark' ? '#6B1F2B' : '#C3A35E',
+        backgroundColor: theme === 'dark' ? 'var(--harvics-burgundy)' : 'var(--harvics-gold)',
         boxShadow: theme === 'dark' ? '0 0 10px rgba(31, 41, 55, 0.5)' : '0 0 15px rgba(245, 158, 11, 0.6)'
       }}
       aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
@@ -56,9 +56,9 @@ const SimpleThemeToggle: React.FC = () => {
         }`}
       >
         {theme === 'light' ? (
-          <span className="text-[#C3A35E] text-sm">☀️</span>
+          <span className="text-harvics-gold text-sm">☀️</span>
         ) : (
-          <span className="text-[#6B1F2B] text-sm">🌙</span>
+          <span className="text-harvics-burgundy text-sm">🌙</span>
         )}
       </div>
     </button>

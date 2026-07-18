@@ -38,7 +38,7 @@ export default function PlaceNewOrder() {
     <div className="space-y-6">
       <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-[#C3A35E]">Place New Order</h1>
+        <h1 className="text-2xl font-bold text-harvics-gold">Place New Order</h1>
         <Link
           href={`/${locale}/distributor-portal/orders/history`}
           className="text-white hover:underline"
@@ -51,7 +51,7 @@ export default function PlaceNewOrder() {
       <div className="bg-white p-4 border border-black200 shadow-sm">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div>
-            <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">{t('selectCountry')}</label>
+            <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">{t('selectCountry')}</label>
             <select
               value={selectedCountry}
               onChange={(e) => setSelectedCountry(e.target.value)}
@@ -63,7 +63,7 @@ export default function PlaceNewOrder() {
             </select>
           </div>
           <div>
-            <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Select Warehouse</label>
+            <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Select Warehouse</label>
             <select
               value={selectedWarehouse}
               onChange={(e) => setSelectedWarehouse(e.target.value)}
@@ -74,7 +74,7 @@ export default function PlaceNewOrder() {
             </select>
           </div>
           <div>
-            <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Order Type</label>
+            <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Order Type</label>
             <div className="flex space-x-4">
               {['Container', 'Mixed', 'Custom'].map(type => (
                 <label key={type} className="flex items-center">
@@ -97,19 +97,19 @@ export default function PlaceNewOrder() {
         {/* Product Table */}
         <div className="lg:col-span-2 bg-white border border-black200 shadow-sm overflow-hidden">
           <div className="p-4 border-b border-black200">
-            <h2 className="text-lg font-bold text-[#C3A35E]/90">Products</h2>
+            <h2 className="text-lg font-bold text-harvics-gold/90">Products</h2>
           </div>
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead className="bg-white">
                 <tr>
-                  <th className="px-4 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Image</th>
-                  <th className="px-4 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">SKU Name</th>
-                  <th className="px-4 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Pack Size</th>
-                  <th className="px-4 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Carton Size</th>
-                  <th className="px-4 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Unit Price</th>
-                  <th className="px-4 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Quantity</th>
-                  <th className="px-4 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Line Total</th>
+                  <th className="px-4 py-3 text-left text-xs font-semibold text-harvics-gold/90">Image</th>
+                  <th className="px-4 py-3 text-left text-xs font-semibold text-harvics-gold/90">SKU Name</th>
+                  <th className="px-4 py-3 text-left text-xs font-semibold text-harvics-gold/90">Pack Size</th>
+                  <th className="px-4 py-3 text-left text-xs font-semibold text-harvics-gold/90">Carton Size</th>
+                  <th className="px-4 py-3 text-left text-xs font-semibold text-harvics-gold/90">Unit Price</th>
+                  <th className="px-4 py-3 text-left text-xs font-semibold text-harvics-gold/90">Quantity</th>
+                  <th className="px-4 py-3 text-left text-xs font-semibold text-harvics-gold/90">Line Total</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
@@ -122,11 +122,11 @@ export default function PlaceNewOrder() {
                         <img src={product.image} alt={product.name} className="w-16 h-16 object-contain" />
                       </td>
                       <td className="px-4 py-3">
-                        <div className="font-semibold text-[#C3A35E]/90">{product.name}</div>
-                        <div className="text-xs text-[#C3A35E]/90">{product.sku}</div>
+                        <div className="font-semibold text-harvics-gold/90">{product.name}</div>
+                        <div className="text-xs text-harvics-gold/90">{product.sku}</div>
                       </td>
-                      <td className="px-4 py-3 text-sm text-[#C3A35E]/90">{product.packSize}</td>
-                      <td className="px-4 py-3 text-sm text-[#C3A35E]/90">{product.cartonSize}</td>
+                      <td className="px-4 py-3 text-sm text-harvics-gold/90">{product.packSize}</td>
+                      <td className="px-4 py-3 text-sm text-harvics-gold/90">{product.cartonSize}</td>
                       <td className="px-4 py-3 text-sm font-semibold">${product.unitPrice.toFixed(2)}</td>
                       <td className="px-4 py-3">
                         <input
@@ -149,7 +149,7 @@ export default function PlaceNewOrder() {
         </div>
 
         {/* Right-side Panel - Harvey Suggestions */}
-        <div className="bg-gradient-to-br from-[#6B1F2B] to-[#ffffff] p-6 text-white shadow-sm">
+        <div className="bg-gradient-to-br from-harvics-burgundy to-[#ffffff] p-6 text-white shadow-sm">
           <div className="flex items-center space-x-2 mb-4">
             <span className="text-2xl">🤖</span>
             <h2 className="text-lg font-bold">Harvey Suggestions</h2>
@@ -157,19 +157,19 @@ export default function PlaceNewOrder() {
           <div className="space-y-4 text-sm">
             <div>
               <div className="font-semibold mb-2">Recommended Quantity:</div>
-              <ul className="space-y-1 text-[#C3A35E]/90">
+              <ul className="space-y-1 text-harvics-gold/90">
                 <li>• Premium Chocolate Bar: 50 cartons</li>
                 <li>• Energy Drink: 100 cartons</li>
                 <li>• Snack Mix: 75 cartons</li>
               </ul>
             </div>
-            <div className="border-t border-[#C3A35E]/20 pt-4">
+            <div className="border-t border-harvics-gold/20 pt-4">
               <div className="font-semibold mb-2">Fill Your Container:</div>
-              <p className="text-[#C3A35E]/90">You have space for 225 more cartons to maximize container efficiency.</p>
+              <p className="text-harvics-gold/90">You have space for 225 more cartons to maximize container efficiency.</p>
             </div>
-            <div className="border-t border-[#C3A35E]/20 pt-4">
+            <div className="border-t border-harvics-gold/20 pt-4">
               <div className="font-semibold mb-2">Bundle Suggestion:</div>
-              <p className="text-[#C3A35E]/90">Summer Bundle: Mix beverages + snacks for 15% discount on qualifying orders.</p>
+              <p className="text-harvics-gold/90">Summer Bundle: Mix beverages + snacks for 15% discount on qualifying orders.</p>
             </div>
           </div>
         </div>
@@ -178,7 +178,7 @@ export default function PlaceNewOrder() {
       {/* Summary & Actions */}
       <div className="bg-white border border-black200 shadow-sm p-6">
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-bold text-[#C3A35E]/90">Order Summary</h2>
+          <h2 className="text-lg font-bold text-harvics-gold/90">Order Summary</h2>
           <button
             onClick={() => setCart([])}
             className="text-sm text-red-600 hover:underline"
@@ -188,15 +188,15 @@ export default function PlaceNewOrder() {
         </div>
         <div className="space-y-2 mb-4">
           <div className="flex justify-between">
-            <span className="text-[#C3A35E]/90">Subtotal:</span>
+            <span className="text-harvics-gold/90">Subtotal:</span>
             <span className="font-semibold">${subtotal.toFixed(2)}</span>
           </div>
           <div className="flex justify-between">
-            <span className="text-[#C3A35E]/90">Est. Freight:</span>
+            <span className="text-harvics-gold/90">Est. Freight:</span>
             <span className="font-semibold">$0.00</span>
           </div>
           <div className="border-t border-black200 pt-2 flex justify-between">
-            <span className="text-lg font-bold text-[#C3A35E]/90">Total:</span>
+            <span className="text-lg font-bold text-harvics-gold/90">Total:</span>
             <span className="text-lg font-bold text-white">${subtotal.toFixed(2)}</span>
           </div>
         </div>

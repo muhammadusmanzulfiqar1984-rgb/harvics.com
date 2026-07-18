@@ -22,20 +22,20 @@ export default function P(){
       <button onClick={create} style={btnB}>+ POST</button>
     </Panel>
     <Panel title={`POSTINGS (${rows.length})`} full>
-      {rows.map(p=>{const c=cForm[p.id]||{name:'',email:'',phone:'',rating:0};return <div key={p.id} style={{padding:10,marginBottom:8,border:'1px solid #6B1F2B22',background:'#fafafa'}}>
+      {rows.map(p=>{const c=cForm[p.id]||{name:'',email:'',phone:'',rating:0};return <div key={p.id} style={{padding:10,marginBottom:8,border:'1px solid #3D121222',background:'#fafafa'}}>
         <div style={{display:'flex',justifyContent:'space-between',alignItems:'center'}}><div><b>{p.reqNo} — {p.title}</b> <span style={{color:'#666',fontSize:11}}>· {p.department||'—'} · {p.location||'—'} · {p.level||'—'}</span></div><Pill s={p.status}/></div>
         <div style={{marginTop:6,display:'grid',gridTemplateColumns:'1fr 1fr 1fr 60px auto',gap:4}}>
           <input placeholder="Candidate name" value={c.name} onChange={e=>setCForm({...cForm,[p.id]:{...c,name:e.target.value}})} style={inp}/>
           <input placeholder="Email" value={c.email} onChange={e=>setCForm({...cForm,[p.id]:{...c,email:e.target.value}})} style={inp}/>
           <input placeholder="Phone" value={c.phone} onChange={e=>setCForm({...cForm,[p.id]:{...c,phone:e.target.value}})} style={inp}/>
           <input type="number" placeholder="★" value={c.rating} onChange={e=>setCForm({...cForm,[p.id]:{...c,rating:+e.target.value}})} style={inp}/>
-          <button onClick={()=>addC(p.id)} style={{padding:'4px 12px',background:'#6B1F2B',color:'#fff',border:0,cursor:'pointer',fontSize:11,fontWeight:700}}>+ APPLY</button>
+          <button onClick={()=>addC(p.id)} style={{padding:'4px 12px',background:'var(--harvics-burgundy)',color:'#fff',border:0,cursor:'pointer',fontSize:11,fontWeight:700}}>+ APPLY</button>
         </div>
         <Tbl head={['NAME','EMAIL','PHONE','★','STAGE','MOVE']}>
-          {p.candidates.map((cand:any)=><tr key={cand.id}><td style={td}>{cand.name}</td><td style={td}>{cand.email||'—'}</td><td style={td}>{cand.phone||'—'}</td><td style={td}>{cand.rating}</td><td style={td}><Pill s={cand.stage}/></td><td style={td}><select onChange={e=>e.target.value&&move(cand.id,e.target.value)} defaultValue="" style={{padding:3,fontSize:11,border:'1px solid #6B1F2B55'}}><option value="">→</option>{STAGES.map(s=><option key={s}>{s}</option>)}</select></td></tr>)}
+          {p.candidates.map((cand:any)=><tr key={cand.id}><td style={td}>{cand.name}</td><td style={td}>{cand.email||'—'}</td><td style={td}>{cand.phone||'—'}</td><td style={td}>{cand.rating}</td><td style={td}><Pill s={cand.stage}/></td><td style={td}><select onChange={e=>e.target.value&&move(cand.id,e.target.value)} defaultValue="" style={{padding:3,fontSize:11,border:'1px solid #3D121255'}}><option value="">→</option>{STAGES.map(s=><option key={s}>{s}</option>)}</select></td></tr>)}
         </Tbl>
       </div>})}
     </Panel>
   </Grid></Page>
 }
-const inp:React.CSSProperties={padding:6,border:'1px solid #6B1F2B55',fontSize:12}
+const inp:React.CSSProperties={padding:6,border:'1px solid #3D121255',fontSize:12}

@@ -3,6 +3,7 @@ import { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 import { rbacMiddleware } from './middleware/rbac';
 import { SUPPORTED_LOCALES, DEFAULT_LOCALE } from '@/config/locales';
+import { hasOpsAccess, opsAccessDeniedResponse } from '@/lib/harvyx/accessAuth';
 
 // Use shared locale configuration
 const intlMiddleware = createMiddleware({
@@ -14,12 +15,28 @@ const intlMiddleware = createMiddleware({
 
 const SUPPORTED_LOCALE_SET = new Set<string>(SUPPORTED_LOCALES as readonly string[]);
 
-export default function middleware(request: NextRequest) {
+export default async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Skip middleware for API and launch routes
+  // Protect HarvyX + Meet APIs (cookie or INTERNAL_API_KEY)
+  if (
+    (pathname.startsWith('/api/harvyx/') && !pathname.startsWith('/api/harvyx/access')) ||
+    pathname.startsWith('/api/meet/')
+  ) {
+    if (!(await hasOpsAccess(request))) {
+      return opsAccessDeniedResponse();
+    }
+    return NextResponse.next();
+  }
+
+  // Skip middleware for other API and launch routes
   if (pathname.startsWith('/api/') || pathname.startsWith('/launch/')) {
     return;
+  }
+
+  // Temporary: bypass intl/RBAC for wheel-map trial while debugging proxy 500s
+  if (pathname.includes('/wheel-map-trial')) {
+    return NextResponse.next();
   }
 
   // Redirect localized launch routes (e.g. /en/launch/harvics-os -> /launch/harvics-os)

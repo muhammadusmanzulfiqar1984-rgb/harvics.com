@@ -22,7 +22,7 @@ export default function P(){
     </Panel>
     <Panel title="PORTFOLIO">
       <Tbl head={['CODE','NAME','TYPE','SQFT','OCC%','RENT','LEASE END','STATUS']}>
-        {rows.map(r=><tr key={r.id} style={{borderBottom:'1px solid #6B1F2B11'}}>
+        {rows.map(r=><tr key={r.id} style={{borderBottom:'1px solid #3D121211'}}>
           <td style={td}><b>{r.code}</b></td><td style={td}>{r.name}</td><td style={td}>{r.type}</td>
           <td style={td}>{r.sqft.toLocaleString()}</td><td style={{...td,fontWeight:700,color:r.occupancyPct<50?'#B71C1C':r.occupancyPct<80?'#B8860B':'#2E7D32'}}>{r.occupancyPct}%</td>
           <td style={td}>{r.currency} {r.monthlyRent.toLocaleString()}</td>

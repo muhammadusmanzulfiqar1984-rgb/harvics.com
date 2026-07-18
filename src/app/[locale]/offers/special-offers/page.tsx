@@ -38,10 +38,10 @@ export default async function SpecialOffersPage({ params }: SpecialOffersPagePro
   return (
     <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
       {/* Hero */}
-      <section className="relative bg-[#6B1F2B] py-20 px-4 border-b border-[#C3A35E]/40 overflow-hidden">
+      <section className="relative bg-harvics-burgundy py-20 px-4 border-b border-harvics-gold/40 overflow-hidden">
         <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.95) 0%, rgba(90,26,36,0.9) 100%)' }} />
         <div className="max-w-[1200px] mx-auto text-center relative z-10">
-          <div className="text-xs text-[#C3A35E] font-bold uppercase tracking-[0.2em] mb-3">Trade Programmes</div>
+          <div className="text-xs text-harvics-gold font-bold uppercase tracking-[0.2em] mb-3">Trade Programmes</div>
           <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4" style={{ letterSpacing: '-0.02em' }}>
             Special Trade Offers
           </h1>
@@ -53,22 +53,22 @@ export default async function SpecialOffersPage({ params }: SpecialOffersPagePro
 
       {/* Featured Programme */}
       <section className="max-w-[1200px] mx-auto px-4 py-16">
-        <div className="bg-[#6B1F2B] p-8 md:p-12">
+        <div className="bg-harvics-burgundy p-8 md:p-12">
           <div className="flex items-center gap-2 mb-4">
-            <span className="text-xs font-bold text-[#C3A35E] bg-[#C3A35E]/20 px-3 py-1 uppercase tracking-wider">Featured</span>
+            <span className="text-xs font-bold text-harvics-gold bg-harvics-gold/20 px-3 py-1 uppercase tracking-wider">Featured</span>
           </div>
           <h2 className="text-2xl md:text-3xl font-semibold text-white mb-4" style={{ letterSpacing: '-0.02em' }}>{featured.title}</h2>
           <p className="text-white/55 leading-relaxed mb-8 max-w-3xl">{featured.desc}</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {featured.benefits.map((b) => (
               <div key={b} className="flex items-center gap-2">
-                <span className="text-[#C3A35E]">✓</span>
+                <span className="text-harvics-gold">✓</span>
                 <span className="text-sm text-white/70">{b}</span>
               </div>
             ))}
           </div>
           <div className="mt-8">
-            <a href="mailto:trade@harvics.com" className="inline-block px-8 py-3 bg-[#C3A35E] text-[#6B1F2B] text-sm font-bold hover:bg-[#d4b46e] transition-colors">
+            <a href="mailto:trade@harvics.com" className="inline-block px-8 py-3 bg-harvics-gold text-harvics-burgundy text-sm font-bold hover:bg-[#d4b46e] transition-colors">
               Enquire About Volume Commitment
             </a>
           </div>
@@ -77,20 +77,20 @@ export default async function SpecialOffersPage({ params }: SpecialOffersPagePro
 
       {/* Offers Grid */}
       <section className="max-w-[1200px] mx-auto px-4 pb-16">
-        <h2 className="text-2xl font-semibold text-[#6B1F2B] mb-8 text-center">All Trade Programmes</h2>
+        <h2 className="text-2xl font-semibold text-harvics-burgundy mb-8 text-center">All Trade Programmes</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {offers.map((offer) => (
-            <div key={offer.title} className="bg-white border border-[#C3A35E]/15 p-8 flex flex-col">
+            <div key={offer.title} className="bg-white border border-harvics-gold/15 p-8 flex flex-col">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-3xl">{offer.icon}</span>
-                <span className="text-xs font-bold text-[#C3A35E] bg-[#C3A35E]/10 px-2 py-0.5 uppercase tracking-wider">{offer.tag}</span>
+                <span className="text-xs font-bold text-harvics-gold bg-harvics-gold/10 px-2 py-0.5 uppercase tracking-wider">{offer.tag}</span>
               </div>
-              <h3 className="text-lg font-semibold text-[#6B1F2B] mb-3">{offer.title}</h3>
-              <p className="text-sm text-[#6B1F2B]/55 leading-relaxed mb-6 flex-1">{offer.desc}</p>
-              <div className="border-t border-[#C3A35E]/10 pt-4">
+              <h3 className="text-lg font-semibold text-harvics-burgundy mb-3">{offer.title}</h3>
+              <p className="text-sm text-harvics-burgundy/55 leading-relaxed mb-6 flex-1">{offer.desc}</p>
+              <div className="border-t border-harvics-gold/10 pt-4">
                 <div className="flex justify-between text-xs">
-                  <span className="text-[#6B1F2B]/40">Validity</span>
-                  <span className="font-semibold text-[#6B1F2B]">{offer.validity}</span>
+                  <span className="text-harvics-burgundy/40">Validity</span>
+                  <span className="font-semibold text-harvics-burgundy">{offer.validity}</span>
                 </div>
               </div>
             </div>
@@ -99,14 +99,14 @@ export default async function SpecialOffersPage({ params }: SpecialOffersPagePro
       </section>
 
       {/* CTA */}
-      <section className="bg-[#6B1F2B] border-t border-[#C3A35E]/30">
+      <section className="bg-harvics-burgundy border-t border-harvics-gold/30">
         <div className="max-w-[1200px] mx-auto px-4 py-14 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-xl font-semibold text-white mb-2">Custom Trade Terms Available</h3>
             <p className="text-white/50 text-sm">For bespoke pricing, exclusive territory rights, or white-label partnerships — speak with our commercial team.</p>
           </div>
           <a href="mailto:trade@harvics.com"
-            className="px-8 py-3 bg-[#C3A35E] text-[#6B1F2B] text-sm font-bold hover:bg-[#d4b46e] transition-colors">
+            className="px-8 py-3 bg-harvics-gold text-harvics-burgundy text-sm font-bold hover:bg-[#d4b46e] transition-colors">
             Contact Commercial Team
           </a>
         </div>

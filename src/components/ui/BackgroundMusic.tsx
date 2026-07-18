@@ -214,7 +214,7 @@ const BackgroundMusic: React.FC = () => {
           className="harvics-music-fab relative w-11 h-11 flex items-center justify-center transition-transform duration-300 hover:scale-105 active:scale-95 group"
           style={{
             background:
-              'radial-gradient(circle at 30% 22%, #9b3344 0%, #6B1F2B 50%, #3d1119 100%)',
+              'radial-gradient(circle at 30% 22%, #9b3344 0%, #3D1212 50%, #3d1119 100%)',
             border: '1px solid rgba(195, 163, 94, 0.5)',
             borderRadius: '9999px',
             boxShadow:
@@ -253,7 +253,7 @@ const BackgroundMusic: React.FC = () => {
           {/* Soft gold pulse ring — only when paused */}
           {!isPlaying && (
             <span
-              className="harvics-chatbot-pulse absolute inset-0 border border-[#C3A35E]/35 pointer-events-none"
+              className="harvics-chatbot-pulse absolute inset-0 border border-harvics-gold/35 pointer-events-none"
               style={{ borderRadius: '9999px', animation: 'chatPulse 2.8s ease-out infinite' }}
             />
           )}
@@ -261,11 +261,11 @@ const BackgroundMusic: React.FC = () => {
 
         {/* Hover tooltip */}
         <span
-          className="harvics-fab-tooltip pointer-events-none select-none text-[11px] font-medium tracking-wide uppercase text-[#3D1212] bg-[#F5F0E8]/95 backdrop-blur px-3 py-1.5 opacity-0 translate-x-1 transition-all duration-300 group-hover/wrap:opacity-100 group-hover/wrap:translate-x-0"
+          className="harvics-fab-tooltip pointer-events-none select-none text-[11px] font-medium tracking-wide uppercase text-harvics-burgundy bg-harvics-cream/95 backdrop-blur px-3 py-1.5 opacity-0 translate-x-1 transition-all duration-300 group-hover/wrap:opacity-100 group-hover/wrap:translate-x-0"
           style={{
             borderRadius: '9999px',
             border: '1px solid rgba(195, 163, 94, 0.45)',
-            boxShadow: '0 4px 14px rgba(26, 5, 5, 0.12)',
+            boxShadow: '0 4px 14px rgba(61, 18, 18, 0.12)',
           }}
         >
           {isPlaying ? 'Pause Music' : 'Play Music'}

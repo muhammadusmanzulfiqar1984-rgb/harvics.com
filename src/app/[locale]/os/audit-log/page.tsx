@@ -6,7 +6,7 @@
 import { useEffect, useState } from 'react'
 
 interface Evt { id: string; actorId: string|null; actorRole: string|null; action: string; module: string|null; entity: string|null; entityId: string|null; result: string; ipAddress: string|null; createdAt: string }
-const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F0E8'
+const B='var(--harvics-burgundy)'; const G='var(--harvics-gold)'; const C='var(--harvics-cream)'
 
 export default function AuditPage() {
   const [rows, setRows] = useState<Evt[]>([])

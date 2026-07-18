@@ -141,7 +141,7 @@ function DistributionNetworkScreen() {
               <div className="text-sm text-[#8E8E93]">Stock: {wh.currentStock.toLocaleString()} units</div>
               <div className="text-xs text-[#8E8E93] mt-1">Coverage: {wh.coverage}</div>
               <div className="mt-2 w-full bg-[#F5F5F7] h-2" style={{ borderRadius: 0 }}>
-                <div className="bg-[#6B1F2B] h-2" style={{ width: `${(wh.currentStock / wh.capacity) * 100}%`, borderRadius: 0 }}></div>
+                <div className="bg-harvics-burgundy h-2" style={{ width: `${(wh.currentStock / wh.capacity) * 100}%`, borderRadius: 0 }}></div>
               </div>
             </div>
           ))}

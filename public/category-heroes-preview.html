@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harvics — Category Hero Images v2</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0d0d0d; font-family: 'Segoe UI', sans-serif; color: #fff; }
+  header { background: #1a0a0d; border-bottom: 1px solid #C3A35E33; padding: 24px 40px; display: flex; align-items: center; gap: 16px; }
+  header h1 { font-size: 22px; font-weight: 700; color: #C3A35E; letter-spacing: 0.05em; }
+  header span { color: #ffffff55; font-size: 14px; }
+  .count { background: #C3A35E22; border: 1px solid #C3A35E44; color: #C3A35E; padding: 4px 12px; border-radius: 20px; font-size: 13px; margin-left: auto; }
+  .vertical { margin: 40px; }
+  .vertical-title { font-size: 11px; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: #C3A35E; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid #C3A35E22; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+  .card { border-radius: 8px; overflow: hidden; position: relative; cursor: pointer; border: 1px solid #ffffff11; transition: transform 0.2s, border-color 0.2s; }
+  .card:hover { transform: scale(1.02); border-color: #C3A35E55; }
+  .card img { width: 100%; height: 200px; object-fit: cover; display: block; }
+  .card .label { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.85)); padding: 24px 14px 12px; }
+  .card .label .cat { font-size: 15px; font-weight: 600; color: #fff; }
+  .card .label .vert { font-size: 11px; color: #C3A35E; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 3px; }
+  #lb { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.93); z-index:9999; align-items:center; justify-content:center; flex-direction:column; gap:16px; }
+  #lb.open { display:flex; }
+  #lb img { max-width:90vw; max-height:80vh; border-radius:8px; border:1px solid #C3A35E44; }
+  #lb .lb-label { color:#fff; font-size:18px; font-weight:600; }
+  #lb .lb-sub { color:#C3A35E; font-size:13px; letter-spacing:0.1em; text-transform:uppercase; }
+  #lb .close { position:fixed; top:24px; right:32px; font-size:32px; cursor:pointer; color:#ffffff88; }
+  #lb .close:hover { color:#fff; }
+</style>
+</head>
+<body>
+<header>
+  <h1>HARVICS</h1>
+  <span>Category Hero Images — v2</span>
+  <div class="count">40 images · 10 verticals</div>
+</header>
+<div id="app"></div>
+<div id="lb" onclick="closeLB()">
+  <span class="close">✕</span>
+  <img id="lb-img" src="" alt="">
+  <div class="lb-label" id="lb-label"></div>
+  <div class="lb-sub" id="lb-sub"></div>
+</div>
+<script>
+const data = [
+  { vertical:"Textiles & Apparels", folder:"01-apparels", cats:[{slug:"apparel",label:"Apparel"},{slug:"home-textiles",label:"Home Textiles"},{slug:"fabrics",label:"Fabrics"},{slug:"accessories",label:"Accessories"}]},
+  { vertical:"FMCG", folder:"02-fmcg", cats:[{slug:"food",label:"Food"},{slug:"personal-care",label:"Personal Care"},{slug:"home-care",label:"Home Care"},{slug:"distribution",label:"Distribution"}]},
+  { vertical:"Commodities", folder:"03-commodities", cats:[{slug:"agri",label:"Agri"},{slug:"energy",label:"Energy"},{slug:"softs",label:"Softs"},{slug:"metals",label:"Metals"}]},
+  { vertical:"Industrial", folder:"04-industrial", cats:[{slug:"chemicals",label:"Chemicals"},{slug:"machinery",label:"Machinery"},{slug:"safety",label:"Safety"},{slug:"mro",label:"MRO"}]},
+  { vertical:"Minerals", folder:"05-minerals", cats:[{slug:"metals",label:"Metals"},{slug:"energy",label:"Energy"},{slug:"precious",label:"Precious"},{slug:"industrial",label:"Industrial"}]},
+  { vertical:"Oil & Gas", folder:"06-oil-gas", cats:[{slug:"upstream",label:"Upstream"},{slug:"midstream",label:"Midstream"},{slug:"downstream",label:"Downstream"},{slug:"services",label:"Services"}]},
+  { vertical:"Real Estate", folder:"07-real-estate", cats:[{slug:"commercial",label:"Commercial"},{slug:"residential",label:"Residential"},{slug:"industrial",label:"Industrial"},{slug:"services",label:"Services"}]},
+  { vertical:"Global Sourcing", folder:"08-sourcing", cats:[{slug:"global-sourcing",label:"Global Sourcing"},{slug:"quality-control",label:"Quality Control"},{slug:"logistics",label:"Logistics"},{slug:"consulting",label:"Consulting"}]},
+  { vertical:"Trade Finance", folder:"09-finance", cats:[{slug:"trade-finance",label:"Trade Finance"},{slug:"hpay",label:"HPay"},{slug:"invoicing",label:"Invoicing"},{slug:"risk",label:"Risk"}]},
+  { vertical:"AI & Technology", folder:"10-ai-tech", cats:[{slug:"ai-solutions",label:"AI Solutions"},{slug:"data",label:"Data"},{slug:"integration",label:"Integration"},{slug:"support",label:"Support"}]},
+];
+const app = document.getElementById('app');
+data.forEach(v => {
+  const sec = document.createElement('div'); sec.className='vertical';
+  sec.innerHTML=`<div class="vertical-title">${v.vertical}</div><div class="grid"></div>`;
+  const grid = sec.querySelector('.grid');
+  v.cats.forEach(c => {
+    const src=`/assets/verticals/${v.folder}/categories/${c.slug}/hero.jpg?v=2`;
+    const card=document.createElement('div'); card.className='card';
+    card.innerHTML=`<img src="${src}" alt="${c.label}" loading="lazy"><div class="label"><div class="vert">${v.vertical}</div><div class="cat">${c.label}</div></div>`;
+    card.addEventListener('click',()=>openLB(src,c.label,v.vertical));
+    grid.appendChild(card);
+  });
+  app.appendChild(sec);
+});
+function openLB(src,label,vert){document.getElementById('lb-img').src=src;document.getElementById('lb-label').textContent=label;document.getElementById('lb-sub').textContent=vert;document.getElementById('lb').classList.add('open');}
+function closeLB(){document.getElementById('lb').classList.remove('open');}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLB();});
+</script>
+</body>
+</html>

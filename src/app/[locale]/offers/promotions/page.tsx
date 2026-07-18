@@ -74,8 +74,8 @@ export default async function PromotionsPage({ params }: PromotionsPageProps) {
               })}
             </div>
 
-            <div className="bg-white border-2 border-[#6B1F2B]/20 p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-[#C3A35E] mb-6 text-center">Active Promotions</h3>
+            <div className="bg-white border-2 border-harvics-burgundy/20 p-8 shadow-lg">
+              <h3 className="text-2xl font-bold text-harvics-gold mb-6 text-center">Active Promotions</h3>
               <div className="space-y-4">
                 {[1, 2, 3].map((item, index) => (
                   <div key={item} className="flex items-center justify-between p-4 bg-white gap-4">

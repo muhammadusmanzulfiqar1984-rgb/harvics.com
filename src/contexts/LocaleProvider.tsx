@@ -16,7 +16,7 @@
  */
 
 import React, { createContext, useContext, useState, useEffect, ReactNode, useCallback } from 'react'
-import { useRouter, usePathname } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 
 import { SUPPORTED_LOCALES as CONFIG_LOCALES, type SupportedLocale as ConfigSupportedLocale } from '@/config/locales';
 
@@ -112,7 +112,6 @@ export function LocaleProvider({
   userId?: string
   initialLocale?: string
 }) {
-  const router = useRouter()
   const pathname = usePathname()
   
   // Detect locale with fallback chain
@@ -202,12 +201,12 @@ export function LocaleProvider({
       }
     }
     
-    // Update URL if needed
-    if (pathname) {
+    // Navigate to new locale URL — full reload ensures server re-renders with correct messages
+    if (typeof window !== 'undefined' && pathname) {
       const currentLocale = pathname.split('/')[1]
       if (currentLocale !== newLocale && SUPPORTED_LOCALES.includes(currentLocale as SupportedLocale)) {
         const newPath = pathname.replace(`/${currentLocale}`, `/${newLocale}`)
-        router.push(newPath)
+        window.location.href = newPath
       }
     }
   }

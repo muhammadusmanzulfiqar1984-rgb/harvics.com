@@ -27,7 +27,7 @@ export default function P(){
     </Panel>
     <Panel title={`SUPPLIERS (${rows.length})`} full>
       <Tbl head={['NAME','COUNTRY','CATEGORY','RATING','STATUS','ACTIONS']}>
-        {rows.map(r=><tr key={r.id} style={{borderBottom:'1px solid #6B1F2B11'}}>
+        {rows.map(r=><tr key={r.id} style={{borderBottom:'1px solid #3D121211'}}>
           <td style={td}><b>{r.name}</b></td><td style={td}>{r.country||'—'}</td><td style={td}>{r.category||'—'}</td>
           <td style={td}>{'★'.repeat(Math.round(r.rating))}{'☆'.repeat(5-Math.round(r.rating))} {r.rating}</td>
           <td style={td}><Pill s={r.qualifiedStatus}/></td>

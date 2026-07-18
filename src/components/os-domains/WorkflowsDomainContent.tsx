@@ -98,7 +98,7 @@ function OrderFulfillmentScreen() {
         <div className="flex items-center gap-1 mb-6 overflow-x-auto pb-2">
           {workflowData.orderFulfillment.steps.map((s, idx) => (
             <div key={idx} className="flex items-center flex-shrink-0">
-              <div className={`w-8 h-8 flex items-center justify-center font-bold text-xs ${s.status === 'Completed' ? 'bg-[#F5F5F7]0 text-white' : s.status === 'In Progress' ? 'bg-[#6B1F2B] text-white' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>
+              <div className={`w-8 h-8 flex items-center justify-center font-bold text-xs ${s.status === 'Completed' ? 'bg-[#F5F5F7]0 text-white' : s.status === 'In Progress' ? 'bg-harvics-burgundy text-white' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>
                 {s.status === 'Completed' ? '' : s.step}
               </div>
               <div className="mx-1 text-xs text-[#8E8E93] max-w-[60px] text-center leading-tight">{s.name}</div>
@@ -125,7 +125,7 @@ function OrderFulfillmentScreen() {
                   <td className="px-4 py-3">{o.currentStep}</td>
                   <td className="px-4 py-3">
                     <div className="flex items-center gap-2">
-                      <div className="w-24 bg-[#F5F5F7] h-2" style={{ borderRadius: 0 }}><div className="bg-[#6B1F2B] h-2" style={{ width: `${o.progress}%`, borderRadius: 0 }}></div></div>
+                      <div className="w-24 bg-[#F5F5F7] h-2" style={{ borderRadius: 0 }}><div className="bg-harvics-burgundy h-2" style={{ width: `${o.progress}%`, borderRadius: 0 }}></div></div>
                       <span className="text-xs text-[#8E8E93]">{o.progress}%</span>
                     </div>
                   </td>
@@ -148,7 +148,7 @@ function ImportExportFlowScreen() {
           <div className="space-y-3">
             {workflowData.importExportFlow.importSteps.map((s, i) => (
               <div key={i} className="flex items-center gap-3">
-                <div className={`w-8 h-8 flex items-center justify-center font-bold text-xs flex-shrink-0 ${s.status === 'Completed' ? 'bg-[#F5F5F7]0 text-white' : s.status === 'In Progress' ? 'bg-[#6B1F2B] text-white' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>
+                <div className={`w-8 h-8 flex items-center justify-center font-bold text-xs flex-shrink-0 ${s.status === 'Completed' ? 'bg-[#F5F5F7]0 text-white' : s.status === 'In Progress' ? 'bg-harvics-burgundy text-white' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>
                   {s.status === 'Completed' ? '' : i + 1}
                 </div>
                 <div className="flex-1"><div className="font-semibold text-[#1A1A1A] text-sm">{s.name}</div><div className="text-xs text-[#8E8E93]">{s.status}</div></div>
@@ -161,7 +161,7 @@ function ImportExportFlowScreen() {
           <div className="space-y-3">
             {workflowData.importExportFlow.exportSteps.map((s, i) => (
               <div key={i} className="flex items-center gap-3">
-                <div className={`w-8 h-8 flex items-center justify-center font-bold text-xs flex-shrink-0 ${s.status === 'Completed' ? 'bg-[#F5F5F7]0 text-white' : s.status === 'In Progress' ? 'bg-[#6B1F2B] text-white' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>
+                <div className={`w-8 h-8 flex items-center justify-center font-bold text-xs flex-shrink-0 ${s.status === 'Completed' ? 'bg-[#F5F5F7]0 text-white' : s.status === 'In Progress' ? 'bg-harvics-burgundy text-white' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>
                   {s.status === 'Completed' ? '' : i + 1}
                 </div>
                 <div className="flex-1"><div className="font-semibold text-[#1A1A1A] text-sm">{s.name}</div><div className="text-xs text-[#8E8E93]">{s.status}</div></div>

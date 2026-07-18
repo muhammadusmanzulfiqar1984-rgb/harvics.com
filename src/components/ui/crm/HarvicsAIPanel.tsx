@@ -34,7 +34,7 @@ export const HarvicsAIPanel: React.FC<HarvicsAIPanelProps> = ({
   }
 
   return (
-    <div className="relative flex flex-col h-full rounded-2xl overflow-hidden bg-harvics-burgundy border border-harvics-goldDivider shadow-[0_4px_24px_rgba(26,5,5,0.5)] p-4">
+    <div className="relative flex flex-col h-full rounded-2xl overflow-hidden bg-harvics-burgundy border border-harvics-goldDivider shadow-[0_4px_24px_rgba(61, 18, 18,0.5)] p-4">
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-harvics-gold/50 to-transparent" />
 
       {/* Header */}

@@ -71,7 +71,7 @@ const FoodMegaMenu: React.FC<FoodMegaMenuProps> = ({ sections, isOpen, onClose }
                     href={`/${locale}${item.href}`}
                     className="flex items-center space-x-4 p-3 hover:bg-white rounded-lg transition-colors group"
                   >
-                    <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 border-2 border-black200 group-hover:border-[#6B1F2B] transition-colors">
+                    <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 border-2 border-black200 group-hover:border-harvics-burgundy transition-colors">
                       {item.image ? (
                         <img
                           src={item.image}

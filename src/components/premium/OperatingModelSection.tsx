@@ -56,15 +56,15 @@ const ProcessConnector: React.FC = () => (
       />
       <defs>
         <linearGradient id="opGoldGrad" x1="0" x2="1">
-          <stop offset="0" stopColor="#C3A35E" stopOpacity="0.2" />
-          <stop offset="0.5" stopColor="#C3A35E" stopOpacity="1" />
-          <stop offset="1" stopColor="#C3A35E" stopOpacity="0.2" />
+          <stop offset="0" stopColor="var(--harvics-gold)" stopOpacity="0.2" />
+          <stop offset="0.5" stopColor="var(--harvics-gold)" stopOpacity="1" />
+          <stop offset="1" stopColor="var(--harvics-gold)" stopOpacity="0.2" />
         </linearGradient>
       </defs>
     </svg>
     <motion.div
       className="absolute top-1/2 -translate-y-1/2 w-2.5 h-2.5 rounded-full"
-      style={{ background: '#C3A35E', boxShadow: '0 0 14px #C3A35E, 0 0 28px rgba(195,163,94,0.4)' }}
+      style={{ background: 'var(--harvics-gold)', boxShadow: '0 0 14px #C3A35E, 0 0 28px rgba(195, 163, 94,0.4)' }}
       initial={{ left: '16%', opacity: 0 }}
       whileInView={{
         left: ['16%', '50%', '84%', '50%', '16%'],
@@ -76,8 +76,11 @@ const ProcessConnector: React.FC = () => (
   </div>
 );
 
-const OperatingModelSection: React.FC = () => {
+type OpModelTone = 'dark' | 'cream'
+
+const OperatingModelSection: React.FC<{ tone?: OpModelTone }> = ({ tone = 'dark' }) => {
   const [tab, setTab] = useState<TabKey>('process');
+  const isCream = tone === 'cream'
 
   const tabs: { key: TabKey; num: string; label: string }[] = [
     { key: 'process', num: '01', label: 'Process' },
@@ -89,8 +92,9 @@ const OperatingModelSection: React.FC = () => {
     <section
       className="w-full relative overflow-hidden py-16 px-6"
       style={{
-        background:
-          'radial-gradient(ellipse at 20% 0%, rgba(107,31,43,0.45) 0%, transparent 55%), radial-gradient(ellipse at 80% 100%, rgba(195,163,94,0.18) 0%, transparent 50%), linear-gradient(160deg, #3D1212 0%, #261015 60%, #3D1212 100%)',
+        background: isCream
+          ? 'var(--harvics-cream)'
+          : 'radial-gradient(ellipse at 20% 0%, rgba(61, 18, 18,0.45) 0%, transparent 55%), radial-gradient(ellipse at 80% 100%, rgba(195, 163, 94,0.18) 0%, transparent 50%), linear-gradient(160deg, #3D1212 0%, #120303 60%, #3D1212 100%)',
       }}
     >
       {/* Subtle grid pattern */}
@@ -98,11 +102,11 @@ const OperatingModelSection: React.FC = () => {
         className="absolute inset-0 pointer-events-none opacity-[0.06]"
         style={{
           backgroundImage:
-            'linear-gradient(rgba(195,163,94,1) 1px, transparent 1px), linear-gradient(90deg, rgba(195,163,94,1) 1px, transparent 1px)',
+            'linear-gradient(rgba(195, 163, 94,1) 1px, transparent 1px), linear-gradient(90deg, rgba(195, 163, 94,1) 1px, transparent 1px)',
           backgroundSize: '64px 64px',
         }}
       />
-      <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#C3A35E] to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-harvics-gold to-transparent" />
 
       <div className="max-w-[1200px] mx-auto relative z-10">
         {/* HEADER — Option B: left-aligned dashboard with metrics on right */}
@@ -114,31 +118,49 @@ const OperatingModelSection: React.FC = () => {
           className="flex flex-col md:flex-row md:justify-between md:items-end gap-6 md:gap-10 mb-8"
         >
           <div className="md:max-w-2xl">
-            <span className="inline-flex items-center gap-2.5 text-[10px] tracking-[0.28em] uppercase text-[#C3A35E] font-semibold mb-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#C3A35E]" />
-              The HARVICS Operating Model
+            <span className="inline-flex items-center gap-2.5 text-[10px] tracking-[0.28em] uppercase text-harvics-gold font-semibold mb-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-harvics-gold" />
+              {isCream ? '07 · Operating model' : 'The HARVICS Operating Model'}
             </span>
-            <h2 className="text-white text-3xl md:text-5xl font-extralight tracking-tight leading-[1.05]">
+            <h2
+              className={`harvics-corridor-display ${isCream ? 'text-harvics-burgundy' : 'text-harvics-cream'} text-[clamp(28px,4.2vw,48px)]`}
+            >
               Built like infrastructure.
               <br />
-              <span className="text-[#C3A35E] font-normal">Sold like a service.</span>
+              <span className="text-harvics-gold font-medium">Sold like a service.</span>
             </h2>
-            <p className="text-white/60 text-[13px] max-w-xl mt-3 font-light leading-relaxed">
+            <p
+              className={`harvics-corridor-body max-w-xl mt-3 ${isCream ? '' : '!text-harvics-cream/70'}`}
+            >
               The system behind every shipment, every approval, every relationship — explained on your terms.
             </p>
           </div>
-          <div className="flex gap-8 md:gap-9 md:pl-6 md:border-l md:border-[#C3A35E]/15">
+          <div
+            className={`flex gap-8 md:gap-9 md:pl-6 md:border-l ${isCream ? 'md:border-harvics-gold/35' : 'md:border-harvics-gold/15'}`}
+          >
             <div>
-              <div className="text-[#C3A35E] text-[9px] tracking-[3px] uppercase font-bold mb-1.5">Stages</div>
-              <div className="text-white text-2xl md:text-[26px] font-extralight tabular-nums leading-none">14</div>
+              <div className="text-harvics-gold text-[9px] tracking-[3px] uppercase font-bold mb-1.5">Stages</div>
+              <div
+                className={`${isCream ? 'text-harvics-burgundy' : 'text-harvics-cream'} text-2xl md:text-[26px] font-medium tabular-nums leading-none`}
+              >
+                14
+              </div>
             </div>
             <div>
-              <div className="text-[#C3A35E] text-[9px] tracking-[3px] uppercase font-bold mb-1.5">Markets</div>
-              <div className="text-white text-2xl md:text-[26px] font-extralight tabular-nums leading-none">42</div>
+              <div className="text-harvics-gold text-[9px] tracking-[3px] uppercase font-bold mb-1.5">Markets</div>
+              <div
+                className={`${isCream ? 'text-harvics-burgundy' : 'text-harvics-cream'} text-2xl md:text-[26px] font-medium tabular-nums leading-none`}
+              >
+                42
+              </div>
             </div>
             <div>
-              <div className="text-[#C3A35E] text-[9px] tracking-[3px] uppercase font-bold mb-1.5">On-Time</div>
-              <div className="text-white text-2xl md:text-[26px] font-extralight tabular-nums leading-none">96%</div>
+              <div className="text-harvics-gold text-[9px] tracking-[3px] uppercase font-bold mb-1.5">On-Time</div>
+              <div
+                className={`${isCream ? 'text-harvics-burgundy' : 'text-harvics-cream'} text-2xl md:text-[26px] font-medium tabular-nums leading-none`}
+              >
+                96%
+              </div>
             </div>
           </div>
         </motion.div>
@@ -151,7 +173,11 @@ const OperatingModelSection: React.FC = () => {
               type="button"
               onClick={() => setTab(t.key)}
               className={`relative px-6 md:px-8 py-4 text-[11px] tracking-[4px] uppercase font-semibold transition-colors ${
-                tab === t.key ? 'text-[#C3A35E]' : 'text-white/50 hover:text-[#C3A35E]'
+                tab === t.key
+                  ? 'text-harvics-gold'
+                  : isCream
+                    ? 'text-harvics-burgundy/50 hover:text-harvics-gold'
+                    : 'text-harvics-cream/50 hover:text-harvics-gold'
               }`}
             >
               <span className="text-[9px] opacity-50 font-normal mr-2">{t.num}</span>
@@ -159,8 +185,8 @@ const OperatingModelSection: React.FC = () => {
               {tab === t.key && (
                 <motion.span
                   layoutId="op-tab-underline"
-                  className="absolute -bottom-px left-0 right-0 h-[2px] bg-[#C3A35E]"
-                  style={{ boxShadow: '0 0 10px rgba(195,163,94,0.6)' }}
+                  className="absolute -bottom-px left-0 right-0 h-[2px] bg-harvics-gold"
+                  style={{ boxShadow: '0 0 10px rgba(195, 163, 94,0.6)' }}
                 />
               )}
             </button>
@@ -180,7 +206,7 @@ const OperatingModelSection: React.FC = () => {
                 className="relative"
               >
                 <ProcessConnector />
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#C3A35E]/25 relative">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-harvics-gold/25 relative">
                   {[
                     {
                       num: '01',
@@ -210,27 +236,27 @@ const OperatingModelSection: React.FC = () => {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.55, delay: 0.15 + i * 0.15, ease: 'easeOut' }}
-                      className="group relative bg-[#1d0809] hover:bg-[#2d0f14] transition-all duration-500 p-9 overflow-hidden cursor-default"
+                      className="group relative bg-harvics-burgundy hover:bg-harvics-burgundy/90 transition-all duration-500 p-9 overflow-hidden cursor-default"
                     >
                       <div
                         className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
-                        style={{ background: 'radial-gradient(circle at 50% 0%, rgba(195,163,94,0.18) 0%, transparent 60%)' }}
+                        style={{ background: 'radial-gradient(circle at 50% 0%, rgba(195, 163, 94,0.18) 0%, transparent 60%)' }}
                       />
                       <div className="relative">
-                        <div className="text-[80px] font-thin text-[#C3A35E]/25 group-hover:text-[#C3A35E]/60 transition-colors duration-500 leading-none tracking-tighter select-none mb-4">
+                        <div className="text-[80px] font-thin text-harvics-gold/25 group-hover:text-harvics-gold/60 transition-colors duration-500 leading-none tracking-tighter select-none mb-4">
                           {card.num}
                         </div>
                         <h3 className="text-white text-xl font-light tracking-wide mb-1">{card.title}</h3>
-                        <div className="text-[#C3A35E] text-[9px] font-semibold uppercase tracking-[4px] mb-5">
+                        <div className="text-harvics-gold text-[9px] font-semibold uppercase tracking-[4px] mb-5">
                           {card.sub}
                         </div>
-                        <div className="w-8 h-px bg-[#C3A35E] mb-5 group-hover:w-16 transition-all duration-500" />
+                        <div className="w-8 h-px bg-harvics-gold mb-5 group-hover:w-16 transition-all duration-500" />
                         <p className="text-white/60 text-[13px] leading-[1.8] font-light mb-7">{card.body}</p>
                         <div className="flex flex-wrap gap-2">
                           {card.tags.map(tag => (
                             <span
                               key={tag}
-                              className="px-2.5 py-1 border border-[#C3A35E]/35 text-[#C3A35E] text-[9px] font-medium uppercase tracking-[2px] group-hover:border-[#C3A35E]/70 transition-colors duration-500"
+                              className="px-2.5 py-1 border border-harvics-gold/35 text-harvics-gold text-[9px] font-medium uppercase tracking-[2px] group-hover:border-harvics-gold/70 transition-colors duration-500"
                             >
                               {tag}
                             </span>
@@ -251,7 +277,7 @@ const OperatingModelSection: React.FC = () => {
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.4, ease: 'easeOut' }}
               >
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-[#C3A35E]/25">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-harvics-gold/25">
                   {[
                     { num: '50+', label: 'Countries', sub: 'Global Reach', body: 'Operating across six continents with direct supply chain access and local market intelligence.' },
                     { num: '100%', label: 'Tested', sub: 'Quality Assured', body: 'Every product passes ISO, HACCP, BRC and Halal multi-stage certification before dispatch.' },
@@ -268,25 +294,25 @@ const OperatingModelSection: React.FC = () => {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.5, delay: i * 0.06, ease: 'easeOut' }}
-                      className="group relative bg-[#1d0809] hover:bg-[#2d0f14] transition-all duration-500 p-7 overflow-hidden"
+                      className="group relative bg-harvics-burgundy hover:bg-harvics-burgundy/90 transition-all duration-500 p-7 overflow-hidden"
                     >
                       <div
                         className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
-                        style={{ background: 'radial-gradient(circle at 50% 0%, rgba(195,163,94,0.15) 0%, transparent 60%)' }}
+                        style={{ background: 'radial-gradient(circle at 50% 0%, rgba(195, 163, 94,0.15) 0%, transparent 60%)' }}
                       />
                       <div className="relative">
-                        <div className="text-[44px] font-extralight text-[#C3A35E] leading-none tracking-tight mb-3">
+                        <div className="text-[44px] font-extralight text-harvics-gold leading-none tracking-tight mb-3">
                           <CountUp value={cell.num} />
                         </div>
                         <div className="text-white text-[13px] font-normal mb-1">{cell.label}</div>
-                        <div className="text-[#C3A35E] text-[9px] tracking-[3px] uppercase mb-4 font-semibold">{cell.sub}</div>
-                        <div className="w-6 h-px bg-[#C3A35E]/50 mb-4 group-hover:w-12 transition-all duration-500" />
+                        <div className="text-harvics-gold text-[9px] tracking-[3px] uppercase mb-4 font-semibold">{cell.sub}</div>
+                        <div className="w-6 h-px bg-harvics-gold/50 mb-4 group-hover:w-12 transition-all duration-500" />
                         <p className="text-white/55 text-[12px] leading-[1.7] font-light">{cell.body}</p>
                       </div>
                     </motion.div>
                   ))}
                 </div>
-                <div className="mt-10 pt-9 border-t border-[#C3A35E]/15 flex flex-wrap justify-center gap-3.5">
+                <div className="mt-10 pt-9 border-t border-harvics-gold/15 flex flex-wrap justify-center gap-3.5">
                   {['HACCP', 'ISO 22000', 'Halal Certified', 'SGS Audited', 'BSCI Compliant', 'Sedex Member'].map((c, i) => (
                     <motion.span
                       key={c}
@@ -294,7 +320,7 @@ const OperatingModelSection: React.FC = () => {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: 0.4 + i * 0.06 }}
-                      className="px-4 py-2 border border-[#C3A35E]/40 text-[#C3A35E] text-[10px] tracking-[3px] uppercase font-medium hover:border-[#C3A35E] hover:bg-[#C3A35E]/5 transition-colors"
+                      className="px-4 py-2 border border-harvics-gold/40 text-harvics-gold text-[10px] tracking-[3px] uppercase font-medium hover:border-harvics-gold hover:bg-harvics-gold/5 transition-colors"
                     >
                       {c}
                     </motion.span>
@@ -311,7 +337,7 @@ const OperatingModelSection: React.FC = () => {
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.4, ease: 'easeOut' }}
               >
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#C3A35E]/25">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-harvics-gold/25">
                   {[
                     {
                       letter: 'B',
@@ -344,18 +370,18 @@ const OperatingModelSection: React.FC = () => {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.55, delay: 0.15 + i * 0.15, ease: 'easeOut' }}
-                      className="group relative bg-[#1d0809] hover:bg-[#2d0f14] transition-all duration-500 p-10 flex flex-col overflow-hidden cursor-pointer"
+                      className="group relative bg-harvics-burgundy hover:bg-harvics-burgundy/90 transition-all duration-500 p-10 flex flex-col overflow-hidden cursor-pointer"
                     >
                       <div
                         className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
-                        style={{ background: 'radial-gradient(circle at 50% 0%, rgba(195,163,94,0.18) 0%, transparent 60%)' }}
+                        style={{ background: 'radial-gradient(circle at 50% 0%, rgba(195, 163, 94,0.18) 0%, transparent 60%)' }}
                       />
                       <div className="relative flex flex-col flex-1">
-                        <div className="w-11 h-11 border border-[#C3A35E] text-[#C3A35E] flex items-center justify-center text-lg mb-6 group-hover:bg-[#C3A35E]/10 transition-colors duration-500">
+                        <div className="w-11 h-11 border border-harvics-gold text-harvics-gold flex items-center justify-center text-lg mb-6 group-hover:bg-harvics-gold/10 transition-colors duration-500">
                           {card.letter}
                         </div>
                         <h3 className="text-white text-xl font-light mb-1">{card.title}</h3>
-                        <div className="text-[#C3A35E] text-[9px] font-semibold uppercase tracking-[4px] mb-4">
+                        <div className="text-harvics-gold text-[9px] font-semibold uppercase tracking-[4px] mb-4">
                           {card.tag}
                         </div>
                         <p className="text-white/60 text-[13px] leading-[1.8] font-light mb-6 flex-1">
@@ -363,7 +389,7 @@ const OperatingModelSection: React.FC = () => {
                         </p>
                         <a
                           href={card.href}
-                          className="text-[#C3A35E] text-[11px] tracking-[3px] uppercase font-semibold border-b border-[#C3A35E] pb-1 self-start hover:tracking-[5px] transition-all duration-300"
+                          className="text-harvics-gold text-[11px] tracking-[3px] uppercase font-semibold border-b border-harvics-gold pb-1 self-start hover:tracking-[5px] transition-all duration-300"
                         >
                           {card.cta}
                         </a>

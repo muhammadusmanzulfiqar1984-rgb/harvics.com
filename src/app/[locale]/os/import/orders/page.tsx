@@ -82,13 +82,13 @@ export default function ImportOrdersPage() {
   }
 
   const getStatusColor = (status?: string) => {
-    if (!status) return 'bg-white text-[#C3A35E]/90'
+    if (!status) return 'bg-white text-harvics-gold/90'
     const statusLower = status.toLowerCase()
     if (statusLower.includes('delivered') || statusLower === 'completed') return 'bg-green-100 text-green-800'
     if (statusLower.includes('transit') || statusLower === 'in_transit') return 'bg-blue-100 text-blue-800'
-    if (statusLower.includes('customs') || statusLower.includes('clearance')) return 'bg-[#C3A35E]/20 text-[#C3A35E]'
-    if (statusLower === 'pending' || statusLower === 'draft') return 'bg-white text-[#C3A35E]/90'
-    return 'bg-white text-[#C3A35E]/90'
+    if (statusLower.includes('customs') || statusLower.includes('clearance')) return 'bg-harvics-gold/20 text-harvics-gold'
+    if (statusLower === 'pending' || statusLower === 'draft') return 'bg-white text-harvics-gold/90'
+    return 'bg-white text-harvics-gold/90'
   }
 
   const formatOrderValue = (value?: number, currency?: string) => {
@@ -104,10 +104,10 @@ export default function ImportOrdersPage() {
       <div className="mb-6">
         <div className="flex justify-between items-center">
           <div>
-            <h1 className="text-3xl font-bold text-[#C3A35E] mb-2">
+            <h1 className="text-3xl font-bold text-harvics-gold mb-2">
               {t('orders.title')}
             </h1>
-            <p className="text-[#C3A35E]/90">
+            <p className="text-harvics-gold/90">
               {t('orders.description')}
             </p>
           </div>
@@ -146,43 +146,43 @@ export default function ImportOrdersPage() {
 
       {loading ? (
         <div className="text-center py-12">
-          <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-[#6B1F2B]"></div>
-          <p className="mt-4 text-[#C3A35E]/90">{t('orders.loading')}</p>
+          <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-harvics-burgundy"></div>
+          <p className="mt-4 text-harvics-gold/90">{t('orders.loading')}</p>
         </div>
       ) : orders.length === 0 ? (
         <div className="text-center py-12 bg-white">
-          <p className="text-[#C3A35E]/90">{t('orders.noOrders')}</p>
+          <p className="text-harvics-gold/90">{t('orders.noOrders')}</p>
         </div>
       ) : (
         <div className="bg-white shadow overflow-hidden">
           <table className="min-w-full divide-y divide-gray-200">
             <thead className="bg-white">
               <tr>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">
                   {t('orders.orderId')}
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">
                   {t('orders.supplier')}
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">
                   {t('orders.country')}
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">
                   {t('orders.status')}
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">
                   {t('orders.orderDate')}
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">
                   {t('orders.expectedDelivery')}
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">
                   {t('orders.totalValue')}
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">
                   {t('orders.items')}
                 </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">
+                <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">
                   {t('orders.actions')}
                 </th>
               </tr>
@@ -193,15 +193,15 @@ export default function ImportOrdersPage() {
                   <td className="px-6 py-4 whitespace-nowrap">
                     <Link
                       href={`/${locale}/os/import/orders/${order.order_id}`}
-                      className="text-[#C3A35E]/90 hover:text-[#C3A35E] font-medium"
+                      className="text-harvics-gold/90 hover:text-harvics-gold font-medium"
                     >
                       {order.order_id}
                     </Link>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#C3A35E]/90">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">
                     {order.supplier_name || order.supplier_id || '-'}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#C3A35E]/90">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">
                     {order.country_code || '-'}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
@@ -209,22 +209,22 @@ export default function ImportOrdersPage() {
                       {order.status || 'Unknown'}
                     </span>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#C3A35E]/90">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">
                     {order.order_date ? formatDate(order.order_date) : '-'}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#C3A35E]/90">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">
                     {order.expected_delivery ? formatDate(order.expected_delivery) : '-'}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#C3A35E]/90">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-harvics-gold/90">
                     {formatOrderValue(order.total_value, order.currency)}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#C3A35E]/90">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">
                     {order.items_count || 0}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                     <Link
                       href={`/${locale}/os/import/orders/${order.order_id}`}
-                      className="text-[#C3A35E]/90 hover:text-[#C3A35E]"
+                      className="text-harvics-gold/90 hover:text-harvics-gold"
                     >
                       {t('orders.view')}
                     </Link>

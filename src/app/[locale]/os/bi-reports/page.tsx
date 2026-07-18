@@ -21,18 +21,18 @@ export default function P(){
       <Inp l="Group by (column name)" v={form.groupBy} on={v=>setForm({...form,groupBy:v})}/>
       <Inp l="Description" v={form.description} on={v=>setForm({...form,description:v})}/>
       <button onClick={create} style={btnB}>+ SAVE REPORT</button>
-      <div style={{marginTop:8,padding:10,background:'#F5F0E8',borderLeft:'4px solid #C3A35E',fontSize:11,color:'#6B1F2B'}}>
+      <div style={{marginTop:8,padding:10,background:'var(--harvics-cream)',borderLeft:'4px solid #C3A35E',fontSize:11,color:'var(--harvics-burgundy)'}}>
         Examples:<br/>• Sales count by status: source=Order, metric=count, groupBy=status<br/>• Total invoiced: source=Invoice, metric=sum, field=amount<br/>• AR by status: source=Invoice, metric=sum, field=amount, groupBy=status
       </div>
     </Panel>
     <Panel title={result?`RESULT — ${resultName}`:'RESULT'}>
       {!result?<div style={{padding:20,color:'#888',textAlign:'center'}}>Run a saved report to see results.</div>:(<>
-        {Array.isArray(result)?<Tbl head={['KEY','VALUE']}>{result.map((r:any,i:number)=><tr key={i}><td style={td}>{String(r.key)}</td><td style={{...td,fontWeight:700,color:'#6B1F2B'}}>{typeof r.value==='number'?r.value.toLocaleString():String(r.value)}</td></tr>)}</Tbl>:<div style={{padding:20,fontSize:28,fontWeight:700,color:'#6B1F2B',textAlign:'center'}}>{typeof result==='object'?Object.entries(result).map(([k,v]:any)=><div key={k} style={{fontSize:14}}>{k}: <b style={{fontSize:24}}>{typeof v==='number'?v.toLocaleString():String(v)}</b></div>):result}</div>}
+        {Array.isArray(result)?<Tbl head={['KEY','VALUE']}>{result.map((r:any,i:number)=><tr key={i}><td style={td}>{String(r.key)}</td><td style={{...td,fontWeight:700,color:'var(--harvics-burgundy)'}}>{typeof r.value==='number'?r.value.toLocaleString():String(r.value)}</td></tr>)}</Tbl>:<div style={{padding:20,fontSize:28,fontWeight:700,color:'var(--harvics-burgundy)',textAlign:'center'}}>{typeof result==='object'?Object.entries(result).map(([k,v]:any)=><div key={k} style={{fontSize:14}}>{k}: <b style={{fontSize:24}}>{typeof v==='number'?v.toLocaleString():String(v)}</b></div>):result}</div>}
       </>)}
     </Panel>
     <Panel title="SAVED REPORTS" full>
       <Tbl head={['NAME','CATEGORY','SOURCE','METRIC','GROUP BY','LAST RUN','ACTIONS']}>
-        {rows.map(r=><tr key={r.id} style={{borderBottom:'1px solid #6B1F2B11'}}>
+        {rows.map(r=><tr key={r.id} style={{borderBottom:'1px solid #3D121211'}}>
           <td style={td}><b>{r.name}</b></td><td style={td}>{r.category||'—'}</td><td style={td}>{r.sourceTable}</td>
           <td style={td}>{r.metric}{r.metricField?`(${r.metricField})`:''}</td><td style={td}>{r.groupBy||'—'}</td>
           <td style={{...td,fontSize:11}}>{r.lastRunAt?new Date(r.lastRunAt).toLocaleString():'—'}</td>

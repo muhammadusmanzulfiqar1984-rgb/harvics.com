@@ -104,7 +104,7 @@ export default function PortalSubPageLayout({
                   href={`/${locale}${config.dashboardPath}`}
                   className="flex items-center gap-2 hover:opacity-80 transition-opacity"
                 >
-                  <span className="text-xl font-bold text-[#6B1F2B]">H</span>
+                  <span className="text-xl font-bold text-harvics-burgundy">H</span>
                   <div className="hidden sm:block">
                     <p className="text-[10px] text-gray-400 leading-none uppercase tracking-wide">Harvics OS</p>
                     <p className="text-sm font-bold text-gray-900 leading-tight">{config.label}</p>
@@ -120,7 +120,7 @@ export default function PortalSubPageLayout({
                 <PortalSwitcher currentPortal={portal} />
                 <button
                   onClick={handleLogout}
-                  className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-gray-500 hover:text-[#6B1F2B] hover:bg-gray-100 rounded transition-colors border border-gray-200"
+                  className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-gray-500 hover:text-harvics-burgundy hover:bg-gray-100 rounded transition-colors border border-gray-200"
                   title="Sign out"
                 >
                   <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -154,7 +154,7 @@ export default function PortalSubPageLayout({
                     className={`
                       flex items-center gap-3 px-3 py-2.5 rounded-lg mb-0.5 text-sm font-medium transition-all
                       ${isActive
-                        ? 'bg-[#6B1F2B] text-white shadow-sm'
+                        ? 'bg-harvics-burgundy text-white shadow-sm'
                         : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
                       }
                     `}
@@ -162,7 +162,7 @@ export default function PortalSubPageLayout({
                     <span className="text-base leading-none">{item.icon}</span>
                     <span className="truncate">{item.label}</span>
                     {isActive && (
-                      <span className="ml-auto w-1.5 h-1.5 rounded-full bg-[#C3A35E] flex-shrink-0" />
+                      <span className="ml-auto w-1.5 h-1.5 rounded-full bg-harvics-gold flex-shrink-0" />
                     )}
                   </Link>
                 )
@@ -192,7 +192,7 @@ export default function PortalSubPageLayout({
                 <li>
                   <Link
                     href={`/${locale}${config.dashboardPath}`}
-                    className="hover:text-[#6B1F2B] transition-colors"
+                    className="hover:text-harvics-burgundy transition-colors"
                   >
                     Dashboard
                   </Link>

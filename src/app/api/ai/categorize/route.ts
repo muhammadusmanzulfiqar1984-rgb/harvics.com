@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { callOpenAI, callNvidia } from '@/lib/openai'
 
 const CATEGORIES = ['Food & Dining', 'Transport', 'Accommodation', 'Office Supplies', 'Software & Tech',
   'Marketing', 'Professional Services', 'Utilities', 'Entertainment', 'Healthcare', 'Other']
@@ -23,15 +24,29 @@ export async function POST(req: NextRequest) {
     // @ts-expect-error - CF env binding available at runtime
     const ai = (globalThis as unknown as { AI?: unknown }).AI ?? (req as unknown as { env?: { AI?: unknown } }).env?.AI
 
+    const catMessages = [
+      { role: 'system' as const, content: `Categorize the expense into exactly one of: ${CATEGORIES.join(', ')}. Reply with only the category name.` },
+      { role: 'user' as const, content: `Description: ${description}, Amount: ${amount}` },
+    ]
+
+    // 1. OpenAI
+    const oaReply = await callOpenAI(catMessages, { maxTokens: 20, temperature: 0 })
+    if (oaReply) {
+      const cat = CATEGORIES.find(c => oaReply.includes(c)) ?? ruleBasedCategory(description)
+      return NextResponse.json({ category: cat })
+    }
+
+    // 2. NVIDIA
+    const nvReply = await callNvidia(catMessages, { maxTokens: 20, temperature: 0 })
+    if (nvReply) {
+      const cat = CATEGORIES.find(c => nvReply.includes(c)) ?? ruleBasedCategory(description)
+      return NextResponse.json({ category: cat })
+    }
+
+    // 3. Cloudflare Workers AI
     if (ai && typeof (ai as { run?: unknown }).run === 'function') {
       const cfAI = ai as { run: (model: string, opts: unknown) => Promise<{ response?: string }> }
-      const result = await cfAI.run('@cf/meta/llama-3-8b-instruct', {
-        messages: [
-          { role: 'system', content: `Categorize the expense into exactly one of: ${CATEGORIES.join(', ')}. Reply with only the category name.` },
-          { role: 'user', content: `Description: ${description}, Amount: ${amount}` },
-        ],
-        max_tokens: 20,
-      })
+      const result = await cfAI.run('@cf/meta/llama-3-8b-instruct', { messages: catMessages, max_tokens: 20 })
       const cat = CATEGORIES.find(c => result?.response?.includes(c)) ?? ruleBasedCategory(description)
       return NextResponse.json({ category: cat })
     }

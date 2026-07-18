@@ -1,0 +1,13 @@
+{
+  "name": "hx-scrape-orchestrator",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "postgres": "^3.4.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250508.0",
+    "typescript": "^5.7.2",
+    "wrangler": "^4.107.0"
+  }
+}

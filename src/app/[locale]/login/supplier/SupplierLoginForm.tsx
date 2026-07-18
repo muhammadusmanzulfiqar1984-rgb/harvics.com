@@ -116,7 +116,7 @@ export default function SupplierLoginForm() {
   }
 
   return (
-    <div className="bg-white/90 backdrop-blur-sm shadow-2xl border-2 border-[#C3A35E]/30 p-6 sm:p-8">
+    <div className="bg-white/90 backdrop-blur-sm shadow-2xl border-2 border-harvics-gold/30 p-6 sm:p-8">
       <form onSubmit={handleSubmit} className="space-y-6">
         {error && (
           <div className="p-3 bg-red-50 border border-red-200">
@@ -135,7 +135,7 @@ export default function SupplierLoginForm() {
             value={formData.username}
             onChange={handleInputChange}
             required
-            className="w-full px-4 py-3 border border-[#C3A35E]/30 focus:ring-2 focus:ring-black focus:border-white bg-white text-black placeholder-[#6B1F2B]/60 transition-all duration-300"
+            className="w-full px-4 py-3 border border-harvics-gold/30 focus:ring-2 focus:ring-black focus:border-white bg-white text-black placeholder-[#3D1212]/60 transition-all duration-300"
             placeholder="Enter your username"
           />
         </div>
@@ -151,7 +151,7 @@ export default function SupplierLoginForm() {
             value={formData.password}
             onChange={handleInputChange}
             required
-            className="w-full px-4 py-3 border border-[#C3A35E]/30 focus:ring-2 focus:ring-black focus:border-white bg-white text-black placeholder-[#6B1F2B]/60 transition-all duration-300"
+            className="w-full px-4 py-3 border border-harvics-gold/30 focus:ring-2 focus:ring-black focus:border-white bg-white text-black placeholder-[#3D1212]/60 transition-all duration-300"
             placeholder="Enter your password"
           />
         </div>
@@ -160,11 +160,11 @@ export default function SupplierLoginForm() {
           <label className="flex items-center">
             <input
               type="checkbox"
-              className="w-4 h-4 text-[#6B1F2B] bg-white border-[#C3A35E]/30 rounded focus:ring-[#6B1F2B] focus:ring-2"
+              className="w-4 h-4 text-harvics-burgundy bg-white border-harvics-gold/30 rounded focus:ring-harvics-burgundy focus:ring-2"
             />
             <span className="ml-2 text-sm text-black">Remember me</span>
           </label>
-          <a href="/en/contact" className="text-sm text-[#6B1F2B] hover:text-[#C3A35E] transition-colors duration-300">
+          <a href="/en/contact" className="text-sm text-harvics-burgundy hover:text-harvics-gold transition-colors duration-300">
             Forgot password?
           </a>
         </div>
@@ -172,11 +172,11 @@ export default function SupplierLoginForm() {
         <button
           type="submit"
           disabled={isLoading}
-          className="w-full bg-white hover:bg-gray-50 text-[#6B1F2B] font-bold py-3 px-4 transition-all duration-300 shadow-xl hover:shadow-2xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2 border-2 border-[#C3A35E]/30 hover:border-[#C3A35E]"
+          className="w-full bg-white hover:bg-gray-50 text-harvics-burgundy font-bold py-3 px-4 transition-all duration-300 shadow-xl hover:shadow-2xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2 border-2 border-harvics-gold/30 hover:border-harvics-gold"
         >
           {isLoading ? (
             <>
-              <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-[#6B1F2B]" fill="none" viewBox="0 0 24 24">
+              <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-harvics-burgundy" fill="none" viewBox="0 0 24 24">
                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                 <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
               </svg>
@@ -191,7 +191,7 @@ export default function SupplierLoginForm() {
       <div className="mt-6 text-center">
         <p className="text-sm text-black/80">
           {t('form.noAccount')}{' '}
-          <a href="/en/contact" className="text-[#6B1F2B] hover:text-[#C3A35E] font-medium transition-colors duration-300">
+          <a href="/en/contact" className="text-harvics-burgundy hover:text-harvics-gold font-medium transition-colors duration-300">
             {t('form.contactUs')}
           </a>
         </p>

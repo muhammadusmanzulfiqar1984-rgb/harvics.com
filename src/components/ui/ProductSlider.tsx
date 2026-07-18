@@ -97,7 +97,7 @@ const ProductSlider: React.FC<ProductSliderProps> = ({ categories }) => {
       {/* Background texture */}
       <div className="absolute inset-0 opacity-[0.02] pointer-events-none"
         style={{
-          backgroundImage: 'radial-gradient(circle at 2px 2px, #6B1F2B 1px, transparent 0)',
+          backgroundImage: 'radial-gradient(circle at 2px 2px, #3D1212 1px, transparent 0)',
           backgroundSize: '32px 32px',
         }} />
 
@@ -105,14 +105,14 @@ const ProductSlider: React.FC<ProductSliderProps> = ({ categories }) => {
         {/* Section Header */}
         <div className="text-center mb-10 md:mb-14">
           <div className="flex items-center justify-center gap-2 mb-3">
-            <div className="w-6 h-[2px] bg-[#C3A35E]/50" />
-            <span className="text-[10px] font-bold text-[#C3A35E] uppercase tracking-[0.25em]">Featured</span>
-            <div className="w-6 h-[2px] bg-[#C3A35E]/50" />
+            <div className="w-6 h-[2px] bg-harvics-gold/50" />
+            <span className="text-[10px] font-bold text-harvics-gold uppercase tracking-[0.25em]">Featured</span>
+            <div className="w-6 h-[2px] bg-harvics-gold/50" />
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#6B1F2B] mb-3" style={{ letterSpacing: '-0.02em' }}>
+          <h2 className="text-3xl md:text-4xl font-bold text-harvics-burgundy mb-3" style={{ letterSpacing: '-0.02em' }}>
             {t('products.ourProducts')}
           </h2>
-          <p className="text-sm text-[#6B1F2B]/45 max-w-lg mx-auto">
+          <p className="text-sm text-harvics-burgundy/45 max-w-lg mx-auto">
             {t('products.discoverPremium')}
           </p>
         </div>
@@ -141,8 +141,8 @@ const ProductSlider: React.FC<ProductSliderProps> = ({ categories }) => {
                       loading={index === 0 ? 'eager' : 'lazy'}
                     />
                     {/* Gradient overlays */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#6B1F2B]/75 via-[#6B1F2B]/40 to-transparent" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#6B1F2B]/80 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-br from-harvics-burgundy/75 via-[#3D1212]/40 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-harvics-burgundy/80 via-transparent to-transparent" />
 
                     {/* Content */}
                     <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12 lg:p-14">
@@ -172,7 +172,7 @@ const ProductSlider: React.FC<ProductSliderProps> = ({ categories }) => {
             {/* Progress bar overlay at bottom of slide */}
             <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-white/10 z-20">
               <div
-                className="h-full bg-[#C3A35E]"
+                className="h-full bg-harvics-gold"
                 style={{
                   width: `${progress}%`,
                   transition: isPaused ? 'none' : 'width 0.1s linear',
@@ -184,7 +184,7 @@ const ProductSlider: React.FC<ProductSliderProps> = ({ categories }) => {
           {/* Navigation Arrows */}
           <button
             onClick={goToPrevious}
-            className="absolute left-3 md:left-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 bg-white/10 backdrop-blur-sm hover:bg-white/25 border border-white/15 hover:border-[#C3A35E]/40 flex items-center justify-center text-white transition-all duration-300 group"
+            className="absolute left-3 md:left-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 bg-white/10 backdrop-blur-sm hover:bg-white/25 border border-white/15 hover:border-harvics-gold/40 flex items-center justify-center text-white transition-all duration-300 group"
             aria-label="Previous slide"
           >
             <svg className="w-5 h-5 group-hover:-translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -194,7 +194,7 @@ const ProductSlider: React.FC<ProductSliderProps> = ({ categories }) => {
 
           <button
             onClick={goToNext}
-            className="absolute right-3 md:right-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 bg-white/10 backdrop-blur-sm hover:bg-white/25 border border-white/15 hover:border-[#C3A35E]/40 flex items-center justify-center text-white transition-all duration-300 group"
+            className="absolute right-3 md:right-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 bg-white/10 backdrop-blur-sm hover:bg-white/25 border border-white/15 hover:border-harvics-gold/40 flex items-center justify-center text-white transition-all duration-300 group"
             aria-label="Next slide"
           >
             <svg className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -215,11 +215,11 @@ const ProductSlider: React.FC<ProductSliderProps> = ({ categories }) => {
                 <div
                   className="absolute inset-0 transition-all duration-400"
                   style={{
-                    background: index === currentIndex ? '#C3A35E' : 'rgba(107,31,43,0.2)',
+                    background: index === currentIndex ? 'var(--harvics-gold)' : 'rgba(107,31,43,0.2)',
                   }}
                 />
                 {/* Hover ring */}
-                <div className="absolute -inset-1 border border-transparent group-hover:border-[#C3A35E]/30 transition-colors duration-200" />
+                <div className="absolute -inset-1 border border-transparent group-hover:border-harvics-gold/30 transition-colors duration-200" />
               </button>
             ))}
           </div>

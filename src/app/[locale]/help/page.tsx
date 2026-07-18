@@ -67,7 +67,7 @@ export default async function HelpPage({ params }: { params: Promise<{ locale: s
   return (
     <main className="min-h-screen" style={{ background: '#ffffff' }}>
       <div className="pt-20">
-        <section className="h-[400px] relative bg-[#6B1F2B] overflow-hidden">
+        <section className="h-[400px] relative bg-harvics-burgundy overflow-hidden">
           {/* Hero Background Image */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -80,8 +80,8 @@ export default async function HelpPage({ params }: { params: Promise<{ locale: s
           {/* Decorative Elements */}
           <div className="absolute inset-0">
              <div className="absolute top-0 left-0 w-full h-full bg-[url('/patterns/grid.svg')] opacity-10"></div>
-             <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
-             <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
+             <div className="absolute -top-24 -right-24 w-96 h-96 bg-harvics-gold rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
+             <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-harvics-gold rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
           </div>
           
           <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
@@ -104,8 +104,8 @@ export default async function HelpPage({ params }: { params: Promise<{ locale: s
                   href={category.href}
                   className="bg-white p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group"
                 >
-                  <div className="w-14 h-14 bg-[#6B1F2B]/5 flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform duration-300">{category.icon}</div>
-                  <h3 className="text-xl font-serif font-medium text-gray-900 mb-3 group-hover:text-[#6B1F2B] transition-colors">{category.title}</h3>
+                  <div className="w-14 h-14 bg-harvics-burgundy/5 flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform duration-300">{category.icon}</div>
+                  <h3 className="text-xl font-serif font-medium text-gray-900 mb-3 group-hover:text-harvics-burgundy transition-colors">{category.title}</h3>
                   <p className="text-gray-600 leading-relaxed text-sm">{category.description}</p>
                 </Link>
               ))}

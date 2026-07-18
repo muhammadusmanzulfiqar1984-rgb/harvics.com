@@ -1,0 +1,66 @@
+[
+  {
+    "id": "camp_mrgyvlqk",
+    "name": "LinkedIn outreach · 1 contacts · 7/12/2026",
+    "templateId": "connect_dm",
+    "channel": "linkedin",
+    "status": "active",
+    "createdAt": "2026-07-11T22:59:33.452Z",
+    "steps": [
+      {
+        "type": "linkedin_connect",
+        "delayDays": 0,
+        "label": "Connection request",
+        "messageTemplate": "Hi {{name}}, I would like to add you to my network — we support buyers and suppliers in {{segment}} and I think {{company}} could be a strong fit."
+      },
+      {
+        "type": "linkedin_dm",
+        "delayDays": 3,
+        "label": "First DM",
+        "messageTemplate": "Thanks for connecting, {{name}}. We help brands like {{company}} source and distribute across 42+ markets. Would a 15-minute intro make sense this week?"
+      }
+    ],
+    "leads": [
+      {
+        "leadId": "lead_csv_aHR0cHM6Ly93d3cubG",
+        "contactName": "Cristian López De Fez",
+        "company": "ALDI ESPAÑA",
+        "linkedin": "https://www.linkedin.com/in/cristianlopezdefez",
+        "stepIndex": 0,
+        "status": "queued",
+        "nextStepAt": "2026-07-11T22:59:35.735Z",
+        "lastActionAt": "2026-07-11T22:59:35.735Z"
+      }
+    ],
+    "startedAt": "2026-07-11T22:59:35.735Z"
+  },
+  {
+    "id": "camp_mrgym93s",
+    "name": "LinkedIn outreach · 1 contacts · 7/12/2026",
+    "templateId": "connect_only",
+    "channel": "linkedin",
+    "status": "active",
+    "createdAt": "2026-07-11T22:52:17.176Z",
+    "steps": [
+      {
+        "type": "linkedin_connect",
+        "delayDays": 0,
+        "label": "Connection request",
+        "messageTemplate": "Hi {{name}}, I came across {{company}} and would love to connect. We work across FMCG and textiles corridors — happy to share relevant opportunities."
+      }
+    ],
+    "leads": [
+      {
+        "leadId": "lead_csv_aHR0cHM6Ly93d3cubG",
+        "contactName": "Cristian López De Fez",
+        "company": "ALDI ESPAÑA",
+        "linkedin": "https://www.linkedin.com/in/cristianlopezdefez",
+        "stepIndex": 0,
+        "status": "queued",
+        "nextStepAt": "2026-07-11T22:52:21.674Z",
+        "lastActionAt": "2026-07-11T22:52:21.674Z"
+      }
+    ],
+    "startedAt": "2026-07-11T22:52:21.674Z"
+  }
+]

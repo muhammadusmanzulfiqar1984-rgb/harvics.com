@@ -20,9 +20,9 @@ export default function P(){
     </Panel>
     <Panel title="ALL REFERRALS" full>
       <Tbl head={['CODE','REFERRER','REFEREE','REWARD','STATUS','TIMELINE']}>
-        {rows.map(r=><tr key={r.id} style={{borderBottom:'1px solid #6B1F2B11'}}>
+        {rows.map(r=><tr key={r.id} style={{borderBottom:'1px solid #3D121211'}}>
           <td style={td}><b>{r.referralCode}</b></td><td style={td}>{r.referrerName}</td><td style={{...td,fontSize:11}}>{r.refereeEmail}</td>
-          <td style={{...td,fontWeight:700,color:'#6B1F2B'}}>{r.rewardCurrency} {r.rewardAmount}</td>
+          <td style={{...td,fontWeight:700,color:'var(--harvics-burgundy)'}}>{r.rewardCurrency} {r.rewardAmount}</td>
           <td style={td}><Pill s={r.status}/></td>
           <td style={td}>
             {r.status==='Pending'&&<button onClick={()=>setStatus(r.referralCode,'Signed')} style={btnA}>SIGNED?</button>}

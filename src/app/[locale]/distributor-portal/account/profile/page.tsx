@@ -32,13 +32,13 @@ export default function Profile() {
   return (
     <div className="space-y-6">
       <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
-      <h1 className="text-2xl font-bold text-[#C3A35E]">Profile</h1>
+      <h1 className="text-2xl font-bold text-harvics-gold">Profile</h1>
 
       <div className="bg-white border border-black200 shadow-sm p-6">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Company Name *</label>
+              <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Company Name *</label>
               <input
                 required
                 type="text"
@@ -49,7 +49,7 @@ export default function Profile() {
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Legal Entity Name *</label>
+              <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Legal Entity Name *</label>
               <input
                 required
                 type="text"
@@ -60,7 +60,7 @@ export default function Profile() {
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Tax ID / VAT</label>
+              <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Tax ID / VAT</label>
               <input
                 type="text"
                 value={formData.taxId}
@@ -71,7 +71,7 @@ export default function Profile() {
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">VAT Number</label>
+              <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">VAT Number</label>
               <input
                 type="text"
                 value={formData.vat}
@@ -82,7 +82,7 @@ export default function Profile() {
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Country *</label>
+              <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Country *</label>
               <select
                 required
                 value={formData.country}
@@ -96,7 +96,7 @@ export default function Profile() {
             </div>
 
             <div className="md:col-span-2">
-              <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Head Office Address *</label>
+              <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Head Office Address *</label>
               <textarea
                 required
                 rows={3}
@@ -107,10 +107,10 @@ export default function Profile() {
             </div>
 
             <div className="md:col-span-2 border-t border-black200 pt-6">
-              <h3 className="text-lg font-bold text-[#C3A35E] mb-4">Primary Contact</h3>
+              <h3 className="text-lg font-bold text-harvics-gold mb-4">Primary Contact</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div>
-                  <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Name *</label>
+                  <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Name *</label>
                   <input
                     required
                     type="text"
@@ -123,7 +123,7 @@ export default function Profile() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Phone *</label>
+                  <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Phone *</label>
                   <input
                     required
                     type="tel"
@@ -136,7 +136,7 @@ export default function Profile() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Email *</label>
+                  <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Email *</label>
                   <input
                     required
                     type="email"
@@ -153,7 +153,7 @@ export default function Profile() {
 
             <div className="md:col-span-2 border-t border-black200 pt-6">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-lg font-bold text-[#C3A35E]/90">Warehouse Addresses</h3>
+                <h3 className="text-lg font-bold text-harvics-gold/90">Warehouse Addresses</h3>
                 <button
                   type="button"
                   className="text-white hover:underline font-semibold"
@@ -201,7 +201,7 @@ export default function Profile() {
             </button>
             <button
               type="button"
-              className="bg-white text-[#C3A35E]/90 px-8 py-3 font-semibold hover:bg-white transition-colors"
+              className="bg-white text-harvics-gold/90 px-8 py-3 font-semibold hover:bg-white transition-colors"
             >
               Cancel
             </button>

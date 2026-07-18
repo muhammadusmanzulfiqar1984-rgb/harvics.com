@@ -110,11 +110,11 @@ export default function DistributorInvoices() {
       case 'PAID':
         return 'bg-green-100 text-green-800'
       case 'PARTIAL':
-        return 'bg-[#C3A35E]/20 text-[#C3A35E]'
+        return 'bg-harvics-gold/20 text-harvics-gold'
       case 'UNPAID':
         return 'bg-red-100 text-red-800'
       default:
-        return 'bg-white text-[#C3A35E]/90'
+        return 'bg-white text-harvics-gold/90'
     }
   }
 
@@ -122,8 +122,8 @@ export default function DistributorInvoices() {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#6B1F2B] mx-auto mb-4"></div>
-          <p className="text-[#C3A35E]/90">{t('loading')}</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-harvics-burgundy mx-auto mb-4"></div>
+          <p className="text-harvics-gold/90">{t('loading')}</p>
         </div>
       </div>
     )
@@ -133,13 +133,13 @@ export default function DistributorInvoices() {
     <ErrorBoundary>
       <div className="min-h-screen bg-white py-8 px-4">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-3xl font-bold text-[#C3A35E] mb-8">{t('title')}</h1>
+          <h1 className="text-3xl font-bold text-harvics-gold mb-8">{t('title')}</h1>
 
           {/* Filters */}
           <div className="bg-white shadow p-6 mb-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label className="block text-sm font-medium text-[#C3A35E]/90 mb-2">
+                <label className="block text-sm font-medium text-harvics-gold/90 mb-2">
                   {t('filters.status')}
                 </label>
                 <select
@@ -159,7 +159,7 @@ export default function DistributorInvoices() {
                     setFilters({ status: '' })
                     setPagination((prev) => ({ ...prev, page: 1 }))
                   }}
-                  className="w-full bg-white text-[#C3A35E]/90 px-4 py-2 font-semibold hover:bg-white transition-colors"
+                  className="w-full bg-white text-harvics-gold/90 px-4 py-2 font-semibold hover:bg-white transition-colors"
                 >
                   {t('filters.clearFilters')}
                 </button>
@@ -178,22 +178,22 @@ export default function DistributorInvoices() {
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-white">
                 <tr>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">
                     {t('invoiceNumber')}
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">
                     {t('invoiceDate')}
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">
                     {t('dueDate')}
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">
                     {t('amount')}
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">
                     {t('paidAmount')}
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">
                     {t('paymentStatus')}
                   </th>
                 </tr>
@@ -201,26 +201,26 @@ export default function DistributorInvoices() {
               <tbody className="bg-white divide-y divide-gray-200">
                 {invoices.length === 0 ? (
                   <tr>
-                    <td colSpan={6} className="px-6 py-4 text-center text-[#C3A35E]/90">
+                    <td colSpan={6} className="px-6 py-4 text-center text-harvics-gold/90">
                       {t('noInvoices')}
                     </td>
                   </tr>
                 ) : (
                   invoices.map((invoice) => (
                     <tr key={invoice.id} className="hover:bg-white">
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#C3A35E]/90">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-harvics-gold/90">
                         {invoice.invoice_number}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-[#C3A35E]/90">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">
                         {formatDate(invoice.invoice_date)}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-[#C3A35E]/90">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">
                         {formatDate(invoice.due_date)}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#C3A35E]/90">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-harvics-gold/90">
                         {formatCurrencyAmount(invoice.amount, invoice.currency)}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-[#C3A35E]/90">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">
                         {formatCurrencyAmount(invoice.paid_amount, invoice.currency)}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">

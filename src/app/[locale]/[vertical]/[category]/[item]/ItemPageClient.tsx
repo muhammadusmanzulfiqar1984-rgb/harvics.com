@@ -59,7 +59,7 @@ function ImageZoomLightbox({ src, alt, useSmartImage, keyword }: { src: string; 
   return (
     <>
       <div
-        className="group relative w-full md:w-[340px] h-[280px] bg-white border border-[#C3A35E]/15 flex-shrink-0 overflow-hidden cursor-zoom-in"
+        className="group relative w-full md:w-[340px] h-[280px] bg-white border border-harvics-gold/15 flex-shrink-0 overflow-hidden cursor-zoom-in"
         onClick={() => setIsOpen(true)}
       >
         {useSmartImage && keyword ? (
@@ -80,7 +80,7 @@ function ImageZoomLightbox({ src, alt, useSmartImage, keyword }: { src: string; 
         {/* Zoom icon overlay */}
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
           <div className="w-10 h-10 bg-white/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <svg className="w-5 h-5 text-[#3D1212]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-harvics-burgundy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
             </svg>
           </div>
@@ -111,7 +111,7 @@ function ImageZoomLightbox({ src, alt, useSmartImage, keyword }: { src: string; 
             )}
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute -top-3 -right-3 w-8 h-8 bg-white flex items-center justify-center text-[#3D1212] font-bold text-sm hover:bg-[#C3A35E] hover:text-white transition-colors"
+              className="absolute -top-3 -right-3 w-8 h-8 bg-white flex items-center justify-center text-harvics-burgundy font-bold text-sm hover:bg-harvics-gold hover:text-white transition-colors"
             >
               ✕
             </button>
@@ -156,22 +156,22 @@ const ItemPageClient: React.FC<ItemPageClientProps> = ({
   return (
     <main className="min-h-screen" style={{ background: '#ffffff' }}>
       {/* ═══════ BREADCRUMBS ═══════ */}
-      <div className="bg-[#5a1a24] border-b border-[#C3A35E]/20">
+      <div className="bg-[#5a1a24] border-b border-harvics-gold/20">
         <div className="max-w-[1200px] mx-auto px-4 py-3 flex items-center gap-2 text-sm text-white/50">
-          <Link href={`/${locale}`} className="hover:text-[#C3A35E] transition-colors duration-200">Home</Link>
+          <Link href={`/${locale}`} className="hover:text-harvics-gold transition-colors duration-200">Home</Link>
           <span className="text-white/20">›</span>
-          <Link href={`/${locale}/${verticalKey}`} className="hover:text-[#C3A35E] transition-colors duration-200">{verticalLabel}</Link>
+          <Link href={`/${locale}/${verticalKey}`} className="hover:text-harvics-gold transition-colors duration-200">{verticalLabel}</Link>
           <span className="text-white/20">›</span>
-          <Link href={`/${locale}/${verticalKey}/${categorySlug}`} className="hover:text-[#C3A35E] transition-colors duration-200">{blockTitle}</Link>
+          <Link href={`/${locale}/${verticalKey}/${categorySlug}`} className="hover:text-harvics-gold transition-colors duration-200">{blockTitle}</Link>
           <span className="text-white/20">›</span>
-          <span className="text-[#C3A35E] font-medium">{matchedItem}</span>
+          <span className="text-harvics-gold font-medium">{matchedItem}</span>
         </div>
       </div>
 
       {/* ═══════ HERO ═══════ */}
       <section
         ref={heroRef.ref}
-        className="relative bg-gradient-to-br from-[#3D1212] via-[#5a1a24] to-[#4a1520] py-16 px-4 overflow-hidden"
+        className="relative bg-gradient-to-br from-harvics-burgundy via-[#5a1a24] to-[#4a1520] py-16 px-4 overflow-hidden"
       >
         {/* Hero Background Image */}
         <div className="absolute inset-0">
@@ -183,18 +183,18 @@ const ItemPageClient: React.FC<ItemPageClientProps> = ({
             style={{ background: 'radial-gradient(circle, #C3A35E 0%, transparent 65%)' }} />
           <div className="absolute inset-0 opacity-[0.02]"
             style={{
-              backgroundImage: 'linear-gradient(rgba(195,163,94,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(195,163,94,0.5) 1px, transparent 1px)',
+              backgroundImage: 'linear-gradient(rgba(195, 163, 94,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(195, 163, 94,0.5) 1px, transparent 1px)',
               backgroundSize: '50px 50px',
             }} />
         </div>
-        <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#C3A35E]/30 to-transparent" />
+        <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-harvics-gold/30 to-transparent" />
 
         <div className="relative z-10 max-w-[1200px] mx-auto text-center">
           <div
             className="transition-all duration-700"
             style={{ opacity: heroRef.inView ? 1 : 0, transform: heroRef.inView ? 'translateY(0)' : 'translateY(12px)' }}
           >
-            <span className="inline-block text-[10px] font-bold text-[#C3A35E] uppercase tracking-[0.25em] mb-4 border border-[#C3A35E]/25 px-3 py-1">
+            <span className="inline-block text-[10px] font-bold text-harvics-gold uppercase tracking-[0.25em] mb-4 border border-harvics-gold/25 px-3 py-1">
               {verticalLabel} · {blockTitle}
             </span>
           </div>
@@ -217,13 +217,13 @@ const ItemPageClient: React.FC<ItemPageClientProps> = ({
             </p>
           )}
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#C3A35E]/25 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-harvics-gold/25 to-transparent" />
       </section>
 
       {/* ═══════ CONTENT ═══════ */}
       <div ref={contentRef.ref} className="max-w-[960px] mx-auto px-4 py-12">
         <div
-          className="bg-white border border-[#C3A35E]/15 p-8 md:p-10 transition-all duration-700"
+          className="bg-white border border-harvics-gold/15 p-8 md:p-10 transition-all duration-700"
           style={{
             opacity: contentRef.inView ? 1 : 0,
             transform: contentRef.inView ? 'translateY(0)' : 'translateY(24px)',
@@ -241,11 +241,11 @@ const ItemPageClient: React.FC<ItemPageClientProps> = ({
             {/* Details */}
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-5 h-[2px] bg-[#C3A35E]/50" />
-                <span className="text-[10px] font-bold text-[#C3A35E] uppercase tracking-[0.2em]">Product Details</span>
+                <div className="w-5 h-[2px] bg-harvics-gold/50" />
+                <span className="text-[10px] font-bold text-harvics-gold uppercase tracking-[0.2em]">Product Details</span>
               </div>
-              <h2 className="text-xl font-bold text-[#3D1212] mb-4" style={{ letterSpacing: '-0.01em' }}>{matchedItem}</h2>
-              <p className="text-sm text-[#3D1212]/50 leading-relaxed mb-6">
+              <h2 className="text-xl font-bold text-harvics-burgundy mb-4" style={{ letterSpacing: '-0.01em' }}>{matchedItem}</h2>
+              <p className="text-sm text-harvics-burgundy/50 leading-relaxed mb-6">
                 {description ||
                   `Harvics provides comprehensive ${matchedItem.toLowerCase()} solutions as part of our ${blockTitle.toLowerCase()} portfolio within the ${verticalLabel.toLowerCase()} vertical. Backed by our global supply chain network operating across multiple continents.`}
               </p>
@@ -253,7 +253,7 @@ const ItemPageClient: React.FC<ItemPageClientProps> = ({
               {/* Specs Table */}
               {specs.length > 0 && (
                 <div ref={specsRef.ref} className="mb-6">
-                  <h3 className="text-[10px] font-bold text-[#3D1212] uppercase tracking-[0.15em] mb-3">Specifications</h3>
+                  <h3 className="text-[10px] font-bold text-harvics-burgundy uppercase tracking-[0.15em] mb-3">Specifications</h3>
                   <div className="space-y-0">
                     {specs.map((spec, idx) => {
                       const [label, ...rest] = spec.split(':')
@@ -261,15 +261,15 @@ const ItemPageClient: React.FC<ItemPageClientProps> = ({
                       return (
                         <div
                           key={idx}
-                          className="flex justify-between text-sm py-2.5 border-b border-[#C3A35E]/8 transition-all duration-500"
+                          className="flex justify-between text-sm py-2.5 border-b border-harvics-gold/8 transition-all duration-500"
                           style={{
                             opacity: specsRef.inView ? 1 : 0,
                             transform: specsRef.inView ? 'translateX(0)' : 'translateX(-8px)',
                             transitionDelay: `${idx * 60}ms`,
                           }}
                         >
-                          <span className="text-[#3D1212]/40 font-medium text-xs uppercase tracking-wider">{label}</span>
-                          <span className="font-semibold text-[#3D1212] text-right max-w-[60%] text-sm">{value}</span>
+                          <span className="text-harvics-burgundy/40 font-medium text-xs uppercase tracking-wider">{label}</span>
+                          <span className="font-semibold text-harvics-burgundy text-right max-w-[60%] text-sm">{value}</span>
                         </div>
                       )
                     })}
@@ -278,15 +278,15 @@ const ItemPageClient: React.FC<ItemPageClientProps> = ({
               )}
 
               {/* Meta Info */}
-              <div className="border-t border-[#C3A35E]/15 pt-4 space-y-2.5">
+              <div className="border-t border-harvics-gold/15 pt-4 space-y-2.5">
                 {[
                   { label: 'Vertical', value: verticalLabel },
                   { label: 'Category', value: blockTitle },
                   { label: 'Availability', value: 'Global', isGold: true },
                 ].map((meta) => (
                   <div key={meta.label} className="flex justify-between text-sm">
-                    <span className="text-[#3D1212]/40 text-xs uppercase tracking-wider">{meta.label}</span>
-                    <span className={`font-semibold ${meta.isGold ? 'text-[#C3A35E]' : 'text-[#3D1212]'}`}>{meta.value}</span>
+                    <span className="text-harvics-burgundy/40 text-xs uppercase tracking-wider">{meta.label}</span>
+                    <span className={`font-semibold ${meta.isGold ? 'text-harvics-gold' : 'text-harvics-burgundy'}`}>{meta.value}</span>
                   </div>
                 ))}
               </div>
@@ -294,7 +294,7 @@ const ItemPageClient: React.FC<ItemPageClientProps> = ({
               {/* CTA Button */}
               <Link
                 href={`/${locale}/contact`}
-                className="group relative inline-block mt-6 px-8 py-3 bg-[#3D1212] text-white text-sm font-semibold border border-[#3D1212] overflow-hidden transition-all duration-300"
+                className="group relative inline-block mt-6 px-8 py-3 bg-harvics-burgundy text-white text-sm font-semibold border border-harvics-burgundy overflow-hidden transition-all duration-300"
               >
                 <span className="relative z-10">Request Quote</span>
                 <div className="absolute inset-0 bg-[#5a1a24] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
@@ -310,23 +310,23 @@ const ItemPageClient: React.FC<ItemPageClientProps> = ({
               className="flex items-center gap-2 mb-5 transition-all duration-700"
               style={{ opacity: relatedRef.inView ? 1 : 0, transform: relatedRef.inView ? 'translateY(0)' : 'translateY(12px)' }}
             >
-              <div className="w-5 h-[2px] bg-[#C3A35E]/50" />
-              <span className="text-xs font-bold text-[#C3A35E] uppercase tracking-[0.2em]">More in {blockTitle}</span>
+              <div className="w-5 h-[2px] bg-harvics-gold/50" />
+              <span className="text-xs font-bold text-harvics-gold uppercase tracking-[0.2em]">More in {blockTitle}</span>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
               {relatedItems.map((relItem, i) => (
                 <Link
                   key={relItem.slug}
                   href={`/${locale}/${verticalKey}/${categorySlug}/${relItem.slug}`}
-                  className="group relative bg-white border border-[#C3A35E]/10 p-4 text-center text-sm text-[#3D1212] overflow-hidden transition-all duration-300 hover:border-[#C3A35E]/40"
+                  className="group relative bg-white border border-harvics-gold/10 p-4 text-center text-sm text-harvics-burgundy overflow-hidden transition-all duration-300 hover:border-harvics-gold/40"
                   style={{
                     opacity: relatedRef.inView ? 1 : 0,
                     transform: relatedRef.inView ? 'translateY(0)' : 'translateY(12px)',
                     transitionDelay: `${200 + i * 60}ms`,
                   }}
                 >
-                  <div className="absolute top-0 left-0 right-0 h-[2px] bg-[#C3A35E] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-                  <span className="font-medium group-hover:text-[#C3A35E] transition-colors duration-200">{relItem.name}</span>
+                  <div className="absolute top-0 left-0 right-0 h-[2px] bg-harvics-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                  <span className="font-medium group-hover:text-harvics-gold transition-colors duration-200">{relItem.name}</span>
                 </Link>
               ))}
             </div>
@@ -337,7 +337,7 @@ const ItemPageClient: React.FC<ItemPageClientProps> = ({
       {/* ═══════ CTA BANNER ═══════ */}
       <section
         ref={ctaRef.ref}
-        className="relative bg-gradient-to-r from-[#3D1212] to-[#5a1a24] border-t border-[#C3A35E]/25 overflow-hidden"
+        className="relative bg-gradient-to-r from-harvics-burgundy to-[#5a1a24] border-t border-harvics-gold/25 overflow-hidden"
       >
         <div className="absolute inset-0 opacity-[0.03]"
           style={{
@@ -360,14 +360,14 @@ const ItemPageClient: React.FC<ItemPageClientProps> = ({
           <div className="flex gap-3">
             <Link
               href={`/${locale}/contact`}
-              className="group relative px-8 py-3 bg-[#C3A35E] text-[#3D1212] text-sm font-bold overflow-hidden transition-all duration-300"
+              className="group relative px-8 py-3 bg-harvics-gold text-harvics-burgundy text-sm font-bold overflow-hidden transition-all duration-300"
             >
               <span className="relative z-10">Request Quote</span>
               <div className="absolute inset-0 bg-[#d4b46e] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
             </Link>
             <Link
               href={`/${locale}/${verticalKey}/${categorySlug}`}
-              className="px-8 py-3 border border-[#C3A35E]/30 text-[#C3A35E] text-sm font-medium hover:border-[#C3A35E] transition-colors duration-200"
+              className="px-8 py-3 border border-harvics-gold/30 text-harvics-gold text-sm font-medium hover:border-harvics-gold transition-colors duration-200"
             >
               ← Back to {blockTitle}
             </Link>

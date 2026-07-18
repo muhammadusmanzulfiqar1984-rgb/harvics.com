@@ -26,12 +26,12 @@ export default async function LaPresLoungePage({
         <section className="max-w-[1100px] mx-auto px-4 py-12">
           <Link
             href={laPresUrl(locale)}
-            className="inline-flex items-center text-xs uppercase tracking-[0.16em] text-[#C3A35E] hover:text-[#6B1F2B] transition-colors mb-8"
+            className="inline-flex items-center text-xs uppercase tracking-[0.16em] text-harvics-gold hover:text-harvics-burgundy transition-colors mb-8"
           >
             ← La Pres
           </Link>
-          <h1 className="text-3xl md:text-4xl font-bold text-[#6B1F2B] mb-3">{area.title}</h1>
-          <p className="text-sm md:text-base text-[#6B1F2B]/60 max-w-[720px] leading-relaxed mb-10">
+          <h1 className="text-3xl md:text-4xl font-bold text-harvics-burgundy mb-3">{area.title}</h1>
+          <p className="text-sm md:text-base text-harvics-burgundy/60 max-w-[720px] leading-relaxed mb-10">
             {area.description}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

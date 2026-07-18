@@ -89,10 +89,13 @@ const LAND_MAP: string[] = [
   '............................................................',
 ];
 
-const CinematicTradeMap: React.FC = () => {
+type TradeMapTone = 'dark' | 'cream'
+
+const CinematicTradeMap: React.FC<{ tone?: TradeMapTone }> = ({ tone = 'dark' }) => {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
   const [tick, setTick] = useState(0);
+  const isCream = tone === 'cream'
 
   useEffect(() => {
     const obs = new IntersectionObserver(([e]) => { if (e.isIntersecting) setVisible(true); }, { threshold: 0.15 });
@@ -146,63 +149,98 @@ const CinematicTradeMap: React.FC = () => {
     return () => cancelAnimationFrame(raf);
   }, [visible]);
 
-  // Drift the live shipment counter to feel "live"
   useEffect(() => {
-    if (!visible) return;
+    if (!visible || isCream) return;
     const t = setInterval(() => setShipments(s => s + Math.floor(Math.random() * 3) - 1), 2000);
     return () => clearInterval(t);
-  }, [visible]);
+  }, [visible, isCream]);
 
   return (
     <section
       ref={ref}
       className="w-full relative overflow-hidden py-16 px-4"
       style={{
-        background:
-          'radial-gradient(ellipse at 25% 0%, rgba(107,31,43,0.6) 0%, transparent 50%), radial-gradient(ellipse at 85% 100%, rgba(195,163,94,0.22) 0%, transparent 50%), linear-gradient(180deg, #3D1212 0%, #0f0408 60%, #3D1212 100%)',
+        background: isCream
+          ? 'var(--harvics-cream)'
+          : 'radial-gradient(ellipse at 25% 0%, rgba(61, 18, 18,0.6) 0%, transparent 50%), radial-gradient(ellipse at 85% 100%, rgba(195, 163, 94,0.22) 0%, transparent 50%), linear-gradient(180deg, #3D1212 0%, #0f0408 60%, #3D1212 100%)',
       }}
     >
-      <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#C3A35E] to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-harvics-gold to-transparent" />
 
       <div className="max-w-[1380px] mx-auto relative z-10">
         {/* HEADER — Option B: left-aligned dashboard with live stats on right */}
         <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-6 md:gap-10 mb-6">
           <div className="md:max-w-2xl">
-            <span className="inline-flex items-center gap-2.5 text-[10px] tracking-[0.28em] uppercase text-[#C3A35E] font-semibold mb-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#C3A35E] animate-pulse" />
-              Live · Global Trade Network
+            <span className="inline-flex items-center gap-2.5 text-[10px] tracking-[0.28em] uppercase text-harvics-gold font-semibold mb-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-harvics-gold animate-pulse" />
+              {isCream ? '06 · Live network' : 'Live · Global Trade Network'}
             </span>
-            <h2 className="text-white text-3xl md:text-5xl font-extralight tracking-tight leading-[1.05]">
-              Watch HARVICS
-              <span className="text-[#C3A35E] font-normal"> move.</span>
+            <h2
+              className={`harvics-corridor-display ${isCream ? 'text-harvics-burgundy' : 'text-harvics-cream'} text-[clamp(28px,4.2vw,48px)]`}
+            >
+              {isCream ? (
+                <>
+                  Nine hubs.
+                  <span className="text-harvics-gold font-medium"> One live map.</span>
+                </>
+              ) : (
+                <>
+                  Watch HARVICS
+                  <span className="text-harvics-gold font-medium"> move.</span>
+                </>
+              )}
             </h2>
-            <p className="text-white/55 text-[13px] max-w-xl mt-3 font-light leading-relaxed">
-              9 offices · 42+ markets · Every 14 minutes, a HARVICS shipment clears customs somewhere in the world.
+            <p
+              className={`harvics-corridor-body max-w-xl mt-3 ${isCream ? '' : '!text-harvics-cream/70'}`}
+            >
+              {isCream
+                ? 'Air and sea lanes, hub load, and corridor pings — refreshed from UTC every two seconds.'
+                : '9 offices · 42+ markets · Every 14 minutes, a HARVICS shipment clears customs somewhere in the world.'}
             </p>
           </div>
-          <div className="flex gap-8 md:gap-9 md:pl-6 md:border-l md:border-[#C3A35E]/15">
+          <div
+            className={`flex gap-8 md:gap-9 md:pl-6 md:border-l ${isCream ? 'md:border-harvics-gold/35' : 'md:border-harvics-gold/15'}`}
+          >
             <div>
-              <div className="text-[#C3A35E] text-[9px] tracking-[3px] uppercase font-bold mb-1.5">Shipments</div>
-              <div className="text-white text-2xl md:text-[26px] font-extralight tabular-nums leading-none">{shipments.toLocaleString()}</div>
+              <div className="text-harvics-gold text-[9px] tracking-[3px] uppercase font-bold mb-1.5">
+                {isCream ? 'Active routes' : 'Shipments'}
+              </div>
+              <div
+                className={`${isCream ? 'text-harvics-burgundy' : 'text-harvics-cream'} text-2xl md:text-[26px] font-medium tabular-nums leading-none`}
+              >
+                {isCream ? FLIGHTS.length + SHIPS.length : shipments.toLocaleString()}
+              </div>
             </div>
             <div>
-              <div className="text-[#C3A35E] text-[9px] tracking-[3px] uppercase font-bold mb-1.5">Countries</div>
-              <div className="text-white text-2xl md:text-[26px] font-extralight tabular-nums leading-none">{countries}</div>
+              <div className="text-harvics-gold text-[9px] tracking-[3px] uppercase font-bold mb-1.5">
+                {isCream ? 'Hubs live' : 'Countries'}
+              </div>
+              <div
+                className={`${isCream ? 'text-harvics-burgundy' : 'text-harvics-cream'} text-2xl md:text-[26px] font-medium tabular-nums leading-none`}
+              >
+                {isCream ? HUBS.length : countries}
+              </div>
             </div>
             <div>
-              <div className="text-[#C3A35E] text-[9px] tracking-[3px] uppercase font-bold mb-1.5">TEU in Transit</div>
-              <div className="text-white text-2xl md:text-[26px] font-extralight tabular-nums leading-none">{teu.toLocaleString()}</div>
+              <div className="text-harvics-gold text-[9px] tracking-[3px] uppercase font-bold mb-1.5">
+                {isCream ? 'TEU in motion' : 'TEU in Transit'}
+              </div>
+              <div
+                className={`${isCream ? 'text-harvics-burgundy' : 'text-harvics-cream'} text-2xl md:text-[26px] font-medium tabular-nums leading-none`}
+              >
+                {teu.toLocaleString()}
+              </div>
             </div>
           </div>
         </div>
 
         {/* ───── COMMAND CENTER ───── */}
-        <div className="relative bg-[#3D1212] overflow-hidden">
+        <div className="relative bg-harvics-burgundy overflow-hidden">
           {/* Top status strip */}
-          <div className="flex items-center justify-between px-5 py-2.5 border-b border-[#C3A35E]/20 bg-black/30">
+          <div className="flex items-center justify-between px-5 py-2.5 border-b border-harvics-gold/20 bg-harvics-burgundy/80">
             <div className="flex items-center gap-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#C3A35E] animate-pulse" />
-              <span className="text-[#C3A35E] text-[9px] tracking-[3px] uppercase font-bold">Live · UTC</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-harvics-gold animate-pulse" />
+              <span className="text-harvics-gold text-[9px] tracking-[3px] uppercase font-bold">Live · UTC</span>
               <span className="text-white/30 text-[9px] tracking-[2px]">|</span>
               <span className="text-white/60 text-[9px] tracking-[2px] uppercase">
                 {HUBS.length} Hubs · {FLIGHTS.length + SHIPS.length} Active Routes
@@ -218,19 +256,19 @@ const CinematicTradeMap: React.FC = () => {
             <svg viewBox="0 0 1200 620" className="w-full block">
               <defs>
                 <radialGradient id="ctmHubGlow" cx="0.5" cy="0.5" r="0.5">
-                  <stop offset="0" stopColor="#C3A35E" stopOpacity="0.95" />
-                  <stop offset="0.5" stopColor="#C3A35E" stopOpacity="0.3" />
-                  <stop offset="1" stopColor="#C3A35E" stopOpacity="0" />
+                  <stop offset="0" stopColor="var(--harvics-gold)" stopOpacity="0.95" />
+                  <stop offset="0.5" stopColor="var(--harvics-gold)" stopOpacity="0.3" />
+                  <stop offset="1" stopColor="var(--harvics-gold)" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient id="ctmAirGrad" x1="0" x2="1">
-                  <stop offset="0" stopColor="#C3A35E" stopOpacity="0" />
-                  <stop offset="0.5" stopColor="#C3A35E" stopOpacity="0.9" />
-                  <stop offset="1" stopColor="#C3A35E" stopOpacity="0" />
+                  <stop offset="0" stopColor="var(--harvics-gold)" stopOpacity="0" />
+                  <stop offset="0.5" stopColor="var(--harvics-gold)" stopOpacity="0.9" />
+                  <stop offset="1" stopColor="var(--harvics-gold)" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient id="ctmSeaGrad" x1="0" x2="1">
-                  <stop offset="0" stopColor="#C3A35E" stopOpacity="0" />
-                  <stop offset="0.5" stopColor="#C3A35E" stopOpacity="0.55" />
-                  <stop offset="1" stopColor="#C3A35E" stopOpacity="0" />
+                  <stop offset="0" stopColor="var(--harvics-gold)" stopOpacity="0" />
+                  <stop offset="0.5" stopColor="var(--harvics-gold)" stopOpacity="0.55" />
+                  <stop offset="1" stopColor="var(--harvics-gold)" stopOpacity="0" />
                 </linearGradient>
                 <filter id="ctmGlow" x="-100%" y="-100%" width="300%" height="300%">
                   <feGaussianBlur stdDeviation="2.5" />
@@ -243,19 +281,19 @@ const CinematicTradeMap: React.FC = () => {
                   <path d="M0,-10 L2,-3 L12,0 L2,2 L1,10 L-1,10 L-2,2 L-12,0 L-2,-3 Z" fill="#FFE9B2" stroke="#fff" strokeWidth="0.6" />
                 </symbol>
                 <symbol id="ctmShip" viewBox="-14 -7 28 14">
-                  <path d="M-12,-1 L12,-1 L9,4 L-9,4 Z M-2,-1 L-2,-6 L5,-6 L5,-1 Z" fill="#C3A35E" stroke="#fff" strokeWidth="0.4" />
+                  <path d="M-12,-1 L12,-1 L9,4 L-9,4 Z M-2,-1 L-2,-6 L5,-6 L5,-1 Z" fill="var(--harvics-gold)" stroke="#fff" strokeWidth="0.4" />
                 </symbol>
               </defs>
 
               {/* Background subtle vignette */}
-              <rect width="1200" height="620" fill="#3D1212" />
+              <rect width="1200" height="620" fill="var(--harvics-burgundy)" />
 
               {/* Latitude grid lines */}
               {[120, 220, 320, 420, 520].map(y => (
-                <line key={y} x1="0" x2="1200" y1={y} y2={y} stroke="rgba(195,163,94,0.05)" strokeDasharray="2 6" />
+                <line key={y} x1="0" x2="1200" y1={y} y2={y} stroke="rgba(195, 163, 94,0.05)" strokeDasharray="2 6" />
               ))}
               {[200, 400, 600, 800, 1000].map(x => (
-                <line key={x} x1={x} x2={x} y1="60" y2="560" stroke="rgba(195,163,94,0.05)" strokeDasharray="2 6" />
+                <line key={x} x1={x} x2={x} y1="60" y2="560" stroke="rgba(195, 163, 94,0.05)" strokeDasharray="2 6" />
               ))}
 
               {/* Dotted land grid */}
@@ -267,7 +305,7 @@ const CinematicTradeMap: React.FC = () => {
                       cx={d.x}
                       cy={d.y}
                       r="1.6"
-                      fill="#C3A35E"
+                      fill="var(--harvics-gold)"
                       opacity={visible ? 0.55 : 0}
                       style={{ transition: `opacity 0.8s ease ${(i % 30) * 0.015}s` }}
                     />
@@ -339,7 +377,7 @@ const CinematicTradeMap: React.FC = () => {
                     <animate attributeName="opacity" values="0.85;0.1;0.85" dur="2.6s" repeatCount="indefinite" begin={`${i * 0.18}s`} />
                   </circle>
                   {/* Concentric ring */}
-                  <circle cx={h.x} cy={h.y} r={h.isHQ ? 12 : 9} fill="none" stroke="#C3A35E" strokeWidth="0.8" opacity="0.55">
+                  <circle cx={h.x} cy={h.y} r={h.isHQ ? 12 : 9} fill="none" stroke="var(--harvics-gold)" strokeWidth="0.8" opacity="0.55">
                     <animate attributeName="r" values={`${h.isHQ ? 10 : 7};${h.isHQ ? 24 : 20}`} dur="2.2s" repeatCount="indefinite" begin={`${i * 0.15}s`} />
                     <animate attributeName="opacity" values="0.7;0" dur="2.2s" repeatCount="indefinite" begin={`${i * 0.15}s`} />
                   </circle>
@@ -350,7 +388,7 @@ const CinematicTradeMap: React.FC = () => {
                   <text
                     x={h.x + (h.x > 700 ? -9 : 9)}
                     y={h.y - 8}
-                    fill="#C3A35E"
+                    fill="var(--harvics-gold)"
                     fontSize="10.5"
                     fontWeight="700"
                     textAnchor={h.x > 700 ? 'end' : 'start'}
@@ -370,8 +408,8 @@ const CinematicTradeMap: React.FC = () => {
                   </text>
                   {h.isHQ && (
                     <g>
-                      <rect x={h.x - 12} y={h.y + 9} width="24" height="11" fill="#C3A35E" />
-                      <text x={h.x} y={h.y + 17} fill="#3D1212" fontSize="7" fontWeight="800" textAnchor="middle" style={{ letterSpacing: '0.18em' }}>HQ</text>
+                      <rect x={h.x - 12} y={h.y + 9} width="24" height="11" fill="var(--harvics-gold)" />
+                      <text x={h.x} y={h.y + 17} fill="var(--harvics-burgundy)" fontSize="7" fontWeight="800" textAnchor="middle" style={{ letterSpacing: '0.18em' }}>HQ</text>
                     </g>
                   )}
                 </g>
@@ -380,7 +418,7 @@ const CinematicTradeMap: React.FC = () => {
               {/* Scan-line sweep */}
               <motion.line
                 x1="0" x2="0" y1="60" y2="560"
-                stroke="rgba(195,163,94,0.25)"
+                stroke="rgba(195, 163, 94,0.25)"
                 strokeWidth="1"
                 initial={{ x1: 0, x2: 0 }}
                 animate={visible ? { x1: [0, 1200], x2: [0, 1200] } : {}}
@@ -389,7 +427,7 @@ const CinematicTradeMap: React.FC = () => {
             </svg>
 
             {/* Corner readouts */}
-            <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-sm border border-[#C3A35E]/30 px-3 py-2 font-mono">
+            <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-sm border border-harvics-gold/30 px-3 py-2 font-mono">
               <div className="text-[8px] tracking-[3px] uppercase text-white/40 mb-1">Network Load</div>
               <div className="flex items-center gap-2">
                 <div className="h-1 w-20 bg-white/10 overflow-hidden">
@@ -397,26 +435,26 @@ const CinematicTradeMap: React.FC = () => {
                     initial={{ width: '0%' }}
                     animate={visible ? { width: ['18%', '92%', '54%', '78%', '38%', '88%'] } : {}}
                     transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-                    className="h-full bg-[#C3A35E]"
+                    className="h-full bg-harvics-gold"
                   />
                 </div>
-                <span className="text-[#C3A35E] text-[10px] tabular-nums">OK</span>
+                <span className="text-harvics-gold text-[10px] tabular-nums">OK</span>
               </div>
             </div>
-            <div className="absolute bottom-3 left-3 bg-black/60 backdrop-blur-sm border border-[#C3A35E]/30 px-3 py-2 font-mono">
+            <div className="absolute bottom-3 left-3 bg-black/60 backdrop-blur-sm border border-harvics-gold/30 px-3 py-2 font-mono">
               <div className="flex items-center gap-3">
                 <span className="text-white/40 text-[8px] tracking-[3px] uppercase">AIR</span>
-                <span className="text-[#C3A35E] text-[10px] font-bold">{FLIGHTS.length}</span>
+                <span className="text-harvics-gold text-[10px] font-bold">{FLIGHTS.length}</span>
                 <span className="text-white/20">|</span>
                 <span className="text-white/40 text-[8px] tracking-[3px] uppercase">SEA</span>
-                <span className="text-[#C3A35E] text-[10px] font-bold">{SHIPS.length}</span>
+                <span className="text-harvics-gold text-[10px] font-bold">{SHIPS.length}</span>
               </div>
             </div>
           </div>
 
           {/* TICKER */}
-          <div className="bg-black/60 border-t border-[#C3A35E]/25 px-5 py-3 flex items-center gap-4">
-            <span className="text-[#C3A35E] text-[9px] tracking-[3px] uppercase font-bold shrink-0">
+          <div className="bg-black/60 border-t border-harvics-gold/25 px-5 py-3 flex items-center gap-4">
+            <span className="text-harvics-gold text-[9px] tracking-[3px] uppercase font-bold shrink-0">
               ► Trade Pulse
             </span>
             <div className="flex-1 overflow-hidden relative h-5">

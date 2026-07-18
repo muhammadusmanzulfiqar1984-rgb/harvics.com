@@ -82,12 +82,12 @@ export default function ExchangeRatesPage() {
   return (
     <main className="min-h-screen" style={{ background: '#ffffff' }}>
       <div className="pt-20">
-        <section className="h-[400px] relative bg-[#6B1F2B] overflow-hidden">
+        <section className="h-[400px] relative bg-harvics-burgundy overflow-hidden">
           {/* Decorative Elements */}
           <div className="absolute inset-0">
              <div className="absolute top-0 left-0 w-full h-full bg-[url('/patterns/grid.svg')] opacity-10"></div>
-             <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
-             <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
+             <div className="absolute -top-24 -right-24 w-96 h-96 bg-harvics-gold rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
+             <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-harvics-gold rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
           </div>
           
           <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
@@ -117,7 +117,7 @@ export default function ExchangeRatesPage() {
             <div className="bg-white border border-gray-100 p-8 shadow-sm hover:shadow-lg transition-all duration-300">
               {loading && rates.length === 0 ? (
                 <div className="text-center py-12">
-                  <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#6B1F2B] mx-auto mb-4"></div>
+                  <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-harvics-burgundy mx-auto mb-4"></div>
                   <p className="text-gray-500">Loading live exchange rates...</p>
                 </div>
               ) : (
@@ -168,7 +168,7 @@ export default function ExchangeRatesPage() {
                     <button
                       onClick={loadForexRates}
                       disabled={loading}
-                      className="inline-flex items-center px-6 py-3 border border-gray-300 shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#6B1F2B] disabled:opacity-50 transition-all duration-300"
+                      className="inline-flex items-center px-6 py-3 border border-gray-300 shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-harvics-burgundy disabled:opacity-50 transition-all duration-300"
                     >
                       {loading ? (
                         <>

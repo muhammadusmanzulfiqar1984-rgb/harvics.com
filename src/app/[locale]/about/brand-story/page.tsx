@@ -62,14 +62,14 @@ export default async function BrandStoryPage({ params }: BrandStoryPageProps) {
     <main className="min-h-screen" style={{ background: '#ffffff' }}>
       <div className="pt-20">
         {/* Hero */}
-        <section className="relative bg-gradient-to-br from-[#6B1F2B] via-[#5a1a24] to-[#4a1520] py-28 md:py-32 px-4 overflow-hidden">
+        <section className="relative bg-gradient-to-br from-harvics-burgundy via-[#5a1a24] to-[#4a1520] py-28 md:py-32 px-4 overflow-hidden">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-0 right-0 w-[600px] h-[600px] opacity-[0.06]"
               style={{ background: 'radial-gradient(circle, #C3A35E 0%, transparent 65%)' }} />
           </div>
-          <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#C3A35E]/40 to-transparent" />
+          <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-harvics-gold/40 to-transparent" />
           <div className="relative z-10 max-w-[900px] mx-auto text-center">
-            <span className="inline-block text-xs font-bold text-[#C3A35E] uppercase tracking-[0.25em] mb-5 border border-[#C3A35E]/30 px-3 py-1">
+            <span className="inline-block text-xs font-bold text-harvics-gold uppercase tracking-[0.25em] mb-5 border border-harvics-gold/30 px-3 py-1">
               Our Brand Story
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6" style={{ letterSpacing: '-0.03em' }}>
@@ -79,22 +79,22 @@ export default async function BrandStoryPage({ params }: BrandStoryPageProps) {
               From a Dubai-based trading venture to a global AI-powered enterprise platform — this is the story of how Harvics is redefining what commercial systems can be.
             </p>
           </div>
-          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#C3A35E]/30 to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-harvics-gold/30 to-transparent" />
         </section>
 
         {/* Timeline Chapters */}
         <section className="max-w-[900px] mx-auto px-4 py-20">
           <div className="relative">
-            <div className="absolute left-[39px] top-0 bottom-0 w-[2px] bg-[#C3A35E]/20" />
+            <div className="absolute left-[39px] top-0 bottom-0 w-[2px] bg-harvics-gold/20" />
             <div className="space-y-10">
               {chapters.map((ch) => (
                 <div key={ch.year} className="relative flex gap-6">
-                  <div className="flex-shrink-0 w-20 h-20 bg-[#6B1F2B] border-2 border-[#C3A35E]/40 flex items-center justify-center z-10">
-                    <span className="text-[#C3A35E] font-bold text-xs">{ch.year}</span>
+                  <div className="flex-shrink-0 w-20 h-20 bg-harvics-burgundy border-2 border-harvics-gold/40 flex items-center justify-center z-10">
+                    <span className="text-harvics-gold font-bold text-xs">{ch.year}</span>
                   </div>
-                  <div className="flex-1 bg-white border border-[#C3A35E]/15 p-8">
-                    <h3 className="text-xl font-bold text-[#6B1F2B] mb-3" style={{ letterSpacing: '-0.01em' }}>{ch.title}</h3>
-                    <p className="text-[#6B1F2B]/55 leading-relaxed text-base">{ch.text}</p>
+                  <div className="flex-1 bg-white border border-harvics-gold/15 p-8">
+                    <h3 className="text-xl font-bold text-harvics-burgundy mb-3" style={{ letterSpacing: '-0.01em' }}>{ch.title}</h3>
+                    <p className="text-harvics-burgundy/55 leading-relaxed text-base">{ch.text}</p>
                   </div>
                 </div>
               ))}
@@ -107,18 +107,18 @@ export default async function BrandStoryPage({ params }: BrandStoryPageProps) {
           <div className="max-w-[1200px] mx-auto">
             <div className="text-center mb-12">
               <div className="flex items-center justify-center gap-2 mb-3">
-                <div className="w-6 h-[2px] bg-[#C3A35E]/50" />
-                <span className="text-xs font-bold text-[#C3A35E] uppercase tracking-[0.2em]">What Drives Us</span>
-                <div className="w-6 h-[2px] bg-[#C3A35E]/50" />
+                <div className="w-6 h-[2px] bg-harvics-gold/50" />
+                <span className="text-xs font-bold text-harvics-gold uppercase tracking-[0.2em]">What Drives Us</span>
+                <div className="w-6 h-[2px] bg-harvics-gold/50" />
               </div>
-              <h2 className="text-3xl font-bold text-[#6B1F2B]" style={{ letterSpacing: '-0.02em' }}>Our Core Principles</h2>
+              <h2 className="text-3xl font-bold text-harvics-burgundy" style={{ letterSpacing: '-0.02em' }}>Our Core Principles</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {values.map((v) => (
-                <div key={v.title} className="bg-white border border-[#C3A35E]/15 p-8">
+                <div key={v.title} className="bg-white border border-harvics-gold/15 p-8">
                   <div className="text-3xl mb-4">{v.icon}</div>
-                  <h3 className="text-lg font-bold text-[#6B1F2B] mb-2">{v.title}</h3>
-                  <p className="text-sm text-[#6B1F2B]/55 leading-relaxed">{v.desc}</p>
+                  <h3 className="text-lg font-bold text-harvics-burgundy mb-2">{v.title}</h3>
+                  <p className="text-sm text-harvics-burgundy/55 leading-relaxed">{v.desc}</p>
                 </div>
               ))}
             </div>
@@ -126,7 +126,7 @@ export default async function BrandStoryPage({ params }: BrandStoryPageProps) {
         </section>
 
         {/* Mission CTA */}
-        <section className="bg-[#6B1F2B] py-16 px-4">
+        <section className="bg-harvics-burgundy py-16 px-4">
           <div className="max-w-[800px] mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4" style={{ letterSpacing: '-0.02em' }}>
               &ldquo;Design intelligent, future-ready commercial systems that convert opportunity into sustained global value.&rdquo;
@@ -135,7 +135,7 @@ export default async function BrandStoryPage({ params }: BrandStoryPageProps) {
             <div className="mt-10">
               <Link
                 href={`/${locale}/about`}
-                className="inline-block px-8 py-3 bg-[#C3A35E] text-[#6B1F2B] text-sm font-bold hover:bg-[#d4b46e] transition-colors"
+                className="inline-block px-8 py-3 bg-harvics-gold text-harvics-burgundy text-sm font-bold hover:bg-[#d4b46e] transition-colors"
               >
                 Back to About
               </Link>

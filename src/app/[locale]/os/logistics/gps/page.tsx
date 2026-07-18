@@ -52,8 +52,8 @@ export default function GPSFleetMapPage() {
     <div>
       <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       <div className="mb-6">
-        <h1 className="text-3xl font-bold text-[#C3A35E] mb-2">GPS Tracking Dashboard</h1>
-        <p className="text-[#C3A35E]/90">Real-time vehicle tracking and fleet management</p>
+        <h1 className="text-3xl font-bold text-harvics-gold mb-2">GPS Tracking Dashboard</h1>
+        <p className="text-harvics-gold/90">Real-time vehicle tracking and fleet management</p>
       </div>
 
       {loading && <div className="text-center py-12">Loading...</div>}
@@ -62,22 +62,22 @@ export default function GPSFleetMapPage() {
       {dashboard && (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="bg-white shadow p-6">
-            <h3 className="text-lg font-semibold text-[#C3A35E]/90 mb-4">📍 Active Tracks</h3>
-            <div className="text-3xl font-bold text-[#C3A35E]">{dashboard.activeTracks || 0}</div>
+            <h3 className="text-lg font-semibold text-harvics-gold/90 mb-4">📍 Active Tracks</h3>
+            <div className="text-3xl font-bold text-harvics-gold">{dashboard.activeTracks || 0}</div>
           </div>
 
           <div className="bg-white shadow p-6">
-            <h3 className="text-lg font-semibold text-[#C3A35E]/90 mb-4">🚛 Total Vehicles</h3>
+            <h3 className="text-lg font-semibold text-harvics-gold/90 mb-4">🚛 Total Vehicles</h3>
             <div className="text-3xl font-bold text-blue-600">{dashboard.totalVehicles || 0}</div>
           </div>
 
           <div className="bg-white shadow p-6">
-            <h3 className="text-lg font-semibold text-[#C3A35E]/90 mb-4">🚚 Active Fleet</h3>
+            <h3 className="text-lg font-semibold text-harvics-gold/90 mb-4">🚚 Active Fleet</h3>
             <div className="text-3xl font-bold text-green-600">{dashboard.activeFleet || 0}</div>
           </div>
 
           <div className="bg-white shadow p-6">
-            <h3 className="text-lg font-semibold text-[#C3A35E]/90 mb-4">🗺️ Coverage Area</h3>
+            <h3 className="text-lg font-semibold text-harvics-gold/90 mb-4">🗺️ Coverage Area</h3>
             <div className="text-3xl font-bold text-purple-600">
               {(dashboard.coverageArea || 0).toLocaleString()} km²
             </div>
@@ -86,16 +86,16 @@ export default function GPSFleetMapPage() {
       )}
 
       <div className="mt-6 bg-white shadow p-6">
-        <h2 className="text-xl font-semibold text-[#C3A35E]/90 mb-4">Real-time GPS Map</h2>
+        <h2 className="text-xl font-semibold text-harvics-gold/90 mb-4">Real-time GPS Map</h2>
         <div className="bg-white h-96 border border-black100 p-6 flex flex-col justify-center">
-          <p className="text-[#C3A35E]/90 mb-3">
+          <p className="text-harvics-gold/90 mb-3">
             Fleet telemetry is actively summarized above. This panel is reserved for live route geometry,
             geofencing, and ETA confidence overlays.
           </p>
-          <p className="text-sm text-[#C3A35E]/90">
+          <p className="text-sm text-harvics-gold/90">
             Current active tracks: {(dashboard?.activeTracks || 0).toLocaleString()} across {(dashboard?.activeFleet || 0).toLocaleString()} active vehicles.
           </p>
-          <p className="text-sm text-[#C3A35E]/90 mt-2">
+          <p className="text-sm text-harvics-gold/90 mt-2">
             Connect telematics provider streams to render turn-by-turn map traces in this view.
           </p>
         </div>

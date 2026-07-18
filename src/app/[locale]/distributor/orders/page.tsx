@@ -116,13 +116,13 @@ export default function DistributorOrders() {
   const getStatusColor = (status: string) => {
     switch (status.toLowerCase()) {
       case 'pending':
-        return 'bg-[#C3A35E]/20 text-[#C3A35E]'
+        return 'bg-harvics-gold/20 text-harvics-gold'
       case 'delivered':
         return 'bg-green-100 text-green-800'
       case 'cancelled':
         return 'bg-red-100 text-red-800'
       default:
-        return 'bg-white text-[#C3A35E]/90'
+        return 'bg-white text-harvics-gold/90'
     }
   }
 
@@ -130,8 +130,8 @@ export default function DistributorOrders() {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#6B1F2B] mx-auto mb-4"></div>
-          <p className="text-[#C3A35E]/90">{t('loading')}</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-harvics-burgundy mx-auto mb-4"></div>
+          <p className="text-harvics-gold/90">{t('loading')}</p>
         </div>
       </div>
     )
@@ -142,7 +142,7 @@ export default function DistributorOrders() {
       <div className="min-h-screen bg-white py-8 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-center mb-8">
-            <h1 className="text-3xl font-bold text-[#C3A35E]">{t('title')}</h1>
+            <h1 className="text-3xl font-bold text-harvics-gold">{t('title')}</h1>
             <a
               href={`/${locale}/distributor/orders/new`}
               className="bg-white text-white px-6 py-3 font-semibold hover:bg-[#5a0012] transition-colors"
@@ -155,7 +155,7 @@ export default function DistributorOrders() {
           <div className="bg-white shadow p-6 mb-6">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
               <div>
-                <label className="block text-sm font-medium text-[#C3A35E]/90 mb-2">
+                <label className="block text-sm font-medium text-harvics-gold/90 mb-2">
                   {t('filters.status')}
                 </label>
                 <select
@@ -171,7 +171,7 @@ export default function DistributorOrders() {
                 </select>
               </div>
               <div>
-                <label className="block text-sm font-medium text-[#C3A35E]/90 mb-2">
+                <label className="block text-sm font-medium text-harvics-gold/90 mb-2">
                   {t('filters.startDate')}
                 </label>
                 <input
@@ -182,7 +182,7 @@ export default function DistributorOrders() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-[#C3A35E]/90 mb-2">
+                <label className="block text-sm font-medium text-harvics-gold/90 mb-2">
                   {t('filters.endDate')}
                 </label>
                 <input
@@ -198,7 +198,7 @@ export default function DistributorOrders() {
                     setFilters({ status: '', startDate: '', endDate: '' })
                     setPagination((prev) => ({ ...prev, page: 1 }))
                   }}
-                  className="w-full bg-white text-[#C3A35E]/90 px-4 py-2 font-semibold hover:bg-white transition-colors"
+                  className="w-full bg-white text-harvics-gold/90 px-4 py-2 font-semibold hover:bg-white transition-colors"
                 >
                   {t('filters.clearFilters')}
                 </button>
@@ -217,22 +217,22 @@ export default function DistributorOrders() {
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-white">
                 <tr>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">
                     {t('orderId')}
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">
                     {t('date')}
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">
                     {t('status')}
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">
                     {t('items')}
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">
                     {t('totalAmount')}
                   </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase tracking-wider">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">
                     {t('actions')}
                   </th>
                 </tr>
@@ -240,17 +240,17 @@ export default function DistributorOrders() {
               <tbody className="bg-white divide-y divide-gray-200">
                 {orders.length === 0 ? (
                   <tr>
-                    <td colSpan={6} className="px-6 py-4 text-center text-[#C3A35E]/90">
+                    <td colSpan={6} className="px-6 py-4 text-center text-harvics-gold/90">
                       {t('noOrders')}
                     </td>
                   </tr>
                 ) : (
                   orders.map((order) => (
                     <tr key={order.id} className="hover:bg-white">
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#C3A35E]/90">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-harvics-gold/90">
                         {order.id}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-[#C3A35E]/90">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">
                         {formatDate(order.order_date)}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
@@ -262,16 +262,16 @@ export default function DistributorOrders() {
                           {t(`statuses.${order.status.toLowerCase()}`) || order.status}
                         </span>
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-[#C3A35E]/90">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">
                         {order.item_count} {t('items')}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#C3A35E]/90">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-harvics-gold/90">
                         {formatCurrencyAmount(order.total_amount, order.currency)}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                         <a
                           href={`/${locale}/distributor/orders/${order.id}`}
-                          className="text-[#C3A35E]/90 hover:text-[#5a0012]"
+                          className="text-harvics-gold/90 hover:text-[#5a0012]"
                         >
                           {t('viewDetails')}
                         </a>

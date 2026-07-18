@@ -24,7 +24,7 @@ const ProductCategoryClient: React.FC<ProductCategoryClientProps> = ({
 
   // Use site's design guidelines - golden gradient
   const siteGradient = 'from-[#ffffff] via-[#ffffff] to-[#ffffff]'
-  const siteBgGradient = 'from-[#6B1F2B] via-[#6B1F2B] to-[#2a0005]'
+  const siteBgGradient = 'from-harvics-burgundy via-[#3D1212] to-[#2a0005]'
 
   // Get a representative image for the category hero
   const getBackgroundImage = () => {
@@ -37,10 +37,10 @@ const ProductCategoryClient: React.FC<ProductCategoryClientProps> = ({
   return (
     <>
       {/* Breadcrumb */}
-      <section className="py-3 sm:py-4 md:py-8 bg-[#6B1F2B] relative overflow-hidden border-b border-[#C3A35E]/20">
+      <section className="py-3 sm:py-4 md:py-8 bg-harvics-burgundy relative overflow-hidden border-b border-harvics-gold/20">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex items-center space-x-1 sm:space-x-2 text-xs sm:text-sm md:text-base">
-            <Link href={`/${locale}/products`} className="text-white hover:text-[#C3A35E]/90 transition-colors duration-300 flex items-center space-x-1 font-bold">
+            <Link href={`/${locale}/products`} className="text-white hover:text-harvics-gold/90 transition-colors duration-300 flex items-center space-x-1 font-bold">
               <span className="text-sm sm:text-base">←</span>
               <span className="hidden sm:inline">{t('pageTitle')}</span>
               <span className="sm:hidden">Products</span>
@@ -52,7 +52,7 @@ const ProductCategoryClient: React.FC<ProductCategoryClientProps> = ({
       </section>
 
       {/* Category Hero - Category-Specific Colors - Compact */}
-      <section className="relative py-6 sm:py-8 md:py-12 lg:py-16 overflow-hidden min-h-[180px] sm:min-h-[200px] md:min-h-[250px] lg:min-h-[300px] bg-[#6B1F2B]">
+      <section className="relative py-6 sm:py-8 md:py-12 lg:py-16 overflow-hidden min-h-[180px] sm:min-h-[200px] md:min-h-[250px] lg:min-h-[300px] bg-harvics-burgundy">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
@@ -64,7 +64,7 @@ const ProductCategoryClient: React.FC<ProductCategoryClientProps> = ({
               target.src = '/assets/brand/photo/logo.png';
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#6B1F2B] via-[#6B1F2B]/50 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-harvics-burgundy via-[#3D1212]/50 to-transparent"></div>
         </div>
 
         {/* Content */}
@@ -86,10 +86,10 @@ const ProductCategoryClient: React.FC<ProductCategoryClientProps> = ({
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-[#6B1F2B] mb-4 sm:mb-6 font-serif">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-harvics-burgundy mb-4 sm:mb-6 font-serif">
               {t('subcategories')}
             </h2>
-            <div className="w-20 sm:w-24 h-1 bg-[#6B1F2B] mx-auto mt-4 sm:mt-6"></div>
+            <div className="w-20 sm:w-24 h-1 bg-harvics-burgundy mx-auto mt-4 sm:mt-6"></div>
           </div>
 
           {subcategories.length > 0 ? (
@@ -119,7 +119,7 @@ const ProductCategoryClient: React.FC<ProductCategoryClientProps> = ({
                     {/* Subcategory Name at Bottom with Background */}
                     <div className="absolute bottom-0 left-0 right-0">
                       <div className="bg-white/95 backdrop-blur-sm px-3 py-3 lg:px-4 lg:py-4 border-t border-gray-100">
-                        <h4 className="text-sm sm:text-lg lg:text-xl font-bold text-[#6B1F2B] group-hover:text-[#2a0006] transition-colors duration-300 line-clamp-2 text-center">
+                        <h4 className="text-sm sm:text-lg lg:text-xl font-bold text-harvics-burgundy group-hover:text-[#2a0006] transition-colors duration-300 line-clamp-2 text-center">
                           {subcategory.name}
                         </h4>
                       </div>
@@ -132,7 +132,7 @@ const ProductCategoryClient: React.FC<ProductCategoryClientProps> = ({
             <div className="text-center py-16 px-6">
               <div className="max-w-md mx-auto">
                 <div className="text-6xl mb-4">📦</div>
-                <p className="text-lg text-[#6B1F2B] font-semibold mb-2">
+                <p className="text-lg text-harvics-burgundy font-semibold mb-2">
                   No subcategories available
                 </p>
                 <p className="text-sm text-gray-600">

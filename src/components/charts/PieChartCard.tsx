@@ -3,7 +3,7 @@
 import React from 'react'
 import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 
-const T = { burgundy: '#3D1212', gold: '#C3A35E', cream: '#F5F0E8', muted: '#8A7D6B', border: 'rgba(195,163,94,0.2)' }
+const T = { burgundy: 'var(--harvics-burgundy)', gold: 'var(--harvics-gold)', cream: 'var(--harvics-cream)', muted: 'var(--harvics-muted)', border: 'rgba(195, 163, 94,0.2)' }
 
 const Tip = ({ active, payload, unit }: any) => {
   if (!active || !payload?.length) return null
@@ -45,7 +45,7 @@ const DEFAULTS = [T.gold, '#C3A35E99', '#059669', '#3b82f6', '#8b5cf6', '#f59e0b
 export default function PieChartCard({ title, data, colors = DEFAULTS, height = 300, className = '', innerRadius = 0, outerRadius = 100, showLegend = true, unit }: PieChartCardProps) {
   return (
     <div className={`relative overflow-hidden rounded-2xl p-6 ${className}`}
-      style={{ background: T.burgundy, border: `1px solid ${T.border}`, boxShadow: '0 4px 24px rgba(26,5,5,0.5)' }}>
+      style={{ background: T.burgundy, border: `1px solid ${T.border}`, boxShadow: '0 4px 24px rgba(61, 18, 18,0.5)' }}>
       <div className="absolute inset-x-0 top-0 h-px" style={{ background: `linear-gradient(90deg,transparent,${T.gold}80,transparent)` }} />
       <h3 className="text-sm font-black tracking-[0.06em] mb-5" style={{ color: T.cream }}>{title}</h3>
       <ResponsiveContainer width="100%" height={height}>

@@ -1,0 +1,101 @@
+# ── hx-scrape-orchestrator ────────────────────────────────────────────────────
+# Cloudflare Worker — HarvyX GTM OS scrape orchestrator
+# Source: HARVYX_DATABANK_ARCH.md § 6
+# Deploy: wrangler deploy --env production
+
+name            = "hx-scrape-orchestrator"
+main            = "hx-scrape-orchestrator.ts"
+compatibility_date  = "2026-07-01"
+compatibility_flags = ["nodejs_compat"]
+
+# ── Cron trigger ──────────────────────────────────────────────────────────────
+# Fires every 6 hours: 00:00, 06:00, 12:00, 18:00 UTC
+
+[triggers]
+crons = ["0 */6 * * *"]
+
+# ── Cloudflare Queue — scrape trigger messages ────────────────────────────────
+# The Worker publishes { scraper, run_id, triggered_at } messages.
+# Consumer: a separate CF Worker (or bridge Worker) that calls the Node.js
+# scraper API endpoints.
+
+[[queues.producers]]
+binding    = "SCRAPE_QUEUE"
+queue      = "hx-scrape-orchestrator-triggers"
+
+# ── KV namespace — rate counters + R2 parsed-key registry ────────────────────
+# Rate keys:   rate:{source}:{YYYY-MM-DD}  → run count (TTL 25h)
+# Parse keys:  r2:parsed:{r2_key}          → { r2_key, parsed_at } (no TTL;
+#              deleted by cleanup routine after R2 delete succeeds)
+
+[[kv_namespaces]]
+binding    = "RATE_KV"
+id         = "4b280fea825840faae3e4b78be9568f9"
+preview_id = "4b280fea825840faae3e4b78be9568f9"
+
+# ── R2 bucket — raw scrape data ───────────────────────────────────────────────
+# Layout:
+#   companies-house/{vertical}/{company_number}/{ts}.json
+#   krs/{vertical}/{krs_number}/{ts}.json
+#   ares/{vertical}/{ico}/{ts}.json
+
+[[r2_buckets]]
+binding     = "R2_BUCKET"
+bucket_name = "harvyx-raw"
+
+# ── Hyperdrive — Postgres connection pooling ──────────────────────────────────
+# Provides a CF-native Postgres connection string to the Worker.
+# Create: wrangler hyperdrive create hx-hyperdrive \
+#           --connection-string="postgresql://user:pass@host:5432/harvyx"
+
+[[hyperdrive]]
+binding = "HYPERDRIVE"
+id      = "496bc0515ff4444a99e71264dc0a79c8"
+
+# ── Environment: production ───────────────────────────────────────────────────
+
+[env.production]
+name = "hx-scrape-orchestrator-prod"
+
+[env.production.triggers]
+crons = ["0 */6 * * *"]
+
+[[env.production.queues.producers]]
+binding    = "SCRAPE_QUEUE"
+queue      = "hx-scrape-orchestrator-triggers"
+
+[[env.production.kv_namespaces]]
+binding    = "RATE_KV"
+id         = "4b280fea825840faae3e4b78be9568f9"
+
+[[env.production.r2_buckets]]
+binding     = "R2_BUCKET"
+bucket_name = "harvyx-raw"
+
+[[env.production.hyperdrive]]
+binding = "HYPERDRIVE"
+id      = "496bc0515ff4444a99e71264dc0a79c8"
+
+# ── Secrets ───────────────────────────────────────────────────────────────────
+# Set via CLI — never commit values:
+#
+#   wrangler secret put COMPANIES_HOUSE_API_KEY --env production
+#   wrangler secret put APOLLO_API_KEY          --env production
+#   wrangler secret put LUSHA_API_KEY           --env production
+#   wrangler secret put HX_DATABASE_URL         --env production
+#   wrangler secret put HX_OPERATOR_WHATSAPP         --env production
+#   wrangler secret put TINYFISH_API_KEY        --env production
+#   wrangler secret put GROQ_API_KEY            --env production
+#   wrangler secret put OPENAI_API_KEY          --env production
+#   wrangler secret put NVIDIA_API_KEY          --env production
+
+# ── Build ─────────────────────────────────────────────────────────────────────
+
+[build]
+command = "echo 'build ok'"
+
+# ── Observability ─────────────────────────────────────────────────────────────
+
+[observability]
+enabled = true
+head_sampling_rate = 1

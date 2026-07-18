@@ -1,7 +1,7 @@
 'use client'
 /** HARVICS OS — Vendor Scorecards (Module #14) */
 import { useEffect, useState } from 'react'
-const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F0E8'
+const B='var(--harvics-burgundy)'; const G='var(--harvics-gold)'; const C='var(--harvics-cream)'
 const REC:Record<string,string>={Promote:'#2E7D32',Maintain:'#1565C0',Warn:'#E65100',Drop:'#B71C1C'}
 interface SC{id:string;vendorId:string;vendorName:string|null;period:string;onTimePercent:number;qualityScore:number;priceScore:number;responseScore:number;overallScore:number;recommendation:string}
 export default function ScorecardPage(){

@@ -36,7 +36,7 @@ export default async function AdminPortalCRMPage({
   }
 
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#6B1F2B' }}>
+    <div style={{ minHeight: '100vh', backgroundColor: 'var(--harvics-burgundy)' }}>
       {/* Admin Access Banner */}
       <div style={{ 
         backgroundColor: '#10b981', 

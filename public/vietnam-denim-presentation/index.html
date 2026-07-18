@@ -96,7 +96,7 @@
 /* ── Responsive ── */
 @media(max-width:860px){.hv-5col{grid-template-columns:repeat(3,1fr);}.hv-tl-item{grid-template-columns:1fr;}.hv-tl-period{border-right:none;border-bottom:1px solid rgba(255,255,255,.07);}}
 </style>
-  <script type="module" crossorigin src="./assets/index-BBPbjye3.js"></script>
+  <script type="module" crossorigin src="./assets/index-CdAe8Zju.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-B_8jPc6k.css">
 </head>
 <body x-data>
@@ -115,7 +115,7 @@
   <div class="locale-shell">
 
   <audio id="curtain-audio" loop preload="auto" style="display:none">
-    <source src="./Saigon_Indigo.mp3" type="audio/mpeg" />
+    <source src="./assets/Saigon_Indigo-MlYHtvAL.mp3" type="audio/mpeg" />
   </audio>
 
   <div x-data="doors"
@@ -146,10 +146,10 @@
        x-show="!$store.app.doorsOpened" class="fixed inset-0 z-[99998] flex items-center justify-center overflow-hidden">
     <div class="absolute top-0 bottom-0 left-0 w-[51%] border-r border-gold/5 transition-transform duration-[2s] ease-[cubic-bezier(0.8,0,0.15,1)]"
          :class="opening && '-translate-x-full'"
-         style="z-index:2; background: url('./assets/ALpha.jpg') left center / cover no-repeat; box-shadow: inset 0 0 0 9999px rgba(5,2,3,0.88);"></div>
+         style="z-index:2; background: url('./assets/ALpha-BcRLA2KS.jpg') left center / cover no-repeat; box-shadow: inset 0 0 0 9999px rgba(5,2,3,0.88);"></div>
     <div class="absolute top-0 bottom-0 right-0 w-[51%] border-l border-gold/5 transition-transform duration-[2s] ease-[cubic-bezier(0.8,0,0.15,1)]"
          :class="opening && 'translate-x-full'"
-         style="z-index:2; background: url('./assets/ALpha.jpg') right center / cover no-repeat; box-shadow: inset 0 0 0 9999px rgba(5,2,3,0.88);"></div>
+         style="z-index:2; background: url('./assets/ALpha-BcRLA2KS.jpg') right center / cover no-repeat; box-shadow: inset 0 0 0 9999px rgba(5,2,3,0.88);"></div>
     <div class="relative text-center transition-opacity duration-800 px-6" style="z-index:3;" :class="opening && 'opacity-0'" :key="$store.locale.current">
       <p class="text-[0.42rem] tracking-[10px] uppercase text-gold/35 mb-4 font-sans" x-text="$store.locale.t('doors.company')"></p>
       <h2 class="text-[clamp(1.4rem,3.5vw,2.6rem)] font-[200] text-gold tracking-wide mb-1.5" x-text="$store.locale.t('doors.title')"></h2>
@@ -170,12 +170,12 @@
   <button x-data="audioToggle" x-show="visible" x-cloak @click="toggle()"
           :aria-label="ariaLabel" :title="ariaLabel" class="audio-mute-btn">
     <svg x-show="!muted" viewBox="0 0 24 24" fill="none" class="w-[18px] h-[18px]" aria-hidden="true">
-      <path d="M11 5L6 9H3v6h3l5 4V5z" stroke="#C3A35E" stroke-width="1.5" stroke-linejoin="round"/>
-      <path d="M15.5 8.5a5 5 0 010 7M18 6a8.5 8.5 0 010 12" stroke="#C3A35E" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M11 5L6 9H3v6h3l5 4V5z" stroke="#C9A84C" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M15.5 8.5a5 5 0 010 7M18 6a8.5 8.5 0 010 12" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
     </svg>
     <svg x-show="muted" viewBox="0 0 24 24" fill="none" class="w-[18px] h-[18px]" aria-hidden="true">
-      <path d="M11 5L6 9H3v6h3l5 4V5z" stroke="#C3A35E" stroke-width="1.5" stroke-linejoin="round"/>
-      <path d="M16 9l5 6M21 9l-5 6" stroke="#C3A35E" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M11 5L6 9H3v6h3l5 4V5z" stroke="#C9A84C" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M16 9l5 6M21 9l-5 6" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
     </svg>
   </button>
 
@@ -194,7 +194,7 @@
           <line x-ref="hh" x1="50" y1="50" x2="50" y2="26" stroke="#c8a96e" stroke-width="2.5" stroke-linecap="round"/>
           <line x-ref="mh" x1="50" y1="50" x2="50" y2="18" stroke="#e8cc8a" stroke-width="1.5" stroke-linecap="round"/>
           <line x-ref="sh" x1="50" y1="54" x2="50" y2="16" stroke="rgba(200,169,110,0.12)" stroke-width="0.5" stroke-linecap="round"/>
-          <circle cx="50" cy="50" r="2.5" fill="#c8a96e"/><circle cx="50" cy="50" r="1" fill="#6B1F2B"/>
+          <circle cx="50" cy="50" r="2.5" fill="#c8a96e"/><circle cx="50" cy="50" r="1" fill="#1A0505"/>
         </svg>
       </div>
       <div class="flex flex-col gap-px">
@@ -254,8 +254,8 @@
             <ellipse cx="100" cy="100" rx="90" ry="35" transform="rotate(90 100 100)"/>
             <line x1="10" y1="100" x2="190" y2="100"/>
             <line x1="100" y1="10" x2="100" y2="190"/>
-            <circle cx="100" cy="100" r="7" fill="#C3A35E" stroke="none"/>
-            <circle cx="100" cy="100" r="12" fill="rgba(200,169,110,0.14)" stroke="#C3A35E" stroke-width="0.8"/>
+            <circle cx="100" cy="100" r="7" fill="#C9A84C" stroke="none"/>
+            <circle cx="100" cy="100" r="12" fill="rgba(200,169,110,0.14)" stroke="#C9A84C" stroke-width="0.8"/>
             <line x1="100" y1="10" x2="100" y2="26" stroke-width="1.5"/>
             <line x1="190" y1="100" x2="174" y2="100" stroke-width="1.5"/>
             <line x1="100" y1="190" x2="100" y2="174" stroke-width="1.5"/>

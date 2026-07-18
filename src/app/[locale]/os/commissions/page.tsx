@@ -20,7 +20,7 @@ interface Commission {
   paidDate: string | null
 }
 
-const B = '#6B1F2B'; const G = '#C3A35E'; const C = '#F5F0E8'
+const B = 'var(--harvics-burgundy)'; const G = 'var(--harvics-gold)'; const C = 'var(--harvics-cream)'
 const SC: Record<string,string> = { Calculated: '#B8860B', Approved: '#1565C0', Paid: '#2E7D32' }
 
 export default function CommissionsPage() {

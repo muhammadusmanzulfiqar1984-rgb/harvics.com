@@ -41,21 +41,21 @@ const MediaSection: React.FC = () => {
   }, [cartoonVideos.length])
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-[#6B1F2B] relative overflow-hidden min-h-screen flex items-center">
+    <section className="py-12 sm:py-16 lg:py-20 bg-harvics-burgundy relative overflow-hidden min-h-screen flex items-center">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-[#C3A35E] to-[#C3A35E] rounded-full blur-3xl animate-pulse-slow"></div>
-        <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-[#C3A35E] to-[#C3A35E] rounded-full blur-3xl animate-pulse-slow" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-harvics-gold to-harvics-gold rounded-full blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-harvics-gold to-harvics-gold rounded-full blur-3xl animate-pulse-slow" style={{animationDelay: '2s'}}></div>
       </div>
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-8 sm:mb-12 lg:mb-16">
           <div className="opacity-100">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-serif text-[#C3A35E] drop-shadow-sm">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-serif text-harvics-gold drop-shadow-sm">
               {getText('title', 'Media & Promotions')}
             </h2>
-            <div className="w-24 h-1 bg-[#C3A35E] mx-auto mt-6"></div>
+            <div className="w-24 h-1 bg-harvics-gold mx-auto mt-6"></div>
           </div>
         </div>
 
@@ -63,7 +63,7 @@ const MediaSection: React.FC = () => {
         <div className="opacity-100">
           <div className="relative w-full">
             {/* Main Video Display - Full Width */}
-            <div className="relative bg-[#6B1F2B] shadow-2xl overflow-hidden border-2 border-[#C3A35E]/30">
+            <div className="relative bg-harvics-burgundy shadow-2xl overflow-hidden border-2 border-harvics-gold/30">
               <div className="aspect-video relative">
                 <iframe
                   src={`https://www.youtube.com/embed/${cartoonVideos[currentVideo].id}?autoplay=0&controls=1&showinfo=0&rel=0`}

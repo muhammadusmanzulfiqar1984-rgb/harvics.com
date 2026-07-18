@@ -29,7 +29,7 @@ export default function BackButton({
   return (
     <button
       onClick={handleBack}
-      className={`flex items-center gap-2 px-4 py-2 text-sm font-medium text-black hover:text-[#C3A35E] border border-black200 rounded-md hover:border-[#C3A35E] hover:bg-[#C3A35E]/5 transition-all duration-200 ${className}`}
+      className={`flex items-center gap-2 px-4 py-2 text-sm font-medium text-black hover:text-harvics-gold border border-black200 rounded-md hover:border-harvics-gold hover:bg-harvics-gold/5 transition-all duration-200 ${className}`}
       aria-label={label}
     >
       <svg 

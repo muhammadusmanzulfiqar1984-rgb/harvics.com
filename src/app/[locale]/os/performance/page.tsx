@@ -23,20 +23,20 @@ export default function P(){
     </Panel>
     <Panel title={`9-BOX (${PERIOD}) — ${rows.length} reviews`} full>
       <div style={{display:'flex'}}>
-        <div style={{writingMode:'vertical-rl',transform:'rotate(180deg)',padding:8,fontWeight:700,color:'#6B1F2B'}}>POTENTIAL →</div>
+        <div style={{writingMode:'vertical-rl',transform:'rotate(180deg)',padding:8,fontWeight:700,color:'var(--harvics-burgundy)'}}>POTENTIAL →</div>
         <div style={{flex:1}}>
           <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:4}}>
             {cell('High','Low')}{cell('High','Mid')}{cell('High','High')}
             {cell('Mid','Low')}{cell('Mid','Mid')}{cell('Mid','High')}
             {cell('Low','Low')}{cell('Low','Mid')}{cell('Low','High')}
           </div>
-          <div style={{textAlign:'center',padding:8,fontWeight:700,color:'#6B1F2B'}}>PERFORMANCE →</div>
+          <div style={{textAlign:'center',padding:8,fontWeight:700,color:'var(--harvics-burgundy)'}}>PERFORMANCE →</div>
         </div>
       </div>
     </Panel>
     <Panel title="ALL REVIEWS" full>
       <Tbl head={['EMPLOYEE','PERIOD','SELF','MGR','SCORE','POTENTIAL']}>
-        {rows.map(r=><tr key={r.id}><td style={td}>{r.employeeId}</td><td style={td}>{r.period}</td><td style={td}>{r.selfRating}</td><td style={td}>{r.mgrRating}</td><td style={{...td,fontWeight:700,color:'#6B1F2B'}}>{r.overallScore}</td><td style={td}><Pill s={r.potential}/></td></tr>)}
+        {rows.map(r=><tr key={r.id}><td style={td}>{r.employeeId}</td><td style={td}>{r.period}</td><td style={td}>{r.selfRating}</td><td style={td}>{r.mgrRating}</td><td style={{...td,fontWeight:700,color:'var(--harvics-burgundy)'}}>{r.overallScore}</td><td style={td}><Pill s={r.potential}/></td></tr>)}
       </Tbl>
     </Panel>
   </Grid></Page>

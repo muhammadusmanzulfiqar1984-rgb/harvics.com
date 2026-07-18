@@ -58,19 +58,19 @@ export default function PortalSwitcher({ currentPortal }: PortalSwitcherProps) {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-3 py-1.5 bg-white border border-[#C3A35E]/30 rounded-md hover:bg-[#F8F9FA] transition-colors"
+        className="flex items-center gap-2 px-3 py-1.5 bg-white border border-harvics-gold/30 rounded-md hover:bg-[#F8F9FA] transition-colors"
       >
         <span className="text-lg">{currentPortalConfig?.icon || '🌐'}</span>
-        <span className="text-sm font-bold text-[#6B1F2B] hidden sm:inline">
+        <span className="text-sm font-bold text-harvics-burgundy hidden sm:inline">
           {currentPortalConfig?.name || 'Switch Portal'}
         </span>
-        <span className="text-xs text-[#6B1F2B]/50">▼</span>
+        <span className="text-xs text-harvics-burgundy/50">▼</span>
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-64 bg-white border border-[#C3A35E] rounded-lg shadow-xl z-50 py-2">
-          <div className="px-4 py-2 border-b border-[#C3A35E]/20 mb-2">
-            <p className="text-xs font-bold text-[#6B1F2B] uppercase tracking-wider">Switch Context</p>
+        <div className="absolute right-0 mt-2 w-64 bg-white border border-harvics-gold rounded-lg shadow-xl z-50 py-2">
+          <div className="px-4 py-2 border-b border-harvics-gold/20 mb-2">
+            <p className="text-xs font-bold text-harvics-burgundy uppercase tracking-wider">Switch Context</p>
           </div>
           
           <div className="space-y-1">
@@ -80,21 +80,21 @@ export default function PortalSwitcher({ currentPortal }: PortalSwitcherProps) {
                 onClick={() => handlePortalSwitch(portal.path)}
                 className={`w-full flex items-center gap-3 px-4 py-2 text-left transition-colors ${
                   currentPortal === portal.id
-                    ? 'bg-[#C3A35E]/10 text-[#6B1F2B] font-bold border-l-4 border-[#6B1F2B]'
-                    : 'text-[#6B1F2B]/80 hover:bg-[#F8F9FA] hover:text-[#6B1F2B] border-l-4 border-transparent'
+                    ? 'bg-harvics-gold/10 text-harvics-burgundy font-bold border-l-4 border-harvics-burgundy'
+                    : 'text-harvics-burgundy/80 hover:bg-[#F8F9FA] hover:text-harvics-burgundy border-l-4 border-transparent'
                 }`}
               >
                 <span className="text-xl">{portal.icon}</span>
                 <div>
                   <div className="text-sm font-medium">{portal.name}</div>
-                  <div className="text-[10px] text-[#6B1F2B]/60">{portal.description}</div>
+                  <div className="text-[10px] text-harvics-burgundy/60">{portal.description}</div>
                 </div>
               </button>
             ))}
           </div>
 
           {/* Logout */}
-          <div className="mt-2 pt-2 border-t border-[#C3A35E]/20 px-2">
+          <div className="mt-2 pt-2 border-t border-harvics-gold/20 px-2">
             <button
               onClick={handleLogout}
               className="w-full flex items-center gap-3 px-3 py-2 rounded-md text-left text-sm text-gray-500 hover:bg-red-50 hover:text-red-600 transition-colors"

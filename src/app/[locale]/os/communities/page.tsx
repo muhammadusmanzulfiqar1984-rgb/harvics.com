@@ -21,10 +21,10 @@ export default function P(){
     </Panel>
     <Panel title={`COMMUNITIES (${rows.length})`}>
       <Tbl head={['SLUG','NAME','VIS','MEMBERS','JOIN']}>
-        {rows.map(c=><tr key={c.id} style={{borderBottom:'1px solid #6B1F2B11'}}>
+        {rows.map(c=><tr key={c.id} style={{borderBottom:'1px solid #3D121211'}}>
           <td style={td}><b>{c.slug}</b></td><td style={td}>{c.name}</td><td style={td}><Pill s={c.visibility==='public'?'Active':'Hold'}/></td>
           <td style={td}>{c.memberCount}</td>
-          <td style={td}><input placeholder="user ID" value={join[c.id]||''} onChange={e=>setJoin({...join,[c.id]:e.target.value})} style={{width:80,padding:3,border:'1px solid #6B1F2B55',fontSize:11}}/> <button onClick={()=>doJoin(c.id)} style={btnA}>JOIN</button></td>
+          <td style={td}><input placeholder="user ID" value={join[c.id]||''} onChange={e=>setJoin({...join,[c.id]:e.target.value})} style={{width:80,padding:3,border:'1px solid #3D121255',fontSize:11}}/> <button onClick={()=>doJoin(c.id)} style={btnA}>JOIN</button></td>
         </tr>)}
       </Tbl>
     </Panel>

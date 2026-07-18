@@ -16,20 +16,20 @@ export default function P(){
     <Panel title="NEW PAYMENT RUN">
       <Form><Inp l="Run No *" v={form.runNo} on={v=>setForm({...form,runNo:v})}/><Inp l="Currency" v={form.currency} on={v=>setForm({...form,currency:v})}/></Form>
       <Inp l="Description" v={form.description} on={v=>setForm({...form,description:v})}/>
-      <div style={{marginTop:8,fontWeight:700,color:'#6B1F2B',fontSize:11}}>LINE ITEMS</div>
+      <div style={{marginTop:8,fontWeight:700,color:'var(--harvics-burgundy)',fontSize:11}}>LINE ITEMS</div>
       {items.map((it,i)=><div key={i} style={{display:'grid',gridTemplateColumns:'2fr 1fr 1fr',gap:4,marginTop:4}}>
-        <input placeholder="Payee" value={it.payeeName} onChange={e=>{const n=[...items];n[i].payeeName=e.target.value;setItems(n)}} style={{padding:6,border:'1px solid #6B1F2B55',fontSize:12}}/>
-        <input type="number" placeholder="Amount" value={it.amount} onChange={e=>{const n=[...items];n[i].amount=+e.target.value;setItems(n)}} style={{padding:6,border:'1px solid #6B1F2B55',fontSize:12}}/>
-        <input placeholder="Invoice ref" value={it.invoiceRef} onChange={e=>{const n=[...items];n[i].invoiceRef=e.target.value;setItems(n)}} style={{padding:6,border:'1px solid #6B1F2B55',fontSize:12}}/>
+        <input placeholder="Payee" value={it.payeeName} onChange={e=>{const n=[...items];n[i].payeeName=e.target.value;setItems(n)}} style={{padding:6,border:'1px solid #3D121255',fontSize:12}}/>
+        <input type="number" placeholder="Amount" value={it.amount} onChange={e=>{const n=[...items];n[i].amount=+e.target.value;setItems(n)}} style={{padding:6,border:'1px solid #3D121255',fontSize:12}}/>
+        <input placeholder="Invoice ref" value={it.invoiceRef} onChange={e=>{const n=[...items];n[i].invoiceRef=e.target.value;setItems(n)}} style={{padding:6,border:'1px solid #3D121255',fontSize:12}}/>
       </div>)}
       <button onClick={addLine} style={btnA}>+ ADD LINE</button>
       <button onClick={create} style={btnB}>CREATE DRAFT</button>
     </Panel>
     <Panel title="ALL RUNS" full>
       <Tbl head={['RUN','DESC','ITEMS','TOTAL','STATUS','ACTION']}>
-        {runs.map(r=><tr key={r.id} style={{borderBottom:'1px solid #6B1F2B11'}}>
+        {runs.map(r=><tr key={r.id} style={{borderBottom:'1px solid #3D121211'}}>
           <td style={td}><b>{r.runNo}</b></td><td style={td}>{r.description||'—'}</td><td style={td}>{r.itemCount}</td>
-          <td style={{...td,fontWeight:700,color:'#6B1F2B'}}>{r.currency} {r.totalAmount.toLocaleString()}</td>
+          <td style={{...td,fontWeight:700,color:'var(--harvics-burgundy)'}}>{r.currency} {r.totalAmount.toLocaleString()}</td>
           <td style={td}><Pill s={r.status}/></td>
           <td style={td}>{r.status==='Draft'&&<button onClick={()=>release(r.id)} style={btnA}>RELEASE</button>}</td>
         </tr>)}

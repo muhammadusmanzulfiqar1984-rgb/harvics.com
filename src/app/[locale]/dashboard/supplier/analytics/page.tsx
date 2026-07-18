@@ -20,7 +20,7 @@ export default function SupplierAnalytics() {
     { name: 'Chocolates', value: 40, color: '#ffffff' },
     { name: 'Beverages', value: 25, color: '#ffffff' },
     { name: 'Biscuits', value: 20, color: '#ffffff' },
-    { name: 'Candies', value: 10, color: '#6B1F2B' },
+    { name: 'Candies', value: 10, color: 'var(--harvics-burgundy)' },
     { name: 'Others', value: 5, color: '#666' }
   ]
 
@@ -63,7 +63,7 @@ export default function SupplierAnalytics() {
       <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="py-12 md:py-16 px-4 md:px-6 bg-[#6B1F2B]">
+        <section className="py-12 md:py-16 px-4 md:px-6 bg-harvics-burgundy">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-8 md:mb-12">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-4 md:mb-6">
@@ -80,26 +80,26 @@ export default function SupplierAnalytics() {
               {/* Key Metrics */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-8 md:mb-12">
                 <div className="bg-white p-4 md:p-6 border border-gray-100 shadow-sm">
-                  <div className="text-2xl md:text-3xl font-bold text-[#6B1F2B] mb-2">
+                  <div className="text-2xl md:text-3xl font-bold text-harvics-burgundy mb-2">
                     {formatCurrencyShort(15400000)}
                   </div>
                   <div className="text-sm md:text-base text-gray-500">Total Revenue</div>
                   <div className="text-xs text-green-600 mt-1">↗ +25% from last month</div>
                 </div>
                 <div className="bg-white p-4 md:p-6 border border-gray-100 shadow-sm">
-                  <div className="text-2xl md:text-3xl font-bold text-[#6B1F2B] mb-2">285</div>
+                  <div className="text-2xl md:text-3xl font-bold text-harvics-burgundy mb-2">285</div>
                   <div className="text-sm md:text-base text-gray-500">Total Orders</div>
                   <div className="text-xs text-green-600 mt-1">↗ +18% from last month</div>
                 </div>
                 <div className="bg-white p-4 md:p-6 border border-gray-100 shadow-sm">
-                  <div className="text-2xl md:text-3xl font-bold text-[#6B1F2B] mb-2">
+                  <div className="text-2xl md:text-3xl font-bold text-harvics-burgundy mb-2">
                     {formatCurrency(54035)}
                   </div>
                   <div className="text-sm md:text-base text-gray-500">Avg Order Value</div>
                   <div className="text-xs text-green-600 mt-1">↗ +12% from last month</div>
                 </div>
                 <div className="bg-white p-4 md:p-6 border border-gray-100 shadow-sm">
-                  <div className="text-2xl md:text-3xl font-bold text-[#6B1F2B] mb-2">96%</div>
+                  <div className="text-2xl md:text-3xl font-bold text-harvics-burgundy mb-2">96%</div>
                   <div className="text-sm md:text-base text-gray-500">Order Fulfillment</div>
                   <div className="text-xs text-green-600 mt-1">↗ +2% from last month</div>
                 </div>
@@ -108,7 +108,7 @@ export default function SupplierAnalytics() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
             {/* Revenue Trend Chart */}
             <div className="bg-white p-6 md:p-8 border border-gray-100 shadow-sm">
-              <h2 className="text-xl md:text-2xl font-serif font-bold text-[#6B1F2B] mb-6">
+              <h2 className="text-xl md:text-2xl font-serif font-bold text-harvics-burgundy mb-6">
                 Revenue Trend (Last 6 Months)
               </h2>
               <div className="space-y-4">
@@ -117,7 +117,7 @@ export default function SupplierAnalytics() {
                     <div className="w-12 text-sm font-medium text-gray-600">{item.month}</div>
                     <div className="flex-1 bg-gray-100 rounded-full h-4 relative overflow-hidden">
                       <div 
-                        className="bg-[#6B1F2B] h-4 rounded-full transition-all duration-1000"
+                        className="bg-harvics-burgundy h-4 rounded-full transition-all duration-1000"
                         style={{ width: `${(item.revenue / 3200000) * 100}%` }}
                       ></div>
                     </div>
@@ -131,7 +131,7 @@ export default function SupplierAnalytics() {
 
             {/* Product Categories Pie Chart */}
             <div className="bg-white p-6 md:p-8 border border-gray-100 shadow-sm">
-              <h2 className="text-xl md:text-2xl font-serif font-bold text-[#6B1F2B] mb-6">
+              <h2 className="text-xl md:text-2xl font-serif font-bold text-harvics-burgundy mb-6">
                 Revenue by Product Category
               </h2>
               <div className="flex flex-col space-y-4">
@@ -139,7 +139,7 @@ export default function SupplierAnalytics() {
                   <div key={category.name} className="flex items-center space-x-4">
                     <div 
                       className="w-4 h-4 rounded-full"
-                      style={{ backgroundColor: index === 0 ? '#6B1F2B' : index === 1 ? '#5c000c' : index === 2 ? '#7c0010' : '#9c0014' }}
+                      style={{ backgroundColor: index === 0 ? 'var(--harvics-burgundy)' : index === 1 ? '#5c000c' : index === 2 ? '#7c0010' : '#9c0014' }}
                     ></div>
                     <div className="flex-1">
                       <div className="flex justify-between items-center mb-1">
@@ -150,7 +150,7 @@ export default function SupplierAnalytics() {
                         <div 
                           className="h-2 rounded-full transition-all duration-1000"
                           style={{ 
-                            backgroundColor: index === 0 ? '#6B1F2B' : index === 1 ? '#5c000c' : index === 2 ? '#7c0010' : '#9c0014',
+                            backgroundColor: index === 0 ? 'var(--harvics-burgundy)' : index === 1 ? '#5c000c' : index === 2 ? '#7c0010' : '#9c0014',
                             width: `${category.value}%`
                           }}
                         ></div>
@@ -163,14 +163,14 @@ export default function SupplierAnalytics() {
 
             {/* Top Distributors */}
             <div className="bg-white p-6 md:p-8 border border-gray-100 shadow-sm">
-              <h2 className="text-xl md:text-2xl font-serif font-bold text-[#6B1F2B] mb-6">
+              <h2 className="text-xl md:text-2xl font-serif font-bold text-harvics-burgundy mb-6">
                 Top Distributors
               </h2>
               <div className="space-y-4">
                 {topDistributors.map((distributor, index) => (
                   <div key={distributor.name} className="flex items-center justify-between p-4 bg-gray-50 border border-gray-100">
                     <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 text-white bg-[#6B1F2B] rounded-full flex items-center justify-center text-sm font-bold">
+                      <div className="w-8 h-8 text-white bg-harvics-burgundy rounded-full flex items-center justify-center text-sm font-bold">
                         {index + 1}
                       </div>
                       <div>
@@ -179,7 +179,7 @@ export default function SupplierAnalytics() {
                       </div>
                     </div>
                     <div className="text-right">
-                      <div className="font-bold text-[#6B1F2B]">
+                      <div className="font-bold text-harvics-burgundy">
                         {formatCurrencyShort(distributor.revenue)}
                       </div>
                       <div className="text-xs text-gray-500">Revenue</div>
@@ -191,7 +191,7 @@ export default function SupplierAnalytics() {
 
             {/* Regional Performance */}
             <div className="bg-white p-6 md:p-8 border border-gray-100 shadow-sm">
-              <h2 className="text-xl md:text-2xl font-serif font-bold text-[#6B1F2B] mb-6">
+              <h2 className="text-xl md:text-2xl font-serif font-bold text-harvics-burgundy mb-6">
                 Regional Performance
               </h2>
               <div className="space-y-4">
@@ -207,7 +207,7 @@ export default function SupplierAnalytics() {
                       </span>
                       <div className="w-20 bg-gray-100 rounded-full h-2">
                         <div 
-                          className="bg-[#6B1F2B] h-2 rounded-full"
+                          className="bg-harvics-burgundy h-2 rounded-full"
                           style={{ width: `${(region.revenue / 4200000) * 100}%` }}
                         ></div>
                       </div>

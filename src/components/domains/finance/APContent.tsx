@@ -56,9 +56,9 @@ export default function APContent() {
           </thead>
           <tbody>
             {pos.map((po, i) => (
-              <tr key={po.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F0E8]/50'}>
+              <tr key={po.id} className={i % 2 === 0 ? 'bg-white' : 'bg-harvics-cream/50'}>
                 <td className="px-4 py-3 font-mono font-semibold text-[#1A1A1A]">{po.poNumber}</td>
-                <td className="px-4 py-3 text-[#6B1F2B]">{po.supplier}</td>
+                <td className="px-4 py-3 text-harvics-burgundy">{po.supplier}</td>
                 <td className="px-4 py-3 text-right font-bold">{po.currency} {po.total.toLocaleString()}</td>
                 <td className="px-4 py-3 text-center">
                   <span className={`px-2 py-1 text-xs font-bold ${po.status === 'Approved' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{po.status}</span>
@@ -70,7 +70,7 @@ export default function APContent() {
         </table>
       </div>
 
-      <div className="bg-[#F5F0E8] border-l-4 border-[#E5E5EA] p-4" style={{ borderRadius: 0 }}>
+      <div className="bg-harvics-cream border-l-4 border-[#E5E5EA] p-4" style={{ borderRadius: 0 }}>
         <div className="flex items-start gap-3">
           <span className="text-xl">🤖</span>
           <div>

@@ -90,11 +90,11 @@ export default function UserInfoBar({ role, className = '' }: UserInfoBarProps) 
 
   if (!userInfo) {
     return (
-      <div className={`bg-gradient-to-r from-[#6B1F2B] to-[#ffffff] text-white px-4 py-2 text-sm ${className}`}>
+      <div className={`bg-gradient-to-r from-harvics-burgundy to-[#ffffff] text-white px-4 py-2 text-sm ${className}`}>
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           <div className="flex items-center gap-2">
             <div className="w-6 h-6 bg-white/20 rounded-full animate-pulse"></div>
-            <span className="text-[#C3A35E]/90">Loading...</span>
+            <span className="text-harvics-gold/90">Loading...</span>
           </div>
         </div>
       </div>
@@ -102,16 +102,16 @@ export default function UserInfoBar({ role, className = '' }: UserInfoBarProps) 
   }
 
   return (
-    <div className={`bg-gradient-to-r from-[#6B1F2B] to-[#ffffff] text-white px-4 py-2 text-sm shadow-md ${className}`}>
+    <div className={`bg-gradient-to-r from-harvics-burgundy to-[#ffffff] text-white px-4 py-2 text-sm shadow-md ${className}`}>
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center border border-[#C3A35E]/30">
+            <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center border border-harvics-gold/30">
               <span className="text-xs font-bold">{userInfo.username.charAt(0).toUpperCase()}</span>
             </div>
             <div className="flex flex-col">
               <span className="font-semibold text-white">Logged in as: {userInfo.fullName || userInfo.username}</span>
-              <span className="text-xs text-[#C3A35E]/90">{getRoleLabel()}</span>
+              <span className="text-xs text-harvics-gold/90">{getRoleLabel()}</span>
             </div>
           </div>
         </div>

@@ -1,11 +1,15 @@
 :root {
-	/* Brand accents — burgundy/cream/gold only (HARVICS_SYSTEM_RULES) */
-	--harvics-maroon: #3D1212;
-	--harvics-gold: #C3A35E;
-	/* Dark surfaces — for backgrounds */
+	/* HARVICS_SYSTEM_RULES.md — single source for CSS variables */
 	--harvics-burgundy: #3D1212;
-	--harvics-dark: #0D0D0D;
-	/* Light surfaces */
+	--harvics-maroon: #3D1212;
+	--harvics-dark: #3D1212;
+	--harvics-gold: #C3A35E;
 	--harvics-cream: #F5F0E8;
 	--harvics-muted: #8A7D6B;
+	--harvics-burgundy-overlay: rgba(61, 18, 18, 0.85);
+	--harvics-gold-muted: rgba(195, 163, 94, 0.6);
+	--harvics-gold-divider: rgba(195, 163, 94, 0.2);
+	--harvics-card: #EFE8DC;
+	--harvics-card-muted: #e5dccb;
+	--harvics-burgundy-deep: #2A0C0C;
 }

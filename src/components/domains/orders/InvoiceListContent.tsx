@@ -81,7 +81,7 @@ export default function InvoiceListContent({ persona, locale }: InvoiceListConte
       {/* Header */}
       <div className="flex items-center justify-between">
         <h3 className="text-sm font-semibold text-[#1A1A1A]">Invoicing & Billing</h3>
-        <button className="px-4 py-2 bg-[#6B1F2B] text-white text-xs font-medium rounded-xl hover:bg-[#5a1a24] transition-colors">
+        <button className="px-4 py-2 bg-harvics-burgundy text-white text-xs font-medium rounded-xl hover:bg-[#5a1a24] transition-colors">
           + Generate Invoice
         </button>
       </div>
@@ -148,7 +148,7 @@ export default function InvoiceListContent({ persona, locale }: InvoiceListConte
                     </td>
                     <td className="px-4 py-3 text-sm text-black">{inv.dueDate}</td>
                     <td className="px-4 py-3 text-sm">
-                      <button className="text-[#C3A35E] hover:underline font-medium">View PDF</button>
+                      <button className="text-harvics-gold hover:underline font-medium">View PDF</button>
                     </td>
                   </tr>
                 ))

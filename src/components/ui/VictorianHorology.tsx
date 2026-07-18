@@ -110,7 +110,7 @@ export function VictorianAnalogClock({
           transform={`rotate(${sDeg} 50 50)`}
         />
         <circle cx="50" cy="50" r="2.5" fill={HOROLOGY_GOLD} />
-        <circle cx="50" cy="50" r="1" fill="#6B1F2B" />
+        <circle cx="50" cy="50" r="1" fill="var(--harvics-burgundy)" />
       </svg>
     </div>
   )
@@ -142,7 +142,7 @@ export function VictorianTelephoneIcon({ isOpen = false }: { isOpen?: boolean })
       )}
 
       <circle cx="50" cy="50" r="2.5" fill={HOROLOGY_GOLD} />
-      <circle cx="50" cy="50" r="1" fill="#6B1F2B" />
+      <circle cx="50" cy="50" r="1" fill="var(--harvics-burgundy)" />
     </svg>
   )
 }

@@ -44,7 +44,7 @@ function AnimatedNum({ num, started }: { num: string; started: boolean }) {
 
 export default function AnimatedStats({
   stats,
-  numClassName = 'text-2xl font-bold text-[#C3A35E]',
+  numClassName = 'text-2xl font-bold text-harvics-gold',
   labelClassName = 'text-xs text-white/50 mt-1',
   containerClassName = '',
 }: {

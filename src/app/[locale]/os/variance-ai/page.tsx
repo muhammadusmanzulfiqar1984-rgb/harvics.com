@@ -13,13 +13,13 @@ export default function P(){
     <Panel title="GENERATE">
       <Inp l="Period (YYYY-MM)" v={period} on={v=>setPeriod(v)}/>
       <button onClick={generate} style={btnB}>GENERATE FROM VARIANCE</button>
-      <div style={{marginTop:10,padding:10,background:'#F5F0E8',borderLeft:'4px solid #C3A35E',fontSize:11,color:'#6B1F2B'}}>
+      <div style={{marginTop:10,padding:10,background:'var(--harvics-cream)',borderLeft:'4px solid #C3A35E',fontSize:11,color:'var(--harvics-burgundy)'}}>
         Reads budget lines + actual allocations for the period, computes variances, then classifies each as Timing / Volume / Price / Mix / Other and produces a draft narrative for review.
       </div>
     </Panel>
     <Panel title={`COMMENTARY — ${period}`} full>
       <Tbl head={['ACCOUNT','CC','VARIANCE','%','CLASS','COMMENTARY']}>
-        {rows.length===0?<tr><td colSpan={6} style={{padding:24,textAlign:'center',color:'#888'}}>None yet. Click GENERATE.</td></tr>:rows.map(r=><tr key={r.id} style={{borderBottom:'1px solid #6B1F2B11'}}>
+        {rows.length===0?<tr><td colSpan={6} style={{padding:24,textAlign:'center',color:'#888'}}>None yet. Click GENERATE.</td></tr>:rows.map(r=><tr key={r.id} style={{borderBottom:'1px solid #3D121211'}}>
           <td style={td}><b>{r.account}</b></td><td style={td}>{r.costCenter||'—'}</td>
           <td style={{...td,fontWeight:700,color:r.variance>0?'#B71C1C':'#2E7D32'}}>${r.variance.toLocaleString()}</td>
           <td style={td}>{r.variancePct!==null?`${r.variancePct}%`:'—'}</td>

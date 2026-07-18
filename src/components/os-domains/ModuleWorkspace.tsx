@@ -164,7 +164,7 @@ export default function ModuleWorkspace({ segment, basePath, onClose }: Props) {
             <button
               type="button"
               onClick={submitCreate}
-              className="mt-1 rounded-lg border border-[#6b1f2b] bg-[#6b1f2b] px-2 py-1.5 text-xs font-bold text-white"
+              className="mt-1 rounded-lg border border-harvics-burgundy bg-harvics-burgundy px-2 py-1.5 text-xs font-bold text-white"
             >
               POST {basePath}
             </button>

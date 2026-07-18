@@ -100,17 +100,17 @@ export default async function AdminPortalHubPage({
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="bg-white border-b border-[#C3A35E]/20">
+      <div className="bg-white border-b border-harvics-gold/20">
         <div className="max-w-7xl mx-auto px-6 py-3">
           <LocalizationBar compact showGeo={false} className="items-center gap-2" />
         </div>
       </div>
 
-      <div className="bg-[#6B1F2B] bg-[url('/assets/shared/decorative/noise.png')] pt-24 pb-32 relative overflow-hidden">
+      <div className="bg-harvics-burgundy bg-[url('/assets/shared/decorative/noise.png')] pt-24 pb-32 relative overflow-hidden">
         {/* Abstract Background Shapes */}
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#C3A35E] rounded-full filter blur-[150px] translate-x-1/2 -translate-y-1/2"></div>
-          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#C3A35E] rounded-full filter blur-[150px] -translate-x-1/2 translate-y-1/2"></div>
+          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-harvics-gold rounded-full filter blur-[150px] translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-harvics-gold rounded-full filter blur-[150px] -translate-x-1/2 translate-y-1/2"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -118,18 +118,18 @@ export default async function AdminPortalHubPage({
           <div className="text-center space-y-4 relative">
             <Link 
               href={`/${locale}`}
-              className="absolute -top-12 left-0 text-white/50 hover:text-[#C3A35E] flex items-center gap-2 transition-colors text-sm font-medium"
+              className="absolute -top-12 left-0 text-white/50 hover:text-harvics-gold flex items-center gap-2 transition-colors text-sm font-medium"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
               Back to Home
             </Link>
-            <div className="inline-flex items-center justify-center p-2 mb-4 bg-[#C3A35E]/10 rounded-full border border-[#C3A35E]/30 backdrop-blur-sm mt-8 md:mt-0">
-              <span className="text-[#C3A35E] text-xs font-semibold tracking-widest uppercase px-4">Secure Gateway</span>
+            <div className="inline-flex items-center justify-center p-2 mb-4 bg-harvics-gold/10 rounded-full border border-harvics-gold/30 backdrop-blur-sm mt-8 md:mt-0">
+              <span className="text-harvics-gold text-xs font-semibold tracking-widest uppercase px-4">Secure Gateway</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
-              Harvics <span className="text-[#C3A35E]">Enterprise</span> Hub
+              Harvics <span className="text-harvics-gold">Enterprise</span> Hub
             </h1>
             <p className="text-white/70 text-lg max-w-2xl mx-auto font-light leading-relaxed">
               Centralized access point for all corporate operational dashboards. 
@@ -150,10 +150,10 @@ export default async function AdminPortalHubPage({
             >
               <div className="flex flex-col h-full justify-between space-y-4">
                 <div>
-                  <div className="w-12 h-12 bg-[#6B1F2B] text-[#C3A35E] flex items-center justify-center mb-4 shadow-md group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-12 h-12 bg-harvics-burgundy text-harvics-gold flex items-center justify-center mb-4 shadow-md group-hover:scale-110 transition-transform duration-300">
                     {persona.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#6B1F2B] transition-colors">
+                  <h3 className="text-xl font-bold text-gray-900 group-hover:text-harvics-burgundy transition-colors">
                     {persona.name}
                   </h3>
                   <p className="text-gray-500 text-sm mt-2 font-light">
@@ -162,8 +162,8 @@ export default async function AdminPortalHubPage({
                 </div>
                 
                 <div className="pt-4 border-t border-gray-100 flex items-center justify-between">
-                  <span className="text-xs font-semibold text-[#C3A35E] tracking-wider uppercase">Launch</span>
-                  <svg className="w-4 h-4 text-[#C3A35E] transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <span className="text-xs font-semibold text-harvics-gold tracking-wider uppercase">Launch</span>
+                  <svg className="w-4 h-4 text-harvics-gold transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </div>

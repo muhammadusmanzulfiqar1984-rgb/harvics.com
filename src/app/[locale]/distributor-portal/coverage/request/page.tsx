@@ -23,13 +23,13 @@ export default function RequestTerritory() {
   return (
     <div className="space-y-6">
       <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
-      <h1 className="text-2xl font-bold text-[#C3A35E]">Request Territory</h1>
+      <h1 className="text-2xl font-bold text-harvics-gold">Request Territory</h1>
 
       <div className="bg-white border border-black200 shadow-sm p-6">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Country *</label>
+              <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Country *</label>
               <select
                 required
                 value={formData.country}
@@ -44,7 +44,7 @@ export default function RequestTerritory() {
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Region *</label>
+              <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Region *</label>
               <select
                 required
                 value={formData.region}
@@ -60,7 +60,7 @@ export default function RequestTerritory() {
             </div>
 
             <div className="md:col-span-2">
-              <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Cities Interested *</label>
+              <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Cities Interested *</label>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
                 {['Los Angeles', 'New York', 'Chicago', 'Miami', 'Seattle', 'Boston', 'Atlanta', 'Dallas'].map(city => (
                   <label key={city} className="flex items-center">
@@ -83,7 +83,7 @@ export default function RequestTerritory() {
             </div>
 
             <div className="md:col-span-2">
-              <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Current Channels *</label>
+              <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Current Channels *</label>
               <div className="flex flex-wrap gap-4">
                 {['GT', 'MT', 'Wholesale', 'HoReCa'].map(channel => (
                   <label key={channel} className="flex items-center">
@@ -106,7 +106,7 @@ export default function RequestTerritory() {
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Fleet Size</label>
+              <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Fleet Size</label>
               <input
                 type="number"
                 value={formData.fleetSize}
@@ -117,7 +117,7 @@ export default function RequestTerritory() {
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Expected Monthly Volume (USD)</label>
+              <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Expected Monthly Volume (USD)</label>
               <input
                 type="number"
                 value={formData.expectedVolume}
@@ -128,7 +128,7 @@ export default function RequestTerritory() {
             </div>
 
             <div className="md:col-span-2">
-              <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Reason / Business Case *</label>
+              <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Reason / Business Case *</label>
               <textarea
                 required
                 rows={5}
@@ -140,13 +140,13 @@ export default function RequestTerritory() {
             </div>
 
             <div className="md:col-span-2">
-              <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Supporting Documents</label>
+              <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Supporting Documents</label>
               <input
                 type="file"
                 multiple
                 className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
               />
-              <p className="text-xs text-[#C3A35E]/90 mt-1">Upload any supporting documents (business plan, financials, etc.)</p>
+              <p className="text-xs text-harvics-gold/90 mt-1">Upload any supporting documents (business plan, financials, etc.)</p>
             </div>
           </div>
 
@@ -159,7 +159,7 @@ export default function RequestTerritory() {
             </button>
             <button
               type="button"
-              className="bg-white text-[#C3A35E]/90 px-8 py-3 font-semibold hover:bg-white transition-colors"
+              className="bg-white text-harvics-gold/90 px-8 py-3 font-semibold hover:bg-white transition-colors"
             >
               Cancel
             </button>

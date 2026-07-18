@@ -50,7 +50,7 @@ export default function SatelliteOSPage() {
     >
       {loading ? (
         <div className="flex items-center justify-center py-12">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#C3A35E]"></div>
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-harvics-gold"></div>
         </div>
       ) : (
         <div className="space-y-6">

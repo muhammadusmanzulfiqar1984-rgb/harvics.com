@@ -23,7 +23,7 @@ export default function P(){
     <Panel title="INGEST EVENT">
       <Sel l="Partner code" v={eForm.partnerCode} on={v=>setEForm({...eForm,partnerCode:v})} opts={['',...partners.map(p=>p.code)]}/>
       <Sel l="Event type" v={eForm.eventType} on={v=>setEForm({...eForm,eventType:v})} opts={['shipment_created','status_update','exception','pod','customs']}/>
-      <label><div style={{fontSize:10,color:'#6B1F2B',fontWeight:600}}>Payload (JSON)</div><textarea value={eForm.payloadText} onChange={e=>setEForm({...eForm,payloadText:e.target.value})} rows={4} style={{width:'100%',padding:6,border:'1px solid #6B1F2B55',fontFamily:'monospace',fontSize:11}}/></label>
+      <label><div style={{fontSize:10,color:'var(--harvics-burgundy)',fontWeight:600}}>Payload (JSON)</div><textarea value={eForm.payloadText} onChange={e=>setEForm({...eForm,payloadText:e.target.value})} rows={4} style={{width:'100%',padding:6,border:'1px solid #3D121255',fontFamily:'monospace',fontSize:11}}/></label>
       <button onClick={addE} style={btnB}>INGEST</button>
       <Tbl head={['WHEN','PARTNER','TYPE']}>{events.map(e=><tr key={e.id}><td style={{...td,fontSize:11}}>{new Date(e.receivedAt).toLocaleString()}</td><td style={td}>{e.partnerCode}</td><td style={td}>{e.eventType}</td></tr>)}</Tbl>
     </Panel>

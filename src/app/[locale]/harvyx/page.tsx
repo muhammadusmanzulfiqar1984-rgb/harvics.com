@@ -1,19 +1,16 @@
-export default function HarvyXPage() {
-  return (
-    <iframe
-      src="/harvyx.html"
-      style={{
-        width: '100vw',
-        height: '100vh',
-        border: 'none',
-        display: 'block',
-      }}
-      title="HarvyX Growth OS"
-    />
-  );
+import { redirect } from 'next/navigation'
+import { generateAllLocaleParams } from '@/lib/generateLocaleParams'
+
+export async function generateStaticParams() {
+  return generateAllLocaleParams()
 }
 
-export const metadata = {
-  title: 'HarvyX — Growth OS',
-  description: 'Sovereign B2B operator dashboard for Harvics Global',
-};
+/** Marketing and nav should use the app page; legacy /harvyx URLs redirect there. */
+export default async function HarvyXLegacyRedirect({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  redirect(`/${locale}/apps/harvyx`)
+}

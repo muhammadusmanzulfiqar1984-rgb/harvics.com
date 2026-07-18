@@ -67,7 +67,7 @@ export default function DarkModeToggle() {
       {/* Toggle Switch */}
       <button
         onClick={toggleTheme}
-        className={`relative w-12 h-6 rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#6B1F2B] focus:ring-offset-2 ${
+        className={`relative w-12 h-6 rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-harvics-burgundy focus:ring-offset-2 ${
           theme === 'dark' ? 'bg-white' : 'bg-white'
         }`}
         aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}

@@ -98,7 +98,7 @@ export default function HarvicsGlobe() {
 
         // Make continent/country division lines gold.
         if (map.getLayer('country-boundaries-dash')) {
-          map.setPaintProperty('country-boundaries-dash', 'line-color', '#C3A35E')
+          map.setPaintProperty('country-boundaries-dash', 'line-color', 'var(--harvics-gold)')
           map.setPaintProperty('country-boundaries-dash', 'line-opacity', 0.4)
         }
 
@@ -115,10 +115,10 @@ export default function HarvicsGlobe() {
           el.style.cssText = 'display:flex;flex-direction:column;align-items:center;cursor:pointer;transform:translateY(-6px);'
           el.innerHTML = `
             <div style="position:relative;width:24px;height:24px;display:flex;align-items:center;justify-content:center;">
-              <div style="position:absolute;width:24px;height:24px;border:1.5px solid rgba(201,168,76,0.55);border-radius:50%;animation:harvics-globe-pulse 2s ease-out infinite;"></div>
-              <div style="width:10px;height:10px;background:#C3A35E;border-radius:50%;box-shadow:0 0 10px rgba(201,168,76,0.95);position:relative;z-index:2;"></div>
+              <div style="position:absolute;width:24px;height:24px;border:1.5px solid rgba(195, 163, 94,0.55);border-radius:50%;animation:harvics-globe-pulse 2s ease-out infinite;"></div>
+              <div style="width:10px;height:10px;background:#C3A35E;border-radius:50%;box-shadow:0 0 10px rgba(195, 163, 94,0.95);position:relative;z-index:2;"></div>
             </div>
-            <div style="margin-top:4px;font-size:10px;line-height:1.1;color:#FFD700;font-family:Georgia,serif;white-space:nowrap;text-align:center;text-shadow:0 0 8px rgba(201,168,76,0.35);">${m.name}</div>
+            <div style="margin-top:4px;font-size:10px;line-height:1.1;color:#FFD700;font-family:Georgia,serif;white-space:nowrap;text-align:center;text-shadow:0 0 8px rgba(195, 163, 94,0.35);">${m.name}</div>
           `
 
           new mapboxgl.default.Marker({ element: el, anchor: 'bottom' })
@@ -193,7 +193,7 @@ export default function HarvicsGlobe() {
       <div className="absolute top-10 left-8 md:left-14 z-10 max-w-xl">
         <p style={{
           fontSize: '10px', fontWeight: 700, letterSpacing: '0.22em',
-          color: '#C3A35E', textTransform: 'uppercase', marginBottom: '12px',
+          color: 'var(--harvics-gold)', textTransform: 'uppercase', marginBottom: '12px',
           borderLeft: '2px solid #C3A35E', paddingLeft: '10px',
         }}>
           42 Active Markets &nbsp;·&nbsp; Global Reach
@@ -213,19 +213,19 @@ export default function HarvicsGlobe() {
       {error ? (
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 text-center px-8">
           <div style={{
-            border: '1px solid rgba(195,163,94,0.3)',
+            border: '1px solid rgba(195, 163, 94,0.3)',
             background: 'rgba(10,10,10,0.8)',
             padding: '32px 40px',
             maxWidth: '480px',
           }}>
-            <p className="text-[#C3A35E] text-sm font-mono mb-2">⚠ Globe unavailable</p>
+            <p className="text-harvics-gold text-sm font-mono mb-2">⚠ Globe unavailable</p>
             <p className="text-white/50 text-xs">{error}</p>
           </div>
           {/* Fallback: static dot grid of markets */}
           <div className="grid grid-cols-3 md:grid-cols-4 gap-3 mt-4">
             {MARKETS.map(m => (
               <div key={m.name} className="text-center">
-                <div style={{ width: 8, height: 8, background: '#C3A35E', borderRadius: '50%', margin: '0 auto 4px' }} />
+                <div style={{ width: 8, height: 8, background: 'var(--harvics-gold)', borderRadius: '50%', margin: '0 auto 4px' }} />
                 <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.6)' }}>{m.name}</span>
               </div>
             ))}
@@ -247,7 +247,7 @@ export default function HarvicsGlobe() {
 
       {!loaded && !error && (
         <div className="absolute inset-0 flex items-center justify-center bg-[#06080a]">
-          <div className="w-10 h-10 border-2 border-[#C3A35E] border-t-transparent rounded-full animate-spin" />
+          <div className="w-10 h-10 border-2 border-harvics-gold border-t-transparent rounded-full animate-spin" />
         </div>
       )}
 

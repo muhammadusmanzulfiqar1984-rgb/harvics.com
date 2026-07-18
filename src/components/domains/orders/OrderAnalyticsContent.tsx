@@ -81,7 +81,7 @@ export default function OrderAnalyticsContent({ persona, locale }: OrderAnalytic
                         <Tooltip 
                             contentStyle={{ backgroundColor: '#fff', border: '1px solid #ccc' }}
                         />
-                        <Bar dataKey="orders" fill="#6B1F2B" radius={[4, 4, 0, 0]} />
+                        <Bar dataKey="orders" fill="var(--harvics-burgundy)" radius={[4, 4, 0, 0]} />
                     </BarChart>
                 </ResponsiveContainer>
             </div>
@@ -97,7 +97,7 @@ export default function OrderAnalyticsContent({ persona, locale }: OrderAnalytic
                         <XAxis dataKey="name" />
                         <YAxis />
                         <Tooltip />
-                        <Line type="monotone" dataKey="revenue" stroke="#C3A35E" strokeWidth={3} dot={{r: 4}} />
+                        <Line type="monotone" dataKey="revenue" stroke="var(--harvics-gold)" strokeWidth={3} dot={{r: 4}} />
                     </LineChart>
                 </ResponsiveContainer>
             </div>
@@ -113,7 +113,7 @@ export default function OrderAnalyticsContent({ persona, locale }: OrderAnalytic
                     <div className="text-sm text-gray-500 mb-1">{channel.name}</div>
                     <div className="text-2xl font-semibold text-[#1A1A1A]">{channel.value}%</div>
                     <div className="w-full bg-[#F5F5F7] h-1.5 rounded-full mt-2">
-                        <div className="bg-[#6B1F2B] h-1.5 rounded-full" style={{ width: `${channel.value}%` }}></div>
+                        <div className="bg-harvics-burgundy h-1.5 rounded-full" style={{ width: `${channel.value}%` }}></div>
                     </div>
                 </div>
             ))}

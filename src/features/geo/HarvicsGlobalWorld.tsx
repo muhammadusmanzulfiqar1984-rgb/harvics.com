@@ -350,13 +350,13 @@ const HarvicsGlobalWorld: React.FC<HarvicsGlobalWorldProps> = ({ onRegionChange 
 
       {/* Dropdown Menu - 3 Layer Structure */}
       {isOpen && (
-        <div className="absolute top-full right-0 mt-2 w-96 bg-white border-2 border-[#6B1F2B] shadow-2xl z-50 rounded-lg overflow-hidden">
+        <div className="absolute top-full right-0 mt-2 w-96 bg-white border-2 border-harvics-burgundy shadow-2xl z-50 rounded-lg overflow-hidden">
           {!showForm ? (
             <>
               {/* LAYER 1: Region Selection */}
               {!selectedRegion ? (
                 <div className="p-4">
-                  <div className="mb-4 pb-3 border-b-2 border-[#6B1F2B]">
+                  <div className="mb-4 pb-3 border-b-2 border-harvics-burgundy">
                     <h3 className="text-black font-bold text-sm uppercase tracking-wide flex items-center space-x-2">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -369,7 +369,7 @@ const HarvicsGlobalWorld: React.FC<HarvicsGlobalWorldProps> = ({ onRegionChange 
                       <button
                         key={key}
                         onClick={() => handleRegionSelect(key)}
-                        className="w-full text-left px-4 py-3 bg-white text-black hover:bg-[#6B1F2B] hover:text-white border-2 border-[#6B1F2B] rounded-md transition-all duration-200 font-bold text-sm"
+                        className="w-full text-left px-4 py-3 bg-white text-black hover:bg-harvics-burgundy hover:text-white border-2 border-harvics-burgundy rounded-md transition-all duration-200 font-bold text-sm"
                       >
                         {region.name}
                       </button>
@@ -379,7 +379,7 @@ const HarvicsGlobalWorld: React.FC<HarvicsGlobalWorldProps> = ({ onRegionChange 
               ) : (
                 /* LAYER 2: Country Selection */
                 <div className="p-4">
-                  <div className="mb-4 pb-3 border-b-2 border-[#6B1F2B] flex items-center justify-between">
+                  <div className="mb-4 pb-3 border-b-2 border-harvics-burgundy flex items-center justify-between">
                     <h3 className="text-black font-bold text-sm uppercase tracking-wide">
                       {REGION_COUNTRIES[selectedRegion].name}
                     </h3>
@@ -388,7 +388,7 @@ const HarvicsGlobalWorld: React.FC<HarvicsGlobalWorldProps> = ({ onRegionChange 
                         setSelectedRegion(null)
                         setSelectedCountryCode(null)
                       }}
-                      className="text-black hover:text-[#6B1F2B] font-bold"
+                      className="text-black hover:text-harvics-burgundy font-bold"
                     >
                       ← {tCommon('back') || 'Back'}
                     </button>
@@ -398,7 +398,7 @@ const HarvicsGlobalWorld: React.FC<HarvicsGlobalWorldProps> = ({ onRegionChange 
                       <button
                         key={countryCode}
                         onClick={() => handleCountrySelect(countryCode)}
-                        className="w-full text-left px-4 py-3 bg-white hover:bg-[#6B1F2B] hover:text-white text-black border-2 border-[#6B1F2B] rounded-md transition-all duration-200 font-bold text-sm flex items-center space-x-3"
+                        className="w-full text-left px-4 py-3 bg-white hover:bg-harvics-burgundy hover:text-white text-black border-2 border-harvics-burgundy rounded-md transition-all duration-200 font-bold text-sm flex items-center space-x-3"
                       >
                         <span className="text-2xl">{getCountryFlag(countryCode)}</span>
                         <span>{COUNTRY_NAMES[countryCode] || countryCode.toUpperCase()}</span>
@@ -411,7 +411,7 @@ const HarvicsGlobalWorld: React.FC<HarvicsGlobalWorldProps> = ({ onRegionChange 
           ) : (
             /* LAYER 3: Customer Details Form - Optional (can be skipped) */
             <div className="p-6 bg-white">
-              <div className="mb-4 pb-3 border-b-2 border-[#6B1F2B] flex items-center justify-between">
+              <div className="mb-4 pb-3 border-b-2 border-harvics-burgundy flex items-center justify-between">
                 <div>
                   <h3 className="text-black font-bold text-lg uppercase tracking-wide">
                     {t('form.title')}
@@ -427,7 +427,7 @@ const HarvicsGlobalWorld: React.FC<HarvicsGlobalWorldProps> = ({ onRegionChange 
                       handleCountrySelect(selectedCountryCode)
                     }
                   }}
-                  className="px-4 py-2 bg-[#6B1F2B] text-white hover:bg-[#50000b] rounded-md text-sm font-bold transition-colors whitespace-nowrap ml-4"
+                  className="px-4 py-2 bg-harvics-burgundy text-white hover:bg-[#50000b] rounded-md text-sm font-bold transition-colors whitespace-nowrap ml-4"
                 >
                   {t('form.skip')}
                 </button>
@@ -446,7 +446,7 @@ const HarvicsGlobalWorld: React.FC<HarvicsGlobalWorldProps> = ({ onRegionChange 
                     value={formData.name}
                     onChange={handleFormChange}
                     className={`w-full px-4 py-2 border-2 rounded-md ${
-                      formErrors.name ? 'border-red-500' : 'border-[#6B1F2B]'
+                      formErrors.name ? 'border-red-500' : 'border-harvics-burgundy'
                     } focus:outline-none focus:ring-2 focus:ring-black`}
                     placeholder={t('form.namePlaceholder')}
                   />
@@ -467,7 +467,7 @@ const HarvicsGlobalWorld: React.FC<HarvicsGlobalWorldProps> = ({ onRegionChange 
                     value={formData.email}
                     onChange={handleFormChange}
                     className={`w-full px-4 py-2 border-2 rounded-md ${
-                      formErrors.email ? 'border-red-500' : 'border-[#6B1F2B]'
+                      formErrors.email ? 'border-red-500' : 'border-harvics-burgundy'
                     } focus:outline-none focus:ring-2 focus:ring-black`}
                     placeholder={t('form.emailPlaceholder')}
                   />
@@ -488,7 +488,7 @@ const HarvicsGlobalWorld: React.FC<HarvicsGlobalWorldProps> = ({ onRegionChange 
                     value={formData.phone}
                     onChange={handleFormChange}
                     className={`w-full px-4 py-2 border-2 rounded-md ${
-                      formErrors.phone ? 'border-red-500' : 'border-[#6B1F2B]'
+                      formErrors.phone ? 'border-red-500' : 'border-harvics-burgundy'
                     } focus:outline-none focus:ring-2 focus:ring-black`}
                     placeholder={t('form.phonePlaceholder')}
                   />
@@ -509,7 +509,7 @@ const HarvicsGlobalWorld: React.FC<HarvicsGlobalWorldProps> = ({ onRegionChange 
                     value={formData.address}
                     onChange={handleFormChange}
                     className={`w-full px-4 py-2 border-2 rounded-md ${
-                      formErrors.address ? 'border-red-500' : 'border-[#6B1F2B]'
+                      formErrors.address ? 'border-red-500' : 'border-harvics-burgundy'
                     } focus:outline-none focus:ring-2 focus:ring-black`}
                     placeholder={t('form.addressPlaceholder')}
                   />
@@ -526,7 +526,7 @@ const HarvicsGlobalWorld: React.FC<HarvicsGlobalWorldProps> = ({ onRegionChange 
                     name="marketingConsent"
                     checked={formData.marketingConsent}
                     onChange={handleFormChange}
-                    className="mt-1 w-4 h-4 text-black border-2 border-[#6B1F2B] rounded focus:ring-black"
+                    className="mt-1 w-4 h-4 text-black border-2 border-harvics-burgundy rounded focus:ring-black"
                   />
                   <label htmlFor="marketingConsent" className="text-sm text-black">
                     {t('form.marketingConsent')}
@@ -552,7 +552,7 @@ const HarvicsGlobalWorld: React.FC<HarvicsGlobalWorldProps> = ({ onRegionChange 
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="flex-1 px-4 py-2 bg-[#6B1F2B] text-white font-bold rounded-md hover:bg-[#50000b] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="flex-1 px-4 py-2 bg-harvics-burgundy text-white font-bold rounded-md hover:bg-[#50000b] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? t('form.submitting') : t('form.submit')}
                   </button>

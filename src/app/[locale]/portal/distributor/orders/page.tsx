@@ -85,7 +85,7 @@ export default function DistributorOrdersPage() {
             subtitle="Primary actions available within order management"
           >
             <div className="flex flex-wrap gap-2">
-              <button className="px-4 py-2 bg-[#6B1F2B] text-white hover:bg-[#F5C542]/90 font-medium text-sm">
+              <button className="px-4 py-2 bg-harvics-burgundy text-white hover:bg-[#F5C542]/90 font-medium text-sm">
                 Create New Order
               </button>
               <button className="px-4 py-2 bg-white border border-gray-200 text-black hover:bg-[#F2F2F2] font-medium text-sm">

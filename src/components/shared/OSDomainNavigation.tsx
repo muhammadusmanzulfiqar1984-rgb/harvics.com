@@ -69,7 +69,7 @@ export default function OSDomainNavigation() {
   const isActive = (path: string) => !!pathname?.includes(path)
 
   return (
-    <nav className="w-56 border-r border-[#EAE0D5] min-h-screen flex flex-col" style={{ background: 'rgba(255,255,255,0.65)', boxShadow: 'inset -1px 0 0 rgba(195,163,94,0.2)' }}>
+    <nav className="w-56 border-r border-[#EAE0D5] min-h-screen flex flex-col" style={{ background: 'rgba(255,255,255,0.65)', boxShadow: 'inset -1px 0 0 rgba(195, 163, 94,0.2)' }}>
       <div className="px-4 pt-6 pb-3">
         <p className="text-[10px] font-semibold text-[#8E8E93] uppercase tracking-widest">OS Domains</p>
       </div>
@@ -83,7 +83,7 @@ export default function OSDomainNavigation() {
                 href={href}
                 className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-100 ${
                   active
-                    ? 'bg-[#6B1F2B] text-white'
+                    ? 'bg-harvics-burgundy text-white'
                     : 'text-[#1A1A1A] hover:bg-[#FAF8F5]'
                 }`}
               >

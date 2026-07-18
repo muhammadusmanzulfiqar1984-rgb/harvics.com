@@ -38,10 +38,10 @@ export default async function CurrentSalesPage({ params }: CurrentSalesPageProps
   return (
     <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
       {/* Hero */}
-      <section className="relative bg-[#6B1F2B] py-20 px-4 border-b border-[#C3A35E]/40 overflow-hidden">
+      <section className="relative bg-harvics-burgundy py-20 px-4 border-b border-harvics-gold/40 overflow-hidden">
         <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.95) 0%, rgba(90,26,36,0.9) 100%)' }} />
         <div className="max-w-[1200px] mx-auto text-center relative z-10">
-          <div className="text-xs text-[#C3A35E] font-bold uppercase tracking-[0.2em] mb-3">Trade Offers</div>
+          <div className="text-xs text-harvics-gold font-bold uppercase tracking-[0.2em] mb-3">Trade Offers</div>
           <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4" style={{ letterSpacing: '-0.02em' }}>
             Current Trade Offers
           </h1>
@@ -52,11 +52,11 @@ export default async function CurrentSalesPage({ params }: CurrentSalesPageProps
       </section>
 
       {/* Sales Nav */}
-      <section className="bg-[#5a1a24] border-b border-[#C3A35E]/20">
+      <section className="bg-[#5a1a24] border-b border-harvics-gold/20">
         <div className="max-w-[1200px] mx-auto px-4 flex gap-0">
           {navItems.map((n) => (
             <Link key={n.label} href={n.href}
-              className={`px-6 py-4 text-sm font-semibold transition-colors ${n.active ? 'text-[#C3A35E] border-b-2 border-[#C3A35E]' : 'text-white/50 hover:text-white/80'}`}>
+              className={`px-6 py-4 text-sm font-semibold transition-colors ${n.active ? 'text-harvics-gold border-b-2 border-harvics-gold' : 'text-white/50 hover:text-white/80'}`}>
               {n.label}
             </Link>
           ))}
@@ -67,21 +67,21 @@ export default async function CurrentSalesPage({ params }: CurrentSalesPageProps
       <section className="max-w-[1200px] mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {offers.map((offer) => (
-            <div key={offer.title} className="bg-white border border-[#C3A35E]/15 p-8 flex flex-col">
+            <div key={offer.title} className="bg-white border border-harvics-gold/15 p-8 flex flex-col">
               <div className="flex items-center justify-between mb-4">
-                <span className="text-xs font-bold text-[#C3A35E] bg-[#C3A35E]/10 px-2 py-0.5 uppercase tracking-wider">{offer.category}</span>
-                <span className="text-xs font-bold text-[#6B1F2B] bg-[#6B1F2B]/5 px-2 py-0.5">{offer.saving}</span>
+                <span className="text-xs font-bold text-harvics-gold bg-harvics-gold/10 px-2 py-0.5 uppercase tracking-wider">{offer.category}</span>
+                <span className="text-xs font-bold text-harvics-burgundy bg-harvics-burgundy/5 px-2 py-0.5">{offer.saving}</span>
               </div>
-              <h3 className="text-lg font-semibold text-[#6B1F2B] mb-3" style={{ letterSpacing: '-0.01em' }}>{offer.title}</h3>
-              <p className="text-sm text-[#6B1F2B]/55 leading-relaxed mb-6 flex-1">{offer.desc}</p>
-              <div className="border-t border-[#C3A35E]/10 pt-4 space-y-2">
+              <h3 className="text-lg font-semibold text-harvics-burgundy mb-3" style={{ letterSpacing: '-0.01em' }}>{offer.title}</h3>
+              <p className="text-sm text-harvics-burgundy/55 leading-relaxed mb-6 flex-1">{offer.desc}</p>
+              <div className="border-t border-harvics-gold/10 pt-4 space-y-2">
                 <div className="flex justify-between text-xs">
-                  <span className="text-[#6B1F2B]/40">MOQ</span>
-                  <span className="font-semibold text-[#6B1F2B]">{offer.moq}</span>
+                  <span className="text-harvics-burgundy/40">MOQ</span>
+                  <span className="font-semibold text-harvics-burgundy">{offer.moq}</span>
                 </div>
                 <div className="flex justify-between text-xs">
-                  <span className="text-[#6B1F2B]/40">Markets</span>
-                  <span className="font-semibold text-[#6B1F2B]">{offer.regions}</span>
+                  <span className="text-harvics-burgundy/40">Markets</span>
+                  <span className="font-semibold text-harvics-burgundy">{offer.regions}</span>
                 </div>
               </div>
             </div>
@@ -90,14 +90,14 @@ export default async function CurrentSalesPage({ params }: CurrentSalesPageProps
       </section>
 
       {/* CTA */}
-      <section className="bg-[#6B1F2B] border-t border-[#C3A35E]/30">
+      <section className="bg-harvics-burgundy border-t border-harvics-gold/30">
         <div className="max-w-[1200px] mx-auto px-4 py-14 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-xl font-semibold text-white mb-2">Request a Quote</h3>
             <p className="text-white/50 text-sm">All offers subject to availability. Contact our trade desk for pricing and lead times.</p>
           </div>
           <a href="mailto:trade@harvics.com"
-            className="px-8 py-3 bg-[#C3A35E] text-[#6B1F2B] text-sm font-bold hover:bg-[#d4b46e] transition-colors">
+            className="px-8 py-3 bg-harvics-gold text-harvics-burgundy text-sm font-bold hover:bg-[#d4b46e] transition-colors">
             Contact Trade Desk
           </a>
         </div>

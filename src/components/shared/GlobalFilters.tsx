@@ -144,16 +144,16 @@ export default function GlobalFilters({
       ]
 
   return (
-    <div className={`flex flex-wrap items-center gap-4 rounded-lg border border-[#C3A35E]/30 bg-white p-4 shadow-sm ${className}`}>
+    <div className={`flex flex-wrap items-center gap-4 rounded-lg border border-harvics-gold/30 bg-white p-4 shadow-sm ${className}`}>
       {/* Scope Selector */}
       <div className="flex items-center gap-2">
-        <label className="text-xs font-bold text-[#6B1F2B] uppercase tracking-wider whitespace-nowrap min-w-[60px]">
+        <label className="text-xs font-bold text-harvics-burgundy uppercase tracking-wider whitespace-nowrap min-w-[60px]">
           SCOPE:
         </label>
         <select
           value={filters.scope}
           onChange={(e) => handleFilterChange('scope', e.target.value)}
-          className="px-3 py-1.5 text-sm border border-[#C3A35E]/30 rounded-md bg-white text-[#6B1F2B] focus:outline-none focus:ring-2 focus:ring-[#C3A35E] focus:border-transparent min-w-[120px]"
+          className="px-3 py-1.5 text-sm border border-harvics-gold/30 rounded-md bg-white text-harvics-burgundy focus:outline-none focus:ring-2 focus:ring-harvics-gold focus:border-transparent min-w-[120px]"
         >
           {scopeOptions.map(option => (
             <option key={option.value} value={option.value}>
@@ -165,13 +165,13 @@ export default function GlobalFilters({
 
       {/* Country Selector - Always visible for currency/locale changes */}
         <div className="flex items-center gap-2">
-          <label className="text-xs font-bold text-[#6B1F2B] uppercase tracking-wider whitespace-nowrap min-w-[60px]">
+          <label className="text-xs font-bold text-harvics-burgundy uppercase tracking-wider whitespace-nowrap min-w-[60px]">
             COUNTRY:
           </label>
           <select
             value={filters.country}
             onChange={(e) => handleFilterChange('country', e.target.value)}
-            className="px-3 py-1.5 text-sm border border-[#C3A35E]/30 rounded-md bg-white text-[#6B1F2B] focus:outline-none focus:ring-2 focus:ring-[#C3A35E] focus:border-transparent min-w-[150px]"
+            className="px-3 py-1.5 text-sm border border-harvics-gold/30 rounded-md bg-white text-harvics-burgundy focus:outline-none focus:ring-2 focus:ring-harvics-gold focus:border-transparent min-w-[150px]"
           >
             {countryOptions.map(option => (
               <option key={option.value} value={option.value}>
@@ -184,13 +184,13 @@ export default function GlobalFilters({
       {/* Region Selector - Show when scope is region */}
       {filters.scope === 'region' && (
         <div className="flex items-center gap-2">
-          <label className="text-xs font-bold text-[#6B1F2B] uppercase tracking-wider whitespace-nowrap min-w-[60px]">
+          <label className="text-xs font-bold text-harvics-burgundy uppercase tracking-wider whitespace-nowrap min-w-[60px]">
             REGION:
           </label>
           <select
             value={filters.country}
             onChange={(e) => handleFilterChange('country', e.target.value)}
-            className="px-3 py-1.5 text-sm border border-[#C3A35E]/30 rounded-md bg-white text-[#6B1F2B] focus:outline-none focus:ring-2 focus:ring-[#C3A35E] focus:border-transparent min-w-[150px]"
+            className="px-3 py-1.5 text-sm border border-harvics-gold/30 rounded-md bg-white text-harvics-burgundy focus:outline-none focus:ring-2 focus:ring-harvics-gold focus:border-transparent min-w-[150px]"
           >
             <option value="global">Global</option>
             <option value="north-america">North America</option>
@@ -206,7 +206,7 @@ export default function GlobalFilters({
 
       {/* Period Selector */}
       <div className="flex items-center gap-2">
-        <label className="text-xs font-bold text-[#6B1F2B] uppercase tracking-wider whitespace-nowrap min-w-[60px]">
+        <label className="text-xs font-bold text-harvics-burgundy uppercase tracking-wider whitespace-nowrap min-w-[60px]">
           PERIOD:
         </label>
         <select
@@ -220,7 +220,7 @@ export default function GlobalFilters({
               setShowCustomDateRange(false)
             }
           }}
-          className="px-3 py-1.5 text-sm border border-[#C3A35E]/30 rounded-md bg-white text-[#6B1F2B] focus:outline-none focus:ring-2 focus:ring-[#C3A35E] focus:border-transparent min-w-[140px]"
+          className="px-3 py-1.5 text-sm border border-harvics-gold/30 rounded-md bg-white text-harvics-burgundy focus:outline-none focus:ring-2 focus:ring-harvics-gold focus:border-transparent min-w-[140px]"
         >
           {periodOptions.map(option => (
             <option key={option.value} value={option.value}>
@@ -237,27 +237,27 @@ export default function GlobalFilters({
             type="date"
             value={filters.customStartDate || ''}
             onChange={(e) => handleFilterChange('customStartDate', e.target.value)}
-            className="px-3 py-1.5 text-sm border border-[#C3A35E]/30 rounded-md bg-white text-[#6B1F2B] focus:outline-none focus:ring-2 focus:ring-[#C3A35E] focus:border-transparent"
+            className="px-3 py-1.5 text-sm border border-harvics-gold/30 rounded-md bg-white text-harvics-burgundy focus:outline-none focus:ring-2 focus:ring-harvics-gold focus:border-transparent"
           />
-          <span className="text-sm text-[#6B1F2B]">to</span>
+          <span className="text-sm text-harvics-burgundy">to</span>
           <input
             type="date"
             value={filters.customEndDate || ''}
             onChange={(e) => handleFilterChange('customEndDate', e.target.value)}
-            className="px-3 py-1.5 text-sm border border-[#C3A35E]/30 rounded-md bg-white text-[#6B1F2B] focus:outline-none focus:ring-2 focus:ring-[#C3A35E] focus:border-transparent"
+            className="px-3 py-1.5 text-sm border border-harvics-gold/30 rounded-md bg-white text-harvics-burgundy focus:outline-none focus:ring-2 focus:ring-harvics-gold focus:border-transparent"
           />
         </div>
       )}
 
       {/* Currency Selector */}
       <div className="flex items-center gap-2">
-        <label className="text-xs font-bold text-[#6B1F2B] uppercase tracking-wider whitespace-nowrap min-w-[70px]">
+        <label className="text-xs font-bold text-harvics-burgundy uppercase tracking-wider whitespace-nowrap min-w-[70px]">
           CURRENCY:
         </label>
         <select
           value={filters.currency}
           onChange={(e) => handleFilterChange('currency', e.target.value)}
-          className="px-3 py-1.5 text-sm border border-[#C3A35E]/30 rounded-md bg-white text-[#6B1F2B] focus:outline-none focus:ring-2 focus:ring-[#C3A35E] focus:border-transparent min-w-[120px]"
+          className="px-3 py-1.5 text-sm border border-harvics-gold/30 rounded-md bg-white text-harvics-burgundy focus:outline-none focus:ring-2 focus:ring-harvics-gold focus:border-transparent min-w-[120px]"
         >
           {currencyOptions.map(option => (
             <option key={option.value} value={option.value}>
@@ -280,7 +280,7 @@ export default function GlobalFilters({
           setShowCustomDateRange(false)
           onFilterChange?.(resetFilters)
         }}
-        className="ml-auto px-3 py-1.5 text-xs font-bold text-[#6B1F2B] border border-[#C3A35E]/30 rounded-md hover:bg-[#F8F9FA] transition-colors whitespace-nowrap"
+        className="ml-auto px-3 py-1.5 text-xs font-bold text-harvics-burgundy border border-harvics-gold/30 rounded-md hover:bg-[#F8F9FA] transition-colors whitespace-nowrap"
       >
         Reset
       </button>

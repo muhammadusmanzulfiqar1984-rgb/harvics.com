@@ -72,8 +72,8 @@ export default function ImportExportDashboardPage() {
       <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       {/* Page Header - V16 Spec */}
       <div className="mb-6">
-        <h1 className="text-3xl font-bold text-[#C3A35E] mb-2">Import/Export OS Dashboard</h1>
-        <p className="text-[#C3A35E]/90">Monitor your import and export operations</p>
+        <h1 className="text-3xl font-bold text-harvics-gold mb-2">Import/Export OS Dashboard</h1>
+        <p className="text-harvics-gold/90">Monitor your import and export operations</p>
       </div>
 
       {loading && <div className="text-center py-12">Loading...</div>}
@@ -83,11 +83,11 @@ export default function ImportExportDashboardPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Import Stats */}
           <div className="bg-white shadow p-6">
-            <h3 className="text-lg font-semibold text-[#C3A35E]/90 mb-4">📦 Imports</h3>
+            <h3 className="text-lg font-semibold text-harvics-gold/90 mb-4">📦 Imports</h3>
             <div className="space-y-2">
               <div className="flex justify-between">
                 <span>Pending:</span>
-                <span className="font-bold text-[#C3A35E]">{data.imports.pending || 0}</span>
+                <span className="font-bold text-harvics-gold">{data.imports.pending || 0}</span>
               </div>
               <div className="flex justify-between">
                 <span>In Transit:</span>
@@ -108,11 +108,11 @@ export default function ImportExportDashboardPage() {
 
           {/* Export Stats */}
           <div className="bg-white shadow p-6">
-            <h3 className="text-lg font-semibold text-[#C3A35E]/90 mb-4">🚢 Exports</h3>
+            <h3 className="text-lg font-semibold text-harvics-gold/90 mb-4">🚢 Exports</h3>
             <div className="space-y-2">
               <div className="flex justify-between">
                 <span>Pending:</span>
-                <span className="font-bold text-[#C3A35E]">{data.exports.pending || 0}</span>
+                <span className="font-bold text-harvics-gold">{data.exports.pending || 0}</span>
               </div>
               <div className="flex justify-between">
                 <span>In Transit:</span>
@@ -133,7 +133,7 @@ export default function ImportExportDashboardPage() {
 
           {/* Customs Stats */}
           <div className="bg-white shadow p-6">
-            <h3 className="text-lg font-semibold text-[#C3A35E]/90 mb-4">🏛️ Customs</h3>
+            <h3 className="text-lg font-semibold text-harvics-gold/90 mb-4">🏛️ Customs</h3>
             <div className="space-y-2">
               <div className="flex justify-between">
                 <span>Pending:</span>
@@ -148,11 +148,11 @@ export default function ImportExportDashboardPage() {
 
           {/* Documents Stats */}
           <div className="bg-white shadow p-6">
-            <h3 className="text-lg font-semibold text-[#C3A35E]/90 mb-4">📄 Documents</h3>
+            <h3 className="text-lg font-semibold text-harvics-gold/90 mb-4">📄 Documents</h3>
             <div className="space-y-2">
               <div className="flex justify-between">
                 <span>Pending:</span>
-                <span className="font-bold text-[#C3A35E]">{data.documents.pending || 0}</span>
+                <span className="font-bold text-harvics-gold">{data.documents.pending || 0}</span>
               </div>
               <div className="flex justify-between">
                 <span>Expiring:</span>

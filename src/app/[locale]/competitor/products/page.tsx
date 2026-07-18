@@ -79,7 +79,7 @@ export default function CompetitorProductsPage() {
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-3xl font-bold text-[#C3A35E] mb-2">Competitor Products</h1>
+          <h1 className="text-3xl font-bold text-harvics-gold mb-2">Competitor Products</h1>
           <p className="text-white/90">Track competitor product information</p>
         </div>
         <button

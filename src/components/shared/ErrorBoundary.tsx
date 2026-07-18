@@ -111,13 +111,13 @@ class ErrorBoundary extends Component<Props, State> {
             <div className="flex gap-3">
               <button
                 onClick={this.handleReset}
-                className="flex-1 bg-[#6B1F2B] text-white px-4 py-2 font-semibold hover:bg-[#5a0012] transition-colors"
+                className="flex-1 bg-harvics-burgundy text-white px-4 py-2 font-semibold hover:bg-[#5a0012] transition-colors"
               >
                 {this.props.i18n?.tryAgain || 'Try Again'}
               </button>
               <button
                 onClick={() => window.location.reload()}
-                className="flex-1 border border-[#6B1F2B] text-[#6B1F2B] px-4 py-2 font-semibold hover:bg-[#6B1F2B] hover:text-white transition-colors"
+                className="flex-1 border border-harvics-burgundy text-harvics-burgundy px-4 py-2 font-semibold hover:bg-harvics-burgundy hover:text-white transition-colors"
               >
                 {this.props.i18n?.reload || 'Reload Page'}
               </button>

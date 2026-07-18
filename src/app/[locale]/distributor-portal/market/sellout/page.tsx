@@ -26,12 +26,12 @@ export default function SelloutUpload() {
   return (
     <div className="space-y-6">
       <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
-      <h1 className="text-2xl font-bold text-[#C3A35E]">Sell-out Upload</h1>
+      <h1 className="text-2xl font-bold text-harvics-gold">Sell-out Upload</h1>
 
       <div className="bg-white border border-black200 shadow-sm p-6">
         <div className="space-y-6">
           <div>
-            <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Month *</label>
+            <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Month *</label>
             <input
               type="month"
               value={selectedMonth}
@@ -41,14 +41,14 @@ export default function SelloutUpload() {
           </div>
 
           <div>
-            <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Upload File (CSV/Excel) *</label>
+            <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Upload File (CSV/Excel) *</label>
             <input
               type="file"
               accept=".csv,.xlsx,.xls"
               onChange={handleFileUpload}
               className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
             />
-            <p className="text-xs text-[#C3A35E]/90 mt-2">
+            <p className="text-xs text-harvics-gold/90 mt-2">
               <a href="/en/contact" className="text-white hover:underline">Download template</a> for correct format
             </p>
           </div>
@@ -61,22 +61,22 @@ export default function SelloutUpload() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                 <div>
-                  <div className="text-sm text-[#C3A35E]/90">SKUs Count</div>
-                  <div className="text-xl font-bold text-[#C3A35E]">{uploadData.skuCount}</div>
+                  <div className="text-sm text-harvics-gold/90">SKUs Count</div>
+                  <div className="text-xl font-bold text-harvics-gold">{uploadData.skuCount}</div>
                 </div>
                 <div>
-                  <div className="text-sm text-[#C3A35E]/90">Total Volume</div>
+                  <div className="text-sm text-harvics-gold/90">Total Volume</div>
                   <div className="text-xl font-bold text-white">${uploadData.totalVolume.toLocaleString()}</div>
                 </div>
               </div>
               
               {/* Harvey Insights */}
-              <div className="bg-gradient-to-r from-[#6B1F2B] to-[#ffffff] p-4 text-white">
+              <div className="bg-gradient-to-r from-harvics-burgundy to-[#ffffff] p-4 text-white">
                 <div className="flex items-center space-x-2 mb-2">
                   <span className="text-xl">🤖</span>
                   <h4 className="font-semibold">Harvey Insights</h4>
                 </div>
-                <p className="text-sm text-[#C3A35E]/90">{uploadData.insights}</p>
+                <p className="text-sm text-harvics-gold/90">{uploadData.insights}</p>
               </div>
             </div>
           )}

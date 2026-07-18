@@ -155,9 +155,9 @@ export default function V16DistributorDashboard() {
     return (
       <div className="min-h-screen bg-[#F8F9FA] flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#C3A35E] mx-auto mb-4"></div>
-          <p className="text-[#6B1F2B] font-serif font-bold">Loading Distributor Portal...</p>
-          <p className="text-sm text-[#6B1F2B]/70 mt-2">Fetching your territory data...</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-harvics-gold mx-auto mb-4"></div>
+          <p className="text-harvics-burgundy font-serif font-bold">Loading Distributor Portal...</p>
+          <p className="text-sm text-harvics-burgundy/70 mt-2">Fetching your territory data...</p>
         </div>
       </div>
     )
@@ -168,11 +168,11 @@ export default function V16DistributorDashboard() {
       <div className="min-h-screen bg-[#F8F9FA] flex items-center justify-center">
         <div className="text-center max-w-md">
           <div className="text-4xl mb-4">⚠️</div>
-          <h2 className="text-xl font-bold text-[#6B1F2B] mb-2 font-serif">Error Loading Portal</h2>
-          <p className="text-[#6B1F2B]/70 mb-4">{error}</p>
+          <h2 className="text-xl font-bold text-harvics-burgundy mb-2 font-serif">Error Loading Portal</h2>
+          <p className="text-harvics-burgundy/70 mb-4">{error}</p>
           <button
             onClick={() => window.location.reload()}
-            className="px-4 py-2 bg-[#C3A35E] text-[#6B1F2B] rounded-md font-bold hover:bg-[#b5952f] transition-colors shadow-md"
+            className="px-4 py-2 bg-harvics-gold text-harvics-burgundy rounded-md font-bold hover:bg-[#b5952f] transition-colors shadow-md"
           >
             Retry
           </button>
@@ -195,13 +195,13 @@ export default function V16DistributorDashboard() {
   return (
     <div className="portal-page min-h-screen bg-[#F8F9FA] flex flex-col">
       {/* Header */}
-      <header className="bg-white border-b border-[#C3A35E]/30 sticky top-0 z-50 shadow-sm">
+      <header className="bg-white border-b border-harvics-gold/30 sticky top-0 z-50 shadow-sm">
         <div className="max-w-[1920px] mx-auto px-4 sm:px-6">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-2 sm:gap-4">
-              <div className="text-xl sm:text-2xl font-bold text-[#6B1F2B] font-serif">H</div>
+              <div className="text-xl sm:text-2xl font-bold text-harvics-burgundy font-serif">H</div>
               <div>
-                <h1 className="text-sm sm:text-lg font-bold text-[#6B1F2B] leading-tight font-serif">
+                <h1 className="text-sm sm:text-lg font-bold text-harvics-burgundy leading-tight font-serif">
                   <span className="hidden sm:inline">Harvics OS — </span>Distributor Portal
                 </h1>
               </div>
@@ -209,8 +209,8 @@ export default function V16DistributorDashboard() {
             <div className="flex items-center gap-2 sm:gap-4">
               {/* Territory Information */}
               {userScope && (
-                <div className="hidden lg:flex items-center gap-2 px-2 sm:px-3 py-1.5 bg-[#C3A35E]/10 rounded-md border border-[#C3A35E]/30">
-                  <span className="text-xs font-bold text-[#6B1F2B]">
+                <div className="hidden lg:flex items-center gap-2 px-2 sm:px-3 py-1.5 bg-harvics-gold/10 rounded-md border border-harvics-gold/30">
+                  <span className="text-xs font-bold text-harvics-burgundy">
                     {userScope.geographic?.territories?.length > 0 
                       ? `Territory: ${userScope.geographic.territories.join(', ')}`
                       : userScope.countries?.length > 0
@@ -224,7 +224,7 @@ export default function V16DistributorDashboard() {
               {/* Logout */}
               <button
                 onClick={handleLogout}
-                className="flex items-center gap-1 px-3 py-1.5 text-xs font-semibold text-[#6B1F2B] border border-[#6B1F2B]/30 rounded-md hover:bg-[#6B1F2B] hover:text-white transition-colors"
+                className="flex items-center gap-1 px-3 py-1.5 text-xs font-semibold text-harvics-burgundy border border-harvics-burgundy/30 rounded-md hover:bg-harvics-burgundy hover:text-white transition-colors"
                 aria-label="Logout"
               >
                 <span className="hidden sm:inline">Logout</span>
@@ -234,7 +234,7 @@ export default function V16DistributorDashboard() {
           </div>
           
           {/* Main Tabs: Dashboard / OS Domains / CRM */}
-          <div className="border-t border-[#C3A35E]/20 bg-white">
+          <div className="border-t border-harvics-gold/20 bg-white">
             <div className="flex gap-0 overflow-x-auto scrollbar-hide">
               {mainTabs.map((tab) => (
                 <button
@@ -242,8 +242,8 @@ export default function V16DistributorDashboard() {
                   onClick={() => handleViewModeChange(tab.id as any)}
                   className={`relative flex items-center gap-1.5 sm:gap-2 px-4 sm:px-6 py-3.5 text-xs sm:text-sm font-medium transition-all whitespace-nowrap ${
                     viewMode === tab.id
-                      ? 'text-[#6B1F2B] border-b-2 border-[#C3A35E] bg-[#F8F9FA] font-bold'
-                      : 'text-[#6B1F2B]/70 hover:text-[#6B1F2B] hover:bg-[#C3A35E]/5 border-b-2 border-transparent'
+                      ? 'text-harvics-burgundy border-b-2 border-harvics-gold bg-[#F8F9FA] font-bold'
+                      : 'text-harvics-burgundy/70 hover:text-harvics-burgundy hover:bg-harvics-gold/5 border-b-2 border-transparent'
                   }`}
                 >
                   <span className="text-base sm:text-lg leading-none">{tab.icon}</span>
@@ -330,16 +330,16 @@ export default function V16DistributorDashboard() {
 
               {/* Dashboard Tabs Navigation */}
               <section className="mb-6">
-                <div className="bg-white border border-[#C3A35E]/30 rounded-t-lg overflow-hidden">
-                  <div className="flex gap-0 overflow-x-auto scrollbar-hide border-b border-[#C3A35E]/20">
+                <div className="bg-white border border-harvics-gold/30 rounded-t-lg overflow-hidden">
+                  <div className="flex gap-0 overflow-x-auto scrollbar-hide border-b border-harvics-gold/20">
                     {dashboardTabs.map((tab) => (
                       <button
                         key={tab.id}
                         onClick={() => setActiveTab(tab.id as any)}
                         className={`relative flex items-center gap-2 px-4 sm:px-6 py-3.5 sm:py-4 text-xs sm:text-sm font-medium transition-all duration-200 whitespace-nowrap ${
                           activeTab === tab.id
-                            ? 'text-[#6B1F2B] bg-[#F8F9FA] border-b-2 border-[#C3A35E] font-bold'
-                            : 'text-[#6B1F2B]/70 hover:text-[#6B1F2B] hover:bg-[#C3A35E]/5 border-b-2 border-transparent'
+                            ? 'text-harvics-burgundy bg-[#F8F9FA] border-b-2 border-harvics-gold font-bold'
+                            : 'text-harvics-burgundy/70 hover:text-harvics-burgundy hover:bg-harvics-gold/5 border-b-2 border-transparent'
                         }`}
                       >
                         <span className="text-base sm:text-lg leading-none">{tab.icon}</span>
@@ -352,11 +352,11 @@ export default function V16DistributorDashboard() {
 
               {/* Dashboard Tab Content */}
               <section>
-                <div className="bg-white border border-[#C3A35E]/30 border-t-0 rounded-b-lg p-4 sm:p-6 shadow-sm min-h-[400px]">
+                <div className="bg-white border border-harvics-gold/30 border-t-0 rounded-b-lg p-4 sm:p-6 shadow-sm min-h-[400px]">
             {activeTab === 'overview' && (
               <div className="space-y-6 animate-fadeIn">
                 <div>
-                  <h2 className="text-xl font-bold text-[#6B1F2B] mb-4 font-serif">Overview</h2>
+                  <h2 className="text-xl font-bold text-harvics-burgundy mb-4 font-serif">Overview</h2>
                 </div>
                 
                 {/* Revenue Trend Chart */}
@@ -369,7 +369,7 @@ export default function V16DistributorDashboard() {
                     { name: 'Week 4', revenue: 325000, orders: 62 }
                   ]}
                   dataKeys={['revenue', 'orders']}
-                  colors={['#6B1F2B', '#C3A35E']}
+                  colors={['var(--harvics-burgundy)', 'var(--harvics-gold)']}
                 />
 
                 {/* Top SKUs */}
@@ -383,15 +383,15 @@ export default function V16DistributorDashboard() {
                     { name: 'SKU-005', quantity: 580 }
                   ]}
                   dataKeys={['quantity']}
-                  colors={['#6B1F2B']}
+                  colors={['var(--harvics-burgundy)']}
                 />
               </div>
             )}
             {activeTab === 'orders' && (
               <div className="space-y-6 animate-fadeIn">
                 <div className="flex items-center justify-between">
-                  <h2 className="text-xl font-bold text-[#6B1F2B] font-serif">Orders</h2>
-                  <button className="px-4 py-2 bg-[#C3A35E] text-[#6B1F2B] rounded-md text-sm font-bold hover:bg-[#b5952f] transition-colors shadow-sm">
+                  <h2 className="text-xl font-bold text-harvics-burgundy font-serif">Orders</h2>
+                  <button className="px-4 py-2 bg-harvics-gold text-harvics-burgundy rounded-md text-sm font-bold hover:bg-[#b5952f] transition-colors shadow-sm">
                     + New Order
                   </button>
                 </div>
@@ -400,13 +400,13 @@ export default function V16DistributorDashboard() {
                 <div className="overflow-x-auto">
                   <table className="w-full border-collapse">
                     <thead>
-                      <tr className="bg-[#F8F9FA] border-b border-[#C3A35E]/30">
-                        <th className="px-4 py-3 text-left text-sm font-bold text-[#6B1F2B]">Order ID</th>
-                        <th className="px-4 py-3 text-left text-sm font-bold text-[#6B1F2B]">Date</th>
-                        <th className="px-4 py-3 text-left text-sm font-bold text-[#6B1F2B]">Customer</th>
-                        <th className="px-4 py-3 text-left text-sm font-bold text-[#6B1F2B]">Amount</th>
-                        <th className="px-4 py-3 text-left text-sm font-bold text-[#6B1F2B]">Status</th>
-                        <th className="px-4 py-3 text-left text-sm font-bold text-[#6B1F2B]">Actions</th>
+                      <tr className="bg-[#F8F9FA] border-b border-harvics-gold/30">
+                        <th className="px-4 py-3 text-left text-sm font-bold text-harvics-burgundy">Order ID</th>
+                        <th className="px-4 py-3 text-left text-sm font-bold text-harvics-burgundy">Date</th>
+                        <th className="px-4 py-3 text-left text-sm font-bold text-harvics-burgundy">Customer</th>
+                        <th className="px-4 py-3 text-left text-sm font-bold text-harvics-burgundy">Amount</th>
+                        <th className="px-4 py-3 text-left text-sm font-bold text-harvics-burgundy">Status</th>
+                        <th className="px-4 py-3 text-left text-sm font-bold text-harvics-burgundy">Actions</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -416,23 +416,23 @@ export default function V16DistributorDashboard() {
                         { id: 'ORD-003', date: '2024-01-22', customer: 'Retailer C', amount: '$15,200', status: 'Pending' },
                         { id: 'ORD-004', date: '2024-01-23', customer: 'Retailer A', amount: '$9,800', status: 'Processing' }
                       ].map((order) => (
-                        <tr key={order.id} className="border-b border-[#C3A35E]/10 hover:bg-[#C3A35E]/5 transition-colors">
-                          <td className="px-4 py-3 text-sm text-[#6B1F2B]">{order.id}</td>
-                          <td className="px-4 py-3 text-sm text-[#6B1F2B]">{order.date}</td>
-                          <td className="px-4 py-3 text-sm text-[#6B1F2B]">{order.customer}</td>
-                          <td className="px-4 py-3 text-sm font-medium text-[#6B1F2B]">{order.amount}</td>
+                        <tr key={order.id} className="border-b border-harvics-gold/10 hover:bg-harvics-gold/5 transition-colors">
+                          <td className="px-4 py-3 text-sm text-harvics-burgundy">{order.id}</td>
+                          <td className="px-4 py-3 text-sm text-harvics-burgundy">{order.date}</td>
+                          <td className="px-4 py-3 text-sm text-harvics-burgundy">{order.customer}</td>
+                          <td className="px-4 py-3 text-sm font-medium text-harvics-burgundy">{order.amount}</td>
                           <td className="px-4 py-3">
                             <span className={`px-2 py-1 text-xs font-medium rounded ${
                               order.status === 'Delivered' ? 'bg-green-100 text-green-800' :
                               order.status === 'In Transit' ? 'bg-blue-100 text-blue-800' :
-                              order.status === 'Pending' ? 'bg-[#C3A35E]/20 text-[#6B1F2B]' :
+                              order.status === 'Pending' ? 'bg-harvics-gold/20 text-harvics-burgundy' :
                               'bg-gray-100 text-gray-800'
                             }`}>
                               {order.status}
                             </span>
                           </td>
                           <td className="px-4 py-3">
-                            <button className="text-sm text-[#6B1F2B] hover:text-[#C3A35E] hover:underline font-medium">View</button>
+                            <button className="text-sm text-harvics-burgundy hover:text-harvics-gold hover:underline font-medium">View</button>
                           </td>
                         </tr>
                       ))}
@@ -443,40 +443,40 @@ export default function V16DistributorDashboard() {
             )}
             {activeTab === 'inventory' && (
               <div className="animate-fadeIn">
-                <h2 className="text-xl font-bold text-[#6B1F2B] mb-4 font-serif">Inventory</h2>
-                <p className="text-[#6B1F2B]">Inventory content will be displayed here.</p>
+                <h2 className="text-xl font-bold text-harvics-burgundy mb-4 font-serif">Inventory</h2>
+                <p className="text-harvics-burgundy">Inventory content will be displayed here.</p>
               </div>
             )}
             {activeTab === 'payments' && (
               <div className="animate-fadeIn">
-                <h2 className="text-xl font-bold text-[#6B1F2B] mb-4 font-serif">Payments</h2>
-                <p className="text-[#6B1F2B]">Payments content will be displayed here.</p>
+                <h2 className="text-xl font-bold text-harvics-burgundy mb-4 font-serif">Payments</h2>
+                <p className="text-harvics-burgundy">Payments content will be displayed here.</p>
               </div>
             )}
             {activeTab === 'retailers' && (
               <div className="animate-fadeIn">
-                <h2 className="text-xl font-bold text-[#6B1F2B] mb-4 font-serif">Retailers</h2>
-                <p className="text-[#6B1F2B]">Retailers content will be displayed here.</p>
+                <h2 className="text-xl font-bold text-harvics-burgundy mb-4 font-serif">Retailers</h2>
+                <p className="text-harvics-burgundy">Retailers content will be displayed here.</p>
               </div>
             )}
             {activeTab === 'compliance' && (
               <div className="animate-fadeIn">
-                <h2 className="text-xl font-bold text-[#6B1F2B] mb-4 font-serif">Compliance</h2>
-                <p className="text-[#6B1F2B]">Compliance content will be displayed here.</p>
+                <h2 className="text-xl font-bold text-harvics-burgundy mb-4 font-serif">Compliance</h2>
+                <p className="text-harvics-burgundy">Compliance content will be displayed here.</p>
               </div>
             )}
             {activeTab === 'ai-insights' && (
               <div className="animate-fadeIn">
                 <div className="flex items-center justify-between mb-4">
-                  <h2 className="text-xl font-bold text-[#6B1F2B] font-serif">AI Insights</h2>
+                  <h2 className="text-xl font-bold text-harvics-burgundy font-serif">AI Insights</h2>
                   <button
                     onClick={() => setAiPanelOpen(true)}
-                    className="px-4 py-2 bg-[#C3A35E] text-[#6B1F2B] rounded-md text-sm font-bold hover:bg-[#b5952f] transition-colors shadow-sm"
+                    className="px-4 py-2 bg-harvics-gold text-harvics-burgundy rounded-md text-sm font-bold hover:bg-[#b5952f] transition-colors shadow-sm"
                   >
                     Open AI Panel
                   </button>
                 </div>
-                <p className="text-[#6B1F2B] mb-4">Click "Open AI Panel" to view detailed AI insights and recommendations.</p>
+                <p className="text-harvics-burgundy mb-4">Click "Open AI Panel" to view detailed AI insights and recommendations.</p>
               </div>
             )}
                 </div>
@@ -489,16 +489,16 @@ export default function V16DistributorDashboard() {
             <div className="py-6">
               {pathname?.includes('/os/') ? (
                 <div className="text-center py-12">
-                  <p className="text-[#6B1F2B] mb-4">OS Domain content will be displayed here.</p>
-                  <p className="text-sm text-[#6B1F2B]">Use the sidebar navigation to select an OS domain.</p>
+                  <p className="text-harvics-burgundy mb-4">OS Domain content will be displayed here.</p>
+                  <p className="text-sm text-harvics-burgundy">Use the sidebar navigation to select an OS domain.</p>
                 </div>
               ) : (
-                <div className="bg-white border border-[#C3A35E]/30 rounded-lg p-8 shadow-sm">
-                  <h2 className="text-2xl font-bold text-[#6B1F2B] mb-4 font-serif">OS Domains</h2>
-                  <p className="text-[#6B1F2B] mb-6">
+                <div className="bg-white border border-harvics-gold/30 rounded-lg p-8 shadow-sm">
+                  <h2 className="text-2xl font-bold text-harvics-burgundy mb-4 font-serif">OS Domains</h2>
+                  <p className="text-harvics-burgundy mb-6">
                     Navigate through the OS domains using the sidebar. Each domain provides access to:
                   </p>
-                  <ul className="space-y-2 text-[#6B1F2B] list-disc list-inside mb-6">
+                  <ul className="space-y-2 text-harvics-burgundy list-disc list-inside mb-6">
                     <li>Tier 0: Foundational Engines (Identity, Localization, Geo)</li>
                     <li>Tier 1: Core OS Domains (Orders, Inventory, Finance, CRM, etc.)</li>
                     <li>Tier 2: Modules within each domain</li>
@@ -508,51 +508,51 @@ export default function V16DistributorDashboard() {
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
                     <Link
                       href={`/${locale}/os/orders-sales`}
-                      className="p-4 border border-[#C3A35E]/30 rounded-lg hover:border-[#C3A35E] hover:shadow-lg transition-all"
+                      className="p-4 border border-harvics-gold/30 rounded-lg hover:border-harvics-gold hover:shadow-lg transition-all"
                     >
                       <div className="text-2xl mb-2">📋</div>
-                      <h3 className="font-bold text-[#6B1F2B] mb-1 font-serif">Orders / Sales OS</h3>
-                      <p className="text-sm text-[#6B1F2B]/80">Order management and sales workflows</p>
+                      <h3 className="font-bold text-harvics-burgundy mb-1 font-serif">Orders / Sales OS</h3>
+                      <p className="text-sm text-harvics-burgundy/80">Order management and sales workflows</p>
                     </Link>
                     <Link
                       href={`/${locale}/os/inventory`}
-                      className="p-4 border border-[#C3A35E]/30 rounded-lg hover:border-[#C3A35E] hover:shadow-lg transition-all"
+                      className="p-4 border border-harvics-gold/30 rounded-lg hover:border-harvics-gold hover:shadow-lg transition-all"
                     >
                       <div className="text-2xl mb-2">📦</div>
-                      <h3 className="font-bold text-[#6B1F2B] mb-1 font-serif">Inventory OS</h3>
-                      <p className="text-sm text-[#6B1F2B]/80">Warehouse and stock management</p>
+                      <h3 className="font-bold text-harvics-burgundy mb-1 font-serif">Inventory OS</h3>
+                      <p className="text-sm text-harvics-burgundy/80">Warehouse and stock management</p>
                     </Link>
                     <Link
                       href={`/${locale}/os/finance`}
-                      className="p-4 border border-[#C3A35E]/30 rounded-lg hover:border-[#C3A35E] hover:shadow-lg transition-all"
+                      className="p-4 border border-harvics-gold/30 rounded-lg hover:border-harvics-gold hover:shadow-lg transition-all"
                     >
                       <div className="text-2xl mb-2">💰</div>
-                      <h3 className="font-bold text-[#6B1F2B] mb-1 font-serif">Finance OS</h3>
-                      <p className="text-sm text-[#6B1F2B]/80">Financial management and accounting</p>
+                      <h3 className="font-bold text-harvics-burgundy mb-1 font-serif">Finance OS</h3>
+                      <p className="text-sm text-harvics-burgundy/80">Financial management and accounting</p>
                     </Link>
                     <Link
                       href={`/${locale}/os/crm`}
-                      className="p-4 border border-[#C3A35E]/30 rounded-lg hover:border-[#C3A35E] hover:shadow-lg transition-all"
+                      className="p-4 border border-harvics-gold/30 rounded-lg hover:border-harvics-gold hover:shadow-lg transition-all"
                     >
                       <div className="text-2xl mb-2">👥</div>
-                      <h3 className="font-bold text-[#6B1F2B] mb-1 font-serif">CRM OS</h3>
-                      <p className="text-sm text-[#6B1F2B]/80">Customer relationship management</p>
+                      <h3 className="font-bold text-harvics-burgundy mb-1 font-serif">CRM OS</h3>
+                      <p className="text-sm text-harvics-burgundy/80">Customer relationship management</p>
                     </Link>
                     <Link
                       href={`/${locale}/os/logistics`}
-                      className="p-4 border border-[#C3A35E]/30 rounded-lg hover:border-[#C3A35E] hover:shadow-lg transition-all"
+                      className="p-4 border border-harvics-gold/30 rounded-lg hover:border-harvics-gold hover:shadow-lg transition-all"
                     >
                       <div className="text-2xl mb-2">🚚</div>
-                      <h3 className="font-bold text-[#6B1F2B] mb-1 font-serif">Logistics OS</h3>
-                      <p className="text-sm text-[#6B1F2B]/80">Transport and delivery management</p>
+                      <h3 className="font-bold text-harvics-burgundy mb-1 font-serif">Logistics OS</h3>
+                      <p className="text-sm text-harvics-burgundy/80">Transport and delivery management</p>
                     </Link>
                     <Link
                       href={`/${locale}/os/retailers`}
-                      className="p-4 border border-[#C3A35E]/30 rounded-lg hover:border-[#C3A35E] hover:shadow-lg transition-all"
+                      className="p-4 border border-harvics-gold/30 rounded-lg hover:border-harvics-gold hover:shadow-lg transition-all"
                     >
                       <div className="text-2xl mb-2">🏪</div>
-                      <h3 className="font-bold text-[#6B1F2B] mb-1 font-serif">Retailers</h3>
-                      <p className="text-sm text-[#6B1F2B]/80">Retailer management and tracking</p>
+                      <h3 className="font-bold text-harvics-burgundy mb-1 font-serif">Retailers</h3>
+                      <p className="text-sm text-harvics-burgundy/80">Retailer management and tracking</p>
                     </Link>
                   </div>
                 </div>

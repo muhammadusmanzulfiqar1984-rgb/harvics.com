@@ -106,7 +106,7 @@ export default function CountrySelector({
     : ''
 
   const buttonStyles = [
-    'flex items-center gap-2 px-4 py-2 rounded-md border-2 border-[#C3A35E]/30 text-white font-semibold bg-white hover:border-white hover:text-[#C3A35E] transition-colors',
+    'flex items-center gap-2 px-4 py-2 rounded-md border-2 border-harvics-gold/30 text-white font-semibold bg-white hover:border-white hover:text-harvics-gold transition-colors',
     fullWidth ? 'w-full justify-between' : '',
     buttonClassName
   ]

@@ -7,6 +7,19 @@ import { getProductImage } from '@/data/productCatalog'
 import SmartImage from '@/components/ui/SmartImage'
 import ImageCarousel from '@/components/ui/ImageCarousel'
 
+const verticalFolders: Record<string, string> = {
+  textiles:      '01-apparels',
+  fmcg:          '02-fmcg',
+  commodities:   '03-commodities',
+  industrial:    '04-industrial',
+  minerals:      '05-minerals',
+  'oil-gas':     '06-oil-gas',
+  'real-estate': '07-real-estate',
+  sourcing:      '08-sourcing',
+  finance:       '09-finance',
+  ai:            '10-ai-tech',
+}
+
 const verticalFallbackSlides: Record<string, string[]> = {
   textiles:      ['/assets/verticals/01-apparels/hero.jpg'],
   fmcg:          ['/assets/verticals/02-fmcg/hero.jpg'],
@@ -65,8 +78,14 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
   const ctaRef = useInView(0.2)
 
   const icon = verticalIcons[vertical] || '📊'
+  // AI-generated hero takes first priority, then leaf image, then vertical fallback
+  const vFolder = verticalFolders[vertical]
+  const aiGeneratedHero = vFolder
+    ? `/assets/verticals/${vFolder}/categories/${category}/hero.jpg`
+    : null
   const categoryImage = getProductImage(block.title.toLowerCase())
   const categorySlides = [
+    aiGeneratedHero,
     categoryImage,
     ...(verticalFallbackSlides[vertical] || []),
     ...defaultSlides,
@@ -75,20 +94,20 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
   return (
     <main className="min-h-screen" style={{ background: '#ffffff' }}>
       {/* ═══════ BREADCRUMBS ═══════ */}
-      <div className="bg-gradient-to-r from-[#5a1a24] to-[#4a1018] border-b border-[#C3A35E]/15">
+      <div className="bg-gradient-to-r from-[#5a1a24] to-[#4a1018] border-b border-harvics-gold/15">
         <div className="max-w-[1200px] mx-auto px-4 py-3 flex items-center gap-2 text-xs text-white/50">
-          <Link href={`/${locale}`} className="hover:text-[#C3A35E] transition-colors duration-200">Home</Link>
-          <span className="text-[#C3A35E]/30">—</span>
-          <Link href={`/${locale}/${vertical}`} className="hover:text-[#C3A35E] transition-colors duration-200">{verticalData.label}</Link>
-          <span className="text-[#C3A35E]/30">—</span>
-          <span className="text-[#C3A35E] font-medium">{block.title}</span>
+          <Link href={`/${locale}`} className="hover:text-harvics-gold transition-colors duration-200">Home</Link>
+          <span className="text-harvics-gold/30">—</span>
+          <Link href={`/${locale}/${vertical}`} className="hover:text-harvics-gold transition-colors duration-200">{verticalData.label}</Link>
+          <span className="text-harvics-gold/30">—</span>
+          <span className="text-harvics-gold font-medium">{block.title}</span>
         </div>
       </div>
 
       {/* ═══════ HERO ═══════ */}
       <section
         ref={heroRef.ref}
-        className="relative bg-gradient-to-br from-[#3D1212] via-[#5a1a24] to-[#4a1520] py-20 md:py-24 px-4 overflow-hidden"
+        className="relative bg-gradient-to-br from-harvics-burgundy via-[#5a1a24] to-[#4a1520] py-20 md:py-24 px-4 overflow-hidden"
       >
         {/* Background image for all categories */}
         <div className="absolute inset-0">
@@ -102,14 +121,14 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
             style={{ background: 'radial-gradient(circle, #C3A35E 0%, transparent 65%)' }} />
           <div className="absolute inset-0 opacity-[0.03]"
             style={{
-              backgroundImage: 'linear-gradient(rgba(195,163,94,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(195,163,94,0.4) 1px, transparent 1px)',
+              backgroundImage: 'linear-gradient(rgba(195, 163, 94,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(195, 163, 94,0.4) 1px, transparent 1px)',
               backgroundSize: '50px 50px',
             }} />
           <div className="absolute top-10 right-10 text-[100px] opacity-[0.04] select-none">{icon}</div>
         </div>
 
         {/* Top accent line */}
-        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#C3A35E]/30 to-transparent" />
+        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-harvics-gold/30 to-transparent" />
 
         <div className="max-w-[1200px] mx-auto relative z-10">
           <div className="text-center max-w-[700px] mx-auto">
@@ -123,7 +142,7 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
             >
               <Link
                 href={`/${locale}/${vertical}`}
-                className="inline-flex items-center gap-2 text-xs text-[#C3A35E]/80 font-bold uppercase tracking-[0.2em] mb-4 border border-[#C3A35E]/20 px-3 py-1 hover:border-[#C3A35E]/40 transition-colors duration-200"
+                className="inline-flex items-center gap-2 text-xs text-harvics-gold/80 font-bold uppercase tracking-[0.2em] mb-4 border border-harvics-gold/20 px-3 py-1 hover:border-harvics-gold/40 transition-colors duration-200"
               >
                 <span>{icon}</span>
                 {verticalData.label}
@@ -162,7 +181,7 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
                 {catDesc.highlights.map((h, i) => (
                   <span
                     key={h}
-                    className="px-4 py-1.5 border border-[#C3A35E]/25 text-xs text-[#C3A35E] font-medium uppercase tracking-wider transition-all duration-700"
+                    className="px-4 py-1.5 border border-harvics-gold/25 text-xs text-harvics-gold font-medium uppercase tracking-wider transition-all duration-700"
                     style={{
                       opacity: heroRef.inView ? 1 : 0,
                       transform: heroRef.inView ? 'translateY(0)' : 'translateY(10px)',
@@ -178,7 +197,7 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
         </div>
 
         {/* Bottom accent */}
-        <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#C3A35E]/25 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-harvics-gold/25 to-transparent" />
       </section>
 
       {/* ═══════ ITEMS GRID ═══════ */}
@@ -191,11 +210,11 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
             transform: gridRef.inView ? 'translateY(0)' : 'translateY(12px)',
           }}
         >
-          <div className="w-8 h-[2px] bg-[#C3A35E]/50" />
-          <h2 className="text-sm font-bold text-[#3D1212] uppercase tracking-[0.15em]">
+          <div className="w-8 h-[2px] bg-harvics-gold/50" />
+          <h2 className="text-sm font-bold text-harvics-burgundy uppercase tracking-[0.15em]">
             Browse {block.title}
           </h2>
-          <span className="text-xs text-[#3D1212]/40">{block.items.length} items</span>
+          <span className="text-xs text-harvics-burgundy/40">{block.items.length} items</span>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -205,7 +224,7 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
               <Link
                 key={item}
                 href={`/${locale}/${vertical}/${category}/${slugify(item)}`}
-                className="group relative bg-white border border-[#C3A35E]/15 overflow-hidden transition-all duration-300 hover:border-[#C3A35E]/50"
+                className="group relative bg-white border border-harvics-gold/15 overflow-hidden transition-all duration-300 hover:border-harvics-gold/50"
                 style={{
                   opacity: gridRef.inView ? 1 : 0,
                   transform: gridRef.inView ? 'translateY(0)' : 'translateY(20px)',
@@ -229,7 +248,7 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
                     />
                   )}
                   {/* Hover overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#3D1212]/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-harvics-burgundy/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   {/* View label on hover */}
                   <div className="absolute bottom-2 left-0 right-0 text-center translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
                     <span className="text-xs font-semibold text-white uppercase tracking-wider">View →</span>
@@ -237,12 +256,12 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
                 </div>
                 {/* Title */}
                 <div className="p-4 text-center">
-                  <h3 className="text-sm font-semibold text-[#3D1212] group-hover:text-[#C3A35E] transition-colors duration-200">
+                  <h3 className="text-sm font-semibold text-harvics-burgundy group-hover:text-harvics-gold transition-colors duration-200">
                     {item}
                   </h3>
                 </div>
                 {/* Top accent line on hover */}
-                <div className="absolute top-0 left-0 right-0 h-[2px] bg-[#C3A35E] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-harvics-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
               </Link>
             )
           })}
@@ -251,7 +270,7 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
 
       {/* ═══════ PRODUCTS LIST ═══════ */}
       {products.length > 0 && (
-        <div ref={productsRef.ref} className="bg-white border-t border-b border-[#C3A35E]/10">
+        <div ref={productsRef.ref} className="bg-white border-t border-b border-harvics-gold/10">
           <div className="max-w-[1200px] mx-auto px-4 py-12">
             {/* Section header */}
             <div
@@ -261,11 +280,11 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
                 transform: productsRef.inView ? 'translateY(0)' : 'translateY(12px)',
               }}
             >
-              <div className="w-8 h-[2px] bg-[#C3A35E]/50" />
-              <h2 className="text-sm font-bold text-[#3D1212] uppercase tracking-[0.15em]">
+              <div className="w-8 h-[2px] bg-harvics-gold/50" />
+              <h2 className="text-sm font-bold text-harvics-burgundy uppercase tracking-[0.15em]">
                 Products
               </h2>
-              <span className="text-xs text-[#3D1212]/40">{products.length} available</span>
+              <span className="text-xs text-harvics-burgundy/40">{products.length} available</span>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -276,7 +295,7 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
                 return (
                   <div
                     key={idx}
-                    className="group bg-white/50 border border-[#C3A35E]/15 overflow-hidden transition-all duration-300 hover:border-[#C3A35E]/40"
+                    className="group bg-white/50 border border-harvics-gold/15 overflow-hidden transition-all duration-300 hover:border-harvics-gold/40"
                     style={{
                       opacity: productsRef.inView ? 1 : 0,
                       transform: productsRef.inView ? 'translateY(0)' : 'translateY(16px)',
@@ -284,7 +303,7 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
                     }}
                   >
                     {/* Product image */}
-                    <div className="relative h-[160px] bg-white overflow-hidden border-b border-[#C3A35E]/10">
+                    <div className="relative h-[160px] bg-white overflow-hidden border-b border-harvics-gold/10">
                       {hasImage ? (
                         <img
                           src={imageUrl}
@@ -305,18 +324,18 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
                         />
                       )}
                       {/* Overlay gradient */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#3D1212]/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-harvics-burgundy/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </div>
                     {/* Info */}
                     <div className="p-5">
-                      <h4 className="text-sm font-semibold text-[#3D1212] mb-1 group-hover:text-[#C3A35E] transition-colors duration-200">
+                      <h4 className="text-sm font-semibold text-harvics-burgundy mb-1 group-hover:text-harvics-gold transition-colors duration-200">
                         {product.name}
                       </h4>
                       {product.desc && (
-                        <p className="text-xs text-[#3D1212]/45 mb-3 leading-relaxed line-clamp-2">{product.desc}</p>
+                        <p className="text-xs text-harvics-burgundy/45 mb-3 leading-relaxed line-clamp-2">{product.desc}</p>
                       )}
                       <div className="flex items-center justify-between">
-                        <div className="text-sm font-bold text-[#C3A35E]">{product.price}</div>
+                        <div className="text-sm font-bold text-harvics-gold">{product.price}</div>
                         {product.icon && <span className="text-base">{product.icon}</span>}
                       </div>
                     </div>
@@ -331,7 +350,7 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
       {/* ═══════ CTA BANNER ═══════ */}
       <section
         ref={ctaRef.ref}
-        className="relative bg-[#3D1212] border-t border-[#C3A35E]/20 overflow-hidden"
+        className="relative bg-harvics-burgundy border-t border-harvics-gold/20 overflow-hidden"
       >
         {/* Subtle dot pattern */}
         <div className="absolute inset-0 opacity-[0.03]"
@@ -363,14 +382,14 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
           >
             <Link
               href={`/${locale}/contact`}
-              className="group relative px-8 py-3.5 bg-[#C3A35E] text-[#3D1212] text-sm font-bold uppercase tracking-wider overflow-hidden"
+              className="group relative px-8 py-3.5 bg-harvics-gold text-harvics-burgundy text-sm font-bold uppercase tracking-wider overflow-hidden"
             >
               <span className="relative z-10">Get a Quote</span>
               <span className="absolute inset-0 bg-[#d4b46e] translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
             </Link>
             <Link
               href={`/${locale}/${vertical}`}
-              className="px-8 py-3.5 border border-[#C3A35E]/30 text-[#C3A35E] text-sm font-medium hover:border-[#C3A35E] hover:bg-[#C3A35E]/5 transition-all duration-300"
+              className="px-8 py-3.5 border border-harvics-gold/30 text-harvics-gold text-sm font-medium hover:border-harvics-gold hover:bg-harvics-gold/5 transition-all duration-300"
             >
               ← {verticalData.label}
             </Link>

@@ -410,8 +410,8 @@ export default function ModuleArchitectureExplorer() {
   }
 
   return (
-    <div className="min-h-screen bg-[radial-gradient(circle_at_10%_10%,rgba(195,163,94,0.12),transparent_35%),radial-gradient(circle_at_85%_20%,rgba(107,31,43,0.08),transparent_30%),#f6f3ee] text-[#1a1a1a]">
-      <div className="sticky top-0 z-30 border-b border-[#351017]/15 bg-gradient-to-r from-[#d7be80] to-[#c3a35e] px-4 py-2 text-center text-[11px] font-bold uppercase tracking-[0.18em] text-[#351017]">
+    <div className="min-h-screen bg-[radial-gradient(circle_at_10%_10%,rgba(195, 163, 94,0.12),transparent_35%),radial-gradient(circle_at_85%_20%,rgba(107,31,43,0.08),transparent_30%),#f6f3ee] text-[#1a1a1a]">
+      <div className="sticky top-0 z-30 border-b border-[#351017]/15 bg-gradient-to-r from-[#d7be80] to-harvics-gold px-4 py-2 text-center text-[11px] font-bold uppercase tracking-[0.18em] text-[#351017]">
         Trial Preview: HARVICS /x Command Center UI
       </div>
 
@@ -426,7 +426,7 @@ export default function ModuleArchitectureExplorer() {
           </div>
         ) : null}
 
-        <section className="mb-5 rounded-[20px] border border-[#c3a35e]/30 bg-[linear-gradient(140deg,#1f0f14_0%,#3d161f_45%,#5e1f2d_100%)] p-6 text-white shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
+        <section className="mb-5 rounded-[20px] border border-harvics-gold/30 bg-[linear-gradient(140deg,#1f0f14_0%,#3d161f_45%,#5e1f2d_100%)] p-6 text-white shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div>
               <h2 className="text-[clamp(28px,4vw,44px)] font-bold leading-none tracking-[-0.02em]">X Command Center</h2>
@@ -441,19 +441,19 @@ export default function ModuleArchitectureExplorer() {
           </div>
 
           <div className="mt-5 grid gap-3 md:grid-cols-4">
-            <div className="rounded-2xl border border-[#c3a35e]/30 bg-white/10 p-4">
+            <div className="rounded-2xl border border-harvics-gold/30 bg-white/10 p-4">
               <div className="mb-1 text-[11px] uppercase tracking-[0.14em] text-white/70">Visible Modules</div>
               <div className="font-mono text-3xl font-bold text-[#f2dfb5]">{visibleModules.length}</div>
             </div>
-            <div className="rounded-2xl border border-[#c3a35e]/30 bg-white/10 p-4">
+            <div className="rounded-2xl border border-harvics-gold/30 bg-white/10 p-4">
               <div className="mb-1 text-[11px] uppercase tracking-[0.14em] text-white/70">Contracts Live</div>
               <div className="font-mono text-3xl font-bold text-[#f2dfb5]">{contractsLive}</div>
             </div>
-            <div className="rounded-2xl border border-[#c3a35e]/30 bg-white/10 p-4">
+            <div className="rounded-2xl border border-harvics-gold/30 bg-white/10 p-4">
               <div className="mb-1 text-[11px] uppercase tracking-[0.14em] text-white/70">Verified Payloads</div>
               <div className="font-mono text-3xl font-bold text-[#f2dfb5]">{validatedCount}</div>
             </div>
-            <div className="rounded-2xl border border-[#c3a35e]/30 bg-white/10 p-4">
+            <div className="rounded-2xl border border-harvics-gold/30 bg-white/10 p-4">
               <div className="mb-1 text-[11px] uppercase tracking-[0.14em] text-white/70">Executive / L5 Risk</div>
               <div className="font-mono text-3xl font-bold text-[#f2dfb5]">{highRiskCount}</div>
             </div>
@@ -475,7 +475,7 @@ export default function ModuleArchitectureExplorer() {
                   placeholder="Module, band, route"
                   value={searchQuery}
                   onChange={event => setSearchQuery(event.target.value)}
-                  className="rounded-xl border border-[#d6d0c3] bg-white px-3 py-2.5 text-sm outline-none transition focus:border-[#c3a35e]"
+                  className="rounded-xl border border-[#d6d0c3] bg-white px-3 py-2.5 text-sm outline-none transition focus:border-harvics-gold"
                 />
               </div>
 
@@ -484,7 +484,7 @@ export default function ModuleArchitectureExplorer() {
                 <select
                   value={selectedBand}
                   onChange={event => setSelectedBand(event.target.value)}
-                  className="rounded-xl border border-[#d6d0c3] bg-white px-3 py-2.5 text-sm outline-none transition focus:border-[#c3a35e]"
+                  className="rounded-xl border border-[#d6d0c3] bg-white px-3 py-2.5 text-sm outline-none transition focus:border-harvics-gold"
                 >
                   <option>All Bands</option>
                   {bands.map(band => (
@@ -498,7 +498,7 @@ export default function ModuleArchitectureExplorer() {
                 <select
                   value={selectedIntelligence}
                   onChange={event => setSelectedIntelligence(event.target.value)}
-                  className="rounded-xl border border-[#d6d0c3] bg-white px-3 py-2.5 text-sm outline-none transition focus:border-[#c3a35e]"
+                  className="rounded-xl border border-[#d6d0c3] bg-white px-3 py-2.5 text-sm outline-none transition focus:border-harvics-gold"
                 >
                   <option>All Levels</option>
                   <option>L1</option>
@@ -514,7 +514,7 @@ export default function ModuleArchitectureExplorer() {
                 <select
                   value={selectedReporting}
                   onChange={event => setSelectedReporting(event.target.value)}
-                  className="rounded-xl border border-[#d6d0c3] bg-white px-3 py-2.5 text-sm outline-none transition focus:border-[#c3a35e]"
+                  className="rounded-xl border border-[#d6d0c3] bg-white px-3 py-2.5 text-sm outline-none transition focus:border-harvics-gold"
                 >
                   <option>All Reports</option>
                   {Array.from(new Set(allModules.map(module => module.reporting))).map(reporting => (
@@ -528,7 +528,7 @@ export default function ModuleArchitectureExplorer() {
                 <select
                   value={selectedContractView}
                   onChange={event => setSelectedContractView(event.target.value)}
-                  className="rounded-xl border border-[#d6d0c3] bg-white px-3 py-2.5 text-sm outline-none transition focus:border-[#c3a35e]"
+                  className="rounded-xl border border-[#d6d0c3] bg-white px-3 py-2.5 text-sm outline-none transition focus:border-harvics-gold"
                 >
                   <option>All States</option>
                   <option>Ready</option>
@@ -538,10 +538,10 @@ export default function ModuleArchitectureExplorer() {
               </div>
 
               <div className="flex flex-wrap gap-2 pt-1">
-                <span className="rounded-full border border-[#c3a35e]/40 bg-[#c3a35e]/15 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.08em] text-[#75551a]">
+                <span className="rounded-full border border-harvics-gold/40 bg-harvics-gold/15 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.08em] text-[#75551a]">
                   {activeBandCount} active bands
                 </span>
-                <span className="rounded-full border border-[#6b1f2b]/30 bg-[#6b1f2b]/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.08em] text-[#6b1f2b]">
+                <span className="rounded-full border border-harvics-burgundy/30 bg-harvics-burgundy/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.08em] text-harvics-burgundy">
                   {highRiskCount} executive risks
                 </span>
                 <span className="rounded-full border border-[#0f8b5f]/30 bg-[#0f8b5f]/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.08em] text-[#0f8b5f]">
@@ -568,7 +568,7 @@ export default function ModuleArchitectureExplorer() {
                 <button
                   type="button"
                   onClick={handleValidateVisible}
-                  className="rounded-xl border border-[#6b1f2b] bg-[#6b1f2b] px-3 py-2 text-xs font-bold text-white"
+                  className="rounded-xl border border-harvics-burgundy bg-harvics-burgundy px-3 py-2 text-xs font-bold text-white"
                 >
                   Validate Visible
                 </button>
@@ -583,7 +583,7 @@ export default function ModuleArchitectureExplorer() {
                 return (
                   <article
                     key={module.id}
-                    className={`grid gap-3 rounded-2xl border p-4 transition ${selectedModuleId === module.id ? 'border-[#6b1f2b] bg-[#fffaf7]' : 'border-[#e8e2d5] bg-white'}`}
+                    className={`grid gap-3 rounded-2xl border p-4 transition ${selectedModuleId === module.id ? 'border-harvics-burgundy bg-[#fffaf7]' : 'border-[#e8e2d5] bg-white'}`}
                   >
                     <div className="flex flex-wrap items-start justify-between gap-3">
                       <div>
@@ -612,7 +612,7 @@ export default function ModuleArchitectureExplorer() {
                       <button
                         type="button"
                         onClick={() => handleModuleClick(module)}
-                        className="rounded-xl border border-[#6b1f2b] bg-[#6b1f2b] px-3 py-2 text-xs font-bold text-white"
+                        className="rounded-xl border border-harvics-burgundy bg-harvics-burgundy px-3 py-2 text-xs font-bold text-white"
                       >
                         Probe
                       </button>
@@ -626,7 +626,7 @@ export default function ModuleArchitectureExplorer() {
                       <button
                         type="button"
                         onClick={() => setOpenSegment({ segment: getSegmentFromRoute(module.route), route: module.route })}
-                        className="rounded-xl border border-[#c3a35e] bg-white px-3 py-2 text-xs font-bold text-[#75551a]"
+                        className="rounded-xl border border-harvics-gold bg-white px-3 py-2 text-xs font-bold text-[#75551a]"
                       >
                         Open Workspace
                       </button>
@@ -634,7 +634,7 @@ export default function ModuleArchitectureExplorer() {
                         href={`/en/os/module/${module.id}`}
                         target="_blank"
                         rel="noreferrer"
-                        className="rounded-xl border border-[#c3a35e] bg-[#c3a35e] px-3 py-2 text-xs font-bold text-[#6b1f2b]"
+                        className="rounded-xl border border-harvics-gold bg-harvics-gold px-3 py-2 text-xs font-bold text-harvics-burgundy"
                       >
                         Open Module →
                       </a>
@@ -743,7 +743,7 @@ export default function ModuleArchitectureExplorer() {
                   <button
                     type="button"
                     onClick={createOrder}
-                    className="rounded-lg border border-[#6b1f2b] bg-[#6b1f2b] px-2 py-1.5 text-xs font-bold text-white"
+                    className="rounded-lg border border-harvics-burgundy bg-harvics-burgundy px-2 py-1.5 text-xs font-bold text-white"
                   >
                     Create Order
                   </button>
@@ -835,7 +835,7 @@ export default function ModuleArchitectureExplorer() {
             <button
               type="button"
               onClick={handleProbeVisible}
-              className="rounded-xl border border-[#6b1f2b] bg-[#6b1f2b] px-4 py-2 text-xs font-bold text-white"
+              className="rounded-xl border border-harvics-burgundy bg-harvics-burgundy px-4 py-2 text-xs font-bold text-white"
             >
               Probe Visible
             </button>

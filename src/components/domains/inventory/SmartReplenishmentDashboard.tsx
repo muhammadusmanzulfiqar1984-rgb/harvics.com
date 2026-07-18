@@ -67,18 +67,18 @@ export default function SmartReplenishmentDashboard() {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#6B1F2B] to-[#5a000c] rounded-lg p-6 text-white shadow-lg relative overflow-hidden">
+      <div className="bg-gradient-to-r from-harvics-burgundy to-[#5a000c] rounded-lg p-6 text-white shadow-lg relative overflow-hidden">
         <div className="relative z-10">
           <div className="flex items-center gap-3 mb-2">
             <span className="text-3xl">🧠</span>
-            <h2 className="text-base font-semibold  text-[#C3A35E]">Smart Replenishment</h2>
+            <h2 className="text-base font-semibold  text-harvics-gold">Smart Replenishment</h2>
           </div>
           <p className="text-white/80 max-w-2xl">
             AI-detected restocking opportunities based on real-time "Market Voids" and margin analysis.
             These SKUs are auto-generated to maximize profit while maintaining brand integrity.
           </p>
         </div>
-        <div className="absolute top-0 right-0 h-full w-1/3 bg-gradient-to-l from-[#C3A35E]/20 to-transparent"></div>
+        <div className="absolute top-0 right-0 h-full w-1/3 bg-gradient-to-l from-harvics-gold/20 to-transparent"></div>
       </div>
 
       {/* Opportunities Grid */}
@@ -92,11 +92,11 @@ export default function SmartReplenishmentDashboard() {
               }`}>
                 {opp.status} Void
               </span>
-              <span className="text-[#6B1F2B] font-bold text-sm">Score: {opp.voidScore}/100</span>
+              <span className="text-harvics-burgundy font-bold text-sm">Score: {opp.voidScore}/100</span>
             </div>
             
             <div className="p-6">
-              <h3 className="text-lg font-semibold text-[#1A1A1A] mb-1 group-hover:text-[#C3A35E] transition-colors">
+              <h3 className="text-lg font-semibold text-[#1A1A1A] mb-1 group-hover:text-harvics-gold transition-colors">
                 {opp.sku}
               </h3>
               <p className="text-xs text-gray-500 mb-4 uppercase tracking-wide">Origin: {opp.origin}</p>
@@ -114,7 +114,7 @@ export default function SmartReplenishmentDashboard() {
                 </div>
               </div>
 
-              <button className="w-full py-2.5 bg-[#6B1F2B] text-white font-bold rounded hover:bg-[#6B1F2B] hover:text-[#6B1F2B] transition-all flex items-center justify-center gap-2">
+              <button className="w-full py-2.5 bg-harvics-burgundy text-white font-bold rounded hover:bg-harvics-burgundy hover:text-harvics-burgundy transition-all flex items-center justify-center gap-2">
                 <span>⚡</span> Initiate Supply Chain
               </button>
             </div>
@@ -124,7 +124,7 @@ export default function SmartReplenishmentDashboard() {
 
       {/* AI Insight Footer */}
       <div className="bg-[#F5F5F7] border border-[#E5E5EA] rounded-lg p-4 flex items-start gap-4">
-        <div className="bg-[#6B1F2B] text-[#6B1F2B] rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">
+        <div className="bg-harvics-burgundy text-harvics-burgundy rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">
           i
         </div>
         <div>

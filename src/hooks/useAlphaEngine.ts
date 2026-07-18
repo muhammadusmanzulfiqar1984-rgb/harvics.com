@@ -92,12 +92,9 @@ export function useAlphaEngine(options: UseAlphaEngineOptions = {}) {
   // Determine server URL
   const getServerUrl = useCallback(() => {
     if (serverUrl) return serverUrl
-    // In production, Socket.io goes through the same origin
-    // In dev, backend runs on port 4000
-    if (typeof window !== 'undefined') {
-      const isDev = window.location.port === '8080' || window.location.port === '3000'
-      if (isDev) return 'http://localhost:4000'
-    }
+    // Prefer an explicitly configured origin; otherwise use the same origin.
+    const configured = (process.env.NEXT_PUBLIC_ORCHESTRATOR_URL || '').trim()
+    if (configured) return configured
     return '' // Same origin
   }, [serverUrl])
 
@@ -146,8 +143,8 @@ export function useAlphaEngine(options: UseAlphaEngineOptions = {}) {
       reconnectAttempts.current++
       const errorMsg =
         reconnectAttempts.current >= maxReconnectAttempts
-          ? 'Backend unreachable — AlphaEngine offline'
-          : `Connecting to backend... (attempt ${reconnectAttempts.current})`
+          ? 'Service temporarily unavailable.'
+          : 'Connecting…'
 
       setState((prev) => ({
         ...prev,

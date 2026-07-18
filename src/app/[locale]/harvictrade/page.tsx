@@ -4,6 +4,7 @@ import { generateAllLocaleParams } from '@/lib/generateLocaleParams'
 import HarvicTradeSearch from '@/components/harvictrade/HarvicTradeSearch'
 import HarvicTradeTabs from '@/components/harvictrade/HarvicTradeTabs'
 import { ALL_PRODUCTS, CATEGORY_META } from '@/data/harvictrade-products'
+import { getProductImage } from '@/data/harvictradeImages'
 
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -21,7 +22,9 @@ const FEATURED = ALL_PRODUCTS.filter(p =>
   ['Premium Basmati Rice 1121 Sella', 'Hi-Vis Safety Jacket EN20471 Class 3',
    'Extra Virgin Olive Oil — 1L Glass', 'Combed Cotton T-Shirt 180 GSM',
    'Copper Cathode Grade A — LME Registered', 'Diesel EN590 10ppm — FOB',
-   'ICUMSA 45 White Refined Sugar', 'Portland Cement 42.5N — Bulk'].includes(p.name)
+   'ICUMSA 45 White Refined Sugar', 'Portland Cement 42.5N — Bulk',
+   'FR Coverall NFPA 2112 — Navy Blue', 'Safety Boot S3 — Steel Toe Cap',
+   'MacBook Pro M4 — 14"', 'Samsung Galaxy S25 Ultra — 256GB'].includes(p.name)
 )
 
 const TRUST = [
@@ -47,25 +50,36 @@ export default async function HarvicTradePage({ params }: { params: Promise<{ lo
       <div className="pt-20">
 
         {/* ══ HERO ══════════════════════════════════════════════════════ */}
-        <section className="relative bg-[#0D0D0D] py-28 md:py-36 px-4 overflow-hidden">
+        <section className="relative py-28 md:py-36 px-4 overflow-hidden">
+          {/* Video background */}
+          <video
+            className="absolute inset-0 w-full h-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            poster="/assets/shared/heroes/harvictrade-hero.jpg"
+          >
+            <source src="/assets/media/video/final2.mp4" type="video/mp4" />
+          </video>
+          {/* Strong dark overlay for readability */}
+          <div className="absolute inset-0 bg-harvics-burgundy/75" />
           {/* Subtle grid texture */}
-          <div className="absolute inset-0 pointer-events-none opacity-[0.04]"
+          <div className="absolute inset-0 pointer-events-none opacity-[0.03]"
             style={{
-              backgroundImage: 'linear-gradient(rgba(195,163,94,1) 1px, transparent 1px), linear-gradient(90deg, rgba(195,163,94,1) 1px, transparent 1px)',
+              backgroundImage: 'linear-gradient(rgba(195, 163, 94,1) 1px, transparent 1px), linear-gradient(90deg, rgba(195, 163, 94,1) 1px, transparent 1px)',
               backgroundSize: '80px 80px',
             }} />
-          {/* Radial accent */}
-          <div className="absolute top-0 right-1/4 w-[800px] h-[800px] opacity-[0.05] pointer-events-none"
-            style={{ background: 'radial-gradient(circle, #C3A35E 0%, transparent 60%)' }} />
 
           <div className="relative z-10 max-w-[1100px] mx-auto text-center">
-            <p className="text-[10px] font-bold text-[#C3A35E]/60 uppercase tracking-[0.35em] mb-6">
+            <p className="text-[10px] font-bold text-harvics-gold/70 uppercase tracking-[0.35em] mb-6">
               Harvics Global Ventures &nbsp;·&nbsp; HarvicTrade
             </p>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.04]" style={{ letterSpacing: '-0.04em' }}>
               Source. Trade. Scale.
             </h1>
-            <p className="text-lg text-white/35 max-w-xl mx-auto leading-relaxed mb-12">
+            <p className="text-lg text-white/45 max-w-xl mx-auto leading-relaxed mb-12">
               The enterprise B2B marketplace for verified global trade. 1,185+ products. 42+ countries. One platform.
             </p>
 
@@ -75,7 +89,7 @@ export default async function HarvicTradePage({ params }: { params: Promise<{ lo
             <div className="flex flex-wrap justify-center gap-2 mt-5">
               {['Basmati Rice', 'Safety Equipment', 'Denim Fabric', 'Olive Oil', 'Copper Cathode', 'Diesel EN590'].map(tag => (
                 <span key={tag}
-                  className="text-[10px] text-white/30 border border-white/10 px-3 py-1 hover:border-[#C3A35E]/40 hover:text-[#C3A35E]/70 cursor-pointer transition-colors tracking-wider">
+                  className="text-[10px] text-white/40 border border-white/20 px-3 py-1 hover:border-harvics-gold/50 hover:text-harvics-gold cursor-pointer transition-colors tracking-wider">
                   {tag}
                 </span>
               ))}
@@ -84,7 +98,7 @@ export default async function HarvicTradePage({ params }: { params: Promise<{ lo
         </section>
 
         {/* ══ STATS ═════════════════════════════════════════════════════ */}
-        <section className="border-b border-[#C3A35E]/12">
+        <section className="border-b border-harvics-gold/12">
           <div className="max-w-[1100px] mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-[#C3A35E]/12">
               {[
@@ -94,8 +108,8 @@ export default async function HarvicTradePage({ params }: { params: Promise<{ lo
                 { n: '24 hrs', l: 'Quote Turnaround' },
               ].map(s => (
                 <div key={s.l} className="py-7 px-8 text-center">
-                  <div className="text-2xl font-bold text-[#3D1212] mb-0.5" style={{ letterSpacing: '-0.03em' }}>{s.n}</div>
-                  <div className="text-[10px] text-[#3D1212]/40 uppercase tracking-[0.18em]">{s.l}</div>
+                  <div className="text-2xl font-bold text-harvics-burgundy mb-0.5" style={{ letterSpacing: '-0.03em' }}>{s.n}</div>
+                  <div className="text-[10px] text-harvics-burgundy/40 uppercase tracking-[0.18em]">{s.l}</div>
                 </div>
               ))}
             </div>
@@ -105,76 +119,124 @@ export default async function HarvicTradePage({ params }: { params: Promise<{ lo
         {/* ══ CATEGORIES ════════════════════════════════════════════════ */}
         <section className="max-w-[1100px] mx-auto px-4 py-20">
           <div className="mb-12">
-            <p className="text-[10px] font-bold text-[#C3A35E] uppercase tracking-[0.28em] mb-3">Browse Categories</p>
-            <h2 className="text-3xl font-bold text-[#3D1212]" style={{ letterSpacing: '-0.025em' }}>
+            <p className="text-[10px] font-bold text-harvics-gold uppercase tracking-[0.28em] mb-3">Browse Categories</p>
+            <h2 className="text-3xl font-bold text-harvics-burgundy" style={{ letterSpacing: '-0.025em' }}>
               Six Verticals. One Platform.
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-[#C3A35E]/10">
-            {CATEGORY_META.map((cat) => (
-              <Link
-                key={cat.slug}
-                href={`/${locale}/harvictrade/category/${cat.slug}`}
-                className="group bg-white p-10 hover:bg-[#F5F0E8] transition-colors relative overflow-hidden"
-              >
-                <div className="absolute top-0 left-0 w-[2px] h-0 bg-[#3D1212] group-hover:h-full transition-all duration-300" />
-                <div className="flex items-start justify-between mb-6">
-                  <div className="w-10 h-10 border border-[#3D1212]/15 flex items-center justify-center group-hover:border-[#3D1212]/40 transition-colors">
-                    <span className="text-[11px] font-bold text-[#3D1212]/50 tracking-widest group-hover:text-[#3D1212] transition-colors">{cat.abbr}</span>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-harvics-gold/10">
+            {CATEGORY_META.map((cat) => {
+              const catHero = `/assets/harvictrade/heroes/${cat.slug === 'electronics' ? 'electronics' : cat.slug === 'fmcg' ? 'fmcg' : cat.slug}-hero.jpg`
+              return (
+                <Link
+                  key={cat.slug}
+                  href={`/${locale}/harvictrade/category/${cat.slug}`}
+                  className="group bg-white overflow-hidden hover:bg-harvics-cream transition-colors relative flex flex-col"
+                >
+                  <div className="h-28 w-full overflow-hidden bg-[#f5f0e8]">
+                    <img 
+                      src={catHero} 
+                      alt={cat.name} 
+                      className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform" 
+                    />
                   </div>
-                  <span className="text-[10px] font-bold text-[#C3A35E] tracking-wider">{cat.count}</span>
-                </div>
-                <h3 className="text-base font-bold text-[#3D1212] mb-2 group-hover:text-[#3D1212] transition-colors">{cat.name}</h3>
-                <p className="text-xs text-[#3D1212]/45 leading-relaxed">{cat.desc}</p>
-                <div className="mt-6 text-[10px] font-bold text-[#3D1212]/30 uppercase tracking-[0.18em] group-hover:text-[#C3A35E] transition-colors">
-                  Browse →
-                </div>
-              </Link>
-            ))}
+                  <div className="p-10 flex-1">
+                    <div className="flex items-start justify-between mb-6">
+                      <div className="w-10 h-10 border border-harvics-burgundy/15 flex items-center justify-center group-hover:border-harvics-burgundy/40 transition-colors">
+                        <span className="text-[11px] font-bold text-harvics-burgundy/50 tracking-widest group-hover:text-harvics-burgundy transition-colors">{cat.abbr}</span>
+                      </div>
+                      <span className="text-[10px] font-bold text-harvics-gold tracking-wider">{cat.count}</span>
+                    </div>
+                    <h3 className="text-base font-bold text-harvics-burgundy mb-2 group-hover:text-harvics-burgundy transition-colors">{cat.name}</h3>
+                    <p className="text-xs text-harvics-burgundy/45 leading-relaxed">{cat.desc}</p>
+                    <div className="mt-6 text-[10px] font-bold text-harvics-burgundy/30 uppercase tracking-[0.18em] group-hover:text-harvics-gold transition-colors">
+                      Browse →
+                    </div>
+                  </div>
+                </Link>
+              )
+            })}
           </div>
         </section>
 
         {/* ══ FEATURED PRODUCTS ═════════════════════════════════════════ */}
-        <section className="bg-[#faf8f5] border-t border-b border-[#C3A35E]/10 py-20 px-4">
+        <section className="bg-[#faf8f5] border-t border-b border-harvics-gold/10 py-20 px-4">
           <div className="max-w-[1100px] mx-auto">
             <div className="flex items-end justify-between mb-12">
               <div>
-                <p className="text-[10px] font-bold text-[#C3A35E] uppercase tracking-[0.28em] mb-3">Featured Listings</p>
-                <h2 className="text-3xl font-bold text-[#3D1212]" style={{ letterSpacing: '-0.025em' }}>Top Products</h2>
+                <p className="text-[10px] font-bold text-harvics-gold uppercase tracking-[0.28em] mb-3">Featured Listings</p>
+                <h2 className="text-3xl font-bold text-harvics-burgundy" style={{ letterSpacing: '-0.025em' }}>Top Products</h2>
               </div>
               <Link href={`/${locale}/harvictrade/rfq`}
-                className="hidden md:block text-xs font-bold text-[#3D1212]/50 uppercase tracking-[0.18em] hover:text-[#3D1212] transition-colors">
+                className="hidden md:block text-xs font-bold text-harvics-burgundy/50 uppercase tracking-[0.18em] hover:text-harvics-burgundy transition-colors">
                 Submit Custom RFQ →
               </Link>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-[#C3A35E]/10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-harvics-gold/10">
               {FEATURED.map(p => (
                 <Link
                   key={p.name}
                   href={`/${locale}/harvictrade/rfq?product=${encodeURIComponent(p.name)}&category=${encodeURIComponent(p.category)}`}
-                  className="group bg-white p-7 hover:bg-[#F5F0E8] transition-colors"
+                  className="group bg-white overflow-hidden hover:bg-harvics-cream transition-colors flex flex-col"
                 >
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-[9px] font-bold text-[#C3A35E] bg-[#C3A35E]/10 px-2 py-0.5 uppercase tracking-wider">{p.categorySlug.toUpperCase()}</span>
-                    {p.verified && <span className="text-[9px] font-bold text-emerald-600">✓ Verified</span>}
+                  <div className="h-40 w-full overflow-hidden bg-[#f8f5f0]">
+                    <img 
+                      src={getProductImage(p.name, p.categorySlug)}
+                      alt={p.name} 
+                      className="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-300" 
+                    />
                   </div>
-                  <h3 className="text-sm font-semibold text-[#3D1212] mb-4 leading-snug group-hover:text-[#3D1212] transition-colors min-h-[2.8rem]">{p.name}</h3>
-                  <div className="space-y-1.5 text-[11px] text-[#3D1212]/40 mb-4">
-                    <div className="flex justify-between">
-                      <span>Origin</span>
-                      <span className="font-semibold text-[#3D1212]/70">{p.origin}</span>
+                  <div className="p-7 flex-1 flex flex-col">
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="text-[9px] font-bold text-harvics-gold bg-harvics-gold/10 px-2 py-0.5 uppercase tracking-wider">{p.categorySlug.toUpperCase()}</span>
+                      {p.verified && <span className="text-[9px] font-bold text-emerald-600">✓ Verified</span>}
                     </div>
-                    <div className="flex justify-between">
-                      <span>MOQ</span>
-                      <span className="font-semibold text-[#3D1212]/70">{p.moq}</span>
+                    <h3 className="text-sm font-semibold text-harvics-burgundy mb-4 leading-snug group-hover:text-harvics-burgundy transition-colors min-h-[2.8rem]">{p.name}</h3>
+                    <div className="space-y-1.5 text-[11px] text-harvics-burgundy/40 mb-4 mt-auto">
+                      <div className="flex justify-between">
+                        <span>Origin</span>
+                        <span className="font-semibold text-harvics-burgundy/70">{p.origin}</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>MOQ</span>
+                        <span className="font-semibold text-harvics-burgundy/70">{p.moq}</span>
+                      </div>
                     </div>
-                  </div>
-                  <div className="pt-3 border-t border-[#C3A35E]/10 flex items-center justify-between">
-                    <div className="text-sm font-bold text-[#3D1212]">{p.price}</div>
-                    <span className="text-[9px] font-bold text-[#3D1212]/30 uppercase tracking-wider group-hover:text-[#C3A35E] transition-colors">RFQ →</span>
+                    <div className="pt-3 border-t border-harvics-gold/10 flex items-center justify-between">
+                      <div className="text-sm font-bold text-harvics-burgundy">{p.price}</div>
+                      <span className="text-[9px] font-bold text-harvics-burgundy/30 uppercase tracking-wider group-hover:text-harvics-gold transition-colors">RFQ →</span>
+                    </div>
                   </div>
                 </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ══ MOBILE ═════════════════════════════════════════════════════ */}
+        <section className="max-w-[1100px] mx-auto px-4 py-16 border-b border-harvics-gold/10">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-[10px] font-bold text-harvics-gold uppercase tracking-[0.28em] mb-3">On the go</p>
+              <h2 className="text-3xl font-bold text-harvics-burgundy mb-4" style={{ letterSpacing: '-0.02em' }}>HarvicTrade in your pocket.</h2>
+              <p className="text-harvics-burgundy/60 mb-6">Submit RFQs, compare quotes, and track shipments from anywhere. Full marketplace access from your phone.</p>
+              <Link href={`/${locale}/harvictrade/register`} className="inline-block text-sm font-bold text-harvics-gold hover:text-harvics-burgundy transition-colors">
+                Get early access to the mobile app →
+              </Link>
+            </div>
+            <div className="grid grid-cols-3 md:grid-cols-5 gap-3 mx-auto max-w-[720px]">
+              {[
+                { src: '/assets/harvictrade/mobile/phone-marketplace-list.jpg', label: 'Browse' },
+                { src: '/assets/harvictrade/mobile/phone-rfq-form.jpg', label: 'RFQ' },
+                { src: '/assets/harvictrade/mobile/phone-quotes.jpg', label: 'Quotes' },
+                { src: '/assets/harvictrade/mobile/phone-product-detail.jpg', label: 'Detail' },
+                { src: '/assets/harvictrade/mobile/phone-dashboard.jpg', label: 'Dash' },
+              ].map((m, i) => (
+                <div key={i} className="relative rounded-[2rem] border-[8px] border-[#111] bg-[#111] shadow-xl overflow-hidden aspect-[9/19]">
+                  <img src={m.src} alt={`HarvicTrade ${m.label}`} className="absolute inset-0 w-full h-full object-cover" />
+                  <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-[9px] text-white/70 tracking-widest bg-black/40 px-2 rounded">{m.label}</div>
+                </div>
               ))}
             </div>
           </div>
@@ -183,33 +245,33 @@ export default async function HarvicTradePage({ params }: { params: Promise<{ lo
         {/* ══ HOW IT WORKS ══════════════════════════════════════════════ */}
         <section className="max-w-[1100px] mx-auto px-4 py-20">
           <div className="mb-14">
-            <p className="text-[10px] font-bold text-[#C3A35E] uppercase tracking-[0.28em] mb-3">Process</p>
-            <h2 className="text-3xl font-bold text-[#3D1212]" style={{ letterSpacing: '-0.025em' }}>From Search to Shipment</h2>
+            <p className="text-[10px] font-bold text-harvics-gold uppercase tracking-[0.28em] mb-3">Process</p>
+            <h2 className="text-3xl font-bold text-harvics-burgundy" style={{ letterSpacing: '-0.025em' }}>From Search to Shipment</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-0 border border-[#C3A35E]/12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-0 border border-harvics-gold/12">
             {HOW.map((s, i) => (
-              <div key={s.n} className={`p-10 ${i < 3 ? 'border-b md:border-b-0 md:border-r border-[#C3A35E]/12' : ''}`}>
-                <div className="text-3xl font-bold text-[#C3A35E]/20 mb-6" style={{ letterSpacing: '-0.04em' }}>{s.n}</div>
-                <h3 className="text-sm font-bold text-[#3D1212] mb-3">{s.t}</h3>
-                <p className="text-xs text-[#3D1212]/45 leading-relaxed">{s.d}</p>
+              <div key={s.n} className={`p-10 ${i < 3 ? 'border-b md:border-b-0 md:border-r border-harvics-gold/12' : ''}`}>
+                <div className="text-3xl font-bold text-harvics-gold/20 mb-6" style={{ letterSpacing: '-0.04em' }}>{s.n}</div>
+                <h3 className="text-sm font-bold text-harvics-burgundy mb-3">{s.t}</h3>
+                <p className="text-xs text-harvics-burgundy/45 leading-relaxed">{s.d}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* ══ TRUST ═════════════════════════════════════════════════════ */}
-        <section className="bg-[#0D0D0D] py-20 px-4">
+        <section className="bg-harvics-burgundy py-20 px-4">
           <div className="max-w-[1100px] mx-auto">
             <div className="mb-14 text-center">
-              <p className="text-[10px] font-bold text-[#C3A35E]/60 uppercase tracking-[0.28em] mb-3">Why HarvicTrade</p>
+              <p className="text-[10px] font-bold text-harvics-gold/60 uppercase tracking-[0.28em] mb-3">Why HarvicTrade</p>
               <h2 className="text-3xl font-bold text-white" style={{ letterSpacing: '-0.025em' }}>
                 Enterprise-grade infrastructure<br />for serious global trade.
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5">
               {TRUST.map(t => (
-                <div key={t.label} className="bg-[#0D0D0D] p-10">
-                  <div className="w-6 h-[2px] bg-[#C3A35E]/40 mb-6" />
+                <div key={t.label} className="bg-harvics-burgundy p-10">
+                  <div className="w-6 h-[2px] bg-harvics-gold/40 mb-6" />
                   <h3 className="text-sm font-bold text-white mb-3">{t.label}</h3>
                   <p className="text-xs text-white/30 leading-relaxed">{t.desc}</p>
                 </div>
@@ -221,23 +283,23 @@ export default async function HarvicTradePage({ params }: { params: Promise<{ lo
         {/* ══ CTA ═══════════════════════════════════════════════════════ */}
         <section className="py-24 px-4">
           <div className="max-w-[700px] mx-auto text-center">
-            <h2 className="text-4xl font-bold text-[#3D1212] mb-5" style={{ letterSpacing: '-0.03em' }}>
+            <h2 className="text-4xl font-bold text-harvics-burgundy mb-5" style={{ letterSpacing: '-0.03em' }}>
               Ready to Source Globally?
             </h2>
-            <p className="text-[#3D1212]/50 mb-10 max-w-md mx-auto text-sm leading-relaxed">
+            <p className="text-harvics-burgundy/50 mb-10 max-w-md mx-auto text-sm leading-relaxed">
               Join 1,200+ verified suppliers and buyers on HarvicTrade. Register free and submit your first RFQ today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href={`/${locale}/harvictrade/register`}
-                className="px-10 py-4 bg-[#3D1212] text-white font-bold text-xs uppercase tracking-[0.18em] hover:bg-[#0d0303] transition-colors">
+                className="px-10 py-4 bg-harvics-burgundy text-white font-bold text-xs uppercase tracking-[0.18em] hover:bg-[#0d0303] transition-colors">
                 Register as Buyer
               </Link>
               <Link href={`/${locale}/harvictrade/sell`}
-                className="px-10 py-4 border border-[#C3A35E]/40 text-[#3D1212] font-bold text-xs uppercase tracking-[0.18em] hover:bg-[#C3A35E]/8 transition-colors">
+                className="px-10 py-4 border border-harvics-gold/40 text-harvics-burgundy font-bold text-xs uppercase tracking-[0.18em] hover:bg-harvics-gold/8 transition-colors">
                 Sell on HarvicTrade
               </Link>
               <Link href={`/${locale}/harvictrade/rfq`}
-                className="px-10 py-4 bg-[#C3A35E] text-[#3D1212] font-bold text-xs uppercase tracking-[0.18em] hover:bg-[#d4b46e] transition-colors">
+                className="px-10 py-4 bg-harvics-gold text-harvics-burgundy font-bold text-xs uppercase tracking-[0.18em] hover:bg-[#d4b46e] transition-colors">
                 Submit RFQ
               </Link>
             </div>

@@ -27,12 +27,12 @@ function PinScreen({ onUnlock }: { onUnlock: () => void }) {
   return (
     <main className="min-h-[60vh] flex items-center justify-center py-20" style={{ background: 'linear-gradient(135deg, #3D1212 0%, #1a0a0e 100%)' }}>
       <div className="w-full max-w-md mx-4">
-        <div className="p-10 text-center" style={{ background: '#fff', border: '1px solid rgba(195,163,94,0.3)' }}>
+        <div className="p-10 text-center" style={{ background: '#fff', border: '1px solid rgba(195, 163, 94,0.3)' }}>
           <div className="mb-6">
-            <div className="w-16 h-16 mx-auto flex items-center justify-center mb-4" style={{ background: '#F5F0E8', border: '1px solid rgba(195,163,94,0.3)' }}>
+            <div className="w-16 h-16 mx-auto flex items-center justify-center mb-4" style={{ background: 'var(--harvics-cream)', border: '1px solid rgba(195, 163, 94,0.3)' }}>
               <span className="text-2xl">🔐</span>
             </div>
-            <h1 className="text-2xl font-bold mb-2" style={{ color: '#3D1212' }}>Harvics App Store</h1>
+            <h1 className="text-2xl font-bold mb-2" style={{ color: 'var(--harvics-burgundy)' }}>Harvics App Store</h1>
             <p className="text-sm" style={{ color: '#9a8070' }}>Enter the access code to continue</p>
           </div>
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -44,11 +44,11 @@ function PinScreen({ onUnlock }: { onUnlock: () => void }) {
                 placeholder="Access Code"
                 autoFocus
                 className="w-full px-4 py-3 text-center text-lg tracking-[0.15em] font-mono outline-none transition-all"
-                style={{ background: '#F5F0E8', border: error ? '2px solid #e53e3e' : '1px solid rgba(195,163,94,0.3)', color: '#3D1212' }}
+                style={{ background: 'var(--harvics-cream)', border: error ? '2px solid #e53e3e' : '1px solid rgba(195, 163, 94,0.3)', color: 'var(--harvics-burgundy)' }}
               />
               {error && <p className="text-xs mt-2" style={{ color: '#e53e3e' }}>Invalid code. Please try again.</p>}
             </div>
-            <button type="submit" className="w-full py-3 text-sm font-bold tracking-[0.12em] uppercase transition-all duration-300 hover:opacity-90" style={{ background: '#3D1212', color: '#fff' }}>
+            <button type="submit" className="w-full py-3 text-sm font-bold tracking-[0.12em] uppercase transition-all duration-300 hover:opacity-90" style={{ background: 'var(--harvics-burgundy)', color: '#fff' }}>
               Unlock Apps →
             </button>
           </form>
@@ -86,6 +86,22 @@ interface AppsPageClientProps {
   locale: string
 }
 
+/** Public marketing pages — live CTAs land here, not straight into the product shell. */
+const APP_LANDING_SLUG: Record<string, string> = {
+  harvoice: 'harvoice',
+  harvyx: 'harvyx',
+  hpay: 'hpay',
+  'harvics-event-os': 'event-os',
+  'harvics-os': 'harvics-os',
+  'vatify-os': 'vatify',
+}
+
+function liveAppHref(appId: string, fallbackUrl: string, locale: string): string {
+  const slug = APP_LANDING_SLUG[appId]
+  if (slug) return `/${locale}/apps/${slug}`
+  return fallbackUrl
+}
+
 /* ─────────────────────────────────────────────
    APP CATALOGUE DATA
 ───────────────────────────────────────────── */
@@ -100,8 +116,8 @@ const APPS = [
     status: 'live' as 'live' | 'preview' | 'coming-soon',
     badge: 'LIVE',
     icon: '👥',
-    color: '#3D1212',
-    accentColor: '#C3A35E',
+    color: 'var(--harvics-burgundy)',
+    accentColor: 'var(--harvics-gold)',
     url: 'https://www.harvichr.eu',
     features: [
       'Recruitment & ATS',
@@ -136,7 +152,7 @@ const APPS = [
     badge: 'BETA',
     icon: '🎪',
     color: '#1A2E4A',
-    accentColor: '#C3A35E',
+    accentColor: 'var(--harvics-gold)',
     url: '/apps/event-os/index.html',
     features: [
       'AI Event Concierge',
@@ -167,7 +183,7 @@ const APPS = [
     badge: 'BETA',
     icon: '🚢',
     color: '#1C3A2A',
-    accentColor: '#C3A35E',
+    accentColor: 'var(--harvics-gold)',
     url: '/apps/harvics-os/index.html',
     features: [
       'Live Shipment Tracking',
@@ -198,7 +214,7 @@ const APPS = [
     badge: 'BETA',
     icon: '🧾',
     color: '#2D1F4A',
-    accentColor: '#C3A35E',
+    accentColor: 'var(--harvics-gold)',
     url: '/apps/vatify/index.html',
     features: [
       'Expense Tracking',
@@ -229,7 +245,7 @@ const APPS = [
     badge: 'BETA',
     icon: '🎙️',
     color: '#1A2A3A',
-    accentColor: '#C3A35E',
+    accentColor: 'var(--harvics-gold)',
     url: '/apps/harvoice/index.html',
     features: [
       'AI Chat Assistant',
@@ -260,8 +276,8 @@ const APPS = [
     badge: 'LIVE',
     icon: '🎯',
     color: '#1A2A4A',
-    accentColor: '#C3A35E',
-    url: 'https://harvyx.harvics.com',
+    accentColor: 'var(--harvics-gold)',
+    url: '/apps/harvyx',
     features: [
       'Lead Discovery Engine',
       'AI Lead Scoring',
@@ -295,7 +311,7 @@ const APPS = [
     badge: 'SUBMIT INTEREST',
     icon: '💳',
     color: '#1A3A5C',
-    accentColor: '#C3A35E',
+    accentColor: 'var(--harvics-gold)',
     url: '#',
     features: [
       'Multi-Currency Wallets',
@@ -326,7 +342,7 @@ const APPS = [
     badge: 'SUBMIT INTEREST',
     icon: '📈',
     color: '#1F4D2B',
-    accentColor: '#C3A35E',
+    accentColor: 'var(--harvics-gold)',
     url: '#',
     features: [
       'AI Territory Planner',
@@ -358,7 +374,7 @@ function StatusBadge({ status, badge }: { status: 'live' | 'preview' | 'coming-s
     return (
       <span
         className="inline-flex items-center gap-1.5 px-3 py-1 text-[10px] font-bold tracking-[0.12em] uppercase"
-        style={{ background: '#C3A35E', color: '#fff' }}
+        style={{ background: 'var(--harvics-gold)', color: '#fff' }}
       >
         <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse inline-block" />
         {badge}
@@ -369,9 +385,9 @@ function StatusBadge({ status, badge }: { status: 'live' | 'preview' | 'coming-s
     return (
       <span
         className="inline-flex items-center gap-1.5 px-3 py-1 text-[10px] font-bold tracking-[0.12em] uppercase"
-        style={{ background: 'rgba(195,163,94,0.15)', color: '#C3A35E', border: '1px solid rgba(195,163,94,0.4)' }}
+        style={{ background: 'rgba(195, 163, 94,0.15)', color: 'var(--harvics-gold)', border: '1px solid rgba(195, 163, 94,0.4)' }}
       >
-        <span className="w-1.5 h-1.5 rounded-full bg-[#C3A35E] animate-pulse inline-block" />
+        <span className="w-1.5 h-1.5 rounded-full bg-harvics-gold animate-pulse inline-block" />
         {badge}
       </span>
     )
@@ -379,7 +395,7 @@ function StatusBadge({ status, badge }: { status: 'live' | 'preview' | 'coming-s
   return (
     <span
       className="inline-flex items-center px-3 py-1 text-[10px] font-bold tracking-[0.12em] uppercase"
-      style={{ background: 'rgba(26, 5, 5, 0.08)', color: '#3D1212', border: '1px solid rgba(26, 5, 5, 0.2)' }}
+      style={{ background: 'rgba(61, 18, 18, 0.08)', color: 'var(--harvics-burgundy)', border: '1px solid rgba(61, 18, 18, 0.2)' }}
     >
       {badge}
     </span>
@@ -394,7 +410,7 @@ function AppCard({ app, locale, onClick }: { app: typeof APPS[0]; locale: string
   return (
     <div
       className="group relative bg-white cursor-pointer overflow-hidden transition-all duration-500"
-      style={{ border: '1px solid rgba(195,163,94,0.15)' }}
+      style={{ border: '1px solid rgba(195, 163, 94,0.15)' }}
       onClick={onClick}
     >
       {/* Hero Image */}
@@ -428,7 +444,7 @@ function AppCard({ app, locale, onClick }: { app: typeof APPS[0]; locale: string
       <div className="p-6">
         <p
           className="text-xs font-semibold tracking-[0.1em] uppercase mb-2"
-          style={{ color: '#C3A35E' }}
+          style={{ color: 'var(--harvics-gold)' }}
         >
           {app.tagline}
         </p>
@@ -438,12 +454,12 @@ function AppCard({ app, locale, onClick }: { app: typeof APPS[0]; locale: string
 
         {/* Stats row */}
         <div
-          className="grid grid-cols-3 divide-x divide-[rgba(195,163,94,0.15)] mb-5"
-          style={{ borderTop: '1px solid rgba(195,163,94,0.15)', borderBottom: '1px solid rgba(195,163,94,0.15)' }}
+          className="grid grid-cols-3 divide-x divide-[rgba(195, 163, 94,0.15)] mb-5"
+          style={{ borderTop: '1px solid rgba(195, 163, 94,0.15)', borderBottom: '1px solid rgba(195, 163, 94,0.15)' }}
         >
           {app.stats.map((s) => (
             <div key={s.label} className="px-3 py-3 text-center">
-              <div className="text-lg font-bold" style={{ color: '#3D1212' }}>{s.value}</div>
+              <div className="text-lg font-bold" style={{ color: 'var(--harvics-burgundy)' }}>{s.value}</div>
               <div className="text-[10px] tracking-[0.06em] uppercase" style={{ color: '#9a8070' }}>{s.label}</div>
             </div>
           ))}
@@ -455,7 +471,7 @@ function AppCard({ app, locale, onClick }: { app: typeof APPS[0]; locale: string
             <span
               key={f}
               className="text-[10px] px-2 py-1 tracking-[0.04em]"
-              style={{ background: '#F5F0E8', color: '#3D1212', border: '1px solid rgba(26, 5, 5, 0.1)' }}
+              style={{ background: 'var(--harvics-cream)', color: 'var(--harvics-burgundy)', border: '1px solid rgba(61, 18, 18, 0.1)' }}
             >
               {f}
             </span>
@@ -463,7 +479,7 @@ function AppCard({ app, locale, onClick }: { app: typeof APPS[0]; locale: string
           {app.features.length > 4 && (
             <span
               className="text-[10px] px-2 py-1 tracking-[0.04em]"
-              style={{ background: 'rgba(195,163,94,0.1)', color: '#C3A35E' }}
+              style={{ background: 'rgba(195, 163, 94,0.1)', color: 'var(--harvics-gold)' }}
             >
               +{app.features.length - 4} more
             </span>
@@ -474,27 +490,28 @@ function AppCard({ app, locale, onClick }: { app: typeof APPS[0]; locale: string
         {app.status === 'live' ? (
           <button
             className="w-full py-3 text-xs font-bold tracking-[0.1em] uppercase transition-all duration-300"
-            style={{ background: '#3D1212', color: '#fff' }}
+            style={{ background: 'var(--harvics-burgundy)', color: '#fff' }}
             onClick={(e) => {
               e.stopPropagation()
-              if (app.url.startsWith('http')) {
-                window.open(app.url, '_blank', 'noopener,noreferrer')
+              const href = liveAppHref(app.id, app.url, locale)
+              if (href.startsWith('http')) {
+                window.open(href, '_blank', 'noopener,noreferrer')
               } else {
-                window.location.href = app.url
+                window.location.href = href
               }
             }}
           >
-            {`Launch ${app.name} →`}
+            {`View ${app.name} →`}
           </button>
         ) : app.status === 'preview' ? (
           <div
             className="w-full overflow-hidden"
-            style={{ border: '1px solid rgba(195,163,94,0.35)' }}
+            style={{ border: '1px solid rgba(195, 163, 94,0.35)' }}
           >
-            <div className="py-2 text-center text-[10px] font-bold tracking-[0.12em] uppercase" style={{ color: '#C3A35E', background: 'rgba(195,163,94,0.06)' }}>
+            <div className="py-2 text-center text-[10px] font-bold tracking-[0.12em] uppercase" style={{ color: 'var(--harvics-gold)', background: 'rgba(195, 163, 94,0.06)' }}>
               Launching In
             </div>
-            <div className="grid grid-cols-4 divide-x divide-[rgba(195,163,94,0.2)]">
+            <div className="grid grid-cols-4 divide-x divide-[rgba(195, 163, 94,0.2)]">
               {[
                 { v: countdown.days, l: 'Days' },
                 { v: countdown.hours, l: 'Hrs' },
@@ -502,7 +519,7 @@ function AppCard({ app, locale, onClick }: { app: typeof APPS[0]; locale: string
                 { v: countdown.seconds, l: 'Sec' },
               ].map(({ v, l }) => (
                 <div key={l} className="py-2 text-center">
-                  <div className="text-base font-bold tabular-nums" style={{ color: '#3D1212' }}>{String(v).padStart(2, '0')}</div>
+                  <div className="text-base font-bold tabular-nums" style={{ color: 'var(--harvics-burgundy)' }}>{String(v).padStart(2, '0')}</div>
                   <div className="text-[9px] tracking-[0.06em] uppercase" style={{ color: '#9a8070' }}>{l}</div>
                 </div>
               ))}
@@ -511,7 +528,7 @@ function AppCard({ app, locale, onClick }: { app: typeof APPS[0]; locale: string
         ) : (
           <button
             className="w-full py-3 text-xs font-bold tracking-[0.1em] uppercase transition-all duration-300"
-            style={{ background: 'transparent', border: '1px solid #3D1212', color: '#3D1212' }}
+            style={{ background: 'transparent', border: '1px solid #3D1212', color: 'var(--harvics-burgundy)' }}
             onClick={() => onClick()}
           >
             Submit Your Interest →
@@ -528,11 +545,11 @@ function AppCard({ app, locale, onClick }: { app: typeof APPS[0]; locale: string
 function ModalCountdown() {
   const countdown = useCountdown()
   return (
-    <div style={{ border: '1px solid rgba(195,163,94,0.35)' }}>
-      <div className="py-2 text-center text-[10px] font-bold tracking-[0.14em] uppercase" style={{ color: '#C3A35E', background: 'rgba(195,163,94,0.06)' }}>
+    <div style={{ border: '1px solid rgba(195, 163, 94,0.35)' }}>
+      <div className="py-2 text-center text-[10px] font-bold tracking-[0.14em] uppercase" style={{ color: 'var(--harvics-gold)', background: 'rgba(195, 163, 94,0.06)' }}>
         Early Access Opens In
       </div>
-      <div className="grid grid-cols-4 divide-x divide-[rgba(195,163,94,0.2)]">
+      <div className="grid grid-cols-4 divide-x divide-[rgba(195, 163, 94,0.2)]">
         {[
           { v: countdown.days, l: 'Days' },
           { v: countdown.hours, l: 'Hours' },
@@ -540,7 +557,7 @@ function ModalCountdown() {
           { v: countdown.seconds, l: 'Sec' },
         ].map(({ v, l }) => (
           <div key={l} className="py-4 text-center">
-            <div className="text-2xl font-bold tabular-nums" style={{ color: '#3D1212' }}>{String(v).padStart(2, '0')}</div>
+            <div className="text-2xl font-bold tabular-nums" style={{ color: 'var(--harvics-burgundy)' }}>{String(v).padStart(2, '0')}</div>
             <div className="text-[10px] tracking-[0.06em] uppercase mt-1" style={{ color: '#9a8070' }}>{l}</div>
           </div>
         ))}
@@ -555,7 +572,15 @@ function ModalCountdown() {
 /* ─────────────────────────────────────────────
    APP DETAIL MODAL
 ───────────────────────────────────────────── */
-function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }) {
+function AppModal({
+  app,
+  locale,
+  onClose,
+}: {
+  app: typeof APPS[0]
+  locale: string
+  onClose: () => void
+}) {
   return (
     <div
       className="fixed inset-0 z-[9999] flex items-center justify-center p-4"
@@ -565,7 +590,7 @@ function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }
       <div
         className="relative bg-white w-full max-w-4xl max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
-        style={{ border: '1px solid rgba(195,163,94,0.3)' }}
+        style={{ border: '1px solid rgba(195, 163, 94,0.3)' }}
       >
         {/* Hero */}
         <div className="relative h-[280px] overflow-hidden">
@@ -599,7 +624,7 @@ function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }
           {/* Left: details */}
           <div className="lg:col-span-2 space-y-7">
             <div>
-              <h3 className="text-xs font-bold tracking-[0.12em] uppercase mb-2" style={{ color: '#C3A35E' }}>
+              <h3 className="text-xs font-bold tracking-[0.12em] uppercase mb-2" style={{ color: 'var(--harvics-gold)' }}>
                 About
               </h3>
               <p className="text-sm leading-relaxed" style={{ color: '#4a3728' }}>
@@ -609,7 +634,7 @@ function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }
 
             {/* Stats */}
             <div>
-              <h3 className="text-xs font-bold tracking-[0.12em] uppercase mb-3" style={{ color: '#C3A35E' }}>
+              <h3 className="text-xs font-bold tracking-[0.12em] uppercase mb-3" style={{ color: 'var(--harvics-gold)' }}>
                 Key Numbers
               </h3>
               <div className="grid grid-cols-3 gap-4">
@@ -617,9 +642,9 @@ function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }
                   <div
                     key={s.label}
                     className="p-4 text-center"
-                    style={{ background: '#F5F0E8', border: '1px solid rgba(195,163,94,0.2)' }}
+                    style={{ background: 'var(--harvics-cream)', border: '1px solid rgba(195, 163, 94,0.2)' }}
                   >
-                    <div className="text-2xl font-bold" style={{ color: '#3D1212' }}>{s.value}</div>
+                    <div className="text-2xl font-bold" style={{ color: 'var(--harvics-burgundy)' }}>{s.value}</div>
                     <div className="text-[10px] tracking-[0.06em] uppercase mt-1" style={{ color: '#9a8070' }}>{s.label}</div>
                   </div>
                 ))}
@@ -628,13 +653,13 @@ function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }
 
             {/* Full features */}
             <div>
-              <h3 className="text-xs font-bold tracking-[0.12em] uppercase mb-3" style={{ color: '#C3A35E' }}>
+              <h3 className="text-xs font-bold tracking-[0.12em] uppercase mb-3" style={{ color: 'var(--harvics-gold)' }}>
                 All Features
               </h3>
               <div className="grid grid-cols-2 gap-2">
                 {app.features.map((f) => (
                   <div key={f} className="flex items-center gap-2 text-sm" style={{ color: '#4a3728' }}>
-                    <span style={{ color: '#C3A35E' }}>✓</span>
+                    <span style={{ color: 'var(--harvics-gold)' }}>✓</span>
                     {f}
                   </div>
                 ))}
@@ -646,7 +671,7 @@ function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }
           <div className="space-y-5">
             {app.pricing.length > 0 ? (
               <div>
-                <h3 className="text-xs font-bold tracking-[0.12em] uppercase mb-4" style={{ color: '#C3A35E' }}>
+                <h3 className="text-xs font-bold tracking-[0.12em] uppercase mb-4" style={{ color: 'var(--harvics-gold)' }}>
                   Pricing
                 </h3>
                 <div className="space-y-3">
@@ -655,19 +680,19 @@ function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }
                       key={plan.tier}
                       className="p-4"
                       style={{
-                        background: plan.highlight ? '#3D1212' : '#F5F0E8',
-                        border: plan.highlight ? 'none' : '1px solid rgba(195,163,94,0.2)',
+                        background: plan.highlight ? 'var(--harvics-burgundy)' : 'var(--harvics-cream)',
+                        border: plan.highlight ? 'none' : '1px solid rgba(195, 163, 94,0.2)',
                       }}
                     >
                       <div
                         className="text-xs font-bold tracking-[0.1em] uppercase"
-                        style={{ color: plan.highlight ? '#C3A35E' : '#9a8070' }}
+                        style={{ color: plan.highlight ? 'var(--harvics-gold)' : '#9a8070' }}
                       >
                         {plan.tier}
                       </div>
                       <div
                         className="text-2xl font-bold mt-1"
-                        style={{ color: plan.highlight ? '#fff' : '#3D1212' }}
+                        style={{ color: plan.highlight ? '#fff' : 'var(--harvics-burgundy)' }}
                       >
                         {plan.price}
                       </div>
@@ -684,9 +709,9 @@ function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }
             ) : (
               <div
                 className="p-5 text-center"
-                style={{ background: '#F5F0E8', border: '1px solid rgba(195,163,94,0.2)' }}
+                style={{ background: 'var(--harvics-cream)', border: '1px solid rgba(195, 163, 94,0.2)' }}
               >
-                <div className="text-xs font-bold tracking-[0.1em] uppercase mb-2" style={{ color: '#C3A35E' }}>
+                <div className="text-xs font-bold tracking-[0.1em] uppercase mb-2" style={{ color: 'var(--harvics-gold)' }}>
                   Pricing
                 </div>
                 <p className="text-sm" style={{ color: '#9a8070' }}>
@@ -698,19 +723,21 @@ function AppModal({ app, onClose }: { app: typeof APPS[0]; onClose: () => void }
             {/* Launch / Countdown / Submit Interest */}
             {app.status === 'live' ? (
               <a
-                href={app.url}
-                {...(app.url.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                href={liveAppHref(app.id, app.url, locale)}
+                {...(liveAppHref(app.id, app.url, locale).startsWith('http')
+                  ? { target: '_blank', rel: 'noopener noreferrer' }
+                  : {})}
                 className="block w-full py-4 text-center text-sm font-bold tracking-[0.1em] uppercase transition-all duration-300 hover:opacity-90"
-                style={{ background: '#3D1212', color: '#fff' }}
+                style={{ background: 'var(--harvics-burgundy)', color: '#fff' }}
               >
-                Launch {app.name} →
+                View {app.name} →
               </a>
             ) : app.status === 'preview' ? (
               <ModalCountdown />
             ) : (
               <button
                 className="w-full py-4 text-sm font-bold tracking-[0.1em] uppercase"
-                style={{ background: '#3D1212', color: '#fff' }}
+                style={{ background: 'var(--harvics-burgundy)', color: '#fff' }}
               >
                 Submit Your Interest →
               </button>
@@ -749,7 +776,7 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
   }
 
   return (
-    <main style={{ background: '#F5F0E8', minHeight: '100vh' }}>
+    <main style={{ background: 'var(--harvics-cream)', minHeight: '100vh' }}>
       {/* ── HERO ── */}
       <section
         className="relative py-24 overflow-hidden"
@@ -761,7 +788,7 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
         <div
           className="absolute inset-0 opacity-5"
           style={{
-            backgroundImage: 'linear-gradient(rgba(195,163,94,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(195,163,94,0.5) 1px, transparent 1px)',
+            backgroundImage: 'linear-gradient(rgba(195, 163, 94,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(195, 163, 94,0.5) 1px, transparent 1px)',
             backgroundSize: '60px 60px',
           }}
         />
@@ -769,16 +796,16 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
         <div className="relative max-w-[1200px] mx-auto px-6 text-center">
           {/* Eyebrow */}
           <div className="inline-flex items-center gap-3 mb-6">
-            <span className="h-px w-12" style={{ background: '#C3A35E' }} />
-            <span className="text-[11px] font-bold tracking-[0.2em] uppercase" style={{ color: '#C3A35E' }}>
+            <span className="h-px w-12" style={{ background: 'var(--harvics-gold)' }} />
+            <span className="text-[11px] font-bold tracking-[0.2em] uppercase" style={{ color: 'var(--harvics-gold)' }}>
               Harvics App Store
             </span>
-            <span className="h-px w-12" style={{ background: '#C3A35E' }} />
+            <span className="h-px w-12" style={{ background: 'var(--harvics-gold)' }} />
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-5 leading-tight">
             Enterprise Apps.<br />
-            <span style={{ color: '#C3A35E' }}>One Platform.</span>
+            <span style={{ color: 'var(--harvics-gold)' }}>One Platform.</span>
           </h1>
 
           <p className="text-white/60 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
@@ -794,7 +821,7 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
               { value: '1', label: 'Unified Platform' },
             ].map((s) => (
               <div key={s.label} className="px-8 py-4">
-                <div className="text-2xl font-bold" style={{ color: '#C3A35E' }}>{s.value}</div>
+                <div className="text-2xl font-bold" style={{ color: 'var(--harvics-gold)' }}>{s.value}</div>
                 <div className="text-white/50 text-xs tracking-[0.08em] uppercase mt-1">{s.label}</div>
               </div>
             ))}
@@ -805,7 +832,7 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
       {/* ── FILTER BAR ── */}
       <section
         className="sticky top-0 z-40 border-b"
-        style={{ background: '#fff', borderColor: 'rgba(195,163,94,0.2)' }}
+        style={{ background: '#fff', borderColor: 'rgba(195, 163, 94,0.2)' }}
       >
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="flex items-center gap-1 overflow-x-auto py-3 scrollbar-hide">
@@ -815,9 +842,9 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
                 onClick={() => setActiveCategory(cat)}
                 className="whitespace-nowrap px-4 py-2 text-xs font-bold tracking-[0.08em] uppercase transition-all duration-200"
                 style={{
-                  background: activeCategory === cat ? '#3D1212' : 'transparent',
-                  color: activeCategory === cat ? '#fff' : '#3D1212',
-                  border: activeCategory === cat ? 'none' : '1px solid rgba(26, 5, 5, 0.2)',
+                  background: activeCategory === cat ? 'var(--harvics-burgundy)' : 'transparent',
+                  color: activeCategory === cat ? '#fff' : 'var(--harvics-burgundy)',
+                  border: activeCategory === cat ? 'none' : '1px solid rgba(61, 18, 18, 0.2)',
                 }}
               >
                 {cat}
@@ -832,7 +859,7 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
         <section className="max-w-[1200px] mx-auto px-6 pt-12 pb-4">
           <div
             className="relative overflow-hidden cursor-pointer group"
-            style={{ border: '1px solid rgba(195,163,94,0.3)' }}
+            style={{ border: '1px solid rgba(195, 163, 94,0.3)' }}
             onClick={() => setSelectedApp(APPS[0])}
           >
             <div className="absolute inset-0">
@@ -843,7 +870,7 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
               />
               <div
                 className="absolute inset-0"
-                style={{ background: 'linear-gradient(90deg, rgba(26, 5, 5, 0.95) 45%, rgba(26, 5, 5, 0.4) 100%)' }}
+                style={{ background: 'linear-gradient(90deg, rgba(61, 18, 18, 0.95) 45%, rgba(61, 18, 18, 0.4) 100%)' }}
               />
             </div>
 
@@ -868,7 +895,7 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
                     <span
                       key={f}
                       className="text-[10px] px-2 py-1 uppercase tracking-[0.06em]"
-                      style={{ background: 'rgba(195,163,94,0.2)', color: '#C3A35E', border: '1px solid rgba(195,163,94,0.3)' }}
+                      style={{ background: 'rgba(195, 163, 94,0.2)', color: 'var(--harvics-gold)', border: '1px solid rgba(195, 163, 94,0.3)' }}
                     >
                       {f}
                     </span>
@@ -882,7 +909,7 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-center py-4 text-sm font-bold tracking-[0.12em] uppercase transition-all duration-300 hover:opacity-90"
-                  style={{ background: '#C3A35E', color: '#fff' }}
+                  style={{ background: 'var(--harvics-gold)', color: '#fff' }}
                   onClick={(e) => e.stopPropagation()}
                 >
                   Launch HarvicHR →
@@ -935,7 +962,7 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
       {/* ── PLATFORM CALLOUT ── */}
       <section
         className="border-t"
-        style={{ background: '#fff', borderColor: 'rgba(195,163,94,0.15)' }}
+        style={{ background: '#fff', borderColor: 'rgba(195, 163, 94,0.15)' }}
       >
         <div className="max-w-[1200px] mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-10">
           {[
@@ -957,7 +984,7 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
           ].map((item) => (
             <div key={item.title} className="text-center">
               <div className="text-4xl mb-4">{item.icon}</div>
-              <h3 className="text-base font-bold mb-2" style={{ color: '#3D1212' }}>{item.title}</h3>
+              <h3 className="text-base font-bold mb-2" style={{ color: 'var(--harvics-burgundy)' }}>{item.title}</h3>
               <p className="text-sm leading-relaxed" style={{ color: '#9a8070' }}>{item.desc}</p>
             </div>
           ))}
@@ -980,7 +1007,7 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
           <Link
             href={`/${locale}/contact`}
             className="inline-block px-10 py-4 text-sm font-bold tracking-[0.12em] uppercase transition-all duration-300 hover:opacity-90"
-            style={{ background: '#C3A35E', color: '#fff' }}
+            style={{ background: 'var(--harvics-gold)', color: '#fff' }}
           >
             Talk to Us →
           </Link>
@@ -989,7 +1016,7 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
 
       {/* ── MODAL ── */}
       {selectedApp && (
-        <AppModal app={selectedApp} onClose={() => setSelectedApp(null)} />
+        <AppModal app={selectedApp} locale={locale} onClose={() => setSelectedApp(null)} />
       )}
     </main>
   )

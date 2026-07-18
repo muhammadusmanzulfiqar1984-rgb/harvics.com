@@ -84,7 +84,7 @@ export default function AICopilotWidget() {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 w-14 h-14 bg-gradient-to-br from-[#C3A35E] to-[#a68947] text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 flex items-center justify-center z-50"
+          className="fixed bottom-6 right-6 w-14 h-14 bg-gradient-to-br from-harvics-gold to-[#a68947] text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 flex items-center justify-center z-50"
           aria-label="Open AI Copilot"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -97,7 +97,7 @@ export default function AICopilotWidget() {
       {isOpen && (
         <div className="fixed bottom-6 right-6 w-96 h-[600px] flex flex-col bg-white/95 backdrop-blur-xl border border-gray-200 rounded-2xl shadow-2xl z-50 overflow-hidden">
           {/* Header */}
-          <div className="flex items-center justify-between px-4 py-3 bg-gradient-to-r from-[#C3A35E] to-[#a68947] text-white">
+          <div className="flex items-center justify-between px-4 py-3 bg-gradient-to-r from-harvics-gold to-[#a68947] text-white">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
               <h3 className="font-semibold text-sm">HARVICS AI Copilot</h3>
@@ -117,8 +117,8 @@ export default function AICopilotWidget() {
           <div className="flex-1 overflow-y-auto p-4 space-y-4">
             {messages.length === 0 && (
               <div className="text-center text-gray-500 mt-8">
-                <div className="w-16 h-16 bg-gradient-to-br from-[#C3A35E]/20 to-[#a68947]/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <svg className="w-8 h-8 text-[#C3A35E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-16 h-16 bg-gradient-to-br from-harvics-gold/20 to-[#a68947]/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <svg className="w-8 h-8 text-harvics-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                   </svg>
                 </div>
@@ -134,7 +134,7 @@ export default function AICopilotWidget() {
                 <div
                   className={`max-w-[80%] rounded-2xl px-4 py-2 ${
                     msg.role === 'user'
-                      ? 'bg-gradient-to-br from-[#C3A35E] to-[#a68947] text-white'
+                      ? 'bg-gradient-to-br from-harvics-gold to-[#a68947] text-white'
                       : 'bg-gray-100 text-gray-800 border border-gray-200'
                   }`}
                 >
@@ -150,9 +150,9 @@ export default function AICopilotWidget() {
               <div className="flex justify-start">
                 <div className="bg-gray-100 border border-gray-200 rounded-2xl px-4 py-3">
                   <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-[#C3A35E] rounded-full animate-bounce"></div>
-                    <div className="w-2 h-2 bg-[#C3A35E] rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-                    <div className="w-2 h-2 bg-[#C3A35E] rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
+                    <div className="w-2 h-2 bg-harvics-gold rounded-full animate-bounce"></div>
+                    <div className="w-2 h-2 bg-harvics-gold rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+                    <div className="w-2 h-2 bg-harvics-gold rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
                   </div>
                 </div>
               </div>
@@ -171,13 +171,13 @@ export default function AICopilotWidget() {
                 placeholder="Ask me anything..."
                 rows={1}
                 disabled={isLoading}
-                className="flex-1 resize-none rounded-xl border border-gray-300 px-4 py-2 text-sm focus:outline-none focus:border-[#C3A35E] focus:ring-1 focus:ring-[#C3A35E] disabled:opacity-50 disabled:cursor-not-allowed"
+                className="flex-1 resize-none rounded-xl border border-gray-300 px-4 py-2 text-sm focus:outline-none focus:border-harvics-gold focus:ring-1 focus:ring-harvics-gold disabled:opacity-50 disabled:cursor-not-allowed"
                 style={{ maxHeight: '100px' }}
               />
               <button
                 onClick={sendMessage}
                 disabled={!input.trim() || isLoading}
-                className="bg-gradient-to-br from-[#C3A35E] to-[#a68947] text-white rounded-xl px-4 py-2 hover:shadow-md transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+                className="bg-gradient-to-br from-harvics-gold to-[#a68947] text-white rounded-xl px-4 py-2 hover:shadow-md transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
                 aria-label="Send message"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -19,7 +19,7 @@ export default function InvestorLoginPage() {
     <main className="min-h-screen bg-gray-100">
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="py-20 px-6 bg-[#6B1F2B] text-center pb-32">
+        <section className="py-20 px-6 bg-harvics-burgundy text-center pb-32">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-serif font-bold text-white mb-6">
               {t('login.title')}
@@ -31,7 +31,7 @@ export default function InvestorLoginPage() {
         </section>
 
         {/* Stats Bar */}
-        <section className="bg-[#5a1a24] border-b border-[#C3A35E]/20">
+        <section className="bg-[#5a1a24] border-b border-harvics-gold/20">
           <div className="max-w-[1200px] mx-auto px-4 py-5">
             <AnimatedStats
               stats={[
@@ -56,8 +56,8 @@ export default function InvestorLoginPage() {
             {/* Additional Info - Light Theme */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="p-8 bg-white border border-gray-100 shadow-sm text-center hover:shadow-md transition-shadow">
-                <div className="text-4xl mb-4 bg-[#6B1F2B]/5 w-16 h-16 rounded-full flex items-center justify-center mx-auto">📊</div>
-                <h3 className="text-xl font-bold text-[#6B1F2B] mb-2 font-serif">
+                <div className="text-4xl mb-4 bg-harvics-burgundy/5 w-16 h-16 rounded-full flex items-center justify-center mx-auto">📊</div>
+                <h3 className="text-xl font-bold text-harvics-burgundy mb-2 font-serif">
                   {t('login.features.financials.title')}
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -65,8 +65,8 @@ export default function InvestorLoginPage() {
                 </p>
               </div>
               <div className="p-8 bg-white border border-gray-100 shadow-sm text-center hover:shadow-md transition-shadow">
-                <div className="text-4xl mb-4 bg-[#6B1F2B]/5 w-16 h-16 rounded-full flex items-center justify-center mx-auto">📈</div>
-                <h3 className="text-xl font-bold text-[#6B1F2B] mb-2 font-serif">
+                <div className="text-4xl mb-4 bg-harvics-burgundy/5 w-16 h-16 rounded-full flex items-center justify-center mx-auto">📈</div>
+                <h3 className="text-xl font-bold text-harvics-burgundy mb-2 font-serif">
                   {t('login.features.reports.title')}
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -74,8 +74,8 @@ export default function InvestorLoginPage() {
                 </p>
               </div>
               <div className="p-8 bg-white border border-gray-100 shadow-sm text-center hover:shadow-md transition-shadow">
-                <div className="text-4xl mb-4 bg-[#6B1F2B]/5 w-16 h-16 rounded-full flex items-center justify-center mx-auto">💼</div>
-                <h3 className="text-xl font-bold text-[#6B1F2B] mb-2 font-serif">
+                <div className="text-4xl mb-4 bg-harvics-burgundy/5 w-16 h-16 rounded-full flex items-center justify-center mx-auto">💼</div>
+                <h3 className="text-xl font-bold text-harvics-burgundy mb-2 font-serif">
                   {t('login.features.portfolio.title')}
                 </h3>
                 <p className="text-gray-600 text-sm">

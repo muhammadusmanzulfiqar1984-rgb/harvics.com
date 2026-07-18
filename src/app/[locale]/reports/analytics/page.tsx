@@ -19,7 +19,7 @@ export default async function AnalyticsReportsPage() {
       
       <main className="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-[#6B1F2B]">Analytics Reports</h1>
+          <h1 className="text-3xl font-bold text-harvics-burgundy">Analytics Reports</h1>
           <p className="text-gray-600 mt-2">Comprehensive overview of system performance and market metrics.</p>
         </div>
 
@@ -54,14 +54,14 @@ export default async function AnalyticsReportsPage() {
         {/* Charts Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <div className="bg-white p-6 shadow border border-gray-200">
-            <h3 className="text-xl font-bold text-[#6B1F2B] mb-4">Revenue Trend</h3>
+            <h3 className="text-xl font-bold text-harvics-burgundy mb-4">Revenue Trend</h3>
             <div className="h-64 bg-gray-50 rounded flex items-center justify-center text-gray-400">
               [Revenue Chart Visualization]
             </div>
           </div>
 
           <div className="bg-white p-6 shadow border border-gray-200">
-            <h3 className="text-xl font-bold text-[#6B1F2B] mb-4">User Growth</h3>
+            <h3 className="text-xl font-bold text-harvics-burgundy mb-4">User Growth</h3>
             <div className="h-64 bg-gray-50 rounded flex items-center justify-center text-gray-400">
               [User Growth Chart Visualization]
             </div>
@@ -69,19 +69,19 @@ export default async function AnalyticsReportsPage() {
         </div>
 
         {/* Detailed Report Table */}
-        <div className="mt-8 bg-white shadow border border-[#C3A35E]/30 overflow-hidden">
-          <div className="px-6 py-4 border-b border-[#C3A35E]/20 bg-[#6B1F2B]/5">
-            <h3 className="text-lg font-bold text-[#6B1F2B]">Recent Reports</h3>
+        <div className="mt-8 bg-white shadow border border-harvics-gold/30 overflow-hidden">
+          <div className="px-6 py-4 border-b border-harvics-gold/20 bg-harvics-burgundy/5">
+            <h3 className="text-lg font-bold text-harvics-burgundy">Recent Reports</h3>
           </div>
           <div className="overflow-x-auto">
             <table className="min-w-full divide-y divide-[#C3A35E]/10">
-              <thead className="bg-[#C3A35E]/10">
+              <thead className="bg-harvics-gold/10">
                 <tr>
-                  <th className="px-6 py-3 text-left text-xs font-bold text-[#6B1F2B] uppercase tracking-wider">Report Name</th>
-                  <th className="px-6 py-3 text-left text-xs font-bold text-[#6B1F2B] uppercase tracking-wider">Date</th>
-                  <th className="px-6 py-3 text-left text-xs font-bold text-[#6B1F2B] uppercase tracking-wider">Type</th>
-                  <th className="px-6 py-3 text-left text-xs font-bold text-[#6B1F2B] uppercase tracking-wider">Status</th>
-                  <th className="px-6 py-3 text-right text-xs font-bold text-[#6B1F2B] uppercase tracking-wider">Action</th>
+                  <th className="px-6 py-3 text-left text-xs font-bold text-harvics-burgundy uppercase tracking-wider">Report Name</th>
+                  <th className="px-6 py-3 text-left text-xs font-bold text-harvics-burgundy uppercase tracking-wider">Date</th>
+                  <th className="px-6 py-3 text-left text-xs font-bold text-harvics-burgundy uppercase tracking-wider">Type</th>
+                  <th className="px-6 py-3 text-left text-xs font-bold text-harvics-burgundy uppercase tracking-wider">Status</th>
+                  <th className="px-6 py-3 text-right text-xs font-bold text-harvics-burgundy uppercase tracking-wider">Action</th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-[#C3A35E]/10">
@@ -91,21 +91,21 @@ export default async function AnalyticsReportsPage() {
                   { name: 'Supply Chain Audit', date: '2026-01-20', type: 'Operations', status: 'In Progress' },
                   { name: 'Customer Satisfaction Survey', date: '2026-01-28', type: 'Marketing', status: 'Pending' },
                 ].map((report, idx) => (
-                  <tr key={idx} className="hover:bg-[#C3A35E]/5 transition-colors">
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-[#6B1F2B]">{report.name}</td>
+                  <tr key={idx} className="hover:bg-harvics-gold/5 transition-colors">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-bold text-harvics-burgundy">{report.name}</td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">{report.date}</td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">{report.type}</td>
                     <td className="px-6 py-4 whitespace-nowrap">
                       <span className={`px-2 py-1 inline-flex text-xs leading-5 font-bold rounded-full ${
                         report.status === 'Completed' ? 'bg-green-100 text-green-800 border border-green-200' : 
-                        report.status === 'In Progress' ? 'bg-[#C3A35E]/20 text-[#6B1F2B] border border-[#C3A35E]/40' : 
+                        report.status === 'In Progress' ? 'bg-harvics-gold/20 text-harvics-burgundy border border-harvics-gold/40' : 
                         'bg-gray-100 text-gray-800 border border-gray-200'
                       }`}>
                         {report.status}
                       </span>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                      <button className="text-[#6B1F2B] hover:text-[#C3A35E] font-bold uppercase text-xs border border-[#6B1F2B]/20 hover:border-[#C3A35E] px-3 py-1 rounded transition-all">View</button>
+                      <button className="text-harvics-burgundy hover:text-harvics-gold font-bold uppercase text-xs border border-harvics-burgundy/20 hover:border-harvics-gold px-3 py-1 rounded transition-all">View</button>
                     </td>
                   </tr>
                 ))}

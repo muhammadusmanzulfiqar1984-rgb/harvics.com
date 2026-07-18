@@ -6,7 +6,7 @@
  * Renders any module from the registry via the generic factory endpoint
  * `GET /api/m/:moduleId`. Supports list, create, delete with optimistic UI.
  *
- * Design: HARVICS sharp-edge cards (burgundy #6B1F2B, gold #C3A35E, cream
+ * Design: HARVICS sharp-edge cards (burgundy #3D1212, gold #C3A35E, cream
  * #F5F0E8, borderRadius: 0). Mirrors OSDomainTierStructure visual language.
  */
 
@@ -26,9 +26,9 @@ interface UniversalModuleScreenProps {
   moduleId: number
 }
 
-const BURGUNDY = '#6B1F2B'
-const GOLD = '#C3A35E'
-const CREAM = '#F5F0E8'
+const BURGUNDY = 'var(--harvics-burgundy)'
+const GOLD = 'var(--harvics-gold)'
+const CREAM = 'var(--harvics-cream)'
 
 export default function UniversalModuleScreen({ moduleId }: UniversalModuleScreenProps) {
   const entry = getModuleById(moduleId)

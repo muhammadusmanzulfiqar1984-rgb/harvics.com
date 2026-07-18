@@ -14,10 +14,10 @@ const FloatingActionButton: React.FC = () => {
       <a
         href={callUrl}
         aria-label="Call HarvyX"
-        className="group relative flex items-center justify-center w-14 h-14 rounded-full bg-[#3D1212] text-[#C3A35E] border border-[#C3A35E]/45 hover:border-[#C3A35E] shadow-[0_10px_28px_rgba(26,5,5,0.45)] hover:shadow-[0_12px_32px_rgba(195,163,94,0.35)] transition-all duration-200"
+        className="group relative flex items-center justify-center w-14 h-14 rounded-full bg-harvics-burgundy text-harvics-gold border border-harvics-gold/45 hover:border-harvics-gold shadow-[0_10px_28px_rgba(61, 18, 18,0.45)] hover:shadow-[0_12px_32px_rgba(195, 163, 94,0.35)] transition-all duration-200"
       >
         {/* Soft pulse ring */}
-        <span className="absolute inset-0 rounded-full ring-1 ring-[#C3A35E]/30 animate-ping opacity-50 group-hover:opacity-80" />
+        <span className="absolute inset-0 rounded-full ring-1 ring-harvics-gold/30 animate-ping opacity-50 group-hover:opacity-80" />
         {/* Phone handset icon */}
         <svg
           xmlns="http://www.w3.org/2000/svg"

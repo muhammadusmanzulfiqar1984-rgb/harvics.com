@@ -21,7 +21,7 @@ export default function P(){
     </Panel>
     <Panel title="GATEWAY STATS">
       {!stats?<div style={{padding:20,color:'#888'}}>Loading...</div>:<>
-        <div style={{padding:8,background:'#F5F0E8',marginBottom:8}}>
+        <div style={{padding:8,background:'var(--harvics-cream)',marginBottom:8}}>
           <div style={{fontSize:10,color:B,fontWeight:600}}>TOTAL CALLS</div>
           <div style={{fontSize:24,fontWeight:700,color:B}}>{stats.totalCalls?.toLocaleString()||0}</div>
           <div style={{fontSize:11,color:'#666'}}>Avg latency: <b>{stats.avgLatencyMs||0}ms</b></div>
@@ -34,7 +34,7 @@ export default function P(){
     </Panel>
     <Panel title={`TOKENS (${tokens.length})`}>
       <Tbl head={['USER','PLAT','SCOPES','EXP','LAST USED','ACT']}>
-        {tokens.map(t=><tr key={t.id} style={{borderBottom:'1px solid #6B1F2B11',opacity:t.active?1:0.5}}>
+        {tokens.map(t=><tr key={t.id} style={{borderBottom:'1px solid #3D121211',opacity:t.active?1:0.5}}>
           <td style={{...td,fontSize:11}}>{t.userId}</td><td style={td}>{t.platform||'—'}</td><td style={td}>{t.scopes}</td>
           <td style={{...td,fontSize:11}}>{t.expiresAt?new Date(t.expiresAt).toLocaleDateString():'—'}</td>
           <td style={{...td,fontSize:11}}>{t.lastUsedAt?new Date(t.lastUsedAt).toLocaleString():'never'}</td>

@@ -114,7 +114,7 @@ export default function ManufacturingConsole() {
                     <span className="font-mono font-bold">{n} · {pct}%</span>
                   </div>
                   <div className="mt-1 h-1.5 w-full overflow-hidden rounded-full bg-[#f0ead9]">
-                    <div className="h-full rounded-full bg-[#6b1f2b]" style={{ width: `${pct}%` }} />
+                    <div className="h-full rounded-full bg-harvics-burgundy" style={{ width: `${pct}%` }} />
                   </div>
                 </div>
               )

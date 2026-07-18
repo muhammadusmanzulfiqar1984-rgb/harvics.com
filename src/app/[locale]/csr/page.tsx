@@ -108,7 +108,7 @@ export default async function CSRPage({ params }: CSRPageProps) {
     <main className="min-h-screen" style={{ background: '#ffffff' }}>
       <div className="pt-20">
         {/* Hero Section */}
-        <section className="h-[400px] relative bg-[#6B1F2B] overflow-hidden">
+        <section className="h-[400px] relative bg-harvics-burgundy overflow-hidden">
           {/* Hero Background Image */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -121,13 +121,13 @@ export default async function CSRPage({ params }: CSRPageProps) {
           {/* Decorative Elements */}
           <div className="absolute inset-0">
              <div className="absolute top-0 left-0 w-full h-full bg-[url('/patterns/grid.svg')] opacity-10"></div>
-             <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
-             <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
+             <div className="absolute -top-24 -right-24 w-96 h-96 bg-harvics-gold rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
+             <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-harvics-gold rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
           </div>
           
           <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
             <div className="mb-6">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-white/10 backdrop-blur-sm mb-4 border border-[#C3A35E]/30">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-white/10 backdrop-blur-sm mb-4 border border-harvics-gold/30">
                 <span className="text-3xl">🤝</span>
               </div>
             </div>
@@ -139,15 +139,15 @@ export default async function CSRPage({ params }: CSRPageProps) {
             </p>
             <div className="flex flex-wrap justify-center gap-8 md:gap-12 text-white">
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-serif font-medium text-[#C3A35E]">5+</div>
+                <div className="text-3xl md:text-4xl font-serif font-medium text-harvics-gold">5+</div>
                 <div className="text-sm text-white/80 uppercase tracking-wide mt-1">{t('hero.stats.years')}</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-serif font-medium text-[#C3A35E]">50+</div>
+                <div className="text-3xl md:text-4xl font-serif font-medium text-harvics-gold">50+</div>
                 <div className="text-sm text-white/80 uppercase tracking-wide mt-1">{t('hero.stats.countries')}</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-serif font-medium text-[#C3A35E]">1M+</div>
+                <div className="text-3xl md:text-4xl font-serif font-medium text-harvics-gold">1M+</div>
                 <div className="text-sm text-white/80 uppercase tracking-wide mt-1">{t('hero.stats.lives')}</div>
               </div>
             </div>
@@ -177,7 +177,7 @@ export default async function CSRPage({ params }: CSRPageProps) {
                       <span className="text-3xl">{initiative.icon}</span>
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-2xl font-serif font-medium text-gray-900 mb-3 group-hover:text-[#6B1F2B] transition-colors">
+                      <h3 className="text-2xl font-serif font-medium text-gray-900 mb-3 group-hover:text-harvics-burgundy transition-colors">
                         {initiative.title}
                       </h3>
                       <p className="text-gray-600 leading-relaxed">
@@ -189,7 +189,7 @@ export default async function CSRPage({ params }: CSRPageProps) {
                   <div className="grid grid-cols-3 gap-4 border-t border-gray-100 pt-6">
                     {initiative.stats.map((stat, statIndex) => (
                       <div key={statIndex} className="text-center">
-                        <div className="text-2xl font-serif font-medium text-[#6B1F2B] mb-1">
+                        <div className="text-2xl font-serif font-medium text-harvics-burgundy mb-1">
                           {stat.value}
                         </div>
                         <div className="text-xs text-gray-500 uppercase tracking-wide">
@@ -220,17 +220,17 @@ export default async function CSRPage({ params }: CSRPageProps) {
               {achievements.map((achievement, index) => (
                 <div
                   key={achievement.year}
-                  className="bg-white border border-gray-200 p-6 md:p-8 hover:border-[#6B1F2B] transition-all duration-300 shadow-sm hover:shadow-md"
+                  className="bg-white border border-gray-200 p-6 md:p-8 hover:border-harvics-burgundy transition-all duration-300 shadow-sm hover:shadow-md"
                 >
                   <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
                     <div className="flex-shrink-0">
-                      <div className="w-16 h-16 bg-[#6B1F2B]/5 rounded-full flex items-center justify-center text-3xl">
+                      <div className="w-16 h-16 bg-harvics-burgundy/5 rounded-full flex items-center justify-center text-3xl">
                         {achievement.icon}
                       </div>
                     </div>
                     <div className="flex-1">
                       <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 mb-2">
-                        <span className="text-2xl font-serif font-medium text-[#6B1F2B]">{achievement.year}</span>
+                        <span className="text-2xl font-serif font-medium text-harvics-burgundy">{achievement.year}</span>
                         <div className="hidden md:block w-1 h-1 bg-gray-300 rounded-full"></div>
                         <h3 className="text-xl font-medium text-gray-900">
                           {achievement.title}
@@ -248,11 +248,11 @@ export default async function CSRPage({ params }: CSRPageProps) {
         </section>
 
         {/* Call to Action */}
-        <section className="py-12 md:py-24 bg-[#6B1F2B] relative overflow-hidden">
+        <section className="py-12 md:py-24 bg-harvics-burgundy relative overflow-hidden">
            {/* Decorative Elements */}
            <div className="absolute inset-0">
-              <div className="absolute top-0 right-0 w-96 h-96 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
-              <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+              <div className="absolute top-0 right-0 w-96 h-96 bg-harvics-gold rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+              <div className="absolute bottom-0 left-0 w-96 h-96 bg-harvics-gold rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
            </div>
 
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
@@ -265,7 +265,7 @@ export default async function CSRPage({ params }: CSRPageProps) {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="mailto:csr@harvics.com"
-                className="bg-white text-[#6B1F2B] px-8 py-4 font-medium text-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-lg"
+                className="bg-white text-harvics-burgundy px-8 py-4 font-medium text-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-lg"
               >
                 {t('cta.contact')}
               </a>

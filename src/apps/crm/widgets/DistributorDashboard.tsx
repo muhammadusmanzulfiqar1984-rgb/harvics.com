@@ -323,12 +323,12 @@ export const DistributorDashboard = () => {
               {t('aiRecommendations.riskDescription')}
             </p>
           </div>
-          <div className="bg-white rounded-lg border border-[#C3A35E]/30 p-5">
+          <div className="bg-white rounded-lg border border-harvics-gold/30 p-5">
             <div className="flex items-center justify-between mb-2">
               <span className="text-xs uppercase tracking-wider text-black/60 font-medium">
                 {t('aiRecommendations.suggestedOrder')}
               </span>
-              <span className="text-2xl font-bold text-[#6B1F2B]">{aiAutomation.aiRecommendations.suggestedOrder}</span>
+              <span className="text-2xl font-bold text-harvics-burgundy">{aiAutomation.aiRecommendations.suggestedOrder}</span>
             </div>
             <p className="text-xs text-black/60">
               {t('aiRecommendations.suggestedOrderSubtitle')}
@@ -362,24 +362,24 @@ export const DistributorDashboard = () => {
             subtitle={t('actions.complaintsSubtitle')}
             accent="red"
           />
-          <div className="bg-white rounded-lg border border-[#C3A35E]/30 shadow-sm hover:shadow-md transition-all duration-300 p-6">
+          <div className="bg-white rounded-lg border border-harvics-gold/30 shadow-sm hover:shadow-md transition-all duration-300 p-6">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-1 h-6 bg-[#C3A35E] rounded-full"></div>
+              <div className="w-1 h-6 bg-harvics-gold rounded-full"></div>
               <h3 className="text-sm font-semibold text-black uppercase tracking-wider">
                 {t('actions.playbook')}
               </h3>
             </div>
             <ul className="space-y-3 text-sm text-black/70 leading-relaxed">
               <li className="flex items-start gap-2">
-                <span className="text-[#C3A35E] mt-1">•</span>
+                <span className="text-harvics-gold mt-1">•</span>
                 <span>{t('actions.playbookItem1')}</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-[#C3A35E] mt-1">•</span>
+                <span className="text-harvics-gold mt-1">•</span>
                 <span>{t('actions.playbookItem2')}</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-[#C3A35E] mt-1">•</span>
+                <span className="text-harvics-gold mt-1">•</span>
                 <span>{t('actions.playbookItem3')}</span>
               </li>
             </ul>

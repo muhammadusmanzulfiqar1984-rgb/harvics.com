@@ -113,7 +113,7 @@ const SupremeHero: React.FC = () => {
             style={{
               width: `${2 + (i % 3)}px`,
               height: `${2 + (i % 3)}px`,
-              background: `rgba(195,163,94,${0.15 + (i % 3) * 0.08})`,
+              background: `rgba(195, 163, 94,${0.15 + (i % 3) * 0.08})`,
               left: `${10 + i * 11}%`,
               animation: `floatParticle ${7 + i * 1.5}s ease-in-out infinite`,
               animationDelay: `${i * 0.7}s`,
@@ -139,34 +139,34 @@ const SupremeHero: React.FC = () => {
           {/* Dynamic tagline */}
           <div className="overflow-hidden h-5 mb-3">
             <div 
-              className="text-[#C3A35E] text-xs font-bold uppercase tracking-[0.25em] transition-transform duration-700"
+              className="text-harvics-gold text-xs font-bold uppercase tracking-[0.25em] transition-transform duration-700"
               style={{ transform: isTransitioning ? 'translateY(-100%)' : 'translateY(0)' }}
             >
               {slides[current].tagline}
             </div>
           </div>
           
-          <h1 className="text-3xl md:text-4xl lg:text-[42px] font-semibold text-[#6B1F2B] mb-5 leading-[1.15]" style={{ letterSpacing: '-0.025em' }}>
+          <h1 className="text-3xl md:text-4xl lg:text-[42px] font-semibold text-harvics-burgundy mb-5 leading-[1.15]" style={{ letterSpacing: '-0.025em' }}>
             Intelligence-led sourcing.<br />Built for scale.
           </h1>
-          <p className="text-sm md:text-[15px] text-[#6B1F2B]/65 mb-8 leading-relaxed font-light max-w-md mx-auto">
+          <p className="text-sm md:text-[15px] text-harvics-burgundy/65 mb-8 leading-relaxed font-light max-w-md mx-auto">
             A disciplined operating system for global supply chains — from strategy
             and development to quality, logistics and delivery.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link
               href={`/${locale}/contact`}
-              className="relative inline-block px-8 py-3.5 bg-[#6B1F2B] text-white text-sm font-semibold overflow-hidden group/btn transition-all duration-300 hover:shadow-lg hover:shadow-[#6B1F2B]/20"
+              className="relative inline-block px-8 py-3.5 bg-harvics-burgundy text-white text-sm font-semibold overflow-hidden group/btn transition-all duration-300 hover:shadow-lg hover:shadow-[#3D1212]/20"
             >
               <span className="relative z-10">Request Quote</span>
               <div className="absolute inset-0 bg-[#5a1a24] transform -translate-x-full group-hover/btn:translate-x-0 transition-transform duration-300" />
             </Link>
             <Link
               href={`/${locale}/textiles`}
-              className="relative inline-block px-8 py-3.5 bg-transparent text-[#6B1F2B] text-sm font-semibold border-2 border-[#6B1F2B] overflow-hidden group/btn transition-all duration-300 hover:text-white"
+              className="relative inline-block px-8 py-3.5 bg-transparent text-harvics-burgundy text-sm font-semibold border-2 border-harvics-burgundy overflow-hidden group/btn transition-all duration-300 hover:text-white"
             >
               <span className="relative z-10">Explore Industries</span>
-              <div className="absolute inset-0 bg-[#6B1F2B] transform -translate-x-full group-hover/btn:translate-x-0 transition-transform duration-300" />
+              <div className="absolute inset-0 bg-harvics-burgundy transform -translate-x-full group-hover/btn:translate-x-0 transition-transform duration-300" />
             </Link>
           </div>
         </div>
@@ -212,7 +212,7 @@ const SupremeHero: React.FC = () => {
             {/* Active progress fill */}
             {idx === current && (
               <div
-                className="absolute inset-y-0 left-0 bg-[#C3A35E]"
+                className="absolute inset-y-0 left-0 bg-harvics-gold"
                 style={{ width: `${progress}%`, transition: 'width 0.05s linear' }}
               />
             )}

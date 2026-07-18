@@ -390,16 +390,16 @@ export default function OSDomainTierStructure({
           title="Ask Harvoice AI"
           onClick={() => setHarvoiceOpen(true)}
           className="flex items-center gap-2 px-3 py-1.5 rounded-full transition-all duration-200 hover:scale-105 active:scale-95"
-          style={{ background: 'linear-gradient(135deg, #6B1F2B 0%, #8B2535 100%)', border: '1.5px solid #C3A35E', boxShadow: '0 2px 12px rgba(195,163,94,0.3)' }}
+          style={{ background: 'linear-gradient(135deg, #3D1212 0%, #8B2535 100%)', border: '1.5px solid #C3A35E', boxShadow: '0 2px 12px rgba(195, 163, 94,0.3)' }}
         >
           <span className="text-base">🎙</span>
-          <span className="text-[11px] font-black text-[#C3A35E] tracking-wider uppercase hidden sm:inline">Harvoice</span>
+          <span className="text-[11px] font-black text-harvics-gold tracking-wider uppercase hidden sm:inline">Harvoice</span>
         </button>
 
         {/* Gold pill primary action — context-aware per domain */}
         <button
-          className="flex items-center gap-2 px-5 py-2 font-black text-[12px] tracking-wider uppercase transition-all duration-200 hover:scale-105 active:scale-95 hover:shadow-[0_4px_20px_rgba(195,163,94,0.5)]"
-          style={{ background: 'linear-gradient(135deg, #C3A35E 0%, #E8C97A 50%, #C3A35E 100%)', borderRadius: 999, color: '#1a0810', boxShadow: '0 3px 16px rgba(195,163,94,0.4)', border: '1px solid rgba(255,255,255,0.3)' }}
+          className="flex items-center gap-2 px-5 py-2 font-black text-[12px] tracking-wider uppercase transition-all duration-200 hover:scale-105 active:scale-95 hover:shadow-[0_4px_20px_rgba(195, 163, 94,0.5)]"
+          style={{ background: 'linear-gradient(135deg, #C3A35E 0%, #E8C97A 50%, #C3A35E 100%)', borderRadius: 999, color: '#1a0810', boxShadow: '0 3px 16px rgba(195, 163, 94,0.4)', border: '1px solid rgba(255,255,255,0.3)' }}
         >
           <span className="text-sm font-black">+</span>
           <span>New {currentModule?.label?.replace(/s$/, '') || domainName.replace(/s$/, '')}</span>
@@ -408,7 +408,7 @@ export default function OSDomainTierStructure({
 
       {/* Module Tabs — glassmorphic maroon with gold border */}
       <div className="mb-1 relative" style={{
-        background: 'linear-gradient(135deg, #6B1F2B 0%, #8B2535 40%, #6B1F2B 100%)',
+        background: 'linear-gradient(135deg, #3D1212 0%, #8B2535 40%, #3D1212 100%)',
         borderBottom: '2px solid #C3A35E',
         boxShadow: '0 4px 24px rgba(107,31,43,0.25), inset 0 1px 0 rgba(255,255,255,0.15)'
       }}>
@@ -436,13 +436,13 @@ export default function OSDomainTierStructure({
                   borderBottom: '3px solid #C3A35E',
                   color: '#fff',
                   textShadow: '0 1px 2px rgba(0,0,0,0.3)',
-                  boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.3), 0 2px 8px rgba(195,163,94,0.3)'
+                  boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.3), 0 2px 8px rgba(195, 163, 94,0.3)'
                 } : {
                   borderBottom: '3px solid transparent',
                   color: 'rgba(255,255,255,0.7)',
                 }}
                 className={`relative px-5 py-3.5 text-sm font-semibold whitespace-nowrap cursor-pointer transition-all duration-200 -mb-0.5 backdrop-blur-sm ${
-                  !isActive ? 'hover:bg-white/10 hover:text-white hover:border-b-[3px] hover:border-[#C3A35E]/60' : ''
+                  !isActive ? 'hover:bg-white/10 hover:text-white hover:border-b-[3px] hover:border-harvics-gold/60' : ''
                 }`}
               >
                 {module.label}
@@ -468,18 +468,18 @@ export default function OSDomainTierStructure({
                   updateURL(activeModule, screen.id, '')
                 }}
                 style={isActive ? {
-                  background: 'linear-gradient(135deg, #6B1F2B 0%, #8B2535 100%)',
+                  background: 'linear-gradient(135deg, #3D1212 0%, #8B2535 100%)',
                   border: '1.5px solid #C3A35E',
                   color: '#fff',
                   boxShadow: '0 2px 12px rgba(107,31,43,0.35), inset 0 1px 0 rgba(255,255,255,0.25)',
                   textShadow: '0 1px 2px rgba(0,0,0,0.4)'
                 } : {
                   background: 'rgba(255,255,255,0.72)',
-                  border: '1.5px solid rgba(195,163,94,0.4)',
+                  border: '1.5px solid rgba(195, 163, 94,0.4)',
                   color: '#4A3728',
                 }}
                 className={`px-4 py-1.5 text-xs font-semibold rounded-full cursor-pointer transition-all duration-200 ${
-                  !isActive ? 'hover:border-[#C3A35E] hover:text-[#6B1F2B] hover:shadow-[0_2px_8px_rgba(195,163,94,0.3)]' : ''
+                  !isActive ? 'hover:border-harvics-gold hover:text-harvics-burgundy hover:shadow-[0_2px_8px_rgba(195, 163, 94,0.3)]' : ''
                 }`}
               >
                 {screen.label}
@@ -505,17 +505,17 @@ export default function OSDomainTierStructure({
                   action.action()
                 }}
                 style={isActive ? {
-                  background: 'linear-gradient(135deg, #6B1F2B 0%, #8B2535 100%)',
+                  background: 'linear-gradient(135deg, #3D1212 0%, #8B2535 100%)',
                   border: '1px solid #C3A35E',
                   color: '#fff',
                   boxShadow: '0 2px 8px rgba(107,31,43,0.3)'
                 } : {
                   background: 'rgba(255,255,255,0.72)',
-                  border: '1px solid rgba(195,163,94,0.5)',
+                  border: '1px solid rgba(195, 163, 94,0.5)',
                   color: '#4A3728',
                 }}
                 className={`px-3 py-1.5 text-xs font-medium rounded-lg cursor-pointer transition-all duration-150 ${
-                  !isActive ? 'hover:border-[#C3A35E] hover:text-[#6B1F2B]' : ''
+                  !isActive ? 'hover:border-harvics-gold hover:text-harvics-burgundy' : ''
                 }`}
               >
                 {action.label}
@@ -531,8 +531,8 @@ export default function OSDomainTierStructure({
         {/* Content Area — glass card */}
         <div className="flex-1 min-w-0 rounded-2xl overflow-hidden" style={{
           background: 'rgba(255,255,255,0.75)',
-          border: '1.5px solid rgba(195,163,94,0.5)',
-          boxShadow: '0 8px 32px rgba(107,31,43,0.10), inset 0 1px 0 rgba(255,255,255,0.98), inset 0 -1px 0 rgba(195,163,94,0.12)',
+          border: '1.5px solid rgba(195, 163, 94,0.5)',
+          boxShadow: '0 8px 32px rgba(107,31,43,0.10), inset 0 1px 0 rgba(255,255,255,0.98), inset 0 -1px 0 rgba(195, 163, 94,0.12)',
           minHeight: '400px'
         }}>
           {activeScreen && currentScreen && (
@@ -571,10 +571,10 @@ export default function OSDomainTierStructure({
         }}>
           {/* Panel header */}
           <div className="px-4 py-3 flex items-center gap-2.5" style={{
-            background: 'linear-gradient(135deg, #6B1F2B 0%, #8B2535 100%)',
-            borderBottom: '1px solid rgba(195,163,94,0.4)',
+            background: 'linear-gradient(135deg, #3D1212 0%, #8B2535 100%)',
+            borderBottom: '1px solid rgba(195, 163, 94,0.4)',
           }}>
-            <span className="text-[#C3A35E] text-base">🎙</span>
+            <span className="text-harvics-gold text-base">🎙</span>
             <div>
               <div className="text-[10px] font-black text-white/50 tracking-[0.2em] uppercase">Harvoice AI</div>
               <div className="text-[11px] font-bold text-white">Smart Alerts</div>
@@ -598,7 +598,7 @@ export default function OSDomainTierStructure({
                 onClick={() => setAiActive(aiActive === i ? null : i)}
                 className={`border-l-[3px] px-3 py-2.5 cursor-pointer transition-all duration-300 rounded-r-lg ${urgencyStyle[alert.urgency]} ${
                   highlightIdx === i ? 'ring-1 ring-blue-300/40' : ''
-                } ${aiActive === i ? 'ring-1 ring-[#6B1F2B]/30' : ''}`}
+                } ${aiActive === i ? 'ring-1 ring-harvics-burgundy/30' : ''}`}
               >
                 <div className="flex items-center gap-2 mb-1">
                   <span className="text-sm">{alert.icon}</span>
@@ -614,7 +614,7 @@ export default function OSDomainTierStructure({
 
           {/* Bottom CTA */}
           <div className="px-3 pb-4 mt-1">
-            <button className="w-full py-2 text-[10px] font-black text-[#6B1F2B] border border-[#C3A35E]/50 rounded-lg hover:bg-[#6B1F2B] hover:text-white transition-all duration-200 tracking-wider uppercase">
+            <button className="w-full py-2 text-[10px] font-black text-harvics-burgundy border border-harvics-gold/50 rounded-lg hover:bg-harvics-burgundy hover:text-white transition-all duration-200 tracking-wider uppercase">
               Ask Harvoice →
             </button>
           </div>
@@ -628,10 +628,10 @@ export default function OSDomainTierStructure({
           <div className="absolute inset-0 bg-black/40" onClick={() => setHarvoiceOpen(false)} />
           <div className="relative w-96 max-w-full flex flex-col rounded-2xl overflow-hidden shadow-2xl" style={{ height: 520, background: '#1a0810', border: '1.5px solid #C3A35E', zIndex: 51 }}>
             {/* Header */}
-            <div className="flex items-center gap-3 px-4 py-3 flex-shrink-0" style={{ background: 'linear-gradient(135deg, #6B1F2B 0%, #8B2535 100%)', borderBottom: '1px solid rgba(195,163,94,0.4)' }}>
+            <div className="flex items-center gap-3 px-4 py-3 flex-shrink-0" style={{ background: 'linear-gradient(135deg, #3D1212 0%, #8B2535 100%)', borderBottom: '1px solid rgba(195, 163, 94,0.4)' }}>
               <span className="text-xl">🎙</span>
               <div className="flex-1">
-                <div className="text-[10px] font-black text-[#C3A35E] tracking-[0.2em] uppercase">Harvoice AI</div>
+                <div className="text-[10px] font-black text-harvics-gold tracking-[0.2em] uppercase">Harvoice AI</div>
                 <div className="text-sm font-bold text-white">{domainName} Assistant</div>
               </div>
               <span className="relative flex h-2 w-2"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span><span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span></span>
@@ -642,31 +642,31 @@ export default function OSDomainTierStructure({
               {harvoiceMessages.map((m, i) => (
                 <div key={i} className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                   <div className={`max-w-[82%] px-3 py-2 rounded-xl text-sm leading-relaxed ${
-                    m.role === 'user' ? 'bg-[#6B1F2B] text-white rounded-br-sm' : 'text-white/90 rounded-bl-sm'
-                  }`} style={m.role === 'ai' ? { background: 'rgba(195,163,94,0.10)', border: '1px solid rgba(195,163,94,0.22)' } : {}}>
-                    {m.role === 'ai' && <span className="text-[#C3A35E] font-black text-[9px] block mb-1 tracking-wider">HARVOICE</span>}
+                    m.role === 'user' ? 'bg-harvics-burgundy text-white rounded-br-sm' : 'text-white/90 rounded-bl-sm'
+                  }`} style={m.role === 'ai' ? { background: 'rgba(195, 163, 94,0.10)', border: '1px solid rgba(195, 163, 94,0.22)' } : {}}>
+                    {m.role === 'ai' && <span className="text-harvics-gold font-black text-[9px] block mb-1 tracking-wider">HARVOICE</span>}
                     {m.text}
                   </div>
                 </div>
               ))}
               {harvoiceTyping && (
                 <div className="flex justify-start">
-                  <div className="px-4 py-3 rounded-xl rounded-bl-sm" style={{ background: 'rgba(195,163,94,0.10)', border: '1px solid rgba(195,163,94,0.22)' }}>
-                    <span className="flex gap-1">{[0,1,2].map(i => <span key={i} className="w-1.5 h-1.5 rounded-full bg-[#C3A35E] animate-bounce" style={{ animationDelay: `${i*0.15}s` }}></span>)}</span>
+                  <div className="px-4 py-3 rounded-xl rounded-bl-sm" style={{ background: 'rgba(195, 163, 94,0.10)', border: '1px solid rgba(195, 163, 94,0.22)' }}>
+                    <span className="flex gap-1">{[0,1,2].map(i => <span key={i} className="w-1.5 h-1.5 rounded-full bg-harvics-gold animate-bounce" style={{ animationDelay: `${i*0.15}s` }}></span>)}</span>
                   </div>
                 </div>
               )}
               <div ref={chatEndRef} />
             </div>
             {/* Input */}
-            <div className="flex-shrink-0 px-3 py-3" style={{ borderTop: '1px solid rgba(195,163,94,0.2)' }}>
+            <div className="flex-shrink-0 px-3 py-3" style={{ borderTop: '1px solid rgba(195, 163, 94,0.2)' }}>
               <div className="flex gap-2">
                 <input
                   value={harvoiceInput}
                   onChange={e => setHarvoiceInput(e.target.value)}
                   onKeyDown={e => e.key === 'Enter' && sendHarvoiceMessage()}
                   placeholder={`Ask about ${domainName}…`}
-                  className="flex-1 bg-white/10 text-white text-sm px-4 py-2.5 rounded-xl outline-none placeholder-white/30 border border-white/10 focus:border-[#C3A35E]/60"
+                  className="flex-1 bg-white/10 text-white text-sm px-4 py-2.5 rounded-xl outline-none placeholder-white/30 border border-white/10 focus:border-harvics-gold/60"
                 />
                 <button onClick={sendHarvoiceMessage} className="px-4 py-2.5 rounded-xl font-black text-sm transition-all hover:scale-105 active:scale-95" style={{ background: 'linear-gradient(135deg, #C3A35E, #E8C97A)', color: '#1a0810' }}>→</button>
               </div>

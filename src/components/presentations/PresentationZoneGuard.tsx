@@ -44,7 +44,7 @@ export default function PresentationZoneGuard({
   if (!allowed) {
     return (
       <div className="min-h-[40vh] flex items-center justify-center pt-[136px]">
-        <p className="text-sm text-[#6B1F2B]/50 uppercase tracking-widest">Checking access…</p>
+        <p className="text-sm text-harvics-burgundy/50 uppercase tracking-widest">Checking access…</p>
       </div>
     )
   }

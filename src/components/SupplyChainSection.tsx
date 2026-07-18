@@ -24,11 +24,11 @@ import React, { useEffect, useRef, useState } from 'react'
 const COLORS = {
   bgFrom: '#FFFFFF',
   bgTo: '#F4ECDB',
-  goldBase: '#C3A35E',
+  goldBase: 'var(--harvics-gold)',
   goldLight: '#E8C76A',
   goldDeep: '#8C6B1F',
   amber: '#D78A1B',
-  maroon: '#6B1F2B',
+  maroon: 'var(--harvics-burgundy)',
   maroonDeep: '#4A1620',
   charcoal: '#3A2A2A',
 }

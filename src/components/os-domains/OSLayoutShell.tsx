@@ -116,7 +116,7 @@ export default function OSLayoutShell({
       <aside
         className={`${
           sidebarOpen ? 'w-[280px]' : 'w-16'
-        } bg-[#6B1F2B] text-[#C3A35E] transition-all duration-300 flex flex-col border-r border-[#E5E5EA]/30 fixed left-0 top-0 h-full z-[999] shadow-2xl`}
+        } bg-harvics-burgundy text-harvics-gold transition-all duration-300 flex flex-col border-r border-[#E5E5EA]/30 fixed left-0 top-0 h-full z-[999] shadow-2xl`}
         style={{ height: '100vh', top: '64px' }}
       >
         {/* Sidebar Header */}
@@ -124,12 +124,12 @@ export default function OSLayoutShell({
           {sidebarOpen && (
             <div className="flex items-center gap-2">
               <span className="text-2xl drop-shadow-md">{domainIcon}</span>
-              <h2 className="text-lg font-bold text-[#C3A35E]  tracking-wide">{domainName}</h2>
+              <h2 className="text-lg font-bold text-harvics-gold  tracking-wide">{domainName}</h2>
             </div>
           )}
           <button
             onClick={() => setSidebarOpen(!sidebarOpen)}
-            className="text-[#C3A35E] hover:text-white transition-colors p-1 rounded hover:bg-[#F5F5F7]"
+            className="text-harvics-gold hover:text-white transition-colors p-1 rounded hover:bg-[#F5F5F7]"
             aria-label={sidebarOpen ? 'Collapse sidebar' : 'Expand sidebar'}
           >
             {sidebarOpen ? '←' : '→'}
@@ -142,7 +142,7 @@ export default function OSLayoutShell({
             <div key={index}>
               {item.children ? (
                 <div>
-                  <div className="flex items-center space-x-2 px-3 py-2.5 text-[#C3A35E] font-bold text-sm uppercase tracking-wider opacity-80">
+                  <div className="flex items-center space-x-2 px-3 py-2.5 text-harvics-gold font-bold text-sm uppercase tracking-wider opacity-80">
                     <span className="text-lg">{item.icon}</span>
                     {sidebarOpen && <span>{item.label}</span>}
                   </div>
@@ -154,8 +154,8 @@ export default function OSLayoutShell({
                           href={child.href}
                           className={`block px-3 py-2 rounded-md text-sm transition-all duration-200 ${
                             isActive(child.href)
-                              ? 'bg-[#6B1F2B] text-[#1A1A1A] font-bold shadow-lg transform translate-x-1'
-                              : 'text-[#C3A35E]/70 hover:text-[#C3A35E] hover:bg-[#F5F5F7]'
+                              ? 'bg-harvics-burgundy text-[#1A1A1A] font-bold shadow-lg transform translate-x-1'
+                              : 'text-harvics-gold/70 hover:text-harvics-gold hover:bg-[#F5F5F7]'
                           }`}
                         >
                           {child.label}
@@ -169,15 +169,15 @@ export default function OSLayoutShell({
                   href={item.href}
                   className={`flex items-center space-x-2 px-3 py-2.5 rounded-md transition-all duration-200 ${
                     isActive(item.href)
-                      ? 'bg-[#6B1F2B] text-[#6B1F2B] font-bold shadow-lg'
-                      : 'text-[#C3A35E]/70 hover:text-[#C3A35E] hover:bg-[#F5F5F7]'
+                      ? 'bg-harvics-burgundy text-harvics-burgundy font-bold shadow-lg'
+                      : 'text-harvics-gold/70 hover:text-harvics-gold hover:bg-[#F5F5F7]'
                   }`}
                 >
                   <span className="text-lg">{item.icon}</span>
                   {sidebarOpen && <span className="text-sm font-medium">{item.label}</span>}
                 </Link>
               ) : (
-                <div className="flex items-center space-x-2 px-3 py-2.5 text-[#C3A35E] font-semibold">
+                <div className="flex items-center space-x-2 px-3 py-2.5 text-harvics-gold font-semibold">
                   <span className="text-lg">{item.icon}</span>
                   {sidebarOpen && <span className="text-sm">{item.label}</span>}
                 </div>
@@ -194,7 +194,7 @@ export default function OSLayoutShell({
       >
         {/* Top Bar - V16 Spec: 64px fixed */}
         <header 
-          className="bg-[#6B1F2B] border-b border-[#6B1F2B]/20 px-6 py-4 flex items-center justify-between fixed top-0 left-0 right-0 z-[1000] shadow-md"
+          className="bg-harvics-burgundy border-b border-harvics-burgundy/20 px-6 py-4 flex items-center justify-between fixed top-0 left-0 right-0 z-[1000] shadow-md"
           style={{ height: '64px' }}
         >
           {/* Left: Logo + Domain Name */}
@@ -204,7 +204,7 @@ export default function OSLayoutShell({
               <h1 className="text-xl font-semibold text-[#1A1A1A]  tracking-wide">{domainName}</h1>
             </div>
             {countryData && (
-              <div className="hidden md:flex items-center gap-2 px-3 py-1.5 bg-white/20 rounded-lg border border-[#6B1F2B]/10 backdrop-blur-sm">
+              <div className="hidden md:flex items-center gap-2 px-3 py-1.5 bg-white/20 rounded-lg border border-harvics-burgundy/10 backdrop-blur-sm">
                 <span className="text-xs text-[#8E8E93] font-semibold uppercase">Country:</span>
                 <span className="text-sm font-semibold text-[#1A1A1A]">{countryData.countryName || selectedCountry}</span>
                 {countryData.currency && (
@@ -226,14 +226,14 @@ export default function OSLayoutShell({
                   setNotificationsOpen(!notificationsOpen)
                   setUserMenuOpen(false)
                 }}
-                className="relative p-2 rounded-lg hover:bg-[#6B1F2B]/10 transition-colors group"
+                className="relative p-2 rounded-lg hover:bg-harvics-burgundy/10 transition-colors group"
                 aria-label="Notifications"
               >
-                <span className="text-xl text-[#6B1F2B]"></span>
+                <span className="text-xl text-harvics-burgundy"></span>
                 <span className="absolute top-1 right-1 w-2 h-2 bg-[#dc2626] rounded-full border border-[#E5E5EA]"></span>
               </button>
               {notificationsOpen && (
-                <div className="absolute right-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-[#E5E5EA]/30 z-50 ring-1 ring-[#6B1F2B]/5">
+                <div className="absolute right-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-[#E5E5EA]/30 z-50 ring-1 ring-harvics-burgundy/5">
                   <div className="p-4 border-b border-gray-100 bg-[#F5F5F7]">
                     <h3 className="font-semibold text-[#1A1A1A]">Notifications</h3>
                   </div>
@@ -251,16 +251,16 @@ export default function OSLayoutShell({
                   setUserMenuOpen(!userMenuOpen)
                   setNotificationsOpen(false)
                 }}
-                className="flex items-center gap-2 p-1.5 pr-3 rounded-lg hover:bg-[#6B1F2B]/10 transition-colors border border-[#6B1F2B]/10 bg-white/10"
+                className="flex items-center gap-2 p-1.5 pr-3 rounded-lg hover:bg-harvics-burgundy/10 transition-colors border border-harvics-burgundy/10 bg-white/10"
                 aria-label="User menu"
               >
-                <div className="w-8 h-8 rounded-full bg-[#6B1F2B] flex items-center justify-center text-[#C3A35E] font-bold text-sm border-2 border-[#E5E5EA]">
+                <div className="w-8 h-8 rounded-full bg-harvics-burgundy flex items-center justify-center text-harvics-gold font-bold text-sm border-2 border-[#E5E5EA]">
                   {username.charAt(0).toUpperCase()}
                 </div>
                 <span className="text-sm font-semibold text-[#1A1A1A] hidden md:inline">{username}</span>
               </button>
               {userMenuOpen && (
-                <div className="absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-[#E5E5EA]/30 z-50 ring-1 ring-[#6B1F2B]/5">
+                <div className="absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-[#E5E5EA]/30 z-50 ring-1 ring-harvics-burgundy/5">
                   <div className="p-2">
                     <div className="px-4 py-3 border-b border-gray-100 bg-[#F5F5F7]">
                       <div className="font-semibold text-[#1A1A1A] text-sm">Logged in as</div>
@@ -269,7 +269,7 @@ export default function OSLayoutShell({
                     <div className="my-1">
                       <button 
                         onClick={handleLogout}
-                        className="w-full text-left px-4 py-2 text-sm text-[#1A1A1A] hover:bg-[#6B1F2B]/5 rounded-md transition-colors font-medium flex items-center gap-2"
+                        className="w-full text-left px-4 py-2 text-sm text-[#1A1A1A] hover:bg-harvics-burgundy/5 rounded-md transition-colors font-medium flex items-center gap-2"
                       >
                         <span></span> Logout
                       </button>

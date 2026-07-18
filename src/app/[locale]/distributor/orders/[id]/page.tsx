@@ -118,7 +118,7 @@ export default function DistributorOrderDetail() {
   const getStatusColor = (status: string) => {
     switch (status.toLowerCase()) {
       case 'pending':
-        return 'bg-[#C3A35E]/20 text-[#C3A35E]'
+        return 'bg-harvics-gold/20 text-harvics-gold'
       case 'processing':
         return 'bg-blue-100 text-blue-800'
       case 'delivered':
@@ -126,7 +126,7 @@ export default function DistributorOrderDetail() {
       case 'cancelled':
         return 'bg-red-100 text-red-800'
       default:
-        return 'bg-white text-[#C3A35E]/90'
+        return 'bg-white text-harvics-gold/90'
     }
   }
 
@@ -134,8 +134,8 @@ export default function DistributorOrderDetail() {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#6B1F2B] mx-auto mb-4"></div>
-          <p className="text-[#C3A35E]/90">{tCommon('loading')}</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-harvics-burgundy mx-auto mb-4"></div>
+          <p className="text-harvics-gold/90">{tCommon('loading')}</p>
         </div>
       </div>
     )
@@ -146,7 +146,7 @@ export default function DistributorOrderDetail() {
       <div className="min-h-screen bg-white flex items-center justify-center px-4">
         <div className="max-w-md w-full bg-white shadow-lg p-6">
           <h2 className="text-xl font-bold text-red-600 mb-2">{tCommon('error')}</h2>
-          <p className="text-[#C3A35E]/90 mb-4">{error || t('orderNotFound')}</p>
+          <p className="text-harvics-gold/90 mb-4">{error || t('orderNotFound')}</p>
           <button
             onClick={() => router.push(`/${locale}/distributor/orders`)}
             className="bg-white text-white px-4 py-2 font-semibold hover:bg-[#5a0012] transition-colors"
@@ -163,10 +163,10 @@ export default function DistributorOrderDetail() {
       <div className="min-h-screen bg-white py-8 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="flex justify-between items-center mb-8">
-            <h1 className="text-3xl font-bold text-[#C3A35E]">{t('title')}</h1>
+            <h1 className="text-3xl font-bold text-harvics-gold">{t('title')}</h1>
             <button
               onClick={() => router.push(`/${locale}/distributor/orders`)}
-              className="bg-white text-[#C3A35E]/90 px-4 py-2 font-semibold hover:bg-white transition-colors"
+              className="bg-white text-harvics-gold/90 px-4 py-2 font-semibold hover:bg-white transition-colors"
             >
               {t('backToOrders')}
             </button>
@@ -176,11 +176,11 @@ export default function DistributorOrderDetail() {
           <div className="bg-white shadow p-6 mb-6">
             <div className="grid grid-cols-2 gap-4 mb-4">
               <div>
-                <p className="text-sm text-[#C3A35E]/90">{t('orderId') || 'Order ID'}</p>
+                <p className="text-sm text-harvics-gold/90">{t('orderId') || 'Order ID'}</p>
                 <p className="text-lg font-semibold">{orderDetail.order.id}</p>
               </div>
               <div>
-                <p className="text-sm text-[#C3A35E]/90">{t('status') || 'Status'}</p>
+                <p className="text-sm text-harvics-gold/90">{t('status') || 'Status'}</p>
                 <span
                   className={`px-3 py-1 inline-flex text-sm font-semibold rounded-full ${getStatusColor(
                     orderDetail.order.status
@@ -190,59 +190,59 @@ export default function DistributorOrderDetail() {
                 </span>
               </div>
               <div>
-                <p className="text-sm text-[#C3A35E]/90">{t('orderDate')}</p>
+                <p className="text-sm text-harvics-gold/90">{t('orderDate')}</p>
                 <p className="text-lg font-semibold">{formatDate(orderDetail.order.order_date)}</p>
               </div>
               {orderDetail.order.delivery_date && (
                 <div>
-                  <p className="text-sm text-[#C3A35E]/90">{t('deliveryDate')}</p>
+                  <p className="text-sm text-harvics-gold/90">{t('deliveryDate')}</p>
                   <p className="text-lg font-semibold">{formatDate(orderDetail.order.delivery_date)}</p>
                 </div>
               )}
               <div className="col-span-2">
-                <p className="text-sm text-[#C3A35E]/90">{t('totalAmount') || 'Total Amount'}</p>
-                <p className="text-2xl font-bold text-[#C3A35E]">
+                <p className="text-sm text-harvics-gold/90">{t('totalAmount') || 'Total Amount'}</p>
+                <p className="text-2xl font-bold text-harvics-gold">
                   {formatCurrencyAmount(orderDetail.order.total_amount, orderDetail.order.currency)}
                 </p>
               </div>
             </div>
             {orderDetail.order.delivery_address && (
               <div className="mt-4 pt-4 border-t">
-                <p className="text-sm text-[#C3A35E]/90 mb-1">{t('deliveryAddress')}</p>
-                <p className="text-[#C3A35E]/90">{orderDetail.order.delivery_address}</p>
+                <p className="text-sm text-harvics-gold/90 mb-1">{t('deliveryAddress')}</p>
+                <p className="text-harvics-gold/90">{orderDetail.order.delivery_address}</p>
               </div>
             )}
             {orderDetail.order.notes && (
               <div className="mt-4 pt-4 border-t">
-                <p className="text-sm text-[#C3A35E]/90 mb-1">{t('notes')}</p>
-                <p className="text-[#C3A35E]/90">{orderDetail.order.notes}</p>
+                <p className="text-sm text-harvics-gold/90 mb-1">{t('notes')}</p>
+                <p className="text-harvics-gold/90">{orderDetail.order.notes}</p>
               </div>
             )}
           </div>
 
           {/* Order Items */}
           <div className="bg-white shadow p-6 mb-6">
-            <h2 className="text-xl font-bold text-[#C3A35E] mb-4">{t('orderItems')}</h2>
+            <h2 className="text-xl font-bold text-harvics-gold mb-4">{t('orderItems')}</h2>
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-white">
                 <tr>
-                  <th className="px-4 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase">{t('product')}</th>
-                  <th className="px-4 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase">{t('sku')}</th>
-                  <th className="px-4 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase">{t('quantity')}</th>
-                  <th className="px-4 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase">{t('unitPrice')}</th>
-                  <th className="px-4 py-3 text-left text-xs font-medium text-[#C3A35E]/90 uppercase">{t('total')}</th>
+                  <th className="px-4 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase">{t('product')}</th>
+                  <th className="px-4 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase">{t('sku')}</th>
+                  <th className="px-4 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase">{t('quantity')}</th>
+                  <th className="px-4 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase">{t('unitPrice')}</th>
+                  <th className="px-4 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase">{t('total')}</th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
                 {orderDetail.items.map((item) => (
                   <tr key={item.id}>
-                    <td className="px-4 py-3 text-sm font-medium text-[#C3A35E]/90">{item.product_name}</td>
-                    <td className="px-4 py-3 text-sm text-[#C3A35E]/90">{item.sku}</td>
-                    <td className="px-4 py-3 text-sm text-[#C3A35E]/90">{item.quantity}</td>
-                    <td className="px-4 py-3 text-sm text-[#C3A35E]/90">
+                    <td className="px-4 py-3 text-sm font-medium text-harvics-gold/90">{item.product_name}</td>
+                    <td className="px-4 py-3 text-sm text-harvics-gold/90">{item.sku}</td>
+                    <td className="px-4 py-3 text-sm text-harvics-gold/90">{item.quantity}</td>
+                    <td className="px-4 py-3 text-sm text-harvics-gold/90">
                       {formatCurrencyAmount(item.unit_price, orderDetail.order.currency)}
                     </td>
-                    <td className="px-4 py-3 text-sm font-medium text-[#C3A35E]/90">
+                    <td className="px-4 py-3 text-sm font-medium text-harvics-gold/90">
                       {formatCurrencyAmount(item.total_price, orderDetail.order.currency)}
                     </td>
                   </tr>
@@ -254,7 +254,7 @@ export default function DistributorOrderDetail() {
           {/* Status Timeline */}
           {orderDetail.statusTimeline && orderDetail.statusTimeline.length > 0 && (
             <div className="bg-white shadow p-6">
-              <h2 className="text-xl font-bold text-[#C3A35E] mb-4">{t('statusTimeline')}</h2>
+              <h2 className="text-xl font-bold text-harvics-gold mb-4">{t('statusTimeline')}</h2>
               <div className="space-y-4">
                 {orderDetail.statusTimeline.map((timeline, index) => (
                   <div key={index} className="flex items-start">
@@ -264,8 +264,8 @@ export default function DistributorOrderDetail() {
                       </div>
                     </div>
                     <div className="ml-4 flex-1">
-                      <p className="text-sm font-medium text-[#C3A35E]/90">{timeline.description}</p>
-                      <p className="text-sm text-[#C3A35E]/90">{formatDateTime(timeline.timestamp)}</p>
+                      <p className="text-sm font-medium text-harvics-gold/90">{timeline.description}</p>
+                      <p className="text-sm text-harvics-gold/90">{formatDateTime(timeline.timestamp)}</p>
                       <span
                         className={`mt-1 px-2 py-1 inline-flex text-xs font-semibold rounded-full ${getStatusColor(
                           timeline.status

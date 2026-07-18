@@ -52,7 +52,7 @@ export default function InvestorRelationsForm() {
   ]
 
   return (
-    <div className="bg-gradient-to-br from-white800/40 to-white900/60 backdrop-blur-sm border-2 border-[#C3A35E]/20 p-8 shadow-2xl">
+    <div className="bg-gradient-to-br from-white800/40 to-white900/60 backdrop-blur-sm border-2 border-harvics-gold/20 p-8 shadow-2xl">
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>

@@ -119,7 +119,7 @@ export default function FleetMapView() {
           <div className="flex gap-1">
             {(['All', 'Moving', 'Stopped', 'Loading'] as const).map(f => (
               <button key={f} onClick={() => setFilter(f)}
-                className={`flex-1 py-1 text-[10px] rounded-full font-medium transition-colors ${filter === f ? 'bg-[#6B1F2B] text-white' : 'bg-[#F5F5F7] text-[#8E8E93]'}`}>
+                className={`flex-1 py-1 text-[10px] rounded-full font-medium transition-colors ${filter === f ? 'bg-harvics-burgundy text-white' : 'bg-[#F5F5F7] text-[#8E8E93]'}`}>
                 {f}
               </button>
             ))}
@@ -130,7 +130,7 @@ export default function FleetMapView() {
         <div className="flex-1 overflow-y-auto divide-y divide-[#F5F5F7]">
           {filtered.map(v => (
             <button key={v.id} onClick={() => { setSelected(v.id); setCenter({ lat: v.lat, lng: v.lng }); }}
-              className={`w-full text-left px-4 py-3 transition-colors hover:bg-[#F9F9FB] ${selected === v.id ? 'bg-[#F9F9FB] border-l-2 border-[#6B1F2B]' : ''}`}>
+              className={`w-full text-left px-4 py-3 transition-colors hover:bg-[#F9F9FB] ${selected === v.id ? 'bg-[#F9F9FB] border-l-2 border-harvics-burgundy' : ''}`}>
               <div className="flex items-center justify-between mb-1">
                 <span className="text-xs font-semibold text-[#1A1A1A]">{v.id}</span>
                 <span className="text-[10px] font-medium px-1.5 py-0.5 rounded-full" style={{ backgroundColor: STATUS_COLORS[v.status] + '20', color: STATUS_COLORS[v.status] }}>
@@ -163,7 +163,7 @@ export default function FleetMapView() {
         ) : !isLoaded ? (
           <div className="flex items-center justify-center h-full bg-[#F5F5F7]">
             <div className="text-center">
-              <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-[#6B1F2B] mx-auto mb-3" />
+              <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-harvics-burgundy mx-auto mb-3" />
               <p className="text-sm text-[#8E8E93]">Loading Google Maps…</p>
             </div>
           </div>

@@ -1,0 +1,35 @@
+HARVICTRADE / BUSINESS PORTAL IMAGE PATHS
+==========================================
+
+Copy from this file easily.
+
+CATEGORY HEROES (for top of category pages):
+/assets/harvictrade/heroes/textiles-hero.jpg
+/assets/harvictrade/heroes/fmcg-hero.jpg
+/assets/harvictrade/heroes/commodities-hero.jpg
+/assets/harvictrade/heroes/industrial-hero.jpg
+/assets/harvictrade/heroes/minerals-hero.jpg
+/assets/harvictrade/heroes/energy-hero.jpg
+/assets/harvictrade/heroes/electronics-hero.jpg
+
+PRODUCT PHOTOS (for cards inside):
+/assets/harvictrade/products/basmati-rice.jpg
+/assets/harvictrade/products/olive-oil.jpg
+/assets/harvictrade/products/safety-jacket.jpg
+/assets/harvictrade/products/denim-fabric.jpg
+/assets/harvictrade/products/copper-cathode.jpg
+/assets/harvictrade/products/iphone.jpg
+/assets/harvictrade/products/cement.jpg
+/assets/harvictrade/products/chocolate.jpg
+/assets/harvictrade/products/hard-hat.jpg
+/assets/harvictrade/products/nitrile-gloves.jpg
+
+SHARED HEROES (from first batch):
+/assets/shared/heroes/harvictrade-hero.jpg
+/assets/shared/heroes/harvictrade-marketplace.jpg
+/assets/shared/heroes/trade-finance-hero.jpg
+
+FULL DISK PATHS (if you need to find the actual files):
+/Users/shahtabraiz/Desktop/HARVICS WEBSITE/public/assets/harvictrade/heroes/
+/Users/shahtabraiz/Desktop/HARVICS WEBSITE/public/assets/harvictrade/products/
+/Users/shahtabraiz/Desktop/HARVICS WEBSITE/public/assets/shared/heroes/

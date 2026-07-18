@@ -75,7 +75,7 @@ export default function RouteListContent({ persona, locale }: RouteListContentPr
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <h3 className="text-sm font-semibold text-[#1A1A1A]">Route List</h3>
-        <button onClick={() => setShowForm(!showForm)} className="px-4 py-2 bg-[#6B1F2B] text-white text-xs font-medium rounded-xl hover:bg-[#5a1a24] transition-colors">
+        <button onClick={() => setShowForm(!showForm)} className="px-4 py-2 bg-harvics-burgundy text-white text-xs font-medium rounded-xl hover:bg-[#5a1a24] transition-colors">
           + New Route
         </button>
       </div>
@@ -98,7 +98,7 @@ export default function RouteListContent({ persona, locale }: RouteListContentPr
             <input placeholder="Distance (km)" type="number" value={formData.distance} onChange={e => setFormData(p => ({...p, distance: e.target.value}))} className="border border-black/20 rounded-lg px-3 py-2 text-black" />
           </div>
           <div className="flex gap-3">
-            <button onClick={handleCreate} disabled={!formData.origin || !formData.destination} className="bg-[#6B1F2B] text-black px-6 py-2 rounded-lg font-semibold hover:bg-[#b8963f] disabled:opacity-50 transition-colors">Create</button>
+            <button onClick={handleCreate} disabled={!formData.origin || !formData.destination} className="bg-harvics-burgundy text-black px-6 py-2 rounded-lg font-semibold hover:bg-[#b8963f] disabled:opacity-50 transition-colors">Create</button>
             <button onClick={() => setShowForm(false)} className="border border-black/20 text-black px-6 py-2 rounded-lg hover:bg-black/5 transition-colors">Cancel</button>
           </div>
         </div>

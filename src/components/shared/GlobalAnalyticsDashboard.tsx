@@ -183,7 +183,7 @@ const GlobalAnalyticsDashboard: React.FC = () => {
   return (
     <div className="bg-gradient-to-br from-[#0b1224] via-[#0f1f3a] to-[#0a0f1a] min-h-[600px] text-white -m-4 sm:-m-6 lg:-m-8 p-4 sm:p-6 lg:p-8">
       {/* Elegant Header with Glass Effect */}
-      <div className="bg-gradient-to-r from-[#1a1a1a]/95 via-[#2a2a2a]/95 to-[#1a1a1a]/95 backdrop-blur-xl border-b border-[#C3A35E]/20 shadow-2xl sticky top-0 z-50">
+      <div className="bg-gradient-to-r from-[#1a1a1a]/95 via-[#2a2a2a]/95 to-[#1a1a1a]/95 backdrop-blur-xl border-b border-harvics-gold/20 shadow-2xl sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <div>
@@ -202,7 +202,7 @@ const GlobalAnalyticsDashboard: React.FC = () => {
                   className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 transform hover:scale-105 ${
                     timeRange === range
                       ? 'bg-gradient-to-r from-white to-white text-black shadow-lg shadow-white/50'
-                      : 'bg-[#2a2a2a] text-gray-300 hover:bg-[#333] hover:text-[#C3A35E] border border-[#333]'
+                      : 'bg-[#2a2a2a] text-gray-300 hover:bg-[#333] hover:text-harvics-gold border border-[#333]'
                   }`}
                 >
                   {range}
@@ -214,7 +214,7 @@ const GlobalAnalyticsDashboard: React.FC = () => {
                 className={`ml-4 px-4 py-2 rounded-lg text-sm font-bold transition-all duration-300 flex items-center gap-2 ${
                   isRefreshing 
                     ? 'bg-gray-600 text-gray-400 cursor-not-allowed' 
-                    : 'bg-[#C3A35E] text-black hover:bg-white shadow-lg shadow-[#C3A35E]/20'
+                    : 'bg-harvics-gold text-black hover:bg-white shadow-lg shadow-[#C3A35E]/20'
                 }`}
               >
                 {isRefreshing ? 'STREAMING...' : '🔄 REFRESH LIVE DATA'}
@@ -251,7 +251,7 @@ const GlobalAnalyticsDashboard: React.FC = () => {
                 className={`flex-1 px-4 py-3 rounded-lg font-semibold text-sm transition-all duration-300 ${
                   activeView === view.id
                     ? 'bg-gradient-to-r from-[#60a5fa] via-white to-[#a78bfa] text-black shadow-lg'
-                    : 'text-white/80 hover:text-[#C3A35E] hover:bg-[#6B1F2B]'
+                    : 'text-white/80 hover:text-harvics-gold hover:bg-harvics-burgundy'
                 }`}
               >
                 <span className="mr-2">{view.icon}</span>
@@ -313,7 +313,7 @@ const GlobalAnalyticsDashboard: React.FC = () => {
           {activeView === 'overview' && analyticsData && (
             <div className="space-y-4 md:space-y-6">
               {/* Revenue Trend Chart - Elegant */}
-              <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] border border-[#C3A35E]/30 rounded-xl p-6 md:p-8 backdrop-blur-sm shadow-2xl">
+              <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] border border-harvics-gold/30 rounded-xl p-6 md:p-8 backdrop-blur-sm shadow-2xl">
                 <div className="flex items-center justify-between mb-6">
                   <h3 className="text-xl md:text-2xl font-bold text-white flex items-center">
                     <span className="mr-2">📈</span>
@@ -350,7 +350,7 @@ const GlobalAnalyticsDashboard: React.FC = () => {
               {/* Growth & Market Share - Side by Side */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                 {/* Growth Rate Chart */}
-                <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] border border-[#C3A35E]/30 rounded-xl p-6 backdrop-blur-sm shadow-2xl">
+                <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] border border-harvics-gold/30 rounded-xl p-6 backdrop-blur-sm shadow-2xl">
                   <h3 className="text-lg md:text-xl font-bold text-white mb-4 flex items-center">
                     <span className="mr-2">📊</span>
                     Growth Rate
@@ -380,7 +380,7 @@ const GlobalAnalyticsDashboard: React.FC = () => {
                 </div>
 
                 {/* Market Share Chart */}
-                <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] border border-[#C3A35E]/30 rounded-xl p-6 backdrop-blur-sm shadow-2xl">
+                <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] border border-harvics-gold/30 rounded-xl p-6 backdrop-blur-sm shadow-2xl">
                   <h3 className="text-lg md:text-xl font-bold text-white mb-4 flex items-center">
                     <span className="mr-2">🎯</span>
                     Market Share Evolution
@@ -411,7 +411,7 @@ const GlobalAnalyticsDashboard: React.FC = () => {
 
           {/* Products View */}
           {activeView === 'products' && analyticsData && (
-            <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] border border-[#C3A35E]/30 rounded-xl p-6 md:p-8 backdrop-blur-sm shadow-2xl">
+            <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] border border-harvics-gold/30 rounded-xl p-6 md:p-8 backdrop-blur-sm shadow-2xl">
               <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
                 <span className="mr-2">📦</span>
                 Product Performance Analysis
@@ -420,7 +420,7 @@ const GlobalAnalyticsDashboard: React.FC = () => {
                 {analyticsData.productPerformance.map((product, index) => (
                   <div key={index} className="bg-[#0a0a0a] border border-[#333] rounded-lg p-4 hover:border-white/50 transition-all group">
                     <div className="flex items-center justify-between mb-3">
-                      <h4 className="text-lg font-bold text-white group-hover:text-[#C3A35E] transition-colors">
+                      <h4 className="text-lg font-bold text-white group-hover:text-harvics-gold transition-colors">
                         {product.name}
                       </h4>
                       <div className="text-sm font-bold text-white">
@@ -455,7 +455,7 @@ const GlobalAnalyticsDashboard: React.FC = () => {
 
           {/* Cities View */}
           {activeView === 'cities' && analyticsData && (
-            <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] border border-[#C3A35E]/30 rounded-xl p-6 md:p-8 backdrop-blur-sm shadow-2xl">
+            <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] border border-harvics-gold/30 rounded-xl p-6 md:p-8 backdrop-blur-sm shadow-2xl">
               <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
                 <span className="mr-2">🏙️</span>
                 City Performance Analysis
@@ -464,7 +464,7 @@ const GlobalAnalyticsDashboard: React.FC = () => {
                 {analyticsData.cityPerformance.map((city, index) => (
                   <div key={index} className="bg-[#0a0a0a] border border-[#333] rounded-lg p-5 hover:border-white/50 transition-all group hover:scale-105">
                     <div className="flex items-center justify-between mb-4">
-                      <h4 className="text-xl font-bold text-white group-hover:text-[#C3A35E] transition-colors">
+                      <h4 className="text-xl font-bold text-white group-hover:text-harvics-gold transition-colors">
                         {city.name}
                       </h4>
                       <div className="text-xs px-3 py-1 bg-green-500/20 text-green-400 rounded-full border border-green-500/30">
@@ -495,7 +495,7 @@ const GlobalAnalyticsDashboard: React.FC = () => {
 
           {/* HR Performance View */}
           {activeView === 'hr' && analyticsData && (
-            <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] border border-[#C3A35E]/30 rounded-xl p-6 md:p-8 backdrop-blur-sm shadow-2xl">
+            <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] border border-harvics-gold/30 rounded-xl p-6 md:p-8 backdrop-blur-sm shadow-2xl">
               <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
                 <span className="mr-2">👥</span>
                 HR Performance Metrics

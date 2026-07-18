@@ -260,7 +260,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
   })()
 
   // Sparkline SVG
-  const Spark = ({ data, color='#6B1F2B' }: { data:number[], color?:string }) => {
+  const Spark = ({ data, color='var(--harvics-burgundy)' }: { data:number[], color?:string }) => {
     if (data.length < 2) return null
     const w=80,h=28,pad=2,mn=Math.min(...data),mx=Math.max(...data),rng=mx-mn||1
     const pts = data.map((v,i)=>`${pad+(i/(data.length-1))*(w-pad*2)},${h-pad-((v-mn)/rng)*(h-pad*2)}`).join(' ')
@@ -279,7 +279,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
   const Ticker = () => {
     const items = [...tickerItems, ...tickerItems] // duplicate for seamless loop
     return (
-      <div className="border-t-2 border-[#6B1F2B] bg-[#1a0810] overflow-hidden" style={{height:36}}>
+      <div className="border-t-2 border-harvics-burgundy bg-[#1a0810] overflow-hidden" style={{height:36}}>
         <div className="hv-ticker items-center h-full" style={{width:'max-content'}}>
           {items.map((item, i) => (
             <div key={`${item.id}-${i}`} className="flex items-center gap-3 px-5 border-r border-white/10 h-full flex-shrink-0">
@@ -436,13 +436,13 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
           component: (
             <div className="p-6">
               <div className="mb-4">
-                <h3 className="text-sm font-semibold mb-2 text-[#6B1F2B]">Payment Verification Queue</h3>
+                <h3 className="text-sm font-semibold mb-2 text-harvics-burgundy">Payment Verification Queue</h3>
                 <p className="text-[#8E8E93]">Review and verify payments requiring manual verification</p>
               </div>
               <a
                 href={`/${locale}/os/finance/payments/verification-queue`}
                 className="inline-block px-6 py-3 font-semibold text-white transition-colors"
-                style={{ background: '#6B1F2B', borderRadius: 0 }}
+                style={{ background: 'var(--harvics-burgundy)', borderRadius: 0 }}
               >
                 Open Verification Queue →
               </a>
@@ -456,13 +456,13 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
           component: (
             <div className="p-6">
               <div className="mb-4">
-                <h3 className="text-sm font-semibold mb-2 text-[#6B1F2B]">Payment Reconciliation</h3>
+                <h3 className="text-sm font-semibold mb-2 text-harvics-burgundy">Payment Reconciliation</h3>
                 <p className="text-[#8E8E93]">Advanced payment reconciliation and bank deposit matching</p>
               </div>
               <a
                 href={`/${locale}/os/finance/payments/reconciliation`}
                 className="inline-block px-6 py-3 font-semibold text-white transition-colors"
-                style={{ background: '#6B1F2B', borderRadius: 0 }}
+                style={{ background: 'var(--harvics-burgundy)', borderRadius: 0 }}
               >
                 Open Reconciliation Dashboard →
               </a>
@@ -558,7 +558,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
             return (
               <div className="bg-white">
                 {/* ── HEADER BANNER — Harvics burgundy ── */}
-                <div className="px-8 py-7" style={{ background: '#6B1F2B' }}>
+                <div className="px-8 py-7" style={{ background: 'var(--harvics-burgundy)' }}>
                   <div className="flex items-start justify-between gap-8">
                     <div className="flex-1">
                       <div className="text-[10px] font-black text-white/50 tracking-[0.2em] mb-2 uppercase">Asset Portfolio · FY 2026</div>
@@ -567,7 +567,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                       <div className="flex items-center gap-6">
                         {[
                           { l: 'GROSS COST',    v: `$${(totalCost/1000000).toFixed(2)}M`, c: 'text-white/80' },
-                          { l: 'WRITTEN DOWN',  v: `$${(totalDep/1000).toFixed(0)}K`,      c: 'text-[#C3A35E]' },
+                          { l: 'WRITTEN DOWN',  v: `$${(totalDep/1000).toFixed(0)}K`,      c: 'text-harvics-gold' },
                           { l: 'TOTAL ITEMS',   v: `${assets.length} assets`,              c: 'text-white' },
                         ].map(s => (
                           <div key={s.l} className="border-l-2 border-white/20 pl-4">
@@ -581,7 +581,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                     <div className="flex flex-col items-center flex-shrink-0">
                       <svg width="130" height="130" viewBox="0 0 120 120">
                         <circle cx="60" cy="60" r={r} fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="10"/>
-                        <circle cx="60" cy="60" r={r} fill="none" stroke="#C3A35E" strokeWidth="10"
+                        <circle cx="60" cy="60" r={r} fill="none" stroke="var(--harvics-gold)" strokeWidth="10"
                           strokeDasharray={String(circ)} strokeDashoffset={String(svgOffset)}
                           strokeLinecap="butt" transform="rotate(-90 60 60)"
                           style={{ transition: 'stroke-dashoffset 1.6s cubic-bezier(0.4,0,0.2,1)' }}/>
@@ -594,10 +594,10 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                   <div className="mt-5 pt-4 border-t border-white/20 flex items-center gap-4">
                     <button onClick={runDepreciation} disabled={depLoading}
                       className="px-6 py-2.5 text-sm font-black tracking-wide transition-colors disabled:opacity-40"
-                      style={{ background: '#C3A35E', color: '#1A1A1A' }}>
+                      style={{ background: 'var(--harvics-gold)', color: '#1A1A1A' }}>
                       {depLoading ? '⏳ RUNNING…' : '▶  RUN MONTHLY DEPRECIATION'}
                     </button>
-                    {depResult && <span className="text-sm text-[#C3A35E] font-bold">✓ {depResult.data?.length} assets updated</span>}
+                    {depResult && <span className="text-sm text-harvics-gold font-bold">✓ {depResult.data?.length} assets updated</span>}
                   </div>
                 </div>
                 {/* ── ASSET TABLE — white background ── */}
@@ -610,25 +610,25 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                   {assets.map(a => {
                     const depPctA = a.purchaseCost > 0 ? (a.accumulatedDepreciation / a.purchaseCost) * 100 : 0
                     const rem = Math.max(0, 100 - depPctA)
-                    const barCol = rem > 60 ? '#6B1F2B' : rem > 30 ? '#C3A35E' : '#ef4444'
+                    const barCol = rem > 60 ? 'var(--harvics-burgundy)' : rem > 30 ? 'var(--harvics-gold)' : '#ef4444'
                     return (
                       <div key={a.id || a.assetCode}
                         className="grid px-6 py-4 border-b border-[#E5E5EA] items-center gap-2 hover:bg-white transition-colors"
                         style={{ gridTemplateColumns: '1fr 80px 80px 90px 160px 110px' }}>
                         <div className="flex items-center gap-3 min-w-0">
-                          <div className="w-[3px] h-10 flex-shrink-0" style={{ background: '#6B1F2B' }}></div>
+                          <div className="w-[3px] h-10 flex-shrink-0" style={{ background: 'var(--harvics-burgundy)' }}></div>
                           <div className="min-w-0">
                             <div className="text-[#1A1A1A] font-semibold text-sm truncate">{a.name}</div>
                             <div className="flex items-center gap-2 mt-0.5">
                               <span className="text-[10px] font-mono text-[#8E8E93]">{a.assetCode}</span>
-                              <span className="text-[9px] font-bold px-1.5 py-0.5 bg-[#6B1F2B]/10 text-[#6B1F2B]">{a.category}</span>
+                              <span className="text-[9px] font-bold px-1.5 py-0.5 bg-harvics-burgundy/10 text-harvics-burgundy">{a.category}</span>
                               <span className="text-[9px] font-bold px-1.5 py-0.5 bg-[#F5F5F7] text-[#8E8E93]">{a.industryVertical}</span>
                             </div>
                           </div>
                         </div>
                         <div className="text-sm text-[#8E8E93] tabular-nums">${(a.purchaseCost/1000).toFixed(0)}K</div>
                         <div className="text-sm text-amber-600 font-semibold tabular-nums">${(a.accumulatedDepreciation/1000).toFixed(0)}K</div>
-                        <div className="text-sm font-black text-[#6B1F2B] tabular-nums">${(a.bookValue/1000).toFixed(0)}K</div>
+                        <div className="text-sm font-black text-harvics-burgundy tabular-nums">${(a.bookValue/1000).toFixed(0)}K</div>
                         <div>
                           <div className="flex items-center gap-2 mb-1">
                             <div className="flex-1 h-2 bg-[#F5F5F7] overflow-hidden">
@@ -671,7 +671,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
             return (
               <div className="bg-white">
                 {/* ── KPI HEADER ── */}
-                <div className="px-6 pt-6 pb-4" style={{ background: '#6B1F2B' }}>
+                <div className="px-6 pt-6 pb-4" style={{ background: 'var(--harvics-burgundy)' }}>
                   <div className="flex items-center justify-between mb-4">
                     <div>
                       <div className="text-[10px] font-black text-white/50 tracking-[0.2em] uppercase mb-1">Cost Center Performance · YTD 2026</div>
@@ -701,7 +701,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                       <span className="font-black text-white/70">{Math.round(totalActual/totalBudget*100)}%</span>
                     </div>
                     <div className="w-full h-2 bg-white/10">
-                      <div className="h-2 bg-[#C3A35E] transition-all duration-1000 ease-out" style={{ width: animated ? `${Math.min(totalActual/totalBudget*100,100)}%` : '0%' }}></div>
+                      <div className="h-2 bg-harvics-gold transition-all duration-1000 ease-out" style={{ width: animated ? `${Math.min(totalActual/totalBudget*100,100)}%` : '0%' }}></div>
                     </div>
                   </div>
                 </div>
@@ -713,7 +713,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                     const isOver = util > 100
                     const isRisk = util >= 85 && util <= 100
                     const isFlashing = !!flashMap[cc.code]
-                    const barColor = isOver ? '#ef4444' : isRisk ? '#f59e0b' : '#6B1F2B'
+                    const barColor = isOver ? '#ef4444' : isRisk ? '#f59e0b' : 'var(--harvics-burgundy)'
                     const spark = sparkHistory[cc.code] || []
                     const typeColor: Record<string, string> = { Revenue: 'bg-emerald-100 text-emerald-700', Manufacturing: 'bg-blue-100 text-blue-700', Operations: 'bg-purple-100 text-purple-700', Overhead: 'bg-gray-100 text-gray-600', Sales: 'bg-orange-100 text-orange-700' }
                     return (
@@ -728,7 +728,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                         <div className="flex items-center justify-between gap-4">
                           {/* LEFT: name + meta */}
                           <div className="flex items-center gap-3 min-w-0 flex-1">
-                            <span className="font-mono text-xs font-black text-[#6B1F2B] bg-[#6B1F2B]/10 px-2 py-1 flex-shrink-0">{cc.code}</span>
+                            <span className="font-mono text-xs font-black text-harvics-burgundy bg-harvics-burgundy/10 px-2 py-1 flex-shrink-0">{cc.code}</span>
                             <div className="min-w-0">
                               <div className="font-semibold text-[#1A1A1A] text-sm flex items-center gap-2">
                                 <span className="truncate">{cc.name}</span>
@@ -748,7 +748,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                             </div>
                             <div className={`text-right px-1.5 py-0.5 rounded ${flashMap[cc.code]==='up'?'hv-flash-up':flashMap[cc.code]==='down'?'hv-flash-down':''}`}>
                               <div className="text-[9px] text-[#8E8E93] uppercase tracking-wider">Actual</div>
-                              <div className={`text-sm font-black tabular-nums ${isOver?'text-red-600':'text-[#6B1F2B]'}`}>{fmtK(cc.actualSpend)}</div>
+                              <div className={`text-sm font-black tabular-nums ${isOver?'text-red-600':'text-harvics-burgundy'}`}>{fmtK(cc.actualSpend)}</div>
                             </div>
                             <div className="text-right">
                               <div className="text-[9px] text-[#8E8E93] uppercase tracking-wider">Variance</div>
@@ -759,7 +759,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                           <div className="flex items-center gap-3 flex-shrink-0">
                             <Spark data={spark} />
                             <div className={`text-right w-14 px-1.5 py-0.5 rounded ${flashMap[cc.code]==='up'?'hv-flash-up':flashMap[cc.code]==='down'?'hv-flash-down':''}`}>
-                              <div className={`text-xl font-black tabular-nums ${isOver?'text-red-600':isRisk?'text-amber-600':'text-[#6B1F2B]'}`}>{Math.round(util)}%</div>
+                              <div className={`text-xl font-black tabular-nums ${isOver?'text-red-600':isRisk?'text-amber-600':'text-harvics-burgundy'}`}>{Math.round(util)}%</div>
                               {isOver&&<div className="text-[9px] font-black text-red-600">▲ OVER</div>}
                               {isRisk&&!isOver&&<div className="text-[9px] font-black text-amber-600">⚠ RISK</div>}
                             </div>
@@ -801,7 +801,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
             return (
               <div className="bg-white">
                 {/* HEADER */}
-                <div className="px-8 py-7" style={{ background: '#6B1F2B' }}>
+                <div className="px-8 py-7" style={{ background: 'var(--harvics-burgundy)' }}>
                   <div className="text-[10px] font-black text-white/50 tracking-[0.2em] uppercase mb-1">Budget Control Centre · FY 2026</div>
                   <div className="flex items-end justify-between gap-4 flex-wrap">
                     <div>
@@ -816,7 +816,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                       <div className="w-px h-8 bg-white/20"></div>
                       <div className="text-right">
                         <div className="text-[9px] text-white/40 tracking-widest uppercase">Active</div>
-                        <div className="text-xl font-black text-[#C3A35E]">{activeBudgets.length} budgets</div>
+                        <div className="text-xl font-black text-harvics-gold">{activeBudgets.length} budgets</div>
                       </div>
                     </div>
                   </div>
@@ -826,7 +826,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                       <span className="font-black text-white/70">{Math.round(totalSpent/totalApproved*100)}%</span>
                     </div>
                     <div className="w-full h-2 bg-white/10">
-                      <div className="h-2 bg-[#C3A35E] transition-all duration-1000 ease-out" style={{ width: animated ? `${Math.min(totalSpent/totalApproved*100,100)}%` : '0%' }}></div>
+                      <div className="h-2 bg-harvics-gold transition-all duration-1000 ease-out" style={{ width: animated ? `${Math.min(totalSpent/totalApproved*100,100)}%` : '0%' }}></div>
                     </div>
                   </div>
                 </div>
@@ -837,7 +837,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                     const remaining = b.totalBudget - b.totalActual
                     const segments = 16
                     const filled = animated ? Math.round((util/100)*segments) : 0
-                    const barC = util > 90 ? '#ef4444' : util > 70 ? '#f59e0b' : '#6B1F2B'
+                    const barC = util > 90 ? '#ef4444' : util > 70 ? '#f59e0b' : 'var(--harvics-burgundy)'
                     const statusColors: Record<string,string> = { Closed: 'bg-gray-100 text-gray-600', Active: 'bg-emerald-100 text-emerald-700', Draft: 'bg-amber-100 text-amber-700' }
                     return (
                       <div key={b.id || b.budgetCode} className="p-6 bg-white">
@@ -900,7 +900,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
             return (
               <div className="bg-white">
                 {/* HEADER */}
-                <div className="px-8 py-7" style={{ background: '#6B1F2B' }}>
+                <div className="px-8 py-7" style={{ background: 'var(--harvics-burgundy)' }}>
                   <div className="text-[10px] font-black text-white/50 tracking-[0.2em] uppercase mb-2">Period Close Control · FY 2026</div>
                   <div className="flex items-center justify-between gap-6">
                     <div className="flex items-center gap-6">
@@ -976,7 +976,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                               <span>{!p.balanced ? `Debits and credits differ by $${diff.toLocaleString()} — post correcting journal first` : 'Trial balance balanced — ready to close'}</span>
                             </div>
                             <button onClick={()=>closePeriod(p.id)} disabled={!p.balanced}
-                              className="ml-4 px-6 py-3 text-sm font-black text-white bg-[#6B1F2B] hover:bg-[#8B2F3B] disabled:opacity-40 disabled:cursor-not-allowed transition-colors whitespace-nowrap">
+                              className="ml-4 px-6 py-3 text-sm font-black text-white bg-harvics-burgundy hover:bg-[#8B2F3B] disabled:opacity-40 disabled:cursor-not-allowed transition-colors whitespace-nowrap">
                               Close {p.name} →
                             </button>
                           </div>
@@ -1032,7 +1032,7 @@ export default function FinanceDomainContent({ persona, locale }: FinanceDomainC
                         {accs.map(gl => (
                           <div key={gl.id || gl.accountCode} className="flex items-center justify-between bg-white border border-[#E5E5EA] px-4 py-3 hover:bg-[#FAFAF8] transition-colors">
                             <div className="flex items-center gap-4">
-                              <span className="font-mono text-sm font-bold text-[#6B1F2B] w-12">{gl.accountCode}</span>
+                              <span className="font-mono text-sm font-bold text-harvics-burgundy w-12">{gl.accountCode}</span>
                               <span className="font-medium text-[#1A1A1A]">{gl.name}</span>
                               <span className="text-xs text-[#8E8E93]">{gl.normalBalance}</span>
                             </div>

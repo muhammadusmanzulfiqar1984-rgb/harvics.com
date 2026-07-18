@@ -23,20 +23,20 @@ interface MarketAttackProposal {
 
 const StrategyValidator: React.FC = () => {
   const [proposal, setProposal] = useState<MarketAttackProposal | null>(null);
-  const [socket, setSocket] = useState<Socket | null>(null);
+  const [, setSocket] = useState<Socket | null>(null);
   const [status, setStatus] = useState<'listening' | 'reviewing' | 'approved' | 'rejected'>('listening');
 
+  const orchestratorUrl = (process.env.NEXT_PUBLIC_ORCHESTRATOR_URL || '').trim();
+
   useEffect(() => {
-    // Connect to Harvics Orchestrator (Backend)
-    const newSocket = io('http://localhost:4000');
+    // No orchestrator configured → don't open a socket. The widget stays
+    // hidden rather than getting stuck in a perpetual "listening" state.
+    if (!orchestratorUrl) return;
+
+    const newSocket = io(orchestratorUrl);
     setSocket(newSocket);
 
-    newSocket.on('connect', () => {
-      console.log('Connected to Harvics Orchestrator');
-    });
-
     newSocket.on('market-attack-proposal', (data: MarketAttackProposal) => {
-      console.log('New Proposal Received:', data);
       setProposal(data);
       setStatus('reviewing');
     });
@@ -44,7 +44,7 @@ const StrategyValidator: React.FC = () => {
     return () => {
       newSocket.disconnect();
     };
-  }, []);
+  }, [orchestratorUrl]);
 
   const handleDecision = (decision: 'approved' | 'rejected') => {
     setStatus(decision);
@@ -54,15 +54,8 @@ const StrategyValidator: React.FC = () => {
     }, 3000); // Clear after 3 seconds
   };
 
-  if (!proposal && status === 'listening') {
-    return (
-      <div className="p-6 bg-white rounded-xl shadow-sm border border-gray-200 flex items-center justify-center gap-3">
-        <div className="w-3 h-3 bg-green-500 rounded-full animate-ping"></div>
-        <span className="text-sm font-medium text-gray-500">Orchestrator Listening for Market Signals...</span>
-      </div>
-    );
-  }
-
+  // No live proposal (or no orchestrator configured) → render nothing so the
+  // dashboard never shows a stuck/broken "listening" widget to end users.
   if (!proposal) return null;
 
   return (

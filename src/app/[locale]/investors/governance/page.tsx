@@ -51,10 +51,10 @@ export default async function GovernancePage({ params }: GovernancePageProps) {
   return (
     <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
       {/* Hero */}
-      <section className="relative bg-[#6B1F2B] py-20 px-4 border-b border-[#C3A35E]/40 overflow-hidden">
+      <section className="relative bg-harvics-burgundy py-20 px-4 border-b border-harvics-gold/40 overflow-hidden">
         <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.95) 0%, rgba(90,26,36,0.9) 100%)' }} />
         <div className="max-w-[1200px] mx-auto text-center relative z-10">
-          <div className="text-xs text-[#C3A35E] font-bold uppercase tracking-[0.2em] mb-3">Investors</div>
+          <div className="text-xs text-harvics-gold font-bold uppercase tracking-[0.2em] mb-3">Investors</div>
           <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4" style={{ letterSpacing: '-0.02em' }}>
             Corporate Governance
           </h1>
@@ -65,11 +65,11 @@ export default async function GovernancePage({ params }: GovernancePageProps) {
       </section>
 
       {/* Investor Nav */}
-      <section className="bg-[#5a1a24] border-b border-[#C3A35E]/20">
+      <section className="bg-[#5a1a24] border-b border-harvics-gold/20">
         <div className="max-w-[1200px] mx-auto px-4 flex gap-0">
           {navItems.map((n) => (
             <Link key={n.label} href={n.href}
-              className={`px-6 py-4 text-sm font-semibold transition-colors ${n.active ? 'text-[#C3A35E] border-b-2 border-[#C3A35E]' : 'text-white/50 hover:text-white/80'}`}>
+              className={`px-6 py-4 text-sm font-semibold transition-colors ${n.active ? 'text-harvics-gold border-b-2 border-harvics-gold' : 'text-white/50 hover:text-white/80'}`}>
               {n.label}
             </Link>
           ))}
@@ -78,27 +78,27 @@ export default async function GovernancePage({ params }: GovernancePageProps) {
 
       {/* Governance Pillars */}
       <section className="max-w-[1200px] mx-auto px-4 py-16">
-        <h2 className="text-2xl font-semibold text-[#6B1F2B] mb-8 text-center">Governance Framework</h2>
+        <h2 className="text-2xl font-semibold text-harvics-burgundy mb-8 text-center">Governance Framework</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {governancePillars.map((p) => (
-            <div key={p.title} className="bg-white border border-[#C3A35E]/15 p-8">
+            <div key={p.title} className="bg-white border border-harvics-gold/15 p-8">
               <div className="text-3xl mb-4">{p.icon}</div>
-              <h3 className="text-lg font-semibold text-[#6B1F2B] mb-3">{p.title}</h3>
-              <p className="text-sm text-[#6B1F2B]/55 leading-relaxed">{p.desc}</p>
+              <h3 className="text-lg font-semibold text-harvics-burgundy mb-3">{p.title}</h3>
+              <p className="text-sm text-harvics-burgundy/55 leading-relaxed">{p.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Corporate Policies */}
-      <section className="bg-white border-t border-b border-[#C3A35E]/20">
+      <section className="bg-white border-t border-b border-harvics-gold/20">
         <div className="max-w-[1200px] mx-auto px-4 py-16">
-          <h2 className="text-2xl font-semibold text-[#6B1F2B] mb-8 text-center">Corporate Policies</h2>
+          <h2 className="text-2xl font-semibold text-harvics-burgundy mb-8 text-center">Corporate Policies</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[800px] mx-auto">
             {policies.map((p) => (
-              <div key={p} className="flex items-center gap-3 p-4 border border-[#C3A35E]/15 bg-white">
-                <span className="text-[#C3A35E] font-bold">✓</span>
-                <span className="text-sm font-medium text-[#6B1F2B]">{p}</span>
+              <div key={p} className="flex items-center gap-3 p-4 border border-harvics-gold/15 bg-white">
+                <span className="text-harvics-gold font-bold">✓</span>
+                <span className="text-sm font-medium text-harvics-burgundy">{p}</span>
               </div>
             ))}
           </div>
@@ -106,14 +106,14 @@ export default async function GovernancePage({ params }: GovernancePageProps) {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#6B1F2B] border-t border-[#C3A35E]/30">
+      <section className="bg-harvics-burgundy border-t border-harvics-gold/30">
         <div className="max-w-[1200px] mx-auto px-4 py-14 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="text-xl font-semibold text-white mb-2">Investor Relations</h3>
             <p className="text-white/50 text-sm">For governance inquiries, contact our investor relations team at ir@harvics.com</p>
           </div>
           <Link href={`/${locale}/compliance`}
-            className="px-8 py-3 bg-[#C3A35E] text-[#6B1F2B] text-sm font-bold hover:bg-[#d4b46e] transition-colors">
+            className="px-8 py-3 bg-harvics-gold text-harvics-burgundy text-sm font-bold hover:bg-[#d4b46e] transition-colors">
             View Compliance
           </Link>
         </div>

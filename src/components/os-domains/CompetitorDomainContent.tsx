@@ -120,7 +120,7 @@ function SWOTScreen() {
           <ul className="space-y-2">
             {s.items.map((item, i) => (
               <li key={i} className="flex items-start gap-2 text-sm text-[#1A1A1A]">
-                <span className="text-[#C3A35E] mt-1">•</span>{item}
+                <span className="text-harvics-gold mt-1">•</span>{item}
               </li>
             ))}
           </ul>

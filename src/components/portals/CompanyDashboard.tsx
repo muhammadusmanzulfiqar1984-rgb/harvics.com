@@ -168,8 +168,8 @@ export default function V16CompanyDashboard() {
     return (
       <div className="min-h-screen bg-[#F8F9FA] flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#C3A35E] mx-auto mb-4"></div>
-          <p className="text-[#6B1F2B]">Loading Harvics Global OS...</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-harvics-gold mx-auto mb-4"></div>
+          <p className="text-harvics-burgundy">Loading Harvics Global OS...</p>
         </div>
       </div>
     )
@@ -199,19 +199,19 @@ export default function V16CompanyDashboard() {
         <div className="inline-flex rounded-md shadow-sm">
           <button
             onClick={() => setActiveTier('tier0')}
-            className={`px-4 py-2 text-sm font-medium ${activeTier === 'tier0' ? 'bg-[#6B1F2B] text-white' : 'bg-white text-[#6B1F2B]'} border border-gray-200 rounded-l-lg hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-[#C3A35E]`}
+            className={`px-4 py-2 text-sm font-medium ${activeTier === 'tier0' ? 'bg-harvics-burgundy text-white' : 'bg-white text-harvics-burgundy'} border border-gray-200 rounded-l-lg hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-harvics-gold`}
           >
             Tier-0 Foundational Engines
           </button>
           <button
             onClick={() => setActiveTier('tier1')}
-            className={`px-4 py-2 text-sm font-medium ${activeTier === 'tier1' ? 'bg-[#6B1F2B] text-white' : 'bg-white text-[#6B1F2B]'} border-t border-b border-gray-200 hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-[#C3A35E]`}
+            className={`px-4 py-2 text-sm font-medium ${activeTier === 'tier1' ? 'bg-harvics-burgundy text-white' : 'bg-white text-harvics-burgundy'} border-t border-b border-gray-200 hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-harvics-gold`}
           >
             Tier-1 Core OS Domains
           </button>
           <button
             onClick={() => setActiveTier(null)}
-            className={`px-4 py-2 text-sm font-medium ${activeTier === null ? 'bg-[#6B1F2B] text-white' : 'bg-white text-[#6B1F2B]'} border border-gray-200 rounded-r-md hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-[#C3A35E]`}
+            className={`px-4 py-2 text-sm font-medium ${activeTier === null ? 'bg-harvics-burgundy text-white' : 'bg-white text-harvics-burgundy'} border border-gray-200 rounded-r-md hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-harvics-gold`}
           >
             All Tiers
           </button>

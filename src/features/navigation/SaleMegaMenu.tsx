@@ -216,7 +216,7 @@ const SaleMegaMenu: React.FC<SaleMegaMenuProps> = ({ isOpen, onClose }) => {
                     <button
                       key={subcategory}
                       onClick={() => handleSubcategorySelect(subcategory)}
-                      className="px-4 py-3 bg-white hover:bg-white border-2 border-black200 hover:border-[#6B1F2B] rounded-md transition-all text-left font-semibold text-sm text-black"
+                      className="px-4 py-3 bg-white hover:bg-white border-2 border-black200 hover:border-harvics-burgundy rounded-md transition-all text-left font-semibold text-sm text-black"
                     >
                       {subcategory}
                     </button>
@@ -225,8 +225,8 @@ const SaleMegaMenu: React.FC<SaleMegaMenuProps> = ({ isOpen, onClose }) => {
               </div>
             ) : (
               /* LAYER 3: Promo Form */
-              <div className="bg-white border-2 border-[#6B1F2B] rounded-lg p-6">
-                <div className="mb-4 pb-3 border-b-2 border-[#6B1F2B]">
+              <div className="bg-white border-2 border-harvics-burgundy rounded-lg p-6">
+                <div className="mb-4 pb-3 border-b-2 border-harvics-burgundy">
                   <h3 className="font-bold text-xl text-black mb-2">
                     Get Exclusive Sale Notifications
                   </h3>
@@ -245,7 +245,7 @@ const SaleMegaMenu: React.FC<SaleMegaMenuProps> = ({ isOpen, onClose }) => {
                       value={formData.email}
                       onChange={handleFormChange}
                       className={`w-full px-4 py-2 border-2 rounded-md ${
-                        formErrors.email ? 'border-red-500' : 'border-[#6B1F2B]'
+                        formErrors.email ? 'border-red-500' : 'border-harvics-burgundy'
                       }`}
                       placeholder="your.email@example.com"
                     />
@@ -263,7 +263,7 @@ const SaleMegaMenu: React.FC<SaleMegaMenuProps> = ({ isOpen, onClose }) => {
                       value={formData.phone}
                       onChange={handleFormChange}
                       className={`w-full px-4 py-2 border-2 rounded-md ${
-                        formErrors.phone ? 'border-red-500' : 'border-[#6B1F2B]'
+                        formErrors.phone ? 'border-red-500' : 'border-harvics-burgundy'
                       }`}
                       placeholder="+1 234 567 8900"
                     />
@@ -283,7 +283,7 @@ const SaleMegaMenu: React.FC<SaleMegaMenuProps> = ({ isOpen, onClose }) => {
                             value={sub}
                             checked={formData.interests.includes(sub)}
                             onChange={handleFormChange}
-                            className="w-4 h-4 text-black border-2 border-[#6B1F2B] rounded"
+                            className="w-4 h-4 text-black border-2 border-harvics-burgundy rounded"
                           />
                           <span className="text-sm text-black">{sub}</span>
                         </label>
@@ -318,7 +318,7 @@ const SaleMegaMenu: React.FC<SaleMegaMenuProps> = ({ isOpen, onClose }) => {
 
           {/* Right Section - Promotional Image */}
           <div className="col-span-12 lg:col-span-4">
-            <div className="relative h-full min-h-[400px] bg-gradient-to-br from-[#6B1F2B] to-[#6B1F2B] rounded-lg overflow-hidden">
+            <div className="relative h-full min-h-[400px] bg-gradient-to-br from-harvics-burgundy to-harvics-burgundy rounded-lg overflow-hidden">
               <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center">
                 <h2 className="text-6xl font-bold text-white mb-4">SALE</h2>
                 <p className="text-2xl text-white font-semibold">up to 50% off</p>

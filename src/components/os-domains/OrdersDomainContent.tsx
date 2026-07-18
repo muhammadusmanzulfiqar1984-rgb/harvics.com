@@ -16,11 +16,11 @@ interface OrdersDomainContentProps {
 // Live KPI bar
 function OrdersKPIBar() {
   const [kpis, setKpis] = useState([
-    { label: 'Orders Today',    value: 23,    delta: '+3',    up: true,  fmt: (n:number) => n.toString(),                accent: '#6B1F2B' },
-    { label: 'Revenue MTD',     value: 1840000, delta: '+$42K', up: true, fmt: (n:number) => `$${(n/1000000).toFixed(2)}M`, accent: '#C3A35E' },
+    { label: 'Orders Today',    value: 23,    delta: '+3',    up: true,  fmt: (n:number) => n.toString(),                accent: 'var(--harvics-burgundy)' },
+    { label: 'Revenue MTD',     value: 1840000, delta: '+$42K', up: true, fmt: (n:number) => `$${(n/1000000).toFixed(2)}M`, accent: 'var(--harvics-gold)' },
     { label: 'Pending Approval',value: 7,     delta: '+2',    up: false, fmt: (n:number) => n.toString(),                accent: '#f59e0b' },
     { label: 'On-Time Delivery',value: 94,    delta: '+1%',   up: true,  fmt: (n:number) => `${n}%`,                     accent: '#16a34a' },
-    { label: 'Avg Order Value', value: 18400, delta: '+$340', up: true,  fmt: (n:number) => `$${Math.round(n/100)*100}`, accent: '#6B1F2B' },
+    { label: 'Avg Order Value', value: 18400, delta: '+$340', up: true,  fmt: (n:number) => `$${Math.round(n/100)*100}`, accent: 'var(--harvics-burgundy)' },
   ])
   const [flash, setFlash] = useState<number|null>(null)
   useEffect(() => {
@@ -238,7 +238,7 @@ export default function OrdersDomainContent({ persona, locale }: OrdersDomainCon
                   <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]"><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">SKU</th><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Product</th><th className="px-5 py-3 text-right text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Min Price</th><th className="px-5 py-3 text-right text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Max Price</th><th className="px-5 py-3 text-right text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Current</th><th className="px-5 py-3 text-center text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Band</th></tr></thead>
                   <tbody>
                     {[{ sku: 'HRV-BEV-001', product: 'Harvics Cola 500ml', min: 1.50, max: 2.50, current: 2.10, band: 'Premium' }, { sku: 'HRV-SNK-001', product: 'Harvics Chips 150g', min: 2.00, max: 3.50, current: 2.80, band: 'Standard' }, { sku: 'HRV-WTR-001', product: 'Harvics Pure Water 1L', min: 0.80, max: 1.50, current: 1.10, band: 'Economy' }].map((s, i) => (
-                      <tr key={s.sku} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}><td className="px-4 py-3 font-mono text-[#6B1F2B]">{s.sku}</td><td className="px-4 py-3">{s.product}</td><td className="px-4 py-3 text-right">${s.min.toFixed(2)}</td><td className="px-4 py-3 text-right">${s.max.toFixed(2)}</td><td className="px-4 py-3 text-right font-semibold text-[#1A1A1A]">${s.current.toFixed(2)}</td><td className="px-4 py-3 text-center"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1A1A1A]" style={{ borderRadius: 0 }}>{s.band}</span></td></tr>
+                      <tr key={s.sku} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}><td className="px-4 py-3 font-mono text-harvics-burgundy">{s.sku}</td><td className="px-4 py-3">{s.product}</td><td className="px-4 py-3 text-right">${s.min.toFixed(2)}</td><td className="px-4 py-3 text-right">${s.max.toFixed(2)}</td><td className="px-4 py-3 text-right font-semibold text-[#1A1A1A]">${s.current.toFixed(2)}</td><td className="px-4 py-3 text-center"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1A1A1A]" style={{ borderRadius: 0 }}>{s.band}</span></td></tr>
                     ))}
                   </tbody>
                 </table>

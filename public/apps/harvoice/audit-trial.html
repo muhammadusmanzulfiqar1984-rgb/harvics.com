@@ -14,7 +14,7 @@
     --maroon:#6b1f2b;
     --maroon-2:#8a2a38;
     --maroon-deep:#3a0f17;
-    --gold:#c3a35e;
+    --gold:#C9A84C;
     --gold-soft:#e6cd92;
     --cream:#f5f1e8;
     --ink:#f1e9dc;
@@ -27,7 +27,7 @@
   html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:14px;line-height:1.55}
   body{
     background:
-      radial-gradient(1100px 600px at 85% -10%, rgba(195,163,94,.08), transparent 60%),
+      radial-gradient(1100px 600px at 85% -10%, rgba(201,168,76,.08), transparent 60%),
       radial-gradient(900px 500px at -10% 30%, rgba(107,31,43,.35), transparent 70%),
       linear-gradient(180deg,var(--bg) 0%, var(--bg2) 100%);
     min-height:100vh;
@@ -70,7 +70,7 @@
   table{width:100%;border-collapse:collapse;font-size:12.5px}
   th,td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
   th{color:var(--gold);font-weight:600;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;background:rgba(107,31,43,.18)}
-  tbody tr:hover{background:rgba(195,163,94,.04)}
+  tbody tr:hover{background:rgba(201,168,76,.04)}
   td .pill{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px;font-weight:500;border:1px solid transparent}
   .y{color:var(--good);background:rgba(126,196,138,.08);border-color:rgba(126,196,138,.25)}
   .n{color:var(--bad);background:rgba(224,123,123,.08);border-color:rgba(224,123,123,.25)}
@@ -88,7 +88,7 @@
   .proj .port{color:var(--gold);font-size:12px;font-family:ui-monospace,Menlo,monospace}
   .proj .verdict{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);color:var(--mute);font-size:12.5px}
   .proj .tag{display:inline-block;border:1px solid var(--line);padding:2px 8px;border-radius:6px;font-size:11px;color:var(--mute);margin:2px 4px 0 0}
-  .proj .tag.b{color:var(--gold);border-color:rgba(195,163,94,.35);background:rgba(195,163,94,.05)}
+  .proj .tag.b{color:var(--gold);border-color:rgba(201,168,76,.35);background:rgba(201,168,76,.05)}
 
   .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;align-items:stretch}
   .flow .node{
@@ -238,7 +238,7 @@
 
     <h3 style="font-family:Georgia,serif;color:var(--cream);font-size:14px;margin:22px 0 6px">Merge plan (in order)</h3>
     <ol style="margin:0;padding-left:18px;color:var(--ink)">
-      <li><b style="color:var(--gold)">Theme:</b> from B → apply maroon <code>#6B1F2B</code> / gold <code>#C3A35E</code> / cream <code>#F5F1E8</code> as the active <code>--primary</code> (replace A's teal) + Dancing Script + Inter fonts.</li>
+      <li><b style="color:var(--gold)">Theme:</b> from B → apply maroon <code>#1A0505</code> / gold <code>#C9A84C</code> / cream <code>#F5F1E8</code> as the active <code>--primary</code> (replace A's teal) + Dancing Script + Inter fonts.</li>
       <li><b style="color:var(--gold)">Discovery upgrades:</b> from C → port <code>lib/discover/query-parser</code> (count + company-vs-people intent) and <code>lib/linkedin/search</code> (Serper → Google-HTML → Brave failover, UA rotation, in-memory cache) + edge <code>middleware.js</code> auth pattern.</li>
       <li><b style="color:var(--gold)">Scoring + Brand Engine fallback:</b> from D → reuse <code>LeadScoringEngine</code> country/city normalisation map; mount the 4 static templates as the no-key fallback for Brand Engine.</li>
       <li><b style="color:var(--gold)">Sequences worker + intelligence:</b> from E → port <code>worker/advance-sequences</code> cron, <code>intelligence/company</code> + <code>intelligence/market</code>, <code>outreach/sequences</code> + <code>outreach/templates</code>.</li>
@@ -260,7 +260,7 @@
   brand-engine/    <span class="v">ai-compose + static-templates fallback</span>
   voice/           <span class="v">harvoice widget bridge (Vapi + browser speech)</span>
 <span class="k">prisma</span>/             <span class="v">17 models · Postgres · migrations</span>
-<span class="k">theme</span>              <span class="v">maroon #6B1F2B · gold #C3A35E · cream #F5F1E8 · Dancing Script + Inter</span>
+<span class="k">theme</span>              <span class="v">maroon #1A0505 · gold #C9A84C · cream #F5F1E8 · Dancing Script + Inter</span>
 </div>
   </div>
 

@@ -74,10 +74,10 @@ const ContactSection: React.FC = () => {
     width: '100%',
     padding: '12px 14px',
     fontSize: '13px',
-    border: '1px solid rgba(26,5,5,0.12)',
+    border: '1px solid rgba(61, 18, 18,0.12)',
     outline: 'none',
     background: '#ffffff',
-    color: '#3D1212',
+    color: 'var(--harvics-burgundy)',
     fontFamily: '-apple-system, sans-serif',
     boxSizing: 'border-box',
     transition: 'border-color 0.2s ease',
@@ -89,7 +89,7 @@ const ContactSection: React.FC = () => {
     fontWeight: 700,
     letterSpacing: '0.15em',
     textTransform: 'uppercase',
-    color: '#6B1F2B',
+    color: 'var(--harvics-burgundy)',
     marginBottom: '5px',
     fontFamily: '-apple-system, sans-serif',
   }
@@ -99,39 +99,39 @@ const ContactSection: React.FC = () => {
       ref={ref}
       className={revealClass(isVisible, 'up')}
       style={{
-        background: '#F5F0E8',
-        borderTop: '1px solid rgba(195,163,94,0.25)',
-        borderBottom: '1px solid rgba(195,163,94,0.25)',
+        background: 'var(--harvics-cream)',
+        borderTop: '1px solid rgba(195, 163, 94,0.25)',
+        borderBottom: '1px solid rgba(195, 163, 94,0.25)',
       }}
     >
       <div className="grid grid-cols-1 lg:grid-cols-5" style={{ maxWidth: '1400px', margin: '0 auto', minHeight: '620px' }}>
 
         {/* ============ LEFT PANE — Form on cream ============ */}
-        <div className="lg:col-span-3" style={{ background: '#F5F0E8', padding: 'clamp(40px, 6vw, 72px) clamp(28px, 5vw, 64px)' }}>
+        <div className="lg:col-span-3 bg-harvics-cream" style={{ padding: 'clamp(40px, 6vw, 72px) clamp(28px, 5vw, 64px)' }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'flex-start', gap: '14px', marginBottom: '14px' }}>
-            <div style={{ height: '1px', width: '32px', background: '#C3A35E' }} />
-            <span style={{ color: '#C3A35E', fontSize: '10px', fontWeight: 600, letterSpacing: '0.32em', textTransform: 'uppercase' }}>
-              {getText('eyebrow', 'Start a Brief')}
+            <div style={{ height: '1px', width: '32px', background: 'var(--harvics-gold)' }} />
+            <span style={{ color: 'var(--harvics-gold)', fontSize: '10px', fontWeight: 600, letterSpacing: '0.32em', textTransform: 'uppercase' }}>
+              Contact · Brief
             </span>
           </div>
-          <h2 style={{ fontSize: 'clamp(26px, 3.2vw, 40px)', fontWeight: 200, letterSpacing: '-0.025em', color: '#3D1212', lineHeight: 1.1, marginBottom: '12px' }}>
+          <h2 className="harvics-corridor-display text-harvics-burgundy" style={{ fontSize: 'clamp(26px, 3.2vw, 40px)', marginBottom: '12px' }}>
             {getText('headline1', 'Start a brief.')}
             <br />
-            <span style={{ color: '#6B1F2B', fontWeight: 400 }}>{getText('headline2', 'We respond in 24 hours.')}</span>
+            <span className="text-harvics-gold font-medium">{getText('headline2', 'We respond in 24 hours.')}</span>
           </h2>
-          <p style={{ fontSize: '13px', color: 'rgba(26,5,5,0.55)', maxWidth: '520px', marginBottom: '28px', lineHeight: 1.7, fontWeight: 300 }}>
+          <p className="harvics-corridor-body" style={{ fontSize: '13px', maxWidth: '520px', marginBottom: '28px' }}>
             {getText('subhead', 'Tell us your category, volume, and target market. A specialist gets back to you with sourcing options and indicative pricing.')}
           </p>
 
           {sent ? (
             <div style={{ padding: '32px 0' }}>
-              <div style={{ width: '44px', height: '44px', borderRadius: '50%', background: 'linear-gradient(135deg, #C3A35E, #6B1F2B)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '14px' }}>
+              <div style={{ width: '44px', height: '44px', borderRadius: '50%', background: 'linear-gradient(135deg, #C3A35E, #3D1212)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '14px' }}>
                 <svg width="20" height="20" fill="none" stroke="white" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <p style={{ fontSize: '15px', fontWeight: 600, color: '#6B1F2B' }}>{getText('sentTitle', 'Message sent.')}</p>
-              <p style={{ fontSize: '12px', color: 'rgba(107,31,43,0.5)', marginTop: '4px' }}>{getText('sentSub', 'Our team will respond within 24 hours.')}</p>
+              <p style={{ fontSize: '15px', fontWeight: 600, color: 'var(--harvics-burgundy)' }}>{getText('sentTitle', 'Message sent.')}</p>
+              <p style={{ fontSize: '12px', color: 'rgba(61, 18, 18,0.5)', marginTop: '4px' }}>{getText('sentSub', 'Our team will respond within 24 hours.')}</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '14px', maxWidth: '560px' }}>
@@ -145,8 +145,8 @@ const ContactSection: React.FC = () => {
                     onChange={e => setForm(f => ({ ...f, name: e.target.value }))}
                     placeholder={getText('fullNamePlaceholder', 'Shah Tabraiz')}
                     style={inputBase}
-                    onFocus={e => { (e.currentTarget as HTMLInputElement).style.borderColor = '#C3A35E' }}
-                    onBlur={e => { (e.currentTarget as HTMLInputElement).style.borderColor = 'rgba(26,5,5,0.12)' }}
+                    onFocus={e => { (e.currentTarget as HTMLInputElement).style.borderColor = 'var(--harvics-gold)' }}
+                    onBlur={e => { (e.currentTarget as HTMLInputElement).style.borderColor = 'rgba(61, 18, 18,0.12)' }}
                   />
                 </div>
                 <div>
@@ -157,8 +157,8 @@ const ContactSection: React.FC = () => {
                     onChange={e => setForm(f => ({ ...f, company: e.target.value }))}
                     placeholder={getText('companyPlaceholder', 'Your Organisation')}
                     style={inputBase}
-                    onFocus={e => { (e.currentTarget as HTMLInputElement).style.borderColor = '#C3A35E' }}
-                    onBlur={e => { (e.currentTarget as HTMLInputElement).style.borderColor = 'rgba(26,5,5,0.12)' }}
+                    onFocus={e => { (e.currentTarget as HTMLInputElement).style.borderColor = 'var(--harvics-gold)' }}
+                    onBlur={e => { (e.currentTarget as HTMLInputElement).style.borderColor = 'rgba(61, 18, 18,0.12)' }}
                   />
                 </div>
               </div>
@@ -171,8 +171,8 @@ const ContactSection: React.FC = () => {
                   onChange={e => setForm(f => ({ ...f, email: e.target.value }))}
                   placeholder="you@company.com"
                   style={inputBase}
-                  onFocus={e => { (e.currentTarget as HTMLInputElement).style.borderColor = '#C3A35E' }}
-                  onBlur={e => { (e.currentTarget as HTMLInputElement).style.borderColor = 'rgba(26,5,5,0.12)' }}
+                  onFocus={e => { (e.currentTarget as HTMLInputElement).style.borderColor = 'var(--harvics-gold)' }}
+                  onBlur={e => { (e.currentTarget as HTMLInputElement).style.borderColor = 'rgba(61, 18, 18,0.12)' }}
                 />
               </div>
               <div>
@@ -183,8 +183,8 @@ const ContactSection: React.FC = () => {
                   onChange={e => setForm(f => ({ ...f, message: e.target.value }))}
                   placeholder={getText('messagePlaceholder', 'Tell us about your sourcing needs, volumes, or partnership interest...')}
                   style={{ ...inputBase, resize: 'none' }}
-                  onFocus={e => { (e.currentTarget as HTMLTextAreaElement).style.borderColor = '#C3A35E' }}
-                  onBlur={e => { (e.currentTarget as HTMLTextAreaElement).style.borderColor = 'rgba(26,5,5,0.12)' }}
+                  onFocus={e => { (e.currentTarget as HTMLTextAreaElement).style.borderColor = 'var(--harvics-gold)' }}
+                  onBlur={e => { (e.currentTarget as HTMLTextAreaElement).style.borderColor = 'rgba(61, 18, 18,0.12)' }}
                 />
               </div>
               <button
@@ -192,9 +192,9 @@ const ContactSection: React.FC = () => {
                 disabled={sending}
                 style={{
                   padding: '14px 32px',
-                  background: sending ? 'rgba(26,5,5,0.4)' : '#3D1212',
+                  background: sending ? 'rgba(61, 18, 18,0.4)' : 'var(--harvics-burgundy)',
                   border: '1px solid #3D1212',
-                  color: '#C3A35E',
+                  color: 'var(--harvics-gold)',
                   fontSize: '11px',
                   fontWeight: 700,
                   letterSpacing: '0.18em',
@@ -207,15 +207,15 @@ const ContactSection: React.FC = () => {
                 }}
                 onMouseEnter={e => {
                   if (sending) return
-                  ;(e.currentTarget as HTMLButtonElement).style.background = '#C3A35E'
-                  ;(e.currentTarget as HTMLButtonElement).style.color = '#3D1212'
-                  ;(e.currentTarget as HTMLButtonElement).style.borderColor = '#C3A35E'
+                  ;(e.currentTarget as HTMLButtonElement).style.background = 'var(--harvics-gold)'
+                  ;(e.currentTarget as HTMLButtonElement).style.color = 'var(--harvics-burgundy)'
+                  ;(e.currentTarget as HTMLButtonElement).style.borderColor = 'var(--harvics-gold)'
                 }}
                 onMouseLeave={e => {
                   if (sending) return
-                  ;(e.currentTarget as HTMLButtonElement).style.background = '#3D1212'
-                  ;(e.currentTarget as HTMLButtonElement).style.color = '#C3A35E'
-                  ;(e.currentTarget as HTMLButtonElement).style.borderColor = '#3D1212'
+                  ;(e.currentTarget as HTMLButtonElement).style.background = 'var(--harvics-burgundy)'
+                  ;(e.currentTarget as HTMLButtonElement).style.color = 'var(--harvics-gold)'
+                  ;(e.currentTarget as HTMLButtonElement).style.borderColor = 'var(--harvics-burgundy)'
                 }}
               >
                 {sending ? getText('sending', 'Sending...') : `${getText('sendEnquiry', 'Send Enquiry')} →`}
@@ -224,13 +224,14 @@ const ContactSection: React.FC = () => {
           )}
         </div>
 
-        {/* ============ RIGHT PANE — Burgundy direct channels ============ */}
+        {/* ============ RIGHT PANE — Direct channels (cream continuous) ============ */}
         <div className="lg:col-span-2" style={{
-          background: '#3D1212',
-          color: '#F5F0E8',
+          background: 'var(--harvics-cream)',
+          color: 'var(--harvics-burgundy)',
           padding: 'clamp(40px, 6vw, 72px) clamp(28px, 5vw, 56px)',
+          borderLeft: '1px solid rgba(195, 163, 94,0.28)',
         }}>
-          <h3 style={{ fontSize: '11px', letterSpacing: '0.32em', textTransform: 'uppercase', color: '#C3A35E', fontWeight: 600, marginBottom: '24px' }}>
+          <h3 style={{ fontSize: '11px', letterSpacing: '0.32em', textTransform: 'uppercase', color: 'var(--harvics-gold)', fontWeight: 600, marginBottom: '24px' }}>
             {getText('directChannels', 'Direct Channels')}
           </h3>
 
@@ -245,7 +246,7 @@ const ContactSection: React.FC = () => {
                 alignItems: 'center',
                 gap: '16px',
                 padding: '18px 0',
-                borderBottom: i < channels.length - 1 ? '1px solid rgba(195,163,94,0.15)' : 'none',
+                borderBottom: i < channels.length - 1 ? '1px solid rgba(195, 163, 94,0.22)' : 'none',
                 textDecoration: 'none',
                 color: 'inherit',
                 transition: 'opacity 0.2s ease',
@@ -259,8 +260,8 @@ const ContactSection: React.FC = () => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                border: '1px solid rgba(195,163,94,0.3)',
-                color: '#C3A35E',
+                border: '1px solid rgba(195, 163, 94,0.45)',
+                color: 'var(--harvics-gold)',
                 flexShrink: 0,
               }}>
                 <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -268,10 +269,10 @@ const ContactSection: React.FC = () => {
                 </svg>
               </div>
               <div>
-                <div style={{ fontSize: '9px', letterSpacing: '0.25em', textTransform: 'uppercase', color: 'rgba(245,240,232,0.55)', fontWeight: 600, marginBottom: '3px' }}>
+                <div style={{ fontSize: '9px', letterSpacing: '0.25em', textTransform: 'uppercase', color: 'rgba(61, 18, 18,0.45)', fontWeight: 600, marginBottom: '3px' }}>
                   {ch.label}
                 </div>
-                <div style={{ fontSize: '14px', color: '#ffffff', fontWeight: 500 }}>
+                <div style={{ fontSize: '14px', color: 'var(--harvics-burgundy)', fontWeight: 500 }}>
                   {ch.value}
                 </div>
               </div>
@@ -279,13 +280,13 @@ const ContactSection: React.FC = () => {
           ))}
 
           {/* Trust block */}
-          <div style={{ marginTop: '28px', paddingTop: '24px', borderTop: '1px solid rgba(195,163,94,0.2)' }}>
+          <div style={{ marginTop: '28px', paddingTop: '24px', borderTop: '1px solid rgba(195, 163, 94,0.28)' }}>
             {trustPoints.map((point, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '6px 0' }}>
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                  <path d="M2 6l3 3 5-5" stroke="#C3A35E" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M2 6l3 3 5-5" stroke="var(--harvics-gold)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-                <span style={{ fontSize: '12px', color: 'rgba(245,240,232,0.75)' }}>{point}</span>
+                <span style={{ fontSize: '12px', color: 'rgba(61, 18, 18,0.7)' }}>{point}</span>
               </div>
             ))}
           </div>

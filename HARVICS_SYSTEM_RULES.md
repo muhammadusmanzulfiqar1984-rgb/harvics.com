@@ -5,9 +5,9 @@ Never deviate without explicit approval.
 
 ## MASTER PALETTE
 
-- Burgundy: `#1A0505` -> `bg-harvics-burgundy`
+- Burgundy: `#3D1212` -> `bg-harvics-burgundy`
 - Cream: `#F5F0E8` -> `bg-harvics-cream`
-- Gold: `#C9A84C` -> `bg-harvics-gold`
+- Gold: `#C3A35E` -> `bg-harvics-gold`
 - Muted: `#8A7D6B` -> `text-harvics-muted`
 
 ## 25 COMPLIANCE PILLARS
@@ -25,7 +25,7 @@ Never deviate without explicit approval.
 11. Buttons — burgundy fill, cream text, gold hover
 12. Forms — cream bg, burgundy text, gold focus
 13. Cards — burgundy dark, cream light, gold hover border
-14. Modals — burgundy overlay `rgba(26,5,5,0.85)`
+14. Modals — burgundy overlay `rgba(61,18,18,0.85)`
 15. Notifications — burgundy bg, cream text, gold border
 16. Tables — burgundy header, cream rows, gold border
 17. Badges — burgundy bg, gold text

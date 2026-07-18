@@ -30,7 +30,7 @@ export default function OrderReview() {
     <div className="space-y-6 max-w-4xl mx-auto">
       <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-[#C3A35E]">Review Order</h1>
+        <h1 className="text-2xl font-bold text-harvics-gold">Review Order</h1>
         <Link
           href={`/${locale}/distributor-portal/orders/new`}
           className="text-white hover:underline"
@@ -41,33 +41,33 @@ export default function OrderReview() {
 
       {/* Order Details */}
       <div className="bg-white border border-black200 shadow-sm p-6">
-        <h2 className="text-lg font-bold text-[#C3A35E] mb-4">Order Information</h2>
+        <h2 className="text-lg font-bold text-harvics-gold mb-4">Order Information</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-1">Distributor Name</label>
-            <div className="text-[#C3A35E]/90">{order.distributorName}</div>
+            <label className="block text-sm font-semibold text-harvics-gold/90 mb-1">Distributor Name</label>
+            <div className="text-harvics-gold/90">{order.distributorName}</div>
           </div>
           <div>
-            <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-1">Payment Terms</label>
-            <div className="text-[#C3A35E]/90">{order.paymentTerms}</div>
+            <label className="block text-sm font-semibold text-harvics-gold/90 mb-1">Payment Terms</label>
+            <div className="text-harvics-gold/90">{order.paymentTerms}</div>
           </div>
           <div>
-            <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-1">Billing Address</label>
-            <div className="text-[#C3A35E]/90">{order.billingAddress}</div>
+            <label className="block text-sm font-semibold text-harvics-gold/90 mb-1">Billing Address</label>
+            <div className="text-harvics-gold/90">{order.billingAddress}</div>
           </div>
           <div>
-            <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-1">Shipping Terms</label>
-            <div className="text-[#C3A35E]/90">{order.shippingTerms}</div>
+            <label className="block text-sm font-semibold text-harvics-gold/90 mb-1">Shipping Terms</label>
+            <div className="text-harvics-gold/90">{order.shippingTerms}</div>
           </div>
           <div>
-            <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-1">Delivery Address</label>
+            <label className="block text-sm font-semibold text-harvics-gold/90 mb-1">Delivery Address</label>
             <select className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black">
               <option>{order.deliveryAddress}</option>
             </select>
           </div>
           <div>
-            <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-1">Expected Delivery Date</label>
-            <div className="text-[#C3A35E]/90">{order.expectedDeliveryDate}</div>
+            <label className="block text-sm font-semibold text-harvics-gold/90 mb-1">Expected Delivery Date</label>
+            <div className="text-harvics-gold/90">{order.expectedDeliveryDate}</div>
           </div>
         </div>
       </div>
@@ -78,21 +78,21 @@ export default function OrderReview() {
           <table className="w-full">
             <thead className="bg-white">
               <tr>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">SKU</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Product Name</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Qty</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Unit Price</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Line Total</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Total</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">SKU</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Product Name</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Qty</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Unit Price</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Line Total</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Total</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
               {order.items.map((item) => (
                 <tr key={item.sku}>
-                  <td className="px-6 py-4 font-semibold text-[#C3A35E]/90">{item.sku}</td>
-                  <td className="px-6 py-4 text-[#C3A35E]/90">{item.name}</td>
-                  <td className="px-6 py-4 text-[#C3A35E]/90">{item.qty} cartons ({item.qty * item.cartonSize} units)</td>
-                  <td className="px-6 py-4 text-[#C3A35E]/90">${item.unitPrice.toFixed(2)}</td>
+                  <td className="px-6 py-4 font-semibold text-harvics-gold/90">{item.sku}</td>
+                  <td className="px-6 py-4 text-harvics-gold/90">{item.name}</td>
+                  <td className="px-6 py-4 text-harvics-gold/90">{item.qty} cartons ({item.qty * item.cartonSize} units)</td>
+                  <td className="px-6 py-4 text-harvics-gold/90">${item.unitPrice.toFixed(2)}</td>
                   <td className="px-6 py-4 font-semibold">${item.total.toFixed(2)}</td>
                   <td className="px-6 py-4 font-bold text-white">${item.total.toFixed(2)}</td>
                 </tr>
@@ -100,15 +100,15 @@ export default function OrderReview() {
             </tbody>
             <tfoot className="bg-white">
               <tr>
-                <td colSpan={4} className="px-6 py-4 text-right font-semibold text-[#C3A35E]/90">Subtotal:</td>
-                <td className="px-6 py-4 font-bold text-[#C3A35E]/90">${subtotal.toFixed(2)}</td>
+                <td colSpan={4} className="px-6 py-4 text-right font-semibold text-harvics-gold/90">Subtotal:</td>
+                <td className="px-6 py-4 font-bold text-harvics-gold/90">${subtotal.toFixed(2)}</td>
               </tr>
               <tr>
-                <td colSpan={4} className="px-6 py-4 text-right font-semibold text-[#C3A35E]/90">Est. Freight:</td>
-                <td className="px-6 py-4 font-bold text-[#C3A35E]/90">${freight.toFixed(2)}</td>
+                <td colSpan={4} className="px-6 py-4 text-right font-semibold text-harvics-gold/90">Est. Freight:</td>
+                <td className="px-6 py-4 font-bold text-harvics-gold/90">${freight.toFixed(2)}</td>
               </tr>
               <tr>
-                <td colSpan={4} className="px-6 py-4 text-right text-lg font-bold text-[#C3A35E]/90">Total:</td>
+                <td colSpan={4} className="px-6 py-4 text-right text-lg font-bold text-harvics-gold/90">Total:</td>
                 <td className="px-6 py-4 text-lg font-bold text-white">${total.toFixed(2)}</td>
               </tr>
             </tfoot>
@@ -123,7 +123,7 @@ export default function OrderReview() {
         </button>
         <Link
           href={`/${locale}/distributor-portal/orders/new`}
-          className="flex-1 bg-white text-[#C3A35E]/90 px-8 py-3 font-semibold hover:bg-white transition-colors text-center"
+          className="flex-1 bg-white text-harvics-gold/90 px-8 py-3 font-semibold hover:bg-white transition-colors text-center"
         >
           Back / Edit
         </Link>

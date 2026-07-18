@@ -38,20 +38,20 @@ export default function KPICard({
       } ${className}`}
       style={{
         background: 'rgba(255,255,255,0.72)',
-        border: '1.5px solid rgba(195,163,94,0.4)',
-        boxShadow: '0 4px 24px rgba(107,31,43,0.10), inset 0 1px 0 rgba(255,255,255,0.95), inset 0 -1px 0 rgba(195,163,94,0.12)',
+        border: '1.5px solid rgba(195, 163, 94,0.4)',
+        boxShadow: '0 4px 24px rgba(107,31,43,0.10), inset 0 1px 0 rgba(255,255,255,0.95), inset 0 -1px 0 rgba(195, 163, 94,0.12)',
       }}
       onMouseEnter={e => {
         if (onClick) {
-          (e.currentTarget as HTMLElement).style.boxShadow = '0 16px 48px rgba(107,31,43,0.22), inset 0 1px 0 rgba(255,255,255,0.98), inset 0 -1px 0 rgba(195,163,94,0.2)'
-          ;(e.currentTarget as HTMLElement).style.borderColor = 'rgba(195,163,94,0.75)'
+          (e.currentTarget as HTMLElement).style.boxShadow = '0 16px 48px rgba(107,31,43,0.22), inset 0 1px 0 rgba(255,255,255,0.98), inset 0 -1px 0 rgba(195, 163, 94,0.2)'
+          ;(e.currentTarget as HTMLElement).style.borderColor = 'rgba(195, 163, 94,0.75)'
           ;(e.currentTarget as HTMLElement).style.transform = 'translateY(-1px)'
         }
       }}
       onMouseLeave={e => {
         if (onClick) {
-          (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 24px rgba(107,31,43,0.10), inset 0 1px 0 rgba(255,255,255,0.95), inset 0 -1px 0 rgba(195,163,94,0.12)'
-          ;(e.currentTarget as HTMLElement).style.borderColor = 'rgba(195,163,94,0.4)'
+          (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 24px rgba(107,31,43,0.10), inset 0 1px 0 rgba(255,255,255,0.95), inset 0 -1px 0 rgba(195, 163, 94,0.12)'
+          ;(e.currentTarget as HTMLElement).style.borderColor = 'rgba(195, 163, 94,0.4)'
           ;(e.currentTarget as HTMLElement).style.transform = 'translateY(0)'
         }
       }}
@@ -62,8 +62,8 @@ export default function KPICard({
         {icon && (
           <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{
             background: 'linear-gradient(135deg, rgba(107,31,43,0.12), rgba(107,31,43,0.06))',
-            border: '1px solid rgba(195,163,94,0.3)',
-            color: '#6B1F2B'
+            border: '1px solid rgba(195, 163, 94,0.3)',
+            color: 'var(--harvics-burgundy)'
           }}>
             {icon}
           </div>

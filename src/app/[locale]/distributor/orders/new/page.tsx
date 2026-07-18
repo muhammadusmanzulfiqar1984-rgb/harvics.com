@@ -176,7 +176,7 @@ export default function NewDistributorOrder() {
     <ErrorBoundary>
       <div className="min-h-screen bg-white py-8 px-4">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl font-bold text-[#C3A35E] mb-8">{t('title')}</h1>
+          <h1 className="text-3xl font-bold text-harvics-gold mb-8">{t('title')}</h1>
 
           <form onSubmit={handleSubmit} className="bg-white shadow p-6">
             {errors.submit && (
@@ -188,7 +188,7 @@ export default function NewDistributorOrder() {
             {/* Order Items */}
             <div className="mb-6">
               <div className="flex justify-between items-center mb-4">
-                <h2 className="text-xl font-bold text-[#C3A35E]">{t('orderItems')}</h2>
+                <h2 className="text-xl font-bold text-harvics-gold">{t('orderItems')}</h2>
                 <button
                   type="button"
                   onClick={addOrderItem}
@@ -203,14 +203,14 @@ export default function NewDistributorOrder() {
               )}
 
               {orderItems.length === 0 ? (
-                <p className="text-[#C3A35E]/90 text-center py-8">{t('noItems')}</p>
+                <p className="text-harvics-gold/90 text-center py-8">{t('noItems')}</p>
               ) : (
                 <div className="space-y-4">
                   {orderItems.map((item, index) => (
                     <div key={index} className="border border-black200 p-4">
                       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                         <div>
-                          <label className="block text-sm font-medium text-[#C3A35E]/90 mb-2">
+                          <label className="block text-sm font-medium text-harvics-gold/90 mb-2">
                             {t('product')} *
                           </label>
                           <select
@@ -231,7 +231,7 @@ export default function NewDistributorOrder() {
                           )}
                         </div>
                         <div>
-                          <label className="block text-sm font-medium text-[#C3A35E]/90 mb-2">
+                          <label className="block text-sm font-medium text-harvics-gold/90 mb-2">
                             {t('quantity')} *
                           </label>
                           <input
@@ -247,7 +247,7 @@ export default function NewDistributorOrder() {
                           )}
                         </div>
                         <div>
-                          <label className="block text-sm font-medium text-[#C3A35E]/90 mb-2">
+                          <label className="block text-sm font-medium text-harvics-gold/90 mb-2">
                             {t('unitPrice')} *
                           </label>
                           <input
@@ -273,7 +273,7 @@ export default function NewDistributorOrder() {
                           </button>
                         </div>
                       </div>
-                      <div className="mt-2 text-sm text-[#C3A35E]/90">
+                      <div className="mt-2 text-sm text-harvics-gold/90">
                         {t('subtotal')}: {formatCurrencyAmount(item.quantity * item.unit_price)}
                       </div>
                     </div>
@@ -284,10 +284,10 @@ export default function NewDistributorOrder() {
 
             {/* Order Details */}
             <div className="mb-6 space-y-4">
-              <h2 className="text-xl font-bold text-[#C3A35E]">{t('orderDetails')}</h2>
+              <h2 className="text-xl font-bold text-harvics-gold">{t('orderDetails')}</h2>
               
               <div>
-                <label className="block text-sm font-medium text-[#C3A35E]/90 mb-2">
+                <label className="block text-sm font-medium text-harvics-gold/90 mb-2">
                   {t('deliveryDate')}
                 </label>
                 <input
@@ -302,7 +302,7 @@ export default function NewDistributorOrder() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-[#C3A35E]/90 mb-2">
+                <label className="block text-sm font-medium text-harvics-gold/90 mb-2">
                   {t('deliveryAddress')}
                 </label>
                 <textarea
@@ -314,7 +314,7 @@ export default function NewDistributorOrder() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-[#C3A35E]/90 mb-2">
+                <label className="block text-sm font-medium text-harvics-gold/90 mb-2">
                   {t('notes')}
                 </label>
                 <textarea
@@ -329,8 +329,8 @@ export default function NewDistributorOrder() {
             {/* Total */}
             <div className="mb-6 p-4 bg-white">
               <div className="flex justify-between items-center">
-                <span className="text-lg font-semibold text-[#C3A35E]/90">{t('totalAmount')}:</span>
-                <span className="text-2xl font-bold text-[#C3A35E]">
+                <span className="text-lg font-semibold text-harvics-gold/90">{t('totalAmount')}:</span>
+                <span className="text-2xl font-bold text-harvics-gold">
                   {formatCurrencyAmount(calculateTotal())}
                 </span>
               </div>
@@ -348,7 +348,7 @@ export default function NewDistributorOrder() {
               <button
                 type="button"
                 onClick={() => router.push(`/${locale}/distributor/orders`)}
-                className="flex-1 bg-white text-[#C3A35E]/90 px-6 py-3 font-semibold hover:bg-white transition-colors"
+                className="flex-1 bg-white text-harvics-gold/90 px-6 py-3 font-semibold hover:bg-white transition-colors"
               >
                 {t('cancel')}
               </button>

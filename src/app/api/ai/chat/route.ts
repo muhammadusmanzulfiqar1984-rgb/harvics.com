@@ -1,4 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { callOpenAI, callNvidia } from '@/lib/openai'
+
+const GROQ_API_KEY = process.env.GROQ_API_KEY
+const GROQ_MODEL   = process.env.GROQ_MODEL || 'llama-3.3-70b-versatile'
 
 /* Rule-based fallback responses when AI is unavailable */
 function ruleBasedReply(message: string): string {
@@ -34,19 +38,44 @@ export async function POST(req: NextRequest) {
     // @ts-expect-error - CF env binding available at runtime
     const ai = (globalThis as unknown as { AI?: unknown }).AI ?? (req as unknown as { env?: { AI?: unknown } }).env?.AI
 
+    const aiMessages = [
+      { role: 'system' as const, content: systemPrompt },
+      ...messages.slice(-6).map((m: { role: string; content: string }) => ({
+        role: m.role as 'user' | 'assistant',
+        content: m.content,
+      })),
+    ]
+
+    // 1. Groq primary
+    if (GROQ_API_KEY) {
+      const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${GROQ_API_KEY}` },
+        body: JSON.stringify({ model: GROQ_MODEL, messages: aiMessages, max_tokens: 512 }),
+      }).catch(() => null)
+      if (res?.ok) {
+        const d = await res.json()
+        const r = d.choices?.[0]?.message?.content
+        if (r) return NextResponse.json({ response: r })
+      }
+    }
+
+    // 2. OpenAI fallback
+    const openAIReply = await callOpenAI(aiMessages, { maxTokens: 512 })
+    if (openAIReply) return NextResponse.json({ response: openAIReply })
+
+    // 3. NVIDIA fallback
+    const nvidiaReply = await callNvidia(aiMessages, { maxTokens: 512 })
+    if (nvidiaReply) return NextResponse.json({ response: nvidiaReply })
+
+    // 4. Cloudflare Workers AI fallback
     if (ai && typeof (ai as { run?: unknown }).run === 'function') {
       const cfAI = ai as { run: (model: string, opts: unknown) => Promise<{ response?: string }> }
-      const result = await cfAI.run('@cf/meta/llama-3-8b-instruct', {
-        messages: [
-          { role: 'system', content: systemPrompt },
-          ...messages.slice(-6),
-        ],
-        max_tokens: 512,
-      })
+      const result = await cfAI.run('@cf/meta/llama-3-8b-instruct', { messages: aiMessages, max_tokens: 512 })
       return NextResponse.json({ response: result?.response ?? ruleBasedReply(userMessage) })
     }
 
-    // Fallback: rule-based
+    // 4. Rule-based fallback
     return NextResponse.json({ response: ruleBasedReply(userMessage) })
   } catch {
     const body = await req.clone().json().catch(() => ({}))

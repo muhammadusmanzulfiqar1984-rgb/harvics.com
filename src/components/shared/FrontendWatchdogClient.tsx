@@ -6,7 +6,8 @@ import { initFrontendRecoveryMode } from '@/services/frontendRecoveryMode'
 
 export default function FrontendWatchdogClient() {
   useEffect(() => {
-    // Initialize frontend watchdog on client side
+    if (process.env.NODE_ENV !== 'production') return
+
     const watchdog = initFrontendWatchdog({
       checkInterval: 30000, // 30 seconds
       healthEndpoint: '/api/health',

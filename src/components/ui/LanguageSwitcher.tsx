@@ -267,7 +267,7 @@ function LanguageSwitcherInner() {
         onClick={() => setIsOpen(!isOpen)}
         className={`flex items-center ${isRTLMode ? 'space-x-reverse space-x-2' : 'space-x-2'} transition-opacity duration-200 hover:opacity-70`}
         style={{ 
-          color: '#C3A35E', 
+          color: 'var(--harvics-gold)', 
           fontSize: '11px', 
           fontWeight: 600, 
           letterSpacing: '0.05em', 

@@ -1,6 +1,7 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "harvics-com",
+  "account_id": "c606ef34847cc91452c3e27a2a7a91e6",
   "main": ".open-next/worker.js",
   "compatibility_date": "2026-06-11",
   "compatibility_flags": [
@@ -17,9 +18,25 @@
   "ai": {
     "binding": "AI"
   },
+  // NOTE: If your API token lacks "Workers Routes: Edit" on the harvics.com
+  // zone, `wrangler deploy` fails at route reconciliation (auth error 10000).
+  // The routes already exist in the dashboard and point to this worker, so a
+  // script-only deploy still updates production. Temporarily comment this block
+  // out to deploy with a route-restricted token.
   "routes": [
     { "pattern": "harvics.com/*", "zone_name": "harvics.com" },
     { "pattern": "www.harvics.com/*", "zone_name": "harvics.com" }
+  ],
+  "vars": {
+    "CLOUDFLARE_ACCOUNT_ID": "c606ef34847cc91452c3e27a2a7a91e6"
+  },
+  "d1_databases": [
+    {
+      "binding": "LEADS_DB",
+      "database_name": "harvics-leads",
+      "database_id": "8e599b2a-e9ef-47dd-a163-bdec26188bc8",
+      "migrations_dir": "migrations"
+    }
   ]
   // To enable Next.js ISR/SSG caching, create an R2 bucket and uncomment:
   // "r2_buckets": [

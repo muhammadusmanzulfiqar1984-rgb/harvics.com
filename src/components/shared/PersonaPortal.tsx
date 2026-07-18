@@ -302,8 +302,8 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-[#F8F9FA]">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#6B1F2B] mx-auto mb-4"></div>
-          <p className="text-[#6B1F2B]">Loading {persona} portal...</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-harvics-burgundy mx-auto mb-4"></div>
+          <p className="text-harvics-burgundy">Loading {persona} portal...</p>
         </div>
       </div>
     )
@@ -317,7 +317,7 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
         <div className="bg-white rounded-xl p-6 mb-4 border border-gray-200 shadow-sm">
           <div className="flex items-center justify-between">
             <div>
-          <h1 className="text-3xl font-bold text-[#6B1F2B] mb-2 capitalize">
+          <h1 className="text-3xl font-bold text-harvics-burgundy mb-2 capitalize">
             {persona} Portal
           </h1>
           <p className="text-gray-600">
@@ -326,7 +326,7 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
             </div>
             <Link
               href={`/${locale}/portal/${persona}/crm/`}
-              className="bg-[#6B1F2B] hover:bg-[#2a0006] text-white px-6 py-3 rounded-lg font-bold text-lg transition-colors shadow-lg hover:shadow-xl"
+              className="bg-harvics-burgundy hover:bg-[#2a0006] text-white px-6 py-3 rounded-lg font-bold text-lg transition-colors shadow-lg hover:shadow-xl"
             >
               🏢 View Full CRM →
             </Link>
@@ -339,11 +339,11 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
             {/* Main KPIs Overview */}
             {data.kpis && (
               <div className="bg-white rounded-xl p-6 mb-6 border border-gray-200 shadow-sm">
-                <h2 className="text-2xl font-bold text-[#6B1F2B] mb-6">📊 Key Performance Indicators</h2>
+                <h2 className="text-2xl font-bold text-harvics-burgundy mb-6">📊 Key Performance Indicators</h2>
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
                   {Object.entries(data.kpis).map(([key, value]: [string, any]) => (
                     <div key={key} className="bg-gray-50 p-4 rounded-xl text-center border border-gray-100">
-                      <div className="text-2xl font-bold text-[#6B1F2B] mb-1">
+                      <div className="text-2xl font-bold text-harvics-burgundy mb-1">
                         {typeof value === 'number' ? (value >= 1000 ? (value / 1000).toFixed(1) + 'K' : value.toLocaleString()) : String(value)}
                       </div>
                       <div className="text-xs text-gray-600 capitalize">{key.replace(/([A-Z])/g, ' $1').trim()}</div>
@@ -355,7 +355,7 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
 
             {/* Level 3: Domain Services - Full CRM */}
             <div className="mb-6">
-              <h2 className="text-3xl font-bold text-[#6B1F2B] mb-6 text-center font-serif">
+              <h2 className="text-3xl font-bold text-harvics-burgundy mb-6 text-center font-serif">
                 🏢 Harvics CRM - Domain Services (Level 3)
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -364,7 +364,7 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex items-center">
                       <div className="text-3xl mr-3">📦</div>
-                      <h3 className="text-xl font-bold text-[#6B1F2B]">Orders Management</h3>
+                      <h3 className="text-xl font-bold text-harvics-burgundy">Orders Management</h3>
                       </div>
                     </div>
                     <div className="space-y-2 mb-4">
@@ -390,7 +390,7 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
                     </div>
                     <Link
                       href={`/${locale}/portal/${persona}/crm/`}
-                      className="block w-full text-center bg-[#6B1F2B] hover:bg-[#2a0006] text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors"
+                      className="block w-full text-center bg-harvics-burgundy hover:bg-[#2a0006] text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors"
                     >
                       View Full CRM →
                     </Link>
@@ -401,7 +401,7 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex items-center">
                       <div className="text-3xl mr-3">📋</div>
-                      <h3 className="text-xl font-bold text-[#6B1F2B]">Inventory & Warehouse</h3>
+                      <h3 className="text-xl font-bold text-harvics-burgundy">Inventory & Warehouse</h3>
                       </div>
                     </div>
                     <div className="space-y-2 mb-4">
@@ -427,7 +427,7 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
                     </div>
                     <Link
                       href={`/${locale}/portal/${persona}/crm/`}
-                      className="block w-full text-center bg-[#6B1F2B] hover:bg-[#2a0006] text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors"
+                      className="block w-full text-center bg-harvics-burgundy hover:bg-[#2a0006] text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors"
                     >
                       View Full CRM →
                     </Link>
@@ -438,7 +438,7 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex items-center">
                       <div className="text-3xl mr-3">🚚</div>
-                      <h3 className="text-xl font-bold text-[#6B1F2B]">Logistics & Distribution</h3>
+                      <h3 className="text-xl font-bold text-harvics-burgundy">Logistics & Distribution</h3>
                       </div>
                     </div>
                     <div className="space-y-2 mb-4">
@@ -461,7 +461,7 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
                     </div>
                     <Link
                       href={`/${locale}/portal/${persona}/crm/`}
-                      className="block w-full text-center bg-[#6B1F2B] hover:bg-[#2a0006] text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors"
+                      className="block w-full text-center bg-harvics-burgundy hover:bg-[#2a0006] text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors"
                     >
                       View Full CRM →
                     </Link>
@@ -472,7 +472,7 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex items-center">
                       <div className="text-3xl mr-3">💰</div>
-                      <h3 className="text-xl font-bold text-[#6B1F2B]">Finance & Accounting</h3>
+                      <h3 className="text-xl font-bold text-harvics-burgundy">Finance & Accounting</h3>
                       </div>
                     </div>
                     <div className="space-y-2 mb-4">
@@ -507,7 +507,7 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
                     </div>
                     <Link
                       href={`/${locale}/portal/${persona}/crm/`}
-                      className="block w-full text-center bg-[#6B1F2B] hover:bg-[#2a0006] text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors"
+                      className="block w-full text-center bg-harvics-burgundy hover:bg-[#2a0006] text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors"
                     >
                       View Full CRM →
                     </Link>
@@ -518,7 +518,7 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex items-center">
                       <div className="text-3xl mr-3">👥</div>
-                      <h3 className="text-xl font-bold text-[#6B1F2B]">CRM & Marketing</h3>
+                      <h3 className="text-xl font-bold text-harvics-burgundy">CRM & Marketing</h3>
                       </div>
                     </div>
                     <div className="space-y-2 mb-4">
@@ -541,7 +541,7 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
                     </div>
                     <Link
                       href={`/${locale}/portal/${persona}/crm/`}
-                      className="block w-full text-center bg-[#6B1F2B] hover:bg-[#2a0006] text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors"
+                      className="block w-full text-center bg-harvics-burgundy hover:bg-[#2a0006] text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors"
                     >
                       View Full CRM →
                     </Link>
@@ -552,7 +552,7 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex items-center">
                       <div className="text-3xl mr-3">👔</div>
-                      <h3 className="text-xl font-bold text-[#6B1F2B]">HR & Payroll</h3>
+                      <h3 className="text-xl font-bold text-harvics-burgundy">HR & Payroll</h3>
                       </div>
                     </div>
                     <div className="space-y-2 mb-4">
@@ -575,7 +575,7 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
                     </div>
                     <Link
                       href={`/${locale}/portal/${persona}/crm/`}
-                      className="block w-full text-center bg-[#6B1F2B] hover:bg-[#2a0006] text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors"
+                      className="block w-full text-center bg-harvics-burgundy hover:bg-[#2a0006] text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors"
                     >
                       View Full CRM →
                     </Link>
@@ -586,7 +586,7 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex items-center">
                       <div className="text-3xl mr-3">📈</div>
-                      <h3 className="text-xl font-bold text-[#6B1F2B]">Executive & P&L Control</h3>
+                      <h3 className="text-xl font-bold text-harvics-burgundy">Executive & P&L Control</h3>
                       </div>
                     </div>
                     <div className="space-y-2 mb-4">
@@ -612,7 +612,7 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
                     </div>
                     <Link
                       href={`/${locale}/portal/${persona}/crm/`}
-                      className="block w-full text-center bg-[#6B1F2B] hover:bg-[#2a0006] text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors"
+                      className="block w-full text-center bg-harvics-burgundy hover:bg-[#2a0006] text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors"
                     >
                       View Full CRM →
                     </Link>
@@ -624,7 +624,7 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
             {persona === 'investor' && data.forex && data.forex.rates && data.forex.rates.length > 0 && (
               <div className="bg-white rounded-xl p-6 mt-6 border border-gray-200 shadow-sm">
                 <div className="flex items-center justify-between mb-4">
-                  <h2 className="text-xl font-bold text-[#6B1F2B]">💱 Live Forex Rates</h2>
+                  <h2 className="text-xl font-bold text-harvics-burgundy">💱 Live Forex Rates</h2>
                   {data.live && (
                     <span className="px-3 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded-full">
                       LIVE
@@ -672,12 +672,12 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
             {/* AI Insights */}
             {data.ai && (
               <div className="bg-white rounded-xl p-6 mt-6 border border-gray-200 shadow-sm">
-                <h2 className="text-xl font-bold text-[#6B1F2B] mb-4">🤖 AI Insights & Forecasts</h2>
+                <h2 className="text-xl font-bold text-harvics-burgundy mb-4">🤖 AI Insights & Forecasts</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {data.ai.forecast && (
                     <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
                       <p className="text-sm text-gray-600 mb-1">Sales Forecast</p>
-                      <p className="text-3xl font-bold text-[#6B1F2B]">
+                      <p className="text-3xl font-bold text-harvics-burgundy">
                         +{data.ai.forecast.percentage || 0}%
                       </p>
                     </div>
@@ -702,7 +702,7 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
             {/* Recent Activity */}
             {data.activity && Array.isArray(data.activity) && data.activity.length > 0 && (
               <div className="bg-white rounded-xl p-6 mt-6 border border-gray-200 shadow-sm">
-                <h2 className="text-xl font-bold text-[#6B1F2B] mb-4">📋 Recent Activity</h2>
+                <h2 className="text-xl font-bold text-harvics-burgundy mb-4">📋 Recent Activity</h2>
                 <div className="space-y-2">
                   {data.activity.slice(0, 5).map((action: { description?: string; action_type?: string; created_at?: string }, idx: number) => (
                     <div key={idx} className="flex justify-between items-center border-b border-gray-100 pb-2">
@@ -720,16 +720,16 @@ export default function PersonaPortal({ persona, locale }: PersonaPortalProps) {
 
         {/* Architecture Info */}
         <div className="mt-6 bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
-          <h2 className="text-xl font-bold text-[#6B1F2B] mb-4">Architecture Level</h2>
+          <h2 className="text-xl font-bold text-harvics-burgundy mb-4">Architecture Level</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
             <div>
-              <p className="font-semibold text-[#6B1F2B] mb-2">Level 2: Experience API (BFF)</p>
+              <p className="font-semibold text-harvics-burgundy mb-2">Level 2: Experience API (BFF)</p>
               <p className="text-gray-600">
                 Backend for Frontend layer aggregates data from domain services
               </p>
             </div>
             <div>
-              <p className="font-semibold text-[#6B1F2B] mb-2">Level 3: Domain Services</p>
+              <p className="font-semibold text-harvics-burgundy mb-2">Level 3: Domain Services</p>
               <p className="text-gray-600">
                 Business logic services (Orders, Inventory, CRM, Finance, etc.)
               </p>

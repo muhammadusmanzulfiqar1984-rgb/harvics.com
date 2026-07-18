@@ -16,7 +16,7 @@ const config = {
   width: '60px',
   height: '60px',
   idle: {
-    color: 'rgb(195,163,94)',
+    color: 'rgb(195, 163, 94)',
     type: 'round',
     title: 'Talk to HARVICS',
     subtitle: 'Voice AI',
@@ -61,7 +61,7 @@ function injectStyle() {
         inset 0 1px 2px rgba(255,255,255,.6),
         inset 0 -3px 6px rgba(61,34,8,.45),
         0 6px 14px rgba(107,31,43,.25),
-        0 0 0 3px rgba(195,163,94,.18) !important;
+        0 0 0 3px rgba(195, 163, 94,.18) !important;
       animation: harvicsRing 2.6s ease-in-out infinite !important;
     }
     /* Force the phone icon to be visible (white fill) */

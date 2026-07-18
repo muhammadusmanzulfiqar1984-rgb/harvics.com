@@ -10,15 +10,17 @@ const config = {
     extend: {
       colors: {
         harvics: {
-          // Master palette — burgundy/cream/gold/muted only (SYSTEM RULES)
+          // Master palette — HARVICS_SYSTEM_RULES.md
           gold: '#C3A35E',
           goldMuted: 'rgba(195,163,94,0.6)',
           goldDivider: 'rgba(195,163,94,0.2)',
           burgundy: '#3D1212',
           maroon: '#3D1212',
-          dark: '#0D0D0D',
+          dark: '#3D1212',
           cream: '#F5F0E8',
           muted: '#8A7D6B',
+          card: '#EFE8DC',
+          cardMuted: '#e5dccb',
         }
       },
       transitionTimingFunction: {

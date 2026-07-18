@@ -18,7 +18,7 @@ export default function CompetitorOSPage() {
     <div className="min-h-screen bg-[#F2F2F2] flex items-center justify-center">
       <div className="text-center w-full max-w-lg px-4">
         <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4 justify-center" />
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#6B1F2B] mx-auto mb-4"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-harvics-burgundy mx-auto mb-4"></div>
         <p className="text-black">Redirecting to Competitor Intelligence OS...</p>
       </div>
     </div>

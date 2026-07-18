@@ -127,7 +127,7 @@ export default function HarvicsOSShell({
   }
 
   return (
-    <div className="flex h-screen bg-[#F5F0E8] overflow-hidden">
+    <div className="flex h-screen bg-harvics-cream overflow-hidden">
       {/* ─── Mobile Overlay ─── */}
       {sidebarMobileOpen && (
         <div
@@ -142,32 +142,32 @@ export default function HarvicsOSShell({
           fixed lg:relative z-50
           ${sidebarOpen ? 'w-64' : 'w-[68px]'}
           ${sidebarMobileOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
-          bg-[#6B1F2B] text-[#C3A35E] transition-all duration-300 flex flex-col h-full
-          border-r border-[#C3A35E]/20
+          bg-harvics-burgundy text-harvics-gold transition-all duration-300 flex flex-col h-full
+          border-r border-harvics-gold/20
         `}
       >
         {/* Sidebar Header */}
-        <div className="p-4 border-b border-[#C3A35E]/20 flex items-center justify-between min-h-[64px]">
+        <div className="p-4 border-b border-harvics-gold/20 flex items-center justify-between min-h-[64px]">
           {sidebarOpen ? (
             <div className="flex items-center gap-3 overflow-hidden">
               <div
-                className="w-9 h-9 flex-shrink-0 flex items-center justify-center bg-[#C3A35E] text-[#6B1F2B] font-bold text-lg font-serif"
+                className="w-9 h-9 flex-shrink-0 flex items-center justify-center bg-harvics-gold text-harvics-burgundy font-bold text-lg font-serif"
                 style={{ borderRadius: 0 }}
               >
                 H
               </div>
               <div className="min-w-0">
-                <h2 className="text-sm font-bold text-[#C3A35E] font-serif truncate tracking-wide">
+                <h2 className="text-sm font-bold text-harvics-gold font-serif truncate tracking-wide">
                   {sidebarTitle || portalInfo.title}
                 </h2>
-                <p className="text-[10px] text-[#C3A35E]/50 uppercase tracking-widest">
+                <p className="text-[10px] text-harvics-gold/50 uppercase tracking-widest">
                   Enterprise OS
                 </p>
               </div>
             </div>
           ) : (
             <div
-              className="w-9 h-9 mx-auto flex items-center justify-center bg-[#C3A35E] text-[#6B1F2B] font-bold text-lg font-serif"
+              className="w-9 h-9 mx-auto flex items-center justify-center bg-harvics-gold text-harvics-burgundy font-bold text-lg font-serif"
               style={{ borderRadius: 0 }}
             >
               H
@@ -178,7 +178,7 @@ export default function HarvicsOSShell({
               setSidebarOpen(!sidebarOpen)
               setSidebarMobileOpen(false)
             }}
-            className="text-[#C3A35E]/60 hover:text-[#C3A35E] transition-colors p-1 hidden lg:block"
+            className="text-harvics-gold/60 hover:text-harvics-gold transition-colors p-1 hidden lg:block"
             aria-label={sidebarOpen ? 'Collapse sidebar' : 'Expand sidebar'}
           >
             {sidebarOpen ? '‹' : '›'}
@@ -190,7 +190,7 @@ export default function HarvicsOSShell({
           {/* Tier 0 — Dashboard */}
           <div className="mb-3">
             {sidebarOpen && (
-              <p className="px-3 mb-1.5 text-[10px] font-bold text-[#C3A35E]/40 uppercase tracking-[0.15em]">
+              <p className="px-3 mb-1.5 text-[10px] font-bold text-harvics-gold/40 uppercase tracking-[0.15em]">
                 Overview
               </p>
             )}
@@ -202,7 +202,7 @@ export default function HarvicsOSShell({
           {/* Tier 1 — Core Domains */}
           <div className="mb-3">
             {sidebarOpen && (
-              <p className="px-3 mb-1.5 text-[10px] font-bold text-[#C3A35E]/40 uppercase tracking-[0.15em]">
+              <p className="px-3 mb-1.5 text-[10px] font-bold text-harvics-gold/40 uppercase tracking-[0.15em]">
                 Domains
               </p>
             )}
@@ -212,9 +212,9 @@ export default function HarvicsOSShell({
           </div>
 
           {/* AI Layer */}
-          <div className="pt-2 border-t border-[#C3A35E]/15">
+          <div className="pt-2 border-t border-harvics-gold/15">
             {sidebarOpen && (
-              <p className="px-3 mb-1.5 text-[10px] font-bold text-[#C3A35E]/40 uppercase tracking-[0.15em]">
+              <p className="px-3 mb-1.5 text-[10px] font-bold text-harvics-gold/40 uppercase tracking-[0.15em]">
                 AI Layer
               </p>
             )}
@@ -225,23 +225,23 @@ export default function HarvicsOSShell({
         </nav>
 
         {/* Sidebar Footer — User */}
-        <div className="p-3 border-t border-[#C3A35E]/20">
+        <div className="p-3 border-t border-harvics-gold/20">
           {sidebarOpen ? (
             <div className="flex items-center gap-3">
               <div
-                className="w-8 h-8 flex-shrink-0 flex items-center justify-center bg-[#C3A35E] text-[#6B1F2B] font-bold text-sm font-serif"
+                className="w-8 h-8 flex-shrink-0 flex items-center justify-center bg-harvics-gold text-harvics-burgundy font-bold text-sm font-serif"
                 style={{ borderRadius: 0 }}
               >
                 {username.charAt(0).toUpperCase()}
               </div>
               <div className="min-w-0">
-                <p className="text-xs font-semibold text-[#C3A35E] truncate">{username}</p>
-                <p className="text-[10px] text-[#C3A35E]/50 uppercase">{userRole}</p>
+                <p className="text-xs font-semibold text-harvics-gold truncate">{username}</p>
+                <p className="text-[10px] text-harvics-gold/50 uppercase">{userRole}</p>
               </div>
             </div>
           ) : (
             <div
-              className="w-8 h-8 mx-auto flex items-center justify-center bg-[#C3A35E] text-[#6B1F2B] font-bold text-sm font-serif"
+              className="w-8 h-8 mx-auto flex items-center justify-center bg-harvics-gold text-harvics-burgundy font-bold text-sm font-serif"
               style={{ borderRadius: 0 }}
               title={`${username} (${userRole})`}
             >
@@ -255,14 +255,14 @@ export default function HarvicsOSShell({
       <div className="flex-1 flex flex-col overflow-hidden">
         {/* Top Header Bar */}
         <header
-          className="bg-white border-b border-[#C3A35E]/20 px-4 lg:px-6 flex items-center justify-between min-h-[64px] z-30"
+          className="bg-white border-b border-harvics-gold/20 px-4 lg:px-6 flex items-center justify-between min-h-[64px] z-30"
           style={{ boxShadow: 'none' }}
         >
           <div className="flex items-center gap-4">
             {/* Mobile menu toggle */}
             <button
               onClick={() => setSidebarMobileOpen(true)}
-              className="lg:hidden text-[#6B1F2B] p-1"
+              className="lg:hidden text-harvics-burgundy p-1"
               aria-label="Open menu"
             >
               ☰
@@ -273,16 +273,16 @@ export default function HarvicsOSShell({
               {breadcrumbs.length > 0 ? (
                 breadcrumbs.map((crumb, idx) => (
                   <React.Fragment key={idx}>
-                    {idx > 0 && <span className="text-[#6B1F2B]/30 text-xs">›</span>}
+                    {idx > 0 && <span className="text-harvics-burgundy/30 text-xs">›</span>}
                     {crumb.href ? (
                       <Link
                         href={crumb.href}
-                        className="text-xs text-[#6B1F2B]/60 hover:text-[#6B1F2B] transition-colors font-medium"
+                        className="text-xs text-harvics-burgundy/60 hover:text-harvics-burgundy transition-colors font-medium"
                       >
                         {crumb.label}
                       </Link>
                     ) : (
-                      <span className="text-xs text-[#6B1F2B] font-bold">{crumb.label}</span>
+                      <span className="text-xs text-harvics-burgundy font-bold">{crumb.label}</span>
                     )}
                   </React.Fragment>
                 ))
@@ -290,12 +290,12 @@ export default function HarvicsOSShell({
                 <>
                   <Link
                     href={`/${locale}/dashboard/company`}
-                    className="text-xs text-[#6B1F2B]/60 hover:text-[#6B1F2B] transition-colors font-medium"
+                    className="text-xs text-harvics-burgundy/60 hover:text-harvics-burgundy transition-colors font-medium"
                   >
                     Harvics OS
                   </Link>
-                  <span className="text-[#6B1F2B]/30 text-xs">›</span>
-                  <span className="text-xs text-[#6B1F2B] font-bold">{title}</span>
+                  <span className="text-harvics-burgundy/30 text-xs">›</span>
+                  <span className="text-xs text-harvics-burgundy font-bold">{title}</span>
                 </>
               )}
             </div>
@@ -309,7 +309,7 @@ export default function HarvicsOSShell({
             {showAIShortcut && (
               <Link
                 href={`/${locale}/copilot`}
-                className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#6B1F2B] bg-[#C3A35E]/10 border border-[#C3A35E]/30 hover:bg-[#C3A35E]/25 transition-colors"
+                className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-harvics-burgundy bg-harvics-gold/10 border border-harvics-gold/30 hover:bg-harvics-gold/25 transition-colors"
                 style={{ borderRadius: 0 }}
                 title="Open AI Copilot"
               >
@@ -319,13 +319,13 @@ export default function HarvicsOSShell({
             )}
 
             {/* Time */}
-            <div className="hidden md:flex items-center gap-2 text-xs text-[#6B1F2B]/60 font-medium">
+            <div className="hidden md:flex items-center gap-2 text-xs text-harvics-burgundy/60 font-medium">
               <span>{formatTime(currentTime)}</span>
             </div>
 
             {/* Notifications placeholder */}
             <button
-              className="relative p-2 text-[#6B1F2B]/60 hover:text-[#6B1F2B] transition-colors"
+              className="relative p-2 text-harvics-burgundy/60 hover:text-harvics-burgundy transition-colors"
               title="Notifications"
             >
               🔔
@@ -338,15 +338,15 @@ export default function HarvicsOSShell({
         </header>
 
         {/* Page Title Bar */}
-        <div className="bg-[#F5F0E8] border-b border-[#C3A35E]/15 px-4 lg:px-6 py-3 flex items-center justify-between">
+        <div className="bg-harvics-cream border-b border-harvics-gold/15 px-4 lg:px-6 py-3 flex items-center justify-between">
           <div>
-            <h1 className="text-xl font-bold text-[#6B1F2B] font-serif tracking-tight">{title}</h1>
-            {subtitle && <p className="text-xs text-[#6B1F2B]/50 mt-0.5">{subtitle}</p>}
+            <h1 className="text-xl font-bold text-harvics-burgundy font-serif tracking-tight">{title}</h1>
+            {subtitle && <p className="text-xs text-harvics-burgundy/50 mt-0.5">{subtitle}</p>}
           </div>
         </div>
 
         {/* Main Content */}
-        <main className="flex-1 overflow-y-auto p-4 lg:p-6 bg-[#F5F0E8]">
+        <main className="flex-1 overflow-y-auto p-4 lg:p-6 bg-harvics-cream">
           {children}
         </main>
       </div>
@@ -377,8 +377,8 @@ function NavLink({
         flex items-center gap-3 px-3 py-2 text-sm transition-all
         ${
           active
-            ? 'bg-[#C3A35E]/20 text-[#C3A35E] font-bold border-r-2 border-[#C3A35E]'
-            : 'text-[#C3A35E]/65 hover:text-[#C3A35E] hover:bg-[#C3A35E]/8'
+            ? 'bg-harvics-gold/20 text-harvics-gold font-bold border-r-2 border-harvics-gold'
+            : 'text-harvics-gold/65 hover:text-harvics-gold hover:bg-harvics-gold/8'
         }
       `}
       style={{ borderRadius: 0 }}
@@ -390,7 +390,7 @@ function NavLink({
       )}
       {sidebarOpen && item.badge !== undefined && (
         <span
-          className="ml-auto text-[10px] font-bold px-1.5 py-0.5 bg-[#C3A35E]/20 text-[#C3A35E]"
+          className="ml-auto text-[10px] font-bold px-1.5 py-0.5 bg-harvics-gold/20 text-harvics-gold"
           style={{ borderRadius: 0 }}
         >
           {item.badge}

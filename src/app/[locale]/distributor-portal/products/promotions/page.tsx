@@ -42,7 +42,7 @@ export default function Promotions() {
   return (
     <div className="space-y-6">
       <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
-      <h1 className="text-2xl font-bold text-[#C3A35E]">Promotions</h1>
+      <h1 className="text-2xl font-bold text-harvics-gold">Promotions</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {promotions.map((promo, index) => (
@@ -57,22 +57,22 @@ export default function Promotions() {
               />
             </div>
             <div className="flex items-start justify-between mb-4">
-              <h3 className="text-lg font-bold text-[#C3A35E]/90">{promo.name}</h3>
+              <h3 className="text-lg font-bold text-harvics-gold/90">{promo.name}</h3>
               <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                promo.status === 'active' ? 'bg-green-100 text-green-800' : 'bg-white text-[#C3A35E]/90'
+                promo.status === 'active' ? 'bg-green-100 text-green-800' : 'bg-white text-harvics-gold/90'
               }`}>
                 {promo.status}
               </span>
             </div>
             <div className="space-y-3 mb-4">
               <div>
-                <div className="text-xs text-[#C3A35E]/90 mb-1">Validity</div>
-                <div className="text-sm font-semibold text-[#C3A35E]/90">
+                <div className="text-xs text-harvics-gold/90 mb-1">Validity</div>
+                <div className="text-sm font-semibold text-harvics-gold/90">
                   {promo.startDate} - {promo.endDate}
                 </div>
               </div>
               <div>
-                <div className="text-xs text-[#C3A35E]/90 mb-1">Eligible SKUs</div>
+                <div className="text-xs text-harvics-gold/90 mb-1">Eligible SKUs</div>
                 <div className="flex flex-wrap gap-2">
                   {promo.eligibleSKUs.map((sku, i) => (
                     <span key={i} className="px-2 py-1 bg-white/20 text-white rounded text-xs font-semibold">
@@ -82,7 +82,7 @@ export default function Promotions() {
                 </div>
               </div>
               <div>
-                <div className="text-xs text-[#C3A35E]/90 mb-1">Extra Benefit</div>
+                <div className="text-xs text-harvics-gold/90 mb-1">Extra Benefit</div>
                 <div className="text-sm font-semibold text-white">{promo.benefit}</div>
               </div>
             </div>

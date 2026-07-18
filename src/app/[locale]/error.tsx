@@ -35,9 +35,9 @@ export default function Error({
       <div className="text-center max-w-md">
         {/* Error icon */}
         <div className="flex items-center justify-center w-16 h-16 mx-auto mb-6">
-          <div className="w-16 h-16 border-2 border-[#6B1F2B] flex items-center justify-center">
+          <div className="w-16 h-16 border-2 border-harvics-burgundy flex items-center justify-center">
             <svg
-              className="w-8 h-8 text-[#6B1F2B]"
+              className="w-8 h-8 text-harvics-burgundy"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -52,7 +52,7 @@ export default function Error({
           </div>
         </div>
 
-        <div className="w-16 h-1 bg-[#C3A35E] mx-auto mb-6" />
+        <div className="w-16 h-1 bg-harvics-gold mx-auto mb-6" />
 
         <h2 className="text-2xl font-bold text-black mb-3">{heading}</h2>
 
@@ -73,13 +73,13 @@ export default function Error({
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <button
             onClick={reset}
-            className="bg-[#6B1F2B] text-white px-6 py-3 font-semibold hover:bg-[#5a0012] transition-colors"
+            className="bg-harvics-burgundy text-white px-6 py-3 font-semibold hover:bg-[#5a0012] transition-colors"
           >
             {tryAgain}
           </button>
           <button
             onClick={() => window.location.reload()}
-            className="border border-[#6B1F2B] text-[#6B1F2B] px-6 py-3 font-semibold hover:bg-[#6B1F2B] hover:text-white transition-colors"
+            className="border border-harvics-burgundy text-harvics-burgundy px-6 py-3 font-semibold hover:bg-harvics-burgundy hover:text-white transition-colors"
           >
             {reload}
           </button>

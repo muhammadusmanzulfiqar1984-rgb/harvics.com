@@ -69,8 +69,8 @@ export default function InvestorRelationsTabs({ children }: InvestorRelationsTab
                   min-h-[48px] flex-shrink-0
                   ${
                     activeTab === tab.id
-                      ? 'text-[#1A1A1A] bg-[#F5F5F7] border-b-2 border-[#6B1F2B] font-semibold'
-                      : 'text-[#1A1A1A] hover:text-[#6B1F2B] hover:bg-[#F5F5F7] border-b border-transparent'
+                      ? 'text-[#1A1A1A] bg-[#F5F5F7] border-b-2 border-harvics-burgundy font-semibold'
+                      : 'text-[#1A1A1A] hover:text-harvics-burgundy hover:bg-[#F5F5F7] border-b border-transparent'
                   }
                 `}
                 style={{ fontFamily: 'sans-serif', fontWeight: activeTab === tab.id ? 600 : 500, letterSpacing: '0.05em' }}
@@ -118,7 +118,7 @@ export default function InvestorRelationsTabs({ children }: InvestorRelationsTab
                           <h3 className="text-xl font-semibold text-[#1A1A1A] mb-2">Annual Report 2024</h3>
                           <p className="text-[#1A1A1A]">Complete financial and operational overview</p>
                         </div>
-                        <button className="bg-[#6B1F2B] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#2a0006] transition-colors">
+                        <button className="bg-harvics-burgundy text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#2a0006] transition-colors">
                           Download PDF
                         </button>
                       </div>
@@ -129,7 +129,7 @@ export default function InvestorRelationsTabs({ children }: InvestorRelationsTab
                           <h3 className="text-xl font-semibold text-[#1A1A1A] mb-2">Annual Report 2023</h3>
                           <p className="text-[#1A1A1A]">Previous year's comprehensive report</p>
                         </div>
-                        <button className="bg-[#6B1F2B] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#2a0006] transition-colors">
+                        <button className="bg-harvics-burgundy text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#2a0006] transition-colors">
                           Download PDF
                         </button>
                       </div>
@@ -150,7 +150,7 @@ export default function InvestorRelationsTabs({ children }: InvestorRelationsTab
                           <h3 className="text-xl font-semibold text-[#1A1A1A] mb-2">Q4 2024 Earnings Presentation</h3>
                           <p className="text-[#1A1A1A]">Latest quarterly earnings overview</p>
                         </div>
-                        <button className="bg-[#6B1F2B] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#2a0006] transition-colors">
+                        <button className="bg-harvics-burgundy text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#2a0006] transition-colors">
                           View
                         </button>
                       </div>
@@ -161,7 +161,7 @@ export default function InvestorRelationsTabs({ children }: InvestorRelationsTab
                           <h3 className="text-xl font-semibold text-[#1A1A1A] mb-2">Investor Day 2024</h3>
                           <p className="text-[#1A1A1A]">Strategic vision and growth plans</p>
                         </div>
-                        <button className="bg-[#6B1F2B] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#2a0006] transition-colors">
+                        <button className="bg-harvics-burgundy text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#2a0006] transition-colors">
                           View
                         </button>
                       </div>
@@ -206,7 +206,7 @@ export default function InvestorRelationsTabs({ children }: InvestorRelationsTab
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
                       <h3 className="text-xl font-semibold text-[#1A1A1A] mb-4">Email</h3>
-                      <a href="mailto:investors@harvics.com" className="text-[#6B1F2B] hover:text-[#2a0006] font-semibold">
+                      <a href="mailto:investors@harvics.com" className="text-harvics-burgundy hover:text-[#2a0006] font-semibold">
                         investors@harvics.com
                       </a>
                     </div>

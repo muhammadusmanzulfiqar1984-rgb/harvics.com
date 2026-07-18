@@ -37,10 +37,10 @@ export default function PresentationAccessGate() {
 
   return (
     <div
-      className="border border-[#C3A35E]/35 bg-[#141010]/95 backdrop-blur-sm p-8 md:p-10 max-w-md w-full mx-auto"
+      className="border border-harvics-gold/35 bg-[#141010]/95 backdrop-blur-sm p-8 md:p-10 max-w-md w-full mx-auto"
       style={{ borderRadius: '12px' }}
     >
-      <p className="text-[10px] uppercase tracking-[0.28em] text-[#C3A35E] font-bold mb-3">
+      <p className="text-[10px] uppercase tracking-[0.28em] text-harvics-gold font-bold mb-3">
         Harvics
       </p>
       <h2 className="text-3xl md:text-4xl font-semibold text-white mb-2 tracking-tight">
@@ -65,12 +65,12 @@ export default function PresentationAccessGate() {
           }}
           placeholder="Programme code"
           autoComplete="off"
-          className="w-full px-4 py-3.5 border border-[#C3A35E]/30 bg-black/40 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-[#C3A35E]"
+          className="w-full px-4 py-3.5 border border-harvics-gold/30 bg-black/40 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-harvics-gold"
         />
         {error && <p className="text-sm text-red-400">{error}</p>}
         <button
           type="submit"
-          className="w-full py-3.5 bg-[#C3A35E] text-[#1a0d00] text-xs font-bold uppercase tracking-[0.18em] hover:bg-[#d4b46e] transition-colors"
+          className="w-full py-3.5 bg-harvics-gold text-[#1a0d00] text-xs font-bold uppercase tracking-[0.18em] hover:bg-[#d4b46e] transition-colors"
         >
           Enter {LA_PRES_NAME}
         </button>

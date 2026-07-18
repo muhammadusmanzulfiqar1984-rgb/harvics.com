@@ -31,7 +31,7 @@ export default function KnowledgeBase() {
   return (
     <div className="space-y-6">
       <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
-      <h1 className="text-2xl font-bold text-[#C3A35E]">Knowledge Base</h1>
+      <h1 className="text-2xl font-bold text-harvics-gold">Knowledge Base</h1>
 
       {/* Search Bar */}
       <div className="bg-white p-4 border border-black200 shadow-sm">
@@ -47,7 +47,7 @@ export default function KnowledgeBase() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Categories */}
         <div className="lg:col-span-1 bg-white border border-black200 shadow-sm p-6">
-          <h2 className="text-lg font-bold text-[#C3A35E] mb-4">Categories</h2>
+          <h2 className="text-lg font-bold text-harvics-gold mb-4">Categories</h2>
           <div className="space-y-2">
             {categories.map(category => (
               <button
@@ -56,7 +56,7 @@ export default function KnowledgeBase() {
                 className={`w-full text-left px-4 py-2 transition-colors ${
                   selectedCategory === category
                     ? 'bg-white/20 text-white font-semibold'
-                    : 'text-[#C3A35E]/90 hover:bg-white'
+                    : 'text-harvics-gold/90 hover:bg-white'
                 }`}
               >
                 {category}
@@ -75,14 +75,14 @@ export default function KnowledgeBase() {
               >
                 ← Back to Articles
               </button>
-              <h2 className="text-2xl font-bold text-[#C3A35E] mb-4">
+              <h2 className="text-2xl font-bold text-harvics-gold mb-4">
                 {articles.find(a => a.id === selectedArticle)?.title}
               </h2>
               <div className="prose max-w-none">
-                <p className="text-[#C3A35E]/90">{articleContent[selectedArticle]}</p>
+                <p className="text-harvics-gold/90">{articleContent[selectedArticle]}</p>
               </div>
               <div className="mt-6 pt-6 border-t border-black200">
-                <div className="text-sm font-semibold text-[#C3A35E]/90 mb-2">Was this helpful?</div>
+                <div className="text-sm font-semibold text-harvics-gold/90 mb-2">Was this helpful?</div>
                 <div className="flex space-x-4">
                   <button className="bg-green-100 text-green-800 px-4 py-2 font-semibold hover:bg-green-200 transition-colors">
                     Yes
@@ -95,7 +95,7 @@ export default function KnowledgeBase() {
             </div>
           ) : (
             <div>
-              <h2 className="text-lg font-bold text-[#C3A35E] mb-4">Articles</h2>
+              <h2 className="text-lg font-bold text-harvics-gold mb-4">Articles</h2>
               <div className="space-y-3">
                 {articles
                   .filter(article => 
@@ -108,8 +108,8 @@ export default function KnowledgeBase() {
                       onClick={() => setSelectedArticle(article.id)}
                       className="p-4 border border-black200 hover:border-white hover:shadow-md transition-all cursor-pointer"
                     >
-                      <h3 className="font-semibold text-[#C3A35E]/90 mb-2">{article.title}</h3>
-                      <div className="flex items-center space-x-4 text-sm text-[#C3A35E]/90">
+                      <h3 className="font-semibold text-harvics-gold/90 mb-2">{article.title}</h3>
+                      <div className="flex items-center space-x-4 text-sm text-harvics-gold/90">
                         <span>{article.category}</span>
                         <div className="flex space-x-2">
                           {article.tags.map(tag => (

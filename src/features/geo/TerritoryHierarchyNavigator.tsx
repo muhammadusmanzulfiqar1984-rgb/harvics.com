@@ -242,7 +242,7 @@ export default function TerritoryHierarchyNavigator({
                     <div
                       key={child.id}
                       onClick={() => handleTerritorySelect(child, tier)}
-                      className="p-2 hover:bg-white/10 rounded cursor-pointer border border-transparent hover:border-[#C3A35E]/30"
+                      className="p-2 hover:bg-white/10 rounded cursor-pointer border border-transparent hover:border-harvics-gold/30"
                     >
                       <div className="flex items-center justify-between">
                         <span className="font-medium">

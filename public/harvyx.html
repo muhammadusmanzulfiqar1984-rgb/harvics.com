@@ -5,360 +5,1189 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>HarvyX — Growth OS</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
-/* ─── TOKENS ─────────────────────────────────── */
+/* ─── Harvics brand-forward: deep burgundy + gold ─── */
 :root {
-  --bg:        #07030a;
-  --bg2:       #0e050f;
-  --panel:     #130a16;
-  --panel2:    #1b0e20;
-  --line:      rgba(195,163,94,.12);
-  --line2:     rgba(195,163,94,.28);
-  --gold:      #c3a35e;
-  --gold2:     #e8c97c;
-  --maroon:    #6b1f2b;
-  --maroon2:   #8a2537;
-  --cream:     #f5f0e8;
-  --ink:       #ece4d3;
-  --ink2:      #bba884;
-  --ink3:      #7a6a5a;
-  --ok:        #6fcf97;
-  --warn:      #e0b34a;
-  --bad:       #eb6b6b;
-  --blue:      #6b9fe0;
-  --purple:    #a07bc7;
-  --r:         4px;
+  --bg:        #E4DDD4;
+  --bg2:       #F0E9DF;
+  --panel:     #FFFCF7;
+  --panel2:    #F8F2E8;
+  --line:      rgba(26, 5, 5, 0.1);
+  --line2:     rgba(26, 5, 5, 0.18);
+  --accent:    #3D1212;
+  --accent2:   #8A2537;
+  --burgundy:  #3D1212;
+  --gold:      #C3A35E;
+  --gold2:     #D4B56D;
+  --gold3:     #E8D5A3;
+  --gold-soft: rgba(195, 163, 94, 0.22);
+  --gold-mid:  rgba(195, 163, 94, 0.4);
+  --maroon-soft: rgba(107, 31, 43, 0.12);
+  --maroon-mid:  rgba(107, 31, 43, 0.22);
+  --ink:       #3D1212;
+  --ink2:      #3D2A2E;
+  --ink3:      #5C4844;
+  --text-on-light: #3D1212;
+  --text-muted-on-light: #4A3538;
+  --gold-on-light: #7A5A12;
+  --ok:        #15803D;
+  --ok-bg:     rgba(21, 128, 61, 0.1);
+  --warn:      #B45309;
+  --warn-bg:   rgba(180, 83, 9, 0.1);
+  --bad:       #DC2626;
+  --blue:      #0A66C2;
+  --blue-bg:   rgba(10, 102, 194, 0.08);
+  --r:         8px;
+  --shadow:    0 1px 2px rgba(26,5,5,0.05), 0 4px 14px rgba(26,5,5,0.07);
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --maroon:    var(--accent);
+  --maroon2:   var(--accent2);
+  --cream:     #FFFCF7;
+  --font-display: var(--font-body);
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html, body { height: 100%; background: var(--bg); font-family: Inter, system-ui, sans-serif;
-  color: var(--ink); -webkit-font-smoothing: antialiased; font-size: 13px; overflow: hidden; }
+html, body {
+  height: 100%;
+  background: var(--bg);
+  font-family: var(--font-body);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  font-size: 13px;
+  overflow: hidden;
+}
 
-/* ─── LAYOUT ─────────────────────────────────── */
 .shell {
   display: grid;
-  grid-template-rows: 44px 1fr;
-  grid-template-columns: 300px 1fr 280px;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 300px 1fr 300px;
   height: 100vh;
+  height: 100dvh;
+  max-height: 100vh;
+  max-height: 100dvh;
+  overflow: hidden;
+  min-height: 0;
+  background:
+    radial-gradient(ellipse at 0% 0%, rgba(107,31,43,0.18) 0%, transparent 48%),
+    radial-gradient(ellipse at 100% 0%, rgba(201,168,76,0.28) 0%, transparent 46%),
+    radial-gradient(ellipse at 50% 100%, rgba(26,5,5,0.08) 0%, transparent 55%),
+    linear-gradient(180deg, #EDE4D6 0%, #E4DDD4 100%);
+}
+/* Tab views — show one main workspace at a time */
+.shell.tab-operator { grid-template-columns: 280px 1fr 280px; }
+.shell.tab-pipeline { grid-template-columns: 1fr; }
+.shell.tab-pipeline .center,
+.shell.tab-pipeline .right { display: none; }
+.shell.tab-discover { grid-template-columns: 1fr; }
+.shell.tab-discover .center,
+.shell.tab-discover .right { display: none; }
+.shell.tab-outreach { grid-template-columns: 1fr; }
+.shell.tab-outreach .left,
+.shell.tab-outreach .center { display: none; }
+.shell.tab-library { grid-template-columns: 1fr; }
+.shell.tab-library .left,
+.shell.tab-library .center { display: none; }
+.shell.tab-analytics { grid-template-columns: 1fr; }
+.shell.tab-analytics .center,
+.shell.tab-analytics .right { display: none; }
+.sys-status {
+  grid-column: 1 / -1;
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  padding: 6px 16px; font-size: 10px; font-weight: 600;
+  background: rgba(26,5,5,0.92); color: var(--gold3);
+  border-bottom: 1px solid var(--gold-mid);
+}
+.sys-status.error { background: #4a1010; color: #ffb4b4; }
+.sys-status.ok { background: rgba(26,5,5,0.92); }
+.sys-status .pill {
+  padding: 2px 8px; border-radius: 999px; border: 1px solid var(--gold-mid);
+  background: rgba(201,168,76,0.12); color: var(--gold2);
 }
 .topbar {
   grid-column: 1 / -1;
   display: flex; align-items: center; gap: 16px;
   padding: 0 20px;
+  min-height: 52px;
+  background: linear-gradient(90deg, #3D1212 0%, #3D1212 45%, #3D1212 100%);
+  border-bottom: 3px solid var(--gold);
+  box-shadow: 0 4px 20px rgba(26,5,5,0.25);
+  flex-shrink: 0;
+  z-index: 2;
+}
+.left, .right {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  height: 100%;
+  overflow: hidden;
   background: var(--panel);
-  border-bottom: 1px solid var(--line);
+  border-color: var(--gold);
 }
-.left  { border-right: 1px solid var(--line); overflow-y: auto; background: var(--panel); }
-.center { display: flex; flex-direction: column; background: var(--bg2); }
-.right { border-left: 1px solid var(--line); overflow-y: auto; background: var(--panel); }
+.left  { border-right: 2px solid var(--gold); }
+.right { border-left: 2px solid var(--gold); }
+.panel-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  height: 100%;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.12) 0%, transparent 55%),
+    var(--bg2);
+}
 
-/* ─── TOPBAR ────────────────────────────────── */
 .logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 15px; font-weight: 700;
-  color: var(--gold);
-  letter-spacing: 0.04em;
+  font-family: var(--font-body);
+  font-size: 18px; font-weight: 700;
+  color: var(--gold2);
+  letter-spacing: -0.03em;
 }
-.logo span { color: var(--ink3); font-size: 11px; font-family: Inter; font-weight: 400; margin-left: 6px; letter-spacing: 0.1em; text-transform: uppercase; }
+.logo span {
+  color: rgba(232,213,163,0.75); font-size: 10px; font-family: var(--font-body);
+  font-weight: 700; margin-left: 8px; letter-spacing: 0.14em; text-transform: uppercase;
+}
 .nav-tabs { display: flex; gap: 2px; }
 .nav-tab {
-  padding: 4px 12px; font-size: 11px; font-weight: 500; letter-spacing: 0.06em;
-  text-transform: uppercase; cursor: pointer; border-radius: var(--r);
-  color: var(--ink3); border: none; background: transparent;
+  padding: 6px 12px; font-size: 12px; font-weight: 600;
+  cursor: pointer; border-radius: var(--r);
+  color: rgba(232,213,163,0.65); border: none; background: transparent;
   transition: color .15s, background .15s;
 }
-.nav-tab:hover { color: var(--ink2); background: rgba(195,163,94,.07); }
-.nav-tab.active { color: var(--gold); background: rgba(195,163,94,.12); }
-.topbar-right { margin-left: auto; display: flex; align-items: center; gap: 12px; }
-.status-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--ok); box-shadow: 0 0 6px var(--ok); }
+.nav-tab:hover { color: var(--gold2); background: rgba(201,168,76,0.12); }
+.nav-tab.active {
+  color: var(--burgundy);
+  background: linear-gradient(180deg, var(--gold2), var(--gold));
+  box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+.topbar-right { margin-left: auto; display: flex; align-items: center; gap: 10px; }
+.status-dot { width: 6px; height: 6px; border-radius: 50%; background: #6EE7A0; box-shadow: 0 0 0 3px rgba(110,231,160,0.2); }
 .user-chip {
   display: flex; align-items: center; gap: 7px;
-  padding: 3px 10px 3px 6px; border-radius: 20px;
-  background: var(--panel2); border: 1px solid var(--line);
-  font-size: 11px; color: var(--ink2);
+  padding: 4px 12px 4px 6px; border-radius: 999px;
+  background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.35);
+  font-size: 11px; color: var(--gold3); font-weight: 500;
 }
 .avatar {
-  width: 22px; height: 22px; border-radius: 50%;
-  background: var(--maroon); display: flex; align-items: center; justify-content: center;
-  font-size: 10px; color: var(--gold); font-weight: 600;
+  width: 24px; height: 24px; border-radius: 50%;
+  background: linear-gradient(145deg, var(--gold2), var(--gold));
+  border: 1px solid var(--gold3);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px; color: var(--burgundy); font-weight: 700;
+}
+.li-chip {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 4px 10px; border-radius: 999px;
+  background: rgba(10,102,194,0.2); border: 1px solid rgba(140,180,230,0.35);
+  color: #9EC5F0; font-size: 10px; font-weight: 600; letter-spacing: 0.04em;
 }
 
-/* ─── PANELS SHARED ─────────────────────────── */
 .panel-head {
-  padding: 14px 16px 10px;
-  border-bottom: 1px solid var(--line);
+  padding: 14px 16px;
+  border-bottom: 3px solid var(--gold);
   display: flex; align-items: center; justify-content: space-between;
+  background: linear-gradient(135deg, #3D1212 0%, #3D1212 70%, #8A2537 100%);
+  flex-shrink: 0;
+  z-index: 1;
 }
 .eyebrow {
-  font-size: 9px; font-weight: 700; letter-spacing: 0.2em;
-  text-transform: uppercase; color: var(--gold); opacity: .75;
+  font-size: 9px; font-weight: 700; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--gold2);
 }
-.section { padding: 14px 16px; border-bottom: 1px solid var(--line); }
-.section:last-child { border-bottom: none; }
+.panel-head > span:not(.eyebrow) { color: var(--gold3) !important; }
+.section {
+  padding: 12px;
+  border: 1.5px solid var(--gold);
+  border-radius: var(--r);
+  background: linear-gradient(180deg, #fff 0%, #FFF9F0 100%);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.85);
+}
+.section:last-child { border-bottom: 1.5px solid var(--gold); }
 .section-label {
-  font-size: 9px; font-weight: 600; letter-spacing: 0.18em;
-  text-transform: uppercase; color: var(--ink3); margin-bottom: 10px;
+  font-size: 9px; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--burgundy);
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--gold-mid);
+}
+.left, .right, .section, .draft-card, .campaign-card, .campaign-modal-body, .empty-state {
+  color: var(--text-on-light);
 }
 
-/* ─── KPI GRID ───────────────────────────────── */
 .kpi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .kpi {
-  background: var(--panel2); border: 1px solid var(--line);
-  border-radius: var(--r); padding: 10px 12px;
+  background: linear-gradient(165deg, #fff 0%, #F5EBD8 55%, var(--gold-soft) 100%);
+  border: 1.5px solid var(--gold);
+  border-radius: var(--r); padding: 12px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.8);
 }
 .kpi-val {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 22px; font-weight: 500; color: var(--gold); line-height: 1;
+  font-size: 22px; font-weight: 500; color: var(--burgundy); line-height: 1;
   margin-bottom: 4px;
 }
 .kpi-val.ok   { color: var(--ok); }
-.kpi-val.warn { color: var(--warn); }
+.kpi-val.warn { color: var(--gold); }
 .kpi-val.bad  { color: var(--bad); }
-.kpi-label { font-size: 10px; color: var(--ink3); letter-spacing: 0.05em; }
+.kpi-label { font-size: 10px; color: var(--accent); letter-spacing: 0.04em; font-weight: 600; }
 
-/* ─── SOURCE STATUS ──────────────────────────── */
 .source-row {
   display: flex; align-items: center; gap: 8px;
-  padding: 6px 0; border-bottom: 1px solid var(--line);
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  border: 1px solid var(--gold-mid);
+  border-radius: 6px;
+  background: #fff;
 }
-.source-row:last-child { border-bottom: none; }
+.source-row:last-child { margin-bottom: 0; }
 .source-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
-.source-name { flex: 1; font-size: 11px; color: var(--ink2); }
+.source-name { flex: 1; font-size: 11px; color: var(--ink2); font-weight: 500; }
 .source-badge {
-  font-size: 9px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-  padding: 2px 6px; border-radius: 3px;
+  font-size: 9px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 2px 7px; border-radius: 999px;
+  border: 1px solid transparent;
 }
-.badge-live   { background: rgba(111,207,151,.15); color: var(--ok); }
-.badge-key    { background: rgba(224,179,74,.12);  color: var(--warn); }
-.badge-build  { background: rgba(107,159,224,.12); color: var(--blue); }
-.badge-lib    { background: rgba(255,255,255,.05); color: var(--ink3); }
+.badge-live   { background: var(--ok-bg); color: var(--ok); border-color: rgba(21,128,61,0.25); }
+.badge-key    { background: var(--warn-bg); color: var(--warn); border-color: rgba(180,83,9,0.25); }
+.badge-build  { background: var(--blue-bg); color: var(--blue); border-color: rgba(10,102,194,0.25); }
+.badge-lib    { background: var(--gold-soft); color: var(--burgundy); border-color: var(--gold-mid); }
 
-/* ─── LEAD QUEUE ─────────────────────────────── */
+/* Contact cards — Lusha / RocketReach */
 .lead-item {
   display: flex; align-items: flex-start; gap: 10px;
-  padding: 8px 0; border-bottom: 1px solid var(--line);
-  cursor: pointer; transition: background .1s;
+  padding: 10px; margin: 0 0 8px; border-radius: var(--r);
+  border: 1.5px solid var(--gold);
+  background: linear-gradient(180deg, #fff 0%, #FFF9F0 100%);
+  cursor: pointer; transition: background .12s, border-color .12s, box-shadow .12s;
 }
-.lead-item:last-child { border-bottom: none; }
-.lead-item:hover { background: rgba(195,163,94,.04); margin: 0 -16px; padding-left: 16px; padding-right: 16px; }
+.lead-item:last-child { margin-bottom: 0; }
+.lead-item:hover {
+  background: linear-gradient(180deg, #FFF8EC 0%, #F5EBD8 100%);
+  border-color: var(--gold2);
+  box-shadow: 0 3px 10px rgba(26,5,5,0.08);
+}
 .lead-score {
-  width: 32px; height: 32px; border-radius: 50%; flex-shrink: 0;
+  width: 34px; height: 34px; border-radius: 50%; flex-shrink: 0;
   display: flex; align-items: center; justify-content: center;
   font-size: 10px; font-weight: 700; font-family: 'JetBrains Mono', monospace;
 }
-.score-hi  { background: rgba(111,207,151,.15); color: var(--ok);   border: 1px solid rgba(111,207,151,.3); }
-.score-mid { background: rgba(224,179,74,.12);  color: var(--warn); border: 1px solid rgba(224,179,74,.25); }
-.score-lo  { background: rgba(195,163,94,.1);   color: var(--ink3); border: 1px solid var(--line2); }
+.score-hi  { background: var(--ok-bg); color: var(--ok); border: 1px solid rgba(21,128,61,0.22); }
+.score-mid { background: var(--gold-soft); color: #8A6E2F; border: 1px solid var(--gold-mid); }
+.score-lo  { background: var(--bg2); color: var(--ink3); border: 1px solid var(--line); }
 .lead-body { flex: 1; min-width: 0; }
-.lead-name { font-size: 12px; font-weight: 500; color: var(--ink); truncate: ellipsis; white-space: nowrap; overflow: hidden; }
-.lead-meta { font-size: 10px; color: var(--ink3); margin-top: 2px; }
-.channel-icon { font-size: 10px; padding: 2px 5px; border-radius: 3px; background: var(--panel2); color: var(--ink3); border: 1px solid var(--line); }
+.lead-name { font-size: 12.5px; font-weight: 600; color: var(--burgundy); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.lead-meta { font-size: 10.5px; color: var(--text-muted-on-light); margin-top: 3px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.channel-icon {
+  font-size: 9px; padding: 2px 6px; border-radius: 999px;
+  background: var(--bg2); color: var(--ink3); border: 1px solid var(--line); font-weight: 600;
+}
+.channel-icon.li { background: var(--blue-bg); color: var(--blue); border-color: rgba(10,102,194,0.2); }
+.lead-item.selected {
+  background: linear-gradient(135deg, var(--maroon-soft), var(--gold-soft));
+  border-color: var(--gold);
+}
+.lead-title {
+  font-size: 11px; color: var(--ink2); margin-top: 2px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.enrich-row { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+.enrich-pill {
+  font-size: 9px; font-weight: 600; letter-spacing: 0.02em;
+  padding: 2px 7px; border-radius: 999px;
+  border: 1px solid var(--line); background: #fff; color: var(--ink3);
+}
+.enrich-pill.ok { background: var(--ok-bg); color: var(--ok); border-color: rgba(21,128,61,0.2); }
+.enrich-pill.li { background: var(--blue-bg); color: var(--blue); border-color: rgba(10,102,194,0.2); }
+.enrich-pill.miss { opacity: 0.65; }
 
-/* ─── CENTER CHAT ────────────────────────────── */
 .chat-head {
-  padding: 12px 20px;
-  border-bottom: 1px solid var(--line);
+  padding: 14px 22px;
+  border-bottom: 3px solid var(--gold);
   display: flex; align-items: center; justify-content: space-between;
   flex-shrink: 0;
+  background: linear-gradient(90deg, #3D1212 0%, #3D1212 55%, #3D1212 100%);
+  z-index: 1;
 }
 .chat-mode-label {
-  font-size: 9px; font-weight: 700; letter-spacing: 0.22em;
-  text-transform: uppercase; color: var(--gold); opacity: .65;
+  font-size: 10px; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--gold2);
 }
+.chat-head > div > div:last-child { color: rgba(232,213,163,0.7) !important; }
 .mode-toggle {
-  display: flex; gap: 2px; background: var(--panel); border-radius: var(--r); padding: 2px;
+  display: flex; gap: 2px; background: rgba(0,0,0,0.25); border-radius: var(--r);
+  padding: 3px; border: 1px solid rgba(201,168,76,0.35);
 }
 .mode-btn {
-  font-size: 9px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-  padding: 3px 10px; border-radius: 3px; border: none; cursor: pointer;
-  color: var(--ink3); background: transparent; transition: all .15s;
+  font-size: 9px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 5px 12px; border-radius: 5px; border: none; cursor: pointer;
+  color: rgba(232,213,163,0.65); background: transparent; transition: all .15s;
 }
-.mode-btn.active { background: var(--maroon); color: var(--gold); }
+.mode-btn.active { background: linear-gradient(180deg, var(--gold2), var(--gold)); color: var(--burgundy); }
 .chat-feed {
-  flex: 1; overflow-y: auto; padding: 20px;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 22px;
   display: flex; flex-direction: column; gap: 14px;
 }
 .msg { max-width: 88%; }
 .msg.user { align-self: flex-end; }
 .msg.ai   { align-self: flex-start; }
 .msg-role {
-  font-size: 9px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--ink3); margin-bottom: 4px;
+  font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--ink3); margin-bottom: 5px;
 }
-.msg-role.gold { color: var(--gold); opacity: .75; }
+.msg-role.gold { color: var(--gold); }
 .msg-bubble {
-  padding: 10px 14px; border-radius: 6px; line-height: 1.55;
-  font-size: 12.5px;
+  padding: 12px 16px; border-radius: 10px; line-height: 1.55;
+  font-size: 13px;
 }
-.msg.user .msg-bubble { background: var(--maroon); color: var(--cream); border-bottom-right-radius: 2px; }
-.msg.ai   .msg-bubble { background: var(--panel2); color: var(--ink); border: 1px solid var(--line); border-bottom-left-radius: 2px; }
+.msg.user .msg-bubble {
+  background: linear-gradient(145deg, var(--accent), var(--burgundy));
+  color: #fff;
+  border: 1px solid rgba(201,168,76,0.35);
+  border-bottom-right-radius: 3px;
+}
+.msg.ai .msg-bubble {
+  background: linear-gradient(180deg, #fff 0%, #FFF8EC 100%); color: var(--ink);
+  border: 1.5px solid var(--gold); border-bottom-left-radius: 3px;
+  box-shadow: var(--shadow);
+}
+.msg.ai .msg-bubble .md-reply { display: flex; flex-direction: column; gap: 10px; }
+.msg.ai .msg-bubble .md-h {
+  font-size: 14px; font-weight: 700; color: var(--accent);
+  margin: 0; padding-bottom: 4px; border-bottom: 1px solid var(--gold-soft);
+  line-height: 1.35;
+}
+.msg.ai .msg-bubble .md-section {
+  font-size: 13px; font-weight: 600; color: var(--ink);
+  line-height: 1.45;
+}
+.msg.ai .msg-bubble .md-section .md-num { color: var(--gold-on-light); font-weight: 700; }
+.msg.ai .msg-bubble .md-p {
+  margin: 0; font-size: 13px; line-height: 1.55; color: var(--ink2);
+}
+.msg.ai .msg-bubble .md-list {
+  margin: 0; padding: 0 0 0 18px; list-style: disc;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.msg.ai .msg-bubble .md-list li {
+  font-size: 13px; line-height: 1.5; color: var(--ink2);
+  padding-left: 2px;
+}
+.msg.ai .msg-bubble .md-list li::marker { color: var(--gold); }
+.msg.ai .msg-bubble strong { color: var(--accent); font-weight: 700; }
+.real-data-badge {
+  display: inline-block; font-size: 9px; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--ok); background: var(--ok-bg);
+  border: 1px solid rgba(21,128,61,0.25); border-radius: 999px;
+  padding: 3px 8px; margin-bottom: 10px;
+}
 
-/* ─── ARTIFACT CARD ──────────────────────────── */
 .artifact {
-  background: var(--panel); border: 1px solid var(--line2);
-  border-radius: 6px; overflow: hidden; margin-top: 8px;
+  background: #FFF8EC; border: 1.5px solid var(--gold);
+  border-radius: 8px; overflow: hidden; margin-top: 10px;
 }
 .artifact-head {
-  padding: 8px 12px; border-bottom: 1px solid var(--line);
+  padding: 10px 14px; border-bottom: 2px solid var(--gold);
   display: flex; align-items: center; justify-content: space-between;
+  background: linear-gradient(90deg, #3D1212, #3D1212);
 }
-.artifact-title { font-size: 10px; font-weight: 600; color: var(--gold); letter-spacing: 0.06em; }
-.artifact-meta  { font-size: 9px; color: var(--ink3); }
+.artifact-title { font-size: 10px; font-weight: 700; color: var(--gold2); letter-spacing: 0.06em; text-transform: uppercase; }
+.artifact-meta  { font-size: 9px; color: rgba(232,213,163,0.75); font-weight: 500; }
 .artifact-row {
   display: grid; grid-template-columns: 1fr auto auto auto;
   gap: 10px; align-items: center;
-  padding: 7px 12px; border-bottom: 1px solid var(--line); font-size: 11px;
+  padding: 9px 14px; border-bottom: 1px solid var(--line); font-size: 12px;
+  background: #fff;
 }
 .artifact-row:last-child { border-bottom: none; }
-.artifact-row .co { color: var(--ink); font-weight: 500; }
-.artifact-row .loc { color: var(--ink3); font-size: 10px; }
-.artifact-score { font-size: 10px; font-weight: 700; font-family: 'JetBrains Mono', monospace; }
-.artifact-src { font-size: 9px; color: var(--ink3); padding: 2px 5px; border: 1px solid var(--line); border-radius: 3px; }
+.artifact-row:hover { background: var(--bg2); }
+.artifact-row .co { color: var(--ink); font-weight: 600; }
+.artifact-row .loc { color: var(--ink3); font-size: 11px; }
+.artifact-score { font-size: 11px; font-weight: 700; font-family: 'JetBrains Mono', monospace; color: var(--ok); }
+.artifact-src { font-size: 9px; color: var(--ink3); padding: 2px 7px; border: 1px solid var(--line); border-radius: 999px; font-weight: 600; }
 
-/* ─── PASSAGE BLOCK ──────────────────────────── */
 .passage-block {
-  text-align: center; padding: 24px 20px 16px;
-  border: 1px solid var(--line2); border-radius: 6px;
-  background: rgba(107,31,43,.08);
+  text-align: center; padding: 28px 24px 20px;
+  border: 1px solid var(--gold-mid); border-radius: 10px;
+  background: linear-gradient(180deg, #fff 0%, var(--gold-soft) 100%);
+  box-shadow: var(--shadow);
 }
-.passage-heard { font-size: 9px; color: var(--ink3); letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 8px; }
+.passage-heard { font-size: 9px; color: var(--gold); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 10px; font-weight: 700; }
 .passage-text {
-  font-family: 'Playfair Display', serif;
-  font-size: 17px; color: var(--ink); line-height: 1.5; margin-bottom: 8px;
+  font-family: var(--font-body);
+  font-size: 17px; font-weight: 500; color: var(--burgundy); line-height: 1.45; margin-bottom: 10px;
 }
-.passage-understood { font-size: 9px; color: var(--gold); letter-spacing: 0.16em; text-transform: uppercase; opacity: .7; }
+.passage-understood { font-size: 9px; color: var(--accent); letter-spacing: 0.14em; text-transform: uppercase; font-weight: 700; }
 
-/* ─── VOICE COMPOSER ─────────────────────────── */
 .composer {
-  padding: 14px 20px 16px;
-  border-top: 1px solid var(--line);
+  padding: 12px 22px 14px;
+  border-top: 3px solid var(--gold);
   flex-shrink: 0;
+  background: linear-gradient(180deg, #3D1212 0%, #3D1212 100%);
+  z-index: 2;
 }
 .composer-inner {
   display: flex; align-items: center; gap: 10px;
-  background: var(--panel); border: 1px solid var(--line2);
-  border-radius: 8px; padding: 8px 14px;
+  background: #FFFCF7; border: 2px solid var(--gold);
+  border-radius: 10px; padding: 8px 12px;
 }
+.composer-inner:focus-within { border-color: var(--gold2); background: #fff; box-shadow: 0 0 0 3px rgba(201,168,76,0.35); }
 .mic-btn {
-  width: 32px; height: 32px; border-radius: 50%; flex-shrink: 0;
-  background: var(--maroon); border: 1px solid rgba(195,163,94,.4);
+  width: 34px; height: 34px; border-radius: 50%; flex-shrink: 0;
+  background: linear-gradient(145deg, var(--accent2), var(--burgundy));
+  border: 1px solid var(--gold);
   display: flex; align-items: center; justify-content: center;
   cursor: pointer; transition: all .2s;
 }
-.mic-btn:hover { background: var(--maroon2); box-shadow: 0 0 12px rgba(107,31,43,.5); }
+.mic-btn:hover { background: var(--accent); }
 .mic-btn svg { width: 14px; height: 14px; }
+.mic-btn.is-live {
+  background: var(--accent2);
+  box-shadow: 0 0 0 3px var(--gold-mid);
+  animation: micPulse 1.6s ease-in-out infinite;
+}
+.mic-btn.is-connecting { opacity: 0.65; pointer-events: none; }
+@keyframes micPulse {
+  0%, 100% { box-shadow: 0 0 0 2px var(--gold-soft); }
+  50% { box-shadow: 0 0 0 4px var(--gold-mid); }
+}
 .composer-input {
   flex: 1; background: transparent; border: none; outline: none;
-  font-family: Inter; font-size: 13px; color: var(--ink);
-  placeholder: var(--ink3);
+  font-family: var(--font-body); font-size: 13px; color: var(--ink);
 }
 .composer-input::placeholder { color: var(--ink3); }
 .send-btn {
-  padding: 5px 14px; border-radius: 5px; border: none; cursor: pointer;
-  background: var(--gold); color: #1a0d00; font-size: 11px; font-weight: 700;
-  letter-spacing: 0.06em; text-transform: uppercase; transition: background .15s;
+  padding: 7px 16px; border-radius: 6px; border: 1px solid var(--gold);
+  background: var(--burgundy); color: var(--gold2); font-size: 11px; font-weight: 700;
+  letter-spacing: 0.04em; text-transform: uppercase; transition: background .15s;
 }
-.send-btn:hover { background: var(--gold2); }
-.composer-hint { font-size: 10px; color: var(--ink3); text-align: center; margin-top: 7px; }
-.composer-hint span { color: var(--gold); opacity: .7; }
+.send-btn:hover { background: var(--accent); color: #fff; }
+.composer-hint { font-size: 10px; color: rgba(232,213,163,0.65); text-align: center; margin-top: 8px; }
+.composer-hint span { color: var(--gold2); font-weight: 700; }
 
-/* ─── RIGHT — OUTREACH ───────────────────────── */
 .draft-card {
-  background: var(--panel2); border: 1px solid var(--line);
-  border-radius: var(--r); padding: 10px 12px; margin-bottom: 8px;
-  cursor: pointer; transition: border-color .15s;
+  background: linear-gradient(180deg, #fff 0%, #FFF8EC 100%); border: 1.5px solid var(--gold);
+  border-radius: var(--r); padding: 12px; margin-bottom: 8px;
+  cursor: pointer; transition: border-color .15s, box-shadow .15s;
 }
-.draft-card:hover { border-color: var(--line2); }
-.draft-type { font-size: 9px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink3); margin-bottom: 4px; }
-.draft-to { font-size: 12px; font-weight: 500; color: var(--ink); margin-bottom: 3px; }
-.draft-preview { font-size: 11px; color: var(--ink3); line-height: 1.4; margin-bottom: 8px; }
+.draft-card:hover { border-color: var(--gold2); box-shadow: 0 4px 14px rgba(26,5,5,0.1); }
+.draft-type { font-size: 9px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+.draft-to { font-size: 12.5px; font-weight: 600; color: var(--burgundy); margin-bottom: 4px; }
+.draft-preview {
+  font-size: 11.5px; color: var(--text-muted-on-light); line-height: 1.55; margin-bottom: 10px;
+  background: #fff; border: 1px solid var(--line2); border-radius: 5px; padding: 8px 10px;
+}
+.draft-status {
+  flex: 1; font-size: 10px; font-weight: 700; padding: 6px; text-align: center;
+  border-radius: 5px; letter-spacing: 0.04em; text-transform: uppercase;
+}
+.draft-status.queued { color: #92400E; background: #FEF3C7; border: 1px solid #D97706; }
+.draft-status.ready { color: #1E40AF; background: #DBEAFE; border: 1px solid #3B82F6; }
+.draft-status.sent { color: var(--ok); background: var(--ok-bg); border: 1px solid rgba(21,128,61,0.28); }
+.li-status-ok { color: var(--ok); font-weight: 700; }
+.li-status-warn { color: #92400E; font-weight: 700; }
 .draft-actions { display: flex; gap: 6px; }
 .btn-approve {
-  flex: 1; padding: 5px; border-radius: 3px; border: 1px solid rgba(111,207,151,.3);
-  background: rgba(111,207,151,.08); color: var(--ok);
-  font-size: 10px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+  flex: 1; padding: 6px; border-radius: 5px; border: 1px solid rgba(21,128,61,0.28);
+  background: var(--ok-bg); color: var(--ok);
+  font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
   cursor: pointer; text-align: center;
 }
-.btn-approve:hover { background: rgba(111,207,151,.15); }
+.btn-approve:hover { background: rgba(21,128,61,0.16); }
 .btn-send {
-  flex: 1; padding: 5px; border-radius: 3px; border: 1px solid rgba(195,163,94,.3);
-  background: rgba(195,163,94,.08); color: var(--gold);
-  font-size: 10px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+  flex: 1; padding: 6px; border-radius: 5px; border: 1.5px solid var(--accent);
+  background: linear-gradient(180deg, #3D1212, #8A2537); color: #FFFCF7;
+  font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
   cursor: pointer; text-align: center;
 }
-.btn-send:hover { background: rgba(195,163,94,.15); }
+.btn-send:hover { background: var(--burgundy); color: var(--gold3); }
 
-/* ─── CHANNEL QUICK-DRAFT ────────────────────── */
 .channel-strip { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
 .ch-btn {
-  padding: 7px 10px; border-radius: var(--r);
-  border: 1px solid var(--line); background: var(--panel2);
-  font-size: 10px; font-weight: 500; color: var(--ink3); cursor: pointer;
+  padding: 8px 10px; border-radius: var(--r);
+  border: 1.5px solid var(--gold); background: linear-gradient(180deg, #fff, #F5EBD8);
+  font-size: 10px; font-weight: 600; color: var(--burgundy); cursor: pointer;
   text-align: center; transition: all .15s;
 }
-.ch-btn:hover { border-color: var(--gold); color: var(--gold); }
+.ch-btn:hover { border-color: var(--gold2); color: #fff; background: var(--accent); }
 
-/* ─── LIBRARY ACCESS ─────────────────────────── */
 .lib-row {
-  display: flex; align-items: center; gap: 8px; padding: 7px 0;
-  border-bottom: 1px solid var(--line); cursor: pointer;
+  display: flex; align-items: center; gap: 8px;
+  padding: 8px 10px; margin-bottom: 6px;
+  border: 1px solid var(--gold-mid);
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color .12s, background .12s;
 }
-.lib-row:last-child { border-bottom: none; }
-.lib-row:hover .lib-name { color: var(--gold); }
+.lib-row:last-child { margin-bottom: 0; }
+.lib-row:hover { border-color: var(--gold); background: #FFF8EC; }
+.lib-row:hover .lib-name { color: var(--burgundy); }
 .lib-icon {
-  width: 24px; height: 24px; border-radius: 3px;
-  background: var(--panel2); border: 1px solid var(--line);
+  width: 26px; height: 26px; border-radius: 5px;
+  background: linear-gradient(145deg, #3D1212, #3D1212);
+  border: 1px solid var(--gold);
   display: flex; align-items: center; justify-content: center;
-  font-size: 10px; color: var(--gold);
+  font-size: 10px; color: var(--gold2); font-weight: 700;
+  flex-shrink: 0;
 }
-.lib-name { flex: 1; font-size: 11px; color: var(--ink2); }
-.lib-count { font-size: 9px; color: var(--ink3); font-family: 'JetBrains Mono', monospace; }
+.lib-name { flex: 1; font-size: 11.5px; color: var(--ink2); font-weight: 500; }
+.lib-count { font-size: 9px; color: var(--gold); font-family: 'JetBrains Mono', monospace; font-weight: 600; }
 
-/* ─── SCROLLBARS ─────────────────────────────── */
-::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: var(--panel2); border-radius: 4px; }
+/* Final brand polish */
+.left, .right {
+  background:
+    linear-gradient(180deg, #FFFCF7 0%, #FBF5EA 100%);
+  min-height: 0;
+}
+.panel-body {
+  background: transparent;
+}
+.lead-item.selected {
+  background: linear-gradient(135deg, rgba(107,31,43,0.12), rgba(201,168,76,0.28));
+  border-color: var(--gold2);
+  box-shadow: inset 0 0 0 1px var(--gold);
+}
+.empty-state {
+  padding: 12px;
+  border: 1px dashed var(--gold-mid);
+  border-radius: 6px;
+  color: var(--text-muted-on-light);
+  font-size: 11px;
+  text-align: center;
+  background: #fff;
+}
+.score-hi {
+  background: linear-gradient(145deg, #3D1212, #3D1212);
+  color: var(--gold2);
+  border: 1px solid var(--gold);
+}
+.score-mid {
+  background: linear-gradient(145deg, var(--gold2), var(--gold));
+  color: var(--burgundy);
+  border: 1px solid #A88B3E;
+}
+.badge-lib {
+  background: var(--gold-soft);
+  color: var(--burgundy);
+  border: 1px solid var(--gold-mid);
+}
+.artifact-row:hover { background: #FFF8EC; }
+.artifact-row .co { color: var(--burgundy); }
+.artifact-src {
+  color: var(--burgundy);
+  border-color: var(--gold);
+  background: var(--gold-soft);
+}
+.passage-block {
+  border: 2px solid var(--gold);
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.25) 0%, transparent 60%),
+    linear-gradient(180deg, #fff 0%, #F5EBD8 100%);
+}
+.passage-heard {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--burgundy);
+  color: var(--gold2);
+  letter-spacing: 0.16em;
+}
+.passage-understood {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--gold-soft);
+  border: 1px solid var(--gold);
+  color: var(--burgundy);
+}
+.send-btn {
+  background: linear-gradient(180deg, var(--gold2), var(--gold));
+  color: var(--burgundy);
+  border: 1px solid #A88B3E;
+}
+.send-btn:hover {
+  background: linear-gradient(180deg, #E8D5A3, var(--gold2));
+  color: var(--burgundy);
+}
+.mic-btn {
+  background: linear-gradient(145deg, var(--gold2), var(--gold));
+  border: 1px solid #A88B3E;
+}
+.mic-btn svg { stroke: #3D1212 !important; }
+.mic-btn:hover {
+  background: linear-gradient(145deg, #E8D5A3, var(--gold2));
+}
+.btn-send {
+  background: linear-gradient(180deg, var(--gold2), var(--gold));
+  border-color: #A88B3E;
+  color: var(--burgundy);
+}
+.btn-send:hover {
+  filter: brightness(1.05);
+  background: linear-gradient(180deg, #E8D5A3, var(--gold2));
+}
+.lib-icon {
+  background: linear-gradient(145deg, #3D1212, #3D1212);
+  border: 1px solid var(--gold);
+  color: var(--gold2);
+}
+.lib-row:hover .lib-name { color: var(--burgundy); }
+.brand-card {
+  padding: 12px;
+  border-radius: var(--r);
+  background: linear-gradient(135deg, #3D1212 0%, #3D1212 70%, #8A2537 100%);
+  border: 1.5px solid var(--gold);
+  box-shadow: 0 4px 14px rgba(26,5,5,0.12);
+}
+.brand-card .t { font-size: 11px; font-weight: 700; color: var(--gold2); margin-bottom: 4px; }
+.brand-card .d { font-size: 10px; color: rgba(232,213,163,0.8); line-height: 1.55; }
+.brand-card .d em { color: var(--gold3); font-style: normal; font-weight: 600; }
+.seq-card {
+  padding: 12px;
+  text-align: center;
+  border-radius: var(--r);
+  background: linear-gradient(180deg, #FFF8EC, #F5EBD8);
+  border: 1.5px solid var(--gold);
+}
+.seq-card .flow { font-size: 10px; color: var(--burgundy); line-height: 1.6; font-weight: 500; }
+.seq-card .note { color: var(--gold); font-weight: 700; }
+.phase-pill {
+  font-size: 8px; padding: 2px 6px; border-radius: 3px;
+  background: var(--burgundy); color: var(--gold2);
+  border: 1px solid var(--gold); font-weight: 700; letter-spacing: 0.04em;
+}
+.campaign-card {
+  padding: 10px 12px; border-radius: var(--r); margin-bottom: 8px;
+  background: #fff; border: 1.5px solid var(--gold);
+}
+.campaign-card .c-name { font-size: 11px; font-weight: 700; color: var(--burgundy); }
+.campaign-card .c-meta { font-size: 10px; color: var(--text-muted-on-light); margin-top: 3px; line-height: 1.5; }
+.campaign-card .c-flow { font-size: 9px; color: var(--gold-on-light); font-weight: 700; margin-top: 4px; }
+.campaign-card .c-actions { display: flex; gap: 4px; margin-top: 8px; flex-wrap: wrap; }
+.campaign-status { font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: 2px 6px; border-radius: 3px; }
+.campaign-status.active { background: var(--ok-bg); color: var(--ok); }
+.campaign-status.draft { background: var(--gold-soft); color: var(--burgundy); }
+.campaign-status.paused { background: var(--warn-bg); color: var(--warn); }
+.campaign-overlay {
+  position: fixed; inset: 0; z-index: 9998;
+  background: rgba(10, 3, 3, 0.62); backdrop-filter: blur(4px);
+  display: none; align-items: center; justify-content: center; padding: 24px;
+}
+.campaign-overlay.open { display: flex; }
+.campaign-modal {
+  width: min(560px, 96vw); max-height: 92vh; overflow-y: auto;
+  background: var(--panel); border: 2px solid var(--gold); border-radius: 12px;
+  box-shadow: 0 24px 60px rgba(26,5,5,0.25);
+}
+.campaign-modal-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 18px; border-bottom: 1.5px solid var(--gold);
+  background: linear-gradient(90deg,#3D1212,#3D1212);
+}
+.campaign-modal-head .t { font-size: 13px; font-weight: 700; color: var(--gold2); }
+.campaign-modal-head .x { cursor: pointer; color: var(--gold3); font-size: 22px; line-height: 1; }
+.campaign-modal-body { padding: 16px 18px; display: flex; flex-direction: column; gap: 12px; }
+.campaign-field label { display: block; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--burgundy); margin-bottom: 4px; }
+.campaign-field input, .campaign-field textarea, .campaign-field select {
+  width: 100%; font-family: inherit; font-size: 12px; padding: 8px 10px;
+  border: 1.5px solid var(--gold); border-radius: 6px; background: #fff; color: var(--text-on-light);
+}
+.campaign-field textarea { min-height: 72px; resize: vertical; }
+.campaign-templates { display: flex; flex-direction: column; gap: 6px; }
+.campaign-tpl {
+  padding: 10px 12px; border-radius: 8px; cursor: pointer;
+  border: 1.5px solid var(--line); background: #fff; transition: border-color .15s;
+}
+.campaign-tpl:hover { border-color: var(--gold); }
+.campaign-tpl.selected { border-color: var(--burgundy); background: linear-gradient(180deg,#FFF8EC,#F5EBD8); }
+.campaign-tpl .tpl-name { font-size: 11px; font-weight: 700; color: var(--burgundy); }
+.campaign-tpl .tpl-desc { font-size: 10px; color: var(--text-muted-on-light); margin-top: 2px; }
+.campaign-tpl .tpl-steps { font-size: 9px; color: var(--gold-on-light); font-weight: 700; margin-top: 4px; }
+.campaign-summary { font-size: 10px; color: var(--text-on-light); padding: 8px 10px; border-radius: 6px; background: #fff; border: 1.5px solid var(--gold); }
+.campaign-modal-actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.campaign-modal-actions button {
+  font-family: inherit; font-size: 10px; font-weight: 700; padding: 8px 14px;
+  border-radius: 6px; border: 1.5px solid var(--gold); cursor: pointer;
+}
+.campaign-modal-actions .primary { background: linear-gradient(180deg,#3D1212,#8A2537); color: var(--gold3); }
+.campaign-modal-actions .ghost { background: #fff; color: var(--burgundy); }
 
-/* ─── STATUS BAR ─────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: rgba(201,168,76,0.08); }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--gold), var(--accent));
+  border-radius: 4px;
+}
+
 .status-bar {
-  display: flex; align-items: center; gap: 8px; padding: 4px 20px;
-  background: var(--panel2); border-top: 1px solid var(--line);
+  display: flex; align-items: center; gap: 8px; padding: 5px 20px;
+  background: var(--panel); border-top: 1px solid var(--line);
   grid-column: 1 / -1; flex-shrink: 0;
 }
-.status-item { font-size: 10px; color: var(--ink3); display: flex; align-items: center; gap: 4px; }
+.status-item { font-size: 10px; color: var(--ink3); display: flex; align-items: center; gap: 4px; font-weight: 500; }
 .status-item .dot { width: 5px; height: 5px; border-radius: 50%; }
+
+/* ── AI STUDIO MODAL ─────────────────────── */
+.studio-overlay {
+  position: fixed; inset: 0; z-index: 9999;
+  background: rgba(10, 3, 3, 0.62); backdrop-filter: blur(4px);
+  display: none; align-items: center; justify-content: center; padding: 24px;
+}
+.studio-overlay.open { display: flex; }
+.studio {
+  width: min(680px, 96vw); max-height: 92vh; overflow-y: auto;
+  background: linear-gradient(180deg, #FFFCF7 0%, #F8F2E8 100%);
+  border: 1px solid var(--gold); border-radius: 10px;
+  box-shadow: 0 20px 60px rgba(26,5,5,0.45); color: var(--ink);
+}
+.studio-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 18px; border-bottom: 3px solid var(--gold);
+  background: linear-gradient(180deg, #3D1212 0%, #3D1212 100%);
+  border-radius: 10px 10px 0 0;
+}
+.studio-head .t { font-size: 14px; font-weight: 700; color: var(--gold3); letter-spacing: .3px; }
+.studio-head .x { cursor: pointer; color: var(--gold2); font-size: 20px; line-height: 1; padding: 2px 8px; border-radius: 4px; }
+.studio-head .x:hover { background: rgba(201,168,76,0.2); }
+.studio-body { padding: 16px 18px; display: flex; flex-direction: column; gap: 12px; }
+.studio-types { display: flex; flex-wrap: wrap; gap: 6px; }
+.studio-type {
+  font-size: 11px; padding: 6px 11px; border-radius: 20px; cursor: pointer;
+  border: 1px solid var(--gold-mid); background: var(--panel2); color: var(--ink2); font-weight: 600;
+}
+.studio-type.active { background: linear-gradient(180deg,#3D1212,#8A2537); color: var(--gold3); border-color: var(--gold); }
+.studio-field { display: flex; flex-direction: column; gap: 4px; }
+.studio-field label { font-size: 10px; text-transform: uppercase; letter-spacing: .5px; color: var(--ink3); font-weight: 700; }
+.studio-field input, .studio-field textarea {
+  font-family: inherit; font-size: 13px; padding: 8px 10px; border-radius: 6px;
+  border: 1px solid var(--line2); background: #fff; color: var(--ink); width: 100%; resize: vertical;
+}
+.studio-field textarea { min-height: 120px; }
+.studio-lead-chip {
+  font-size: 11px; padding: 4px 10px; border-radius: 6px; background: var(--maroon-soft);
+  border: 1px solid var(--maroon-mid); color: var(--accent); font-weight: 600; display: inline-block;
+}
+.studio-row { display: flex; gap: 10px; }
+.studio-row > * { flex: 1; }
+.studio-actions { display: flex; gap: 8px; flex-wrap: wrap; padding-top: 4px; }
+.studio-btn {
+  font-family: inherit; font-size: 12px; font-weight: 700; padding: 9px 16px; border-radius: 6px;
+  cursor: pointer; border: 1px solid var(--gold); background: linear-gradient(180deg,#3D1212,#8A2537); color: var(--gold3);
+}
+.studio-btn.ghost { background: var(--panel2); color: var(--ink2); }
+.studio-btn:disabled { opacity: .55; cursor: not-allowed; }
+.studio-status { font-size: 11px; color: var(--ink3); align-self: center; }
+.studio-fab {
+  cursor: pointer; font-size: 10px; font-weight: 700; color: var(--gold3);
+  background: linear-gradient(180deg,#3D1212,#8A2537); border: 1px solid var(--gold);
+  padding: 4px 10px; border-radius: 6px; letter-spacing: .3px;
+}
+
+/* ── LEAD SEARCH + LIVE DISCOVER ─────────── */
+.lead-search { margin-bottom: 10px; display: flex; flex-direction: column; gap: 6px; }
+.lead-search-toggle { display: flex; gap: 4px; }
+.lst-btn {
+  flex: 1; font-family: inherit; font-size: 10px; font-weight: 700; padding: 5px 8px;
+  border-radius: 5px; cursor: pointer; border: 1px solid var(--gold-mid);
+  background: var(--panel2); color: var(--ink2); text-transform: uppercase; letter-spacing: .4px;
+}
+.lst-btn.active { background: linear-gradient(180deg,#3D1212,#8A2537); color: var(--gold3); border-color: var(--gold); }
+.lead-search-row { display: flex; gap: 5px; }
+.lead-search-input {
+  flex: 1; font-family: inherit; font-size: 12px; padding: 7px 9px; border-radius: 6px;
+  border: 1px solid var(--line2); background: #fff; color: var(--ink);
+}
+.lead-search-input:focus { outline: none; border-color: var(--gold2); box-shadow: 0 0 0 2px var(--gold-mid); }
+.lead-search-go {
+  font-family: inherit; font-size: 11px; font-weight: 700; padding: 7px 12px; border-radius: 6px;
+  cursor: pointer; border: 1px solid var(--gold); background: linear-gradient(180deg,#3D1212,#8A2537); color: var(--gold3);
+}
+.lead-search-go:disabled { opacity: .55; cursor: not-allowed; }
+.lead-search-hint { font-size: 9.5px; color: var(--ink3); }
+.lead-search-hint.live { color: var(--accent); font-weight: 600; }
+.lead-item.live-lead { border-left: 2px solid var(--gold2); }
+.btn-enrich {
+  font-family: inherit; font-size: 9.5px; font-weight: 700; padding: 3px 8px; border-radius: 4px;
+  cursor: pointer; border: 1px solid var(--gold-mid); background: var(--panel2); color: var(--accent);
+  margin-top: 4px; display: inline-block;
+}
+.shell.tab-pipeline .left,
+.shell.tab-discover .left,
+.shell.tab-analytics .left { z-index: 2; }
+.shell.tab-outreach .right,
+.shell.tab-library .right { z-index: 2; }
+.btn-enrich:hover { background: var(--gold-mid); }
+.btn-enrich.done { color: var(--ok); border-color: rgba(111,207,151,.4); }
+.lead-import {
+  border: 1.5px dashed var(--gold2); border-radius: var(--r); padding: 10px;
+  background: linear-gradient(180deg, #FFFBF5 0%, #F5EBD8 100%); text-align: center;
+}
+.lead-import.drag { border-color: var(--burgundy); background: #FFF3E0; }
+.lead-import-title { font-size: 10px; font-weight: 700; color: var(--burgundy); letter-spacing: .06em; text-transform: uppercase; margin-bottom: 6px; }
+.lead-import-sub { font-size: 9.5px; color: var(--ink3); margin-bottom: 8px; line-height: 1.4; }
+.lead-import-actions { display: flex; gap: 6px; justify-content: center; flex-wrap: wrap; }
+.lead-import-btn {
+  font-family: inherit; font-size: 10px; font-weight: 700; padding: 6px 12px; border-radius: 6px;
+  cursor: pointer; border: 1px solid var(--gold); background: linear-gradient(180deg,#3D1212,#8A2537); color: var(--gold3);
+}
+.lead-import-btn.ghost { background: #fff; color: var(--burgundy); }
+.lead-import-status { font-size: 9.5px; color: var(--accent); margin-top: 8px; min-height: 14px; }
+.lead-import-status.err { color: var(--bad); }
+.lead-import-status.ok { color: var(--ok); }
+#leadSection { scroll-margin-top: 8px; }
+
+/* ── Contact record (CRM master–detail center pane) ── */
+.center-body {
+  flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; overflow: hidden;
+}
+.contact-record {
+  flex: 0 0 auto; max-height: 52%; min-height: 220px; overflow-y: auto;
+  border-bottom: 3px solid var(--gold);
+  background: linear-gradient(180deg, #FFFCF7 0%, #FBF5EA 100%);
+  padding: 16px 20px;
+}
+.contact-record.empty {
+  display: flex; align-items: center; justify-content: center;
+  min-height: 200px; text-align: center; color: var(--ink3); font-size: 12px; line-height: 1.6;
+}
+.cr-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+.cr-avatar {
+  width: 48px; height: 48px; border-radius: 50%; flex-shrink: 0;
+  background: linear-gradient(145deg, var(--gold2), var(--gold));
+  border: 2px solid var(--gold); color: var(--burgundy);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; font-weight: 700;
+}
+.cr-identity { flex: 1; min-width: 0; }
+.cr-name { font-size: 18px; font-weight: 700; color: var(--burgundy); line-height: 1.2; }
+.cr-headline { font-size: 12px; color: var(--ink2); margin-top: 4px; }
+.cr-company { font-size: 13px; font-weight: 600; color: var(--accent); margin-top: 2px; }
+.cr-score {
+  font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700;
+  padding: 8px 12px; border-radius: 8px; flex-shrink: 0;
+}
+.cr-section { margin-bottom: 12px; }
+.cr-section-title {
+  font-size: 9px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 8px; padding-bottom: 4px; border-bottom: 1px solid var(--gold-mid);
+}
+.cr-grid { display: grid; grid-template-columns: 120px 1fr; gap: 6px 12px; font-size: 12px; }
+.cr-label { color: var(--ink3); font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: .04em; padding-top: 2px; }
+.cr-value { color: var(--ink); word-break: break-word; }
+.cr-value a { color: var(--blue); text-decoration: none; }
+.cr-value a:hover { text-decoration: underline; }
+.cr-value.missing { color: var(--ink3); font-style: italic; }
+.cr-actions {
+  display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; padding-top: 12px;
+  border-top: 1px solid var(--gold-mid);
+}
+.cr-btn {
+  font-family: inherit; font-size: 10px; font-weight: 700; padding: 7px 12px; border-radius: 6px;
+  cursor: pointer; border: 1px solid var(--gold); text-transform: uppercase; letter-spacing: .06em;
+}
+.cr-btn.primary { background: linear-gradient(180deg,#3D1212,#8A2537); color: var(--gold3); }
+.cr-btn.secondary { background: #fff; color: var(--burgundy); }
+.cr-btn.ghost { background: transparent; color: var(--ink3); border-color: var(--line); }
+.operator-panel {
+  flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; overflow: hidden;
+}
+.operator-panel-head {
+  flex-shrink: 0; padding: 8px 20px; font-size: 9px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold2);
+  background: rgba(26,5,5,0.04); border-bottom: 1px solid var(--gold-mid);
+}
+.right-selected {
+  padding: 10px 12px; border: 1.5px solid var(--gold); border-radius: var(--r);
+  background: linear-gradient(180deg, #fff 0%, #FFF9F0 100%); margin-bottom: 10px;
+}
+.right-selected.empty { opacity: 0.7; font-size: 11px; color: var(--ink3); text-align: center; }
+.right-selected .rs-name { font-size: 12px; font-weight: 700; color: var(--burgundy); }
+.right-selected .rs-meta { font-size: 10px; color: var(--text-muted-on-light); margin-top: 3px; }
+
+/* ── Lists, ticks, data bank table ── */
+.list-toolbar {
+  display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 8px;
+}
+.list-toolbar label { font-size: 9px; font-weight: 700; text-transform: uppercase; color: var(--gold); letter-spacing: .08em; }
+.list-select, .page-size-select {
+  flex: 1; min-width: 140px; font-family: inherit; font-size: 11px; padding: 6px 8px;
+  border: 1px solid var(--gold-mid); border-radius: 6px; background: #fff; color: var(--ink);
+}
+.list-new-btn {
+  font-family: inherit; font-size: 10px; font-weight: 700; padding: 6px 10px; border-radius: 6px;
+  border: 1px solid var(--gold); background: #fff; color: var(--burgundy); cursor: pointer;
+}
+.bulk-bar {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 8px 10px;
+  margin-bottom: 8px; border: 1px solid var(--gold-mid); border-radius: 6px; background: var(--gold-soft);
+  font-size: 10px;
+}
+.bulk-bar label { display: flex; align-items: center; gap: 5px; font-weight: 600; color: var(--burgundy); cursor: pointer; }
+.bulk-btn {
+  font-family: inherit; font-size: 9px; font-weight: 700; padding: 4px 10px; border-radius: 4px;
+  border: 1px solid var(--gold); background: #fff; color: var(--burgundy); cursor: pointer;
+}
+.bulk-btn.primary { background: linear-gradient(180deg,#3D1212,#8A2537); color: var(--gold3); }
+.selected-action-bar {
+  display: none; align-items: center; flex-wrap: wrap; gap: 6px;
+  padding: 8px 10px; margin-bottom: 8px;
+  border: 2px solid var(--gold); border-radius: 8px;
+  background: #fff;
+  color: var(--text-on-light);
+}
+.selected-action-bar.show { display: flex; }
+.selected-action-bar .count { font-size: 11px; font-weight: 700; color: var(--burgundy); margin-right: 4px; }
+.selected-action-bar .bulk-select-all {
+  display: flex; align-items: center; gap: 4px; font-size: 10px; font-weight: 600;
+  color: var(--burgundy); cursor: pointer; margin-right: 2px;
+}
+.lead-item.ticked, .bank-row.ticked td { box-shadow: inset 3px 0 0 var(--gold2); }
+#selectedCount { font-weight: 700; color: var(--accent); min-width: 70px; }
+.bank-range { font-size: 10px; color: var(--ink3); margin-bottom: 8px; font-weight: 600; }
+.bank-pager {
+  display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 10px; flex-wrap: wrap;
+}
+.bank-pager button {
+  font-family: inherit; font-size: 10px; font-weight: 700; padding: 6px 12px; border-radius: 6px;
+  border: 1px solid var(--gold); background: #fff; color: var(--burgundy); cursor: pointer;
+}
+.bank-pager button:disabled { opacity: .45; cursor: not-allowed; }
+.bank-page-info { font-size: 10px; color: var(--ink2); font-weight: 600; min-width: 80px; text-align: center; }
+.lead-check { width: 15px; height: 15px; accent-color: var(--burgundy); cursor: pointer; flex-shrink: 0; }
+.lead-item .lead-check-wrap { padding-top: 8px; flex-shrink: 0; }
+.lead-item { align-items: flex-start; }
+.bank-table { width: 100%; border-collapse: collapse; font-size: 11px; background: #fff; border: 1.5px solid var(--gold); border-radius: 6px; overflow: hidden; }
+.bank-table th {
+  text-align: left; padding: 8px 10px; font-size: 9px; text-transform: uppercase; letter-spacing: .08em;
+  color: var(--gold); background: linear-gradient(90deg,#3D1212,#3D1212); border-bottom: 2px solid var(--gold);
+}
+.bank-table td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+.bank-table tr:hover td { background: #FFF8EC; }
+.bank-table tr.selected td { background: linear-gradient(90deg, rgba(107,31,43,0.08), rgba(201,168,76,0.15)); }
+.bank-th-check, .bank-table .bank-td-check { width: 36px; text-align: center; }
+.bank-table .co { font-weight: 600; color: var(--burgundy); }
+.bank-table .em { font-size: 10px; color: var(--ink2); max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.shell.tab-pipeline .left { grid-column: 1 / -1; }
+.shell.tab-pipeline .panel-head .eyebrow::after { content: ' · full data bank'; font-weight: 400; opacity: .85; }
+.shell.tab-pipeline .section:not(#leadSection) { display: none; }
+.shell.tab-pipeline #leadSection { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+.shell.tab-pipeline #leadQueue { flex: 1; min-height: 200px; overflow: auto; }
+
+/* ─── HX Engine tabs (Postgres Data Bank / Sequences / Replies) ─── */
+.shell.tab-hxbank,
+.shell.tab-hxseq,
+.shell.tab-hxreplies { grid-template-columns: 1fr; }
+.shell.tab-hxbank .left,
+.shell.tab-hxbank .right,
+.shell.tab-hxseq .left,
+.shell.tab-hxseq .right,
+.shell.tab-hxreplies .left,
+.shell.tab-hxreplies .right { display: none; }
+.shell.tab-hxbank .chat-head,
+.shell.tab-hxbank .center-body,
+.shell.tab-hxbank .composer,
+.shell.tab-hxseq .chat-head,
+.shell.tab-hxseq .center-body,
+.shell.tab-hxseq .composer,
+.shell.tab-hxreplies .chat-head,
+.shell.tab-hxreplies .center-body,
+.shell.tab-hxreplies .composer { display: none !important; }
+.hx-engine {
+  display: none;
+  flex: 1;
+  min-height: 0;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--bg2);
+}
+.shell.tab-hxbank .hx-engine,
+.shell.tab-hxseq .hx-engine,
+.shell.tab-hxreplies .hx-engine { display: flex; }
+.hx-panel { display: none; flex: 1; min-height: 0; flex-direction: column; overflow: hidden; }
+.shell.tab-hxbank #hxPanelBank,
+.shell.tab-hxseq #hxPanelSeq,
+.shell.tab-hxreplies #hxPanelReplies { display: flex; }
+.hx-panel-head {
+  padding: 14px 18px;
+  border-bottom: 3px solid var(--gold);
+  background: linear-gradient(135deg, #3D1212 0%, #3D1212 70%, #8A2537 100%);
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+}
+.hx-panel-head .t { color: var(--gold2); font-weight: 700; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; }
+.hx-panel-body { flex: 1; min-height: 0; overflow: auto; padding: 14px 18px; }
+.hx-toolbar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; align-items: center; }
+.hx-toolbar input, .hx-toolbar select, .hx-modal input, .hx-modal textarea, .hx-modal select {
+  padding: 7px 10px; border: 1px solid var(--gold-mid); border-radius: 6px;
+  background: #fff; color: var(--ink); font-size: 12px; font-family: var(--font-body);
+}
+.hx-toolbar input { min-width: 180px; }
+.hx-btn {
+  padding: 7px 12px; border-radius: 6px; border: 1px solid var(--gold);
+  background: linear-gradient(180deg, var(--gold2), var(--gold));
+  color: var(--burgundy); font-size: 11px; font-weight: 700; cursor: pointer;
+}
+.hx-btn:hover { filter: brightness(1.05); }
+.hx-btn.ghost { background: #fff; color: var(--burgundy); }
+.hx-btn:disabled { opacity: .5; cursor: not-allowed; }
+.hx-table { width: 100%; border-collapse: collapse; font-size: 11px; background: #fff; border: 1.5px solid var(--gold); border-radius: 6px; overflow: hidden; }
+.hx-table th {
+  text-align: left; padding: 8px 10px; font-size: 9px; text-transform: uppercase; letter-spacing: .08em;
+  color: var(--gold); background: linear-gradient(90deg,#3D1212,#3D1212); border-bottom: 2px solid var(--gold);
+}
+.hx-table td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+.hx-table tr:hover td { background: #FFF8EC; }
+.hx-badge {
+  display: inline-block; padding: 2px 7px; border-radius: 999px; font-size: 9px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .04em;
+}
+.hx-badge.positive { background: var(--ok-bg); color: var(--ok); }
+.hx-badge.question { background: var(--warn-bg); color: var(--warn); }
+.hx-badge.negative { background: rgba(220,38,38,.1); color: var(--bad); }
+.hx-badge.no_reply_risk, .hx-badge.ooo, .hx-badge.bounce { background: var(--maroon-soft); color: var(--accent); }
+.hx-badge.neutral { background: var(--panel2); color: var(--ink3); }
+.hx-card {
+  border: 1.5px solid var(--gold); border-radius: var(--r); background: linear-gradient(180deg,#fff,#FFF9F0);
+  padding: 12px; margin-bottom: 10px;
+}
+.hx-card .name { font-weight: 700; color: var(--burgundy); font-size: 13px; }
+.hx-card .meta { font-size: 11px; color: var(--ink3); margin-top: 4px; line-height: 1.45; }
+.hx-card .actions { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
+.hx-modal-overlay {
+  position: fixed; inset: 0; z-index: 8000; background: rgba(26,5,5,.55);
+  display: none; align-items: center; justify-content: center; padding: 20px;
+}
+.hx-modal-overlay.open { display: flex; }
+.hx-modal {
+  width: 100%; max-width: 440px; background: var(--panel); border: 2px solid var(--gold);
+  border-radius: 10px; padding: 18px; box-shadow: var(--shadow);
+}
+.hx-modal h3 { color: var(--burgundy); margin-bottom: 12px; font-size: 14px; }
+.hx-modal label { display: block; font-size: 10px; font-weight: 700; color: var(--ink3); text-transform: uppercase; letter-spacing: .08em; margin: 10px 0 4px; }
+.hx-modal .row { display: flex; gap: 8px; justify-content: flex-end; margin-top: 16px; }
+.hx-empty { padding: 28px; text-align: center; color: var(--ink3); font-size: 12px; }
+.hx-draft { white-space: pre-wrap; font-size: 11px; color: var(--ink2); background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 8px; margin-top: 6px; max-height: 120px; overflow: auto; }
+
+
 </style>
 </head>
 <body>
-<div class="shell">
+<div class="shell tab-operator" id="harvyxApp">
 
   <!-- ── TOP BAR ─────────────────────────────────── -->
   <header class="topbar">
     <div class="logo">HarvyX <span>Growth OS</span></div>
     <nav class="nav-tabs">
-      <button class="nav-tab active">Operator</button>
-      <button class="nav-tab">Pipeline</button>
-      <button class="nav-tab">Discover</button>
-      <button class="nav-tab">Outreach</button>
-      <button class="nav-tab">Library</button>
-      <button class="nav-tab">Analytics</button>
+      <button class="nav-tab active" data-tab="operator" type="button">Operator</button>
+      <button class="nav-tab" data-tab="pipeline" type="button">Leads</button>
+      <button class="nav-tab" data-tab="hxbank" type="button">Data Bank</button>
+      <button class="nav-tab" data-tab="hxseq" type="button">Sequences</button>
+      <button class="nav-tab" data-tab="hxreplies" type="button">Replies</button>
+      <button class="nav-tab" data-tab="discover" type="button">Discover</button>
+      <button class="nav-tab" data-tab="outreach" type="button">Outreach</button>
+      <button class="nav-tab" data-tab="library" type="button">Library</button>
+      <button class="nav-tab" data-tab="analytics" type="button">Analytics</button>
     </nav>
     <div class="topbar-right">
-      <div class="status-item"><div class="dot" style="background:var(--ok)"></div> Groq · live</div>
-      <div class="status-item" style="color:var(--warn)"><div class="dot" style="background:var(--warn)"></div> Gemini · key needed</div>
+      <span class="li-chip" title="LinkedIn enrichment ready">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"/></svg>
+        Enrich
+      </span>
+      <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:var(--gold3)" id="aiEngineBadge" title="Gemini blocked — using Groq fallback">
+        <span class="status-dot"></span> <span id="aiEngineLabel">AI: Groq</span>
+      </div>
       <div class="user-chip">
-        <div class="avatar">SH</div>
+        <div class="avatar">H</div>
         founder@harvics.com
       </div>
     </div>
   </header>
 
+  <div class="sys-status ok" id="sysStatus">
+    <span class="pill" id="sysConn">Connecting…</span>
+    <span class="pill" id="sysSource">—</span>
+    <span class="pill" id="sysLeads">—</span>
+    <span id="sysHint">Use Pipeline for your bank · Discover for live Google Places · Outreach for drafts</span>
+  </div>
+
   <!-- ── LEFT — DATA INTELLIGENCE ────────────────── -->
   <aside class="left">
 
     <div class="panel-head">
-      <span class="eyebrow">Data Intelligence</span>
-      <span style="font-size:10px;color:var(--ink3)">325 leads</span>
+      <span class="eyebrow">People intelligence</span>
+      <span id="leadPanelMeta" style="font-size:10px;color:var(--gold3)">loading…</span>
+    </div>
+
+    <div class="panel-body">
+    <!-- Lead Queue (first — visible without scrolling) -->
+    <div class="section" id="leadSection">
+      <div class="section-label">Contacts · <span id="bankRange">loading…</span></div>
+
+      <div class="lead-search-row" style="margin-bottom:8px">
+        <input id="leadSearch" class="lead-search-input" placeholder="Search name, company, email…" />
+        <button id="leadSearchBtn" class="lead-search-go">Search</button>
+        <button type="button" id="leadSearchClear" class="lead-search-go" style="background:#fff;color:var(--burgundy);min-width:36px" title="Show all">×</button>
+      </div>
+
+      <div class="selected-action-bar" id="selectedActionBar">
+        <span class="count" id="selectedActionCount">0 selected</span>
+        <label class="bulk-select-all" title="Tick every contact on this page"><input type="checkbox" id="selectAllPageMain" /> All on page</label>
+        <button type="button" class="bulk-btn primary" id="bulkAddListBtn">Add to list</button>
+        <button type="button" class="bulk-btn" id="bulkEmailBtn">Draft email</button>
+        <button type="button" class="bulk-btn" id="bulkSequenceBtn">LinkedIn sequence</button>
+        <button type="button" class="bulk-btn" id="bulkExportBtn">Export CSV</button>
+        <button type="button" class="bulk-btn" id="bulkClearBtn">Clear ticks</button>
+      </div>
+
+      <div id="leadQueue"><div class="empty-state">Loading contacts…</div></div>
+
+      <div class="bank-pager" id="bankPager">
+        <button type="button" id="bankPrev">← Prev</button>
+        <span class="bank-page-info" id="bankPageInfo">Page 1</span>
+        <button type="button" id="bankNext">Next →</button>
+      </div>
+
+      <details class="lead-advanced" style="margin-top:10px">
+        <summary style="cursor:pointer;font-size:10px;font-weight:700;color:var(--burgundy);text-transform:uppercase;letter-spacing:.08em">Import · Lists · Live discover</summary>
+        <div style="margin-top:10px;display:flex;flex-direction:column;gap:10px">
+          <div class="lead-import" id="leadImportDrop">
+            <div class="lead-import-title">Import CSV / Excel</div>
+            <div class="lead-import-actions">
+              <button type="button" class="lead-import-btn" id="leadImportBtn">Choose file</button>
+            </div>
+            <input type="file" id="leadImportInput" accept=".csv,.tsv,.txt,.xlsx,.xls,.xlsm,.xlsb,.ods" multiple hidden />
+            <div class="lead-import-status" id="leadImportStatus"></div>
+          </div>
+          <div class="list-toolbar">
+            <select id="listSelector" class="list-select"><option value="all">All contacts</option><option value="new">New leads</option></select>
+            <button type="button" class="list-new-btn" id="newListBtn">+ List</button>
+            <button type="button" class="bulk-btn primary" id="addToListBtn">Add ticked to list</button>
+          </div>
+          <div class="bulk-bar" id="bulkBar" style="margin:0">
+            <label><input type="checkbox" id="selectAllPage" /> Select page</label>
+            <span id="selectedCount">0 selected</span>
+            <button type="button" class="bulk-btn" id="clearChecksBtn">Clear</button>
+          </div>
+          <div class="lead-search-toggle">
+            <button class="lst-btn active" data-mode="bank" id="lstBank">Data bank</button>
+            <button class="lst-btn" data-mode="live" id="lstLive">Live discover</button>
+          </div>
+        </div>
+      </details>
+      <div id="leadMoreWrap" style="display:none"><button id="leadMore"></button></div>
     </div>
 
     <!-- KPIs -->
@@ -387,109 +1216,47 @@ html, body { height: 100%; background: var(--bg); font-family: Inter, system-ui,
     <!-- Source Status -->
     <div class="section">
       <div class="section-label">Source Status</div>
-      <div id="sourceList"><div style="color:var(--ink3);font-size:11px">Loading…</div></div>
+      <div id="sourceList"><div class="empty-state">Loading…</div></div>
     </div>
-
-    <!-- Lead Queue -->
-    <div class="section">
-      <div class="section-label">Incoming Queue</div>
-      <div id="leadQueue"><div style="color:var(--ink3);font-size:11px">Loading…</div></div>
     </div>
 
   </aside>
 
-  <!-- ── CENTER — SOVEREIGN OPERATOR ─────────────── -->
+  <!-- ── CENTER — CONTACT RECORD + OPERATOR ─────── -->
   <main class="center">
 
     <div class="chat-head">
       <div>
-        <div class="chat-mode-label">Sovereign Operator</div>
-        <div style="font-size:11px;color:var(--ink3);margin-top:2px;">Voice · Chat · Discover · Outreach</div>
+        <div class="chat-mode-label" id="centerModeLabel">Contact record</div>
+        <div id="centerSubtitle" style="font-size:11px;color:rgba(232,213,163,0.7);margin-top:2px;">Select a contact from the queue</div>
       </div>
       <div class="mode-toggle">
-        <button class="mode-btn active">Operator</button>
-        <button class="mode-btn">Passage</button>
-        <button class="mode-btn">Voice</button>
+        <button class="mode-btn active" type="button">Operator</button>
+        <button class="mode-btn" type="button">Passage</button>
+        <button class="mode-btn" type="button">Voice</button>
       </div>
     </div>
 
-    <div class="chat-feed">
-
-      <!-- AI welcome -->
-      <div class="msg ai">
-        <div class="msg-role gold">HarvyX</div>
-        <div class="msg-bubble">
-          Good morning. You have <strong style="color:var(--warn)">89 leads</strong> pending follow-up and
-          <strong style="color:var(--gold)">12 outreach drafts</strong> awaiting approval.
-          I found <strong style="color:var(--ok)">14 new distributors</strong> in Eastern Europe since yesterday.
-          What do you want to work on first?
+    <div class="center-body">
+      <section class="contact-record empty" id="contactRecord">
+        <div>
+          <strong style="color:var(--burgundy);display:block;margin-bottom:6px">No contact selected</strong>
+          Click any row in the left <strong>Contact queue</strong> to open the full profile here.<br>
+          Standard CRM flow: <em>List → Detail → Action</em>
         </div>
-      </div>
+      </section>
 
-      <!-- User query -->
-      <div class="msg user">
-        <div class="msg-role" style="text-align:right">You</div>
-        <div class="msg-bubble">
-          Find me textile buyers in Warsaw and Lodz
-        </div>
-      </div>
-
-      <!-- AI with artifact -->
-      <div class="msg ai">
-        <div class="msg-role gold">HarvyX</div>
-        <div class="msg-bubble">
-          Searching Poland — Warsaw and Łódź textile district. Found <strong style="color:var(--ok)">9 buyers</strong>
-          across 3 sources. Fast Textile fair in Łódź has strong apparel segment.
-          <div class="artifact">
-            <div class="artifact-head">
-              <span class="artifact-title">Buyer Discovery — Poland / Textile</span>
-              <span class="artifact-meta">9 results · Google Places + Fair Intel</span>
-            </div>
-            <div class="artifact-row">
-              <span class="co">LPP S.A. (Reserved, Cropp)</span>
-              <span class="loc">Gdańsk · Apparel Retail</span>
-              <span class="artifact-score" style="color:var(--ok)">88</span>
-              <span class="artifact-src">Places</span>
-            </div>
-            <div class="artifact-row">
-              <span class="co">Redan S.A.</span>
-              <span class="loc">Łódź · Fashion Retail</span>
-              <span class="artifact-score" style="color:var(--ok)">82</span>
-              <span class="artifact-src">Places</span>
-            </div>
-            <div class="artifact-row">
-              <span class="co">TXM Textil Market</span>
-              <span class="loc">Warsaw · Textile Discount</span>
-              <span class="artifact-score" style="color:var(--warn)">67</span>
-              <span class="artifact-src">Apollo</span>
-            </div>
-            <div class="artifact-row">
-              <span class="co">Fast Textile Fair 2026 — 6 Exhibitors</span>
-              <span class="loc">Łódź · Fair Intel</span>
-              <span class="artifact-score" style="color:var(--ink3)">—</span>
-              <span class="artifact-src">Fair</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Passage preview -->
-      <div class="msg ai" style="max-width:100%;width:100%">
-        <div class="msg-role gold" style="margin-bottom:8px">Passage Mode Preview</div>
-        <div class="passage-block">
-          <div class="passage-heard">Heard</div>
-          <div class="passage-text">"We are looking for a reliable denim supplier for 50,000 units per season"</div>
-          <div class="passage-understood">Understood · Trade Inquiry · EN → Qualification</div>
-        </div>
-      </div>
-
+      <section class="operator-panel">
+        <div class="operator-panel-head">Activity · operator chat</div>
+        <div class="chat-feed" id="chatFeed"></div>
+      </section>
     </div>
 
     <!-- Composer -->
     <div class="composer">
       <div class="composer-inner">
         <div class="mic-btn">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#c3a35e" stroke-width="2" stroke-linecap="round">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round">
             <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
             <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
             <line x1="12" y1="19" x2="12" y2="23"/>
@@ -498,7 +1265,65 @@ html, body { height: 100%; background: var(--bg); font-family: Inter, system-ui,
         <input class="composer-input" placeholder='Try: "Find buyers in Barcelona" or "Draft WhatsApp to Mercadona"' />
         <button class="send-btn">Send</button>
       </div>
-      <div class="composer-hint">Tap mic for <span>hands-free</span> · stays active until you stop · no push-to-talk &nbsp;<span id="micStatus" style="color:var(--ink3)"></span></div>
+      <div class="composer-hint">Tap mic for <span>Vapi voice</span> · transcripts sync into this feed · text chat still works &nbsp;<span id="micStatus" style="color:var(--gold3)"></span></div>
+    </div>
+
+
+    <!-- HX Engine panels (Postgres) -->
+    <div class="hx-engine" id="hxEngine">
+      <section class="hx-panel" id="hxPanelBank">
+        <div class="hx-panel-head">
+          <div class="t">Data Bank · Postgres</div>
+          <span id="hxBankMeta" style="color:var(--gold3);font-size:11px">—</span>
+        </div>
+        <div class="hx-panel-body">
+          <div class="hx-toolbar">
+            <input id="hxBankSearch" placeholder="Search name, company, email…" />
+            <select id="hxBankCountry"><option value="">Country</option><option value="DE">DE</option><option value="GB">GB</option><option value="PL">PL</option><option value="CZ">CZ</option><option value="FR">FR</option><option value="IT">IT</option><option value="ES">ES</option></select>
+            <select id="hxBankVertical"><option value="">Vertical</option><option value="textile">textile</option><option value="apparel">apparel</option><option value="denim">denim</option><option value="fmcg">fmcg</option></select>
+            <input id="hxBankIcp" type="number" min="0" max="100" placeholder="ICP min" style="min-width:90px;width:90px" />
+            <button type="button" class="hx-btn" id="hxBankSearchBtn">Search</button>
+            <button type="button" class="hx-btn ghost" id="hxBankPrev">← Prev</button>
+            <span id="hxBankPageInfo" style="font-size:11px;color:var(--ink3)">Page 1</span>
+            <button type="button" class="hx-btn ghost" id="hxBankNext">Next →</button>
+          </div>
+          <div id="hxBankTableWrap"><div class="hx-empty">Loading contacts…</div></div>
+        </div>
+      </section>
+
+      <section class="hx-panel" id="hxPanelSeq">
+        <div class="hx-panel-head">
+          <div class="t">Sequences</div>
+          <button type="button" class="hx-btn" id="hxSeqNewBtn">New Sequence</button>
+        </div>
+        <div class="hx-panel-body">
+          <div class="hx-toolbar">
+            <button type="button" class="hx-btn ghost" id="hxSeqRefreshBtn">Refresh</button>
+            <button type="button" class="hx-btn" id="hxSeqEnrollBtn">Enroll Contact</button>
+          </div>
+          <div id="hxSeqList"><div class="hx-empty">Loading sequences…</div></div>
+        </div>
+      </section>
+
+      <section class="hx-panel" id="hxPanelReplies">
+        <div class="hx-panel-head">
+          <div class="t">Replies</div>
+          <button type="button" class="hx-btn ghost" id="hxRepliesRefreshBtn">Refresh</button>
+        </div>
+        <div class="hx-panel-body">
+          <div class="hx-toolbar">
+            <select id="hxReplyIntent">
+              <option value="">All intents</option>
+              <option value="positive">positive</option>
+              <option value="question">question</option>
+              <option value="negative">negative</option>
+              <option value="no_reply_risk">no_reply_risk</option>
+            </select>
+            <button type="button" class="hx-btn" id="hxRepliesFilterBtn">Filter</button>
+          </div>
+          <div id="hxRepliesList"><div class="hx-empty">Loading replies…</div></div>
+        </div>
+      </section>
     </div>
 
   </main>
@@ -507,24 +1332,56 @@ html, body { height: 100%; background: var(--bg); font-family: Inter, system-ui,
   <aside class="right">
 
     <div class="panel-head">
-      <span class="eyebrow">Outreach Console</span>
-      <span id="draftCount" style="font-size:10px;color:var(--warn)">loading…</span>
+      <span class="eyebrow">Outreach console</span>
+      <span class="studio-fab" onclick="openStudio('email')">✦ AI Studio</span>
+      <span id="draftCount" style="font-size:10px;color:var(--gold3)">loading…</span>
+    </div>
+
+    <div class="panel-body">
+    <!-- Selected contact (outreach context) -->
+    <div class="section">
+      <div class="section-label">Selected for outreach</div>
+      <div class="right-selected empty" id="rightSelected">
+        No contact selected — pick one from the queue
+      </div>
     </div>
 
     <!-- Drafts -->
     <div class="section">
-      <div class="section-label">Pending Approval</div>
-      <div id="draftList"><div style="color:var(--ink3);font-size:11px">Loading…</div></div>
+      <div class="section-label">Pending approval</div>
+      <div id="draftList"><div class="empty-state">Loading…</div></div>
     </div>
 
     <!-- Quick Draft -->
     <div class="section">
-      <div class="section-label">Quick Draft</div>
+      <div class="section-label">Quick draft · channels</div>
       <div class="channel-strip">
         <div class="ch-btn">WhatsApp</div>
-        <div class="ch-btn">LinkedIn</div>
+        <div class="ch-btn" style="background:linear-gradient(180deg,#3D1212,#3D1212);color:var(--gold2);border-color:var(--gold)">LinkedIn</div>
         <div class="ch-btn">Email</div>
         <div class="ch-btn">Instagram</div>
+      </div>
+    </div>
+
+    <!-- LinkedIn connection + send -->
+    <div class="section" id="linkedinConnectSection">
+      <div class="section-label">LinkedIn account · send from HarvyX</div>
+      <div id="linkedinConnectStatus" class="campaign-summary" style="margin-bottom:8px">Checking connection…</div>
+      <div class="brand-card" style="margin-bottom:8px;background:linear-gradient(135deg,#0A66C2 0%,#004182 100%);border-color:rgba(158,197,240,0.45)">
+        <div class="t" style="color:#E8F1FB">Same model as Lusha / Waalaxy</div>
+        <div class="d" style="color:rgba(232,241,251,0.9);line-height:1.6">
+          HarvyX sends via <strong style="color:#fff">PhantomBuster</strong> using <em>your</em> LinkedIn login session.
+          Click <strong style="color:#fff">Send on LinkedIn</strong> in Outreach — no copy-paste once connected.
+        </div>
+      </div>
+      <details style="font-size:10px;color:var(--text-muted-on-light)">
+        <summary style="cursor:pointer;font-weight:700;color:var(--burgundy);margin-bottom:6px">Setup steps (one time)</summary>
+        <ol id="linkedinSetupSteps" style="padding-left:18px;line-height:1.7;margin-top:6px"></ol>
+      </details>
+      <div class="channel-strip" id="pbPhantoms" style="margin-top:8px">
+        <div class="ch-btn" data-pb="linkedin-profile-scraper">Profile scrape</div>
+        <div class="ch-btn" data-pb="linkedin-auto-connect">Auto connect</div>
+        <div class="ch-btn" data-pb="linkedin-message-sender">Send DM</div>
       </div>
     </div>
 
@@ -553,47 +1410,778 @@ html, body { height: 100%; background: var(--bg); font-family: Inter, system-ui,
       </div>
     </div>
 
-    <!-- Sequence Engine (Phase 4 preview) -->
+    <!-- LinkedIn campaigns & sequences -->
     <div class="section">
-      <div class="section-label" style="display:flex;align-items:center;gap:6px;">
-        Sequence Engine
-        <span style="font-size:8px;padding:2px 5px;border-radius:3px;background:rgba(107,159,224,.1);color:var(--blue);border:1px solid rgba(107,159,224,.2);">Phase 4</span>
+      <div class="section-label" style="display:flex;align-items:center;justify-content:space-between;gap:6px;">
+        <span>LinkedIn sequences</span>
+        <button type="button" class="bulk-btn primary" style="font-size:8px;padding:3px 8px" onclick="openCampaignModal()">+ New</button>
       </div>
-      <div style="padding:12px;background:var(--panel2);border-radius:var(--r);border:1px solid var(--line);text-align:center;">
-        <div style="font-size:10px;color:var(--ink3);line-height:1.6;">
-          LinkedIn day 1 → Email day 3 → WhatsApp day 7<br>
-          <span style="color:var(--blue)">Twilio + SendGrid wired in Phase 4</span>
-        </div>
-      </div>
+      <div id="campaignList"><div class="empty-state">No campaigns yet — tick contacts, then <strong>LinkedIn sequence</strong></div></div>
+    </div>
     </div>
 
   </aside>
 
 </div>
 
+
+<!-- HX modals -->
+<div class="hx-modal-overlay" id="hxSeqModal">
+  <div class="hx-modal">
+    <h3>New sequence</h3>
+    <label>Name</label>
+    <input id="hxSeqName" placeholder="e.g. DE textile agents" style="width:100%" />
+    <label>Description</label>
+    <textarea id="hxSeqDesc" rows="3" placeholder="Optional" style="width:100%"></textarea>
+    <div class="row">
+      <button type="button" class="hx-btn ghost" id="hxSeqModalCancel">Cancel</button>
+      <button type="button" class="hx-btn" id="hxSeqModalSave">Create</button>
+    </div>
+  </div>
+</div>
+<div class="hx-modal-overlay" id="hxEnrollModal">
+  <div class="hx-modal">
+    <h3>Enroll contact</h3>
+    <label>Contact ID</label>
+    <input id="hxEnrollContactId" placeholder="uuid" style="width:100%" />
+    <label>Sequence</label>
+    <select id="hxEnrollSequenceId" style="width:100%"></select>
+    <div class="row">
+      <button type="button" class="hx-btn ghost" id="hxEnrollCancel">Cancel</button>
+      <button type="button" class="hx-btn" id="hxEnrollSave">Enroll</button>
+    </div>
+  </div>
+</div>
+<div class="hx-modal-overlay" id="hxReplyModal">
+  <div class="hx-modal">
+    <h3>Manual reply</h3>
+    <label>Channel</label>
+    <select id="hxReplyChannel" style="width:100%">
+      <option value="email">email</option>
+      <option value="whatsapp">whatsapp</option>
+      <option value="sms">sms</option>
+      <option value="linkedin">linkedin</option>
+    </select>
+    <label>Message</label>
+    <textarea id="hxReplyMessage" rows="5" style="width:100%"></textarea>
+    <div class="row">
+      <button type="button" class="hx-btn ghost" id="hxReplyCancel">Cancel</button>
+      <button type="button" class="hx-btn" id="hxReplySend">Send</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── AI STUDIO MODAL ─────────────────────── -->
+<div class="studio-overlay" id="studioOverlay">
+  <div class="studio">
+    <div class="studio-head">
+      <div class="t">HarvyX AI Studio</div>
+      <div class="x" id="studioClose">&times;</div>
+    </div>
+    <div class="studio-body">
+      <div class="studio-types" id="studioTypes">
+        <div class="studio-type active" data-type="email">Cold email</div>
+        <div class="studio-type" data-type="linkedin_post">LinkedIn post</div>
+        <div class="studio-type" data-type="linkedin_connect">LinkedIn connect</div>
+        <div class="studio-type" data-type="linkedin_dm">LinkedIn DM</div>
+        <div class="studio-type" data-type="whatsapp">WhatsApp</div>
+        <div class="studio-type" data-type="social_post">Social post</div>
+      </div>
+
+      <div class="studio-field" id="studioLeadWrap">
+        <label>Recipient (select a lead in the queue)</label>
+        <span class="studio-lead-chip" id="studioLeadChip">No lead selected</span>
+      </div>
+
+      <div class="studio-row">
+        <div class="studio-field">
+          <label id="studioTopicLabel">Topic / angle</label>
+          <input id="studioTopic" placeholder="e.g. premium selvedge denim for SS26" />
+        </div>
+        <div class="studio-field">
+          <label>Tone</label>
+          <input id="studioTone" placeholder="professional, warm, concise" value="professional, warm, concise" />
+        </div>
+      </div>
+
+      <div class="studio-field">
+        <label>Extra instructions (optional)</label>
+        <input id="studioNotes" placeholder="e.g. mention we exhibit at Bluezone Munich" />
+      </div>
+
+      <div class="studio-actions">
+        <button class="studio-btn" id="studioGenerate">Generate</button>
+        <span class="studio-status" id="studioStatus"></span>
+      </div>
+
+      <div class="studio-field" id="studioSubjectWrap" style="display:none">
+        <label>Subject</label>
+        <input id="studioSubject" placeholder="Email subject" />
+      </div>
+
+      <div class="studio-field">
+        <label>Output (editable)</label>
+        <textarea id="studioOutput" placeholder="Generated content appears here — edit freely before sending."></textarea>
+      </div>
+
+      <div class="studio-actions">
+        <button class="studio-btn ghost" id="studioCopy">Copy</button>
+        <button class="studio-btn" id="studioAction">Save to outreach</button>
+        <span class="studio-status" id="studioActionStatus"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── LINKEDIN CAMPAIGN MODAL ─────────────── -->
+<div class="campaign-overlay" id="campaignOverlay">
+  <div class="campaign-modal">
+    <div class="campaign-modal-head">
+      <div class="t">LinkedIn sequence</div>
+      <div class="x" id="campaignClose">&times;</div>
+    </div>
+    <div class="campaign-modal-body">
+      <div class="campaign-summary" id="campaignLeadSummary">Tick contacts in the left list first.</div>
+      <div class="campaign-field">
+        <label>Campaign name</label>
+        <input id="campaignName" placeholder="e.g. FMCG buyers — March outreach" />
+      </div>
+      <div class="campaign-field">
+        <label>Sequence template</label>
+        <div class="campaign-templates" id="campaignTemplates"></div>
+      </div>
+      <div class="campaign-field" id="campaignMsgWrap">
+        <label id="campaignMsgLabel">Connection note</label>
+        <textarea id="campaignMessage" placeholder="Hi {{name}}, …"></textarea>
+        <div style="font-size:9px;color:var(--ink3);margin-top:4px">Use {{name}}, {{company}}, {{segment}} — filled per contact.</div>
+      </div>
+      <div class="campaign-modal-actions">
+        <button type="button" class="primary" id="campaignStartBtn">Create &amp; start</button>
+        <button type="button" class="ghost" id="campaignSaveBtn">Save as draft</button>
+        <span id="campaignStatus" style="font-size:10px;color:var(--ink3)"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
+(function patchFetchCredentials() {
+  const nativeFetch = window.fetch.bind(window);
+  window.fetch = function(url, opts) {
+    opts = opts || {};
+    const target = String(url);
+    if (target.includes('/api/harvyx') || target.includes('/api/meet')) {
+      opts.credentials = 'include';
+    }
+    return nativeFetch(url, opts);
+  };
+})();
+
 const esc = t => String(t||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-const feed = document.querySelector('.chat-feed');
+
+/** Treat placeholder junk ("Unknown", "N/A", "-", "null") as empty. */
+const BLANK_VALS = new Set(['', 'unknown', 'n/a', 'na', 'none', 'null', 'undefined', '-', '—', 'not available']);
+function cleanVal(v) {
+  const s = String(v == null ? '' : v).trim();
+  return BLANK_VALS.has(s.toLowerCase()) ? '' : s;
+}
+
+/** Turn AI markdown into readable HTML (escaped first, then structured). */
+function renderMarkdown(raw) {
+  let t = esc(String(raw || '').trim());
+  if (!t) return '';
+
+  // Fix common AI typos: *Title:** or *Title* at line start
+  t = t.replace(/^(\*{1,2})([^*\n]+):(\*{1,2})/, '**$2:**');
+  t = t.replace(/^(\*{1,2})([^*\n]+)\*{1,2}(?!:)/, '**$2**');
+
+  // Insert breaks before numbered sections and inline bullets
+  t = t.replace(/\s+(\d+)\.\s+\*\*/g, '\n\n$1. **');
+  t = t.replace(/\s+\*\s+(?=(?:LLC|OOO|ZAO|[A-Z]))/g, '\n• ');
+  t = t.replace(/\s+\*\*([A-Za-z][^*]{2,48}):\*\*/g, '\n\n**$1:**');
+
+  // Bold
+  t = t.replace(/\*\*([^*\n]+)\*\*/g, '<strong>$1</strong>');
+
+  const lines = t.split('\n');
+  const out = [];
+  let listBuf = [];
+
+  function flushList() {
+    if (!listBuf.length) return;
+    out.push('<ul class="md-list">' + listBuf.map(li => '<li>' + li + '</li>').join('') + '</ul>');
+    listBuf = [];
+  }
+
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed) { flushList(); continue; }
+
+    if (trimmed.startsWith('• ')) {
+      listBuf.push(trimmed.slice(2));
+      continue;
+    }
+    flushList();
+
+    const numMatch = trimmed.match(/^(\d+)\.\s+(.*)$/);
+    if (numMatch) {
+      out.push('<div class="md-section"><span class="md-num">' + numMatch[1] + '.</span> ' + numMatch[2] + '</div>');
+      continue;
+    }
+
+    if (/^<strong>[^<]+:<\/strong>$/.test(trimmed) || /^<strong>[^<]+<\/strong>$/.test(trimmed)) {
+      out.push('<h4 class="md-h">' + trimmed + '</h4>');
+      continue;
+    }
+
+    out.push('<p class="md-p">' + trimmed + '</p>');
+  }
+  flushList();
+
+  return '<div class="md-reply">' + out.join('') + '</div>';
+}
+const feed = document.getElementById('chatFeed');
 const inp  = document.querySelector('.composer-input');
 const hist = [];
-let isSpeaking = false, isWaiting = false, handsFree = false, latestLead = null;
+let isSpeaking = false, isWaiting = false, handsFree = false, latestLead = null, selectedLeadIdx = null;
+
+function leadInitials(lead) {
+  const n = (lead.contactName || lead.company || '?').trim();
+  const parts = n.split(/\s+/).filter(Boolean);
+  if (parts.length >= 2) return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+  return n.slice(0, 2).toUpperCase();
+}
+
+function crField(label, value, opts = {}) {
+  const v = (value || '').toString().trim();
+  if (!v) {
+    return `<div class="cr-label">${esc(label)}</div><div class="cr-value missing">Not available</div>`;
+  }
+  if (opts.link) {
+    const href = opts.link === true ? v : opts.link;
+    const safe = href.startsWith('http') ? href : `https://${href.replace(/^\/\//, '')}`;
+    return `<div class="cr-label">${esc(label)}</div><div class="cr-value"><a href="${esc(safe)}" target="_blank" rel="noopener">${esc(v)}</a></div>`;
+  }
+  return `<div class="cr-label">${esc(label)}</div><div class="cr-value">${esc(v)}</div>`;
+}
+
+function renderContactRecord(lead, idx) {
+  const panel = document.getElementById('contactRecord');
+  const subtitle = document.getElementById('centerSubtitle');
+  const rightSel = document.getElementById('rightSelected');
+  if (!panel) return;
+
+  if (!lead) {
+    panel.className = 'contact-record empty';
+    panel.innerHTML = `<div><strong style="color:var(--burgundy);display:block;margin-bottom:6px">No contact selected</strong>
+      Click any row in the left <strong>Contact queue</strong> to open the full profile here.<br>
+      Standard CRM flow: <em>List → Detail → Action</em></div>`;
+    if (subtitle) subtitle.textContent = 'Select a contact from the queue';
+    if (rightSel) {
+      rightSel.className = 'right-selected empty';
+      rightSel.textContent = 'No contact selected — pick one from the queue';
+    }
+    return;
+  }
+
+  const name = cleanVal(lead.contactName) || cleanVal(lead.name) || cleanVal(lead.company) || 'Unknown contact';
+  const title = cleanVal(lead.title) || cleanVal(lead.jobTitle) || cleanVal(lead.role);
+  const company = cleanVal(lead.company) || cleanVal(lead.organization);
+  const email = cleanVal(lead.email) || cleanVal(lead.workEmail);
+  const phone = cleanVal(lead.phone) || cleanVal(lead.mobile) || cleanVal(lead.directDial);
+  const linkedin = cleanVal(lead.linkedin) || cleanVal(lead.linkedinUrl);
+  const website = cleanVal(lead.website) || cleanVal(lead.domain);
+  const city = cleanVal(lead.city) || cleanVal(lead.town);
+  const country = cleanVal(lead.country) || cleanVal(lead.geo);
+  // Dedupe when city already contains the country (full addresses).
+  let location = [city, country].filter(Boolean).join(', ');
+  if (city && country && city.toLowerCase().includes(country.toLowerCase())) location = city;
+  const score = lead.score || 0;
+  const canEnrich = !email && !!website;
+
+  panel.className = 'contact-record';
+  panel.innerHTML = `
+    <div class="cr-header">
+      <div class="cr-avatar">${esc(leadInitials(lead))}</div>
+      <div class="cr-identity">
+        <div class="cr-name">${esc(name)}</div>
+        ${title ? `<div class="cr-headline">${esc(title)}</div>` : ''}
+        ${company ? `<div class="cr-company">${esc(company)}</div>` : ''}
+      </div>
+      <div class="cr-score ${scoreClass(score)}">${score || '?'}</div>
+    </div>
+    <div class="cr-section">
+      <div class="cr-section-title">Contact information</div>
+      <div class="cr-grid">
+        ${crField('Email', email)}
+        ${crField('Phone', phone)}
+        ${crField('LinkedIn', linkedin, linkedin ? { link: linkedin.startsWith('http') ? linkedin : `https://${linkedin}` } : {})}
+        ${crField('Website', website, website ? { link: true } : {})}
+      </div>
+    </div>
+    <div class="cr-section">
+      <div class="cr-section-title">Company &amp; location</div>
+      <div class="cr-grid">
+        ${crField('Company', company)}
+        ${crField('Location', location)}
+        ${crField('Segment', lead.segment || lead.industry || '')}
+      </div>
+    </div>
+    <div class="cr-section">
+      <div class="cr-section-title">Data provenance</div>
+      <div class="cr-grid">
+        ${crField('Source', lead.source || lead.platform || '')}
+        ${crField('Import file', lead.sourceFile || '')}
+        ${crField('Status', lead.status || 'new')}
+        ${crField('Record ID', lead.id || '')}
+      </div>
+    </div>
+    <div class="cr-actions">
+      ${canEnrich ? `<button type="button" class="cr-btn secondary" onclick="enrichSelectedLead()">✦ Find email</button>` : ''}
+      <button type="button" class="cr-btn primary" onclick="openStudio('email')">Draft email</button>
+      <button type="button" class="cr-btn secondary" onclick="openStudio('linkedin_dm')">LinkedIn DM</button>
+      <button type="button" class="cr-btn secondary" onclick="openCampaignModal()">LinkedIn sequence</button>
+      <button type="button" class="cr-btn secondary" onclick="openStudio('whatsapp')">WhatsApp</button>
+      ${email ? `<button type="button" class="cr-btn ghost" onclick="copyLeadEmail()">Copy email</button>` : ''}
+      <button type="button" class="cr-btn ghost" onclick="clearLeadSelection()">Clear selection</button>
+    </div>`;
+
+  if (subtitle) {
+    subtitle.textContent = [name, company].filter(Boolean).join(' · ') || 'Contact record';
+  }
+  if (rightSel) {
+    rightSel.className = 'right-selected';
+    rightSel.innerHTML = `<div class="rs-name">${esc(name)}</div>
+      <div class="rs-meta">${esc([title, company].filter(Boolean).join(' @ ') || location || '—')}</div>
+      <div class="rs-meta">${email ? esc(email) : '<span style="color:var(--warn)">No email — enrich first</span>'}</div>`;
+  }
+  setSysStatus('ok', 'Contact open', lead.source || 'bank', name.slice(0, 28), email ? email : 'No email on file · use Find email');
+}
+
+function clearLeadSelection() {
+  selectedLeadIdx = null;
+  latestLead = null;
+  document.querySelectorAll('.lead-item').forEach(i => i.classList.remove('selected'));
+  renderContactRecord(null);
+  const chip = document.getElementById('studioLeadChip');
+  if (chip) chip.textContent = 'No lead selected';
+}
+
+function copyLeadEmail() {
+  const email = latestLead && (latestLead.email || latestLead.workEmail);
+  if (!email) return;
+  navigator.clipboard.writeText(email).then(() => {
+    if (feed) addMsg('ai', `Copied <strong>${esc(email)}</strong> to clipboard.`, true);
+  });
+}
+
+async function enrichSelectedLead() {
+  if (selectedLeadIdx == null || !window.__leads[selectedLeadIdx]) return;
+  const fakeBtn = { textContent: 'Finding…', classList: { add() {}, remove() {} } };
+  await enrichLead(selectedLeadIdx, fakeBtn);
+  renderContactRecord(window.__leads[selectedLeadIdx], selectedLeadIdx);
+  const card = document.querySelector(`.lead-item[data-idx="${selectedLeadIdx}"]`);
+  if (card) card.outerHTML = leadCardHtml(window.__leads[selectedLeadIdx], selectedLeadIdx);
+  selectLeadByIdx(selectedLeadIdx);
+}
+
+function setSysStatus(kind, conn, source, leads, hint) {
+  const bar = document.getElementById('sysStatus');
+  if (bar) bar.className = 'sys-status ' + (kind || 'ok');
+  const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+  if (conn) set('sysConn', conn);
+  if (source) set('sysSource', source);
+  if (leads) set('sysLeads', leads);
+  if (hint) set('sysHint', hint);
+}
+
+if (location.protocol === 'file:') {
+  document.body.innerHTML = '<div style="padding:40px;font-family:system-ui;max-width:640px;margin:40px auto"><h1>HarvyX must run on localhost</h1><p>Open <code>http://localhost:3000/en/harvyx</code> — not the file directly. APIs will not work from <code>file://</code>.</p></div>';
+  throw new Error('file protocol');
+}
 
 /* ── TABS & MODES ─────────────────────────── */
+window.__leads = [];
+const searchState = { mode: 'bank', q: '', offset: 0, total: 0, pageSize: 50 };
+const LISTS_KEY = 'harvyx_lists';
+const listState = { active: 'all' };
+let customLists = [];
+const selectedLeadIds = new Set();
+
+function loadCustomLists() {
+  try { customLists = JSON.parse(localStorage.getItem(LISTS_KEY) || '[]'); } catch { customLists = []; }
+  if (!Array.isArray(customLists)) customLists = [];
+}
+
+function saveCustomLists() {
+  localStorage.setItem(LISTS_KEY, JSON.stringify(customLists));
+}
+
+function isDataBankTab() {
+  return document.querySelector('.shell')?.classList.contains('tab-pipeline');
+}
+
+function renderListSelector() {
+  const sel = document.getElementById('listSelector');
+  if (!sel) return;
+  sel.innerHTML = [
+    '<option value="all">All imported contacts</option>',
+    '<option value="new">New leads</option>',
+    ...customLists.map(l => `<option value="list_${esc(l.id)}">${esc(l.name)} (${(l.leadIds||[]).length})</option>`),
+  ].join('');
+  sel.value = listState.active;
+}
+
+function updateBankRange(total) {
+  const el = document.getElementById('bankRange');
+  if (!el) return;
+  if (!total) {
+    el.textContent = searchState.q ? 'no matches — click × to show all' : 'empty';
+    return;
+  }
+  const from = searchState.offset + 1;
+  const to = Math.min(searchState.offset + searchState.pageSize, total);
+  el.textContent = `${from.toLocaleString()}–${to.toLocaleString()} of ${total.toLocaleString()}`;
+}
+
+function updatePager() {
+  const total = searchState.total || 0;
+  const page = Math.floor(searchState.offset / searchState.pageSize) + 1;
+  const pages = Math.max(1, Math.ceil(total / searchState.pageSize));
+  const prev = document.getElementById('bankPrev');
+  const next = document.getElementById('bankNext');
+  const info = document.getElementById('bankPageInfo');
+  if (info) info.textContent = `Page ${page} / ${pages}`;
+  if (prev) prev.disabled = searchState.offset <= 0;
+  if (next) next.disabled = searchState.offset + searchState.pageSize >= total;
+  const ps = document.getElementById('bankPageSize');
+  if (ps) ps.value = String(searchState.pageSize);
+  const moreWrap = document.getElementById('leadMoreWrap');
+  if (moreWrap) moreWrap.style.display = isDataBankTab() ? 'none' : (searchState.offset + searchState.pageSize < total ? 'block' : 'none');
+}
+
+function updateBulkBar() {
+  const n = selectedLeadIds.size;
+  const el = document.getElementById('selectedCount');
+  if (el) el.textContent = `${n} selected`;
+  const bar = document.getElementById('selectedActionBar');
+  const countEl = document.getElementById('selectedActionCount');
+  if (countEl) countEl.textContent = `${n} selected`;
+  if (bar) bar.classList.toggle('show', n > 0);
+  syncSelectAllCheckbox();
+  renderBulkRightPanel();
+  setSysStatus('ok', n ? `${n} ticked` : 'Ready', null, null,
+    n ? 'Then: Add to list · Draft email · Export CSV — or click one row for full profile' : 'Tick rows for bulk · click row for profile');
+}
+
+function renderBulkRightPanel() {
+  const rightSel = document.getElementById('rightSelected');
+  if (!rightSel) return;
+  const n = selectedLeadIds.size;
+  if (n === 0 && !latestLead) {
+    rightSel.className = 'right-selected empty';
+    rightSel.textContent = 'No contact selected — pick one from the queue';
+    return;
+  }
+  if (n <= 1 && latestLead) return;
+  const onPage = window.__leads.filter(l => selectedLeadIds.has(l.id));
+  const preview = onPage.slice(0, 5).map(l => esc(l.contactName || l.company || '—')).join('<br>');
+  rightSel.className = 'right-selected';
+  rightSel.innerHTML = `<div class="rs-name">${n} contacts ticked</div>
+    <div class="rs-meta">${preview || 'Selection spans multiple pages'}${n > 5 ? '<br>…' : ''}</div>
+    <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:4px">
+      <button type="button" class="bulk-btn primary" onclick="addSelectedToList()">Add to list</button>
+      <button type="button" class="bulk-btn" onclick="bulkEmailSelected()">Draft email</button>
+      <button type="button" class="bulk-btn" onclick="openCampaignModal()">LinkedIn sequence</button>
+      <button type="button" class="bulk-btn" onclick="exportSelectedCsv()">Export CSV</button>
+    </div>`;
+}
+
+function markTickedRows() {
+  document.querySelectorAll('.lead-item, .bank-row').forEach(row => {
+    const id = row.getAttribute('data-id');
+    row.classList.toggle('ticked', id && selectedLeadIds.has(id));
+  });
+}
+
+function toggleLeadCheck(id, checked) {
+  if (!id) return;
+  if (checked) selectedLeadIds.add(id); else selectedLeadIds.delete(id);
+  updateBulkBar();
+  markTickedRows();
+}
+
+function toggleSelectAllPage(checked) {
+  document.querySelectorAll('.lead-check').forEach(b => {
+    b.checked = checked;
+    const id = b.getAttribute('data-id');
+    if (!id) return;
+    if (checked) selectedLeadIds.add(id); else selectedLeadIds.delete(id);
+  });
+  updateBulkBar();
+  markTickedRows();
+}
+
+function clearTickSelection() {
+  selectedLeadIds.clear();
+  document.querySelectorAll('.lead-check').forEach(b => { b.checked = false; });
+  updateBulkBar();
+  markTickedRows();
+}
+
+async function getSelectedLeads() {
+  const ids = [...selectedLeadIds];
+  if (!ids.length) return [];
+  const found = new Map();
+  window.__leads.forEach(l => { if (selectedLeadIds.has(l.id)) found.set(l.id, l); });
+  if (found.size < ids.length) {
+    try {
+      const r = await fetch('/api/harvyx/leads?limit=500&ids=' + ids.slice(0, 500).join(','));
+      if (r.ok) {
+        const d = await r.json();
+        (d.leads || []).forEach(l => found.set(l.id, l));
+      }
+    } catch (e) { console.warn('fetch selected leads', e); }
+  }
+  return ids.map(id => found.get(id)).filter(Boolean);
+}
+
+async function bulkEmailSelected() {
+  const picked = await getSelectedLeads();
+  if (!picked.length) { alert('Tick at least one contact first.'); return; }
+  latestLead = picked[0];
+  selectedLeadIdx = window.__leads.indexOf(picked[0]);
+  if (selectedLeadIdx < 0) selectedLeadIdx = null;
+  renderContactRecord(latestLead, selectedLeadIdx);
+  openStudio('email');
+  if (feed && picked.length > 1) {
+    addMsg('ai', `Drafting for <strong>${esc(picked[0].contactName || picked[0].company)}</strong> (first of ${picked.length} ticked). Repeat for others or use Export CSV.`, true);
+  }
+}
+
+async function exportSelectedCsv() {
+  const picked = await getSelectedLeads();
+  if (!picked.length) { alert('Tick at least one contact first.'); return; }
+  const headers = ['company','contactName','title','email','phone','linkedin','website','country','city','segment'];
+  const rows = picked.map(l => headers.map(h => {
+    const v = String(l[h] || l[h === 'contactName' ? 'name' : h] || '').replace(/"/g, '""');
+    return `"${v}"`;
+  }).join(','));
+  const csv = [headers.join(','), ...rows].join('\n');
+  const blob = new Blob([csv], { type: 'text/csv' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `harvyx-selected-${picked.length}.csv`;
+  a.click();
+  if (feed) addMsg('ai', `Exported <strong>${picked.length}</strong> contacts to CSV.`, true);
+}
+
+function syncSelectAllCheckbox() {
+  const master = document.getElementById('selectAllPage');
+  const masterTable = document.getElementById('selectAllPageTable');
+  const masterMain = document.getElementById('selectAllPageMain');
+  const boxes = document.querySelectorAll('.lead-check');
+  if (!boxes.length) {
+    [master, masterTable, masterMain].forEach(m => {
+      if (m) { m.checked = false; m.indeterminate = false; }
+    });
+    return;
+  }
+  let checked = 0;
+  boxes.forEach(b => { if (b.checked) checked++; });
+  const all = checked === boxes.length;
+  const some = checked > 0 && checked < boxes.length;
+  [master, masterTable, masterMain].forEach(m => {
+    if (m) { m.checked = all; m.indeterminate = some; }
+  });
+}
+
+function createNewList() {
+  const name = prompt('Name for your new list:', 'My list');
+  if (!name || !name.trim()) return;
+  const id = Date.now().toString(36);
+  customLists.push({ id, name: name.trim(), leadIds: [], createdAt: new Date().toISOString() });
+  saveCustomLists();
+  listState.active = 'list_' + id;
+  renderListSelector();
+  fetchLeadPage({ replace: true });
+}
+
+function addIdsToList(list, ids) {
+  const set = new Set(list.leadIds || []);
+  ids.forEach(id => set.add(id));
+  list.leadIds = Array.from(set);
+  saveCustomLists();
+  renderListSelector();
+  alert(`Added to "${list.name}" — now ${list.leadIds.length} contacts.`);
+  clearTickSelection();
+}
+
+function addSelectedToList() {
+  if (!selectedLeadIds.size) { alert('Tick one or more contacts first (checkbox on each row).'); return; }
+  loadCustomLists();
+
+  if (listState.active.startsWith('list_')) {
+    const list = customLists.find(l => l.id === listState.active.replace('list_', ''));
+    if (list) { addIdsToList(list, selectedLeadIds); return; }
+  }
+
+  if (!customLists.length) {
+    createNewList();
+    if (!customLists.length) return;
+  }
+
+  if (customLists.length === 1) {
+    addIdsToList(customLists[0], selectedLeadIds);
+    return;
+  }
+
+  const names = customLists.map((l, i) => `${i + 1}. ${l.name} (${(l.leadIds||[]).length})`).join('\n');
+  const pick = prompt(`Add ${selectedLeadIds.size} contact(s) to which list?\n\n${names}\n\nEnter list number:`);
+  const idx = parseInt(pick, 10) - 1;
+  if (isNaN(idx) || idx < 0 || idx >= customLists.length) return;
+  addIdsToList(customLists[idx], selectedLeadIds);
+}
+
+function buildLeadsUrl() {
+  if (searchState.mode === 'live') return null;
+  const p = new URLSearchParams();
+  p.set('limit', String(searchState.pageSize));
+  p.set('offset', String(searchState.offset));
+  if (searchState.q) p.set('q', searchState.q);
+  if (listState.active === 'new') p.set('status', 'new');
+  else if (listState.active.startsWith('list_')) {
+    const listId = listState.active.replace('list_', '');
+    const list = customLists.find(l => l.id === listId);
+    if (!list || !(list.leadIds || []).length) return null;
+    p.set('ids', list.leadIds.slice(0, 500).join(','));
+  }
+  return '/api/harvyx/leads?' + p.toString();
+}
+
+async function fetchLeadPage({ replace = true, autoSelectFirst = false } = {}) {
+  const qEl = document.getElementById('leadQueue');
+  if (searchState.mode === 'live') return runSearch(replace);
+
+  const url = buildLeadsUrl();
+  if (!url) {
+    if (qEl) qEl.innerHTML = '<div class="empty-state">This list is empty.<br>Tick contacts in <strong>All imported contacts</strong>, then <strong>Add to list</strong>.</div>';
+    searchState.total = 0;
+    updateBankRange(0);
+    updatePager();
+    return;
+  }
+
+  try {
+    if (replace && qEl) qEl.innerHTML = '<div class="empty-state">Loading contacts…</div>';
+    const r = await fetch(url);
+    if (!r.ok) throw new Error('API ' + r.status);
+    const d = await r.json();
+    const leads = Array.isArray(d.leads) ? d.leads : [];
+    searchState.total = d.total ?? leads.length;
+
+    if (replace) {
+      const c = d.counts || {};
+      const totalAll = c.total ?? searchState.total ?? 0;
+      const qualified = c.qualified ?? 0;
+      const followUp = c.followUp ?? (c.total != null && c.withEmail != null ? c.total - c.withEmail : 0);
+      document.getElementById('kpiTotal').textContent = Number(totalAll).toLocaleString();
+      document.getElementById('kpiQualified').textContent = Number(qualified).toLocaleString();
+      document.getElementById('kpiFollow').textContent = Number(followUp).toLocaleString();
+      const meta = document.getElementById('leadPanelMeta');
+      if (meta) meta.textContent = `${Number(totalAll).toLocaleString()} in bank · page ${Math.floor(searchState.offset / searchState.pageSize) + 1}`;
+      const searchInp = document.getElementById('leadSearch');
+      if (searchInp && totalAll) searchInp.placeholder = `Search ${Number(totalAll).toLocaleString()} bank…`;
+    }
+
+    renderLeads(leads, { replace, autoSelectFirst: autoSelectFirst && !isDataBankTab() });
+    updateBankRange(searchState.total);
+    updatePager();
+    // Connection confirmed — header shows the live data source.
+    const srcLabel = d.source === 'd1' ? 'D1 live' : (d.source || 'bank');
+    setSysStatus('ok', 'Ready', srcLabel, `${searchState.total.toLocaleString()} in view`, `${selectedLeadIds.size} ticked · use lists dropdown to filter`);
+  } catch (e) {
+    // Never leave the UI stuck on "Loading…"/"…" — surface a real error state.
+    if (replace) {
+      ['kpiTotal','kpiQualified','kpiFollow'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el && el.textContent === '…') el.textContent = '—';
+      });
+    }
+    if (qEl) qEl.innerHTML = `<div class="empty-state">Couldn't reach the contact bank (${esc(e.message)}).<br><button type="button" class="lead-search-go" style="margin-top:8px" onclick="fetchLeadPage({replace:true})">Retry</button></div>`;
+    setSysStatus('error', 'Offline', 'API error', null, 'Contact bank unavailable — check connection / D1 binding, then retry');
+  }
+}
+
+function switchTab(name) {
+  const shell = document.querySelector('.shell');
+  if (shell) shell.className = 'shell tab-' + name;
+  document.querySelectorAll('.nav-tab').forEach(t => {
+    t.classList.toggle('active', t.dataset.tab === name);
+  });
+  if (name === 'pipeline') {
+    setSearchMode('bank');
+    searchState.pageSize = 100;
+    searchState.offset = 0;
+    loadCustomLists();
+    renderListSelector();
+    fetchLeadPage({ replace: true });
+    document.querySelector('.left .panel-body')?.scrollTo({ top: 0, behavior: 'smooth' });
+    setSysStatus('ok', 'Leads', 'all imports', null, 'Browse imported leads · tick rows · create lists · paginate with Next/Prev');
+  } else if (name === 'discover') {
+    setSearchMode('live');
+    document.querySelector('.left .panel-body')?.scrollTo({ top: 0, behavior: 'smooth' });
+    document.getElementById('leadSearch')?.focus();
+    setSysStatus('ok', 'Live discover', 'Google Places', null, 'Type city + industry then Search — e.g. denim wholesalers Madrid');
+    if (feed) addMsg('ai', 'Discover mode — type a city + industry in the search box, e.g. <em>denim wholesalers Madrid</em>, then hit <strong>Search</strong>.', true);
+  } else if (name === 'outreach') {
+    loadOutreach();
+    loadCampaigns();
+    loadLinkedInStatus();
+    document.querySelector('.right .panel-body')?.scrollTo({ top: 0, behavior: 'smooth' });
+    setSysStatus('ok', 'Outreach', null, null, 'Drafts and AI Studio · click ✦ AI Studio to generate email/LinkedIn');
+  } else if (name === 'library') {
+    loadSources();
+    document.querySelector('.right .panel-body')?.scrollTo({ top: 9999, behavior: 'smooth' });
+    setSysStatus('ok', 'Library', null, null, 'Source catalog · PhantomBuster · intelligence library');
+  } else if (name === 'analytics') {
+    loadLeads();
+    document.querySelector('.left .panel-body')?.scrollTo({ top: 0, behavior: 'smooth' });
+    setSysStatus('ok', 'Analytics', null, null, 'Lead KPIs · totals · qualified · follow-up needed');
+  } else if (name === 'hxbank') {
+    loadHxBank({ reset: true });
+    setSysStatus('ok', 'Data Bank', 'Postgres', null, 'hx_contacts · search · enroll into sequences');
+  } else if (name === 'hxseq') {
+    loadHxSequences();
+    setSysStatus('ok', 'Sequences', 'Outreach engine', null, 'Create sequences · enroll contacts · Resend/Twilio dispatch');
+  } else if (name === 'hxreplies') {
+    loadHxReplies();
+    setSysStatus('ok', 'Replies', 'Classifier', null, 'Inbound replies · approve Harvey drafts · manual respond');
+  } else {
+    searchState.pageSize = 25;
+    setSysStatus('ok', 'Operator', 'Harvey AI', null, 'Pick a contact · ticks + lists in left panel · Data Bank for Postgres');
+  }
+}
+
 document.querySelectorAll('.nav-tab').forEach(b => b.addEventListener('click', () => {
-  document.querySelectorAll('.nav-tab').forEach(x => x.classList.remove('active'));
-  b.classList.add('active');
+  if (b.dataset.tab) switchTab(b.dataset.tab);
 }));
 document.querySelectorAll('.mode-btn').forEach(b => b.addEventListener('click', () => {
   document.querySelectorAll('.mode-btn').forEach(x => x.classList.remove('active'));
   b.classList.add('active');
+  const label = b.textContent.trim();
+  if (label === 'Voice') startVapi();
+  else if (typeof vapiCallStatus !== 'undefined' && vapiCallStatus === 'active') stopVapi();
 }));
 
 /* ── HELPERS ─────────────────────────────── */
 function addMsg(role, html, isHtml = false) {
+  if (!feed) return null;
   const d = document.createElement('div');
   d.className = `msg ${role}`;
   const roleLabel = role === 'ai' ? '<div class="msg-role gold">HarvyX</div>' : '<div class="msg-role" style="text-align:right">You</div>';
-  d.innerHTML = `${roleLabel}<div class="msg-bubble">${isHtml ? html : esc(html)}</div>`;
+  const content = isHtml ? html : (role === 'ai' ? renderMarkdown(html) : esc(html));
+  d.innerHTML = `${roleLabel}<div class="msg-bubble">${content}</div>`;
   feed.appendChild(d);
   feed.scrollTop = feed.scrollHeight;
   return d;
@@ -606,60 +2194,577 @@ function channelAbbr(ch) {
 
 /* ── LOAD KPIs + LEADS ───────────────────── */
 async function loadLeads() {
+  searchState.offset = 0;
+  await fetchLeadPage({ replace: true, autoSelectFirst: true });
+}
+
+/* ── UPLOAD CSV / EXCEL ──────────────────── */
+async function uploadLeadFiles(fileList) {
+  const files = Array.from(fileList || []).filter(Boolean);
+  if (!files.length) return;
+  const status = document.getElementById('leadImportStatus');
+  const btn = document.getElementById('leadImportBtn');
+  if (status) { status.className = 'lead-import-status'; status.textContent = `Uploading ${files.length} file(s)…`; }
+  if (btn) btn.disabled = true;
   try {
-    const r = await fetch('/api/harvyx/leads');
+    const fd = new FormData();
+    files.forEach(f => fd.append('files', f));
+    const r = await fetch('/api/harvyx/import', { method: 'POST', body: fd });
     const d = await r.json();
-    const leads = Array.isArray(d.leads) ? d.leads : [];
-    const qualified = leads.filter(l => (l.status||'') === 'qualified').length;
-    const follow = leads.filter(l => !l.timeline || (!l.contact && !l.email && !l.phone)).length;
-    document.getElementById('kpiTotal').textContent = leads.length;
-    document.getElementById('kpiQualified').textContent = qualified;
-    document.getElementById('kpiFollow').textContent = follow;
-    document.getElementById('kpiDrafts').textContent = '—';
+    if (!r.ok) throw new Error(d.error || 'Upload failed');
+    if (status) {
+      status.className = 'lead-import-status ' + (d.added > 0 ? 'ok' : '');
+      status.textContent = d.message || `Added ${d.added} leads`;
+    }
+    if (d.added > 0) {
+      await loadLeads();
+      if (feed) addMsg('ai', `Imported <strong>${d.added.toLocaleString()}</strong> new contacts. Bank now has <strong>${(d.total||0).toLocaleString()}</strong> leads.`, true);
+    }
+  } catch (e) {
+    if (status) { status.className = 'lead-import-status err'; status.textContent = e.message || 'Upload error'; }
+  } finally {
+    if (btn) btn.disabled = false;
+    const inp = document.getElementById('leadImportInput');
+    if (inp) inp.value = '';
+  }
+}
 
-    const qEl = document.getElementById('leadQueue');
-    if (!leads.length) { qEl.innerHTML = '<div style="color:var(--ink3);font-size:11px;padding:8px 0">No leads yet.</div>'; return; }
+document.getElementById('leadImportBtn')?.addEventListener('click', () => document.getElementById('leadImportInput')?.click());
+document.getElementById('leadImportInput')?.addEventListener('change', (e) => uploadLeadFiles(e.target.files));
+document.getElementById('leadImportFolderBtn')?.addEventListener('click', () => {
+  const el = document.getElementById('leadImportStatus');
+  if (el) {
+    el.className = 'lead-import-status';
+    el.textContent = 'Bulk: drop files in src/data/harvyx/contacts/DATA/ then run npm run import:leads';
+  }
+});
+const dropZone = document.getElementById('leadImportDrop');
+if (dropZone) {
+  ['dragenter','dragover'].forEach(ev => dropZone.addEventListener(ev, (e) => { e.preventDefault(); dropZone.classList.add('drag'); }));
+  ['dragleave','drop'].forEach(ev => dropZone.addEventListener(ev, (e) => { e.preventDefault(); dropZone.classList.remove('drag'); }));
+  dropZone.addEventListener('drop', (e) => uploadLeadFiles(e.dataTransfer?.files));
+}
 
-    qEl.innerHTML = leads.slice(0, 8).map(l => {
-      const name = l.name || l.contactName || l.company || 'Unknown Lead';
-      const score = l.score || 0;
-      const loc  = l.location || l.city || '';
-      const plat = l.platform || l.sourceFile || '';
-      const abbr = channelAbbr(plat);
-      return `<div class="lead-item" onclick="selectLead(this)">
-        <div class="lead-score ${scoreClass(score)}">${score||'?'}</div>
-        <div class="lead-body">
-          <div class="lead-name">${esc(name)}</div>
-          <div class="lead-meta">${esc(loc)}${loc&&plat?' · ':''}${plat?`<span class="channel-icon">${abbr}</span> ${esc(plat)}`:''}</div>
-        </div>
-      </div>`;
-    }).join('');
-  } catch(e) { console.error('leads:', e); }
+/* ── LEAD RENDERING (shared) ─────────────── */
+function leadCardHtml(l, idx) {
+  const id = l.id || ('idx_' + idx);
+  const checked = selectedLeadIds.has(id) ? 'checked' : '';
+  const name = l.contactName || l.name || l.company || 'Unknown Lead';
+  const score = l.score || 0;
+  const title = l.title || l.jobTitle || l.role || '';
+  const company = l.company || l.organization || '';
+  const loc  = l.location || l.city || l.country || '';
+  const plat = (l.platform || l.source || l.sourceFile || '').toLowerCase();
+  const isLi = plat.includes('linkedin') || !!(l.linkedin || l.linkedinUrl);
+  const abbr = channelAbbr(plat);
+  const hasEmail = !!(l.email || l.workEmail);
+  const hasPhone = !!(l.phone || l.mobile || l.directDial);
+  const hasSite = !!(l.website || l.domain);
+  const subtitle = [title, company].filter(Boolean).join(' · ') || loc;
+  const pills = [
+    l.live ? '<span class="enrich-pill li" style="background:var(--gold-mid);color:var(--accent)">LIVE</span>' : '',
+    isLi ? '<span class="enrich-pill li">in LinkedIn</span>' : (plat ? `<span class="channel-icon">${esc(abbr)}</span>` : ''),
+    hasEmail ? `<span class="enrich-pill ok">${esc(l.email||l.workEmail)}</span>` : '<span class="enrich-pill miss">Email —</span>',
+    hasPhone ? '<span class="enrich-pill ok">Phone</span>' : '<span class="enrich-pill miss">Phone —</span>',
+  ].filter(Boolean).join('');
+  const enrichBtn = (!hasEmail && hasSite)
+    ? `<span class="btn-enrich" onclick="event.stopPropagation();enrichLead(${idx}, this)">✦ Find email</span>` : '';
+  return `<div class="lead-item ${l.live?'live-lead':''} ${selectedLeadIdx===idx?'selected':''}" data-idx="${idx}" data-id="${esc(id)}" onclick="selectLead(this)">
+    <div class="lead-check-wrap" onclick="event.stopPropagation()"><input type="checkbox" class="lead-check" data-id="${esc(id)}" ${checked} onchange="toggleLeadCheck('${esc(id)}', this.checked)" aria-label="Select contact"></div>
+    <div class="lead-score ${scoreClass(score)}">${score||'?'}</div>
+    <div class="lead-body">
+      <div class="lead-name">${esc(name)}</div>
+      ${subtitle ? `<div class="lead-title">${esc(subtitle)}</div>` : ''}
+      <div class="lead-meta">${loc && subtitle !== loc ? esc(loc) : ''}</div>
+      <div class="enrich-row">${pills}</div>
+      ${enrichBtn}
+    </div>
+  </div>`;
+}
+
+function leadTableRowHtml(l, idx) {
+  const id = l.id || ('idx_' + idx);
+  const checked = selectedLeadIds.has(id) ? 'checked' : '';
+  const name = l.contactName || l.name || l.company || '—';
+  const company = l.company || '—';
+  const email = l.email || l.workEmail || '—';
+  const phone = l.phone || l.mobile || '—';
+  const country = l.country || l.city || '—';
+  const score = l.score || 0;
+  return `<tr class="bank-row ${selectedLeadIdx===idx?'selected':''}" data-idx="${idx}" data-id="${esc(id)}" onclick="selectLeadRow(${idx})">
+    <td class="bank-td-check" onclick="event.stopPropagation()"><input type="checkbox" class="lead-check" data-id="${esc(id)}" ${checked} onchange="toggleLeadCheck('${esc(id)}', this.checked)" aria-label="Select"></td>
+    <td class="co">${esc(name)}</td>
+    <td>${esc(company)}</td>
+    <td class="em" title="${esc(email)}">${esc(email)}</td>
+    <td>${esc(phone)}</td>
+    <td>${esc(country)}</td>
+    <td><span class="lead-score ${scoreClass(score)}" style="width:28px;height:28px;font-size:9px;display:inline-flex">${score||'?'}</span></td>
+  </tr>`;
+}
+
+function leadTableWrap(leads, startIdx) {
+  return `<table class="bank-table"><thead><tr>
+    <th class="bank-th-check"><input type="checkbox" id="selectAllPageTable" onchange="toggleSelectAllPage(this.checked)" aria-label="Select all on page"></th>
+    <th>Name</th><th>Company</th><th>Email</th><th>Phone</th><th>Country</th><th>Score</th>
+  </tr></thead><tbody>${leads.map((l, i) => leadTableRowHtml(l, startIdx + i)).join('')}</tbody></table>`;
+}
+
+function renderLeads(leads, { replace = false, autoSelectFirst = false } = {}) {
+  const qEl = document.getElementById('leadQueue');
+  if (replace) window.__leads = [];
+  if (replace && !leads.length) {
+    const hint = searchState.q
+      ? `No matches for “${esc(searchState.q)}”. Try one word (e.g. textile) or click <strong>×</strong> to show all ${(document.getElementById('kpiTotal')?.textContent || 'contacts')}.`
+      : 'No contacts in this view.';
+    qEl.innerHTML = `<div class="empty-state">${hint}</div>`;
+    if (replace) clearLeadSelection();
+    return;
+  }
+  const startIdx = window.__leads.length;
+  window.__leads = window.__leads.concat(leads);
+  const bankView = isDataBankTab();
+  const html = bankView
+    ? leadTableWrap(leads, replace ? 0 : startIdx)
+    : leads.map((l, i) => leadCardHtml(l, replace ? i : startIdx + i)).join('');
+  if (replace) qEl.innerHTML = html; else qEl.insertAdjacentHTML('beforeend', html);
+
+  syncSelectAllCheckbox();
+  markTickedRows();
+  updateBulkBar();
+  if (replace && autoSelectFirst && window.__leads.length && !isDataBankTab()) {
+    selectLeadByIdx(0);
+  } else if (selectedLeadIdx != null && window.__leads[selectedLeadIdx]) {
+    const card = document.querySelector(`[data-idx="${selectedLeadIdx}"]`);
+    if (card) card.classList.add('selected');
+    renderContactRecord(window.__leads[selectedLeadIdx], selectedLeadIdx);
+  }
+}
+
+function selectLeadRow(idx) {
+  const el = document.querySelector(`.bank-row[data-idx="${idx}"]`) || document.querySelector(`.lead-item[data-idx="${idx}"]`);
+  if (el) selectLead(el);
 }
 
 function selectLead(el) {
-  document.querySelectorAll('.lead-item').forEach(i => i.style.background = '');
-  el.style.background = 'rgba(195,163,94,.06)';
+  document.querySelectorAll('.lead-item, .bank-row').forEach(i => i.classList.remove('selected'));
+  el.classList.add('selected');
+  const idx = parseInt(el.getAttribute('data-idx'), 10);
+  if (!isNaN(idx) && window.__leads && window.__leads[idx]) {
+    selectedLeadIdx = idx;
+    latestLead = window.__leads[idx];
+    renderContactRecord(latestLead, idx);
+    const chip = document.getElementById('studioLeadChip');
+    if (chip) chip.textContent = latestLead.contactName || latestLead.company || 'Selected lead';
+    if (isDataBankTab()) {
+      document.querySelector('.shell')?.classList.remove('tab-pipeline');
+      document.querySelector('.shell')?.classList.add('tab-operator');
+      document.querySelectorAll('.nav-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === 'operator'));
+    }
+  }
 }
+
+function selectLeadByIdx(idx) {
+  selectLeadRow(idx);
+}
+
+/* ── SEARCH: BANK vs LIVE ────────────────── */
+function setSearchMode(mode) {
+  searchState.mode = mode;
+  document.getElementById('lstBank')?.classList.toggle('active', mode === 'bank');
+  document.getElementById('lstLive')?.classList.toggle('active', mode === 'live');
+  const inp = document.getElementById('leadSearch');
+  if (inp) inp.placeholder = mode === 'live' ? 'e.g. denim wholesalers Barcelona' : 'Search name, company, email…';
+}
+
+async function runSearch(reset = true) {
+  const q = document.getElementById('leadSearch').value.trim();
+  const btn = document.getElementById('leadSearchBtn');
+  const qEl = document.getElementById('leadQueue');
+  searchState.q = q;
+  if (reset) searchState.offset = 0;
+  btn.disabled = true; btn.textContent = '…';
+
+  try {
+    if (searchState.mode === 'live') {
+      if (!q) { btn.disabled=false; btn.textContent='Search'; return; }
+      if (reset) qEl.innerHTML = '<div class="empty-state">Discovering live…</div>';
+      const r = await fetch('/api/harvyx/discover?limit=12&q=' + encodeURIComponent(q));
+      const d = await r.json();
+      if (!r.ok) { qEl.innerHTML = `<div class="empty-state">${esc(d.error||'Discovery failed')}</div>`; return; }
+      renderLeads(d.leads || [], { replace: true });
+      updateBankRange((d.leads||[]).length);
+      document.getElementById('leadMoreWrap').style.display = 'none';
+    } else {
+      await fetchLeadPage({ replace: reset, autoSelectFirst: false });
+    }
+  } catch (e) { qEl.innerHTML = '<div class="empty-state">Search error.</div>'; }
+  finally { btn.disabled = false; btn.textContent = 'Search'; }
+}
+
+/* ── ENRICH A LEAD (Hunter) ──────────────── */
+async function enrichLead(idx, el) {
+  const lead = window.__leads[idx];
+  if (!lead) return;
+  const orig = el.textContent;
+  el.textContent = 'Finding…';
+  try {
+    const r = await fetch('/api/harvyx/enrich', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ company: lead.company, website: lead.website || lead.domain, contactName: lead.contactName }),
+    });
+    const d = await r.json();
+    if (r.ok && d.email) {
+      lead.email = d.email;
+      if (d.phone && !lead.phone) lead.phone = d.phone;
+      if (d.linkedin && !lead.linkedin) lead.linkedin = d.linkedin;
+      if (d.contactName && !lead.contactName) lead.contactName = d.contactName;
+      if (d.position && !lead.title) lead.title = d.position;
+      const card = document.querySelector(`.lead-item[data-idx="${idx}"]`);
+      if (card) card.outerHTML = leadCardHtml(lead, idx);
+      if (selectedLeadIdx === idx) renderContactRecord(lead, idx);
+    } else {
+      el.textContent = d.message || 'No email';
+      el.classList.add('done');
+    }
+  } catch (e) { el.textContent = 'Error'; }
+}
+
+document.getElementById('lstBank')?.addEventListener('click', () => setSearchMode('bank'));
+document.getElementById('lstLive')?.addEventListener('click', () => setSearchMode('live'));
+document.getElementById('leadSearchBtn')?.addEventListener('click', () => runSearch(true));
+document.getElementById('leadSearchClear')?.addEventListener('click', () => {
+  document.getElementById('leadSearch').value = '';
+  searchState.q = '';
+  searchState.offset = 0;
+  fetchLeadPage({ replace: true, autoSelectFirst: true });
+});
+document.getElementById('leadSearch')?.addEventListener('keydown', (e) => { if (e.key === 'Enter') runSearch(true); });
+document.getElementById('leadMore')?.addEventListener('click', () => { searchState.offset += searchState.pageSize; fetchLeadPage({ replace: false }); });
+
+document.getElementById('listSelector')?.addEventListener('change', (e) => {
+  listState.active = e.target.value;
+  searchState.offset = 0;
+  fetchLeadPage({ replace: true });
+});
+document.getElementById('newListBtn')?.addEventListener('click', createNewList);
+document.getElementById('bulkAddListBtn')?.addEventListener('click', addSelectedToList);
+document.getElementById('bulkEmailBtn')?.addEventListener('click', bulkEmailSelected);
+document.getElementById('bulkExportBtn')?.addEventListener('click', exportSelectedCsv);
+document.getElementById('bulkClearBtn')?.addEventListener('click', clearTickSelection);
+document.getElementById('addToListBtn')?.addEventListener('click', addSelectedToList);
+document.getElementById('clearChecksBtn')?.addEventListener('click', clearTickSelection);
+document.getElementById('selectAllPage')?.addEventListener('change', (e) => toggleSelectAllPage(e.target.checked));
+document.getElementById('selectAllPageMain')?.addEventListener('change', (e) => toggleSelectAllPage(e.target.checked));
+document.getElementById('bankPrev')?.addEventListener('click', () => {
+  searchState.offset = Math.max(0, searchState.offset - searchState.pageSize);
+  fetchLeadPage({ replace: true });
+});
+document.getElementById('bankNext')?.addEventListener('click', () => {
+  if (searchState.offset + searchState.pageSize < searchState.total) {
+    searchState.offset += searchState.pageSize;
+    fetchLeadPage({ replace: true });
+  }
+});
+document.getElementById('bankPageSize')?.addEventListener('change', (e) => {
+  searchState.pageSize = parseInt(e.target.value, 10) || 50;
+  searchState.offset = 0;
+  fetchLeadPage({ replace: true });
+});
 
 /* ── LOAD SOURCES ────────────────────────── */
 async function loadSources() {
   try {
     const r = await fetch('/api/harvyx/sources');
     const d = await r.json();
-    const sources = Array.isArray(d.sources) ? d.sources : [];
+    const sources = Array.isArray(d.sources) ? d.sources : (Array.isArray(d) ? d : []);
+    // Prefer LinkedIn automation + live/key_needed at top
+    const ranked = [...sources].sort((a, b) => {
+      const rank = (s) => s.category === 'linkedin_automation' ? 0 : s.status === 'live' ? 1 : s.status === 'key_needed' ? 2 : s.enabled ? 3 : 4;
+      return rank(a) - rank(b);
+    });
     const el = document.getElementById('sourceList');
-    el.innerHTML = sources.slice(0, 8).map(s => {
-      const isWired = s.mode === 'wired';
-      const isEnabled = s.enabled;
-      const dot = isEnabled && isWired ? 'var(--ok)' : isWired ? 'var(--warn)' : 'var(--ink3)';
-      const badge = isEnabled && isWired ? '<span class="source-badge badge-live">Live</span>'
-        : isWired ? '<span class="source-badge badge-key">Key needed</span>'
-        : '<span class="source-badge badge-lib">Catalog</span>';
-      return `<div class="source-row"><div class="source-dot" style="background:${dot}"></div><span class="source-name">${esc(s.name)}</span>${badge}</div>`;
+    el.innerHTML = ranked.slice(0, 12).map(s => {
+      const status = s.status || (s.mode === 'wired' && s.enabled ? 'live' : s.enabled ? 'catalog' : 'off');
+      let dot, badge, connect = '';
+      if (status === 'live') {
+        dot = 'var(--ok)';
+        badge = '<span class="source-badge badge-live">Live</span>';
+      } else if (status === 'key_needed') {
+        dot = 'var(--warn)';
+        badge = '<span class="source-badge badge-key">Key needed</span>';
+        connect = `data-connect="${esc(s.name)}"`;
+      } else if (s.category === 'linkedin_automation') {
+        // Automation tools (Waalaxy, etc.) — never show a dead grey dot; offer Connect.
+        dot = 'var(--warn)';
+        badge = '<span class="source-badge badge-build">Connect</span>';
+        connect = `data-connect="${esc(s.name)}"`;
+      } else if (status === 'off') {
+        // Not yet integrated — actionable "Set up" instead of a dead "Off".
+        dot = 'var(--gold)';
+        badge = '<span class="source-badge badge-key">Set up</span>';
+        connect = `data-connect="${esc(s.name)}"`;
+      } else {
+        dot = 'var(--gold)';
+        badge = '<span class="source-badge badge-lib">Catalog</span>';
+      }
+      const cursor = connect ? 'cursor:pointer;' : '';
+      return `<div class="source-row" style="${cursor}" ${connect}><div class="source-dot" style="background:${dot}"></div><span class="source-name">${esc(s.name)}</span>${badge}</div>`;
     }).join('');
   } catch(e) { console.error('sources:', e); }
 }
+
+/* Clicking a not-yet-connected source explains how to enable it (no dead states). */
+document.getElementById('sourceList')?.addEventListener('click', (e) => {
+  const row = e.target.closest('[data-connect]');
+  if (!row) return;
+  const name = row.getAttribute('data-connect');
+  const hints = {
+    'Waalaxy': 'Waalaxy runs in your browser. Install the Waalaxy extension, sign in, and run sequences on LinkedIn — HarvyX prepares the message list under Outreach.',
+    'Expandi': 'Expandi is cloud LinkedIn automation. Add your EXPANDI_API_KEY as a Worker secret and enable it in source-library.json to activate.',
+    'PhantomBuster': 'Add PHANTOMBUSTER_API_KEY + agent IDs as Worker secrets to enable auto-connect and DM sending from HarvyX.',
+  };
+  const msg = hints[name] || `${name}: add its API key as a Worker secret (see .env.example) to connect this source.`;
+  if (typeof addMsg === 'function' && feed) addMsg('ai', `<strong>Connect ${esc(name)}</strong><br>${esc(msg)}`, true);
+  else alert(msg);
+});
+
+/* ── PHANTOMBUSTER ───────────────────────── */
+async function loadPhantomBuster() {
+  try {
+    const r = await fetch('/api/harvyx/phantombuster');
+    const d = await r.json();
+    const strip = document.getElementById('pbPhantoms');
+    if (!strip) return;
+    strip.querySelectorAll('[data-pb]').forEach(btn => {
+      btn.title = d.configured
+        ? 'Launch PhantomBuster agent (set agentId in .env or prompt)'
+        : (d.hint || 'Add PHANTOMBUSTER_API_KEY');
+      if (!d.configured) btn.style.opacity = '0.75';
+    });
+  } catch (_) { /* ignore */ }
+}
+
+document.getElementById('pbPhantoms')?.addEventListener('click', async (e) => {
+  const btn = e.target.closest('[data-pb]');
+  if (!btn) return;
+  const phantom = btn.getAttribute('data-pb');
+  const linkedinUrl = window.prompt('LinkedIn profile or Sales Nav URL (optional for test launch):', 'https://www.linkedin.com/in/');
+  if (linkedinUrl === null) return;
+  addMsg('ai', `Launching <strong>PhantomBuster · ${esc(phantom)}</strong>…`, true);
+  try {
+    const r = await fetch('/api/harvyx/phantombuster', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ phantom, linkedinUrl }),
+    });
+    const d = await r.json();
+    if (!r.ok) {
+      addMsg('ai', `PhantomBuster: <strong>${esc(d.error || 'failed')}</strong>${d.hint ? ' — ' + esc(d.hint) : ''}`, true);
+      return;
+    }
+    addMsg('ai', `Phantom launched · container <strong>${esc(d.containerId || 'ok')}</strong>. Results will enrich the contact queue when the agent finishes.`, true);
+  } catch (err) {
+    addMsg('ai', `PhantomBuster network error: ${esc(err.message)}`);
+  }
+});
+
+/* ── LINKEDIN CAMPAIGNS / SEQUENCES ──────── */
+const LI_TEMPLATES = [
+  {
+    id: 'connect_only',
+    name: 'Connection requests',
+    description: 'Day 0 — send connection requests with a note.',
+    steps: [{ type: 'linkedin_connect', delayDays: 0, label: 'Connection request', defaultMessage: 'Hi {{name}}, I came across {{company}} and would love to connect. We work across FMCG and textiles corridors.' }],
+  },
+  {
+    id: 'connect_dm',
+    name: 'Connect → DM',
+    description: 'Day 0 connect, Day 3 first message.',
+    steps: [
+      { type: 'linkedin_connect', delayDays: 0, label: 'Connection request', defaultMessage: 'Hi {{name}}, I would like to add you — we support buyers in {{segment}} and {{company}} looks like a strong fit.' },
+      { type: 'linkedin_dm', delayDays: 3, label: 'First DM', defaultMessage: 'Thanks for connecting, {{name}}. We help brands like {{company}} source across 42+ markets. Open to a quick intro call?' },
+    ],
+  },
+  {
+    id: 'connect_dm_followup',
+    name: 'Connect → DM → Follow-up',
+    description: 'Full 3-step sequence over 7 days.',
+    steps: [
+      { type: 'linkedin_connect', delayDays: 0, label: 'Connection request', defaultMessage: 'Hi {{name}}, reaching out from Harvics — we run B2B trade corridors and noticed {{company}} in {{segment}}.' },
+      { type: 'linkedin_dm', delayDays: 3, label: 'Intro DM', defaultMessage: 'Hi {{name}}, thanks for connecting. We match verified suppliers with distributors like {{company}}. Open to a quick call?' },
+      { type: 'linkedin_dm', delayDays: 7, label: 'Follow-up DM', defaultMessage: 'Hi {{name}}, circling back in case my last note got buried. Happy to share a one-pager for {{company}}.' },
+    ],
+  },
+];
+
+let campaignTemplates = LI_TEMPLATES;
+let selectedCampaignTpl = 'connect_dm';
+let campaignMessageStep = 0;
+
+function renderCampaignTemplates() {
+  const el = document.getElementById('campaignTemplates');
+  if (!el) return;
+  el.innerHTML = campaignTemplates.map(t => {
+    const flow = t.steps.map(s => `Day ${s.delayDays}: ${s.label}`).join(' → ');
+    return `<div class="campaign-tpl ${selectedCampaignTpl === t.id ? 'selected' : ''}" data-tpl="${esc(t.id)}" onclick="pickCampaignTemplate('${esc(t.id)}')">
+      <div class="tpl-name">${esc(t.name)}</div>
+      <div class="tpl-desc">${esc(t.description)}</div>
+      <div class="tpl-steps">${esc(flow)}</div>
+    </div>`;
+  }).join('');
+}
+
+function pickCampaignTemplate(id) {
+  selectedCampaignTpl = id;
+  campaignMessageStep = 0;
+  renderCampaignTemplates();
+  updateCampaignMessageField();
+}
+
+function updateCampaignMessageField() {
+  const tpl = campaignTemplates.find(t => t.id === selectedCampaignTpl) || campaignTemplates[1];
+  const step = tpl?.steps[campaignMessageStep] || tpl?.steps[0];
+  const label = document.getElementById('campaignMsgLabel');
+  const msg = document.getElementById('campaignMessage');
+  if (label && step) label.textContent = step.label + (tpl.steps.length > 1 ? ` (step ${campaignMessageStep + 1}/${tpl.steps.length})` : '');
+  if (msg && step && !msg.dataset.edited) msg.value = step.defaultMessage;
+}
+
+async function refreshCampaignLeadSummary() {
+  const el = document.getElementById('campaignLeadSummary');
+  if (!el) return;
+  const ids = [...selectedLeadIds];
+  if (!ids.length) {
+    el.innerHTML = 'Tick contacts in the left list, or open a list and use <strong>LinkedIn sequence</strong>.';
+    return;
+  }
+  const picked = await getSelectedLeads();
+  const withLi = picked.filter(l => !!(l.linkedin || l.linkedinUrl)).length;
+  const skipped = picked.length - withLi;
+  el.innerHTML = `<strong>${picked.length}</strong> selected · <strong>${withLi}</strong> with LinkedIn URL${skipped ? ` · <span style="color:var(--warn)">${skipped} skipped (no LinkedIn)</span>` : ''}`;
+}
+
+async function openCampaignModal() {
+  const ids = [...selectedLeadIds];
+  if (!ids.length) {
+    alert('Tick one or more contacts first (checkbox on each row).');
+    return;
+  }
+  document.getElementById('campaignOverlay')?.classList.add('open');
+  document.getElementById('campaignName').value = `LinkedIn outreach · ${ids.length} contacts · ${new Date().toLocaleDateString()}`;
+  document.getElementById('campaignMessage').dataset.edited = '';
+  document.getElementById('campaignStatus').textContent = '';
+  pickCampaignTemplate(selectedCampaignTpl || 'connect_dm');
+  await refreshCampaignLeadSummary();
+}
+
+function closeCampaignModal() {
+  document.getElementById('campaignOverlay')?.classList.remove('open');
+}
+
+async function submitCampaign(startNow) {
+  const ids = [...selectedLeadIds];
+  if (!ids.length) { alert('No contacts ticked.'); return; }
+  const status = document.getElementById('campaignStatus');
+  const name = document.getElementById('campaignName').value.trim();
+  const msg = document.getElementById('campaignMessage').value.trim();
+  status.textContent = 'Creating…';
+  try {
+    const tpl = campaignTemplates.find(t => t.id === selectedCampaignTpl);
+    const messages = {};
+    if (tpl && msg) messages[0] = msg;
+
+    const r = await fetch('/api/harvyx/campaigns', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, templateId: selectedCampaignTpl, leadIds: ids.slice(0, 500), messages }),
+    });
+    const d = await r.json();
+    if (!r.ok) {
+      status.textContent = d.error || 'Failed';
+      return;
+    }
+
+    if (startNow && d.campaign?.id) {
+      status.textContent = 'Starting sequence…';
+      const sr = await fetch(`/api/harvyx/campaigns/${d.campaign.id}/start`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ launchPhantom: false }),
+      });
+      const sd = await sr.json();
+      if (!sr.ok) { status.textContent = sd.error || 'Start failed'; return; }
+      loadOutreach();
+      addMsg('ai', `LinkedIn sequence <strong>${esc(name)}</strong> started — <strong>${sd.queued || 0}</strong> contacts queued. Open <strong>Outreach</strong> tab to review messages.`, true);
+      if (sd.skipped) addMsg('ai', `${sd.skipped} contacts skipped (no LinkedIn URL). Use <strong>Find email</strong> or enrich first.`, true);
+    } else {
+      addMsg('ai', `Campaign <strong>${esc(name)}</strong> saved as draft — ${d.summary?.withLinkedin || 0} contacts with LinkedIn.`, true);
+    }
+
+    closeCampaignModal();
+    clearTickSelection();
+    loadCampaigns();
+    status.textContent = '';
+  } catch (e) {
+    status.textContent = 'Error: ' + e.message;
+  }
+}
+
+async function loadCampaigns() {
+  try {
+    const r = await fetch('/api/harvyx/campaigns');
+    const d = await r.json();
+    if (Array.isArray(d.templates) && d.templates.length) campaignTemplates = d.templates;
+    const campaigns = Array.isArray(d.campaigns) ? d.campaigns : [];
+    const el = document.getElementById('campaignList');
+    if (!el) return;
+    if (!campaigns.length) {
+      el.innerHTML = '<div class="empty-state">No campaigns yet — tick contacts → <strong>LinkedIn sequence</strong></div>';
+      return;
+    }
+    el.innerHTML = campaigns.slice(0, 8).map(c => {
+      const flow = (c.steps || []).map(s => `D${s.delayDays}:${s.label}`).join(' → ');
+      const total = (c.leads || []).length;
+      const queued = (c.leads || []).filter(l => l.status === 'queued' || l.status === 'active').length;
+      const skipped = (c.leads || []).filter(l => l.status === 'skipped').length;
+      const st = c.status || 'draft';
+      return `<div class="campaign-card">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px">
+          <div class="c-name">${esc(c.name)}</div>
+          <span class="campaign-status ${esc(st)}">${esc(st)}</span>
+        </div>
+        <div class="c-meta">${total} contacts · ${queued} queued${skipped ? ` · ${skipped} no LinkedIn` : ''}</div>
+        <div class="c-flow">${esc(flow)}</div>
+        <div class="c-actions">
+          ${st === 'draft' ? `<button type="button" class="bulk-btn primary" onclick="startCampaign('${esc(c.id)}')">Start</button>` : ''}
+          <button type="button" class="bulk-btn" onclick="switchTab('outreach')">View outreach</button>
+        </div>
+      </div>`;
+    }).join('');
+  } catch (e) { console.warn('campaigns', e); }
+}
+
+async function startCampaign(id) {
+  try {
+    const r = await fetch(`/api/harvyx/campaigns/${id}/start`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ launchPhantom: false }),
+    });
+    const d = await r.json();
+    if (!r.ok) { alert(d.error || 'Start failed'); return; }
+    loadOutreach();
+    loadCampaigns();
+    addMsg('ai', `Sequence started — <strong>${d.queued || 0}</strong> contacts queued for step 1. Check <strong>Outreach</strong> tab.`, true);
+  } catch (e) { alert(e.message); }
+}
+
+document.getElementById('campaignClose')?.addEventListener('click', closeCampaignModal);
+document.getElementById('campaignOverlay')?.addEventListener('click', (e) => { if (e.target.id === 'campaignOverlay') closeCampaignModal(); });
+document.getElementById('campaignStartBtn')?.addEventListener('click', () => submitCampaign(true));
+document.getElementById('campaignSaveBtn')?.addEventListener('click', () => submitCampaign(false));
+document.getElementById('bulkSequenceBtn')?.addEventListener('click', openCampaignModal);
+document.getElementById('campaignMessage')?.addEventListener('input', (e) => { e.target.dataset.edited = '1'; });
 
 /* ── LOAD OUTREACH ───────────────────────── */
 async function loadOutreach() {
@@ -671,19 +2776,21 @@ async function loadOutreach() {
     document.getElementById('draftCount').textContent = items.length + ' drafts';
 
     const el = document.getElementById('draftList');
-    if (!items.length) { el.innerHTML = '<div style="color:var(--ink3);font-size:11px;">No drafts yet.</div>'; return; }
+    if (!items.length) { el.innerHTML = '<div class="empty-state">No drafts yet.</div>'; return; }
 
     el.innerHTML = items.slice(0, 5).map(item => {
       const typeLabel = (item.type||'action').replace(/_/g,' ');
       const sent = item.status === 'sent';
       const approved = item.status === 'approved';
+      const isLinkedIn = String(item.channel || item.type || '').toLowerCase().includes('linkedin');
       const actions = sent
-        ? `<div style="flex:1;font-size:10px;color:var(--ok);padding:5px;text-align:center;border:1px solid rgba(111,207,151,.2);border-radius:3px;">Sent</div>`
+        ? `<div class="draft-status sent">Sent</div>`
         : approved
-        ? `<div style="flex:1;font-size:10px;color:var(--warn);padding:5px;text-align:center;border:1px solid rgba(224,179,74,.2);border-radius:3px;">Queued</div>
-           <div class="btn-send" onclick="doSend('${item.id}')">Send</div>`
+        ? `<div class="draft-status ready">${isLinkedIn ? 'Ready' : 'Queued'}</div>
+           <div class="btn-send" onclick="doSend('${item.id}', this)">${isLinkedIn ? 'Send on LinkedIn' : 'Send'}</div>
+           ${isLinkedIn && item.linkedin ? `<div class="btn-approve" style="flex:0 0 auto" onclick="openLinkedInProfile(decodeURIComponent('${encodeURIComponent(String(item.linkedin))}'))">Open profile</div>` : ''}`
         : `<div class="btn-approve" onclick="doApprove('${item.id}')">Approve</div>
-           <div class="btn-send" onclick="doSend('${item.id}')">Queue</div>`;
+           <div class="btn-send" onclick="doSend('${item.id}', this)">${isLinkedIn ? 'Send on LinkedIn' : 'Queue'}</div>`;
       return `<div class="draft-card">
         <div class="draft-type">${esc(typeLabel)} · ${esc(item.channel||'research')}</div>
         <div class="draft-to">${esc(item.target||'—')}</div>
@@ -698,21 +2805,187 @@ async function doApprove(id) {
   await fetch(`/api/harvyx/outreach/${id}/status`, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({status:'approved'}) });
   loadOutreach();
 }
-async function doSend(id) {
-  await fetch(`/api/harvyx/outreach/${id}/send`, { method:'POST' });
-  loadOutreach();
+async function doSend(id, btn) {
+  if (btn) { btn.textContent = 'Sending…'; btn.style.opacity = '0.7'; }
+  try {
+    const r = await fetch(`/api/harvyx/outreach/${id}/send`, { method: 'POST' });
+    const d = await r.json();
+    if (!r.ok) {
+      if (d.linkedin) {
+        openLinkedInProfile(d.linkedin);
+        if (d.message && navigator.clipboard) {
+          await navigator.clipboard.writeText(d.message);
+          addMsg('ai', `<strong>LinkedIn not connected yet.</strong> Profile opened + message copied. Paste on LinkedIn, then connect HarvyX (see right panel).<br><small>${esc(d.hint || '')}</small>`, true);
+        } else {
+          addMsg('ai', `<strong>${esc(d.error || 'Send failed')}</strong><br>${esc(d.hint || 'Connect LinkedIn in the right panel setup.')}`, true);
+        }
+      } else {
+        addMsg('ai', `<strong>${esc(d.error || 'Send failed')}</strong>${d.hint ? ' — ' + esc(d.hint) : ''}`, true);
+      }
+      if (btn) { btn.textContent = 'Send on LinkedIn'; btn.style.opacity = '1'; }
+      return;
+    }
+    if (d.mode === 'phantombuster') {
+      addMsg('ai', `Sent via LinkedIn automation · PhantomBuster job <strong>${esc(d.containerId || 'started')}</strong>`, true);
+    } else {
+      addMsg('ai', 'Marked as sent.', true);
+    }
+    loadOutreach();
+  } catch (e) {
+    addMsg('ai', 'Send error: ' + esc(e.message), true);
+    if (btn) { btn.textContent = 'Send on LinkedIn'; btn.style.opacity = '1'; }
+  }
 }
 
-/* ── CHANNEL QUICK DRAFT ─────────────────── */
-document.querySelectorAll('.ch-btn').forEach(btn => {
-  btn.addEventListener('click', async () => {
+function openLinkedInProfile(url) {
+  const u = url.startsWith('http') ? url : 'https://' + url.replace(/^\/+/, '');
+  window.open(u, '_blank', 'noopener');
+}
+
+async function loadLinkedInStatus() {
+  const el = document.getElementById('linkedinConnectStatus');
+  const stepsEl = document.getElementById('linkedinSetupSteps');
+  try {
+    const r = await fetch('/api/harvyx/linkedin');
+    const d = await r.json();
+    if (el) {
+      el.innerHTML = d.ready
+        ? `<span class="li-status-ok">● Connected</span> — Send on LinkedIn works from Outreach. PhantomBuster + your session are configured.`
+        : `<span class="li-status-warn">● Not connected</span> — ${esc(d.hint || 'Complete setup below to send from HarvyX.')}`;
+    }
+    if (stepsEl && d.setup?.steps) {
+      stepsEl.innerHTML = d.setup.steps.map(s => `<li>${esc(s)}</li>`).join('');
+    }
+    window.__linkedinReady = !!d.ready;
+  } catch (_) {
+    if (el) el.textContent = 'Could not check LinkedIn connection.';
+  }
+}
+window.doApprove = doApprove;
+window.doSend = doSend;
+window.openLinkedInProfile = openLinkedInProfile;
+window.enrichLead = enrichLead;
+window.selectLead = selectLead;
+window.openStudio = openStudio;
+window.switchTab = switchTab;
+window.clearLeadSelection = clearLeadSelection;
+window.copyLeadEmail = copyLeadEmail;
+window.enrichSelectedLead = enrichSelectedLead;
+window.toggleLeadCheck = toggleLeadCheck;
+window.toggleSelectAllPage = toggleSelectAllPage;
+window.exportSelectedCsv = exportSelectedCsv;
+window.bulkEmailSelected = bulkEmailSelected;
+window.addSelectedToList = addSelectedToList;
+window.openCampaignModal = openCampaignModal;
+window.pickCampaignTemplate = pickCampaignTemplate;
+window.startCampaign = startCampaign;
+
+/* ── CHANNEL QUICK DRAFT → open AI Studio ── */
+const CHANNEL_TYPE = { whatsapp: 'whatsapp', linkedin: 'linkedin_dm', email: 'email', instagram: 'social_post' };
+document.querySelectorAll('.right .ch-btn:not([data-pb])').forEach(btn => {
+  btn.addEventListener('click', () => {
     const ch = btn.textContent.trim().toLowerCase();
-    const target = latestLead ? (latestLead.name||latestLead.contactName||'new contact') : 'new contact';
-    await fetch('/api/harvyx/outreach', { method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({ type:'outreach_send', channel:ch, target, message:`Prepared ${ch} draft for ${target}.` }) });
-    loadOutreach();
-    addMsg('ai', `${ch.charAt(0).toUpperCase()+ch.slice(1)} draft created for <strong>${esc(target)}</strong>. Check Outreach Console.`, true);
+    openStudio(CHANNEL_TYPE[ch] || 'email');
   });
+});
+
+/* ── AI STUDIO ───────────────────────────── */
+const studioOverlay = document.getElementById('studioOverlay');
+let studioType = 'email';
+
+const TYPE_NEEDS_LEAD = { email: true, linkedin_connect: true, linkedin_dm: true, whatsapp: true, linkedin_post: false, social_post: false };
+const TYPE_LABEL = { email:'Cold email', linkedin_post:'LinkedIn post', linkedin_connect:'LinkedIn connect', linkedin_dm:'LinkedIn DM', whatsapp:'WhatsApp', social_post:'Social post' };
+
+function openStudio(type) {
+  setStudioType(type || 'email');
+  const chip = document.getElementById('studioLeadChip');
+  chip.textContent = latestLead ? (latestLead.contactName || latestLead.company || 'Selected lead') : 'No lead selected';
+  document.getElementById('studioStatus').textContent = '';
+  document.getElementById('studioActionStatus').textContent = '';
+  studioOverlay.classList.add('open');
+}
+function closeStudio() { studioOverlay.classList.remove('open'); }
+
+function setStudioType(type) {
+  studioType = type;
+  document.querySelectorAll('.studio-type').forEach(t => t.classList.toggle('active', t.getAttribute('data-type') === type));
+  const needsLead = TYPE_NEEDS_LEAD[type];
+  document.getElementById('studioLeadWrap').style.display = needsLead ? 'flex' : 'none';
+  document.getElementById('studioTopicLabel').textContent = needsLead ? 'Angle / offer (optional)' : 'Topic';
+  document.getElementById('studioSubjectWrap').style.display = type === 'email' ? 'flex' : 'none';
+  document.getElementById('studioAction').textContent = type === 'email' ? 'Send email' : 'Save to outreach';
+}
+
+document.getElementById('studioClose')?.addEventListener('click', closeStudio);
+studioOverlay?.addEventListener('click', (e) => { if (e.target === studioOverlay) closeStudio(); });
+document.querySelectorAll('.studio-type').forEach(t => t.addEventListener('click', () => setStudioType(t.getAttribute('data-type'))));
+
+document.getElementById('studioGenerate')?.addEventListener('click', async () => {
+  const btn = document.getElementById('studioGenerate');
+  const status = document.getElementById('studioStatus');
+  if (TYPE_NEEDS_LEAD[studioType] && !latestLead) { status.textContent = 'Select a lead in the queue first.'; return; }
+  btn.disabled = true; status.textContent = 'Generating…';
+  try {
+    const r = await fetch('/api/harvyx/generate', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        type: studioType,
+        lead: latestLead || undefined,
+        topic: document.getElementById('studioTopic').value.trim(),
+        tone: document.getElementById('studioTone').value.trim(),
+        notes: document.getElementById('studioNotes').value.trim(),
+      }),
+    });
+    const d = await r.json();
+    if (!r.ok) { status.textContent = d.error || 'Failed'; return; }
+    document.getElementById('studioOutput').value = d.content || '';
+    if (studioType === 'email') document.getElementById('studioSubject').value = d.subject || '';
+    status.textContent = `Done · ${d.engine} · ${d.latencyMs}ms`;
+  } catch (e) { status.textContent = 'Network error'; }
+  finally { btn.disabled = false; }
+});
+
+document.getElementById('studioCopy')?.addEventListener('click', () => {
+  const subj = document.getElementById('studioSubject').value;
+  const out = document.getElementById('studioOutput').value;
+  const text = studioType === 'email' && subj ? `Subject: ${subj}\n\n${out}` : out;
+  navigator.clipboard.writeText(text).then(() => {
+    document.getElementById('studioActionStatus').textContent = 'Copied';
+  });
+});
+
+document.getElementById('studioAction')?.addEventListener('click', async () => {
+  const status = document.getElementById('studioActionStatus');
+  const content = document.getElementById('studioOutput').value.trim();
+  if (!content) { status.textContent = 'Nothing to send.'; return; }
+
+  if (studioType === 'email') {
+    const to = latestLead && (latestLead.email || latestLead.workEmail);
+    if (!to) { status.textContent = 'Selected lead has no email.'; return; }
+    status.textContent = 'Sending…';
+    try {
+      const r = await fetch('/api/harvyx/send-email', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ to, subject: document.getElementById('studioSubject').value.trim(), content }),
+      });
+      const d = await r.json();
+      status.textContent = r.ok ? `Sent to ${to}` : (d.error || 'Send failed');
+      if (r.ok) { loadOutreach(); }
+    } catch (e) { status.textContent = 'Network error'; }
+    return;
+  }
+
+  // Non-email: save into the outreach queue as a draft
+  status.textContent = 'Saving…';
+  const target = latestLead ? (latestLead.contactName || latestLead.company || 'new contact') : 'general';
+  try {
+    const r = await fetch('/api/harvyx/outreach', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ type: TYPE_LABEL[studioType] || studioType, channel: studioType, target, message: content }),
+    });
+    status.textContent = r.ok ? 'Saved to outreach' : 'Save failed';
+    if (r.ok) { loadOutreach(); addMsg('ai', `${TYPE_LABEL[studioType]} draft saved for <strong>${esc(target)}</strong>.`, true); }
+  } catch (e) { status.textContent = 'Network error'; }
 });
 
 /* ── LIBRARY ROWS ────────────────────────── */
@@ -721,9 +2994,8 @@ document.querySelectorAll('.lib-row').forEach(row => {
     const label = row.querySelector('.lib-name').textContent;
     const msg = addMsg('ai', `Loading <strong>${esc(label)}</strong>…`, true);
     try {
-      let url = '/api/library/search?q=' + encodeURIComponent(label);
-      if (label.includes('Premier Vision')) url = '/api/events/premier-vision-paris';
-      if (label.includes('Eastern')) url = '/api/events/eastern-europe';
+      let url = '/api/harvyx/library/search?q=' + encodeURIComponent(label);
+      if (label.includes('Premier Vision') || label.includes('Eastern')) url = '/api/harvyx/library/search?q=' + encodeURIComponent(label.includes('Eastern') ? 'eastern europe' : 'premier vision');
       const r = await fetch(url);
       const d = await r.json();
       if (d.eventLibrary) {
@@ -750,27 +3022,60 @@ async function askAI(text) {
   const thinking = addMsg('ai', '<em style="color:var(--ink3)">thinking…</em>', true);
 
   try {
-    const r = await fetch('/api/harvyx/chat', { method:'POST', headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({ messages: hist }) });
+    // Harvey AI (new backend) via JWT proxy
+    if (!window.__harveySessionId) {
+      window.__harveySessionId = localStorage.getItem('hx_harvey_session') || (crypto.randomUUID ? crypto.randomUUID() : ('hx_' + Date.now()));
+      localStorage.setItem('hx_harvey_session', window.__harveySessionId);
+    }
+    const payload = { message: text, session_id: window.__harveySessionId };
+    if (window.__harveyConfirmToken) {
+      payload.confirmation_token = window.__harveyConfirmToken;
+      window.__harveyConfirmToken = null;
+    }
+    const r = await fetch('/api/harvyx/hx/harvey/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    });
     const d = await r.json();
     thinking.remove();
 
-    const reply = d.reply || '(no reply)';
+    // Surface AI/provider errors instead of silently showing "(no reply)".
+    const payloadOut = (d && d.data && typeof d.data === 'object' && (d.data.reply != null || d.data.intent)) ? d.data : d;
+    if (!r.ok || d.success === false || (!payloadOut.reply && (d.error || payloadOut.error))) {
+      addMsg('ai', `<strong>AI unavailable.</strong> ${esc(payloadOut.reply || d.error || payloadOut.error || d.message || 'Harvey returned an error.')}`, true);
+      return;
+    }
+
+    if (payloadOut.confirmation_token) window.__harveyConfirmToken = payloadOut.confirmation_token;
+    const reply = payloadOut.reply || '(no reply)';
+    // keep d pointing at unwrapped for action/lead fields below
+    Object.assign(d, payloadOut);
     hist.push({ role: 'assistant', content: reply });
 
     // Build rich message
-    let html = esc(reply);
+    let html = renderMarkdown(reply);
     if (d.action && d.action.type === 'buyer_search' && d.action.results && d.action.results.length) {
-      const rows = d.action.results.slice(0,5).map(b =>
-        `<div class="artifact-row"><span class="co">${esc(b.company||b.name||'—')}</span><span class="loc">${esc(b.city||b.country||'')}</span><span class="artifact-score" style="color:var(--ok)">${b.score||'—'}</span><span class="artifact-src">${esc(b.source||'api')}</span></div>`
+      const groups = d.action.sourceGroups || [];
+      const groupHint = groups.length
+        ? `<div class="artifact-meta">${groups.length} data bank${groups.length === 1 ? '' : 's'} · ${esc(d.action.city || 'search')}</div>`
+        : `<span class="artifact-meta">${d.action.results.length} results</span>`;
+      const rows = d.action.results.slice(0, 8).map(b =>
+        `<div class="artifact-row"><span class="co">${esc(b.company||b.name||'—')}</span><span class="loc">${esc(b.city||b.country||'')}</span><span class="artifact-score" style="color:var(--ok)">${b.score||'—'}</span><span class="artifact-src">${esc(b.source||'bank')}</span></div>`
       ).join('');
-      html += `<div class="artifact"><div class="artifact-head"><span class="artifact-title">Buyer Discovery — ${esc(d.action.city||'search')}</span><span class="artifact-meta">${d.action.results.length} results</span></div>${rows}</div>`;
+      html += `<div class="artifact"><div class="artifact-head"><span class="artifact-title">Data bank search</span>${groupHint}</div>${rows}</div>`;
     }
     if (d.lead) {
       latestLead = d.lead;
       html += `<div style="margin-top:8px;padding:8px 10px;background:rgba(107,31,43,.15);border:1px solid var(--line2);border-radius:4px;font-size:11px;color:var(--ink2)">Lead captured: <strong>${esc(d.lead.name||d.lead.contact||'New Lead')}</strong> · ${esc(d.lead.platform||'')} · ${esc(d.lead.service||'')}</div>`;
     }
     addMsg('ai', html, true);
+    if (d.dataSource === 'real') {
+      const note = document.querySelector('.msg.ai:last-child .msg-bubble');
+      if (note && !note.querySelector('.real-data-badge')) {
+        note.insertAdjacentHTML('afterbegin', '<div class="real-data-badge">✓ Real data · ' + (d.distinctSources ? d.distinctSources + ' import sources' : 'data banks') + '</div>');
+      }
+    }
     if (d.lead || d.action) loadLeads(), loadOutreach();
 
     // TTS
@@ -781,64 +3086,111 @@ async function askAI(text) {
   } finally { isWaiting = false; }
 }
 
-/* ── TTS (browser) ───────────────────────── */
-let openAITTS = false;
-// TTS config not needed for production
+/* ── VAPI VOICE (Sovereign Operator) ─────── */
+let vapi = null;
+let vapiCallStatus = 'idle'; // idle | connecting | active
+const micBtn = document.querySelector('.mic-btn');
+const micStatus = document.getElementById('micStatus');
 
+function setMicUI(status) {
+  vapiCallStatus = status;
+  micBtn?.classList.toggle('is-live', status === 'active');
+  micBtn?.classList.toggle('is-connecting', status === 'connecting');
+  if (micStatus) {
+    if (status === 'active') micStatus.textContent = 'Vapi ON · listening';
+    else if (status === 'connecting') micStatus.textContent = 'Connecting Vapi…';
+    else micStatus.textContent = 'Mic off';
+  }
+
+  // Sync Voice mode tab
+  document.querySelectorAll('.mode-btn').forEach(btn => {
+    if (btn.textContent.trim() === 'Voice') {
+      btn.classList.toggle('active', status === 'active' || status === 'connecting');
+    }
+  });
+}
+
+async function ensureVapi() {
+  if (vapi) return vapi;
+  const cfgRes = await fetch('/api/vapi/config');
+  const cfg = await cfgRes.json();
+  if (!cfgRes.ok || !cfg.publicKey || !cfg.assistantId) {
+    throw new Error(cfg.error || 'Vapi config missing');
+  }
+  // jsdelivr is allowlisted in CSP (esm.sh is not — that caused the fetch failure)
+  const mod = await import('https://cdn.jsdelivr.net/npm/@vapi-ai/web@2.6.1/+esm');
+  const Vapi = mod.default;
+  vapi = new Vapi(cfg.publicKey);
+  vapi._assistantId = cfg.assistantId;
+
+  vapi.on('call-start', () => {
+    setMicUI('active');
+    addMsg('ai', 'Voice connected via <strong>Vapi</strong>. Speak naturally — transcripts appear here.', true);
+  });
+  vapi.on('call-end', () => {
+    setMicUI('idle');
+    addMsg('ai', 'Voice call ended. Continue by text anytime.', true);
+  });
+  vapi.on('speech-start', () => { micStatus.textContent = 'HarvyX speaking…'; });
+  vapi.on('speech-end', () => {
+    if (vapiCallStatus === 'active') micStatus.textContent = 'Vapi ON · listening';
+  });
+  vapi.on('message', (m) => {
+    if (m?.type === 'transcript' && m?.transcriptType === 'final' && m?.transcript) {
+      const text = String(m.transcript).trim();
+      if (!text) return;
+      if (m.role === 'user') {
+        addMsg('user', text);
+        hist.push({ role: 'user', content: text });
+      } else {
+        addMsg('ai', text);
+        hist.push({ role: 'assistant', content: text });
+      }
+    }
+  });
+  vapi.on('error', (e) => {
+    console.error('[HarvyX Vapi]', e);
+    setMicUI('idle');
+    const msg = typeof e === 'string' ? e : (e?.message || 'Voice call failed');
+    addMsg('ai', `⚠ Vapi error: ${esc(msg)}`);
+  });
+  return vapi;
+}
+
+async function startVapi() {
+  if (vapiCallStatus !== 'idle') return;
+  setMicUI('connecting');
+  try {
+    const client = await ensureVapi();
+    await client.start(client._assistantId);
+  } catch (e) {
+    setMicUI('idle');
+    addMsg('ai', `⚠ Could not start Vapi: ${esc(e.message || e)}`);
+  }
+}
+
+function stopVapi() {
+  try { vapi?.stop?.(); } catch (_) { /* ignore */ }
+  setMicUI('idle');
+}
+
+micBtn?.addEventListener('click', () => {
+  if (vapiCallStatus === 'active') stopVapi();
+  else if (vapiCallStatus === 'idle') startVapi();
+});
+
+/* Soft TTS only when NOT on a Vapi call (text chat replies) */
 function speakBrowser(text) {
+  if (vapiCallStatus === 'active' || vapiCallStatus === 'connecting') return;
   if (!window.speechSynthesis) return;
   speechSynthesis.cancel();
-  isSpeaking = true;
   const u = new SpeechSynthesisUtterance(text.slice(0, 280));
   u.lang = 'en-US'; u.rate = 0.97;
   const voices = speechSynthesis.getVoices();
   u.voice = voices.find(v => /Ava|Samantha|Google US English|Daniel|Evan/i.test(v.name) && /en/i.test(v.lang))
          || voices.find(v => /en-US/i.test(v.lang)) || null;
-  u.onend = () => { isSpeaking = false; if (handsFree && recognition) recognition.start(); };
-  u.onerror = () => { isSpeaking = false; };
   speechSynthesis.speak(u);
 }
-
-/* ── STT ─────────────────────────────────── */
-const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
-const recognition = SR ? new SR() : null;
-let micActive = false;
-
-if (recognition) {
-  recognition.lang = 'en-US';
-  recognition.continuous = true;
-  recognition.interimResults = true;
-
-  recognition.onresult = async e => {
-    if (isWaiting || isSpeaking) return;
-    let final = '';
-    for (let i = e.resultIndex; i < e.results.length; i++) {
-      if (e.results[i].isFinal) final += e.results[i][0].transcript;
-    }
-    if (final.trim()) {
-      addMsg('user', final.trim());
-      await askAI(final.trim());
-    }
-  };
-  recognition.onend = () => { if (handsFree && !isSpeaking && !isWaiting) recognition.start(); };
-  recognition.onerror = e => { document.getElementById('micStatus').textContent = 'Mic: ' + e.error; };
-}
-
-document.querySelector('.mic-btn').addEventListener('click', () => {
-  if (!recognition) { alert('Use Chrome for voice.'); return; }
-  handsFree = !handsFree;
-  if (handsFree) {
-    recognition.start();
-    document.querySelector('.mic-btn').style.background = 'var(--maroon2)';
-    document.querySelector('.mic-btn').style.boxShadow = '0 0 14px rgba(107,31,43,.7)';
-    document.getElementById('micStatus').textContent = 'Hands-free ON';
-  } else {
-    recognition.stop();
-    document.querySelector('.mic-btn').style.background = 'var(--maroon)';
-    document.querySelector('.mic-btn').style.boxShadow = 'none';
-    document.getElementById('micStatus').textContent = 'Mic off';
-  }
-});
 
 /* ── SEND ────────────────────────────────── */
 document.querySelector('.send-btn').addEventListener('click', async () => {
@@ -851,12 +3203,300 @@ document.querySelector('.send-btn').addEventListener('click', async () => {
 inp.addEventListener('keydown', e => { if (e.key === 'Enter') document.querySelector('.send-btn').click(); });
 
 /* ── BOOT ────────────────────────────────── */
-loadLeads();
-loadSources();
-loadOutreach();
-setTimeout(() => {
-  addMsg('ai', 'HarvyX online. I have your leads, outreach queue, and source library loaded. Try: <em>"Find buyers in Warsaw"</em> or <em>"Draft WhatsApp to top lead"</em>', true);
-}, 600);
+async function checkAiEngine() {
+  try {
+    const r = await fetch('/api/harvyx/generate', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ type: 'social_post', topic: 'test' }),
+    });
+    const d = await r.json();
+    const eng = d.engine || 'unknown';
+    const label = document.getElementById('aiEngineLabel');
+    const badge = document.getElementById('aiEngineBadge');
+    if (label) {
+      label.textContent = eng === 'gemini' ? 'AI: Gemini' : 'AI: Groq (free)';
+    }
+    if (badge && eng !== 'gemini') {
+      badge.title = 'Gemini key blocked in Google — enable Generative Language API for this key, or create a new key at aistudio.google.com';
+    }
+  } catch (_) { /* ignore */ }
+}
+
+async function bootHarvyx() {
+  loadCustomLists();
+  renderListSelector();
+  switchTab('pipeline');
+  await loadLeads();
+  loadSources();
+  loadPhantomBuster();
+  loadOutreach();
+  loadCampaigns();
+  loadLinkedInStatus();
+  checkAiEngine();
+  const total = searchState.total || 0;
+  if (feed && total) {
+    addMsg('ai', `<strong>${Number(total).toLocaleString()} contacts loaded.</strong> Browse them here in <strong>Leads</strong> · switch to <strong>Data Bank</strong> for Postgres pipeline contacts.`, true);
+  } else if (feed) {
+    addMsg('ai', 'Contact bank is loading — check the <strong>Leads</strong> tab or retry in a few seconds.', true);
+  }
+}
+
+const HX_API = '/api/harvyx/hx';
+const hxBankState = { page: 1, limit: 20, total: 0, q: '', country: '', vertical: '', icp_min: '' };
+let hxSequencesCache = [];
+let hxReplyTargetId = null;
+
+async function hxFetch(path, opts = {}) {
+  const r = await fetch(HX_API + path, {
+    method: opts.method || 'GET',
+    headers: { 'Content-Type': 'application/json', ...(opts.headers || {}) },
+    body: opts.body ? JSON.stringify(opts.body) : undefined,
+  });
+  const d = await r.json().catch(() => ({}));
+  if (!r.ok || d.success === false) {
+    const err = d.error || d.message || (`HTTP ${r.status}`);
+    throw new Error(err);
+  }
+  return d;
+}
+
+function hxEsc(s) {
+  return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+async function loadHxBank({ reset } = {}) {
+  if (reset) hxBankState.page = 1;
+  const wrap = document.getElementById('hxBankTableWrap');
+  const meta = document.getElementById('hxBankMeta');
+  if (wrap) wrap.innerHTML = '<div class="hx-empty">Loading…</div>';
+  try {
+    const p = new URLSearchParams();
+    p.set('page', String(hxBankState.page));
+    p.set('limit', String(hxBankState.limit));
+    if (hxBankState.q) p.set('q', hxBankState.q);
+    if (hxBankState.country) p.set('country', hxBankState.country);
+    if (hxBankState.vertical) p.set('vertical', hxBankState.vertical);
+    if (hxBankState.icp_min !== '' && hxBankState.icp_min != null) p.set('icp_min', String(hxBankState.icp_min));
+    const d = await hxFetch('/databank/contacts?' + p.toString());
+    const rows = d.data || [];
+    hxBankState.total = d.total || 0;
+    const pages = Math.max(1, Math.ceil(hxBankState.total / hxBankState.limit));
+    if (meta) meta.textContent = `${hxBankState.total.toLocaleString()} contacts · page ${hxBankState.page}/${pages}`;
+    const pageInfo = document.getElementById('hxBankPageInfo');
+    if (pageInfo) pageInfo.textContent = `Page ${hxBankState.page} / ${pages}`;
+    if (!rows.length) {
+      if (wrap) wrap.innerHTML = '<div class="hx-empty">No contacts match.</div>';
+      return;
+    }
+    const body = rows.map(c => `
+      <tr>
+        <td>${hxEsc(c.full_name || '—')}</td>
+        <td class="co">${hxEsc(c.company_name || '—')}</td>
+        <td>${hxEsc(c.country || '—')}</td>
+        <td>${hxEsc(c.icp_score ?? 0)}</td>
+        <td class="em" title="${hxEsc(c.email_pattern || '')}">${hxEsc(c.email_pattern || '—')}</td>
+        <td>${c.email_verified ? '✓' : '—'}</td>
+        <td><button type="button" class="hx-btn" data-enroll="${hxEsc(c.id)}">Enroll</button></td>
+      </tr>`).join('');
+    if (wrap) wrap.innerHTML = `
+      <table class="hx-table">
+        <thead><tr>
+          <th>Name</th><th>Company</th><th>Country</th><th>ICP</th><th>Email</th><th>Verified</th><th></th>
+        </tr></thead>
+        <tbody>${body}</tbody>
+      </table>`;
+    wrap?.querySelectorAll('[data-enroll]').forEach(btn => {
+      btn.addEventListener('click', () => openHxEnrollModal(btn.getAttribute('data-enroll')));
+    });
+  } catch (e) {
+    if (wrap) wrap.innerHTML = `<div class="hx-empty">Failed: ${hxEsc(e.message)}</div>`;
+  }
+}
+
+async function loadHxSequences() {
+  const list = document.getElementById('hxSeqList');
+  if (list) list.innerHTML = '<div class="hx-empty">Loading…</div>';
+  try {
+    const d = await hxFetch('/outreach/sequences');
+    hxSequencesCache = d.data || [];
+    if (!hxSequencesCache.length) {
+      if (list) list.innerHTML = '<div class="hx-empty">No sequences yet — create one.</div>';
+      return;
+    }
+    if (list) list.innerHTML = hxSequencesCache.map(s => `
+      <div class="hx-card">
+        <div class="name">${hxEsc(s.name)}</div>
+        <div class="meta">Status: <strong>${hxEsc(s.status)}</strong>${s.vertical ? ' · ' + hxEsc(s.vertical) : ''}<br>${hxEsc(s.description || 'No description')}</div>
+        <div class="actions">
+          <button type="button" class="hx-btn" data-enroll-seq="${hxEsc(s.id)}">Enroll contact</button>
+          <button type="button" class="hx-btn ghost" data-pause-seq="${hxEsc(s.id)}">Pause</button>
+          <button type="button" class="hx-btn ghost" data-resume-seq="${hxEsc(s.id)}">Resume</button>
+        </div>
+      </div>`).join('');
+    list?.querySelectorAll('[data-enroll-seq]').forEach(b => b.addEventListener('click', () => openHxEnrollModal('', b.getAttribute('data-enroll-seq'))));
+    list?.querySelectorAll('[data-pause-seq]').forEach(b => b.addEventListener('click', async () => {
+      try { await hxFetch('/outreach/sequences/' + b.getAttribute('data-pause-seq') + '/pause', { method: 'POST', body: {} }); loadHxSequences(); }
+      catch (e) { alert(e.message); }
+    }));
+    list?.querySelectorAll('[data-resume-seq]').forEach(b => b.addEventListener('click', async () => {
+      try { await hxFetch('/outreach/sequences/' + b.getAttribute('data-resume-seq') + '/resume', { method: 'POST', body: {} }); loadHxSequences(); }
+      catch (e) { alert(e.message); }
+    }));
+    fillHxEnrollSequenceSelect();
+  } catch (e) {
+    if (list) list.innerHTML = `<div class="hx-empty">Failed: ${hxEsc(e.message)}</div>`;
+  }
+}
+
+function fillHxEnrollSequenceSelect(selected) {
+  const sel = document.getElementById('hxEnrollSequenceId');
+  if (!sel) return;
+  sel.innerHTML = hxSequencesCache.map(s => `<option value="${hxEsc(s.id)}" ${selected === s.id ? 'selected' : ''}>${hxEsc(s.name)} (${hxEsc(s.status)})</option>`).join('')
+    || '<option value="">No sequences</option>';
+}
+
+function openHxEnrollModal(contactId, sequenceId) {
+  const ov = document.getElementById('hxEnrollModal');
+  const cEl = document.getElementById('hxEnrollContactId');
+  if (cEl) cEl.value = contactId || '';
+  fillHxEnrollSequenceSelect(sequenceId || '');
+  if (!hxSequencesCache.length) loadHxSequences().then(() => fillHxEnrollSequenceSelect(sequenceId || ''));
+  ov?.classList.add('open');
+}
+
+async function createHxSequence() {
+  const name = document.getElementById('hxSeqName')?.value?.trim();
+  const description = document.getElementById('hxSeqDesc')?.value?.trim() || '';
+  if (!name) { alert('Name required'); return; }
+  try {
+    const created = await hxFetch('/outreach/sequences', {
+      method: 'POST',
+      body: { name, description, status: 'active' },
+    });
+    const seq = created.data || created;
+    // Default first email step so enroll works
+    await hxFetch(`/outreach/sequences/${seq.id}/steps`, {
+      method: 'POST',
+      body: {
+        step_number: 1,
+        channel: 'email',
+        step_type: 'email',
+        delay_days: 0,
+        subject: 'Harvics — partnership enquiry',
+        body_template: 'Hi {{first_name}},\n\nWe supply premium textiles from Harvics Global. Open to a short call?\n\nBest regards,\nHarvics',
+      },
+    });
+    document.getElementById('hxSeqModal')?.classList.remove('open');
+    document.getElementById('hxSeqName').value = '';
+    document.getElementById('hxSeqDesc').value = '';
+    await loadHxSequences();
+  } catch (e) {
+    alert('Create failed: ' + e.message);
+  }
+}
+
+async function enrollHxContact() {
+  const contact_id = document.getElementById('hxEnrollContactId')?.value?.trim();
+  const sequence_id = document.getElementById('hxEnrollSequenceId')?.value?.trim();
+  if (!contact_id || !sequence_id) { alert('contact_id and sequence required'); return; }
+  try {
+    await hxFetch('/outreach/enroll', { method: 'POST', body: { contact_id, sequence_id } });
+    document.getElementById('hxEnrollModal')?.classList.remove('open');
+    alert('Enrolled');
+  } catch (e) {
+    alert('Enroll failed: ' + e.message);
+  }
+}
+
+async function loadHxReplies() {
+  const list = document.getElementById('hxRepliesList');
+  if (list) list.innerHTML = '<div class="hx-empty">Loading…</div>';
+  try {
+    const intent = document.getElementById('hxReplyIntent')?.value || '';
+    const p = new URLSearchParams({ page: '1', limit: '50' });
+    if (intent) p.set('intent', intent);
+    const d = await hxFetch('/replies?' + p.toString());
+    const rows = d.data || [];
+    if (!rows.length) {
+      if (list) list.innerHTML = '<div class="hx-empty">No replies yet.</div>';
+      return;
+    }
+    if (list) list.innerHTML = rows.map(r => {
+      const intentCls = hxEsc(r.intent || 'neutral');
+      return `<div class="hx-card" data-reply-id="${hxEsc(r.id)}">
+        <div class="name">${hxEsc(r.contact_id || '—').slice(0, 8)}… · ${hxEsc(r.channel || '—')}
+          <span class="hx-badge ${intentCls}">${hxEsc(r.intent || 'pending')}</span>
+          ${r.responded ? '<span class="hx-badge positive">responded</span>' : ''}
+        </div>
+        <div class="meta">${hxEsc(r.summary || r.body || 'No summary')}</div>
+        ${r.suggested_response ? `<div class="hx-draft">${hxEsc(r.suggested_response)}</div>` : ''}
+        <div class="actions">
+          <button type="button" class="hx-btn" data-approve="${hxEsc(r.id)}" ${r.responded || !r.suggested_response ? 'disabled' : ''}>Approve &amp; Send</button>
+          <button type="button" class="hx-btn ghost" data-manual="${hxEsc(r.id)}" ${r.responded ? 'disabled' : ''}>Manual Reply</button>
+        </div>
+      </div>`;
+    }).join('');
+    list?.querySelectorAll('[data-approve]').forEach(b => b.addEventListener('click', async () => {
+      try {
+        await hxFetch('/replies/' + b.getAttribute('data-approve') + '/approve-draft', { method: 'POST', body: {} });
+        loadHxReplies();
+      } catch (e) { alert(e.message); }
+    }));
+    list?.querySelectorAll('[data-manual]').forEach(b => b.addEventListener('click', () => {
+      hxReplyTargetId = b.getAttribute('data-manual');
+      document.getElementById('hxReplyMessage').value = '';
+      document.getElementById('hxReplyModal')?.classList.add('open');
+    }));
+  } catch (e) {
+    if (list) list.innerHTML = `<div class="hx-empty">Failed: ${hxEsc(e.message)}</div>`;
+  }
+}
+
+function bindHxEngineUi() {
+  document.getElementById('hxBankSearchBtn')?.addEventListener('click', () => {
+    hxBankState.q = document.getElementById('hxBankSearch')?.value?.trim() || '';
+    hxBankState.country = document.getElementById('hxBankCountry')?.value || '';
+    hxBankState.vertical = document.getElementById('hxBankVertical')?.value || '';
+    hxBankState.icp_min = document.getElementById('hxBankIcp')?.value || '';
+    loadHxBank({ reset: true });
+  });
+  document.getElementById('hxBankSearch')?.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') document.getElementById('hxBankSearchBtn')?.click();
+  });
+  document.getElementById('hxBankPrev')?.addEventListener('click', () => {
+    if (hxBankState.page > 1) { hxBankState.page -= 1; loadHxBank(); }
+  });
+  document.getElementById('hxBankNext')?.addEventListener('click', () => {
+    const pages = Math.max(1, Math.ceil(hxBankState.total / hxBankState.limit));
+    if (hxBankState.page < pages) { hxBankState.page += 1; loadHxBank(); }
+  });
+  document.getElementById('hxSeqNewBtn')?.addEventListener('click', () => document.getElementById('hxSeqModal')?.classList.add('open'));
+  document.getElementById('hxSeqModalCancel')?.addEventListener('click', () => document.getElementById('hxSeqModal')?.classList.remove('open'));
+  document.getElementById('hxSeqModalSave')?.addEventListener('click', createHxSequence);
+  document.getElementById('hxSeqRefreshBtn')?.addEventListener('click', loadHxSequences);
+  document.getElementById('hxSeqEnrollBtn')?.addEventListener('click', () => openHxEnrollModal(''));
+  document.getElementById('hxEnrollCancel')?.addEventListener('click', () => document.getElementById('hxEnrollModal')?.classList.remove('open'));
+  document.getElementById('hxEnrollSave')?.addEventListener('click', enrollHxContact);
+  document.getElementById('hxRepliesRefreshBtn')?.addEventListener('click', loadHxReplies);
+  document.getElementById('hxRepliesFilterBtn')?.addEventListener('click', loadHxReplies);
+  document.getElementById('hxReplyCancel')?.addEventListener('click', () => document.getElementById('hxReplyModal')?.classList.remove('open'));
+  document.getElementById('hxReplySend')?.addEventListener('click', async () => {
+    if (!hxReplyTargetId) return;
+    const message = document.getElementById('hxReplyMessage')?.value?.trim();
+    const channel = document.getElementById('hxReplyChannel')?.value || 'email';
+    if (!message) { alert('Message required'); return; }
+    try {
+      await hxFetch('/replies/' + hxReplyTargetId + '/respond', { method: 'POST', body: { message, channel } });
+      document.getElementById('hxReplyModal')?.classList.remove('open');
+      loadHxReplies();
+    } catch (e) { alert(e.message); }
+  });
+}
+
+bindHxEngineUi();
+
+bootHarvyx();
+loadHxBank({ reset: true });
 </script>
 </body>
 </html>

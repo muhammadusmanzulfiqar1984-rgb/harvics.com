@@ -13,7 +13,7 @@ interface OKR {
   status: 'On Track' | 'At Risk' | 'Behind' | 'Completed'
 }
 
-const B = '#6B1F2B'; const G = '#C3A35E'; const C = '#F5F0E8'
+const B = 'var(--harvics-burgundy)'; const G = 'var(--harvics-gold)'; const C = 'var(--harvics-cream)'
 const SC: Record<string,string> = { 'On Track':'#2E7D32', 'At Risk':'#F9A825', Behind:'#B71C1C', Completed:'#1565C0' }
 
 export default function OkrPage() {

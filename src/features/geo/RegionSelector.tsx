@@ -88,7 +88,7 @@ export default function RegionSelector() {
     >
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center space-x-2 px-3 py-1.5 bg-[#f5f5dc] border border-[#6B1F2B]/20 rounded-md hover:border-[#6B1F2B]/40 transition-all duration-200 text-black text-xs sm:text-sm font-medium"
+        className="flex items-center space-x-2 px-3 py-1.5 bg-[#f5f5dc] border border-harvics-burgundy/20 rounded-md hover:border-harvics-burgundy/40 transition-all duration-200 text-black text-xs sm:text-sm font-medium"
         aria-label="Select region"
       >
         {/* Globe Icon */}
@@ -113,9 +113,9 @@ export default function RegionSelector() {
 
       {/* Dropdown Menu */}
       {isOpen && (
-        <div className="absolute top-full right-0 mt-2 w-64 bg-white border-2 border-[#6B1F2B] shadow-xl z-50 rounded-md overflow-hidden">
+        <div className="absolute top-full right-0 mt-2 w-64 bg-white border-2 border-harvics-burgundy shadow-xl z-50 rounded-md overflow-hidden">
           <div className="p-2 max-h-80 overflow-y-auto">
-            <div className="mb-2 pb-2 border-b-2 border-[#6B1F2B]">
+            <div className="mb-2 pb-2 border-b-2 border-harvics-burgundy">
               <h3 className="text-black font-bold text-xs uppercase tracking-wide px-2">Select Region</h3>
             </div>
             <div className="space-y-1">
@@ -134,8 +134,8 @@ export default function RegionSelector() {
                     }}
                     className={`w-full text-left px-3 py-2 text-sm rounded-md transition-all duration-200 ${
                       selectedCountry === code
-                        ? 'bg-white text-white font-bold border-2 border-[#6B1F2B]'
-                        : 'text-black hover:bg-white/10 hover:border-2 hover:border-[#6B1F2B] border-2 border-transparent font-medium'
+                        ? 'bg-white text-white font-bold border-2 border-harvics-burgundy'
+                        : 'text-black hover:bg-white/10 hover:border-2 hover:border-harvics-burgundy border-2 border-transparent font-medium'
                     }`}
                   >
                     {formatCountry(code)}
@@ -143,7 +143,7 @@ export default function RegionSelector() {
                 ))
               ) : (
                 <button
-                  className="w-full text-left px-3 py-2 text-sm text-black hover:bg-white/10 rounded-md transition-all duration-200 font-medium border-2 border-transparent hover:border-[#6B1F2B]"
+                  className="w-full text-left px-3 py-2 text-sm text-black hover:bg-white/10 rounded-md transition-all duration-200 font-medium border-2 border-transparent hover:border-harvics-burgundy"
                 >
                   Global Site
                 </button>

@@ -17,12 +17,12 @@ export default async function FinancialSupportPage({ params }: FinancialSupportP
   return (
     <main className="min-h-screen" style={{ background: '#ffffff' }}>
       <div className="pt-20">
-        <section className="h-[400px] relative bg-[#6B1F2B] overflow-hidden">
+        <section className="h-[400px] relative bg-harvics-burgundy overflow-hidden">
           {/* Decorative Elements */}
           <div className="absolute inset-0">
              <div className="absolute top-0 left-0 w-full h-full bg-[url('/patterns/grid.svg')] opacity-10"></div>
-             <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
-             <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
+             <div className="absolute -top-24 -right-24 w-96 h-96 bg-harvics-gold rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
+             <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-harvics-gold rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
           </div>
           
           <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
@@ -42,23 +42,23 @@ export default async function FinancialSupportPage({ params }: FinancialSupportP
                 <h3 className="text-2xl font-serif font-medium text-gray-900 mb-6">Support Services</h3>
                 <ul className="space-y-4 text-gray-600">
                   <li className="flex items-center">
-                    <span className="text-[#6B1F2B] mr-3 text-lg">✓</span>
+                    <span className="text-harvics-burgundy mr-3 text-lg">✓</span>
                     Financial counseling and advice
                   </li>
                   <li className="flex items-center">
-                    <span className="text-[#6B1F2B] mr-3 text-lg">✓</span>
+                    <span className="text-harvics-burgundy mr-3 text-lg">✓</span>
                     Debt management assistance
                   </li>
                   <li className="flex items-center">
-                    <span className="text-[#6B1F2B] mr-3 text-lg">✓</span>
+                    <span className="text-harvics-burgundy mr-3 text-lg">✓</span>
                     Budget planning tools
                   </li>
                   <li className="flex items-center">
-                    <span className="text-[#6B1F2B] mr-3 text-lg">✓</span>
+                    <span className="text-harvics-burgundy mr-3 text-lg">✓</span>
                     Credit score improvement guidance
                   </li>
                   <li className="flex items-center">
-                    <span className="text-[#6B1F2B] mr-3 text-lg">✓</span>
+                    <span className="text-harvics-burgundy mr-3 text-lg">✓</span>
                     24/7 customer support
                   </li>
                 </ul>
@@ -66,19 +66,19 @@ export default async function FinancialSupportPage({ params }: FinancialSupportP
               <div className="bg-white border border-gray-100 p-8 shadow-sm hover:shadow-lg transition-all duration-300">
                 <h3 className="text-2xl font-serif font-medium text-gray-900 mb-6">Resources</h3>
                 <div className="space-y-6">
-                  <div className="border-l-4 border-[#6B1F2B] pl-4">
+                  <div className="border-l-4 border-harvics-burgundy pl-4">
                     <h4 className="font-semibold text-gray-900 mb-1">Financial Education</h4>
                     <p className="text-gray-500 text-sm">Learn about managing your finances effectively</p>
                   </div>
-                  <div className="border-l-4 border-[#6B1F2B] pl-4">
+                  <div className="border-l-4 border-harvics-burgundy pl-4">
                     <h4 className="font-semibold text-gray-900 mb-1">Online Tools</h4>
                     <p className="text-gray-500 text-sm">Budget calculators and financial planning tools</p>
                   </div>
-                  <div className="border-l-4 border-[#6B1F2B] pl-4">
+                  <div className="border-l-4 border-harvics-burgundy pl-4">
                     <h4 className="font-semibold text-gray-900 mb-1">Help Center</h4>
                     <p className="text-gray-500 text-sm">FAQs and guides for common questions</p>
                   </div>
-                  <div className="border-l-4 border-[#6B1F2B] pl-4">
+                  <div className="border-l-4 border-harvics-burgundy pl-4">
                     <h4 className="font-semibold text-gray-900 mb-1">Contact Support</h4>
                     <p className="text-gray-500 text-sm">Get in touch with our financial advisors</p>
                   </div>
@@ -86,31 +86,31 @@ export default async function FinancialSupportPage({ params }: FinancialSupportP
               </div>
             </div>
 
-            <div className="relative overflow-hidden bg-[#6B1F2B] p-8 md:p-12 text-center text-white">
+            <div className="relative overflow-hidden bg-harvics-burgundy p-8 md:p-12 text-center text-white">
               <div className="absolute inset-0">
-                 <div className="absolute top-0 right-0 w-64 h-64 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
-                 <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#C3A35E] rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+                 <div className="absolute top-0 right-0 w-64 h-64 bg-harvics-gold rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+                 <div className="absolute bottom-0 left-0 w-64 h-64 bg-harvics-gold rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
               </div>
               
               <div className="relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center mb-10 border-b border-white/10 pb-8">
                   <div>
-                    <div className="text-3xl font-serif font-medium text-[#C3A35E] mb-2">24/7</div>
+                    <div className="text-3xl font-serif font-medium text-harvics-gold mb-2">24/7</div>
                     <div className="text-sm text-white/80 uppercase tracking-wide">Customer Support</div>
                   </div>
                   <div>
-                    <div className="text-3xl font-serif font-medium text-[#C3A35E] mb-2">100+</div>
+                    <div className="text-3xl font-serif font-medium text-harvics-gold mb-2">100+</div>
                     <div className="text-sm text-white/80 uppercase tracking-wide">Financial Advisors</div>
                   </div>
                   <div>
-                    <div className="text-3xl font-serif font-medium text-[#C3A35E] mb-2">50K+</div>
+                    <div className="text-3xl font-serif font-medium text-harvics-gold mb-2">50K+</div>
                     <div className="text-sm text-white/80 uppercase tracking-wide">Customers Helped</div>
                   </div>
                 </div>
                 <div className="text-center">
                   <h2 className="text-2xl md:text-3xl font-serif font-medium mb-4">Need Financial Support?</h2>
                   <p className="mb-8 text-lg text-white/80 font-light">Our team is ready to help you achieve your financial goals</p>
-                  <button className="bg-white text-[#6B1F2B] px-8 py-4 font-medium text-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-lg">
+                  <button className="bg-white text-harvics-burgundy px-8 py-4 font-medium text-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-lg">
                     Contact Support
                   </button>
                 </div>

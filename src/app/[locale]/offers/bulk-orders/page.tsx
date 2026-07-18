@@ -44,8 +44,8 @@ export default async function BulkOrdersPage({ params }: BulkOrdersPageProps) {
 
         <section className="py-12 md:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-white border-2 border-[#6B1F2B]/20 p-8 shadow-lg mb-12">
-              <h3 className="text-2xl font-bold text-[#C3A35E] mb-6 text-center">Discount Tiers</h3>
+            <div className="bg-white border-2 border-harvics-burgundy/20 p-8 shadow-lg mb-12">
+              <h3 className="text-2xl font-bold text-harvics-gold mb-6 text-center">Discount Tiers</h3>
               <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
                 {tiers.map((tier, index) => (
                   <div key={index} className={`bg-gradient-to-r ${tier.color} p-6 text-white text-center relative overflow-hidden`}>
@@ -68,8 +68,8 @@ export default async function BulkOrdersPage({ params }: BulkOrdersPageProps) {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-white border-2 border-[#6B1F2B]/20 p-8 shadow-lg">
-                <h3 className="text-2xl font-bold text-[#C3A35E] mb-4">Benefits</h3>
+              <div className="bg-white border-2 border-harvics-burgundy/20 p-8 shadow-lg">
+                <h3 className="text-2xl font-bold text-harvics-gold mb-4">Benefits</h3>
                 <ul className="space-y-3 text-white/90">
                   <li className="flex items-center">
                     <span className="text-white mr-2">✓</span>
@@ -93,8 +93,8 @@ export default async function BulkOrdersPage({ params }: BulkOrdersPageProps) {
                   </li>
                 </ul>
               </div>
-              <div className="bg-white border-2 border-[#6B1F2B]/20 p-8 shadow-lg">
-                <h3 className="text-2xl font-bold text-[#C3A35E] mb-4">Who Can Benefit?</h3>
+              <div className="bg-white border-2 border-harvics-burgundy/20 p-8 shadow-lg">
+                <h3 className="text-2xl font-bold text-harvics-gold mb-4">Who Can Benefit?</h3>
                 <ul className="space-y-3 text-white/90">
                   <li className="flex items-center">
                     <span className="text-white mr-2">✓</span>
@@ -116,7 +116,7 @@ export default async function BulkOrdersPage({ params }: BulkOrdersPageProps) {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-[#6B1F2B] to-[#6B1F2B] p-8 md:p-12 text-white text-center relative overflow-hidden">
+            <div className="bg-gradient-to-r from-harvics-burgundy to-harvics-burgundy p-8 md:p-12 text-white text-center relative overflow-hidden">
               <div className="absolute inset-0 opacity-20">
                 <Image
                   src={bulkOrderProductImages[0]}

@@ -110,7 +110,7 @@ export default function InventoryDomainContent({ persona, locale }: InventoryDom
                         <td className="px-4 py-3 text-right">{w.cap.toLocaleString()}</td>
                         <td className="px-4 py-3 text-right">
                           <div className="flex items-center justify-end gap-2">
-                            <div className="w-16 bg-[#F5F5F7] h-1.5" style={{ borderRadius: 0 }}><div className="bg-[#6B1F2B] h-1.5" style={{ width: `${w.used}%`, borderRadius: 0 }}></div></div>
+                            <div className="w-16 bg-[#F5F5F7] h-1.5" style={{ borderRadius: 0 }}><div className="bg-harvics-burgundy h-1.5" style={{ width: `${w.used}%`, borderRadius: 0 }}></div></div>
                             <span>{w.used}%</span>
                           </div>
                         </td>
@@ -203,7 +203,7 @@ export default function InventoryDomainContent({ persona, locale }: InventoryDom
               <h3 className="text-xl font-semibold text-[#1A1A1A] mb-4">Expiry Alerts</h3>
               <div className="grid grid-cols-3 gap-4 mb-6">
                 {[{ label: 'Expiring in 7 days', count: 12, dark: true }, { label: 'Expiring in 30 days', count: 38, dark: false }, { label: 'Already Expired', count: 3, dark: false }].map(s => (
-                  <div key={s.label} className={`p-4 text-center ${s.dark ? 'bg-[#6B1F2B] text-white' : 'bg-[#F5F5F7]'}`} style={{ borderRadius: 0 }}>
+                  <div key={s.label} className={`p-4 text-center ${s.dark ? 'bg-harvics-burgundy text-white' : 'bg-[#F5F5F7]'}`} style={{ borderRadius: 0 }}>
                     <div className="text-2xl font-semibold">{s.count}</div>
                     <div className={`text-xs mt-1 ${s.dark ? 'text-white/70' : 'text-[#8E8E93]'}`}>{s.label}</div>
                   </div>
@@ -220,7 +220,7 @@ export default function InventoryDomainContent({ persona, locale }: InventoryDom
                         <td className="px-4 py-3">{a.wh}</td>
                         <td className="px-4 py-3 text-right">{a.qty.toLocaleString()}</td>
                         <td className="px-4 py-3">{a.expiry}</td>
-                        <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${a.days <= 7 ? 'bg-[#6B1F2B] text-white' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{a.days}d</span></td>
+                        <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${a.days <= 7 ? 'bg-harvics-burgundy text-white' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{a.days}d</span></td>
                       </tr>
                     ))}
                   </tbody>
@@ -276,7 +276,7 @@ export default function InventoryDomainContent({ persona, locale }: InventoryDom
                       <tr key={r.month} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
                         <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{r.month}</td>
                         <td className="px-4 py-3 text-right">{r.units.toLocaleString()}</td>
-                        <td className="px-4 py-3 text-right font-semibold text-[#6B1F2B]">{r.value}</td>
+                        <td className="px-4 py-3 text-right font-semibold text-harvics-burgundy">{r.value}</td>
                         <td className="px-4 py-3 text-right">{r.cat}</td>
                       </tr>
                     ))}
@@ -321,7 +321,7 @@ export default function InventoryDomainContent({ persona, locale }: InventoryDom
                         <td className="px-4 py-3 text-right font-semibold">{b.qty.toLocaleString()}</td>
                         <td className="px-4 py-3 text-xs">{b.mfg}</td>
                         <td className="px-4 py-3 text-xs">{b.exp}</td>
-                        <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${b.status === 'Active' ? 'bg-[#1A1A1A] text-white' : b.status === 'Expiring' ? 'bg-[#6B1F2B] text-white' : 'bg-[#F5F5F7] text-[#8E8E93]'}`} style={{ borderRadius: 0 }}>{b.status}</span></td>
+                        <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${b.status === 'Active' ? 'bg-[#1A1A1A] text-white' : b.status === 'Expiring' ? 'bg-harvics-burgundy text-white' : 'bg-[#F5F5F7] text-[#8E8E93]'}`} style={{ borderRadius: 0 }}>{b.status}</span></td>
                       </tr>
                     ))}
                   </tbody>
@@ -374,7 +374,7 @@ export default function InventoryDomainContent({ persona, locale }: InventoryDom
                         <td className="px-4 py-3 font-mono text-xs">{h.batch}</td>
                         <td className="px-4 py-3"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1A1A1A]" style={{ borderRadius: 0 }}>{h.event}</span></td>
                         <td className="px-4 py-3">{h.loc}</td>
-                        <td className={`px-4 py-3 text-right font-semibold ${h.qty < 0 ? 'text-[#6B1F2B]' : h.qty > 0 ? 'text-[#1A1A1A]' : 'text-[#8E8E93]'}`}>{h.qty !== 0 ? (h.qty > 0 ? '+' : '') + h.qty.toLocaleString() : '—'}</td>
+                        <td className={`px-4 py-3 text-right font-semibold ${h.qty < 0 ? 'text-harvics-burgundy' : h.qty > 0 ? 'text-[#1A1A1A]' : 'text-[#8E8E93]'}`}>{h.qty !== 0 ? (h.qty > 0 ? '+' : '') + h.qty.toLocaleString() : '—'}</td>
                         <td className="px-4 py-3 text-xs text-[#8E8E93]">{h.user}</td>
                       </tr>
                     ))}

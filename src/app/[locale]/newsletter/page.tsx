@@ -26,9 +26,9 @@ export default async function NewsletterPage({ params }: NewsletterPageProps) {
   const content = getFooterPageContent('newsletter', locale)
 
   return (
-    <main className="min-h-screen bg-[#6B1F2B]">
+    <main className="min-h-screen bg-harvics-burgundy">
       <div className="pt-20">
-        <section className="py-12 md:py-24 px-4 md:px-6 relative overflow-hidden bg-[#6B1F2B]">
+        <section className="py-12 md:py-24 px-4 md:px-6 relative overflow-hidden bg-harvics-burgundy">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?w=1200&h=600&fit=crop&q=75"
@@ -38,7 +38,7 @@ export default async function NewsletterPage({ params }: NewsletterPageProps) {
           />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.85) 0%, rgba(107,31,43,0.5) 45%, rgba(107,31,43,0.25) 100%)' }} />
           <div className="max-w-7xl mx-auto text-center relative z-10">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#C3A35E] mb-4 md:mb-6">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-harvics-gold mb-4 md:mb-6">
               {content.hero.title}
             </h1>
             <p className="text-base md:text-xl text-white/90 max-w-3xl mx-auto">
@@ -49,48 +49,48 @@ export default async function NewsletterPage({ params }: NewsletterPageProps) {
 
         <section className="py-12 md:py-24 px-4 md:px-6">
           <div className="max-w-2xl mx-auto">
-            <div className="bg-[#6B1F2B] border-2 border-[#6B1F2B]/20 p-8 md:p-12 shadow-lg">
+            <div className="bg-harvics-burgundy border-2 border-harvics-burgundy/20 p-8 md:p-12 shadow-lg">
               <form className="space-y-6">
                 <div>
-                  <label htmlFor="email" className="block text-sm font-bold text-[#C3A35E] mb-2">
+                  <label htmlFor="email" className="block text-sm font-bold text-harvics-gold mb-2">
                     Email Address *
                   </label>
                   <input
                     type="email"
                     id="email"
                     required
-                    className="w-full px-4 py-3 border-2 border-[#6B1F2B]/20 focus:outline-none focus:border-white"
+                    className="w-full px-4 py-3 border-2 border-harvics-burgundy/20 focus:outline-none focus:border-white"
                     placeholder="your.email@example.com"
                   />
                 </div>
                 <div>
-                  <label htmlFor="name" className="block text-sm font-bold text-[#C3A35E] mb-2">
+                  <label htmlFor="name" className="block text-sm font-bold text-harvics-gold mb-2">
                     Full Name
                   </label>
                   <input
                     type="text"
                     id="name"
-                    className="w-full px-4 py-3 border-2 border-[#6B1F2B]/20 focus:outline-none focus:border-white"
+                    className="w-full px-4 py-3 border-2 border-harvics-burgundy/20 focus:outline-none focus:border-white"
                     placeholder="John Doe"
                   />
                 </div>
                 <div>
                   <label className="flex items-center space-x-2">
-                    <input type="checkbox" className="rounded border-[#6B1F2B]/20" />
+                    <input type="checkbox" className="rounded border-harvics-burgundy/20" />
                     <span className="text-sm text-white/90">I agree to receive marketing communications</span>
                   </label>
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-[#6B1F2B] to-[#6B1F2B] text-white py-4 font-bold text-lg hover:scale-105 transition-all duration-300"
+                  className="w-full bg-gradient-to-r from-harvics-burgundy to-harvics-burgundy text-white py-4 font-bold text-lg hover:scale-105 transition-all duration-300"
                 >
                   Subscribe Now
                 </button>
               </form>
             </div>
 
-            <div className="mt-8 bg-[#6B1F2B] border border-black200 p-6">
-              <h3 className="font-bold text-[#C3A35E] mb-3">What You'll Receive:</h3>
+            <div className="mt-8 bg-harvics-burgundy border border-black200 p-6">
+              <h3 className="font-bold text-harvics-gold mb-3">What You'll Receive:</h3>
               <ul className="space-y-2 text-white/90">
                 <li className="flex items-center">
                   <span className="text-white mr-2">✓</span>

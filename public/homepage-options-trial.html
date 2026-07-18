@@ -2,22 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Harvics Global Ventures — sovereign trade infrastructure across 10 verticals and 42+ markets. Source, quote, move and settle through one governed corridor." />
+  <meta name="description" content="Harvics Global Ventures — sovereign trade infrastructure across 10 verticals and 42+ markets. Verified supply. Protected settlement." />
   <title>Harvics Global Ventures — The Corridor</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --burgundy: #1A0505;
+      --burgundy: #3D1212;
       --burgundy-mid: #3D1212;
       --cream: #F5F0E8;
       --cream-deep: #EFE8DC;
-      --gold: #C9A84C;
+      --gold: #C3A35E;
       --gold-soft: rgba(201, 168, 76, 0.3);
       --muted: #8A7D6B;
-      --dark: #0D0D0D;
-      --ink: #1A0505;
+      --dark: #3D1212; /* brand ink — not pure black */
+      --surface-dark: #3D1212;
+      --ink: #3D1212;
       --ease: cubic-bezier(0.16, 1, 0.3, 1);
       --layout: 1440px;
       --frame: 1440px;
@@ -131,7 +132,7 @@
       align-items: center;
       justify-content: center;
       gap: 28px;
-      background: #0D0D0D;
+      background: #3D1212;
       background-size: 400% 400%;
       animation: gradShift 4s ease infinite;
       transition: opacity 0.7s ease, visibility 0.7s ease;
@@ -308,16 +309,34 @@
       display: flex;
       align-items: flex-end;
       overflow: hidden;
-      background: var(--dark);
+      background: var(--surface-dark);
     }
 
-    .hero-media { position: absolute; inset: 0; }
+    .hero-media { position: absolute; inset: 0; overflow: hidden; }
     .hero-media img,
     .hero-media video {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      /* overscale + corner mask clips Gemini sparkle (bottom-right) */
+      transform: scale(1.14);
+      transform-origin: center center;
       will-change: transform;
+    }
+    .hero-media::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: min(22vw, 280px);
+      height: min(18vw, 200px);
+      background:
+        radial-gradient(ellipse 100% 100% at 100% 100%,
+          rgba(13, 13, 13, 0.92) 0%,
+          rgba(13, 13, 13, 0.55) 42%,
+          transparent 72%);
+      pointer-events: none;
+      z-index: 2;
     }
 
     .hero-overlay {
@@ -452,7 +471,7 @@
       100% { transform: scaleY(0.4); opacity: 0.3; }
     }
 
-    /* ── MANIFESTO (statement — blank cream band) ── */
+    /* ── MANIFESTO (statement — cream band) ── */
     .manifesto {
       background: var(--cream);
       padding: var(--section-y) 0;
@@ -480,12 +499,14 @@
       letter-spacing: var(--ls-display);
     }
 
-    .manifesto p {
+    .manifesto p,
+    .manifesto-body {
       font-family: var(--font-body);
       font-size: var(--fs-lead);
       line-height: var(--lh-lead);
       color: var(--muted);
       max-width: 44ch;
+      margin: 0;
     }
 
     .manifesto-line {
@@ -495,10 +516,12 @@
       transform-origin: left;
     }
 
+    .manifesto-proof { display: none; }
+
     /* ── INDUSTRIES — sticky lock + sideways scrub ── */
     .hscroll {
       position: relative;
-      background: var(--dark);
+      background: var(--surface-dark);
       color: #fff;
       /* height set in JS = viewport + horizontal travel distance */
     }
@@ -678,24 +701,28 @@
       .h-progress { width: 90px; }
     }
 
-    /* ── OPERATING MODEL — cream stage + burgundy accents ── */
+    /* ── OPERATING MODEL — full deep burgundy section ── */
     .op-model {
       position: relative;
       background:
-        linear-gradient(180deg, #fffdf9 0%, var(--cream) 55%, #ebe2d4 100%);
+        radial-gradient(ellipse at 20% 0%, rgba(107, 31, 43, 0.45) 0%, transparent 55%),
+        radial-gradient(ellipse at 80% 100%, rgba(201, 168, 76, 0.14) 0%, transparent 50%),
+        linear-gradient(160deg, #3D1212 0%, #3D1212 55%, #261015 100%);
+      color: var(--cream);
       padding: var(--section-y) 0;
-      border-top: 1px solid rgba(61, 18, 18, 0.12);
-      border-bottom: 1px solid rgba(61, 18, 18, 0.12);
+      border-top: 1px solid rgba(201, 168, 76, 0.22);
+      border-bottom: 1px solid rgba(201, 168, 76, 0.22);
       overflow: hidden;
     }
     .op-model::before {
       content: "";
       position: absolute;
       inset: 0;
-      background:
-        radial-gradient(ellipse at 12% 0%, rgba(61, 18, 18, 0.1) 0%, transparent 48%),
-        radial-gradient(ellipse at 88% 20%, rgba(201, 168, 76, 0.14) 0%, transparent 42%),
-        radial-gradient(ellipse at 50% 100%, rgba(26, 5, 5, 0.05) 0%, transparent 50%);
+      opacity: 0.05;
+      background-image:
+        linear-gradient(rgba(201, 168, 76, 1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201, 168, 76, 1) 1px, transparent 1px);
+      background-size: 64px 64px;
       pointer-events: none;
     }
     .op-model::after {
@@ -704,11 +731,12 @@
       top: 0;
       left: 0;
       right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, transparent 0%, var(--burgundy-mid) 22%, var(--gold) 50%, var(--burgundy-mid) 78%, transparent 100%);
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
       pointer-events: none;
     }
     .op-model > .wrap { position: relative; z-index: 1; }
+    .op-burgundy { display: contents; }
 
     .op-head {
       display: flex;
@@ -719,14 +747,14 @@
       flex-wrap: wrap;
     }
     .op-head-copy { max-width: 36rem; }
-    .op-head .eyebrow { color: var(--burgundy-mid); }
+    .op-head .eyebrow { color: var(--gold); }
     .op-head h2 {
       font-family: var(--font-display);
       font-size: var(--fs-display-md);
       font-weight: 500;
       letter-spacing: -0.02em;
       line-height: 1.08;
-      color: var(--burgundy);
+      color: var(--cream);
       margin: 0 0 12px;
     }
     .op-head h2 em {
@@ -736,7 +764,7 @@
     }
     .op-head p {
       font-size: var(--fs-lead);
-      color: var(--muted);
+      color: rgba(245, 240, 232, 0.6);
       line-height: var(--lh-lead);
       max-width: 42ch;
       margin: 0;
@@ -745,7 +773,7 @@
       display: flex;
       gap: 28px;
       padding-left: 24px;
-      border-left: 2px solid var(--burgundy-mid);
+      border-left: 1px solid rgba(201, 168, 76, 0.28);
     }
     @media (max-width: 700px) {
       .op-stats { border-left: none; padding-left: 0; width: 100%; }
@@ -764,7 +792,7 @@
       font-family: var(--font-display);
       font-size: clamp(24px, 3vw, 32px);
       font-weight: 500;
-      color: var(--burgundy);
+      color: var(--cream);
       letter-spacing: -0.02em;
       line-height: 1;
     }
@@ -774,7 +802,7 @@
       justify-content: center;
       gap: 0;
       margin-bottom: 28px;
-      border-bottom: 1px solid rgba(61, 18, 18, 0.14);
+      border-bottom: 1px solid rgba(201, 168, 76, 0.2);
     }
     .op-tab {
       position: relative;
@@ -784,7 +812,7 @@
       font-weight: 700;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: rgba(61, 18, 18, 0.42);
+      color: rgba(245, 240, 232, 0.42);
       transition: color 0.2s;
       background: none;
       border: none;
@@ -796,8 +824,8 @@
       opacity: 0.55;
       margin-right: 6px;
     }
-    .op-tab:hover { color: var(--burgundy-mid); }
-    .op-tab.is-active { color: var(--burgundy-mid); }
+    .op-tab:hover { color: rgba(245, 240, 232, 0.85); }
+    .op-tab.is-active { color: var(--gold); }
     .op-tab.is-active::after {
       content: "";
       position: absolute;
@@ -805,8 +833,8 @@
       right: 0;
       bottom: -1px;
       height: 2px;
-      background: linear-gradient(90deg, var(--burgundy-mid), var(--gold));
-      box-shadow: 0 0 10px rgba(61, 18, 18, 0.25);
+      background: var(--gold);
+      box-shadow: 0 0 10px rgba(201, 168, 76, 0.5);
     }
 
     .op-panels { position: relative; min-height: 420px; }
@@ -825,9 +853,8 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1px;
-      background: rgba(61, 18, 18, 0.18);
-      border: 1px solid rgba(61, 18, 18, 0.22);
-      box-shadow: 0 18px 48px rgba(26, 5, 5, 0.08);
+      background: rgba(201, 168, 76, 0.22);
+      border: 1px solid rgba(201, 168, 76, 0.28);
     }
     .op-connector {
       display: none;
@@ -868,58 +895,43 @@
       .op-panels { min-height: 0; }
     }
     .op-card {
-      background: #fff;
+      background: #1d0809;
       padding: clamp(28px, 3vw, 36px);
       position: relative;
       overflow: hidden;
-      transition: background 0.35s, box-shadow 0.35s;
+      transition: background 0.35s;
       min-height: 380px;
       display: flex;
       flex-direction: column;
     }
-    .op-card::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 3px;
-      height: 0;
-      background: linear-gradient(180deg, var(--burgundy-mid), var(--gold));
-      transition: height 0.35s var(--ease);
-    }
-    .op-card:hover::after { height: 100%; }
+    .op-card::after { display: none; }
     .op-card::before {
       content: "";
       position: absolute;
       inset: 0;
-      background:
-        radial-gradient(circle at 50% 0%, rgba(61, 18, 18, 0.08) 0%, transparent 55%),
-        radial-gradient(circle at 80% 100%, rgba(201, 168, 76, 0.12) 0%, transparent 50%);
+      background: radial-gradient(circle at 50% 0%, rgba(201, 168, 76, 0.16) 0%, transparent 58%);
       opacity: 0;
       transition: opacity 0.4s;
       pointer-events: none;
     }
     .op-card:hover::before { opacity: 1; }
-    .op-card:hover {
-      background: #faf6ef;
-      box-shadow: inset 0 0 0 1px rgba(61, 18, 18, 0.08);
-    }
+    .op-card:hover { background: #2d0f14; }
     .op-card .num {
       font-family: var(--font-display);
       font-size: clamp(56px, 7vw, 72px);
       font-weight: 400;
-      color: rgba(61, 18, 18, 0.18);
+      color: rgba(201, 168, 76, 0.28);
       line-height: 0.9;
       letter-spacing: -0.04em;
       margin-bottom: 12px;
       transition: color 0.35s;
     }
-    .op-card:hover .num { color: rgba(61, 18, 18, 0.42); }
+    .op-card:hover .num { color: rgba(201, 168, 76, 0.65); }
     .op-card h3 {
       font-family: var(--font-display);
       font-size: clamp(22px, 2.4vw, 28px);
       font-weight: 500;
-      color: var(--burgundy);
+      color: var(--cream);
       letter-spacing: -0.02em;
       margin: 0 0 6px;
     }
@@ -934,7 +946,7 @@
     .op-card .rule {
       width: 32px;
       height: 1px;
-      background: linear-gradient(90deg, var(--burgundy-mid), var(--gold));
+      background: var(--gold);
       margin-bottom: 16px;
       transition: width 0.35s var(--ease);
     }
@@ -942,51 +954,47 @@
     .op-card p {
       font-size: 13px;
       line-height: 1.7;
-      color: var(--muted);
+      color: rgba(245, 240, 232, 0.58);
       margin: 0 0 20px;
       flex: 1;
     }
     .op-tags { display: flex; flex-wrap: wrap; gap: 8px; }
     .op-tags span {
       padding: 6px 10px;
-      border: 1px solid rgba(61, 18, 18, 0.22);
+      border: 1px solid rgba(201, 168, 76, 0.35);
       font-size: 9px;
       font-weight: 600;
       letter-spacing: 0.16em;
       text-transform: uppercase;
-      color: var(--burgundy-mid);
-      background: rgba(61, 18, 18, 0.03);
-      transition: border-color 0.25s, background 0.25s;
+      color: var(--gold);
+      background: transparent;
+      transition: border-color 0.25s;
     }
-    .op-card:hover .op-tags span {
-      border-color: rgba(61, 18, 18, 0.4);
-      background: rgba(61, 18, 18, 0.06);
-    }
+    .op-card:hover .op-tags span { border-color: rgba(201, 168, 76, 0.7); }
 
     .op-trust {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 1px;
-      background: rgba(61, 18, 18, 0.18);
-      border: 1px solid rgba(61, 18, 18, 0.22);
-      box-shadow: 0 18px 48px rgba(26, 5, 5, 0.08);
+      background: rgba(201, 168, 76, 0.22);
+      border: 1px solid rgba(201, 168, 76, 0.28);
     }
     @media (max-width: 900px) {
       .op-trust { grid-template-columns: 1fr 1fr; }
     }
     .op-trust-cell {
-      background: #fff;
+      background: #1d0809;
       padding: 24px 22px;
       min-height: 180px;
       position: relative;
       transition: background 0.3s;
     }
-    .op-trust-cell:hover { background: #faf6ef; }
+    .op-trust-cell:hover { background: #2d0f14; }
     .op-trust-cell .val {
       font-family: var(--font-display);
       font-size: clamp(28px, 3.5vw, 40px);
       font-weight: 500;
-      color: var(--burgundy-mid);
+      color: var(--gold);
       letter-spacing: -0.02em;
       line-height: 1;
       margin-bottom: 8px;
@@ -994,7 +1002,7 @@
     .op-trust-cell h4 {
       font-size: 13px;
       font-weight: 600;
-      color: var(--burgundy);
+      color: var(--cream);
       margin: 0 0 4px;
     }
     .op-trust-cell .sub {
@@ -1008,7 +1016,7 @@
     .op-trust-cell p {
       font-size: 12px;
       line-height: 1.6;
-      color: var(--muted);
+      color: rgba(245, 240, 232, 0.55);
       margin: 0;
     }
     .op-certs {
@@ -1018,26 +1026,25 @@
       gap: 10px;
       margin-top: 28px;
       padding-top: 24px;
-      border-top: 1px solid rgba(61, 18, 18, 0.14);
+      border-top: 1px solid rgba(201, 168, 76, 0.2);
     }
     .op-certs span {
       padding: 8px 14px;
-      border: 1px solid rgba(61, 18, 18, 0.28);
+      border: 1px solid rgba(201, 168, 76, 0.4);
       font-size: 10px;
       font-weight: 600;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: var(--burgundy-mid);
-      background: rgba(61, 18, 18, 0.03);
+      color: var(--gold);
+      background: transparent;
     }
 
     .op-audience {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1px;
-      background: rgba(61, 18, 18, 0.18);
-      border: 1px solid rgba(61, 18, 18, 0.22);
-      box-shadow: 0 18px 48px rgba(26, 5, 5, 0.08);
+      background: rgba(201, 168, 76, 0.22);
+      border: 1px solid rgba(201, 168, 76, 0.28);
     }
     @media (max-width: 900px) {
       .op-audience { grid-template-columns: 1fr; }
@@ -1046,8 +1053,8 @@
     .op-letter {
       width: 44px;
       height: 44px;
-      border: 1px solid var(--burgundy-mid);
-      color: var(--burgundy-mid);
+      border: 1px solid var(--gold);
+      color: var(--gold);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1055,28 +1062,21 @@
       font-size: 20px;
       font-weight: 500;
       margin-bottom: 18px;
-      transition: background 0.3s, color 0.3s, border-color 0.3s;
+      transition: background 0.3s;
     }
-    .op-card:hover .op-letter {
-      background: var(--burgundy-mid);
-      color: var(--cream);
-      border-color: var(--burgundy-mid);
-    }
+    .op-card:hover .op-letter { background: rgba(201, 168, 76, 0.1); }
     .op-cta {
       align-self: flex-start;
       font-size: 11px;
       font-weight: 700;
       letter-spacing: 0.16em;
       text-transform: uppercase;
-      color: var(--burgundy-mid);
+      color: var(--gold);
       border-bottom: 1px solid var(--gold);
       padding-bottom: 3px;
-      transition: letter-spacing 0.25s, color 0.25s;
+      transition: letter-spacing 0.25s;
     }
-    .op-cta:hover {
-      letter-spacing: 0.22em;
-      color: var(--burgundy);
-    }
+    .op-cta:hover { letter-spacing: 0.22em; }
 
     /* ── SUPPLY CHAIN WHEEL (light — from original SupplyChainWheel) ── */
     .sc-wheel {
@@ -1298,7 +1298,7 @@
     .sc-bar-fill {
       position: absolute;
       inset: 0 auto 0 0;
-      background: linear-gradient(90deg, #C9A84C 0%, #d4b65a 100%);
+      background: linear-gradient(90deg, #C3A35E 0%, #d4b65a 100%);
       height: 100%;
     }
     .sc-bar-fill::after {
@@ -1357,7 +1357,7 @@
       display: flex;
       align-items: center;
       overflow: hidden;
-      background: var(--dark);
+      background: var(--surface-dark);
     }
 
     .market-media { position: absolute; inset: 0; }
@@ -1515,56 +1515,199 @@
       line-height: 1.4;
     }
 
-    /* ── CLOSE ── */
-    .close {
+    /* ── APPS BRAND — HarvyX + stack ── */
+    .apps-brand {
       position: relative;
-      background: var(--burgundy);
+      background: #0D0404;
       color: var(--cream);
-      padding: var(--section-y) 0;
-      text-align: center;
+      padding: var(--section-y) 0 clamp(56px, 8vw, 88px);
       overflow: hidden;
     }
-
-    .close::before {
+    .apps-brand::before {
       content: "";
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.12) 0%, transparent 55%);
+        radial-gradient(ellipse at 0% 50%, rgba(201, 168, 76, 0.12) 0%, transparent 42%),
+        radial-gradient(ellipse at 100% 0%, rgba(61, 18, 18, 0.7) 0%, transparent 45%),
+        linear-gradient(180deg, #3D1212 0%, #0D0404 100%);
       pointer-events: none;
     }
+    .apps-brand::after {
+      content: "APPS";
+      position: absolute;
+      right: -1%;
+      bottom: 8%;
+      font-family: var(--font-display);
+      font-size: clamp(80px, 14vw, 160px);
+      font-weight: 500;
+      letter-spacing: -0.05em;
+      line-height: 0.8;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(201, 168, 76, 0.08);
+      pointer-events: none;
+      user-select: none;
+      z-index: 0;
+    }
+    .apps-brand > .wrap { position: relative; z-index: 1; }
 
-    .close .wrap { position: relative; z-index: 1; }
+    .apps-brand .eyebrow { color: var(--gold); }
 
-    .close h2 {
+    .apps-intro {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: clamp(28px, 5vw, 64px);
+      align-items: end;
+      margin-bottom: clamp(36px, 5vw, 56px);
+    }
+    @media (max-width: 800px) {
+      .apps-intro { grid-template-columns: 1fr; gap: 20px; }
+      .apps-brand::after { opacity: 0.35; top: 18%; font-size: 28vw; }
+    }
+    .apps-intro h2 {
       font-family: var(--font-display);
       font-size: var(--fs-display-lg);
       font-weight: 500;
-      line-height: 1.1;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
       color: var(--cream);
-      max-width: 18ch;
-      width: 100%;
-      margin: 0 auto 18px;
-      text-align: center;
-      letter-spacing: -0.02em;
-      word-spacing: normal;
+      max-width: 14ch;
+      margin: 0;
     }
-
-    .close .lead {
-      font-family: var(--font-body);
+    .apps-intro h2 em {
+      font-style: normal;
+      color: var(--gold);
+    }
+    .apps-intro p {
       font-size: var(--fs-lead);
-      color: rgba(245, 240, 232, 0.58);
-      max-width: 42ch;
-      margin: 0 auto 32px;
       line-height: var(--lh-lead);
-      text-align: center;
-      word-spacing: normal;
+      color: rgba(245, 240, 232, 0.55);
+      max-width: 34ch;
+      margin: 0;
     }
 
-    .close .cta-row {
-      justify-content: center;
-      align-items: center;
+    /* Equal clear app stack — HarvyX kept quieter */
+    .apps-rails {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
     }
+    @media (max-width: 700px) {
+      .apps-rails { grid-template-columns: 1fr; }
+    }
+    .app-rail {
+      position: relative;
+      padding: clamp(28px, 3.5vw, 40px);
+      min-height: 240px;
+      border: 1px solid rgba(201, 168, 76, 0.4);
+      background: #2a1012;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.3s, background 0.3s, transform 0.35s var(--ease);
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+    }
+    .app-rail::before {
+      content: attr(data-code);
+      position: absolute;
+      right: 18px;
+      top: 14px;
+      font-family: var(--font-display);
+      font-size: 36px;
+      font-weight: 500;
+      color: rgba(201, 168, 76, 0.18);
+      letter-spacing: -0.04em;
+      line-height: 1;
+      pointer-events: none;
+    }
+    .app-rail:hover {
+      border-color: var(--gold);
+      background: #3a161a;
+      transform: translateY(-3px);
+    }
+    .app-rail .code {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .app-rail h3 {
+      font-family: var(--font-display);
+      font-size: clamp(30px, 3.6vw, 40px);
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: #fff;
+      margin: 0 0 12px;
+      line-height: 1.1;
+    }
+    .app-rail h3 span { color: var(--gold); }
+    .app-rail p {
+      font-size: 15px;
+      line-height: 1.65;
+      color: rgba(245, 240, 232, 0.78);
+      margin: 0 0 22px;
+      flex: 1;
+      max-width: 36ch;
+    }
+    .app-rail .points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 22px;
+    }
+    .app-rail .points span {
+      padding: 6px 10px;
+      border: 1px solid rgba(201, 168, 76, 0.4);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(245, 240, 232, 0.85);
+    }
+    .app-rail .go {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      align-self: flex-start;
+      border-bottom: 1px solid var(--gold);
+      padding-bottom: 3px;
+      transition: letter-spacing 0.25s;
+    }
+    .app-rail:hover .go { letter-spacing: 0.2em; }
+
+    .app-rail--hx {
+      border-color: rgba(201, 168, 76, 0.28);
+      background: #1f0c0e;
+    }
+    .app-rail--hx h3 {
+      font-size: clamp(26px, 3vw, 34px);
+      color: rgba(245, 240, 232, 0.88);
+    }
+    .app-rail--hx p { color: rgba(245, 240, 232, 0.62); font-size: 14px; }
+
+    .apps-desk {
+      margin-top: clamp(36px, 5vw, 52px);
+      padding-top: 28px;
+      border-top: 1px solid rgba(201, 168, 76, 0.2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .apps-desk p {
+      font-size: 13px;
+      color: rgba(245, 240, 232, 0.5);
+      margin: 0;
+      max-width: 40ch;
+      line-height: 1.55;
+    }
+    .apps-desk .cta-row { margin: 0; }
 
     /* ── FOOTER (F1–F4 — mirrors original site Footer.tsx) ── */
     .site-footer { width: 100%; font-family: var(--font-body); }
@@ -1650,10 +1793,10 @@
       min-height: 1.2em;
     }
 
-    /* F2 — Sitemap — exact Trade Desk deep burgundy (#1A0505) */
+    /* F2 — Sitemap — exact Trade Desk deep burgundy (#3D1212) */
     .f2 {
       position: relative;
-      background: #1A0505;
+      background: #3D1212;
       color: rgba(245, 240, 232, 0.85);
       padding: 48px 0 40px;
       border-top: 1px solid rgba(201, 168, 76, 0.2);
@@ -1758,7 +1901,7 @@
 
     /* F3 — Certifications — same deep burgundy as Trade Desk */
     .f3 {
-      background: #1A0505;
+      background: #3D1212;
       padding: 18px 0;
       border-top: 1px solid rgba(201, 168, 76, 0.18);
     }
@@ -1800,7 +1943,7 @@
 
     /* F4 — Legal — same deep burgundy as Trade Desk (not pure black) */
     .f4 {
-      background: #1A0505;
+      background: #3D1212;
       padding: 16px 0;
       border-top: 1px solid rgba(201, 168, 76, 0.12);
     }
@@ -1883,7 +2026,7 @@
     .campaign {
       position: relative;
       height: 280vh;
-      background: var(--dark);
+      background: var(--surface-dark);
     }
 
     .campaign-pin {
@@ -2002,10 +2145,17 @@
       margin: 0 auto;
       padding: 0 var(--pad);
       height: 58px;
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
       align-items: center;
-      justify-content: space-between;
       gap: 24px;
+    }
+
+    .dynamic-dim {
+      transition: opacity 0.3s ease;
+    }
+    .site-header.is-search-focus .dynamic-dim {
+      opacity: 0.25;
     }
 
     .t2 .logo {
@@ -2013,6 +2163,8 @@
       align-items: center;
       gap: 12px;
       flex-shrink: 0;
+      justify-self: start;
+      grid-column: 1;
     }
     .t2 .logo img { width: 34px; height: auto; }
     .t2 .logo strong {
@@ -2037,16 +2189,25 @@
     }
 
     .t2-search {
-      flex: 1;
-      max-width: 480px;
+      flex: 0 1 auto;
+      width: 300px;
+      max-width: min(500px, 48vw);
       display: flex;
       align-items: center;
       height: 36px;
-      background: var(--cream);
-      border: 1px solid var(--burgundy);
-      transition: border-color 0.2s var(--ease);
+      margin: 0;
+      justify-self: center;
+      grid-column: 2;
+      background: #fff;
+      border: 1px solid rgba(61, 18, 18, 0.35);
+      transition: width 0.5s ease, max-width 0.5s ease, border-color 0.3s ease, box-shadow 0.3s ease;
     }
-    .t2-search:focus-within { border-color: var(--gold); }
+    .t2-search:focus-within {
+      width: 500px;
+      max-width: min(500px, 62vw);
+      border-color: var(--gold);
+      box-shadow: 0 0 0 1px rgba(201, 168, 76, 0.25);
+    }
     .t2-search input {
       flex: 1;
       border: none;
@@ -2062,11 +2223,12 @@
     .t2-search input::placeholder { color: var(--muted); }
     .t2-search button {
       padding: 0 14px;
-      color: var(--dark);
+      color: var(--burgundy-mid);
       font-size: var(--fs-ui);
       line-height: 1;
     }
-    .t2-search button:hover { color: var(--gold); }
+    .t2-search button:hover,
+    .t2-search:focus-within button { color: var(--gold); }
 
     .t2 .btn-fill {
       flex-shrink: 0;
@@ -2207,18 +2369,21 @@
   </style>
 </head>
 <body>
+  <p id="local-next-preview" style="position:fixed;bottom:14px;right:14px;z-index:99999;margin:0;padding:10px 14px;background:#3D1212;border:1px solid rgba(201,168,76,0.45);font:600 10px/1.4 system-ui,sans-serif;letter-spacing:0.12em;text-transform:uppercase;">
+    <a href="/en/homepage-trial" style="color:#C3A35E;text-decoration:none;">Next.js corridor preview →</a>
+  </p>
 
   <div class="scroll-progress" id="progress"></div>
 
   <div class="trial-banner">
-    Harvics Global Ventures · <em>The Corridor</em> — sovereign trade infrastructure across 10 verticals and 42+ markets
+    The Corridor · <em>verified supply</em> · protected settlement · 10 verticals · 42+ markets
   </div>
 
   <div class="mega-dim" id="mega-dim"></div>
 
   <header class="site-header" id="header">
     <!-- T1 utility -->
-    <div class="t1">
+    <div class="t1 dynamic-dim">
       <div class="t1-inner">
         <div>Prague · Dubai · London</div>
         <div id="live-clock" style="font-variant-numeric:tabular-nums;">—</div>
@@ -2229,22 +2394,27 @@
     <!-- T2 brand -->
     <div class="t2">
       <div class="t2-inner">
-        <a class="logo" href="#top">
+        <a class="logo dynamic-dim" href="#top">
           <img src="/assets/brand/logo/primary.svg" alt="" onerror="this.style.display='none'" width="32" height="32" />
           <div>
             <strong>Harvics</strong>
             <small>Global Ventures</small>
           </div>
         </a>
-        <div class="t2-search">
-          <input type="text" placeholder="Search commodities, SKUs, suppliers or corridors" readonly />
+        <div class="t2-search" id="search-wrapper">
+          <input
+            id="header-search"
+            type="text"
+            placeholder="Search commodities, SKUs, suppliers or corridors..."
+            autocomplete="off"
+          />
           <button type="button" aria-label="Search">⌕</button>
         </div>
       </div>
     </div>
 
     <!-- T3 sector nav + mega dropdown -->
-    <div class="t3" id="t3">
+    <div class="t3 dynamic-dim" id="t3">
       <div class="t3-bar" id="t3-bar">
         <button type="button" class="t3-item" data-mega="textiles">Apparels</button>
         <button type="button" class="t3-item" data-mega="fmcg">FMCG</button>
@@ -2293,7 +2463,7 @@
         playsinline
         poster="/assets/harvictrade/heroes/commodities-hero.jpg"
       >
-        <source src="/assets/media/video/french.mp4" type="video/mp4" />
+        <source src="/assets/media/video/corridor-reel.mp4?v=night1" type="video/mp4" />
       </video>
     </div>
     <div class="hero-overlay"></div>
@@ -2321,7 +2491,7 @@
         <p class="eyebrow">02 · Statement</p>
         <h2 class="display js-split" data-split="words" id="manifesto-title">We do not list products. We run trade.</h2>
       </div>
-      <p id="manifesto-body">
+      <p class="manifesto-body" id="manifesto-body">
         Harvics is the operating layer between buyer and supplier — from first RFQ to final settlement.
         Ten industries, one governed path, and no catalogue theatre. Every listing is vetted. Every milestone is tracked.
         Every payment is protected.
@@ -2334,7 +2504,7 @@
   <section class="campaign" id="campaign">
     <div class="campaign-pin" id="campaign-pin">
       <div class="campaign-media" id="campaign-media">
-        <img src="/assets/shared/heroes/harvictrade-hero.jpg" alt="Global trade corridor" id="campaign-img" />
+        <img src="/assets/harvictrade/heroes/textiles-hero.jpg" alt="Textile corridor — verified supply in motion" id="campaign-img" />
       </div>
       <div class="campaign-veil" id="campaign-veil"></div>
       <div class="campaign-copy wrap">
@@ -2363,12 +2533,12 @@
 
       <div class="hscroll-mask">
         <div class="hscroll-track" id="hscroll-track">
-          <a class="hscroll-card" href="#"><img src="/assets/verticals/01-apparels/categories/apparel/hero.jpg" alt="" /><div class="label"><strong>Textiles &amp; Apparel</strong><span>Denim, fabrics, finished goods</span></div></a>
-          <a class="hscroll-card" href="#"><img src="/assets/verticals/02-fmcg/categories/food/hero.jpg" alt="" /><div class="label"><strong>FMCG &amp; Food</strong><span>Packaged goods, distribution</span></div></a>
-          <a class="hscroll-card" href="#"><img src="/assets/verticals/03-commodities/categories/agri/hero.jpg" alt="" /><div class="label"><strong>Commodities</strong><span>Agri, softs, metals, energy</span></div></a>
-          <a class="hscroll-card" href="#"><img src="/assets/verticals/04-industrial/categories/machinery/hero.jpg" alt="" /><div class="label"><strong>Industrial &amp; PPE</strong><span>Machinery, MRO, safety</span></div></a>
-          <a class="hscroll-card" href="#"><img src="/assets/verticals/05-minerals/categories/metals/hero.jpg" alt="" /><div class="label"><strong>Minerals &amp; Metals</strong><span>Industrial &amp; precious metals</span></div></a>
-          <a class="hscroll-card" href="#"><img src="/assets/verticals/06-oil-gas/categories/downstream/hero.jpg" alt="" /><div class="label"><strong>Oil, Gas &amp; Energy</strong><span>Upstream to downstream</span></div></a>
+          <a class="hscroll-card" href="#"><img src="/assets/harvictrade/heroes/textiles-hero.jpg" alt="" /><div class="label"><strong>Textiles &amp; Apparel</strong><span>Denim, fabrics, finished goods</span></div></a>
+          <a class="hscroll-card" href="#"><img src="/assets/harvictrade/heroes/fmcg-hero.jpg" alt="" /><div class="label"><strong>FMCG &amp; Food</strong><span>Packaged goods, distribution</span></div></a>
+          <a class="hscroll-card" href="#"><img src="/assets/harvictrade/heroes/commodities-hero.jpg" alt="" /><div class="label"><strong>Commodities</strong><span>Agri, softs, metals, energy</span></div></a>
+          <a class="hscroll-card" href="#"><img src="/assets/harvictrade/heroes/industrial-hero.jpg" alt="" /><div class="label"><strong>Industrial &amp; PPE</strong><span>Machinery, MRO, safety</span></div></a>
+          <a class="hscroll-card" href="#"><img src="/assets/harvictrade/heroes/minerals-hero.jpg" alt="" /><div class="label"><strong>Minerals &amp; Metals</strong><span>Industrial &amp; precious metals</span></div></a>
+          <a class="hscroll-card" href="#"><img src="/assets/harvictrade/heroes/energy-hero.jpg" alt="" /><div class="label"><strong>Oil, Gas &amp; Energy</strong><span>Upstream to downstream</span></div></a>
           <a class="hscroll-card" href="#"><img src="/assets/harvictrade/heroes/electronics-hero.jpg" alt="" /><div class="label"><strong>Electronics</strong><span>Consumer &amp; enterprise devices</span></div></a>
         </div>
       </div>
@@ -2414,9 +2584,9 @@
               <svg width="100%" height="2" preserveAspectRatio="none">
                 <defs>
                   <linearGradient id="opGoldGrad" x1="0" x2="1">
-                    <stop offset="0" stop-color="#C9A84C" stop-opacity="0.2" />
-                    <stop offset="0.5" stop-color="#C9A84C" stop-opacity="1" />
-                    <stop offset="1" stop-color="#C9A84C" stop-opacity="0.2" />
+                    <stop offset="0" stop-color="#C3A35E" stop-opacity="0.2" />
+                    <stop offset="0.5" stop-color="#C3A35E" stop-opacity="1" />
+                    <stop offset="1" stop-color="#C3A35E" stop-opacity="0.2" />
                   </linearGradient>
                 </defs>
                 <line x1="16%" x2="84%" y1="1" y2="1" stroke="url(#opGoldGrad)" stroke-width="1.5" stroke-dasharray="4 6" />
@@ -2559,7 +2729,7 @@
                 <defs>
                   <radialGradient id="sc-hub-grad" cx="50%" cy="40%" r="60%">
                     <stop offset="0%" stop-color="#E2C56A" />
-                    <stop offset="55%" stop-color="#C9A84C" />
+                    <stop offset="55%" stop-color="#C3A35E" />
                     <stop offset="100%" stop-color="#B8923A" />
                   </radialGradient>
                 </defs>
@@ -2570,14 +2740,14 @@
                 <g id="sc-nodes"></g>
                 <g id="sc-labels"></g>
                 <!-- Center hub: burgundy ring + gold disc + cream core -->
-                <circle cx="250" cy="250" r="68" fill="none" stroke="#1A0505" stroke-width="3" />
+                <circle cx="250" cy="250" r="68" fill="none" stroke="#3D1212" stroke-width="3" />
                 <circle cx="250" cy="250" r="62" fill="url(#sc-hub-grad)" />
-                <circle cx="250" cy="250" r="62" fill="none" stroke="#1A0505" stroke-width="1.5" />
+                <circle cx="250" cy="250" r="62" fill="none" stroke="#3D1212" stroke-width="1.5" />
                 <circle cx="250" cy="250" r="38" fill="#F5F0E8" />
                 <circle cx="250" cy="250" r="38" fill="none" stroke="rgba(201,168,76,0.55)" stroke-width="1" />
-                <text x="250" y="242" text-anchor="middle" style="font-size:9px;font-weight:700;fill:#1A0505;letter-spacing:3px;font-family:DM Sans,sans-serif">HARVICS</text>
-                <text x="250" y="256" text-anchor="middle" style="font-size:10px;font-weight:600;fill:#1A0505;letter-spacing:0.5px;font-family:DM Sans,sans-serif">Operating</text>
-                <text x="250" y="268" text-anchor="middle" style="font-size:10px;font-weight:600;fill:#1A0505;letter-spacing:0.5px;font-family:DM Sans,sans-serif">System</text>
+                <text x="250" y="242" text-anchor="middle" style="font-size:9px;font-weight:700;fill:#3D1212;letter-spacing:3px;font-family:DM Sans,sans-serif">HARVICS</text>
+                <text x="250" y="256" text-anchor="middle" style="font-size:10px;font-weight:600;fill:#3D1212;letter-spacing:0.5px;font-family:DM Sans,sans-serif">Operating</text>
+                <text x="250" y="268" text-anchor="middle" style="font-size:10px;font-weight:600;fill:#3D1212;letter-spacing:0.5px;font-family:DM Sans,sans-serif">System</text>
               </svg>
             </div>
             <div class="sc-detail" id="sc-detail">
@@ -2617,7 +2787,7 @@
   <!-- 08 · GATE -->
   <section class="market" id="market">
     <div class="market-media">
-      <img src="/assets/shared/heroes/portals-hub-hero.jpg" alt="" />
+      <img src="/assets/shared/heroes/harvictrade-marketplace.jpg" alt="HarvicTrade marketplace goods" />
     </div>
     <div class="market-overlay"></div>
     <div class="market-content">
@@ -2650,8 +2820,8 @@
       </div>
       <div class="product-grid">
         <a class="product" href="#" data-stagger-item>
-          <div class="thumb"><img src="/assets/harvictrade/products/basmati-rice.jpg" alt="" /></div>
-          <div class="meta"><h3>Premium Basmati Rice 1121 Sella</h3><span>Pakistan · FOB Karachi · MOQ 1×20ft</span></div>
+          <div class="thumb"><img src="/assets/harvictrade/products/harvics-energy-drink.jpg" alt="Harvics Energy drink" /></div>
+          <div class="meta"><h3>Harvics Energy — Health Edition</h3><span>EU · EXW · Private label / bulk</span></div>
         </a>
         <a class="product" href="#" data-stagger-item>
           <div class="thumb"><img src="/assets/harvictrade/products/safety-jacket.jpg" alt="" /></div>
@@ -2685,15 +2855,54 @@
     </div>
   </section>
 
-  <!-- 8 · CLOSE -->
-  <section class="close" id="contact">
+  <!-- 10 · APPS BRAND — HarvyX + stack -->
+  <section class="apps-brand" id="apps" aria-labelledby="apps-title">
     <div class="wrap">
-      <p class="eyebrow">10 · Trade desk</p>
-      <h2 class="display js-split" data-split="words" id="close-title">Start a transaction.</h2>
-      <p class="lead" id="close-lead">Speak to our desk for sourcing, corridor routing, finance structures or marketplace access — response within one business day.</p>
-      <div class="cta-row" id="close-cta">
-        <a class="btn btn-gold" href="#">Contact the desk</a>
-        <a class="btn btn-ghost" href="#">Submit an RFQ</a>
+      <div class="apps-intro">
+        <div>
+          <p class="eyebrow">10 · Apps</p>
+          <h2 id="apps-title" class="js-split" data-split="words">Software for the corridor.<br /><em>Not another dashboard.</em></h2>
+        </div>
+        <p id="apps-lead">The same operating discipline — now as tools your desk can run: intelligence, voice of finance, settlement, and portals.</p>
+      </div>
+
+      <div class="apps-rails" id="apps-rails">
+        <a class="app-rail" href="/en/apps" data-code="01">
+          <div class="code">01 · Finance OS</div>
+          <h3>Harvoice</h3>
+          <p>Invoicing, collections and AR tracking across currencies — the voice of the books on the corridor.</p>
+          <div class="points"><span>Invoicing</span><span>Collections</span><span>Multi-currency</span></div>
+          <span class="go">Open Harvoice →</span>
+        </a>
+        <a class="app-rail" href="/en/finance/hpay" data-code="02">
+          <div class="code">02 · Settlement</div>
+          <h3>HPay</h3>
+          <p>Escrow wallets, FX settlement and compliant payment rails for protected close.</p>
+          <div class="points"><span>Escrow</span><span>FX rails</span><span>Compliance</span></div>
+          <span class="go">Open HPay →</span>
+        </a>
+        <a class="app-rail" href="/en/portals" data-code="03">
+          <div class="code">03 · Access</div>
+          <h3>Portals</h3>
+          <p>Supplier, distributor and RFQ desks — one login path into live corridor work.</p>
+          <div class="points"><span>Supplier</span><span>Distributor</span><span>RFQ inbox</span></div>
+          <span class="go">Enter portals →</span>
+        </a>
+        <a class="app-rail app-rail--hx" href="/en/harvyx" data-code="04" id="hx-feature">
+          <div class="code">04 · Intelligence</div>
+          <h3>Harvy<span>X</span></h3>
+          <p>Lead intelligence, outreach sequences, reply desk and verified data bank.</p>
+          <div class="points"><span>ICP</span><span>Outreach</span><span>Data bank</span></div>
+          <span class="go">Enter HarvyX →</span>
+        </a>
+      </div>
+
+      <div class="apps-desk" id="contact">
+        <p>Need a human on the desk for sourcing, corridor routing or marketplace access — response within one business day.</p>
+        <div class="cta-row">
+          <a class="btn btn-gold" href="/en/contact">Contact the desk</a>
+          <a class="btn btn-ghost-light" href="/en/harvictrade">Submit an RFQ</a>
+        </div>
       </div>
     </div>
   </section>
@@ -2799,7 +3008,7 @@
         </div>
         <div class="f4-right">
           <span class="f4-locale">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5" aria-hidden="true">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#C3A35E" stroke-width="1.5" aria-hidden="true">
               <circle cx="12" cy="12" r="9" />
               <path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18" />
             </svg>
@@ -3058,7 +3267,7 @@
       gsap.set(heroWords,                  { yPercent: 100, opacity: 0 });
       gsap.set('#hero-support, #hero-cta', { y: 28, opacity: 0 });
       gsap.set('.hero-film-tag',           { y: 16, opacity: 0 });
-      if (heroMedia) gsap.set(heroMedia,   { scale: 1.14, filter: 'brightness(0.45)' });
+      if (heroMedia) gsap.set(heroMedia,   { scale: 1.22, filter: 'brightness(0.45)' });
     }
 
     // ── Cinematic entrance — fires once preloader exits ──
@@ -3069,7 +3278,7 @@
       tl
         // Scene arrives: slow pull-back, world brightens
         .to(heroMedia, {
-          scale: 1.0, filter: 'brightness(1)',
+          scale: 1.14, filter: 'brightness(1)',
           duration: 2.6, ease: 'power2.out',
         }, 0)
         // Film tag drifts up
@@ -3127,6 +3336,11 @@
     gsap.fromTo('#manifesto-line', { scaleX: 0 }, {
       scaleX: 1, ease: 'none',
       scrollTrigger: { trigger: '.manifesto', start: 'top 55%', end: 'bottom 35%', scrub: true },
+    });
+
+    gsap.fromTo('#manifesto-proof article', { y: 24, opacity: 0 }, {
+      y: 0, opacity: 1, stagger: 0.1, duration: 0.7, ease: 'power3.out',
+      scrollTrigger: { trigger: '#manifesto-proof', start: 'top 88%', toggleActions: 'play none none reverse' },
     });
 
     const campaign = document.getElementById('campaign');
@@ -3372,18 +3586,32 @@
       scrollTrigger: { trigger: '.product-grid', start: 'top 85%' },
     });
 
-    const closeWords = document.querySelectorAll('#close-title .split-word');
-    if (closeWords.length) {
-      gsap.fromTo(closeWords, { yPercent: 110, opacity: 0 }, {
+    const appsWords = document.querySelectorAll('#apps-title .split-word');
+    if (appsWords.length) {
+      gsap.fromTo(appsWords, { yPercent: 110, opacity: 0 }, {
         yPercent: 0, opacity: 1, stagger: 0.07, duration: 0.9, ease: 'power3.out',
-        scrollTrigger: { trigger: '#close-title', start: 'top 82%' },
+        scrollTrigger: { trigger: '#apps-title', start: 'top 82%' },
       });
     }
 
-    gsap.fromTo('#close-lead, #close-cta', { y: 24, opacity: 0 }, {
-      y: 0, opacity: 1, duration: 0.9, stagger: 0.12, ease: 'power3.out',
-      scrollTrigger: { trigger: '#close-lead', start: 'top 88%' },
+    gsap.fromTo('#apps-lead', { y: 24, opacity: 0 }, {
+      y: 0, opacity: 1, duration: 0.85, ease: 'power3.out',
+      scrollTrigger: { trigger: '#apps-lead', start: 'top 88%' },
     });
+
+    gsap.fromTo('#apps-rails .app-rail', { y: 28, opacity: 0 }, {
+      y: 0, opacity: 1, duration: 0.75, stagger: 0.08, ease: 'power3.out',
+      scrollTrigger: { trigger: '#apps-rails', start: 'top 88%' },
+    });
+  // ── Header search: expand + dim surroundings ──────────────
+  (function() {
+    const header = document.getElementById('header');
+    const input = document.getElementById('header-search');
+    if (!header || !input) return;
+    input.addEventListener('focus', () => header.classList.add('is-search-focus'));
+    input.addEventListener('blur', () => header.classList.remove('is-search-focus'));
+  })();
+
   // ── Live clock ────────────────────────────────────────────
   (function() {
     const el = document.getElementById('live-clock');
@@ -3415,6 +3643,18 @@
     const startTime = performance.now();
     const duration = 1800;
 
+    function dismissPreloader() {
+      if (preloader.classList.contains('done')) return;
+      numEl.textContent = '100%';
+      preloader.classList.add('done');
+      setTimeout(() => {
+        window.dispatchEvent(new Event('harvics:preloader-done'));
+      }, 400);
+    }
+
+    // Failsafe — never leave the corridor stuck on the loader
+    setTimeout(dismissPreloader, 2800);
+
     function updateCounter(ts) {
       const elapsed = ts - startTime;
       const progress = Math.min(elapsed / duration, 1);
@@ -3425,13 +3665,7 @@
         requestAnimationFrame(updateCounter);
       } else {
         numEl.textContent = '100%';
-        // Dismiss preloader then fire hero entrance
-        setTimeout(() => {
-          preloader.classList.add('done');
-          setTimeout(() => {
-            window.dispatchEvent(new Event('harvics:preloader-done'));
-          }, 400);
-        }, 300);
+        setTimeout(dismissPreloader, 300);
       }
     }
     requestAnimationFrame(updateCounter);
@@ -3576,11 +3810,13 @@
     canvas.classList.add('ready');
   }
 
-  // Boot WebGL after Three.js loads
-  (function waitForThree() {
-    if (typeof THREE !== 'undefined') { initWebGL(); }
-    else { setTimeout(waitForThree, 100); }
-  })();
+  // Boot WebGL after preloader exits (avoid blocking the loader counter)
+  window.addEventListener('harvics:preloader-done', () => {
+    (function waitForThree() {
+      if (typeof THREE !== 'undefined') { initWebGL(); }
+      else { setTimeout(waitForThree, 100); }
+    })();
+  }, { once: true });
 
   /* Supply chain wheel (light cockpit — from SupplyChainWheel.tsx) */
   (function () {
@@ -3657,7 +3893,7 @@
       line.setAttribute('y1', cy);
       line.setAttribute('x2', x);
       line.setAttribute('y2', y);
-      line.setAttribute('stroke', '#C9A84C');
+      line.setAttribute('stroke', '#C3A35E');
       line.setAttribute('stroke-width', '0.7');
       line.setAttribute('opacity', '0.22');
       line.dataset.idx = String(idx);
@@ -3667,7 +3903,7 @@
       circle.setAttribute('cx', x);
       circle.setAttribute('cy', y);
       circle.setAttribute('r', '7');
-      circle.setAttribute('fill', '#C9A84C');
+      circle.setAttribute('fill', '#C3A35E');
       circle.setAttribute('stroke', '#F5F0E8');
       circle.setAttribute('stroke-width', '2');
       circle.style.cursor = 'pointer';
@@ -3710,7 +3946,7 @@
         text.setAttribute('x', cx + labelRadius * Math.cos(angle));
         text.setAttribute('y', cy + labelRadius * Math.sin(angle));
         const on = hovered === idx;
-        text.setAttribute('fill', on ? '#1A0505' : 'rgba(26,5,5,0.55)');
+        text.setAttribute('fill', on ? '#3D1212' : 'rgba(26,5,5,0.55)');
         text.style.fontWeight = on ? '700' : '500';
       });
     }
@@ -3719,8 +3955,8 @@
       nodesG.querySelectorAll('circle').forEach((c, i) => {
         const on = hovered === i;
         c.setAttribute('r', on ? '11' : '7');
-        c.setAttribute('fill', on ? '#1A0505' : '#C9A84C');
-        c.setAttribute('stroke', on ? '#C9A84C' : '#F5F0E8');
+        c.setAttribute('fill', on ? '#3D1212' : '#C3A35E');
+        c.setAttribute('stroke', on ? '#C3A35E' : '#F5F0E8');
         c.setAttribute('stroke-width', on ? '2.5' : '2');
       });
       spokes.querySelectorAll('line').forEach((line, i) => {

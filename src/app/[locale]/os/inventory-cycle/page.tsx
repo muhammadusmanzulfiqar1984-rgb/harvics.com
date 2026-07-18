@@ -1,7 +1,7 @@
 'use client'
 /** HARVICS OS — Cycle Count + ABC Analysis (Module #22) */
 import { useEffect, useState } from 'react'
-const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F0E8'
+const B='var(--harvics-burgundy)'; const G='var(--harvics-gold)'; const C='var(--harvics-cream)'
 const CAT:Record<string,string>={A:'#2E7D32',B:'#B8860B',C:'#666'}
 interface Count{id:string;sku:string;warehouseId:string|null;systemQty:number;countedQty:number;variance:number;countedBy:string|null;status:string;countedAt:string}
 interface Abc{sku:string;name:string;qty:number;price:number;value:number;cumPct:number;category:'A'|'B'|'C'}

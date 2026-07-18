@@ -78,14 +78,14 @@ export const CRMPageLayout: React.FC<CRMPageLayoutProps> = ({
             primaryAction.href ? (
               <Link
                 href={primaryAction.href}
-                className="bg-harvics-gold hover:bg-harvics-goldMuted text-harvics-burgundy text-[12px] font-bold py-1.5 px-4 rounded-full transition-all shadow-[0_0_12px_rgba(195,163,94,0.2)] hover:shadow-[0_0_12px_rgba(195,163,94,0.35)]"
+                className="bg-harvics-gold hover:bg-harvics-goldMuted text-harvics-burgundy text-[12px] font-bold py-1.5 px-4 rounded-full transition-all shadow-[0_0_12px_rgba(195, 163, 94,0.2)] hover:shadow-[0_0_12px_rgba(195, 163, 94,0.35)]"
               >
                 {primaryAction.label}
               </Link>
             ) : (
               <button
                 onClick={primaryAction.onClick}
-                className="bg-harvics-gold hover:bg-harvics-goldMuted text-harvics-burgundy text-[12px] font-bold py-1.5 px-4 rounded-full transition-all shadow-[0_0_12px_rgba(195,163,94,0.2)] hover:shadow-[0_0_12px_rgba(195,163,94,0.35)]"
+                className="bg-harvics-gold hover:bg-harvics-goldMuted text-harvics-burgundy text-[12px] font-bold py-1.5 px-4 rounded-full transition-all shadow-[0_0_12px_rgba(195, 163, 94,0.2)] hover:shadow-[0_0_12px_rgba(195, 163, 94,0.35)]"
               >
                 {primaryAction.label}
               </button>

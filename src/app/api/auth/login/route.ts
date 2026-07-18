@@ -88,8 +88,8 @@ export async function POST(request: NextRequest) {
     // Unexpected response format
     console.error('Unexpected backend response format:', JSON.stringify(data).substring(0, 200))
     return NextResponse.json(
-      { success: false, error: 'Unexpected response format from backend' },
-      { status: 500 }
+      { success: false, error: 'The service is temporarily unavailable. Please try again later.' },
+      { status: 503 }
     )
   } catch (error) {
     console.error('Login proxy error:', error)
@@ -105,21 +105,21 @@ export async function POST(request: NextRequest) {
         })
         if (!healthCheck.ok) {
           return NextResponse.json(
-            { success: false, error: `Backend health check failed. Status: ${healthCheck.status}` },
-            { status: 500 }
+            { success: false, error: 'The service is temporarily unavailable. Please try again later.' },
+            { status: 503 }
           )
         }
       } catch (healthError) {
         return NextResponse.json(
-          { success: false, error: `Cannot connect to backend at ${BACKEND_URL}. Please ensure the backend server is running on port 4000.` },
-          { status: 500 }
+          { success: false, error: 'The service is temporarily unavailable. Please try again later.' },
+          { status: 503 }
         )
       }
     }
     
     return NextResponse.json(
-      { success: false, error: `Failed to connect to backend: ${errorMessage}` },
-      { status: 500 }
+      { success: false, error: 'The service is temporarily unavailable. Please try again later.' },
+      { status: 503 }
     )
   }
 }

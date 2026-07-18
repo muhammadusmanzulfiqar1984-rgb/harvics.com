@@ -1,7 +1,7 @@
 'use client'
 /** HARVICS OS — CRM Pipeline (Module #8) — kanban-style stage view */
 import { useEffect, useState } from 'react'
-const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F0E8'
+const B='var(--harvics-burgundy)'; const G='var(--harvics-gold)'; const C='var(--harvics-cream)'
 const STAGES=['Prospecting','Qualified','Proposal','Negotiation','Closed Won','Closed Lost'] as const
 const SC:Record<string,string>={'Prospecting':'#1565C0','Qualified':'#0277BD','Proposal':'#B8860B','Negotiation':'#E65100','Closed Won':'#2E7D32','Closed Lost':'#666'}
 interface Deal{id:string;name:string;value:number;currency:string;stage:string;probability:number;ownerId:string|null;customerId:string|null;expectedClose:string|null}

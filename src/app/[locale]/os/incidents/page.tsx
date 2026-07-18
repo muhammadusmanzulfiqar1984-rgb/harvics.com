@@ -17,7 +17,7 @@ interface Incident {
   resolvedDate: string | null
 }
 
-const B = '#6B1F2B'; const G = '#C3A35E'; const C = '#F5F0E8'
+const B = 'var(--harvics-burgundy)'; const G = 'var(--harvics-gold)'; const C = 'var(--harvics-cream)'
 const SEV: Record<string,string> = { Critical:'#B71C1C', High:'#E65100', Medium:'#F9A825', Low:'#558B2F' }
 const STA: Record<string,string> = { Open:'#B8860B', 'In Progress':'#1565C0', Resolved:'#2E7D32', Closed:'#666' }
 

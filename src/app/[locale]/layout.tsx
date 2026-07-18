@@ -13,6 +13,8 @@ import { SUPPORTED_LOCALES, getValidLocale } from '@/config/locales';
 import { isRTL } from '@/utils/rtl';
 import ConditionalHeader from '@/components/layout/ConditionalHeader';
 import ConditionalFooter from '@/components/layout/ConditionalFooter';
+import TrialChromeGuard from '@/components/layout/TrialChromeGuard';
+import HomeMotionGuard from '@/components/layout/HomeMotionGuard';
 import { BackendStatusProvider } from '@/context/BackendStatusContext';
 import { GeographicSyncWrapper } from '@/components/shared/GeographicSyncWrapper';
 import { getFolderBasedCategories } from '@/data/folderBasedProducts';
@@ -22,15 +24,18 @@ import '../globals.css'
 import '@/styles/apple-effects.css'
 
 // Lazy-load non-critical widgets so they don't block initial page render
-const BackgroundMusic = dynamic(() => import('@/components/ui/BackgroundMusic'))
-const AutoBugDetector = dynamic(() => import('@/components/shared/AutoBugDetector'))
-const ChatbotWidget = dynamic(() => import('@/features/ai/ChatbotWidget'))
 const GlobalScrollReveal = dynamic(() => import('@/components/shared/GlobalScrollReveal'))
 const FrontendWatchdogClient = dynamic(() => import('@/components/shared/FrontendWatchdogClient'))
+const ChatbotWidget = dynamic(() => import('@/features/ai/ChatbotWidget'))
 const AppleStyleScrollEffects = dynamic(() => import('@/components/effects/AppleStyleScrollEffects'))
 
-const inter = Inter({ subsets: ['latin'] })
-const playfairDisplay = Playfair_Display({ subsets: ['latin', 'latin-ext'], variable: '--font-playfair-display', weight: ['400', '500', '600', '700', '800', '900'] });
+const inter = Inter({ subsets: ['latin'], display: 'swap' })
+const playfairDisplay = Playfair_Display({
+  subsets: ['latin', 'latin-ext'],
+  variable: '--font-playfair-display',
+  weight: ['400', '600', '700'],
+  display: 'swap',
+})
 const notoSansArabic = Noto_Sans_Arabic({ subsets: ['arabic'], variable: '--font-arabic', weight: ['400', '500', '600', '700'], display: 'swap' });
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono', weight: ['400', '500', '700'], display: 'swap' });
 
@@ -192,9 +197,13 @@ export default async function LocaleLayout({
                       <FrontendWatchdogClient />
                       {/* <BackgroundMusic /> — disabled per user request */}
                       {/* <AutoBugDetector /> — hidden; re-enable when debugging */}
-                      <GlobalScrollReveal />
-                      <ChatbotWidget />
-                      <AppleStyleScrollEffects />
+                      <TrialChromeGuard>
+                        <GlobalScrollReveal />
+                        <ChatbotWidget />
+                      </TrialChromeGuard>
+                      <HomeMotionGuard>
+                        <AppleStyleScrollEffects />
+                      </HomeMotionGuard>
                       <Analytics />
                     </CountryProvider>
                   </RegionProvider>

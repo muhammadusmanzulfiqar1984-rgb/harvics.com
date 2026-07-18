@@ -13,9 +13,25 @@ export default async function DistributorPortalPage() {
 
   return (
     <AuthGuard allowedRoles={allowedRoles}>
-      <div className="space-y-4">
-        <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} />
-        <DistributorDashboard />
+      <div>
+        {/* Photo hero banner */}
+        <div 
+          className="h-48 md:h-56 w-full relative overflow-hidden"
+          style={{ backgroundImage: "url('/assets/shared/heroes/distributor-portal-hero.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}
+        >
+          <div className="absolute inset-0 bg-harvics-burgundy/60" />
+          <div className="relative max-w-7xl mx-auto px-6 h-full flex items-end pb-6">
+            <div>
+              <p className="text-harvics-gold text-xs tracking-[0.2em] uppercase mb-1">Enterprise Portal</p>
+              <h1 className="text-white text-3xl md:text-4xl font-bold tracking-tight">Distributor Portal</h1>
+            </div>
+          </div>
+        </div>
+
+        <div className="space-y-4 max-w-7xl mx-auto px-6 pt-6">
+          <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} />
+          <DistributorDashboard />
+        </div>
       </div>
     </AuthGuard>
   )

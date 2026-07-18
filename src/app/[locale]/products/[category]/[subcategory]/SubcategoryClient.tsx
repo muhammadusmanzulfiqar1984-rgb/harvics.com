@@ -42,16 +42,16 @@ const SubcategoryClient: React.FC<SubcategoryClientProps> = ({
   return (
     <>
       {/* Breadcrumb */}
-      <section className="py-3 sm:py-4 md:py-8 px-3 sm:px-4 md:px-6 bg-[#6B1F2B] relative overflow-hidden border-b border-[#C3A35E]/20">
+      <section className="py-3 sm:py-4 md:py-8 px-3 sm:px-4 md:px-6 bg-harvics-burgundy relative overflow-hidden border-b border-harvics-gold/20">
         <div className="relative z-10 max-w-7xl mx-auto">
           <nav className="flex items-center space-x-1 sm:space-x-2 text-xs sm:text-sm md:text-base flex-wrap">
-            <Link href={`/${locale}/products`} className="text-white hover:text-[#C3A35E]/90 transition-colors duration-300 flex items-center space-x-1 font-bold">
+            <Link href={`/${locale}/products`} className="text-white hover:text-harvics-gold/90 transition-colors duration-300 flex items-center space-x-1 font-bold">
               <span className="text-sm sm:text-base">←</span>
               <span className="hidden sm:inline">{t('pageTitle')}</span>
               <span className="sm:hidden">Products</span>
             </Link>
             <span className="text-white/60 mx-1">/</span>
-            <Link href={`/${locale}/products/${categoryKey}`} className="text-white hover:text-[#C3A35E]/90 transition-colors duration-300 truncate max-w-[120px] sm:max-w-none font-bold">
+            <Link href={`/${locale}/products/${categoryKey}`} className="text-white hover:text-harvics-gold/90 transition-colors duration-300 truncate max-w-[120px] sm:max-w-none font-bold">
               {categoryTitle}
             </Link>
             <span className="text-white/60 mx-1">/</span>
@@ -61,7 +61,7 @@ const SubcategoryClient: React.FC<SubcategoryClientProps> = ({
       </section>
 
       {/* Subcategory Hero */}
-      <section className="relative py-6 sm:py-8 md:py-12 lg:py-16 overflow-hidden min-h-[180px] sm:min-h-[200px] md:min-h-[250px] lg:min-h-[300px] bg-[#6B1F2B]">
+      <section className="relative py-6 sm:py-8 md:py-12 lg:py-16 overflow-hidden min-h-[180px] sm:min-h-[200px] md:min-h-[250px] lg:min-h-[300px] bg-harvics-burgundy">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
@@ -73,7 +73,7 @@ const SubcategoryClient: React.FC<SubcategoryClientProps> = ({
               target.src = '/assets/brand/photo/logo.png';
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#6B1F2B] via-[#6B1F2B]/50 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-harvics-burgundy via-[#3D1212]/50 to-transparent"></div>
         </div>
 
         {/* Content */}
@@ -137,7 +137,7 @@ const SubcategoryClient: React.FC<SubcategoryClientProps> = ({
             <div className="text-center py-16 px-6">
               <div className="max-w-md mx-auto">
                 <div className="text-6xl mb-4">📦</div>
-                <p className="text-lg text-[#6B1F2B] font-semibold mb-2">
+                <p className="text-lg text-harvics-burgundy font-semibold mb-2">
                   No products available
                 </p>
                 <p className="text-sm text-gray-600">

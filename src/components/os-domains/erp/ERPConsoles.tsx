@@ -202,7 +202,7 @@ export default function ERPConsoles() {
         <div className="space-y-3">
           {TAB_GROUPS.map(group => (
             <div key={group.title} className="rounded-xl border border-[#efe9dd] bg-[#fffdf9] p-2">
-              <p className="mb-2 text-[10px] font-black uppercase tracking-[0.14em] text-[#6b1f2b]">{group.title}</p>
+              <p className="mb-2 text-[10px] font-black uppercase tracking-[0.14em] text-harvics-burgundy">{group.title}</p>
               <div className="flex flex-wrap gap-1">
                 {group.keys.map(key => {
                   const def = TAB_BY_KEY[key]
@@ -212,7 +212,7 @@ export default function ERPConsoles() {
                       type="button"
                       onClick={() => setTab(key)}
                       className={`rounded-xl px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.08em] transition ${
-                        tab === key ? 'bg-[#6b1f2b] text-white shadow' : 'text-[#3a3a3a] hover:bg-[#f5efe2]'
+                        tab === key ? 'bg-harvics-burgundy text-white shadow' : 'text-[#3a3a3a] hover:bg-[#f5efe2]'
                       }`}
                     >
                       <span className="mr-1">{def.icon}</span>
@@ -360,7 +360,7 @@ function RowCard({ row }: { row: Record<string, any> }) {
         </div>
         <div className="flex shrink-0 flex-col items-end gap-1">
           {statusVal && <span className={`rounded-full px-2 py-0.5 text-[9px] font-bold ${statusCls}`}>{statusVal}</span>}
-          {highlight && <span className="font-mono text-[11px] font-bold text-[#6b1f2b]">{typeof highlight[1] === 'number' && (highlight[0].toLowerCase().includes('amount') || highlight[0].toLowerCase().includes('value') || highlight[0].toLowerCase().includes('salary') || highlight[0].toLowerCase().includes('cost') || highlight[0].toLowerCase().includes('price') || highlight[0].toLowerCase().includes('balance') || highlight[0].toLowerCase().includes('reward') || highlight[0].toLowerCase().includes('rate') || highlight[0].toLowerCase().includes('budget') || highlight[0].toLowerCase().includes('ltv')) ? `$${(highlight[1] as number).toLocaleString()}` : (highlight[1] as number).toLocaleString()}</span>}
+          {highlight && <span className="font-mono text-[11px] font-bold text-harvics-burgundy">{typeof highlight[1] === 'number' && (highlight[0].toLowerCase().includes('amount') || highlight[0].toLowerCase().includes('value') || highlight[0].toLowerCase().includes('salary') || highlight[0].toLowerCase().includes('cost') || highlight[0].toLowerCase().includes('price') || highlight[0].toLowerCase().includes('balance') || highlight[0].toLowerCase().includes('reward') || highlight[0].toLowerCase().includes('rate') || highlight[0].toLowerCase().includes('budget') || highlight[0].toLowerCase().includes('ltv')) ? `$${(highlight[1] as number).toLocaleString()}` : (highlight[1] as number).toLocaleString()}</span>}
         </div>
       </div>
       {chipFields.filter(([k]) => !highlight || k !== highlight[0]).length > 0 && (
@@ -465,7 +465,7 @@ function BIReportsConsole() {
                   <span className="font-mono font-bold">{r.views}</span>
                 </div>
                 <div className="h-2 rounded bg-[#f0ece3]">
-                  <div className="h-2 rounded bg-[#6b1f2b]" style={{ width: `${Math.max((Number(r.views || 0) / maxViews) * 100, 6)}%` }} />
+                  <div className="h-2 rounded bg-harvics-burgundy" style={{ width: `${Math.max((Number(r.views || 0) / maxViews) * 100, 6)}%` }} />
                 </div>
               </div>
               <div className="flex items-center justify-between pt-1">

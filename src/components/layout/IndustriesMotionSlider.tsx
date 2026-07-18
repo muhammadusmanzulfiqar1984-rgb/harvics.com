@@ -49,16 +49,16 @@ const IndustriesMotionSlider: React.FC = () => {
       `}</style>
 
       <div className={`max-w-[1200px] mx-auto px-6 mb-12 ${revealClass(isVisible, 'up')}`}>
-        <div className="text-xs font-bold text-[#C3A35E] uppercase tracking-[0.2em] mb-4">
+        <div className="text-xs font-bold text-harvics-gold uppercase tracking-[0.2em] mb-4">
           INDUSTRIES
         </div>
         <h2
-          className="text-3xl md:text-4xl font-bold text-[#6B1F2B] mb-3 leading-[1.1]"
+          className="text-3xl md:text-4xl font-bold text-harvics-burgundy mb-3 leading-[1.1]"
           style={{ letterSpacing: '-0.03em' }}
         >
           Designed to scale across categories.
         </h2>
-        <p className="text-base text-[#6B1F2B]/60 max-w-[600px] leading-relaxed">
+        <p className="text-base text-harvics-burgundy/60 max-w-[600px] leading-relaxed">
           A consistent operating rhythm — like Apple — with category depth — like M&S.
         </p>
       </div>

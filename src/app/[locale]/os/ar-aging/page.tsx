@@ -1,7 +1,7 @@
 'use client'
 /** HARVICS OS — AR Aging (Module #3) — computed from existing invoices */
 import { useEffect, useState } from 'react'
-const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F0E8'
+const B='var(--harvics-burgundy)'; const G='var(--harvics-gold)'; const C='var(--harvics-cream)'
 interface Row { invoiceNo:string; customerName:string|null; amount:number; paid:number; outstanding:number; daysOverdue:number; bucket:string }
 interface Sum { current:number; d30:number; d60:number; d90:number; d90plus:number }
 const BUCKETS:[keyof Sum,string,string][]=[['current','Current','#2E7D32'],['d30','1-30 days','#9CB451'],['d60','31-60 days','#B8860B'],['d90','61-90 days','#E65100'],['d90plus','90+ days','#B71C1C']]

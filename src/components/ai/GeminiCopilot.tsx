@@ -91,7 +91,7 @@ export default function GeminiCopilot() {
       {/* Floating trigger button */}
       <button
         onClick={() => setOpen(o => !o)}
-        className={`fixed bottom-6 right-6 z-[2000] w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 ${open ? 'bg-[#1A1A1A] rotate-45' : 'bg-[#6B1F2B]'}`}
+        className={`fixed bottom-6 right-6 z-[2000] w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 ${open ? 'bg-[#1A1A1A] rotate-45' : 'bg-harvics-burgundy'}`}
         aria-label="HARVICS AI Copilot"
       >
         {open ? (
@@ -106,7 +106,7 @@ export default function GeminiCopilot() {
         <div className="fixed bottom-24 right-6 z-[1999] w-[380px] max-h-[580px] bg-[#FAF8F5] rounded-2xl shadow-2xl border border-[#EAE0D5] flex flex-col overflow-hidden"
           style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.15)' }}>
           {/* Header */}
-          <div className="px-4 py-3.5 bg-[#6B1F2B] flex items-center gap-3">
+          <div className="px-4 py-3.5 bg-harvics-burgundy flex items-center gap-3">
             <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
               <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" /></svg>
             </div>
@@ -126,7 +126,7 @@ export default function GeminiCopilot() {
               <div key={i} className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                 <div className={`max-w-[85%] rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed ${
                   m.role === 'user'
-                    ? 'bg-[#6B1F2B] text-white rounded-br-sm'
+                    ? 'bg-harvics-burgundy text-white rounded-br-sm'
                     : 'bg-white text-[#1A1A1A] border border-[#E5E5EA] rounded-bl-sm shadow-sm'
                 }`}>
                   {m.text}
@@ -155,7 +155,7 @@ export default function GeminiCopilot() {
             <div className="px-4 pb-2 flex flex-wrap gap-1.5">
               {QUICK.map(q => (
                 <button key={q} onClick={() => { setInput(q); inputRef.current?.focus(); }}
-                  className="text-[11px] px-2.5 py-1 bg-[#FAF8F5] text-[#6B1F2B] rounded-full border border-[#E5E5EA] hover:bg-[#F0EAE1] transition-colors font-medium">
+                  className="text-[11px] px-2.5 py-1 bg-[#FAF8F5] text-harvics-burgundy rounded-full border border-[#E5E5EA] hover:bg-[#F0EAE1] transition-colors font-medium">
                   {q}
                 </button>
               ))}
@@ -170,10 +170,10 @@ export default function GeminiCopilot() {
               onChange={e => setInput(e.target.value)}
               onKeyDown={e => e.key === 'Enter' && !e.shiftKey && send()}
               placeholder="Ask about orders, inventory, KPIs…"
-              className="flex-1 bg-[#FAF8F5] rounded-xl px-3 py-2 text-sm text-[#1A1A1A] outline-none placeholder:text-[#C7C7CC] focus:ring-2 focus:ring-[#6B1F2B]/20"
+              className="flex-1 bg-[#FAF8F5] rounded-xl px-3 py-2 text-sm text-[#1A1A1A] outline-none placeholder:text-[#C7C7CC] focus:ring-2 focus:ring-harvics-burgundy/20"
             />
             <button onClick={send} disabled={!input.trim() || loading}
-              className="w-9 h-9 bg-[#6B1F2B] rounded-xl flex items-center justify-center disabled:opacity-40 hover:bg-[#5a1a24] transition-colors flex-shrink-0">
+              className="w-9 h-9 bg-harvics-burgundy rounded-xl flex items-center justify-center disabled:opacity-40 hover:bg-[#5a1a24] transition-colors flex-shrink-0">
               <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" /></svg>
             </button>
           </div>

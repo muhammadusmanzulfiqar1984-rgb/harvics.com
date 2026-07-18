@@ -36,10 +36,10 @@ export default async function SharesPage({ params }: SharesPageProps) {
   return (
     <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
       {/* Hero */}
-      <section className="relative bg-[#6B1F2B] py-20 px-4 border-b border-[#C3A35E]/40 overflow-hidden">
+      <section className="relative bg-harvics-burgundy py-20 px-4 border-b border-harvics-gold/40 overflow-hidden">
         <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.95) 0%, rgba(90,26,36,0.9) 100%)' }} />
         <div className="max-w-[1200px] mx-auto text-center relative z-10">
-          <div className="text-xs text-[#C3A35E] font-bold uppercase tracking-[0.2em] mb-3">Investors</div>
+          <div className="text-xs text-harvics-gold font-bold uppercase tracking-[0.2em] mb-3">Investors</div>
           <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4" style={{ letterSpacing: '-0.02em' }}>
             Shares, Bonds & Instruments
           </h1>
@@ -50,11 +50,11 @@ export default async function SharesPage({ params }: SharesPageProps) {
       </section>
 
       {/* Investor Nav */}
-      <section className="bg-[#5a1a24] border-b border-[#C3A35E]/20">
+      <section className="bg-[#5a1a24] border-b border-harvics-gold/20">
         <div className="max-w-[1200px] mx-auto px-4 flex gap-0">
           {navItems.map((n) => (
             <Link key={n.label} href={n.href}
-              className={`px-6 py-4 text-sm font-semibold transition-colors ${n.active ? 'text-[#C3A35E] border-b-2 border-[#C3A35E]' : 'text-white/50 hover:text-white/80'}`}>
+              className={`px-6 py-4 text-sm font-semibold transition-colors ${n.active ? 'text-harvics-gold border-b-2 border-harvics-gold' : 'text-white/50 hover:text-white/80'}`}>
               {n.label}
             </Link>
           ))}
@@ -65,18 +65,18 @@ export default async function SharesPage({ params }: SharesPageProps) {
       <section className="max-w-[1200px] mx-auto px-4 py-16">
         <div className="space-y-6">
           {instruments.map((inst) => (
-            <div key={inst.name} className="bg-white border border-[#C3A35E]/15 p-8 flex flex-col md:flex-row gap-6">
+            <div key={inst.name} className="bg-white border border-harvics-gold/15 p-8 flex flex-col md:flex-row gap-6">
               <div className="flex-shrink-0">
-                <span className="inline-block text-xs font-bold text-[#C3A35E] bg-[#C3A35E]/10 px-3 py-1 uppercase tracking-wider">{inst.type}</span>
+                <span className="inline-block text-xs font-bold text-harvics-gold bg-harvics-gold/10 px-3 py-1 uppercase tracking-wider">{inst.type}</span>
               </div>
               <div className="flex-1">
-                <h3 className="text-lg font-semibold text-[#6B1F2B] mb-1">{inst.name}</h3>
+                <h3 className="text-lg font-semibold text-harvics-burgundy mb-1">{inst.name}</h3>
                 <div className="flex gap-4 mb-3">
-                  <span className="text-xs text-[#6B1F2B]/40">{inst.status}</span>
-                  <span className="text-xs text-[#6B1F2B]/40">·</span>
-                  <span className="text-xs text-[#6B1F2B]/40">{inst.exchange}</span>
+                  <span className="text-xs text-harvics-burgundy/40">{inst.status}</span>
+                  <span className="text-xs text-harvics-burgundy/40">·</span>
+                  <span className="text-xs text-harvics-burgundy/40">{inst.exchange}</span>
                 </div>
-                <p className="text-sm text-[#6B1F2B]/55 leading-relaxed">{inst.desc}</p>
+                <p className="text-sm text-harvics-burgundy/55 leading-relaxed">{inst.desc}</p>
               </div>
             </div>
           ))}
@@ -84,7 +84,7 @@ export default async function SharesPage({ params }: SharesPageProps) {
       </section>
 
       {/* Key Metrics */}
-      <section className="bg-[#6B1F2B] py-14 px-4">
+      <section className="bg-harvics-burgundy py-14 px-4">
         <div className="max-w-[1200px] mx-auto">
           <AnimatedStats
             stats={[
@@ -100,13 +100,13 @@ export default async function SharesPage({ params }: SharesPageProps) {
 
       {/* CTA */}
       <section className="max-w-[1200px] mx-auto px-4 py-16">
-        <div className="bg-white border border-[#C3A35E]/15 p-8 md:p-12 text-center">
-          <h2 className="text-2xl font-semibold text-[#6B1F2B] mb-4">Interested in Investing?</h2>
-          <p className="text-sm text-[#6B1F2B]/55 max-w-2xl mx-auto mb-8 leading-relaxed">
+        <div className="bg-white border border-harvics-gold/15 p-8 md:p-12 text-center">
+          <h2 className="text-2xl font-semibold text-harvics-burgundy mb-4">Interested in Investing?</h2>
+          <p className="text-sm text-harvics-burgundy/55 max-w-2xl mx-auto mb-8 leading-relaxed">
             For detailed investment information, term sheets, and due diligence materials, please contact our investor relations team directly.
           </p>
           <a href="mailto:ir@harvics.com"
-            className="inline-block px-8 py-3 bg-[#6B1F2B] text-white text-sm font-bold hover:bg-[#5a1a24] transition-colors">
+            className="inline-block px-8 py-3 bg-harvics-burgundy text-white text-sm font-bold hover:bg-[#5a1a24] transition-colors">
             Contact IR Team — ir@harvics.com
           </a>
         </div>

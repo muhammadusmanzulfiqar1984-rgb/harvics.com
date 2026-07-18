@@ -27,7 +27,34 @@
     "name": "Waalaxy",
     "enabled": true,
     "mode": "library",
-    "category": "lead_source"
+    "category": "linkedin_automation"
+  },
+  {
+    "name": "PhantomBuster",
+    "enabled": true,
+    "mode": "wired",
+    "category": "linkedin_automation",
+    "envKey": "PHANTOMBUSTER_API_KEY",
+    "description": "LinkedIn profile scrape, Sales Navigator export, auto-connect & message sequences"
+  },
+  {
+    "name": "Harvics LinkedIn Extension",
+    "enabled": true,
+    "mode": "library",
+    "category": "linkedin_automation",
+    "description": "Browser extension enrich — pull title, company, email, phone into HarvyX queue"
+  },
+  {
+    "name": "Expandi",
+    "enabled": false,
+    "mode": "library",
+    "category": "linkedin_automation"
+  },
+  {
+    "name": "Dux-Soup",
+    "enabled": false,
+    "mode": "library",
+    "category": "linkedin_automation"
   },
   {
     "name": "Python Web Scraper",

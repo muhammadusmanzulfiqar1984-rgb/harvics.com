@@ -38,10 +38,10 @@ export default async function PublicationsPage({ params }: PublicationsPageProps
   return (
     <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
       {/* Hero */}
-      <section className="relative bg-[#6B1F2B] py-20 px-4 border-b border-[#C3A35E]/40 overflow-hidden">
+      <section className="relative bg-harvics-burgundy py-20 px-4 border-b border-harvics-gold/40 overflow-hidden">
         <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.95) 0%, rgba(90,26,36,0.9) 100%)' }} />
         <div className="max-w-[1200px] mx-auto text-center relative z-10">
-          <div className="text-xs text-[#C3A35E] font-bold uppercase tracking-[0.2em] mb-3">Investors</div>
+          <div className="text-xs text-harvics-gold font-bold uppercase tracking-[0.2em] mb-3">Investors</div>
           <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4" style={{ letterSpacing: '-0.02em' }}>
             Publications & Reports
           </h1>
@@ -52,11 +52,11 @@ export default async function PublicationsPage({ params }: PublicationsPageProps
       </section>
 
       {/* Investor Nav */}
-      <section className="bg-[#5a1a24] border-b border-[#C3A35E]/20">
+      <section className="bg-[#5a1a24] border-b border-harvics-gold/20">
         <div className="max-w-[1200px] mx-auto px-4 flex gap-0">
           {navItems.map((n) => (
             <Link key={n.label} href={n.href}
-              className={`px-6 py-4 text-sm font-semibold transition-colors ${n.active ? 'text-[#C3A35E] border-b-2 border-[#C3A35E]' : 'text-white/50 hover:text-white/80'}`}>
+              className={`px-6 py-4 text-sm font-semibold transition-colors ${n.active ? 'text-harvics-gold border-b-2 border-harvics-gold' : 'text-white/50 hover:text-white/80'}`}>
               {n.label}
             </Link>
           ))}
@@ -67,22 +67,22 @@ export default async function PublicationsPage({ params }: PublicationsPageProps
       <section className="max-w-[1200px] mx-auto px-4 py-16">
         <div className="space-y-4">
           {publications.map((pub, index) => (
-            <div key={index} className="bg-white border border-[#C3A35E]/15 p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 hover:border-[#C3A35E] transition-colors">
+            <div key={index} className="bg-white border border-harvics-gold/15 p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 hover:border-harvics-gold transition-colors">
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2">
-                  <span className="text-xs font-bold text-[#C3A35E] bg-[#C3A35E]/10 px-2 py-0.5 uppercase tracking-wider">{pub.category}</span>
-                  <span className="text-xs text-[#6B1F2B]/40">{pub.year}</span>
+                  <span className="text-xs font-bold text-harvics-gold bg-harvics-gold/10 px-2 py-0.5 uppercase tracking-wider">{pub.category}</span>
+                  <span className="text-xs text-harvics-burgundy/40">{pub.year}</span>
                 </div>
-                <h3 className="text-lg font-semibold text-[#6B1F2B] mb-1">{pub.title}</h3>
-                <p className="text-sm text-[#6B1F2B]/55 leading-relaxed">{pub.desc}</p>
+                <h3 className="text-lg font-semibold text-harvics-burgundy mb-1">{pub.title}</h3>
+                <p className="text-sm text-harvics-burgundy/55 leading-relaxed">{pub.desc}</p>
               </div>
-              <span className="flex-shrink-0 px-6 py-3 bg-[#6B1F2B] text-white text-sm font-bold hover:bg-[#5a1a24] transition-colors cursor-pointer">
+              <span className="flex-shrink-0 px-6 py-3 bg-harvics-burgundy text-white text-sm font-bold hover:bg-[#5a1a24] transition-colors cursor-pointer">
                 Request {pub.type}
               </span>
             </div>
           ))}
         </div>
-        <p className="text-xs text-[#6B1F2B]/40 text-center mt-8">
+        <p className="text-xs text-harvics-burgundy/40 text-center mt-8">
           To request access to publications, please contact ir@harvics.com with your institutional details.
         </p>
       </section>

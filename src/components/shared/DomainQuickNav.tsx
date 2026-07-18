@@ -43,13 +43,13 @@ export default function DomainQuickNav({ domains = defaultDomains }: DomainQuick
           <Link
             key={domain.id}
             href={`/${locale}${domain.href}`}
-            className="flex items-center gap-2 px-4 py-2.5 bg-white border border-black200 rounded-lg hover:border-[#C3A35E] hover:bg-[#C3A35E]/5 transition-all duration-200 whitespace-nowrap group"
+            className="flex items-center gap-2 px-4 py-2.5 bg-white border border-black200 rounded-lg hover:border-harvics-gold hover:bg-harvics-gold/5 transition-all duration-200 whitespace-nowrap group"
             title={`Open ${domain.label} OS Domain - Full Tier structure with modules and screens`}
           >
             <span className="text-xl group-hover:scale-110 transition-transform duration-200">
               {domain.icon}
             </span>
-            <span className="text-sm font-medium text-black group-hover:text-[#C3A35E] transition-colors">
+            <span className="text-sm font-medium text-black group-hover:text-harvics-gold transition-colors">
               {domain.label}
             </span>
           </Link>

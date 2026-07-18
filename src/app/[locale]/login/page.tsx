@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { generateLocalizedMetadata } from '@/lib/seo'
 import { generateAllLocaleParams } from '@/lib/generateLocaleParams'
 import { LA_PRES_NAME } from '@/data/presentationAccess'
+import { MEET_NAME } from '@/data/meetAccess'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
@@ -65,10 +66,10 @@ export default async function LoginPage({ params }: { params: Promise<{ locale: 
             className="absolute inset-0 opacity-30 pointer-events-none"
             style={{
               background:
-                'radial-gradient(ellipse at 20% 20%, rgba(195,163,94,0.35) 0%, transparent 50%), radial-gradient(circle at 80% 90%, rgba(107,31,43,0.8) 0%, transparent 45%)',
+                'radial-gradient(ellipse at 20% 20%, rgba(195, 163, 94,0.35) 0%, transparent 50%), radial-gradient(circle at 80% 90%, rgba(107,31,43,0.8) 0%, transparent 45%)',
             }}
           />
-          <div className="absolute inset-0 opacity-[0.06] pointer-events-none bg-[length:40px_40px] bg-[linear-gradient(rgba(195,163,94,0.8)_1px,transparent_1px),linear-gradient(90deg,rgba(195,163,94,0.8)_1px,transparent_1px)]" />
+          <div className="absolute inset-0 opacity-[0.06] pointer-events-none bg-[length:40px_40px] bg-[linear-gradient(rgba(195, 163, 94,0.8)_1px,transparent_1px),linear-gradient(90deg,rgba(195, 163, 94,0.8)_1px,transparent_1px)]" />
 
           <div className="relative z-10 p-12 xl:p-14">
             <p className="text-[10px] uppercase tracking-[0.32em] text-harvics-gold font-semibold mb-6">
@@ -111,6 +112,21 @@ export default async function LoginPage({ params }: { params: Promise<{ locale: 
               </p>
               <p className="text-xs text-harvics-cream/40 mt-1.5 leading-relaxed">
                 For client meetings and board sessions. Programme code required.
+              </p>
+            </Link>
+
+            <Link
+              href={`/${locale}/meet`}
+              className="block mt-4 pt-6 border-t border-harvics-gold/15 group"
+            >
+              <p className="text-[10px] uppercase tracking-[0.22em] text-harvics-gold/70 font-semibold mb-2">
+                Also available
+              </p>
+              <p className="text-base font-medium text-harvics-cream group-hover:text-harvics-gold transition-colors duration-300 ease-vault">
+                {MEET_NAME} — live video meetings
+              </p>
+              <p className="text-xs text-harvics-cream/40 mt-1.5 leading-relaxed">
+                Buyer &amp; supplier calls and internal sessions. Start a room, share the link.
               </p>
             </Link>
           </div>
@@ -171,6 +187,41 @@ export default async function LoginPage({ params }: { params: Promise<{ locale: 
                     className="inline-flex items-center gap-2 px-5 py-2.5 border border-harvics-gold/40 text-harvics-gold text-xs font-semibold uppercase tracking-[0.14em] hover:bg-harvics-gold/10 hover:border-harvics-gold/70 transition-all duration-300 ease-vault"
                   >
                     Enter {LA_PRES_NAME}
+                    <span aria-hidden>→</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Secondary access — Harvics Meet (live video) */}
+            <div className="mt-6 border border-harvics-gold/25 bg-harvics-burgundy/95 p-6 sm:p-7">
+              <div className="flex items-start gap-4">
+                <div className="w-11 h-11 shrink-0 flex items-center justify-center border border-harvics-gold/35 text-harvics-gold">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1.5}
+                      d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+                    />
+                  </svg>
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-[10px] uppercase tracking-[0.2em] text-harvics-gold/80 font-semibold mb-1.5">
+                    Live meetings
+                  </p>
+                  <p className="text-lg font-medium text-harvics-cream leading-snug mb-1">
+                    {MEET_NAME}
+                  </p>
+                  <p className="text-sm text-harvics-cream/45 leading-relaxed mb-4">
+                    Secure video rooms for buyer &amp; supplier calls, board sessions, and internal
+                    meetings. Start a room and share the link — no account needed to join.
+                  </p>
+                  <Link
+                    href={`/${locale}/meet`}
+                    className="inline-flex items-center gap-2 px-5 py-2.5 border border-harvics-gold/40 text-harvics-gold text-xs font-semibold uppercase tracking-[0.14em] hover:bg-harvics-gold/10 hover:border-harvics-gold/70 transition-all duration-300 ease-vault"
+                  >
+                    Enter {MEET_NAME}
                     <span aria-hidden>→</span>
                   </Link>
                 </div>

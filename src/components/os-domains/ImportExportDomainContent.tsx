@@ -142,7 +142,7 @@ function CustomsTariffsScreen() {
             <tbody>
               {tradeData.hsCodes.map((hs, i) => (
                 <tr key={hs.code} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-bold font-mono text-[#6B1F2B]">{hs.code}</td>
+                  <td className="px-4 py-3 font-bold font-mono text-harvics-burgundy">{hs.code}</td>
                   <td className="px-4 py-3">{hs.description}</td>
                   <td className="px-4 py-3 text-right">{hs.importDuty}%</td>
                   <td className="px-4 py-3 text-right">{hs.exportDuty}%</td>
@@ -177,7 +177,7 @@ function TradeDocumentsScreen() {
                   <td className="px-4 py-3">{doc.orderId}</td>
                   <td className="px-4 py-3 text-center"><span className={`px-2 py-1 text-xs font-bold ${doc.status === 'Generated' || doc.status === 'Received' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{doc.status}</span></td>
                   <td className="px-4 py-3 text-[#8E8E93]">{doc.date}</td>
-                  <td className="px-4 py-3 text-center"><button className="text-[#C3A35E] hover:text-[#6B1F2B] font-bold text-xs">View</button></td>
+                  <td className="px-4 py-3 text-center"><button className="text-harvics-gold hover:text-harvics-burgundy font-bold text-xs">View</button></td>
                 </tr>
               ))}
             </tbody>

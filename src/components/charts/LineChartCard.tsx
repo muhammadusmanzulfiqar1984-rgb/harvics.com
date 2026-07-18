@@ -3,7 +3,7 @@
 import React from 'react'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 
-const T = { burgundy: '#3D1212', gold: '#C3A35E', cream: '#F5F0E8', muted: '#8A7D6B', grid: 'rgba(195,163,94,0.08)', border: 'rgba(195,163,94,0.2)' }
+const T = { burgundy: 'var(--harvics-burgundy)', gold: 'var(--harvics-gold)', cream: 'var(--harvics-cream)', muted: 'var(--harvics-muted)', grid: 'rgba(195, 163, 94,0.08)', border: 'rgba(195, 163, 94,0.2)' }
 
 const Tip = ({ active, payload, label }: any) => {
   if (!active || !payload?.length) return null
@@ -32,7 +32,7 @@ interface LineChartCardProps {
 export default function LineChartCard({ title, data, dataKeys, colors = [T.gold, '#059669', '#ef4444'], height = 300, className = '' }: LineChartCardProps) {
   return (
     <div className={`relative overflow-hidden rounded-2xl p-6 ${className}`}
-      style={{ background: T.burgundy, border: `1px solid ${T.border}`, boxShadow: '0 4px 24px rgba(26,5,5,0.5)' }}>
+      style={{ background: T.burgundy, border: `1px solid ${T.border}`, boxShadow: '0 4px 24px rgba(61, 18, 18,0.5)' }}>
       <div className="absolute inset-x-0 top-0 h-px" style={{ background: `linear-gradient(90deg,transparent,${T.gold}80,transparent)` }} />
       <h3 className="text-sm font-black tracking-[0.06em] mb-5" style={{ color: T.cream }}>{title}</h3>
       <ResponsiveContainer width="100%" height={height}>

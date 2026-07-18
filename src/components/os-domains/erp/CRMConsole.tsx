@@ -102,7 +102,7 @@ export default function CRMConsole() {
   const funnelMax = Math.max(...STAGES.map(s => leads.filter(l => l.stage === s).length), 1)
 
   const KPI_CARDS = [
-    { label: 'Total Customers', value: customers.length, sub: `LTV $${(totalLtv/1000).toFixed(0)}k`, icon: '👥', color: 'from-[#6b1f2b] to-[#3d0f17]' },
+    { label: 'Total Customers', value: customers.length, sub: `LTV $${(totalLtv/1000).toFixed(0)}k`, icon: '👥', color: 'from-harvics-burgundy to-[#3d0f17]' },
     { label: 'Pipeline Value', value: `$${(pipelineValue/1000).toFixed(0)}k`, sub: `${leads.filter(l=>l.stage!=='Won'&&l.stage!=='Lost').length} open deals`, icon: '💰', color: 'from-[#1a4a7a] to-[#0f2d4d]' },
     { label: 'Won Revenue', value: `$${(wonValue/1000).toFixed(0)}k`, sub: `${leads.filter(l=>l.stage==='Won').length} deals closed`, icon: '🏆', color: 'from-[#1a5c3a] to-[#0f3621]' },
     { label: 'Conversion Rate', value: `${conversionRate}%`, sub: `${leads.length} total leads`, icon: '📈', color: 'from-[#5c3d1a] to-[#3a2410]' },
@@ -136,7 +136,7 @@ export default function CRMConsole() {
               key={v.key}
               type="button"
               onClick={() => setActiveView(v.key)}
-              className={`rounded-xl px-3 py-1.5 text-xs font-bold transition ${activeView === v.key ? 'bg-[#6b1f2b] text-white shadow' : 'text-[#3a3a3a] hover:bg-[#f5efe2]'}`}
+              className={`rounded-xl px-3 py-1.5 text-xs font-bold transition ${activeView === v.key ? 'bg-harvics-burgundy text-white shadow' : 'text-[#3a3a3a] hover:bg-[#f5efe2]'}`}
             >
               <span className="mr-1">{v.icon}</span>{v.label}
             </button>
@@ -145,7 +145,7 @@ export default function CRMConsole() {
         <div className="flex items-center gap-2">
           {message && <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-[10px] font-bold text-emerald-700">{message}</span>}
           <button type="button" onClick={load} disabled={loading}
-            className="rounded-full border border-[#e8e2d5] px-3 py-1 text-[10px] font-bold text-[#6b1f2b] hover:bg-[#f5efe2]">
+            className="rounded-full border border-[#e8e2d5] px-3 py-1 text-[10px] font-bold text-harvics-burgundy hover:bg-[#f5efe2]">
             {loading ? '⟳ Syncing…' : '⟳ Refresh'}
           </button>
         </div>
@@ -197,11 +197,11 @@ export default function CRMConsole() {
                         key={lead.id}
                         type="button"
                         onClick={() => setSelectedLead(selectedLead?.id === lead.id ? null : lead)}
-                        className="w-full rounded-xl border border-[#e8e2d5] bg-[#fdfcfb] p-2 text-left shadow-sm transition hover:border-[#c3a35e]/50 hover:shadow"
+                        className="w-full rounded-xl border border-[#e8e2d5] bg-[#fdfcfb] p-2 text-left shadow-sm transition hover:border-harvics-gold/50 hover:shadow"
                       >
                         <p className="text-[11px] font-bold text-[#1a1a1a] leading-tight">{lead.company}</p>
                         <p className="text-[10px] text-[#5d5d5d]">{lead.name}</p>
-                        <p className="mt-1 text-[11px] font-mono font-bold text-[#6b1f2b]">${lead.value.toLocaleString()}</p>
+                        <p className="mt-1 text-[11px] font-mono font-bold text-harvics-burgundy">${lead.value.toLocaleString()}</p>
                         <p className="text-[9px] text-[#8a8a8a]">{lead.owner}</p>
                       </button>
                     ))}
@@ -218,12 +218,12 @@ export default function CRMConsole() {
 
           {/* Lead detail panel */}
           {selectedLead && (
-            <div className="mt-4 rounded-2xl border border-[#c3a35e]/40 bg-gradient-to-br from-white to-[#fdf8f2] p-5 shadow-lg">
+            <div className="mt-4 rounded-2xl border border-harvics-gold/40 bg-gradient-to-br from-white to-[#fdf8f2] p-5 shadow-lg">
               <div className="flex items-start justify-between">
                 <div>
                   <h3 className="text-lg font-black text-[#1a1a1a]">{selectedLead.company}</h3>
                   <p className="text-sm text-[#5d5d5d]">{selectedLead.name} · {selectedLead.source} · {selectedLead.owner}</p>
-                  <p className="mt-1 text-2xl font-black text-[#6b1f2b]">${selectedLead.value.toLocaleString()} <span className="text-sm font-normal text-[#5d5d5d]">{selectedLead.currency}</span></p>
+                  <p className="mt-1 text-2xl font-black text-harvics-burgundy">${selectedLead.value.toLocaleString()} <span className="text-sm font-normal text-[#5d5d5d]">{selectedLead.currency}</span></p>
                 </div>
                 <span className={`rounded-full px-3 py-1 text-xs font-bold ${STAGE_COLOR[selectedLead.stage].bg} ${STAGE_COLOR[selectedLead.stage].text}`}>{selectedLead.stage}</span>
               </div>
@@ -261,7 +261,7 @@ export default function CRMConsole() {
                 <tr key={c.id} className={`border-b border-[#f0ece4] transition hover:bg-[#fdf8f2] ${i % 2 === 0 ? '' : 'bg-[#fdfcfb]'}`}>
                   <td className="px-4 py-3">
                     <div className="flex items-center gap-2">
-                      <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-[#6b1f2b] to-[#3d0f17] text-xs font-black text-white">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-harvics-burgundy to-[#3d0f17] text-xs font-black text-white">
                         {c.company.charAt(0)}
                       </div>
                       <span className="font-bold text-[#1a1a1a]">{c.company}</span>
@@ -275,7 +275,7 @@ export default function CRMConsole() {
                     </span>
                   </td>
                   <td className="px-4 py-3">
-                    <span className="rounded-full bg-[#f5efe2] px-2 py-0.5 text-[10px] font-bold text-[#6b1f2b]">
+                    <span className="rounded-full bg-[#f5efe2] px-2 py-0.5 text-[10px] font-bold text-harvics-burgundy">
                       {SEGMENT_ICON[c.segment] || ''} {c.segment}
                     </span>
                   </td>

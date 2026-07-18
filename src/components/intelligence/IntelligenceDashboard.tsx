@@ -87,7 +87,7 @@ export default function IntelligenceDashboard({
   if (loading) {
     return (
       <div className="flex items-center justify-center py-12">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#C3A35E]"></div>
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-harvics-gold"></div>
       </div>
     )
   }
@@ -96,7 +96,7 @@ export default function IntelligenceDashboard({
     <div className="space-y-6">
       {/* Automation Score */}
       {showAutomationScore && automationScore && (
-        <div className="bg-gradient-to-br from-[#6B1F2B] to-[#8B2F3B] rounded-xl p-6 text-white">
+        <div className="bg-gradient-to-br from-harvics-burgundy to-[#8B2F3B] rounded-xl p-6 text-white">
           <div className="flex items-center justify-between mb-4">
             <div>
               <h3 className="text-2xl font-bold">Automation Score</h3>
@@ -122,7 +122,7 @@ export default function IntelligenceDashboard({
       {/* Recommendations */}
       {showRecommendations && recommendations.length > 0 && (
         <div className="bg-white border border-gray-200 rounded-xl p-6">
-          <h3 className="text-lg font-semibold text-[#6B1F2B] mb-4 flex items-center gap-2">
+          <h3 className="text-lg font-semibold text-harvics-burgundy mb-4 flex items-center gap-2">
             <span className="text-2xl">💡</span>
             AI Recommendations
           </h3>
@@ -130,7 +130,7 @@ export default function IntelligenceDashboard({
             {recommendations.map((rec, idx) => (
               <div 
                 key={idx} 
-                className="bg-gradient-to-r from-[#C3A35E]/10 to-transparent border-l-4 border-[#C3A35E] p-4 rounded-r-lg"
+                className="bg-gradient-to-r from-harvics-gold/10 to-transparent border-l-4 border-harvics-gold p-4 rounded-r-lg"
               >
                 <p className="text-sm text-gray-800">{rec.message}</p>
                 {rec.impact && (
@@ -151,7 +151,7 @@ export default function IntelligenceDashboard({
       {/* Forecast Chart */}
       {showForecast && forecast.length > 0 && (
         <div className="bg-white border border-gray-200 rounded-xl p-6">
-          <h3 className="text-lg font-semibold text-[#6B1F2B] mb-4 flex items-center gap-2">
+          <h3 className="text-lg font-semibold text-harvics-burgundy mb-4 flex items-center gap-2">
             <span className="text-2xl">📈</span>
             Revenue Forecast
           </h3>
@@ -177,7 +177,7 @@ export default function IntelligenceDashboard({
                       }}
                     />
                     <div 
-                      className="absolute h-full bg-gradient-to-r from-[#C3A35E] to-[#a68947] rounded-full"
+                      className="absolute h-full bg-gradient-to-r from-harvics-gold to-[#a68947] rounded-full"
                       style={{ width: `${(period.predicted / period.upperBound) * 100}%` }}
                     />
                   </div>

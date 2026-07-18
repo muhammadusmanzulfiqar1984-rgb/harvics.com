@@ -26,17 +26,17 @@ export default function WarRoomDashboard() {
   // For demo purposes, we can simulate the fetch if the backend isn't running
   useEffect(() => {
     const fetchData = async () => {
+      const apiBase = (process.env.NEXT_PUBLIC_INTELLIGENCE_API_URL || '').trim();
       try {
-        // Try fetching from local backend if running
-        const res = await fetch('http://localhost:4000/api/intelligence/attack-plan');
+        if (!apiBase) throw new Error('no-live-source');
+        const res = await fetch(`${apiBase}/api/intelligence/attack-plan`);
         if (res.ok) {
           const json = await res.json();
           setData(json);
         } else {
-          throw new Error('Backend not reachable');
+          throw new Error('unavailable');
         }
-      } catch (e) {
-        console.warn('Backend offline, loading simulation...');
+      } catch {
         // Simulation Fallback
         setData({
           timestamp: new Date().toISOString(),

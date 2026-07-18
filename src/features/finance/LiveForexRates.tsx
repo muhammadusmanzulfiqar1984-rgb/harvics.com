@@ -64,7 +64,7 @@ export default function LiveForexRates({ compact = false }: LiveForexRatesProps)
 
   if (compact) {
     return (
-      <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-[#C3A35E]/20">
+      <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-harvics-gold/20">
         <div className="flex items-center justify-between mb-3">
           <h3 className="text-lg font-bold text-white">💱 Live Forex Rates</h3>
           {loading && <span className="text-xs text-white/60">Loading...</span>}
@@ -90,7 +90,7 @@ export default function LiveForexRates({ compact = false }: LiveForexRatesProps)
   }
 
   return (
-    <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-[#C3A35E]/20">
+    <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-harvics-gold/20">
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-xl font-bold text-white">💱 Live Forex Rates</h3>
         {lastUpdated && (
@@ -107,7 +107,7 @@ export default function LiveForexRates({ compact = false }: LiveForexRatesProps)
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
-                <tr className="border-b border-[#C3A35E]/20">
+                <tr className="border-b border-harvics-gold/20">
                   <th className="text-left py-3 px-4 font-bold text-white text-sm">Currency</th>
                   <th className="text-right py-3 px-4 font-bold text-white text-sm">Rate</th>
                   <th className="text-right py-3 px-4 font-bold text-white text-sm">Buy</th>
@@ -139,7 +139,7 @@ export default function LiveForexRates({ compact = false }: LiveForexRatesProps)
           <button
             onClick={loadForexRates}
             disabled={loading}
-            className="mt-4 text-sm text-white hover:text-[#C3A35E]/90 underline disabled:opacity-50"
+            className="mt-4 text-sm text-white hover:text-harvics-gold/90 underline disabled:opacity-50"
           >
             {loading ? 'Refreshing...' : '🔄 Refresh Rates'}
           </button>

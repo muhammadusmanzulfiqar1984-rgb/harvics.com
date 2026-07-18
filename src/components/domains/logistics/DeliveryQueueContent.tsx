@@ -86,7 +86,7 @@ export default function DeliveryQueueContent({ persona, locale }: DeliveryQueueC
       <div className="flex gap-2">
         {['all', 'Pending', 'In Transit', 'Completed', 'Delayed'].map(s => (
           <button key={s} onClick={() => setFilter(s)} className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
-            filter === s ? 'bg-[#6B1F2B] text-white' : 'bg-[#F5F5F7] text-[#8E8E93] hover:bg-[#EBEBF0]'
+            filter === s ? 'bg-harvics-burgundy text-white' : 'bg-[#F5F5F7] text-[#8E8E93] hover:bg-[#EBEBF0]'
           }`}>{s === 'all' ? 'All' : s}</button>
         ))}
       </div>

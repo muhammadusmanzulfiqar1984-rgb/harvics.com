@@ -107,7 +107,7 @@ export default function HRConsole() {
             {Object.entries(byDept).sort((a, b) => b[1] - a[1]).map(([dept, n]) => (
               <div key={dept} className="flex items-center justify-between rounded-lg border border-[#e8e2d5] px-2 py-1.5 text-xs">
                 <span className="font-medium">{dept}</span>
-                <span className="font-mono font-bold text-[#6b1f2b]">{n}</span>
+                <span className="font-mono font-bold text-harvics-burgundy">{n}</span>
               </div>
             ))}
             {Object.keys(byDept).length === 0 ? <p className="text-xs text-[#5d5d5d]">No employees yet.</p> : null}

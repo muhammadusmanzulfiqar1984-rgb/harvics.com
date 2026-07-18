@@ -84,36 +84,36 @@ const SupplyChainWheel: React.FC = () => {
   const activeNode = hoveredLabel !== null ? wheelNodes[hoveredLabel] : null
 
   return (
-    <section className="relative px-6 py-16 lg:py-20 overflow-hidden" style={{ background: 'linear-gradient(180deg, #ffffff 0%, #faf7f1 100%)' }}>
+    <section className="relative px-6 py-16 lg:py-20 overflow-hidden bg-harvics-cream">
       <div className="max-w-[1400px] mx-auto">
 
         {/* Section Header */}
         <div className="text-center mb-10">
           <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '14px', marginBottom: '14px' }}>
-            <div style={{ height: '1px', width: '36px', background: '#C3A35E' }} />
-            <span style={{ color: '#C3A35E', fontSize: '10px', fontWeight: 600, letterSpacing: '0.32em', textTransform: 'uppercase' }}>End-to-End Operating System</span>
-            <div style={{ height: '1px', width: '36px', background: '#C3A35E' }} />
+            <div style={{ height: '1px', width: '36px', background: 'var(--harvics-gold)' }} />
+            <span style={{ color: 'var(--harvics-gold)', fontSize: '10px', fontWeight: 600, letterSpacing: '0.32em', textTransform: 'uppercase' }}>04 · Supply chain</span>
+            <div style={{ height: '1px', width: '36px', background: 'var(--harvics-gold)' }} />
           </div>
-          <h2 style={{ fontSize: 'clamp(30px, 4.2vw, 48px)', fontWeight: 200, letterSpacing: '-0.025em', color: '#3D1212', lineHeight: 1.1, marginBottom: '12px' }}>
+          <h2 className="harvics-corridor-display text-harvics-burgundy" style={{ fontSize: 'clamp(30px, 4.2vw, 48px)', marginBottom: '12px' }}>
             14 stages.{' '}
-            <span style={{ color: '#6B1F2B', fontWeight: 400 }}>One supply chain.</span>
+            <span className="text-harvics-gold font-medium">One supply chain.</span>
           </h2>
-          <p style={{ fontSize: '13px', color: 'rgba(26,5,5,0.55)', maxWidth: '580px', margin: '0 auto', lineHeight: 1.7, fontWeight: 300 }}>
+          <p className="harvics-corridor-body text-center mx-auto" style={{ fontSize: '13px', maxWidth: '580px' }}>
             Every brief flows through the same operating system — one cockpit, 42 markets, one accountable team.
           </p>
         </div>
 
         {/* ============ COCKPIT CARD ============ */}
-        <div style={{ background: '#3D1212', border: '1px solid rgba(195,163,94,0.3)', overflow: 'hidden' }}>
+        <div style={{ background: 'var(--harvics-burgundy)', border: '1px solid rgba(195, 163, 94,0.3)', overflow: 'hidden' }}>
           <div className="grid grid-cols-1 lg:grid-cols-12">
 
             {/* LEFT — Wheel (5/12) */}
-            <div className="lg:col-span-5" style={{ padding: '40px 32px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', borderRight: '1px solid rgba(195,163,94,0.15)' }}>
+            <div className="lg:col-span-5" style={{ padding: '40px 32px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', borderRight: '1px solid rgba(195, 163, 94,0.15)' }}>
               <div className="relative" style={{ width: 360, height: 360, maxWidth: '100%' }}>
                 <svg width="100%" height="100%" viewBox="0 0 500 500">
                   {/* Outer dashed ring */}
-                  <circle cx={centerX} cy={centerY} r={radius + 18} fill="none" stroke="rgba(195,163,94,0.18)" strokeWidth="0.8" strokeDasharray="3 5" />
-                  <circle cx={centerX} cy={centerY} r={radius} fill="none" stroke="rgba(195,163,94,0.25)" strokeWidth="1" />
+                  <circle cx={centerX} cy={centerY} r={radius + 18} fill="none" stroke="rgba(195, 163, 94,0.18)" strokeWidth="0.8" strokeDasharray="3 5" />
+                  <circle cx={centerX} cy={centerY} r={radius} fill="none" stroke="rgba(195, 163, 94,0.25)" strokeWidth="1" />
 
                   {/* Rotating group with spokes + nodes */}
                   <g transform={`rotate(${rotation} ${centerX} ${centerY})`}>
@@ -122,7 +122,7 @@ const SupplyChainWheel: React.FC = () => {
                       const x = centerX + radius * Math.cos(angle)
                       const y = centerY + radius * Math.sin(angle)
                       return (
-                        <line key={`line-${idx}`} x1={centerX} y1={centerY} x2={x} y2={y} stroke="#C3A35E" strokeWidth="0.5" opacity="0.12" />
+                        <line key={`line-${idx}`} x1={centerX} y1={centerY} x2={x} y2={y} stroke="var(--harvics-gold)" strokeWidth="0.5" opacity="0.12" />
                       )
                     })}
                     {wheelNodes.map((_, idx) => {
@@ -136,12 +136,12 @@ const SupplyChainWheel: React.FC = () => {
                           cx={x}
                           cy={y}
                           r={isHovered ? 10 : 6.5}
-                          fill={isHovered ? '#fff' : '#C3A35E'}
-                          stroke="#3D1212"
+                          fill={isHovered ? '#fff' : 'var(--harvics-gold)'}
+                          stroke="var(--harvics-burgundy)"
                           strokeWidth="1.5"
                           className="cursor-pointer"
                           style={{
-                            filter: isHovered ? 'drop-shadow(0 0 10px rgba(195,163,94,0.8))' : 'none',
+                            filter: isHovered ? 'drop-shadow(0 0 10px rgba(195, 163, 94,0.8))' : 'none',
                             transition: 'all 0.3s ease',
                           }}
                           onMouseEnter={() => { setHoveredLabel(idx); setIsPaused(true) }}
@@ -180,11 +180,11 @@ const SupplyChainWheel: React.FC = () => {
                   })}
 
                   {/* Center — gold disc on dark */}
-                  <circle cx={centerX} cy={centerY} r="62" fill="#C3A35E" />
-                  <circle cx={centerX} cy={centerY} r="62" fill="none" stroke="#3D1212" strokeWidth="2" />
-                  <text x={centerX} y={centerY - 8} textAnchor="middle" style={{ fontSize: '9px', fontWeight: 700, fill: '#3D1212', letterSpacing: '3px' }}>HARVICS</text>
-                  <text x={centerX} y={centerY + 6} textAnchor="middle" style={{ fontSize: '10px', fontWeight: 600, fill: '#3D1212', letterSpacing: '0.5px' }}>Operating</text>
-                  <text x={centerX} y={centerY + 18} textAnchor="middle" style={{ fontSize: '10px', fontWeight: 600, fill: '#3D1212', letterSpacing: '0.5px' }}>System</text>
+                  <circle cx={centerX} cy={centerY} r="62" fill="var(--harvics-gold)" />
+                  <circle cx={centerX} cy={centerY} r="62" fill="none" stroke="var(--harvics-burgundy)" strokeWidth="2" />
+                  <text x={centerX} y={centerY - 8} textAnchor="middle" style={{ fontSize: '9px', fontWeight: 700, fill: 'var(--harvics-burgundy)', letterSpacing: '3px' }}>HARVICS</text>
+                  <text x={centerX} y={centerY + 6} textAnchor="middle" style={{ fontSize: '10px', fontWeight: 600, fill: 'var(--harvics-burgundy)', letterSpacing: '0.5px' }}>Operating</text>
+                  <text x={centerX} y={centerY + 18} textAnchor="middle" style={{ fontSize: '10px', fontWeight: 600, fill: 'var(--harvics-burgundy)', letterSpacing: '0.5px' }}>System</text>
                 </svg>
               </div>
 
@@ -195,8 +195,8 @@ const SupplyChainWheel: React.FC = () => {
                   width: '100%',
                   maxWidth: '380px',
                   padding: '14px 18px',
-                  background: activeNode ? 'rgba(195,163,94,0.08)' : 'rgba(245,240,232,0.04)',
-                  border: `1px solid ${activeNode ? 'rgba(195,163,94,0.4)' : 'rgba(195,163,94,0.15)'}`,
+                  background: activeNode ? 'rgba(195, 163, 94,0.08)' : 'rgba(245,240,232,0.04)',
+                  border: `1px solid ${activeNode ? 'rgba(195, 163, 94,0.4)' : 'rgba(195, 163, 94,0.15)'}`,
                   minHeight: '86px',
                   transition: 'all 0.25s ease',
                 }}
@@ -204,7 +204,7 @@ const SupplyChainWheel: React.FC = () => {
                 {activeNode ? (
                   <>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '4px' }}>
-                      <span style={{ fontSize: '9px', fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#C3A35E' }}>{activeNode.metric}</span>
+                      <span style={{ fontSize: '9px', fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--harvics-gold)' }}>{activeNode.metric}</span>
                       <span style={{ fontSize: '22px', fontWeight: 600, color: '#fff', letterSpacing: '-0.02em' }}>{activeNode.value}</span>
                     </div>
                     <div style={{ fontSize: '13px', fontWeight: 600, color: '#fff', marginBottom: '4px' }}>{activeNode.label}</div>
@@ -221,16 +221,16 @@ const SupplyChainWheel: React.FC = () => {
             {/* RIGHT — Live Metrics (7/12) */}
             <div className="lg:col-span-7" style={{ padding: '40px 32px', display: 'flex', flexDirection: 'column' }}>
 
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', paddingBottom: '14px', borderBottom: '1px solid rgba(195,163,94,0.2)' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', paddingBottom: '14px', borderBottom: '1px solid rgba(195, 163, 94,0.2)' }}>
                 <h3 style={{ fontSize: '18px', fontWeight: 500, color: '#fff' }}>Live Stage Metrics</h3>
-                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '9px', letterSpacing: '0.25em', textTransform: 'uppercase', color: '#C3A35E', fontWeight: 700 }}>
-                  <span style={{ width: '6px', height: '6px', background: '#C3A35E', borderRadius: '50%', animation: 'harvicsCockpitPulse 2s infinite' }} />
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '9px', letterSpacing: '0.25em', textTransform: 'uppercase', color: 'var(--harvics-gold)', fontWeight: 700 }}>
+                  <span style={{ width: '6px', height: '6px', background: 'var(--harvics-gold)', borderRadius: '50%', animation: 'harvicsCockpitPulse 2s infinite' }} />
                   90-Day Rolling
                 </span>
               </div>
 
               {/* Header row */}
-              <div className="grid grid-cols-12 gap-2 px-2 mb-2" style={{ fontSize: '9px', fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', color: '#C3A35E' }}>
+              <div className="grid grid-cols-12 gap-2 px-2 mb-2" style={{ fontSize: '9px', fontWeight: 700, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--harvics-gold)' }}>
                 <div className="col-span-4">Stage</div>
                 <div className="col-span-3">Volume</div>
                 <div className="col-span-3">On-Time</div>
@@ -248,8 +248,8 @@ const SupplyChainWheel: React.FC = () => {
                       key={idx}
                       className="grid grid-cols-12 gap-2 items-center px-2 py-2 cursor-pointer transition-all"
                       style={{
-                        background: isHovered ? 'rgba(195,163,94,0.08)' : 'transparent',
-                        borderBottom: '1px solid rgba(195,163,94,0.08)',
+                        background: isHovered ? 'rgba(195, 163, 94,0.08)' : 'transparent',
+                        borderBottom: '1px solid rgba(195, 163, 94,0.08)',
                       }}
                       onMouseEnter={() => setHoveredBar(barKey)}
                       onMouseLeave={() => setHoveredBar(null)}
@@ -257,12 +257,12 @@ const SupplyChainWheel: React.FC = () => {
                       <div className="col-span-4" style={{ fontSize: '12px', fontWeight: 600, color: '#fff' }}>{kpi.stage}</div>
                       <div className="col-span-3" style={{ fontSize: '12px', color: 'rgba(245,240,232,0.75)' }}>{kpi.volume}</div>
                       <div className="col-span-3 flex items-center gap-2">
-                        <div className="flex-1 relative" style={{ height: '4px', background: 'rgba(195,163,94,0.15)' }}>
+                        <div className="flex-1 relative" style={{ height: '4px', background: 'rgba(195, 163, 94,0.15)' }}>
                           <div
                             className="absolute inset-y-0 left-0"
                             style={{
                               width: `${kpi.onTime}%`,
-                              background: '#C3A35E',
+                              background: 'var(--harvics-gold)',
                               transition: 'width 0.6s ease',
                             }}
                           />
@@ -275,7 +275,7 @@ const SupplyChainWheel: React.FC = () => {
                             }}
                           />
                         </div>
-                        <span style={{ fontSize: '11px', fontWeight: 700, color: '#C3A35E', minWidth: '32px', textAlign: 'right' }}>{kpi.onTime}%</span>
+                        <span style={{ fontSize: '11px', fontWeight: 700, color: 'var(--harvics-gold)', minWidth: '32px', textAlign: 'right' }}>{kpi.onTime}%</span>
                       </div>
                       <div className="col-span-2 text-right" style={{ fontSize: '11px', color: 'rgba(245,240,232,0.55)', fontWeight: 500 }}>{kpi.leadTime}</div>
                     </div>
@@ -284,17 +284,17 @@ const SupplyChainWheel: React.FC = () => {
               </div>
 
               {/* Streams */}
-              <div className="grid grid-cols-4 gap-0 mt-5 pt-4" style={{ borderTop: '1px solid rgba(195,163,94,0.2)' }}>
+              <div className="grid grid-cols-4 gap-0 mt-5 pt-4" style={{ borderTop: '1px solid rgba(195, 163, 94,0.2)' }}>
                 {streamRows.map((row, i) => (
                   <div
                     key={i}
                     style={{
                       padding: '10px 8px',
                       textAlign: 'center',
-                      borderRight: i < streamRows.length - 1 ? '1px solid rgba(195,163,94,0.15)' : 'none',
+                      borderRight: i < streamRows.length - 1 ? '1px solid rgba(195, 163, 94,0.15)' : 'none',
                     }}
                   >
-                    <div style={{ fontSize: '8px', fontWeight: 700, letterSpacing: '0.3em', textTransform: 'uppercase', color: '#C3A35E', marginBottom: '4px' }}>Stream</div>
+                    <div style={{ fontSize: '8px', fontWeight: 700, letterSpacing: '0.3em', textTransform: 'uppercase', color: 'var(--harvics-gold)', marginBottom: '4px' }}>Stream</div>
                     <div style={{ fontSize: '11px', fontWeight: 600, color: '#fff' }}>{row}</div>
                   </div>
                 ))}

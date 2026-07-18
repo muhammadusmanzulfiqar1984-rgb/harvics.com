@@ -14,7 +14,7 @@ export default function HarvicTradeTabs({ locale, children }: Props) {
     <div className="min-h-screen bg-white">
 
       {/* ── Tab Bar — inline, sits right below the sticky header ────── */}
-      <div className="w-full border-b border-[#C3A35E]/15" style={{ background: '#3D1212' }}>
+      <div className="w-full border-b border-harvics-gold/15" style={{ background: 'var(--harvics-burgundy)' }}>
         <div className="max-w-[1100px] mx-auto px-4 flex items-center">
 
           <button
@@ -29,7 +29,7 @@ export default function HarvicTradeTabs({ locale, children }: Props) {
               border: 'none',
               background: 'transparent',
               cursor: 'pointer',
-              color: active === 'classic' ? '#C3A35E' : 'rgba(255,255,255,0.3)',
+              color: active === 'classic' ? 'var(--harvics-gold)' : 'rgba(255,255,255,0.3)',
               borderBottom: active === 'classic' ? '2px solid #C3A35E' : '2px solid transparent',
               transition: 'all 0.2s',
             }}
@@ -49,7 +49,7 @@ export default function HarvicTradeTabs({ locale, children }: Props) {
               border: 'none',
               background: 'transparent',
               cursor: 'pointer',
-              color: active === 'digital' ? '#F5F0E8' : 'rgba(255,255,255,0.3)',
+              color: active === 'digital' ? 'var(--harvics-cream)' : 'rgba(255,255,255,0.3)',
               borderBottom: active === 'digital' ? '2px solid #F5F0E8' : '2px solid transparent',
               transition: 'all 0.2s',
               display: 'flex',

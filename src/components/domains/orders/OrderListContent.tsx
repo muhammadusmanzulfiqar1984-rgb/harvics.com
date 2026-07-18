@@ -7,7 +7,7 @@ import { KPICard, Card, DataTable, StatusDot, DonutChart, BarChart, LineChart, L
 const fmtMoney = (v: number) =>
   v >= 1_000_000 ? `$${(v / 1_000_000).toFixed(1)}M` : v >= 1000 ? `$${(v / 1000).toFixed(0)}K` : `$${v}`
 
-const channelColors = ['#6B1F2B', '#007AFF', '#34C759', '#FF9500']
+const channelColors = ['var(--harvics-burgundy)', '#007AFF', '#34C759', '#FF9500']
 
 export default function OrderListContent({ persona, locale }: { persona: string; locale: string }) {
   const { data, source, lastUpdated } = useDomainData('orders')
@@ -50,7 +50,7 @@ export default function OrderListContent({ persona, locale }: { persona: string;
         <Card title="Monthly Revenue" className="lg:col-span-2">
           <div className="p-5">
             <LineChart
-              data={[{ label: 'Revenue', values: data.revenueByMonth || [], color: '#6B1F2B' }]}
+              data={[{ label: 'Revenue', values: data.revenueByMonth || [], color: 'var(--harvics-burgundy)' }]}
               labels={MONTHS}
               height={160}
               formatY={(v) => `$${(v / 1_000_000).toFixed(1)}M`}
@@ -85,7 +85,7 @@ export default function OrderListContent({ persona, locale }: { persona: string;
         <div className="flex gap-6">
           {(['orders', 'analytics'] as const).map(t => (
             <button key={t} onClick={() => setTab(t)}
-              className={`pb-3 text-sm font-medium capitalize transition-colors border-b-2 -mb-px ${tab === t ? 'border-[#6B1F2B] text-[#1A1A1A]' : 'border-transparent text-[#8E8E93] hover:text-[#1A1A1A]'}`}>
+              className={`pb-3 text-sm font-medium capitalize transition-colors border-b-2 -mb-px ${tab === t ? 'border-harvics-burgundy text-[#1A1A1A]' : 'border-transparent text-[#8E8E93] hover:text-[#1A1A1A]'}`}>
               {t.charAt(0).toUpperCase() + t.slice(1)}
             </button>
           ))}
@@ -94,7 +94,7 @@ export default function OrderListContent({ persona, locale }: { persona: string;
           <div className="flex gap-1.5 pb-3">
             {statuses.map(s => (
               <button key={s} onClick={() => setFilter(s)}
-                className={`px-3 py-1 text-xs rounded-full font-medium transition-colors ${filter === s ? 'bg-[#6B1F2B] text-white' : 'bg-[#F5F5F7] text-[#8E8E93] hover:bg-[#EBEBF0]'}`}>
+                className={`px-3 py-1 text-xs rounded-full font-medium transition-colors ${filter === s ? 'bg-harvics-burgundy text-white' : 'bg-[#F5F5F7] text-[#8E8E93] hover:bg-[#EBEBF0]'}`}>
                 {s}
               </button>
             ))}

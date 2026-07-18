@@ -15,11 +15,11 @@ export default function P(){
       <Inp l="Transcript" v={transcript} on={setTranscript}/>
       <button onClick={send} style={btnB}>🎙 PROCESS</button>
       <div style={{marginTop:10,fontSize:10,color:B,fontWeight:600}}>EXAMPLES</div>
-      {EXAMPLES.map(e=><button key={e} onClick={()=>setTranscript(e)} style={{display:'block',width:'100%',textAlign:'left',padding:4,marginTop:2,fontSize:11,background:'#F5F0E8',color:B,border:'none',cursor:'pointer'}}>"{e}"</button>)}
+      {EXAMPLES.map(e=><button key={e} onClick={()=>setTranscript(e)} style={{display:'block',width:'100%',textAlign:'left',padding:4,marginTop:2,fontSize:11,background:'var(--harvics-cream)',color:B,border:'none',cursor:'pointer'}}>"{e}"</button>)}
     </Panel>
     <Panel title="STATS">
       {!stats?'Loading...':<>
-        <div style={{padding:8,background:'#F5F0E8',marginBottom:8}}>
+        <div style={{padding:8,background:'var(--harvics-cream)',marginBottom:8}}>
           <div style={{fontSize:10,color:B,fontWeight:600}}>TOTAL COMMANDS</div>
           <div style={{fontSize:28,fontWeight:700,color:B}}>{stats.total||0}</div>
           <div style={{fontSize:11,color:'#666'}}>Avg confidence: <b>{stats.avgConfidence||0}</b> · Avg ms: <b>{stats.avgDurationMs||0}</b></div>
@@ -29,11 +29,11 @@ export default function P(){
     </Panel>
     <Panel title={`HISTORY (${commands.length})`} full>
       <Tbl head={['WHEN','TRANSCRIPT','INTENT','CONF','ENTITIES','RESPONSE']}>
-        {commands.map(c=><tr key={c.id} style={{borderBottom:'1px solid #6B1F2B11'}}>
+        {commands.map(c=><tr key={c.id} style={{borderBottom:'1px solid #3D121211'}}>
           <td style={{...td,fontSize:11}}>{new Date(c.createdAt).toLocaleTimeString()}</td>
           <td style={{...td,fontSize:11,fontStyle:'italic'}}>"{c.transcript}"</td>
           <td style={td}><Pill s={c.intent==='unknown'?'Cancelled':'Active'}/> {c.intent}</td>
-          <td style={{...td,fontWeight:700,color:c.confidence>0.7?'#2E7D32':c.confidence>0.4?'#C3A35E':'#B71C1C'}}>{(c.confidence*100).toFixed(0)}%</td>
+          <td style={{...td,fontWeight:700,color:c.confidence>0.7?'#2E7D32':c.confidence>0.4?'var(--harvics-gold)':'#B71C1C'}}>{(c.confidence*100).toFixed(0)}%</td>
           <td style={{...td,fontSize:10,fontFamily:'monospace'}}>{c.entities?JSON.stringify(c.entities):'—'}</td>
           <td style={{...td,fontSize:11}}>{c.responseText}</td>
         </tr>)}

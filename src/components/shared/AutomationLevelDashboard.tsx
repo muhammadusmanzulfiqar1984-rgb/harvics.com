@@ -94,7 +94,7 @@ export const AutomationLevelDashboard: React.FC = () => {
   return (
     <div className="space-y-6">
       {/* Overall Automation Score */}
-      <div className="bg-gradient-to-br from-[#6B1F2B] to-[#6B1F2B] rounded-lg p-6 text-white">
+      <div className="bg-gradient-to-br from-harvics-burgundy to-harvics-burgundy rounded-lg p-6 text-white">
         {loading ? (
           <div className="flex items-center justify-center py-8">
             <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-white"></div>
@@ -104,11 +104,11 @@ export const AutomationLevelDashboard: React.FC = () => {
             <div className="flex items-center justify-between mb-4">
               <div>
                 <h2 className="text-2xl font-bold mb-2">Overall Automation Level</h2>
-                <p className="text-[#C3A35E]/80 text-sm">How human-less we've become</p>
+                <p className="text-harvics-gold/80 text-sm">How human-less we've become</p>
               </div>
               <div className="text-right">
                 <div className="text-5xl font-bold">{overallAutomation}%</div>
-                <div className="text-sm text-[#C3A35E]/80 mt-1">Automated</div>
+                <div className="text-sm text-harvics-gold/80 mt-1">Automated</div>
               </div>
             </div>
 
@@ -124,7 +124,7 @@ export const AutomationLevelDashboard: React.FC = () => {
               style={{ width: `${overallAutomation}%` }}
             ></div>
           </div>
-          <div className="flex items-center justify-between text-xs mt-2 text-[#C3A35E]/80">
+          <div className="flex items-center justify-between text-xs mt-2 text-harvics-gold/80">
             <span>0%</span>
             <span className="font-semibold">Gap: {gapToWorldClass}% to world-class</span>
             <span>100%</span>
@@ -132,19 +132,19 @@ export const AutomationLevelDashboard: React.FC = () => {
         </div>
 
         {/* Comparison */}
-        <div className="grid grid-cols-3 gap-4 mt-4 pt-4 border-t border-[#C3A35E]/20">
+        <div className="grid grid-cols-3 gap-4 mt-4 pt-4 border-t border-harvics-gold/20">
           <div className="text-center">
-            <div className="text-xs text-[#C3A35E]/80 mb-1">Average Company</div>
+            <div className="text-xs text-harvics-gold/80 mb-1">Average Company</div>
             <div className="text-lg font-semibold">45%</div>
             <div className="text-xs text-emerald-300 mt-1">+{overallAutomation - 45}% better</div>
           </div>
           <div className="text-center">
-            <div className="text-xs text-[#C3A35E]/80 mb-1">Good Company</div>
+            <div className="text-xs text-harvics-gold/80 mb-1">Good Company</div>
             <div className="text-lg font-semibold">65%</div>
             <div className="text-xs text-emerald-300 mt-1">+{overallAutomation - 65}% better</div>
           </div>
           <div className="text-center">
-            <div className="text-xs text-[#C3A35E]/80 mb-1">World-Class</div>
+            <div className="text-xs text-harvics-gold/80 mb-1">World-Class</div>
             <div className="text-lg font-semibold">{worldClassTarget}%</div>
             <div className="text-xs text-amber-300 mt-1">-{gapToWorldClass}% to reach</div>
           </div>

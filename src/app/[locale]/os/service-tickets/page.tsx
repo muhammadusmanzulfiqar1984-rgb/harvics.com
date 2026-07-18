@@ -21,16 +21,16 @@ export default function P(){
       <Inp l="Description" v={form.description} on={v=>setForm({...form,description:v})}/>
       <Form><Inp l="Category" v={form.category} on={v=>setForm({...form,category:v})}/><Inp l="Assign to" v={form.assignedTo} on={v=>setForm({...form,assignedTo:v})}/></Form>
       <button onClick={create} style={btnB}>+ OPEN TICKET</button>
-      <div style={{marginTop:8,padding:8,background:'#F5F0E8',borderLeft:'4px solid #C3A35E',fontSize:11,color:'#6B1F2B'}}>SLA: Urgent 4h · High 24h · Medium 72h · Low 168h. Breach auto-flagged on resolve.</div>
+      <div style={{marginTop:8,padding:8,background:'var(--harvics-cream)',borderLeft:'4px solid #C3A35E',fontSize:11,color:'var(--harvics-burgundy)'}}>SLA: Urgent 4h · High 24h · Medium 72h · Low 168h. Breach auto-flagged on resolve.</div>
     </Panel>
     <Panel title="ALL TICKETS" full>
       <Tbl head={['TICKET','CUSTOMER','SUBJECT','PRI','STATUS','OPENED','SLA','RESOLVE']}>
-        {rows.map(r=><tr key={r.id} style={{borderBottom:'1px solid #6B1F2B11'}}>
+        {rows.map(r=><tr key={r.id} style={{borderBottom:'1px solid #3D121211'}}>
           <td style={td}><b>{r.ticketNo}</b></td><td style={td}>{r.customerName}</td><td style={{...td,fontSize:11}}>{r.subject}</td>
           <td style={td}><Pill s={r.priority}/></td><td style={td}><Pill s={r.status}/></td>
           <td style={{...td,fontSize:11}}>{new Date(r.openedAt).toLocaleString()}</td>
           <td style={td}>{r.slaBreached?<Pill s="BREACHED"/>:r.status==='Resolved'?'✓':'—'}</td>
-          <td style={td}>{(r.status==='Open'||r.status==='InProgress')&&<><input placeholder="resolution" onChange={e=>setRes({...res,[r.id]:e.target.value})} style={{padding:3,fontSize:11,border:'1px solid #6B1F2B55',width:120}}/> <button onClick={()=>resolve(r.id)} style={btnA}>RESOLVE</button></>}</td>
+          <td style={td}>{(r.status==='Open'||r.status==='InProgress')&&<><input placeholder="resolution" onChange={e=>setRes({...res,[r.id]:e.target.value})} style={{padding:3,fontSize:11,border:'1px solid #3D121255',width:120}}/> <button onClick={()=>resolve(r.id)} style={btnA}>RESOLVE</button></>}</td>
         </tr>)}
       </Tbl>
     </Panel>

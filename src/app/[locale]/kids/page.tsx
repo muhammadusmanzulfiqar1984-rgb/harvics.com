@@ -97,7 +97,7 @@ export default function KidsPage({ params }: { params: Promise<{ locale: string 
   return (
     <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
       {/* ─── Hero Banner ─── */}
-      <section className="relative bg-[#6B1F2B] py-20 px-4 border-b border-[#C3A35E]/40 overflow-hidden">
+      <section className="relative bg-harvics-burgundy py-20 px-4 border-b border-harvics-gold/40 overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?w=1200&h=600&fit=crop&q=75"
@@ -110,7 +110,7 @@ export default function KidsPage({ params }: { params: Promise<{ locale: string 
         <div className="max-w-[1200px] mx-auto">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
             <div className="lg:max-w-[700px]">
-              <div className="text-xs text-[#C3A35E] font-bold uppercase tracking-[0.2em] mb-3">
+              <div className="text-xs text-harvics-gold font-bold uppercase tracking-[0.2em] mb-3">
                 Textiles — Kids Collection
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4" style={{ letterSpacing: '-0.03em' }}>
@@ -126,21 +126,21 @@ export default function KidsPage({ params }: { params: Promise<{ locale: string 
                 <span className="mx-2">›</span>
                 <Link href={`/${locale}/textiles`} className="hover:text-white/60 transition-colors">Textiles</Link>
                 <span className="mx-2">›</span>
-                <span className="text-[#C3A35E]">Kids</span>
+                <span className="text-harvics-gold">Kids</span>
               </div>
             </div>
             {/* Stats */}
             <div className="flex gap-8 lg:gap-12">
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#C3A35E]">26</div>
+                <div className="text-3xl font-bold text-harvics-gold">26</div>
                 <div className="text-xs text-white/50 uppercase tracking-wider mt-1">Products</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#C3A35E]">5</div>
+                <div className="text-3xl font-bold text-harvics-gold">5</div>
                 <div className="text-xs text-white/50 uppercase tracking-wider mt-1">Categories</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#C3A35E]">40+</div>
+                <div className="text-3xl font-bold text-harvics-gold">40+</div>
                 <div className="text-xs text-white/50 uppercase tracking-wider mt-1">Countries</div>
               </div>
             </div>
@@ -149,7 +149,7 @@ export default function KidsPage({ params }: { params: Promise<{ locale: string 
       </section>
 
       {/* ─── Category Quick Nav ─── */}
-      <section className="bg-white border-b border-[#C3A35E]/20 py-6 px-4">
+      <section className="bg-white border-b border-harvics-gold/20 py-6 px-4">
         <div className="max-w-[1200px] mx-auto">
           <div className="flex flex-wrap gap-3 justify-center">
             {CATEGORIES.map((cat) => (
@@ -158,8 +158,8 @@ export default function KidsPage({ params }: { params: Promise<{ locale: string 
                 onClick={() => setActiveCategory(cat.key)}
                 className={`px-5 py-2.5 text-sm font-medium border transition-colors ${
                   activeCategory === cat.key
-                    ? 'bg-[#6B1F2B] text-white border-[#6B1F2B]'
-                    : 'bg-white border-[#C3A35E]/20 text-[#6B1F2B] hover:bg-[#6B1F2B] hover:text-white hover:border-[#6B1F2B]'
+                    ? 'bg-harvics-burgundy text-white border-harvics-burgundy'
+                    : 'bg-white border-harvics-gold/20 text-harvics-burgundy hover:bg-harvics-burgundy hover:text-white hover:border-harvics-burgundy'
                 }`}
                 style={{ borderRadius: 0 }}
               >
@@ -174,15 +174,15 @@ export default function KidsPage({ params }: { params: Promise<{ locale: string 
       <div className="max-w-[1200px] mx-auto px-4 py-8 flex gap-8">
         {/* Sidebar Filters */}
         <aside className="hidden md:block w-[240px] flex-shrink-0">
-          <div className="border border-[#C3A35E]/30 bg-white p-5" style={{ borderRadius: 0, position: 'sticky', top: '120px' }}>
+          <div className="border border-harvics-gold/30 bg-white p-5" style={{ borderRadius: 0, position: 'sticky', top: '120px' }}>
             {/* Search */}
-            <div className="mb-6 pb-4 border-b border-[#C3A35E]/15">
+            <div className="mb-6 pb-4 border-b border-harvics-gold/15">
               <input
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search kids products..."
-                className="w-full px-3 py-2 text-sm text-[#6B1F2B] bg-white border border-[#C3A35E]/20 focus:border-[#C3A35E] focus:outline-none placeholder:text-[#6B1F2B]/30"
+                className="w-full px-3 py-2 text-sm text-harvics-burgundy bg-white border border-harvics-gold/20 focus:border-harvics-gold focus:outline-none placeholder:text-harvics-burgundy/30"
                 style={{ borderRadius: 0 }}
               />
             </div>
@@ -193,12 +193,12 @@ export default function KidsPage({ params }: { params: Promise<{ locale: string 
                 <button
                   key={cat.key}
                   onClick={() => setActiveCategory(cat.key === activeCategory ? 'all' : cat.key)}
-                  className={`block w-full text-left text-sm py-2 border-b border-[#C3A35E]/10 transition-colors flex justify-between ${
-                    activeCategory === cat.key ? 'text-[#6B1F2B] font-bold' : 'text-[#6B1F2B]/60 hover:text-[#6B1F2B]'
+                  className={`block w-full text-left text-sm py-2 border-b border-harvics-gold/10 transition-colors flex justify-between ${
+                    activeCategory === cat.key ? 'text-harvics-burgundy font-bold' : 'text-harvics-burgundy/60 hover:text-harvics-burgundy'
                   }`}
                 >
                   <span>{cat.label}</span>
-                  <span className="text-[#6B1F2B]/30 text-xs">({cat.count})</span>
+                  <span className="text-harvics-burgundy/30 text-xs">({cat.count})</span>
                 </button>
               ))}
             </FilterGroup>
@@ -206,7 +206,7 @@ export default function KidsPage({ params }: { params: Promise<{ locale: string 
             {/* Size Filter */}
             <FilterGroup title="Size">
               {SIZES.map((size) => (
-                <div key={size} className="text-sm text-[#6B1F2B]/60 py-1.5 border-b border-[#C3A35E]/10 hover:text-[#6B1F2B] cursor-pointer transition-colors">
+                <div key={size} className="text-sm text-harvics-burgundy/60 py-1.5 border-b border-harvics-gold/10 hover:text-harvics-burgundy cursor-pointer transition-colors">
                   {size}
                 </div>
               ))}
@@ -215,7 +215,7 @@ export default function KidsPage({ params }: { params: Promise<{ locale: string 
             {/* Material Filter */}
             <FilterGroup title="Material">
               {MATERIALS.map((mat) => (
-                <div key={mat} className="text-sm text-[#6B1F2B]/60 py-1.5 border-b border-[#C3A35E]/10 hover:text-[#6B1F2B] cursor-pointer transition-colors">
+                <div key={mat} className="text-sm text-harvics-burgundy/60 py-1.5 border-b border-harvics-gold/10 hover:text-harvics-burgundy cursor-pointer transition-colors">
                   {mat}
                 </div>
               ))}
@@ -224,7 +224,7 @@ export default function KidsPage({ params }: { params: Promise<{ locale: string 
             {/* Manufacturing */}
             <FilterGroup title="Manufacturing">
               {MANUFACTURING.map((mfg) => (
-                <div key={mfg} className="text-sm text-[#6B1F2B]/60 py-1.5 border-b border-[#C3A35E]/10 hover:text-[#6B1F2B] cursor-pointer transition-colors">
+                <div key={mfg} className="text-sm text-harvics-burgundy/60 py-1.5 border-b border-harvics-gold/10 hover:text-harvics-burgundy cursor-pointer transition-colors">
                   {mfg}
                 </div>
               ))}
@@ -233,7 +233,7 @@ export default function KidsPage({ params }: { params: Promise<{ locale: string 
             {/* Market Positioning */}
             <FilterGroup title="Market Positioning">
               {POSITIONING.map((pos) => (
-                <div key={pos} className="text-sm text-[#6B1F2B]/60 py-1.5 border-b border-[#C3A35E]/10 hover:text-[#6B1F2B] cursor-pointer transition-colors">
+                <div key={pos} className="text-sm text-harvics-burgundy/60 py-1.5 border-b border-harvics-gold/10 hover:text-harvics-burgundy cursor-pointer transition-colors">
                   {pos}
                 </div>
               ))}
@@ -242,7 +242,7 @@ export default function KidsPage({ params }: { params: Promise<{ locale: string 
             {/* Region */}
             <FilterGroup title="Region">
               {REGIONS.map((region) => (
-                <div key={region} className="text-sm text-[#6B1F2B]/60 py-1.5 border-b border-[#C3A35E]/10 hover:text-[#6B1F2B] cursor-pointer transition-colors">
+                <div key={region} className="text-sm text-harvics-burgundy/60 py-1.5 border-b border-harvics-gold/10 hover:text-harvics-burgundy cursor-pointer transition-colors">
                   {region}
                 </div>
               ))}
@@ -253,19 +253,19 @@ export default function KidsPage({ params }: { params: Promise<{ locale: string 
         {/* Product Grid */}
         <div className="flex-1">
           {/* Sort & Count Bar */}
-          <div className="flex items-center justify-between mb-6 border-b border-[#C3A35E]/20 pb-3">
-            <span className="text-sm text-[#6B1F2B]/60">
+          <div className="flex items-center justify-between mb-6 border-b border-harvics-gold/20 pb-3">
+            <span className="text-sm text-harvics-burgundy/60">
               {filteredProducts.length} {filteredProducts.length === 1 ? 'product' : 'products'}
               {activeCategory !== 'all' && (
                 <span className="ml-1">
-                  in <strong className="text-[#6B1F2B]">{CATEGORIES.find((c) => c.key === activeCategory)?.label}</strong>
+                  in <strong className="text-harvics-burgundy">{CATEGORIES.find((c) => c.key === activeCategory)?.label}</strong>
                 </span>
               )}
             </span>
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as 'name' | 'price')}
-              className="text-sm text-[#6B1F2B] bg-transparent border border-[#C3A35E]/30 px-3 py-1"
+              className="text-sm text-harvics-burgundy bg-transparent border border-harvics-gold/30 px-3 py-1"
               style={{ borderRadius: 0 }}
             >
               <option value="name">Sort by Name</option>
@@ -278,13 +278,13 @@ export default function KidsPage({ params }: { params: Promise<{ locale: string 
             {filteredProducts.map((product, idx) => (
               <div
                 key={idx}
-                className="bg-white border border-[#C3A35E]/20 hover:border-[#C3A35E] transition-all group relative"
+                className="bg-white border border-harvics-gold/20 hover:border-harvics-gold transition-all group relative"
                 style={{ borderRadius: 0, boxShadow: 'none' }}
               >
                 {/* Badge */}
                 {product.badge && (
                   <div
-                    className="absolute top-3 left-3 z-10 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider bg-[#C3A35E] text-[#6B1F2B]"
+                    className="absolute top-3 left-3 z-10 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider bg-harvics-gold text-harvics-burgundy"
                     style={{ borderRadius: 0 }}
                   >
                     {product.badge}
@@ -292,7 +292,7 @@ export default function KidsPage({ params }: { params: Promise<{ locale: string 
                 )}
 
                 {/* Image */}
-                <div className="h-[280px] bg-white flex items-center justify-center border-b border-[#C3A35E]/20 overflow-hidden">
+                <div className="h-[280px] bg-white flex items-center justify-center border-b border-harvics-gold/20 overflow-hidden">
                   <img
                     src={getProductImage(product.keywords)}
                     alt={product.name}
@@ -308,15 +308,15 @@ export default function KidsPage({ params }: { params: Promise<{ locale: string 
 
                 {/* Info */}
                 <div className="p-4">
-                  <div className="text-[10px] text-[#C3A35E] font-bold uppercase tracking-wider mb-1">
+                  <div className="text-[10px] text-harvics-gold font-bold uppercase tracking-wider mb-1">
                     {product.category} • {product.material}
                   </div>
-                  <h4 className="text-sm font-semibold text-[#6B1F2B] mb-1">
+                  <h4 className="text-sm font-semibold text-harvics-burgundy mb-1">
                     {product.name}
                   </h4>
                   <div className="flex items-center justify-between mt-2">
-                    <span className="text-sm font-bold text-[#C3A35E]">{product.price}</span>
-                    <span className="text-[10px] text-[#6B1F2B]/40">{product.size}</span>
+                    <span className="text-sm font-bold text-harvics-gold">{product.price}</span>
+                    <span className="text-[10px] text-harvics-burgundy/40">{product.size}</span>
                   </div>
                 </div>
               </div>
@@ -327,10 +327,10 @@ export default function KidsPage({ params }: { params: Promise<{ locale: string 
           {filteredProducts.length === 0 && (
             <div className="text-center py-20">
               <div className="text-5xl mb-4 opacity-20">👶</div>
-              <p className="text-lg text-[#6B1F2B]/40 font-serif">No products match your search.</p>
+              <p className="text-lg text-harvics-burgundy/40 font-serif">No products match your search.</p>
               <button
                 onClick={() => { setActiveCategory('all'); setSearchQuery('') }}
-                className="mt-4 px-6 py-2 text-sm font-semibold text-[#6B1F2B] border border-[#C3A35E]/30 hover:bg-[#6B1F2B] hover:text-white transition-colors"
+                className="mt-4 px-6 py-2 text-sm font-semibold text-harvics-burgundy border border-harvics-gold/30 hover:bg-harvics-burgundy hover:text-white transition-colors"
                 style={{ borderRadius: 0 }}
               >
                 Clear Filters
@@ -341,7 +341,7 @@ export default function KidsPage({ params }: { params: Promise<{ locale: string 
       </div>
 
       {/* ─── Bottom CTA ─── */}
-      <section className="bg-[#6B1F2B] py-16 px-4 border-t border-[#C3A35E]/40">
+      <section className="bg-harvics-burgundy py-16 px-4 border-t border-harvics-gold/40">
         <div className="max-w-[1200px] mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 font-serif">
             Looking for OEM / Private Label Kids Wear?
@@ -353,14 +353,14 @@ export default function KidsPage({ params }: { params: Promise<{ locale: string 
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
               href={`/${locale}/contact`}
-              className="px-8 py-3 bg-[#C3A35E] text-[#6B1F2B] font-bold text-sm uppercase tracking-wider hover:bg-[#D4B86A] transition-colors"
+              className="px-8 py-3 bg-harvics-gold text-harvics-burgundy font-bold text-sm uppercase tracking-wider hover:bg-[#D4B86A] transition-colors"
               style={{ borderRadius: 0 }}
             >
               Request a Quote
             </Link>
             <Link
               href={`/${locale}/sourcing`}
-              className="px-8 py-3 bg-transparent text-[#C3A35E] font-bold text-sm uppercase tracking-wider border border-[#C3A35E]/40 hover:bg-[#C3A35E]/10 transition-colors"
+              className="px-8 py-3 bg-transparent text-harvics-gold font-bold text-sm uppercase tracking-wider border border-harvics-gold/40 hover:bg-harvics-gold/10 transition-colors"
               style={{ borderRadius: 0 }}
             >
               Our Sourcing Solutions
@@ -376,8 +376,8 @@ export default function KidsPage({ params }: { params: Promise<{ locale: string 
 
 function FilterGroup({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div className="mb-5 pb-4 border-b border-[#C3A35E]/15">
-      <h3 className="text-xs font-bold text-[#6B1F2B] uppercase tracking-wider mb-3">{title}</h3>
+    <div className="mb-5 pb-4 border-b border-harvics-gold/15">
+      <h3 className="text-xs font-bold text-harvics-burgundy uppercase tracking-wider mb-3">{title}</h3>
       {children}
     </div>
   )

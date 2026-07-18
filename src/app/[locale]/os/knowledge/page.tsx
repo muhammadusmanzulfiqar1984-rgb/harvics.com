@@ -25,12 +25,12 @@ export default function P(){
       {!open?<div style={{padding:20,color:'#888',textAlign:'center'}}>Pick an article from the list.</div>:<>
         <div style={{fontSize:10,color:'#666'}}>{open.category||'—'} · 👁 {open.views} views · by {open.authorName||'—'}</div>
         <div style={{marginTop:8,padding:8,whiteSpace:'pre-wrap',fontSize:13}}>{open.body}</div>
-        {open.tags && <div style={{marginTop:8}}>{open.tags.split(',').map((t:string)=><span key={t} style={{display:'inline-block',padding:'2px 8px',marginRight:4,background:'#F5F0E8',color:B,fontSize:10,fontWeight:700}}>{t.trim()}</span>)}</div>}
+        {open.tags && <div style={{marginTop:8}}>{open.tags.split(',').map((t:string)=><span key={t} style={{display:'inline-block',padding:'2px 8px',marginRight:4,background:'var(--harvics-cream)',color:B,fontSize:10,fontWeight:700}}>{t.trim()}</span>)}</div>}
       </>}
     </Panel>
     <Panel title={`ARTICLES (${rows.length})`} full>
       <Tbl head={['SLUG','TITLE','CATEGORY','VIEWS','STATUS','ACTIONS']}>
-        {rows.map(r=><tr key={r.id} style={{borderBottom:'1px solid #6B1F2B11'}}>
+        {rows.map(r=><tr key={r.id} style={{borderBottom:'1px solid #3D121211'}}>
           <td style={td}><b>{r.slug}</b></td><td style={td}>{r.title}</td><td style={td}>{r.category||'—'}</td>
           <td style={td}>{r.views}</td><td style={td}><Pill s={r.status}/></td>
           <td style={td}><button onClick={()=>view(r.slug)} style={btnA}>VIEW</button> {r.status==='Draft'&&<button onClick={()=>publish(r.id)} style={btnA}>PUBLISH</button>}</td>

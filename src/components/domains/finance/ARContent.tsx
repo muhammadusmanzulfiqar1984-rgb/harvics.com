@@ -80,13 +80,13 @@ export default function ARContent() {
       <div className="flex items-center justify-between">
         <h4 className="text-lg font-semibold text-[#1A1A1A]">Unpaid Invoices ({unpaid.length})</h4>
         <button onClick={() => setShowRecordPayment(!showRecordPayment)}
-          className="px-4 py-2 text-sm font-bold text-white" style={{ background: '#6B1F2B', borderRadius: 0 }}>
+          className="px-4 py-2 text-sm font-bold text-white" style={{ background: 'var(--harvics-burgundy)', borderRadius: 0 }}>
           💳 Record Payment
         </button>
       </div>
 
       {showRecordPayment && (
-        <div className="bg-[#F5F0E8] border border-[#E5E5EA]/30 p-4 space-y-3" style={{ borderRadius: 0 }}>
+        <div className="bg-harvics-cream border border-[#E5E5EA]/30 p-4 space-y-3" style={{ borderRadius: 0 }}>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             <select value={newPayment.invoiceNo} onChange={e => setNewPayment(p => ({ ...p, invoiceNo: e.target.value }))}
               className="px-3 py-2 border border-[#E5E5EA]/30 text-sm" style={{ borderRadius: 0 }}>
@@ -105,8 +105,8 @@ export default function ARContent() {
               className="px-3 py-2 border border-[#E5E5EA]/30 text-sm" style={{ borderRadius: 0 }} />
           </div>
           <div className="flex gap-2">
-            <button onClick={handleRecordPayment} className="px-4 py-2 text-sm font-bold text-white" style={{ background: '#6B1F2B', borderRadius: 0 }}>Record</button>
-            <button onClick={() => setShowRecordPayment(false)} className="px-4 py-2 text-sm font-bold border border-[#6B1F2B] text-[#1A1A1A]" style={{ borderRadius: 0 }}>Cancel</button>
+            <button onClick={handleRecordPayment} className="px-4 py-2 text-sm font-bold text-white" style={{ background: 'var(--harvics-burgundy)', borderRadius: 0 }}>Record</button>
+            <button onClick={() => setShowRecordPayment(false)} className="px-4 py-2 text-sm font-bold border border-harvics-burgundy text-[#1A1A1A]" style={{ borderRadius: 0 }}>Cancel</button>
           </div>
         </div>
       )}
@@ -124,9 +124,9 @@ export default function ARContent() {
           </thead>
           <tbody>
             {unpaid.map((inv, i) => (
-              <tr key={inv.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F0E8]/50'}>
+              <tr key={inv.id} className={i % 2 === 0 ? 'bg-white' : 'bg-harvics-cream/50'}>
                 <td className="px-4 py-3 font-mono font-semibold text-[#1A1A1A]">{inv.invoiceNo}</td>
-                <td className="px-4 py-3 text-[#6B1F2B]">{inv.customer}</td>
+                <td className="px-4 py-3 text-harvics-burgundy">{inv.customer}</td>
                 <td className="px-4 py-3 text-right font-bold">{inv.currency} {inv.amount.toLocaleString()}</td>
                 <td className="px-4 py-3 text-center">
                   <span className={`px-2 py-1 text-xs font-bold ${inv.status === 'Overdue' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{inv.status}</span>
@@ -152,7 +152,7 @@ export default function ARContent() {
             </tr></thead>
             <tbody>
               {payments.map((p, i) => (
-                <tr key={p.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F0E8]/50'}>
+                <tr key={p.id} className={i % 2 === 0 ? 'bg-white' : 'bg-harvics-cream/50'}>
                   <td className="px-4 py-2 font-mono">{p.invoiceNo}</td>
                   <td className="px-4 py-2 text-right font-bold text-[#1A1A1A]">{p.currency} {p.amount.toLocaleString()}</td>
                   <td className="px-4 py-2">{p.method}</td>

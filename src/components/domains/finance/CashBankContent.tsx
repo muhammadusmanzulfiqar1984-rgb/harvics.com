@@ -72,7 +72,7 @@ export default function CashBankContent() {
             </select>
           </div>
           <button onClick={handleConvert}
-            className="px-4 py-2 text-sm font-bold text-white h-[38px]" style={{ background: '#6B1F2B', borderRadius: 0 }}>
+            className="px-4 py-2 text-sm font-bold text-white h-[38px]" style={{ background: 'var(--harvics-burgundy)', borderRadius: 0 }}>
             Convert
           </button>
           {convertResult !== null && (
@@ -88,7 +88,7 @@ export default function CashBankContent() {
         <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">📈 Live Exchange Rates (Base: USD)</h4>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           {keyCurrencies.map(code => (
-            <div key={code} className="flex justify-between items-center p-3 bg-[#F5F0E8]/50 border border-[#E5E5EA]/10" style={{ borderRadius: 0 }}>
+            <div key={code} className="flex justify-between items-center p-3 bg-harvics-cream/50 border border-[#E5E5EA]/10" style={{ borderRadius: 0 }}>
               <span className="font-semibold text-[#1A1A1A]">{code}</span>
               <span className="font-mono text-sm text-[#8E8E93]">{rates[code]?.toFixed(4) || '—'}</span>
             </div>
@@ -96,7 +96,7 @@ export default function CashBankContent() {
         </div>
       </div>
 
-      <div className="bg-[#F5F0E8] border-l-4 border-[#E5E5EA] p-4" style={{ borderRadius: 0 }}>
+      <div className="bg-harvics-cream border-l-4 border-[#E5E5EA] p-4" style={{ borderRadius: 0 }}>
         <div className="flex items-start gap-3">
           <span className="text-xl">🤖</span>
           <div>

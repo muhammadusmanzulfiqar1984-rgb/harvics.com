@@ -1,7 +1,7 @@
 'use client'
 /** #7 Financial Planning — Budgets + scenarios */
 import { useEffect, useState } from 'react'
-const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F0E8'
+const B='var(--harvics-burgundy)'; const G='var(--harvics-gold)'; const C='var(--harvics-cream)'
 const SCN=['Base','Upside','Downside']
 const SC:Record<string,string>={Base:'#1565C0',Upside:'#2E7D32',Downside:'#B71C1C'}
 const P=new Date().toISOString().slice(0,7)

@@ -88,10 +88,10 @@ export default function PortalOSNavigation({ portal, currentDomain }: PortalOSNa
   const isTier1Active = tier1Domains.some(d => isActive(d.path))
 
   return (
-    <nav className="w-72 bg-white border-r border-[#C3A35E]/30 min-h-screen overflow-y-auto">
+    <nav className="w-72 bg-white border-r border-harvics-gold/30 min-h-screen overflow-y-auto">
       {/* Simplified Sidebar Header */}
-      <div className="sticky top-0 bg-white border-b border-[#C3A35E]/30 z-20 px-6 py-4">
-        <h2 className="text-xs font-bold text-[#6B1F2B]/50 uppercase tracking-wider">
+      <div className="sticky top-0 bg-white border-b border-harvics-gold/30 z-20 px-6 py-4">
+        <h2 className="text-xs font-bold text-harvics-burgundy/50 uppercase tracking-wider">
           OS Navigation
         </h2>
       </div>
@@ -105,13 +105,13 @@ export default function PortalOSNavigation({ portal, currentDomain }: PortalOSNa
         <div className="mb-4">
           <div className="flex items-center gap-2 mb-1">
                   <div className="w-1 h-5 rounded-full" style={{ background: `linear-gradient(to bottom, ${tier0Colors.primary}, ${tier0Colors.primaryDark})` }}></div>
-                  <h3 className="text-xs font-bold uppercase tracking-wider text-[#6B1F2B]">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-harvics-burgundy">
               Tier 0
           </h3>
-                  <span className="text-xs text-[#C3A35E]">•</span>
-            <span className="text-xs font-medium text-[#6B1F2B]/70">Foundational</span>
+                  <span className="text-xs text-harvics-gold">•</span>
+            <span className="text-xs font-medium text-harvics-burgundy/70">Foundational</span>
           </div>
-          <p className="text-xs text-[#6B1F2B]/50 ms-3">Core infrastructure engines</p>
+          <p className="text-xs text-harvics-burgundy/50 ms-3">Core infrastructure engines</p>
         </div>
         <ul className="space-y-1.5">
           {tier0Engines.map((engine) => {
@@ -123,19 +123,19 @@ export default function PortalOSNavigation({ portal, currentDomain }: PortalOSNa
                   href={href}
                         className="group flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200"
                         style={{
-                          background: active ? '#6B1F2B' : 'transparent',
-                          color: active ? '#ffffff' : '#6B1F2B'
+                          background: active ? 'var(--harvics-burgundy)' : 'transparent',
+                          color: active ? '#ffffff' : 'var(--harvics-burgundy)'
                         }}
                         onMouseEnter={(e) => {
                           if (!active) {
                             e.currentTarget.style.backgroundColor = 'rgba(212, 175, 55, 0.1)'
-                            e.currentTarget.style.color = '#6B1F2B'
+                            e.currentTarget.style.color = 'var(--harvics-burgundy)'
                           }
                         }}
                         onMouseLeave={(e) => {
                           if (!active) {
                             e.currentTarget.style.backgroundColor = 'transparent'
-                            e.currentTarget.style.color = '#6B1F2B'
+                            e.currentTarget.style.color = 'var(--harvics-burgundy)'
                           }
                         }}
                 >
@@ -144,7 +144,7 @@ export default function PortalOSNavigation({ portal, currentDomain }: PortalOSNa
                   </span>
                   <span className="flex-1">{engine.label}</span>
                   {active && (
-                          <div className="w-2 h-2 rounded-full bg-[#C3A35E]"></div>
+                          <div className="w-2 h-2 rounded-full bg-harvics-gold"></div>
                   )}
                 </Link>
               </li>
@@ -157,7 +157,7 @@ export default function PortalOSNavigation({ portal, currentDomain }: PortalOSNa
       </div>
 
       {/* Tier 1: Core OS Domains - BLUE */}
-      <div className="px-6 py-5 border-t border-[#C3A35E]/30 bg-[#F8F9FA]/50">
+      <div className="px-6 py-5 border-t border-harvics-gold/30 bg-[#F8F9FA]/50">
         {(() => {
           const tier1Colors = getTierColors('1')
           return (
@@ -165,13 +165,13 @@ export default function PortalOSNavigation({ portal, currentDomain }: PortalOSNa
         <div className="mb-4">
           <div className="flex items-center gap-2 mb-1">
                   <div className="w-1 h-5 rounded-full" style={{ background: `linear-gradient(to bottom, ${tier1Colors.primary}, ${tier1Colors.primaryDark})` }}></div>
-                  <h3 className="text-xs font-bold uppercase tracking-wider text-[#6B1F2B]">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-harvics-burgundy">
               Tier 1
           </h3>
-                  <span className="text-xs text-[#C3A35E]">•</span>
-            <span className="text-xs font-medium text-[#6B1F2B]/70">OS Domains</span>
+                  <span className="text-xs text-harvics-gold">•</span>
+            <span className="text-xs font-medium text-harvics-burgundy/70">OS Domains</span>
           </div>
-          <p className="text-xs text-[#6B1F2B]/50 ms-3">Operational systems & workflows</p>
+          <p className="text-xs text-harvics-burgundy/50 ms-3">Operational systems & workflows</p>
         </div>
         <ul className="space-y-1.5">
           {tier1Domains.map((domain) => {
@@ -183,21 +183,21 @@ export default function PortalOSNavigation({ portal, currentDomain }: PortalOSNa
                   href={href}
                         className="group flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 border-l-4"
                         style={{
-                          background: active ? '#6B1F2B' : 'transparent',
-                          color: active ? '#ffffff' : '#6B1F2B',
-                          borderLeftColor: active ? '#C3A35E' : 'transparent'
+                          background: active ? 'var(--harvics-burgundy)' : 'transparent',
+                          color: active ? '#ffffff' : 'var(--harvics-burgundy)',
+                          borderLeftColor: active ? 'var(--harvics-gold)' : 'transparent'
                         }}
                         onMouseEnter={(e) => {
                           if (!active) {
                             e.currentTarget.style.backgroundColor = '#ffffff'
-                            e.currentTarget.style.color = '#6B1F2B'
+                            e.currentTarget.style.color = 'var(--harvics-burgundy)'
                             e.currentTarget.style.borderLeftColor = 'rgba(212, 175, 55, 0.5)'
                           }
                         }}
                         onMouseLeave={(e) => {
                           if (!active) {
                             e.currentTarget.style.backgroundColor = 'transparent'
-                            e.currentTarget.style.color = '#6B1F2B'
+                            e.currentTarget.style.color = 'var(--harvics-burgundy)'
                             e.currentTarget.style.borderLeftColor = 'transparent'
                           }
                         }}
@@ -207,10 +207,10 @@ export default function PortalOSNavigation({ portal, currentDomain }: PortalOSNa
                   </span>
                   <span className="flex-1">{domain.label}</span>
                   {active && (
-                          <div className="w-2 h-2 rounded-full bg-[#C3A35E] animate-pulse"></div>
+                          <div className="w-2 h-2 rounded-full bg-harvics-gold animate-pulse"></div>
                   )}
                   {!active && (
-                    <span className="text-[#C3A35E]/50 group-hover:text-[#C3A35E] transition-colors">→</span>
+                    <span className="text-harvics-gold/50 group-hover:text-harvics-gold transition-colors">→</span>
                   )}
                 </Link>
               </li>
@@ -223,15 +223,15 @@ export default function PortalOSNavigation({ portal, currentDomain }: PortalOSNa
       </div>
 
       {/* Reporting Section - Sophisticated Design */}
-      <div className="px-6 py-5 border-t border-[#C3A35E]/30">
+      <div className="px-6 py-5 border-t border-harvics-gold/30">
         <div className="mb-4">
           <div className="flex items-center gap-2 mb-1">
             <span className="text-lg">📊</span>
-            <h3 className="text-xs font-bold text-[#6B1F2B] uppercase tracking-wider">
+            <h3 className="text-xs font-bold text-harvics-burgundy uppercase tracking-wider">
               Reports
           </h3>
           </div>
-          <p className="text-xs text-[#6B1F2B]/50 ms-7">Analytics & exports</p>
+          <p className="text-xs text-harvics-burgundy/50 ms-7">Analytics & exports</p>
         </div>
         <ul className="space-y-1.5">
           <li>
@@ -239,35 +239,35 @@ export default function PortalOSNavigation({ portal, currentDomain }: PortalOSNa
               href={`/${locale}/reports/dashboard`}
               className={`group flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 ${
                 pathname?.includes('/reports')
-                  ? 'bg-[#6B1F2B] text-white font-semibold shadow-md'
-                  : 'text-[#6B1F2B]/80 hover:bg-[#F8F9FA] hover:text-[#6B1F2B] hover:shadow-sm'
+                  ? 'bg-harvics-burgundy text-white font-semibold shadow-md'
+                  : 'text-harvics-burgundy/80 hover:bg-[#F8F9FA] hover:text-harvics-burgundy hover:shadow-sm'
               }`}
             >
               <span className="text-xl">📈</span>
               <span className="flex-1">Dashboard Reports</span>
               {pathname?.includes('/reports') && (
-                <div className="w-2 h-2 rounded-full bg-[#C3A35E]"></div>
+                <div className="w-2 h-2 rounded-full bg-harvics-gold"></div>
               )}
             </Link>
           </li>
           <li>
             <Link
               href={`/${locale}/reports/analytics`}
-              className="group flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium text-[#6B1F2B]/80 hover:bg-[#F8F9FA] hover:text-[#6B1F2B] hover:shadow-sm transition-all duration-200"
+              className="group flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium text-harvics-burgundy/80 hover:bg-[#F8F9FA] hover:text-harvics-burgundy hover:shadow-sm transition-all duration-200"
             >
               <span className="text-xl">📊</span>
               <span className="flex-1">Analytics</span>
-              <span className="text-[#C3A35E]/50 group-hover:text-[#C3A35E] transition-colors">→</span>
+              <span className="text-harvics-gold/50 group-hover:text-harvics-gold transition-colors">→</span>
             </Link>
           </li>
           <li>
             <Link
               href={`/${locale}/reports/exports`}
-              className="group flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium text-[#6B1F2B]/80 hover:bg-[#F8F9FA] hover:text-[#6B1F2B] hover:shadow-sm transition-all duration-200"
+              className="group flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium text-harvics-burgundy/80 hover:bg-[#F8F9FA] hover:text-harvics-burgundy hover:shadow-sm transition-all duration-200"
             >
               <span className="text-xl">📥</span>
               <span className="flex-1">Export Reports</span>
-              <span className="text-[#C3A35E]/50 group-hover:text-[#C3A35E] transition-colors">→</span>
+              <span className="text-harvics-gold/50 group-hover:text-harvics-gold transition-colors">→</span>
             </Link>
           </li>
         </ul>

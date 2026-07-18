@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vapi Voice Widget</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 640px; margin: 4rem auto; padding: 0 1rem; }
+    button { padding: .9rem 1.4rem; font-size: 1rem; border-radius: 999px; border: 0; cursor: pointer; }
+    .start { background: #22c55e; color: #fff; }
+    .stop  { background: #ef4444; color: #fff; }
+    #status { margin-top: 1rem; color: #555; }
+    #log { margin-top: 1.5rem; padding: 1rem; background: #f5f5f5; border-radius: 8px; min-height: 120px; white-space: pre-wrap; font-family: ui-monospace, monospace; font-size: .85rem; }
+  </style>
+</head>
+<body>
+  <h1>Vapi Voice Agent</h1>
+  <p>Click start, allow microphone, and talk to your assistant.</p>
+  <button id="start" class="start">Start call</button>
+  <button id="stop" class="stop" disabled>End call</button>
+  <div id="status">idle</div>
+  <div id="log"></div>
+
+  <script type="module">
+    import Vapi from "https://esm.sh/@vapi-ai/web@2.2.4";
+
+    const startBtn = document.getElementById("start");
+    const stopBtn  = document.getElementById("stop");
+    const statusEl = document.getElementById("status");
+    const logEl    = document.getElementById("log");
+    const log = (m) => { logEl.textContent += m + "\n"; };
+
+    let vapi;
+
+    startBtn.onclick = async () => {
+      const cfg = await fetch("/api/config").then(r => r.json());
+      vapi = new Vapi(cfg.publicKey);
+
+      vapi.on("call-start",   () => { statusEl.textContent = "connected"; startBtn.disabled = true; stopBtn.disabled = false; });
+      vapi.on("call-end",     () => { statusEl.textContent = "ended";     startBtn.disabled = false; stopBtn.disabled = true; });
+      vapi.on("speech-start", () => statusEl.textContent = "assistant speaking…");
+      vapi.on("speech-end",   () => statusEl.textContent = "listening…");
+      vapi.on("message",      (m) => {
+        if (m.type === "transcript" && m.transcriptType === "final") {
+          log(`${m.role}: ${m.transcript}`);
+        }
+      });
+      vapi.on("error", (e) => log("error: " + JSON.stringify(e)));
+
+      await vapi.start(cfg.assistantId);
+    };
+
+    stopBtn.onclick = () => vapi?.stop();
+  </script>
+</body>
+</html>

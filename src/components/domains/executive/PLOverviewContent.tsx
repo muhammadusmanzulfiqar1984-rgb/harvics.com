@@ -46,16 +46,16 @@ export default function PLOverviewContent({ persona, locale }: { persona: string
           <div className="p-5">
             <div className="grid grid-cols-4 gap-3 mb-5">
               {(data.kpiTrend || []).map((q: any, i: number) => (
-                <div key={i} className={`rounded-xl p-3 text-center ${i === (data.kpiTrend?.length || 1) - 1 ? 'bg-[#6B1F2B]' : 'bg-[#F5F5F7]'}`}>
-                  <p className={`text-xs font-medium mb-1 ${i === (data.kpiTrend?.length || 1) - 1 ? 'text-[#C3A35E]' : 'text-[#8E8E93]'}`}>{q.month}</p>
+                <div key={i} className={`rounded-xl p-3 text-center ${i === (data.kpiTrend?.length || 1) - 1 ? 'bg-harvics-burgundy' : 'bg-[#F5F5F7]'}`}>
+                  <p className={`text-xs font-medium mb-1 ${i === (data.kpiTrend?.length || 1) - 1 ? 'text-harvics-gold' : 'text-[#8E8E93]'}`}>{q.month}</p>
                   <p className={`text-base font-semibold tabular-nums ${i === (data.kpiTrend?.length || 1) - 1 ? 'text-white' : 'text-[#1A1A1A]'}`}>{fmtM(q.revenue)}</p>
-                  <p className={`text-xs tabular-nums ${i === (data.kpiTrend?.length || 1) - 1 ? 'text-[#C3A35E]/70' : 'text-[#8E8E93]'}`}>{fmtM(q.profit)} profit</p>
+                  <p className={`text-xs tabular-nums ${i === (data.kpiTrend?.length || 1) - 1 ? 'text-harvics-gold/70' : 'text-[#8E8E93]'}`}>{fmtM(q.profit)} profit</p>
                 </div>
               ))}
             </div>
             <LineChart
               data={[
-                { label: 'Revenue', values: finData.revenueByMonth || [], color: '#6B1F2B' },
+                { label: 'Revenue', values: finData.revenueByMonth || [], color: 'var(--harvics-burgundy)' },
                 { label: 'Expenses', values: finData.expenseByMonth || [], color: '#FF9500' },
               ]}
               labels={MONTHS}
@@ -70,7 +70,7 @@ export default function PLOverviewContent({ persona, locale }: { persona: string
           <Card title="Business Health">
             <div className="p-5 space-y-3">
               {[
-                { label: 'ROI', value: data.roi || 22.1, max: 50, color: '#6B1F2B', unit: '%' },
+                { label: 'ROI', value: data.roi || 22.1, max: 50, color: 'var(--harvics-burgundy)', unit: '%' },
                 { label: 'Market Share', value: data.marketShare || 18.4, max: 40, color: '#007AFF', unit: '%' },
                 { label: 'Cust. Retention', value: data.customerRetention || 94, max: 100, color: '#34C759', unit: '%' },
                 { label: 'Employee Sat.', value: data.employeeSatisfaction || 87, max: 100, color: '#FF9500', unit: '%' },

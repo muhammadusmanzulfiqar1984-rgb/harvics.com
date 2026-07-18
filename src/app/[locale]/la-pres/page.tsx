@@ -22,7 +22,7 @@ export default async function LaPresPage({
         className="absolute inset-0 opacity-40 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse at 50% 0%, #6B1F2B 0%, transparent 55%), radial-gradient(circle at 90% 80%, #C3A35E 0%, transparent 40%)',
+            'radial-gradient(ellipse at 50% 0%, #3D1212 0%, transparent 55%), radial-gradient(circle at 90% 80%, #C3A35E 0%, transparent 40%)',
         }}
       />
       <div className="absolute inset-0 opacity-[0.04] pointer-events-none bg-[length:48px_48px] bg-[linear-gradient(#C3A35E_1px,transparent_1px),linear-gradient(90deg,#C3A35E_1px,transparent_1px)]" />
@@ -30,7 +30,7 @@ export default async function LaPresPage({
       <section className="relative z-10 max-w-[1100px] mx-auto px-4 py-16 md:py-24 flex flex-col items-center">
         <Link
           href={`/${locale}/portals`}
-          className="self-start inline-flex items-center text-xs uppercase tracking-[0.16em] text-[#C3A35E]/80 hover:text-[#C3A35E] transition-colors mb-12"
+          className="self-start inline-flex items-center text-xs uppercase tracking-[0.16em] text-harvics-gold/80 hover:text-harvics-gold transition-colors mb-12"
         >
           ← Portals
         </Link>

@@ -32,10 +32,10 @@ export default async function ImagesPage({ params }: ImagesPageProps) {
   return (
     <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
       {/* Hero */}
-      <section className="relative bg-[#6B1F2B] py-20 px-4 border-b border-[#C3A35E]/40 overflow-hidden">
+      <section className="relative bg-harvics-burgundy py-20 px-4 border-b border-harvics-gold/40 overflow-hidden">
         <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.95) 0%, rgba(90,26,36,0.9) 100%)' }} />
         <div className="max-w-[1200px] mx-auto text-center relative z-10">
-          <div className="text-xs text-[#C3A35E] font-bold uppercase tracking-[0.2em] mb-3">Media</div>
+          <div className="text-xs text-harvics-gold font-bold uppercase tracking-[0.2em] mb-3">Media</div>
           <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4" style={{ letterSpacing: '-0.02em' }}>
             Media Gallery & Brand Assets
           </h1>
@@ -49,13 +49,13 @@ export default async function ImagesPage({ params }: ImagesPageProps) {
       <section className="max-w-[1200px] mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {assetCategories.map((cat) => (
-            <div key={cat.title} className="bg-white border border-[#C3A35E]/15 p-8 flex flex-col">
+            <div key={cat.title} className="bg-white border border-harvics-gold/15 p-8 flex flex-col">
               <div className="text-3xl mb-4">{cat.icon}</div>
-              <h3 className="text-lg font-semibold text-[#6B1F2B] mb-2">{cat.title}</h3>
-              <p className="text-sm text-[#6B1F2B]/55 leading-relaxed mb-4 flex-1">{cat.desc}</p>
-              <div className="flex items-center justify-between pt-4 border-t border-[#C3A35E]/10">
-                <span className="text-xs text-[#C3A35E] font-bold uppercase tracking-wider">{cat.count}</span>
-                <span className="text-xs text-[#6B1F2B]/40">Request access →</span>
+              <h3 className="text-lg font-semibold text-harvics-burgundy mb-2">{cat.title}</h3>
+              <p className="text-sm text-harvics-burgundy/55 leading-relaxed mb-4 flex-1">{cat.desc}</p>
+              <div className="flex items-center justify-between pt-4 border-t border-harvics-gold/10">
+                <span className="text-xs text-harvics-gold font-bold uppercase tracking-wider">{cat.count}</span>
+                <span className="text-xs text-harvics-burgundy/40">Request access →</span>
               </div>
             </div>
           ))}
@@ -63,14 +63,14 @@ export default async function ImagesPage({ params }: ImagesPageProps) {
       </section>
 
       {/* Usage Terms */}
-      <section className="bg-white border-t border-[#C3A35E]/20">
+      <section className="bg-white border-t border-harvics-gold/20">
         <div className="max-w-[800px] mx-auto px-4 py-16 text-center">
-          <h2 className="text-2xl font-semibold text-[#6B1F2B] mb-4">Usage Terms</h2>
-          <p className="text-sm text-[#6B1F2B]/55 leading-relaxed mb-8">
+          <h2 className="text-2xl font-semibold text-harvics-burgundy mb-4">Usage Terms</h2>
+          <p className="text-sm text-harvics-burgundy/55 leading-relaxed mb-8">
             All media assets are provided for editorial and press use only. Commercial use requires written authorisation from Harvics Global Ventures. Assets must not be altered, cropped to remove watermarks, or used in any way that misrepresents the company.
           </p>
           <a href="mailto:media@harvics.com"
-            className="inline-block px-8 py-3 bg-[#6B1F2B] text-white text-sm font-bold hover:bg-[#5a1a24] transition-colors">
+            className="inline-block px-8 py-3 bg-harvics-burgundy text-white text-sm font-bold hover:bg-[#5a1a24] transition-colors">
             Request Media Kit — media@harvics.com
           </a>
         </div>

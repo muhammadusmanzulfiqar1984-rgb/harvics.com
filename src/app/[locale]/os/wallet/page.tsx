@@ -25,14 +25,14 @@ export default function P(){
     </Panel>
     <Panel title={sel?`TOP-UP / TRANSFER — ${sel.ownerType}/${sel.ownerId.slice(-8)}`:'TOP-UP / TRANSFER'}>
       {!sel?<div style={{padding:20,color:'#888',textAlign:'center'}}>Pick a wallet from the list →</div>:<>
-        <div style={{padding:8,background:'#F5F0E8',borderLeft:'4px solid #C3A35E',marginBottom:8}}>
-          <div style={{fontSize:10,color:'#6B1F2B',fontWeight:600}}>BALANCE</div>
-          <div style={{fontSize:24,fontWeight:700,color:'#6B1F2B'}}>{sel.currency} {sel.balance.toLocaleString()}</div>
+        <div style={{padding:8,background:'var(--harvics-cream)',borderLeft:'4px solid #C3A35E',marginBottom:8}}>
+          <div style={{fontSize:10,color:'var(--harvics-burgundy)',fontWeight:600}}>BALANCE</div>
+          <div style={{fontSize:24,fontWeight:700,color:'var(--harvics-burgundy)'}}>{sel.currency} {sel.balance.toLocaleString()}</div>
         </div>
-        <div style={{fontWeight:700,color:'#6B1F2B',fontSize:11}}>TOP UP</div>
+        <div style={{fontWeight:700,color:'var(--harvics-burgundy)',fontSize:11}}>TOP UP</div>
         <Form><Inp l="Amount" tp="number" v={topup.amount} on={v=>setTopup({...topup,amount:+v})}/><Inp l="Reference" v={topup.reference} on={v=>setTopup({...topup,reference:v})}/></Form>
         <button onClick={doTopup} style={btnA}>+ TOP UP</button>
-        <div style={{fontWeight:700,color:'#6B1F2B',fontSize:11,marginTop:8}}>TRANSFER</div>
+        <div style={{fontWeight:700,color:'var(--harvics-burgundy)',fontSize:11,marginTop:8}}>TRANSFER</div>
         <Inp l="To wallet ID" v={xfer.toWalletId} on={v=>setXfer({...xfer,toWalletId:v})}/>
         <Form><Inp l="Amount" tp="number" v={xfer.amount} on={v=>setXfer({...xfer,amount:+v})}/><Inp l="Reference" v={xfer.reference} on={v=>setXfer({...xfer,reference:v})}/></Form>
         <button onClick={doXfer} style={btnA}>SEND</button>
@@ -40,9 +40,9 @@ export default function P(){
     </Panel>
     <Panel title={`WALLETS (${rows.length})`}>
       <Tbl head={['OWNER','CCY','BALANCE','STATUS','PICK']}>
-        {rows.map(w=><tr key={w.id} style={{background:selected===w.id?'#F5F0E8':undefined,borderBottom:'1px solid #6B1F2B11'}}>
+        {rows.map(w=><tr key={w.id} style={{background:selected===w.id?'var(--harvics-cream)':undefined,borderBottom:'1px solid #3D121211'}}>
           <td style={{...td,fontSize:11}}><b>{w.ownerType}</b>/{w.ownerId.slice(-8)}</td>
-          <td style={td}>{w.currency}</td><td style={{...td,fontWeight:700,color:'#6B1F2B'}}>{w.balance.toLocaleString()}</td>
+          <td style={td}>{w.currency}</td><td style={{...td,fontWeight:700,color:'var(--harvics-burgundy)'}}>{w.balance.toLocaleString()}</td>
           <td style={td}><Pill s={w.status}/></td>
           <td style={td}><button onClick={()=>setSelected(w.id)} style={btnA}>{selected===w.id?'✓':'PICK'}</button></td>
         </tr>)}
@@ -50,7 +50,7 @@ export default function P(){
     </Panel>
     {sel && <Panel title="TRANSACTION HISTORY" full>
       <Tbl head={['WHEN','TYPE','AMOUNT','BAL AFTER','REF','COUNTERPARTY']}>
-        {txns.map(t=><tr key={t.id} style={{borderBottom:'1px solid #6B1F2B11'}}>
+        {txns.map(t=><tr key={t.id} style={{borderBottom:'1px solid #3D121211'}}>
           <td style={{...td,fontSize:11}}>{new Date(t.createdAt).toLocaleString()}</td>
           <td style={td}><Pill s={t.type==='topup'||t.type==='transfer_in'?'Posted':'Posted'}/> {t.type}</td>
           <td style={{...td,fontWeight:700,color:t.amount>=0?'#2E7D32':'#B71C1C'}}>{t.amount>=0?'+':''}{t.amount} {t.currency}</td>

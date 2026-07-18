@@ -84,7 +84,7 @@ export default function PayrollProcessingContent({ persona, locale }: PayrollPro
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <h3 className="text-sm font-semibold text-[#1A1A1A]">Payroll Processing</h3>
-        <button className="px-4 py-2 bg-[#6B1F2B] text-white text-xs font-medium rounded-xl hover:bg-[#5a1a24] transition-colors">
+        <button className="px-4 py-2 bg-harvics-burgundy text-white text-xs font-medium rounded-xl hover:bg-[#5a1a24] transition-colors">
           Process Payroll
         </button>
       </div>

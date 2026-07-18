@@ -99,7 +99,7 @@ export function WeatherWidget() {
           <div className="flex gap-1.5 mb-4 flex-wrap">
             {weather.map((w, i) => (
               <button key={i} onClick={() => setActiveIdx(i)}
-                className={`px-2.5 py-1 text-xs rounded-full font-medium transition-colors ${activeIdx === i ? 'bg-[#6B1F2B] text-white' : 'bg-[#FAF8F5] text-[#8E8E93] hover:bg-[#F0EAE1]'}`}>
+                className={`px-2.5 py-1 text-xs rounded-full font-medium transition-colors ${activeIdx === i ? 'bg-harvics-burgundy text-white' : 'bg-[#FAF8F5] text-[#8E8E93] hover:bg-[#F0EAE1]'}`}>
                 {w.city}
               </button>
             ))}
@@ -140,7 +140,7 @@ export function WeatherWidget() {
         <div className="flex gap-4 overflow-x-auto">
           {weather.map((w, i) => (
             <button key={i} onClick={() => setActiveIdx(i)}
-              className={`flex-shrink-0 flex items-center gap-2 text-xs ${activeIdx === i ? 'text-[#6B1F2B] font-medium' : 'text-[#8E8E93]'}`}>
+              className={`flex-shrink-0 flex items-center gap-2 text-xs ${activeIdx === i ? 'text-harvics-burgundy font-medium' : 'text-[#8E8E93]'}`}>
               <span>{WEATHER_ICONS[w.icon] || '🌡️'}</span>
               <span>{w.city}</span>
               <span className="font-semibold">{w.temp}°</span>

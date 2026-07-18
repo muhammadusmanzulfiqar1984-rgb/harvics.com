@@ -1,0 +1,235 @@
+{
+  "event": "Premier Vision Paris",
+  "vertical": "Apparel / Textile",
+  "trialSeed": true,
+  "note": "Trial library seed for the last 3 years. Use Python scraper or manual import to enrich exhibitor lists.",
+  "fairsIntel": [
+    {
+      "event": "ITMA",
+      "editionYear": 2023,
+      "city": "Milan",
+      "country": "Italy",
+      "exhibitors": "1700+",
+      "visitors": "111000",
+      "sourceUrl": "https://www.itma.com/",
+      "sourceType": "official",
+      "confidence": "high"
+    },
+    {
+      "event": "Intertextile Shanghai Apparel Fabrics (Spring)",
+      "editionYear": 2026,
+      "city": "Shanghai",
+      "country": "China",
+      "exhibitors": "3000+",
+      "visitors": "96000+",
+      "sourceUrl": "https://intertextile-shanghai-apparel-fabrics-spring.hk.messefrankfurt.com/shanghai/en/facts-figures.html",
+      "sourceType": "official_messe_frankfurt",
+      "confidence": "high"
+    },
+    {
+      "event": "Intertextile Shanghai Apparel Fabrics (Autumn)",
+      "editionYear": 2025,
+      "city": "Shanghai",
+      "country": "China",
+      "exhibitors": "3700+",
+      "visitors": "100000+",
+      "sourceUrl": "https://intertextile-shanghai-apparel-fabrics-autumn.hk.messefrankfurt.com/shanghai/en/facts-figures.html",
+      "sourceType": "official_messe_frankfurt",
+      "confidence": "high"
+    },
+    {
+      "event": "Heimtextil",
+      "editionYear": 2026,
+      "city": "Frankfurt",
+      "country": "Germany",
+      "exhibitors": null,
+      "visitors": "48000",
+      "sourceUrl": "https://heimtextil.messefrankfurt.com/frankfurt/en/facts-figures.html",
+      "sourceType": "official_messe_frankfurt",
+      "confidence": "medium"
+    },
+    {
+      "event": "Munich Fabric Start",
+      "editionYear": 2026,
+      "city": "Munich",
+      "country": "Germany",
+      "exhibitors": "1100 suppliers (site-stated)",
+      "visitors": "15000 (site-stated)",
+      "sourceUrl": "https://www.munichfabricstart.com/en/",
+      "sourceType": "official",
+      "confidence": "medium"
+    }
+  ],
+  "premierVisionIntelligence": {
+    "officialSources": {
+      "main": "https://www.premierevision.com/en/",
+      "offices": "https://www.premierevision.com/en/content/offices",
+      "contact": "https://www.premierevision.com/en/content/formulaire-contact",
+      "appStore": "https://apps.apple.com/us/app/premi%C3%A8re-vision/id6449674956",
+      "playStore": "https://play.google.com/store/apps/details?id=com.inwink.premierevision"
+    },
+    "parisNodes": {
+      "city": "Paris",
+      "country": "France",
+      "officeAddress": "Maison de la Mutualite, 24 rue Saint-Victor, 75005 Paris",
+      "officePhone": "+33 (0)1 70 38 70 00"
+    },
+    "dataAcquisitionRoutes": [
+      {
+        "route": "Official platform export",
+        "description": "Use official exhibitor/visitor downloadable materials when published for each edition.",
+        "status": "priority"
+      },
+      {
+        "route": "Messe Frankfurt companion fairs",
+        "description": "Use Texworld Paris exhibitor list PDF and exhibitor search endpoints as apparel sourcing proxy data.",
+        "links": [
+          "https://texworld-paris.fr.messefrankfurt.com/paris/en/exhibitor-search.html",
+          "https://texworld-paris.fr.messefrankfurt.com/content/dam/messefrankfurt-france/texworld-evolution-paris/pdf/TW58_E_LISTE.pdf"
+        ],
+        "status": "active"
+      },
+      {
+        "route": "Python crawler adapters",
+        "description": "Capture structured exhibitor profiles and publication pages from permitted public pages for edition-wise dataset build.",
+        "status": "active"
+      }
+    ],
+    "threeYearCollectionPlan": [
+      {
+        "year": 2026,
+        "goal": "Collect exhibitor entities, segment tags, and buyer-contact candidates for Paris editions.",
+        "status": "in_progress"
+      },
+      {
+        "year": 2025,
+        "goal": "Backfill exhibitor and visitor-reference metrics from official publications and mirrors.",
+        "status": "in_progress"
+      },
+      {
+        "year": 2024,
+        "goal": "Backfill baseline edition metadata and normalize country/segment mapping for longitudinal analytics.",
+        "status": "in_progress"
+      }
+    ]
+  },
+  "easternEuropeFairs": [
+    {
+      "event": "Fast Textile",
+      "city": "Lodz",
+      "country": "Poland",
+      "edition": "10-12 March 2026",
+      "sector": "Textile / Fabrics / Accessories",
+      "exhibitors": "252",
+      "visitors": "7522",
+      "area": "10000 m2",
+      "sourceUrl": "https://fasttextile.com/en/",
+      "sourceType": "official",
+      "confidence": "high"
+    },
+    {
+      "event": "Fast Textile",
+      "city": "Lodz",
+      "country": "Poland",
+      "edition": "17-19 November 2026",
+      "sector": "Textile / Fabrics / Accessories",
+      "exhibitors": "600+",
+      "visitors": "14500+",
+      "area": "20000 m2",
+      "sourceUrl": "https://fasttextile.com/en/",
+      "sourceType": "official",
+      "confidence": "high"
+    },
+    {
+      "event": "ROMEXPO Textile-Relevant Program Node",
+      "city": "Bucharest",
+      "country": "Romania",
+      "edition": "2026 calendar",
+      "sector": "Multi-industry organizer with textile-relevant trade fair capacity",
+      "exhibitors": null,
+      "visitors": null,
+      "area": null,
+      "sourceUrl": "https://www.romexpo.ro/en/",
+      "sourceType": "official",
+      "confidence": "medium"
+    },
+    {
+      "event": "Heimtextil",
+      "city": "Frankfurt",
+      "country": "Germany",
+      "edition": "2026 at a glance",
+      "sector": "Home Textiles",
+      "exhibitors": null,
+      "visitors": "48000",
+      "area": null,
+      "sourceUrl": "https://heimtextil.messefrankfurt.com/frankfurt/en/facts-figures.html",
+      "sourceType": "official_messe_frankfurt",
+      "confidence": "medium"
+    }
+  ],
+  "years": [
+    {
+      "year": 2026,
+      "editions": [
+        {
+          "season": "Spring-Summer",
+          "month": "February",
+          "city": "Paris",
+          "country": "France",
+          "source": "Event/association directories",
+          "status": "seed"
+        },
+        {
+          "season": "Autumn-Winter",
+          "month": "July",
+          "city": "Paris",
+          "country": "France",
+          "source": "Event/association directories",
+          "status": "seed"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "editions": [
+        {
+          "season": "Spring-Summer",
+          "month": "February",
+          "city": "Paris",
+          "country": "France",
+          "source": "Event/association directories",
+          "status": "seed"
+        },
+        {
+          "season": "Autumn-Winter",
+          "month": "July",
+          "city": "Paris",
+          "country": "France",
+          "source": "Event/association directories",
+          "status": "seed"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "editions": [
+        {
+          "season": "Spring-Summer",
+          "month": "February",
+          "city": "Paris",
+          "country": "France",
+          "source": "Event/association directories",
+          "status": "seed"
+        },
+        {
+          "season": "Autumn-Winter",
+          "month": "July",
+          "city": "Paris",
+          "country": "France",
+          "source": "Event/association directories",
+          "status": "seed"
+        }
+      ]
+    }
+  ]
+}

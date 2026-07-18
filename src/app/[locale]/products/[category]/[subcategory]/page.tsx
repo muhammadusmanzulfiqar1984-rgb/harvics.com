@@ -76,7 +76,7 @@ export default async function SubcategoryPage({ params }: SubcategoryPageProps) 
   const categories = getFolderBasedCategories() || []
 
   return (
-    <main className="min-h-screen bg-[#6B1F2B]">
+    <main className="min-h-screen bg-harvics-burgundy">
       <div className="pt-20">
         <SubcategoryClient
           images={images}

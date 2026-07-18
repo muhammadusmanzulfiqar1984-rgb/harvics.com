@@ -13,17 +13,17 @@ export const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', '
 
 // ─── Design tokens (CSS values matching tailwind.config.js) ─────────────────
 const T = {
-  burgundy:    '#3D1212',
-  gold:        '#C3A35E',
-  goldDim:     'rgba(195,163,94,0.18)',
-  goldDiv:     'rgba(195,163,94,0.2)',
-  goldBorder:  'rgba(195,163,94,0.3)',
-  cream:       '#F5F0E8',
-  muted:       '#8A7D6B',
+  burgundy:    'var(--harvics-burgundy)',
+  gold:        'var(--harvics-gold)',
+  goldDim:     'rgba(195, 163, 94,0.18)',
+  goldDiv:     'rgba(195, 163, 94,0.2)',
+  goldBorder:  'rgba(195, 163, 94,0.3)',
+  cream:       'var(--harvics-cream)',
+  muted:       'var(--harvics-muted)',
   surface:     'rgba(255,255,255,0.04)',
   surfaceHov:  'rgba(255,255,255,0.07)',
-  gridLine:    'rgba(195,163,94,0.08)',
-  shadow:      '0 4px 24px rgba(26,5,5,0.5)',
+  gridLine:    'rgba(195, 163, 94,0.08)',
+  shadow:      '0 4px 24px rgba(61, 18, 18,0.5)',
 }
 
 // ── Sparkline ────────────────────────────────────────────────────────────────
@@ -239,7 +239,7 @@ export function DataTable({ columns, rows }: {
     <div className="overflow-x-auto">
       <table className="w-full text-sm">
         <thead>
-          <tr style={{ borderBottom: `1px solid ${T.goldDiv}`, background: `linear-gradient(135deg, ${T.burgundy}, rgba(26,5,5,0.8))` }}>
+          <tr style={{ borderBottom: `1px solid ${T.goldDiv}`, background: `linear-gradient(135deg, ${T.burgundy}, rgba(61, 18, 18,0.8))` }}>
             {columns.map(c => (
               <th key={c.key} className={`px-5 py-3 text-[10px] font-black uppercase tracking-[0.12em] whitespace-nowrap ${c.right ? 'text-right' : 'text-left'}`}
                 style={{ color: T.gold }}>

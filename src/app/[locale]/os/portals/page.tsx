@@ -17,7 +17,7 @@ export default function P(){
   <Grid cols={3}>
     <Panel title="PORTAL TYPE">
       <Sel l="Active portal" v={portalType} on={setPortalType} opts={['customer','supplier','partner']}/>
-      <div style={{marginTop:10,padding:10,background:'#F5F0E8',borderLeft:`4px solid ${B}`,fontSize:11,color:B}}>Same backend serves all 3 portals (#68 customer / #69 supplier / #70 partner). Switch above to filter.</div>
+      <div style={{marginTop:10,padding:10,background:'var(--harvics-cream)',borderLeft:`4px solid ${B}`,fontSize:11,color:B}}>Same backend serves all 3 portals (#68 customer / #69 supplier / #70 partner). Switch above to filter.</div>
     </Panel>
     <Panel title="START SESSION">
       <Inp l="External ID *" v={form.externalId} on={v=>setForm({...form,externalId:v})}/>
@@ -26,18 +26,18 @@ export default function P(){
     </Panel>
     <Panel title={`SESSIONS — ${portalType.toUpperCase()} (${sessions.length})`}>
       <Tbl head={['EXT','LOGIN','ACTIONS','LAST','LOG']}>
-        {sessions.map(s=><tr key={s.id} style={{borderBottom:'1px solid #6B1F2B11'}}>
+        {sessions.map(s=><tr key={s.id} style={{borderBottom:'1px solid #3D121211'}}>
           <td style={{...td,fontSize:11}}><b>{s.externalId}</b><br/>{s.externalName}</td>
           <td style={{...td,fontSize:11}}>{new Date(s.loginAt).toLocaleString()}</td>
           <td style={{...td,fontWeight:700,color:B}}>{s.actionsCount}</td>
           <td style={{...td,fontSize:11}}>{s.lastActionAt?new Date(s.lastActionAt).toLocaleTimeString():'—'}</td>
-          <td style={td}><select value={act[s.id]||''} onChange={e=>setAct({...act,[s.id]:e.target.value})} style={{padding:3,fontSize:10,border:'1px solid #6B1F2B55'}}><option value="">--</option>{ACTIONS.map(a=><option key={a}>{a}</option>)}</select> <button onClick={()=>logAction(s.id)} style={btnA}>LOG</button></td>
+          <td style={td}><select value={act[s.id]||''} onChange={e=>setAct({...act,[s.id]:e.target.value})} style={{padding:3,fontSize:10,border:'1px solid #3D121255'}}><option value="">--</option>{ACTIONS.map(a=><option key={a}>{a}</option>)}</select> <button onClick={()=>logAction(s.id)} style={btnA}>LOG</button></td>
         </tr>)}
       </Tbl>
     </Panel>
     <Panel title="RECENT ACTIONS" full>
       <Tbl head={['WHEN','EXTERNAL','ACTION']}>
-        {actions.map(a=><tr key={a.id} style={{borderBottom:'1px solid #6B1F2B11'}}>
+        {actions.map(a=><tr key={a.id} style={{borderBottom:'1px solid #3D121211'}}>
           <td style={{...td,fontSize:11}}>{new Date(a.createdAt).toLocaleString()}</td>
           <td style={td}>{a.externalId}</td>
           <td style={{...td,fontWeight:700,color:B}}>{a.action}</td>

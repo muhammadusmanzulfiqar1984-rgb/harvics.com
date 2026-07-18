@@ -114,7 +114,7 @@ const SupremeNavBar: React.FC = () => {
             >
               <Link
                 href={`/${locale}/about`}
-                className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${isActive(`/${locale}/about`) ? 'bg-[#3D1212] text-white' : 'text-[#3D1212] hover:bg-[#C3A35E]/10 hover:text-[#C3A35E]'}`}
+                className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${isActive(`/${locale}/about`) ? 'bg-harvics-burgundy text-white' : 'text-harvics-burgundy hover:bg-harvics-gold/10 hover:text-harvics-gold'}`}
                 onMouseEnter={() => { clearTimer(); setActiveDropdown(null) }}
               >
                 About
@@ -135,7 +135,7 @@ const SupremeNavBar: React.FC = () => {
               >
                 <Link
                   href={`/${locale}${vertical.href}`}
-                  className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${activeDropdown === vertical.key || isActive(`/${locale}${vertical.href}`) ? 'bg-[#3D1212] text-white' : 'text-[#3D1212] hover:bg-[#C3A35E]/10 hover:text-[#C3A35E]'}`}
+                  className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${activeDropdown === vertical.key || isActive(`/${locale}${vertical.href}`) ? 'bg-harvics-burgundy text-white' : 'text-harvics-burgundy hover:bg-harvics-gold/10 hover:text-harvics-gold'}`}
                   role="menuitem"
                   aria-haspopup="true"
                   aria-expanded={activeDropdown === vertical.key}
@@ -157,7 +157,7 @@ const SupremeNavBar: React.FC = () => {
             >
               <Link
                 href={`/${locale}/apps`}
-                className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${isActive(`/${locale}/apps`) ? 'bg-[#3D1212] text-white' : 'text-[#3D1212] hover:bg-[#C3A35E]/10 hover:text-[#C3A35E]'}`}
+                className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${isActive(`/${locale}/apps`) ? 'bg-harvics-burgundy text-white' : 'text-harvics-burgundy hover:bg-harvics-gold/10 hover:text-harvics-gold'}`}
               >
                 ⬡ Apps
               </Link>
@@ -175,7 +175,7 @@ const SupremeNavBar: React.FC = () => {
             >
               <Link
                 href={`/${locale}/harvictrade`}
-                className="text-[10px] font-bold text-[#3D1212] border-l border-[#C3A35E]/30 pl-3 ml-1 tracking-[0.12em] uppercase hover:text-[#C3A35E] transition-colors duration-200 whitespace-nowrap py-1.5"
+                className="text-[10px] font-bold text-harvics-burgundy border-l border-harvics-gold/30 pl-3 ml-1 tracking-[0.12em] uppercase hover:text-harvics-gold transition-colors duration-200 whitespace-nowrap py-1.5"
               >
                 ♦ HARVICTRADE
               </Link>
@@ -194,7 +194,7 @@ const SupremeNavBar: React.FC = () => {
               >
                 <Link
                   href={`/${locale}${link.href}`}
-                  className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${isActive(`/${locale}${link.href}`) ? 'bg-[#3D1212] text-white' : 'text-[#3D1212] hover:bg-[#C3A35E]/10 hover:text-[#C3A35E]'}`}
+                  className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${isActive(`/${locale}${link.href}`) ? 'bg-harvics-burgundy text-white' : 'text-harvics-burgundy hover:bg-harvics-gold/10 hover:text-harvics-gold'}`}
                   onMouseEnter={() => { clearTimer(); setActiveDropdown(null) }}
                 >
                   {link.label}
@@ -221,7 +221,7 @@ const SupremeNavBar: React.FC = () => {
             style={{
               background: 'linear-gradient(180deg, #ffffff 0%, #ffffff 100%)',
               borderTop: '1px solid rgba(255,255,255,1)',
-              borderBottom: '1px solid rgba(201, 168, 76, 0.12)',
+              borderBottom: '1px solid rgba(195, 163, 94, 0.12)',
               boxShadow: '0 1px 0 rgba(255,255,255,1) inset, 0 -1px 0 rgba(255,255,255,0.8) inset, 0 16px 48px rgba(0,0,0,0.10), 0 4px 12px rgba(0,0,0,0.05)',
             }}
           >
@@ -241,7 +241,7 @@ const SupremeNavBar: React.FC = () => {
                         href={`/${locale}/${activeVertical.key}/${slugify(block.title)}`}
                         className="block mb-4 group/title"
                         style={{
-                          color: '#3D1212',
+                          color: 'var(--harvics-burgundy)',
                           fontSize: '12px',
                           fontWeight: 700,
                           textTransform: 'uppercase' as const,
@@ -249,7 +249,7 @@ const SupremeNavBar: React.FC = () => {
                           textDecoration: 'none',
                         }}
                       >
-                        <span className="transition-colors duration-200 group-hover/title:text-[#C3A35E]">
+                        <span className="transition-colors duration-200 group-hover/title:text-harvics-gold">
                           {block.title}
                         </span>
                       </Link>
@@ -261,7 +261,7 @@ const SupremeNavBar: React.FC = () => {
                             className="group/item relative pl-0 transition-all duration-200 hover:pl-2.5 py-1"
                             style={{
                               display: 'block',
-                              color: '#3D1212',
+                              color: 'var(--harvics-burgundy)',
                               fontSize: '13px',
                               fontWeight: 400,
                               opacity: hoveredItem === `${block.title}-${item}` ? 1 : 0.5,
@@ -276,9 +276,9 @@ const SupremeNavBar: React.FC = () => {
                             <span className="relative">
                               {item}
                               {/* Gold dot indicator */}
-                              <span className="absolute -left-3 top-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-[#C3A35E] rounded-full opacity-0 scale-0 transition-all duration-200 group-hover/item:opacity-100 group-hover/item:scale-100" />
+                              <span className="absolute -left-3 top-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-harvics-gold rounded-full opacity-0 scale-0 transition-all duration-200 group-hover/item:opacity-100 group-hover/item:scale-100" />
                               {/* Gold underline slide */}
-                              <span className="absolute bottom-0 left-0 h-[1px] w-0 bg-[#C3A35E]/60 group-hover/item:w-full transition-all duration-300 ease-out" />
+                              <span className="absolute bottom-0 left-0 h-[1px] w-0 bg-harvics-gold/60 group-hover/item:w-full transition-all duration-300 ease-out" />
                             </span>
                           </Link>
                         ))}

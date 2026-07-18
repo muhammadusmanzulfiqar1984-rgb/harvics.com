@@ -129,12 +129,12 @@ export default function InteractiveWorldMap() {
       }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, marginBottom: 8 }}>
           <div style={{ height: 1, width: 28, background: 'linear-gradient(90deg, transparent, #C3A35E)' }} />
-          <span style={{ color: '#C3A35E', fontSize: 10, fontWeight: 700, letterSpacing: '0.25em', textTransform: 'uppercase' }}>Global Presence</span>
+          <span style={{ color: 'var(--harvics-gold)', fontSize: 10, fontWeight: 700, letterSpacing: '0.25em', textTransform: 'uppercase' }}>Global Presence</span>
           <div style={{ height: 1, width: 28, background: 'linear-gradient(90deg, #C3A35E, transparent)' }} />
         </div>
         <h2 style={{ color: '#1A1A1A', fontSize: 'clamp(22px, 3vw, 36px)', fontWeight: 700, margin: 0, letterSpacing: '-0.03em', lineHeight: 1.1 }}>
           {offices} Offices.{' '}
-          <span style={{ background: 'linear-gradient(135deg, #C3A35E 0%, #6B1F2B 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+          <span style={{ background: 'linear-gradient(135deg, #C3A35E 0%, #3D1212 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             {markets}+ Markets.
           </span>
         </h2>
@@ -157,13 +157,13 @@ export default function InteractiveWorldMap() {
                 <stop offset="100%" stopColor="#ede6dc" />
               </linearGradient>
               <linearGradient id="land" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%"   stopColor="#6b1f2b" />
+                <stop offset="0%"   stopColor="var(--harvics-burgundy)" />
                 <stop offset="100%" stopColor="#521828" />
               </linearGradient>
               <linearGradient id="goldArc" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="#C3A35E" />
+                <stop offset="0%" stopColor="var(--harvics-gold)" />
                 <stop offset="50%" stopColor="#f0d08e" />
-                <stop offset="100%" stopColor="#C3A35E" />
+                <stop offset="100%" stopColor="var(--harvics-gold)" />
               </linearGradient>
               <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
                 <feGaussianBlur stdDeviation="4" result="b" />
@@ -189,7 +189,7 @@ export default function InteractiveWorldMap() {
                   key={i}
                   d={d}
                   fill={hoveredPath === i ? '#7d2a38' : 'url(#land)'}
-                  stroke={hoveredPath === i ? 'rgba(195,163,94,0.5)' : 'rgba(195,163,94,0.15)'}
+                  stroke={hoveredPath === i ? 'rgba(195, 163, 94,0.5)' : 'rgba(195, 163, 94,0.15)'}
                   strokeWidth={hoveredPath === i ? 0.8 : 0.4}
                   style={{ transition: 'fill 0.3s ease, stroke 0.3s ease', cursor: 'default' }}
                   onMouseEnter={() => setHoveredPath(i)}
@@ -209,7 +209,7 @@ export default function InteractiveWorldMap() {
                   {/* Glow trail behind the arc */}
                   {hot && (
                     <path d={d} fill="none"
-                      stroke="rgba(195,163,94,0.25)"
+                      stroke="rgba(195, 163, 94,0.25)"
                       strokeWidth={4}
                       filter="url(#glow)"
                       strokeDasharray={len}
@@ -219,7 +219,7 @@ export default function InteractiveWorldMap() {
                   )}
                   {/* Main arc line */}
                   <path d={d} fill="none"
-                    stroke={hot ? 'url(#goldArc)' : 'rgba(195,163,94,0.2)'}
+                    stroke={hot ? 'url(#goldArc)' : 'rgba(195, 163, 94,0.2)'}
                     strokeWidth={hot ? 2.5 : 1}
                     filter={hot ? 'url(#glow)' : undefined}
                     strokeDasharray={len}
@@ -261,12 +261,12 @@ export default function InteractiveWorldMap() {
                     <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="1s" begin="0s" fill="freeze" />
                   </circle>
                   {/* Impact burst — outer ring */}
-                  <circle cx={o.cx} cy={o.cy} fill="none" stroke="#C3A35E" strokeWidth="1.5" r="0" opacity="0">
+                  <circle cx={o.cx} cy={o.cy} fill="none" stroke="var(--harvics-gold)" strokeWidth="1.5" r="0" opacity="0">
                     <animate attributeName="r" values="0;24" dur="0.7s" begin="1s" fill="freeze" />
                     <animate attributeName="opacity" values="1;0" dur="0.7s" begin="1s" fill="freeze" />
                   </circle>
                   {/* Impact burst — inner ring */}
-                  <circle cx={o.cx} cy={o.cy} fill="rgba(195,163,94,0.3)" r="0" opacity="0">
+                  <circle cx={o.cx} cy={o.cy} fill="rgba(195, 163, 94,0.3)" r="0" opacity="0">
                     <animate attributeName="r" values="0;10" dur="0.4s" begin="1s" fill="freeze" />
                     <animate attributeName="opacity" values="0.8;0" dur="0.4s" begin="1s" fill="freeze" />
                   </circle>
@@ -285,7 +285,7 @@ export default function InteractiveWorldMap() {
                     fontSize="13"
                     fontWeight="800"
                     fontFamily="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif"
-                    fill="#C3A35E"
+                    fill="var(--harvics-gold)"
                     filter="url(#glow)"
                     letterSpacing="0.15em"
                     opacity="0"
@@ -317,7 +317,7 @@ export default function InteractiveWorldMap() {
             {landedIdx !== null && (() => {
               const o = OFFICES[landedIdx]
               return (
-                <circle cx={o.cx} cy={o.cy} r="14" fill="rgba(195,163,94,0.4)" filter="url(#bigglow)">
+                <circle cx={o.cx} cy={o.cy} r="14" fill="rgba(195, 163, 94,0.4)" filter="url(#bigglow)">
                   <animate attributeName="r" values="10;20;10" dur="1.2s" repeatCount="indefinite" />
                   <animate attributeName="opacity" values="0.7;0.2;0.7" dur="1.2s" repeatCount="indefinite" />
                 </circle>
@@ -338,15 +338,15 @@ export default function InteractiveWorldMap() {
                   {/* Pulse rings for active */}
                   {isA && (
                     <>
-                      <circle cx={o.cx} cy={o.cy} fill="none" stroke="rgba(195,163,94,0.5)" strokeWidth="1.2">
+                      <circle cx={o.cx} cy={o.cy} fill="none" stroke="rgba(195, 163, 94,0.5)" strokeWidth="1.2">
                         <animate attributeName="r" values="6;32" dur="2.2s" repeatCount="indefinite" />
                         <animate attributeName="opacity" values="0.8;0" dur="2.2s" repeatCount="indefinite" />
                       </circle>
-                      <circle cx={o.cx} cy={o.cy} fill="none" stroke="rgba(195,163,94,0.35)" strokeWidth="0.8">
+                      <circle cx={o.cx} cy={o.cy} fill="none" stroke="rgba(195, 163, 94,0.35)" strokeWidth="0.8">
                         <animate attributeName="r" values="6;24" dur="2.2s" begin="0.7s" repeatCount="indefinite" />
                         <animate attributeName="opacity" values="0.6;0" dur="2.2s" begin="0.7s" repeatCount="indefinite" />
                       </circle>
-                      <circle cx={o.cx} cy={o.cy} fill="none" stroke="rgba(195,163,94,0.2)" strokeWidth="0.6">
+                      <circle cx={o.cx} cy={o.cy} fill="none" stroke="rgba(195, 163, 94,0.2)" strokeWidth="0.6">
                         <animate attributeName="r" values="6;18" dur="2.2s" begin="1.4s" repeatCount="indefinite" />
                         <animate attributeName="opacity" values="0.4;0" dur="2.2s" begin="1.4s" repeatCount="indefinite" />
                       </circle>
@@ -354,7 +354,7 @@ export default function InteractiveWorldMap() {
                   )}
                   {/* Main dot */}
                   <circle cx={o.cx} cy={o.cy} r={isA ? 7 : isH ? 6 : 4.5}
-                    fill={isA ? '#C3A35E' : isH ? '#d4b36a' : 'rgba(195,163,94,0.6)'}
+                    fill={isA ? 'var(--harvics-gold)' : isH ? '#d4b36a' : 'rgba(195, 163, 94,0.6)'}
                     filter={isA ? 'url(#bigglow)' : isH ? 'url(#dotglow)' : undefined}
                     style={{ transition: 'r 0.3s ease, fill 0.3s ease' }}
                   />
@@ -365,7 +365,7 @@ export default function InteractiveWorldMap() {
                     x={labelRight ? o.cx + 12 : o.cx - 12}
                     y={o.cy - 10}
                     fontSize={isA ? 10 : 8}
-                    fill={isA ? '#C3A35E' : isH ? '#C3A35E' : 'rgba(195,163,94,0.5)'}
+                    fill={isA ? 'var(--harvics-gold)' : isH ? 'var(--harvics-gold)' : 'rgba(195, 163, 94,0.5)'}
                     fontFamily="-apple-system, BlinkMacSystemFont, sans-serif"
                     textAnchor={labelRight ? 'start' : 'end'}
                     fontWeight={isA || isH ? 'bold' : 'normal'}
@@ -420,7 +420,7 @@ export default function InteractiveWorldMap() {
                   ? 'linear-gradient(105deg, #C3A35E 0%, #E5C07B 40%, #f0d08e 52%, #E5C07B 64%, #C3A35E 100%)'
                   : 'transparent',
                 backgroundSize: i === active ? '220% 100%' : undefined,
-                border: `1.5px solid ${i === active ? '#C3A35E' : 'rgba(195,163,94,0.3)'}`,
+                border: `1.5px solid ${i === active ? 'var(--harvics-gold)' : 'rgba(195, 163, 94,0.3)'}`,
                 color: i === active ? '#1a0d00' : 'rgba(107,31,43,0.5)',
                 padding: '7px 16px',
                 fontSize: 10, fontWeight: i === active ? 700 : 600,
@@ -471,7 +471,7 @@ export default function InteractiveWorldMap() {
       <style jsx>{`
         .map-gold-container {
           border: 2px solid #C3A35E;
-          box-shadow: 0 0 0 1px rgba(195,163,94,0.2), 0 4px 20px rgba(195,163,94,0.12);
+          box-shadow: 0 0 0 1px rgba(195, 163, 94,0.2), 0 4px 20px rgba(195, 163, 94,0.12);
         }
         .map-gold-container::after {
           content: '';

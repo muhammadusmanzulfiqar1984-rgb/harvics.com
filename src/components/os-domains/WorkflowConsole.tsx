@@ -184,7 +184,7 @@ export default function WorkflowConsole() {
 
   return (
     <section className="mx-auto mt-6 w-[min(1400px,94vw)] space-y-4">
-      <div className="rounded-2xl border border-[#c3a35e]/30 bg-[linear-gradient(140deg,#1f0f14_0%,#3d161f_45%,#5e1f2d_100%)] p-5 text-white shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
+      <div className="rounded-2xl border border-harvics-gold/30 bg-[linear-gradient(140deg,#1f0f14_0%,#3d161f_45%,#5e1f2d_100%)] p-5 text-white shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div>
             <h2 className="text-2xl font-bold">Order-to-Cash Workspace</h2>
@@ -201,17 +201,17 @@ export default function WorkflowConsole() {
         </div>
         {kpis ? (
           <div className="mt-4 grid gap-3 md:grid-cols-3">
-            <div className="rounded-xl border border-[#c3a35e]/30 bg-white/10 p-3">
+            <div className="rounded-xl border border-harvics-gold/30 bg-white/10 p-3">
               <div className="text-[11px] uppercase tracking-[0.14em] text-white/70">Orders</div>
               <div className="font-mono text-2xl font-bold text-[#f2dfb5]">{kpis.orders.total}</div>
               <div className="text-xs text-white/70">{kpis.orders.completed} completed · {kpis.orders.pending} active</div>
             </div>
-            <div className="rounded-xl border border-[#c3a35e]/30 bg-white/10 p-3">
+            <div className="rounded-xl border border-harvics-gold/30 bg-white/10 p-3">
               <div className="text-[11px] uppercase tracking-[0.14em] text-white/70">Cash Cycle</div>
               <div className="font-mono text-2xl font-bold text-[#f2dfb5]">${kpis.invoices.paid.toLocaleString()}</div>
               <div className="text-xs text-white/70">${kpis.invoices.outstanding.toLocaleString()} outstanding</div>
             </div>
-            <div className="rounded-xl border border-[#c3a35e]/30 bg-white/10 p-3">
+            <div className="rounded-xl border border-harvics-gold/30 bg-white/10 p-3">
               <div className="text-[11px] uppercase tracking-[0.14em] text-white/70">Inventory</div>
               <div className="font-mono text-2xl font-bold text-[#f2dfb5]">${kpis.inventory.value.toLocaleString()}</div>
               <div className="text-xs text-white/70">{kpis.inventory.skus} SKUs · {kpis.inventory.lowStock} low</div>
@@ -221,7 +221,7 @@ export default function WorkflowConsole() {
       </div>
 
       {message ? (
-        <div className="rounded-xl border border-[#c3a35e]/40 bg-white px-4 py-2 text-xs text-[#5d5d5d] shadow-sm">
+        <div className="rounded-xl border border-harvics-gold/40 bg-white px-4 py-2 text-xs text-[#5d5d5d] shadow-sm">
           {message}
         </div>
       ) : null}
@@ -272,7 +272,7 @@ export default function WorkflowConsole() {
             <button
               type="button"
               onClick={createSku}
-              className="rounded-lg border border-[#6b1f2b] bg-[#6b1f2b] px-2 py-1.5 text-xs font-bold text-white"
+              className="rounded-lg border border-harvics-burgundy bg-harvics-burgundy px-2 py-1.5 text-xs font-bold text-white"
             >
               Create SKU
             </button>

@@ -143,7 +143,7 @@ const PayPalButton: React.FC<PayPalButtonProps> = ({
 
   return (
     <div className="w-full">
-      <div className="bg-white rounded-lg border-2 border-[#C3A35E]/30 p-4">
+      <div className="bg-white rounded-lg border-2 border-harvics-gold/30 p-4">
         <div className="flex items-center justify-center mb-4">
           <div className="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold text-lg">
             PayPal

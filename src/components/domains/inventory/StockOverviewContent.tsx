@@ -5,7 +5,7 @@ import { useDomainData } from '@/hooks/useDomainData'
 import { KPICard, Card, DataTable, StatusDot, DonutChart, BarChart, LineChart, LiveBadge, HBar, MONTHS } from '@/components/charts/OSCharts'
 
 const fmtM = (v: number) => v >= 1_000_000 ? `$${(v / 1_000_000).toFixed(1)}M` : v >= 1000 ? `$${(v / 1000).toFixed(0)}K` : `$${v}`
-const catColors = ['#6B1F2B', '#007AFF', '#34C759', '#FF9500', '#8E8E93']
+const catColors = ['var(--harvics-burgundy)', '#007AFF', '#34C759', '#FF9500', '#8E8E93']
 
 export default function StockOverviewContent({ persona, locale }: { persona: string; locale: string }) {
   const { data, source, lastUpdated } = useDomainData('inventory')
@@ -46,7 +46,7 @@ export default function StockOverviewContent({ persona, locale }: { persona: str
         <Card title="Stock Value Trend" className="lg:col-span-2">
           <div className="p-5">
             <LineChart
-              data={[{ label: 'Stock Value', values: data.stockTrend || [], color: '#6B1F2B' }]}
+              data={[{ label: 'Stock Value', values: data.stockTrend || [], color: 'var(--harvics-burgundy)' }]}
               labels={MONTHS}
               height={160}
               formatY={(v) => fmtM(v)}
@@ -76,7 +76,7 @@ export default function StockOverviewContent({ persona, locale }: { persona: str
         <div className="flex gap-1.5">
           {(['All', 'Low'] as const).map(f => (
             <button key={f} onClick={() => setFilter(f)}
-              className={`px-3 py-1 text-xs rounded-full font-medium transition-colors ${filter === f ? 'bg-[#6B1F2B] text-white' : 'bg-[#F5F5F7] text-[#8E8E93] hover:bg-[#EBEBF0]'}`}>
+              className={`px-3 py-1 text-xs rounded-full font-medium transition-colors ${filter === f ? 'bg-harvics-burgundy text-white' : 'bg-[#F5F5F7] text-[#8E8E93] hover:bg-[#EBEBF0]'}`}>
               {f === 'Low' ? `⚠ Low Stock (${data.lowStock || 14})` : 'All SKUs'}
             </button>
           ))}

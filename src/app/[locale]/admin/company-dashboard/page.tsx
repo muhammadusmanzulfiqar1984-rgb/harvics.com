@@ -22,7 +22,7 @@ export default async function AdminCompanyDashboardPage({
   }
 
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#6B1F2B' }}>
+    <div style={{ minHeight: '100vh', backgroundColor: 'var(--harvics-burgundy)' }}>
       <CompanyDashboard />
     </div>
   )

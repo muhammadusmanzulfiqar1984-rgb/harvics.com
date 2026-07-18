@@ -18,7 +18,7 @@ export const HarvicsKPICard: React.FC<HarvicsKPICardProps> = ({
   const isNegative = change !== undefined && change < 0
 
   return (
-    <div className="relative overflow-hidden flex-1 min-w-[200px] h-[84px] rounded-xl border border-harvics-goldDivider bg-harvics-burgundy shadow-[0_4px_20px_rgba(26,5,5,0.6)]">
+    <div className="relative overflow-hidden flex-1 min-w-[200px] h-[84px] rounded-xl border border-harvics-goldDivider bg-harvics-burgundy shadow-[0_4px_20px_rgba(61, 18, 18,0.6)]">
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-harvics-gold to-transparent" />
       <div className="p-4 h-full flex flex-col justify-between">
         <div className="text-[10px] font-bold uppercase tracking-[0.12em] text-harvics-muted">{label}</div>

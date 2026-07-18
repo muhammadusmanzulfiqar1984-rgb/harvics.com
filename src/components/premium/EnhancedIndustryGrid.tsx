@@ -6,16 +6,16 @@ import { useLocale } from 'next-intl'
 import { navVerticals } from '@/data/megaMenuData'
 
 const industryMeta: Record<string, { desc: string; gradient: string; image?: string; products: number; markets: number; bg: string; accent: string; bgPhoto: string }> = {
-  textiles:       { desc: 'Premium apparel, fabrics, and home textiles for global markets', gradient: 'from-slate-50 to-blue-50', image: '/assets/verticals/01-apparels/thumb.webp', products: 240, markets: 28, bg: '#f8f9ff', accent: 'rgba(201,168,76,0.15)', bgPhoto: '/assets/verticals/01-apparels/hero.jpg' },
-  fmcg:           { desc: 'Food, beverages, personal care and home essentials', gradient: 'from-slate-50 to-emerald-50', image: '/assets/verticals/02-fmcg/thumb.webp', products: 380, markets: 42, bg: '#f6fdf9', accent: 'rgba(201,168,76,0.15)', bgPhoto: '/assets/verticals/02-fmcg/hero.jpg' },
-  commodities:    { desc: 'Strategic trading in agriculture, energy, and metals', gradient: 'from-slate-50 to-amber-50', image: '/assets/verticals/03-commodities/thumb.webp', products: 60, markets: 31, bg: '#fdfaf4', accent: 'rgba(201,168,76,0.2)', bgPhoto: '/assets/verticals/03-commodities/hero.jpg' },
-  industrial:     { desc: 'Advanced chemicals, machinery, and safety equipment', gradient: 'from-slate-50 to-zinc-50', image: '/assets/verticals/04-industrial/thumb.webp', products: 180, markets: 22, bg: '#f8f8f9', accent: 'rgba(201,168,76,0.12)', bgPhoto: '/assets/verticals/04-industrial/hero.jpg' },
-  minerals:       { desc: 'Precious metals, energy minerals, and industrial resources', gradient: 'from-slate-50 to-stone-50', image: '/assets/verticals/05-minerals/thumb.webp', products: 45, markets: 18, bg: '#faf9f7', accent: 'rgba(201,168,76,0.12)', bgPhoto: '/assets/verticals/05-minerals/hero.jpg' },
-  'oil-gas':      { desc: 'Complete upstream, midstream, and downstream operations', gradient: 'from-slate-50 to-orange-50', image: '/assets/verticals/06-oil-gas/thumb.webp', products: 30, markets: 15, bg: '#fdf8f3', accent: 'rgba(201,168,76,0.12)', bgPhoto: '/assets/verticals/06-oil-gas/hero.jpg' },
-  'real-estate':  { desc: 'Commercial and residential property development', gradient: 'from-slate-50 to-cyan-50', image: '/assets/verticals/07-real-estate/thumb.webp', products: 120, markets: 12, bg: '#f3fbfd', accent: 'rgba(201,168,76,0.12)', bgPhoto: '/assets/verticals/07-real-estate/hero.jpg' },
-  sourcing:       { desc: 'Global sourcing, quality control, and logistics solutions', gradient: 'from-slate-50 to-violet-50', image: '/assets/verticals/08-sourcing/thumb.webp', products: 95, markets: 38, bg: '#f8f5ff', accent: 'rgba(201,168,76,0.12)', bgPhoto: '/assets/verticals/08-sourcing/hero.jpg' },
-  finance:        { desc: 'Trade finance, HPay digital payments, and compliance', gradient: 'from-slate-50 to-teal-50', image: '/assets/verticals/09-finance/thumb.webp', products: 20, markets: 24, bg: '#f3fdfb', accent: 'rgba(201,168,76,0.12)', bgPhoto: '/assets/verticals/09-finance/hero.jpg' },
-  ai:             { desc: 'Machine learning, predictive analytics, and automation', gradient: 'from-slate-50 to-pink-50', image: '/assets/verticals/10-ai-tech/thumb.webp', products: 15, markets: 10, bg: '#fdf4fa', accent: 'rgba(201,168,76,0.1)', bgPhoto: '/assets/verticals/10-ai-tech/hero.jpg' },
+  textiles:       { desc: 'Premium apparel, fabrics, and home textiles for global markets', gradient: 'from-slate-50 to-blue-50', image: '/assets/verticals/01-apparels/thumb.webp', products: 240, markets: 28, bg: '#f8f9ff', accent: 'rgba(195, 163, 94,0.15)', bgPhoto: '/assets/verticals/01-apparels/hero.jpg' },
+  fmcg:           { desc: 'Food, beverages, personal care and home essentials', gradient: 'from-slate-50 to-emerald-50', image: '/assets/verticals/02-fmcg/thumb.webp', products: 380, markets: 42, bg: '#f6fdf9', accent: 'rgba(195, 163, 94,0.15)', bgPhoto: '/assets/verticals/02-fmcg/hero.jpg' },
+  commodities:    { desc: 'Strategic trading in agriculture, energy, and metals', gradient: 'from-slate-50 to-amber-50', image: '/assets/verticals/03-commodities/thumb.webp', products: 60, markets: 31, bg: '#fdfaf4', accent: 'rgba(195, 163, 94,0.2)', bgPhoto: '/assets/verticals/03-commodities/hero.jpg' },
+  industrial:     { desc: 'Advanced chemicals, machinery, and safety equipment', gradient: 'from-slate-50 to-zinc-50', image: '/assets/verticals/04-industrial/thumb.webp', products: 180, markets: 22, bg: '#f8f8f9', accent: 'rgba(195, 163, 94,0.12)', bgPhoto: '/assets/verticals/04-industrial/hero.jpg' },
+  minerals:       { desc: 'Precious metals, energy minerals, and industrial resources', gradient: 'from-slate-50 to-stone-50', image: '/assets/verticals/05-minerals/thumb.webp', products: 45, markets: 18, bg: '#faf9f7', accent: 'rgba(195, 163, 94,0.12)', bgPhoto: '/assets/verticals/05-minerals/hero.jpg' },
+  'oil-gas':      { desc: 'Complete upstream, midstream, and downstream operations', gradient: 'from-slate-50 to-orange-50', image: '/assets/verticals/06-oil-gas/thumb.webp', products: 30, markets: 15, bg: '#fdf8f3', accent: 'rgba(195, 163, 94,0.12)', bgPhoto: '/assets/verticals/06-oil-gas/hero.jpg' },
+  'real-estate':  { desc: 'Commercial and residential property development', gradient: 'from-slate-50 to-cyan-50', image: '/assets/verticals/07-real-estate/thumb.webp', products: 120, markets: 12, bg: '#f3fbfd', accent: 'rgba(195, 163, 94,0.12)', bgPhoto: '/assets/verticals/07-real-estate/hero.jpg' },
+  sourcing:       { desc: 'Global sourcing, quality control, and logistics solutions', gradient: 'from-slate-50 to-violet-50', image: '/assets/verticals/08-sourcing/thumb.webp', products: 95, markets: 38, bg: '#f8f5ff', accent: 'rgba(195, 163, 94,0.12)', bgPhoto: '/assets/verticals/08-sourcing/hero.jpg' },
+  finance:        { desc: 'Trade finance, HPay digital payments, and compliance', gradient: 'from-slate-50 to-teal-50', image: '/assets/verticals/09-finance/thumb.webp', products: 20, markets: 24, bg: '#f3fdfb', accent: 'rgba(195, 163, 94,0.12)', bgPhoto: '/assets/verticals/09-finance/hero.jpg' },
+  ai:             { desc: 'Machine learning, predictive analytics, and automation', gradient: 'from-slate-50 to-pink-50', image: '/assets/verticals/10-ai-tech/thumb.webp', products: 15, markets: 10, bg: '#fdf4fa', accent: 'rgba(195, 163, 94,0.1)', bgPhoto: '/assets/verticals/10-ai-tech/hero.jpg' },
 }
 
 const CARD_WIDTH = 420
@@ -82,7 +82,7 @@ const EnhancedIndustryGrid: React.FC = () => {
   return (
     <section
       className="relative h-full flex flex-col justify-center overflow-hidden"
-      style={{ background: '#3D1212' }}
+      style={{ background: 'var(--harvics-burgundy)' }}
     >
       {/* Single cinematic backdrop — only render active */}
       {navVerticals.map((v, idx) => {
@@ -117,7 +117,7 @@ const EnhancedIndustryGrid: React.FC = () => {
       <div className="mb-6 relative px-8 md:px-14 max-w-3xl" style={{ zIndex: 2 }}>
         <p style={{
           fontSize: '10px', fontWeight: 700, letterSpacing: '0.22em',
-          color: '#C3A35E', textTransform: 'uppercase', marginBottom: '14px',
+          color: 'var(--harvics-gold)', textTransform: 'uppercase', marginBottom: '14px',
           fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
           borderLeft: '2px solid #C3A35E', paddingLeft: '10px',
         }}>
@@ -130,7 +130,7 @@ const EnhancedIndustryGrid: React.FC = () => {
         }}>
           One platform.{' '}
           <br />
-          <span style={{ color: '#C3A35E', fontWeight: 400 }}>
+          <span style={{ color: 'var(--harvics-gold)', fontWeight: 400 }}>
             Ten industries.
           </span>
         </h2>
@@ -228,7 +228,7 @@ const EnhancedIndustryGrid: React.FC = () => {
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <div style={{
                       fontSize: '11px', fontWeight: 600, letterSpacing: '0.1em',
-                      color: isActive ? '#C3A35E' : 'rgba(195,163,94,0.7)',
+                      color: isActive ? 'var(--harvics-gold)' : 'rgba(195, 163, 94,0.7)',
                       textTransform: 'uppercase', marginBottom: '8px',
                       fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
                     }}>
@@ -236,7 +236,7 @@ const EnhancedIndustryGrid: React.FC = () => {
                     </div>
                     <h3 style={{
                       fontSize: '22px', fontWeight: 600, letterSpacing: '-0.02em',
-                      color: hasImage ? '#fff' : '#3D1212',
+                      color: hasImage ? '#fff' : 'var(--harvics-burgundy)',
                       fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
                       marginBottom: '6px',
                     }}>
@@ -258,7 +258,7 @@ const EnhancedIndustryGrid: React.FC = () => {
                       pointerEvents: isActive ? 'auto' : 'none',
                     }}>
                       <div style={{ display: 'flex', gap: '16px' }}>
-                        <span style={{ fontSize: '11px', fontWeight: 700, color: 'rgba(195,163,94,0.9)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+                        <span style={{ fontSize: '11px', fontWeight: 700, color: 'rgba(195, 163, 94,0.9)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
                           {meta.products}+ Products
                         </span>
                         <span style={{ fontSize: '11px', fontWeight: 700, color: 'rgba(255,255,255,0.45)', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
@@ -268,12 +268,12 @@ const EnhancedIndustryGrid: React.FC = () => {
                       <div style={{
                         display: 'flex', alignItems: 'center', gap: '5px',
                         fontSize: '12px', fontWeight: 700,
-                        color: '#C3A35E',
+                        color: 'var(--harvics-gold)',
                         letterSpacing: '0.08em', textTransform: 'uppercase',
-                        background: 'rgba(26, 5, 5, 0.72)',
+                        background: 'rgba(61, 18, 18, 0.72)',
                         backdropFilter: 'blur(8px)',
                         padding: '5px 12px',
-                        border: '1px solid rgba(195,163,94,0.35)',
+                        border: '1px solid rgba(195, 163, 94,0.35)',
                       }}>
                         Enter
                         <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24">

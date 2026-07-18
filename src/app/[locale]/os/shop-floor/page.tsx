@@ -22,11 +22,11 @@ export default function P(){
     </Panel>
     <Panel title={`OPERATIONS (${rows.length})`} full>
       <Tbl head={['OP','WC','DESC','PLANNED','DONE','SCRAP','STATUS','REPORT','ACT']}>
-        {rows.map(r=><tr key={r.id} style={{borderBottom:'1px solid #6B1F2B11'}}>
+        {rows.map(r=><tr key={r.id} style={{borderBottom:'1px solid #3D121211'}}>
           <td style={td}>{r.operationNo}</td><td style={td}>{r.workCenter}</td><td style={td}>{r.description||'—'}</td>
           <td style={td}>{r.qtyPlanned}</td><td style={td}>{r.qtyDone}</td><td style={{...td,color:r.qtyScrap>0?'#B71C1C':undefined}}>{r.qtyScrap}</td>
           <td style={td}><Pill s={r.status}/></td>
-          <td style={td}>{r.status!=='Completed'&&<><input type="number" placeholder="done" defaultValue={r.qtyDone} onChange={e=>setReport({...report,[r.id]:{...(report[r.id]||{qtyDone:0,qtyScrap:0}),qtyDone:+e.target.value}})} style={{width:50,padding:3,border:'1px solid #6B1F2B55',fontSize:11}}/> <input type="number" placeholder="scrap" defaultValue={r.qtyScrap} onChange={e=>setReport({...report,[r.id]:{...(report[r.id]||{qtyDone:0,qtyScrap:0}),qtyScrap:+e.target.value}})} style={{width:50,padding:3,border:'1px solid #6B1F2B55',fontSize:11}}/></>}</td>
+          <td style={td}>{r.status!=='Completed'&&<><input type="number" placeholder="done" defaultValue={r.qtyDone} onChange={e=>setReport({...report,[r.id]:{...(report[r.id]||{qtyDone:0,qtyScrap:0}),qtyDone:+e.target.value}})} style={{width:50,padding:3,border:'1px solid #3D121255',fontSize:11}}/> <input type="number" placeholder="scrap" defaultValue={r.qtyScrap} onChange={e=>setReport({...report,[r.id]:{...(report[r.id]||{qtyDone:0,qtyScrap:0}),qtyScrap:+e.target.value}})} style={{width:50,padding:3,border:'1px solid #3D121255',fontSize:11}}/></>}</td>
           <td style={td}>{r.status==='Queued'&&<button onClick={()=>doReport(r.id,'InProgress')} style={btnA}>START</button>} {r.status==='InProgress'&&<button onClick={()=>doReport(r.id,'Completed')} style={btnA}>COMPLETE</button>}</td>
         </tr>)}
       </Tbl>

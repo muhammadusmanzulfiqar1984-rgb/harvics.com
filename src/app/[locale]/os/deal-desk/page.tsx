@@ -23,9 +23,9 @@ interface Deal {
   createdAt: string
 }
 
-const BURGUNDY = '#6B1F2B'
-const GOLD = '#C3A35E'
-const CREAM = '#F5F0E8'
+const BURGUNDY = 'var(--harvics-burgundy)'
+const GOLD = 'var(--harvics-gold)'
+const CREAM = 'var(--harvics-cream)'
 
 const STATUS_COLORS: Record<string, string> = {
   Pending: '#B8860B',

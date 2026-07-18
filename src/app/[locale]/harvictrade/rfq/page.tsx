@@ -62,22 +62,22 @@ function RFQForm() {
     }
   }
 
-  const inputCls = 'w-full px-4 py-3 border border-[#C3A35E]/20 bg-white text-[#3D1212] placeholder-[#3D1212]/25 focus:border-[#3D1212] focus:outline-none text-sm transition-colors'
-  const labelCls = 'block text-[10px] font-bold text-[#3D1212]/50 uppercase tracking-[0.18em] mb-1.5'
+  const inputCls = 'w-full px-4 py-3 border border-harvics-gold/20 bg-white text-harvics-burgundy placeholder-[#3D1212]/25 focus:border-harvics-burgundy focus:outline-none text-sm transition-colors'
+  const labelCls = 'block text-[10px] font-bold text-harvics-burgundy/50 uppercase tracking-[0.18em] mb-1.5'
 
   if (submitted) {
     return (
       <div className="text-center py-24 px-4">
-        <div className="w-16 h-16 border-2 border-[#C3A35E] flex items-center justify-center mx-auto mb-8">
-          <span className="text-[#C3A35E] text-2xl">✓</span>
+        <div className="w-16 h-16 border-2 border-harvics-gold flex items-center justify-center mx-auto mb-8">
+          <span className="text-harvics-gold text-2xl">✓</span>
         </div>
-        <h2 className="text-2xl font-bold text-[#3D1212] mb-3" style={{ letterSpacing: '-0.02em' }}>RFQ Submitted</h2>
-        <p className="text-[#3D1212]/50 mb-2 max-w-md mx-auto text-sm leading-relaxed">
+        <h2 className="text-2xl font-bold text-harvics-burgundy mb-3" style={{ letterSpacing: '-0.02em' }}>RFQ Submitted</h2>
+        <p className="text-harvics-burgundy/50 mb-2 max-w-md mx-auto text-sm leading-relaxed">
           Our sourcing team will review your request and match you with verified suppliers within 24 hours.
         </p>
-        {rfqId && <p className="text-xs text-[#3D1212]/30 mb-10 font-mono">{rfqId}</p>}
+        {rfqId && <p className="text-xs text-harvics-burgundy/30 mb-10 font-mono">{rfqId}</p>}
         <Link href={`/${locale}/harvictrade`}
-          className="inline-block px-8 py-3 bg-[#3D1212] text-white font-bold text-xs uppercase tracking-[0.18em] hover:bg-[#0d0303] transition-colors">
+          className="inline-block px-8 py-3 bg-harvics-burgundy text-white font-bold text-xs uppercase tracking-[0.18em] hover:bg-[#0d0303] transition-colors">
           Back to HarvicTrade
         </Link>
       </div>
@@ -88,9 +88,9 @@ function RFQForm() {
     <div className="space-y-6 max-w-[860px] mx-auto">
 
       {/* Section 1 */}
-      <div className="bg-white border border-[#C3A35E]/15 p-8">
-        <h2 className="text-sm font-bold text-[#3D1212] mb-6 flex items-center gap-3 uppercase tracking-[0.15em]">
-          <span className="w-7 h-7 bg-[#3D1212] text-white flex items-center justify-center text-xs font-bold">1</span>
+      <div className="bg-white border border-harvics-gold/15 p-8">
+        <h2 className="text-sm font-bold text-harvics-burgundy mb-6 flex items-center gap-3 uppercase tracking-[0.15em]">
+          <span className="w-7 h-7 bg-harvics-burgundy text-white flex items-center justify-center text-xs font-bold">1</span>
           Product Requirements
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -135,9 +135,9 @@ function RFQForm() {
       </div>
 
       {/* Section 2 */}
-      <div className="bg-white border border-[#C3A35E]/15 p-8">
-        <h2 className="text-sm font-bold text-[#3D1212] mb-6 flex items-center gap-3 uppercase tracking-[0.15em]">
-          <span className="w-7 h-7 bg-[#3D1212] text-white flex items-center justify-center text-xs font-bold">2</span>
+      <div className="bg-white border border-harvics-gold/15 p-8">
+        <h2 className="text-sm font-bold text-harvics-burgundy mb-6 flex items-center gap-3 uppercase tracking-[0.15em]">
+          <span className="w-7 h-7 bg-harvics-burgundy text-white flex items-center justify-center text-xs font-bold">2</span>
           Delivery & Trade Terms
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -179,9 +179,9 @@ function RFQForm() {
       </div>
 
       {/* Section 3 */}
-      <div className="bg-white border border-[#C3A35E]/15 p-8">
-        <h2 className="text-sm font-bold text-[#3D1212] mb-6 flex items-center gap-3 uppercase tracking-[0.15em]">
-          <span className="w-7 h-7 bg-[#3D1212] text-white flex items-center justify-center text-xs font-bold">3</span>
+      <div className="bg-white border border-harvics-gold/15 p-8">
+        <h2 className="text-sm font-bold text-harvics-burgundy mb-6 flex items-center gap-3 uppercase tracking-[0.15em]">
+          <span className="w-7 h-7 bg-harvics-burgundy text-white flex items-center justify-center text-xs font-bold">3</span>
           Your Details
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -226,11 +226,11 @@ function RFQForm() {
         <button
           onClick={handleSubmit}
           disabled={loading}
-          className="px-12 py-4 bg-[#3D1212] text-white font-bold text-xs uppercase tracking-[0.18em] hover:bg-[#0d0303] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          className="px-12 py-4 bg-harvics-burgundy text-white font-bold text-xs uppercase tracking-[0.18em] hover:bg-[#0d0303] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {loading ? 'Submitting…' : 'Submit RFQ'}
         </button>
-        <p className="text-[10px] text-[#3D1212]/30 mt-4 tracking-wide">
+        <p className="text-[10px] text-harvics-burgundy/30 mt-4 tracking-wide">
           By submitting, you agree to HarvicTrade&apos;s terms. Our team responds within 24 hours.
         </p>
       </div>
@@ -244,12 +244,12 @@ export default function RFQPage() {
 
   return (
     <main className="min-h-screen bg-[#fafaf9] pt-[136px]">
-      <section className="bg-[#3D1212] py-14 px-4 border-b border-[#C3A35E]/30">
+      <section className="bg-harvics-burgundy py-14 px-4 border-b border-harvics-gold/30">
         <div className="max-w-[900px] mx-auto text-center">
           <div className="flex items-center justify-center gap-2 text-[10px] text-white/30 mb-5 tracking-[0.2em] uppercase">
-            <Link href={`/${locale}/harvictrade`} className="hover:text-[#C3A35E] transition-colors">HarvicTrade</Link>
+            <Link href={`/${locale}/harvictrade`} className="hover:text-harvics-gold transition-colors">HarvicTrade</Link>
             <span>/</span>
-            <span className="text-[#C3A35E]">Request for Quotation</span>
+            <span className="text-harvics-gold">Request for Quotation</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-3" style={{ letterSpacing: '-0.025em' }}>
             Request for Quotation
@@ -261,7 +261,7 @@ export default function RFQPage() {
       </section>
 
       <section className="max-w-[900px] mx-auto px-4 py-12">
-        <Suspense fallback={<div className="text-center py-20 text-[#3D1212]/40 text-sm">Loading form…</div>}>
+        <Suspense fallback={<div className="text-center py-20 text-harvics-burgundy/40 text-sm">Loading form…</div>}>
           <RFQForm />
         </Suspense>
       </section>

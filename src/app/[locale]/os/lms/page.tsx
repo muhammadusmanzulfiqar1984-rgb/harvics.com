@@ -22,14 +22,14 @@ export default function P(){
       <button onClick={create} style={btnB}>+ ADD COURSE</button>
     </Panel>
     <Panel title={`COURSES (${rows.length})`} full>
-      {rows.map(c=><div key={c.id} style={{padding:10,marginBottom:8,border:'1px solid #6B1F2B22',background:'#fafafa'}}>
+      {rows.map(c=><div key={c.id} style={{padding:10,marginBottom:8,border:'1px solid #3D121222',background:'#fafafa'}}>
         <div style={{display:'flex',justifyContent:'space-between'}}><div><b>{c.code} — {c.title}</b> <span style={{color:'#666',fontSize:11}}>· {c.category||'—'} · {c.level||'—'} · {c.durationHrs}h</span></div><div>{c.enrollments.length} enrolled</div></div>
         <div style={{marginTop:6,display:'flex',gap:4}}>
-          <input placeholder="Employee ID to enroll" value={enroll[c.id]||''} onChange={e=>setEnroll({...enroll,[c.id]:e.target.value})} style={{padding:6,border:'1px solid #6B1F2B55',fontSize:12,flex:1}}/>
-          <button onClick={()=>doEnroll(c.id)} style={{padding:'4px 14px',background:'#6B1F2B',color:'#fff',border:0,cursor:'pointer',fontSize:11,fontWeight:700}}>ENROLL</button>
+          <input placeholder="Employee ID to enroll" value={enroll[c.id]||''} onChange={e=>setEnroll({...enroll,[c.id]:e.target.value})} style={{padding:6,border:'1px solid #3D121255',fontSize:12,flex:1}}/>
+          <button onClick={()=>doEnroll(c.id)} style={{padding:'4px 14px',background:'var(--harvics-burgundy)',color:'#fff',border:0,cursor:'pointer',fontSize:11,fontWeight:700}}>ENROLL</button>
         </div>
         <Tbl head={['EMPLOYEE','STATUS','SCORE','COMPLETED','ACT']}>
-          {c.enrollments.map((e:any)=><tr key={e.id}><td style={td}>{e.employeeId}</td><td style={td}><Pill s={e.status}/></td><td style={td}>{e.score??'—'}</td><td style={td}>{e.completedAt?new Date(e.completedAt).toLocaleDateString():'—'}</td><td style={td}>{e.status==='Enrolled'&&<><input type="number" placeholder="score" onChange={ev=>setScore({...score,[e.id]:+ev.target.value})} style={{width:60,padding:3,border:'1px solid #6B1F2B55',fontSize:11}}/> <button onClick={()=>complete(e.id)} style={btnA}>COMPLETE</button></>}</td></tr>)}
+          {c.enrollments.map((e:any)=><tr key={e.id}><td style={td}>{e.employeeId}</td><td style={td}><Pill s={e.status}/></td><td style={td}>{e.score??'—'}</td><td style={td}>{e.completedAt?new Date(e.completedAt).toLocaleDateString():'—'}</td><td style={td}>{e.status==='Enrolled'&&<><input type="number" placeholder="score" onChange={ev=>setScore({...score,[e.id]:+ev.target.value})} style={{width:60,padding:3,border:'1px solid #3D121255',fontSize:11}}/> <button onClick={()=>complete(e.id)} style={btnA}>COMPLETE</button></>}</td></tr>)}
         </Tbl>
       </div>)}
     </Panel>

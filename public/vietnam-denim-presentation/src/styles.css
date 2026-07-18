@@ -539,23 +539,23 @@
   .enter-button {
     @apply inline-block relative overflow-hidden cursor-pointer;
     padding: 18px 56px;
-    border: 1px solid #C3A35E;
-    background: linear-gradient(135deg, rgba(195,163,94,0.18) 0%, rgba(107,31,43,0.55) 100%);
-    color: #C3A35E;
+    border: 1px solid #C9A84C;
+    background: linear-gradient(135deg, rgba(201,168,76,0.18) 0%, rgba(107,31,43,0.55) 100%);
+    color: #C9A84C;
     font-size: 0.72rem;
     letter-spacing: 4px;
     text-transform: uppercase;
     font-family: 'Inter', -apple-system, sans-serif;
     transition: all 0.45s cubic-bezier(0.4,0,0.2,1);
     box-shadow:
-      0 4px 32px rgba(195,163,94,0.2),
+      0 4px 32px rgba(201,168,76,0.2),
       inset 0 1px 0 rgba(255,255,255,0.1);
     animation: enterPulse 2.8s ease-in-out infinite;
   }
   .enter-button::before {
     content: '';
     @apply absolute inset-0;
-    background: linear-gradient(135deg, #C3A35E 0%, #e8cc8a 50%, #C3A35E 100%);
+    background: linear-gradient(135deg, #C9A84C 0%, #e8cc8a 50%, #C9A84C 100%);
     transform: translateY(102%);
     transition: transform 0.5s cubic-bezier(0.4,0,0.2,1);
   }
@@ -564,10 +564,10 @@
     @apply relative z-10;
     transition: color 0.4s;
   }
-  .enter-button:hover:not(:disabled) span { color: #6B1F2B; }
+  .enter-button:hover:not(:disabled) span { color: #1A0505; }
   .enter-button:hover:not(:disabled) {
     transform: translateY(-2px);
-    box-shadow: 0 10px 44px rgba(195,163,94,0.35);
+    box-shadow: 0 10px 44px rgba(201,168,76,0.35);
   }
   .enter-button:disabled {
     opacity: 0.55;
@@ -578,11 +578,11 @@
   .audio-mute-btn {
     @apply fixed bottom-8 left-8 z-[300] w-10 h-10 rounded-full flex items-center justify-center cursor-pointer transition-all;
     background: rgba(107,31,43,0.92);
-    border: 1px solid rgba(195,163,94,0.35);
+    border: 1px solid rgba(201,168,76,0.35);
     box-shadow: 0 4px 20px rgba(0,0,0,0.4);
   }
   .audio-mute-btn:hover {
-    border-color: #C3A35E;
+    border-color: #C9A84C;
     transform: scale(1.08);
   }
 
@@ -1622,8 +1622,8 @@
   100% { left: 112%; }
 }
 @keyframes enterPulse {
-  0%, 100% { box-shadow: 0 4px 32px rgba(195,163,94,0.18), inset 0 1px 0 rgba(255,255,255,0.1); }
-  50% { box-shadow: 0 6px 40px rgba(195,163,94,0.32), inset 0 1px 0 rgba(255,255,255,0.12); }
+  0%, 100% { box-shadow: 0 4px 32px rgba(201,168,76,0.18), inset 0 1px 0 rgba(255,255,255,0.1); }
+  50% { box-shadow: 0 6px 40px rgba(201,168,76,0.32), inset 0 1px 0 rgba(255,255,255,0.12); }
 }
 
 [x-cloak] { display: none !important; }

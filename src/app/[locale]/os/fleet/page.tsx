@@ -1,7 +1,7 @@
 'use client'
 /** #25 Fleet Management — vehicles + route-optimized trips */
 import { useEffect, useState } from 'react'
-const B='#6B1F2B'; const G='#C3A35E'; const C='#F5F0E8'
+const B='var(--harvics-burgundy)'; const G='var(--harvics-gold)'; const C='var(--harvics-cream)'
 const SS:Record<string,string>={Planned:'#666',Active:'#1565C0',Completed:'#2E7D32',Cancelled:'#B71C1C'}
 interface Veh{id:string;plate:string;type:string;capacityKg:number;driver:string|null;status:string;homeDepot:string|null}
 interface Trip{id:string;vehicleId:string;driver:string|null;stops:any;distanceKm:number;optimizedKm:number;savingsKm:number;status:string;startedAt:string|null;completedAt:string|null}

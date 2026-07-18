@@ -21,7 +21,7 @@ export default function PriceLists() {
     <div className="space-y-6">
       <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-[#C3A35E]">Price Lists</h1>
+        <h1 className="text-2xl font-bold text-harvics-gold">Price Lists</h1>
         <div className="flex space-x-2">
           <button className="bg-green-600 text-white px-4 py-2 font-semibold hover:opacity-90 transition-opacity">
             Download Excel
@@ -36,7 +36,7 @@ export default function PriceLists() {
       <div className="bg-white p-4 border border-black200 shadow-sm">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Country</label>
+            <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Country</label>
             <select
               value={selectedCountry}
               onChange={(e) => setSelectedCountry(e.target.value)}
@@ -48,7 +48,7 @@ export default function PriceLists() {
             </select>
           </div>
           <div>
-            <label className="block text-sm font-semibold text-[#C3A35E]/90 mb-2">Channel</label>
+            <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Channel</label>
             <select
               value={selectedChannel}
               onChange={(e) => setSelectedChannel(e.target.value)}
@@ -69,25 +69,25 @@ export default function PriceLists() {
           <table className="w-full">
             <thead className="bg-white">
               <tr>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">SKU</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Pack Size</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">MRP</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Distributor Price</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Margin %</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">VAT/GST</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-[#C3A35E]/90">Effective From</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">SKU</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Pack Size</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">MRP</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Distributor Price</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Margin %</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">VAT/GST</th>
+                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Effective From</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
               {priceList.map((item) => (
                 <tr key={item.sku} className="hover:bg-white">
-                  <td className="px-6 py-4 font-semibold text-[#C3A35E]/90">{item.sku}</td>
-                  <td className="px-6 py-4 text-sm text-[#C3A35E]/90">{item.packSize}</td>
-                  <td className="px-6 py-4 font-semibold text-[#C3A35E]/90">${item.mrp.toFixed(2)}</td>
+                  <td className="px-6 py-4 font-semibold text-harvics-gold/90">{item.sku}</td>
+                  <td className="px-6 py-4 text-sm text-harvics-gold/90">{item.packSize}</td>
+                  <td className="px-6 py-4 font-semibold text-harvics-gold/90">${item.mrp.toFixed(2)}</td>
                   <td className="px-6 py-4 font-semibold text-white">${item.distributorPrice.toFixed(2)}</td>
                   <td className="px-6 py-4 text-sm font-semibold text-green-600">{item.margin.toFixed(1)}%</td>
-                  <td className="px-6 py-4 text-sm text-[#C3A35E]/90">{item.vat}%</td>
-                  <td className="px-6 py-4 text-sm text-[#C3A35E]/90">{item.effectiveFrom}</td>
+                  <td className="px-6 py-4 text-sm text-harvics-gold/90">{item.vat}%</td>
+                  <td className="px-6 py-4 text-sm text-harvics-gold/90">{item.effectiveFrom}</td>
                 </tr>
               ))}
             </tbody>

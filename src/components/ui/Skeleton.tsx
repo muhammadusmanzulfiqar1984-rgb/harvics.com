@@ -37,7 +37,7 @@ const Skeleton: React.FC<SkeletonProps> = ({
       className="absolute inset-0 z-10"
       style={{
         background:
-          'linear-gradient(90deg, transparent 0%, rgba(195,163,94,0.08) 40%, rgba(195,163,94,0.15) 50%, rgba(195,163,94,0.08) 60%, transparent 100%)',
+          'linear-gradient(90deg, transparent 0%, rgba(195, 163, 94,0.08) 40%, rgba(195, 163, 94,0.15) 50%, rgba(195, 163, 94,0.08) 60%, transparent 100%)',
         backgroundSize: '200% 100%',
         animation: 'harvics-shimmer 1.8s ease-in-out infinite',
       }}
@@ -66,7 +66,7 @@ const Skeleton: React.FC<SkeletonProps> = ({
 
   if (variant === 'card') {
     return (
-      <div className={`bg-white border border-[#C3A35E]/10 p-0 ${className}`}>
+      <div className={`bg-white border border-harvics-gold/10 p-0 ${className}`}>
         {/* Image area */}
         <div className={`${shimmerBase} w-full h-44`}>{shimmerOverlay}</div>
         {/* Content area */}
@@ -112,7 +112,7 @@ const Skeleton: React.FC<SkeletonProps> = ({
         {shimmerOverlay}
         {/* Image icon placeholder */}
         <svg
-          className="w-8 h-8 text-[#C3A35E]/15 z-0"
+          className="w-8 h-8 text-harvics-gold/15 z-0"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"

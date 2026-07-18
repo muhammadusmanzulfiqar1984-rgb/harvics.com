@@ -39,7 +39,7 @@ function CRMKPIBar() {
       {kpis.map((k, i) => (
         <div
           key={i}
-          className={`rounded-xl px-4 py-3 border transition-colors duration-300 shadow-[0_1px_8px_rgba(26,5,5,0.06)] ${
+          className={`rounded-xl px-4 py-3 border transition-colors duration-300 shadow-[0_1px_8px_rgba(61, 18, 18,0.06)] ${
             flash === i
               ? (k.up ? 'bg-emerald-50 border-emerald-300' : 'bg-red-50 border-red-300')
               : 'bg-harvics-cream border-harvics-goldDivider'

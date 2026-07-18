@@ -10,7 +10,7 @@
     --burgundy-deep:#2a1118;
     --burgundy:#6b1f2a;
     --burgundy-soft:#3d1a22;
-    --gold:#c3a35e;
+    --gold:#C9A84C;
     --gold-2:#c9a84c;
     --cream:#f5f0e8;
     --cream-2:#f1e8da;
@@ -24,7 +24,7 @@
   body{
     margin:0;font-family:Inter,"Segoe UI",sans-serif;color:var(--ink-dark);
     background:
-      radial-gradient(circle at 8% 10%, rgba(195,163,94,.12) 0%, transparent 36%),
+      radial-gradient(circle at 8% 10%, rgba(201,168,76,.12) 0%, transparent 36%),
       radial-gradient(circle at 90% 0%, rgba(107,31,42,.2) 0%, transparent 30%),
       var(--cream);
     min-height:100vh;
@@ -47,7 +47,7 @@
     box-shadow:inset 0 0 0 1px rgba(241,209,138,.4), 0 4px 12px rgba(107,31,42,.45)
   }
   .brand .name{font-family:'Playfair Display',serif;font-size:17px;font-weight:600;letter-spacing:.3px;line-height:1}
-  .brand .sub{color:#c3a35e;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;margin-top:3px}
+  .brand .sub{color:#C9A84C;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;margin-top:3px}
   .status-pill{justify-self:center;font-size:11.5px;border:1px solid rgba(201,168,76,.35);background:rgba(60,45,15,.40);color:#f1d18a;border-radius:999px;padding:6px 14px;letter-spacing:.04em}
   .status-pill .d{display:inline-block;width:7px;height:7px;border-radius:50%;background:#9ed3ad;box-shadow:0 0 8px rgba(158,211,173,.7);margin-right:8px;vertical-align:middle}
   .actions{display:flex;gap:8px}
@@ -139,34 +139,34 @@
   /* ───────── CENTER: OPERATOR (DARK BURGUNDY) ───────── */
   .center-col .panel.chat-shell{
     background:
-      radial-gradient(ellipse 700px 420px at 50% 0%, rgba(195,163,94,.10), transparent 70%),
+      radial-gradient(ellipse 700px 420px at 50% 0%, rgba(201,168,76,.10), transparent 70%),
       linear-gradient(180deg, #1d0a10 0%, #120608 100%);
-    border:1px solid rgba(195,163,94,.25);
+    border:1px solid rgba(201,168,76,.25);
     color:#ece4d3;
-    box-shadow:0 18px 40px rgba(20,5,8,.35), inset 0 0 0 1px rgba(195,163,94,.06);
+    box-shadow:0 18px 40px rgba(20,5,8,.35), inset 0 0 0 1px rgba(201,168,76,.06);
   }
   .chat-shell{display:grid;grid-template-rows:auto 1fr auto;min-height:calc(100vh - 130px)}
   .chat-head{
     display:flex;justify-content:space-between;align-items:center;
-    padding-bottom:10px;border-bottom:1px solid rgba(195,163,94,.22);margin-bottom:10px
+    padding-bottom:10px;border-bottom:1px solid rgba(201,168,76,.22);margin-bottom:10px
   }
   .chat-title{font-family:'Playfair Display',serif;font-weight:600;color:#e6cd92;font-size:16px}
   .pill-row{display:flex;flex-wrap:wrap;gap:7px}
-  .pill{font-size:11px;border-radius:999px;padding:4px 10px;border:1px solid rgba(195,163,94,.35);background:rgba(195,163,94,.08);color:#e6cd92}
+  .pill{font-size:11px;border-radius:999px;padding:4px 10px;border:1px solid rgba(201,168,76,.35);background:rgba(201,168,76,.08);color:#e6cd92}
   .pill.live{background:rgba(126,194,139,.12);color:#9ed3ad;border-color:rgba(126,194,139,.35)}
 
   .chat-thread{overflow:auto;display:grid;gap:12px;padding-right:4px;align-content:start;max-height:62vh}
   .bubble{max-width:82%;padding:11px 14px;border-radius:14px;font-size:13.5px;line-height:1.55;border:1px solid}
   .bubble.user{
     justify-self:end;
-    background:linear-gradient(180deg, rgba(195,163,94,.16), rgba(195,163,94,.08));
-    border-color:rgba(195,163,94,.4);color:#fff5de;
+    background:linear-gradient(180deg, rgba(201,168,76,.16), rgba(201,168,76,.08));
+    border-color:rgba(201,168,76,.4);color:#fff5de;
     border-bottom-right-radius:4px
   }
   .bubble.bot{
     justify-self:start;
     background:rgba(255,250,240,.04);
-    border-color:rgba(195,163,94,.22);color:#ece4d3;
+    border-color:rgba(201,168,76,.22);color:#ece4d3;
     border-bottom-left-radius:4px
   }
   .bubble.bot strong{color:#e6cd92}
@@ -174,53 +174,53 @@
   /* Embedded scrape result in a bot bubble */
   .scrape{
     background:rgba(0,0,0,.30);
-    border:1px solid rgba(195,163,94,.28);border-radius:10px;margin-top:10px;overflow:hidden
+    border:1px solid rgba(201,168,76,.28);border-radius:10px;margin-top:10px;overflow:hidden
   }
   .scrape-h{
     background:linear-gradient(180deg,rgba(107,31,42,.45),rgba(58,15,23,.20));
-    border-bottom:1px solid rgba(195,163,94,.22);padding:8px 12px;
+    border-bottom:1px solid rgba(201,168,76,.22);padding:8px 12px;
     display:flex;justify-content:space-between;align-items:center;
     font-size:11px;color:#e6cd92;letter-spacing:.14em;text-transform:uppercase
   }
   .scrape-h b{font-family:'Playfair Display',serif;color:#f5e2b3;letter-spacing:.05em;text-transform:none;font-size:13px}
   .scrape-row{
     display:grid;grid-template-columns:1fr 90px 50px;gap:10px;padding:10px 12px;
-    border-bottom:1px solid rgba(195,163,94,.14);font-size:12.5px;align-items:center
+    border-bottom:1px solid rgba(201,168,76,.14);font-size:12.5px;align-items:center
   }
   .scrape-row:last-child{border-bottom:none}
   .scrape-row .nm{font-weight:600;color:#fff5de}
   .scrape-row .sub{font-size:11px;color:rgba(236,228,211,.55);margin-top:2px;font-weight:400}
-  .scrape-row .src{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;color:#c3a35e}
+  .scrape-row .src{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;color:#C9A84C}
   .scrape-row .sc{font-family:'Playfair Display',serif;color:#f5e2b3;text-align:right;font-size:17px;font-weight:700}
 
   .composer{margin-top:14px;display:grid;gap:8px}
   .composer .row{display:grid;grid-template-columns:auto 1fr auto;gap:8px}
   .composer input{
-    width:100%;border-radius:10px;border:1px solid rgba(195,163,94,.32);
+    width:100%;border-radius:10px;border:1px solid rgba(201,168,76,.32);
     background:rgba(0,0,0,.35);color:#ece4d3;
     padding:12px 14px;font-size:13.5px;font-family:inherit;outline:none
   }
   .composer input::placeholder{color:rgba(236,228,211,.4)}
-  .composer input:focus{border-color:#c3a35e;box-shadow:0 0 0 3px rgba(195,163,94,.18)}
+  .composer input:focus{border-color:#C9A84C;box-shadow:0 0 0 3px rgba(201,168,76,.18)}
   .composer .mic{
-    width:44px;border:1px solid rgba(195,163,94,.35);background:rgba(195,163,94,.10);
+    width:44px;border:1px solid rgba(201,168,76,.35);background:rgba(201,168,76,.10);
     color:#e6cd92;border-radius:10px;font-size:18px;cursor:pointer
   }
   .composer .mic.live{
     background:var(--burgundy);color:#fde6b0;border-color:var(--burgundy);
     animation:pulse 1.6s infinite
   }
-  @keyframes pulse{50%{box-shadow:0 0 0 8px rgba(195,163,94,0)}0%,100%{box-shadow:0 0 0 0 rgba(195,163,94,.55)}}
+  @keyframes pulse{50%{box-shadow:0 0 0 8px rgba(201,168,76,0)}0%,100%{box-shadow:0 0 0 0 rgba(201,168,76,.55)}}
   /* In dark center, neutralize generic .btn so it blends */
   .center-col .btn{
-    background:rgba(195,163,94,.10);color:#e6cd92;border-color:rgba(195,163,94,.35)
+    background:rgba(201,168,76,.10);color:#e6cd92;border-color:rgba(201,168,76,.35)
   }
-  .center-col .btn:hover{background:rgba(195,163,94,.20)}
+  .center-col .btn:hover{background:rgba(201,168,76,.20)}
   .center-col .btn.primary{
     background:linear-gradient(120deg,#c9a84c,#f1d18a);color:#2a1118;border-color:#c9a84c
   }
   .composer .actions{display:flex;gap:8px;justify-content:flex-start;flex-wrap:wrap}
-  .composer-help{font-size:11px;color:#c3a35e;letter-spacing:.08em}
+  .composer-help{font-size:11px;color:#C9A84C;letter-spacing:.08em}
 
   /* ───────── RIGHT: OUTREACH ───────── */
   .draft .name{display:flex;justify-content:space-between;align-items:center}

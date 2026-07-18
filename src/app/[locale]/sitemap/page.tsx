@@ -90,10 +90,10 @@ export default async function SitemapPage({ params }: { params: Promise<{ locale
     <main className="max-w-5xl mx-auto px-6 py-20" style={{ color: '#3d1a22' }}>
       <style>{`.sitemap-link:hover { opacity: 1 !important; }`}</style>
       <div style={{ marginBottom: '56px' }}>
-        <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: '#C3A35E', marginBottom: '12px', fontFamily: '-apple-system, sans-serif' }}>
+        <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--harvics-gold)', marginBottom: '12px', fontFamily: '-apple-system, sans-serif' }}>
           Navigation
         </p>
-        <h1 style={{ fontSize: 'clamp(28px, 4vw, 44px)', fontWeight: 700, letterSpacing: '-0.02em', lineHeight: 1.1, color: '#6B1F2B', fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif', marginBottom: '16px' }}>
+        <h1 style={{ fontSize: 'clamp(28px, 4vw, 44px)', fontWeight: 700, letterSpacing: '-0.02em', lineHeight: 1.1, color: 'var(--harvics-burgundy)', fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif', marginBottom: '16px' }}>
           Site Map
         </h1>
         <p style={{ fontSize: '15px', color: 'rgba(107,31,43,0.5)', fontFamily: '-apple-system, sans-serif' }}>
@@ -105,7 +105,7 @@ export default async function SitemapPage({ params }: { params: Promise<{ locale
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '40px' }}>
         {sections.map((section) => (
           <div key={section.title}>
-            <h2 style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#C3A35E', marginBottom: '14px', fontFamily: '-apple-system, sans-serif' }}>
+            <h2 style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--harvics-gold)', marginBottom: '14px', fontFamily: '-apple-system, sans-serif' }}>
               {section.title}
             </h2>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '8px' }}>
@@ -113,7 +113,7 @@ export default async function SitemapPage({ params }: { params: Promise<{ locale
                 <li key={link.href}>
                   <Link
                     href={`/${locale}${link.href}`}
-                    style={{ fontSize: '14px', color: '#6B1F2B', textDecoration: 'none', opacity: 0.75, fontFamily: '-apple-system, sans-serif', transition: 'opacity 0.15s ease' }}
+                    style={{ fontSize: '14px', color: 'var(--harvics-burgundy)', textDecoration: 'none', opacity: 0.75, fontFamily: '-apple-system, sans-serif', transition: 'opacity 0.15s ease' }}
                     className="sitemap-link"
                   >
                     {link.label}
