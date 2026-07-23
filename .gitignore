@@ -24,6 +24,7 @@ node_modules/
 # Next.js
 /.next/
 /out/
+.lighthouse/
 
 # Production
 /build
@@ -136,3 +137,4 @@ harvics-os/dist/
 Harvioce/node_modules/
 Harvioce/HarvyX-ALL-MERGED/
 .env.hx
+HARVY-X/
