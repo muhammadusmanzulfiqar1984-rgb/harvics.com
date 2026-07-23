@@ -8,10 +8,14 @@ import {
   type Campaign,
 } from '@/lib/harvyx/campaignStore';
 import { LINKEDIN_CAMPAIGN_TEMPLATES } from '@/lib/harvyx/campaignTemplates';
+import { authenticate } from '../auth';
 
 export const dynamic = 'force-dynamic';
 
-export async function GET() {
+export async function GET(req: Request) {
+  const authError = authenticate(req);
+  if (authError) return authError;
+
   const campaigns = await loadCampaigns();
   return NextResponse.json({
     campaigns,
@@ -20,6 +24,9 @@ export async function GET() {
 }
 
 export async function POST(req: Request) {
+  const authError = authenticate(req);
+  if (authError) return authError;
+
   try {
     const body = await req.json().catch(() => ({}));
     const name = String(body.name || '').trim() || `LinkedIn campaign ${new Date().toLocaleDateString()}`;

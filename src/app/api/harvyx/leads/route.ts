@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { invalidateLeadsCache as clearSharedLeadsCache } from '@/lib/harvyx/leadSearch';
+import { authenticate } from '../auth';
 
 export const dynamic = 'force-dynamic';
 
@@ -114,6 +115,9 @@ export function invalidateLeadsCache() {
 }
 
 export async function GET(req: NextRequest) {
+  const authError = authenticate(req);
+  if (authError) return authError;
+
   const { searchParams } = new URL(req.url);
   const q = (searchParams.get('q') || '').trim().toLowerCase();
   const status = (searchParams.get('status') || '').trim().toLowerCase();
