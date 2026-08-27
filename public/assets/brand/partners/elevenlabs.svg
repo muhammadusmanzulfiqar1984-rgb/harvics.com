@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 28" role="img" aria-label="ElevenLabs">
+  <rect x="0" y="5" width="5" height="18" rx="1.2" fill="#000000"/>
+  <rect x="10" y="5" width="5" height="18" rx="1.2" fill="#000000"/>
+  <text x="24" y="20" fill="#000000" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" font-weight="600" letter-spacing="-0.03em">ElevenLabs</text>
+</svg>

@@ -4,11 +4,14 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useTranslations, useLocale } from 'next-intl'
+import { HARVICS_TAGLINE } from '@/config/brand'
+import FooterPartnerStrip from '@/components/layout/FooterPartnerStrip'
 
 /**
  * HARVICS Footer — F1 F2 F3 F4 system (mirrors header T1 T2 T3)
  * F1 — Newsletter on cream
  * F2 — Sitemap on burgundy (brand zone)
+ * F2.5 — Built on & supported by (partner logos)
  * F3 — Certifications on darker burgundy
  * F4 — Legal on deep burgundy
  */
@@ -165,7 +168,7 @@ const Footer: React.FC = () => {
                 </div>
               </Link>
               <p style={{ fontSize: '12px', color: 'rgba(245,240,232,0.55)', lineHeight: 1.7, maxWidth: '300px' }}>
-                {tt('brandStatement', 'Sovereign trade infrastructure across 10 industry verticals, 42 markets and 4 continents — built for serious buyers.')}
+                {HARVICS_TAGLINE}
               </p>
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '5px 10px', border: '1px solid rgba(195, 163, 94,0.3)', fontSize: '9px', letterSpacing: '0.25em', textTransform: 'uppercase', color: 'var(--harvics-gold)', fontWeight: 600, width: 'fit-content' }}>
                 <span style={{ width: '6px', height: '6px', background: 'var(--harvics-gold)', borderRadius: '50%', animation: 'harvicsPulse 2s infinite' }} />
@@ -235,6 +238,9 @@ const Footer: React.FC = () => {
           @keyframes harvicsPulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
         ` }} />
       </section>
+
+      {/* ============ F2.5 — BUILT ON & SUPPORTED BY (sliding logos) ============ */}
+      <FooterPartnerStrip />
 
       {/* ============ F3 — CERTIFICATIONS ON DARKER BURGUNDY ============ */}
       <section style={{ background: FOOTER.burgundyDeep, padding: '18px 0', borderTop: '1px solid rgba(195, 163, 94,0.18)' }}>
