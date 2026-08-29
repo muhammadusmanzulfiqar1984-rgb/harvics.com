@@ -10,7 +10,6 @@ import { formatCompact } from '@/utils/localeFormatting'
 import PortalSwitcher from '@/components/shared/PortalSwitcher'
 import GeoSelector from '@/components/shared/GeoSelector'
 import PortalOSNavigation from '@/components/shared/PortalOSNavigation'
-import EnterpriseCRM from '@/components/shared/EnterpriseCRM'
 import KPICard from '@/components/shared/KPICard'
 import LineChartCard from '@/components/charts/LineChartCard'
 import BarChartCard from '@/components/charts/BarChartCard'
@@ -562,8 +561,22 @@ export default function V16DistributorDashboard() {
 
           {/* View Mode: CRM */}
           {viewMode === 'crm' && (
-            <div className="py-6">
-              <EnterpriseCRM persona="distributor" locale={locale} />
+            <div className="py-6 space-y-4">
+              <p className="text-sm text-harvics-burgundy/80">Distributor transactional CRM — live orders and accounts (Module #12).</p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <Link href={`/${locale}/distributor-portal/orders/new`} className="p-4 border border-harvics-gold/30 rounded-lg hover:border-harvics-gold">
+                  <h3 className="font-bold text-harvics-burgundy mb-1">Place Order</h3>
+                  <p className="text-sm text-harvics-burgundy/80">Inventory catalogue → sales order API</p>
+                </Link>
+                <Link href={`/${locale}/os/crm`} className="p-4 border border-harvics-gold/30 rounded-lg hover:border-harvics-gold">
+                  <h3 className="font-bold text-harvics-burgundy mb-1">CRM OS (Module #8)</h3>
+                  <p className="text-sm text-harvics-burgundy/80">Leads, pipeline, customers</p>
+                </Link>
+                <Link href={`/${locale}/os/distributors`} className="p-4 border border-harvics-gold/30 rounded-lg hover:border-harvics-gold">
+                  <h3 className="font-bold text-harvics-burgundy mb-1">Distributor HQ</h3>
+                  <p className="text-sm text-harvics-burgundy/80">Account admin & replenishment</p>
+                </Link>
+              </div>
             </div>
           )}
         </main>

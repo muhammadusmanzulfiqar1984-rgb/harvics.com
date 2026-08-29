@@ -1,71 +1,46 @@
 'use client'
 
-import React from 'react'
-import Link from 'next/link'
-import { useLocale } from 'next-intl'
+import React, { useEffect, useState } from 'react'
 import LocalizationBar from '@/components/shared/LocalizationBar'
+import { fetchTerritories } from '@/lib/distributorPortal'
 
-export default function MyTerritories() {
-  const locale = useLocale()
+export default function TerritoriesPage() {
+  const [rows, setRows] = useState<any[]>([])
+  const [loading, setLoading] = useState(true)
 
-  const territories = [
-    { country: 'United States', region: 'West Coast', city: 'Los Angeles', territoryId: 'TER-US-WEST-001', routes: 15, outlets: 245, status: 'Active' },
-    { country: 'United States', region: 'East Coast', city: 'New York', territoryId: 'TER-US-EAST-002', routes: 12, outlets: 198, status: 'Active' },
-    { country: 'Pakistan', region: 'North', city: 'Lahore', territoryId: 'TER-PK-NORTH-003', routes: 8, outlets: 156, status: 'Active' },
-    { country: 'UAE', region: 'Dubai', city: 'Dubai', territoryId: 'TER-AE-DXB-004', routes: 5, outlets: 89, status: 'Active' },
-  ]
+  useEffect(() => {
+    void fetchTerritories().then(setRows).catch(() => setRows([])).finally(() => setLoading(false))
+  }, [])
 
   return (
     <div className="space-y-6">
-      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
-      <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-harvics-gold">My Territories</h1>
-        <Link
-          href={`/${locale}/distributor-portal/coverage/request`}
-          className="bg-white text-white px-6 py-2 font-semibold hover:opacity-90 transition-opacity"
-        >
-          Request Additional Territory
-        </Link>
-      </div>
-
-      <div className="bg-white border border-black200 shadow-sm overflow-hidden">
-        <div className="overflow-x-auto">
-          <table className="w-full">
-            <thead className="bg-white">
-              <tr>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Country</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Region</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">City</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Territory ID</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Routes/Outlets</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Status</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-200">
-              {territories.map((territory, index) => (
-                <tr key={index} className="hover:bg-white">
-                  <td className="px-6 py-4 font-semibold text-harvics-gold/90">{territory.country}</td>
-                  <td className="px-6 py-4 text-sm text-harvics-gold/90">{territory.region}</td>
-                  <td className="px-6 py-4 text-sm text-harvics-gold/90">{territory.city}</td>
-                  <td className="px-6 py-4 text-sm font-mono text-harvics-gold/90">{territory.territoryId}</td>
-                  <td className="px-6 py-4 text-sm text-harvics-gold/90">
-                    <div>{territory.routes} routes</div>
-                    <div className="text-xs text-harvics-gold/90">{territory.outlets} outlets</div>
-                  </td>
-                  <td className="px-6 py-4">
-                    <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                      territory.status === 'Active' ? 'bg-green-100 text-green-800' : 'bg-white text-harvics-gold/90'
-                    }`}>
-                      {territory.status}
-                    </span>
-                  </td>
-                </tr>
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} />
+      <h1 className="text-2xl font-bold text-harvics-burgundy">Territories</h1>
+      {loading ? (
+        <p className="text-sm text-gray-600">Loading…</p>
+      ) : rows.length === 0 ? (
+        <p className="text-sm text-gray-600">No territory assignments — configure in Module #58 Globalisation.</p>
+      ) : (
+        <table className="w-full text-sm bg-white border">
+          <thead className="bg-[#F5F0E8]">
+            <tr>
+              {['Code', 'Manager', 'Coverage', 'Status'].map((h) => (
+                <th key={h} className="px-4 py-3 text-left text-xs font-semibold uppercase">{h}</th>
               ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
+            </tr>
+          </thead>
+          <tbody className="divide-y">
+            {rows.map((r) => (
+              <tr key={r.id || r.territoryCode}>
+                <td className="px-4 py-3 font-semibold">{r.territoryCode || r.code}</td>
+                <td className="px-4 py-3">{r.manager || r.assignedTo || '—'}</td>
+                <td className="px-4 py-3">{r.coverage != null ? `${r.coverage}%` : '—'}</td>
+                <td className="px-4 py-3">{r.status || 'Active'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
     </div>
   )
 }
-

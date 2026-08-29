@@ -65,8 +65,8 @@ export const ProjectCreateSchema = z.object({
   description: optionalString(4000),
   status: nonEmptyString(40).default('Active'),
   priority: nonEmptyString(40).default('Normal'),
-  startDate: coercedDate.optional().nullable(),
-  endDate: coercedDate.optional().nullable(),
+  startDate: optionalString(40),
+  endDate: optionalString(40),
   ownerId: optionalString(120),
   budget: coercedNonNegative.default(0),
   currency: isoCurrency.default('USD'),
@@ -78,7 +78,7 @@ export const TaskCreateSchema = z.object({
   status: nonEmptyString(40).default('Todo'),
   priority: nonEmptyString(40).default('Normal'),
   assigneeId: optionalString(120),
-  dueDate: coercedDate.optional().nullable(),
+  dueDate: optionalString(40),
 });
 export const TaskUpdateSchema = TaskCreateSchema.partial();
 
@@ -99,6 +99,18 @@ export const BankTransactionCreateSchema = z.object({
   currency: isoCurrency.default('USD'),
   reference: optionalString(200),
   description: optionalString(2000),
+});
+
+export const BankTransferSchema = z.object({
+  fromAccountId: nonEmptyString(120),
+  toAccountId: nonEmptyString(120),
+  amount: z.coerce.number().finite().positive(),
+  reference: optionalString(200),
+  description: optionalString(2000),
+});
+
+export const BankAccountStatusSchema = z.object({
+  reason: optionalString(500),
 });
 
 export const FxRateCreateSchema = z.object({

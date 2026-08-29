@@ -1,0 +1,28 @@
+#,Company Name,Country,"Sales Navigator
+(Find CEO/MD)","LinkedIn
+People Search",IFE Profile,"Contact Name
+(fill in)","Contact Title
+(fill in)","Contact LinkedIn
+(fill in)","AI Message
+(fill in after)",Status,"Priority
+(Hot/Warm/Cold)",Notes,enrichment_status,score,Email,Website,Title,Fair,Phone,email_is_business,website_ok,title_valid,tier1_passes,tier2_points,outreach_category,company_name,description,phone,address,linkedin_url,industry
+1,ADM Foods International,UK,🔍 Find on Sales Nav,🔍 LinkedIn People,🌐 IFE Profile,,,,,,,,partial,0,,,,,,False,False,False,0,0,skip,,,,,,
+2,Agricultural and Processed Food Products Export Development Authority (APEDA),India,🔍 Find on Sales Nav,🔍 LinkedIn People,🌐 IFE Profile,,,,,,,,partial,0,,,,,,False,False,False,0,0,skip,,,,,,
+3,AHA GLOBAL ( v7 DRINK ),,🔍 Find on Sales Nav,🔍 LinkedIn People,🌐 IFE Profile,,,,,,,,partial,0,,,,,,False,False,False,0,0,skip,,,,,,
+4,B&R Distribution Ltd,UK,🔍 Find on Sales Nav,🔍 LinkedIn People,🌐 IFE Profile,,,,,,,,partial,0,,,,,,False,False,False,0,0,skip,,,,,,
+5,BIKA JI FOODS INTERNATIONAL LTD INDIA,India,🔍 Find on Sales Nav,🔍 LinkedIn People,🌐 IFE Profile,,,,,,,,partial,0,,,,,,False,False,False,0,0,skip,,,,,,
+6,Delightful Food Group,UK,🔍 Find on Sales Nav,🔍 LinkedIn People,🌐 IFE Profile,,,,,,,,partial,0,,,,,,False,False,False,0,0,skip,,,,,,
+7,Euro Foods Group Ltd,UK,🔍 Find on Sales Nav,🔍 LinkedIn People,🌐 IFE Profile,,,,,,,,partial,0,,,,,,False,False,False,0,0,skip,,,,,,
+8,Fastline Distribution,UK,🔍 Find on Sales Nav,🔍 LinkedIn People,🌐 IFE Profile,,,,,,,,partial,0,,,,,,False,False,False,0,0,skip,,,,,,
+9,Food & Drink Exporters Association,UK,🔍 Find on Sales Nav,🔍 LinkedIn People,🌐 IFE Profile,,,,,,,,partial,0,,,,,,False,False,False,0,0,skip,,,,,,
+10,GENERAL FOOD TRADING,,🔍 Find on Sales Nav,🔍 LinkedIn People,🌐 IFE Profile,,,,,,,,partial,0,,,,,,False,False,False,0,0,skip,,,,,,
+11,Group Export Agri-Food,,🔍 Find on Sales Nav,🔍 LinkedIn People,🌐 IFE Profile,,,,,,,,partial,0,,,,,,False,False,False,0,0,skip,,,,,,
+12,H. Smith Food Group plc,UK,🔍 Find on Sales Nav,🔍 LinkedIn People,🌐 IFE Profile,,,,,,,,partial,0,,,,,,False,False,False,0,0,skip,,,,,,
+13,Henryson Foods International,,🔍 Find on Sales Nav,🔍 LinkedIn People,🌐 IFE Profile,,,,,,,,partial,0,,,,,,False,False,False,0,0,skip,,,,,,
+14,Hollywood Candy Wholesale,UK,🔍 Find on Sales Nav,🔍 LinkedIn People,🌐 IFE Profile,,,,,,,,partial,0,,,,,,False,False,False,0,0,skip,,,,,,
+15,House Foods Group,,🔍 Find on Sales Nav,🔍 LinkedIn People,🌐 IFE Profile,,,,,,,,partial,0,,,,,,False,False,False,0,0,skip,,,,,,
+16,Meadow Vale Food Group,UK,🔍 Find on Sales Nav,🔍 LinkedIn People,🌐 IFE Profile,,,,,,,,partial,0,,,,,,False,False,False,0,0,skip,,,,,,
+17,Regal Food Products Group PLC,UK,🔍 Find on Sales Nav,🔍 LinkedIn People,🌐 IFE Profile,,,,,,,,partial,0,,,,,,False,False,False,0,0,skip,,,,,,
+18,Serendib Global Foods Ltd,UK,🔍 Find on Sales Nav,🔍 LinkedIn People,🌐 IFE Profile,,,,,,,,partial,0,,,,,,False,False,False,0,0,skip,,,,,,
+19,Thomas Foods International,Australia,🔍 Find on Sales Nav,🔍 LinkedIn People,🌐 IFE Profile,,,,,,,,partial,0,,,,,,False,False,False,0,0,skip,,,,,,
+20,"Zhejiang Tea Group Co.,Ltd",China,🔍 Find on Sales Nav,🔍 LinkedIn People,🌐 IFE Profile,,,,,,,,partial,0,,,,,,False,False,False,0,0,skip,,,,,,

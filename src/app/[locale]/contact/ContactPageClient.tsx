@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState, useRef, useEffect } from 'react'
+import { contactsByGroup, HARVICS_PRIMARY } from '@/data/harvicsContacts'
 
 /* ───── Intersection Observer ───── */
 function useInView(threshold = 0.15) {
@@ -23,7 +24,7 @@ interface ContactPageClientProps {
 
 const contactItems = [
   { icon: '📞', key: 'phone', value: '+44 7405 527427' },
-  { icon: '📧', key: 'email', value: 'sales.uk@harvics.com' },
+  { icon: '📧', key: 'email', value: HARVICS_PRIMARY.general },
   { icon: '💬', key: 'whatsapp', value: '+44 7405 527427' },
 ]
 
@@ -130,7 +131,17 @@ const ContactPageClient: React.FC<ContactPageClientProps> = ({ locale, translati
                         </div>
                         <div>
                           <h3 className="text-harvics-burgundy font-bold text-sm mb-0.5">{t[item.key]}</h3>
-                          <p className="text-harvics-burgundy/50 text-sm">{item.value}</p>
+                          {item.key === 'email' ? (
+                            <a href={`mailto:${item.value}`} className="text-harvics-burgundy/50 text-sm hover:text-harvics-gold transition-colors">
+                              {item.value}
+                            </a>
+                          ) : item.key === 'phone' || item.key === 'whatsapp' ? (
+                            <a href={`tel:${item.value.replace(/\s/g, '')}`} className="text-harvics-burgundy/50 text-sm hover:text-harvics-gold transition-colors">
+                              {item.value}
+                            </a>
+                          ) : (
+                            <p className="text-harvics-burgundy/50 text-sm">{item.value}</p>
+                          )}
                         </div>
                       </div>
                     ))}
@@ -247,6 +258,52 @@ const ContactPageClient: React.FC<ContactPageClientProps> = ({ locale, translati
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ═══════ EMAIL DIRECTORY ═══════ */}
+        <section className="relative px-4 py-16 border-t border-harvics-gold/15 bg-[#faf9f7]">
+          <div className="max-w-[1200px] mx-auto">
+            <div className="text-center mb-10">
+              <span className="inline-block text-xs font-bold text-harvics-gold uppercase tracking-[0.25em] mb-3">
+                Direct Channels
+              </span>
+              <h2 className="text-3xl font-bold text-harvics-burgundy mb-3" style={{ letterSpacing: '-0.02em' }}>
+                Email Directory
+              </h2>
+              <p className="text-harvics-burgundy/55 max-w-2xl mx-auto text-sm leading-relaxed">
+                Reach the right desk — regional, commercial, finance, support, and leadership.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {contactsByGroup().map(({ group, label, contacts }) => (
+                <div
+                  key={group}
+                  className="bg-white border border-harvics-gold/15 p-6"
+                >
+                  <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-harvics-gold mb-4">
+                    {label}
+                  </h3>
+                  <ul className="space-y-3">
+                    {contacts.map((c) => (
+                      <li key={`${c.email}-${c.role}`} className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 border-b border-harvics-gold/10 pb-3 last:border-0 last:pb-0">
+                        <div>
+                          <p className="text-sm font-semibold text-harvics-burgundy">{c.name}</p>
+                          <p className="text-[11px] uppercase tracking-wider text-harvics-burgundy/45">{c.role}</p>
+                        </div>
+                        <a
+                          href={`mailto:${c.email}`}
+                          className="text-sm text-harvics-burgundy/70 hover:text-harvics-gold transition-colors break-all"
+                        >
+                          {c.email}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </div>
         </section>

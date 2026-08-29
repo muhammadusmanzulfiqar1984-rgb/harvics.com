@@ -1,0 +1,5 @@
+IFT FIRST Expo
+- Approach A: the provided first.ift.org/2026/exhibitors URL redirected to a broken Rebrandly page.
+- A live MapYourShow directory was available at https://ift26.mapyourshow.com/8_0/.
+- Scraped 937 exhibitor records from the live MapYourShow JSON endpoint and enriched records from the public exhibitor detail pages.
+- Booth labels were pulled from each public detail page when available.

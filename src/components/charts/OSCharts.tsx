@@ -291,8 +291,9 @@ export function StatusDot({ status }: { status: string }) {
 }
 
 // ── Live Badge ───────────────────────────────────────────────────────────────
-export function LiveBadge({ source, lastUpdated }: { source: 'live' | 'mock'; lastUpdated: Date | null }) {
+export function LiveBadge({ source, lastUpdated }: { source: 'live' | 'empty' | 'mock'; lastUpdated: Date | null }) {
   const time = lastUpdated ? lastUpdated.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : '—'
+  const label = source === 'live' ? 'Live' : source === 'empty' ? 'No data' : 'Demo'
   return (
     <div className="flex items-center gap-2">
       <span className={`inline-flex items-center gap-1.5 text-[11px] font-bold px-2.5 py-1 rounded-full border ${
@@ -302,7 +303,7 @@ export function LiveBadge({ source, lastUpdated }: { source: 'live' | 'mock'; la
       }`}
         style={source !== 'live' ? { background: T.surface } : undefined}>
         <span className={`w-1.5 h-1.5 rounded-full ${source === 'live' ? 'bg-emerald-400 animate-pulse' : 'bg-harvics-muted'}`} />
-        {source === 'live' ? 'Live' : 'Demo'}
+        {label}
       </span>
       {lastUpdated && <span className="text-[10px]" style={{ color: T.muted }}>Updated {time}</span>}
     </div>

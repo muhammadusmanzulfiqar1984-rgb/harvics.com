@@ -43,6 +43,11 @@ const RESERVED_ROUTE_PREFIXES = [
   '/api/ai/models',
   '/api/audit-log',
   '/api/governance',
+  '/api/wave5',
+  '/api/wave6',
+  '/api/wave7',
+  '/api/t14',
+  '/api/platform',
 ];
 
 function isReserved(route: string): boolean {
@@ -133,6 +138,33 @@ export async function seedAllModules(): Promise<{ seeded: number; skipped: numbe
   let seeded = 0;
   let skipped = 0;
 
+  // Neon often lacks GenericModuleRecord until an additive SQL is applied.
+  // Probe once — do not spam 70× P2021 stack traces on every boot.
+  try {
+    await prisma.genericModuleRecord.findFirst({ select: { id: true } });
+  } catch (err: any) {
+    const msg = String(err?.message || '');
+    const unreachable =
+      err?.code === 'P1001' || msg.includes("Can't reach database server");
+    const missing =
+      err?.code === 'P2021' ||
+      msg.includes('GenericModuleRecord') ||
+      msg.includes('does not exist');
+    if (unreachable) {
+      // eslint-disable-next-line no-console
+      console.warn('[generic-factory] Neon unreachable — skipping stub seed');
+      return { seeded: 0, skipped: registry.length };
+    }
+    if (missing) {
+      // eslint-disable-next-line no-console
+      console.warn(
+        '[generic-factory] GenericModuleRecord table missing — skipping stub seed (OS Finance/CRM unaffected). Optional: apply prisma/manual/generic_module_record_additive.sql',
+      );
+      return { seeded: 0, skipped: registry.length };
+    }
+    throw err;
+  }
+
   for (const entry of registry) {
     if (entry.status === 'planned' || entry.status === 'stub') {
       skipped++;
@@ -141,7 +173,14 @@ export async function seedAllModules(): Promise<{ seeded: number; skipped: numbe
     try {
       await seedModuleIfEmpty(entry);
       seeded++;
-    } catch (err) {
+    } catch (err: any) {
+      const missing =
+        err?.code === 'P2021' || String(err?.message || '').includes('does not exist');
+      if (missing) {
+        // eslint-disable-next-line no-console
+        console.warn('[generic-factory] GenericModuleRecord missing mid-seed — aborting remaining seeds');
+        return { seeded, skipped: skipped + (registry.length - seeded - skipped) };
+      }
       // eslint-disable-next-line no-console
       console.error(`[generic.seed] module ${entry.id} (${entry.name}) failed:`, err);
     }

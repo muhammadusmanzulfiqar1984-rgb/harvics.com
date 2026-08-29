@@ -3,11 +3,12 @@
 import React, { useState, useRef } from 'react'
 import Link from 'next/link'
 import { useLocale, useTranslations } from 'next-intl'
-import { useRouter } from 'next/navigation'
+import { useRouter, useSearchParams } from 'next/navigation'
 
 export default function UnifiedLoginForm() {
   const locale = useLocale()
   const router = useRouter()
+  const searchParams = useSearchParams()
   const tForm = useTranslations('form')
   const tContact = useTranslations('contact')
   const usernameRef = useRef<HTMLInputElement>(null)
@@ -18,6 +19,16 @@ export default function UnifiedLoginForm() {
   })
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState('')
+
+  /** Honor middleware ?redirect= so /os/finance (etc.) actually opens after login. */
+  const safeRedirect = (): string | null => {
+    const raw = searchParams?.get('redirect') || ''
+    if (!raw.startsWith('/') || raw.startsWith('//') || raw.includes('://')) return null
+    if (!/^\/[a-z]{2}(\/|$)/.test(raw) && !raw.startsWith('/os') && !raw.startsWith('/portal') && !raw.startsWith('/dashboard') && !raw.startsWith('/admin')) {
+      return null
+    }
+    return raw
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -147,6 +158,12 @@ export default function UnifiedLoginForm() {
   }
 
   const routeByRole = (role?: string) => {
+    const redirectTo = safeRedirect()
+    if (redirectTo) {
+      router.replace(redirectTo)
+      return
+    }
+
     const roleLower = role?.toLowerCase() || ''
 
     switch (roleLower) {

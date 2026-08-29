@@ -3,13 +3,13 @@
   "home": {
     "welcome": "ยินดีต้อนรับสู่",
     "companyName": "ฮาร์วิช",
-    "tagline": "ความเป็นเลิศด้านสินค้าอุปโภคบริโภคระดับพรีเมียม ตั้งแต่ปี 2019",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "สำรวจผลิตภัณฑ์",
     "contact": "ติดต่อเรา",
     "learnMore": "เรียนรู้เพิ่มเติม",
-    "brandStatement": "บริษัทชั้นนำระดับโลกด้านสินค้าอุปโภคบริโภคที่จัดจำหน่ายผลิตภัณฑ์อาหารคุณภาพสูงหลากหลายประเภท ด้วยมาตรฐานคุณภาพระดับสากล",
-    "taglineStart": "ความเป็นเลิศในสินค้าอุปโภคบริโภคระดับพรีเมียม ตั้งแต่ปี",
-    "taglineYear": "2019",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "ลอนดอน • มิลาน • นิวยอร์ก",
     "categories": {
       "bakery": "เบเกอรี่",
@@ -81,7 +81,8 @@
       "specialOffers": "ข้อเสนอพิเศษ",
       "promotions": "โปรโมชั่น",
       "bulkOrders": "ส่วนลดสำหรับการสั่งซื้อจำนวนมาก"
-    }
+    },
+    "startupAcademy": "สถาบันสตาร์ทอัพ"
   },
   "products": {
     "ourProducts": "ผลิตภัณฑ์ของเรา",
@@ -119,7 +120,40 @@
     "whatsapp": "วาส",
     "callNow": "โทรเลย",
     "sendEmail": "ส่งอีเมล",
-    "messageUs": "ติดต่อเรา"
+    "messageUs": "ติดต่อเรา",
+    "getInTouch": "ได้รับการติดต่อ",
+    "locations": "สถานที่",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "ส่งข้อความ",
+    "firstName": "ชื่อ",
+    "firstNamePlaceholder": "กรอกชื่อของคุณ",
+    "lastName": "นามสกุล",
+    "lastNamePlaceholder": "กรอกนามสกุลของคุณ",
+    "emailPlaceholder": "ป้อนที่อยู่อีเมลของคุณ",
+    "subject": "เรื่อง",
+    "subjectPlaceholder": "ใส่หัวเรื่อง",
+    "message": "ข้อความ",
+    "messagePlaceholder": "เขียนข้อความของคุณ",
+    "send": "ส่ง",
+    "eyebrow": "เริ่มบทสรุป",
+    "headline1": "เริ่มบรรยายสรุป.",
+    "headline2": "เราตอบกลับภายใน 24 ชั่วโมง",
+    "subhead": "บอกหมวดหมู่ ปริมาณ และตลาดเป้าหมายของคุณให้เราทราบ ผู้เชี่ยวชาญจะติดต่อกลับหาคุณพร้อมตัวเลือกการจัดหาและราคาที่บ่งชี้",
+    "fullName": "ชื่อเต็ม",
+    "fullNamePlaceholder": "ชาห์ ตาบราอิซ",
+    "company": "บริษัท",
+    "companyPlaceholder": "องค์กรของคุณ",
+    "businessEmail": "อีเมลธุรกิจ",
+    "howCanWeHelp": "เราสามารถช่วยได้อย่างไร?",
+    "sending": "กำลังส่ง...",
+    "sendEnquiry": "ส่งคำถาม",
+    "sentTitle": "ส่งข้อความแล้ว",
+    "sentSub": "ทีมงานของเราจะตอบกลับภายใน 24 ชั่วโมง",
+    "directChannels": "ช่องทางตรง",
+    "trust1": "รับประกันการตอบกลับตลอด 24 ชั่วโมง",
+    "trust2": "ผู้จัดการบัญชีเฉพาะ",
+    "trust3": "NDA available on request",
+    "trust4": "42 ตลาด · จัดส่งแล้ว 1,247 รายการในวันนี้"
   },
   "media": {
     "title": "ศูนย์สื่อ",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "ฮาร์วิคส์ โกลบอล เวนเจอร์ส",
-    "tagline": "ความเป็นเลิศด้านสินค้าอุปโภคบริโภคระดับพรีเมียม ตั้งแต่ปี 2019",
-    "brandStatement": "บริษัทชั้นนำระดับโลกด้านสินค้าอุปโภคบริโภคที่จัดจำหน่ายผลิตภัณฑ์อาหารคุณภาพสูงหลากหลายประเภท ด้วยมาตรฐานคุณภาพระดับสากล",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "ลอนดอน • มิลาน • นิวยอร์ก",
     "since": "ตั้งแต่ปี 2019 เป็นต้นมา",
     "harvicsNews": "ข่าวฮาร์วิคส์",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "เข้าร่วมเครือข่ายของเรา",
     "newsletterTagline": "รับข้อมูลการค้าและการอัปเดตตลาดล่าสุด",
     "activeShipments": "การจัดส่งที่ใช้งานอยู่",
-    "certifiedAudited": "รับรองและตรวจสอบแล้ว"
+    "certifiedAudited": "รับรองและตรวจสอบแล้ว",
+    "invalidEmail": "กรุณากรอกที่อยู่อีเมลที่ถูกต้อง",
+    "subscriptionSuccess": "ขอบคุณสำหรับการสมัคร!",
+    "subscriptionError": "มีบางอย่างผิดพลาด โปรดลองอีกครั้ง"
   },
   "search": {
     "placeholder": "ค้นหาสินค้า แบรนด์ หรือหมวดหมู่",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "ขอโทษค่ะ ฉันไม่เข้าใจ รบกวนช่วยอธิบายใหม่อีกครั้งได้ไหมคะ",
       "help": "ฉันสามารถช่วยคุณได้ในเรื่องข้อมูลผลิตภัณฑ์ การสั่งซื้อ หรือข้อสงสัยทั่วไป คุณต้องการทราบอะไรบ้าง?",
-      "contact": "หากต้องการความช่วยเหลือเพิ่มเติม โปรดติดต่อเราได้ที่ support@harvics.com หรือโทร +1-800-HARVICS"
-    }
+      "contact": "หากต้องการความช่วยเหลือเพิ่มเติม โปรดติดต่อเราได้ที่ support@harvics.com หรือโทร +1-800-HARVICS",
+      "product": "เรียกดูแค็ตตาล็อกผลิตภัณฑ์ของเราจากเมนู หรือบอกฉันว่าคุณสนใจหมวดหมู่ใด เช่น สินค้าอุปโภคบริโภค สิ่งทอ โลจิสติกส์ และอื่นๆ",
+      "order": "หากต้องการสั่งซื้อหรือตรวจสอบสถานะ โปรดไปที่พอร์ทัลผู้จัดจำหน่ายหรือติดต่อผู้จัดการบัญชีของคุณ",
+      "about": "Harvics Global Ventures เป็นบริษัทโครงสร้างพื้นฐานด้านการค้าอธิปไตยที่มีประสบการณ์มากกว่า 20 ปีในกว่า 40 ประเทศ"
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "กด Enter เพื่อส่ง"
   },
   "common": {
     "chatWithUs": "แชทกับเรา",
@@ -730,12 +772,17 @@
       "gps-tracking": "การติดตามด้วย GPS",
       "localization": "การแปลเป็นภาษาท้องถิ่น",
       "workflows": "เวิร์กโฟลว์",
-      "admin": "ผู้ดูแลระบบ"
+      "admin": "ผู้ดูแลระบบ",
+      "modules": "โมดูล"
     },
     "kpis": {
       "customers": "ลูกค้า",
       "employees": "พนักงาน",
-      "profit": "กำไร"
+      "profit": "กำไร",
+      "totalOrders": "คำสั่งซื้อทั้งหมด",
+      "inventoryValue": "มูลค่าสินค้าคงคลัง",
+      "logisticsEfficiency": "ประสิทธิภาพด้านลอจิสติกส์",
+      "revenue": "รายได้"
     },
     "domain": {
       "title": "CRM OS",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "ดูและจัดการความสัมพันธ์กับลูกค้า การโต้ตอบ และแคมเปญต่างๆ ของคุณ",
       "loading": "กำลังโหลด...",
       "error": "เกิดข้อผิดพลาดในการโหลดข้อมูล CRM"
+    },
+    "roleIndicator": {
+      "manager": "มุมมองผู้จัดการ",
+      "executive": "วิวผู้บริหาร",
+      "investor": "มุมมองนักลงทุน",
+      "distributor": "มุมมองผู้จัดจำหน่าย",
+      "supplier": "มุมมองซัพพลายเออร์",
+      "customer": "มุมมองลูกค้า"
     }
   },
   "supplierPortal": {
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "เกี่ยวกับ Harvics",
-    "subtitle": "ความเป็นเลิศด้านสินค้าอุปโภคบริโภคระดับพรีเมียม ตั้งแต่ปี 2019",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "เรื่องราวของเรา",
     "story1": "Harvics ก่อตั้งขึ้นในปี 2019 โดยเริ่มต้นจากแนวคิดที่ก้าวล้ำ จนเติบโตเป็นผู้นำระดับโลกในสินค้าอุปโภคบริโภคระดับพรีเมียม เส้นทางของเรานั้นขับเคลื่อนด้วยการแสวงหาคุณภาพอย่างไม่หยุดยั้ง และความมุ่งมั่นในการสร้างสรรค์นวัตกรรม",
     "story2": "เราดำเนินธุรกิจในกว่า 40 ประเทศ ส่งมอบผลิตภัณฑ์ที่ช่วยยกระดับคุณภาพชีวิตและสร้างมาตรฐานใหม่ในอุตสาหกรรม จากจุดเริ่มต้นเล็กๆ สู่การเป็นบริษัทระดับโลก ค่านิยมของเรายังคงไม่เปลี่ยนแปลง",
@@ -1150,181 +1205,279 @@
   },
   "help": {
     "page": {
-      "title": "Help Center",
-      "subtitle": "Find the help you need"
+      "title": "ศูนย์ช่วยเหลือ",
+      "subtitle": "ค้นหาความช่วยเหลือที่คุณต้องการ"
     },
-    "backToHelpCenter": "Back to Help Center",
+    "backToHelpCenter": "กลับไปที่ศูนย์ช่วยเหลือ",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "คำถามที่พบบ่อย",
+        "description": "ค้นหาคำตอบสำหรับคำถามทั่วไป"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "ติดต่อฝ่ายสนับสนุน",
+        "description": "ติดต่อกับทีมสนับสนุนของเรา"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "คู่มือผู้ใช้",
+        "description": "คำแนะนำทีละขั้นตอนและบทช่วยสอน"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "การแก้ไขปัญหา",
+        "description": "แก้ไขปัญหาทั่วไป"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "ความช่วยเหลือเกี่ยวกับบัญชี",
+        "description": "จัดการบัญชีและการตั้งค่าของคุณ"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "สนับสนุนการสั่งซื้อ",
+        "description": "ช่วยเหลือเกี่ยวกับการสั่งซื้อและการจัดส่ง"
       }
     },
     "account": {
-      "title": "Account Help",
-      "subtitle": "Manage your account settings and preferences",
-      "placeholder": "Account management and settings help content will appear here."
+      "title": "ความช่วยเหลือเกี่ยวกับบัญชี",
+      "subtitle": "จัดการการตั้งค่าบัญชีและการตั้งค่าของคุณ",
+      "placeholder": "เนื้อหาความช่วยเหลือในการจัดการบัญชีและการตั้งค่าจะปรากฏที่นี่"
     },
     "orders": {
-      "title": "Order Support",
-      "subtitle": "Track and manage your orders and deliveries",
-      "placeholder": "Order and delivery support content will appear here."
+      "title": "สนับสนุนการสั่งซื้อ",
+      "subtitle": "ติดตามและจัดการคำสั่งซื้อและการจัดส่งของคุณ",
+      "placeholder": "เนื้อหาการสนับสนุนการสั่งซื้อและการจัดส่งจะปรากฏที่นี่"
     },
     "guides": {
-      "title": "User Guides",
-      "subtitle": "Step-by-step guides to help you get the most out of Harvics",
+      "title": "คู่มือผู้ใช้",
+      "subtitle": "คำแนะนำทีละขั้นตอนเพื่อช่วยให้คุณได้รับประโยชน์สูงสุดจาก Harvics",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "เริ่มต้นใช้งาน",
+          "description": "เรียนรู้พื้นฐาน"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "การตั้งค่าบัญชี",
+          "description": "ตั้งค่าบัญชีของคุณ"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "วิธีการสั่งซื้อ",
+          "description": "วางและติดตามคำสั่งซื้อ"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "วิธีการชำระเงิน",
+          "description": "ตัวเลือกการชำระเงินและความปลอดภัย"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "จัดส่งและจัดส่ง",
+          "description": "ข้อมูลการจัดส่ง"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "การคืนสินค้าและการคืนเงิน",
+          "description": "นโยบายการคืนสินค้าและกระบวนการ"
         }
       }
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "subtitle": "Common issues and quick solutions",
+      "title": "การแก้ไขปัญหา",
+      "subtitle": "ปัญหาทั่วไปและแนวทางแก้ไขด่วน",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "ปัญหาการเข้าสู่ระบบ",
+          "description": "ปัญหาในการลงชื่อเข้าใช้"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "ปัญหาการชำระเงิน",
+          "description": "การชำระเงินไม่ได้ดำเนินการ"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "ความล่าช้าในการจัดส่ง",
+          "description": "ออเดอร์ไม่เข้า"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "ข้อผิดพลาดของเว็บไซต์",
+          "description": "เพจไม่โหลด"
         }
       }
     }
   },
   "checkout": {
-    "secureCheckout": "Secure Checkout",
-    "title": "Complete Your Order",
-    "subtitle": "Review your items, enter shipping details, and confirm payment securely.",
-    "shippingInfo": "Shipping Information",
-    "paymentMethod": "Payment Method",
+    "secureCheckout": "การชำระเงินที่ปลอดภัย",
+    "title": "กรอกคำสั่งซื้อของคุณ",
+    "subtitle": "ตรวจสอบรายการของคุณ ป้อนรายละเอียดการจัดส่ง และยืนยันการชำระเงินอย่างปลอดภัย",
+    "shippingInfo": "ข้อมูลการจัดส่งสินค้า",
+    "paymentMethod": "วิธีการชำระเงิน",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "บัตรเครดิต/เดบิต",
+      "bankTransfer": "โอนเงินผ่านธนาคาร (LC/TT)",
       "wallet": "HPay Digital Wallet"
     },
-    "orderSummary": "Order Summary",
+    "orderSummary": "สรุปการสั่งซื้อ",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
-      "total": "Total"
+      "subtotal": "ผลรวมย่อย",
+      "shipping": "การส่งสินค้า",
+      "calculatedNextStep": "คำนวณในขั้นตอนต่อไป",
+      "tax": "ภาษี",
+      "total": "ทั้งหมด"
     },
-    "placeOrder": "Place Order",
-    "sslNotice": "Secured with 256-bit SSL encryption",
-    "continueShopping": "Continue Shopping",
+    "placeOrder": "สั่งซื้อ",
+    "sslNotice": "ปลอดภัยด้วยการเข้ารหัส SSL 256 บิต",
+    "continueShopping": "ช้อปปิ้งต่อ",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "ชื่อ",
+      "lastName": "นามสกุล",
+      "email": "อีเมล",
+      "address": "ที่อยู่",
+      "city": "เมือง",
+      "country": "ประเทศ"
     }
   },
   "history": {
     "hero": {
-      "title": "Our Journey",
-      "subtitle": "From a Dubai startup to a global enterprise spanning 42+ countries, 10 industry verticals, and 38 languages."
+      "title": "การเดินทางของเรา",
+      "subtitle": "จากสตาร์ทอัพในดูไบสู่องค์กรระดับโลกที่ครอบคลุมกว่า 42 ประเทศ 10 กลุ่มอุตสาหกรรม และ 38 ภาษา"
     },
     "cta": {
-      "title": "Be Part of the Next Chapter",
-      "subtitle": "Join us as we scale to 60+ countries and build the future of AI-driven global commerce.",
-      "button": "View Careers"
+      "title": "ร่วมเป็นส่วนหนึ่งของบทต่อไป",
+      "subtitle": "เข้าร่วมกับเราในขณะที่เราขยายไปสู่กว่า 60 ประเทศ และสร้างอนาคตของการค้าระดับโลกที่ขับเคลื่อนด้วย AI",
+      "button": "ดูอาชีพ"
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "ก่อตั้งขึ้นในดูไบ",
+        "description": "Harvics Global Ventures ก่อตั้งขึ้นในสหรัฐอาหรับเอมิเรตส์โดยมีวิสัยทัศน์ที่จะกลายเป็นกลุ่ม FMCG ระดับโลกและกลุ่มบริษัทการค้าหลายแนวดิ่ง เปิดตัวการดำเนินงานครั้งแรกในด้านสิ่งทอและสินค้าอุปโภคบริโภค",
+        "highlight": "ปีหนึ่ง"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "การขยายตัวระหว่างประเทศครั้งแรก",
+        "description": "ขยายไปยัง 10 ประเทศทั่วยุโรป ตะวันออกกลาง และเอเชียใต้ แม้จะมีความท้าทายในการแพร่ระบาดทั่วโลก เปิดตัวการดำเนินการด้านซัพพลายเชนดิจิทัลและความร่วมมือในการจัดจำหน่ายทางไกล",
+        "highlight": "10 ประเทศ"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "การขยายตัวหลายแนวตั้ง",
+        "description": "เปิดตัวอุตสาหกรรมใหม่ 5 ประเภท ได้แก่ สินค้าโภคภัณฑ์ อุปกรณ์อุตสาหกรรม แร่ธาตุและเหมืองแร่ น้ำมันและก๊าซ และอสังหาริมทรัพย์ แค็ตตาล็อกผลิตภัณฑ์ทั้งหมดเกิน 500 SKU ในทุกกลุ่มธุรกิจ",
+        "highlight": "5 แนวดิ่งใหม่"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "การเปลี่ยนแปลงทางดิจิทัล",
+        "description": "สร้าง Harvics OS เวอร์ชันแรก ซึ่งเป็นแพลตฟอร์มองค์กรที่ขับเคลื่อนด้วย AI เปิดตัวพอร์ทัลผู้จัดจำหน่าย ความสามารถด้านอีคอมเมิร์ซ และการติดตามยานพาหนะ GPS แบบเรียลไทม์ในทุกตลาด",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "ความยั่งยืนและขนาด",
+        "description": "มุ่งมั่นที่จะดำเนินงานโดยปราศจากคาร์บอน เข้าถึงมากกว่า 30 ประเทศ เปิดตัว HPay (แพลตฟอร์มการชำระเงินดิจิทัล) โซลูชันทางการเงินเพื่อการค้า และการคาดการณ์ความต้องการที่ขับเคลื่อนด้วย AI ในทุกแนวดิ่ง",
+        "highlight": "30+ ประเทศ"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "องค์กรระดับโลก",
+        "description": "ทะลุหลักชัยกว่า 42 ประเทศ ปรับใช้กลไก AI พร้อมโมเดล 6 ML สำหรับกลยุทธ์ ความต้องการ ราคา ความครอบคลุม และการเพิ่มประสิทธิภาพ SKU เปิดตัวแพลตฟอร์มหลายภาษาที่รองรับ 38 ภาษา",
+        "highlight": "42+ ประเทศ"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "ระบบปฏิบัติการ AI-First",
+        "description": "เปิดตัว Harvics OS v2 - ระบบปฏิบัติการระดับองค์กรแบบครบวงจรพร้อมระบบอัจฉริยะแบบเรียลไทม์, ฟีดสดของ Socket.io, Alpha Engine สำหรับแผนการโจมตีตลาด และลำดับชั้นทางภูมิศาสตร์ที่สมบูรณ์ 8 ระดับ",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "วิสัยทัศน์ข้างหน้า",
+        "description": "ขยายไปสู่กว่า 60 ประเทศ สร้างองค์กร FMCG ที่ดำเนินการโดย AI แห่งแรกของโลก โดยทุกสายงาน ไม่ว่าจะเป็นการจัดซื้อ โลจิสติกส์ การเงิน และ CRM ล้วนทำงานบนระบบอัจฉริยะเชิงคาดการณ์พร้อมประตูอนุมัติจากมนุษย์",
+        "highlight": "เป้าหมาย 60+"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "การค้าขาย การจัดหา และสถาบัน AI สำหรับผู้ก่อตั้ง — หกสัปดาห์ เซสชั่นสด Harvics Corridor",
+    "navLabel": "สถาบันสตาร์ทอัพ",
+    "teaser": {
+      "eyebrow": "สถาบันการศึกษา · โปรแกรมทางเดิน",
+      "title": "สถาบันสตาร์ทอัพ.",
+      "body": "งานฝีมือการค้าคลาสสิกสำหรับผู้ก่อตั้ง — การจัดหา, QC, โต๊ะระดมทุน และความรู้ในทางเดิน — ควบคู่ไปกับตลาด Harvics",
+      "cta": "เข้าสู่สถาบันการศึกษา"
+    },
+    "hero": {
+      "alt": "ห้องบรรยายคลาสสิก – Harvics Startup Academy",
+      "eyebrow": "กลุ่มคนที่ 01 · ไตรมาสที่ 4 ปี 2569 · โครงการสนับสนุน",
+      "title": "Harvics Startup Academy",
+      "body": "โรงเรียนการค้าคลาสสิกสำหรับผู้ก่อตั้ง — การจัดหา การค้าขายแบบ Corridor และ AI ที่ใช้งานได้ หกสัปดาห์ เซสชันสด ผู้ประกอบการจริง",
+      "apply": "รับสมัครรุ่น01",
+      "seeProgramme": "ดูโปรแกรม"
+    },
+    "stats": {
+      "founders": "ผู้ก่อตั้ง / กลุ่มประชากรตามรุ่น",
+      "sessions": "เซสชันสด",
+      "weeks": "สัปดาห์",
+      "verticals": "การค้าแนวดิ่ง"
+    },
+    "why": {
+      "eyebrow": "01 · ทำไมต้องเข้าร่วม",
+      "title": "สร้างบริษัทที่สามารถซื้อขายได้จริง",
+      "body": "ไม่ใช่โรงละคร. เรียนรู้ RFQ เพื่อการตั้งถิ่นฐาน การจัดหาความขยัน การเข้าถึงผู้ซื้อ และระบบอัตโนมัติ — จากผู้ปฏิบัติงานทั่วเส้นทาง Harvics",
+      "item1Title": "ระบบการค้าที่ใช้งานได้จริง",
+      "item1Body": "วิธีที่ผู้ซื้อระดับสถาบันซื้อ — และวิธีที่คุณปฏิบัติตาม",
+      "item2Title": "เครือข่ายที่จัดส่ง",
+      "item2Body": "ผู้ก่อตั้ง ผู้จัดจำหน่าย และผู้ดำเนินการในแนวดิ่ง",
+      "item3Title": "AI ที่ทำงาน",
+      "item3Body": "HarvyX, Fin voice และการทำงานอัตโนมัติโดยไม่มีคำศัพท์",
+      "imageAlt": "การค้าคลาสสิกยังมีชีวิตอยู่"
+    },
+    "knowledge": {
+      "eyebrow": "ความรู้",
+      "title": "ศึกษาทางเดินอย่างมีระเบียบวินัย",
+      "body": "หลักสูตรที่ดึงมาจากการฝึกปฏิบัติทางการค้าจริง — ไม่ใช่สไลด์เริ่มต้นทั่วไป",
+      "imageAlt": "ห้องสมุดคลาสสิกที่ยิ่งใหญ่"
+    },
+    "programme": {
+      "eyebrow": "02 · โปรแกรม",
+      "title": "สิ่งที่คุณจะทำงานผ่าน",
+      "m1Title": "แบรนด์และการจัดหา",
+      "m1Body": "MOQs, ประตู QC, สิ่งทอ และสินค้าอุปโภคบริโภค — ไปจนถึงทางเดิน",
+      "m2Title": "หน่วยสืบราชการลับและการเผยแพร่ประชาสัมพันธ์",
+      "m2Body": "ห้องปฏิบัติการ HarvyX, ICP ของผู้ซื้อ, การติดตามผลที่ได้รับการตอบกลับ",
+      "m3Title": "ทุนและพันธมิตร",
+      "m3Body": "เส้นทางการระดมทุนและความร่วมมือ — ไม่มีการเคลมจากธนาคารปลอม",
+      "m4Title": "การค้าทางเดิน",
+      "m4Body": "ท่าเรือ ถนน และลักษณะการเคลื่อนย้ายสินค้าข้ามตลาด",
+      "m5Title": "คุณภาพและความขยัน",
+      "m5Body": "พฤติกรรมการตรวจสอบที่ปกป้องชื่อเสียงและการตั้งถิ่นฐาน",
+      "m6Title": "สินค้าโภคภัณฑ์และสินค้าอุปโภคบริโภค",
+      "m6Body": "จากความเป็นจริงในคลังสินค้าสู่แบรนด์และความต้องการขายส่ง"
+    },
+    "tracks": {
+      "aEyebrow": "แทรค ก",
+      "aTitle": "แบรนด์และการพาณิชย์",
+      "aBody": "ผู้ก่อตั้งเครื่องแต่งกายและสินค้าอุปโภคบริโภคอุปโภคบริโภคสร้างแบรนด์ การขายส่ง และความต้องการทางเดิน",
+      "aAlt": "ห้องประชุมสุดคลาสสิก",
+      "bEyebrow": "แทรคบี",
+      "bTitle": "การค้าและการดำเนินการ",
+      "bBody": "การจัดหา โลจิสติกส์ และผู้ประกอบการ B2B ปรับขนาดการค้าสถาบัน",
+      "bAlt": "เครือข่ายซาลอน"
+    },
+    "network": {
+      "eyebrow": "03 · เครือข่าย",
+      "title": "พบปะกับผู้ปฏิบัติงาน ไม่ใช่ผู้ฟัง",
+      "body": "เซสชันสดและเวลาทำการสไตล์ร้านเสริมสวยกับผู้ก่อตั้ง ผู้จัดจำหน่าย และผู้ดำเนินการทางเดิน Harvics",
+      "imageAlt": "ผู้ก่อตั้งเครือข่าย"
+    },
+    "rhythm": {
+      "eyebrow": "04 · จังหวะ",
+      "title": "หกสัปดาห์ จังหวะที่ชัดเจน",
+      "w1": "สัปดาห์ที่ 1",
+      "w1Body": "ปฐมนิเทศ · แผนที่ทางเดิน · การประชุมเชิงปฏิบัติการ ICP",
+      "w2": "สัปดาห์ที่ 2",
+      "w2Body": "การเข้าถึงผู้ซื้อ · ห้องปฏิบัติการ HarvyX",
+      "w3": "สัปดาห์ที่ 3",
+      "w3Body": "การจัดหาและการควบคุมคุณภาพ · ความขยันของซัพพลายเออร์",
+      "w4": "สัปดาห์ที่ 4",
+      "w4Body": "ระบบอัตโนมัติ · Fin voice · ops stack",
+      "w5": "สัปดาห์ที่ 5",
+      "w5Body": "เงินทุนและความร่วมมือ",
+      "w6": "สัปดาห์ที่ 6",
+      "w6Body": "การแสดงผลงานของผู้ก่อตั้ง · ขั้นตอนต่อไป"
+    },
+    "apply": {
+      "eyebrow": "การใช้งาน",
+      "title": "รับสมัครรุ่น01",
+      "body": "ที่นั่งมีจำนวนจำกัด บอกบริษัทของคุณ ประเภทธุรกิจ และสิ่งที่คุณกำลังสร้าง",
+      "emailCta": "สมัครทางอีเมล →",
+      "back": "กลับมาที่ฮาร์วิคส์"
     }
   }
 }

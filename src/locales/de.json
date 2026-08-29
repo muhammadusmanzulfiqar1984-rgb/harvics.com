@@ -3,13 +3,13 @@
   "home": {
     "welcome": "Willkommen bei",
     "companyName": "Harwich",
-    "tagline": "Exzellenz bei Premium-Konsumgütern seit 2019",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "Produkte entdecken",
     "contact": "Kontaktieren Sie uns",
     "learnMore": "Mehr erfahren",
-    "brandStatement": "Ein weltweit führendes Konsumgüterunternehmen, das Premium-Lebensmittelprodukte in verschiedenen Kategorien nach internationalen Qualitätsstandards anbietet.",
-    "taglineStart": "Exzellenz bei Premium-Konsumgütern seit",
-    "taglineYear": "2019",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "London • Mailand • New York",
     "categories": {
       "bakery": "Bäckerei",
@@ -81,7 +81,8 @@
       "specialOffers": "Sonderangebote",
       "promotions": "Werbeaktionen",
       "bulkOrders": "Mengenrabatte"
-    }
+    },
+    "startupAcademy": "Startup-Akademie"
   },
   "products": {
     "ourProducts": "Unsere Produkte",
@@ -119,7 +120,40 @@
     "whatsapp": "WhatsApp",
     "callNow": "Jetzt anrufen",
     "sendEmail": "E-Mail senden",
-    "messageUs": "Schreiben Sie uns"
+    "messageUs": "Schreiben Sie uns",
+    "getInTouch": "Nehmen Sie Kontakt auf",
+    "locations": "Standorte",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "Nachricht senden",
+    "firstName": "Vorname",
+    "firstNamePlaceholder": "Geben Sie Ihren Vornamen ein",
+    "lastName": "Nachname",
+    "lastNamePlaceholder": "Geben Sie Ihren Nachnamen ein",
+    "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "subject": "Thema",
+    "subjectPlaceholder": "Betreff eingeben",
+    "message": "Nachricht",
+    "messagePlaceholder": "Schreiben Sie Ihre Nachricht",
+    "send": "Schicken",
+    "eyebrow": "Starten Sie ein Briefing",
+    "headline1": "Beginnen Sie mit einem Briefing.",
+    "headline2": "Wir antworten innerhalb von 24 Stunden.",
+    "subhead": "Teilen Sie uns Ihre Kategorie, Ihr Volumen und Ihren Zielmarkt mit. Ein Spezialist meldet sich mit Bezugsquellenoptionen und Richtpreisen bei Ihnen.",
+    "fullName": "Vollständiger Name",
+    "fullNamePlaceholder": "Schah Tabraiz",
+    "company": "Unternehmen",
+    "companyPlaceholder": "Ihre Organisation",
+    "businessEmail": "Geschäfts-E-Mail",
+    "howCanWeHelp": "Wie können wir helfen?",
+    "sending": "Senden...",
+    "sendEnquiry": "Anfrage senden",
+    "sentTitle": "Nachricht gesendet.",
+    "sentSub": "Unser Team wird innerhalb von 24 Stunden antworten.",
+    "directChannels": "Direkte Kanäle",
+    "trust1": "24-Stunden-Reaktionsgarantie",
+    "trust2": "Dedizierter Account Manager",
+    "trust3": "NDA available on request",
+    "trust4": "42 Märkte · 1.247 Sendungen heute"
   },
   "media": {
     "title": "Medienzentrum",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "Harvics Global Ventures",
-    "tagline": "Exzellenz bei Premium-Konsumgütern seit 2019",
-    "brandStatement": "Ein weltweit führendes Konsumgüterunternehmen, das Premium-Lebensmittelprodukte in verschiedenen Kategorien nach internationalen Qualitätsstandards anbietet.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "London • Mailand • New York",
     "since": "Seit 2019",
     "harvicsNews": "Harvics News",
@@ -187,7 +221,7 @@
     "mediaContacts": "Medienkontakte",
     "images": "Bilder",
     "investors": "Investoren",
-    "corporateGovernance": "Corporate Governance",
+    "corporateGovernance": "Unternehmensführung",
     "sharesAdrsBonds": "Aktien, ADRs & Anleihen",
     "publications": "Veröffentlichungen",
     "followUsOn": "Folgen Sie uns auf",
@@ -196,7 +230,7 @@
     "unsubscribe": "Abbestellen",
     "help": "Helfen",
     "privacy": "Datenschutz",
-    "cookies": "Cookies",
+    "cookies": "Kekse",
     "termsOfUse": "Nutzungsbedingungen",
     "accessibility": "Zugänglichkeit",
     "carbonEfficiency": "Kohlenstoffeffizienz",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "Werden Sie Teil unseres Netzwerks",
     "newsletterTagline": "Erhalten Sie die neuesten Handelsdaten und Marktanalysen",
     "activeShipments": "Aktive Sendungen",
-    "certifiedAudited": "Zertifiziert & Geprüft"
+    "certifiedAudited": "Zertifiziert & Geprüft",
+    "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "subscriptionSuccess": "Vielen Dank für Ihr Abonnement!",
+    "subscriptionError": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut."
   },
   "search": {
     "placeholder": "Produkte, Marken oder Kategorien suchen",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "Entschuldigung, ich habe das nicht verstanden. Könnten Sie es bitte anders formulieren?",
       "help": "Ich kann Ihnen bei Produktinformationen, Bestellungen oder allgemeinen Anfragen behilflich sein. Was möchten Sie wissen?",
-      "contact": "Für weitere Unterstützung kontaktieren Sie uns bitte unter support@harvics.com oder rufen Sie uns unter +1-800-HARVICS an."
-    }
+      "contact": "Für weitere Unterstützung kontaktieren Sie uns bitte unter support@harvics.com oder rufen Sie uns unter +1-800-HARVICS an.",
+      "product": "Stöbern Sie im Menü durch unseren Produktkatalog oder sagen Sie mir, welche Kategorie Sie interessiert – FMCG, Textilien, Logistik und mehr.",
+      "order": "Um eine Bestellung aufzugeben oder den Status zu überprüfen, besuchen Sie das Händlerportal oder wenden Sie sich an Ihren Kundenbetreuer.",
+      "about": "Harvics Global Ventures ist ein staatliches Handelsinfrastrukturunternehmen mit über 20-jähriger Erfahrung in über 40 Ländern."
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "Drücken Sie zum Senden die Eingabetaste"
   },
   "common": {
     "chatWithUs": "Chatten Sie mit uns",
@@ -349,7 +391,7 @@
         "pendingDeliveriesSubtitle": "Über zugewiesene Routen",
         "retailers": "Einzelhändler",
         "retailersSubtitle": "Aktive Verkaufsstellen im Geltungsbereich",
-        "attendance": "T & A Score",
+        "attendance": "T & A-Score",
         "attendanceSubtitle": "Gebietsabdeckung"
       },
       "financial": {
@@ -544,7 +586,7 @@
   },
   "legal": {
     "title": "Rechtliches Betriebssystem",
-    "sidebarTitle": "Legal OS",
+    "sidebarTitle": "Legales Betriebssystem",
     "accessDenied": "Zugriff verweigert",
     "accessDeniedMessage": "Sie haben keine Berechtigung, auf das Modul „Legal OS“ zuzugreifen.",
     "dashboard": "Armaturenbrett",
@@ -730,12 +772,17 @@
       "gps-tracking": "GPS-Tracking",
       "localization": "Lokalisierung",
       "workflows": "Arbeitsabläufe",
-      "admin": "Administrator"
+      "admin": "Administrator",
+      "modules": "Module"
     },
     "kpis": {
       "customers": "Kunden",
       "employees": "Mitarbeiter",
-      "profit": "Profitieren"
+      "profit": "Profitieren",
+      "totalOrders": "Gesamtbestellungen",
+      "inventoryValue": "Inventarwert",
+      "logisticsEfficiency": "Logistikeffizienz",
+      "revenue": "Einnahmen"
     },
     "domain": {
       "title": "CRM OS",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "Kundenbeziehungen, Interaktionen und Kampagnen einsehen und verwalten.",
       "loading": "Laden...",
       "error": "Fehler beim Laden der CRM-Daten"
+    },
+    "roleIndicator": {
+      "manager": "Manageransicht",
+      "executive": "Executive View",
+      "investor": "Anlegeransicht",
+      "distributor": "Händleransicht",
+      "supplier": "Lieferantenansicht",
+      "customer": "Kundenansicht"
     }
   },
   "supplierPortal": {
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "Über Harvics",
-    "subtitle": "Exzellenz bei Premium-Konsumgütern seit 2019",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "Unsere Geschichte",
     "story1": "Harvics wurde 2019 gegründet und hat sich von einer visionären Idee zu einem weltweit führenden Anbieter von Premium-Konsumgütern entwickelt. Unser Weg ist geprägt von einem unermüdlichen Streben nach Qualität und einem starken Engagement für Innovation.",
     "story2": "Wir sind in über 40 Ländern aktiv und bieten Produkte an, die das Leben bereichern und neue Maßstäbe in der Branche setzen. Von unseren bescheidenen Anfängen bis zu unserer globalen Präsenz sind unsere Werte unverändert geblieben.",
@@ -1156,67 +1211,67 @@
     "backToHelpCenter": "Zurück zum Hilfecenter",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "Häufig gestellte Fragen",
+        "description": "Finden Sie Antworten auf häufig gestellte Fragen"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "Kontaktieren Sie den Support",
+        "description": "Nehmen Sie Kontakt mit unserem Support-Team auf"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "Benutzerhandbücher",
+        "description": "Schritt-für-Schritt-Anleitungen und Tutorials"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "Fehlerbehebung",
+        "description": "Lösen Sie häufige Probleme"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "Kontohilfe",
+        "description": "Verwalten Sie Ihr Konto und Ihre Einstellungen"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "Bestellunterstützung",
+        "description": "Hilfe bei Bestellungen und Lieferungen"
       }
     },
     "account": {
       "title": "Kontohilfe",
       "subtitle": "Verwalten Sie Ihre Kontoeinstellungen und -präferenzen",
-      "placeholder": "Account management and settings help content will appear here."
+      "placeholder": "Hier werden Hilfeinhalte zur Kontoverwaltung und zu den Einstellungen angezeigt."
     },
     "orders": {
       "title": "Bestellunterstützung",
       "subtitle": "Verfolgen und verwalten Sie Ihre Bestellungen und Lieferungen",
-      "placeholder": "Order and delivery support content will appear here."
+      "placeholder": "Hier werden Inhalte zur Bestell- und Lieferunterstützung angezeigt."
     },
     "guides": {
       "title": "Benutzerhandbücher",
       "subtitle": "Schritt-für-Schritt-Anleitungen, die Ihnen helfen, Harvics optimal zu nutzen",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "Erste Schritte",
+          "description": "Lernen Sie die Grundlagen"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "Kontoeinrichtung",
+          "description": "Richten Sie Ihr Konto ein"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "So bestellen Sie",
+          "description": "Bestellungen aufgeben und verfolgen"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "Zahlungsmethoden",
+          "description": "Zahlungsmöglichkeiten und Sicherheit"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "Versand & Lieferung",
+          "description": "Lieferinformationen"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "Rückgaben und Rückerstattungen",
+          "description": "Rückgabebedingungen und -prozess"
         }
       }
     },
@@ -1225,20 +1280,20 @@
       "subtitle": "Häufige Probleme und schnelle Lösungen",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "Anmeldeprobleme",
+          "description": "Probleme beim Anmelden"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "Zahlungsprobleme",
+          "description": "Zahlung wird nicht bearbeitet"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "Lieferverzögerungen",
+          "description": "Bestellung kommt nicht an"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "Website-Fehler",
+          "description": "Seite wird nicht geladen"
         }
       }
     }
@@ -1250,28 +1305,28 @@
     "shippingInfo": "Versandinformationen",
     "paymentMethod": "Zahlungsmethode",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "Kredit-/Debitkarte",
+      "bankTransfer": "Banküberweisung (LC/TT)",
       "wallet": "HPay Digital Wallet"
     },
     "orderSummary": "Bestellübersicht",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
-      "total": "Total"
+      "subtotal": "Zwischensumme",
+      "shipping": "Versand",
+      "calculatedNextStep": "Wird im nächsten Schritt berechnet",
+      "tax": "Steuer",
+      "total": "Gesamt"
     },
     "placeOrder": "Bestellung aufgeben",
-    "sslNotice": "Secured with 256-bit SSL encryption",
+    "sslNotice": "Gesichert mit 256-Bit-SSL-Verschlüsselung",
     "continueShopping": "Weiter einkaufen",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail",
+      "address": "Adresse",
+      "city": "Stadt",
+      "country": "Land"
     }
   },
   "history": {
@@ -1286,45 +1341,143 @@
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "Gegründet in Dubai",
+        "description": "Harvics Global Ventures wurde in den VAE mit der Vision gegründet, ein erstklassiges FMCG- und multivertikales Handelskonglomerat zu werden. Erste Geschäftsaktivitäten im Textil- und Konsumgüterbereich gestartet.",
+        "highlight": "Jahr eins"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "Erste internationale Expansion",
+        "description": "Trotz globaler Pandemieherausforderungen auf 10 Länder in Europa, im Nahen Osten und in Südasien ausgeweitet. Einführung digitaler Lieferkettenabläufe und Fernvertriebspartnerschaften.",
+        "highlight": "10 Länder"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "Multivertikale Erweiterung",
+        "description": "Einführung von 5 neuen Branchen: Rohstoffe, Industrieausrüstung, Mineralien und Bergbau, Öl und Gas sowie Immobilien. Der Gesamtproduktkatalog überstieg 500 SKUs in allen Branchen.",
+        "highlight": "5 neue Branchen"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "Digitale Transformation",
+        "description": "Entwickelte die erste Version von Harvics OS – der KI-gestützten Unternehmensplattform. Einführung von Vertriebsportalen, E-Commerce-Funktionen und Echtzeit-GPS-Flottenverfolgung in allen Märkten.",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "Nachhaltigkeit und Skalierbarkeit",
+        "description": "Engagiert für CO2-neutrale Abläufe. Über 30 Länder erreicht. Einführung von HPay (digitale Zahlungsplattform), Handelsfinanzierungslösungen und KI-gesteuerter Nachfrageprognose für alle Branchen.",
+        "highlight": "Über 30 Länder"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "Globales Unternehmen",
+        "description": "Der Meilenstein von über 42 Ländern wurde überschritten. Eingesetzte KI-Engine mit 6 ML-Modellen für Strategie, Nachfrage, Preisgestaltung, Abdeckung und SKU-Optimierung. Einführung einer mehrsprachigen Plattform, die 38 Sprachen unterstützt.",
+        "highlight": "Über 42 Länder"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "AI-First-Betriebssystem",
+        "description": "Einführung von Harvics OS v2 – einheitliches Unternehmensbetriebssystem mit Echtzeitinformationen, Socket.io-Live-Feeds, Alpha Engine für Marktangriffspläne und vollständiger 8-stufiger geografischer Hierarchie.",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "Die Vision voraus",
+        "description": "Skalierung auf über 60 Länder. Aufbau des weltweit ersten KI-gesteuerten FMCG-Unternehmens, in dem jede Funktion – Beschaffung, Logistik, Finanzen, CRM – auf prädiktiver Intelligenz mit menschlichen Genehmigungstoren basiert.",
+        "highlight": "60+ Ziel"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "Praktische Handels-, Beschaffungs- und KI-Akademie für Gründer – sechs Wochen, Live-Sitzungen, Harvics-Korridore.",
+    "navLabel": "Startup-Akademie",
+    "teaser": {
+      "eyebrow": "Akademie · Korridorprogramm",
+      "title": "Startup-Akademie.",
+      "body": "Klassisches Handwerk für Gründer – Beschaffung, Qualitätskontrolle, Finanzierungsschalter und Flurkompetenz – neben dem Harvics-Marktplatz.",
+      "cta": "Betreten Sie die Akademie"
+    },
+    "hero": {
+      "alt": "Klassischer Hörsaal – Harvics Startup Academy",
+      "eyebrow": "Kohorte 01 · Q4 2026 · Rahmenprogramm",
+      "title": "Harvics Startup Academy",
+      "body": "Eine klassische Handelsschule für Gründer – Sourcing, Corridor Commerce und funktionierende KI. Sechs Wochen. Live-Sitzungen. Echte Betreiber.",
+      "apply": "Bewerben Sie sich für Kohorte 01",
+      "seeProgramme": "Siehe Programm"
+    },
+    "stats": {
+      "founders": "Gründer/Kohorte",
+      "sessions": "Live-Sitzungen",
+      "weeks": "Wochen",
+      "verticals": "Handelsvertikale"
+    },
+    "why": {
+      "eyebrow": "01 · Warum beitreten?",
+      "title": "Bauen Sie ein Unternehmen auf, das tatsächlich handeln kann.",
+      "body": "Kein Pitch-Theater. Erfahren Sie alles über RFQ bis hin zur Abwicklung, Beschaffungsprüfung, Kontaktaufnahme mit Käufern und Automatisierung – von Betreibern in allen Harvics-Korridoren.",
+      "item1Title": "Praktische Handelssysteme",
+      "item1Body": "Wie institutionelle Käufer kaufen – und wie Sie diese erfüllen.",
+      "item2Title": "Netzwerk, das versendet",
+      "item2Body": "Gründer, Distributoren und Betreiber in allen Branchen.",
+      "item3Title": "KI, die funktioniert",
+      "item3Body": "HarvyX, Fin Voice und Operations-Automatisierung ohne Schlagworte.",
+      "imageAlt": "Klassisches Handelsstillleben"
+    },
+    "knowledge": {
+      "eyebrow": "Wissen",
+      "title": "Studieren Sie den Korridor wie eine Disziplin.",
+      "body": "Lehrplan basiert auf der realen Handelspraxis – nicht auf generischen Startup-Folien.",
+      "imageAlt": "Große klassische Bibliothek"
+    },
+    "programme": {
+      "eyebrow": "02 · Programm",
+      "title": "Was Sie durcharbeiten werden",
+      "m1Title": "Marke und Beschaffung",
+      "m1Body": "MOQs, QC-Gates, Textilien und FMCG – vom Atelier bis zum Korridor.",
+      "m2Title": "Intelligenz und Reichweite",
+      "m2Body": "HarvyX-Labore, Käufer-ICP, Follow-ups, die Antworten erhalten.",
+      "m3Title": "Kapital & Partner",
+      "m3Body": "Finanzierungswege und Partnerschaften – keine gefälschten Bankforderungen.",
+      "m4Title": "Korridorhandel",
+      "m4Body": "Häfen, Seewege und wie sich Waren tatsächlich über Märkte bewegen.",
+      "m5Title": "Qualität und Sorgfalt",
+      "m5Body": "Inspektionsgewohnheiten, die den Ruf und die Ansiedlung schützen.",
+      "m6Title": "Rohstoffe und FMCG",
+      "m6Body": "Von der Lagerrealität zur Marken- und Großhandelsnachfrage."
+    },
+    "tracks": {
+      "aEyebrow": "Spur A",
+      "aTitle": "Marke und Handel",
+      "aBody": "Gründer der Bekleidungs- und FMCG-Branche bauen Marken-, Großhandels- und Korridornachfrage auf.",
+      "aAlt": "Klassischer Sitzungssaal",
+      "bEyebrow": "Spur B",
+      "bTitle": "Handel und Betrieb",
+      "bBody": "Beschaffungs-, Logistik- und B2B-Betreiber skalieren den institutionellen Handel.",
+      "bAlt": "Salon-Networking"
+    },
+    "network": {
+      "eyebrow": "03 · Netzwerk",
+      "title": "Treffen Sie Betreiber, nicht Publikum.",
+      "body": "Live-Sitzungen und Bürostunden im Salonstil mit Gründern, Vertriebshändlern und Harvics-Korridorbetreibern.",
+      "imageAlt": "Netzwerken für Gründer"
+    },
+    "rhythm": {
+      "eyebrow": "04 · Rhythmus",
+      "title": "Sechs Wochen. Klare Kadenz.",
+      "w1": "Woche 1",
+      "w1Body": "Orientierung · Korridorkarte · ICP-Workshop",
+      "w2": "Woche 2",
+      "w2Body": "Kontaktaufnahme mit Käufern · HarvyX-Labor",
+      "w3": "Woche 3",
+      "w3Body": "Beschaffung und Qualitätskontrolle · Sorgfaltspflicht der Lieferanten",
+      "w4": "Woche 4",
+      "w4Body": "Automatisierung · Fin-Voice · Ops-Stack",
+      "w5": "Woche 5",
+      "w5Body": "Finanzierung & Partnerschaften",
+      "w6": "Woche 6",
+      "w6Body": "Gründerpräsentation · nächste Schritte"
+    },
+    "apply": {
+      "eyebrow": "Anwendungen",
+      "title": "Bewerben Sie sich für Kohorte 01",
+      "body": "Begrenzte Anzahl an Sitzplätzen. Erzählen Sie uns von Ihrem Unternehmen, Ihrer Branche und dem, was Sie aufbauen.",
+      "emailCta": "Bewerben Sie sich per E-Mail →",
+      "back": "Zurück zu Harvics"
     }
   }
 }

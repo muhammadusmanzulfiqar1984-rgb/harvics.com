@@ -3,13 +3,13 @@
   "home": {
     "welcome": "ようこそ",
     "companyName": "ハーウィッチ",
-    "tagline": "2019年以来、プレミアム消費財における卓越性",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "製品を探す",
     "contact": "お問い合わせ",
     "learnMore": "もっと詳しく知る",
-    "brandStatement": "国際的な品質基準を満たした、多様なカテゴリーにわたる高品質な食品を提供する、世界有数の消費財企業。",
-    "taglineStart": "プレミアム消費財における卓越性",
-    "taglineYear": "2019",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "ロンドン・ミラノ・ニューヨーク",
     "categories": {
       "bakery": "ベーカリー",
@@ -81,7 +81,8 @@
       "specialOffers": "特別オファー",
       "promotions": "プロモーション",
       "bulkOrders": "大量注文割引"
-    }
+    },
+    "startupAcademy": "スタートアップアカデミー"
   },
   "products": {
     "ourProducts": "当社の製品",
@@ -119,7 +120,40 @@
     "whatsapp": "WhatsApp",
     "callNow": "今すぐお電話ください",
     "sendEmail": "メールを送信する",
-    "messageUs": "お問い合わせはこちら"
+    "messageUs": "お問い合わせはこちら",
+    "getInTouch": "連絡する",
+    "locations": "所在地",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "メッセージを送信する",
+    "firstName": "ファーストネーム",
+    "firstNamePlaceholder": "あなたの名を入力してください",
+    "lastName": "苗字",
+    "lastNamePlaceholder": "姓を入力してください",
+    "emailPlaceholder": "メールアドレスを入力してください",
+    "subject": "主題",
+    "subjectPlaceholder": "件名を入力してください",
+    "message": "メッセージ",
+    "messagePlaceholder": "メッセージを書いてください",
+    "send": "送信",
+    "eyebrow": "ブリーフを開始する",
+    "headline1": "概要を開始します。",
+    "headline2": "24時間以内に対応させていただきます。",
+    "subhead": "貴社のカテゴリ、数量、ターゲット市場を教えてください。スペシャリストが、調達オプションと参考価格について折り返しご連絡いたします。",
+    "fullName": "フルネーム",
+    "fullNamePlaceholder": "シャー・タブレイズ",
+    "company": "会社",
+    "companyPlaceholder": "あなたの組織",
+    "businessEmail": "ビジネスメール",
+    "howCanWeHelp": "どうすれば助けられるでしょうか？",
+    "sending": "送信中...",
+    "sendEnquiry": "お問い合わせを送信",
+    "sentTitle": "メッセージが送信されました。",
+    "sentSub": "私たちのチームが 24 時間以内に返答いたします。",
+    "directChannels": "ダイレクトチャネル",
+    "trust1": "24時間対応保証",
+    "trust2": "専任のアカウントマネージャー",
+    "trust3": "NDA available on request",
+    "trust4": "本日は 42 の市場 · 1,247 個の出荷"
   },
   "media": {
     "title": "メディアセンター",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "ハーヴィックス・グローバル・ベンチャーズ",
-    "tagline": "2019年以来、プレミアム消費財における卓越性",
-    "brandStatement": "国際的な品質基準を満たした、多様なカテゴリーにわたる高品質な食品を提供する、世界有数の消費財企業。",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "ロンドン・ミラノ・ニューヨーク",
     "since": "2019年以来",
     "harvicsNews": "ハーヴィックスニュース",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "ネットワークに参加",
     "newsletterTagline": "最新の貿易情報と市場アップデートをお届けします",
     "activeShipments": "進行中の出荷",
-    "certifiedAudited": "認証および監査済み"
+    "certifiedAudited": "認証および監査済み",
+    "invalidEmail": "有効なメールアドレスを入力してください",
+    "subscriptionSuccess": "ご購読いただきありがとうございます!",
+    "subscriptionError": "何か問題が発生しました。もう一度試してください。"
   },
   "search": {
     "placeholder": "商品、ブランド、またはカテゴリを検索",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "すみません、よく理解できませんでした。もう一度言い換えていただけますか？",
       "help": "製品情報、ご注文、その他ご質問など、何でもお手伝いいたします。どのようなことをお知りになりたいですか？",
-      "contact": "さらにサポートが必要な場合は、support@harvics.comまでメールでお問い合わせいただくか、+1-800-HARVICSまでお電話ください。"
-    }
+      "contact": "さらにサポートが必要な場合は、support@harvics.comまでメールでお問い合わせいただくか、+1-800-HARVICSまでお電話ください。",
+      "product": "メニューから製品カタログを参照するか、日用消費財、繊維、物流など、どのカテゴリに興味があるかを教えてください。",
+      "order": "注文したりステータスを確認するには、販売代理店ポータルにアクセスするか、アカウント マネージャーにお問い合わせください。",
+      "about": "Harvics Global Ventures は、40 か国以上で 20 年以上の実績を持つ主権貿易インフラ企業です。"
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "Enterを押して送信してください"
   },
   "common": {
     "chatWithUs": "チャットでお問い合わせください",
@@ -730,12 +772,17 @@
       "gps-tracking": "GPS追跡",
       "localization": "ローカリゼーション",
       "workflows": "ワークフロー",
-      "admin": "管理者"
+      "admin": "管理者",
+      "modules": "モジュール"
     },
     "kpis": {
       "customers": "顧客",
       "employees": "従業員",
-      "profit": "利益"
+      "profit": "利益",
+      "totalOrders": "総注文数",
+      "inventoryValue": "在庫価値",
+      "logisticsEfficiency": "物流の効率化",
+      "revenue": "収益"
     },
     "domain": {
       "title": "CRM OS",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "顧客との関係、やり取り、キャンペーンを表示および管理できます。",
       "loading": "読み込み中…",
       "error": "CRMデータの読み込みエラー"
+    },
+    "roleIndicator": {
+      "manager": "マネージャービュー",
+      "executive": "エグゼクティブビュー",
+      "investor": "投資家の視点",
+      "distributor": "ディストリビュータービュー",
+      "supplier": "サプライヤーの視点",
+      "customer": "お客様の視点"
     }
   },
   "supplierPortal": {
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "ハーヴィックスについて",
-    "subtitle": "2019年以来、プレミアム消費財における卓越性",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "私たちの物語",
     "story1": "2019年に設立されたHarvicsは、先見性のあるアイデアから、高級消費財分野におけるグローバルリーダーへと成長を遂げました。私たちの歩みは、品質への絶え間ない追求とイノベーションへの揺るぎない取り組みによって支えられています。",
     "story2": "私たちは40カ国以上で事業を展開し、人々の生活を豊かにし、業界に新たな基準を打ち立てる製品を提供しています。創業当初のささやかな規模からグローバル企業へと成長した現在に至るまで、私たちの価値観は変わっていません。",
@@ -1150,181 +1205,279 @@
   },
   "help": {
     "page": {
-      "title": "Help Center",
-      "subtitle": "Find the help you need"
+      "title": "ヘルプセンター",
+      "subtitle": "必要なサポートを見つける"
     },
-    "backToHelpCenter": "Back to Help Center",
+    "backToHelpCenter": "ヘルプセンターに戻る",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "よくある質問",
+        "description": "よくある質問への回答を見つける"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "サポートに連絡する",
+        "description": "サポートチームにお問い合わせください"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "ユーザーガイド",
+        "description": "ステップバイステップのガイドとチュートリアル"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "トラブルシューティング",
+        "description": "よくある問題を解決する"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "アカウントヘルプ",
+        "description": "アカウントと設定を管理する"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "注文サポート",
+        "description": "注文や配送のお手伝い"
       }
     },
     "account": {
-      "title": "Account Help",
-      "subtitle": "Manage your account settings and preferences",
-      "placeholder": "Account management and settings help content will appear here."
+      "title": "アカウントヘルプ",
+      "subtitle": "アカウントの設定と基本設定を管理する",
+      "placeholder": "アカウント管理と設定のヘルプ コンテンツがここに表示されます。"
     },
     "orders": {
-      "title": "Order Support",
-      "subtitle": "Track and manage your orders and deliveries",
-      "placeholder": "Order and delivery support content will appear here."
+      "title": "注文サポート",
+      "subtitle": "注文と配達を追跡および管理する",
+      "placeholder": "注文・配送に関するサポートコンテンツが表示されます。"
     },
     "guides": {
-      "title": "User Guides",
-      "subtitle": "Step-by-step guides to help you get the most out of Harvics",
+      "title": "ユーザーガイド",
+      "subtitle": "Harvics を最大限に活用するためのステップバイステップのガイド",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "はじめる",
+          "description": "基本を学ぶ"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "アカウントのセットアップ",
+          "description": "アカウントを設定する"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "ご注文方法",
+          "description": "注文の発行と追跡"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "支払い方法",
+          "description": "支払いオプションとセキュリティ"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "配送と配達",
+          "description": "配送情報"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "返品と返金",
+          "description": "返品ポリシーとプロセス"
         }
       }
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "subtitle": "Common issues and quick solutions",
+      "title": "トラブルシューティング",
+      "subtitle": "よくある問題と簡単な解決策",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "ログインの問題",
+          "description": "サインインの問題"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "支払いの問題",
+          "description": "支払いが処理されていません"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "配送の遅延",
+          "description": "注文が届かない"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "ウェブサイトのエラー",
+          "description": "ページが読み込まれていません"
         }
       }
     }
   },
   "checkout": {
-    "secureCheckout": "Secure Checkout",
-    "title": "Complete Your Order",
-    "subtitle": "Review your items, enter shipping details, and confirm payment securely.",
-    "shippingInfo": "Shipping Information",
-    "paymentMethod": "Payment Method",
+    "secureCheckout": "安全なチェックアウト",
+    "title": "注文を完了する",
+    "subtitle": "商品を確認し、配送の詳細を入力し、支払いを安全に確認します。",
+    "shippingInfo": "配送情報",
+    "paymentMethod": "支払方法",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "クレジットカード/デビットカード",
+      "bankTransfer": "銀行振込（LC/TT）",
       "wallet": "HPay Digital Wallet"
     },
-    "orderSummary": "Order Summary",
+    "orderSummary": "注文概要",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
-      "total": "Total"
+      "subtotal": "小計",
+      "shipping": "配送",
+      "calculatedNextStep": "次のステップで計算されます",
+      "tax": "税",
+      "total": "合計"
     },
-    "placeOrder": "Place Order",
-    "sslNotice": "Secured with 256-bit SSL encryption",
-    "continueShopping": "Continue Shopping",
+    "placeOrder": "注文する",
+    "sslNotice": "256ビットSSL暗号化で安全",
+    "continueShopping": "買い物を続ける",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "ファーストネーム",
+      "lastName": "苗字",
+      "email": "電子メール",
+      "address": "住所",
+      "city": "市",
+      "country": "国"
     }
   },
   "history": {
     "hero": {
-      "title": "Our Journey",
-      "subtitle": "From a Dubai startup to a global enterprise spanning 42+ countries, 10 industry verticals, and 38 languages."
+      "title": "私たちの旅",
+      "subtitle": "ドバイの新興企業から、42 ヶ国以上、10 業種、38 言語にまたがるグローバル企業へ。"
     },
     "cta": {
-      "title": "Be Part of the Next Chapter",
-      "subtitle": "Join us as we scale to 60+ countries and build the future of AI-driven global commerce.",
-      "button": "View Careers"
+      "title": "次の章に参加しましょう",
+      "subtitle": "60 か国以上に拡大し、AI 主導のグローバルコマースの未来を構築する私たちにぜひご参加ください。",
+      "button": "キャリアを見る"
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "ドバイで設立",
+        "description": "Harvics Global Ventures は、世界クラスの日用消費財および多業種取引複合企業になるというビジョンを持って UAE に設立されました。繊維製品と消費財の分野で最初の事業が開始されました。",
+        "highlight": "1年目"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "初の国際展開",
+        "description": "世界的なパンデミックの課題にもかかわらず、ヨーロッパ、中東、南アジアの 10 か国に拡大しました。デジタルサプライチェーン運営と遠隔流通パートナーシップを開始。",
+        "highlight": "10か国"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "多垂直展開",
+        "description": "コモディティ、産業機器、鉱物・鉱業、石油・ガス、不動産という 5 つの新しい業界を立ち上げました。製品カタログの合計は、すべての分野で 500 SKU を超えました。",
+        "highlight": "5つの新しい分野"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "デジタルトランスフォーメーション",
+        "description": "AI を活用したエンタープライズ プラットフォームである Harvics OS の最初のバージョンを構築しました。すべての市場にわたる販売代理店ポータル、電子商取引機能、およびリアルタイムの GPS 車両追跡を開始しました。",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "持続可能性と規模",
+        "description": "カーボンニュートラルな運用に取り組んでいます。 30か国以上に到達しました。 HPay (デジタル決済プラットフォーム)、貿易金融ソリューション、あらゆる業種にわたる AI を活用した需要予測を開始しました。",
+        "highlight": "30か国以上"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "グローバル企業",
+        "description": "42カ国以上のマイルストーンを突破。戦略、需要、価格設定、カバレッジ、SKU 最適化のための 6 つの ML モデルを備えた AI エンジンを導入。 38言語をサポートする多言語プラットフォームを開始。",
+        "highlight": "42か国以上"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "AI ファーストのオペレーティング システム",
+        "description": "Harvics OS v2 がリリースされました。リアルタイム インテリジェンス、Socket.io ライブ フィード、市場攻撃計画用の Alpha Engine、および完全な 8 レベルの地理的階層を備えた統合エンタープライズ オペレーティング システムです。",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "将来のビジョン",
+        "description": "60 か国以上に拡大。調達、物流、財務、CRM などのあらゆる機能が人間の承認ゲートを備えた予測インテリジェンスに基づいて実行される、世界初の AI 運用の日用消費財企業を構築します。",
+        "highlight": "60歳以上のターゲット"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "創業者向けの実践的な貿易、調達、AI アカデミー — 6 週間、ライブ セッション、Harvics 廊下。",
+    "navLabel": "スタートアップアカデミー",
+    "teaser": {
+      "eyebrow": "アカデミー・コリドープログラム",
+      "title": "スタートアップアカデミー。",
+      "body": "Harvics マーケットプレイスと並んで、創業者向けの古典的なトレード クラフト (調達、QC、資金調達デスク、コリドー リテラシー) が行われます。",
+      "cta": "アカデミーに入学する"
+    },
+    "hero": {
+      "alt": "古典講堂 — Harvics Startup Academy",
+      "eyebrow": "コホート 01 · 2026 年第 4 四半期 · 支援プログラム",
+      "title": "Harvics Startup Academy",
+      "body": "ソーシング、コリドーコマース、機能する AI など、創業者向けの古典的な貿易の学校です。 6週間。ライブセッション。本物のオペレーター。",
+      "apply": "コホート01に申し込む",
+      "seeProgramme": "プログラムを見る"
+    },
+    "stats": {
+      "founders": "創設者/仲間",
+      "sessions": "ライブセッション",
+      "weeks": "週間",
+      "verticals": "貿易分野"
+    },
+    "why": {
+      "eyebrow": "01 · 参加する理由",
+      "title": "実際に取引できる会社を構築します。",
+      "body": "ピッチシアターではありません。 Harvics のコリドー全体のオペレーターから、RFQ から決済、調達の徹底、バイヤーへの働きかけ、自動化までを学びましょう。",
+      "item1Title": "実践的な貿易システム",
+      "item1Body": "機関投資家がどのように購入し、どのように顧客を満たすか。",
+      "item2Title": "出荷するネットワーク",
+      "item2Body": "さまざまな業界の創設者、ディストリビューター、オペレーター。",
+      "item3Title": "働くAI",
+      "item3Body": "HarvyX、Fin voice、バズワードのない運用自動化。",
+      "imageAlt": "古典的な貿易の静物画"
+    },
+    "knowledge": {
+      "eyebrow": "知識",
+      "title": "廊下を訓練のように勉強しましょう。",
+      "body": "一般的なスタートアップ スライドではなく、実際の貿易実務に基づいたカリキュラムです。",
+      "imageAlt": "壮大な古典図書館"
+    },
+    "programme": {
+      "eyebrow": "02・プログラム",
+      "title": "これから取り組むこと",
+      "m1Title": "ブランドと調達",
+      "m1Body": "MOQ、QC ゲート、繊維製品、FMCG — アトリエから廊下まで。",
+      "m2Title": "インテリジェンスとアウトリーチ",
+      "m2Body": "HarvyX labs、バイヤー ICP、返信を受け取るフォローアップ。",
+      "m3Title": "資本とパートナー",
+      "m3Body": "資金調達経路とパートナーシップ — 偽の銀行請求はありません。",
+      "m4Title": "コリドーコマース",
+      "m4Body": "港、レーン、商品が実際に市場を移動する方法。",
+      "m5Title": "品質と勤勉さ",
+      "m5Body": "評判と和解を守る検査習慣。",
+      "m6Title": "コモディティと日用消費財",
+      "m6Body": "倉庫の現実からブランドや卸売需要まで。"
+    },
+    "tracks": {
+      "aEyebrow": "トラックA",
+      "aTitle": "ブランドとコマース",
+      "aBody": "アパレルと日用消費財の創設者がブランド、卸売、流通需要を構築。",
+      "aAlt": "古典的な会議室",
+      "bEyebrow": "トラックB",
+      "bTitle": "貿易と作戦",
+      "bBody": "機関取引を拡大する調達、物流、B2B オペレーター。",
+      "bAlt": "サロンネットワーキング"
+    },
+    "network": {
+      "eyebrow": "03・ネットワーク",
+      "title": "視聴者ではなく、オペレーターに会いましょう。",
+      "body": "創設者、販売代理店、Harvics コリドーオペレーターによるライブセッションとサロンスタイルのオフィスアワー。",
+      "imageAlt": "創設者ネットワーキング"
+    },
+    "rhythm": {
+      "eyebrow": "04・リズム",
+      "title": "6週間。明確なリズム。",
+      "w1": "1週目",
+      "w1Body": "オリエンテーション・回廊マップ・ICPワークショップ",
+      "w2": "2週目",
+      "w2Body": "バイヤーアウトリーチ · HarvyX ラボ",
+      "w3": "3週目",
+      "w3Body": "調達と QC · サプライヤーの勤勉さ",
+      "w4": "第4週",
+      "w4Body": "自動化 · フィンボイス · オペレーションスタック",
+      "w5": "第5週",
+      "w5Body": "資金調達とパートナーシップ",
+      "w6": "第6週",
+      "w6Body": "ファウンダーのショーケース · 次のステップ"
+    },
+    "apply": {
+      "eyebrow": "アプリケーション",
+      "title": "コホート01に申し込む",
+      "body": "席に限りがございます。あなたの会社、業種、構築しているものについて教えてください。",
+      "emailCta": "メールでのお申込み→",
+      "back": "ハービックスに戻る"
     }
   }
 }

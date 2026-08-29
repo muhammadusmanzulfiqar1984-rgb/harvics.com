@@ -36,20 +36,28 @@ export default function InvoiceListContent({ persona, locale }: InvoiceListConte
     setLoading(true)
     setError(null)
     try {
-      // In a real implementation, this would call apiClient.getDomainFinance({ type: 'invoices' })
-      // For now, we mock it based on the verified design pattern
-      await new Promise(resolve => setTimeout(resolve, 800))
-      // To test the error case, uncomment the following line
-      // throw new Error('Failed to fetch invoices')
-      setInvoices([
-        { id: 'INV-2024-001', orderId: 'ORD-001', customer: 'Customer A', amount: 125000, status: 'paid', dueDate: '2024-01-30', currency: 'USD' },
-        { id: 'INV-2024-002', orderId: 'ORD-002', customer: 'Customer B', amount: 89000, status: 'issued', dueDate: '2024-02-15', currency: 'USD' },
-        { id: 'INV-2024-003', orderId: 'ORD-003', customer: 'Customer C', amount: 156000, status: 'draft', dueDate: '2024-02-20', currency: 'USD' },
-        { id: 'INV-2024-004', orderId: 'ORD-004', customer: 'Customer D', amount: 45000, status: 'overdue', dueDate: '2024-01-10', currency: 'USD' }
-      ])
-    } catch (error) {
+      const token = typeof window !== 'undefined' ? localStorage.getItem('auth_token') || '' : ''
+      const res = await fetch('/api/finance/invoices?limit=100', {
+        cache: 'no-store',
+        headers: token ? { Authorization: `Bearer ${token}` } : {},
+      })
+      const json = await res.json()
+      if (!res.ok || json.success === false) throw new Error(json.error || 'Failed to load invoices')
+      const rows = json.data || []
+      setInvoices(
+        rows.map((i: any) => ({
+          id: i.invoiceNo || i.id,
+          orderId: i.orderId || '—',
+          customer: i.customerName || '—',
+          amount: Number(i.amount) || 0,
+          status: String(i.status || 'Unpaid').toLowerCase() as Invoice['status'],
+          dueDate: i.dueDate || '',
+          currency: i.currency || 'USD',
+        })),
+      )
+    } catch (err) {
       setError('Failed to load invoices. Please try again later.')
-      console.error('Error loading invoices:', error)
+      console.error(err)
     } finally {
       setLoading(false)
     }

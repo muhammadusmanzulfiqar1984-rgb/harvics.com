@@ -2,13 +2,13 @@
   "home": {
     "welcome": "مرحباً بكم في",
     "companyName": "هارفيكس",
-    "tagline": "تميز السلع الاستهلاكية الفاخرة منذ 2018",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "استكشف المنتجات",
     "contact": "اتصل بنا",
     "learnMore": "اعرف المزيد",
-    "brandStatement": "شركة عالمية رائدة في مجال السلع الاستهلاكية تقدم منتجات غذائية فاخرة عبر فئات متنوعة وفقًا لمعايير الجودة العالمية.",
-    "taglineStart": "التميز في السلع الاستهلاكية الفاخرة منذ",
-    "taglineYear": "2019",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "لندن • ميلانو • نيويورك",
     "categories": {
       "bakery": "مخبز",
@@ -80,11 +80,12 @@
       "specialOffers": "عروض خاصة",
       "promotions": "العروض الترويجية",
       "bulkOrders": "خصومات على الطلبات بالجملة"
-    }
+    },
+    "startupAcademy": "أكاديمية بدء التشغيل"
   },
   "footer": {
     "companyName": "هارفيكس جلوبال فنتشرز",
-    "tagline": "تميز السلع الاستهلاكية الفاخرة منذ 2018",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "description": "شركة عالمية رائدة في مجال السلع الاستهلاكية تقدم منتجات غذائية فاخرة عبر فئات متنوعة بمعايير جودة دولية.",
     "locations": "لندن • ميلان • نيويورك",
     "since": "منذ 2018",
@@ -97,7 +98,7 @@
     "contactInfo": "معلومات الاتصال",
     "copyright": "© 2025 هارفيكس جلوبال فنتشرز. جميع الحقوق محفوظة.",
     "followUs": "تابعنا",
-    "brandStatement": "شركة عالمية رائدة في مجال السلع الاستهلاكية تقدم منتجات غذائية فاخرة عبر فئات متنوعة وفقًا لمعايير الجودة العالمية.",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "harvicsNews": "أخبار هارفيكس",
     "subscribeToAlerts": "اشترك لتلقي التنبيهات والتحديثات",
     "signUp": "اشتراك",
@@ -153,7 +154,10 @@
     "newsletterHeadline2": "انضم إلى شبكتنا",
     "newsletterTagline": "احصل على أحدث معلومات التجارة وتحديثات السوق",
     "activeShipments": "الشحنات النشطة",
-    "certifiedAudited": "معتمد ومدقق"
+    "certifiedAudited": "معتمد ومدقق",
+    "invalidEmail": "يرجى إدخال عنوان بريد إلكتروني صالح",
+    "subscriptionSuccess": "شكرا لك على الاشتراك!",
+    "subscriptionError": "حدث خطأ ما. يرجى المحاولة مرة أخرى."
   },
   "common": {
     "chatWithUs": "تحدث معنا",
@@ -799,7 +803,7 @@
   },
   "about": {
     "title": "من نحن",
-    "subtitle": "اكتشف قصتنا",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "قصتنا",
     "story1": "تأسست هارفيكس جلوبال فنتشرز في عام 2018 برؤية لتقديم منتجات FMCG الفاخرة على مستوى العالم. لقد تطورنا من شركة ناشئة صغيرة إلى شركة دولية رائدة، نخدم العملاء في أكثر من 40 دولة.",
     "story2": "التزامنا بالجودة والابتكار ورضا العملاء جعلنا اسماً موثوقاً به في صناعة الأغذية والمشروبات. نتخصص في الحلويات والمشروبات والوجبات الخفيفة، مما يضمن معايير الجودة الدولية في كل منتج نقدمه.",
@@ -843,7 +847,38 @@
     "messageUs": "راسلنا",
     "whatsapp": "واتساب",
     "callNow": "اتصل الآن",
-    "sendEmail": "إرسال بريد إلكتروني"
+    "sendEmail": "إرسال بريد إلكتروني",
+    "getInTouch": "تواصل معنا",
+    "locations": "المواقع",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "أرسل رسالة",
+    "firstName": "الاسم الأول",
+    "firstNamePlaceholder": "أدخل اسمك الأول",
+    "lastName": "اسم العائلة",
+    "lastNamePlaceholder": "أدخل اسمك الأخير",
+    "emailPlaceholder": "أدخل عنوان بريدك الإلكتروني",
+    "subject": "موضوع",
+    "subjectPlaceholder": "أدخل الموضوع",
+    "messagePlaceholder": "اكتب رسالتك",
+    "eyebrow": "ابدأ بإيجاز",
+    "headline1": "ابدأ بإيجاز.",
+    "headline2": "نرد خلال 24 ساعة.",
+    "subhead": "أخبرنا بفئتك وحجمك والسوق المستهدف. يعود أحد المتخصصين إليك بخيارات المصادر والأسعار الإرشادية.",
+    "fullName": "الاسم الكامل",
+    "fullNamePlaceholder": "شاه تبريز",
+    "company": "شركة",
+    "companyPlaceholder": "مؤسستك",
+    "businessEmail": "البريد الإلكتروني للأعمال",
+    "howCanWeHelp": "كيف يمكننا المساعدة؟",
+    "sending": "إرسال...",
+    "sendEnquiry": "إرسال الاستفسار",
+    "sentTitle": "تم إرسال الرسالة.",
+    "sentSub": "سوف يقوم فريقنا بالرد خلال 24 ساعة.",
+    "directChannels": "القنوات المباشرة",
+    "trust1": "ضمان الرد على مدار 24 ساعة",
+    "trust2": "مدير حساب مخصص",
+    "trust3": "NDA available on request",
+    "trust4": "42 سوقًا · 1,247 شحنة اليوم"
   },
   "chatbot": {
     "welcome": "مرحباً! 👋 أنا HarvyX، مساعدك الذكي. كيف يمكنني مساعدتك اليوم؟",
@@ -1556,12 +1591,25 @@
       "gps-tracking": "تتبع نظام تحديد المواقع العالمي (GPS)",
       "localization": "التوطين",
       "workflows": "سير العمل",
-      "admin": "مسؤل"
+      "admin": "مسؤل",
+      "modules": "وحدات"
     },
     "kpis": {
       "customers": "عملاء",
       "employees": "موظفين",
-      "profit": "ربح"
+      "profit": "ربح",
+      "totalOrders": "إجمالي الطلبات",
+      "inventoryValue": "قيمة المخزون",
+      "logisticsEfficiency": "الكفاءة اللوجستية",
+      "revenue": "ربح"
+    },
+    "roleIndicator": {
+      "manager": "عرض المدير",
+      "executive": "منظر تنفيذي",
+      "investor": "عرض المستثمر",
+      "distributor": "عرض الموزع",
+      "supplier": "عرض المورد",
+      "customer": "عرض العملاء"
     }
   },
   "help": {
@@ -1572,67 +1620,67 @@
     "backToHelpCenter": "العودة إلى مركز المساعدة",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "الأسئلة المتداولة",
+        "description": "العثور على إجابات للأسئلة الشائعة"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "اتصل بالدعم",
+        "description": "تواصل مع فريق الدعم لدينا"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "أدلة المستخدم",
+        "description": "أدلة وبرامج تعليمية خطوة بخطوة"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "استكشاف الأخطاء وإصلاحها",
+        "description": "حل القضايا المشتركة"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "مساعدة الحساب",
+        "description": "إدارة حسابك والإعدادات"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "دعم النظام",
+        "description": "المساعدة في الطلبات والتسليم"
       }
     },
     "account": {
       "title": "مساعدة الحساب",
       "subtitle": "إدارة إعدادات حسابك وتفضيلاتك",
-      "placeholder": "Account management and settings help content will appear here."
+      "placeholder": "سيظهر هنا محتوى تعليمات إدارة الحساب والإعدادات."
     },
     "orders": {
       "title": "دعم النظام",
       "subtitle": "تتبع وإدارة طلباتك وعمليات التسليم",
-      "placeholder": "Order and delivery support content will appear here."
+      "placeholder": "سيظهر هنا محتوى دعم الطلب والتسليم."
     },
     "guides": {
       "title": "أدلة المستخدم",
       "subtitle": "أدلة خطوة بخطوة لمساعدتك على تحقيق أقصى استفادة من Harvics",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "ابدء",
+          "description": "تعلم الأساسيات"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "إعداد الحساب",
+          "description": "قم بإعداد حسابك"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "كيفية الطلب",
+          "description": "وضع وتتبع الطلبات"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "طرق الدفع",
+          "description": "خيارات الدفع والأمن"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "الشحن والتسليم",
+          "description": "معلومات التسليم"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "العوائد والمبالغ المستردة",
+          "description": "سياسة وعملية الإرجاع"
         }
       }
     },
@@ -1641,20 +1689,20 @@
       "subtitle": "القضايا المشتركة والحلول السريعة",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "مشاكل تسجيل الدخول",
+          "description": "مشاكل في تسجيل الدخول"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "مشاكل الدفع",
+          "description": "لا تتم معالجة الدفع"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "تأخير التسليم",
+          "description": "عدم وصول الطلب"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "أخطاء الموقع",
+          "description": "لا يتم تحميل الصفحة"
         }
       }
     }
@@ -1666,28 +1714,28 @@
     "shippingInfo": "معلومات الشحن",
     "paymentMethod": "طريقة الدفع",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "بطاقة الائتمان / الخصم",
+      "bankTransfer": "التحويل البنكي (LC/TT)",
       "wallet": "HPay Digital Wallet"
     },
     "orderSummary": "ملخص الطلب",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
-      "total": "Total"
+      "subtotal": "المجموع الفرعي",
+      "shipping": "شحن",
+      "calculatedNextStep": "تحسب في الخطوة التالية",
+      "tax": "ضريبة",
+      "total": "المجموع"
     },
     "placeOrder": "وضع النظام",
-    "sslNotice": "Secured with 256-bit SSL encryption",
+    "sslNotice": "مؤمن بتشفير SSL 256 بت",
     "continueShopping": "مواصلة التسوق",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "الاسم الأول",
+      "lastName": "اسم العائلة",
+      "email": "بريد إلكتروني",
+      "address": "عنوان",
+      "city": "مدينة",
+      "country": "دولة"
     }
   },
   "history": {
@@ -1702,45 +1750,143 @@
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "تأسست في دبي",
+        "description": "تأسست شركة Harvics Global Ventures في دولة الإمارات العربية المتحدة بهدف أن تصبح شركة سلع استهلاكية عالمية المستوى ومجموعة تجارية متعددة القطاعات. تم إطلاق العمليات الأولى عبر المنسوجات والسلع الاستهلاكية.",
+        "highlight": "السنة الأولى"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "التوسع الدولي الأول",
+        "description": "توسعت إلى 10 دول في جميع أنحاء أوروبا والشرق الأوسط وجنوب آسيا على الرغم من تحديات الوباء العالمي. إطلاق عمليات سلسلة التوريد الرقمية وشراكات التوزيع عن بعد.",
+        "highlight": "10 دول"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "التوسع الرأسي المتعدد",
+        "description": "إطلاق 5 قطاعات صناعية جديدة: السلع، والمعدات الصناعية، والمعادن والتعدين، والنفط والغاز، والعقارات. تجاوز إجمالي كتالوج المنتجات 500 وحدة SKU في جميع القطاعات.",
+        "highlight": "5 عمودي جديد"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "التحول الرقمي",
+        "description": "تم إنشاء الإصدار الأول من Harvics OS - النظام الأساسي للمؤسسات الذي يعمل بالذكاء الاصطناعي. تم إطلاق بوابات التوزيع وإمكانيات التجارة الإلكترونية وتتبع أسطول نظام تحديد المواقع العالمي (GPS) في الوقت الفعلي في جميع الأسواق.",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "الاستدامة والنطاق",
+        "description": "ملتزمون بعمليات خالية من الكربون. وصلت إلى أكثر من 30 دولة. إطلاق HPay (منصة المدفوعات الرقمية)، وحلول التمويل التجاري، والتنبؤ بالطلب القائم على الذكاء الاصطناعي في جميع القطاعات.",
+        "highlight": "30+ دولة"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "المؤسسة العالمية",
+        "description": "تجاوزت أكثر من 42 دولة. تم نشر محرك الذكاء الاصطناعي مع نماذج 6 ML للاستراتيجية والطلب والتسعير والتغطية وتحسين SKU. إطلاق منصة متعددة اللغات تدعم 38 لغة.",
+        "highlight": "42+ دولة"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "نظام التشغيل AI-First",
+        "description": "تم إطلاق Harvics OS v2 — نظام تشغيل مؤسسي موحد مزود بذكاء في الوقت الفعلي، وموجزات حية لـSocket.io، وAlpha Engine لخطط هجوم السوق، وتسلسل هرمي جغرافي كامل مكون من 8 مستويات.",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "الرؤية المقبلة",
+        "description": "التوسع في أكثر من 60 دولة. بناء أول مؤسسة سلع استهلاكية يتم تشغيلها بواسطة الذكاء الاصطناعي في العالم حيث تعمل كل وظيفة - المشتريات والخدمات اللوجستية والتمويل وإدارة علاقات العملاء - على الذكاء التنبؤي مع بوابات الموافقة البشرية.",
+        "highlight": "60+ هدف"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "التجارة العملية، وتحديد المصادر، وأكاديمية الذكاء الاصطناعي للمؤسسين - ستة أسابيع، جلسات مباشرة، وممرات Harvics.",
+    "navLabel": "أكاديمية بدء التشغيل",
+    "teaser": {
+      "eyebrow": "الأكاديمية · برنامج الممر",
+      "title": "أكاديمية بدء التشغيل.",
+      "body": "الحرف التجارية الكلاسيكية للمؤسسين - تحديد المصادر، ومراقبة الجودة، ومكاتب التمويل، ومحو الأمية في الممرات - جنبًا إلى جنب مع سوق Harvics.",
+      "cta": "أدخل الأكاديمية"
+    },
+    "hero": {
+      "alt": "قاعة المحاضرات الكلاسيكية – أكاديمية هارفيكس للشركات الناشئة",
+      "eyebrow": "الفوج 01 · الربع الرابع 2026 · برنامج الدعم",
+      "title": "Harvics Startup Academy",
+      "body": "مدرسة التجارة الكلاسيكية للمؤسسين - تحديد المصادر، وتجارة الممرات، والذكاء الاصطناعي الناجح. ستة أسابيع. جلسات حية. مشغلين حقيقيين.",
+      "apply": "التقدم بطلب للحصول على الفوج 01",
+      "seeProgramme": "انظر البرنامج"
+    },
+    "stats": {
+      "founders": "المؤسسون / الفوج",
+      "sessions": "جلسات حية",
+      "weeks": "أسابيع",
+      "verticals": "قطاعات التجارة"
+    },
+    "why": {
+      "eyebrow": "01 · لماذا الانضمام",
+      "title": "قم ببناء شركة يمكنها التداول فعليًا.",
+      "body": "ليس مسرح الملعب. تعرف على طلب عرض الأسعار (RFQ) للتسوية، والاجتهاد في تحديد المصادر، والتواصل مع المشترين، والأتمتة - من المشغلين عبر ممرات Harvics.",
+      "item1Title": "أنظمة التجارة العملية",
+      "item1Body": "كيف يشتري المشترون المؤسسيون - وكيف يتم الوفاء بهم.",
+      "item2Title": "الشبكة التي تشحن",
+      "item2Body": "المؤسسون والموزعون والمشغلون عبر القطاعات.",
+      "item3Title": "الذكاء الاصطناعي الذي يعمل",
+      "item3Body": "HarvyX وFin voice وأتمتة العمليات بدون كلمات طنانة.",
+      "imageAlt": "التجارة الكلاسيكية لا تزال الحياة"
+    },
+    "knowledge": {
+      "eyebrow": "معرفة",
+      "title": "دراسة الممر مثل الانضباط.",
+      "body": "منهج دراسي مستمد من ممارسات تجارية حقيقية - وليس شرائح عامة لبدء التشغيل.",
+      "imageAlt": "المكتبة الكلاسيكية الكبرى"
+    },
+    "programme": {
+      "eyebrow": "02 · البرنامج",
+      "title": "ما ستعمل من خلاله",
+      "m1Title": "العلامة التجارية والمصادر",
+      "m1Body": "موكز، بوابات مراقبة الجودة، والمنسوجات والسلع الاستهلاكية سريعة الحركة - من ورشة العمل إلى الممر.",
+      "m2Title": "المخابرات والتوعية",
+      "m2Body": "مختبرات HarvyX، برنامج ICP للمشتري، المتابعات التي تحصل على ردود.",
+      "m3Title": "رأس المال والشركاء",
+      "m3Body": "مسارات التمويل والشراكات - لا توجد مطالبات بنكية وهمية.",
+      "m4Title": "تجارة الممرات",
+      "m4Body": "الموانئ والممرات وكيفية تحرك البضائع فعليًا عبر الأسواق.",
+      "m5Title": "الجودة والاجتهاد",
+      "m5Body": "عادات التفتيش التي تحمي السمعة والتسوية.",
+      "m6Title": "السلع والسلع الاستهلاكية سريعة الحركة",
+      "m6Body": "من واقع المستودعات إلى الطلب على العلامات التجارية والجملة."
+    },
+    "tracks": {
+      "aEyebrow": "المسار أ",
+      "aTitle": "العلامة التجارية والتجارة",
+      "aBody": "يقوم مؤسسو الملابس والسلع الاستهلاكية سريعة الحركة ببناء الطلب على العلامات التجارية والجملة والممرات.",
+      "aAlt": "قاعة اجتماعات كلاسيكية",
+      "bEyebrow": "المسار ب",
+      "bTitle": "التجارة والعمليات",
+      "bBody": "تحديد المصادر، والخدمات اللوجستية، ومشغلي الأعمال بين الشركات (B2B) لتوسيع نطاق التجارة المؤسسية.",
+      "bAlt": "شبكات الصالون"
+    },
+    "network": {
+      "eyebrow": "03 · الشبكة",
+      "title": "تعرف على المشغلين، وليس الجماهير.",
+      "body": "جلسات حية وساعات عمل على طراز الصالونات مع المؤسسين والموزعين ومشغلي ممرات Harvics.",
+      "imageAlt": "شبكة المؤسسين"
+    },
+    "rhythm": {
+      "eyebrow": "04 · الإيقاع",
+      "title": "ستة أسابيع. إيقاع واضح.",
+      "w1": "الأسبوع 1",
+      "w1Body": "التوجيه · خريطة الممر · ورشة عمل برنامج المقارنات الدولية",
+      "w2": "الأسبوع 2",
+      "w2Body": "التواصل مع المشتري · مختبر HarvyX",
+      "w3": "الأسبوع 3",
+      "w3Body": "تحديد المصادر ومراقبة الجودة · العناية بالمورد",
+      "w4": "الأسبوع 4",
+      "w4Body": "الأتمتة · صوت الزعنفة · مكدس العمليات",
+      "w5": "الأسبوع 5",
+      "w5Body": "التمويل والشراكات",
+      "w6": "الأسبوع 6",
+      "w6Body": "عرض المؤسس · الخطوات التالية"
+    },
+    "apply": {
+      "eyebrow": "التطبيقات",
+      "title": "التقدم بطلب للحصول على الفوج 01",
+      "body": "مقاعد محدودة. أخبرنا بشركتك وقطاعك وما تقوم ببنائه.",
+      "emailCta": "التقديم عبر البريد الإلكتروني →",
+      "back": "العودة إلى هارفيكس"
     }
   }
 }

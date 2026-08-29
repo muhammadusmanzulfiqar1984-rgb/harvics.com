@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Intercom smoke test — Harvics</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 40px; background: #f7f3ec; color: #3d1212; }
+    code { background: #eee; padding: 2px 6px; }
+    .ok { color: #1f6b3a; }
+    .bad { color: #8b1e1e; }
+  </style>
+</head>
+<body>
+  <h1>Intercom smoke test</h1>
+  <p>This page boots Intercom with the <strong>official snippet</strong> and default launcher (no Next.js).</p>
+  <p>If the Intercom bubble appears here but not on the main site, the site wiring is wrong.</p>
+  <p>If it does <em>not</em> appear here either, the Intercom workspace / Messenger settings are the problem.</p>
+  <ul id="log"></ul>
+
+  <script>
+    var APP_ID = 'tnuivmad'
+    function log(msg, cls) {
+      var li = document.createElement('li')
+      li.className = cls || ''
+      li.textContent = msg
+      document.getElementById('log').appendChild(li)
+    }
+    window.intercomSettings = {
+      api_base: 'https://api-iam.intercom.io',
+      app_id: APP_ID,
+      hide_default_launcher: false,
+      action_color: '#C3A35E',
+      background_color: '#3D1212'
+    }
+    ;(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/'+APP_ID;var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+    log('Snippet installed, waiting for UI…')
+    var n = 0
+    var t = setInterval(function () {
+      n++
+      var el = document.querySelector('#intercom-container, .intercom-lightweight-app, .intercom-launcher-frame, iframe[name="intercom-launcher-frame"]')
+      if (el) {
+        log('SUCCESS — Intercom UI mounted (' + el.tagName + '/' + (el.className||el.id||el.name) + ')', 'ok')
+        clearInterval(t)
+      } else if (n >= 20) {
+        log('FAIL — no Intercom UI after 10s. Check Messenger Enabled + Identity Verification off for visitors.', 'bad')
+        clearInterval(t)
+      }
+    }, 500)
+  </script>
+</body>
+</html>

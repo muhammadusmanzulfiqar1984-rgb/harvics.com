@@ -12,6 +12,9 @@
 import { Request, Response, Router } from 'express';
 import { z } from 'zod';
 import { prisma } from '../../core/prisma';
+import { computeOnTimeRate } from '../../utils/logisticsMetrics';
+import { emitAudit } from '../../services/audit.service';
+import { eventBus } from '../../core/eventBus';
 
 export const wave4Router = Router();
 
@@ -38,6 +41,9 @@ wave4Router.post('/cost-centers', async (req, res) => {
   try {
     const body = CCcreate.parse(req.body);
     const row = await prisma.costCenter.create({ data: body });
+    // Parallel path to /api/finance — keep audit/events in sync (Module #2 primary UI uses /api/finance)
+    void emitAudit(req, 'costCenter.created', 'CostCenter', row.id, { module: 'controlling', payload: { via: 'wave4' } });
+    eventBus.emitDomain('finance.costcenter.created', row, 'wave4');
     res.status(201).json({ success: true, data: row });
   } catch (err: any) {
     const z = zerr(err, res); if (z) return;
@@ -68,6 +74,8 @@ wave4Router.post('/allocations', async (req, res) => {
   try {
     const body = AllocCreate.parse(req.body);
     const row = await prisma.costAllocation.create({ data: body });
+    void emitAudit(req, 'allocation.created', 'CostAllocation', row.id, { module: 'controlling', payload: { via: 'wave4' } });
+    eventBus.emitDomain('finance.allocation.created', row, 'wave4');
     res.status(201).json({ success: true, data: row });
   } catch (err) { const z = zerr(err, res); if (z) return; res.status(500).json({ success: false, error: 'create failed' }); }
 });
@@ -144,18 +152,52 @@ const ChannelCreate = z.object({
 });
 
 wave4Router.get('/channels', async (_req, res) => {
-  const rows = await prisma.salesChannel.findMany({ orderBy: { priority: 'asc' } });
-  res.json({ success: true, data: rows, total: rows.length });
+  try {
+    const rows = await prisma.salesChannel.findMany({ orderBy: { priority: 'asc' } });
+    res.json({ success: true, source: 'prisma', data: rows, total: rows.length });
+  } catch (err: any) {
+    if (err?.code === 'P2021') {
+      return res.status(503).json({
+        success: false,
+        error: 'SalesChannel table missing — apply prisma/manual/module10_sales_additive.sql',
+      });
+    }
+    res.status(500).json({ success: false, error: err?.message || 'list failed' });
+  }
+});
+
+wave4Router.get('/channels/:code', async (req, res) => {
+  try {
+    const row = await prisma.salesChannel.findUnique({ where: { code: String(req.params.code) } });
+    if (!row) return res.status(404).json({ success: false, error: 'Channel not found' });
+    res.json({ success: true, source: 'prisma', data: row });
+  } catch (err: any) {
+    if (err?.code === 'P2021') {
+      return res.status(503).json({
+        success: false,
+        error: 'SalesChannel table missing — apply prisma/manual/module10_sales_additive.sql',
+      });
+    }
+    res.status(500).json({ success: false, error: err?.message || 'get failed' });
+  }
 });
 
 wave4Router.post('/channels', async (req, res) => {
   try {
     const body = ChannelCreate.parse(req.body);
     const row = await prisma.salesChannel.create({ data: body });
-    res.status(201).json({ success: true, data: row });
+    void emitAudit(req, 'channel.created', 'SalesChannel', row.id, { module: 'sales' });
+    eventBus.emitDomain('sales.channel.created', row, 'sales');
+    res.status(201).json({ success: true, source: 'prisma', data: row });
   } catch (err: any) {
     const z = zerr(err, res); if (z) return;
     if (err?.code === 'P2002') return res.status(409).json({ success: false, error: 'Code exists' });
+    if (err?.code === 'P2021') {
+      return res.status(503).json({
+        success: false,
+        error: 'SalesChannel table missing — apply prisma/manual/module10_sales_additive.sql',
+      });
+    }
     res.status(500).json({ success: false, error: 'create failed' });
   }
 });
@@ -170,19 +212,26 @@ wave4Router.post('/route-order', async (req, res) => {
     const body = RouteBody.parse(req.body);
     const channels = await prisma.salesChannel.findMany({ where: { active: true }, orderBy: { priority: 'asc' } });
     if (channels.length === 0) return res.status(404).json({ success: false, error: 'No active channels configured' });
-    // Routing: prefer exact type match, else lowest priority that meets lead time
-    let candidates = body.customerType ? channels.filter(c => c.type === body.customerType) : channels;
+    let candidates = body.customerType ? channels.filter((c) => c.type === body.customerType) : channels;
     if (candidates.length === 0) candidates = channels;
     if (body.requestedBy) {
       const daysFromNow = Math.max(0, Math.ceil((body.requestedBy.getTime() - Date.now()) / 86400000));
-      candidates = candidates.filter(c => c.leadTimeDays <= daysFromNow);
+      candidates = candidates.filter((c) => c.leadTimeDays <= daysFromNow);
       if (candidates.length === 0) {
-        return res.json({ success: true, data: null, reason: 'No channel can meet requested delivery date', minLeadTime: Math.min(...channels.map(c => c.leadTimeDays)) });
+        return res.json({
+          success: true,
+          data: null,
+          reason: 'No channel can meet requested delivery date',
+          minLeadTime: Math.min(...channels.map((c) => c.leadTimeDays)),
+        });
       }
     }
     const picked = candidates[0];
     res.json({ success: true, data: { picked, alternatives: candidates.slice(1, 4) } });
-  } catch (err) { const z = zerr(err, res); if (z) return; res.status(500).json({ success: false, error: 'route failed' }); }
+  } catch (err) {
+    const z = zerr(err, res); if (z) return;
+    res.status(500).json({ success: false, error: 'route failed' });
+  }
 });
 
 const SlotCreate = z.object({
@@ -193,22 +242,132 @@ const SlotCreate = z.object({
   windowEnd: z.string().regex(/^\d{2}:\d{2}$/).optional().nullable(),
   driver: z.string().max(60).optional().nullable(),
   vehicle: z.string().max(60).optional().nullable(),
+  notes: z.string().max(500).optional().nullable(),
 });
 
 wave4Router.get('/delivery-slots', async (req, res) => {
   const where: any = {};
   if (req.query.status) where.status = String(req.query.status);
+  if (req.query.channelCode) where.channelCode = String(req.query.channelCode);
   if (req.query.from) where.scheduledFor = { gte: new Date(String(req.query.from)) };
-  const rows = await prisma.deliverySlot.findMany({ where, orderBy: { scheduledFor: 'asc' }, take: 200 });
-  res.json({ success: true, data: rows, total: rows.length });
+  try {
+    const rows = await prisma.deliverySlot.findMany({ where, orderBy: { scheduledFor: 'asc' }, take: 200 });
+    res.json({ success: true, source: 'prisma', data: rows, total: rows.length });
+  } catch (err: any) {
+    if (err?.code === 'P2021') {
+      return res.status(503).json({
+        success: false,
+        error: 'DeliverySlot table missing — apply prisma/manual/module10_sales_additive.sql',
+      });
+    }
+    res.status(500).json({ success: false, error: err?.message || 'list failed' });
+  }
+});
+
+wave4Router.get('/delivery-slots/:id', async (req, res) => {
+  try {
+    const row = await prisma.deliverySlot.findUnique({ where: { id: req.params.id } });
+    if (!row) return res.status(404).json({ success: false, error: 'Slot not found' });
+    res.json({ success: true, source: 'prisma', data: row });
+  } catch (err: any) {
+    if (err?.code === 'P2021') {
+      return res.status(503).json({
+        success: false,
+        error: 'DeliverySlot table missing — apply prisma/manual/module10_sales_additive.sql',
+      });
+    }
+    res.status(500).json({ success: false, error: err?.message || 'get failed' });
+  }
 });
 
 wave4Router.post('/delivery-slots', async (req, res) => {
   try {
     const body = SlotCreate.parse(req.body);
+    const ch = await prisma.salesChannel.findUnique({ where: { code: body.channelCode } });
+    if (!ch) return res.status(404).json({ success: false, error: 'Channel code not found' });
+    if (!ch.active) return res.status(400).json({ success: false, error: 'Channel inactive' });
     const row = await prisma.deliverySlot.create({ data: { ...body, status: 'Scheduled' } });
-    res.status(201).json({ success: true, data: row });
-  } catch (err) { const z = zerr(err, res); if (z) return; res.status(500).json({ success: false, error: 'create failed' }); }
+    void emitAudit(req, 'deliverySlot.created', 'DeliverySlot', row.id, { module: 'sales' });
+    eventBus.emitDomain('sales.slot.created', row, 'sales');
+    res.status(201).json({ success: true, source: 'prisma', data: row });
+  } catch (err: any) {
+    const z = zerr(err, res); if (z) return;
+    if (err?.code === 'P2021') {
+      return res.status(503).json({
+        success: false,
+        error: 'DeliverySlot table missing — apply prisma/manual/module10_sales_additive.sql',
+      });
+    }
+    res.status(500).json({ success: false, error: 'create failed' });
+  }
+});
+
+/** Delivery slot spine: Scheduled → InTransit → Delivered | Failed */
+const SLOT_TRANSITIONS: Record<string, string[]> = {
+  Scheduled: ['InTransit', 'Failed'],
+  InTransit: ['Delivered', 'Failed'],
+  Delivered: [],
+  Failed: [],
+};
+
+wave4Router.post('/delivery-slots/:id/status', async (req, res) => {
+  const Body = z.object({ status: z.enum(['Scheduled', 'InTransit', 'Delivered', 'Failed']) });
+  try {
+    const b = Body.parse(req.body);
+    const ex = await prisma.deliverySlot.findUnique({ where: { id: req.params.id } });
+    if (!ex) return res.status(404).json({ success: false, error: 'Slot not found' });
+    if (ex.status === b.status) {
+      return res.json({ success: true, source: 'prisma', data: ex, message: 'Status unchanged' });
+    }
+    const allowed = SLOT_TRANSITIONS[ex.status] || [];
+    if (!allowed.includes(b.status)) {
+      return res.status(409).json({
+        success: false,
+        error: `Cannot transition slot from '${ex.status}' to '${b.status}'`,
+        allowed,
+      });
+    }
+    const row = await prisma.deliverySlot.update({ where: { id: ex.id }, data: { status: b.status } });
+    void emitAudit(req, 'deliverySlot.status', 'DeliverySlot', row.id, {
+      module: 'sales',
+      payload: { from: ex.status, to: b.status },
+    });
+    eventBus.emitDomain('sales.slot.status', { ...row, from: ex.status }, 'sales');
+    res.json({ success: true, source: 'prisma', data: row });
+  } catch (err: any) {
+    const z = zerr(err, res); if (z) return;
+    if (err?.code === 'P2025') return res.status(404).json({ success: false, error: 'Slot not found' });
+    res.status(500).json({ success: false, error: 'update failed' });
+  }
+});
+
+/** Idempotent sample channels for local smoke. */
+wave4Router.post('/channels/seed-demo', async (_req, res) => {
+  const seeds = [
+    { code: 'DIR', name: 'Direct Sales', type: 'direct' as const, priority: 10, leadTimeDays: 2 },
+    { code: 'DIST', name: 'Distributor Network', type: 'distributor' as const, priority: 20, leadTimeDays: 5 },
+    { code: 'WEB', name: 'Online / Marketplace', type: 'online' as const, priority: 30, leadTimeDays: 3 },
+    { code: 'WHL', name: 'Wholesale Trade', type: 'wholesale' as const, priority: 40, leadTimeDays: 7 },
+  ];
+  try {
+    const created: string[] = [];
+    for (const s of seeds) {
+      const existing = await prisma.salesChannel.findUnique({ where: { code: s.code } });
+      if (!existing) {
+        await prisma.salesChannel.create({ data: { ...s, active: true } });
+        created.push(s.code);
+      }
+    }
+    res.status(201).json({ success: true, created, message: 'Sample channels ready' });
+  } catch (err: any) {
+    if (err?.code === 'P2021') {
+      return res.status(503).json({
+        success: false,
+        error: 'SalesChannel table missing — apply prisma/manual/module10_sales_additive.sql',
+      });
+    }
+    res.status(500).json({ success: false, error: err?.message || 'seed failed' });
+  }
 });
 
 // ════════════════════════════════════════════════════════════════════════════
@@ -239,6 +398,8 @@ wave4Router.post('/boms', async (req, res) => {
   try {
     const body = BomCreate.parse(req.body);
     const row = await prisma.billOfMaterial.create({ data: body });
+    void emitAudit(req, 'bom.created', 'BillOfMaterial', row.id, { module: 'manufacturing' });
+    eventBus.emitDomain('mfg.bom.created', row, 'manufacturing');
     res.status(201).json({ success: true, data: row });
   } catch (err: any) {
     const z = zerr(err, res); if (z) return;
@@ -253,14 +414,37 @@ wave4Router.post('/boms/:id/components', async (req, res) => {
     const bom = await prisma.billOfMaterial.findUnique({ where: { id: req.params.id } });
     if (!bom) return res.status(404).json({ success: false, error: 'BOM not found' });
     const row = await prisma.bOMComponent.create({ data: { bomId: bom.id, ...body } });
+    void emitAudit(req, 'bom.component_added', 'BOMComponent', row.id, {
+      module: 'manufacturing',
+      payload: { bomId: bom.id, componentSku: body.componentSku },
+    });
     res.status(201).json({ success: true, data: row });
   } catch (err) { const z = zerr(err, res); if (z) return; res.status(500).json({ success: false, error: 'create failed' }); }
+});
+
+wave4Router.post('/boms/:id/activate', async (req, res) => {
+  const Body = z.object({ active: z.boolean() });
+  try {
+    const b = Body.parse(req.body);
+    const ex = await prisma.billOfMaterial.findUnique({ where: { id: req.params.id } });
+    if (!ex) return res.status(404).json({ success: false, error: 'BOM not found' });
+    const row = await prisma.billOfMaterial.update({ where: { id: ex.id }, data: { active: b.active } });
+    void emitAudit(req, b.active ? 'bom.activated' : 'bom.deactivated', 'BillOfMaterial', row.id, {
+      module: 'manufacturing',
+      payload: { from: ex.active, to: b.active },
+    });
+    res.json({ success: true, data: row });
+  } catch (err) { const z = zerr(err, res); if (z) return; res.status(500).json({ success: false, error: 'update failed' }); }
 });
 
 wave4Router.delete('/boms/components/:id', async (req, res) => {
   const ex = await prisma.bOMComponent.findUnique({ where: { id: req.params.id } });
   if (!ex) return res.status(404).json({ success: false, error: 'Component not found' });
   await prisma.bOMComponent.delete({ where: { id: ex.id } });
+  void emitAudit(req, 'bom.component_deleted', 'BOMComponent', ex.id, {
+    module: 'manufacturing',
+    payload: { bomId: ex.bomId, componentSku: ex.componentSku },
+  });
   res.json({ success: true, data: { id: ex.id, deleted: true } });
 });
 
@@ -304,6 +488,12 @@ wave4Router.get('/boms/explode/:sku', async (req, res) => {
   res.json({ success: true, data: tree, summary: { totalCost: +totalCost.value.toFixed(2), uniqueComponents: seen.size } });
 });
 
+wave4Router.get('/boms/:id', async (req, res) => {
+  const row = await prisma.billOfMaterial.findUnique({ where: { id: req.params.id }, include: { components: true } });
+  if (!row) return res.status(404).json({ success: false, error: 'BOM not found' });
+  res.json({ success: true, data: row });
+});
+
 // ════════════════════════════════════════════════════════════════════════════
 // #21 RECIPE MANAGEMENT
 // ════════════════════════════════════════════════════════════════════════════
@@ -329,10 +519,21 @@ wave4Router.get('/recipes', async (_req, res) => {
   res.json({ success: true, data: rows, total: rows.length });
 });
 
+wave4Router.get('/recipes/:id', async (req, res) => {
+  const row = await prisma.recipe.findUnique({
+    where: { id: req.params.id },
+    include: { ingredients: true },
+  });
+  if (!row) return res.status(404).json({ success: false, error: 'Recipe not found' });
+  res.json({ success: true, data: row });
+});
+
 wave4Router.post('/recipes', async (req, res) => {
   try {
     const body = RecipeCreate.parse(req.body);
     const row = await prisma.recipe.create({ data: body });
+    void emitAudit(req, 'recipe.created', 'Recipe', row.id, { module: 'manufacturing' });
+    eventBus.emitDomain('mfg.recipe.created', row, 'manufacturing');
     res.status(201).json({ success: true, data: row });
   } catch (err: any) {
     const z = zerr(err, res); if (z) return;
@@ -341,12 +542,36 @@ wave4Router.post('/recipes', async (req, res) => {
   }
 });
 
+wave4Router.post('/recipes/:id/status', async (req, res) => {
+  const Body = z.object({ active: z.boolean() });
+  try {
+    const body = Body.parse(req.body);
+    const existing = await prisma.recipe.findUnique({ where: { id: req.params.id } });
+    if (!existing) return res.status(404).json({ success: false, error: 'Recipe not found' });
+    const row = await prisma.recipe.update({
+      where: { id: existing.id },
+      data: { active: body.active },
+      include: { ingredients: true },
+    });
+    void emitAudit(req, 'recipe.status', 'Recipe', row.id, {
+      module: 'manufacturing',
+      payload: { active: body.active, from: existing.active },
+    });
+    eventBus.emitDomain('mfg.recipe.status', row, 'manufacturing');
+    res.json({ success: true, data: row });
+  } catch (err) { const z = zerr(err, res); if (z) return; res.status(500).json({ success: false, error: 'status failed' }); }
+});
+
 wave4Router.post('/recipes/:id/ingredients', async (req, res) => {
   try {
     const body = IngCreate.parse(req.body);
     const r = await prisma.recipe.findUnique({ where: { id: req.params.id } });
     if (!r) return res.status(404).json({ success: false, error: 'Recipe not found' });
     const row = await prisma.recipeIngredient.create({ data: { recipeId: r.id, ...body } });
+    void emitAudit(req, 'recipe.ingredient', 'RecipeIngredient', row.id, {
+      module: 'manufacturing',
+      payload: { recipeId: r.id, ingredient: body.ingredient },
+    });
     res.status(201).json({ success: true, data: row });
   } catch (err) { const z = zerr(err, res); if (z) return; res.status(500).json({ success: false, error: 'create failed' }); }
 });
@@ -403,10 +628,21 @@ wave4Router.get('/warehouses', async (_req, res) => {
   res.json({ success: true, data: rows, total: rows.length });
 });
 
+wave4Router.get('/warehouses/:id', async (req, res) => {
+  const row = await prisma.warehouse.findUnique({
+    where: { id: req.params.id },
+    include: { bins: true },
+  });
+  if (!row) return res.status(404).json({ success: false, error: 'Warehouse not found' });
+  res.json({ success: true, data: row });
+});
+
 wave4Router.post('/warehouses', async (req, res) => {
   try {
     const body = WHCreate.parse(req.body);
     const row = await prisma.warehouse.create({ data: body });
+    void emitAudit(req, 'warehouse.created', 'Warehouse', row.id, { module: 'warehouse' });
+    eventBus.emitDomain('warehouse.created', row, 'warehouse');
     res.status(201).json({ success: true, data: row });
   } catch (err: any) {
     const z = zerr(err, res); if (z) return;
@@ -415,12 +651,35 @@ wave4Router.post('/warehouses', async (req, res) => {
   }
 });
 
+wave4Router.post('/warehouses/:id/status', async (req, res) => {
+  const Body = z.object({ active: z.boolean() });
+  try {
+    const body = Body.parse(req.body);
+    const existing = await prisma.warehouse.findUnique({ where: { id: req.params.id } });
+    if (!existing) return res.status(404).json({ success: false, error: 'Warehouse not found' });
+    const row = await prisma.warehouse.update({
+      where: { id: existing.id },
+      data: { active: body.active },
+      include: { bins: true },
+    });
+    void emitAudit(req, 'warehouse.status', 'Warehouse', row.id, {
+      module: 'warehouse',
+      payload: { active: body.active, from: existing.active },
+    });
+    res.json({ success: true, data: row });
+  } catch (err) { const z = zerr(err, res); if (z) return; res.status(500).json({ success: false, error: 'status failed' }); }
+});
+
 wave4Router.post('/warehouses/:id/bins', async (req, res) => {
   try {
     const body = BinCreate.parse(req.body);
     const wh = await prisma.warehouse.findUnique({ where: { id: req.params.id } });
     if (!wh) return res.status(404).json({ success: false, error: 'Warehouse not found' });
     const row = await prisma.bin.create({ data: { warehouseId: wh.id, ...body } });
+    void emitAudit(req, 'warehouse.bin', 'Bin', row.id, {
+      module: 'warehouse',
+      payload: { warehouseId: wh.id, code: body.code },
+    });
     res.status(201).json({ success: true, data: row });
   } catch (err: any) {
     const z = zerr(err, res); if (z) return;
@@ -464,6 +723,10 @@ wave4Router.post('/putaway/execute', async (req, res) => {
       prisma.bin.update({ where: { id: bin.id }, data: { occupied: bin.occupied + body.qty } }),
       ...(body.fromBinId ? [prisma.bin.update({ where: { id: body.fromBinId }, data: { occupied: { decrement: body.qty } } })] : []),
     ]);
+    void emitAudit(req, 'putaway.executed', 'PutawayMove', (move as any).id, {
+      module: 'warehouse',
+      payload: { sku: body.sku, qty: body.qty, toBinId: body.toBinId },
+    });
     res.status(201).json({ success: true, data: move });
   } catch (err) { const z = zerr(err, res); if (z) return; res.status(500).json({ success: false, error: 'execute failed' }); }
 });
@@ -494,8 +757,38 @@ wave4Router.post('/demand/history', async (req, res) => {
       create: body,
       update: { units: body.units, revenue: body.revenue },
     });
+    void emitAudit(req, 'demandHistory.created', 'DemandHistory', row.id, { module: 'demand' });
+    eventBus.emitDomain('demand.history.created', row, 'demand');
     res.status(201).json({ success: true, data: row });
   } catch (err) { const z = zerr(err, res); if (z) return; res.status(500).json({ success: false, error: 'create failed' }); }
+});
+
+wave4Router.get('/demand/forecasts', async (req, res) => {
+  const where: any = {};
+  if (req.query.sku) where.sku = String(req.query.sku);
+  const rows = await prisma.demandForecast.findMany({ where, orderBy: [{ sku: 'asc' }, { period: 'asc' }], take: 200 });
+  res.json({ success: true, data: rows, total: rows.length });
+});
+
+wave4Router.get('/demand/sku/:sku', async (req, res) => {
+  const sku = decodeURIComponent(req.params.sku);
+  const [history, forecasts] = await Promise.all([
+    prisma.demandHistory.findMany({ where: { sku }, orderBy: { period: 'asc' } }),
+    prisma.demandForecast.findMany({ where: { sku }, orderBy: { period: 'asc' } }),
+  ]);
+  res.json({
+    success: true,
+    data: {
+      sku,
+      history,
+      forecasts,
+      summary: {
+        historyPeriods: history.length,
+        forecastPeriods: forecasts.length,
+        lastUnits: history.length ? history[history.length - 1].units : 0,
+      },
+    },
+  });
 });
 
 wave4Router.post('/demand/forecast', async (req, res) => {
@@ -525,6 +818,11 @@ wave4Router.post('/demand/forecast', async (req, res) => {
       });
       forecasts.push(row);
     }
+    void emitAudit(req, 'demand.forecast', 'DemandForecast', body.sku, {
+      module: 'demand',
+      payload: { periods: forecasts.length, window: body.window, movingAvg: +movingAvg.toFixed(2) },
+    });
+    eventBus.emitDomain('demand.forecast.created', { sku: body.sku, forecasts }, 'demand');
     res.json({ success: true, data: forecasts, summary: { window: body.window, movingAvg: +movingAvg.toFixed(2), confidence: +confidence.toFixed(3) } });
   } catch (err) { const z = zerr(err, res); if (z) return; res.status(500).json({ success: false, error: 'forecast failed' }); }
 });
@@ -554,16 +852,46 @@ wave4Router.get('/vehicles', async (_req, res) => {
   res.json({ success: true, data: rows, total: rows.length });
 });
 
+wave4Router.get('/vehicles/:id', async (req, res) => {
+  const row = await prisma.fleetVehicle.findUnique({ where: { id: req.params.id } });
+  if (!row) return res.status(404).json({ success: false, error: 'Vehicle not found' });
+  const trips = await prisma.fleetTrip.findMany({
+    where: { vehicleId: row.id },
+    orderBy: { createdAt: 'desc' },
+    take: 20,
+  });
+  res.json({ success: true, data: { ...row, trips } });
+});
+
 wave4Router.post('/vehicles', async (req, res) => {
   try {
     const body = VehCreate.parse(req.body);
     const row = await prisma.fleetVehicle.create({ data: body });
+    void emitAudit(req, 'vehicle.created', 'FleetVehicle', row.id, { module: 'fleet' });
+    eventBus.emitDomain('fleet.vehicle.created', row, 'fleet');
     res.status(201).json({ success: true, data: row });
   } catch (err: any) {
     const z = zerr(err, res); if (z) return;
     if (err?.code === 'P2002') return res.status(409).json({ success: false, error: 'Plate exists' });
     res.status(500).json({ success: false, error: 'create failed' });
   }
+});
+
+const VEH_STATUSES = ['Available', 'InRoute', 'Maintenance', 'OffDuty'] as const;
+
+wave4Router.post('/vehicles/:id/status', async (req, res) => {
+  const Body = z.object({ status: z.enum(VEH_STATUSES) });
+  try {
+    const body = Body.parse(req.body);
+    const existing = await prisma.fleetVehicle.findUnique({ where: { id: req.params.id } });
+    if (!existing) return res.status(404).json({ success: false, error: 'Vehicle not found' });
+    const row = await prisma.fleetVehicle.update({ where: { id: existing.id }, data: { status: body.status } });
+    void emitAudit(req, 'vehicle.status', 'FleetVehicle', row.id, {
+      module: 'fleet',
+      payload: { from: existing.status, to: body.status },
+    });
+    res.json({ success: true, data: row });
+  } catch (err) { const z = zerr(err, res); if (z) return; res.status(500).json({ success: false, error: 'status failed' }); }
 });
 
 const TripStop = z.object({
@@ -622,6 +950,13 @@ wave4Router.get('/trips', async (req, res) => {
   res.json({ success: true, data: rows, total: rows.length });
 });
 
+wave4Router.get('/trips/:id', async (req, res) => {
+  const row = await prisma.fleetTrip.findUnique({ where: { id: req.params.id } });
+  if (!row) return res.status(404).json({ success: false, error: 'Trip not found' });
+  const vehicle = await prisma.fleetVehicle.findUnique({ where: { id: row.vehicleId } });
+  res.json({ success: true, data: { ...row, vehicle } });
+});
+
 wave4Router.post('/trips', async (req, res) => {
   try {
     const body = TripCreate.parse(req.body);
@@ -643,6 +978,11 @@ wave4Router.post('/trips', async (req, res) => {
         status: 'Planned',
       },
     });
+    void emitAudit(req, 'trip.created', 'FleetTrip', row.id, {
+      module: 'fleet',
+      payload: { vehicleId: veh.id, savingsKm },
+    });
+    eventBus.emitDomain('fleet.trip.created', row, 'fleet');
     res.status(201).json({ success: true, data: row, optimization: { naiveKm, optimizedKm, savingsKm, percentSaved: naiveKm ? +(savingsKm / naiveKm * 100).toFixed(1) : 0 } });
   } catch (err) { const z = zerr(err, res); if (z) return; res.status(500).json({ success: false, error: 'create failed' }); }
 });
@@ -652,6 +992,9 @@ wave4Router.post('/trips/:id/start', async (req, res) => {
   if (!ex) return res.status(404).json({ success: false, error: 'Trip not found' });
   if (ex.status !== 'Planned') return res.status(409).json({ success: false, error: `Cannot start from '${ex.status}'` });
   const row = await prisma.fleetTrip.update({ where: { id: ex.id }, data: { status: 'Active', startedAt: new Date() } });
+  await prisma.fleetVehicle.update({ where: { id: ex.vehicleId }, data: { status: 'InRoute' } }).catch(() => null);
+  void emitAudit(req, 'trip.started', 'FleetTrip', row.id, { module: 'fleet' });
+  eventBus.emitDomain('fleet.trip.started', row, 'fleet');
   res.json({ success: true, data: row });
 });
 
@@ -660,5 +1003,48 @@ wave4Router.post('/trips/:id/complete', async (req, res) => {
   if (!ex) return res.status(404).json({ success: false, error: 'Trip not found' });
   if (ex.status !== 'Active') return res.status(409).json({ success: false, error: `Cannot complete from '${ex.status}'` });
   const row = await prisma.fleetTrip.update({ where: { id: ex.id }, data: { status: 'Completed', completedAt: new Date() } });
+  await prisma.fleetVehicle.update({ where: { id: ex.vehicleId }, data: { status: 'Available' } }).catch(() => null);
+  void emitAudit(req, 'trip.completed', 'FleetTrip', row.id, { module: 'fleet' });
+  eventBus.emitDomain('fleet.trip.completed', row, 'fleet');
   res.json({ success: true, data: row });
+});
+
+wave4Router.post('/trips/:id/cancel', async (req, res) => {
+  const ex = await prisma.fleetTrip.findUnique({ where: { id: req.params.id } });
+  if (!ex) return res.status(404).json({ success: false, error: 'Trip not found' });
+  if (!['Planned', 'Active'].includes(ex.status)) {
+    return res.status(409).json({ success: false, error: `Cannot cancel '${ex.status}'` });
+  }
+  const row = await prisma.fleetTrip.update({ where: { id: ex.id }, data: { status: 'Cancelled' } });
+  if (ex.status === 'Active') {
+    await prisma.fleetVehicle.update({ where: { id: ex.vehicleId }, data: { status: 'Available' } }).catch(() => null);
+  }
+  void emitAudit(req, 'trip.cancelled', 'FleetTrip', row.id, { module: 'fleet', payload: { from: ex.status } });
+  res.json({ success: true, data: row });
+});
+
+/** GET /api/wave4/fleet/summary — Module #25 KPIs from real fleet + route data */
+wave4Router.get('/fleet/summary', async (_req, res) => {
+  const [vehicles, trips, routes] = await Promise.all([
+    prisma.fleetVehicle.findMany(),
+    prisma.fleetTrip.findMany(),
+    prisma.route.findMany(),
+  ]);
+
+  const activeTrips = trips.filter((t) => t.status === 'Active').length;
+  const completedTrips = trips.filter((t) => t.status === 'Completed').length;
+  const routeOnTime = computeOnTimeRate(routes);
+
+  res.json({
+    success: true,
+    data: {
+      totalVehicles: vehicles.length,
+      availableVehicles: vehicles.filter((v) => v.status === 'Available').length,
+      activeTrips,
+      completedTrips,
+      totalTrips: trips.length,
+      onTimeRate: routeOnTime,
+      totalRouteKm: routes.reduce((s, r) => s + (r.distance || 0), 0),
+    },
+  });
 });

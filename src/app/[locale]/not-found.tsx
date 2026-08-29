@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { getTranslations } from 'next-intl/server'
 import { generateLocalizedMetadata } from '@/lib/seo'
+import { isRTL } from '@/utils/rtl'
 import type { Metadata } from 'next'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -26,12 +27,12 @@ export default async function NotFound({
   }
 
   const t = await getTranslations({ locale, namespace: 'errors.notFound' })
-  const isRTL = ['ar', 'he', 'fa', 'ur'].includes(locale)
+  const rtl = isRTL(locale)
 
   return (
     <div
       className="min-h-screen bg-white flex items-center justify-center px-4"
-      dir={isRTL ? 'rtl' : 'ltr'}
+      dir={rtl ? 'rtl' : 'ltr'}
     >
       <div className="text-center max-w-md">
         {/* 404 Graphic */}

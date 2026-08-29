@@ -1,24 +1,21 @@
 'use client'
 
-import OpsAccessGate from '@/components/auth/OpsAccessGate'
-
+/**
+ * Live console iframe. Access is enforced by Clerk middleware on
+ * /[locale]/harvyx/* and /harvyx.html — not by the old ops password gate.
+ */
 export default function HarvyXConsoleClient() {
   return (
-    <OpsAccessGate
+    <iframe
+      src="/harvyx.html?v=4"
+      style={{
+        width: '100%',
+        height: '100vh',
+        minHeight: 640,
+        border: 'none',
+        display: 'block',
+      }}
       title="HarvyX Growth OS"
-      subtitle="Enter the ops access code to open the console. App store visitors start on the HarvyX app page."
-    >
-      <iframe
-        src="/harvyx.html?v=3"
-        style={{
-          width: '100%',
-          height: 'calc(100vh - 140px)',
-          minHeight: 640,
-          border: 'none',
-          display: 'block',
-        }}
-        title="HarvyX Growth OS"
-      />
-    </OpsAccessGate>
+    />
   )
 }

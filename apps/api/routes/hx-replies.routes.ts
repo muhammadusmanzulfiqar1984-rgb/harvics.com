@@ -225,6 +225,18 @@ router.post('/inbound', async (req: Request, res: Response): Promise<void> => {
       status: 'accepted',
       queued: 'hx-reply-classify',
     }));
+
+    const { emitOsEvent } = await import('../../../packages/lib/kafka');
+    void emitOsEvent({
+      sourceModule: 'HarvicsX',
+      eventType: 'reply.classified',
+      payload: {
+        stage: 'inbound_accepted',
+        reply_id: reply.id,
+        contact_id: body.contact_id,
+        channel,
+      },
+    });
   } catch (err) {
     hxLogger.error(MODULE, 'POST /inbound failed', {
       err: err instanceof Error ? err.message : String(err),

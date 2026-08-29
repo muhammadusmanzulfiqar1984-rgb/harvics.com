@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harvics Startup Academy — Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --burgundy: #3d1212;
+      --burgundy-deep: #1a0708;
+      --gold: #c3a35e;
+      --gold-soft: rgba(195, 163, 94, 0.35);
+      --cream: #f7f3ec;
+      --ink: #2a1014;
+      --muted: #6b5458;
+      --line: rgba(61, 18, 18, 0.12);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "DM Sans", system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.55;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+
+    /* Top bar */
+    .bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--gold-soft);
+      background: var(--burgundy);
+      color: var(--cream);
+    }
+    .bar .wrap { display: flex; align-items: center; justify-content: space-between; }
+    .brand {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 15px;
+      letter-spacing: 0.06em;
+      color: var(--cream);
+    }
+    .brand span { color: var(--gold); }
+    .bar nav { display: flex; gap: 22px; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(247,243,236,0.72); }
+    .bar nav a:hover { color: var(--gold); }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--gold);
+      background: var(--gold);
+      color: var(--burgundy);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 12px 18px;
+      border-radius: 0;
+    }
+    .pill.ghost {
+      background: transparent;
+      color: var(--cream);
+    }
+    .pill:hover { filter: brightness(1.05); }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      min-height: 88vh;
+      display: flex;
+      align-items: flex-end;
+      background:
+        linear-gradient(180deg, rgba(26,7,8,0.25) 0%, rgba(26,7,8,0.82) 55%, rgba(26,7,8,0.95) 100%),
+        radial-gradient(ellipse at 70% 20%, rgba(195,163,94,0.25), transparent 50%),
+        linear-gradient(135deg, #3d1212, #1a0708 55%, #2a1510);
+      color: var(--cream);
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 60V0h60' fill='none' stroke='%23c3a35e' stroke-opacity='0.06'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+    .hero-inner { position: relative; z-index: 1; padding: 72px 0 64px; width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+    .eyebrow {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin: 0 0 18px;
+    }
+    .hero h1 {
+      margin: 0;
+      font-family: "Playfair Display", Georgia, serif;
+      font-weight: 600;
+      font-size: clamp(40px, 7vw, 72px);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      max-width: 12ch;
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: var(--gold);
+    }
+    .hero-lead {
+      margin: 22px 0 0;
+      max-width: 38ch;
+      font-size: clamp(15px, 1.6vw, 18px);
+      color: rgba(247,243,236,0.82);
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 28px;
+      margin-top: 28px;
+      font-size: 13px;
+      color: rgba(247,243,236,0.7);
+    }
+    .meta strong { color: var(--gold); font-weight: 600; }
+    .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
+
+    /* Stats */
+    .stats {
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      padding: 42px 0;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      text-align: center;
+    }
+    .stats-grid b {
+      display: block;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(32px, 4vw, 44px);
+      color: var(--burgundy);
+      line-height: 1;
+    }
+    .stats-grid span {
+      display: block;
+      margin-top: 10px;
+      font-size: 10px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    /* Sections */
+    section { padding: 88px 0; }
+    .sec-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin: 0 0 14px;
+    }
+    h2 {
+      margin: 0;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(28px, 4vw, 42px);
+      color: var(--burgundy);
+      line-height: 1.15;
+      max-width: 18ch;
+    }
+    .lead {
+      margin: 16px 0 0;
+      max-width: 48ch;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .why {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: clamp(32px, 6vw, 80px);
+      align-items: start;
+    }
+    .why-list { display: grid; gap: 28px; margin-top: 8px; }
+    .why-item { border-top: 1px solid var(--line); padding-top: 18px; }
+    .why-item strong {
+      display: block;
+      font-size: 15px;
+      color: var(--burgundy);
+      margin-bottom: 6px;
+    }
+    .why-item p { margin: 0; color: var(--muted); font-size: 14px; }
+
+    .topics { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .topic-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--line);
+      margin-top: 40px;
+      border: 1px solid var(--line);
+    }
+    .topic {
+      background: #fff;
+      padding: 28px 24px;
+      min-height: 140px;
+    }
+    .topic h3 {
+      margin: 0 0 10px;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 20px;
+      color: var(--burgundy);
+      font-weight: 600;
+    }
+    .topic p { margin: 0; font-size: 14px; color: var(--muted); }
+
+    .tracks {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .track {
+      background: var(--burgundy);
+      color: var(--cream);
+      padding: 32px 28px;
+      min-height: 200px;
+      position: relative;
+      overflow: hidden;
+    }
+    .track::after {
+      content: "";
+      position: absolute;
+      right: -20%;
+      bottom: -30%;
+      width: 60%;
+      height: 80%;
+      background: radial-gradient(circle, rgba(195,163,94,0.2), transparent 70%);
+      pointer-events: none;
+    }
+    .track .tag {
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 700;
+    }
+    .track h3 {
+      margin: 14px 0 10px;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 28px;
+      font-weight: 600;
+    }
+    .track p { margin: 0; color: rgba(247,243,236,0.75); max-width: 36ch; font-size: 14px; }
+    .track a {
+      display: inline-block;
+      margin-top: 22px;
+      color: var(--gold);
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    /* Schedule strip */
+    .schedule-row {
+      display: grid;
+      grid-template-columns: 100px 1fr 140px;
+      gap: 16px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+      align-items: baseline;
+      font-size: 14px;
+    }
+    .schedule-row:first-of-type { border-top: 1px solid var(--line); margin-top: 36px; }
+    .schedule-row .day { color: var(--gold); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; }
+    .schedule-row .what { color: var(--burgundy); font-weight: 600; }
+    .schedule-row .where { color: var(--muted); font-size: 13px; text-align: right; }
+
+    /* Final CTA — PTAK-like bottom concept */
+    .final-cta {
+      background: var(--burgundy-deep);
+      color: var(--cream);
+      text-align: center;
+      padding: 88px 0;
+      border-top: 1px solid var(--gold-soft);
+    }
+    .final-cta .eyebrow { margin-bottom: 12px; }
+    .final-cta h2 {
+      margin: 0 auto;
+      color: var(--cream);
+      max-width: 16ch;
+    }
+    .final-cta p {
+      margin: 16px auto 0;
+      max-width: 42ch;
+      color: rgba(247,243,236,0.7);
+    }
+    .final-cta .pill { margin-top: 28px; }
+
+    /* Light footer concept */
+    .foot-ticket {
+      background: #f0ebe3;
+      text-align: center;
+      padding: 36px 0 28px;
+      border-top: 1px solid var(--line);
+    }
+    .foot-ticket .sub {
+      margin: 0 0 16px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .foot-ticket .pill {
+      border-radius: 999px;
+      background: var(--burgundy);
+      border-color: var(--burgundy);
+      color: var(--cream);
+      padding: 14px 28px;
+    }
+
+    footer {
+      background: #fff;
+      border-top: 1px solid var(--line);
+      padding: 48px 0 24px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .foot-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+    .foot-grid h4 {
+      margin: 0 0 14px;
+      font-size: 10px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #9a8588;
+      font-weight: 700;
+    }
+    .foot-grid ul { list-style: none; margin: 0; padding: 0; }
+    .foot-grid li { margin: 0 0 10px; }
+    .foot-grid a:hover { color: var(--burgundy); }
+    .legal {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      font-size: 12px;
+    }
+    .legal nav { display: flex; gap: 18px; }
+
+    .preview-note {
+      position: fixed;
+      left: 16px;
+      bottom: 16px;
+      z-index: 50;
+      background: var(--burgundy);
+      color: var(--cream);
+      border: 1px solid var(--gold-soft);
+      padding: 10px 12px;
+      font-size: 11px;
+      max-width: 220px;
+    }
+
+    @media (max-width: 860px) {
+      .bar nav { display: none; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 28px; }
+      .why, .tracks, .topic-grid, .foot-grid { grid-template-columns: 1fr; }
+      .schedule-row { grid-template-columns: 1fr; gap: 4px; }
+      .schedule-row .where { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <div class="wrap">
+      <a class="brand" href="/en">HARVICS <span>STARTUP ACADEMY</span></a>
+      <nav>
+        <a href="#why">Why</a>
+        <a href="#topics">Topics</a>
+        <a href="#tracks">Tracks</a>
+        <a href="#schedule">Schedule</a>
+      </nav>
+      <a class="pill" href="#apply">Apply</a>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Preview · Digital + corridor programme</p>
+      <h1>Harvics <em>Startup</em> Academy</h1>
+      <p class="hero-lead">
+        Practical trade, sourcing, and AI for founders building across apparel, FMCG, and corridor commerce — not another pitch theatre.
+      </p>
+      <div class="meta">
+        <span><strong>Cohort 01</strong> · Q4 2026</span>
+        <span><strong>Format</strong> · Live sessions + office hours</span>
+        <span><strong>Focus</strong> · Trade · Sourcing · Automation</span>
+      </div>
+      <div class="hero-cta">
+        <a class="pill" href="#apply">Apply for Cohort 01</a>
+        <a class="pill ghost" href="#topics">See programme</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="stats">
+    <div class="wrap stats-grid">
+      <div><b>120</b><span>Founders / cohort</span></div>
+      <div><b>12</b><span>Live sessions</span></div>
+      <div><b>6</b><span>Weeks</span></div>
+      <div><b>10</b><span>Trade verticals</span></div>
+    </div>
+  </div>
+
+  <section id="why">
+    <div class="wrap why">
+      <div>
+        <p class="sec-label">01 · Why join</p>
+        <h2>Build a company that can actually trade.</h2>
+        <p class="lead">
+          Harvics Startup Academy is for founders who need customers, suppliers, and operating systems — not slide decks. Learn from operators across Harvics corridors.
+        </p>
+      </div>
+      <div class="why-list">
+        <div class="why-item">
+          <strong>Practical trade systems</strong>
+          <p>RFQ to settlement, sourcing paths, and how institutional buyers actually buy.</p>
+        </div>
+        <div class="why-item">
+          <strong>Network that ships</strong>
+          <p>Founders, distributors, and operators across apparel, FMCG, and industrial corridors.</p>
+        </div>
+        <div class="why-item">
+          <strong>AI that does work</strong>
+          <p>HarvyX outreach, Fin voice, and automation that saves hours — not buzzwords.</p>
+        </div>
+        <div class="why-item">
+          <strong>Capital & structure</strong>
+          <p>How to raise, partner, and structure without fake “we’re a bank” claims.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="topics" id="topics">
+    <div class="wrap">
+      <p class="sec-label">02 · Topics</p>
+      <h2>What you’ll work through</h2>
+      <p class="lead">Sessions mix operator talks, live teardown, and founder office hours.</p>
+      <div class="topic-grid">
+        <div class="topic">
+          <h3>From idea to corridor</h3>
+          <p>Position a product for cross-border demand — UK–GCC, South Asia, EU.</p>
+        </div>
+        <div class="topic">
+          <h3>Winning buyers</h3>
+          <p>Outbound that gets replies. Samples, RFQs, and closing without spam.</p>
+        </div>
+        <div class="topic">
+          <h3>Sourcing & QC</h3>
+          <p>Factories, MOQs, QC gates, and how HarvicTrade listings stay vetted.</p>
+        </div>
+        <div class="topic">
+          <h3>Automation stack</h3>
+          <p>Where AI belongs in trade ops — lead intel, follow-ups, voice, docs.</p>
+        </div>
+        <div class="topic">
+          <h3>Funding paths</h3>
+          <p>Investors, partners, trade finance basics — no license theatre.</p>
+        </div>
+        <div class="topic">
+          <h3>Case studies</h3>
+          <p>Real founder paths in apparel, FMCG, and industrial supply.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tracks">
+    <div class="wrap">
+      <p class="sec-label">03 · Tracks</p>
+      <h2>Two paths inside one academy</h2>
+      <div class="tracks">
+        <article class="track">
+          <div class="tag">Track A</div>
+          <h3>Brand & commerce</h3>
+          <p>For apparel / FMCG founders building brand, D2C, and wholesale demand.</p>
+          <a href="#apply">Apply to Track A →</a>
+        </article>
+        <article class="track">
+          <div class="tag">Track B</div>
+          <h3>Trade & ops</h3>
+          <p>For sourcing, logistics, and B2B operators scaling corridor trade.</p>
+          <a href="#apply">Apply to Track B →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule">
+    <div class="wrap">
+      <p class="sec-label">04 · Rhythm</p>
+      <h2>Six weeks. Clear cadence.</h2>
+      <p class="lead">Illustrative schedule for Cohort 01 — dates lock after applications close.</p>
+      <div class="schedule-row"><div class="day">Week 1</div><div class="what">Orientation · Corridor map · ICP workshop</div><div class="where">Live + replay</div></div>
+      <div class="schedule-row"><div class="day">Week 2</div><div class="what">Buyer outreach · HarvyX lab</div><div class="where">Live + office hours</div></div>
+      <div class="schedule-row"><div class="day">Week 3</div><div class="what">Sourcing & QC · Supplier diligence</div><div class="where">Live</div></div>
+      <div class="schedule-row"><div class="day">Week 4</div><div class="what">Automation · Fin / voice · ops stack</div><div class="where">Live lab</div></div>
+      <div class="schedule-row"><div class="day">Week 5</div><div class="what">Funding & partnerships</div><div class="where">Panel</div></div>
+      <div class="schedule-row"><div class="day">Week 6</div><div class="what">Founder showcase · next steps</div><div class="where">Live</div></div>
+    </div>
+  </section>
+
+  <section class="final-cta" id="apply">
+    <div class="wrap">
+      <p class="eyebrow">Applications</p>
+      <h2>Apply for Harvics Startup Academy</h2>
+      <p>Limited seats per cohort. Tell us your company, vertical, and what you’re building. We’ll reply with next steps.</p>
+      <a class="pill" href="mailto:partnerships@harvics.com?subject=Harvics%20Startup%20Academy%20Cohort%2001">Apply by email →</a>
+    </div>
+  </section>
+
+  <div class="foot-ticket">
+    <p class="sub">Part of the Harvics founder &amp; operator programme</p>
+    <a class="pill" href="#apply">Join Cohort 01 →</a>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <h4>Founders</h4>
+          <ul>
+            <li><a href="#apply">Apply</a></li>
+            <li><a href="#why">Why join</a></li>
+            <li><a href="#topics">Programme</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Harvics</h4>
+          <ul>
+            <li><a href="/en">Home</a></li>
+            <li><a href="/en/harvictrade">HarvicTrade</a></li>
+            <li><a href="/en/apps/harvyx">HarvyX</a></li>
+            <li><a href="/en/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>partnerships@harvics.com</li>
+            <li>info@harvics.com</li>
+            <li>+44 7405 527427</li>
+          </ul>
+        </div>
+      </div>
+      <div class="legal">
+        <span>© 2026 Harvics Global Ventures · Startup Academy preview</span>
+        <nav>
+          <a href="/en/terms">Terms</a>
+          <a href="/en/privacy">Privacy</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <div class="preview-note">HTML preview only — not wired to Next.js routing yet.</div>
+</body>
+</html>

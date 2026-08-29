@@ -5,6 +5,7 @@
  */
 
 import { getLeafImage } from './leafImageMap'
+import { resolveFashionImage } from './fashionTextilesImages'
 
 export interface Product {
   name: string
@@ -320,64 +321,68 @@ export function getVerticalSubcategories(verticalKey: string): string[] {
 // ─── UNSPLASH IMAGE MAP — Every keyword gets a UNIQUE image ───
 const UNSPLASH_MAP: Record<string, string> = {
   // ═══ TEXTILES & APPAREL — Men's ═══
-  suit: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&h=800&fit=crop&auto=format&q=60',
-  shirt: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&h=800&fit=crop&auto=format&q=60',
-  denim: 'https://images.unsplash.com/photo-1542272604-787c3835535d?w=800&h=800&fit=crop&auto=format&q=60',
-  polo: 'https://images.unsplash.com/photo-1562157873-818bc0726f68?w=800&h=800&fit=crop&auto=format&q=60',
+  suit: '/assets/harvictrade/products/fashion/textiles/suits.jpg',
+  shirt: '/assets/harvictrade/products/fashion/textiles/mens.jpg',
+  denim: '/assets/harvictrade/products/fashion/textiles/denim.jpg',
+  polo: '/assets/harvictrade/products/fashion/textiles/boys.jpg',
   leather: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&h=800&fit=crop&auto=format&q=60',
   jacket: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&h=800&fit=crop&auto=format&q=60',
   chinos: 'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=800&h=800&fit=crop&auto=format&q=60',
   knitwear: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&h=800&fit=crop&auto=format&q=60',
   merino: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=800&h=800&fit=crop&auto=format&q=60',
-  blazer: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&h=800&fit=crop&auto=format&q=60',
+  blazer: '/assets/harvictrade/products/fashion/textiles/suits.jpg',
   overcoat: 'https://images.unsplash.com/photo-1544923408-75c5cef46f14?w=800&h=800&fit=crop&auto=format&q=60',
   parka: 'https://images.unsplash.com/photo-1547624643-3bf767b6b8ac?w=800&h=800&fit=crop&auto=format&q=60',
   stormwear: 'https://images.unsplash.com/photo-1545594861-3bef43ff2fc8?w=800&h=800&fit=crop&auto=format&q=60',
-  sportswear: 'https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=800&h=800&fit=crop&auto=format&q=60',
+  sportswear: '/assets/harvictrade/products/fashion/textiles/sportswear.jpg',
   technical: 'https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?w=800&h=800&fit=crop&auto=format&q=60',
   trainers: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=800&fit=crop&auto=format&q=60',
   boots: 'https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=800&h=800&fit=crop&auto=format&q=60',
-  loungewear: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&h=800&fit=crop&auto=format&q=60',
-  pyjamas: 'https://images.unsplash.com/photo-1567016432779-094069958ea5?w=800&h=800&fit=crop&auto=format&q=60',
-  'dressing-gown': 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&h=800&fit=crop&auto=format&q=60',
-  jeans: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&h=800&fit=crop&auto=format&q=60',
+  loungewear: '/assets/harvictrade/products/fashion/textiles/robe-model.jpg',
+  pyjamas: '/assets/harvictrade/products/fashion/textiles/robe-model.jpg',
+  'dressing-gown': '/assets/harvictrade/products/fashion/textiles/robe-model.jpg',
+  jeans: '/assets/harvictrade/products/fashion/textiles/denim.jpg',
   pack: 'https://images.unsplash.com/photo-1523381294911-8d3cead13475?w=800&h=800&fit=crop&auto=format&q=60',
-  shirts: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&h=800&fit=crop&auto=format&q=60',
-  men: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=800&fit=crop&auto=format&q=60',
+  shirts: '/assets/harvictrade/products/fashion/textiles/mens.jpg',
+  men: '/assets/harvictrade/products/fashion/textiles/mens.jpg',
   wool: 'https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?w=800&h=800&fit=crop&auto=format&q=60',
   // ═══ TEXTILES — Women's ═══
-  women: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&h=800&fit=crop&auto=format&q=60',
-  gown: 'https://images.unsplash.com/photo-1518622358385-8ea7d0794bf6?w=800&h=800&fit=crop&auto=format&q=60',
-  dress: 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&h=800&fit=crop&auto=format&q=60',
+  women: '/assets/harvictrade/products/fashion/textiles/ladies.jpg',
+  gown: '/assets/harvictrade/products/fashion/textiles/gown.jpg',
+  dress: '/assets/harvictrade/products/fashion/textiles/ladies.jpg',
   floral: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=800&h=800&fit=crop&auto=format&q=60',
   silk: 'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=800&h=800&fit=crop&auto=format&q=60',
-  blouse: 'https://images.unsplash.com/photo-1598554747436-c9293d6a588f?w=800&h=800&fit=crop&auto=format&q=60',
+  blouse: '/assets/harvictrade/products/fashion/textiles/blouse.jpg',
   handbag: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&h=800&fit=crop&auto=format&q=60',
-  fashion: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&h=800&fit=crop&auto=format&q=60',
-  bra: 'https://images.unsplash.com/photo-1558171813-4c088753af8f?w=800&h=800&fit=crop&auto=format&q=60',
-  lingerie: 'https://images.unsplash.com/photo-1582533561751-ef6f6ab93a2e?w=800&h=800&fit=crop&auto=format&q=60',
-  knickers: 'https://images.unsplash.com/photo-1617331721458-bd3bd3f9c7f8?w=800&h=800&fit=crop&auto=format&q=60',
-  shapewear: 'https://images.unsplash.com/photo-1616530940355-351fabd9524b?w=800&h=800&fit=crop&auto=format&q=60',
-  'sports-bra': 'https://images.unsplash.com/photo-1518459031867-a89b944bffe4?w=800&h=800&fit=crop&auto=format&q=60',
-  tights: 'https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=800&h=800&fit=crop&auto=format&q=60',
-  socks: 'https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?w=800&h=800&fit=crop&auto=format&q=60',
-  nightwear: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=800&fit=crop&auto=format&q=60',
+  fashion: '/assets/harvictrade/products/fashion/textiles/ladies.jpg',
+  bra: '/assets/harvictrade/products/fashion/textiles/bra.jpg',
+  lingerie: '/assets/harvictrade/products/fashion/textiles/lingerie.jpg',
+  underwear: '/assets/harvictrade/products/fashion/textiles/mens-underwear.jpg',
+  knickers: '/assets/harvictrade/products/fashion/textiles/panties.jpg',
+  shapewear: '/assets/harvictrade/products/fashion/textiles/shapewear.jpg',
+  'sports-bra': '/assets/harvictrade/products/fashion/textiles/sports-bra.jpg',
+  tights: '/assets/harvictrade/products/fashion/textiles/hosiery.jpg',
+  socks: '/assets/harvictrade/products/fashion/textiles/socks.jpg',
+  nightwear: '/assets/harvictrade/products/fashion/textiles/robe-model.jpg',
+  pajamas: '/assets/harvictrade/products/fashion/textiles/robe-model.jpg',
+  hosiery: '/assets/harvictrade/products/fashion/textiles/hosiery.jpg',
+  panties: '/assets/harvictrade/products/fashion/textiles/panties.jpg',
+  robe: '/assets/harvictrade/products/fashion/textiles/robe-model.jpg',
   // ═══ TEXTILES — Kids ═══
-  boy: 'https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?w=800&h=800&fit=crop&auto=format&q=60',
+  boy: '/assets/harvictrade/products/fashion/textiles/boys.jpg',
   tshirt: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=800&fit=crop&auto=format&q=60',
-  girl: 'https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?w=800&h=800&fit=crop&auto=format&q=60',
-  kids: 'https://images.unsplash.com/photo-1471286174890-9c112ffca5b4?w=800&h=800&fit=crop&auto=format&q=60',
+  girl: '/assets/harvictrade/products/fashion/textiles/girls.jpg',
+  kids: '/assets/harvictrade/products/fashion/textiles/kids.jpg',
   uniform: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&h=800&fit=crop&auto=format&q=60',
   school: 'https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=800&h=800&fit=crop&auto=format&q=60',
   hoodie: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&h=800&fit=crop&auto=format&q=60',
-  pajamas: 'https://images.unsplash.com/photo-1590736969955-71cc94901144?w=800&h=800&fit=crop&auto=format&q=60',
   sneakers: 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&h=800&fit=crop&auto=format&q=60',
   shoes: 'https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=800&h=800&fit=crop&auto=format&q=60',
   // ═══ TEXTILES — Home ═══
-  bedsheet: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&h=800&fit=crop&auto=format&q=60',
-  bedroom: 'https://images.unsplash.com/photo-1540518614846-7eded433c457?w=800&h=800&fit=crop&auto=format&q=60',
-  towel: 'https://images.unsplash.com/photo-1600369672770-985fd30004eb?w=800&h=800&fit=crop&auto=format&q=60',
-  bathroom: 'https://images.unsplash.com/photo-1583845112203-29329902332e?w=800&h=800&fit=crop&auto=format&q=60',
+  bedsheet: '/assets/harvictrade/products/fashion/textiles/home.jpg',
+  bedroom: '/assets/harvictrade/products/fashion/textiles/home.jpg',
+  towel: '/assets/harvictrade/products/fashion/textiles/home.jpg',
+  bathroom: '/assets/harvictrade/products/fashion/textiles/home.jpg',
   cushion: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=800&fit=crop&auto=format&q=60',
   decor: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=800&fit=crop&auto=format&q=60',
   apron: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=800&fit=crop&auto=format&q=60',
@@ -575,14 +580,17 @@ const UNSPLASH_MAP: Record<string, string> = {
   infrastructure: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=800&fit=crop&auto=format&q=60',
 }
 
-/** Get a product image URL from keywords — checks LEAF_IMAGE_MAP first
- *  (so newly generated `/assets/verticals/.../leaf.jpg` images are served),
- *  then falls back to the legacy Unsplash mapping. */
+/** Get a product image URL from keywords — fashion textiles first, then leaf map,
+ *  then legacy Unsplash mapping. */
 export function getProductImage(keywords: string): string {
   const defaultUrl = 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=75'
   if (!keywords) return defaultUrl
 
-  // 1. Prefer locally generated leaf.jpg images.
+  // 1. Sand Atelier fashion / undergarment pool (exact + free-text).
+  const fashion = resolveFashionImage(keywords)
+  if (fashion) return fashion
+
+  // 2. Prefer locally generated leaf.jpg images.
   const leaf = getLeafImage(keywords)
   if (leaf) return leaf
 
@@ -599,6 +607,8 @@ export function getProductImage(keywords: string): string {
 
   const keys = keywords.toLowerCase().split(',').map(k => k.trim())
   for (const key of keys) {
+    const fromFashion = resolveFashionImage(key)
+    if (fromFashion) return fromFashion
     if (UNSPLASH_MAP[key]) {
       const val = makeUrl(UNSPLASH_MAP[key])
       if (val) return val

@@ -1,23 +1,9 @@
-/* Apple-style scroll reveal animations */
-/* Scoped ONLY to homepage snap-scroll frames — does NOT affect any other page */
-#homepage-main > [data-animate],
-#homepage-main > [data-frame] {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-              transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
+/* Apple-style scroll reveal — enhance only, NEVER hide content by default. */
+#homepage-main > section.is-visible,
+#homepage-main > div.is-visible,
 #homepage-main > [data-animate].is-visible,
 #homepage-main > [data-frame].is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Stagger animation for child elements inside homepage frames */
-#homepage-main > [data-animate].is-visible > *,
-#homepage-main > [data-frame].is-visible > * {
-  animation: fadeSlideUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) backwards;
+  animation: fadeSlideUp 0.75s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
 section.is-visible > *:nth-child(1) { animation-delay: 0.1s; }

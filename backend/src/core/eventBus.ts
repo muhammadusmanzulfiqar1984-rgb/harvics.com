@@ -19,7 +19,7 @@ export type DomainEvent =
   // Finance
   | 'finance.invoice.created' | 'finance.payment.received' | 'finance.journal.posted'
   // CRM
-  | 'crm.customer.created' | 'crm.lead.created' | 'crm.campaign.launched'
+  | 'crm.customer.created' | 'crm.lead.created' | 'crm.campaign.launched' | 'crm.lead.won' | 'crm.lead.converted'
   // HR
   | 'hr.employee.created' | 'hr.payroll.run' | 'hr.review.submitted'
   // Logistics
@@ -40,10 +40,54 @@ export type DomainEvent =
   | 'supplychain.node.added' | 'supplychain.graph.updated'
   // Finance extended
   | 'finance.gl.account.created' | 'finance.asset.created' | 'finance.costcenter.created' | 'finance.budget.created'
+  | 'finance.costposting.created' | 'finance.allocation.created'
+  | 'finance.treasury.account.created' | 'finance.treasury.tx.created' | 'finance.fx.rate.created'
+  | 'finance.treasury.transfer' | 'finance.treasury.account.frozen' | 'finance.treasury.account.unfrozen'
+  | 'finance.paymentrun.created' | 'finance.paymentrun.approved' | 'finance.paymentrun.released'
+  | 'finance.paymentrun.paid' | 'finance.paymentrun.cancelled'
+  | 'finance.budget.approved' | 'finance.budget.closed'
+  // Sales / CPQ / channels
+  | 'sales.quote.created' | 'sales.channel.created' | 'sales.slot.created'
+  // Marketing
+  | 'marketing.campaign.created' | 'marketing.campaign.sent'
   // Inventory extended
   | 'inventory.batch.created' | 'inventory.location.created' | 'inventory.movement.recorded'
+  | 'inventory.cyclecount.created' | 'warehouse.created' | 'demand.history.created'
   // Procurement extended
-  | 'procurement.vendor.created' | 'procurement.rfq.created';
+  | 'procurement.vendor.created' | 'procurement.rfq.created'
+  | 'procurement.scorecard.created' | 'procurement.contract.created' | 'procurement.sourcing.created'
+  // Manufacturing
+  | 'mfg.workorder.created' | 'mfg.workorder.completed' | 'mfg.shopfloor.created'
+  | 'mfg.bom.created' | 'mfg.quality.created' | 'mfg.recipe.created'
+  // Logistics / trade / fleet
+  | 'fleet.vehicle.created' | 'shipment.created' | 'shipment.delivered'
+  | 'trade.hscode.created' | 'threepl.partner.created'
+  // Human Capital (#29–33)
+  | 'hr.leave.created' | 'hr.attendance.recorded'
+  | 'talent.posting.created' | 'lms.course.created' | 'perf.review.created' | 'workforce.headcount.planned'
+  // Asset & Maintenance (#34–36)
+  | 'asset.created' | 'pm.order.created' | 'property.created'
+  // GRC & Governance (#37–40)
+  | 'grc.incident.reported' | 'legal.case.created' | 'governance.policy.created'
+  // Analytics & Intelligence (#41–44)
+  | 'bi.report.created' | 'board.pack.generated' | 'okr.created' | 'variance.commentary.generated'
+  // Projects & Services (#45–47)
+  | 'project.created' | 'service.ticket.created' | 'service.engagement.created'
+  // Platform & Infrastructure (#48–54)
+  | 'tax.rate.created' | 'audit.event.recorded' | 'notify.created' | 'doc.created'
+  | 'admin.user.created' | 'integration.endpoint.created'
+  // Data & AI (#55–58)
+  | 'data.snapshot.created' | 'ai.model.created' | 'harvoice.command.created' | 'locale.config.created'
+  // HARVICS Universe (#59–68)
+  | 'social.feed.created' | 'marketplace.listing.created'
+  | 'trade.instrument.created' | 'trade.order.created'
+  | 'event.created' | 'mentor.profile.created' | 'job.board.published'
+  | 'crypto.asset.created' | 'crypto.trade.created'
+  | 'wallet.created' | 'wallet.txn.created' | 'referral.created'
+  // Portals (#69–71)
+  | 'portal.session.created'
+  // Executive (#72)
+  | 'executive.snapshot.created' | 'executive.goal.created';
 
 interface EventLog {
   event: DomainEvent;

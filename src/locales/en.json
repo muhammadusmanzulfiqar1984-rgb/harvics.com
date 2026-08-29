@@ -2,13 +2,13 @@
   "home": {
     "welcome": "Welcome to",
     "companyName": "Harvics",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "brandStatement": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "Explore Products",
     "contact": "Contact Us",
     "learnMore": "Learn More",
-    "taglineStart": "Excellence in Premium Consumer Goods Since",
-    "taglineYear": "2019",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "London • Milan • New York",
     "categories": {
       "bakery": "Bakery",
@@ -80,7 +80,8 @@
       "specialOffers": "Special Offers",
       "promotions": "Promotions",
       "bulkOrders": "Bulk Order Discounts"
-    }
+    },
+    "startupAcademy": "Startup Academy"
   },
   "products": {
     "ourProducts": "Our Products",
@@ -112,7 +113,7 @@
   },
   "about": {
     "title": "About Harvics",
-    "subtitle": "Excellence in Premium Consumer Goods Since 2019",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "Our Story",
     "story1": "Founded in 2019, Harvics has grown from a visionary idea into a global leader in premium consumer goods. Our journey is defined by a relentless pursuit of quality and a commitment to innovation.",
     "story2": "We operate across 40+ countries, delivering products that enrich lives and set new standards in the industry. From our humble beginnings to our global presence, our values remain unchanged.",
@@ -281,8 +282,8 @@
   },
   "footer": {
     "companyName": "Harvics Global Ventures",
-    "tagline": "Excellence in Premium Consumer Goods Since 2019",
-    "brandStatement": "A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "London • Milan • New York",
     "since": "Since 2019",
     "harvicsNews": "Harvics News",
@@ -1378,6 +1379,104 @@
         "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
         "highlight": "60+ Target"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "Practical trade, sourcing, and AI academy for founders — six weeks, live sessions, Harvics corridors.",
+    "navLabel": "Startup Academy",
+    "teaser": {
+      "eyebrow": "Academy · Corridor program",
+      "title": "Startup Academy.",
+      "body": "Classical trade craft for founders — sourcing, QC, funding desks, and corridor literacy — alongside the Harvics marketplace.",
+      "cta": "Enter Academy"
+    },
+    "hero": {
+      "alt": "Classical lecture hall — Harvics Startup Academy",
+      "eyebrow": "Cohort 01 · Q4 2026 · Supporting programme",
+      "title": "Harvics Startup Academy",
+      "body": "A classical school of trade for founders — sourcing, corridor commerce, and AI that works. Six weeks. Live sessions. Real operators.",
+      "apply": "Apply for Cohort 01",
+      "seeProgramme": "See programme"
+    },
+    "stats": {
+      "founders": "Founders / cohort",
+      "sessions": "Live sessions",
+      "weeks": "Weeks",
+      "verticals": "Trade verticals"
+    },
+    "why": {
+      "eyebrow": "01 · Why join",
+      "title": "Build a company that can actually trade.",
+      "body": "Not pitch theatre. Learn RFQ to settlement, sourcing diligence, buyer outreach, and automation — from operators across Harvics corridors.",
+      "item1Title": "Practical trade systems",
+      "item1Body": "How institutional buyers buy — and how you fulfil.",
+      "item2Title": "Network that ships",
+      "item2Body": "Founders, distributors, and operators across verticals.",
+      "item3Title": "AI that does work",
+      "item3Body": "HarvyX, Fin voice, and ops automation without buzzwords.",
+      "imageAlt": "Classical trade still life"
+    },
+    "knowledge": {
+      "eyebrow": "Knowledge",
+      "title": "Study the corridor like a discipline.",
+      "body": "Curriculum drawn from real trade practice — not generic startup slides.",
+      "imageAlt": "Grand classical library"
+    },
+    "programme": {
+      "eyebrow": "02 · Programme",
+      "title": "What you will work through",
+      "m1Title": "Brand & sourcing",
+      "m1Body": "MOQs, QC gates, textiles and FMCG — atelier to corridor.",
+      "m2Title": "Intelligence & outreach",
+      "m2Body": "HarvyX labs, buyer ICP, follow-ups that get replies.",
+      "m3Title": "Capital & partners",
+      "m3Body": "Funding paths and partnerships — no fake bank claims.",
+      "m4Title": "Corridor commerce",
+      "m4Body": "Ports, lanes, and how goods actually move across markets.",
+      "m5Title": "Quality & diligence",
+      "m5Body": "Inspection habits that protect reputation and settlement.",
+      "m6Title": "Commodities & FMCG",
+      "m6Body": "From warehouse reality to brand and wholesale demand."
+    },
+    "tracks": {
+      "aEyebrow": "Track A",
+      "aTitle": "Brand & commerce",
+      "aBody": "Apparel and FMCG founders building brand, wholesale, and corridor demand.",
+      "aAlt": "Classical boardroom",
+      "bEyebrow": "Track B",
+      "bTitle": "Trade & ops",
+      "bBody": "Sourcing, logistics, and B2B operators scaling institutional trade.",
+      "bAlt": "Salon networking"
+    },
+    "network": {
+      "eyebrow": "03 · Network",
+      "title": "Meet operators, not audiences.",
+      "body": "Live sessions and salon-style office hours with founders, distributors, and Harvics corridor operators.",
+      "imageAlt": "Founders networking"
+    },
+    "rhythm": {
+      "eyebrow": "04 · Rhythm",
+      "title": "Six weeks. Clear cadence.",
+      "w1": "Week 1",
+      "w1Body": "Orientation · Corridor map · ICP workshop",
+      "w2": "Week 2",
+      "w2Body": "Buyer outreach · HarvyX lab",
+      "w3": "Week 3",
+      "w3Body": "Sourcing & QC · Supplier diligence",
+      "w4": "Week 4",
+      "w4Body": "Automation · Fin voice · ops stack",
+      "w5": "Week 5",
+      "w5Body": "Funding & partnerships",
+      "w6": "Week 6",
+      "w6Body": "Founder showcase · next steps"
+    },
+    "apply": {
+      "eyebrow": "Applications",
+      "title": "Apply for Cohort 01",
+      "body": "Limited seats. Tell us your company, vertical, and what you’re building.",
+      "emailCta": "Apply by email →",
+      "back": "Back to Harvics"
     }
   }
 }

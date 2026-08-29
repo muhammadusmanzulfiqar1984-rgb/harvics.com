@@ -3,13 +3,13 @@
   "home": {
     "welcome": "Selamat datang ke",
     "companyName": "Harwich",
-    "tagline": "Kecemerlangan dalam Barangan Pengguna Premium Sejak 2019",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "Terokai Produk",
     "contact": "Hubungi Kami",
     "learnMore": "Ketahui Lebih Lanjut",
-    "brandStatement": "Sebuah syarikat barangan pengguna global yang terkemuka yang menyediakan produk makanan premium merentasi pelbagai kategori dengan piawaian kualiti antarabangsa.",
-    "taglineStart": "Kecemerlangan dalam Barangan Pengguna Premium Sejak",
-    "taglineYear": "2019",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "London • Milan • New York",
     "categories": {
       "bakery": "Kedai Roti",
@@ -81,7 +81,8 @@
       "specialOffers": "Tawaran Istimewa",
       "promotions": "Promosi",
       "bulkOrders": "Diskaun Pesanan Pukal"
-    }
+    },
+    "startupAcademy": "Akademi Permulaan"
   },
   "products": {
     "ourProducts": "Produk Kami",
@@ -119,7 +120,40 @@
     "whatsapp": "WhatsApp",
     "callNow": "Hubungi Sekarang",
     "sendEmail": "Hantar E-mel",
-    "messageUs": "Hantar Pesanan Kepada Kami"
+    "messageUs": "Hantar Pesanan Kepada Kami",
+    "getInTouch": "Hubungi",
+    "locations": "Lokasi",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "Hantar Mesej",
+    "firstName": "Nama Pertama",
+    "firstNamePlaceholder": "Masukkan nama pertama anda",
+    "lastName": "Nama Akhir",
+    "lastNamePlaceholder": "Masukkan nama keluarga anda",
+    "emailPlaceholder": "Masukkan alamat e-mel anda",
+    "subject": "Subjek",
+    "subjectPlaceholder": "Masukkan subjek",
+    "message": "Mesej",
+    "messagePlaceholder": "Tulis mesej anda",
+    "send": "Hantar",
+    "eyebrow": "Mulakan Ringkas",
+    "headline1": "Mulakan ringkas.",
+    "headline2": "Kami membalas dalam 24 jam.",
+    "subhead": "Beritahu kami kategori, volum dan pasaran sasaran anda. Pakar menghubungi anda dengan pilihan sumber dan harga indikatif.",
+    "fullName": "Nama Penuh",
+    "fullNamePlaceholder": "Shah Tabraiz",
+    "company": "Syarikat",
+    "companyPlaceholder": "Organisasi Anda",
+    "businessEmail": "E-mel Perniagaan",
+    "howCanWeHelp": "Bagaimana kami boleh membantu?",
+    "sending": "Menghantar...",
+    "sendEnquiry": "Hantar Pertanyaan",
+    "sentTitle": "Mesej dihantar.",
+    "sentSub": "Pasukan kami akan bertindak balas dalam masa 24 jam.",
+    "directChannels": "Saluran Langsung",
+    "trust1": "Jaminan tindak balas 24 jam",
+    "trust2": "Pengurus akaun yang berdedikasi",
+    "trust3": "NDA available on request",
+    "trust4": "42 pasaran · 1,247 penghantaran hari ini"
   },
   "media": {
     "title": "Pusat Media",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "Harvics Global Ventures",
-    "tagline": "Kecemerlangan dalam Barangan Pengguna Premium Sejak 2019",
-    "brandStatement": "Sebuah syarikat barangan pengguna global yang terkemuka yang menyediakan produk makanan premium merentasi pelbagai kategori dengan piawaian kualiti antarabangsa.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "London • Milan • New York",
     "since": "Sejak 2019",
     "harvicsNews": "Berita Harvics",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "Sertai Rangkaian Kami",
     "newsletterTagline": "Dapatkan maklumat perdagangan dan kemas kini pasaran terkini",
     "activeShipments": "Penghantaran Aktif",
-    "certifiedAudited": "Diperakui & Diaudit"
+    "certifiedAudited": "Diperakui & Diaudit",
+    "invalidEmail": "Sila masukkan alamat e-mel yang sah",
+    "subscriptionSuccess": "Terima kasih kerana melanggan!",
+    "subscriptionError": "Sesuatu telah berlaku. Sila cuba lagi."
   },
   "search": {
     "placeholder": "Cari produk, jenama atau kategori",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "Maaf, saya tidak faham. Bolehkah anda ubah suai perkataan itu?",
       "help": "Saya boleh membantu anda dengan maklumat produk, pesanan atau pertanyaan umum. Apa yang anda ingin tahu?",
-      "contact": "Untuk bantuan lanjut, sila hubungi kami di support@harvics.com atau hubungi +1-800-HARVICS."
-    }
+      "contact": "Untuk bantuan lanjut, sila hubungi kami di support@harvics.com atau hubungi +1-800-HARVICS.",
+      "product": "Semak imbas katalog produk kami daripada menu, atau beritahu saya kategori mana yang menarik minat anda — FMCG, tekstil, logistik dan banyak lagi.",
+      "order": "Untuk membuat pesanan atau menyemak status, lawati portal pengedar atau hubungi pengurus akaun anda.",
+      "about": "Harvics Global Ventures ialah syarikat infrastruktur perdagangan berdaulat dengan 20+ tahun merentasi 40+ negara."
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "Tekan Enter untuk menghantar"
   },
   "common": {
     "chatWithUs": "Bersembang dengan Kami",
@@ -304,7 +346,7 @@
     "currentTerritory": "Wilayah Semasa",
     "noChildren": "Tiada item",
     "tiers": {
-      "globe": "Globe",
+      "globe": "Glob",
       "continent": "Benua",
       "region": "Wilayah",
       "country": "Negara",
@@ -730,12 +772,17 @@
       "gps-tracking": "Penjejakan GPS",
       "localization": "Penyetempatan",
       "workflows": "Aliran kerja",
-      "admin": "Pentadbir"
+      "admin": "Pentadbir",
+      "modules": "Modul"
     },
     "kpis": {
       "customers": "Pelanggan",
       "employees": "Pekerja",
-      "profit": "Keuntungan"
+      "profit": "Keuntungan",
+      "totalOrders": "Jumlah Pesanan",
+      "inventoryValue": "Nilai Inventori",
+      "logisticsEfficiency": "Kecekapan Logistik",
+      "revenue": "Hasil"
     },
     "domain": {
       "title": "Sistem Operasi CRM",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "Lihat dan urus perhubungan, interaksi dan kempen pelanggan anda.",
       "loading": "Memuatkan...",
       "error": "Ralat memuatkan data CRM"
+    },
+    "roleIndicator": {
+      "manager": "Pandangan Pengurus",
+      "executive": "Pemandangan Eksekutif",
+      "investor": "Pandangan Pelabur",
+      "distributor": "Pandangan Pengedar",
+      "supplier": "Pandangan Pembekal",
+      "customer": "Pandangan Pelanggan"
     }
   },
   "supplierPortal": {
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "Mengenai Harvics",
-    "subtitle": "Kecemerlangan dalam Barangan Pengguna Premium Sejak 2019",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "Kisah Kami",
     "story1": "Ditubuhkan pada tahun 2019, Harvics telah berkembang daripada idea berwawasan kepada peneraju global dalam barangan pengguna premium. Perjalanan kami ditakrifkan oleh usaha berterusan untuk mencapai kualiti dan komitmen terhadap inovasi.",
     "story2": "Kami beroperasi di lebih 40 buah negara, menyediakan produk yang memperkayakan kehidupan dan menetapkan piawaian baharu dalam industri. Daripada permulaan kami yang sederhana hinggalah kehadiran kami di peringkat global, nilai-nilai kami kekal tidak berubah.",
@@ -1150,181 +1205,279 @@
   },
   "help": {
     "page": {
-      "title": "Help Center",
-      "subtitle": "Find the help you need"
+      "title": "Pusat Bantuan",
+      "subtitle": "Cari bantuan yang anda perlukan"
     },
-    "backToHelpCenter": "Back to Help Center",
+    "backToHelpCenter": "Kembali ke Pusat Bantuan",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "Soalan Lazim",
+        "description": "Cari jawapan kepada soalan biasa"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "Hubungi Sokongan",
+        "description": "Hubungi pasukan sokongan kami"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "Panduan Pengguna",
+        "description": "Panduan dan tutorial langkah demi langkah"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "Menyelesaikan masalah",
+        "description": "Selesaikan isu biasa"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "Bantuan Akaun",
+        "description": "Urus akaun dan tetapan anda"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "Sokongan Pesanan",
+        "description": "Membantu dengan pesanan dan penghantaran"
       }
     },
     "account": {
-      "title": "Account Help",
-      "subtitle": "Manage your account settings and preferences",
-      "placeholder": "Account management and settings help content will appear here."
+      "title": "Bantuan Akaun",
+      "subtitle": "Urus tetapan dan pilihan akaun anda",
+      "placeholder": "Kandungan bantuan pengurusan dan tetapan akaun akan dipaparkan di sini."
     },
     "orders": {
-      "title": "Order Support",
-      "subtitle": "Track and manage your orders and deliveries",
-      "placeholder": "Order and delivery support content will appear here."
+      "title": "Sokongan Pesanan",
+      "subtitle": "Jejaki dan urus pesanan dan penghantaran anda",
+      "placeholder": "Kandungan sokongan pesanan dan penghantaran akan dipaparkan di sini."
     },
     "guides": {
-      "title": "User Guides",
-      "subtitle": "Step-by-step guides to help you get the most out of Harvics",
+      "title": "Panduan Pengguna",
+      "subtitle": "Panduan langkah demi langkah untuk membantu anda memanfaatkan Harvics sepenuhnya",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "Bermula",
+          "description": "Belajar asas"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "Persediaan Akaun",
+          "description": "Sediakan akaun anda"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "Cara Memesan",
+          "description": "Letakkan dan jejak pesanan"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "Kaedah Pembayaran",
+          "description": "Pilihan pembayaran dan keselamatan"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "Penghantaran & Penghantaran",
+          "description": "Maklumat penghantaran"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "Pemulangan & Bayaran Balik",
+          "description": "Polisi dan proses pemulangan"
         }
       }
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "subtitle": "Common issues and quick solutions",
+      "title": "Menyelesaikan masalah",
+      "subtitle": "Isu biasa dan penyelesaian cepat",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "Isu Log Masuk",
+          "description": "Masalah log masuk"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "Masalah Pembayaran",
+          "description": "Pembayaran tidak diproses"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "Kelewatan Penghantaran",
+          "description": "Pesanan tidak sampai"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "Ralat Laman Web",
+          "description": "Halaman tidak dimuatkan"
         }
       }
     }
   },
   "checkout": {
-    "secureCheckout": "Secure Checkout",
-    "title": "Complete Your Order",
-    "subtitle": "Review your items, enter shipping details, and confirm payment securely.",
-    "shippingInfo": "Shipping Information",
-    "paymentMethod": "Payment Method",
+    "secureCheckout": "Daftar Keluar Selamat",
+    "title": "Lengkapkan Pesanan Anda",
+    "subtitle": "Semak item anda, masukkan butiran penghantaran dan sahkan pembayaran dengan selamat.",
+    "shippingInfo": "Maklumat Penghantaran",
+    "paymentMethod": "Kaedah Pembayaran",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "Kad Kredit / Debit",
+      "bankTransfer": "Pindahan Bank (LC/TT)",
       "wallet": "HPay Digital Wallet"
     },
-    "orderSummary": "Order Summary",
+    "orderSummary": "Ringkasan Pesanan",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
-      "total": "Total"
+      "subtotal": "Jumlah kecil",
+      "shipping": "Penghantaran",
+      "calculatedNextStep": "Dikira pada langkah seterusnya",
+      "tax": "Cukai",
+      "total": "Jumlah"
     },
-    "placeOrder": "Place Order",
-    "sslNotice": "Secured with 256-bit SSL encryption",
-    "continueShopping": "Continue Shopping",
+    "placeOrder": "Letakkan Pesanan",
+    "sslNotice": "Dijamin dengan penyulitan SSL 256-bit",
+    "continueShopping": "Teruskan membeli-belah",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "Nama Pertama",
+      "lastName": "Nama Akhir",
+      "email": "E-mel",
+      "address": "Alamat",
+      "city": "Bandar",
+      "country": "Negara"
     }
   },
   "history": {
     "hero": {
-      "title": "Our Journey",
-      "subtitle": "From a Dubai startup to a global enterprise spanning 42+ countries, 10 industry verticals, and 38 languages."
+      "title": "Perjalanan Kami",
+      "subtitle": "Daripada syarikat permulaan Dubai kepada perusahaan global yang merangkumi 42+ negara, 10 industri menegak dan 38 bahasa."
     },
     "cta": {
-      "title": "Be Part of the Next Chapter",
-      "subtitle": "Join us as we scale to 60+ countries and build the future of AI-driven global commerce.",
-      "button": "View Careers"
+      "title": "Jadilah Sebahagian daripada Bab Seterusnya",
+      "subtitle": "Sertai kami sambil kami meluaskan ke 60+ negara dan membina masa depan perdagangan global dipacu AI.",
+      "button": "Lihat Kerjaya"
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "Ditubuhkan di Dubai",
+        "description": "Harvics Global Ventures ditubuhkan di UAE dengan visi untuk menjadi FMCG bertaraf dunia dan konglomerat perdagangan berbilang menegak. Operasi pertama dilancarkan merentas tekstil dan barangan pengguna.",
+        "highlight": "Tahun Satu"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "Pengembangan Antarabangsa Pertama",
+        "description": "Berkembang ke 10 negara di seluruh Eropah, Timur Tengah dan Asia Selatan walaupun menghadapi cabaran pandemik global. Melancarkan operasi rantaian bekalan digital dan perkongsian pengedaran jauh.",
+        "highlight": "10 Negara"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "Peluasan Berbilang Menegak",
+        "description": "Melancarkan 5 menegak industri baharu: Komoditi, Peralatan Perindustrian, Galian & Perlombongan, Minyak & Gas, dan Hartanah. Jumlah katalog produk melebihi 500 SKU merentas semua menegak.",
+        "highlight": "5 Menegak Baharu"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "Transformasi Digital",
+        "description": "Membina versi pertama Harvics OS — platform perusahaan dikuasakan AI. Melancarkan portal pengedar, keupayaan e-dagang dan penjejakan armada GPS masa nyata merentas semua pasaran.",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "Kemampanan & Skala",
+        "description": "Komited kepada operasi neutral karbon. Mencapai 30+ negara. Melancarkan HPay (platform pembayaran digital), penyelesaian kewangan perdagangan dan ramalan permintaan dipacu AI merentas semua menegak.",
+        "highlight": "30+ Negara"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "Perusahaan Global",
+        "description": "Melepasi pencapaian 42+ negara. Enjin AI yang digunakan dengan 6 model ML untuk strategi, permintaan, harga, liputan dan pengoptimuman SKU. Melancarkan platform berbilang bahasa yang menyokong 38 bahasa.",
+        "highlight": "42+ Negara"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "Sistem Operasi AI-First",
+        "description": "Harvics OS v2 dilancarkan — sistem pengendalian perusahaan bersatu dengan risikan masa nyata, suapan langsung Socket.io, Enjin Alpha untuk rancangan serangan pasaran dan hierarki geografi 8 peringkat yang lengkap.",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "Visi Hadapan",
+        "description": "Menskalakan ke 60+ negara. Membina perusahaan FMCG kendalian AI pertama di dunia di mana setiap fungsi — pemerolehan, logistik, kewangan, CRM — berjalan pada risikan ramalan dengan pintu kelulusan manusia.",
+        "highlight": "60+ Sasaran"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "Perdagangan praktikal, penyumberan dan akademi AI untuk pengasas — enam minggu, sesi langsung, koridor Harvics.",
+    "navLabel": "Akademi Permulaan",
+    "teaser": {
+      "eyebrow": "Akademi · Program koridor",
+      "title": "Akademi Permulaan.",
+      "body": "Kraf perdagangan klasik untuk pengasas — sumber, QC, meja pembiayaan dan celik koridor — di samping pasaran Harvics.",
+      "cta": "Masuk Akademi"
+    },
+    "hero": {
+      "alt": "Dewan kuliah klasik — Harvics Startup Academy",
+      "eyebrow": "Kohort 01 · S4 2026 · Program sokongan",
+      "title": "Harvics Startup Academy",
+      "body": "Sekolah perdagangan klasik untuk pengasas — penyumberan, perdagangan koridor dan AI yang berfungsi. Enam minggu. Sesi langsung. Pengendali sebenar.",
+      "apply": "Mohon untuk Kohort 01",
+      "seeProgramme": "Lihat program"
+    },
+    "stats": {
+      "founders": "Pengasas / kohort",
+      "sessions": "Sesi langsung",
+      "weeks": "minggu",
+      "verticals": "Berdagang menegak"
+    },
+    "why": {
+      "eyebrow": "01 · Mengapa menyertai",
+      "title": "Bina syarikat yang sebenarnya boleh berdagang.",
+      "body": "Bukan teater padang. Ketahui RFQ kepada penyelesaian, ketekunan sumber, jangkauan pembeli dan automasi — daripada pengendali di seluruh koridor Harvics.",
+      "item1Title": "Sistem perdagangan yang praktikal",
+      "item1Body": "Cara pembeli institusi membeli — dan cara anda memenuhinya.",
+      "item2Title": "Rangkaian yang dihantar",
+      "item2Body": "Pengasas, pengedar dan pengendali merentas menegak.",
+      "item3Title": "AI yang berfungsi",
+      "item3Body": "HarvyX, suara Fin dan automasi ops tanpa kata kunci.",
+      "imageAlt": "Perdagangan klasik masih hidup"
+    },
+    "knowledge": {
+      "eyebrow": "Pengetahuan",
+      "title": "Kaji koridor seperti satu disiplin.",
+      "body": "Kurikulum diambil daripada amalan perdagangan sebenar — bukan slaid permulaan generik.",
+      "imageAlt": "Perpustakaan klasik yang besar"
+    },
+    "programme": {
+      "eyebrow": "02 · Program",
+      "title": "Apa yang anda akan usahakan",
+      "m1Title": "Jenama & penyumberan",
+      "m1Body": "MOQ, pintu QC, tekstil dan FMCG — atelier ke koridor.",
+      "m2Title": "Perisikan & jangkauan",
+      "m2Body": "Makmal HarvyX, ICP pembeli, susulan yang mendapat balasan.",
+      "m3Title": "Modal & rakan kongsi",
+      "m3Body": "Laluan pembiayaan dan perkongsian — tiada tuntutan bank palsu.",
+      "m4Title": "Perdagangan koridor",
+      "m4Body": "Pelabuhan, lorong dan cara barangan bergerak merentas pasaran.",
+      "m5Title": "Kualiti & tekun",
+      "m5Body": "Tabiat pemeriksaan yang melindungi reputasi dan penyelesaian.",
+      "m6Title": "Komoditi & FMCG",
+      "m6Body": "Dari realiti gudang kepada permintaan jenama dan borong."
+    },
+    "tracks": {
+      "aEyebrow": "Trek A",
+      "aTitle": "Jenama & perdagangan",
+      "aBody": "Pengasas Pakaian dan FMCG membina permintaan jenama, borong dan koridor.",
+      "aAlt": "Bilik mesyuarat klasik",
+      "bEyebrow": "Trek B",
+      "bTitle": "Perdagangan & ops",
+      "bBody": "Pengendali penyumberan, logistik dan B2B meningkatkan perdagangan institusi.",
+      "bAlt": "Rangkaian salun"
+    },
+    "network": {
+      "eyebrow": "03 · Rangkaian",
+      "title": "Temui pengendali, bukan khalayak.",
+      "body": "Sesi langsung dan waktu pejabat gaya salun dengan pengasas, pengedar dan pengendali koridor Harvics.",
+      "imageAlt": "Rangkaian pengasas"
+    },
+    "rhythm": {
+      "eyebrow": "04 · Irama",
+      "title": "Enam minggu. Irama yang jelas.",
+      "w1": "Minggu 1",
+      "w1Body": "Orientasi · Peta koridor · Bengkel ICP",
+      "w2": "Minggu 2",
+      "w2Body": "Jangkauan pembeli · Makmal HarvyX",
+      "w3": "Minggu 3",
+      "w3Body": "Sumber & QC · Ketekunan pembekal",
+      "w4": "Minggu 4",
+      "w4Body": "Automasi · Suara sirip · timbunan ops",
+      "w5": "Minggu 5",
+      "w5Body": "Pembiayaan & perkongsian",
+      "w6": "Minggu 6",
+      "w6Body": "Pameran pengasas · langkah seterusnya"
+    },
+    "apply": {
+      "eyebrow": "Aplikasi",
+      "title": "Mohon untuk Kohort 01",
+      "body": "Tempat duduk terhad. Beritahu kami syarikat anda, menegak dan perkara yang anda bina.",
+      "emailCta": "Mohon melalui e-mel →",
+      "back": "Kembali ke Harvics"
     }
   }
 }

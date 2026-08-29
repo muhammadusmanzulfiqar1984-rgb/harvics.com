@@ -47,7 +47,7 @@ export default function CorridorMarqueeSection() {
     <section
       ref={sectionRef}
       id="marquee"
-      className="corridor-marquee overflow-hidden border-y border-harvics-gold/30 bg-harvics-cream py-3 md:py-3.5"
+      className="corridor-marquee overflow-hidden border-y border-harvics-gold/30 bg-harvics-cream py-5 md:py-6"
     >
       <div ref={trackRef} className="flex w-max whitespace-nowrap will-change-transform">
         {[0, 1, 2].map((i) => (

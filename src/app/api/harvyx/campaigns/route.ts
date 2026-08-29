@@ -13,7 +13,7 @@ import { authenticate } from '../auth';
 export const dynamic = 'force-dynamic';
 
 export async function GET(req: Request) {
-  const authError = authenticate(req);
+  const authError = await authenticate(req);
   if (authError) return authError;
 
   const campaigns = await loadCampaigns();
@@ -24,7 +24,7 @@ export async function GET(req: Request) {
 }
 
 export async function POST(req: Request) {
-  const authError = authenticate(req);
+  const authError = await authenticate(req);
   if (authError) return authError;
 
   try {

@@ -6,9 +6,9 @@ export const dynamic = 'force-dynamic';
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.0-flash';
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
-const GROQ_MODEL = process.env.GROQ_MODEL || 'llama-3.1-8b-instant';
+const GROQ_MODEL = process.env.GROQ_MODEL || 'openai/gpt-oss-120b';
 
-type GenType = 'email' | 'linkedin_post' | 'linkedin_dm' | 'linkedin_connect' | 'social_post' | 'whatsapp';
+type GenType = 'email' | 'linkedin_post' | 'linkedin_dm' | 'linkedin_connect' | 'social_post' | 'whatsapp' | 'sms';
 
 const BRAND = `Harvics Global — a B2B denim & textile trade company sourcing and supplying premium denim, fabrics and apparel across Europe, the GCC and Asia.`;
 
@@ -63,6 +63,11 @@ function buildPrompt(type: GenType, opts: any): { system: string; user: string; 
         system: `You write short WhatsApp business outreach messages for ${BRAND} Very concise (30-60 words), friendly, no links, one soft CTA. Plain text.`,
         user: `Write a WhatsApp first-touch message.\n${leadLine(lead)}\n${topic ? `Angle: ${topic}` : ''}${extra}`,
       };
+    case 'sms':
+      return {
+        system: `You write SMS outreach for ${BRAND} STRICT: under 160 characters preferred, max 300. Plain text, no emoji spam, one soft CTA, no links unless essential.`,
+        user: `Write an SMS first-touch.\n${leadLine(lead)}\n${topic ? `Angle: ${topic}` : ''}${extra}`,
+      };
     default:
       return { system: 'You are a helpful assistant.', user: topic };
   }
@@ -92,7 +97,7 @@ async function callGemini(system: string, user: string, json: boolean): Promise<
 async function callGroq(system: string, user: string): Promise<string | null> {
   if (!GROQ_API_KEY) return null;
   // Try configured model, then fall back if the model string is rejected.
-  const models = [GROQ_MODEL, 'llama-3.1-8b-instant', 'llama3-70b-8192'].filter(
+  const models = [GROQ_MODEL, 'openai/gpt-oss-120b'].filter(
     (m, i, arr) => m && arr.indexOf(m) === i,
   );
   let lastError = '';

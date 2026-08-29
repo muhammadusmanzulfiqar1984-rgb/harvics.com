@@ -12,6 +12,7 @@ import { Router, Request, Response } from 'express';
 import { routesDb } from '../../core/db';
 import { eventBus } from '../../core/eventBus';
 import { translateError, translateMessage, t } from '../../core/translate';
+import { computeOnTimeRate } from '../../utils/logisticsMetrics';
 import '../../middleware/locale';
 
 const router = Router();
@@ -46,6 +47,7 @@ router.get('/summary', async (req: Request, res: Response) => {
     byStatus[r.status] = (byStatus[r.status] || 0) + 1;
   });
   const totalDistance = routes.data.reduce((s: number, r: any) => s + (r.distance || 0), 0);
+  const onTimeRate = computeOnTimeRate(routes.data);
 
   res.json({
     success: true,
@@ -56,7 +58,7 @@ router.get('/summary', async (req: Request, res: Response) => {
       totalDistance,
       activeDeliveries: routes.data.filter((r: any) => r.status === 'In Transit').length,
       completedToday: routes.data.filter((r: any) => r.status === 'Completed').length,
-      onTimeRate: 94.2
+      onTimeRate,
     }
   });
 });

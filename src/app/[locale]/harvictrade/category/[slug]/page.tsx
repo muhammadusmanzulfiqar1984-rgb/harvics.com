@@ -2,10 +2,11 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getProductImage } from '@/data/harvictradeImages'
+import TextileCategoryHero from '@/components/harvictrade/TextileCategoryHero'
 
 const categoryHero: Record<string, string> = {
-  textiles: '/assets/harvictrade/heroes/textiles-hero.jpg',
-  fmcg: '/assets/harvictrade/heroes/fmcg-hero.jpg',
+  textiles: '/assets/harvictrade/heroes/textiles/01-trench.webp',
+  fmcg: '/assets/harvictrade/heroes/fmcg-hero.webp',
   commodities: '/assets/harvictrade/heroes/commodities-hero.jpg',
   industrial: '/assets/harvictrade/heroes/industrial-hero.jpg',
   minerals: '/assets/harvictrade/heroes/minerals-hero.jpg',
@@ -180,6 +181,16 @@ export default async function CategoryPage({ params }: { params: Promise<{ local
   return (
     <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
       {/* Hero */}
+      {slug === 'textiles' ? (
+        <TextileCategoryHero
+          locale={locale}
+          name={cat.name}
+          icon={cat.icon}
+          desc={cat.desc}
+          productCount={totalProducts}
+          subcategoryCount={cat.subcategories.length}
+        />
+      ) : (
       <section 
         className="relative py-16 px-4 border-b border-harvics-gold/40 overflow-hidden"
         style={{
@@ -208,6 +219,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ local
           </div>
         </div>
       </section>
+      )}
 
       {/* Subcategories with products */}
       <section className="max-w-[1200px] mx-auto px-4 py-12">

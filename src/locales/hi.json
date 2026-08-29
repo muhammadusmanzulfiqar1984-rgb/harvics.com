@@ -3,13 +3,13 @@
   "home": {
     "welcome": "आपका स्वागत है",
     "companyName": "हार्विच",
-    "tagline": "2019 से प्रीमियम उपभोक्ता वस्तुओं में उत्कृष्टता",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "उत्पाद देखें",
     "contact": "हमसे संपर्क करें",
     "learnMore": "और अधिक जानें",
-    "brandStatement": "एक अग्रणी वैश्विक उपभोक्ता वस्तु कंपनी जो अंतरराष्ट्रीय गुणवत्ता मानकों के साथ विभिन्न श्रेणियों में प्रीमियम खाद्य उत्पाद वितरित करती है।",
-    "taglineStart": "प्रीमियम उपभोक्ता वस्तुओं में उत्कृष्टता 2016 से",
-    "taglineYear": "2019",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "लंदन • मिलान • न्यूयॉर्क",
     "categories": {
       "bakery": "बेकरी",
@@ -81,7 +81,8 @@
       "specialOffers": "खास पेशकश",
       "promotions": "प्रचार",
       "bulkOrders": "थोक ऑर्डर पर छूट"
-    }
+    },
+    "startupAcademy": "स्टार्टअप अकादमी"
   },
   "products": {
     "ourProducts": "हमारे उत्पाद",
@@ -119,7 +120,40 @@
     "whatsapp": "WhatsApp",
     "callNow": "अब कॉल करें",
     "sendEmail": "ईमेल भेजें",
-    "messageUs": "हमें संदेश भेजें"
+    "messageUs": "हमें संदेश भेजें",
+    "getInTouch": "संपर्क में रहो",
+    "locations": "स्थानों",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "मेसेज भेजें",
+    "firstName": "पहला नाम",
+    "firstNamePlaceholder": "अपना पहला नाम दर्ज करें",
+    "lastName": "उपनाम",
+    "lastNamePlaceholder": "अपना अंतिम नाम दर्ज करें",
+    "emailPlaceholder": "अपना ईमेल पता दर्ज करें",
+    "subject": "विषय",
+    "subjectPlaceholder": "विषय दर्ज करें",
+    "message": "संदेश",
+    "messagePlaceholder": "अपना संदेश लिखें",
+    "send": "भेजना",
+    "eyebrow": "एक संक्षिप्त प्रारंभ करें",
+    "headline1": "संक्षिप्त शुरुआत करें.",
+    "headline2": "हम 24 घंटे में जवाब देते हैं.",
+    "subhead": "हमें अपनी श्रेणी, वॉल्यूम और लक्षित बाज़ार बताएं। एक विशेषज्ञ सोर्सिंग विकल्पों और सांकेतिक मूल्य निर्धारण के साथ आपके पास वापस आता है।",
+    "fullName": "पूरा नाम",
+    "fullNamePlaceholder": "शाह तबरेज़",
+    "company": "कंपनी",
+    "companyPlaceholder": "आपका संगठन",
+    "businessEmail": "बिजनेस ईमेल",
+    "howCanWeHelp": "हम कैसे मदद कर सकते हैं?",
+    "sending": "भेजा जा रहा है...",
+    "sendEnquiry": "जांच भेजें",
+    "sentTitle": "संदेश भेजा गया।",
+    "sentSub": "हमारी टीम 24 घंटे के अंदर जवाब देगी.",
+    "directChannels": "प्रत्यक्ष चैनल",
+    "trust1": "24 घंटे की प्रतिक्रिया की गारंटी",
+    "trust2": "समर्पित खाता प्रबंधक",
+    "trust3": "NDA available on request",
+    "trust4": "42 बाज़ार · 1,247 शिपमेंट आज"
   },
   "media": {
     "title": "मीडिया केंद्र",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "हार्विक्स ग्लोबल वेंचर्स",
-    "tagline": "2019 से प्रीमियम उपभोक्ता वस्तुओं में उत्कृष्टता",
-    "brandStatement": "एक अग्रणी वैश्विक उपभोक्ता वस्तु कंपनी जो अंतरराष्ट्रीय गुणवत्ता मानकों के साथ विभिन्न श्रेणियों में प्रीमियम खाद्य उत्पाद वितरित करती है।",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "लंदन • मिलान • न्यूयॉर्क",
     "since": "2019 से",
     "harvicsNews": "हार्विक्स समाचार",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "हमारे नेटवर्क से जुड़ें",
     "newsletterTagline": "नवीनतम व्यापार जानकारी और बाज़ार अपडेट प्राप्त करें",
     "activeShipments": "सक्रिय शिपमेंट",
-    "certifiedAudited": "प्रमाणित और लेखापरीक्षित"
+    "certifiedAudited": "प्रमाणित और लेखापरीक्षित",
+    "invalidEmail": "कृपया एक मान्य ईमेल पता प्रविष्ट करें",
+    "subscriptionSuccess": "सदस्यता लेने के लिए धन्यवाद!",
+    "subscriptionError": "कुछ गलत हो गया। कृपया पुन: प्रयास करें।"
   },
   "search": {
     "placeholder": "उत्पादों, ब्रांडों या श्रेणियों को खोजें",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "मुझे खेद है, मुझे समझ नहीं आया। क्या आप कृपया इसे दोबारा समझा सकते हैं?",
       "help": "मैं आपको उत्पाद संबंधी जानकारी, ऑर्डर या सामान्य पूछताछ में सहायता कर सकता हूँ। आप क्या जानना चाहेंगे?",
-      "contact": "अधिक सहायता के लिए, कृपया support@harvics.com पर हमसे संपर्क करें या +1-800-HARVICS पर कॉल करें।"
-    }
+      "contact": "अधिक सहायता के लिए, कृपया support@harvics.com पर हमसे संपर्क करें या +1-800-HARVICS पर कॉल करें।",
+      "product": "मेनू से हमारी उत्पाद सूची ब्राउज़ करें, या मुझे बताएं कि आपकी रुचि किस श्रेणी में है - एफएमसीजी, कपड़ा, लॉजिस्टिक्स, और बहुत कुछ।",
+      "order": "ऑर्डर देने या स्थिति जांचने के लिए, वितरक पोर्टल पर जाएं या अपने खाता प्रबंधक से संपर्क करें।",
+      "about": "हार्विक्स ग्लोबल वेंचर्स 40+ देशों में 20+ वर्षों के साथ एक संप्रभु व्यापार बुनियादी ढांचा कंपनी है।"
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "भेजने के लिए Enter दबाएँ"
   },
   "common": {
     "chatWithUs": "हमारे साथ चैट करें",
@@ -730,12 +772,17 @@
       "gps-tracking": "जीपीएस ट्रैकिंग",
       "localization": "स्थानीयकरण",
       "workflows": "वर्कफ़्लो",
-      "admin": "व्यवस्थापक"
+      "admin": "व्यवस्थापक",
+      "modules": "मॉड्यूल"
     },
     "kpis": {
       "customers": "ग्राहकों",
       "employees": "कर्मचारी",
-      "profit": "लाभ"
+      "profit": "लाभ",
+      "totalOrders": "कुल ऑर्डर",
+      "inventoryValue": "इन्वेंटरी मूल्य",
+      "logisticsEfficiency": "रसद दक्षता",
+      "revenue": "आय"
     },
     "domain": {
       "title": "सीआरएम ओएस",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "अपने ग्राहक संबंधों, बातचीत और अभियानों को देखें और प्रबंधित करें।",
       "loading": "लोड हो रहा है...",
       "error": "सीआरएम डेटा लोड करने में त्रुटि"
+    },
+    "roleIndicator": {
+      "manager": "प्रबंधक दृश्य",
+      "executive": "कार्यकारी दृश्य",
+      "investor": "निवेशक दृष्टिकोण",
+      "distributor": "वितरक दृश्य",
+      "supplier": "आपूर्तिकर्ता दृश्य",
+      "customer": "ग्राहक दृश्य"
     }
   },
   "supplierPortal": {
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "हार्विक्स के बारे में",
-    "subtitle": "2019 से प्रीमियम उपभोक्ता वस्तुओं में उत्कृष्टता",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "हमारी कहानी",
     "story1": "2019 में स्थापित, हार्विक्स एक दूरदर्शी विचार से प्रीमियम उपभोक्ता वस्तुओं के वैश्विक नेता के रूप में विकसित हुआ है। हमारी यात्रा गुणवत्ता की निरंतर खोज और नवाचार के प्रति प्रतिबद्धता से परिभाषित है।",
     "story2": "हम 40 से अधिक देशों में कार्यरत हैं, ऐसे उत्पाद वितरित करते हैं जो जीवन को समृद्ध बनाते हैं और उद्योग में नए मानक स्थापित करते हैं। अपनी विनम्र शुरुआत से लेकर वैश्विक उपस्थिति तक, हमारे मूल्य अपरिवर्तित रहे हैं।",
@@ -1150,181 +1205,279 @@
   },
   "help": {
     "page": {
-      "title": "Help Center",
-      "subtitle": "Find the help you need"
+      "title": "सहायता केंद्र",
+      "subtitle": "आपको जिस सहायता की आवश्यकता है उसे ढूंढें"
     },
-    "backToHelpCenter": "Back to Help Center",
+    "backToHelpCenter": "सहायता केंद्र पर वापस जाएँ",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "अक्सर पूछे जाने वाले प्रश्नों",
+        "description": "सामान्य प्रश्नों के उत्तर खोजें"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "समर्थन से संपर्क करें",
+        "description": "हमारी सहायता टीम से संपर्क करें"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "उपयोगकर्ता गाइड",
+        "description": "चरण-दर-चरण मार्गदर्शिकाएँ और ट्यूटोरियल"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "समस्या निवारण",
+        "description": "सामान्य मुद्दे सुलझाएं"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "खाता सहायता",
+        "description": "अपना खाता और सेटिंग प्रबंधित करें"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "आदेश समर्थन",
+        "description": "ऑर्डर और डिलीवरी में सहायता करें"
       }
     },
     "account": {
-      "title": "Account Help",
-      "subtitle": "Manage your account settings and preferences",
-      "placeholder": "Account management and settings help content will appear here."
+      "title": "खाता सहायता",
+      "subtitle": "अपनी खाता सेटिंग और प्राथमिकताएँ प्रबंधित करें",
+      "placeholder": "खाता प्रबंधन और सेटिंग सहायता सामग्री यहां दिखाई देगी."
     },
     "orders": {
-      "title": "Order Support",
-      "subtitle": "Track and manage your orders and deliveries",
-      "placeholder": "Order and delivery support content will appear here."
+      "title": "आदेश समर्थन",
+      "subtitle": "अपने ऑर्डर और डिलीवरी को ट्रैक और प्रबंधित करें",
+      "placeholder": "ऑर्डर और डिलीवरी समर्थन सामग्री यहां दिखाई देगी।"
     },
     "guides": {
-      "title": "User Guides",
-      "subtitle": "Step-by-step guides to help you get the most out of Harvics",
+      "title": "उपयोगकर्ता गाइड",
+      "subtitle": "हार्विक्स से अधिकतम लाभ उठाने में आपकी सहायता के लिए चरण-दर-चरण मार्गदर्शिकाएँ",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "शुरू करना",
+          "description": "मूल बातें जानें"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "खाता सेटअप",
+          "description": "अपना खाता सेट करें"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "ऑर्डर कैसे करें",
+          "description": "ऑर्डर रखें और ट्रैक करें"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "भुगतान के तरीके",
+          "description": "भुगतान विकल्प और सुरक्षा"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "शिपिंग एवं डिलिवरी",
+          "description": "डिलीवरी की जानकारी"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "लाभ और धन वापसी",
+          "description": "वापसी नीति और प्रक्रिया"
         }
       }
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "subtitle": "Common issues and quick solutions",
+      "title": "समस्या निवारण",
+      "subtitle": "सामान्य मुद्दे और त्वरित समाधान",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "लॉगिन समस्याएं",
+          "description": "भाग लेने में समस्या"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "भुगतान संबंधी समस्याएँ",
+          "description": "भुगतान संसाधित नहीं हो रहा है"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "डिलीवरी में देरी",
+          "description": "ऑर्डर नहीं आ रहा है"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "वेबसाइट त्रुटियाँ",
+          "description": "पेज लोड नहीं हो रहा है"
         }
       }
     }
   },
   "checkout": {
-    "secureCheckout": "Secure Checkout",
-    "title": "Complete Your Order",
-    "subtitle": "Review your items, enter shipping details, and confirm payment securely.",
-    "shippingInfo": "Shipping Information",
-    "paymentMethod": "Payment Method",
+    "secureCheckout": "सुरक्षित चेकआउट",
+    "title": "अपना ऑर्डर पूरा करें",
+    "subtitle": "अपने आइटम की समीक्षा करें, शिपिंग विवरण दर्ज करें और भुगतान की सुरक्षित रूप से पुष्टि करें।",
+    "shippingInfo": "शिपिंग सूचना",
+    "paymentMethod": "भुगतान विधि",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "जमा करना / खर्च करना का कार्ड",
+      "bankTransfer": "बैंक स्थानांतरण (एलसी/टीटी)",
       "wallet": "HPay Digital Wallet"
     },
-    "orderSummary": "Order Summary",
+    "orderSummary": "आदेश सारांश",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
-      "total": "Total"
+      "subtotal": "उप-योग",
+      "shipping": "शिपिंग",
+      "calculatedNextStep": "अगले चरण में गणना की गई",
+      "tax": "कर",
+      "total": "कुल"
     },
-    "placeOrder": "Place Order",
-    "sslNotice": "Secured with 256-bit SSL encryption",
-    "continueShopping": "Continue Shopping",
+    "placeOrder": "आदेश देना",
+    "sslNotice": "256-बिट एसएसएल एन्क्रिप्शन के साथ सुरक्षित",
+    "continueShopping": "खरीदारी जारी रखें",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "पहला नाम",
+      "lastName": "उपनाम",
+      "email": "ईमेल",
+      "address": "पता",
+      "city": "शहर",
+      "country": "देश"
     }
   },
   "history": {
     "hero": {
-      "title": "Our Journey",
-      "subtitle": "From a Dubai startup to a global enterprise spanning 42+ countries, 10 industry verticals, and 38 languages."
+      "title": "हमारी यात्रा",
+      "subtitle": "दुबई स्टार्टअप से लेकर 42 से अधिक देशों, 10 उद्योग क्षेत्रों और 38 भाषाओं में फैले वैश्विक उद्यम तक।"
     },
     "cta": {
-      "title": "Be Part of the Next Chapter",
-      "subtitle": "Join us as we scale to 60+ countries and build the future of AI-driven global commerce.",
-      "button": "View Careers"
+      "title": "अगले अध्याय का हिस्सा बनें",
+      "subtitle": "हमारे साथ जुड़ें क्योंकि हम 60 से अधिक देशों में पहुंच रहे हैं और एआई-संचालित वैश्विक वाणिज्य के भविष्य का निर्माण कर रहे हैं।",
+      "button": "करियर देखें"
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "दुबई में स्थापित",
+        "description": "हार्विक्स ग्लोबल वेंचर्स की स्थापना विश्व स्तरीय एफएमसीजी और मल्टी-वर्टिकल ट्रेडिंग समूह बनने के लक्ष्य के साथ संयुक्त अरब अमीरात में की गई थी। कपड़ा और उपभोक्ता वस्तुओं में पहला परिचालन शुरू किया गया।",
+        "highlight": "वर्ष एक"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "प्रथम अंतर्राष्ट्रीय विस्तार",
+        "description": "वैश्विक महामारी चुनौतियों के बावजूद यूरोप, मध्य पूर्व और दक्षिण एशिया के 10 देशों में इसका विस्तार किया गया। डिजिटल आपूर्ति श्रृंखला संचालन और दूरस्थ वितरण भागीदारी शुरू की गई।",
+        "highlight": "10 देश"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "बहु-ऊर्ध्वाधर विस्तार",
+        "description": "5 नए उद्योग वर्टिकल लॉन्च किए: कमोडिटीज, औद्योगिक उपकरण, खनिज और खनन, तेल और गैस, और रियल एस्टेट। सभी कार्यक्षेत्रों में कुल उत्पाद सूची 500 SKU से अधिक है।",
+        "highlight": "5 नए कार्यक्षेत्र"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "डिजिटल परिवर्तन",
+        "description": "एआई-संचालित एंटरप्राइज़ प्लेटफ़ॉर्म - हार्विक्स ओएस का पहला संस्करण बनाया गया। सभी बाजारों में वितरक पोर्टल, ई-कॉमर्स क्षमताएं और वास्तविक समय जीपीएस बेड़े ट्रैकिंग लॉन्च की गई।",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "स्थिरता और पैमाना",
+        "description": "कार्बन-तटस्थ संचालन के लिए प्रतिबद्ध। 30+ देशों तक पहुंच गया। सभी क्षेत्रों में HPay (डिजिटल भुगतान प्लेटफ़ॉर्म), व्यापार वित्त समाधान और AI-संचालित मांग पूर्वानुमान लॉन्च किया गया।",
+        "highlight": "30+ देश"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "वैश्विक उद्यम",
+        "description": "42+ देशों के मील के पत्थर को पार किया। रणनीति, मांग, मूल्य निर्धारण, कवरेज और एसकेयू अनुकूलन के लिए 6 एमएल मॉडल के साथ एआई इंजन तैनात किया गया। 38 भाषाओं का समर्थन करने वाला बहु-भाषा मंच लॉन्च किया गया।",
+        "highlight": "42+ देश"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "एआई-फर्स्ट ऑपरेटिंग सिस्टम",
+        "description": "हार्विक्स OS v2 लॉन्च किया गया - रीयल-टाइम इंटेलिजेंस के साथ एकीकृत एंटरप्राइज़ ऑपरेटिंग सिस्टम, सॉकेट.आईओ लाइव फ़ीड, बाज़ार हमले की योजना के लिए अल्फा इंजन और पूर्ण 8-स्तरीय भौगोलिक पदानुक्रम।",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "आगे का दृष्टिकोण",
+        "description": "60+ देशों तक स्केलिंग। दुनिया के पहले एआई-संचालित एफएमसीजी उद्यम का निर्माण जहां हर कार्य - खरीद, रसद, वित्त, सीआरएम - मानव अनुमोदन द्वार के साथ पूर्वानुमानित बुद्धिमत्ता पर चलता है।",
+        "highlight": "60+ लक्ष्य"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "संस्थापकों के लिए व्यावहारिक व्यापार, सोर्सिंग और एआई अकादमी - छह सप्ताह, लाइव सत्र, हार्विक्स कॉरिडोर।",
+    "navLabel": "स्टार्टअप अकादमी",
+    "teaser": {
+      "eyebrow": "अकादमी · गलियारा कार्यक्रम",
+      "title": "स्टार्टअप अकादमी।",
+      "body": "हार्विक्स बाज़ार के साथ-साथ संस्थापकों के लिए शास्त्रीय व्यापार शिल्प - सोर्सिंग, क्यूसी, फंडिंग डेस्क और कॉरिडोर साक्षरता।",
+      "cta": "अकादमी में प्रवेश करें"
+    },
+    "hero": {
+      "alt": "शास्त्रीय व्याख्यान कक्ष - हार्विक्स स्टार्टअप अकादमी",
+      "eyebrow": "समूह 01 · क्यू4 2026 · सहायक कार्यक्रम",
+      "title": "Harvics Startup Academy",
+      "body": "संस्थापकों के लिए व्यापार का एक शास्त्रीय स्कूल - सोर्सिंग, कॉरिडोर कॉमर्स और एआई जो काम करता है। छह सप्ताह। लाइव सत्र. असली ऑपरेटर.",
+      "apply": "समूह 01 के लिए आवेदन करें",
+      "seeProgramme": "कार्यक्रम देखें"
+    },
+    "stats": {
+      "founders": "संस्थापक/संगठन",
+      "sessions": "लाइव सत्र",
+      "weeks": "हफ्तों",
+      "verticals": "व्यापार कार्यक्षेत्र"
+    },
+    "why": {
+      "eyebrow": "01 · क्यों शामिल हों",
+      "title": "एक ऐसी कंपनी बनाएं जो वास्तव में व्यापार कर सके।",
+      "body": "पिच थिएटर नहीं. हार्विक्स कॉरिडोर के ऑपरेटरों से निपटान, सोर्सिंग परिश्रम, खरीदार आउटरीच और स्वचालन के लिए आरएफक्यू सीखें।",
+      "item1Title": "व्यावहारिक व्यापार प्रणालियाँ",
+      "item1Body": "संस्थागत खरीदार कैसे खरीदते हैं - और आप कैसे पूरा करते हैं।",
+      "item2Title": "नेटवर्क जो जहाज़ चलाता है",
+      "item2Body": "विभिन्न क्षेत्रों के संस्थापक, वितरक और संचालक।",
+      "item3Title": "एआई जो काम करता है",
+      "item3Body": "हार्वीएक्स, फिन वॉयस, और ऑप्स ऑटोमेशन बिना बज़वर्ड्स के।",
+      "imageAlt": "शास्त्रीय व्यापार अभी भी जीवन है"
+    },
+    "knowledge": {
+      "eyebrow": "ज्ञान",
+      "title": "गलियारे का अध्ययन एक अनुशासन की तरह करें।",
+      "body": "पाठ्यक्रम वास्तविक व्यापार अभ्यास से तैयार किया गया है - सामान्य स्टार्टअप स्लाइड से नहीं।",
+      "imageAlt": "भव्य शास्त्रीय पुस्तकालय"
+    },
+    "programme": {
+      "eyebrow": "02 · कार्यक्रम",
+      "title": "आप किस माध्यम से काम करेंगे",
+      "m1Title": "ब्रांड और सोर्सिंग",
+      "m1Body": "MOQs, QC गेट्स, टेक्सटाइल्स और FMCG - एटेलियर से कॉरिडोर तक।",
+      "m2Title": "खुफिया और आउटरीच",
+      "m2Body": "हार्वीएक्स लैब, खरीदार आईसीपी, फॉलो-अप जिन्हें उत्तर मिलते हैं।",
+      "m3Title": "पूंजी और भागीदार",
+      "m3Body": "फ़ंडिंग पथ और साझेदारियाँ - कोई नकली बैंक दावा नहीं।",
+      "m4Title": "गलियारा वाणिज्य",
+      "m4Body": "बंदरगाह, गलियाँ और वस्तुएँ वास्तव में बाज़ारों में कैसे चलती हैं।",
+      "m5Title": "गुणवत्ता एवं परिश्रम",
+      "m5Body": "निरीक्षण की आदतें जो प्रतिष्ठा और निपटान की रक्षा करती हैं।",
+      "m6Title": "कमोडिटीज और एफएमसीजी",
+      "m6Body": "गोदाम की वास्तविकता से लेकर ब्रांड और थोक मांग तक।"
+    },
+    "tracks": {
+      "aEyebrow": "ट्रैक ए",
+      "aTitle": "ब्रांड और वाणिज्य",
+      "aBody": "परिधान और एफएमसीजी संस्थापक ब्रांड, थोक और कॉरिडोर की मांग का निर्माण कर रहे हैं।",
+      "aAlt": "शास्त्रीय बोर्डरूम",
+      "bEyebrow": "ट्रैक बी",
+      "bTitle": "व्यापार एवं संचालन",
+      "bBody": "सोर्सिंग, लॉजिस्टिक्स और बी2बी ऑपरेटर संस्थागत व्यापार बढ़ा रहे हैं।",
+      "bAlt": "सैलून नेटवर्किंग"
+    },
+    "network": {
+      "eyebrow": "03 · नेटवर्क",
+      "title": "संचालकों से मिलें, दर्शकों से नहीं।",
+      "body": "संस्थापकों, वितरकों और हार्विक्स कॉरिडोर संचालकों के साथ लाइव सत्र और सैलून-शैली कार्यालय समय।",
+      "imageAlt": "संस्थापक नेटवर्किंग"
+    },
+    "rhythm": {
+      "eyebrow": "04 · लय",
+      "title": "छह सप्ताह। स्पष्ट ताल.",
+      "w1": "सप्ताह 1",
+      "w1Body": "ओरिएंटेशन · कॉरिडोर मानचित्र · आईसीपी कार्यशाला",
+      "w2": "सप्ताह 2",
+      "w2Body": "क्रेता आउटरीच · हार्वीएक्स लैब",
+      "w3": "सप्ताह 3",
+      "w3Body": "सोर्सिंग और क्यूसी · आपूर्तिकर्ता परिश्रम",
+      "w4": "सप्ताह 4",
+      "w4Body": "स्वचालन · फिन आवाज · ऑप्स स्टैक",
+      "w5": "सप्ताह 5",
+      "w5Body": "फंडिंग और साझेदारी",
+      "w6": "सप्ताह 6",
+      "w6Body": "संस्थापक शोकेस · अगले चरण"
+    },
+    "apply": {
+      "eyebrow": "अनुप्रयोग",
+      "title": "समूह 01 के लिए आवेदन करें",
+      "body": "सीमित सीटें. हमें अपनी कंपनी, वर्टिकल और आप क्या बना रहे हैं, बताएं।",
+      "emailCta": "ईमेल द्वारा आवेदन करें →",
+      "back": "हार्विक्स को लौटें"
     }
   }
 }

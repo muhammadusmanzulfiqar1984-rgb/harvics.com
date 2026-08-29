@@ -11,11 +11,16 @@ export const HOROLOGY_DIAL = 'rgba(13,11,8,0.94)'
 const HOUR_MARKS = [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330]
 
 function useLiveClock() {
-  const [now, setNow] = useState(() => new Date())
+  // Fixed zeros on SSR + first client paint — avoids hydration mismatch from Date.now().
+  const [now, setNow] = useState<Date | null>(null)
   useEffect(() => {
+    setNow(new Date())
     const id = setInterval(() => setNow(new Date()), 1000)
     return () => clearInterval(id)
   }, [])
+  if (!now) {
+    return { sDeg: 0, mDeg: 0, hDeg: 0, ready: false }
+  }
   const s = now.getSeconds()
   const m = now.getMinutes()
   const h = now.getHours() % 12
@@ -23,6 +28,7 @@ function useLiveClock() {
     sDeg: s * 6,
     mDeg: m * 6 + s * 0.1,
     hDeg: h * 30 + m * 0.5,
+    ready: true,
   }
 }
 

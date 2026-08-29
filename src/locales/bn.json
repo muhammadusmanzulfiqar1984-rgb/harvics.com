@@ -3,13 +3,13 @@
   "home": {
     "welcome": "স্বাগতম",
     "companyName": "হারউইচ",
-    "tagline": "২০১৯ সাল থেকে উৎকৃষ্ট মানের ভোগ্যপণ্যে শ্রেষ্ঠত্ব",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "পণ্যগুলি অন্বেষণ করুন",
     "contact": "আমাদের সাথে যোগাযোগ করুন",
     "learnMore": "আরও জানুন",
-    "brandStatement": "একটি শীর্ষস্থানীয় বিশ্বব্যাপী ভোগ্যপণ্য সংস্থা, যা আন্তর্জাতিক গুণমান বজায় রেখে বিভিন্ন বিভাগে উৎকৃষ্ট মানের খাদ্যপণ্য সরবরাহ করে।",
-    "taglineStart": "প্রিমিয়াম ভোগ্যপণ্যে শ্রেষ্ঠত্ব যেহেতু",
-    "taglineYear": "২০১৯",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "লন্ডন • মিলান • নিউ ইয়র্ক",
     "categories": {
       "bakery": "বেকারি",
@@ -81,7 +81,8 @@
       "specialOffers": "বিশেষ অফার",
       "promotions": "পদোন্নতি",
       "bulkOrders": "বাল্ক অর্ডারে ছাড়"
-    }
+    },
+    "startupAcademy": "স্টার্টআপ একাডেমি"
   },
   "products": {
     "ourProducts": "আমাদের পণ্য",
@@ -119,7 +120,40 @@
     "whatsapp": "হোয়াটসঅ্যাপ",
     "callNow": "এখনই কল করুন",
     "sendEmail": "ইমেল পাঠান",
-    "messageUs": "আমাদেরকে বার্তা পাঠান"
+    "messageUs": "আমাদেরকে বার্তা পাঠান",
+    "getInTouch": "যোগাযোগ করুন",
+    "locations": "অবস্থানসমূহ",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "বার্তা পাঠান",
+    "firstName": "প্রথম নাম",
+    "firstNamePlaceholder": "আপনার প্রথম নাম লিখুন",
+    "lastName": "পদবি",
+    "lastNamePlaceholder": "আপনার শেষ নাম লিখুন",
+    "emailPlaceholder": "আপনার ইমেইল ঠিকানা লিখুন",
+    "subject": "বিষয়",
+    "subjectPlaceholder": "বিষয় লিখুন",
+    "message": "বার্তা",
+    "messagePlaceholder": "আপনার বার্তা লিখুন",
+    "send": "পাঠান",
+    "eyebrow": "একটি সংক্ষিপ্ত শুরু করুন",
+    "headline1": "একটি সংক্ষিপ্ত শুরু করুন.",
+    "headline2": "আমরা 24 ঘন্টার মধ্যে প্রতিক্রিয়া জানাই।",
+    "subhead": "আমাদের আপনার বিভাগ, আয়তন, এবং লক্ষ্য বাজার বলুন. একজন বিশেষজ্ঞ সোর্সিং বিকল্প এবং নির্দেশক মূল্যের সাথে আপনার কাছে ফিরে আসে।",
+    "fullName": "পুরো নাম",
+    "fullNamePlaceholder": "শাহ তাবরেজ",
+    "company": "কোম্পানি",
+    "companyPlaceholder": "আপনার সংস্থা",
+    "businessEmail": "ব্যবসা ইমেল",
+    "howCanWeHelp": "আমরা কিভাবে সাহায্য করতে পারি?",
+    "sending": "পাঠানো হচ্ছে...",
+    "sendEnquiry": "তদন্ত পাঠান",
+    "sentTitle": "বার্তা পাঠানো হয়েছে।",
+    "sentSub": "আমাদের দল 24 ঘন্টার মধ্যে প্রতিক্রিয়া জানাবে।",
+    "directChannels": "সরাসরি চ্যানেল",
+    "trust1": "24 ঘন্টা প্রতিক্রিয়া গ্যারান্টি",
+    "trust2": "ডেডিকেটেড অ্যাকাউন্ট ম্যানেজার",
+    "trust3": "NDA available on request",
+    "trust4": "42টি বাজার · 1,247টি চালান আজ"
   },
   "media": {
     "title": "মিডিয়া সেন্টার",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "হারভিকস গ্লোবাল ভেঞ্চারস",
-    "tagline": "২০১৯ সাল থেকে উৎকৃষ্ট মানের ভোগ্যপণ্যে শ্রেষ্ঠত্ব",
-    "brandStatement": "একটি শীর্ষস্থানীয় বিশ্বব্যাপী ভোগ্যপণ্য সংস্থা, যা আন্তর্জাতিক গুণমান বজায় রেখে বিভিন্ন বিভাগে উৎকৃষ্ট মানের খাদ্যপণ্য সরবরাহ করে।",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "লন্ডন • মিলান • নিউ ইয়র্ক",
     "since": "২০১৯ সাল থেকে",
     "harvicsNews": "হারভিকস নিউজ",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "আমাদের নেটওয়ার্কে যোগ দিন",
     "newsletterTagline": "সর্বশেষ বাণিজ্য তথ্য এবং বাজার আপডেট পান",
     "activeShipments": "সক্রিয় চালান",
-    "certifiedAudited": "প্রত্যয়িত এবং নিরীক্ষিত"
+    "certifiedAudited": "প্রত্যয়িত এবং নিরীক্ষিত",
+    "invalidEmail": "একটি বৈধ ইমেল ঠিকানা লিখুন",
+    "subscriptionSuccess": "সাবস্ক্রাইব করার জন্য আপনাকে ধন্যবাদ!",
+    "subscriptionError": "কিছু ভুল হয়েছে আবার চেষ্টা করুন."
   },
   "search": {
     "placeholder": "পণ্য, ব্র্যান্ড বা বিভাগ অনুসন্ধান করুন",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "দুঃখিত, আমি ব্যাপারটা বুঝতে পারিনি। আপনি কি অনুগ্রহ করে বিষয়টি আবার গুছিয়ে বলবেন?",
       "help": "আমি আপনাকে পণ্যের তথ্য, অর্ডার বা সাধারণ জিজ্ঞাসার বিষয়ে সাহায্য করতে পারি। আপনি কী জানতে চান?",
-      "contact": "আরও সহায়তার জন্য, অনুগ্রহ করে আমাদের সাথে support@harvics.com ইমেল ঠিকানায় যোগাযোগ করুন অথবা +1-800-HARVICS নম্বরে ফোন করুন।"
-    }
+      "contact": "আরও সহায়তার জন্য, অনুগ্রহ করে আমাদের সাথে support@harvics.com ইমেল ঠিকানায় যোগাযোগ করুন অথবা +1-800-HARVICS নম্বরে ফোন করুন।",
+      "product": "মেনু থেকে আমাদের পণ্যের ক্যাটালগ ব্রাউজ করুন, অথবা আমাকে বলুন কোন বিভাগে আপনার আগ্রহ আছে — FMCG, টেক্সটাইল, লজিস্টিকস এবং আরও অনেক কিছু।",
+      "order": "অর্ডার দিতে বা স্ট্যাটাস চেক করতে, ডিস্ট্রিবিউটর পোর্টালে যান বা আপনার অ্যাকাউন্ট ম্যানেজারের সাথে যোগাযোগ করুন।",
+      "about": "Harvics Global Ventures হল একটি সার্বভৌম বাণিজ্য অবকাঠামো কোম্পানি যেখানে 40+ দেশে 20+ বছর ধরে।"
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "পাঠাতে এন্টার টিপুন"
   },
   "common": {
     "chatWithUs": "আমাদের সাথে চ্যাট করুন",
@@ -730,12 +772,17 @@
       "gps-tracking": "জিপিএস ট্র্যাকিং",
       "localization": "স্থানীয়করণ",
       "workflows": "ওয়ার্কফ্লো",
-      "admin": "প্রশাসক"
+      "admin": "প্রশাসক",
+      "modules": "মডিউল"
     },
     "kpis": {
       "customers": "গ্রাহকরা",
       "employees": "কর্মচারীরা",
-      "profit": "লাভ"
+      "profit": "লাভ",
+      "totalOrders": "মোট অর্ডার",
+      "inventoryValue": "ইনভেন্টরি মান",
+      "logisticsEfficiency": "লজিস্টিক দক্ষতা",
+      "revenue": "রাজস্ব"
     },
     "domain": {
       "title": "সিআরএম ওএস",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "আপনার গ্রাহক সম্পর্ক, মিথস্ক্রিয়া এবং প্রচারাভিযানগুলো দেখুন ও পরিচালনা করুন।",
       "loading": "লোড হচ্ছে...",
       "error": "CRM ডেটা লোড করতে ত্রুটি"
+    },
+    "roleIndicator": {
+      "manager": "ম্যানেজার ভিউ",
+      "executive": "এক্সিকিউটিভ ভিউ",
+      "investor": "বিনিয়োগকারীদের দৃষ্টিভঙ্গি",
+      "distributor": "ডিস্ট্রিবিউটর ভিউ",
+      "supplier": "সরবরাহকারী দেখুন",
+      "customer": "কাস্টমার ভিউ"
     }
   },
   "supplierPortal": {
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "হারভিকস সম্পর্কে",
-    "subtitle": "২০১৯ সাল থেকে উৎকৃষ্ট মানের ভোগ্যপণ্যে শ্রেষ্ঠত্ব",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "আমাদের গল্প",
     "story1": "২০১৯ সালে প্রতিষ্ঠিত হারভিকস একটি দূরদর্শী ধারণা থেকে প্রিমিয়াম ভোগ্যপণ্যের এক বিশ্বব্যাপী শীর্ষস্থানীয় প্রতিষ্ঠানে পরিণত হয়েছে। গুণমানের নিরলস সাধনা এবং উদ্ভাবনের প্রতি অঙ্গীকারই আমাদের এই যাত্রার মূল বৈশিষ্ট্য।",
     "story2": "আমরা ৪০টিরও বেশি দেশে কার্যক্রম পরিচালনা করি এবং এমন সব পণ্য সরবরাহ করি যা জীবনকে সমৃদ্ধ করে ও শিল্পে নতুন মানদণ্ড স্থাপন করে। আমাদের সাধারণ সূচনা থেকে বিশ্বব্যাপী উপস্থিতি পর্যন্ত, আমাদের মূল্যবোধ অপরিবর্তিত রয়েছে।",
@@ -1150,181 +1205,279 @@
   },
   "help": {
     "page": {
-      "title": "Help Center",
-      "subtitle": "Find the help you need"
+      "title": "সহায়তা কেন্দ্র",
+      "subtitle": "আপনার প্রয়োজনীয় সাহায্য খুঁজুন"
     },
-    "backToHelpCenter": "Back to Help Center",
+    "backToHelpCenter": "সহায়তা কেন্দ্রে ফিরে যান",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "প্রায়শই জিজ্ঞাসিত প্রশ্নাবলী",
+        "description": "সাধারণ প্রশ্নের উত্তর খুঁজুন"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "সহায়তার সাথে যোগাযোগ করুন",
+        "description": "আমাদের সমর্থন দলের সাথে যোগাযোগ করুন"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "ব্যবহারকারীর নির্দেশিকা",
+        "description": "ধাপে ধাপে নির্দেশিকা এবং টিউটোরিয়াল"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "সমস্যা সমাধান",
+        "description": "সাধারণ সমস্যা সমাধান করুন"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "অ্যাকাউন্ট সাহায্য",
+        "description": "আপনার অ্যাকাউন্ট এবং সেটিংস পরিচালনা করুন"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "অর্ডার সাপোর্ট",
+        "description": "অর্ডার এবং ডেলিভারি সাহায্য"
       }
     },
     "account": {
-      "title": "Account Help",
-      "subtitle": "Manage your account settings and preferences",
-      "placeholder": "Account management and settings help content will appear here."
+      "title": "অ্যাকাউন্ট সাহায্য",
+      "subtitle": "আপনার অ্যাকাউন্ট সেটিংস এবং পছন্দগুলি পরিচালনা করুন৷",
+      "placeholder": "অ্যাকাউন্ট পরিচালনা এবং সেটিংস সহায়তা সামগ্রী এখানে প্রদর্শিত হবে৷"
     },
     "orders": {
-      "title": "Order Support",
-      "subtitle": "Track and manage your orders and deliveries",
-      "placeholder": "Order and delivery support content will appear here."
+      "title": "অর্ডার সাপোর্ট",
+      "subtitle": "আপনার অর্ডার এবং ডেলিভারি ট্র্যাক এবং পরিচালনা করুন",
+      "placeholder": "অর্ডার এবং ডেলিভারি সমর্থন বিষয়বস্তু এখানে প্রদর্শিত হবে."
     },
     "guides": {
-      "title": "User Guides",
-      "subtitle": "Step-by-step guides to help you get the most out of Harvics",
+      "title": "ব্যবহারকারীর নির্দেশিকা",
+      "subtitle": "হার্ভিক্স থেকে সর্বাধিক সুবিধা পেতে আপনাকে সাহায্য করার জন্য ধাপে ধাপে নির্দেশিকা",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "শুরু করা",
+          "description": "বেসিক শিখুন"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "অ্যাকাউন্ট সেটআপ",
+          "description": "আপনার অ্যাকাউন্ট সেট আপ করুন"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "কিভাবে অর্ডার করবেন",
+          "description": "স্থান এবং ট্র্যাক আদেশ"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "পেমেন্ট পদ্ধতি",
+          "description": "পেমেন্ট বিকল্প এবং নিরাপত্তা"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "শিপিং এবং ডেলিভারি",
+          "description": "বিতরণ তথ্য"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "রিটার্ন এবং রিফান্ড",
+          "description": "রিটার্ন নীতি এবং প্রক্রিয়া"
         }
       }
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "subtitle": "Common issues and quick solutions",
+      "title": "সমস্যা সমাধান",
+      "subtitle": "সাধারণ সমস্যা এবং দ্রুত সমাধান",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "লগইন সমস্যা",
+          "description": "সাইন ইন করতে সমস্যা হচ্ছে"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "পেমেন্ট সমস্যা",
+          "description": "পেমেন্ট প্রক্রিয়া করা হচ্ছে না"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "ডেলিভারি বিলম্ব",
+          "description": "অর্ডার আসছে না"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "ওয়েবসাইট ত্রুটি",
+          "description": "পৃষ্ঠা লোড হচ্ছে না"
         }
       }
     }
   },
   "checkout": {
-    "secureCheckout": "Secure Checkout",
-    "title": "Complete Your Order",
-    "subtitle": "Review your items, enter shipping details, and confirm payment securely.",
-    "shippingInfo": "Shipping Information",
-    "paymentMethod": "Payment Method",
+    "secureCheckout": "নিরাপদ চেকআউট",
+    "title": "আপনার অর্ডার সম্পূর্ণ করুন",
+    "subtitle": "আপনার আইটেম পর্যালোচনা করুন, শিপিং বিশদ লিখুন, এবং নিরাপদে অর্থ প্রদান নিশ্চিত করুন।",
+    "shippingInfo": "শিপিং তথ্য",
+    "paymentMethod": "পেমেন্ট পদ্ধতি",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "ক্রেডিট/ডেবিট কার্ড",
+      "bankTransfer": "ব্যাঙ্ক ট্রান্সফার (LC/TT)",
       "wallet": "HPay Digital Wallet"
     },
-    "orderSummary": "Order Summary",
+    "orderSummary": "অর্ডার সারাংশ",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
-      "total": "Total"
+      "subtotal": "সাবটোটাল",
+      "shipping": "শিপিং",
+      "calculatedNextStep": "পরবর্তী ধাপে গণনা করা হয়েছে",
+      "tax": "ট্যাক্স",
+      "total": "মোট"
     },
-    "placeOrder": "Place Order",
-    "sslNotice": "Secured with 256-bit SSL encryption",
-    "continueShopping": "Continue Shopping",
+    "placeOrder": "অর্ডার করুন",
+    "sslNotice": "256-বিট SSL এনক্রিপশন সহ সুরক্ষিত",
+    "continueShopping": "কেনাকাটা চালিয়ে যান",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "প্রথম নাম",
+      "lastName": "পদবি",
+      "email": "ইমেইল",
+      "address": "ঠিকানা",
+      "city": "শহর",
+      "country": "দেশ"
     }
   },
   "history": {
     "hero": {
-      "title": "Our Journey",
-      "subtitle": "From a Dubai startup to a global enterprise spanning 42+ countries, 10 industry verticals, and 38 languages."
+      "title": "আমাদের যাত্রা",
+      "subtitle": "একটি দুবাই স্টার্টআপ থেকে 42+ দেশ, 10টি শিল্প উল্লম্ব এবং 38টি ভাষায় বিস্তৃত একটি বিশ্বব্যাপী এন্টারপ্রাইজ।"
     },
     "cta": {
-      "title": "Be Part of the Next Chapter",
-      "subtitle": "Join us as we scale to 60+ countries and build the future of AI-driven global commerce.",
-      "button": "View Careers"
+      "title": "পরবর্তী অধ্যায়ের অংশ হও",
+      "subtitle": "60+ দেশে স্কেল করার এবং AI-চালিত বিশ্ব বাণিজ্যের ভবিষ্যত গড়ে তোলার সময় আমাদের সাথে যোগ দিন।",
+      "button": "ক্যারিয়ার দেখুন"
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "দুবাইয়ে প্রতিষ্ঠিত",
+        "description": "হারভিক্স গ্লোবাল ভেঞ্চারস একটি বিশ্বমানের এফএমসিজি এবং বহু-উল্লম্ব ট্রেডিং সমষ্টি হওয়ার স্বপ্ন নিয়ে সংযুক্ত আরব আমিরাতে প্রতিষ্ঠিত। টেক্সটাইল এবং ভোগ্যপণ্য জুড়ে প্রথম অপারেশন চালু হয়।",
+        "highlight": "এক বছর"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "প্রথম আন্তর্জাতিক সম্প্রসারণ",
+        "description": "বিশ্বব্যাপী মহামারী চ্যালেঞ্জ সত্ত্বেও ইউরোপ, মধ্যপ্রাচ্য এবং দক্ষিণ এশিয়া জুড়ে 10টি দেশে প্রসারিত হয়েছে। ডিজিটাল সাপ্লাই চেইন অপারেশন এবং রিমোট ডিস্ট্রিবিউশন পার্টনারশিপ চালু করেছে।",
+        "highlight": "10টি দেশ"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "বহু-উল্লম্ব সম্প্রসারণ",
+        "description": "5টি নতুন শিল্প উল্লম্ব চালু করেছে: পণ্য, শিল্প সরঞ্জাম, খনিজ ও খনির, তেল ও গ্যাস, এবং রিয়েল এস্টেট৷ সমস্ত উল্লম্ব জুড়ে মোট পণ্যের ক্যাটালগ 500 SKU ছাড়িয়েছে৷",
+        "highlight": "5 নতুন উল্লম্ব"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "ডিজিটাল রূপান্তর",
+        "description": "Harvics OS-এর প্রথম সংস্করণ তৈরি করা হয়েছে — এআই-চালিত এন্টারপ্রাইজ প্ল্যাটফর্ম। সমস্ত বাজার জুড়ে পরিবেশক পোর্টাল, ই-কমার্স ক্ষমতা এবং রিয়েল-টাইম GPS ফ্লিট ট্র্যাকিং চালু করেছে।",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "স্থায়িত্ব এবং স্কেল",
+        "description": "কার্বন-নিরপেক্ষ অপারেশনে প্রতিশ্রুতিবদ্ধ। 30+ দেশে পৌঁছেছে। HPay (ডিজিটাল পেমেন্ট প্ল্যাটফর্ম), ট্রেড ফাইন্যান্স সলিউশন এবং AI-চালিত চাহিদার পূর্বাভাস সমস্ত উল্লম্ব জুড়ে চালু করেছে।",
+        "highlight": "30+ দেশ"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "গ্লোবাল এন্টারপ্রাইজ",
+        "description": "42+ দেশের মাইলফলক অতিক্রম করেছে। কৌশল, চাহিদা, মূল্য, কভারেজ এবং SKU অপ্টিমাইজেশানের জন্য 6 ML মডেল সহ AI ইঞ্জিন স্থাপন করা হয়েছে। 38টি ভাষা সমর্থন করে বহু-ভাষা প্ল্যাটফর্ম চালু করেছে।",
+        "highlight": "42+ দেশ"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "AI-প্রথম অপারেটিং সিস্টেম",
+        "description": "Harvics OS v2 চালু হয়েছে — রিয়েল-টাইম ইন্টেলিজেন্স সহ ইউনিফাইড এন্টারপ্রাইজ অপারেটিং সিস্টেম, Socket.io লাইভ ফিড, বাজার আক্রমণ পরিকল্পনার জন্য আলফা ইঞ্জিন, এবং সম্পূর্ণ 8-স্তরের ভৌগলিক শ্রেণিবিন্যাস।",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "সামনের ভিশন",
+        "description": "60+ দেশে স্কেলিং। বিশ্বের প্রথম এআই-চালিত এফএমসিজি এন্টারপ্রাইজ তৈরি করা যেখানে প্রতিটি ফাংশন — ক্রয়, লজিস্টিক, ফিনান্স, সিআরএম — মানুষের অনুমোদনের গেটগুলির সাথে ভবিষ্যদ্বাণীমূলক বুদ্ধিমত্তার উপর চলে।",
+        "highlight": "60+ টার্গেট"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "প্রাকটিক্যাল ট্রেড, সোর্সিং এবং প্রতিষ্ঠাতাদের জন্য এআই একাডেমি — ছয় সপ্তাহ, লাইভ সেশন, হার্ভিক্স করিডোর।",
+    "navLabel": "স্টার্টআপ একাডেমি",
+    "teaser": {
+      "eyebrow": "একাডেমি · করিডোর প্রোগ্রাম",
+      "title": "স্টার্টআপ একাডেমি।",
+      "body": "প্রতিষ্ঠাতাদের জন্য ক্লাসিক্যাল ট্রেড ক্রাফট — সোর্সিং, QC, ফান্ডিং ডেস্ক, এবং করিডোর সাক্ষরতা — হার্ভিক্স মার্কেটপ্লেসের পাশাপাশি।",
+      "cta": "একাডেমিতে প্রবেশ করুন"
+    },
+    "hero": {
+      "alt": "ক্লাসিক্যাল লেকচার হল — হার্ভিক্স স্টার্টআপ একাডেমি",
+      "eyebrow": "কোহোর্ট 01 · Q4 2026 · সহায়ক প্রোগ্রাম",
+      "title": "Harvics Startup Academy",
+      "body": "প্রতিষ্ঠাতাদের জন্য বাণিজ্যের একটি ক্লাসিক্যাল স্কুল — সোর্সিং, করিডোর কমার্স এবং এআই যা কাজ করে। ছয় সপ্তাহ। লাইভ সেশন. বাস্তব অপারেটর.",
+      "apply": "Cohort 01-এর জন্য আবেদন করুন",
+      "seeProgramme": "প্রোগ্রাম দেখুন"
+    },
+    "stats": {
+      "founders": "প্রতিষ্ঠাতা/দল",
+      "sessions": "লাইভ সেশন",
+      "weeks": "সপ্তাহ",
+      "verticals": "ট্রেড উল্লম্ব"
+    },
+    "why": {
+      "eyebrow": "01 · কেন যোগদান করুন",
+      "title": "এমন একটি কোম্পানী গড়ে তুলুন যা আসলে ট্রেড করতে পারে।",
+      "body": "পিচ থিয়েটার নয়। হার্ভিক্স করিডোর জুড়ে অপারেটরদের কাছ থেকে সেটেলমেন্ট, সোর্সিং অধ্যবসায়, ক্রেতার আউটরিচ এবং অটোমেশনের RFQ শিখুন।",
+      "item1Title": "ব্যবহারিক বাণিজ্য ব্যবস্থা",
+      "item1Body": "প্রাতিষ্ঠানিক ক্রেতারা কীভাবে ক্রয় করেন — এবং আপনি কীভাবে পূরণ করেন।",
+      "item2Title": "নেটওয়ার্ক যে জাহাজ",
+      "item2Body": "উল্লম্ব জুড়ে প্রতিষ্ঠাতা, পরিবেশক এবং অপারেটর।",
+      "item3Title": "AI যে কাজ করে",
+      "item3Body": "হার্ভিএক্স, ফিন ভয়েস, এবং অপস অটোমেশন বাজওয়ার্ড ছাড়াই।",
+      "imageAlt": "ধ্রুপদী বাণিজ্য এখনও জীবন"
+    },
+    "knowledge": {
+      "eyebrow": "জ্ঞান",
+      "title": "একটি শৃঙ্খলা মত করিডোর অধ্যয়ন.",
+      "body": "বাস্তব বাণিজ্য অনুশীলন থেকে আঁকা পাঠ্যক্রম — জেনেরিক স্টার্টআপ স্লাইড নয়।",
+      "imageAlt": "গ্র্যান্ড ক্লাসিক্যাল লাইব্রেরি"
+    },
+    "programme": {
+      "eyebrow": "02 · প্রোগ্রাম",
+      "title": "আপনি কি মাধ্যমে কাজ করবেন",
+      "m1Title": "ব্র্যান্ড ও সোর্সিং",
+      "m1Body": "MOQs, QC গেট, টেক্সটাইল এবং FMCG — করিডোর থেকে অ্যাটেলিয়ার।",
+      "m2Title": "বুদ্ধিমত্তা ও প্রচার",
+      "m2Body": "HarvyX ল্যাব, ক্রেতা ICP, ফলো-আপ যা উত্তর পায়।",
+      "m3Title": "মূলধন এবং অংশীদার",
+      "m3Body": "ফান্ডিং পাথ এবং অংশীদারিত্ব — কোনো জাল ব্যাঙ্ক দাবি নেই।",
+      "m4Title": "করিডোর বাণিজ্য",
+      "m4Body": "বন্দর, গলি, এবং কীভাবে পণ্যগুলি আসলে বাজার জুড়ে চলে।",
+      "m5Title": "গুণমান এবং পরিশ্রম",
+      "m5Body": "পরিদর্শন অভ্যাস যা খ্যাতি এবং নিষ্পত্তি রক্ষা করে।",
+      "m6Title": "পণ্য এবং FMCG",
+      "m6Body": "গুদাম বাস্তবতা থেকে ব্র্যান্ড এবং পাইকারি চাহিদা."
+    },
+    "tracks": {
+      "aEyebrow": "ট্র্যাক এ",
+      "aTitle": "ব্র্যান্ড ও বাণিজ্য",
+      "aBody": "পোশাক এবং FMCG প্রতিষ্ঠাতা বিল্ডিং ব্র্যান্ড, পাইকারি, এবং করিডোর চাহিদা.",
+      "aAlt": "ক্লাসিক্যাল বোর্ডরুম",
+      "bEyebrow": "ট্র্যাক বি",
+      "bTitle": "ট্রেড এবং অপ্স",
+      "bBody": "সোর্সিং, লজিস্টিকস, এবং B2B অপারেটররা প্রাতিষ্ঠানিক বাণিজ্য স্কেল করে।",
+      "bAlt": "সেলুন নেটওয়ার্কিং"
+    },
+    "network": {
+      "eyebrow": "03 · নেটওয়ার্ক",
+      "title": "অপারেটরদের সাথে দেখা করুন, দর্শকদের সাথে নয়।",
+      "body": "প্রতিষ্ঠাতা, পরিবেশক এবং হারভিক্স করিডোর অপারেটরদের সাথে লাইভ সেশন এবং সেলুন-স্টাইলের অফিস সময়।",
+      "imageAlt": "প্রতিষ্ঠাতা নেটওয়ার্কিং"
+    },
+    "rhythm": {
+      "eyebrow": "04 · ছন্দ",
+      "title": "ছয় সপ্তাহ। স্পষ্ট ক্যাডেন্স।",
+      "w1": "সপ্তাহ 1",
+      "w1Body": "অভিযোজন · করিডোর মানচিত্র · ICP কর্মশালা",
+      "w2": "সপ্তাহ 2",
+      "w2Body": "ক্রেতার আউটরিচ · HarvyX ল্যাব",
+      "w3": "সপ্তাহ 3",
+      "w3Body": "সোর্সিং এবং QC · সরবরাহকারীর অধ্যবসায়",
+      "w4": "সপ্তাহ 4",
+      "w4Body": "অটোমেশন · ফিন ভয়েস · অপস স্ট্যাক",
+      "w5": "সপ্তাহ 5",
+      "w5Body": "তহবিল এবং অংশীদারিত্ব",
+      "w6": "সপ্তাহ 6",
+      "w6Body": "প্রতিষ্ঠাতা শোকেস · পরবর্তী পদক্ষেপ"
+    },
+    "apply": {
+      "eyebrow": "অ্যাপ্লিকেশন",
+      "title": "Cohort 01-এর জন্য আবেদন করুন",
+      "body": "সীমিত আসন। আপনার কোম্পানি, উল্লম্ব এবং আপনি কী তৈরি করছেন তা আমাদের বলুন।",
+      "emailCta": "ইমেলের মাধ্যমে আবেদন করুন →",
+      "back": "হারভিক্স-এ ফেরত যান"
     }
   }
 }

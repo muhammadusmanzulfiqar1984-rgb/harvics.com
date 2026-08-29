@@ -3,40 +3,40 @@
 import { useEffect } from 'react'
 
 /**
- * Apple-style scroll effects
- * - Fade in elements as they enter viewport
- * - Smooth reveal animations
- * - Parallax effects
+ * Scroll polish for homepage sections.
+ * Does NOT hide content — apple-effects.css only animates .is-visible.
  */
 export default function AppleStyleScrollEffects() {
   useEffect(() => {
-    // Use the homepage snap-scroll container as the intersection root
-    const scrollContainer = document.getElementById('homepage-main')
+    const homepageMain = document.getElementById('homepage-main')
+    if (!homepageMain) return
 
-    // Intersection Observer for fade-in effects
-    const observerOptions = {
-      root: scrollContainer || null, // observe relative to the snap container
-      threshold: [0, 0.1, 0.3, 0.5],
-      rootMargin: '0px',
-    }
+    const overflowY = getComputedStyle(homepageMain).overflowY
+    const isScrollport = overflowY === 'auto' || overflowY === 'scroll' || overflowY === 'overlay'
+    const root: Element | null = isScrollport ? homepageMain : null
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible')
-        }
-      })
-    }, observerOptions)
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add('is-visible')
+        })
+      },
+      { root, threshold: [0, 0.12], rootMargin: '0px 0px -6% 0px' },
+    )
 
-    // Observe all sections, snap frames, and annotated components
-    const elements = document.querySelectorAll('#homepage-main > [data-animate], #homepage-main > [data-frame]')
-    elements.forEach((el) => observer.observe(el))
+    const elements = homepageMain.querySelectorAll(':scope > [data-animate], :scope > [data-frame], :scope > section, :scope > div')
+    elements.forEach((el) => {
+      const rect = el.getBoundingClientRect()
+      if (rect.top < window.innerHeight * 0.95 && rect.bottom > 0) {
+        el.classList.add('is-visible')
+      }
+      observer.observe(el)
+    })
 
-    // Parallax scroll effect for hero images (skip when user prefers reduced motion)
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     const parallaxElements = reduceMotion
       ? []
-      : Array.from(document.querySelectorAll('[data-parallax]')) as HTMLElement[]
+      : (Array.from(document.querySelectorAll('[data-parallax]')) as HTMLElement[])
 
     let raf = 0
     const handleScroll = () => {
@@ -46,8 +46,7 @@ export default function AppleStyleScrollEffects() {
         const scrolled = window.scrollY
         parallaxElements.forEach((el) => {
           const speed = parseFloat(el.dataset.parallaxSpeed || '0.5')
-          const yPos = -(scrolled * speed)
-          el.style.transform = `translate3d(0, ${yPos}px, 0)`
+          el.style.transform = `translate3d(0, ${-(scrolled * speed)}px, 0)`
         })
       })
     }
@@ -59,9 +58,7 @@ export default function AppleStyleScrollEffects() {
     return () => {
       observer.disconnect()
       cancelAnimationFrame(raf)
-      if (parallaxElements.length) {
-        window.removeEventListener('scroll', handleScroll)
-      }
+      if (parallaxElements.length) window.removeEventListener('scroll', handleScroll)
     }
   }, [])
 

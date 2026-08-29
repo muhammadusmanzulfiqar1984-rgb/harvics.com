@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apparel shots — preview only</title>
+  <style>
+    :root { --bg: #120e0e; --cream: #f5f0e8; --gold: #c3a35e; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg); color: var(--cream);
+      font-family: "Iowan Old Style", Palatino, Georgia, serif;
+    }
+    nav {
+      position: sticky; top: 0; z-index: 10;
+      display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;
+      padding: 0.85rem 1rem;
+      background: rgba(18,14,14,0.92);
+      border-bottom: 1px solid rgba(195,163,94,0.25);
+    }
+    nav a {
+      color: var(--gold); text-decoration: none;
+      font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase;
+      padding: 0.35rem 0.65rem; border: 1px solid rgba(195,163,94,0.35);
+    }
+    .shot {
+      min-height: 100vh;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      padding: 2.5rem 1rem 3.5rem;
+      border-bottom: 1px solid rgba(195,163,94,0.15);
+    }
+    .shot h2 {
+      font-weight: 400; font-size: 0.75rem; letter-spacing: 0.22em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 1rem;
+    }
+    .shot img {
+      width: min(92vw, 640px); height: auto; display: block;
+      border: 1px solid rgba(195,163,94,0.28);
+    }
+    .shot p { margin-top: 0.85rem; font-size: 0.72rem; opacity: 0.45; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#boys">Boys</a>
+    <a href="#girls">Girls</a>
+    <a href="#kids-sport">Kids sport</a>
+    <a href="#suits-m">Suits men</a>
+    <a href="#suits-w">Suits women</a>
+    <a href="#lingerie-robe">Lingerie robe</a>
+    <a href="#lingerie-flat">Lingerie flat</a>
+  </nav>
+
+  <section class="shot" id="boys">
+    <h2>Boys · tailored</h2>
+    <img src="./assets/harvictrade/products/fashion/apparel-shots/apparel-boys-tailored.jpg" alt="Boys tailored" />
+    <p>Not wired</p>
+  </section>
+  <section class="shot" id="girls">
+    <h2>Girls · dress</h2>
+    <img src="./assets/harvictrade/products/fashion/apparel-shots/apparel-girls-dress.jpg" alt="Girls dress" />
+    <p>Not wired</p>
+  </section>
+  <section class="shot" id="kids-sport">
+    <h2>Kids · sportswear</h2>
+    <img src="./assets/harvictrade/products/fashion/apparel-shots/apparel-kids-sportswear.jpg" alt="Kids sportswear" />
+    <p>Not wired</p>
+  </section>
+  <section class="shot" id="suits-m">
+    <h2>Suits · men</h2>
+    <img src="./assets/harvictrade/products/fashion/apparel-shots/apparel-suits-mens.jpg" alt="Mens suit" />
+    <p>Not wired</p>
+  </section>
+  <section class="shot" id="suits-w">
+    <h2>Suits · women</h2>
+    <img src="./assets/harvictrade/products/fashion/apparel-shots/apparel-suits-womens.jpg" alt="Womens suit" />
+    <p>Not wired</p>
+  </section>
+  <section class="shot" id="lingerie-robe">
+    <h2>Lingerie · silk robe</h2>
+    <img src="./assets/harvictrade/products/fashion/apparel-shots/apparel-lingerie-robe.jpg" alt="Lingerie robe" />
+    <p>Not wired</p>
+  </section>
+  <section class="shot" id="lingerie-flat">
+    <h2>Lingerie · lace set flat lay</h2>
+    <img src="./assets/harvictrade/products/fashion/apparel-shots/apparel-lingerie-flatlay.jpg" alt="Lingerie flat lay" />
+    <p>Not wired · lace-on-model still blocked by image API</p>
+  </section>
+</body>
+</html>

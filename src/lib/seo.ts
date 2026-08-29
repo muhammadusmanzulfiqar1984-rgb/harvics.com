@@ -105,7 +105,7 @@ export function generateSEOMetadata({
     classification: 'Global Trading and Distribution',
     other: {
       'og:phone_number': '+44 7405 527427',
-      'og:email': 'sales.uk@harvics.com',
+      'og:email': 'info@harvics.com',
       'og:latitude': '25.2048',
       'og:longitude': '55.2708',
       'og:street-address': 'Dubai, UAE',
@@ -127,7 +127,7 @@ export function generateOrganizationSchema() {
     logo: 'https://www.harvics.com/assets/brand/photo/logo.png',
     description: 'Leading global trading company delivering premium products across 10+ industries worldwide.',
     foundingDate: '2019',
-    email: 'sales.uk@harvics.com',
+    email: 'info@harvics.com',
     telephone: '+44-7405-527427',
     address: {
       '@type': 'PostalAddress',
@@ -146,7 +146,7 @@ export function generateOrganizationSchema() {
         '@type': 'ContactPoint',
         telephone: '+44-7405-527427',
         contactType: 'sales',
-        email: 'sales.uk@harvics.com',
+        email: 'info@harvics.com',
         areaServed: 'Worldwide',
         availableLanguage: ['English', 'Arabic', 'Spanish', 'French', 'German', 'Chinese', 'Japanese', 'Korean'],
       },

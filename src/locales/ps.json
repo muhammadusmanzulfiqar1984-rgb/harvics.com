@@ -3,13 +3,13 @@
   "home": {
     "welcome": "ښه راغلاست",
     "companyName": "هارویچ",
-    "tagline": "له ۲۰۱۹ کال راهیسې په پریمیم مصرفي توکو کې غوره والی",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "محصولات وپلټئ",
     "contact": "موږ سره اړیکه ونیسئ",
     "learnMore": "نور معلومات ترلاسه کړئ",
-    "brandStatement": "د نړیوال مصرفي توکو یو مخکښ شرکت چې د نړیوال کیفیت معیارونو سره سم په مختلفو کټګوریو کې غوره خوراکي محصولات وړاندې کوي.",
-    "taglineStart": "د پریمیم مصرفي توکو کې غوره والی له هغه راهیسې",
-    "taglineYear": "۲۰۱۹",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "لندن • میلان • نیویارک",
     "categories": {
       "bakery": "بیکري",
@@ -81,7 +81,8 @@
       "specialOffers": "ځانګړي وړاندیزونه",
       "promotions": "ترفیعات",
       "bulkOrders": "د لویو امرونو تخفیفونه"
-    }
+    },
+    "startupAcademy": "د پیل اکاډمۍ"
   },
   "products": {
     "ourProducts": "زموږ محصولات",
@@ -119,7 +120,40 @@
     "whatsapp": "واټس اپ",
     "callNow": "اوس زنګ ووهئ",
     "sendEmail": "برېښنالیک ولېږئ",
-    "messageUs": "موږ ته پیغام ورکړئ"
+    "messageUs": "موږ ته پیغام ورکړئ",
+    "getInTouch": "په تماس کې شئ",
+    "locations": "ځایونه",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "پیغام واستوئ",
+    "firstName": "لومړی نوم",
+    "firstNamePlaceholder": "خپل لومړی نوم ولیکئ",
+    "lastName": "تخلص",
+    "lastNamePlaceholder": "خپل وروستی نوم دننه کړئ",
+    "emailPlaceholder": "خپل بریښنالیک آدرس دننه کړئ",
+    "subject": "موضوع",
+    "subjectPlaceholder": "موضوع داخل کړئ",
+    "message": "پیغام",
+    "messagePlaceholder": "خپل پیغام ولیکئ",
+    "send": "لیږل",
+    "eyebrow": "لنډیز پیل کړئ",
+    "headline1": "لنډیز پیل کړئ.",
+    "headline2": "موږ په 24 ساعتونو کې ځواب ورکوو.",
+    "subhead": "موږ ته خپل کټګورۍ، حجم، او هدف بازار ته ووایاست. یو متخصص تاسو ته د سرچینې انتخابونو او شاخص قیمتونو سره بیرته راځي.",
+    "fullName": "بشپړ نوم",
+    "fullNamePlaceholder": "شاه تبریز",
+    "company": "شرکت",
+    "companyPlaceholder": "ستاسو سازمان",
+    "businessEmail": "د سوداګرۍ بریښنالیک",
+    "howCanWeHelp": "موږ څنګه مرسته کولی شو؟",
+    "sending": "لېږل...",
+    "sendEnquiry": "تفتیش واستوئ",
+    "sentTitle": "پیغام لیږل شوی.",
+    "sentSub": "زموږ ټیم به په 24 ساعتونو کې ځواب ووایی.",
+    "directChannels": "مستقیم چینلونه",
+    "trust1": "د 24 ساعتونو ځواب تضمین",
+    "trust2": "وقف شوي حساب مدیر",
+    "trust3": "NDA available on request",
+    "trust4": "42 بازارونه · نن ورځ 1,247 بار وړل"
   },
   "media": {
     "title": "د رسنیو مرکز",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "هارویکس ګلوبل وینچرز",
-    "tagline": "له ۲۰۱۹ کال راهیسې په پریمیم مصرفي توکو کې غوره والی",
-    "brandStatement": "د نړیوال مصرفي توکو یو مخکښ شرکت چې د نړیوال کیفیت معیارونو سره سم په مختلفو کټګوریو کې غوره خوراکي محصولات وړاندې کوي.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "لندن • میلان • نیویارک",
     "since": "له ۲۰۱۹ کال راهیسې",
     "harvicsNews": "د هارویکس خبرونه",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "زموږ شبکې سره یوځای شئ",
     "newsletterTagline": "د سوداګرۍ وروستي معلومات او د بازار تازه معلومات ترلاسه کړئ",
     "activeShipments": "فعال لیږنې",
-    "certifiedAudited": "تصدیق شوی او پلټل شوی"
+    "certifiedAudited": "تصدیق شوی او پلټل شوی",
+    "invalidEmail": "مهرباني وکړئ یو باوري بریښنالیک آدرس دننه کړئ",
+    "subscriptionSuccess": "د ګډون لپاره مننه!",
+    "subscriptionError": "یو څه غلط شو. مهرباني وکړئ بیا هڅه وکړئ."
   },
   "search": {
     "placeholder": "محصولات، نښې، یا کټګورۍ وپلټئ",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "بخښنه غواړم، زه دا نه پوهېدم. مهرباني وکړئ بیا یې ولیکئ؟",
       "help": "زه کولی شم ستاسو سره د محصول معلوماتو، فرمایشونو، یا عمومي پوښتنو کې مرسته وکړم. تاسو څه پوهیدل غواړئ؟",
-      "contact": "د نورو مرستو لپاره، مهرباني وکړئ موږ سره په support@harvics.com اړیکه ونیسئ یا +1-800-HARVICS ته زنګ ووهئ."
-    }
+      "contact": "د نورو مرستو لپاره، مهرباني وکړئ موږ سره په support@harvics.com اړیکه ونیسئ یا +1-800-HARVICS ته زنګ ووهئ.",
+      "product": "د مینو څخه زموږ د محصولاتو کتلاګ براوز کړئ، یا ماته ووایاست چې کومه کټګورۍ تاسو سره علاقه لري — FMCG، ټوکر، لوژستیک، او نور.",
+      "order": "د امر ورکولو یا وضعیت چیک کولو لپاره ، د توزیع کونکي پورټل ته مراجعه وکړئ یا د خپل حساب مدیر سره اړیکه ونیسئ.",
+      "about": "هارویکس ګلوبل وینچرز یو خپلواک سوداګریز زیربنا شرکت دی چې په 40+ هیوادونو کې 20+ کاله لري."
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "د لیږلو لپاره Enter فشار ورکړئ"
   },
   "common": {
     "chatWithUs": "زموږ سره خبرې وکړئ",
@@ -730,12 +772,17 @@
       "gps-tracking": "د GPS تعقیب",
       "localization": "ځایي کول",
       "workflows": "کاري جریانونه",
-      "admin": "اډمین"
+      "admin": "اډمین",
+      "modules": "ماډلونه"
     },
     "kpis": {
       "customers": "پیرودونکي",
       "employees": "کارکوونکي",
-      "profit": "ګټه"
+      "profit": "ګټه",
+      "totalOrders": "ټول حکمونه",
+      "inventoryValue": "د موجوديت ارزښت",
+      "logisticsEfficiency": "لوژستیک موثریت",
+      "revenue": "عواید"
     },
     "domain": {
       "title": "د CRM عملیاتي سیسټم",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "د خپلو پیرودونکو اړیکې، تعاملات، او کمپاینونه وګورئ او اداره کړئ.",
       "loading": "بارول کیږي...",
       "error": "د CRM معلوماتو بارولو کې تېروتنه"
+    },
+    "roleIndicator": {
+      "manager": "د مدیر لید",
+      "executive": "اجرایوي لید",
+      "investor": "د پانګوالو لید",
+      "distributor": "د توزیع کونکي لید",
+      "supplier": "د عرضه کوونکي لید",
+      "customer": "د پیرودونکي لید"
     }
   },
   "supplierPortal": {
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "د هارویکس په اړه",
-    "subtitle": "له ۲۰۱۹ کال راهیسې په پریمیم مصرفي توکو کې غوره والی",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "زموږ کیسه",
     "story1": "هارویکس، چې په ۲۰۱۹ کال کې تاسیس شو، له یوې لید لرونکې مفکورې څخه د غوره مصرفي توکو په برخه کې په نړیوال مشر بدل شو. زموږ سفر د کیفیت د نه ستړې کیدونکې تعقیب او نوښت ته د ژمنتیا له مخې تعریف شوی دی.",
     "story2": "موږ په ۴۰+ هیوادونو کې فعالیت کوو، داسې محصولات وړاندې کوو چې ژوند بډایه کوي او په صنعت کې نوي معیارونه ټاکي. زموږ د عاجز پیل څخه تر نړیوال شتون پورې، زموږ ارزښتونه بدل شوي ندي.",
@@ -1150,181 +1205,279 @@
   },
   "help": {
     "page": {
-      "title": "Help Center",
-      "subtitle": "Find the help you need"
+      "title": "د مرستې مرکز",
+      "subtitle": "هغه مرستې ومومئ چې تاسو ورته اړتیا لرئ"
     },
-    "backToHelpCenter": "Back to Help Center",
+    "backToHelpCenter": "بېرته د مرستې مرکز ته",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "په مکرر ډول پوښتل شوي پوښتنې",
+        "description": "د عامو پوښتنو ځوابونه ومومئ"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "د ملاتړ سره اړیکه ونیسئ",
+        "description": "زموږ د ملاتړ ټیم سره اړیکه ونیسئ"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "د کارن لارښود",
+        "description": "ګام په ګام لارښوونې او لارښوونې"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "د ستونزو حل کول",
+        "description": "عام مسایل حل کړئ"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "حساب مرسته",
+        "description": "خپل حساب او تنظیمات اداره کړئ"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "د امر ملاتړ",
+        "description": "د سپارښتنو او تحویلۍ سره مرسته وکړئ"
       }
     },
     "account": {
-      "title": "Account Help",
-      "subtitle": "Manage your account settings and preferences",
-      "placeholder": "Account management and settings help content will appear here."
+      "title": "حساب مرسته",
+      "subtitle": "د خپل حساب ترتیبات او غوره توبونه اداره کړئ",
+      "placeholder": "د حساب مدیریت او تنظیمات د مرستې مینځپانګې به دلته څرګند شي."
     },
     "orders": {
-      "title": "Order Support",
-      "subtitle": "Track and manage your orders and deliveries",
-      "placeholder": "Order and delivery support content will appear here."
+      "title": "د امر ملاتړ",
+      "subtitle": "خپل سپارښتنې او تحویلي تعقیب او اداره کړئ",
+      "placeholder": "د امر او تحویلي ملاتړ مینځپانګه به دلته څرګند شي."
     },
     "guides": {
-      "title": "User Guides",
-      "subtitle": "Step-by-step guides to help you get the most out of Harvics",
+      "title": "د کارن لارښود",
+      "subtitle": "ګام په ګام لارښودونه چې تاسو سره مرسته کوي د هارویکس څخه ډیره ګټه ترلاسه کړئ",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "پیل کول",
+          "description": "اساسات زده کړئ"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "د حساب تنظیم کول",
+          "description": "خپل حساب تنظیم کړئ"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "څنګه امر وکړو",
+          "description": "امرونه ځای او تعقیب کړئ"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "د تادیاتو میتودونه",
+          "description": "د تادیاتو اختیارونه او امنیت"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "بار وړل او تحویلي",
+          "description": "د سپارلو معلومات"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "بیرته ستنیدنه او بیرته ستنیدنه",
+          "description": "د راستنیدو پالیسي او پروسه"
         }
       }
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "subtitle": "Common issues and quick solutions",
+      "title": "د ستونزو حل کول",
+      "subtitle": "عام مسلې او چټک حلونه",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "د ننوتلو مسلې",
+          "description": "د ننوتلو ستونزې"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "د تادیاتو ستونزې",
+          "description": "تادیه پروسس نه کیږي"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "د سپارلو ځنډ",
+          "description": "امر نه راځي"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "د ویب پاڼې تېروتنې",
+          "description": "پاڼه نه پورته کیږي"
         }
       }
     }
   },
   "checkout": {
-    "secureCheckout": "Secure Checkout",
-    "title": "Complete Your Order",
-    "subtitle": "Review your items, enter shipping details, and confirm payment securely.",
-    "shippingInfo": "Shipping Information",
-    "paymentMethod": "Payment Method",
+    "secureCheckout": "خوندي چیک آوټ",
+    "title": "خپل امر بشپړ کړئ",
+    "subtitle": "خپل توکي بیاکتنه وکړئ ، د بار وړلو توضیحات دننه کړئ ، او په خوندي ډول تادیه تایید کړئ.",
+    "shippingInfo": "د بار وړلو معلومات",
+    "paymentMethod": "د تادیاتو طریقه",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "کریډیټ / ډیبیټ کارت",
+      "bankTransfer": "د بانک لیږد (LC/TT)",
       "wallet": "HPay Digital Wallet"
     },
-    "orderSummary": "Order Summary",
+    "orderSummary": "د امر لنډیز",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
-      "total": "Total"
+      "subtotal": "فرعي مجموعه",
+      "shipping": "لېږدول",
+      "calculatedNextStep": "په بل ګام کې حساب شوی",
+      "tax": "مالیه",
+      "total": "ټول"
     },
-    "placeOrder": "Place Order",
-    "sslNotice": "Secured with 256-bit SSL encryption",
-    "continueShopping": "Continue Shopping",
+    "placeOrder": "د ځای امر",
+    "sslNotice": "د 256-bit SSL کوډ کولو سره خوندي شوی",
+    "continueShopping": "پیرود ته دوام ورکړئ",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "لومړی نوم",
+      "lastName": "تخلص",
+      "email": "ایمیل",
+      "address": "پته",
+      "city": "ښار",
+      "country": "هیواد"
     }
   },
   "history": {
     "hero": {
-      "title": "Our Journey",
-      "subtitle": "From a Dubai startup to a global enterprise spanning 42+ countries, 10 industry verticals, and 38 languages."
+      "title": "زموږ سفر",
+      "subtitle": "د دوبۍ له پیل څخه تر 42+ هیوادونو، 10 صنعت عمودی، او 38 ژبو پراخې نړیوالې تصدۍ ته."
     },
     "cta": {
-      "title": "Be Part of the Next Chapter",
-      "subtitle": "Join us as we scale to 60+ countries and build the future of AI-driven global commerce.",
-      "button": "View Careers"
+      "title": "د راتلونکي فصل برخه اوسئ",
+      "subtitle": "موږ سره یوځای شئ ځکه چې موږ 60+ هیوادونو ته پیمانه کوو او د AI لخوا پرمخ وړل شوي نړیوال سوداګرۍ راتلونکي رامینځته کوو.",
+      "button": "کیریر وګورئ"
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "په دوبۍ کې تاسیس شوی",
+        "description": "د هارویکس ګلوبل وینچرز په متحده اماراتو کې د نړۍ په کچه FMCG او څو عمودی سوداګرۍ اتحادیه کیدو لید سره رامینځته شوی. لومړی عملیات د ټوکر او مصرفي توکو په برخه کې پیل شول.",
+        "highlight": "یو کال"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "لومړی نړیواله پراختیا",
+        "description": "په ټوله اروپا، منځني ختیځ او سویلي آسیا کې 10 هیوادونو ته د نړیوالې وبا ننګونو سره سره پراخ شوی. د ډیجیټل اکمالاتو سلسلې عملیات او د لیرې توزیع شراکتونه پیل کړل.",
+        "highlight": "10 هیوادونه"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "څو عمودی توسیع",
+        "description": "د 5 نوي صنعت عمودي په لاره اچول شوي: اجناسو، صنعتي تجهیزات، معدنيات او کان کیندنې، تیل او ګاز، او املاکو. د محصول ټول کتلاګ په ټولو عمودی برخو کې له 500 SKUs څخه ډیر شوی.",
+        "highlight": "5 نوي عمودي"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "ډیجیټل بدلون",
+        "description": "د هارویکس OS لومړۍ نسخه جوړه کړه - د AI ځواک لرونکي تصدۍ پلیټ فارم. په ټولو بازارونو کې د توزیع کونکي پورټلونه ، د ای کامرس وړتیاوې ، او د ریښتیني وخت GPS بیړۍ تعقیب پیل کړ.",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "پایښت او پیمانه",
+        "description": "د کاربن بې طرفه عملیاتو ته ژمن دی. 30+ هیوادونو ته رسیدلي. HPay (د ډیجیټل تادیاتو پلیټ فارم) ، د سوداګرۍ مالي حل حلونه ، او په ټولو عمودی برخو کې د AI لخوا پرمخ وړل شوي غوښتنې وړاندوینې پیل کړې.",
+        "highlight": "30+ هیوادونه"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "نړیوال تصدۍ",
+        "description": "د 42 څخه زیاتو هیوادونو ته رسیدلي. د ستراتیژۍ، غوښتنې، قیمت، پوښښ، او SKU اصلاح کولو لپاره د 6 ML ماډلونو سره د AI انجن ګمارل شوی. د څو ژبو پلیټ فارم په لاره اچولی چې د 38 ژبو ملاتړ کوي.",
+        "highlight": "42+ هیوادونه"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "AI - لومړی عملیاتي سیسټم",
+        "description": "Harvics OS v2 په لاره واچول شو - د ریښتیني وخت استخباراتو سره متحد تصدۍ عملیاتي سیسټم ، Socket.io ژوندی فیډونه ، د بازار برید پلانونو لپاره الفا انجن ، او د 8 درجې جغرافیایی درجه بندي بشپړول.",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "مخ په وړاندې لید",
+        "description": "تر 60+ هیوادونو پورې اندازه کول. د نړۍ د لومړي AI لخوا چلول شوي FMCG تصدۍ رامینځته کول چیرې چې هر فعالیت - تدارکات ، لوژستیک ، مالیه ، CRM - د وړاندوینې وړ استخباراتو سره د انساني تصویب دروازو سره پرمخ ځي.",
+        "highlight": "60+ هدف"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "د بنسټ ایښودونکو لپاره عملي تجارت، سرچینې، او AI اکاډمۍ - شپږ اونۍ، ژوندۍ ناستې، د هارویکس دهلیز.",
+    "navLabel": "د پیل اکاډمۍ",
+    "teaser": {
+      "eyebrow": "اکاډمۍ · دهلیز پروګرام",
+      "title": "د پیل اکاډمۍ.",
+      "body": "د بنسټ ایښودونکو لپاره کلاسیک سوداګریز هنري - سورس کول، QC، د تمویل میزونه، او د دهلیز سواد زده کړه - د هارویکس بازار سره.",
+      "cta": "اکاډمۍ ته ننوتل"
+    },
+    "hero": {
+      "alt": "د کلاسیک لیکچر تالار - د هارویکس سټارټ اپ اکاډمۍ",
+      "eyebrow": "Cohort 01 · Q4 2026 · د ملاتړ پروګرام",
+      "title": "Harvics Startup Academy",
+      "body": "د بنسټ ایښودونکو لپاره د سوداګرۍ کلاسیک ښوونځی - سرچینه کول ، دهلیز سوداګرۍ ، او AI چې کار کوي. شپږ اونۍ. ژوندۍ ناستې. اصلي چلونکي.",
+      "apply": "د کوهورټ 01 لپاره غوښتنه وکړئ",
+      "seeProgramme": "پروګرام وګورئ"
+    },
+    "stats": {
+      "founders": "بنسټ ایښودونکي / ډله",
+      "sessions": "ژوندۍ ناستې",
+      "weeks": "اونۍ",
+      "verticals": "د عمودی تجارت"
+    },
+    "why": {
+      "eyebrow": "01 · ولې یوځای شئ",
+      "title": "یو شرکت جوړ کړئ چې واقعیا تجارت کولی شي.",
+      "body": "نه پچ تیاتر. د هارویک دهلیزونو په اوږدو کې د چلونکو څخه د حل کولو ، د سرچینې مصرف ، د پیرودونکي لاسرسي او اتومات کولو RFQ زده کړئ.",
+      "item1Title": "د سوداګرۍ عملي سیسټمونه",
+      "item1Body": "اداری پیرودونکي څنګه پیرود کوي - او تاسو څنګه پوره کوئ.",
+      "item2Title": "هغه شبکه چې لیږدوي",
+      "item2Body": "بنسټ ایښودونکي، توزیع کونکي، او په عمودی برخو کې چلونکي.",
+      "item3Title": "AI چې کار کوي",
+      "item3Body": "HarvyX، Fin voice، او ops اتومات پرته له buzzwords.",
+      "imageAlt": "کلاسیک تجارت لاهم ژوند کوي"
+    },
+    "knowledge": {
+      "eyebrow": "پوهه",
+      "title": "دهلیز مطالعه د یو ډسپلین په څیر وکړئ.",
+      "body": "نصاب د ریښتیني سوداګرۍ تمرین څخه چمتو شوی - نه د عمومي پیل سلایډونو.",
+      "imageAlt": "لوی کلاسیک کتابتون"
+    },
+    "programme": {
+      "eyebrow": "02 · پروګرام",
+      "title": "هغه څه چې تاسو به یې له لارې کار کوئ",
+      "m1Title": "برانډ او منبع",
+      "m1Body": "MOQs، QC دروازې، ټوکرونه او FMCG - د دهلیز لپاره اتل.",
+      "m2Title": "استخبارات او پوهه",
+      "m2Body": "د هاروی ایکس لابراتوارونه، پیرودونکي ICP، تعقیب چې ځوابونه ترلاسه کوي.",
+      "m3Title": "سرمایه او شریکان",
+      "m3Body": "د تمویل لارې او شراکتونه - د جعلي بانک ادعاګانې نشته.",
+      "m4Title": "د سوداګرۍ دهلیز",
+      "m4Body": "بندرونه، لینونه، او څنګه چې توکي واقعا په بازارونو کې حرکت کوي.",
+      "m5Title": "کیفیت او لیوالتیا",
+      "m5Body": "د تفتیش عادتونه چې د شهرت او تصفیې ساتنه کوي.",
+      "m6Title": "توکي او FMCG",
+      "m6Body": "د ګودام حقیقت څخه تر برانډ او عمده پلور غوښتنې پورې."
+    },
+    "tracks": {
+      "aEyebrow": "تعقیب A",
+      "aTitle": "برانډ او تجارت",
+      "aBody": "د پوښاک او FMCG بنسټ ایښودونکي د برانډ، عمده پلور او دهلیز تقاضا جوړوي.",
+      "aAlt": "کلاسیک بورډ خونه",
+      "bEyebrow": "تعقیب ب",
+      "bTitle": "تجارت او عملیات",
+      "bBody": "سرچینې، لوژستیک، او د B2B آپریټرانو د اداری تجارت اندازه کول.",
+      "bAlt": "د سالون شبکه کول"
+    },
+    "network": {
+      "eyebrow": "03 · شبکه",
+      "title": "د چلونکو سره لیدنه وکړئ، نه لیدونکي.",
+      "body": "ژوندۍ ناستې او د سالون سټایل دفتر ساعتونه د بنسټ ایښودونکو ، توزیع کونکو او هارویک دهلیز چلونکو سره.",
+      "imageAlt": "د شبکې بنسټ ایښودونکي"
+    },
+    "rhythm": {
+      "eyebrow": "04 · تال",
+      "title": "شپږ اونۍ. پاکوالی",
+      "w1": "اونۍ 1",
+      "w1Body": "اورینټیشن · دهلیز نقشه · ICP ورکشاپ",
+      "w2": "اونۍ 2",
+      "w2Body": "د پیرودونکي لاسرسی · هاروی ایکس لابراتوار",
+      "w3": "اونۍ 3",
+      "w3Body": "سرچینه او QC · د عرضه کوونکي لیوالتیا",
+      "w4": "اونۍ 4",
+      "w4Body": "اتوماتیک · فین غږ · ops سټیک",
+      "w5": "اونۍ 5",
+      "w5Body": "تمویل او شراکت",
+      "w6": "اونۍ 6",
+      "w6Body": "بنسټ ایښودونکی · راتلونکی ګامونه"
+    },
+    "apply": {
+      "eyebrow": "غوښتنلیکونه",
+      "title": "د کوهورټ 01 لپاره غوښتنه وکړئ",
+      "body": "محدود څوکۍ. موږ ته خپل شرکت، عمودی، او هغه څه ووایاست چې تاسو یې جوړوئ.",
+      "emailCta": "د بریښنالیک له لارې غوښتنه وکړئ →",
+      "back": "بېرته هارويکس ته وگرځه"
     }
   }
 }

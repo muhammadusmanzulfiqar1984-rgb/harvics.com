@@ -3,13 +3,13 @@
   "home": {
     "welcome": "Välkommen till",
     "companyName": "Harwich",
-    "tagline": "Excellens inom premiumkonsumtionsvaror sedan 2019",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "Utforska produkter",
     "contact": "Kontakta oss",
     "learnMore": "Läs mer",
-    "brandStatement": "Ett ledande globalt konsumentvaruföretag som levererar premiumlivsmedel i olika kategorier med internationella kvalitetsstandarder.",
-    "taglineStart": "Excellence inom premiumkonsumtionsvaror sedan",
-    "taglineYear": "2019",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "London • Milano • New York",
     "categories": {
       "bakery": "Bageri",
@@ -81,7 +81,8 @@
       "specialOffers": "Specialerbjudanden",
       "promotions": "Kampanjer",
       "bulkOrders": "Rabatter för stora beställningar"
-    }
+    },
+    "startupAcademy": "Startup Academy"
   },
   "products": {
     "ourProducts": "Våra produkter",
@@ -119,7 +120,40 @@
     "whatsapp": "WhatsApp",
     "callNow": "Ring nu",
     "sendEmail": "Skicka e-post",
-    "messageUs": "Meddela oss"
+    "messageUs": "Meddela oss",
+    "getInTouch": "Hör av dig",
+    "locations": "Platser",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "Skicka meddelande",
+    "firstName": "Förnamn",
+    "firstNamePlaceholder": "Ange ditt förnamn",
+    "lastName": "Efternamn",
+    "lastNamePlaceholder": "Ange ditt efternamn",
+    "emailPlaceholder": "Ange din e-postadress",
+    "subject": "Ämne",
+    "subjectPlaceholder": "Ange ämne",
+    "message": "Meddelande",
+    "messagePlaceholder": "Skriv ditt meddelande",
+    "send": "Skicka",
+    "eyebrow": "Starta en kort",
+    "headline1": "Börja en kort.",
+    "headline2": "Vi svarar inom 24 timmar.",
+    "subhead": "Berätta för oss din kategori, volym och målmarknad. En specialist återkommer till dig med inköpsalternativ och vägledande prissättning.",
+    "fullName": "Fullständigt namn",
+    "fullNamePlaceholder": "Shah Tabraiz",
+    "company": "Företag",
+    "companyPlaceholder": "Din organisation",
+    "businessEmail": "Företags e-post",
+    "howCanWeHelp": "Hur kan vi hjälpa till?",
+    "sending": "Sändning...",
+    "sendEnquiry": "Skicka förfrågan",
+    "sentTitle": "Meddelande skickat.",
+    "sentSub": "Vårt team kommer att svara inom 24 timmar.",
+    "directChannels": "Direktkanaler",
+    "trust1": "24-timmars svarsgaranti",
+    "trust2": "Dedikerad kontoansvarig",
+    "trust3": "NDA available on request",
+    "trust4": "42 marknader · 1 247 försändelser idag"
   },
   "media": {
     "title": "Mediecenter",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "Harvics Global Ventures",
-    "tagline": "Excellens inom premiumkonsumtionsvaror sedan 2019",
-    "brandStatement": "Ett ledande globalt konsumentvaruföretag som levererar premiumlivsmedel i olika kategorier med internationella kvalitetsstandarder.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "London • Milano • New York",
     "since": "Sedan 2019",
     "harvicsNews": "Harvics Nyheter",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "Gå med i vårt nätverk",
     "newsletterTagline": "Få den senaste handelsinformationen och marknadsuppdateringar",
     "activeShipments": "Aktiva försändelser",
-    "certifiedAudited": "Certifierat och granskat"
+    "certifiedAudited": "Certifierat och granskat",
+    "invalidEmail": "Vänligen ange en giltig e-postadress",
+    "subscriptionSuccess": "Tack för att du prenumererar!",
+    "subscriptionError": "Något gick fel. Försök igen."
   },
   "search": {
     "placeholder": "Sök efter produkter, varumärken eller kategorier",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "Jag är ledsen, jag förstod inte det. Kan du formulera det om?",
       "help": "Jag kan hjälpa dig med produktinformation, beställningar eller allmänna frågor. Vad vill du veta?",
-      "contact": "För mer hjälp, vänligen kontakta oss på support@harvics.com eller ring +1-800-HARVICS."
-    }
+      "contact": "För mer hjälp, vänligen kontakta oss på support@harvics.com eller ring +1-800-HARVICS.",
+      "product": "Bläddra i vår produktkatalog från menyn, eller berätta vilken kategori som intresserar dig - FMCG, textilier, logistik och mer.",
+      "order": "För att göra en beställning eller kontrollera status, besök distributörsportalen eller kontakta din kontoansvariga.",
+      "about": "Harvics Global Ventures är ett suveränt handelsinfrastrukturföretag med 20+ år i 40+ länder."
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "Tryck på Enter för att skicka"
   },
   "common": {
     "chatWithUs": "Chatta med oss",
@@ -730,12 +772,17 @@
       "gps-tracking": "GPS-spårning",
       "localization": "Lokalisering",
       "workflows": "Arbetsflöden",
-      "admin": "Administration"
+      "admin": "Administration",
+      "modules": "Moduler"
     },
     "kpis": {
       "customers": "Kunder",
       "employees": "Anställda",
-      "profit": "Vinst"
+      "profit": "Vinst",
+      "totalOrders": "Totalt antal beställningar",
+      "inventoryValue": "Lagervärde",
+      "logisticsEfficiency": "Logistik effektivitet",
+      "revenue": "Inkomst"
     },
     "domain": {
       "title": "CRM-operativsystem",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "Visa och hantera dina kundrelationer, interaktioner och kampanjer.",
       "loading": "Belastning...",
       "error": "Fel vid inläsning av CRM-data"
+    },
+    "roleIndicator": {
+      "manager": "Managervy",
+      "executive": "Executive View",
+      "investor": "Investerarvy",
+      "distributor": "Distributörsvy",
+      "supplier": "Leverantörsvy",
+      "customer": "Kundvy"
     }
   },
   "supplierPortal": {
@@ -963,7 +1018,7 @@
   },
   "seo": {
     "home": {
-      "title": "Harvics Global Ventures | Premium Global Trading",
+      "title": "Harvics Global Ventures | Premium global handel",
       "description": "Ledande globalt handelsföretag som levererar premiumprodukter inom fler än 10 branscher. Verksamt i fler än 50 länder sedan 2019."
     },
     "about": {
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "Om Harvics",
-    "subtitle": "Excellens inom premiumkonsumtionsvaror sedan 2019",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "Vår berättelse",
     "story1": "Harvics grundades 2019 och har vuxit från en visionär idé till en global ledare inom premiumkonsumtionsvaror. Vår resa kännetecknas av en obeveklig strävan efter kvalitet och ett engagemang för innovation.",
     "story2": "Vi är verksamma i fler än 40 länder och levererar produkter som berikar liv och sätter nya standarder i branschen. Från vår ödmjuka början till vår globala närvaro har våra värderingar förblivit oförändrade.",
@@ -1150,181 +1205,279 @@
   },
   "help": {
     "page": {
-      "title": "Help Center",
-      "subtitle": "Find the help you need"
+      "title": "Hjälpcenter",
+      "subtitle": "Hitta den hjälp du behöver"
     },
-    "backToHelpCenter": "Back to Help Center",
+    "backToHelpCenter": "Tillbaka till hjälpcentret",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "Vanliga frågor",
+        "description": "Hitta svar på vanliga frågor"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "Kontakta support",
+        "description": "Kontakta vårt supportteam"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "Användarhandböcker",
+        "description": "Steg-för-steg-guider och tutorials"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "Felsökning",
+        "description": "Lös vanliga problem"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "Kontohjälp",
+        "description": "Hantera ditt konto och inställningar"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "Beställningssupport",
+        "description": "Hjälp med beställningar och leveranser"
       }
     },
     "account": {
-      "title": "Account Help",
-      "subtitle": "Manage your account settings and preferences",
-      "placeholder": "Account management and settings help content will appear here."
+      "title": "Kontohjälp",
+      "subtitle": "Hantera dina kontoinställningar och inställningar",
+      "placeholder": "Kontohantering och hjälpinnehåll för inställningar visas här."
     },
     "orders": {
-      "title": "Order Support",
-      "subtitle": "Track and manage your orders and deliveries",
-      "placeholder": "Order and delivery support content will appear here."
+      "title": "Beställningssupport",
+      "subtitle": "Spåra och hantera dina beställningar och leveranser",
+      "placeholder": "Beställnings- och leveranssupportinnehåll kommer att visas här."
     },
     "guides": {
-      "title": "User Guides",
-      "subtitle": "Step-by-step guides to help you get the most out of Harvics",
+      "title": "Användarhandböcker",
+      "subtitle": "Steg-för-steg-guider som hjälper dig att få ut det mesta av Harvics",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "Komma igång",
+          "description": "Lär dig grunderna"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "Kontoinställningar",
+          "description": "Konfigurera ditt konto"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "Hur man beställer",
+          "description": "Lägg och spåra beställningar"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "Betalningsmetoder",
+          "description": "Betalningsmöjligheter och säkerhet"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "Frakt & leverans",
+          "description": "Leveransinformation"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "Returer & Återbetalningar",
+          "description": "Returpolicy och process"
         }
       }
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "subtitle": "Common issues and quick solutions",
+      "title": "Felsökning",
+      "subtitle": "Vanliga problem och snabba lösningar",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "Inloggningsproblem",
+          "description": "Problem med att logga in"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "Betalningsproblem",
+          "description": "Betalning behandlas inte"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "Leveransförseningar",
+          "description": "Beställningen kommer inte fram"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "Webbplatsfel",
+          "description": "Sidan laddas inte"
         }
       }
     }
   },
   "checkout": {
-    "secureCheckout": "Secure Checkout",
-    "title": "Complete Your Order",
-    "subtitle": "Review your items, enter shipping details, and confirm payment securely.",
-    "shippingInfo": "Shipping Information",
-    "paymentMethod": "Payment Method",
+    "secureCheckout": "Säker utcheckning",
+    "title": "Slutför din beställning",
+    "subtitle": "Granska dina varor, ange fraktinformation och bekräfta betalningen säkert.",
+    "shippingInfo": "Fraktinformation",
+    "paymentMethod": "Betalningsmetod",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "Kredit-/betalkort",
+      "bankTransfer": "Banköverföring (LC/TT)",
       "wallet": "HPay Digital Wallet"
     },
-    "orderSummary": "Order Summary",
+    "orderSummary": "Beställningssammanfattning",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
+      "subtotal": "Delsumma",
+      "shipping": "Frakt",
+      "calculatedNextStep": "Beräknas vid nästa steg",
+      "tax": "Beskatta",
       "total": "Total"
     },
-    "placeOrder": "Place Order",
-    "sslNotice": "Secured with 256-bit SSL encryption",
-    "continueShopping": "Continue Shopping",
+    "placeOrder": "Beställ",
+    "sslNotice": "Säkrad med 256-bitars SSL-kryptering",
+    "continueShopping": "Fortsätt handla",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "Förnamn",
+      "lastName": "Efternamn",
+      "email": "E-post",
+      "address": "Adress",
+      "city": "Stad",
+      "country": "Land"
     }
   },
   "history": {
     "hero": {
-      "title": "Our Journey",
-      "subtitle": "From a Dubai startup to a global enterprise spanning 42+ countries, 10 industry verticals, and 38 languages."
+      "title": "Vår resa",
+      "subtitle": "Från en startup i Dubai till ett globalt företag som spänner över 42+ länder, 10 branschvertikaler och 38 språk."
     },
     "cta": {
-      "title": "Be Part of the Next Chapter",
-      "subtitle": "Join us as we scale to 60+ countries and build the future of AI-driven global commerce.",
-      "button": "View Careers"
+      "title": "Bli en del av nästa kapitel",
+      "subtitle": "Följ med oss ​​när vi skalar till 60+ länder och bygger framtiden för AI-driven global handel.",
+      "button": "Se karriärer"
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "Grundades i Dubai",
+        "description": "Harvics Global Ventures etablerat i Förenade Arabemiraten med en vision att bli ett världsklass FMCG och multivertikalt handelskonglomerat. Den första verksamheten lanserades inom textilier och konsumentvaror.",
+        "highlight": "År ett"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "Första internationella expansionen",
+        "description": "Expanderat till 10 länder i Europa, Mellanöstern och Sydasien trots globala pandemiutmaningar. Lanserade digital supply chain-verksamhet och fjärrdistributionspartnerskap.",
+        "highlight": "10 länder"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "Multivertikal expansion",
+        "description": "Lanserade 5 nya branschvertikaler: råvaror, industriell utrustning, mineraler och gruvdrift, olja och gas och fastigheter. Den totala produktkatalogen översteg 500 SKU:er i alla vertikaler.",
+        "highlight": "5 nya vertikaler"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "Digital transformation",
+        "description": "Byggde den första versionen av Harvics OS – den AI-drivna företagsplattformen. Lanserade distributörsportaler, e-handelsmöjligheter och GPS-spårning i realtid på alla marknader.",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "Hållbarhet & skala",
+        "description": "Engagerad i koldioxidneutral verksamhet. Nått 30+ länder. Lanserade HPay (digital betalningsplattform), handelsfinansieringslösningar och AI-driven efterfrågeprognoser över alla vertikaler.",
+        "highlight": "30+ länder"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "Globalt företag",
+        "description": "Överträffade milstolpen i 42+ länder. Utplacerad AI-motor med 6 ML-modeller för strategi, efterfrågan, prissättning, täckning och SKU-optimering. Lanserade flerspråkig plattform som stöder 38 språk.",
+        "highlight": "42+ länder"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "AI-First operativsystem",
+        "description": "Harvics OS v2 lanserades – enhetligt företagsoperativsystem med realtidsintelligens, Socket.io live-flöden, Alpha Engine för planer för marknadsattacker och komplett geografisk hierarki på åtta nivåer.",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "Visionen framåt",
+        "description": "Skalning till 60+ länder. Att bygga världens första AI-drivna FMCG-företag där varje funktion – inköp, logistik, ekonomi, CRM – körs på prediktiv intelligens med mänskliga godkännandeportar.",
+        "highlight": "60+ mål"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "Praktisk handel, inköp och AI-akademi för grundare - sex veckor, livesessioner, Harvics korridorer.",
+    "navLabel": "Startup Academy",
+    "teaser": {
+      "eyebrow": "Akademi · Korridorprogram",
+      "title": "Startup Academy.",
+      "body": "Klassiskt hantverk för grundare – inköp, kvalitetskontroll, finansieringsdiskar och korridorkunskap – tillsammans med Harvics marknadsplats.",
+      "cta": "Gå in på akademin"
+    },
+    "hero": {
+      "alt": "Klassisk föreläsningssal — Harvics Startup Academy",
+      "eyebrow": "Kohort 01 · Q4 2026 · Stödprogram",
+      "title": "Harvics Startup Academy",
+      "body": "En klassisk handelsskola för grundare - sourcing, korridorhandel och AI som fungerar. Sex veckor. Livesessioner. Riktiga operatörer.",
+      "apply": "Ansök till Cohort 01",
+      "seeProgramme": "Se program"
+    },
+    "stats": {
+      "founders": "Grundare / kohort",
+      "sessions": "Livesessioner",
+      "weeks": "Veckor",
+      "verticals": "Handel med vertikaler"
+    },
+    "why": {
+      "eyebrow": "01 · Varför gå med",
+      "title": "Bygg ett företag som faktiskt kan handla.",
+      "body": "Inte pitch-teater. Lär dig offertförfrågningar till avveckling, inköpsflit, uppsökande köpare och automatisering – från operatörer över Harvics korridorer.",
+      "item1Title": "Praktiska handelssystem",
+      "item1Body": "Hur institutionella köpare köper — och hur du uppfyller.",
+      "item2Title": "Nätverk som skickas",
+      "item2Body": "Grundare, distributörer och operatörer över vertikaler.",
+      "item3Title": "AI som fungerar",
+      "item3Body": "HarvyX, Fin voice och ops automation utan modeord.",
+      "imageAlt": "Klassisk handel stilleben"
+    },
+    "knowledge": {
+      "eyebrow": "Kunskap",
+      "title": "Studera korridoren som en disciplin.",
+      "body": "Läroplan hämtad från verklig handelspraxis - inte generiska startbilder.",
+      "imageAlt": "Stort klassiskt bibliotek"
+    },
+    "programme": {
+      "eyebrow": "02 · Program",
+      "title": "Vad du kommer att arbeta igenom",
+      "m1Title": "Varumärke och inköp",
+      "m1Body": "MOQ, QC-portar, textilier och FMCG — ateljé till korridor.",
+      "m2Title": "Intelligens & uppsökande",
+      "m2Body": "HarvyX labs, köpare ICP, uppföljningar som får svar.",
+      "m3Title": "Kapital & partners",
+      "m3Body": "Finansieringsvägar och partnerskap — inga falska bankfordringar.",
+      "m4Title": "Korridorhandel",
+      "m4Body": "Hamnar, körfält och hur varor faktiskt rör sig över marknader.",
+      "m5Title": "Kvalitet & flit",
+      "m5Body": "Inspektionsvanor som skyddar rykte och bosättning.",
+      "m6Title": "Råvaror och dagligvaror",
+      "m6Body": "Från lagerverklighet till varumärke och grossistefterfrågan."
+    },
+    "tracks": {
+      "aEyebrow": "Spår A",
+      "aTitle": "Varumärke & handel",
+      "aBody": "Apparel och FMCG-grundare bygger varumärke, grossist- och korridorefterfrågan.",
+      "aAlt": "Klassiskt styrelserum",
+      "bEyebrow": "Spår B",
+      "bTitle": "Handel & ops",
+      "bBody": "Inköps-, logistik- och B2B-operatörer som skalar upp institutionell handel.",
+      "bAlt": "Salong nätverk"
+    },
+    "network": {
+      "eyebrow": "03 · Nätverk",
+      "title": "Möt operatörer, inte publik.",
+      "body": "Livesessioner och kontorstider i salongstil med grundare, distributörer och Harvics korridoroperatörer.",
+      "imageAlt": "Grundare nätverk"
+    },
+    "rhythm": {
+      "eyebrow": "04 · Rytm",
+      "title": "Sex veckor. Tydlig kadens.",
+      "w1": "Vecka 1",
+      "w1Body": "Orientering · Korridorkarta · ICP-workshop",
+      "w2": "Vecka 2",
+      "w2Body": "Uppsökande köpare · HarvyX lab",
+      "w3": "Vecka 3",
+      "w3Body": "Sourcing & QC · Leverantörsarbete",
+      "w4": "Vecka 4",
+      "w4Body": "Automation · Fin röst · ops stack",
+      "w5": "Vecka 5",
+      "w5Body": "Finansiering & partnerskap",
+      "w6": "Vecka 6",
+      "w6Body": "Grundare showcase · nästa steg"
+    },
+    "apply": {
+      "eyebrow": "Ansökningar",
+      "title": "Ansök till Cohort 01",
+      "body": "Begränsat antal platser. Berätta för oss ditt företag, vertikal, och vad du bygger.",
+      "emailCta": "Ansök via e-post →",
+      "back": "Tillbaka till Harvics"
     }
   }
 }

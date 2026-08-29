@@ -24,9 +24,11 @@ import { harveyRouter }         from './routes/hx-harvey.routes';
 import { outreachRouter }       from './routes/hx-outreach.routes';
 import { outreachWebhookRouter } from './routes/hx-outreach-webhook.routes';
 import { repliesRouter }         from './routes/hx-replies.routes';
+import { eventsRouter }          from './routes/hx-events.routes';
 import { startRealtimeService, stopRealtimeService } from './hx-realtime.service';
 import { closePool }            from '../../packages/db/index';
 import { hxLogger }             from '../../packages/lib/hx-logger';
+import { disconnectProducer }   from '../../packages/lib/kafka';
 
 // ── Config ────────────────────────────────────────────────────────────────────
 
@@ -40,7 +42,13 @@ const app = express();
 // ── Middleware ────────────────────────────────────────────────────────────────
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:8080', 'http://localhost:9000'],
+  origin: [
+    'http://localhost:3000',
+    'http://localhost:8080',
+    'http://localhost:9000',
+    'https://harvics.com',
+    'https://www.harvics.com',
+  ],
   credentials: true,
 }));
 
@@ -97,6 +105,9 @@ app.use('/api/v1/outreach', outreachRouter);
 // Reply Detection AI (JWT required)
 app.use('/api/v1/replies', repliesRouter);
 
+// Event bus — Confluent Kafka Harvics_OS (JWT required)
+app.use('/api/v1/events', eventsRouter);
+
 // ── 404 handler ───────────────────────────────────────────────────────────────
 
 app.use((_req: Request, res: Response) => {
@@ -130,7 +141,7 @@ async function start(): Promise<void> {
   const server = app.listen(PORT, () => {
     hxLogger.info(MODULE, `API server listening on :${PORT}`, {
       env:    process.env.NODE_ENV ?? 'development',
-      routes: ['/health', '/api/v1/databank/*', '/api/v1/feed', '/api/v1/harvey/*', '/api/v1/outreach/*', '/api/v1/replies/*'],
+      routes: ['/health', '/api/v1/databank/*', '/api/v1/feed', '/api/v1/harvey/*', '/api/v1/outreach/*', '/api/v1/replies/*', '/api/v1/events/*'],
     });
   });
 
@@ -146,7 +157,10 @@ async function start(): Promise<void> {
       // 2. Stop the realtime PG client
       await stopRealtimeService();
 
-      // 3. Drain the shared pool
+      // 3. Disconnect Kafka producer (if connected)
+      try { await disconnectProducer(); } catch { /* ignore */ }
+
+      // 4. Drain the shared pool
       await closePool();
 
       hxLogger.info(MODULE, 'shutdown complete');

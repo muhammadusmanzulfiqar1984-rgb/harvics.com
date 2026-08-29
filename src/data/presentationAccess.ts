@@ -24,6 +24,8 @@ export const presentationAccessCodes: Record<string, PresentationAccessGrant> = 
   mafi222: { zone: 'lounge', deckId: 'fmcg-mafi', label: 'MAFI Programme' },
   denim2028: { zone: 'lounge', deckId: 'textiles-vietnam-denim', label: 'Vietnam Denim' },
   vndenim: { zone: 'lounge', deckId: 'textiles-vietnam-denim', label: 'Vietnam Denim' },
+  tabraiz2026: { zone: 'lobby', deckId: 'tabraiz-town', label: 'Tabraiz Town' },
+  tabraiz: { zone: 'lobby', deckId: 'tabraiz-town', label: 'Tabraiz Town' },
 }
 
 export const LA_PRES_NAME = 'La Pres'

@@ -412,14 +412,24 @@ export const STUB_CATALOG: Record<number, StubModuleSeed> = {
     records: [
       { id: 'fo-001', name: 'Omar Farouk', territory: 'AE', visitsToday: 12, samplesCollected: 47, locationLast: today() },
     ] },
+
+  72: { id: 72, name: 'Executive Intelligence', band: 'Analytics & Intelligence',
+    summary: [
+      { label: 'Surface', value: '/os/executive' },
+      { label: 'Role', value: 'Board command' },
+      { label: 'Source', value: 'Live OS APIs' },
+    ],
+    records: [
+      { id: 'exec-pack', name: 'Executive pack', note: 'Open /os/executive for live KPIs. Do not invent board numbers here.' },
+    ] },
 };
 
 export const stubCatalogRouter = Router();
 
 stubCatalogRouter.get('/stub/:id', (req: Request, res: Response) => {
   const id = Number(req.params.id);
-  if (!Number.isInteger(id) || id < 1 || id > 71) {
-    return res.status(400).json({ success: false, error: 'Invalid module id (must be 1..71)' });
+  if (!Number.isInteger(id) || id < 1 || id > 72) {
+    return res.status(400).json({ success: false, error: 'Invalid module id (must be 1..72)' });
   }
   const seed = STUB_CATALOG[id];
   if (!seed) {

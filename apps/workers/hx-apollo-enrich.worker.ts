@@ -215,6 +215,32 @@ async function applyEnrichment(params: {
      WHERE id = $4`,
     [params.email, params.linkedinUrl, params.title, params.contactId],
   );
+
+  try {
+    const { writebackContactsToD1 } = await import('../../packages/lib/hx-d1-writeback');
+    const { rows } = await pool.query(
+      `SELECT source, source_id, email_pattern, phone, linkedin_url, title,
+              full_name, first_name, last_name, company_name, company_domain,
+              icp_score, enriched_apollo, enriched_lusha, email_verified, raw_json
+       FROM hx_contacts WHERE id = $1`,
+      [params.contactId],
+    );
+    if (rows[0]) void writebackContactsToD1([rows[0]]);
+    const { emitOsEvent } = await import('../../packages/lib/kafka');
+    void emitOsEvent({
+      sourceModule: 'Harvics_Worker',
+      eventType: 'lead.enriched',
+      payload: {
+        contact_id: params.contactId,
+        stage: 'apollo_applied',
+        source: rows[0]?.source,
+        source_id: rows[0]?.source_id,
+        has_email: Boolean(params.email || rows[0]?.email_pattern),
+      },
+    });
+  } catch {
+    /* optional */
+  }
 }
 
 // ── Batch accumulator ─────────────────────────────────────────────────────────

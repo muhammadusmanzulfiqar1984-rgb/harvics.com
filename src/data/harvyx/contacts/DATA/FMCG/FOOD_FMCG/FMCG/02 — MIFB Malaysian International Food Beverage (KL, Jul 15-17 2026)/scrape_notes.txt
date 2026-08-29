@@ -1,0 +1,6 @@
+MIFB 2026
+- Approach A: https://mifb.com.my/exhibitors/ and https://mifb.com.my/exhibiting-companies/ returned 404 pages.
+- Approach B: https://mifb.com.my/visitor/exhibitor-list/ returned 404; https://mifb.com.my/2026/ loaded news/archive content only, not exhibitor data.
+- Approach B/C portal checks: https://app.mifb.com.my/ and https://app.mifb.com.my/concierge-menu/welcome were blocked by Cloudflare security verification from this environment.
+- Candidate MapYourShow domain https://mifb2026.mapyourshow.com/ returned an invalid show code / no public directory.
+- Result: 0 public exhibitor records could be scraped live from the requested MIFB sources in this environment, so the CSV contains headers only.

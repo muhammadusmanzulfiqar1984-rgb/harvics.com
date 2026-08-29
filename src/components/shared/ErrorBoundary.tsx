@@ -7,7 +7,6 @@ interface Props {
   children: ReactNode
   fallback?: ReactNode
   onError?: (error: Error, errorInfo: ErrorInfo) => void
-  // Localized text — pass from parent server component via getTranslations
   i18n?: {
     heading?: string
     description?: string
@@ -20,7 +19,10 @@ interface State {
   hasError: boolean
   error: Error | null
   errorInfo: ErrorInfo | null
+  reloading: boolean
 }
+
+const RELOAD_KEY = 'harvics_eb_reload'
 
 class ErrorBoundary extends Component<Props, State> {
   constructor(props: Props) {
@@ -28,96 +30,105 @@ class ErrorBoundary extends Component<Props, State> {
     this.state = {
       hasError: false,
       error: null,
-      errorInfo: null
+      errorInfo: null,
+      reloading: false,
     }
   }
 
-  static getDerivedStateFromError(error: Error): State {
+  static getDerivedStateFromError(error: Error): Partial<State> {
     return {
       hasError: true,
       error,
-      errorInfo: null
+      errorInfo: null,
     }
   }
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    // Log error using proper logging service
     logger.componentError('ErrorBoundary', error, errorInfo)
-    
-    // Call custom error handler if provided
-    if (this.props.onError) {
-      this.props.onError(error, errorInfo)
-    }
+    if (this.props.onError) this.props.onError(error, errorInfo)
+    this.setState({ error, errorInfo })
 
-    this.setState({
-      error,
-      errorInfo
-    })
+    // Never leave the user stuck on "Something went wrong" after HMR/chunk failures.
+    // Hard-navigate once per tab session; clear on successful boot (see ClearErrorReloadFlag).
+    if (typeof window === 'undefined') return
+    if (this.props.fallback !== undefined) return
+    try {
+      if (sessionStorage.getItem(RELOAD_KEY)) return
+      sessionStorage.setItem(RELOAD_KEY, '1')
+      this.setState({ reloading: true })
+      const path = window.location.pathname || '/en'
+      window.location.replace(`${path}?r=${Date.now()}`)
+    } catch {
+      /* ignore */
+    }
   }
 
   handleReset = () => {
     this.setState({
       hasError: false,
       error: null,
-      errorInfo: null
+      errorInfo: null,
+      reloading: false,
     })
   }
 
   render() {
     if (this.state.hasError) {
-      if (this.props.fallback) {
+      if (this.props.fallback !== undefined) {
         return this.props.fallback
+      }
+
+      if (this.state.reloading) {
+        return (
+          <div className="min-h-[40vh] flex items-center justify-center bg-white px-4">
+            <p className="text-harvics-burgundy text-sm">Recovering…</p>
+          </div>
+        )
       }
 
       return (
         <div className="min-h-screen flex items-center justify-center bg-white px-4">
-          <div className="max-w-md w-full bg-white rounded-lg shadow-lg p-6">
-            <div className="flex items-center justify-center w-12 h-12 mx-auto bg-red-100 rounded-full mb-4">
-              <svg
-                className="w-6 h-6 text-red-600"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
-                />
-              </svg>
-            </div>
-            
+          <div className="max-w-md w-full bg-white p-6 border border-harvics-gold/20">
             <h2 className="text-xl font-bold text-black text-center mb-2">
               {this.props.i18n?.heading || 'Something went wrong'}
             </h2>
-            
             <p className="text-black text-center mb-4">
-              {this.props.i18n?.description || "We're sorry, but something unexpected happened. Please try refreshing the page."}
+              {this.props.i18n?.description ||
+                "We're sorry, but something unexpected happened. Please try refreshing the page."}
             </p>
 
-            {process.env.NODE_ENV === 'development' && this.state.error && (
-              <details className="mb-4 p-3 bg-white rounded text-sm">
-                <summary className="cursor-pointer font-semibold mb-2">
-                  Error Details (Development Only)
+            {this.state.error && (
+              <details open className="mb-4 p-3 bg-red-50 border border-red-200 text-sm text-left">
+                <summary className="cursor-pointer font-semibold mb-2 text-red-800">
+                  Error Details
                 </summary>
-                <pre className="whitespace-pre-wrap text-xs">
+                <pre className="whitespace-pre-wrap text-xs text-red-700 max-h-48 overflow-auto">
                   {this.state.error.toString()}
-                  {this.state.errorInfo?.componentStack}
+                  {this.state.error.stack ? `\n\n${this.state.error.stack}` : ''}
+                  {this.state.errorInfo?.componentStack || ''}
                 </pre>
               </details>
             )}
 
             <div className="flex gap-3">
               <button
+                type="button"
                 onClick={this.handleReset}
-                className="flex-1 bg-harvics-burgundy text-white px-4 py-2 font-semibold hover:bg-[#5a0012] transition-colors"
+                className="flex-1 bg-harvics-burgundy text-white px-4 py-2 font-semibold"
               >
                 {this.props.i18n?.tryAgain || 'Try Again'}
               </button>
               <button
-                onClick={() => window.location.reload()}
-                className="flex-1 border border-harvics-burgundy text-harvics-burgundy px-4 py-2 font-semibold hover:bg-harvics-burgundy hover:text-white transition-colors"
+                type="button"
+                onClick={() => {
+                  try {
+                    sessionStorage.removeItem(RELOAD_KEY)
+                  } catch {
+                    /* ignore */
+                  }
+                  window.location.assign((window.location.pathname || '/en') + '?r=' + Date.now())
+                }}
+                className="flex-1 border border-harvics-burgundy text-harvics-burgundy px-4 py-2 font-semibold"
               >
                 {this.props.i18n?.reload || 'Reload Page'}
               </button>
@@ -132,3 +143,15 @@ class ErrorBoundary extends Component<Props, State> {
 }
 
 export default ErrorBoundary
+
+/** Call once from layout chrome after a healthy mount so future crashes can auto-recover again. */
+export function clearErrorBoundaryReloadFlag() {
+  if (typeof window === 'undefined') return
+  try {
+    sessionStorage.removeItem(RELOAD_KEY)
+    sessionStorage.removeItem('harvics_chunk_reload')
+    sessionStorage.removeItem('harvics_webpack_reload')
+  } catch {
+    /* ignore */
+  }
+}

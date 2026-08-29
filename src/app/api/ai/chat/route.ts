@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { callOpenAI, callNvidia } from '@/lib/openai'
+import { HARVICS_PRIMARY } from '@/data/harvicsContacts'
 
 const GROQ_API_KEY = process.env.GROQ_API_KEY
 const GROQ_MODEL   = process.env.GROQ_MODEL || 'llama-3.3-70b-versatile'
@@ -10,7 +11,7 @@ function ruleBasedReply(message: string): string {
   if (m.includes('hello') || m.includes('hi') || m.includes('hey'))
     return "Hello! I'm the Harvics AI assistant. How can I help you today?"
   if (m.includes('price') || m.includes('cost') || m.includes('fee'))
-    return 'Pricing varies by product and volume. Please contact our team at info@harvics.com for a quote.'
+    return 'Pricing varies by product and volume. Please contact sourcing@harvics.com or info@harvics.com for a quote.'
   if (m.includes('ship') || m.includes('deliver') || m.includes('logistics'))
     return 'We handle UK-GCC corridor shipments with full customs clearance. Typical transit is 5-12 days depending on mode.'
   if (m.includes('certif') || m.includes('compliance') || m.includes('audit'))
@@ -20,7 +21,7 @@ function ruleBasedReply(message: string): string {
   if (m.includes('vat') || m.includes('tax') || m.includes('expense'))
     return 'Vatify supports VAT calculations across all EU jurisdictions. Add your expenses and the engine auto-calculates the recoverable VAT.'
   if (m.includes('contact') || m.includes('support') || m.includes('help'))
-    return 'For support, email info@harvics.com or visit harvics.com. Our team is available Mon-Fri 9am-6pm GMT.'
+    return `For support, email ${HARVICS_PRIMARY.support} or info@harvics.com — or open the Zendesk widget on site. Full directory: harvics.com/en/contact · Phone +44 7405 527427.`
   if (m.includes('thank'))
     return "You're welcome! Let me know if you need anything else."
   return "I'm here to help with trade, logistics, events, and compliance questions. What would you like to know?"

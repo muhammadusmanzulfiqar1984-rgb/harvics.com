@@ -1,24 +1,21 @@
 'use client'
 
-import React from 'react'
-import { useLocale } from 'next-intl'
-import { usePathname } from 'next/navigation'
-import DashboardLayout from '@/components/layouts/DashboardLayout'
-import ImportExportDomainContent from '@/components/os-domains/ImportExportDomainContent'
+import HarvicsOSShell from '@/components/shared/HarvicsOSShell'
+import TradeModuleTwentySeven from '@/components/os-domains/TradeModuleTwentySeven'
 
+/** Module #27 — Trade & customs (HS codes) */
 export default function ImportExportOSPage() {
-  const locale = useLocale()
-  const pathname = usePathname()
-  
-  const persona = pathname?.includes('/portal/distributor') ? 'distributor' :
-                  pathname?.includes('/portal/supplier') ? 'supplier' : 'company'
-
   return (
-    <DashboardLayout
-      portal={persona}
-      pageTitle="Import/Export OS"
+    <HarvicsOSShell
+      title="Trade & Customs"
+      subtitle="Module #27 — SAP+ HS codes · duty · customs"
+      activeDomain="import-export"
+      breadcrumbs={[
+        { label: 'OS', href: '/os' },
+        { label: 'Import / Export' },
+      ]}
     >
-      <ImportExportDomainContent persona={persona} locale={locale} />
-    </DashboardLayout>
+      <TradeModuleTwentySeven />
+    </HarvicsOSShell>
   )
 }

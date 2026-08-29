@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fashion models — separate preview (not wired)</title>
+  <style>
+    :root { --bg: #120e0e; --cream: #f5f0e8; --gold: #c3a35e; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--cream);
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    }
+    nav {
+      position: sticky; top: 0; z-index: 10;
+      display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;
+      padding: 0.85rem 1rem;
+      background: rgba(18, 14, 14, 0.92);
+      border-bottom: 1px solid rgba(195, 163, 94, 0.25);
+    }
+    nav a {
+      color: var(--gold); text-decoration: none;
+      font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase;
+      padding: 0.4rem 0.7rem; border: 1px solid rgba(195, 163, 94, 0.35);
+    }
+    .shot {
+      min-height: 100vh;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      padding: 3rem 1.25rem 4rem;
+      border-bottom: 1px solid rgba(195, 163, 94, 0.15);
+    }
+    .shot h2 {
+      font-weight: 400; font-size: 0.75rem; letter-spacing: 0.24em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 1.25rem;
+    }
+    .shot img {
+      width: min(92vw, 720px); height: auto; display: block;
+      border: 1px solid rgba(195, 163, 94, 0.28);
+    }
+    .shot p { margin-top: 1rem; font-size: 0.75rem; opacity: 0.45; }
+    .note {
+      max-width: 640px; margin: 2rem auto; padding: 0 1rem;
+      text-align: center; font-size: 0.85rem; opacity: 0.6; line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#sportswear">Sportswear</a>
+    <a href="#active">Active</a>
+    <a href="#nightwear">Nightwear robe</a>
+    <a href="#swim">Swim</a>
+    <a href="#gown">Gown</a>
+  </nav>
+
+  <p class="note">Models with garments — preview only, not wired. Lingerie / lace set with model is blocked by the image API safety filter; robe / swim / sportswear / gown generated instead.</p>
+
+  <section class="shot" id="sportswear">
+    <h2>Sportswear · model</h2>
+    <img src="./assets/harvictrade/products/fashion/v3-sportswear-girl.jpg" alt="Sportswear model" />
+    <p>Not wired</p>
+  </section>
+
+  <section class="shot" id="active">
+    <h2>Activewear · model</h2>
+    <img src="./assets/harvictrade/products/fashion/v3-active-girl.jpg" alt="Activewear model" />
+    <p>Not wired</p>
+  </section>
+
+  <section class="shot" id="nightwear">
+    <h2>Nightwear robe · model</h2>
+    <img src="./assets/harvictrade/products/fashion/v3-nightwear-girl.jpg" alt="Nightwear robe model" />
+    <p>Not wired</p>
+  </section>
+
+  <section class="shot" id="swim">
+    <h2>Swim · model</h2>
+    <img src="./assets/harvictrade/products/fashion/v3-swim-girl.jpg" alt="Swim model" />
+    <p>Not wired</p>
+  </section>
+
+  <section class="shot" id="gown">
+    <h2>Gown · model</h2>
+    <img src="./assets/harvictrade/products/fashion/v3-gown-girl.jpg" alt="Gown model" />
+    <p>Not wired</p>
+  </section>
+</body>
+</html>

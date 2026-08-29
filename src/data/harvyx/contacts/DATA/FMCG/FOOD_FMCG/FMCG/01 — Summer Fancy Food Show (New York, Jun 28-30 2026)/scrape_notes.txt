@@ -1,0 +1,5 @@
+Summer Fancy Food Show
+- Approach A: https://www.specialtyfood.com/member-directory/ returned 404.
+- Approach B: official exhibitor directory page on specialtyfood.com loaded, but the live exhibitor data is served via the show's MapYourShow directory.
+- Approach C worked with requests against the live MapYourShow JSON endpoint after Playwright hit a 403 on the interactive page.
+- Scraped 2193 exhibitor records from https://sff2026.mapyourshow.com/8_0/ajax/remote-proxy.cfm?action=search&searchtype=exhibitorgallery&searchsize=5000 and enriched each record from the public exhibitor detail pages.

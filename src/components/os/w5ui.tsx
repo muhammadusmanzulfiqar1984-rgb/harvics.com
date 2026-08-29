@@ -10,7 +10,7 @@ export function Hdr({ no, band, title, sub }: { no: string; band: string; title:
   return (
     <div style={{ background: B, color: C, padding: '20px 32px', borderBottom: `4px solid ${G}` }}>
       <div style={{ fontSize: 11, letterSpacing: 2, opacity: 0.85 }}>MODULE {no} · {band}</div>
-      <h1 style={{ margin: '6px 0 0', fontSize: 26, fontFamily: 'Georgia,serif' }}>{title}</h1>
+      <h1 style={{ margin: '6px 0 0', fontSize: 26,  }}>{title}</h1>
       <div style={{ fontSize: 12, opacity: 0.8, marginTop: 4 }}>{sub}</div>
     </div>
   )
@@ -92,14 +92,42 @@ export function Grid({ children, cols = 2 }: { children: React.ReactNode; cols?:
   return <div style={{ padding: '12px 24px 24px', display: 'grid', gridTemplateColumns: `repeat(${cols},1fr)`, gap: 16 }}>{children}</div>
 }
 
+/** Bearer auth for wave5/6/7 (requireAuthScope). Falls back to demo token in local/dev. */
+export function authHeaders(): HeadersInit {
+  const token =
+    typeof window !== 'undefined'
+      ? localStorage.getItem('auth_token') || 'demo-token-company_admin'
+      : 'demo-token-company_admin'
+  return {
+    'Content-Type': 'application/json',
+    Authorization: `Bearer ${token}`,
+  }
+}
+
 export async function postJson(url: string, body: any) {
-  const r = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
-  const j = await r.json()
-  if (!j.success) throw new Error(j.error || JSON.stringify(j.issues || j))
+  const r = await fetch(url, { method: 'POST', headers: authHeaders(), body: JSON.stringify(body) })
+  const j = await r.json().catch(() => ({}))
+  if (!r.ok || j.success === false) throw new Error(j.error || JSON.stringify(j.issues || j) || `HTTP ${r.status}`)
   return j
 }
 
 export async function getJson(url: string) {
-  const r = await fetch(url, { cache: 'no-store' })
-  return r.json()
+  const r = await fetch(url, { cache: 'no-store', headers: authHeaders() })
+  const j = await r.json().catch(() => ({}))
+  if (!r.ok) return { success: false, error: j.error || `HTTP ${r.status}`, data: j.data || [] }
+  return j
+}
+
+export async function patchJson(url: string, body: any) {
+  const r = await fetch(url, { method: 'PATCH', headers: authHeaders(), body: JSON.stringify(body) })
+  const j = await r.json().catch(() => ({}))
+  if (!r.ok || j.success === false) throw new Error(j.error || JSON.stringify(j.issues || j) || `HTTP ${r.status}`)
+  return j
+}
+
+export async function delJson(url: string) {
+  const r = await fetch(url, { method: 'DELETE', headers: authHeaders() })
+  const j = await r.json().catch(() => ({ success: r.ok }))
+  if (!r.ok || j.success === false) throw new Error(j.error || `HTTP ${r.status}`)
+  return j
 }

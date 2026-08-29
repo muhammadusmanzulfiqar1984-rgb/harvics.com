@@ -3,18 +3,12 @@
 import React, { useEffect, useState, useRef } from 'react'
 import Link from 'next/link'
 import { useLocale } from 'next-intl'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { VictorianAnalogClock } from '@/components/ui/VictorianHorology'
-
-gsap.registerPlugin(ScrollTrigger)
 
 const STATS = [
-  { label: 'Track Record', value: '$1.2B+' },
   { label: 'Operating Legacy', value: '20 Years' },
   { label: 'Industry Verticals', value: '10' },
   { label: 'Continents', value: '4' },
-  { label: 'HarvicsOS Modules', value: '71' },
+  { label: 'HarvicsOS Modules', value: '72' },
   { label: 'Trade Corridors', value: 'EU-GCC-South Asia' },
 ]
 
@@ -42,7 +36,6 @@ const LiquidGlassHero: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null)
   const sectionRef = useRef<HTMLElement>(null)
 
-  const trackRecord = useCountUp(12, 1800, statsVisible)
   const years = useCountUp(20, 1200, statsVisible)
   const verticals = useCountUp(10, 1200, statsVisible)
   const continents = useCountUp(4, 900, statsVisible)
@@ -77,27 +70,48 @@ const LiquidGlassHero: React.FC = () => {
     }
   }, [])
 
+  // Hero parallax — loaded inside effect so a GSAP failure never blanks the page.
   useEffect(() => {
     const section = sectionRef.current
     const video = videoRef.current
     if (!section || !video) return
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
 
-    const ctx = gsap.context(() => {
-      gsap.to(video, {
-        scale: 1.14,
-        y: '10%',
-        ease: 'none',
-        scrollTrigger: {
-          trigger: section,
-          start: 'top top',
-          end: 'bottom top',
-          scrub: true,
-        },
-      })
-    }, section)
+    let reverted = false
+    let ctx: { revert: () => void } | null = null
 
-    return () => ctx.revert()
+    void (async () => {
+      try {
+        const { gsap } = await import('gsap')
+        const { ScrollTrigger } = await import('gsap/ScrollTrigger')
+        if (reverted) return
+        gsap.registerPlugin(ScrollTrigger)
+        ctx = gsap.context(() => {
+          gsap.to(video, {
+            scale: 1.14,
+            y: '10%',
+            ease: 'none',
+            scrollTrigger: {
+              trigger: section,
+              start: 'top top',
+              end: 'bottom top',
+              scrub: true,
+            },
+          })
+        }, section)
+      } catch {
+        /* parallax is optional */
+      }
+    })()
+
+    return () => {
+      reverted = true
+      try {
+        ctx?.revert()
+      } catch {
+        /* ignore */
+      }
+    }
   }, [])
 
   // Ticker now runs as a pure CSS animation (no React re-renders).
@@ -138,35 +152,6 @@ const LiquidGlassHero: React.FC = () => {
 
         {/* Soft bottom-right mask (clips watermark edge on some cuts) */}
         <div className="hero-corner-mask" aria-hidden />
-      </div>
-
-      {/* Hero header — textile-v2 horology clock */}
-      <div
-        className="absolute top-0 left-0 right-0 z-30 pointer-events-none"
-      >
-        <div className="max-w-harvics-layout mx-auto px-6 pt-5 flex items-center justify-start">
-          <div
-            className="pointer-events-auto flex items-center gap-3 px-3 py-1.5"
-            style={{
-              background: 'rgba(13,11,8,0.55)',
-              border: '1px solid rgba(200,169,110,0.35)',
-              backdropFilter: 'blur(10px)',
-            }}
-          >
-            <VictorianAnalogClock size={44} />
-            <span
-              style={{
-                fontSize: '9px',
-                letterSpacing: '0.22em',
-                textTransform: 'uppercase',
-                color: 'rgba(232,204,138,0.85)',
-                fontFamily: 'var(--font-playfair-display), Georgia, "Times New Roman", serif',
-              }}
-            >
-              Local Time
-            </span>
-          </div>
-        </div>
       </div>
 
       {/* ── MAIN CONTENT ── */}
@@ -247,7 +232,6 @@ const LiquidGlassHero: React.FC = () => {
         {/* Animated Stats Row */}
         <div ref={statsRef} style={{ display: 'flex', gap: 'clamp(20px, 4vw, 52px)', flexWrap: 'wrap' }}>
           {[
-            { num: trackRecord / 10, prefix: '$', suffix: 'B+', label: 'Track Record' },
             { num: years, suffix: '', label: 'Years' },
             { num: verticals, suffix: '', label: 'Verticals' },
             { num: continents, suffix: '', label: 'Continents' },

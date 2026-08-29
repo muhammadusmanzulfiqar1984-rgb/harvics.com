@@ -3,13 +3,13 @@
   "home": {
     "welcome": "Karibu",
     "companyName": "Harwich",
-    "tagline": "Ubora katika Bidhaa za Watumiaji Bora Tangu 2019",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "Gundua Bidhaa",
     "contact": "Wasiliana Nasi",
     "learnMore": "Jifunze Zaidi",
-    "brandStatement": "Kampuni inayoongoza duniani ya bidhaa za walaji inayotoa bidhaa za chakula za hali ya juu katika kategoria mbalimbali zenye viwango vya ubora wa kimataifa.",
-    "taglineStart": "Ubora katika Bidhaa za Watumiaji Bora Tangu",
-    "taglineYear": "2019",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "London • Milan • New York",
     "categories": {
       "bakery": "Duka la mikate",
@@ -81,7 +81,8 @@
       "specialOffers": "Ofa Maalum",
       "promotions": "Matangazo",
       "bulkOrders": "Punguzo la Agizo la Jumla"
-    }
+    },
+    "startupAcademy": "Kuanzisha Academy"
   },
   "products": {
     "ourProducts": "Bidhaa Zetu",
@@ -119,7 +120,40 @@
     "whatsapp": "WhatsApp",
     "callNow": "Piga simu Sasa",
     "sendEmail": "Tuma Barua Pepe",
-    "messageUs": "Tutumie Ujumbe"
+    "messageUs": "Tutumie Ujumbe",
+    "getInTouch": "Wasiliana",
+    "locations": "Maeneo",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "Tuma Ujumbe",
+    "firstName": "Jina la kwanza",
+    "firstNamePlaceholder": "Ingiza jina lako la kwanza",
+    "lastName": "Jina la mwisho",
+    "lastNamePlaceholder": "Weka jina lako la mwisho",
+    "emailPlaceholder": "Weka barua pepe yako",
+    "subject": "Somo",
+    "subjectPlaceholder": "Ingiza mada",
+    "message": "Ujumbe",
+    "messagePlaceholder": "Andika ujumbe wako",
+    "send": "Tuma",
+    "eyebrow": "Anza Muhtasari",
+    "headline1": "Anza kwa ufupi.",
+    "headline2": "Tunajibu ndani ya masaa 24.",
+    "subhead": "Tuambie aina yako, kiasi, na soko lengwa. Mtaalamu anarudi kwako na chaguo za vyanzo na bei elekezi.",
+    "fullName": "Jina Kamili",
+    "fullNamePlaceholder": "Shah Tabraiz",
+    "company": "Kampuni",
+    "companyPlaceholder": "Shirika lako",
+    "businessEmail": "Barua pepe ya Biashara",
+    "howCanWeHelp": "Tunawezaje kusaidia?",
+    "sending": "Inatuma...",
+    "sendEnquiry": "Tuma Uchunguzi",
+    "sentTitle": "Ujumbe umetumwa.",
+    "sentSub": "Timu yetu itajibu ndani ya saa 24.",
+    "directChannels": "Njia za moja kwa moja",
+    "trust1": "Uhakikisho wa majibu ya saa 24",
+    "trust2": "Msimamizi wa akaunti aliyejitolea",
+    "trust3": "NDA available on request",
+    "trust4": "Masoko 42 · usafirishaji 1,247 leo"
   },
   "media": {
     "title": "Kituo cha Vyombo vya Habari",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "Harvics Global Ventures",
-    "tagline": "Ubora katika Bidhaa za Watumiaji Bora Tangu 2019",
-    "brandStatement": "Kampuni inayoongoza duniani ya bidhaa za walaji inayotoa bidhaa za chakula za hali ya juu katika kategoria mbalimbali zenye viwango vya ubora wa kimataifa.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "London • Milan • New York",
     "since": "Tangu 2019",
     "harvicsNews": "Habari za Harvics",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "Jiunge na Mtandao Wetu",
     "newsletterTagline": "Pata habari za hivi punde za biashara na masasisho ya soko",
     "activeShipments": "Mizigo Inayofanya Kazi",
-    "certifiedAudited": "Imethibitishwa na Kukaguliwa"
+    "certifiedAudited": "Imethibitishwa na Kukaguliwa",
+    "invalidEmail": "Tafadhali weka barua pepe halali",
+    "subscriptionSuccess": "Asante kwa kujisajili!",
+    "subscriptionError": "Hitilafu fulani imetokea. Tafadhali jaribu tena."
   },
   "search": {
     "placeholder": "Tafuta bidhaa, chapa, au kategoria",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "Samahani, sikuelewa hilo. Tafadhali unaweza kulitafsiri upya?",
       "help": "Ninaweza kukusaidia na taarifa za bidhaa, maagizo, au maswali ya jumla. Ungependa kujua nini?",
-      "contact": "Kwa usaidizi zaidi, tafadhali wasiliana nasi kwa support@harvics.com au piga simu +1-800-HARVICS."
-    }
+      "contact": "Kwa usaidizi zaidi, tafadhali wasiliana nasi kwa support@harvics.com au piga simu +1-800-HARVICS.",
+      "product": "Vinjari katalogi ya bidhaa zetu kutoka kwenye menyu, au niambie ni aina gani inakuvutia - FMCG, nguo, vifaa na zaidi.",
+      "order": "Ili kuagiza au kuangalia hali, tembelea tovuti ya wasambazaji au uwasiliane na msimamizi wa akaunti yako.",
+      "about": "Harvics Global Ventures ni kampuni huru ya miundombinu ya biashara yenye miaka 20+ katika nchi 40+."
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "Bonyeza Enter ili kutuma"
   },
   "common": {
     "chatWithUs": "Piga Gumzo Nasi",
@@ -730,12 +772,17 @@
       "gps-tracking": "Ufuatiliaji wa GPS",
       "localization": "Ujanibishaji",
       "workflows": "Mtiririko wa kazi",
-      "admin": "Msimamizi"
+      "admin": "Msimamizi",
+      "modules": "Moduli"
     },
     "kpis": {
       "customers": "Wateja",
       "employees": "Wafanyakazi",
-      "profit": "Faida"
+      "profit": "Faida",
+      "totalOrders": "Jumla ya Maagizo",
+      "inventoryValue": "Thamani ya Malipo",
+      "logisticsEfficiency": "Ufanisi wa Logistics",
+      "revenue": "Mapato"
     },
     "domain": {
       "title": "Mfumo wa Uendeshaji wa CRM",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "Tazama na udhibiti mahusiano, mwingiliano, na kampeni za wateja wako.",
       "loading": "Inapakia...",
       "error": "Hitilafu ya kupakia data ya CRM"
+    },
+    "roleIndicator": {
+      "manager": "Mtazamo wa Meneja",
+      "executive": "Mtazamo wa Mtendaji",
+      "investor": "Mtazamo wa Mwekezaji",
+      "distributor": "Mtazamo wa Msambazaji",
+      "supplier": "Mtazamo wa Msambazaji",
+      "customer": "Mtazamo wa Wateja"
     }
   },
   "supplierPortal": {
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "Kuhusu Harvics",
-    "subtitle": "Ubora katika Bidhaa za Watumiaji Bora Tangu 2019",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "Hadithi Yetu",
     "story1": "Iliyoanzishwa mwaka wa 2019, Harvics imekua kutoka wazo lenye maono hadi kuwa kiongozi wa kimataifa katika bidhaa za watumiaji wa hali ya juu. Safari yetu inaelezewa na harakati zisizokoma za ubora na kujitolea kwa uvumbuzi.",
     "story2": "Tunafanya kazi katika nchi zaidi ya 40, tukitoa bidhaa zinazoboresha maisha na kuweka viwango vipya katika tasnia. Kuanzia mwanzo wetu mnyenyekevu hadi uwepo wetu duniani, maadili yetu hayajabadilika.",
@@ -1150,181 +1205,279 @@
   },
   "help": {
     "page": {
-      "title": "Help Center",
-      "subtitle": "Find the help you need"
+      "title": "Kituo cha Usaidizi",
+      "subtitle": "Tafuta msaada unaohitaji"
     },
-    "backToHelpCenter": "Back to Help Center",
+    "backToHelpCenter": "Rudi kwenye Kituo cha Usaidizi",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "Maswali Yanayoulizwa Mara Kwa Mara",
+        "description": "Pata majibu kwa maswali ya kawaida"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "Wasiliana na Usaidizi",
+        "description": "Wasiliana na timu yetu ya usaidizi"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "Miongozo ya Watumiaji",
+        "description": "Miongozo ya hatua kwa hatua na mafunzo"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "Kutatua matatizo",
+        "description": "Tatua masuala ya kawaida"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "Usaidizi wa Akaunti",
+        "description": "Dhibiti akaunti yako na mipangilio"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "Agiza Usaidizi",
+        "description": "Msaada kwa maagizo na usafirishaji"
       }
     },
     "account": {
-      "title": "Account Help",
-      "subtitle": "Manage your account settings and preferences",
-      "placeholder": "Account management and settings help content will appear here."
+      "title": "Usaidizi wa Akaunti",
+      "subtitle": "Dhibiti mipangilio na mapendeleo ya akaunti yako",
+      "placeholder": "Usimamizi wa akaunti na maudhui ya usaidizi wa mipangilio yataonekana hapa."
     },
     "orders": {
-      "title": "Order Support",
-      "subtitle": "Track and manage your orders and deliveries",
-      "placeholder": "Order and delivery support content will appear here."
+      "title": "Agiza Usaidizi",
+      "subtitle": "Fuatilia na udhibiti maagizo na usafirishaji wako",
+      "placeholder": "Maudhui ya usaidizi wa agizo na uwasilishaji yataonekana hapa."
     },
     "guides": {
-      "title": "User Guides",
-      "subtitle": "Step-by-step guides to help you get the most out of Harvics",
+      "title": "Miongozo ya Watumiaji",
+      "subtitle": "Miongozo ya hatua kwa hatua ya kukusaidia kupata manufaa zaidi kutoka kwa Harvics",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "Kuanza",
+          "description": "Jifunze mambo ya msingi"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "Kuweka Akaunti",
+          "description": "Sanidi akaunti yako"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "Jinsi ya Kuagiza",
+          "description": "Weka na ufuatilie maagizo"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "Mbinu za Malipo",
+          "description": "Chaguo za malipo na usalama"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "Usafirishaji na Uwasilishaji",
+          "description": "Taarifa ya utoaji"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "Marejesho na Marejesho",
+          "description": "Rudisha sera na mchakato"
         }
       }
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "subtitle": "Common issues and quick solutions",
+      "title": "Kutatua matatizo",
+      "subtitle": "Maswala ya kawaida na suluhisho za haraka",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "Masuala ya Kuingia",
+          "description": "Matatizo ya kuingia"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "Matatizo ya Malipo",
+          "description": "Malipo hayachakatwa"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "Ucheleweshaji wa Uwasilishaji",
+          "description": "Agizo lisiwasili"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "Makosa ya Tovuti",
+          "description": "Ukurasa haupakii"
         }
       }
     }
   },
   "checkout": {
-    "secureCheckout": "Secure Checkout",
-    "title": "Complete Your Order",
-    "subtitle": "Review your items, enter shipping details, and confirm payment securely.",
-    "shippingInfo": "Shipping Information",
-    "paymentMethod": "Payment Method",
+    "secureCheckout": "Malipo salama",
+    "title": "Kamilisha Agizo Lako",
+    "subtitle": "Kagua bidhaa zako, weka maelezo ya usafirishaji na uthibitishe malipo kwa usalama.",
+    "shippingInfo": "Taarifa za Usafirishaji",
+    "paymentMethod": "Njia ya Malipo",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "Kadi ya Mkopo / Debit",
+      "bankTransfer": "Uhamisho wa Benki (LC/TT)",
       "wallet": "HPay Digital Wallet"
     },
-    "orderSummary": "Order Summary",
+    "orderSummary": "Muhtasari wa Agizo",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
-      "total": "Total"
+      "subtotal": "Jumla ndogo",
+      "shipping": "Usafirishaji",
+      "calculatedNextStep": "Imehesabiwa katika hatua inayofuata",
+      "tax": "Kodi",
+      "total": "Jumla"
     },
-    "placeOrder": "Place Order",
-    "sslNotice": "Secured with 256-bit SSL encryption",
-    "continueShopping": "Continue Shopping",
+    "placeOrder": "Weka Agizo",
+    "sslNotice": "Imelindwa kwa usimbaji fiche wa 256-bit SSL",
+    "continueShopping": "Endelea Kununua",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "Jina la kwanza",
+      "lastName": "Jina la mwisho",
+      "email": "Barua pepe",
+      "address": "Anwani",
+      "city": "Jiji",
+      "country": "Nchi"
     }
   },
   "history": {
     "hero": {
-      "title": "Our Journey",
-      "subtitle": "From a Dubai startup to a global enterprise spanning 42+ countries, 10 industry verticals, and 38 languages."
+      "title": "Safari Yetu",
+      "subtitle": "Kutoka kuanzishwa kwa Dubai hadi biashara ya kimataifa inayohusisha nchi 42+, wima 10 za sekta na lugha 38."
     },
     "cta": {
-      "title": "Be Part of the Next Chapter",
-      "subtitle": "Join us as we scale to 60+ countries and build the future of AI-driven global commerce.",
-      "button": "View Careers"
+      "title": "Kuwa Sehemu ya Sura Inayofuata",
+      "subtitle": "Jiunge nasi tunapofikia zaidi ya nchi 60 na kujenga mustakabali wa biashara ya kimataifa inayoendeshwa na AI.",
+      "button": "Tazama Ajira"
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "Ilianzishwa huko Dubai",
+        "description": "Harvics Global Ventures iliyoanzishwa katika UAE ikiwa na maono ya kuwa FMCG ya kiwango cha kimataifa na muungano wa biashara wa wima nyingi. Shughuli za kwanza zilizinduliwa kwenye nguo na bidhaa za watumiaji.",
+        "highlight": "Mwaka wa Kwanza"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "Upanuzi wa Kwanza wa Kimataifa",
+        "description": "Imepanuliwa hadi nchi 10 kote Ulaya, Mashariki ya Kati, na Asia Kusini licha ya changamoto za janga la kimataifa. Ilizindua shughuli za msururu wa usambazaji wa kidijitali na ushirikiano wa usambazaji wa mbali.",
+        "highlight": "Nchi 10"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "Upanuzi wa Wima nyingi",
+        "description": "Imezindua wima 5 mpya za tasnia: Bidhaa, Vifaa vya Viwandani, Madini na Uchimbaji, Mafuta na Gesi, na Majengo. Jumla ya orodha ya bidhaa ilizidi SKU 500 kwenye wima zote.",
+        "highlight": "5 Wima Mpya"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "Mabadiliko ya Dijiti",
+        "description": "Imeunda toleo la kwanza la Harvics OS - jukwaa la biashara linaloendeshwa na AI. Imezinduliwa lango za wasambazaji, uwezo wa biashara ya mtandaoni, na ufuatiliaji wa meli za GPS katika muda halisi katika masoko yote.",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "Uendelevu & Mizani",
+        "description": "Imejitolea kwa shughuli zisizo na kaboni. Imefikia zaidi ya nchi 30. Imezinduliwa HPay (jukwaa la malipo la kidijitali), suluhu za fedha za biashara, na utabiri wa mahitaji unaoendeshwa na AI kwenye wima zote.",
+        "highlight": "30+ Nchi"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "Biashara ya Kimataifa",
+        "description": "Imepita hatua muhimu zaidi ya nchi 42+. Imetumia injini ya AI yenye miundo 6 ya ML kwa mkakati, mahitaji, bei, chanjo na uboreshaji wa SKU. Imezindua jukwaa la lugha nyingi linalotumia lugha 38.",
+        "highlight": "42+ Nchi"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "Mfumo wa Uendeshaji wa AI-Kwanza",
+        "description": "Harvics OS v2 imezinduliwa — mfumo wa uendeshaji wa biashara uliounganishwa wenye akili ya wakati halisi, milisho ya moja kwa moja ya Socket.io, Alpha Engine kwa ajili ya mipango ya mashambulizi ya soko, na safu kamili ya kijiografia ya ngazi 8.",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "Maono ya Mbele",
+        "description": "Inaongeza kwa nchi 60+. Kuunda biashara ya kwanza duniani ya FMCG inayoendeshwa na AI ambapo kila kazi - ununuzi, vifaa, fedha, CRM - huendeshwa kwa akili ya kutabiri na milango ya idhini ya mwanadamu.",
+        "highlight": "60+ Lengo"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "Biashara ya vitendo, kutafuta, na chuo cha AI kwa waanzilishi - wiki sita, vipindi vya moja kwa moja, korido za Harvics.",
+    "navLabel": "Kuanzisha Academy",
+    "teaser": {
+      "eyebrow": "Chuo · Mpango wa Corridor",
+      "title": "Kuanzisha Academy.",
+      "body": "Ufundi wa zamani wa biashara kwa waanzilishi - kutafuta, QC, madawati ya ufadhili, na ujuzi wa kusoma na kuandika - kando ya soko la Harvics.",
+      "cta": "Ingia Chuo"
+    },
+    "hero": {
+      "alt": "Ukumbi wa mihadhara ya kitamaduni - Chuo cha Kuanzisha cha Harvics",
+      "eyebrow": "Kundi 01 · Q4 2026 · Mpango wa kusaidia",
+      "title": "Harvics Startup Academy",
+      "body": "Shule ya kawaida ya biashara kwa waanzilishi - kutafuta, biashara ya ukanda, na AI ambayo inafanya kazi. Wiki sita. Vipindi vya moja kwa moja. Waendeshaji halisi.",
+      "apply": "Omba Kundi la 01",
+      "seeProgramme": "Tazama programu"
+    },
+    "stats": {
+      "founders": "Waanzilishi / kundi",
+      "sessions": "Vipindi vya moja kwa moja",
+      "weeks": "Wiki",
+      "verticals": "Biashara wima"
+    },
+    "why": {
+      "eyebrow": "01 · Kwa nini ujiunge",
+      "title": "Jenga kampuni ambayo inaweza kufanya biashara.",
+      "body": "Sio ukumbi wa michezo. Jifunze RFQ kuhusu kusuluhisha, kutafuta bidii, kufikia wanunuzi, na otomatiki - kutoka kwa waendeshaji kwenye korido za Harvics.",
+      "item1Title": "Mifumo ya biashara ya vitendo",
+      "item1Body": "Jinsi wanunuzi wa kitaasisi wanavyonunua - na jinsi unavyotimiza.",
+      "item2Title": "Mtandao unaosafirisha meli",
+      "item2Body": "Waanzilishi, wasambazaji, na waendeshaji katika wima.",
+      "item3Title": "AI ambayo inafanya kazi",
+      "item3Body": "HarvyX, Fin voice, na ops otomatiki bila buzzwords.",
+      "imageAlt": "Classical biashara bado maisha"
+    },
+    "knowledge": {
+      "eyebrow": "Maarifa",
+      "title": "Jifunze korido kama taaluma.",
+      "body": "Mtaala unaotokana na mazoezi halisi ya biashara - si slaidi za uanzishaji za jumla.",
+      "imageAlt": "Maktaba kuu ya classical"
+    },
+    "programme": {
+      "eyebrow": "02 · Mpango",
+      "title": "Utafanya nini kupitia",
+      "m1Title": "Chapa na vyanzo",
+      "m1Body": "MOQ, milango ya QC, nguo na FMCG - karibu na ukanda.",
+      "m2Title": "Akili & uhamasishaji",
+      "m2Body": "Maabara za HarvyX, ICP ya mnunuzi, ufuatiliaji unaopata majibu.",
+      "m3Title": "Mtaji na washirika",
+      "m3Body": "Njia za ufadhili na ubia - hakuna madai ya benki bandia.",
+      "m4Title": "Biashara ya ukanda",
+      "m4Body": "Bandari, njia, na jinsi bidhaa zinavyosonga kwenye soko.",
+      "m5Title": "Ubora na bidii",
+      "m5Body": "Tabia za ukaguzi zinazolinda sifa na makazi.",
+      "m6Title": "Bidhaa na FMCG",
+      "m6Body": "Kutoka kwa ukweli wa ghala hadi mahitaji ya bidhaa na jumla."
+    },
+    "tracks": {
+      "aEyebrow": "Wimbo A",
+      "aTitle": "Chapa na biashara",
+      "aBody": "Nguo na waanzilishi wa FMCG wanaojenga chapa, mahitaji ya jumla na ukanda.",
+      "aAlt": "Chumba cha bodi ya classical",
+      "bEyebrow": "Wimbo B",
+      "bTitle": "Biashara & ops",
+      "bBody": "Utafutaji, vifaa, na waendeshaji B2B kuongeza biashara ya taasisi.",
+      "bAlt": "Mitandao ya saluni"
+    },
+    "network": {
+      "eyebrow": "03 · Mtandao",
+      "title": "Kutana na waendeshaji, si hadhira.",
+      "body": "Vipindi vya moja kwa moja na saa za ofisi za mtindo wa saluni na waanzilishi, wasambazaji, na waendeshaji ukanda wa Harvics.",
+      "imageAlt": "Waanzilishi wa mtandao"
+    },
+    "rhythm": {
+      "eyebrow": "04 · Mdundo",
+      "title": "Wiki sita. Futa mwako.",
+      "w1": "Wiki ya 1",
+      "w1Body": "Mwelekeo · Ramani ya ukanda · Warsha ya ICP",
+      "w2": "Wiki ya 2",
+      "w2Body": "Ufikiaji wa mnunuzi · maabara ya HarvyX",
+      "w3": "Wiki ya 3",
+      "w3Body": "Utafutaji & QC · Bidii ya wasambazaji",
+      "w4": "Wiki ya 4",
+      "w4Body": "Uendeshaji otomatiki · Sauti ya mwisho · rundo la ops",
+      "w5": "Wiki ya 5",
+      "w5Body": "Ufadhili na ushirikiano",
+      "w6": "Wiki 6",
+      "w6Body": "Onyesho la mwanzilishi · hatua zinazofuata"
+    },
+    "apply": {
+      "eyebrow": "Maombi",
+      "title": "Omba Kundi la 01",
+      "body": "Viti vidogo. Tuambie kampuni yako, wima, na unachounda.",
+      "emailCta": "Omba kwa barua pepe →",
+      "back": "Rudi kwa Harvics"
     }
   }
 }

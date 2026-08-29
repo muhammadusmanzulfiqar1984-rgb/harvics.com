@@ -7,6 +7,8 @@ import { Request, Response, Router } from 'express';
 import crypto from 'crypto';
 import { z } from 'zod';
 import { prisma } from '../../core/prisma';
+import { emitAudit } from '../../services/audit.service';
+import { eventBus } from '../../core/eventBus';
 
 export const wave7Router = Router();
 
@@ -45,18 +47,38 @@ wave7Router.get('/endpoints', async (_req, res) => {
   const rows = await prisma.integrationEndpoint.findMany({ include: { _count: { select: { deliveries: true } } }, orderBy: { createdAt: 'desc' } });
   res.json({ success: true, data: rows, total: rows.length });
 });
+wave7Router.get('/endpoints/:id', async (req, res) => {
+  const row = await prisma.integrationEndpoint.findUnique({
+    where: { id: req.params.id },
+    include: { deliveries: { orderBy: { createdAt: 'desc' }, take: 50 }, _count: { select: { deliveries: true } } },
+  });
+  if (!row) return res.status(404).json({ success: false, error: 'Endpoint not found' });
+  res.json({ success: true, data: row });
+});
 wave7Router.post('/endpoints', async (req, res) => {
   const Body = z.object({ code: z.string().min(2), name: z.string().min(2), url: z.string().url(), method: z.string().default('POST'), authType: z.enum(['none', 'bearer', 'basic', 'hmac']).default('none'), authValue: z.string().optional().nullable() });
   try {
     const b = Body.parse(req.body);
     try {
       const row = await prisma.integrationEndpoint.create({ data: b });
+      void emitAudit(req, 'integrationEndpoint.created', 'IntegrationEndpoint', row.id, { module: 'integration' });
+      eventBus.emitDomain('integration.endpoint.created', row, 'integration');
       res.status(201).json({ success: true, data: row });
     } catch (e: any) {
       if (e?.code === 'P2002') return res.status(409).json({ success: false, error: 'Code already exists' });
       throw e;
     }
   } catch (err) { const z = zerr(err, res); if (z) return; res.status(500).json({ success: false, error: 'create failed' }); }
+});
+wave7Router.post('/endpoints/:id/toggle', async (req, res) => {
+  const ex = await prisma.integrationEndpoint.findUnique({ where: { id: req.params.id } });
+  if (!ex) return res.status(404).json({ success: false, error: 'Endpoint not found' });
+  const row = await prisma.integrationEndpoint.update({ where: { id: ex.id }, data: { active: !ex.active } });
+  void emitAudit(req, 'integrationEndpoint.toggle', 'IntegrationEndpoint', row.id, {
+    module: 'integration',
+    payload: { from: ex.active, to: row.active },
+  });
+  res.json({ success: true, data: row });
 });
 wave7Router.post('/dispatch', async (req, res) => {
   const Body = z.object({ event: z.string(), payload: z.any(), endpointCode: z.string().optional() });
@@ -70,6 +92,10 @@ wave7Router.post('/dispatch', async (req, res) => {
       const ok = Math.random() > 0.15;
       return prisma.integrationDelivery.create({ data: { endpointId: t.id, event: b.event, payload: b.payload ?? {}, status: ok ? 'Delivered' : 'Failed', attempts: 1, responseCode: ok ? 200 : 500, responseBody: ok ? 'OK' : 'Simulated failure', deliveredAt: ok ? new Date() : null, nextRetryAt: ok ? null : new Date(Date.now() + 60_000) } });
     }));
+    void emitAudit(req, 'integration.dispatch', 'IntegrationDelivery', deliveries[0]?.id || 'batch', {
+      module: 'integration',
+      payload: { event: b.event, dispatched: deliveries.length },
+    });
     res.status(201).json({ success: true, dispatched: deliveries.length, delivered: deliveries.filter(d => d.status === 'Delivered').length, failed: deliveries.filter(d => d.status === 'Failed').length, data: deliveries });
   } catch (err) { const z = zerr(err, res); if (z) return; res.status(500).json({ success: false, error: 'dispatch failed' }); }
 });
@@ -79,10 +105,12 @@ wave7Router.post('/deliveries/:id/retry', async (req, res) => {
   if (d.status === 'Delivered') return res.status(409).json({ success: false, error: 'Already delivered' });
   if (d.attempts >= 3) {
     const dlq = await prisma.integrationDelivery.update({ where: { id: d.id }, data: { status: 'DLQ' } });
+    void emitAudit(req, 'integration.dlq', 'IntegrationDelivery', dlq.id, { module: 'integration' });
     return res.json({ success: true, data: dlq, message: 'Moved to dead-letter queue (3 attempts exhausted)' });
   }
   const ok = Math.random() > 0.3;
   const row = await prisma.integrationDelivery.update({ where: { id: d.id }, data: { attempts: d.attempts + 1, status: ok ? 'Delivered' : 'Failed', responseCode: ok ? 200 : 500, responseBody: ok ? 'OK' : 'Retry failed', deliveredAt: ok ? new Date() : null, nextRetryAt: ok ? null : new Date(Date.now() + 60_000) } });
+  void emitAudit(req, 'integration.retry', 'IntegrationDelivery', row.id, { module: 'integration', payload: { status: row.status } });
   res.json({ success: true, data: row });
 });
 wave7Router.get('/deliveries', async (req, res) => {
@@ -90,6 +118,11 @@ wave7Router.get('/deliveries', async (req, res) => {
   if (req.query.status) where.status = String(req.query.status);
   const rows = await prisma.integrationDelivery.findMany({ where, include: { endpoint: true }, orderBy: { createdAt: 'desc' }, take: 200 });
   res.json({ success: true, data: rows, total: rows.length });
+});
+wave7Router.get('/deliveries/:id', async (req, res) => {
+  const row = await prisma.integrationDelivery.findUnique({ where: { id: req.params.id }, include: { endpoint: true } });
+  if (!row) return res.status(404).json({ success: false, error: 'Delivery not found' });
+  res.json({ success: true, data: row });
 });
 
 // ─── #55 DATA OCEAN ─────────────────────────────────────────────────────────
@@ -110,8 +143,15 @@ wave7Router.post('/snapshots', async (req, res) => {
     const sample = await model.findMany({ take: 5 });
     const sizeBytes = Buffer.byteLength(JSON.stringify(sample) || '', 'utf8') * Math.max(count, 1) / Math.max(sample.length, 1);
     const row = await prisma.dataSnapshot.create({ data: { tableName: b.tableName, recordCount: count, sizeBytes: Math.floor(sizeBytes), format: 'json', storageRef: `dataocean://snapshots/${b.tableName}/${Date.now()}.json`, capturedBy: b.capturedBy ?? null, metadata: { sampleSize: sample.length, takenAt: new Date().toISOString() } } });
+    void emitAudit(req, 'dataSnapshot.created', 'DataSnapshot', row.id, { module: 'data-ocean', payload: { tableName: b.tableName, recordCount: count } });
+    eventBus.emitDomain('data.snapshot.created', row, 'data-ocean');
     res.status(201).json({ success: true, data: row });
   } catch (err) { const z = zerr(err, res); if (z) return; res.status(500).json({ success: false, error: 'snapshot failed' }); }
+});
+wave7Router.get('/snapshots/:id', async (req, res) => {
+  const row = await prisma.dataSnapshot.findUnique({ where: { id: req.params.id } });
+  if (!row) return res.status(404).json({ success: false, error: 'Snapshot not found' });
+  res.json({ success: true, data: row });
 });
 wave7Router.get('/lake-stats', async (_req, res) => {
   const grouped = await prisma.dataSnapshot.groupBy({ by: ['tableName'], _count: { _all: true }, _sum: { sizeBytes: true, recordCount: true } });
@@ -140,12 +180,19 @@ wave7Router.post('/voice/transcribe', async (req, res) => {
     }
     const responseText = intent === 'unknown' ? 'Sorry, I did not understand that command.' : `Routing ${intent}${entities ? ' for ' + JSON.stringify(entities) : ''}…`;
     const row = await prisma.voiceCommand.create({ data: { userId: b.userId ?? null, transcript: b.transcript, intent, entities, confidence: +confidence.toFixed(2), responseText, durationMs: Date.now() - start, status: 'Processed' } });
+    void emitAudit(req, 'voiceCommand.created', 'VoiceCommand', row.id, { module: 'harvoice', payload: { intent, confidence } });
+    eventBus.emitDomain('harvoice.command.created', row, 'harvoice');
     res.status(201).json({ success: true, data: row });
   } catch (err) { const z = zerr(err, res); if (z) return; res.status(500).json({ success: false, error: 'transcribe failed' }); }
 });
 wave7Router.get('/voice/commands', async (_req, res) => {
   const rows = await prisma.voiceCommand.findMany({ orderBy: { createdAt: 'desc' }, take: 100 });
   res.json({ success: true, data: rows, total: rows.length });
+});
+wave7Router.get('/voice/commands/:id', async (req, res) => {
+  const row = await prisma.voiceCommand.findUnique({ where: { id: req.params.id } });
+  if (!row) return res.status(404).json({ success: false, error: 'Command not found' });
+  res.json({ success: true, data: row });
 });
 wave7Router.get('/voice/stats', async (_req, res) => {
   const [total, byIntent, avgConfidence] = await Promise.all([
@@ -167,12 +214,31 @@ wave7Router.post('/instruments', async (req, res) => {
     const b = Body.parse(req.body);
     try {
       const row = await prisma.tradeInstrument.create({ data: { ...b, symbol: b.symbol.toUpperCase() } });
+      void emitAudit(req, 'tradeInstrument.created', 'TradeInstrument', row.id, { module: 'trade-floor' });
+      eventBus.emitDomain('trade.instrument.created', row, 'trade-floor');
       res.status(201).json({ success: true, data: row });
     } catch (e: any) {
       if (e?.code === 'P2002') return res.status(409).json({ success: false, error: 'Symbol exists' });
       throw e;
     }
   } catch (err) { const z = zerr(err, res); if (z) return; res.status(500).json({ success: false, error: 'create failed' }); }
+});
+wave7Router.get('/instruments/:symbol', async (req, res) => {
+  const symbol = req.params.symbol.toUpperCase();
+  if (symbol === 'ORDERBOOK') return res.status(404).json({ success: false, error: 'Not found' });
+  const row = await prisma.tradeInstrument.findUnique({
+    where: { symbol },
+    include: { _count: { select: { orders: true, trades: true } } },
+  });
+  if (!row) return res.status(404).json({ success: false, error: 'Instrument not found' });
+  res.json({ success: true, data: row });
+});
+wave7Router.post('/instruments/:symbol/toggle', async (req, res) => {
+  const ex = await prisma.tradeInstrument.findUnique({ where: { symbol: req.params.symbol.toUpperCase() } });
+  if (!ex) return res.status(404).json({ success: false, error: 'Instrument not found' });
+  const row = await prisma.tradeInstrument.update({ where: { id: ex.id }, data: { active: !ex.active } });
+  void emitAudit(req, 'tradeInstrument.toggle', 'TradeInstrument', row.id, { module: 'trade-floor', payload: { active: row.active } });
+  res.json({ success: true, data: row });
 });
 wave7Router.get('/instruments/:symbol/orderbook', async (req, res) => {
   const inst = await prisma.tradeInstrument.findUnique({ where: { symbol: req.params.symbol.toUpperCase() } });
@@ -190,6 +256,8 @@ wave7Router.post('/orders', async (req, res) => {
     if (!inst) return res.status(404).json({ success: false, error: 'Instrument not found' });
     // Create order
     const order = await prisma.tradeOrder.create({ data: { instrumentId: inst.id, traderId: b.traderId, side: b.side, orderType: b.orderType, price: b.price, qty: b.qty } });
+    void emitAudit(req, 'tradeOrder.created', 'TradeOrder', order.id, { module: 'trade-floor', payload: { symbol: b.symbol, side: b.side, qty: b.qty } });
+    eventBus.emitDomain('trade.order.created', { ...order, symbol: b.symbol }, 'trade-floor');
     // Naïve matching engine: match against opposite side at same/better price
     const oppositeSide = b.side === 'buy' ? 'sell' : 'buy';
     const candidates = await prisma.tradeOrder.findMany({
@@ -235,12 +303,26 @@ wave7Router.post('/crypto/assets', async (req, res) => {
     const b = Body.parse(req.body);
     try {
       const row = await prisma.cryptoAsset.create({ data: { ...b, symbol: b.symbol.toUpperCase() } });
+      void emitAudit(req, 'cryptoAsset.created', 'CryptoAsset', row.id, { module: 'crypto' });
+      eventBus.emitDomain('crypto.asset.created', row, 'crypto');
       res.status(201).json({ success: true, data: row });
     } catch (e: any) {
       if (e?.code === 'P2002') return res.status(409).json({ success: false, error: 'Asset exists' });
       throw e;
     }
   } catch (err) { const z = zerr(err, res); if (z) return; res.status(500).json({ success: false, error: 'create failed' }); }
+});
+wave7Router.get('/crypto/assets/:symbol', async (req, res) => {
+  const row = await prisma.cryptoAsset.findUnique({ where: { symbol: req.params.symbol.toUpperCase() } });
+  if (!row) return res.status(404).json({ success: false, error: 'Asset not found' });
+  res.json({ success: true, data: row });
+});
+wave7Router.post('/crypto/assets/:symbol/toggle', async (req, res) => {
+  const ex = await prisma.cryptoAsset.findUnique({ where: { symbol: req.params.symbol.toUpperCase() } });
+  if (!ex) return res.status(404).json({ success: false, error: 'Asset not found' });
+  const row = await prisma.cryptoAsset.update({ where: { id: ex.id }, data: { active: !ex.active } });
+  void emitAudit(req, 'cryptoAsset.toggle', 'CryptoAsset', row.id, { module: 'crypto', payload: { active: row.active } });
+  res.json({ success: true, data: row });
 });
 wave7Router.post('/crypto/trade', async (req, res) => {
   const Body = z.object({ userId: z.string(), symbol: z.string(), side: z.enum(['buy', 'sell']), qty: z.number().positive() });
@@ -255,6 +337,8 @@ wave7Router.post('/crypto/trade', async (req, res) => {
       return res.status(409).json({ success: false, error: 'Insufficient holdings', have: existing?.qty || 0, want: b.qty });
     }
     const trade = await prisma.cryptoTrade.create({ data: { userId: b.userId, assetId: asset.id, side: b.side, qty: b.qty, priceUsd, totalUsd } });
+    void emitAudit(req, 'cryptoTrade.created', 'CryptoTrade', trade.id, { module: 'crypto', payload: { symbol: b.symbol, side: b.side, totalUsd } });
+    eventBus.emitDomain('crypto.trade.created', { ...trade, symbol: asset.symbol }, 'crypto');
     // Update holding with running average cost
     let newQty: number, newAvgCost: number;
     if (b.side === 'buy') {

@@ -1,0 +1,53 @@
+Account Name,Website URL,Country,City,Industry,LinkedIn Company URL,enrichment_status,Email,Website,Title,Fair,Phone,email_is_business,website_ok,title_valid,tier1_passes,tier2_points,outreach_category,company_name,description,phone,address,linkedin_url,industry,company_name_scraped,phone_scraped,linkedin_company_url,score
+Inditex,https://www.inditex.com/,Spain,Arteixo,Textile/Apparel,https://www.linkedin.com/company/inditex/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+H&M Group,https://hmgroup.com/,Sweden,Stockholm,Textile/Apparel,https://www.linkedin.com/company/hm/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+LVMH,https://www.lvmh.com/,France,Paris,Textile/Apparel,https://www.linkedin.com/company/lvmh/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Adidas AG,https://www.adidas-group.com/en/,Germany,Herzogenaurach,Textile/Apparel,https://www.linkedin.com/company/adidas/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Nestle,https://www.nestle.com/,Switzerland,Vevey,FMCG,https://www.linkedin.com/company/nestle-s-a-/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Unilever,https://www.unilever.com/,UK,London,FMCG,https://www.linkedin.com/company/unilever/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Danone,https://www.danone.com/,France,Paris,FMCG,https://www.linkedin.com/company/danone/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Puma SE,https://about.puma.com/,Germany,Herzogenaurach,Textile/Apparel,https://www.linkedin.com/company/puma/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Zalando SE,https://corporate.zalando.com/en/,Germany,Berlin,Textile/Apparel,https://www.linkedin.com/company/zalando/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+PepsiCo,https://www.pepsico.com/,United States,Purchase,FMCG,https://www.linkedin.com/company/pepsico/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+HUGO BOSS AG,https://group.hugoboss.com/en/,Germany,Metzingen,Textile/Apparel,https://www.linkedin.com/company/hugo-boss/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+The Coca-Cola Company,https://www.coca-colacompany.com/,United States,Atlanta,FMCG,https://www.linkedin.com/company/the-coca-cola-company/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Marks and Spencer Group plc,https://corporate.marksandspencer.com/,UK,London,Textile/Apparel,https://www.linkedin.com/company/marks-and-spencer/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Kering,https://www.kering.com/en/,France,Paris,Textile/Apparel,https://www.linkedin.com/company/kering/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Alshaya Group,https://www.alshaya.com/en/,Kuwait,Kuwait City,Textile/Apparel,https://www.linkedin.com/company/alshaya-group/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Chalhoub Group,https://www.chalhoubgroup.com/,UAE,Dubai,Textile/Apparel,https://www.linkedin.com/company/chalhoub-group/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Emaar Malls,https://www.emaarmalls.com/,UAE,Dubai,Textile/Apparel,https://www.linkedin.com/company/emaar-malls/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Al Tayer Group,https://www.altayer.com/,UAE,Dubai,Textile/Apparel,https://www.linkedin.com/company/al-tayer-group/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Azadea Group Holding,https://www.azadea.com/,UAE,Dubai,Textile/Apparel,https://www.linkedin.com/company/azadea/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Al Futtaim,https://www.alfuttaim.com/,UAE,Dubai,Textile/Apparel,https://www.linkedin.com/company/al-futtaim/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Alhokair Fashion Retail,https://www.fahretail.com/,Saudi Arabia,Riyadh,Textile/Apparel,https://www.linkedin.com/company/alhokair-fashion-retail/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Majid Al Futtaim Fashion,https://www.majidalfuttaim.com/en/our-businesses/lifestyle-and-fashion,UAE,Dubai,Textile/Apparel,https://www.linkedin.com/company/majid-al-futtaim-fashion-llc/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+PVH Corp.,https://www.pvh.com/,United States,New York,Textile/Apparel,https://www.linkedin.com/company/pvh/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Mondelez International,https://www.mondelezinternational.com/,United States,Chicago,FMCG,https://www.linkedin.com/company/mondelez-international/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+L'Oréal Group,https://www.loreal.com/en/,France,Clichy,FMCG,https://www.linkedin.com/company/loreal/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+MANGO,https://shop.mango.com/preHome.faces,Spain,Barcelona,Textile/Apparel,https://www.linkedin.com/company/mango/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+VF Corporation,https://www.vfc.com/,United States,Denver,Textile/Apparel,https://www.linkedin.com/company/vf-corporation/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+ASOS,https://www.asosplc.com/,UK,London,Textile/Apparel,https://www.linkedin.com/company/asos-com/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Superdry plc,https://corporate.superdry.com/,UK,Cheltenham,Textile/Apparel,https://www.linkedin.com/company/superdry/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Burberry,https://www.burberryplc.com/en/index.html,UK,London,Textile/Apparel,https://www.linkedin.com/company/burberry/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+C&A,https://www.c-and-a.com/uk/en/corporate/company/about-ca/,Germany,Düsseldorf,Textile/Apparel,https://www.linkedin.com/company/c&a/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Boohoo Group plc,https://www.boohooplc.com/,UK,Manchester,Textile/Apparel,https://www.linkedin.com/company/boohoo-com/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Esprit Holdings Limited,https://www.esprit.com/,Hong Kong,Ratingen,Textile/Apparel,https://www.linkedin.com/company/esprit/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Primark,https://www.primark.com/en-us,Ireland,Dublin,Textile/Apparel,https://www.linkedin.com/company/primark/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+DICK'S Sporting Goods,https://www.dickssportinggoods.com/,United States,Pittsburgh,Textile/Apparel,https://www.linkedin.com/company/dick's-sporting-goods/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Next plc,https://www.nextplc.co.uk/,UK,Enderby,Textile/Apparel,https://www.linkedin.com/company/next-plc/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Grupo Cortefiel,https://www.grupocortefiel.com/en/,Spain,Madrid,Textile/Apparel,https://www.linkedin.com/company/grupo-cortefiel/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+J Sainsbury plc,https://www.about.sainsburys.co.uk/,UK,London,FMCG,https://www.linkedin.com/company/sainsburys/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Tesco PLC,https://www.tescoplc.com/,UK,Welwyn Garden City,FMCG,https://www.linkedin.com/company/tesco/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Carrefour,https://www.carrefour.com/en,France,Massy,FMCG,https://www.linkedin.com/company/carrefour/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Auchan Retail,https://www.auchan-retail.com/en/,France,Croix,FMCG,https://www.linkedin.com/company/auchan-retail/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Bayer AG,https://www.bayer.com/en/,Germany,Leverkusen,FMCG,https://www.linkedin.com/company/bayer/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Boots UK Limited,https://www.boots-uk.com/,UK,Nottingham,FMCG,https://www.linkedin.com/company/bootsuk/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Beiersdorf AG,https://www.beiersdorf.com/,Germany,Hamburg,FMCG,https://www.linkedin.com/company/beiersdorf/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+AstraZeneca,https://www.astrazeneca.com/,UK,Cambridge,FMCG,https://www.linkedin.com/company/astrazeneca/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Royal Philips,https://www.philips.com/global,Netherlands,Amsterdam,FMCG,https://www.linkedin.com/company/philips/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+GlaxoSmithKline plc,https://www.gsk.com/en-gb/home/,UK,Brentford,FMCG,https://www.linkedin.com/company/glaxosmithkline/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+BASF SE,https://www.basf.com/global/en.html,Germany,Ludwigshafen am Rhein,FMCG,https://www.linkedin.com/company/basf/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Reckitt Benckiser Group plc,https://www.reckitt.com/,UK,Slough,FMCG,https://www.linkedin.com/company/reckittbenckiser/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+SAP SE,https://www.sap.com/,Germany,Walldorf,HR,https://www.linkedin.com/company/sap/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Siemens AG,https://new.siemens.com/global/en.html,Germany,Munich,HR,https://www.linkedin.com/company/siemens/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0
+Adecco Group AG,https://www.adeccogroup.com/,Switzerland,Zurich,HR,https://www.linkedin.com/company/the-adecco-group/,partial,,,,,,False,False,False,0,0,skip,,,,,,,,,,0

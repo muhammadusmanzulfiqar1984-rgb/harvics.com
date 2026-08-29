@@ -2,23 +2,23 @@
 
 import React from 'react'
 import { useLocale } from 'next-intl'
-import { usePathname } from 'next/navigation'
-import DashboardLayout from '@/components/layouts/DashboardLayout'
-import FinanceDomainContent from '@/components/os-domains/FinanceDomainContent'
+import HarvicsOSShell from '@/components/shared/HarvicsOSShell'
+import FinanceModuleOneHub from '@/components/os-domains/FinanceModuleOneHub'
 
 export default function FinanceOSPage() {
   const locale = useLocale()
-  const pathname = usePathname()
-  
-  const persona = pathname?.includes('/portal/distributor') ? 'distributor' :
-                  pathname?.includes('/portal/supplier') ? 'supplier' : 'company'
 
   return (
-    <DashboardLayout
-      portal={persona}
-      pageTitle="Finance OS"
+    <HarvicsOSShell
+      title="Financial Accounting"
+      subtitle="Module #1 — SAP+ GL · park/post/reverse · ledger · BS & P&L"
+      activeDomain="finance"
+      breadcrumbs={[
+        { label: 'OS', href: '/os' },
+        { label: 'Finance' },
+      ]}
     >
-      <FinanceDomainContent persona={persona} locale={locale} />
-    </DashboardLayout>
+      <FinanceModuleOneHub locale={locale} />
+    </HarvicsOSShell>
   )
 }

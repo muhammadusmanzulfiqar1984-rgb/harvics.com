@@ -1,0 +1,35 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "hpay",
+  "main": "./worker.mjs",
+  "compatibility_date": "2026-08-12",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": true
+  },
+  "vars": {
+    "CLOUDFLARE": "1",
+    "NODE_ENV": "production",
+    "HPAY_BANK_ENGINE": "postgres",
+    "HPAY_PG_SCHEMA": "hpay",
+    "PG_SSL": "true",
+    "PORT": "3001",
+    "VITE_INTERCOM_APP_ID": "tnuivmad",
+    "VITE_INTERCOM_API_BASE": "https://api-iam.intercom.io",
+    "VITE_HPAY_API_BASE": "/api/v1",
+    "HPAY_INTEGRATIONS_MODE": "auto",
+    "WEBAUTHN_ALLOW_SIM": "true"
+  },
+  "hyperdrive": [
+    {
+      "binding": "HYPERDRIVE",
+      "id": "f2f8b26d7a804c408da576c1436cf410"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}

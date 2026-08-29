@@ -285,10 +285,12 @@ export const payrollDb = {
 export const invoicesDb = {
   async list(filters: Record<string, any> = {}, page = 1, limit = 50) {
     const where: any = {};
-    if (filters.status) where.status = { contains: filters.status };
-    if (filters.type) where.type = { contains: filters.type };
-    if (filters.customer) where.customer = { contains: filters.customer };
-    if (filters.invoiceNo) where.invoiceNo = { contains: filters.invoiceNo };
+    if (filters.status) where.status = String(filters.status);
+    if (filters.type) where.type = String(filters.type);
+    // Prisma field is customerName (legacy callers may send `customer`)
+    const customerQ = filters.customerName || filters.customer;
+    if (customerQ) where.customerName = { contains: String(customerQ) };
+    if (filters.invoiceNo) where.invoiceNo = String(filters.invoiceNo);
 
     const [data, total] = await Promise.all([
       prisma.invoice.findMany({ where, include: { payments: true }, skip: (page - 1) * limit, take: limit, orderBy: { createdAt: 'desc' } }),
@@ -300,7 +302,13 @@ export const invoicesDb = {
   async get(id: string) { return prisma.invoice.findUnique({ where: { id }, include: { payments: true } }); },
 
   async create(data: any, event?: DomainEvent) {
-    const inv = await prisma.invoice.create({ data });
+    const { customer, ...rest } = data || {};
+    const payload = {
+      ...rest,
+      customerName: rest.customerName || customer || null,
+    };
+    delete (payload as any).customer;
+    const inv = await prisma.invoice.create({ data: payload });
     if (event) eventBus.emitDomain(event, inv, 'finance');
     return inv;
   },
@@ -337,12 +345,32 @@ export const paymentsDb = {
 };
 
 export const journalDb = {
-  async list(_filters: Record<string, any> = {}, page = 1, limit = 50) {
+  async list(filters: Record<string, any> = {}, page = 1, limit = 50) {
+    const where: any = {};
+    if (filters.status) where.status = filters.status;
+    if (filters.periodCode) where.periodCode = filters.periodCode;
+    if (filters.accountCode) {
+      where.OR = [{ debit: String(filters.accountCode) }, { credit: String(filters.accountCode) }];
+    } else if (filters.q) {
+      const q = String(filters.q);
+      where.OR = [
+        { entryNo: { contains: q } },
+        { description: { contains: q } },
+      ];
+    }
     const [data, total] = await Promise.all([
-      prisma.journalEntry.findMany({ skip: (page - 1) * limit, take: limit, orderBy: { createdAt: 'desc' } }),
-      prisma.journalEntry.count(),
+      prisma.journalEntry.findMany({ where, skip: (page - 1) * limit, take: limit, orderBy: { createdAt: 'desc' } }),
+      prisma.journalEntry.count({ where }),
     ]);
     return { data, total, page, pages: Math.ceil(total / limit) };
+  },
+
+  async get(id: string) {
+    return prisma.journalEntry.findUnique({ where: { id } });
+  },
+
+  async getByEntryNo(entryNo: string) {
+    return prisma.journalEntry.findUnique({ where: { entryNo } });
   },
 
   async create(data: any, event?: DomainEvent) {
@@ -351,7 +379,110 @@ export const journalDb = {
     return entry;
   },
 
-  async count() { return prisma.journalEntry.count(); },
+  async update(id: string, data: any) {
+    try {
+      return await prisma.journalEntry.update({ where: { id }, data });
+    } catch {
+      return null;
+    }
+  },
+
+  async count(filters: Record<string, any> = {}) {
+    const where: any = {};
+    if (filters.status) where.status = filters.status;
+    if (filters.periodCode) where.periodCode = filters.periodCode;
+    return prisma.journalEntry.count({ where });
+  },
+
+  async allPosted() {
+    return prisma.journalEntry.findMany({ where: { status: 'Posted' }, orderBy: { createdAt: 'asc' } });
+  },
+};
+
+export const glAccountsDb = {
+  async list(filters: Record<string, any> = {}, page = 1, limit = 200) {
+    const where: any = {};
+    if (filters.type) where.type = filters.type;
+    if (filters.status) where.status = filters.status;
+    const [data, total] = await Promise.all([
+      prisma.glAccount.findMany({ where, skip: (page - 1) * limit, take: limit, orderBy: { accountCode: 'asc' } }),
+      prisma.glAccount.count({ where }),
+    ]);
+    return { data, total, page, pages: Math.ceil(total / limit) };
+  },
+
+  async get(id: string) {
+    return prisma.glAccount.findUnique({ where: { id } });
+  },
+
+  async getByCode(accountCode: string) {
+    return prisma.glAccount.findUnique({ where: { accountCode } });
+  },
+
+  async create(data: any, event?: DomainEvent) {
+    const row = await prisma.glAccount.create({ data });
+    if (event) eventBus.emitDomain(event, row, 'finance');
+    return row;
+  },
+
+  async update(id: string, data: any) {
+    try {
+      return await prisma.glAccount.update({ where: { id }, data });
+    } catch {
+      return null;
+    }
+  },
+
+  async count() {
+    return prisma.glAccount.count();
+  },
+
+  async createMany(rows: any[]) {
+    return prisma.glAccount.createMany({ data: rows, skipDuplicates: true });
+  },
+};
+
+export const fiscalPeriodsDb = {
+  async list(filters: Record<string, any> = {}, page = 1, limit = 100) {
+    const where: any = {};
+    if (filters.status) where.status = filters.status;
+    if (filters.year != null) where.year = Number(filters.year);
+    const [data, total] = await Promise.all([
+      prisma.fiscalPeriod.findMany({ where, skip: (page - 1) * limit, take: limit, orderBy: [{ year: 'desc' }, { month: 'desc' }] }),
+      prisma.fiscalPeriod.count({ where }),
+    ]);
+    return { data, total, page, pages: Math.ceil(total / limit) };
+  },
+
+  async get(id: string) {
+    return prisma.fiscalPeriod.findUnique({ where: { id } });
+  },
+
+  async getByCode(periodCode: string) {
+    return prisma.fiscalPeriod.findUnique({ where: { periodCode } });
+  },
+
+  async getOpen() {
+    return prisma.fiscalPeriod.findFirst({ where: { status: 'Open' }, orderBy: [{ year: 'desc' }, { month: 'desc' }] });
+  },
+
+  async create(data: any, event?: DomainEvent) {
+    const row = await prisma.fiscalPeriod.create({ data });
+    if (event) eventBus.emitDomain(event, row, 'finance');
+    return row;
+  },
+
+  async update(id: string, data: any) {
+    try {
+      return await prisma.fiscalPeriod.update({ where: { id }, data });
+    } catch {
+      return null;
+    }
+  },
+
+  async count() {
+    return prisma.fiscalPeriod.count();
+  },
 };
 
 // ── LOGISTICS ───────────────────────────────────────────────────────

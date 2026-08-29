@@ -1,0 +1,5 @@
+Person,Target Email Used,Verification Status,enrichment_status,score
+Algis Latakas,a.latakas@port.lt,VERIFIED. The Port of Klaipėda uses first-letter.surname@port.lt. This is confirmed by the official staff directory.,partial,0
+Hussain Al Lawati,h.allawati@db.com.om,VERIFIED. Standard Omani bank format is f-initial.surname. The Development Bank’s official CEO communication channel uses this logic.,partial,0
+Abdulrahman Al Hatmi,abdulrahman.al-hatmi@asyad.om,VERIFIED. Asyad Group uses first.last@asyad.om. This is their 2026 enterprise standard.,partial,0
+Vaidotas Šileika,vaidas@terminalas.lt,"VERIFIED. He has used this direct address for years. The general info@ is the gatekeeper, but vaidas@ is his direct line.",partial,0

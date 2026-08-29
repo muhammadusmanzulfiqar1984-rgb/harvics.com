@@ -124,6 +124,7 @@ export default function SmartCRM() {
   const [error, setError] = useState('')
   const [toast, setToast] = useState('')
   const [usdEquiv, setUsdEquiv] = useState<number | null>(null)
+  const [lastCustomerId, setLastCustomerId] = useState<string | null>(null)
 
   const [form, setForm] = useState({
     company: '', contact: '', email: '', value: 0,
@@ -243,7 +244,9 @@ export default function SmartCRM() {
     setBusy('convert')
     try {
       const r = await api(`/api/wave8/leads/${selected.id}/convert`, { method: 'POST' }, mh)
-      showToast(r.message || 'Lead converted to deal.')
+      const cid = r.customer?.id || null
+      setLastCustomerId(cid)
+      showToast(r.message || 'Lead converted to customer + deal.')
       await load()
       setSelected(null); setTimeline(null)
     } catch (e: any) { setError(e.message) } finally { setBusy('') }
@@ -263,11 +266,11 @@ export default function SmartCRM() {
   }, {})
 
   return (
-    <div className="min-h-screen bg-harvics-burgundy text-harvics-cream font-sans pb-16">
+    <div className="min-h-screen bg-[#F7F3EC] text-[#3D1212] font-sans pb-16">
 
       {/* ─── Toast ─── */}
       {toast && (
-        <div className="fixed top-4 right-4 z-[100] flex items-center gap-3 px-4 py-3 rounded-xl bg-harvics-burgundy border border-harvics-gold/40 text-harvics-cream text-sm shadow-2xl animate-slide-in">
+        <div className="fixed top-4 right-4 z-[100] flex items-center gap-3 px-4 py-3 rounded-xl bg-white border border-[#E8E0D4] text-[#3D1212] text-sm shadow-2xl animate-slide-in">
           <CheckCircle size={14} className="text-harvics-gold shrink-0" />
           {toast}
         </div>
@@ -282,39 +285,56 @@ export default function SmartCRM() {
       )}
 
       {/* ─── Hero band ─── */}
-      <div className="relative bg-gradient-to-br from-harvics-burgundy via-[#2a0808] to-harvics-burgundy px-8 pt-8 pb-20 overflow-hidden">
+      <div className="relative bg-white border-b border-[#E8E0D4] px-8 pt-8 pb-16 overflow-hidden">
         <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(195, 163, 94,0.5)_1px,transparent_1px),linear-gradient(90deg,rgba(195, 163, 94,0.5)_1px,transparent_1px)] bg-[size:40px_40px]" />
         <div className="absolute top-[-120px] right-[-80px] w-[400px] h-[400px] rounded-full bg-[radial-gradient(circle,rgba(195, 163, 94,0.15)_0%,transparent_70%)] pointer-events-none" />
 
         <div className="relative max-w-[1400px] mx-auto flex items-start justify-between flex-wrap gap-5">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-harvics-gold/10 border border-harvics-gold/35 rounded-full text-[10px] text-harvics-gold font-bold tracking-[0.18em] mb-4">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#F7F3EC] border border-[#E8E0D4] rounded-full text-[10px] text-harvics-burgundy font-bold tracking-[0.14em] mb-4">
               <span className="w-1.5 h-1.5 rounded-full bg-harvics-gold shadow-[0_0_8px_#C3A35E]" />
               WAVE 8 — SMART CRM
             </div>
-            <h1 className="text-[40px] font-black tracking-tight text-harvics-cream leading-tight mb-2">Pipeline Intelligence</h1>
-            <p className="text-sm text-harvics-muted max-w-xl">
+            <h1 className="text-[36px] font-semibold tracking-tight text-[#3D1212] leading-tight mb-2">Pipeline Intelligence</h1>
+            <p className="text-sm text-[#6B5E52] max-w-xl">
               AI-scored leads · live email drafting · activity intelligence — {locale.toUpperCase()} market · {marketCountry} · {marketCurrency}
             </p>
             <div className="flex gap-2 mt-4 flex-wrap">
               {[['Market', marketCountry], ['Locale', locale.toUpperCase()], ['Currency', marketCurrency], ['Leads', String(leads.length)]].map(([l, v]) => (
-                <span key={l} className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-white/5 border border-white/10 rounded-lg text-[11px]">
+                <span key={l} className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-[#F7F3EC] border border-[#E8E0D4] rounded-lg text-[11px]">
                   <span className="text-harvics-muted">{l}</span>
-                  <span className="text-harvics-cream font-semibold">{v}</span>
+                  <span className="text-[#3D1212] font-semibold">{v}</span>
                 </span>
               ))}
+              <a href={`/${locale}/os/crm/customers`} className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-harvics-gold/15 border border-harvics-gold/40 rounded-lg text-[11px] text-harvics-gold font-semibold hover:bg-harvics-gold/25">
+                Customers
+              </a>
+              <a href={`/${locale}/os/crm/import-harvyx`} className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-harvics-gold/15 border border-harvics-gold/40 rounded-lg text-[11px] text-harvics-gold font-semibold hover:bg-harvics-gold/25">
+                Import HarvyX
+              </a>
+              <a href={`/${locale}/os/pipeline`} className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-[#F7F3EC] border border-[#E8E0D4] rounded-lg text-[11px] text-[#3D1212]/80 hover:border-harvics-burgundy/40">
+                Deal pipeline
+              </a>
             </div>
+            {lastCustomerId && (
+              <a
+                href={`/${locale}/os/crm/customers/${lastCustomerId}`}
+                className="inline-flex mt-3 text-[12px] text-harvics-gold underline underline-offset-2"
+              >
+                Open last converted Customer 360 →
+              </a>
+            )}
           </div>
 
           {/* AI health card */}
-          <div className={`rounded-2xl p-5 min-w-[220px] backdrop-blur-xl ${aiHealth?.aiEnabled ? 'bg-white/5 border border-harvics-gold/35 shadow-[0_0_40px_rgba(195, 163, 94,0.1)]' : 'bg-white/5 border border-white/10'}`}>
+          <div className={`rounded-2xl p-5 min-w-[220px] backdrop-blur-xl ${aiHealth?.aiEnabled ? 'bg-[#FFFEF9] border border-harvics-gold/50' : 'bg-[#FFFEF9] border border-[#E8E0D4]'}`}>
             {aiHealth?.aiEnabled ? (
               <>
                 <div className="flex items-center gap-2 mb-1.5">
                   <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-[0_0_10px_#34d399] animate-pulse" />
                   <span className="text-[11px] text-harvics-gold font-bold tracking-[0.15em]">AI ONLINE</span>
                 </div>
-                <div className="text-sm text-harvics-cream font-mono font-semibold">{aiHealth.model}</div>
+                <div className="text-sm text-[#3D1212] font-mono font-semibold">{aiHealth.model}</div>
                 <div className="text-[10px] text-harvics-muted mt-0.5">provider · {aiHealth.provider}</div>
               </>
             ) : (
@@ -355,10 +375,10 @@ export default function SmartCRM() {
             const sl = leadsByStage[stage] || []
             const sv = sl.reduce((s, l) => s + (l.value || 0), 0)
             return (
-              <div key={stage} className="bg-white/[0.03] border border-white/[0.07] rounded-2xl p-3 min-h-[200px]">
+              <div key={stage} className="bg-white border border-[#E8E0D4] rounded-xl p-3 min-h-[200px]">
                 <div className={`flex items-center justify-between mb-3 pb-2 border-b-2 ${STAGE_ACCENT[stage].replace('bg-', 'border-')}`}>
                   <div>
-                    <div className="text-[11px] font-black text-harvics-cream tracking-[0.08em]">{stage.toUpperCase()}</div>
+                    <div className="text-[11px] font-bold text-[#3D1212] tracking-[0.08em]">{stage.toUpperCase()}</div>
                     <div className="text-[10px] text-harvics-muted mt-0.5">{sl.length} · {fmt(sv)}</div>
                   </div>
                   <div className={`w-6 h-6 rounded-full ${STAGE_ACCENT[stage]} text-white flex items-center justify-center text-[11px] font-black`}>{sl.length}</div>
@@ -378,7 +398,7 @@ export default function SmartCRM() {
       {/* ─── Add lead form ─── */}
       <section className="max-w-[1400px] mx-auto px-8 mt-10">
         <SectionHeader title="ADD NEW LEAD" sub="AI will auto-score after creation" />
-        <div className="bg-white/[0.03] border border-white/[0.07] rounded-2xl p-5">
+        <div className="bg-white border border-[#E8E0D4] rounded-xl p-5">
           <div className="grid grid-cols-3 gap-3">
             <Field label="Company *" value={form.company} onChange={v => setForm({ ...form, company: v })} placeholder="Acme Corp" />
             <Field label="Contact" value={form.contact} onChange={v => setForm({ ...form, contact: v })} placeholder="John Smith" />
@@ -388,18 +408,18 @@ export default function SmartCRM() {
             <Select label="Stage" value={form.stage} onChange={v => setForm({ ...form, stage: v })} options={STAGES.filter(s => s !== 'Converted')} />
           </div>
           <div className="mt-3">
-            <label className="block text-[10px] text-harvics-gold font-bold tracking-[0.1em] mb-1.5">NOTES — helps AI score better</label>
+            <label className="block text-[10px] text-harvics-burgundy font-bold tracking-[0.1em] mb-1.5">NOTES — helps AI score better</label>
             <textarea
               value={form.notes}
               onChange={e => setForm({ ...form, notes: e.target.value })}
               placeholder="Mentioned enterprise tier · CFO concerned about budget · timeline Q3 2026"
-              className="w-full min-h-[56px] px-3 py-2.5 bg-white/[0.03] border border-white/10 rounded-xl text-harvics-cream text-[13px] resize-vertical placeholder-[#8A7D6B]/50 focus:outline-none focus:border-harvics-gold/50 transition-colors"
+              className="w-full min-h-[56px] px-3 py-2.5 bg-white border border-[#E8E0D4] rounded-xl text-[#3D1212] text-[13px] resize-vertical placeholder-[#8A7D6B]/50 focus:outline-none focus:border-harvics-gold/50 transition-colors"
             />
           </div>
           <button
             onClick={createLead}
             disabled={busy === 'create' || !form.company}
-            className="mt-4 inline-flex items-center gap-2 px-6 py-3 bg-harvics-burgundy hover:bg-[#2a0808] disabled:opacity-40 disabled:cursor-not-allowed border border-harvics-gold/40 hover:border-harvics-gold/70 rounded-xl text-harvics-cream text-[11px] font-black tracking-[0.1em] transition-all shadow-[0_4px_20px_rgba(61, 18, 18,0.4)]"
+            className="mt-4 inline-flex items-center gap-2 px-6 py-3 bg-harvics-burgundy hover:bg-[#2a0808] disabled:opacity-40 disabled:cursor-not-allowed rounded-xl text-white text-[11px] font-black tracking-[0.1em] transition-all shadow-[0_4px_20px_rgba(61, 18, 18,0.4)]"
           >
             <Plus size={13} />
             {busy === 'create' ? 'CREATING…' : 'ADD LEAD'}
@@ -414,7 +434,7 @@ export default function SmartCRM() {
           onClick={() => { setSelected(null); setTimeline(null) }}
         >
           <div
-            className="w-full max-w-[720px] bg-harvics-burgundy border-l border-harvics-gold/20 p-7 overflow-y-auto"
+            className="w-full max-w-[720px] bg-white border-l border-[#E8E0D4] p-7 overflow-y-auto shadow-2xl"
             onClick={e => e.stopPropagation()}
           >
             {/* Header */}
@@ -426,14 +446,14 @@ export default function SmartCRM() {
                   </span>
                   {selected.aiTier && <TierBadge tier={selected.aiTier} />}
                 </div>
-                <h2 className="text-[26px] font-black text-harvics-cream tracking-tight">{selected.company}</h2>
+                <h2 className="text-[24px] font-semibold text-[#3D1212] tracking-tight">{selected.company}</h2>
                 <p className="text-sm text-harvics-muted mt-1">
                   {selected.contact || '—'}{selected.email && ` · ${selected.email}`}
                 </p>
               </div>
               <button
                 onClick={() => { setSelected(null); setTimeline(null) }}
-                className="w-8 h-8 flex items-center justify-center rounded-lg border border-white/20 text-harvics-muted hover:text-harvics-cream transition-colors"
+                className="w-8 h-8 flex items-center justify-center rounded-lg border border-[#E8E0D4] text-[#6B5E52] hover:text-[#3D1212] transition-colors"
               >
                 <X size={15} />
               </button>
@@ -441,20 +461,20 @@ export default function SmartCRM() {
 
             {/* Value + Score */}
             <div className="grid grid-cols-2 gap-3 mb-5">
-              <div className="bg-white/[0.03] border border-white/[0.07] rounded-2xl p-4">
-                <div className="text-[10px] text-harvics-gold font-bold tracking-[0.1em] mb-1.5">DEAL VALUE</div>
-                <div className="text-[26px] text-harvics-cream font-black">{fmt(selected.value)}</div>
+              <div className="bg-white border border-[#E8E0D4] rounded-xl p-4">
+                <div className="text-[10px] text-harvics-burgundy font-bold tracking-[0.1em] mb-1.5">DEAL VALUE</div>
+                <div className="text-[24px] text-[#3D1212] font-semibold">{fmt(selected.value)}</div>
                 <div className="text-[11px] text-harvics-muted mt-0.5">{selected.source}</div>
               </div>
-              <div className="bg-white/[0.03] border border-white/[0.07] rounded-2xl p-4">
-                <div className="text-[10px] text-harvics-gold font-bold tracking-[0.1em] mb-1.5">AI SCORE</div>
+              <div className="bg-white border border-[#E8E0D4] rounded-xl p-4">
+                <div className="text-[10px] text-harvics-burgundy font-bold tracking-[0.1em] mb-1.5">AI SCORE</div>
                 {selected.aiScore != null ? (
                   <>
                     <div className="flex items-baseline gap-1.5">
                       <span className={`text-[26px] font-black ${scoreColor(selected.aiScore)}`}>{selected.aiScore}</span>
                       <span className="text-sm text-harvics-muted">/100</span>
                     </div>
-                    <div className="mt-2 h-1.5 bg-white/[0.07] rounded-full overflow-hidden">
+                    <div className="mt-2 h-1.5 bg-[#E8E0D4] rounded-full overflow-hidden">
                       <div className="h-full bg-harvics-gold rounded-full transition-all duration-700" style={{ width: `${selected.aiScore}%` }} />
                     </div>
                   </>
@@ -467,7 +487,7 @@ export default function SmartCRM() {
             {/* Action buttons */}
             <div className="grid grid-cols-2 gap-2 mb-5">
               <ActionBtn icon={<Brain size={14} />} label={busy.startsWith('score') ? 'SCORING…' : 'AI RE-SCORE'} onClick={() => scoreLead(selected.id)} disabled={busy.startsWith('score')} variant="primary" />
-              <ActionBtn icon={<ArrowRight size={14} />} label={selected.stage === 'Converted' ? 'CONVERTED' : 'CONVERT TO DEAL'} onClick={convertLead} disabled={busy === 'convert' || selected.stage === 'Converted'} variant="success" />
+              <ActionBtn icon={<ArrowRight size={14} />} label={selected.stage === 'Converted' ? 'CONVERTED' : 'CONVERT → CUSTOMER + DEAL'} onClick={convertLead} disabled={busy === 'convert' || selected.stage === 'Converted'} variant="success" />
               <ActionBtn icon={<Mail size={14} />} label="DRAFT FOLLOW-UP" onClick={() => draftMail('follow_up')} disabled={busy === 'draft'} />
               <ActionBtn icon={<Calendar size={14} />} label="DRAFT DEMO REQ" onClick={() => draftMail('demo_request')} disabled={busy === 'draft'} />
               <ActionBtn icon={<Shield size={14} />} label="HANDLE OBJECTION" onClick={() => draftMail('objection_handle')} disabled={busy === 'draft'} />
@@ -479,7 +499,7 @@ export default function SmartCRM() {
               <div className="bg-harvics-gold/[0.06] border border-harvics-gold/30 rounded-2xl p-4 mb-4">
                 <div className="flex items-center gap-2 mb-3">
                   <Brain size={15} className="text-harvics-gold" />
-                  <span className="text-[10px] text-harvics-gold font-black tracking-[0.15em]">AI INSIGHT</span>
+                  <span className="text-[10px] text-harvics-burgundy font-bold tracking-[0.12em]">AI INSIGHT</span>
                   <span className="text-[9px] text-harvics-muted ml-auto">{insight.aiGenerated ? 'Groq Llama 3.3 70B' : 'heuristic fallback'}</span>
                 </div>
                 <div className="flex items-center gap-3 mb-3">
@@ -490,20 +510,20 @@ export default function SmartCRM() {
                   </div>
                 </div>
                 <div className="text-[11px] text-harvics-muted font-bold tracking-[0.1em] mb-1.5">REASONING</div>
-                <p className="text-[13px] text-harvics-cream/80 leading-relaxed mb-3">{insight.reasoning}</p>
+                <p className="text-[13px] text-[#3D1212]/80 leading-relaxed mb-3">{insight.reasoning}</p>
                 <div className="pl-3 border-l-2 border-emerald-500 bg-emerald-500/[0.06] py-2.5 pr-3 rounded-r-xl">
                   <div className="text-[10px] text-emerald-400 font-bold tracking-[0.1em] mb-1">NEXT BEST ACTION</div>
-                  <p className="text-[13px] text-harvics-cream/80">{insight.nextAction}</p>
+                  <p className="text-[13px] text-[#3D1212]/80">{insight.nextAction}</p>
                 </div>
               </div>
             )}
 
             {/* Email draft */}
             {draft && (
-              <div className="bg-white/[0.03] border border-white/[0.07] rounded-2xl p-4 mb-4">
+              <div className="bg-white border border-[#E8E0D4] rounded-xl p-4 mb-4">
                 <div className="flex items-center gap-2 mb-3">
                   <Mail size={15} className="text-harvics-gold" />
-                  <span className="text-[10px] text-harvics-gold font-black tracking-[0.15em]">EMAIL DRAFT · {draft.purpose?.toUpperCase()}</span>
+                  <span className="text-[10px] text-harvics-burgundy font-bold tracking-[0.12em]">EMAIL DRAFT · {draft.purpose?.toUpperCase()}</span>
                   <button
                     onClick={() => {
                       navigator.clipboard.writeText(`Subject: ${draft.subject}\n\n${draft.body}`)
@@ -514,7 +534,7 @@ export default function SmartCRM() {
                     <Copy size={11} />COPY
                   </button>
                 </div>
-                <div className="px-3 py-2.5 bg-black/30 rounded-xl text-sm font-bold text-harvics-cream mb-2">
+                <div className="px-3 py-2.5 bg-[#F7F3EC] rounded-xl text-sm font-bold text-[#3D1212] mb-2">
                   <span className="text-[10px] text-harvics-muted mr-2">SUBJECT</span>
                   {draft.subject}
                 </div>
@@ -529,13 +549,13 @@ export default function SmartCRM() {
                   <Activity size={14} className="text-violet-400" />
                   <span className="text-[10px] text-violet-400 font-black tracking-[0.15em]">AI ACTIVITY SUMMARY</span>
                 </div>
-                <p className="text-[13px] text-harvics-cream/80 italic leading-relaxed">{timeline.aiSummary.summary}</p>
+                <p className="text-[13px] text-[#3D1212]/80 italic leading-relaxed">{timeline.aiSummary.summary}</p>
               </div>
             )}
 
             {/* Log activity */}
-            <div className="bg-white/[0.03] border border-white/[0.07] rounded-2xl p-4 mb-4">
-              <div className="text-[10px] text-harvics-gold font-black tracking-[0.15em] mb-3">LOG ACTIVITY</div>
+            <div className="bg-white border border-[#E8E0D4] rounded-xl p-4 mb-4">
+              <div className="text-[10px] text-harvics-burgundy font-bold tracking-[0.12em] mb-3">LOG ACTIVITY</div>
               <div className="grid grid-cols-2 gap-2 mb-2">
                 <Select value={activityForm.type} onChange={v => setActivityForm({ ...activityForm, type: v })} options={['note', 'call', 'email', 'meeting', 'task', 'demo']} />
                 <Select value={activityForm.outcome} onChange={v => setActivityForm({ ...activityForm, outcome: v })} options={['positive', 'neutral', 'negative', 'no_show']} />
@@ -545,7 +565,7 @@ export default function SmartCRM() {
                 value={activityForm.body}
                 onChange={e => setActivityForm({ ...activityForm, body: e.target.value })}
                 placeholder="Notes"
-                className="w-full min-h-[56px] mt-2 px-3 py-2.5 bg-black/30 border border-white/10 rounded-xl text-harvics-cream text-[13px] resize-vertical placeholder-[#8A7D6B]/50 focus:outline-none focus:border-harvics-gold/50 transition-colors"
+                className="w-full min-h-[56px] mt-2 px-3 py-2.5 bg-[#F7F3EC] border border-[#E8E0D4] rounded-xl text-[#3D1212] text-[13px] resize-vertical placeholder-[#8A7D6B]/50 focus:outline-none focus:border-harvics-burgundy/40 transition-colors"
               />
               <button
                 onClick={logActivity}
@@ -559,11 +579,11 @@ export default function SmartCRM() {
 
             {/* Timeline */}
             <div>
-              <div className="text-[10px] text-harvics-gold font-black tracking-[0.15em] mb-3">
+              <div className="text-[10px] text-harvics-burgundy font-bold tracking-[0.12em] mb-3">
                 ACTIVITY TIMELINE · {timeline?.activities?.length || 0}
               </div>
               {!timeline?.activities?.length ? (
-                <div className="py-8 text-center text-[13px] text-harvics-muted bg-white/[0.02] rounded-2xl border border-white/[0.05]">
+                <div className="py-8 text-center text-[13px] text-[#6B5E52] bg-[#FFFEF9] rounded-xl border border-[#E8E0D4]">
                   No activities yet — log one above
                 </div>
               ) : (
@@ -572,12 +592,12 @@ export default function SmartCRM() {
                   {timeline.activities.map((a: any) => (
                     <div key={a.id} className="relative pb-3 mb-1">
                       <div className={`absolute -left-[18px] top-1 w-3 h-3 rounded-full border-2 border-harvics-burgundy ${outcomeAccent(a.outcome)}`} />
-                      <div className="bg-white/[0.03] border border-white/[0.07] rounded-xl p-3">
+                      <div className="bg-[#FFFEF9] border border-[#E8E0D4] rounded-xl p-3">
                         <div className="flex justify-between items-center mb-1">
                           <span className="text-[10px] font-black text-harvics-gold tracking-[0.1em]">{a.type?.toUpperCase()}</span>
                           <span className="text-[10px] text-harvics-muted">{fmtDate(a.occurredAt)}</span>
                         </div>
-                        <div className="text-[13px] text-harvics-cream font-semibold">{a.subject}</div>
+                        <div className="text-[13px] text-[#3D1212] font-semibold">{a.subject}</div>
                         {a.body && <div className="text-[12px] text-harvics-muted mt-1">{a.body}</div>}
                       </div>
                     </div>
@@ -596,12 +616,12 @@ export default function SmartCRM() {
 
 function MetricCard({ label, value, sub, icon, gauge }: { label: string; value: string; sub: string; icon: React.ReactNode; gauge?: number }) {
   return (
-    <div className="relative bg-white/[0.04] backdrop-blur-xl border border-white/[0.08] rounded-2xl p-5 overflow-hidden">
+    <div className="relative bg-white border border-[#E8E0D4] rounded-xl p-5 overflow-hidden">
       <div className="absolute top-3 right-3 text-harvics-gold/20">{icon}</div>
-      <div className="text-[10px] text-harvics-gold font-black tracking-[0.15em]">{label}</div>
-      <div className="text-[26px] text-harvics-cream font-black mt-1.5 leading-none">{value}</div>
+      <div className="text-[10px] text-harvics-burgundy font-bold tracking-[0.12em]">{label}</div>
+      <div className="text-[24px] text-[#3D1212] font-semibold mt-1.5 leading-none">{value}</div>
       {gauge != null && (
-        <div className="mt-2 h-1 bg-white/[0.07] rounded-full overflow-hidden">
+        <div className="mt-2 h-1 bg-[#E8E0D4] rounded-full overflow-hidden">
           <div className="h-full bg-harvics-gold rounded-full transition-all duration-700" style={{ width: `${gauge}%` }} />
         </div>
       )}
@@ -613,7 +633,7 @@ function MetricCard({ label, value, sub, icon, gauge }: { label: string; value: 
 function SectionHeader({ title, sub }: { title: string; sub: string }) {
   return (
     <div className="flex items-baseline gap-3 mb-4">
-      <h3 className="text-[14px] text-harvics-cream font-black tracking-[0.1em]">{title}</h3>
+      <h3 className="text-[13px] text-[#3D1212] font-bold tracking-[0.08em]">{title}</h3>
       <span className="text-[11px] text-harvics-muted">{sub}</span>
     </div>
   )
@@ -629,11 +649,11 @@ function LeadCard({ lead, active, onClick, fmt, stageText, stageAccent }: {
       className={`w-full text-left rounded-xl p-2.5 border transition-all duration-150 cursor-pointer ${
         active
           ? `${stageAccent.replace('bg-', 'bg-')}/20 ${stageAccent.replace('bg-', 'border-')}/60`
-          : 'bg-white/[0.04] border-white/[0.07] hover:bg-white/[0.08] hover:-translate-y-px'
+          : 'bg-[#FFFEF9] border-[#E8E0D4] hover:bg-white hover:-translate-y-px'
       }`}
     >
       <div className="flex items-center justify-between gap-1.5">
-        <span className="text-[12px] text-harvics-cream font-bold truncate flex-1">{lead.company}</span>
+        <span className="text-[12px] text-[#3D1212] font-semibold truncate flex-1">{lead.company}</span>
         {lead.aiScore != null && (
           <span className={`w-6 h-6 rounded-full ${stageAccent} text-white flex items-center justify-center text-[10px] font-black shrink-0`}>
             {lead.aiScore}
@@ -658,13 +678,13 @@ function TierBadge({ tier, small }: { tier: string; small?: boolean }) {
 function Field({ label, value, onChange, placeholder, type }: { label?: string; value: string; onChange: (v: string) => void; placeholder?: string; type?: string }) {
   return (
     <div>
-      {label && <label className="block text-[10px] text-harvics-gold font-bold tracking-[0.1em] mb-1.5">{label.toUpperCase()}</label>}
+      {label && <label className="block text-[10px] text-harvics-burgundy font-bold tracking-[0.1em] mb-1.5">{label.toUpperCase()}</label>}
       <input
         type={type || 'text'}
         value={value}
         placeholder={placeholder}
         onChange={e => onChange(e.target.value)}
-        className="w-full px-3 py-2.5 bg-white/[0.04] border border-white/10 rounded-xl text-harvics-cream text-[13px] placeholder-[#8A7D6B]/50 focus:outline-none focus:border-harvics-gold/50 transition-colors"
+        className="w-full px-3 py-2.5 bg-white border border-[#E8E0D4] rounded-xl text-[#3D1212] text-[13px] placeholder-[#8A7D6B]/50 focus:outline-none focus:border-harvics-gold/50 transition-colors"
       />
     </div>
   )
@@ -673,13 +693,13 @@ function Field({ label, value, onChange, placeholder, type }: { label?: string; 
 function Select({ label, value, onChange, options }: { label?: string; value: string; onChange: (v: string) => void; options: string[] }) {
   return (
     <div>
-      {label && <label className="block text-[10px] text-harvics-gold font-bold tracking-[0.1em] mb-1.5">{label.toUpperCase()}</label>}
+      {label && <label className="block text-[10px] text-harvics-burgundy font-bold tracking-[0.1em] mb-1.5">{label.toUpperCase()}</label>}
       <select
         value={value}
         onChange={e => onChange(e.target.value)}
-        className="w-full px-3 py-2.5 bg-white/[0.04] border border-white/10 rounded-xl text-harvics-cream text-[13px] focus:outline-none focus:border-harvics-gold/50 transition-colors"
+        className="w-full px-3 py-2.5 bg-white border border-[#E8E0D4] rounded-xl text-[#3D1212] text-[13px] focus:outline-none focus:border-harvics-gold/50 transition-colors"
       >
-        {options.map(o => <option key={o} value={o} className="bg-harvics-burgundy text-harvics-cream">{o}</option>)}
+        {options.map(o => <option key={o} value={o} className="bg-white text-[#3D1212]">{o}</option>)}
       </select>
     </div>
   )
@@ -690,10 +710,10 @@ function ActionBtn({ icon, label, onClick, disabled, variant }: {
 }) {
   const base = 'flex items-center justify-center gap-2 px-3 py-3 rounded-xl text-[11px] font-black tracking-[0.08em] transition-all disabled:opacity-40 disabled:cursor-not-allowed'
   const styles = variant === 'primary'
-    ? 'bg-gradient-to-br from-harvics-burgundy to-[#2a0808] border border-harvics-gold/40 hover:border-harvics-gold/70 text-harvics-cream shadow-[0_4px_12px_rgba(0,0,0,0.3)]'
+    ? 'bg-harvics-burgundy hover:bg-[#2a0808] text-white'
     : variant === 'success'
     ? 'bg-gradient-to-br from-emerald-700 to-emerald-600 text-white shadow-[0_4px_12px_rgba(0,0,0,0.3)]'
-    : 'bg-white/[0.05] border border-white/10 hover:bg-white/[0.09] text-harvics-cream'
+    : 'bg-white border border-[#E8E0D4] hover:bg-[#F7F3EC] text-[#3D1212]'
   return (
     <button onClick={onClick} disabled={disabled} className={`${base} ${styles}`}>
       {icon}<span>{label}</span>

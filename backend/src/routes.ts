@@ -17,6 +17,15 @@ import productsRouter from './modules/products/products.controller';
 import navigationRouter from './modules/navigation/navigation.controller';
 import territoryRouter from './modules/territory/territory.controller';
 import { requireAuthScope } from './middleware/authScope';
+import { requirePermission } from './middleware/rbac.middleware';
+import type { RBACAction } from './modules/auth/rbac.permissions';
+
+function crmPermissionGate(req: any, res: any, next: any) {
+  const method = String(req.method || 'GET').toUpperCase();
+  const action: RBACAction =
+    method === 'GET' ? 'read' : method === 'DELETE' ? 'delete' : method === 'PUT' || method === 'PATCH' ? 'update' : 'create';
+  return requirePermission('crm', action)(req, res, next);
+}
 import { enforceAIProtocol, requireAIEngine } from './middleware/aiProtocolEnforcement';
 import { neuralGovernance } from './middleware/neuralGovernance';
 import { buildLocalisationPayload, listCountryProfiles } from './modules/localisation/localisation.service';
@@ -26,6 +35,9 @@ import { notificationService } from './modules/comms/notification.service';
 import { eventBus } from './core/eventBus';
 import { customersDb, leadsDb, employeesDb, inventoryDb } from './core/db';
 import productionRouter from './modules/production/production.controller';
+import legalRouter from './modules/legal/legal.cases.controller';
+import executiveRouter from './modules/executive/executive.controller';
+import { buildExecutiveDashboard } from './modules/executive/executive.live';
 
 // In-memory demo store for command-center Orders CRUD (no DB dependency)
 type DemoOrder = {
@@ -415,6 +427,7 @@ import { HarvicsAlphaEngine } from './services/harvicsAlphaEngine';
 import ordersCrudRouter from './modules/orders/orders.crud.controller';
 import inventoryCrudRouter from './modules/inventory/inventory.crud.controller';
 import financeCrudRouter from './modules/finance/finance.crud.controller';
+import hpayCheckoutRouter from './modules/finance/hpay.checkout.controller';
 import crmCrudRouter from './modules/crm/crm.crud.controller';
 import hrCrudRouter from './modules/hr/hr.crud.controller';
 import logisticsCrudRouter from './modules/logistics/logistics.crud.controller';
@@ -1171,7 +1184,7 @@ router.delete('/modules/demo/employees/:id', async (req: Request, res: Response)
 // ── CRM: Customers (Prisma-backed) ──────────────────────────────────────────
 const mapCustomer = (c: any) => c ? { ...c, company: c.name, ltv: c.lifetimeValue || 0, currency: 'USD' } : c;
 
-router.get('/modules/demo/customers', async (_req: Request, res: Response) => {
+router.get('/modules/demo/customers', requireAuthScope, async (_req: Request, res: Response) => {
   try {
     const result = await customersDb.list({}, 1, 1000);
     return res.json({ success: true, data: result.data.map(mapCustomer), total: result.total });
@@ -1180,7 +1193,7 @@ router.get('/modules/demo/customers', async (_req: Request, res: Response) => {
   }
 });
 
-router.post('/modules/demo/customers', async (req: Request, res: Response) => {
+router.post('/modules/demo/customers', requireAuthScope, async (req: Request, res: Response) => {
   const p = req.body || {};
   if (!p.name || !p.company) {
     return res.status(400).json({ success: false, error: 'name and company are required' });
@@ -1200,7 +1213,7 @@ router.post('/modules/demo/customers', async (req: Request, res: Response) => {
   }
 });
 
-router.delete('/modules/demo/customers/:id', async (req: Request, res: Response) => {
+router.delete('/modules/demo/customers/:id', requireAuthScope, async (req: Request, res: Response) => {
   const existing = await customersDb.get(req.params.id);
   if (!existing) return res.status(404).json({ success: false, error: 'customer not found' });
   await customersDb.delete(req.params.id);
@@ -1211,7 +1224,7 @@ router.delete('/modules/demo/customers/:id', async (req: Request, res: Response)
 // ── CRM: Leads (Prisma-backed, with stage transition + auto-convert on Won) ─
 const mapLead = (l: any) => l ? { ...l, name: l.contact || l.company, currency: 'USD', owner: 'Unassigned' } : l;
 
-router.get('/modules/demo/leads', async (_req: Request, res: Response) => {
+router.get('/modules/demo/leads', requireAuthScope, async (_req: Request, res: Response) => {
   try {
     const result = await leadsDb.list({}, 1, 1000);
     return res.json({ success: true, data: result.data.map(mapLead), total: result.total });
@@ -1220,7 +1233,7 @@ router.get('/modules/demo/leads', async (_req: Request, res: Response) => {
   }
 });
 
-router.post('/modules/demo/leads', async (req: Request, res: Response) => {
+router.post('/modules/demo/leads', requireAuthScope, async (req: Request, res: Response) => {
   const p = req.body || {};
   if (!p.name || !p.company) {
     return res.status(400).json({ success: false, error: 'name and company are required' });
@@ -1241,7 +1254,7 @@ router.post('/modules/demo/leads', async (req: Request, res: Response) => {
   }
 });
 
-router.patch('/modules/demo/leads/:id/stage', async (req: Request, res: Response) => {
+router.patch('/modules/demo/leads/:id/stage', requireAuthScope, async (req: Request, res: Response) => {
   const lead = await leadsDb.get(req.params.id);
   if (!lead) return res.status(404).json({ success: false, error: 'lead not found' });
   const stage = String(req.body?.stage || '');
@@ -1268,7 +1281,7 @@ router.patch('/modules/demo/leads/:id/stage', async (req: Request, res: Response
   return res.json({ success: true, data: mapLead(updated), customer: convertedCustomer ? mapCustomer(convertedCustomer) : null });
 });
 
-router.delete('/modules/demo/leads/:id', async (req: Request, res: Response) => {
+router.delete('/modules/demo/leads/:id', requireAuthScope, async (req: Request, res: Response) => {
   const existing = await leadsDb.get(req.params.id);
   if (!existing) return res.status(404).json({ success: false, error: 'lead not found' });
   await leadsDb.delete(req.params.id);
@@ -1682,7 +1695,7 @@ router.use('/platform', platformRouter);
 // Wave 3 — completes 11 incomplete modules (GL hierarchy, AR aging,
 // AP 3-way match, CRM pipeline, RFQ, vendor scoring, cycle count, ABC,
 // fleet alerts, shipments, HS codes, leave, attendance).
-router.use('/wave3', wave3Router);
+router.use('/wave3', requireAuthScope, wave3Router);
 
 // Wave 4 — Bucket A completions (Controlling, FP&A, S&D routing,
 // BOM explode, Recipe scaling, Warehouse bins+putaway, Demand forecast, Fleet trips).
@@ -1705,7 +1718,7 @@ router.use('/wave7', requireAuthScope, wave7Router);
 // Wave 8 — Smart CRM (AI-powered, Groq Llama 3.3 70B). Lead scoring,
 // email drafting, activity timeline, pipeline metrics. Graceful degrade
 // when GROQ_API_KEY is missing.
-router.use('/wave8', requireAuthScope, wave8Router);
+router.use('/wave8', requireAuthScope, crmPermissionGate, wave8Router);
 
 router.get('/modules/contracts', (_req: Request, res: Response) => {
   const generated = Array.from(CONTRACT_READY_SEGMENTS)
@@ -1956,12 +1969,23 @@ router.use('/territory', territoryRouter);
 // ── DOMAIN CRUD ROUTES (PROTECTED - AUTH + NEURAL GOVERNANCE) ──────────────────
 router.use('/orders',           requireAuthScope, neuralGovernance, ordersCrudRouter);
 router.use('/inventory',        requireAuthScope, neuralGovernance, inventoryCrudRouter);
+router.use('/hpay', hpayCheckoutRouter);
 router.use('/finance',          requireAuthScope, neuralGovernance, financeCrudRouter);
 // /api/payments/* — alias so existing frontend api-payments.ts clients don't 404
 router.use('/payments',         requireAuthScope, neuralGovernance, financeCrudRouter);
-router.use('/crm',              requireAuthScope, neuralGovernance, crmCrudRouter);
+router.use('/crm',              requireAuthScope, crmPermissionGate, neuralGovernance, crmCrudRouter);
 // Production v2 routes — 15 new Prisma-backed tables (manufacturing, quality, projects, treasury, marketing, documents, comms, audit, assets)
 router.use('/v2',               productionRouter);
+router.use('/v2/legal',         legalRouter);
+router.use('/executive',        requireAuthScope, executiveRouter);
+router.get('/m/72', requireAuthScope, async (_req, res) => {
+  try {
+    const data = await buildExecutiveDashboard();
+    return res.json({ success: true, data, source: 'live', moduleId: 72 });
+  } catch (err: any) {
+    return res.status(500).json({ success: false, error: err?.message || 'executive dashboard failed' });
+  }
+});
 router.use('/hr',               requireAuthScope, neuralGovernance, hrCrudRouter);
 router.use('/logistics',        requireAuthScope, neuralGovernance, logisticsCrudRouter);
 router.use('/procurement-crud', requireAuthScope, neuralGovernance, procurementCrudRouter);
@@ -2036,16 +2060,229 @@ eventBus.on('inventory.low-stock', (data: any) => {
   });
 });
 
+// Module #3/#4 — invoice created → HQ finance alert
+eventBus.on('finance.invoice.created', (data: any) => {
+  const isAp = String(data?.type || '').toUpperCase() === 'AP' || String(data?.type || '').toUpperCase() === 'VENDOR';
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'finance_alert',
+    priority: Number(data?.amount ?? 0) >= 50000 ? 'high' : 'normal',
+    title: isAp ? 'AP Bill Created' : 'AR Invoice Created',
+    body: `${data?.invoiceNo || 'INV'} · ${data?.customerName || data?.customer || '—'} · $${Number(data?.amount ?? 0).toLocaleString()}`,
+    actionUrl: isAp ? '/os/ap-aging' : '/os/ar-aging',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'Invoice',
+  });
+});
+
 eventBus.on('finance.payment.received', (data: any) => {
   notificationService.systemAlert({
     toRole: 'hq',
     category: 'finance_alert',
     priority: 'normal',
     title: 'Payment Received',
-    body: `Payment of $${Number(data?.amount ?? 0).toLocaleString()} received from ${data?.customer ?? 'customer'}.`,
+    body: `Payment of $${Number(data?.amount ?? 0).toLocaleString()} · ${data?.invoiceNo || data?.customer || 'invoice'} · ${data?.method || 'transfer'}`,
+    actionUrl: '/os/ar-aging',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'Payment',
+  });
+});
+
+// Module #1 — journal posted → HQ finance alert (real side-effect, not log-only)
+eventBus.on('finance.journal.posted', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'finance_alert',
+    priority: Number(data?.amount ?? 0) >= 100000 ? 'high' : 'normal',
+    title: 'Journal Posted',
+    body: `${data?.entryNo || 'JE'} · ${data?.debit} → ${data?.credit} · $${Number(data?.amount ?? 0).toLocaleString()} — ${data?.description || 'posted'}`,
     actionUrl: '/os/finance',
-    relatedEntityId: data?.invoiceId,
-    relatedEntityType: 'Invoice',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'JournalEntry',
+  });
+});
+
+eventBus.on('finance.gl.account.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'finance_alert',
+    priority: 'normal',
+    title: 'GL Account Created',
+    body: `${data?.accountCode || '—'} · ${data?.name || 'Account'} (${data?.type || 'GL'})`,
+    actionUrl: '/os/finance',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'GlAccount',
+  });
+});
+
+// Module #2 — Controlling → HQ finance alerts
+eventBus.on('finance.costcenter.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'finance_alert',
+    priority: 'normal',
+    title: 'Cost Center Created',
+    body: `${data?.code || '—'} · ${data?.name || 'Cost center'}`,
+    actionUrl: '/os/controlling',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'CostCenter',
+  });
+});
+
+eventBus.on('finance.costposting.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'finance_alert',
+    priority: Number(data?.amount ?? 0) >= 50000 ? 'high' : 'normal',
+    title: 'Cost Posting',
+    body: `${data?.costCenterCode || 'CC'} · ${data?.type || 'Actual'} · $${Number(data?.amount ?? 0).toLocaleString()} · ${data?.period || ''}${data?.journalId ? ' · GL linked' : ''}`,
+    actionUrl: '/os/controlling',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'CostPosting',
+  });
+});
+
+eventBus.on('finance.allocation.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'finance_alert',
+    priority: 'normal',
+    title: 'Cost Allocation',
+    body: `${data?.fromAccount || '—'} → ${data?.toCostCenter || 'CC'} · $${Number(data?.amount ?? 0).toLocaleString()} · ${data?.period || ''}`,
+    actionUrl: '/os/controlling',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'CostAllocation',
+  });
+});
+
+// Modules #5–12 — commercial / treasury side-effects
+eventBus.on('finance.treasury.account.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'finance_alert',
+    priority: 'normal',
+    title: 'Treasury Account Opened',
+    body: `${data?.name || 'Account'} · ${data?.currency || 'USD'} · bal $${Number(data?.balance ?? 0).toLocaleString()}`,
+    actionUrl: '/os/treasury-banking',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'BankAccount',
+  });
+});
+
+eventBus.on('finance.paymentrun.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'finance_alert',
+    priority: 'normal',
+    title: 'Payment Run Draft',
+    body: `${data?.runNo || 'PR'} · $${Number(data?.totalAmount ?? 0).toLocaleString()} · ${data?.itemCount ?? 0} items`,
+    actionUrl: '/os/payment-runs',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'PaymentRun',
+  });
+});
+
+eventBus.on('finance.paymentrun.released', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'finance_alert',
+    priority: 'high',
+    title: 'Payment Run Released',
+    body: `${data?.runNo || 'PR'} · $${Number(data?.totalAmount ?? 0).toLocaleString()} released`,
+    actionUrl: '/os/payment-runs',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'PaymentRun',
+  });
+});
+
+eventBus.on('finance.budget.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'finance_alert',
+    priority: 'normal',
+    title: 'Budget Line Created',
+    body: `${data?.period || ''} · ${data?.account || 'acct'} · $${Number(data?.budgeted ?? 0).toLocaleString()} (${data?.scenario || 'Base'})`,
+    actionUrl: '/os/budgets',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'BudgetLine',
+  });
+});
+
+eventBus.on('crm.lead.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'sales_officer',
+    category: 'crm_alert',
+    priority: 'normal',
+    title: 'New Lead',
+    body: `${data?.company || 'Lead'} · $${Number(data?.value ?? 0).toLocaleString()} · ${data?.stage || 'Lead'}`,
+    actionUrl: '/os/crm',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'Lead',
+  });
+});
+
+eventBus.on('crm.lead.converted', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'sales_officer',
+    category: 'crm_alert',
+    priority: 'high',
+    title: 'Lead Converted',
+    body: `${data?.company || 'Lead'} → customer + deal`,
+    actionUrl: '/os/crm',
+    relatedEntityId: data?.leadId,
+    relatedEntityType: 'Lead',
+  });
+});
+
+eventBus.on('sales.quote.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'sales_officer',
+    category: 'crm_alert',
+    priority: 'normal',
+    title: 'Quote Created',
+    body: `${data?.quoteNo || 'Q'} · ${data?.customerName || '—'} · $${Number(data?.total ?? 0).toLocaleString()}`,
+    actionUrl: '/os/cpq',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'Quote',
+  });
+});
+
+eventBus.on('sales.channel.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'crm_alert',
+    priority: 'normal',
+    title: 'Sales Channel Created',
+    body: `${data?.code || '—'} · ${data?.name || 'Channel'} (${data?.type || 'channel'})`,
+    actionUrl: '/os/sales-distribution',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'SalesChannel',
+  });
+});
+
+eventBus.on('marketing.campaign.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'crm_alert',
+    priority: 'normal',
+    title: 'Campaign Created',
+    body: `${data?.name || 'Campaign'} · ${data?.status || 'draft'}`,
+    actionUrl: '/os/marketing',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'EmailCampaign',
+  });
+});
+
+eventBus.on('order.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'sales_officer',
+    category: 'crm_alert',
+    priority: 'normal',
+    title: 'Distributor Order',
+    body: `${data?.customerName || 'Customer'} · $${Number(data?.amount ?? 0).toLocaleString()} · ${data?.channel || 'distributor'}`,
+    actionUrl: '/os/distributors',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'Order',
   });
 });
 
@@ -2094,10 +2331,36 @@ eventBus.on('mfg.workorder.completed', (data: any) => {
     category: 'inventory_alert',
     priority: 'normal',
     title: 'Production batch completed',
-    body: `Work order ${data?.id} produced ${data?.qty ?? 0} units of ${data?.sku ?? 'SKU'}. Inventory updated.`,
-    actionUrl: '/admin/portal/manager/crm',
+    body: `Work order ${data?.id} produced ${data?.qty ?? 0} units of ${data?.sku ?? data?.productSku ?? 'SKU'}. Inventory updated.`,
+    actionUrl: '/os/manufacturing',
     relatedEntityId: data?.id,
     relatedEntityType: 'WorkOrder',
+  });
+});
+
+eventBus.on('mfg.workorder.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'country_manager',
+    category: 'inventory_alert',
+    priority: 'normal',
+    title: 'Work Order Created',
+    body: `${data?.workOrderNo || data?.id} · ${data?.productSku || 'SKU'} × ${data?.qty ?? 0}`,
+    actionUrl: '/os/manufacturing',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'WorkOrder',
+  });
+});
+
+eventBus.on('shipment.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'logistics_alert',
+    priority: 'normal',
+    title: 'Shipment Booked',
+    body: `${data?.trackingNo || data?.id} · ${data?.origin || '—'} → ${data?.destination || '—'}`,
+    actionUrl: '/os/shipping-trade',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'Shipment',
   });
 });
 
@@ -2107,10 +2370,62 @@ eventBus.on('shipment.delivered', (data: any) => {
     category: 'logistics_alert',
     priority: 'normal',
     title: 'Shipment delivered',
-    body: `Shipment ${data?.id} for order ${data?.orderId} delivered to ${data?.destination}.`,
-    actionUrl: '/admin/portal/manager/crm',
+    body: `Shipment ${data?.id} for order ${data?.orderId || '—'} delivered to ${data?.destination || '—'}.`,
+    actionUrl: '/os/shipping-trade',
     relatedEntityId: data?.id,
     relatedEntityType: 'Shipment',
+  });
+});
+
+eventBus.on('procurement.rfq.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'procurement_alert',
+    priority: 'normal',
+    title: 'RFQ Created',
+    body: `${data?.rfqNo || data?.id} · ${data?.title || 'RFQ'} · ${data?.status || 'Draft'}`,
+    actionUrl: '/os/rfq',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'RFQ',
+  });
+});
+
+eventBus.on('procurement.contract.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'procurement_alert',
+    priority: 'normal',
+    title: 'Contract Created',
+    body: `${data?.contractNo || data?.id} · ${data?.title || 'Contract'} · ${data?.counterparty || '—'}`,
+    actionUrl: '/os/contracts',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'Contract',
+  });
+});
+
+eventBus.on('fleet.vehicle.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'logistics_alert',
+    priority: 'normal',
+    title: 'Fleet Vehicle Added',
+    body: `${data?.plate || data?.id} · ${data?.type || 'vehicle'}`,
+    actionUrl: '/os/fleet',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'FleetVehicle',
+  });
+});
+
+eventBus.on('warehouse.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'inventory_alert',
+    priority: 'normal',
+    title: 'Warehouse Created',
+    body: `${data?.code || '—'} · ${data?.name || 'Warehouse'} (${data?.type || 'DC'})`,
+    actionUrl: '/os/warehouses',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'Warehouse',
   });
 });
 
@@ -2124,6 +2439,151 @@ eventBus.on('finance.high-value-entry', (data: any) => {
     entitySummary: `${data?.account}: D${data?.debit ?? 0} / C${data?.credit ?? 0} — ${data?.memo ?? ''}`,
     amount: Math.max(Number(data?.debit ?? 0), Number(data?.credit ?? 0)),
     priority: 'high',
+  });
+});
+
+// Modules #29–54 — People / Assets / GRC / Platform HQ alerts
+eventBus.on('hr.leave.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'hr_alert',
+    priority: data?.leaveType === 'Sick' ? 'high' : 'normal',
+    title: 'Leave Request Submitted',
+    body: `${data?.employeeId ?? 'Employee'} · ${data?.leaveType ?? 'Leave'} · ${data?.days ?? 0} day(s) · ${data?.status ?? 'Pending'}`,
+    actionUrl: '/os/hr',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'LeaveRequest',
+  });
+});
+
+eventBus.on('talent.posting.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'hr_alert',
+    priority: 'normal',
+    title: 'Job Posting Created',
+    body: `${data?.reqNo ?? '—'} · ${data?.title ?? 'Role'} · ${data?.department ?? 'General'}`,
+    actionUrl: '/os/talent',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'JobPosting',
+  });
+});
+
+eventBus.on('asset.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'inventory_alert',
+    priority: Number(data?.value ?? 0) >= 50000 ? 'high' : 'normal',
+    title: 'Fixed Asset Registered',
+    body: `${data?.code ?? data?.id ?? '—'} · ${data?.name ?? 'Asset'} · $${Number(data?.value ?? 0).toLocaleString()}`,
+    actionUrl: '/os/assets',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'Asset',
+  });
+});
+
+eventBus.on('grc.incident.reported', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'grc_alert',
+    priority: data?.severity === 'Critical' ? 'critical' : data?.severity === 'High' ? 'high' : 'normal',
+    title: 'GRC Incident Reported',
+    body: `${data?.title ?? 'Incident'} · ${data?.severity ?? 'Medium'} · ${data?.status ?? 'Open'}`,
+    actionUrl: '/os/incidents',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'Incident',
+  });
+});
+
+eventBus.on('legal.case.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'grc_alert',
+    priority: 'high',
+    title: 'Legal Case Opened',
+    body: `${data?.caseTitle ?? 'Case'} · ${data?.caseType ?? '—'} · ${data?.country ?? '—'}`,
+    actionUrl: '/os/legal',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'LegalCase',
+  });
+});
+
+eventBus.on('project.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'operations_alert',
+    priority: 'normal',
+    title: 'Project Created',
+    body: `${data?.code ?? '—'} · ${data?.name ?? 'Project'} · budget $${Number(data?.budget ?? 0).toLocaleString()}`,
+    actionUrl: '/os/project-management',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'Project',
+  });
+});
+
+eventBus.on('tax.rate.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'finance_alert',
+    priority: 'normal',
+    title: 'Tax Rate Added',
+    body: `${data?.country ?? '—'} · ${data?.taxType ?? 'VAT'} · ${data?.ratePercent ?? 0}%`,
+    actionUrl: '/os/tax-engine',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'TaxRate',
+  });
+});
+
+// Modules #55–72 — Data/AI / Universe / Portals / Executive HQ alerts
+eventBus.on('executive.snapshot.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'executive_alert',
+    priority: 'normal',
+    title: 'Executive Snapshot Generated',
+    body: `${data?.periodType || 'weekly'} · ${data?.period || '—'}`,
+    actionUrl: '/os/executive',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'ExecutiveSnapshot',
+  });
+});
+
+eventBus.on('executive.goal.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'executive_alert',
+    priority: data?.status === 'at_risk' ? 'high' : 'normal',
+    title: 'Executive Goal Set',
+    body: `${data?.title || 'Goal'} · ${data?.metric || '—'} · target ${data?.targetValue ?? 0} ${data?.unit || ''}`,
+    actionUrl: '/os/executive',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'ExecutiveGoal',
+  });
+});
+
+eventBus.on('marketplace.listing.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'marketplace_alert',
+    priority: Number(data?.price ?? 0) >= 10000 ? 'high' : 'normal',
+    title: 'Marketplace Listing Created',
+    body: `${data?.title || 'Listing'} · ${data?.sellerName || 'Seller'} · $${Number(data?.price ?? 0).toLocaleString()} ${data?.currency || 'USD'}`,
+    actionUrl: '/os/marketplace',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'MarketListing',
+  });
+});
+
+eventBus.on('wallet.txn.created', (data: any) => {
+  notificationService.systemAlert({
+    toRole: 'hq',
+    category: 'wallet_alert',
+    priority: Math.abs(Number(data?.amount ?? 0)) >= 5000 ? 'high' : 'normal',
+    title: 'Wallet Transaction',
+    body: `${data?.type || 'txn'} · ${Number(data?.amount ?? 0).toLocaleString()} ${data?.currency || 'USD'}${data?.label ? ` · ${data.label}` : ''}`,
+    actionUrl: data?.label === 'harvicoins' ? '/os/wallet' : '/os/hpay-wallet',
+    relatedEntityId: data?.id,
+    relatedEntityType: 'WalletTxn',
   });
 });
 

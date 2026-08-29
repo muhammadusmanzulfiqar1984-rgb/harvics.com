@@ -1,0 +1,4 @@
+Territory,Status,Primary Lever,Email,Website,Title,Fair,Phone,email_is_business,website_ok,title_valid,tier1_passes,tier2_points,outreach_category,company_name,description,phone,address,linkedin_url,industry,enrichment_status,company_name_scraped,phone_scraped,linkedin_company_url,score
+Oman,LOCKDOWN,Institutional Alignment (Al Lawati/Al-Hatmi),,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Qatar,OPENING,Regional Scarcity (Mwani Qatar),,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Global,PENDING,Sourcing & Trade Corridor (Maurizia/Africa),,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0

@@ -1,9 +1,15 @@
 'use client'
 
-import React, { use, useState, useRef } from 'react'
+import React, { use, useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { getProductImage } from '@/data/productCatalog'
 import PresentationAccessBanner from '@/components/presentations/PresentationAccessBanner'
+
+const SOURCING_HERO_SLIDES = [
+  '/assets/harvictrade/heroes/sourcing/01-factory.webp',
+  '/assets/harvictrade/heroes/sourcing/02-qc.webp',
+  '/assets/harvictrade/heroes/sourcing/03-containers.webp',
+]
 
 // ─── Sourcing Data — Direct from SUPREME ─────────────────────────────────────
 
@@ -259,18 +265,12 @@ const SOURCING_DATA: SourcingCategory[] = [
   },
 ]
 
-const STATS = [
-  { value: '400+', label: 'Factories Audited' },
-  { value: '18', label: 'Countries' },
-  { value: '7', label: 'Solution Categories' },
-  { value: '50+', label: 'Active Services' },
-]
-
 // ─── Page Component ──────────────────────────────────────────────────────────
 
 export default function SourcingPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale = 'en' } = use(params)
   const [activeSection, setActiveSection] = useState<string | null>(null)
+  const [heroIndex, setHeroIndex] = useState(0)
   const sectionRefs = useRef<Record<string, HTMLElement | null>>({})
 
   const scrollToSection = (id: string) => {
@@ -278,56 +278,86 @@ export default function SourcingPage({ params }: { params: Promise<{ locale: str
     sectionRefs.current[id]?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      return
+    }
+    const id = window.setInterval(() => {
+      setHeroIndex((i) => (i + 1) % SOURCING_HERO_SLIDES.length)
+    }, 4200)
+    return () => window.clearInterval(id)
+  }, [])
+
   const totalServices = SOURCING_DATA.reduce((sum, cat) => sum + cat.services.length, 0)
 
   return (
-    <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
-      {/* ─── Hero ─── */}
-      <section className="relative bg-harvics-burgundy py-24 px-4 border-b border-harvics-gold/40 overflow-hidden">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=1200&h=600&fit=crop&q=75"
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover"
-          style={{ filter: 'brightness(0.75) contrast(1.1) saturate(1.05)' }}
+    <main className="min-h-screen" style={{ background: '#ffffff' }}>
+      {/* ─── Hero — full-bleed auto-slider ─── */}
+      <section className="relative min-h-[72vh] overflow-hidden border-b border-harvics-gold/30 md:min-h-[78vh]">
+        {SOURCING_HERO_SLIDES.map((src, i) => (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            key={src}
+            src={src}
+            alt=""
+            className="absolute inset-0 h-full w-full object-cover"
+            style={{
+              opacity: i === heroIndex ? 1 : 0,
+              transform: i === heroIndex ? 'scale(1)' : 'scale(1.05)',
+              transition: 'opacity 1.15s ease, transform 7s ease',
+            }}
+            loading={i === 0 ? 'eager' : 'lazy'}
+            decoding="async"
+            aria-hidden={i !== heroIndex}
+          />
+        ))}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              'linear-gradient(105deg, rgba(61,18,18,0.88) 0%, rgba(61,18,18,0.55) 48%, rgba(13,13,13,0.35) 100%)',
+          }}
         />
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.85) 0%, rgba(107,31,43,0.5) 45%, rgba(107,31,43,0.25) 100%)' }} />
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] opacity-5" style={{ background: 'radial-gradient(circle, #C3A35E 0%, transparent 70%)' }} />
-        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] opacity-3" style={{ background: 'radial-gradient(circle, #C3A35E 0%, transparent 70%)' }} />
-        <div className="max-w-[1200px] mx-auto relative z-10">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-10">
-            <div className="lg:max-w-[700px]">
-              <div className="text-xs text-harvics-gold font-bold uppercase tracking-[0.2em] mb-3">
-                End-to-End Sourcing Ecosystem
-              </div>
-              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6" style={{ letterSpacing: '-0.03em', lineHeight: '1.1' }}>
-                Global Sourcing Solutions
-              </h1>
-              <p className="text-lg text-white/60 leading-relaxed max-w-[600px] mb-8">
-                Harvics delivers integrated sourcing ecosystems — from supplier discovery to final delivery —
-                across multi-industry verticals worldwide. {totalServices} specialized services spanning
-                manufacturing, quality, logistics, strategy, sustainability, and technology.
-              </p>
-              <div className="text-xs text-white/40">
-                <Link href={`/${locale}`} className="hover:text-white/60 transition-colors">Home</Link>
-                <span className="mx-2">›</span>
-                <span className="text-harvics-gold">Global Sourcing Solutions</span>
-              </div>
-            </div>
-            {/* Stats */}
-            <div className="grid grid-cols-2 gap-6 lg:gap-8">
-              {STATS.map((stat) => (
-                <div key={stat.label} className="text-center lg:text-left">
-                  <div className="text-3xl md:text-4xl font-bold text-harvics-gold">{stat.value}</div>
-                  <div className="text-xs text-white/50 uppercase tracking-wider mt-1">{stat.label}</div>
-                </div>
-              ))}
-            </div>
+        <div className="relative z-10 mx-auto flex min-h-[72vh] max-w-[1200px] flex-col justify-end px-4 py-14 md:min-h-[78vh] md:py-20">
+          <nav className="mb-5 flex items-center gap-2 text-xs text-white/55">
+            <Link href={`/${locale}`} className="transition-colors hover:text-harvics-gold">
+              Home
+            </Link>
+            <span>→</span>
+            <span className="text-harvics-gold/90">Global Sourcing Solutions</span>
+          </nav>
+          <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-harvics-gold">
+            End-to-End Sourcing Ecosystem
+          </p>
+          <h1
+            className="mb-4 max-w-[18ch] text-4xl font-bold leading-[0.95] text-white md:text-6xl lg:text-[72px]"
+            style={{ letterSpacing: '-0.03em' }}
+          >
+            Global Sourcing Solutions
+          </h1>
+          <p className="mb-8 max-w-[540px] text-base leading-relaxed text-white/75 md:text-lg">
+            Harvics delivers integrated sourcing ecosystems — from supplier discovery to final delivery —
+            across multi-industry verticals worldwide. {totalServices} specialized services spanning
+            manufacturing, quality, logistics, strategy, sustainability, and technology.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href={`/${locale}/contact`}
+              className="inline-flex items-center justify-center bg-harvics-gold px-7 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-harvics-burgundy transition hover:bg-[#d4b46e]"
+            >
+              Get a Quote
+            </Link>
+            <a
+              href="#manufacturing"
+              className="inline-flex items-center justify-center border border-white/35 px-7 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-white transition hover:border-harvics-gold"
+            >
+              Browse Solutions
+            </a>
           </div>
         </div>
       </section>
 
-      <div className="max-w-[1200px] mx-auto px-4 -mt-6 mb-4 relative z-10">
+      <div className="max-w-[1100px] mx-auto px-4 mb-12 mt-6">
         <PresentationAccessBanner verticalKey="sourcing" />
       </div>
 

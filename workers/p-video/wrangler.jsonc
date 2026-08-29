@@ -1,0 +1,25 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "harvics-p-video",
+  "account_id": "c606ef34847cc91452c3e27a2a7a91e6",
+  "main": "src/index.ts",
+  "compatibility_date": "2024-01-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "observability": {
+    "enabled": true
+  },
+  "ai": {
+    "binding": "AI"
+  },
+  "r2_buckets": [
+    {
+      "binding": "ASSETS_BUCKET",
+      "bucket_name": "harvics-assets"
+    }
+  ],
+  "vars": {
+    "CLOUDFLARE_ACCOUNT_ID": "c606ef34847cc91452c3e27a2a7a91e6",
+    "AI_GATEWAY_ID": "default"
+  }
+}

@@ -3,6 +3,8 @@
 // Ordered list: the FIRST matching keyword rule wins, so put more specific
 // rules before broader ones.
 
+import { FASHION_NAME_RULES, FASHION_SHOTS, resolveFashionImage } from './fashionTextilesImages'
+
 const PRODUCTS_DIR = '/assets/harvictrade/products'
 const HEROES_DIR = '/assets/harvictrade/heroes'
 
@@ -35,8 +37,7 @@ const KEYWORD_RULES: Array<{ test: RegExp; file: string }> = [
   { test: /hard hat|helmet|\bppe\b|ear defend|fire exting|safety equipment|hazmat|caustic|chemical/i, file: 'hard-hat' },
   { test: /hi-?vis|safety jacket|safety boot|steel toe|coverall|workwear|work trouser|cargo/i, file: 'safety-jacket' },
   { test: /copper|zinc|alumini?um|ingot|cathode|iron ore|\bsteel\b|scrap|\bgold\b|silica|base metal|precious metal|mineral/i, file: 'copper-cathode' },
-  { test: /denim|fabric|greige|taffeta|polyester|\byarn\b|textile|bed sheet|towel|apron|home textile/i, file: 'denim-fabric' },
-  { test: /t-?shirt|polo|chino|blouse|shirt|garment|apparel|clothing|cotton basic/i, file: 'cotton-tshirt' },
+  // textiles/apparel handled via resolveFashionImage below (Sand Atelier pool)
   { test: /iphone|ipad|macbook|airpod|apple watch|\bapple\b|\bmac\b/i, file: 'iphone' },
   { test: /galaxy|samsung|pixel|xiaomi|android|smartphone|\bphone\b/i, file: 'galaxy-phone' },
   { test: /diesel|jet fuel|\bfuel\b|\blpg\b|propane|butane|petrochem|polypropylene|\bpvc\b|resin|\bgas\b|crude oil|petroleum/i, file: 'diesel-tanker' },
@@ -44,7 +45,7 @@ const KEYWORD_RULES: Array<{ test: RegExp; file: string }> = [
 
 // Per-category fallback hero (used when no product keyword matches).
 const CATEGORY_HERO: Record<string, string> = {
-  textiles: `${HEROES_DIR}/textiles-hero.jpg`,
+  textiles: FASHION_SHOTS.ladies,
   fmcg: `${HEROES_DIR}/fmcg-hero.jpg`,
   commodities: `${HEROES_DIR}/commodities-hero.jpg`,
   industrial: `${HEROES_DIR}/industrial-hero.jpg`,
@@ -60,8 +61,20 @@ export function getCategoryHero(categorySlug?: string): string {
 // Resolve the best real image for a product. Falls back to the category hero
 // (and finally the commodities hero) when nothing specific matches.
 export function getProductImage(name: string, categorySlug?: string): string {
+  // Sand Atelier textiles / undergarments first when name or category is apparel.
+  const isTextileCat =
+    !categorySlug ||
+    /textile|apparel|fashion|clothing|lingerie/i.test(categorySlug)
+  if (isTextileCat) {
+    const fashion = resolveFashionImage(name)
+    if (fashion) return fashion
+    for (const rule of FASHION_NAME_RULES) {
+      if (rule.test.test(name)) return rule.path
+    }
+  }
   for (const rule of KEYWORD_RULES) {
     if (rule.test.test(name)) return `${PRODUCTS_DIR}/${rule.file}.jpg`
   }
+  if (categorySlug === 'textiles') return FASHION_SHOTS.ladies
   return getCategoryHero(categorySlug)
 }

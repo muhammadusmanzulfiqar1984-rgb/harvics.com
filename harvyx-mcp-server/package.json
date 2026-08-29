@@ -1,0 +1,19 @@
+{
+  "name": "harvyx-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP connector for HarvyX — exposes lead pipeline, campaigns, and stats to Claude",
+  "type": "module",
+  "bin": {
+    "harvyx-mcp": "./server.js"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "HARVYX_API_BASE=http://localhost:3000 node server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

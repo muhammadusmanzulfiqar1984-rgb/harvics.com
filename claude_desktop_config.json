@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "harvyx": {
+      "command": "node",
+      "args": ["/Users/shahtabraiz/Desktop/HARVICS WEBSITE/harvyx-mcp-server/server.js"],
+      "env": {
+        "HARVYX_API_KEY": "20b1b3b28c328a0a1b04607d4a2b0f9b886264c0fcab3f2a6eecd69f8d98dfab",
+        "HARVYX_API_BASE": "https://www.harvics.com"
+      }
+    }
+  }
+}

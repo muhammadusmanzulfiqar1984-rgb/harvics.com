@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import { useLocale } from 'next-intl'
 import { usePathname } from 'next/navigation'
-import DashboardLayout from '@/components/layouts/DashboardLayout'
+import HarvicsOSShell from '@/components/shared/HarvicsOSShell'
 import KPICard from '@/components/shared/KPICard'
 
 interface Summary {
@@ -125,7 +125,16 @@ export default function SupplierProcurementOSPage() {
   ]
 
   return (
-    <DashboardLayout portal={portal} pageTitle="Supplier & Procurement OS">
+    <HarvicsOSShell
+      title="Supplier & Procurement OS"
+      subtitle="Module #13 — Vendors, RFQs, purchase orders"
+      activeDomain="procurement"
+      portal={portal}
+      breadcrumbs={[
+        { label: 'OS', href: '/os' },
+        { label: 'Procurement' },
+      ]}
+    >
       <div className="space-y-6">
 
         {/* KPI Cards — live data */}
@@ -365,7 +374,7 @@ export default function SupplierProcurementOSPage() {
         )}
 
       </div>
-    </DashboardLayout>
+    </HarvicsOSShell>
   )
 }
 

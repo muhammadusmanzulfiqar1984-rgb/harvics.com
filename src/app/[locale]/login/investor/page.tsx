@@ -37,10 +37,9 @@ export default function InvestorLoginPage() {
               stats={[
                 { num: '42+', label: 'Operating Countries' },
                 { num: '10', label: 'Industry Verticals' },
-                { num: '$1.2B+', label: 'Trade Volume' },
                 { num: '94.2%', label: 'On-Time Delivery' },
               ]}
-              containerClassName="grid grid-cols-2 md:grid-cols-4 gap-4 text-center"
+              containerClassName="grid grid-cols-3 gap-4 text-center"
             />
           </div>
         </section>

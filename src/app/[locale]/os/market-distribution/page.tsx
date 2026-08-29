@@ -29,9 +29,10 @@ export default function MarketDistributionOSPage() {
         apiClient.request('/logistics/summary')
       ])
       
-      const crm = (crmRes?.data as any) || {}
-      const territories = (territoryRes?.data as any[]) || []
-      const logistics = (logisticsRes?.data as any) || {}
+      const crm = (crmRes?.data as any)?.data || (crmRes?.data as any) || {}
+      const territories = (territoryRes?.data as any)?.data || (territoryRes?.data as any) || []
+      const territoryList = Array.isArray(territories) ? territories : []
+      const logistics = (logisticsRes?.data as any)?.data || (logisticsRes?.data as any) || {}
       
       // Calculate coverage percentage based on active vs total
       const totalCustomers = crm.totalCustomers || 0
@@ -39,10 +40,10 @@ export default function MarketDistributionOSPage() {
       const coverage = totalCustomers > 0 ? Math.min(95, Math.floor((activeRoutes / totalCustomers) * 100)) : 0
       
       setData({
-        distributors: totalCustomers, // Using customers as distributors proxy
-        territories: territories.length || 0,
+        distributors: totalCustomers,
+        territories: territoryList.length || 0,
         coverage: coverage,
-        performance: 88 // Mock for now
+        performance: logistics.onTimeRate ?? null,
       })
     } catch (error) {
       console.error('Error loading market distribution data:', error)
@@ -91,7 +92,7 @@ export default function MarketDistributionOSPage() {
           />
           <KPICard
             label="Performance Score"
-            value={data?.performance || 0}
+            value={data?.performance != null ? `${data.performance}%` : '—'}
             icon="⭐"
           />
         </div>

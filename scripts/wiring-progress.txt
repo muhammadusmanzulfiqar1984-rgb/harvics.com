@@ -1,0 +1,79 @@
+# HARVICS OS — Module Wiring Progress
+# Wire one → test one → next. Do not batch all 72.
+
+# Status: pending | wired | tested | blocked
+# Format: id|name|status|notes
+
+1|Financial Accounting|tested|CoA+journals+TB+periods; FinanceConsole→live API; eventBus journal/account→notifications; scripts/wire-test-module-01.sh 9/9
+2|Controlling|tested|CC+postings+allocations+variance; emitAudit+eventBus→HQ; Allocations UI tab; GL feedback; wave4 audit sync; scripts/wire-test-module-02.sh 9/9
+3|Accounts Receivable|tested|invoice+payment+aging; emitAudit ar; invoice.created→HQ; glNote; scripts/wire-test-module-03.sh 7/7
+4|Accounts Payable|tested|AP bill+pay+aging; emitAudit ap; invoice.created AP→HQ; glNote; scripts/wire-test-module-04.sh 6/6
+5|Treasury & Risk|tested|BankAccount SQL applied; emitDomain+HQ; scripts/wire-test-modules-05-12.sh
+6|HPay Payments|tested|PaymentRun SQL+audit+release events; smoke 5-12
+7|Financial Planning|tested|budget POST emitAudit+eventBus; smoke 5-12
+8|CRM + Sales|tested|lead create/convert/won emit; smoke 5-12
+9|CPQ Engine|tested|quote create audit+event; smoke 5-12
+10|Sales & Distribution|tested|channel/slot audit+event; smoke 5-12
+11|Marketing Automation|tested|campaign create/sent emitDomain; smoke 5-12
+12|Distributor Portal|tested|order create/status emitAudit+HQ; smoke 5-12
+13|Procurement|tested|RFQ create audit+event; SQL applied; smoke 13-28
+14|Vendor Management|tested|scorecard audit+event; smoke 13-28
+15|Contract Lifecycle|tested|contract create audit+event; smoke 13-28
+16|Sourcing Network|tested|sourcing create audit+event; smoke 13-28
+17|Production Planning|tested|WO create domain+audit; complete→mfg.workorder.completed; smoke 13-28
+18|Shop Floor Control|tested|shop-floor create audit+event; smoke 13-28
+19|Bill of Materials|tested|BOM create audit+event; smoke 13-28
+20|Quality Management|tested|QC create domain+audit; smoke 13-28
+21|Recipe Management|tested|recipe create audit+event; smoke 13-28
+22|Inventory Management|tested|cycle-count audit+event; ABC live; smoke 13-28
+23|Warehouse Management|tested|warehouse create audit+event; smoke 13-28
+24|Demand Planning|tested|demand history audit+event; smoke 13-28
+25|Fleet Management|tested|vehicle create audit+event; smoke 13-28
+26|Shipping & Freight|tested|shipment create+delivered events; smoke 13-28
+27|Trade & Customs|tested|HS code create audit+event; smoke 13-28
+28|3PL Integration|tested|3PL partner create audit+event; smoke 13-28
+29|HR Core & Payroll|tested|leave+attendance audit/events; smoke 29-54
+30|Talent Acquisition|tested|posting create audit+event; smoke 29-54
+31|Learning Management|tested|course create wired; smoke 29-54
+32|Performance & Succession|tested|perf-review create wired; smoke 29-54
+33|Workforce Planning|tested|headcount create wired; smoke 29-54
+34|Fixed Assets|tested|asset create audit+event+HQ; smoke 29-54
+35|Plant Maintenance|tested|pm-order create wired; smoke 29-54
+36|Real Estate & Facilities|tested|property create wired; smoke 29-54
+37|GRC Core|tested|incident create+HQ; smoke 29-54
+38|Internal Audit|tested|audit-events live; smoke 29-54
+39|Legal & Compliance|tested|legal.case.created+HQ; smoke 29-54
+40|Neural Governance|tested|policy create wired; smoke 29-54
+41|BI & Reporting|tested|report create wired; smoke 29-54
+42|Board Pack Generator|tested|boardPack generate wired; smoke 29-54
+43|OKR Tracking|tested|okr create wired; smoke 29-54
+44|AI Variance Commentary|tested|variance generate wired; smoke 29-54
+45|Project Management|tested|project create+HQ; smoke 29-54
+46|Service Management|tested|ticket create wired; smoke 29-54
+47|Professional Services|tested|engagement create wired; smoke 29-54
+48|Tax Engine|tested|tax rate create+HQ; smoke 29-54
+49|FX Engine|tested|fx rate create wired; smoke 29-54
+50|Audit Log|tested|emitAudit spine + search live; smoke 29-54
+51|Notifications|tested|notification create wired; smoke 29-54
+52|Document Vault|tested|document create wired; smoke 29-54
+53|Admin & Security|tested|admin user create wired; smoke 29-54
+54|Integration Bus|tested|endpoint create wired; smoke 29-54
+55|Data Ocean|tested|snapshot create wired; smoke 55-72
+56|AI Engine|tested|model create + anomaly HQ; smoke 55-72
+57|Harvoice|tested|voice command wired; smoke 55-72
+58|Globalisation|tested|locale create wired; smoke 55-72
+59|Social Feed|tested|feed create wired; smoke 55-72
+60|Marketplace|tested|listing create+HQ; smoke 55-72
+61|Trade Floor|tested|instrument/order wired; smoke 55-72
+62|Events & Engagement|tested|event create wired; smoke 55-72
+63|Mentorship & Experts|tested|mentor create wired; smoke 55-72
+64|Public Job Board|tested|job publish wired; smoke 55-72
+65|Crypto Lite|tested|crypto asset/trade wired; smoke 55-72
+66|Harvicoins Wallet|tested|wallet+txn wired; smoke 55-72
+67|HPay Wallet|tested|wallet label=hpay path; smoke 55-72
+68|Referral Program|tested|referral create wired; smoke 55-72
+69|Customer Portal|tested|portal-session create wired; smoke 55-72
+70|Vendor Portal|tested|shares portal-sessions API; smoke 55-72
+71|Field Officer Portal|tested|shares portal-sessions API; smoke 55-72
+72|Executive Intelligence|tested|snapshot+goal events+HQ; smoke 55-72
+

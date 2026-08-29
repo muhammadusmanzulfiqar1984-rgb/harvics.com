@@ -5,19 +5,19 @@ import IndustriesHScrollSection from '@/components/home/IndustriesHScrollSection
 import CorridorMarqueeSection from '@/components/home/CorridorMarqueeSection'
 import HarvicTradeGateSection from '@/components/home/HarvicTradeGateSection'
 import LiveListingsSection from '@/components/home/LiveListingsSection'
+import HarvicsTvSection from '@/components/home/HarvicsTvSection'
 import AppsCommercialSection from '@/components/home/AppsCommercialSection'
+import StartupAcademyTeaser from '@/components/home/StartupAcademyTeaser'
 import OperatingModelSection from '@/components/premium/OperatingModelSection'
 import CinematicTradeMap from '@/components/premium/CinematicTradeMap'
 import SupplyChainWheel from '@/components/layout/SupplyChainWheel'
 import ThreeDErrorBoundary from '@/components/shared/ThreeDErrorBoundary'
 import ContactSection from '@/components/layout/ContactSection'
-import HomepageLenis from '@/components/home/HomepageLenis'
 
-/** Local dev home — aligned with production harvics.com/en corridor stack. */
+/** Corridor homepage — full content; Lenis off while next.config keeps restarting the server. */
 export default function Home() {
   return (
     <>
-      <HomepageLenis />
       <div
         aria-hidden="true"
         className="fixed inset-0 pointer-events-none"
@@ -34,7 +34,6 @@ export default function Home() {
       />
 
       <main id="homepage-main" className="w-full min-h-screen bg-transparent flex flex-col text-harvics-burgundy">
-
         <section className="relative overflow-hidden flex flex-col w-full min-h-screen border-b border-harvics-gold/10 bg-harvics-burgundy">
           <LiquidGlassHero />
         </section>
@@ -65,12 +64,15 @@ export default function Home() {
 
         <LiveListingsSection />
 
+        <HarvicsTvSection />
+
         <AppsCommercialSection />
+
+        <StartupAcademyTeaser />
 
         <section id="contact" className="relative overflow-hidden flex flex-col w-full border-t border-harvics-gold/15 bg-harvics-cream">
           <ContactSection />
         </section>
-
       </main>
     </>
   )

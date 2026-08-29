@@ -60,7 +60,7 @@ export default function TermsPage() {
 
         <section>
           <h2 style={{ fontSize: '18px', fontWeight: 700, color: 'var(--harvics-burgundy)', marginBottom: '10px', letterSpacing: '-0.01em' }}>8. Contact</h2>
-          <p>For any questions regarding these terms, contact us at <a href="mailto:sales.uk@harvics.com" style={{ color: 'var(--harvics-gold)', textDecoration: 'none' }}>sales.uk@harvics.com</a>.</p>
+          <p>For any questions regarding these terms, contact us at <a href="mailto:info@harvics.com" style={{ color: 'var(--harvics-gold)', textDecoration: 'none' }}>info@harvics.com</a>.</p>
         </section>
 
       </div>

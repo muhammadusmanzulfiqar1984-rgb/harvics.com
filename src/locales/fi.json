@@ -3,13 +3,13 @@
   "home": {
     "welcome": "Tervetuloa",
     "companyName": "Harwich",
-    "tagline": "Huippuosaamista premium-kulutustavaroissa vuodesta 2019 lähtien",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "Tutustu tuotteisiin",
     "contact": "Ota yhteyttä",
     "learnMore": "Lue lisää",
-    "brandStatement": "Johtava maailmanlaajuinen kulutustavarayritys, joka toimittaa korkealaatuisia elintarvikkeita eri kategorioihin kansainvälisten laatustandardien mukaisesti.",
-    "taglineStart": "Huippuosaamista premium-kulutustavaroissa vuodesta",
-    "taglineYear": "2019",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "Lontoo • Milano • New York",
     "categories": {
       "bakery": "Leipomo",
@@ -81,7 +81,8 @@
       "specialOffers": "Erikoistarjoukset",
       "promotions": "Kampanjat",
       "bulkOrders": "Irtotilausalennukset"
-    }
+    },
+    "startupAcademy": "Startup Academy"
   },
   "products": {
     "ourProducts": "Tuotteemme",
@@ -119,7 +120,40 @@
     "whatsapp": "WhatsApp",
     "callNow": "Soita nyt",
     "sendEmail": "Lähetä sähköpostia",
-    "messageUs": "Lähetä meille viesti"
+    "messageUs": "Lähetä meille viesti",
+    "getInTouch": "Ota yhteyttä",
+    "locations": "Sijainnit",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "Lähetä Viesti",
+    "firstName": "Etunimi",
+    "firstNamePlaceholder": "Kirjoita etunimesi",
+    "lastName": "Sukunimi",
+    "lastNamePlaceholder": "Kirjoita sukunimesi",
+    "emailPlaceholder": "Kirjoita sähköpostiosoitteesi",
+    "subject": "Aihe",
+    "subjectPlaceholder": "Syötä aihe",
+    "message": "Viesti",
+    "messagePlaceholder": "Kirjoita viestisi",
+    "send": "Lähetä",
+    "eyebrow": "Aloita lyhyt",
+    "headline1": "Aloita lyhyt.",
+    "headline2": "Vastaamme 24 tunnin kuluessa.",
+    "subhead": "Kerro meille kategoriasi, volyymi ja kohdemarkkinasi. Asiantuntija ottaa sinuun yhteyttä hankintavaihtoehdoilla ja ohjeellisella hinnoittelulla.",
+    "fullName": "Koko nimi",
+    "fullNamePlaceholder": "Shah Tabraiz",
+    "company": "Yritys",
+    "companyPlaceholder": "Organisaatiosi",
+    "businessEmail": "Yrityksen sähköposti",
+    "howCanWeHelp": "Miten voimme auttaa?",
+    "sending": "Lähetetään...",
+    "sendEnquiry": "Lähetä kysely",
+    "sentTitle": "Viesti lähetetty.",
+    "sentSub": "Tiimimme vastaa 24 tunnin kuluessa.",
+    "directChannels": "Suorat kanavat",
+    "trust1": "24 tunnin vastaustakuu",
+    "trust2": "Omistettu tilivastaava",
+    "trust3": "NDA available on request",
+    "trust4": "42 markkinaa · 1 247 lähetystä tänään"
   },
   "media": {
     "title": "Mediakeskus",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "Harvics Global Ventures",
-    "tagline": "Huippuosaamista premium-kulutustavaroissa vuodesta 2019 lähtien",
-    "brandStatement": "Johtava maailmanlaajuinen kulutustavarayritys, joka toimittaa korkealaatuisia elintarvikkeita eri kategorioihin kansainvälisten laatustandardien mukaisesti.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "Lontoo • Milano • New York",
     "since": "Vuodesta 2019 lähtien",
     "harvicsNews": "Harvics-uutiset",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "Liity verkostoomme",
     "newsletterTagline": "Saa uusimmat kauppatiedot ja markkinapäivitykset",
     "activeShipments": "Aktiiviset lähetykset",
-    "certifiedAudited": "Sertifioitu ja auditoitu"
+    "certifiedAudited": "Sertifioitu ja auditoitu",
+    "invalidEmail": "Anna kelvollinen sähköpostiosoite",
+    "subscriptionSuccess": "Kiitos tilaamisesta!",
+    "subscriptionError": "Jotain meni pieleen. Yritä uudelleen."
   },
   "search": {
     "placeholder": "Hae tuotteita, tuotemerkkejä tai luokkia",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "Anteeksi, en ymmärtänyt. Voisitko muotoilla asian uudelleen?",
       "help": "Voin auttaa sinua tuotetietojen, tilausten tai yleisten tiedustelujen kanssa. Mitä haluaisit tietää?",
-      "contact": "Jos tarvitset lisätietoja, ota meihin yhteyttä osoitteessa support@harvics.com tai soita numeroon +1-800-HARVICS."
-    }
+      "contact": "Jos tarvitset lisätietoja, ota meihin yhteyttä osoitteessa support@harvics.com tai soita numeroon +1-800-HARVICS.",
+      "product": "Selaa tuoteluetteloamme valikosta tai kerro, mikä kategoria kiinnostaa sinua – FMCG, tekstiilit, logistiikka ja paljon muuta.",
+      "order": "Voit tehdä tilauksen tai tarkistaa tilan käymällä jakelijaportaalilla tai ottamalla yhteyttä tilivastaavaasi.",
+      "about": "Harvics Global Ventures on suvereeni kaupan infrastruktuuriyritys, jolla on yli 20 vuotta yli 40 maassa."
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "Lähetä painamalla Enter"
   },
   "common": {
     "chatWithUs": "Keskustele kanssamme",
@@ -730,12 +772,17 @@
       "gps-tracking": "GPS-seuranta",
       "localization": "Lokalisointi",
       "workflows": "Työnkulut",
-      "admin": "Ylläpitäjä"
+      "admin": "Ylläpitäjä",
+      "modules": "Moduulit"
     },
     "kpis": {
       "customers": "Asiakkaat",
       "employees": "Työntekijät",
-      "profit": "Voitto"
+      "profit": "Voitto",
+      "totalOrders": "Tilaukset yhteensä",
+      "inventoryValue": "Varaston arvo",
+      "logisticsEfficiency": "Logistiikan tehokkuus",
+      "revenue": "Tulot"
     },
     "domain": {
       "title": "CRM-käyttöjärjestelmä",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "Tarkastele ja hallinnoi asiakassuhteitasi, vuorovaikutustasi ja kampanjoitasi.",
       "loading": "Ladataan...",
       "error": "Virhe CRM-tietojen lataamisessa"
+    },
+    "roleIndicator": {
+      "manager": "Esimiehen näkymä",
+      "executive": "Executive-näkymä",
+      "investor": "Sijoittajanäkymä",
+      "distributor": "Jakelijanäkymä",
+      "supplier": "Toimittajanäkymä",
+      "customer": "Asiakasnäkymä"
     }
   },
   "supplierPortal": {
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "Tietoja Harvicsista",
-    "subtitle": "Huippuosaamista premium-kulutustavaroissa vuodesta 2019 lähtien",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "Tarinamme",
     "story1": "Vuonna 2019 perustettu Harvics on kasvanut visionäärisestä ideasta premium-kulutustavaroiden globaaliksi johtajaksi. Matkaamme määrittelee väsymätön laadun tavoittelu ja sitoutuminen innovaatioihin.",
     "story2": "Toimimme yli 40 maassa ja toimitamme tuotteita, jotka rikastuttavat elämää ja asettavat uusia standardeja alalle. Vaatimattomista alkuajoistamme aina globaaliin läsnäoloomme asti arvomme ovat pysyneet muuttumattomina.",
@@ -1150,181 +1205,279 @@
   },
   "help": {
     "page": {
-      "title": "Help Center",
-      "subtitle": "Find the help you need"
+      "title": "Ohjekeskus",
+      "subtitle": "Löydä tarvitsemasi apu"
     },
-    "backToHelpCenter": "Back to Help Center",
+    "backToHelpCenter": "Takaisin ohjekeskukseen",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "Usein kysytyt kysymykset",
+        "description": "Etsi vastauksia yleisiin kysymyksiin"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "Ota yhteyttä tukeen",
+        "description": "Ota yhteyttä tukitiimiimme"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "Käyttöoppaat",
+        "description": "Vaiheittaiset oppaat ja opetusohjelmat"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "Vianetsintä",
+        "description": "Ratkaise yleisiä ongelmia"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "Tilin ohje",
+        "description": "Hallinnoi tiliäsi ja asetuksiasi"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "Tilaa tuki",
+        "description": "Apua tilauksissa ja toimituksissa"
       }
     },
     "account": {
-      "title": "Account Help",
-      "subtitle": "Manage your account settings and preferences",
-      "placeholder": "Account management and settings help content will appear here."
+      "title": "Tilin ohje",
+      "subtitle": "Hallinnoi tilisi asetuksia ja asetuksia",
+      "placeholder": "Tilinhallinnan ja asetusten ohjesisältö näkyy täällä."
     },
     "orders": {
-      "title": "Order Support",
-      "subtitle": "Track and manage your orders and deliveries",
-      "placeholder": "Order and delivery support content will appear here."
+      "title": "Tilaa tuki",
+      "subtitle": "Seuraa ja hallitse tilauksiasi ja toimituksiasi",
+      "placeholder": "Tilaus- ja toimitustukisisältö näkyy täällä."
     },
     "guides": {
-      "title": "User Guides",
-      "subtitle": "Step-by-step guides to help you get the most out of Harvics",
+      "title": "Käyttöoppaat",
+      "subtitle": "Vaiheittaiset oppaat, joiden avulla saat kaiken irti Harvicsista",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "Aloitus",
+          "description": "Opi perusasiat"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "Tilin asetukset",
+          "description": "Luo tilisi"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "Kuinka tilata",
+          "description": "Tee ja seuraa tilauksia"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "Maksutavat",
+          "description": "Maksuvaihtoehdot ja turvallisuus"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "Toimitus ja toimitus",
+          "description": "Toimitustiedot"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "Palautukset & Hyvitykset",
+          "description": "Palautuskäytäntö ja -prosessi"
         }
       }
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "subtitle": "Common issues and quick solutions",
+      "title": "Vianetsintä",
+      "subtitle": "Yleisiä ongelmia ja nopeat ratkaisut",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "Kirjautumisongelmat",
+          "description": "Ongelmia kirjautumisessa"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "Maksuongelmat",
+          "description": "Maksua ei käsitellä"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "Toimituksen viivästykset",
+          "description": "Tilaus ei tule perille"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "Verkkosivuston virheet",
+          "description": "Sivu ei lataudu"
         }
       }
     }
   },
   "checkout": {
-    "secureCheckout": "Secure Checkout",
-    "title": "Complete Your Order",
-    "subtitle": "Review your items, enter shipping details, and confirm payment securely.",
-    "shippingInfo": "Shipping Information",
-    "paymentMethod": "Payment Method",
+    "secureCheckout": "Turvallinen kassa",
+    "title": "Täytä tilauksesi",
+    "subtitle": "Tarkista tuotteet, anna toimitustiedot ja vahvista maksu turvallisesti.",
+    "shippingInfo": "Toimitustiedot",
+    "paymentMethod": "Maksutapa",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "Luotto-/pankkikortti",
+      "bankTransfer": "Pankkisiirto (LC/TT)",
       "wallet": "HPay Digital Wallet"
     },
-    "orderSummary": "Order Summary",
+    "orderSummary": "Tilauksen yhteenveto",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
-      "total": "Total"
+      "subtotal": "Välisumma",
+      "shipping": "Toimitus",
+      "calculatedNextStep": "Laskettu seuraavassa vaiheessa",
+      "tax": "Verottaa",
+      "total": "Kokonais"
     },
-    "placeOrder": "Place Order",
-    "sslNotice": "Secured with 256-bit SSL encryption",
-    "continueShopping": "Continue Shopping",
+    "placeOrder": "Tee tilaus",
+    "sslNotice": "Suojattu 256-bittisellä SSL-salauksella",
+    "continueShopping": "Jatka ostoksia",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "Etunimi",
+      "lastName": "Sukunimi",
+      "email": "Sähköposti",
+      "address": "Osoite",
+      "city": "Kaupunki",
+      "country": "Maa"
     }
   },
   "history": {
     "hero": {
-      "title": "Our Journey",
-      "subtitle": "From a Dubai startup to a global enterprise spanning 42+ countries, 10 industry verticals, and 38 languages."
+      "title": "Meidän matkamme",
+      "subtitle": "Dubain startupista globaaliksi yritykseksi, joka kattaa yli 42 maata, 10 toimialaa ja 38 kieltä."
     },
     "cta": {
-      "title": "Be Part of the Next Chapter",
-      "subtitle": "Join us as we scale to 60+ countries and build the future of AI-driven global commerce.",
-      "button": "View Careers"
+      "title": "Ole osa seuraavaa lukua",
+      "subtitle": "Liity joukkoomme, kun skaalaamme yli 60 maahan ja rakennamme tekoälyyn perustuvan maailmanlaajuisen kaupan tulevaisuutta.",
+      "button": "Näytä urat"
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "Perustettu Dubaissa",
+        "description": "Harvics Global Ventures perustettiin Yhdistyneisiin arabiemiirikuntiin, jonka visiona on tulla maailmanluokan FMCG:ksi ja monialaiseksi kaupparyhmittymäksi. Ensimmäiset toiminnot aloitettiin tekstiilien ja kulutustavaroiden parissa.",
+        "highlight": "Ensimmäinen vuosi"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "Ensimmäinen kansainvälinen laajennus",
+        "description": "Laajentui 10 maahan Euroopassa, Lähi-idässä ja Etelä-Aasiassa maailmanlaajuisista pandemiahaasteista huolimatta. Käynnistettiin digitaaliset toimitusketjutoiminnot ja etäjakelukumppanuudet.",
+        "highlight": "10 maata"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "Monisuuntainen laajennus",
+        "description": "Lanseerasi 5 uutta toimialaa: hyödykkeet, teollisuuslaitteet, mineraalit ja kaivosteollisuus, öljy ja kaasu sekä kiinteistöt. Tuoteluettelon kokonaismäärä ylitti 500 SKU:ta kaikissa toimialoissa.",
+        "highlight": "5 uutta pystysuoraa"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "Digitaalinen muunnos",
+        "description": "Rakensi ensimmäisen version Harvics OS:stä – tekoälyllä toimivasta yritysalustasta. Lanseerattiin jakelijaportaalit, verkkokauppaominaisuudet ja reaaliaikainen GPS-kaluston seuranta kaikilla markkinoilla.",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "Kestävyys ja mittakaava",
+        "description": "Sitoutunut hiilineutraaliin toimintaan. Saavuttanut yli 30 maata. Julkaisi HPay (digitaalinen maksualusta), kaupan rahoitusratkaisut ja tekoälyyn perustuvan kysynnän ennustamisen kaikilla toimialoilla.",
+        "highlight": "30+ maata"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "Globaali yritys",
+        "description": "Ylitti 42+ maan virstanpylvään. Käytetty AI-moottori 6 ML-mallilla strategiaa, kysyntää, hinnoittelua, kattavuutta ja SKU-optimointia varten. Julkistettu monikielinen alusta, joka tukee 38 kieltä.",
+        "highlight": "42+ maata"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "AI-First käyttöjärjestelmä",
+        "description": "Harvics OS v2 julkaistiin – yhtenäinen yrityskäyttöjärjestelmä, jossa on reaaliaikainen älykkyys, Socket.io live-syötteet, Alpha Engine markkinoiden hyökkäyssuunnitelmiin ja täydellinen 8-tasoinen maantieteellinen hierarkia.",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "Visio Edessä",
+        "description": "Skaalaus yli 60 maahan. Rakennamme maailman ensimmäistä tekoälyllä toimivaa FMCG-yritystä, jossa kaikki toiminnot – hankinnat, logistiikka, rahoitus, CRM – toimivat ennakoivalla älykkyydellä ihmisten hyväksymisporteilla.",
+        "highlight": "60+ Tavoite"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "Käytännön kauppa, hankinta ja tekoälyakatemia perustajille – kuusi viikkoa, live-istunnot, Harvics-käytävät.",
+    "navLabel": "Startup Academy",
+    "teaser": {
+      "eyebrow": "Akatemia · Käytäväohjelma",
+      "title": "Startup Academy.",
+      "body": "Klassista kaupankäyntiä perustajille – hankinta, laadunvalvonta, rahoituspisteet ja käytävälukutaito – Harvics-markkinapaikan rinnalla.",
+      "cta": "Astu Akatemiaan"
+    },
+    "hero": {
+      "alt": "Klassinen luentosali — Harvics Startup Academy",
+      "eyebrow": "Kohortti 01 · Q4 2026 · Tukiohjelma",
+      "title": "Harvics Startup Academy",
+      "body": "Klassinen kauppakoulu perustajille – hankinta, käytäväkauppa ja tekoäly, joka toimii. Kuusi viikkoa. Live-istunnot. Todelliset operaattorit.",
+      "apply": "Hae kohorttiin 01",
+      "seeProgramme": "Katso ohjelma"
+    },
+    "stats": {
+      "founders": "Perustajat / kohortti",
+      "sessions": "Live-istunnot",
+      "weeks": "Viikot",
+      "verticals": "Kaupan vertikaalit"
+    },
+    "why": {
+      "eyebrow": "01 · Miksi liittyä",
+      "title": "Rakenna yritys, joka voi todella käydä kauppaa.",
+      "body": "Ei pitch-teatteria. Opi tarjouspyyntöjä selvitykseen, hankinnan huolellisuuteen, ostajien tavoittamiseen ja automaatioon – operaattoreilta Harvicsin käytävillä.",
+      "item1Title": "Käytännön kauppajärjestelmät",
+      "item1Body": "Kuinka institutionaaliset ostajat ostavat – ja miten sinä täytät.",
+      "item2Title": "Verkko, joka toimitetaan",
+      "item2Body": "Perustajat, jakelijat ja toimijat eri toimialoilla.",
+      "item3Title": "AI joka toimii",
+      "item3Body": "HarvyX, Fin voice ja ops-automaatio ilman muotisanoja.",
+      "imageAlt": "Klassinen kaupan asetelma"
+    },
+    "knowledge": {
+      "eyebrow": "Tietoa",
+      "title": "Opiskele käytävää kuin kurinalaisuutta.",
+      "body": "Opetussuunnitelma todellisesta kauppakäytännöstä - ei yleisistä aloitusdiasta.",
+      "imageAlt": "Suuri klassinen kirjasto"
+    },
+    "programme": {
+      "eyebrow": "02 · Ohjelma",
+      "title": "Mitä tulet työskentelemään läpi",
+      "m1Title": "Brändi ja hankinta",
+      "m1Body": "MOQ:t, QC-portit, tekstiilit ja FMCG – atelier to corridor.",
+      "m2Title": "Tiedustelu ja tavoittavuus",
+      "m2Body": "HarvyX-laboratoriot, ostajan ICP, seuranta, joka saa vastauksia.",
+      "m3Title": "Pääoma ja yhteistyökumppanit",
+      "m3Body": "Rahoituspolut ja kumppanuudet – ei väärennettyjä pankkivaatimuksia.",
+      "m4Title": "Käytäväkauppa",
+      "m4Body": "Satamat, kaistat ja tavaroiden tosiasiallinen liikkuminen markkinoiden välillä.",
+      "m5Title": "Laatu & huolellisuus",
+      "m5Body": "Tarkastustavat, jotka suojaavat mainetta ja asutusta.",
+      "m6Title": "Hyödykkeet ja FMCG",
+      "m6Body": "Varastotodellisuudesta brändi- ja tukkumyyntikysyntään."
+    },
+    "tracks": {
+      "aEyebrow": "Raita A",
+      "aTitle": "Brändi & kauppa",
+      "aBody": "Vaatteiden ja FMCG:n perustajat rakentavat brändin, tukkukaupan ja käytävien kysyntää.",
+      "aAlt": "Klassinen kokoushuone",
+      "bEyebrow": "Raita B",
+      "bTitle": "Kauppa ja toiminta",
+      "bBody": "Hankinta, logistiikka ja B2B-operaattorit skaalaavat institutionaalista kauppaa.",
+      "bAlt": "Salon verkostoituminen"
+    },
+    "network": {
+      "eyebrow": "03 · Verkko",
+      "title": "Tapaa operaattoreita, älä yleisöä.",
+      "body": "Live-istunnot ja salonkityyliset toimistoajat perustajien, jakelijoiden ja Harvics-käytävän operaattorien kanssa.",
+      "imageAlt": "Verkoston perustaja"
+    },
+    "rhythm": {
+      "eyebrow": "04 · Rytmi",
+      "title": "Kuusi viikkoa. Selkeä poljinnopeus.",
+      "w1": "Viikko 1",
+      "w1Body": "Orientaatio · Käytäväkartta · ICP-työpaja",
+      "w2": "Viikko 2",
+      "w2Body": "Ostajan tavoite · HarvyX lab",
+      "w3": "Viikko 3",
+      "w3Body": "Hankinta ja laadunvalvonta · Toimittajan huolellisuus",
+      "w4": "Viikko 4",
+      "w4Body": "Automaatio · Fin voice · ops pino",
+      "w5": "Viikko 5",
+      "w5Body": "Rahoitus ja kumppanuussuhteet",
+      "w6": "Viikko 6",
+      "w6Body": "Perustajaesittely · Seuraavat vaiheet"
+    },
+    "apply": {
+      "eyebrow": "Sovellukset",
+      "title": "Hae kohorttiin 01",
+      "body": "Paikkoja rajoitetusti. Kerro meille yrityksesi, toimiala ja mitä olet rakentamassa.",
+      "emailCta": "Hae sähköpostilla →",
+      "back": "Takaisin Harvicsiin"
     }
   }
 }

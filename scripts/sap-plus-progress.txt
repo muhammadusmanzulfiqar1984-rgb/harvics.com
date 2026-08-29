@@ -1,0 +1,44 @@
+# HARVICS SAP+ productization progress
+
+Updated: 2026-08-27 (local session)
+
+## Bar
+Multi-tab workspace · document detail routes · status machines + emitAudit · burgundy/cream/gold · real APIs · cross-module hooks where natural.
+
+## Status by band
+
+| Band | Modules | Status |
+|------|---------|--------|
+| Finance & Controlling | #1–7 | Done |
+| Commercial & Sales | #8–12 | Done |
+| Procurement & Sourcing | #13–16 | Done |
+| Manufacturing | #17–21 | Done |
+| Inventory & Warehouse | #22–24 | Done |
+| Logistics & Trade | #25–28 | Done |
+| Human Capital | #29–33 | Done |
+| Asset & Maintenance | #34–36 | Done |
+| GRC | #37–40 | Done |
+| Analytics & Intelligence | #41–44 + #72 | Done |
+| Projects & Services | #45–47 | Done |
+| Platform & Infrastructure | #48–54 | Done |
+| Data & AI | #55–58 | Done |
+| HARVICS Universe | #59–68 | Done |
+| Portals | #69–71 | Done |
+
+**Catalogue: 72/72 raised to SAP+ productization bar** (depth varies by band).
+
+## Key entry URLs (local :3333)
+- Finance GL: `/en/os/finance`
+- AR: `/en/os/ar-aging` · invoice `/en/os/ar/invoices/[id]`
+- AP: `/en/os/ap-aging` · bill `/en/os/ap/bills/[id]`
+- Controlling: `/en/os/controlling` · CC `/en/os/controlling/centers/[code]`
+- CRM: `/en/os/crm` · reports `/en/os/crm/reports`
+- Executive: `/en/os/executive`
+
+## Honest gaps (fleet-wide)
+- Depth varies: Finance/CRM deepest; later bands got status machines + detail docs but not full SAP FI/CO/MM parity.
+- Some modules still DomainStore / loose string FKs vs Prisma relations.
+- GL auto-post not wired on every cross-module action (treasury/HPay release, etc.).
+- Additive SQL may be needed for BudgetLine.status and other new columns.
+- Restart backend after this session to pick up all new routes.
+- Prisma may log Closed connection intermittently — verify Neon/.env DATABASE_URL if OS APIs 500.

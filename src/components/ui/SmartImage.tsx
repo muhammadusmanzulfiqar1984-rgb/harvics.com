@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import { getLeafImage } from '@/data/leafImageMap'
+import { resolveFashionImage } from '@/data/fashionTextilesImages'
 
 interface SmartImageProps {
   src?: string
@@ -48,49 +49,72 @@ const SmartImage: React.FC<SmartImageProps> = ({
     'polyester': 'https://images.unsplash.com/photo-1528459105426-b9548367069b?w=800&h=800&fit=crop&auto=format&q=60',
     'blends': 'https://images.unsplash.com/photo-1528459105426-b9548367069b?w=800&h=800&fit=crop&auto=format&q=60',
     'curtains': 'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&h=800&fit=crop&auto=format&q=60',
-    'shirt': 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&h=800&fit=crop&auto=format&q=60',
+    'shirt': '/assets/harvictrade/products/fashion/textiles/mens.jpg',
     'silk': 'https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=800&h=800&fit=crop&auto=format&q=60',
     'scarf': 'https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?w=800&h=800&fit=crop&auto=format&q=60',
-    'denim': 'https://images.unsplash.com/photo-1542272604-787c3835535d?w=800&h=800&fit=crop&auto=format&q=60',
-    'jeans': 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&h=800&fit=crop&auto=format&q=60',
+    'denim': '/assets/harvictrade/products/fashion/textiles/denim.jpg',
+    'jeans': '/assets/harvictrade/products/fashion/textiles/denim.jpg',
     'linen': 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&h=800&fit=crop&auto=format&q=60',
-    'dress': 'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&h=800&fit=crop&auto=format&q=60',
+    'dress': '/assets/harvictrade/products/fashion/textiles/ladies.jpg',
     'sweater': 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&h=800&fit=crop&auto=format&q=60',
     'leather': 'https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&h=800&fit=crop&auto=format&q=60',
     'jacket': 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&h=800&fit=crop&auto=format&q=60',
-    'textile': 'https://images.unsplash.com/photo-1558171813-4c088753af8f?w=800&h=800&fit=crop&auto=format&q=60',
-    'fabric': 'https://images.unsplash.com/photo-1528459105426-b9548367069b?w=800&h=800&fit=crop&auto=format&q=60',
-    'menswear': '/assets/verticals/01-apparels/categories/textile/Mens .jpg',
-    'womenswear': '/assets/verticals/01-apparels/categories/textile/Ladies wear .jpg',
-    'mens wear': '/assets/verticals/01-apparels/categories/textile/Mens .jpg',
-    'ladies wear': '/assets/verticals/01-apparels/categories/textile/Ladies wear .jpg',
-    'kids wear': '/assets/verticals/01-apparels/categories/textile/Kids wear.jpg',
-    'sportswear': '/assets/verticals/01-apparels/categories/textile/Sports Wear.jpg',
-    'home textiles': '/assets/verticals/01-apparels/categories/textile/Home textile .jpg',
-    'bed linen': '/assets/verticals/01-apparels/categories/textile/Home textile .jpg',
-    'bath linen': '/assets/verticals/01-apparels/categories/textile/Home textile .jpg',
-    'suit': 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&h=800&fit=crop&auto=format&q=60',
-    'polo': 'https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=800&h=800&fit=crop&auto=format&q=60',
-    'blazer': 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&h=800&fit=crop&auto=format&q=60',
+    'textile': '/assets/harvictrade/products/fashion/textiles/ladies.jpg',
+    'fabric': '/assets/harvictrade/products/fashion/textiles/home.jpg',
+    'menswear': '/assets/harvictrade/products/fashion/textiles/mens.jpg',
+    'womenswear': '/assets/harvictrade/products/fashion/textiles/ladies.jpg',
+    'mens wear': '/assets/harvictrade/products/fashion/textiles/mens.jpg',
+    'ladies wear': '/assets/harvictrade/products/fashion/textiles/ladies.jpg',
+    'kids wear': '/assets/harvictrade/products/fashion/textiles/kids.jpg',
+    'sportswear': '/assets/harvictrade/products/fashion/textiles/sportswear.jpg',
+    'swimwear': '/assets/harvictrade/products/fashion/textiles/swim.jpg',
+    'swimsuit': '/assets/harvictrade/products/fashion/textiles/swim.jpg',
+    'bikini': '/assets/harvictrade/products/fashion/textiles/swim.jpg',
+    'yoga': '/assets/harvictrade/products/fashion/textiles/active.jpg',
+    'sports wear': '/assets/harvictrade/products/fashion/textiles/sportswear.jpg',
+    'activewear': '/assets/harvictrade/products/fashion/textiles/sportswear.jpg',
+    'lingerie': '/assets/harvictrade/products/fashion/textiles/lingerie.jpg',
+    'sports-bra': '/assets/harvictrade/products/fashion/textiles/sports-bra.jpg',
+    'underwear': '/assets/harvictrade/products/fashion/textiles/mens-underwear.jpg',
+    'socks': '/assets/harvictrade/products/fashion/textiles/socks.jpg',
+    'hosiery': '/assets/harvictrade/products/fashion/textiles/hosiery.jpg',
+    'shapewear': '/assets/harvictrade/products/fashion/textiles/shapewear.jpg',
+    'briefs': '/assets/harvictrade/products/fashion/textiles/panties.jpg',
+    'panties': '/assets/harvictrade/products/fashion/textiles/panties.jpg',
+    'bra': '/assets/harvictrade/products/fashion/textiles/bra.jpg',
+    'nightwear': '/assets/harvictrade/products/fashion/textiles/robe-model.jpg',
+    'nightgown': '/assets/harvictrade/products/fashion/textiles/robe-model.jpg',
+    'home textiles': '/assets/harvictrade/products/fashion/textiles/home.jpg',
+    'bed linen': '/assets/harvictrade/products/fashion/textiles/home.jpg',
+    'bath linen': '/assets/harvictrade/products/fashion/textiles/home.jpg',
+    'suit': '/assets/harvictrade/products/fashion/textiles/suits.jpg',
+    'denim': '/assets/harvictrade/products/fashion/textiles/denim.jpg',
+    'jeans': '/assets/harvictrade/products/fashion/textiles/denim.jpg',
+    'gown': '/assets/harvictrade/products/fashion/textiles/gown.jpg',
+    'dress': '/assets/harvictrade/products/fashion/textiles/ladies.jpg',
+    'boy': '/assets/harvictrade/products/fashion/textiles/boys.jpg',
+    'girl': '/assets/harvictrade/products/fashion/textiles/girls.jpg',
+    'kids': '/assets/harvictrade/products/fashion/textiles/kids.jpg',
+    'men': '/assets/harvictrade/products/fashion/textiles/mens.jpg',
+    'women': '/assets/harvictrade/products/fashion/textiles/ladies.jpg',
+    'polo': '/assets/harvictrade/products/fashion/textiles/boys.jpg',
+    'blazer': '/assets/harvictrade/products/fashion/textiles/suits.jpg',
     'overcoat': 'https://images.unsplash.com/photo-1544923408-75c5cef46f14?w=800&h=800&fit=crop&auto=format&q=60',
-    'sports wear': '/assets/verticals/01-apparels/categories/textile/Sports Wear.jpg',
-    'gown': 'https://images.unsplash.com/photo-1518622358385-8ea7d0794bf6?w=800&h=800&fit=crop&auto=format&q=60',
-    'blouse': 'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?w=800&h=800&fit=crop&auto=format&q=60',
+    'blouse': '/assets/harvictrade/products/fashion/textiles/blouse.jpg',
     'handbag': 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&h=800&fit=crop&auto=format&q=60',
     'hoodie': 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&h=800&fit=crop&auto=format&q=60',
     'sneakers': 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=800&fit=crop&auto=format&q=60',
     'boots': 'https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=800&h=800&fit=crop&auto=format&q=60',
-    'bedsheet': 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&h=800&fit=crop&auto=format&q=60',
-    'towel': 'https://images.unsplash.com/photo-1583845112203-29329902332e?w=800&h=800&fit=crop&auto=format&q=60',
+    'bedsheet': '/assets/harvictrade/products/fashion/textiles/home.jpg',
+    'towel': '/assets/harvictrade/products/fashion/textiles/home.jpg',
     'cushion': 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=800&fit=crop&auto=format&q=60',
     'curtain': 'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&h=800&fit=crop&auto=format&q=60',
     'chinos': 'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=800&h=800&fit=crop&auto=format&q=60',
     'parka': 'https://images.unsplash.com/photo-1544923408-75c5cef46f14?w=800&h=800&fit=crop&auto=format&q=60',
     'knitwear': 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=800&h=800&fit=crop&auto=format&q=60',
-    'men': 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=800&fit=crop&auto=format&q=60',
-    'women': 'https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&h=800&fit=crop&auto=format&q=60',
+    // men/women/fashion: keep local textiles model shots (defined above) — do not overwrite with Unsplash
     'wool': 'https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?w=800&h=800&fit=crop&auto=format&q=60',
-    'fashion': 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=800&h=800&fit=crop&auto=format&q=60',
+    'fashion': '/assets/harvictrade/products/fashion/textiles/ladies.jpg',
     'technical': 'https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?w=800&h=800&fit=crop&auto=format&q=60',
     'pack': 'https://images.unsplash.com/photo-1523381294911-8d3cead13475?w=800&h=800&fit=crop&auto=format&q=60',
     'school': 'https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=800&h=800&fit=crop&auto=format&q=60',
@@ -368,7 +392,15 @@ const SmartImage: React.FC<SmartImageProps> = ({
     if (keyword) {
       const searchText = keyword.toLowerCase()
 
-      // 0. Prefer locally generated leaf.jpg images via the central map.
+      // 0. Sand Atelier fashion / undergarments
+      const fashion = resolveFashionImage(searchText) || resolveFashionImage(keyword)
+      if (fashion) {
+        setImageSrc(fashion)
+        setIsLoading(false)
+        return
+      }
+
+      // 1. Prefer locally generated leaf.jpg images via the central map.
       const leaf = getLeafImage(searchText)
       if (leaf) {
         setImageSrc(leaf)
@@ -378,11 +410,11 @@ const SmartImage: React.FC<SmartImageProps> = ({
 
       let matchedUrl = PRODUCT_IMAGES.default
 
-      // 1. Exact match first
+      // 2. Exact match first
       if (PRODUCT_IMAGES[searchText]) {
         matchedUrl = PRODUCT_IMAGES[searchText]
       } else {
-        // 2. Longest key that the searchText includes (most specific partial match)
+        // 3. Longest key that the searchText includes (most specific partial match)
         let bestKey = ''
         for (const key of Object.keys(PRODUCT_IMAGES)) {
           if (searchText.includes(key) && key.length > bestKey.length) {
@@ -409,7 +441,18 @@ const SmartImage: React.FC<SmartImageProps> = ({
     // Find matching image from keywords
     const searchText = `${context.product || ''} ${context.category || ''}`.toLowerCase()
 
-    // 0. Prefer leaf.jpg via central map (try product, category, full text).
+    // 0. Sand Atelier fashion / undergarments
+    const fashion =
+      resolveFashionImage(context.product || '') ||
+      resolveFashionImage(context.category || '') ||
+      resolveFashionImage(searchText)
+    if (fashion) {
+      setImageSrc(fashion)
+      setIsLoading(false)
+      return
+    }
+
+    // 1. Prefer leaf.jpg via central map (try product, category, full text).
     const leaf =
       (context.product && getLeafImage(context.product)) ||
       (context.category && getLeafImage(context.category)) ||

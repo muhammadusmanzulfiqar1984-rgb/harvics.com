@@ -1,0 +1,21 @@
+Category,Prompt,Email,Website,Title,Fair,Phone,email_is_business,website_ok,title_valid,tier1_passes,tier2_points,score,outreach_category,company_name,description,phone,address,linkedin_url,industry,enrichment_status
+Men's Wear,"Professional studio shot of a man in a tailored charcoal wool suit, white shirt, minimalist grey background, high fashion photography.",,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Ladies' Wear,"Elegant woman wearing a silk emerald green evening gown, soft cinematic lighting, luxury boutique interior.",,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Kids' Wear,"Flat lay photography of organic cotton children's clothes, pastel colors, wooden floor background, bright natural light.",,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Sportswear,"Close-up of high-performance black moisture-wicking gym leggings and top, athletic texture, dramatic gym lighting.",,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Bed Linen,"Luxury bedroom interior with 1000-thread-count white cotton bed sheets, rumpled texture, cozy morning sunlight.",,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Bath Linen,"A stack of fluffy folded Turkish towels in sage green and cream, marble bathroom counter, spa aesthetic.",,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Curtains,"Floor-to-ceiling sheer linen curtains in beige, soft sunlight streaming through a large window, airy living room.",,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Kitchen,"Modern kitchen scene with a folded linen tea towel and matching apron on a marble island, clean aesthetic.",,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Cotton,"Macro photography of raw white cotton fabric weave, showing natural fibers and soft texture, studio lighting.",,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Polyester,"Close-up of smooth synthetic polyester fabric in vibrant cobalt blue, subtle sheen, modern industrial look.",,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Blends,"Texture shot of a grey cotton-polyester blend fabric, showing the heathered knit pattern, soft focus.",,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Denim,"Extreme close-up of dark indigo selvedge denim, orange stitching detail, rugged high-quality texture.",,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Scarves,"A colorful silk patterned scarf draped over a neutral mannequin, soft breeze effect, high-end fashion style.",,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Bags,"Luxury leather tote bag in tan brown, standing on a clean concrete pedestal, minimalist editorial shot.",,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Belts,"Professional product shot of three leather belts (black, brown, tan) rolled neatly on a wooden surface.",,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Shoes,"Pair of polished brown leather Oxford shoes, reflection on a dark floor, sophisticated lighting.",,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Home Textile,"Set of decorative embroidered throw pillows on a grey velvet sofa, modern interior design style.",,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Apparel,"Close-up of a high-quality gold zipper on a black bomber jacket, focus on hardware and fabric grain.",,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Fabrics,"Swatch of soft flannel fabric in a classic red and black buffalo plaid pattern, cozy winter vibe.",,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Accessories,"A collection of designer sunglasses and a leather wallet arranged on a marble tray, lifestyle photography.",,,,,,False,False,False,0,0,0,skip,,,,,,,partial

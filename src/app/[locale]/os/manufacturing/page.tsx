@@ -1,34 +1,21 @@
 'use client'
 
-import React from 'react'
-import { useLocale } from 'next-intl'
-import { usePathname } from 'next/navigation'
-import DashboardLayout from '@/components/layouts/DashboardLayout'
-import ManufacturingDomainContent from '@/components/os-domains/ManufacturingDomainContent'
-import LiveModuleData from '@/components/shared/LiveModuleData'
+import HarvicsOSShell from '@/components/shared/HarvicsOSShell'
+import ManufacturingModuleSeventeen from '@/components/os-domains/ManufacturingModuleSeventeen'
 
+/** Module #17 — Production planning & work orders */
 export default function ManufacturingOSPage() {
-  const locale = useLocale()
-  const pathname = usePathname()
-
-  const persona = pathname?.includes('/portal/distributor') ? 'distributor' :
-                  pathname?.includes('/portal/supplier') ? 'supplier' : 'company'
-
   return (
-    <DashboardLayout portal={persona} pageTitle="Manufacturing OS">
-      <ManufacturingDomainContent persona={persona} locale={locale} />
-      <LiveModuleData
-        endpoint="/api/v2/manufacturing/work-orders"
-        title="Live Work Orders"
-        columns={[
-          { key: 'workOrderNo', label: 'WO #' },
-          { key: 'productSku', label: 'SKU' },
-          { key: 'qty', label: 'Qty' },
-          { key: 'status', label: 'Status' },
-          { key: 'priority', label: 'Priority' },
-          { key: 'startDate', label: 'Start' },
-        ]}
-      />
-    </DashboardLayout>
+    <HarvicsOSShell
+      title="Manufacturing OS"
+      subtitle="Module #17 — Production planning & work orders"
+      activeDomain="manufacturing"
+      breadcrumbs={[
+        { label: 'OS', href: '/os' },
+        { label: 'Manufacturing' },
+      ]}
+    >
+      <ManufacturingModuleSeventeen />
+    </HarvicsOSShell>
   )
 }

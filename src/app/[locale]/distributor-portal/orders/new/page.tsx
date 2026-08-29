@@ -1,35 +1,81 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useLocale, useTranslations } from 'next-intl'
 import LocalizationBar from '@/components/shared/LocalizationBar'
+import { apiClient } from '@/lib/api'
+import { saveCart, type CartLine } from '@/lib/distributorPortal'
+
+type ProductRow = {
+  sku: string
+  name: string
+  packSize: string
+  cartonSize: number
+  unitPrice: number
+  image: string
+}
 
 export default function PlaceNewOrder() {
   const locale = useLocale()
   const t = useTranslations('distributorPortal.orders.newOrder')
-  const tCommon = useTranslations('common')
   const [selectedCountry, setSelectedCountry] = useState('US')
   const [selectedWarehouse, setSelectedWarehouse] = useState('wh_us_west')
   const [orderType, setOrderType] = useState('Mixed')
   const [cart, setCart] = useState<Array<{sku: string, name: string, packSize: string, cartonSize: number, unitPrice: number, quantity: number}>>([])
+  const [products, setProducts] = useState<ProductRow[]>([])
+  const [loadingProducts, setLoadingProducts] = useState(true)
 
-  // Mock products
-  const products = [
-    { sku: 'SKU-001', name: 'Premium Chocolate Bar 200g', packSize: '200g', cartonSize: 24, unitPrice: 2.50, image: '/assets/brand/photo/logo.png' },
-    { sku: 'SKU-002', name: 'Energy Drink 500ml', packSize: '500ml', cartonSize: 12, unitPrice: 1.80, image: '/assets/brand/photo/logo.png' },
-    { sku: 'SKU-003', name: 'Snack Mix 150g', packSize: '150g', cartonSize: 30, unitPrice: 3.20, image: '/assets/brand/photo/logo.png' },
-  ]
+  useEffect(() => {
+    void loadProducts()
+  }, [])
+
+  const loadProducts = async () => {
+    setLoadingProducts(true)
+    try {
+      const res = await apiClient.request('/inventory?limit=100')
+      const payload = (res?.data as any)
+      const rows: any[] = Array.isArray(payload) ? payload : (payload?.data ?? [])
+
+      const mapped = await Promise.all(rows.map(async (item) => {
+        let unitPrice = Number(item.unitCost) || 0
+        try {
+          const priceRes = await apiClient.request(`/wave5/price-lists/lookup?sku=${encodeURIComponent(item.sku)}&qty=1`)
+          const priceData = (priceRes?.data as any)?.data ?? priceRes?.data
+          if (priceData?.unitPrice != null) unitPrice = Number(priceData.unitPrice)
+        } catch {
+          // keep unitCost fallback
+        }
+        return {
+          sku: item.sku,
+          name: item.description || item.name || item.sku,
+          packSize: item.packSize || item.uom || '—',
+          cartonSize: Number(item.cartonSize) || 24,
+          unitPrice,
+          image: '/assets/brand/photo/logo.png',
+        }
+      }))
+
+      setProducts(mapped)
+    } catch (error) {
+      console.error('Error loading products:', error)
+      setProducts([])
+    } finally {
+      setLoadingProducts(false)
+    }
+  }
 
   const addToCart = (product: typeof products[0], qty: number) => {
     const existing = cart.findIndex(p => p.sku === product.sku)
+    let next: typeof cart
     if (existing >= 0) {
-      const newCart = [...cart]
-      newCart[existing].quantity = qty
-      setCart(newCart)
+      next = [...cart]
+      next[existing].quantity = qty
     } else {
-      setCart([...cart, { ...product, quantity: qty }])
+      next = [...cart, { ...product, quantity: qty }]
     }
+    setCart(next)
+    saveCart(next as CartLine[])
   }
 
   const subtotal = cart.reduce((sum, item) => sum + (item.unitPrice * item.quantity * item.cartonSize), 0)
@@ -113,7 +159,11 @@ export default function PlaceNewOrder() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
-                {products.map((product) => {
+                {loadingProducts ? (
+                  <tr><td colSpan={7} className="px-4 py-8 text-center text-sm text-harvics-gold/90">Loading products…</td></tr>
+                ) : products.length === 0 ? (
+                  <tr><td colSpan={7} className="px-4 py-8 text-center text-sm text-harvics-gold/90">No inventory SKUs available — add stock in Inventory OS.</td></tr>
+                ) : products.map((product) => {
                   const cartItem = cart.find(c => c.sku === product.sku)
                   const qty = cartItem?.quantity || 0
                   return (
@@ -155,22 +205,18 @@ export default function PlaceNewOrder() {
             <h2 className="text-lg font-bold">Harvey Suggestions</h2>
           </div>
           <div className="space-y-4 text-sm">
-            <div>
-              <div className="font-semibold mb-2">Recommended Quantity:</div>
-              <ul className="space-y-1 text-harvics-gold/90">
-                <li>• Premium Chocolate Bar: 50 cartons</li>
-                <li>• Energy Drink: 100 cartons</li>
-                <li>• Snack Mix: 75 cartons</li>
-              </ul>
-            </div>
-            <div className="border-t border-harvics-gold/20 pt-4">
-              <div className="font-semibold mb-2">Fill Your Container:</div>
-              <p className="text-harvics-gold/90">You have space for 225 more cartons to maximize container efficiency.</p>
-            </div>
-            <div className="border-t border-harvics-gold/20 pt-4">
-              <div className="font-semibold mb-2">Bundle Suggestion:</div>
-              <p className="text-harvics-gold/90">Summer Bundle: Mix beverages + snacks for 15% discount on qualifying orders.</p>
-            </div>
+            {cart.length === 0 ? (
+              <p className="text-harvics-gold/90">Add products to your cart for order suggestions.</p>
+            ) : (
+              <div>
+                <div className="font-semibold mb-2">Cart ({cart.length} SKU{cart.length !== 1 ? 's' : ''})</div>
+                <ul className="space-y-1 text-harvics-gold/90">
+                  {cart.filter((c) => c.quantity > 0).map((c) => (
+                    <li key={c.sku}>• {c.name}: {c.quantity} cartons</li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         </div>
       </div>

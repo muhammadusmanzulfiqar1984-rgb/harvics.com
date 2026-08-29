@@ -1,0 +1,21 @@
+name = "harvyx-enrichment"
+main = "worker.js"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+account_id = "c606ef34847cc91452c3e27a2a7a91e6"
+
+[[d1_databases]]
+binding = "HARVYX_LEADS_DB"
+database_name = "harvics-leads"
+database_id = "8e599b2a-e9ef-47dd-a163-bdec26188bc8"
+
+# Secrets — set via: wrangler secret put <NAME> --name harvyx-enrichment
+# HARVYX_API_KEY   (required — same as HarvyX MCP / ops key)
+# HUNTER_API_KEY   (optional — hunter.io)
+# PDL_API_KEY      (optional — peopledatalabs.com)
+
+[triggers]
+crons = []
+
+[observability]
+enabled = true

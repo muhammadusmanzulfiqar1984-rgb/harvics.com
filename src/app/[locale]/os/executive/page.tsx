@@ -1,38 +1,18 @@
 'use client'
 
-import React from 'react'
-import { useLocale } from 'next-intl'
-import { usePathname } from 'next/navigation'
-import DashboardLayout from '@/components/layouts/DashboardLayout'
-import ExecutiveDomainContent from '@/components/os-domains/ExecutiveDomainContent'
-import LiveModuleData from '@/components/shared/LiveModuleData'
+import HarvicsOSShell from '@/components/shared/HarvicsOSShell'
+import ExecutiveModuleSeventyTwo from '@/components/os-domains/ExecutiveModuleSeventyTwo'
 
-export default function ExecutiveOSPage() {
-  const locale = useLocale()
-  const pathname = usePathname()
-  
-  const persona = pathname?.includes('/portal/distributor') ? 'distributor' :
-                  pathname?.includes('/portal/supplier') ? 'supplier' : 'company'
-
+/** Module #72 — Executive Intelligence */
+export default function Page() {
   return (
-    <DashboardLayout
-      portal={persona}
-      pageTitle="Executive Control Tower"
+    <HarvicsOSShell
+      title="Executive Command"
+      subtitle="Module #72 — SAP+ workspace"
+      activeDomain="executive"
+      breadcrumbs={[{ label: 'OS', href: '/os' }, { label: 'Executive' }]}
     >
-      <ExecutiveDomainContent persona={persona} locale={locale} />
-      <LiveModuleData
-        endpoint="/api/v2/notifications"
-        title="Live Notifications Feed"
-        columns={[
-          { key: 'severity', label: 'Severity' },
-          { key: 'category', label: 'Category' },
-          { key: 'title', label: 'Title' },
-          { key: 'message', label: 'Message' },
-          { key: 'channel', label: 'Channel' },
-          { key: 'createdAt', label: 'When', format: (v: any) => v ? new Date(v).toLocaleString() : '—' },
-        ]}
-        emptyMessage="No notifications. POST to /api/v2/notifications to send one."
-      />
-    </DashboardLayout>
+      <ExecutiveModuleSeventyTwo />
+    </HarvicsOSShell>
   )
 }

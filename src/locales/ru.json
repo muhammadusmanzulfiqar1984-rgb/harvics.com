@@ -3,13 +3,13 @@
   "home": {
     "welcome": "Добро пожаловать в",
     "companyName": "Харвич",
-    "tagline": "Превосходство в сфере товаров премиум-класса для потребителей с 2019 года.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "Ознакомиться с продуктами",
     "contact": "Связаться с нами",
     "learnMore": "Узнать больше",
-    "brandStatement": "Ведущая мировая компания по производству потребительских товаров, поставляющая высококачественные продукты питания в различных категориях, соответствующие международным стандартам качества.",
-    "taglineStart": "Превосходство в сфере потребительских товаров премиум-класса с",
-    "taglineYear": "2019",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "Лондон • Милан • Нью-Йорк",
     "categories": {
       "bakery": "Пекарня",
@@ -81,7 +81,8 @@
       "specialOffers": "Специальные предложения",
       "promotions": "Акции",
       "bulkOrders": "Скидки на оптовые заказы"
-    }
+    },
+    "startupAcademy": "Стартап Академия"
   },
   "products": {
     "ourProducts": "Наша продукция",
@@ -119,7 +120,40 @@
     "whatsapp": "WhatsApp",
     "callNow": "Позвоните прямо сейчас",
     "sendEmail": "Отправить электронное письмо",
-    "messageUs": "Напишите нам"
+    "messageUs": "Напишите нам",
+    "getInTouch": "Свяжитесь с нами",
+    "locations": "Локации",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "Отправить сообщение",
+    "firstName": "Имя",
+    "firstNamePlaceholder": "Введите свое имя",
+    "lastName": "Фамилия",
+    "lastNamePlaceholder": "Введите свою фамилию",
+    "emailPlaceholder": "Введите свой адрес электронной почты",
+    "subject": "Предмет",
+    "subjectPlaceholder": "Введите тему",
+    "message": "Сообщение",
+    "messagePlaceholder": "Напишите свое сообщение",
+    "send": "Отправлять",
+    "eyebrow": "Начать бриф",
+    "headline1": "Начать бриф.",
+    "headline2": "Мы отвечаем в течение 24 часов.",
+    "subhead": "Сообщите нам свою категорию, объем и целевой рынок. Специалист свяжется с вами и предложит варианты выбора и ориентировочную цену.",
+    "fullName": "Полное имя",
+    "fullNamePlaceholder": "Шах Табраиз",
+    "company": "Компания",
+    "companyPlaceholder": "Ваша организация",
+    "businessEmail": "Деловая электронная почта",
+    "howCanWeHelp": "Как мы можем помочь?",
+    "sending": "Отправка...",
+    "sendEnquiry": "Отправить запрос",
+    "sentTitle": "Сообщение отправлено.",
+    "sentSub": "Наша команда ответит в течение 24 часов.",
+    "directChannels": "Прямые каналы",
+    "trust1": "24-часовая гарантия ответа",
+    "trust2": "Выделенный менеджер по работе с клиентами",
+    "trust3": "NDA available on request",
+    "trust4": "42 рынка · 1 247 отправлений сегодня"
   },
   "media": {
     "title": "Медиацентр",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "Harvics Global Ventures",
-    "tagline": "Превосходство в сфере товаров премиум-класса для потребителей с 2019 года.",
-    "brandStatement": "Ведущая мировая компания по производству потребительских товаров, поставляющая высококачественные продукты питания в различных категориях, соответствующие международным стандартам качества.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "Лондон • Милан • Нью-Йорк",
     "since": "С 2019 года",
     "harvicsNews": "Новости Харвикса",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "Присоединяйтесь к нашей сети",
     "newsletterTagline": "Получайте последние торговые данные и обновления рынка",
     "activeShipments": "Активные отгрузки",
-    "certifiedAudited": "Сертифицировано и проверено"
+    "certifiedAudited": "Сертифицировано и проверено",
+    "invalidEmail": "Пожалуйста, введите действительный адрес электронной почты",
+    "subscriptionSuccess": "Спасибо за подписку!",
+    "subscriptionError": "Что-то пошло не так. Пожалуйста, попробуйте еще раз."
   },
   "search": {
     "placeholder": "Поиск товаров, брендов или категорий",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "Прошу прощения, я не понял. Не могли бы вы перефразировать?",
       "help": "Я могу помочь вам с информацией о товарах, оформлением заказов или ответить на общие вопросы. Что бы вы хотели узнать?",
-      "contact": "Для получения дополнительной помощи, пожалуйста, свяжитесь с нами по адресу support@harvics.com или позвоните по телефону +1-800-HARVICS."
-    }
+      "contact": "Для получения дополнительной помощи, пожалуйста, свяжитесь с нами по адресу support@harvics.com или позвоните по телефону +1-800-HARVICS.",
+      "product": "Просмотрите наш каталог товаров из меню или скажите, какая категория вас интересует — FMCG, текстиль, логистика и многое другое.",
+      "order": "Чтобы разместить заказ или проверить статус, посетите портал дистрибьютора или свяжитесь со своим менеджером по работе с клиентами.",
+      "about": "Harvics Global Ventures — суверенная торговая инфраструктурная компания с более чем 20-летним опытом работы в более чем 40 странах."
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "Нажмите Enter, чтобы отправить"
   },
   "common": {
     "chatWithUs": "Пообщайтесь с нами",
@@ -324,7 +366,7 @@
       "namePlaceholder": "Введите ваше полное имя",
       "nameRequired": "Имя обязательно для указания.",
       "email": "Адрес электронной почты",
-      "emailPlaceholder": "your.email@example.com",
+      "emailPlaceholder": "ваш.электронная почта@example.com",
       "emailRequired": "Требуется указать адрес электронной почты.",
       "emailInvalid": "Пожалуйста, введите действительный адрес электронной почты",
       "phone": "Номер телефона",
@@ -730,12 +772,17 @@
       "gps-tracking": "GPS-отслеживание",
       "localization": "Локализация",
       "workflows": "Рабочие процессы",
-      "admin": "Администратор"
+      "admin": "Администратор",
+      "modules": "Модули"
     },
     "kpis": {
       "customers": "Клиенты",
       "employees": "Сотрудники",
-      "profit": "Выгода"
+      "profit": "Выгода",
+      "totalOrders": "Всего заказов",
+      "inventoryValue": "Стоимость инвентаря",
+      "logisticsEfficiency": "Эффективность логистики",
+      "revenue": "Доход"
     },
     "domain": {
       "title": "ОС CRM",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "Просматривайте и управляйте своими взаимоотношениями с клиентами, взаимодействиями и кампаниями.",
       "loading": "Загрузка...",
       "error": "Ошибка при загрузке данных CRM."
+    },
+    "roleIndicator": {
+      "manager": "Просмотр менеджера",
+      "executive": "Представительский вид",
+      "investor": "Взгляд инвестора",
+      "distributor": "Представление дистрибьютора",
+      "supplier": "Просмотр поставщика",
+      "customer": "Взгляд клиента"
     }
   },
   "supplierPortal": {
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "О компании Harvics",
-    "subtitle": "Превосходство в сфере товаров премиум-класса для потребителей с 2019 года.",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "Наша история",
     "story1": "Компания Harvics, основанная в 2019 году, выросла из новаторской идеи в мирового лидера в сфере потребительских товаров премиум-класса. Наш путь определяется неустанным стремлением к качеству и приверженностью инновациям.",
     "story2": "Мы работаем более чем в 40 странах, поставляя продукцию, которая улучшает жизнь и устанавливает новые стандарты в отрасли. С момента нашего скромного начала и до глобального присутствия наши ценности остаются неизменными.",
@@ -1150,181 +1205,279 @@
   },
   "help": {
     "page": {
-      "title": "Help Center",
-      "subtitle": "Find the help you need"
+      "title": "Справочный центр",
+      "subtitle": "Найдите необходимую вам помощь"
     },
-    "backToHelpCenter": "Back to Help Center",
+    "backToHelpCenter": "Вернуться в Справочный центр",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "Часто задаваемые вопросы",
+        "description": "Найдите ответы на распространенные вопросы"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "Обратиться в службу поддержки",
+        "description": "Свяжитесь с нашей службой поддержки"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "Руководства пользователя",
+        "description": "Пошаговые руководства и учебные пособия"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "Поиск неисправностей",
+        "description": "Решайте распространенные проблемы"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "Справка по учетной записи",
+        "description": "Управляйте своей учетной записью и настройками"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "Заказать поддержку",
+        "description": "Помощь с заказами и доставкой"
       }
     },
     "account": {
-      "title": "Account Help",
-      "subtitle": "Manage your account settings and preferences",
-      "placeholder": "Account management and settings help content will appear here."
+      "title": "Справка по учетной записи",
+      "subtitle": "Управляйте настройками и предпочтениями своей учетной записи",
+      "placeholder": "Здесь будет отображаться справочная информация по управлению учетной записью и настройкам."
     },
     "orders": {
-      "title": "Order Support",
-      "subtitle": "Track and manage your orders and deliveries",
-      "placeholder": "Order and delivery support content will appear here."
+      "title": "Заказать поддержку",
+      "subtitle": "Отслеживайте и управляйте своими заказами и доставками",
+      "placeholder": "Здесь появится информация о поддержке заказов и доставки."
     },
     "guides": {
-      "title": "User Guides",
-      "subtitle": "Step-by-step guides to help you get the most out of Harvics",
+      "title": "Руководства пользователя",
+      "subtitle": "Пошаговые руководства, которые помогут вам максимально эффективно использовать Harvics",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "Начиная",
+          "description": "Изучите основы"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "Настройка учетной записи",
+          "description": "Настройте свою учетную запись"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "Как заказать",
+          "description": "Размещайте и отслеживайте заказы"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "Способы оплаты",
+          "description": "Варианты оплаты и безопасность"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "Доставка и доставка",
+          "description": "Информация о доставке"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "Возврат и возмещение",
+          "description": "Политика и процесс возврата"
         }
       }
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "subtitle": "Common issues and quick solutions",
+      "title": "Поиск неисправностей",
+      "subtitle": "Распространенные проблемы и быстрые решения",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "Проблемы со входом",
+          "description": "Проблемы со входом"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "Проблемы с оплатой",
+          "description": "Платеж не обрабатывается"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "Задержки доставки",
+          "description": "Заказ не приходит"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "Ошибки сайта",
+          "description": "Страница не загружается"
         }
       }
     }
   },
   "checkout": {
-    "secureCheckout": "Secure Checkout",
-    "title": "Complete Your Order",
-    "subtitle": "Review your items, enter shipping details, and confirm payment securely.",
-    "shippingInfo": "Shipping Information",
-    "paymentMethod": "Payment Method",
+    "secureCheckout": "Безопасная оплата",
+    "title": "Завершите свой заказ",
+    "subtitle": "Просмотрите свои товары, введите данные о доставке и безопасно подтвердите оплату.",
+    "shippingInfo": "Информация о доставке",
+    "paymentMethod": "Способ оплаты",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "Кредитная/дебетовая карта",
+      "bankTransfer": "Банковский перевод (LC/TT)",
       "wallet": "HPay Digital Wallet"
     },
-    "orderSummary": "Order Summary",
+    "orderSummary": "Сводка заказа",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
-      "total": "Total"
+      "subtotal": "Итого",
+      "shipping": "Перевозки",
+      "calculatedNextStep": "Рассчитывается на следующем этапе",
+      "tax": "Налог",
+      "total": "Общий"
     },
-    "placeOrder": "Place Order",
-    "sslNotice": "Secured with 256-bit SSL encryption",
-    "continueShopping": "Continue Shopping",
+    "placeOrder": "Разместить заказ",
+    "sslNotice": "Защищено 256-битным SSL-шифрованием.",
+    "continueShopping": "Продолжить покупки",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "Имя",
+      "lastName": "Фамилия",
+      "email": "Электронная почта",
+      "address": "Адрес",
+      "city": "Город",
+      "country": "Страна"
     }
   },
   "history": {
     "hero": {
-      "title": "Our Journey",
-      "subtitle": "From a Dubai startup to a global enterprise spanning 42+ countries, 10 industry verticals, and 38 languages."
+      "title": "Наше путешествие",
+      "subtitle": "От стартапа в Дубае до глобального предприятия, охватывающего более 42 стран, 10 отраслей промышленности и 38 языков."
     },
     "cta": {
-      "title": "Be Part of the Next Chapter",
-      "subtitle": "Join us as we scale to 60+ countries and build the future of AI-driven global commerce.",
-      "button": "View Careers"
+      "title": "Станьте частью следующей главы",
+      "subtitle": "Присоединяйтесь к нам, поскольку мы охватываем более 60 стран и строим будущее глобальной торговли, основанной на искусственном интеллекте.",
+      "button": "Посмотреть карьеры"
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "Основан в Дубае",
+        "description": "Harvics Global Ventures основана в ОАЭ с целью стать FMCG и многовертикальным торговым конгломератом мирового класса. Первые операции начались в сфере текстиля и потребительских товаров.",
+        "highlight": "Год первый"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "Первое международное расширение",
+        "description": "Несмотря на глобальные проблемы пандемии, охват расширился до 10 стран Европы, Ближнего Востока и Южной Азии. Запустил цифровую цепочку поставок и партнерские отношения с удаленной дистрибуцией.",
+        "highlight": "10 стран"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "Многовертикальное расширение",
+        "description": "Запущено 5 новых отраслевых направлений: сырьевые товары, промышленное оборудование, полезные ископаемые и горнодобывающая промышленность, нефть и газ и недвижимость. Общий каталог продукции превысил 500 наименований по всем вертикалям.",
+        "highlight": "5 новых вертикалей"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "Цифровая трансформация",
+        "description": "Создана первая версия Harvics OS — корпоративной платформы на базе искусственного интеллекта. Запущены дистрибьюторские порталы, возможности электронной коммерции и GPS-отслеживание автопарка в режиме реального времени на всех рынках.",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "Устойчивость и масштаб",
+        "description": "Приверженность углеродно-нейтральным операциям. Достигнуто более 30 стран. Запустил HPay (платформу цифровых платежей), решения для торгового финансирования и прогнозирование спроса на основе искусственного интеллекта во всех вертикалях.",
+        "highlight": "30+ стран"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "Глобальное предприятие",
+        "description": "Преодолен рубеж в 42+ странах. Развернутый механизм искусственного интеллекта с 6 моделями машинного обучения для стратегии, спроса, ценообразования, покрытия и оптимизации SKU. Запущена многоязычная платформа с поддержкой 38 языков.",
+        "highlight": "42+ стран"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "AI-первая операционная система",
+        "description": "Выпущена Harvics OS v2 — унифицированная корпоративная операционная система с аналитикой в ​​реальном времени, прямой трансляцией Socket.io, Alpha Engine для планов рыночных атак и полной 8-уровневой географической иерархией.",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "Видение будущего",
+        "description": "Масштабирование до 60+ стран. Создание первого в мире предприятия FMCG, управляемого искусственным интеллектом, где каждая функция — закупки, логистика, финансы, CRM — выполняется на основе прогнозного интеллекта с контролем человека.",
+        "highlight": "60+ мишеней"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "Практическая академия торговли, снабжения и искусственного интеллекта для основателей — шесть недель, живые занятия, коридоры Harvics.",
+    "navLabel": "Стартап Академия",
+    "teaser": {
+      "eyebrow": "Академия · Коридорная программа",
+      "title": "Стартап Академия.",
+      "body": "Классическое ремесло для основателей — поиск поставщиков, контроль качества, отделы финансирования и коридорная грамотность — наряду с торговой площадкой Harvics.",
+      "cta": "Войти в Академию"
+    },
+    "hero": {
+      "alt": "Классический лекторий — Harvics Startup Academy",
+      "eyebrow": "Группа 01 · 4 квартал 2026 г. · Программа поддержки",
+      "title": "Harvics Startup Academy",
+      "body": "Классическая школа торговли для основателей — сорсинг, коридорная коммерция и работающий искусственный интеллект. Шесть недель. Живые сессии. Реальные операторы.",
+      "apply": "Подать заявку на участие в когорте 01",
+      "seeProgramme": "Посмотреть программу"
+    },
+    "stats": {
+      "founders": "Основатели/группа",
+      "sessions": "Живые сессии",
+      "weeks": "Недели",
+      "verticals": "Торговые вертикали"
+    },
+    "why": {
+      "eyebrow": "01 · Зачем присоединяться",
+      "title": "Постройте компанию, которая действительно сможет торговать.",
+      "body": "Не питч-театр. Узнайте о запросах цен на расчеты, тщательном поиске поставщиков, работе с покупателями и автоматизации — от операторов по всему коридору Harvics.",
+      "item1Title": "Практические торговые системы",
+      "item1Body": "Как покупают институциональные покупатели и как вы это реализуете.",
+      "item2Title": "Сеть, которая доставляет",
+      "item2Body": "Основатели, дистрибьюторы и операторы по вертикалям.",
+      "item3Title": "ИИ, который работает",
+      "item3Body": "HarvyX, Fin voice и автоматизация операций без модных словечек.",
+      "imageAlt": "Классический торговый натюрморт"
+    },
+    "knowledge": {
+      "eyebrow": "Знание",
+      "title": "Изучите коридор как дисциплину.",
+      "body": "Учебный план основан на реальной торговой практике, а не на общих слайдах для стартапов.",
+      "imageAlt": "Большая классическая библиотека"
+    },
+    "programme": {
+      "eyebrow": "02 · Программа",
+      "title": "Через что вы будете работать",
+      "m1Title": "Бренд и источники поставок",
+      "m1Body": "Минимальные заказы, ворота контроля качества, текстиль и товары повседневного спроса — от ателье до коридора.",
+      "m2Title": "Разведка и информационно-пропагандистская деятельность",
+      "m2Body": "Лаборатории HarvyX, покупатель ICP, последующие действия, на которые получены ответы.",
+      "m3Title": "Капитал и партнеры",
+      "m3Body": "Пути финансирования и партнерские отношения — никаких фальшивых претензий со стороны банков.",
+      "m4Title": "Коридорная коммерция",
+      "m4Body": "Порты, маршруты и то, как товары на самом деле перемещаются по рынкам.",
+      "m5Title": "Качество и усердие",
+      "m5Body": "Привычки проверок, которые защищают репутацию и поселение.",
+      "m6Title": "Товары и товары повседневного спроса",
+      "m6Body": "От складской реальности до брендового и оптового спроса."
+    },
+    "tracks": {
+      "aEyebrow": "Трек А",
+      "aTitle": "Бренд и коммерция",
+      "aBody": "Основатели компаний по производству одежды и товаров повседневного спроса создают бренд, оптовую торговлю и коридорный спрос.",
+      "aAlt": "Классический зал заседаний",
+      "bEyebrow": "Трек Б",
+      "bTitle": "Торговля и операции",
+      "bBody": "Операторы снабжения, логистики и B2B, расширяющие институциональную торговлю.",
+      "bAlt": "Нетворкинг салонов"
+    },
+    "network": {
+      "eyebrow": "03 · Сеть",
+      "title": "Встречайтесь с операторами, а не с аудиторией.",
+      "body": "Живые встречи и рабочие часы в салонном стиле с основателями, дистрибьюторами и операторами коридоров Harvics.",
+      "imageAlt": "Сеть основателей"
+    },
+    "rhythm": {
+      "eyebrow": "04 · Ритм",
+      "title": "Шесть недель. Четкий каденс.",
+      "w1": "Неделя 1",
+      "w1Body": "Ориентация · Карта коридора · Семинар ПМС",
+      "w2": "Неделя 2",
+      "w2Body": "Работа с покупателями · Лаборатория HarvyX",
+      "w3": "Неделя 3",
+      "w3Body": "Поиск поставщиков и контроль качества · Проверка поставщиков",
+      "w4": "Неделя 4",
+      "w4Body": "Автоматизация · Fin voice · стек операций",
+      "w5": "Неделя 5",
+      "w5Body": "Финансирование и партнерство",
+      "w6": "Неделя 6",
+      "w6Body": "Презентация основателя · следующие шаги"
+    },
+    "apply": {
+      "eyebrow": "Приложения",
+      "title": "Подать заявку на участие в когорте 01",
+      "body": "Ограниченное количество мест. Расскажите нам о своей компании, сфере деятельности и о том, что вы строите.",
+      "emailCta": "Подать заявку по электронной почте →",
+      "back": "Вернуться к Харвикс"
     }
   }
 }

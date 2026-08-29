@@ -3,13 +3,13 @@
   "home": {
     "welcome": "Hoş geldiniz",
     "companyName": "Harwich",
-    "tagline": "2019'dan Beri Üstün Kalitede Tüketim Malları",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "Ürünleri Keşfedin",
     "contact": "Bize Ulaşın",
     "learnMore": "Daha fazla bilgi edin",
-    "brandStatement": "Uluslararası kalite standartlarında, çeşitli kategorilerde birinci sınıf gıda ürünleri sunan, önde gelen küresel bir tüketim malları şirketi.",
-    "taglineStart": "Üstün Kalitede Tüketim Malları Alanında Mükemmellik",
-    "taglineYear": "2019",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "Londra • Milano • New York",
     "categories": {
       "bakery": "Fırın",
@@ -81,7 +81,8 @@
       "specialOffers": "Özel Teklifler",
       "promotions": "Promosyonlar",
       "bulkOrders": "Toplu Sipariş İndirimleri"
-    }
+    },
+    "startupAcademy": "Girişim Akademisi"
   },
   "products": {
     "ourProducts": "Ürünlerimiz",
@@ -119,7 +120,40 @@
     "whatsapp": "WhatsApp",
     "callNow": "Şimdi Ara",
     "sendEmail": "E-posta gönder",
-    "messageUs": "Bize mesaj gönderin"
+    "messageUs": "Bize mesaj gönderin",
+    "getInTouch": "İletişime Geçin",
+    "locations": "Konumlar",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "Mesaj Gönder",
+    "firstName": "İlk adı",
+    "firstNamePlaceholder": "Adınızı girin",
+    "lastName": "Soy isim",
+    "lastNamePlaceholder": "Soyadınızı girin",
+    "emailPlaceholder": "E-posta adresinizi girin",
+    "subject": "Ders",
+    "subjectPlaceholder": "Konuyu girin",
+    "message": "Mesaj",
+    "messagePlaceholder": "Mesajınızı yazın",
+    "send": "Göndermek",
+    "eyebrow": "Özet Başlat",
+    "headline1": "Kısa bir başlangıç ​​yapın.",
+    "headline2": "24 saat içinde yanıt veriyoruz.",
+    "subhead": "Bize kategorinizi, hacminizi ve hedef pazarınızı söyleyin. Bir uzman, kaynak seçenekleri ve gösterge niteliğindeki fiyatlandırmayla size geri döner.",
+    "fullName": "Ad Soyad",
+    "fullNamePlaceholder": "Şah Tebraiz",
+    "company": "Şirket",
+    "companyPlaceholder": "Kuruluşunuz",
+    "businessEmail": "İş E-postası",
+    "howCanWeHelp": "Nasıl yardımcı olabiliriz?",
+    "sending": "Gönderiliyor...",
+    "sendEnquiry": "Talep Gönder",
+    "sentTitle": "Mesaj gönderildi.",
+    "sentSub": "Ekibimiz 24 saat içinde yanıt verecektir.",
+    "directChannels": "Doğrudan Kanallar",
+    "trust1": "24 saat yanıt garantisi",
+    "trust2": "Özel hesap yöneticisi",
+    "trust3": "NDA available on request",
+    "trust4": "42 pazar · bugün 1.247 sevkiyat"
   },
   "media": {
     "title": "Medya Merkezi",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "Harvics Küresel Girişimleri",
-    "tagline": "2019'dan Beri Üstün Kalitede Tüketim Malları",
-    "brandStatement": "Uluslararası kalite standartlarında, çeşitli kategorilerde birinci sınıf gıda ürünleri sunan, önde gelen küresel bir tüketim malları şirketi.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "Londra • Milano • New York",
     "since": "2019'dan beri",
     "harvicsNews": "Harvics Haberleri",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "Ağımıza Katılın",
     "newsletterTagline": "En son ticaret bilgileri ve pazar güncellemelerini alın",
     "activeShipments": "Aktif Sevkiyatlar",
-    "certifiedAudited": "Sertifikalı ve Denetlenmiş"
+    "certifiedAudited": "Sertifikalı ve Denetlenmiş",
+    "invalidEmail": "Geçerli bir e",
+    "subscriptionSuccess": "Abone olduğunuz için teşekkür ederiz!",
+    "subscriptionError": "Bir şeyler ters gitti. Lütfen tekrar deneyin."
   },
   "search": {
     "placeholder": "Ürünleri, markaları veya kategorileri arayın",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "Özür dilerim, anlamadım. Lütfen yeniden ifade edebilir misiniz?",
       "help": "Ürün bilgileri, siparişler veya genel sorularınız konusunda size yardımcı olabilirim. Ne öğrenmek istersiniz?",
-      "contact": "Daha fazla yardım için lütfen support@harvics.com adresinden bizimle iletişime geçin veya +1-800-HARVICS numarasını arayın."
-    }
+      "contact": "Daha fazla yardım için lütfen support@harvics.com adresinden bizimle iletişime geçin veya +1-800-HARVICS numarasını arayın.",
+      "product": "Menüden ürün kataloğumuza göz atın veya hangi kategorinin ilginizi çektiğini bana söyleyin — Hızlı Tüketim Ürünleri, tekstil, lojistik ve daha fazlası.",
+      "order": "Sipariş vermek veya durumu kontrol etmek için distribütör portalını ziyaret edin veya hesap yöneticinizle iletişime geçin.",
+      "about": "Harvics Global Ventures, 40'tan fazla ülkede 20 yılı aşkın deneyimi olan egemen bir ticaret altyapı şirketidir."
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "Göndermek için Enter'a basın"
   },
   "common": {
     "chatWithUs": "Bizimle sohbet edin",
@@ -324,7 +366,7 @@
       "namePlaceholder": "Lütfen tam adınızı girin.",
       "nameRequired": "İsim zorunludur.",
       "email": "E-posta Adresi",
-      "emailPlaceholder": "your.email@example.com",
+      "emailPlaceholder": "e-postanız@example.com",
       "emailRequired": "E-posta adresi gereklidir.",
       "emailInvalid": "Geçerli bir e",
       "phone": "Telefon Numarası",
@@ -544,7 +586,7 @@
   },
   "legal": {
     "title": "Yasal İşletim Sistemi",
-    "sidebarTitle": "Legal OS",
+    "sidebarTitle": "Yasal işletim sistemi",
     "accessDenied": "Erişim engellendi",
     "accessDeniedMessage": "Legal OS modülüne erişim izniniz yok.",
     "dashboard": "Kontrol Paneli",
@@ -730,12 +772,17 @@
       "gps-tracking": "GPS Takibi",
       "localization": "Yerelleştirme",
       "workflows": "İş akışları",
-      "admin": "Yönetici"
+      "admin": "Yönetici",
+      "modules": "Modüller"
     },
     "kpis": {
       "customers": "Müşteriler",
       "employees": "Çalışanlar",
-      "profit": "Kâr"
+      "profit": "Kâr",
+      "totalOrders": "Toplam Siparişler",
+      "inventoryValue": "Envanter Değeri",
+      "logisticsEfficiency": "Lojistik Verimliliği",
+      "revenue": "Hasılat"
     },
     "domain": {
       "title": "CRM işletim sistemi",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "Müşteri ilişkilerinizi, etkileşimlerinizi ve kampanyalarınızı görüntüleyin ve yönetin.",
       "loading": "Yükleniyor...",
       "error": "CRM verileri yüklenirken hata oluştu."
+    },
+    "roleIndicator": {
+      "manager": "Yönetici Görünümü",
+      "executive": "Yönetici Görünümü",
+      "investor": "Yatırımcı Görünümü",
+      "distributor": "Distribütör Görünümü",
+      "supplier": "Tedarikçi Görünümü",
+      "customer": "Müşteri Görünümü"
     }
   },
   "supplierPortal": {
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "Harvics Hakkında",
-    "subtitle": "2019'dan Beri Üstün Kalitede Tüketim Malları",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "Bizim Hikayemiz",
     "story1": "2019 yılında kurulan Harvics, vizyoner bir fikirden yola çıkarak premium tüketim malları alanında küresel bir lider haline geldi. Yolculuğumuz, kaliteye olan amansız bağlılığımız ve yeniliğe olan adanmışlığımızla tanımlanmaktadır.",
     "story2": "40'tan fazla ülkede faaliyet gösteriyor, yaşamları zenginleştiren ve sektörde yeni standartlar belirleyen ürünler sunuyoruz. Mütevazı başlangıcımızdan küresel varlığımıza kadar değerlerimiz değişmeden kaldı.",
@@ -1150,181 +1205,279 @@
   },
   "help": {
     "page": {
-      "title": "Help Center",
-      "subtitle": "Find the help you need"
+      "title": "Yardım Merkezi",
+      "subtitle": "İhtiyacınız olan yardımı bulun"
     },
-    "backToHelpCenter": "Back to Help Center",
+    "backToHelpCenter": "Yardım Merkezine Geri Dön",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "Sıkça Sorulan Sorular",
+        "description": "Sık sorulan soruların yanıtlarını bulun"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "Destek Ekibiyle İletişime Geçin",
+        "description": "Destek ekibimizle iletişime geçin"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "Kullanıcı Kılavuzları",
+        "description": "Adım adım kılavuzlar ve öğreticiler"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "Sorun giderme",
+        "description": "Yaygın sorunları çözün"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "Hesap Yardımı",
+        "description": "Hesabınızı ve ayarlarınızı yönetin"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "Sipariş Desteği",
+        "description": "Siparişler ve teslimatlar konusunda yardım"
       }
     },
     "account": {
-      "title": "Account Help",
-      "subtitle": "Manage your account settings and preferences",
-      "placeholder": "Account management and settings help content will appear here."
+      "title": "Hesap Yardımı",
+      "subtitle": "Hesap ayarlarınızı ve tercihlerinizi yönetin",
+      "placeholder": "Hesap yönetimi ve ayarlar yardım içeriği burada görünecektir."
     },
     "orders": {
-      "title": "Order Support",
-      "subtitle": "Track and manage your orders and deliveries",
-      "placeholder": "Order and delivery support content will appear here."
+      "title": "Sipariş Desteği",
+      "subtitle": "Siparişlerinizi ve teslimatlarınızı takip edin ve yönetin",
+      "placeholder": "Sipariş ve teslimat desteği içeriği burada görünecektir."
     },
     "guides": {
-      "title": "User Guides",
-      "subtitle": "Step-by-step guides to help you get the most out of Harvics",
+      "title": "Kullanıcı Kılavuzları",
+      "subtitle": "Harvics'ten en iyi şekilde yararlanmanıza yardımcı olacak adım adım kılavuzlar",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "Başlarken",
+          "description": "Temelleri öğrenin"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "Hesap Kurulumu",
+          "description": "Hesabınızı kurun"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "Nasıl Sipariş Verilir?",
+          "description": "Sipariş verme ve takip etme"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "Ödeme Yöntemleri",
+          "description": "Ödeme seçenekleri ve güvenlik"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "Nakliye ve Teslimat",
+          "description": "Teslimat bilgileri"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "İade ve Para İadeleri",
+          "description": "İade politikası ve süreci"
         }
       }
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "subtitle": "Common issues and quick solutions",
+      "title": "Sorun giderme",
+      "subtitle": "Yaygın sorunlar ve hızlı çözümler",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "Giriş Sorunları",
+          "description": "Oturum açma sorunları"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "Ödeme Sorunları",
+          "description": "Ödeme işlenmiyor"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "Teslimat Gecikmeleri",
+          "description": "Sipariş gelmiyor"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "Web Sitesi Hataları",
+          "description": "Sayfa yüklenmiyor"
         }
       }
     }
   },
   "checkout": {
-    "secureCheckout": "Secure Checkout",
-    "title": "Complete Your Order",
-    "subtitle": "Review your items, enter shipping details, and confirm payment securely.",
-    "shippingInfo": "Shipping Information",
-    "paymentMethod": "Payment Method",
+    "secureCheckout": "Güvenli Ödeme",
+    "title": "Siparişinizi Tamamlayın",
+    "subtitle": "Öğelerinizi inceleyin, gönderim ayrıntılarını girin ve ödemeyi güvenli bir şekilde onaylayın.",
+    "shippingInfo": "Gönderim Bilgileri",
+    "paymentMethod": "Ödeme yöntemi",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "Kredi/Banka Kartı",
+      "bankTransfer": "Banka Havalesi (LC/TT)",
       "wallet": "HPay Digital Wallet"
     },
-    "orderSummary": "Order Summary",
+    "orderSummary": "Sipariş Özeti",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
-      "total": "Total"
+      "subtotal": "Ara toplam",
+      "shipping": "Nakliye",
+      "calculatedNextStep": "Bir sonraki adımda hesaplanır",
+      "tax": "Vergi",
+      "total": "Toplam"
     },
-    "placeOrder": "Place Order",
-    "sslNotice": "Secured with 256-bit SSL encryption",
-    "continueShopping": "Continue Shopping",
+    "placeOrder": "Sipariş Ver",
+    "sslNotice": "256 bit SSL şifreleme ile korunmaktadır",
+    "continueShopping": "Alışverişe Devam Et",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "İlk adı",
+      "lastName": "Soy isim",
+      "email": "E-posta",
+      "address": "Adres",
+      "city": "Şehir",
+      "country": "Ülke"
     }
   },
   "history": {
     "hero": {
-      "title": "Our Journey",
-      "subtitle": "From a Dubai startup to a global enterprise spanning 42+ countries, 10 industry verticals, and 38 languages."
+      "title": "Yolculuğumuz",
+      "subtitle": "Dubai'deki bir startup'tan 42'den fazla ülkeye, 10 sektöre ve 38 dile yayılan küresel bir kuruluşa."
     },
     "cta": {
-      "title": "Be Part of the Next Chapter",
-      "subtitle": "Join us as we scale to 60+ countries and build the future of AI-driven global commerce.",
-      "button": "View Careers"
+      "title": "Sonraki Bölümün Parçası Olun",
+      "subtitle": "60'tan fazla ülkeye ölçeklenirken ve yapay zeka odaklı küresel ticaretin geleceğini inşa ederken bize katılın.",
+      "button": "Kariyerleri Görüntüle"
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "Dubai'de kuruldu",
+        "description": "Harvics Global Ventures, birinci sınıf bir FMCG ve çoklu dikey ticaret grubu olma vizyonuyla BAE'de kuruldu. Tekstil ve tüketim mallarında ilk operasyonlar başlatıldı.",
+        "highlight": "Birinci Yıl"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "İlk Uluslararası Genişleme",
+        "description": "Küresel salgın zorluklarına rağmen Avrupa, Orta Doğu ve Güney Asya'da 10 ülkeye genişletildi. Dijital tedarik zinciri operasyonları ve uzaktan dağıtım ortaklıkları başlatıldı.",
+        "highlight": "10 Ülke"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "Çoklu Dikey Genişleme",
+        "description": "5 yeni sektör başlattı: Emtialar, Endüstriyel Ekipmanlar, Mineraller ve Madencilik, Petrol ve Gaz ve Emlak. Toplam ürün kataloğu tüm sektörlerde 500 SKU'yu aştı.",
+        "highlight": "5 Yeni Dikey"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "Dijital Dönüşüm",
+        "description": "Yapay zeka destekli kurumsal platform olan Harvics OS'nin ilk sürümünü oluşturduk. Tüm pazarlarda distribütör portalları, e-ticaret özellikleri ve gerçek zamanlı GPS filo takibi başlatıldı.",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "Sürdürülebilirlik ve Ölçek",
+        "description": "Karbon nötr operasyonlara bağlıyız. 30'dan fazla ülkeye ulaştı. Tüm sektörlerde HPay (dijital ödeme platformu), ticaret finansmanı çözümleri ve yapay zeka odaklı talep tahminini başlattı.",
+        "highlight": "30+ Ülke"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "Küresel İşletme",
+        "description": "42'den fazla ülkede kilometre taşı aşıldı. Strateji, talep, fiyatlandırma, kapsam ve SKU optimizasyonu için 6 ML modeliyle dağıtılan AI motoru. 38 dili destekleyen çok dilli platformu başlattı.",
+        "highlight": "42+ Ülke"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "Yapay Zeka İlk İşletim Sistemi",
+        "description": "Harvics OS v2 piyasaya sürüldü — gerçek zamanlı zekaya, Socket.io canlı yayınlarına, pazar saldırı planları için Alpha Engine'e ve 8 seviyeli eksiksiz coğrafi hiyerarşiye sahip birleşik kurumsal işletim sistemi.",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "İlerideki Vizyon",
+        "description": "60'tan fazla ülkeye ölçeklendirme. Satın alma, lojistik, finans, CRM gibi her fonksiyonun insan onay kapılı tahmine dayalı zekayla çalıştığı, dünyanın ilk yapay zekayla çalışan FMCG kuruluşunu inşa etmek.",
+        "highlight": "60+ Hedef"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "Kurucular için pratik ticaret, kaynak bulma ve yapay zeka akademisi - altı hafta, canlı oturumlar, Harvics koridorları.",
+    "navLabel": "Girişim Akademisi",
+    "teaser": {
+      "eyebrow": "Akademi · Koridor programı",
+      "title": "Başlangıç ​​Akademisi.",
+      "body": "Harvics pazarının yanı sıra kurucular için klasik ticaret zanaatı (kaynak bulma, kalite kontrol, finansman masaları ve koridor okuryazarlığı).",
+      "cta": "Akademiye Girin"
+    },
+    "hero": {
+      "alt": "Klasik konferans salonu — Harvics Startup Academy",
+      "eyebrow": "Grup 01 · 4. Çeyrek 2026 · Destekleyici program",
+      "title": "Harvics Startup Academy",
+      "body": "Kurucular için klasik bir ticaret okulu; kaynak bulma, koridor ticareti ve işe yarayan yapay zeka. Altı hafta. Canlı oturumlar. Gerçek operatörler.",
+      "apply": "Kohort 01'e başvurun",
+      "seeProgramme": "Programa bakın"
+    },
+    "stats": {
+      "founders": "Kurucular / grup",
+      "sessions": "Canlı oturumlar",
+      "weeks": "Haftalar",
+      "verticals": "Ticaret sektörleri"
+    },
+    "why": {
+      "eyebrow": "01 · Neden katılmalısınız?",
+      "title": "Gerçekten ticaret yapabilen bir şirket kurun.",
+      "body": "Sahne tiyatrosu değil. Harvics koridorlarındaki operatörlerden uzlaşmaya yönelik RFQ'yu, kaynak bulma titizliğini, alıcıya ulaşmayı ve otomasyonu öğrenin.",
+      "item1Title": "Pratik ticaret sistemleri",
+      "item1Body": "Kurumsal alıcılar nasıl satın alıyor ve bunu nasıl karşılıyorsunuz?",
+      "item2Title": "Gönderim yapan ağ",
+      "item2Body": "Farklı sektörlerdeki kurucular, distribütörler ve operatörler.",
+      "item3Title": "İşe yarayan yapay zeka",
+      "item3Body": "HarvyX, Fin sesi ve moda sözcükler olmadan operasyon otomasyonu.",
+      "imageAlt": "Klasik ticaret natürmort"
+    },
+    "knowledge": {
+      "eyebrow": "Bilgi",
+      "title": "Koridoru bir disiplin gibi inceleyin.",
+      "body": "Müfredat genel başlangıç ​​slaytlarından değil, gerçek ticari uygulamalardan alınmıştır.",
+      "imageAlt": "Büyük klasik kütüphane"
+    },
+    "programme": {
+      "eyebrow": "02 · Programı",
+      "title": "Ne üzerinde çalışacaksınız",
+      "m1Title": "Marka ve kaynak kullanımı",
+      "m1Body": "MOQ'lar, kalite kontrol kapıları, tekstil ürünleri ve FMCG - atölyeden koridora.",
+      "m2Title": "İstihbarat ve sosyal yardım",
+      "m2Body": "HarvyX laboratuvarları, alıcı ICP'si, yanıt alan takipler.",
+      "m3Title": "Sermaye ve ortaklar",
+      "m3Body": "Finansman yolları ve ortaklıklar - sahte banka talepleri yok.",
+      "m4Title": "Koridor ticareti",
+      "m4Body": "Limanlar, şeritler ve malların pazarlar arasında gerçekte nasıl hareket ettiği.",
+      "m5Title": "Kalite ve titizlik",
+      "m5Body": "İtibarı ve yerleşimi koruyan denetim alışkanlıkları.",
+      "m6Title": "Emtialar ve Hızlı Tüketim Ürünleri",
+      "m6Body": "Depo gerçekliğinden marka ve toptan satış talebine."
+    },
+    "tracks": {
+      "aEyebrow": "Parça A",
+      "aTitle": "Marka ve ticaret",
+      "aBody": "Giyim ve FMCG kurucuları marka, toptan satış ve koridor talebi oluşturuyor.",
+      "aAlt": "Klasik toplantı odası",
+      "bEyebrow": "Parça B",
+      "bTitle": "Ticaret ve operasyonlar",
+      "bBody": "Kaynak bulma, lojistik ve B2B operatörleri kurumsal ticareti ölçeklendiriyor.",
+      "bAlt": "Salon ağı"
+    },
+    "network": {
+      "eyebrow": "03 · Ağ",
+      "title": "İzleyicilerle değil, operatörlerle tanışın.",
+      "body": "Kurucular, distribütörler ve Harvics koridor operatörleriyle canlı oturumlar ve salon tarzı çalışma saatleri.",
+      "imageAlt": "Kurucular ağ oluşturma"
+    },
+    "rhythm": {
+      "eyebrow": "04 · Ritim",
+      "title": "Altı hafta. Temiz kadans.",
+      "w1": "1. Hafta",
+      "w1Body": "Oryantasyon · Koridor haritası · ICP atölyesi",
+      "w2": "2. Hafta",
+      "w2Body": "Alıcı desteği · HarvyX laboratuvarı",
+      "w3": "3. Hafta",
+      "w3Body": "Kaynak bulma ve kalite kontrol · Tedarikçi titizliği",
+      "w4": "4. Hafta",
+      "w4Body": "Otomasyon · Fin sesi · işlem yığını",
+      "w5": "5. Hafta",
+      "w5Body": "Finansman ve ortaklıklar",
+      "w6": "6. Hafta",
+      "w6Body": "Kurucu vitrini · sonraki adımlar"
+    },
+    "apply": {
+      "eyebrow": "Uygulamalar",
+      "title": "Kohort 01'e başvurun",
+      "body": "Sınırlı koltuklar. Bize şirketinizi, sektörünüzü ve ne inşa ettiğinizi anlatın.",
+      "emailCta": "E-postayla başvur →",
+      "back": "Harvics'e geri dön"
     }
   }
 }

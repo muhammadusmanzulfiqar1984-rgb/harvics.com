@@ -9,8 +9,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 /**
- * Production-style corridor scroll: Lenis smooth wheel + ScrollTrigger sync + refresh
- * after lazy layout (header, images, dynamic sections).
+ * Lenis smooth scroll + ScrollTrigger sync.
+ * Do NOT use scrollerProxy — it desyncs pin/scrub and blanks sections.
+ * Do NOT ScrollTrigger.getAll().kill() on cleanup — wipes other sections (Strict Mode).
  */
 export default function HomepageLenis() {
   const pathname = usePathname()
@@ -27,26 +28,6 @@ export default function HomepageLenis() {
       easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
       touchMultiplier: 1.5,
-    })
-
-    const root = document.documentElement
-
-    ScrollTrigger.scrollerProxy(root, {
-      scrollTop(value) {
-        if (arguments.length) {
-          lenis.scrollTo(value, { immediate: true })
-        }
-        return lenis.scroll
-      },
-      getBoundingClientRect() {
-        return {
-          top: 0,
-          left: 0,
-          width: window.innerWidth,
-          height: window.innerHeight,
-        }
-      },
-      pinType: root.style.transform ? 'transform' : 'fixed',
     })
 
     lenis.on('scroll', ScrollTrigger.update)
@@ -70,7 +51,6 @@ export default function HomepageLenis() {
     window.addEventListener('load', refresh)
     window.addEventListener('resize', refresh)
 
-    // Hero / proof / h-scroll mount at different times — refresh through first paint
     const t1 = window.setTimeout(refresh, 100)
     const t2 = window.setTimeout(refresh, 600)
     const t3 = window.setTimeout(refresh, 1500)
@@ -95,10 +75,9 @@ export default function HomepageLenis() {
       window.removeEventListener('load', refresh)
       window.removeEventListener('resize', refresh)
       mo.disconnect()
-      ScrollTrigger.scrollerProxy(root, {})
       lenis.destroy()
       gsap.ticker.remove(tickerFn)
-      ScrollTrigger.getAll().forEach((st) => st.kill())
+      ScrollTrigger.refresh()
     }
   }, [isHome, pathname])
 

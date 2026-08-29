@@ -1,137 +1,109 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useLocale } from 'next-intl'
 import LocalizationBar from '@/components/shared/LocalizationBar'
+import { clearCart, createSalesOrder, loadCart, type CartLine } from '@/lib/distributorPortal'
 
 export default function OrderReview() {
   const locale = useLocale()
+  const [cart, setCart] = useState<CartLine[]>([])
+  const [customerName, setCustomerName] = useState('Distributor Account')
+  const [submitting, setSubmitting] = useState(false)
+  const [message, setMessage] = useState('')
+  const [error, setError] = useState('')
 
-  // Mock order data
-  const order = {
-    distributorName: 'Costco West',
-    billingAddress: '123 Business Street, Los Angeles, CA 90001',
-    deliveryAddress: '456 Warehouse Lane, Los Angeles, CA 90002',
-    paymentTerms: 'Net 30',
-    shippingTerms: 'FOB Warehouse',
-    expectedDeliveryDate: '2025-01-30',
-    items: [
-      { sku: 'SKU-001', name: 'Premium Chocolate Bar 200g', qty: 50, unitPrice: 2.50, cartonSize: 24, total: 3000 },
-      { sku: 'SKU-002', name: 'Energy Drink 500ml', qty: 100, unitPrice: 1.80, cartonSize: 12, total: 2160 },
-    ]
+  useEffect(() => {
+    setCart(loadCart().filter((c) => c.quantity > 0))
+  }, [])
+
+  const subtotal = cart.reduce((sum, item) => sum + item.unitPrice * item.quantity * item.cartonSize, 0)
+
+  const submit = async () => {
+    setSubmitting(true)
+    setError('')
+    setMessage('')
+    try {
+      if (!cart.length) throw new Error('Cart is empty')
+      const res = await createSalesOrder({
+        customerName,
+        paymentTerms: 'Net 30',
+        lines: cart.map((c) => ({
+          sku: c.sku,
+          description: c.name,
+          quantity: c.quantity * c.cartonSize,
+          unitPrice: c.unitPrice,
+        })),
+      })
+      clearCart()
+      setMessage(`Order ${res.data?.orderNumber || ''} submitted (${res.data?.status}).`)
+      setCart([])
+    } catch (e: any) {
+      setError(e.message)
+    } finally {
+      setSubmitting(false)
+    }
   }
-
-  const subtotal = order.items.reduce((sum, item) => sum + item.total, 0)
-  const freight = 0
-  const total = subtotal + freight
 
   return (
     <div className="space-y-6 max-w-4xl mx-auto">
       <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-harvics-gold">Review Order</h1>
-        <Link
-          href={`/${locale}/distributor-portal/orders/new`}
-          className="text-white hover:underline"
-        >
-          ← Back to Edit
-        </Link>
+        <h1 className="text-2xl font-bold text-harvics-burgundy">Review Order</h1>
+        <Link href={`/${locale}/distributor-portal/orders/new`} className="text-harvics-burgundy hover:underline">← Back</Link>
       </div>
-
-      {/* Order Details */}
-      <div className="bg-white border border-black200 shadow-sm p-6">
-        <h2 className="text-lg font-bold text-harvics-gold mb-4">Order Information</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <label className="block text-sm font-semibold text-harvics-gold/90 mb-1">Distributor Name</label>
-            <div className="text-harvics-gold/90">{order.distributorName}</div>
-          </div>
-          <div>
-            <label className="block text-sm font-semibold text-harvics-gold/90 mb-1">Payment Terms</label>
-            <div className="text-harvics-gold/90">{order.paymentTerms}</div>
-          </div>
-          <div>
-            <label className="block text-sm font-semibold text-harvics-gold/90 mb-1">Billing Address</label>
-            <div className="text-harvics-gold/90">{order.billingAddress}</div>
-          </div>
-          <div>
-            <label className="block text-sm font-semibold text-harvics-gold/90 mb-1">Shipping Terms</label>
-            <div className="text-harvics-gold/90">{order.shippingTerms}</div>
-          </div>
-          <div>
-            <label className="block text-sm font-semibold text-harvics-gold/90 mb-1">Delivery Address</label>
-            <select className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black">
-              <option>{order.deliveryAddress}</option>
-            </select>
-          </div>
-          <div>
-            <label className="block text-sm font-semibold text-harvics-gold/90 mb-1">Expected Delivery Date</label>
-            <div className="text-harvics-gold/90">{order.expectedDeliveryDate}</div>
-          </div>
-        </div>
+      {error && <p className="text-sm text-red-700">{error}</p>}
+      {message && <p className="text-sm text-green-800">{message}</p>}
+      <div className="bg-white border p-6 space-y-3">
+        <label className="block text-sm font-semibold">Customer / Distributor name</label>
+        <input className="w-full border px-3 py-2" value={customerName} onChange={(e) => setCustomerName(e.target.value)} />
       </div>
-
-      {/* Order Items Table */}
-      <div className="bg-white border border-black200 shadow-sm overflow-hidden">
-        <div className="overflow-x-auto">
-          <table className="w-full">
-            <thead className="bg-white">
+      <div className="bg-white border overflow-hidden">
+        {cart.length === 0 ? (
+          <p className="p-8 text-center text-sm text-gray-600">No items in cart — add products first.</p>
+        ) : (
+          <table className="w-full text-sm">
+            <thead className="bg-[#F5F0E8]">
               <tr>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">SKU</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Product Name</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Qty</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Unit Price</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Line Total</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Total</th>
+                {['SKU', 'Product', 'Cartons', 'Unit', 'Line Total'].map((h) => (
+                  <th key={h} className="px-4 py-3 text-left text-xs font-semibold uppercase">{h}</th>
+                ))}
               </tr>
             </thead>
-            <tbody className="divide-y divide-gray-200">
-              {order.items.map((item) => (
+            <tbody className="divide-y">
+              {cart.map((item) => (
                 <tr key={item.sku}>
-                  <td className="px-6 py-4 font-semibold text-harvics-gold/90">{item.sku}</td>
-                  <td className="px-6 py-4 text-harvics-gold/90">{item.name}</td>
-                  <td className="px-6 py-4 text-harvics-gold/90">{item.qty} cartons ({item.qty * item.cartonSize} units)</td>
-                  <td className="px-6 py-4 text-harvics-gold/90">${item.unitPrice.toFixed(2)}</td>
-                  <td className="px-6 py-4 font-semibold">${item.total.toFixed(2)}</td>
-                  <td className="px-6 py-4 font-bold text-white">${item.total.toFixed(2)}</td>
+                  <td className="px-4 py-3 font-semibold">{item.sku}</td>
+                  <td className="px-4 py-3">{item.name}</td>
+                  <td className="px-4 py-3">{item.quantity}</td>
+                  <td className="px-4 py-3">${item.unitPrice.toFixed(2)}</td>
+                  <td className="px-4 py-3 font-bold">${(item.quantity * item.unitPrice * item.cartonSize).toFixed(2)}</td>
                 </tr>
               ))}
             </tbody>
-            <tfoot className="bg-white">
+            <tfoot>
               <tr>
-                <td colSpan={4} className="px-6 py-4 text-right font-semibold text-harvics-gold/90">Subtotal:</td>
-                <td className="px-6 py-4 font-bold text-harvics-gold/90">${subtotal.toFixed(2)}</td>
-              </tr>
-              <tr>
-                <td colSpan={4} className="px-6 py-4 text-right font-semibold text-harvics-gold/90">Est. Freight:</td>
-                <td className="px-6 py-4 font-bold text-harvics-gold/90">${freight.toFixed(2)}</td>
-              </tr>
-              <tr>
-                <td colSpan={4} className="px-6 py-4 text-right text-lg font-bold text-harvics-gold/90">Total:</td>
-                <td className="px-6 py-4 text-lg font-bold text-white">${total.toFixed(2)}</td>
+                <td colSpan={4} className="px-4 py-3 text-right font-semibold">Total</td>
+                <td className="px-4 py-3 font-bold">${subtotal.toFixed(2)}</td>
               </tr>
             </tfoot>
           </table>
-        </div>
+        )}
       </div>
-
-      {/* Actions */}
-      <div className="flex space-x-4">
-        <button className="flex-1 bg-white text-white px-8 py-3 font-semibold hover:opacity-90 transition-opacity">
-          Submit Order
-        </button>
-        <Link
-          href={`/${locale}/distributor-portal/orders/new`}
-          className="flex-1 bg-white text-harvics-gold/90 px-8 py-3 font-semibold hover:bg-white transition-colors text-center"
+      <div className="flex gap-3">
+        <button
+          type="button"
+          disabled={submitting || cart.length === 0}
+          onClick={() => void submit()}
+          className="flex-1 bg-harvics-burgundy text-white px-8 py-3 font-semibold disabled:opacity-50"
         >
-          Back / Edit
-        </Link>
-        <button className="flex-1 bg-red-600 text-white px-8 py-3 font-semibold hover:opacity-90 transition-opacity">
-          Cancel
+          {submitting ? 'Submitting…' : 'Submit Order'}
         </button>
+        <Link href={`/${locale}/distributor-portal/orders/history`} className="flex-1 border text-center px-8 py-3 font-semibold">
+          View History
+        </Link>
       </div>
     </div>
   )
 }
-

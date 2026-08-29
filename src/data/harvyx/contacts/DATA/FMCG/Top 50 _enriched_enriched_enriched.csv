@@ -1,0 +1,53 @@
+First Name,Last Name,Title,Company,Email,Country,Industry,LinkedIn URL,enrichment_status,Website,Fair,Phone,email_is_business,website_ok,title_valid,tier1_passes,tier2_points,outreach_category,company_name,description,phone,address,linkedin_url,industry,company_name_scraped,phone_scraped,linkedin_company_url,score
+Pablo,Isla,CEO,Inditex,pablo.isla@inditex.com,Spain,Textile/Apparel,https://www.linkedin.com/in/pabloislaomil/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Karl-Johan,Persson,CEO,H&M Group,karl-johan.persson@hm.com,Sweden,Textile/Apparel,https://www.linkedin.com/in/karl-johan-persson-4b1a421/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Bernard,Arnault,Chairman & CEO,LVMH,bernard.arnault@lvmh.fr,France,Textile/Apparel,https://www.linkedin.com/in/bernard-arnault-66477b1a/,partial,,,,True,False,False,1,0,skip,,,,,,,,,,2
+Kasper,Rorsted,CEO,Adidas AG,kasper.rorsted@adidas.com,Germany,Textile/Apparel,https://www.linkedin.com/in/kasper-rorsted-b37b614/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Mark,Schneider,CEO,Nestle,mark.schneider@nestle.com,Switzerland,FMCG,https://www.linkedin.com/in/markuschneider1/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Alan,Jope,CEO,Unilever,alan.jope@unilever.com,UK,FMCG,https://www.linkedin.com/in/alanjope/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Emmanuel,Faber,Chairman & CEO,Danone,emmanuel.faber@danone.com,France,FMCG,https://www.linkedin.com/in/emmanuel-faber-8906495/,partial,,,,True,False,False,1,0,skip,,,,,,,,,,2
+Bjørn,Gulden,CEO,Puma SE,bjorn.gulden@puma.com,Germany,Textile/Apparel,https://www.linkedin.com/in/bjorn-gulden-15a0b484/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Robert,Gentz,Co-CEO,Zalando SE,robert.gentz@zalando.de,Germany,Textile/Apparel,https://www.linkedin.com/in/robert-gentz-74892a11/,partial,,,,True,False,False,1,0,skip,,,,,,,,,,2
+Ramon,Laguarta,Chairman & CEO,PepsiCo,ramon.laguarta@pepsico.com,United States,FMCG,https://www.linkedin.com/in/ramon-laguarta-1aa14732/,partial,,,,True,False,False,1,0,skip,,,,,,,,,,2
+Mark,Langer,CEO,HUGO BOSS AG,mark.langer@hugoboss.com,Germany,Textile/Apparel,https://www.linkedin.com/in/mark-langer-33124b53/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+James,Quincey,Chairman & CEO,The Coca-Cola Company,jquincey@coca-cola.com,United States,FMCG,https://www.linkedin.com/in/james-quincey-1a99ab12/,partial,,,,True,False,False,1,0,skip,,,,,,,,,,2
+Steve,Rowe,CEO,Marks and Spencer Group plc,steve.rowe@marks-and-spencer.com,UK,Textile/Apparel,https://www.linkedin.com/in/steve-rowe-4b2b9223/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+François-Henri,Pinault,Chairman & CEO,Kering,francois-henri.pinault@kering.com,France,Textile/Apparel,https://www.linkedin.com/in/francois-henri-pinault-a15b6/,partial,,,,True,False,False,1,0,skip,,,,,,,,,,2
+Mohammed,Alshaya,Executive Chairman,Alshaya Group,mohammed.alshaya@alshaya.com,Kuwait,Textile/Apparel,https://www.linkedin.com/in/mohammed-alshaya-27a40b69/,partial,,,,True,False,False,1,0,skip,,,,,,,,,,1
+Patrick,Chalhoub,CEO,Chalhoub Group,patrick.chalhoub@mailmac.net,UAE,Textile/Apparel,https://www.linkedin.com/in/patrick-chalhoub-0921b85/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Patrick,Bousquet-Chavanne,CEO,Emaar Malls,patrick.bousquet-chavanne@emaarmalls.ae,UAE,Textile/Apparel,https://www.linkedin.com/in/patrickbouquetchavanne/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Khalid,Al Tayer,CEO,Al Tayer Group,khalid.altayer@altayer.com,UAE,Textile/Apparel,https://www.linkedin.com/in/khalid-al-tayer-a0a63436/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Said,Daher,CEO,Azadea Group Holding,said.daher@azadea.com,UAE,Textile/Apparel,https://www.linkedin.com/in/said-daher-9aa9994/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Rajiv,Suri,CEO,Al Futtaim,rajiv.suri@alfuttaim.com,UAE,Textile/Apparel,https://www.linkedin.com/in/rajiv-suri-3b36967/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Marwan,Moukarzel,CEO,Alhokair Fashion Retail,marwan.moukarzel@alhokair.com,Saudi Arabia,Textile/Apparel,https://www.linkedin.com/in/marwan-moukarzel-1b43242/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Fahed,Ghanim,CEO,Majid Al Futtaim Fashion,fahed.ghanim@maf.ae,UAE,Textile/Apparel,https://www.linkedin.com/in/fahed-ghanim-64a18140/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Stefan,Larsson,President & CEO,PVH Corp.,stefan.larsson@pvh.com,United States,Textile/Apparel,https://www.linkedin.com/in/stefanlarsson1/,partial,,,,True,False,False,1,0,skip,,,,,,,,,,2
+Dirk,Van de Put,Chairman & CEO,Mondelez International,dirk.vandeput@mdlz.com,United States,FMCG,https://www.linkedin.com/in/dirkvandeput/,partial,,,,True,False,False,1,0,skip,,,,,,,,,,2
+Nicolas,Hieronimus,CEO,L'Oréal Group,nicolas.hieronimus@loreal.com,France,FMCG,https://www.linkedin.com/in/nicolashieronimus/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Toni,Ruiz,CEO,MANGO,toni.ruiz@mango.com,Spain,Textile/Apparel,https://www.linkedin.com/in/toni-ruiz-38a6b62/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Steve,Rendle,Chairman & CEO,VF Corporation,steve_rendle@vfc.com,United States,Textile/Apparel,https://www.linkedin.com/in/steve-rendle-4b69572/,partial,,,,True,False,False,1,0,skip,,,,,,,,,,2
+Nick,Beighton,CEO,ASOS,nick.beighton@asos.com,UK,Textile/Apparel,https://www.linkedin.com/in/nick-beighton-519bb45/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Julian,Dunkerton,CEO,Superdry plc,julian.dunkerton@superdry.com,UK,Textile/Apparel,https://www.linkedin.com/in/julian-dunkerton-8a1a998/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Marco,Gobbetti,CEO,Burberry,marco.gobbetti@burberry.com,UK,Textile/Apparel,https://www.linkedin.com/in/marcogobbetti/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Giny,Boer,CEO,C&A,giny.boer@canda.com,Germany,Textile/Apparel,https://www.linkedin.com/in/ginyboer/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+John,Lyttle,CEO,Boohoo Group plc,john.lyttle@boohoo.com,UK,Textile/Apparel,https://www.linkedin.com/in/johnlyttle/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Anders,Kristiansen,CEO,Esprit Holdings Limited,anders.kristiansen@esprit.com,Hong Kong,Textile/Apparel,https://www.linkedin.com/in/anders-kristiansen-7a18363/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Paul,Marchant,CEO,Primark,paul.marchant@primark.ie,Ireland,Textile/Apparel,https://www.linkedin.com/in/paul-marchant-a923304/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Lauren,Hobart,President & CEO,DICK'S Sporting Goods,lauren.hobart@dcsg.com,United States,Textile/Apparel,https://www.linkedin.com/in/laurenhobart/,partial,,,,True,False,False,1,0,skip,,,,,,,,,,2
+Simon,Wolfson,CEO,Next plc,wolfson_s@next.co.uk,UK,Textile/Apparel,https://www.linkedin.com/in/simon-wolfson-2a42006/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Jaume,Miquel,CEO,Grupo Cortefiel,jaume.miquel@grupocortefiel.com,Spain,Textile/Apparel,https://www.linkedin.com/in/jaume-miquel-88703a11/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Simon,Roberts,CEO,J Sainsbury plc,simon.roberts@sainsburys.co.uk,UK,FMCG,https://www.linkedin.com/in/simon-roberts-5bb1ba17/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Ken,Murphy,Group Chief Executive,Tesco PLC,ken.murphy@uk.tesco.com,UK,FMCG,https://www.linkedin.com/in/ken-murphy-45a48823/,partial,,,,True,False,False,1,0,skip,,,,,,,,,,1
+Alexandre,Bompard,Chairman & CEO,Carrefour,alexandre_bompard@carrefour.com,France,FMCG,https://www.linkedin.com/in/alexandre-bompard/,partial,,,,True,False,False,1,0,skip,,,,,,,,,,2
+Edgard,Bonte,CEO,Auchan Retail,edgard.bonte@auchan.com,France,FMCG,https://www.linkedin.com/in/edgard-bonte-50a34a11/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Werner,Baumann,CEO,Bayer AG,werner.baumann@bayer.com,Germany,FMCG,https://www.linkedin.com/in/werner-baumann-59a32b11/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Sebastian,James,Managing Director,Boots UK Limited,sebastian.james@boots.co.uk,UK,FMCG,https://www.linkedin.com/in/sebastian-james-29739621/,partial,,,,True,False,False,1,0,skip,,,,,,,,,,2
+Stefan,De Loecker,CEO,Beiersdorf AG,stefan.deloecker@beiersdorf.com,Germany,FMCG,https://www.linkedin.com/in/stefan-de-loecker-94a18a8/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Pascal,Soriot,CEO,AstraZeneca,pascal.soriot@astrazeneca.com,UK,FMCG,https://www.linkedin.com/in/pascal-soriot-7251b66/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Frans,van Houten,CEO,Royal Philips,frans.van.houten@philips.com,Netherlands,FMCG,https://www.linkedin.com/in/frans-van-houten-50580b1/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Emma,Walmsley,CEO,GlaxoSmithKline plc,emma.a.walmsley@gsk.com,UK,FMCG,https://www.linkedin.com/in/emma-walmsley-44a05a9b/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Martin,Brudermüller,CEO,BASF SE,martin.brudermueller@basf.com,Germany,FMCG,https://www.linkedin.com/in/martin-brudermueller-b79b91/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Laxman,Narasimhan,CEO,Reckitt Benckiser Group plc,laxman.narasimhan@rb.com,UK,FMCG,https://www.linkedin.com/in/laxman-narasimhan-6a72b64/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Christian,Klein,CEO,SAP SE,christian.klein@sap.com,Germany,HR,https://www.linkedin.com/in/christian-klein1/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2
+Roland,Busch,President & CEO,Siemens AG,roland.busch@siemens.com,Germany,HR,https://www.linkedin.com/in/roland-busch-6a8a4/,partial,,,,True,False,False,1,0,skip,,,,,,,,,,2
+Alain,Dehaze,CEO,Adecco Group AG,alain.dehaze@adeccogroup.com,Switzerland,HR,https://www.linkedin.com/in/alain-dehaze-8ab4451/,partial,,,,True,False,True,2,0,email only,,,,,,,,,,2

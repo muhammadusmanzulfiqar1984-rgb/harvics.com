@@ -3,13 +3,13 @@
   "home": {
     "welcome": "میں خوش آمدید",
     "companyName": "ہارویچ",
-    "tagline": "2019 سے پریمیم کنزیومر گڈز میں بہترین",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "مصنوعات دریافت کریں۔",
     "contact": "ہم سے رابطہ کریں۔",
     "learnMore": "مزید جانیں",
-    "brandStatement": "بین الاقوامی معیار کے معیار کے ساتھ متنوع زمروں میں پریمیم فوڈ پراڈکٹس فراہم کرنے والی ایک معروف عالمی صارفی اشیا کی کمپنی۔",
-    "taglineStart": "چونکہ پریمیم کنزیومر گڈز میں ایکسیلنس",
-    "taglineYear": "2019",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "لندن • میلان • نیویارک",
     "categories": {
       "bakery": "بیکری",
@@ -81,7 +81,8 @@
       "specialOffers": "خصوصی پیشکش",
       "promotions": "پروموشنز",
       "bulkOrders": "بلک آرڈر کی چھوٹ"
-    }
+    },
+    "startupAcademy": "اسٹارٹ اپ اکیڈمی"
   },
   "products": {
     "ourProducts": "ہماری مصنوعات",
@@ -119,7 +120,40 @@
     "whatsapp": "واٹس ایپ",
     "callNow": "ابھی کال کریں۔",
     "sendEmail": "ای میل بھیجیں۔",
-    "messageUs": "ہمیں میسج کریں۔"
+    "messageUs": "ہمیں میسج کریں۔",
+    "getInTouch": "رابطے میں رہیں",
+    "locations": "مقامات",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "پیغام بھیجیں۔",
+    "firstName": "پہلا نام",
+    "firstNamePlaceholder": "اپنا پہلا نام درج کریں۔",
+    "lastName": "آخری نام",
+    "lastNamePlaceholder": "اپنا آخری نام درج کریں۔",
+    "emailPlaceholder": "اپنا ای میل ایڈریس درج کریں۔",
+    "subject": "موضوع",
+    "subjectPlaceholder": "مضمون درج کریں۔",
+    "message": "پیغام",
+    "messagePlaceholder": "اپنا پیغام لکھیں۔",
+    "send": "بھیجیں۔",
+    "eyebrow": "ایک مختصر آغاز کریں۔",
+    "headline1": "ایک مختصر آغاز کریں۔",
+    "headline2": "ہم 24 گھنٹوں میں جواب دیتے ہیں۔",
+    "subhead": "ہمیں اپنا زمرہ، حجم، اور ہدف مارکیٹ بتائیں۔ ایک ماہر سورسنگ کے اختیارات اور اشارے کی قیمتوں کے ساتھ آپ کے پاس واپس آتا ہے۔",
+    "fullName": "پورا نام",
+    "fullNamePlaceholder": "شاہ تبریز",
+    "company": "کمپنی",
+    "companyPlaceholder": "آپ کی تنظیم",
+    "businessEmail": "بزنس ای میل",
+    "howCanWeHelp": "ہم کس طرح مدد کر سکتے ہیں؟",
+    "sending": "بھیج رہا ہے...",
+    "sendEnquiry": "انکوائری بھیجیں۔",
+    "sentTitle": "پیغام بھیجا گیا۔",
+    "sentSub": "ہماری ٹیم 24 گھنٹوں کے اندر جواب دے گی۔",
+    "directChannels": "براہ راست چینلز",
+    "trust1": "24 گھنٹے جواب کی ضمانت",
+    "trust2": "سرشار اکاؤنٹ مینیجر",
+    "trust3": "NDA available on request",
+    "trust4": "42 مارکیٹیں · آج 1,247 ترسیل"
   },
   "media": {
     "title": "میڈیا سنٹر",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "ہاروکس گلوبل وینچرز",
-    "tagline": "2019 سے پریمیم کنزیومر گڈز میں بہترین",
-    "brandStatement": "بین الاقوامی معیار کے معیار کے ساتھ متنوع زمروں میں پریمیم فوڈ پراڈکٹس فراہم کرنے والی ایک معروف عالمی صارفی اشیا کی کمپنی۔",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "لندن • میلان • نیویارک",
     "since": "2019 سے",
     "harvicsNews": "ہاروکس نیوز",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "ہمارے نیٹ ورک میں شامل ہوں",
     "newsletterTagline": "تازہ ترین تجارتی معلومات اور مارکیٹ اپڈیٹس حاصل کریں",
     "activeShipments": "فعال شپمنٹس",
-    "certifiedAudited": "تصدیق شدہ اور آڈٹ شدہ"
+    "certifiedAudited": "تصدیق شدہ اور آڈٹ شدہ",
+    "invalidEmail": "براہ کرم ایک درست ای میل ایڈریس درج کریں۔",
+    "subscriptionSuccess": "سبسکرائب کرنے کے لیے آپ کا شکریہ!",
+    "subscriptionError": "کچھ غلط ہو گیا۔ براہ کرم دوبارہ کوشش کریں۔"
   },
   "search": {
     "placeholder": "مصنوعات، برانڈز، یا زمرے تلاش کریں۔",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "معذرت، میں یہ نہیں سمجھا۔ کیا آپ براہ کرم دوبارہ بیان کر سکتے ہیں؟",
       "help": "میں مصنوعات کی معلومات، آرڈرز، یا عام پوچھ گچھ میں آپ کی مدد کر سکتا ہوں۔ آپ کیا جاننا چاہیں گے؟",
-      "contact": "مزید مدد کے لیے، براہ کرم ہم سے support@harvics.com پر رابطہ کریں یا +1-800-HARVICS پر کال کریں۔"
-    }
+      "contact": "مزید مدد کے لیے، براہ کرم ہم سے support@harvics.com پر رابطہ کریں یا +1-800-HARVICS پر کال کریں۔",
+      "product": "مینو سے ہمارے پروڈکٹ کیٹلاگ کو براؤز کریں، یا مجھے بتائیں کہ آپ کو کس زمرے میں دلچسپی ہے — FMCG، ٹیکسٹائل، لاجسٹکس، اور مزید۔",
+      "order": "آرڈر دینے یا اسٹیٹس چیک کرنے کے لیے، ڈسٹری بیوٹر پورٹل پر جائیں یا اپنے اکاؤنٹ مینیجر سے رابطہ کریں۔",
+      "about": "Harvics Global Ventures 40+ ممالک میں 20+ سال کے ساتھ ایک خودمختار تجارتی انفراسٹرکچر کمپنی ہے۔"
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "بھیجنے کے لیے Enter دبائیں۔"
   },
   "common": {
     "chatWithUs": "ہمارے ساتھ چیٹ کریں۔",
@@ -730,12 +772,17 @@
       "gps-tracking": "GPS ٹریکنگ",
       "localization": "لوکلائزیشن",
       "workflows": "ورک فلو",
-      "admin": "ایڈمن"
+      "admin": "ایڈمن",
+      "modules": "ماڈیولز"
     },
     "kpis": {
       "customers": "گاہکوں",
       "employees": "ملازمین",
-      "profit": "منافع"
+      "profit": "منافع",
+      "totalOrders": "کل آرڈرز",
+      "inventoryValue": "انوینٹری ویلیو",
+      "logisticsEfficiency": "لاجسٹک کی کارکردگی",
+      "revenue": "آمدنی"
     },
     "domain": {
       "title": "CRM OS",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "اپنے گاہک کے تعلقات، تعاملات اور مہمات دیکھیں اور ان کا نظم کریں۔",
       "loading": "لوڈ ہو رہا ہے...",
       "error": "CRM ڈیٹا لوڈ کرنے میں خرابی۔"
+    },
+    "roleIndicator": {
+      "manager": "مینیجر ویو",
+      "executive": "ایگزیکٹو ویو",
+      "investor": "سرمایہ کار کا نظارہ",
+      "distributor": "تقسیم کار کا نظارہ",
+      "supplier": "سپلائر کا نظارہ",
+      "customer": "کسٹمر ویو"
     }
   },
   "supplierPortal": {
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "ہاروکس کے بارے میں",
-    "subtitle": "2019 سے پریمیم کنزیومر گڈز میں بہترین",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "ہماری کہانی",
     "story1": "2019 میں قائم کیا گیا، Harvics ایک وژنری آئیڈیا سے پریمئم کنزیومر گڈز میں عالمی رہنما بن گیا ہے۔ ہمارے سفر کی تعریف معیار کی مسلسل جستجو اور جدت طرازی کے عزم سے ہوتی ہے۔",
     "story2": "ہم 40+ ممالک میں کام کرتے ہیں، ایسی مصنوعات فراہم کرتے ہیں جو زندگیوں کو تقویت بخشتی ہیں اور صنعت میں نئے معیارات قائم کرتی ہیں۔ ہماری عاجزانہ شروعات سے لے کر ہماری عالمی موجودگی تک، ہماری اقدار میں کوئی تبدیلی نہیں آئی۔",
@@ -1156,67 +1211,67 @@
     "backToHelpCenter": "امدادی مرکز پر واپس جائیں۔",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "اکثر پوچھے گئے سوالات",
+        "description": "عام سوالات کے جوابات تلاش کریں۔"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "سپورٹ سے رابطہ کریں۔",
+        "description": "ہماری سپورٹ ٹیم سے رابطہ کریں۔"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "یوزر گائیڈز",
+        "description": "مرحلہ وار گائیڈز اور ٹیوٹوریلز"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "خرابی کا سراغ لگانا",
+        "description": "عام مسائل کو حل کریں۔"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "اکاؤنٹ مدد",
+        "description": "اپنے اکاؤنٹ اور ترتیبات کا نظم کریں۔"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "آرڈر سپورٹ",
+        "description": "آرڈرز اور ڈیلیوری میں مدد کریں۔"
       }
     },
     "account": {
       "title": "اکاؤنٹ مدد",
       "subtitle": "اپنے اکاؤنٹ کی ترتیبات اور ترجیحات کا نظم کریں۔",
-      "placeholder": "Account management and settings help content will appear here."
+      "placeholder": "اکاؤنٹ کا نظم و نسق اور ترتیبات میں مدد کا مواد یہاں ظاہر ہوگا۔"
     },
     "orders": {
       "title": "آرڈر سپورٹ",
       "subtitle": "اپنے آرڈرز اور ڈیلیوری کو ٹریک کریں اور ان کا نظم کریں۔",
-      "placeholder": "Order and delivery support content will appear here."
+      "placeholder": "آرڈر اور ڈیلیوری سپورٹ مواد یہاں ظاہر ہوگا۔"
     },
     "guides": {
       "title": "یوزر گائیڈز",
       "subtitle": "ہاروکس سے زیادہ سے زیادہ فائدہ اٹھانے میں آپ کی مدد کے لیے مرحلہ وار گائیڈز",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "شروع کرنا",
+          "description": "بنیادی باتیں سیکھیں۔"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "اکاؤنٹ سیٹ اپ",
+          "description": "اپنا اکاؤنٹ ترتیب دیں۔"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "آرڈر کرنے کا طریقہ",
+          "description": "آرڈر دیں اور ٹریک کریں۔"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "ادائیگی کے طریقے",
+          "description": "ادائیگی کے اختیارات اور سیکیورٹی"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "شپنگ اور ترسیل",
+          "description": "ترسیل کی معلومات"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "ریٹرن اور ریفنڈز",
+          "description": "واپسی کی پالیسی اور عمل"
         }
       }
     },
@@ -1225,20 +1280,20 @@
       "subtitle": "عام مسائل اور فوری حل",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "لاگ ان کے مسائل",
+          "description": "سائن ان کرنے میں دشواری"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "ادائیگی کے مسائل",
+          "description": "ادائیگی پر کارروائی نہیں ہو رہی"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "ڈیلیوری میں تاخیر",
+          "description": "آرڈر نہیں آرہا ہے۔"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "ویب سائٹ کی خرابیاں",
+          "description": "صفحہ لوڈ نہیں ہو رہا ہے۔"
         }
       }
     }
@@ -1250,28 +1305,28 @@
     "shippingInfo": "شپنگ کی معلومات",
     "paymentMethod": "ادائیگی کا طریقہ",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "کریڈٹ/ڈیبٹ کارڈ",
+      "bankTransfer": "بینک ٹرانسفر (LC/TT)",
       "wallet": "HPay Digital Wallet"
     },
     "orderSummary": "آرڈر کا خلاصہ",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
-      "total": "Total"
+      "subtotal": "ذیلی ٹوٹل",
+      "shipping": "شپنگ",
+      "calculatedNextStep": "اگلے مرحلے پر حساب لگایا گیا۔",
+      "tax": "ٹیکس",
+      "total": "کل"
     },
     "placeOrder": "آرڈر کریں۔",
-    "sslNotice": "Secured with 256-bit SSL encryption",
+    "sslNotice": "256 بٹ SSL انکرپشن کے ساتھ محفوظ",
     "continueShopping": "خریداری جاری رکھیں",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "پہلا نام",
+      "lastName": "آخری نام",
+      "email": "ای میل",
+      "address": "پتہ",
+      "city": "شہر",
+      "country": "ملک"
     }
   },
   "history": {
@@ -1286,45 +1341,143 @@
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "دبئی میں قائم ہوا۔",
+        "description": "ہاروکس گلوبل وینچرز کا قیام متحدہ عرب امارات میں عالمی معیار کا FMCG اور کثیر عمودی تجارتی گروہ بننے کے وژن کے ساتھ کیا گیا۔ ٹیکسٹائل اور کنزیومر گڈز پر پہلا آپریشن شروع کیا گیا۔",
+        "highlight": "ایک سال"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "پہلی بین الاقوامی توسیع",
+        "description": "عالمی وبائی چیلنجوں کے باوجود پورے یورپ، مشرق وسطیٰ اور جنوبی ایشیا کے 10 ممالک تک پھیل گیا۔ ڈیجیٹل سپلائی چین آپریشنز اور ریموٹ ڈسٹری بیوشن پارٹنرشپ کا آغاز کیا۔",
+        "highlight": "10 ممالک"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "کثیر عمودی توسیع",
+        "description": "5 نئے صنعتی عمودی کا آغاز کیا: اشیاء، صنعتی آلات، معدنیات اور کان کنی، تیل اور گیس، اور ریئل اسٹیٹ۔ تمام عمودی حصوں میں کل پروڈکٹ کیٹلاگ 500 SKUs سے تجاوز کر گیا۔",
+        "highlight": "5 نئے عمودی"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "ڈیجیٹل تبدیلی",
+        "description": "Harvics OS کا پہلا ورژن بنایا — AI سے چلنے والا انٹرپرائز پلیٹ فارم۔ تمام مارکیٹوں میں تقسیم کار پورٹلز، ای کامرس کی صلاحیتیں، اور ریئل ٹائم GPS فلیٹ ٹریکنگ کا آغاز کیا۔",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "پائیداری اور پیمانہ",
+        "description": "کاربن نیوٹرل آپریشنز کے لیے پرعزم۔ 30+ ممالک تک پہنچ گئے۔ HPay (ڈیجیٹل ادائیگیوں کا پلیٹ فارم)، تجارتی مالیاتی حل، اور تمام عمودی حصوں میں AI سے چلنے والی طلب کی پیشن گوئی کا آغاز کیا۔",
+        "highlight": "30+ ممالک"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "گلوبل انٹرپرائز",
+        "description": "42+ ممالک کا سنگ میل عبور کیا۔ حکمت عملی، طلب، قیمتوں کا تعین، کوریج، اور SKU آپٹیمائزیشن کے لیے 6 ML ماڈلز کے ساتھ AI انجن کو تعینات کیا گیا۔ 38 زبانوں کو سپورٹ کرنے والا ملٹی لینگویج پلیٹ فارم لانچ کیا۔",
+        "highlight": "42+ ممالک"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "اے آئی فرسٹ آپریٹنگ سسٹم",
+        "description": "Harvics OS v2 نے لانچ کیا — ریئل ٹائم انٹیلی جنس کے ساتھ متحد انٹرپرائز آپریٹنگ سسٹم، Socket.io لائیو فیڈز، مارکیٹ اٹیک پلانز کے لیے الفا انجن، اور 8 سطحی جغرافیائی درجہ بندی مکمل۔",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "آگے کا ویژن",
+        "description": "60+ ممالک میں اسکیلنگ۔ دنیا کے پہلے AI سے چلنے والے FMCG انٹرپرائز کی تعمیر جہاں ہر فنکشن — پروکیورمنٹ، لاجسٹکس، فنانس، CRM — انسانی منظوری کے دروازوں کے ساتھ پیش گوئی کرنے والی ذہانت پر چلتا ہے۔",
+        "highlight": "60+ ہدف"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "بانیوں کے لیے عملی تجارت، سورسنگ، اور AI اکیڈمی - چھ ہفتے، لائیو سیشنز، ہاروکس کوریڈورز۔",
+    "navLabel": "اسٹارٹ اپ اکیڈمی",
+    "teaser": {
+      "eyebrow": "اکیڈمی · کوریڈور پروگرام",
+      "title": "اسٹارٹ اپ اکیڈمی۔",
+      "body": "ہاروکس مارکیٹ پلیس کے ساتھ بانیوں کے لیے کلاسیکی تجارتی دستکاری — سورسنگ، QC، فنڈنگ ​​ڈیسک، اور کوریڈور لٹریسی۔",
+      "cta": "اکیڈمی میں داخل ہوں۔"
+    },
+    "hero": {
+      "alt": "کلاسیکل لیکچر ہال - ہاروکس اسٹارٹ اپ اکیڈمی",
+      "eyebrow": "کوہورٹ 01 · Q4 2026 · معاون پروگرام",
+      "title": "Harvics Startup Academy",
+      "body": "بانیوں کے لیے تجارت کا ایک کلاسیکل اسکول — سورسنگ، کوریڈور کامرس، اور AI جو کام کرتا ہے۔ چھ ہفتے۔ لائیو سیشنز۔ اصلی آپریٹرز۔",
+      "apply": "Cohort 01 کے لیے درخواست دیں۔",
+      "seeProgramme": "پروگرام دیکھیں"
+    },
+    "stats": {
+      "founders": "بانی / گروہ",
+      "sessions": "لائیو سیشنز",
+      "weeks": "ہفتے",
+      "verticals": "عمودی تجارت"
+    },
+    "why": {
+      "eyebrow": "01 · کیوں شامل ہوں؟",
+      "title": "ایسی کمپنی بنائیں جو اصل میں تجارت کر سکے۔",
+      "body": "پچ تھیٹر نہیں۔ ہاروکس کوریڈورز کے آپریٹرز سے سیٹلمنٹ، سورسنگ ڈیلیجنس، خریدار کی رسائی، اور آٹومیشن کے لیے RFQ سیکھیں۔",
+      "item1Title": "عملی تجارتی نظام",
+      "item1Body": "ادارہ جاتی خریدار کس طرح خریدتے ہیں — اور آپ کیسے پورا کرتے ہیں۔",
+      "item2Title": "نیٹ ورک جو جہاز بھیجتا ہے۔",
+      "item2Body": "عمودی حصوں میں بانی، تقسیم کار اور آپریٹرز۔",
+      "item3Title": "AI جو کام کرتا ہے۔",
+      "item3Body": "ہاروی ایکس، فائن وائس، اور اوپس آٹومیشن بغیر بز ورڈز کے۔",
+      "imageAlt": "کلاسیکی تجارت اب بھی زندگی"
+    },
+    "knowledge": {
+      "eyebrow": "علم",
+      "title": "ایک نظم و ضبط کی طرح راہداری کا مطالعہ کریں۔",
+      "body": "نصاب حقیقی تجارتی مشق سے تیار کیا گیا ہے - عام آغاز کی سلائیڈوں سے نہیں۔",
+      "imageAlt": "عظیم الشان کلاسیکی لائبریری"
+    },
+    "programme": {
+      "eyebrow": "02 · پروگرام",
+      "title": "جس کے ذریعے آپ کام کریں گے۔",
+      "m1Title": "برانڈ اور سورسنگ",
+      "m1Body": "MOQs، QC گیٹس، ٹیکسٹائل اور FMCG - راہداری سے اٹیلیر۔",
+      "m2Title": "انٹیلی جنس اور آؤٹ ریچ",
+      "m2Body": "HarvyX لیبز، خریدار ICP، فالو اپس جو جوابات حاصل کرتے ہیں۔",
+      "m3Title": "سرمایہ اور شراکت دار",
+      "m3Body": "فنڈنگ ​​کے راستے اور شراکت داری - کوئی جعلی بینک دعوے نہیں۔",
+      "m4Title": "کوریڈور کامرس",
+      "m4Body": "بندرگاہیں، گلیاں، اور سامان اصل میں بازاروں میں کیسے منتقل ہوتا ہے۔",
+      "m5Title": "معیار اور تندہی",
+      "m5Body": "معائنہ کی عادات جو شہرت اور تصفیہ کی حفاظت کرتی ہیں۔",
+      "m6Title": "اشیاء اور FMCG",
+      "m6Body": "گودام کی حقیقت سے برانڈ اور تھوک کی مانگ تک۔"
+    },
+    "tracks": {
+      "aEyebrow": "ٹریک اے",
+      "aTitle": "برانڈ اور کامرس",
+      "aBody": "ملبوسات اور ایف ایم سی جی کے بانی برانڈ، ہول سیل، اور کوریڈور کی مانگ۔",
+      "aAlt": "کلاسیکی بورڈ روم",
+      "bEyebrow": "ٹریک بی",
+      "bTitle": "تجارت اور آپریشن",
+      "bBody": "سورسنگ، لاجسٹکس، اور B2B آپریٹرز ادارہ جاتی تجارت کی پیمائش کرتے ہیں۔",
+      "bAlt": "سیلون نیٹ ورکنگ"
+    },
+    "network": {
+      "eyebrow": "03 · نیٹ ورک",
+      "title": "آپریٹرز سے ملو، سامعین سے نہیں۔",
+      "body": "بانیوں، تقسیم کاروں، اور ہاروکس کوریڈور آپریٹرز کے ساتھ لائیو سیشنز اور سیلون طرز کے دفتری اوقات۔",
+      "imageAlt": "بانی نیٹ ورکنگ"
+    },
+    "rhythm": {
+      "eyebrow": "04 · تال",
+      "title": "چھ ہفتے۔ واضح کیڈنس۔",
+      "w1": "ہفتہ 1",
+      "w1Body": "واقفیت · راہداری کا نقشہ · ICP ورکشاپ",
+      "w2": "ہفتہ 2",
+      "w2Body": "خریدار کی رسائی · ہاروی ایکس لیب",
+      "w3": "ہفتہ 3",
+      "w3Body": "سورسنگ اور QC · سپلائر کی مستعدی",
+      "w4": "ہفتہ 4",
+      "w4Body": "آٹومیشن · فائن وائس · اوپس اسٹیک",
+      "w5": "ہفتہ 5",
+      "w5Body": "فنڈنگ ​​اور شراکت داری",
+      "w6": "ہفتہ 6",
+      "w6Body": "بانی شوکیس · اگلے اقدامات"
+    },
+    "apply": {
+      "eyebrow": "ایپلی کیشنز",
+      "title": "Cohort 01 کے لیے درخواست دیں۔",
+      "body": "محدود نشستیں۔ ہمیں اپنی کمپنی، عمودی، اور آپ کیا بنا رہے ہیں بتائیں۔",
+      "emailCta": "ای میل کے ذریعے درخواست دیں →",
+      "back": "ہاروکس پر واپس جائیں۔"
     }
   }
 }

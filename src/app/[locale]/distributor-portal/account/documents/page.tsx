@@ -1,130 +1,47 @@
 'use client'
 
-import React, { useState } from 'react'
-import { useLocale } from 'next-intl'
+import React, { useEffect, useState } from 'react'
 import LocalizationBar from '@/components/shared/LocalizationBar'
+import { fetchDocuments } from '@/lib/distributorPortal'
 
-export default function Documents() {
-  const locale = useLocale()
-  const [showUploadModal, setShowUploadModal] = useState(false)
+export default function AccountDocumentsPage() {
+  const [docs, setDocs] = useState<any[]>([])
+  const [loading, setLoading] = useState(true)
 
-  const documents = [
-    { name: 'Distribution Agreement 2025', type: 'Contract', uploadedOn: '2025-01-01', expiryDate: '2025-12-31' },
-    { name: 'Business License', type: 'License', uploadedOn: '2024-06-15', expiryDate: '2025-06-14' },
-    { name: 'Tax Certificate', type: 'Compliance', uploadedOn: '2024-12-01', expiryDate: null },
-    { name: 'Invoice January 2025', type: 'Invoice', uploadedOn: '2025-01-15', expiryDate: null },
-  ]
-
-  const getTypeColor = (type: string) => {
-    switch(type) {
-      case 'Contract': return 'bg-blue-100 text-blue-800'
-      case 'License': return 'bg-green-100 text-green-800'
-      case 'Compliance': return 'bg-purple-100 text-purple-800'
-      case 'Invoice': return 'bg-harvics-gold/20 text-harvics-gold'
-      default: return 'bg-white text-harvics-gold/90'
-    }
-  }
+  useEffect(() => {
+    void fetchDocuments('Distributor').then(setDocs).catch(() => setDocs([])).finally(() => setLoading(false))
+  }, [])
 
   return (
     <div className="space-y-6">
-      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
-      <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-harvics-gold">Documents</h1>
-        <button
-          onClick={() => setShowUploadModal(true)}
-          className="bg-harvics-gold text-harvics-burgundy px-6 py-2 font-semibold hover:opacity-90 transition-opacity"
-        >
-          Upload Document
-        </button>
-      </div>
-
-      <div className="bg-white border border-black200 shadow-sm overflow-hidden">
-        <div className="overflow-x-auto">
-          <table className="w-full">
-            <thead className="bg-white">
-              <tr>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Document Name</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Type</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Uploaded On</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Expiry Date</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Action</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-200">
-              {documents.map((doc, index) => (
-                <tr key={index} className="hover:bg-white">
-                  <td className="px-6 py-4 font-semibold text-harvics-gold/90">{doc.name}</td>
-                  <td className="px-6 py-4">
-                    <span className={`px-3 py-1 rounded-full text-xs font-semibold ${getTypeColor(doc.type)}`}>
-                      {doc.type}
-                    </span>
-                  </td>
-                  <td className="px-6 py-4 text-sm text-harvics-gold/90">{doc.uploadedOn}</td>
-                  <td className="px-6 py-4 text-sm text-harvics-gold/90">
-                    {doc.expiryDate || <span className="text-harvics-gold/90">N/A</span>}
-                  </td>
-                  <td className="px-6 py-4">
-                    <button className="text-harvics-gold hover:underline text-sm font-semibold">
-                      Download
-                    </button>
-                  </td>
-                </tr>
+      <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} />
+      <h1 className="text-2xl font-bold text-harvics-burgundy">Account Documents</h1>
+      {loading ? (
+        <p className="text-sm text-gray-600">Loading…</p>
+      ) : docs.length === 0 ? (
+        <p className="text-sm text-gray-600">No documents yet — upload via Module #52 Document Vault or Legal OS.</p>
+      ) : (
+        <table className="w-full text-sm bg-white border">
+          <thead className="bg-[#F5F0E8]">
+            <tr>
+              {['Title', 'Type', 'Category', 'Status', 'Expires'].map((h) => (
+                <th key={h} className="px-4 py-3 text-left text-xs font-semibold uppercase">{h}</th>
               ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      {/* Upload Modal */}
-      {showUploadModal && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-          <div className="bg-white p-6 max-w-md w-full mx-4">
-            <div className="flex items-center justify-between mb-6">
-              <h2 className="text-xl font-bold text-harvics-gold">Upload Document</h2>
-              <button
-                onClick={() => setShowUploadModal(false)}
-                className="text-harvics-gold/90 hover:text-harvics-gold/90"
-              >
-                ✕
-              </button>
-            </div>
-            <form className="space-y-4">
-              <div>
-                <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Document Name *</label>
-                <input type="text" className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black" required />
-              </div>
-              <div>
-                <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Type *</label>
-                <select className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black" required>
-                  <option value="">Select Type</option>
-                  <option value="Contract">Contract</option>
-                  <option value="License">License</option>
-                  <option value="Compliance">Compliance</option>
-                  <option value="Invoice">Invoice</option>
-                  <option value="Other">Other</option>
-                </select>
-              </div>
-              <div>
-                <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Expiry Date (Optional)</label>
-                <input type="date" className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black" />
-              </div>
-              <div>
-                <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Upload File *</label>
-                <input type="file" className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black" required />
-              </div>
-              <div className="flex space-x-4">
-                <button type="submit" className="flex-1 bg-harvics-gold text-harvics-burgundy px-6 py-3 font-semibold hover:opacity-90 transition-opacity">
-                  Upload
-                </button>
-                <button type="button" onClick={() => setShowUploadModal(false)} className="flex-1 bg-white text-harvics-gold/90 px-6 py-3 font-semibold hover:bg-white transition-colors">
-                  Cancel
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
+            </tr>
+          </thead>
+          <tbody className="divide-y">
+            {docs.map((d) => (
+              <tr key={d.id}>
+                <td className="px-4 py-3 font-semibold">{d.title}</td>
+                <td className="px-4 py-3">{d.type}</td>
+                <td className="px-4 py-3">{d.category}</td>
+                <td className="px-4 py-3">{d.status}</td>
+                <td className="px-4 py-3">{d.expiryDate || '—'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       )}
     </div>
   )
 }
-

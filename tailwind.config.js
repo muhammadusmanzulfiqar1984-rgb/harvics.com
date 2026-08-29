@@ -14,6 +14,8 @@ const config = {
           gold: '#C3A35E',
           goldMuted: 'rgba(195,163,94,0.6)',
           goldDivider: 'rgba(195,163,94,0.2)',
+          grid: 'rgba(14,12,9,0.78)',
+          gridBorder: 'rgba(197,160,89,0.35)',
           burgundy: '#3D1212',
           maroon: '#3D1212',
           dark: '#3D1212',

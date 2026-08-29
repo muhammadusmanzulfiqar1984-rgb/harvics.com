@@ -3,13 +3,13 @@
   "home": {
     "welcome": "Welkom bij",
     "companyName": "Harwich",
-    "tagline": "Uitmuntendheid in hoogwaardige consumentengoederen sinds 2019.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "Ontdek producten",
     "contact": "Neem contact met ons op",
     "learnMore": "Meer informatie",
-    "brandStatement": "Een toonaangevend wereldwijd bedrijf in consumentengoederen dat hoogwaardige voedingsproducten levert in diverse categorieën, met internationale kwaliteitsnormen.",
-    "taglineStart": "Uitmuntendheid in hoogwaardige consumentengoederen sinds",
-    "taglineYear": "2019",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "Londen • Milaan • New York",
     "categories": {
       "bakery": "Bakkerij",
@@ -81,7 +81,8 @@
       "specialOffers": "Speciale aanbiedingen",
       "promotions": "Promoties",
       "bulkOrders": "Korting bij bulkbestellingen"
-    }
+    },
+    "startupAcademy": "Startup Academie"
   },
   "products": {
     "ourProducts": "Onze producten",
@@ -119,7 +120,40 @@
     "whatsapp": "WhatsApp",
     "callNow": "Bel nu",
     "sendEmail": "E-mail verzenden",
-    "messageUs": "Stuur ons een bericht"
+    "messageUs": "Stuur ons een bericht",
+    "getInTouch": "Neem contact op",
+    "locations": "Locaties",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "Bericht verzenden",
+    "firstName": "Voornaam",
+    "firstNamePlaceholder": "Voer uw voornaam in",
+    "lastName": "Achternaam",
+    "lastNamePlaceholder": "Voer uw achternaam in",
+    "emailPlaceholder": "Voer uw e-mailadres in",
+    "subject": "Onderwerp",
+    "subjectPlaceholder": "Voer onderwerp in",
+    "message": "Bericht",
+    "messagePlaceholder": "Schrijf uw bericht",
+    "send": "Versturen",
+    "eyebrow": "Begin een briefing",
+    "headline1": "Begin een korte.",
+    "headline2": "Wij reageren binnen 24 uur.",
+    "subhead": "Vertel ons uw categorie, volume en doelgroep. Een specialist neemt contact met u op met inkoopopties en indicatieve prijzen.",
+    "fullName": "Volledige naam",
+    "fullNamePlaceholder": "Sjah Tabraiz",
+    "company": "Bedrijf",
+    "companyPlaceholder": "Jouw organisatie",
+    "businessEmail": "Zakelijke e-mail",
+    "howCanWeHelp": "Hoe kunnen wij helpen?",
+    "sending": "Verzenden...",
+    "sendEnquiry": "Onderzoek verzenden",
+    "sentTitle": "Bericht verzonden.",
+    "sentSub": "Ons team zal binnen 24 uur reageren.",
+    "directChannels": "Directe kanalen",
+    "trust1": "24-uurs responsgarantie",
+    "trust2": "Toegewijde accountmanager",
+    "trust3": "NDA available on request",
+    "trust4": "42 markten · 1.247 zendingen vandaag"
   },
   "media": {
     "title": "Mediacentrum",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "Harvics Global Ventures",
-    "tagline": "Uitmuntendheid in hoogwaardige consumentengoederen sinds 2019.",
-    "brandStatement": "Een toonaangevend wereldwijd bedrijf in consumentengoederen dat hoogwaardige voedingsproducten levert in diverse categorieën volgens internationale kwaliteitsnormen.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "Londen • Milaan • New York",
     "since": "Sinds 2019",
     "harvicsNews": "Harvics Nieuws",
@@ -196,7 +230,7 @@
     "unsubscribe": "Uitschrijven",
     "help": "Hulp",
     "privacy": "Privacy",
-    "cookies": "Cookies",
+    "cookies": "Koekjes",
     "termsOfUse": "Gebruiksvoorwaarden",
     "accessibility": "Toegankelijkheid",
     "carbonEfficiency": "Koolstofefficiëntie",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "Word lid van ons netwerk",
     "newsletterTagline": "Ontvang de nieuwste handelsinformatie en marktupdates",
     "activeShipments": "Actieve zendingen",
-    "certifiedAudited": "Gecertificeerd en geaudit"
+    "certifiedAudited": "Gecertificeerd en geaudit",
+    "invalidEmail": "Voer een geldig e-mailadres in",
+    "subscriptionSuccess": "Bedankt voor het abonneren!",
+    "subscriptionError": "Er is iets misgegaan. Probeer het opnieuw."
   },
   "search": {
     "placeholder": "Zoek naar producten, merken of categorieën.",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "Sorry, ik heb dat niet begrepen. Zou u het alstublieft anders kunnen formuleren?",
       "help": "Ik kan u helpen met productinformatie, bestellingen of algemene vragen. Wat wilt u weten?",
-      "contact": "Voor verdere hulp kunt u contact met ons opnemen via support@harvics.com of bellen naar +1-800-HARVICS."
-    }
+      "contact": "Voor verdere hulp kunt u contact met ons opnemen via support@harvics.com of bellen naar +1-800-HARVICS.",
+      "product": "Blader door onze productcatalogus via het menu, of vertel me welke categorie u interesseert: FMCG, textiel, logistiek en meer.",
+      "order": "Om een ​​bestelling te plaatsen of de status te controleren, gaat u naar het distributeursportaal of neemt u contact op met uw accountmanager.",
+      "about": "Harvics Global Ventures is een soeverein handelsinfrastructuurbedrijf met meer dan 20 jaar ervaring in meer dan 40 landen."
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "Druk op Enter om te verzenden"
   },
   "common": {
     "chatWithUs": "Chat met ons",
@@ -253,7 +295,7 @@
     "search": "Zoekopdracht",
     "filter": "Filter",
     "clear": "Duidelijk",
-    "download": "Download",
+    "download": "Downloaden",
     "upload": "Uploaden",
     "yes": "Ja",
     "no": "Nee",
@@ -272,7 +314,7 @@
     "city": "Stad",
     "all": "Alle",
     "none": "Geen",
-    "select": "Select",
+    "select": "Selecteer",
     "selectCountry": "Land selecteren",
     "required": "Vereist",
     "menu": "Menu",
@@ -349,7 +391,7 @@
         "pendingDeliveriesSubtitle": "Over toegewezen routes",
         "retailers": "Detailhandelaren",
         "retailersSubtitle": "Actieve verkooppunten binnen dit bereik",
-        "attendance": "T & A Score",
+        "attendance": "T & A-score",
         "attendanceSubtitle": "Territoriale dekking"
       },
       "financial": {
@@ -642,7 +684,7 @@
       "title": "Route opnieuw afspelen",
       "employee": "Medewerker",
       "speed": "Snelheid",
-      "reset": "Reset",
+      "reset": "Opnieuw instellen",
       "play": "Toneelstuk",
       "pause": "Pauze",
       "points": "punten",
@@ -707,7 +749,7 @@
     "investor": "Investeerder",
     "legal-ipr": "Juridische informatie/Intellectuele eigendomsrechten",
     "competitor": "Concurrent",
-    "import-export": "Import/Export",
+    "import-export": "Importeren/exporteren",
     "gps-tracking": "GPS-tracking",
     "localization": "Lokalisatie",
     "workflows": "Werkstromen",
@@ -726,16 +768,21 @@
       "investor": "Investeerder",
       "legal-ipr": "Juridische informatie/Intellectuele eigendomsrechten",
       "competitor": "Concurrent",
-      "import-export": "Import/Export",
+      "import-export": "Importeren/exporteren",
       "gps-tracking": "GPS-tracking",
       "localization": "Lokalisatie",
       "workflows": "Werkstromen",
-      "admin": "Beheerder"
+      "admin": "Beheerder",
+      "modules": "Modules"
     },
     "kpis": {
       "customers": "Klanten",
       "employees": "Medewerkers",
-      "profit": "Winst"
+      "profit": "Winst",
+      "totalOrders": "Totaal aantal bestellingen",
+      "inventoryValue": "Voorraadwaarde",
+      "logisticsEfficiency": "Logistieke efficiëntie",
+      "revenue": "Winst"
     },
     "domain": {
       "title": "CRM-besturingssysteem",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "Bekijk en beheer uw klantrelaties, interacties en campagnes.",
       "loading": "Laden...",
       "error": "Fout bij het laden van CRM-gegevens."
+    },
+    "roleIndicator": {
+      "manager": "Managerweergave",
+      "executive": "Executive-weergave",
+      "investor": "Beleggersvisie",
+      "distributor": "Distributeurweergave",
+      "supplier": "Leveranciersweergave",
+      "customer": "Klantbeeld"
     }
   },
   "supplierPortal": {
@@ -785,7 +840,7 @@
       "paymentsPending": "Betalingen in behandeling",
       "paymentsPendingSubtitle": "Gepland voor release",
       "qualityComplaints": "Kwaliteit / klachten",
-      "qualityComplaintsSubtitle": "Open tickets",
+      "qualityComplaintsSubtitle": "Kaartjes openen",
       "forecast": "Voorspelling (voor de komende 4 weken)",
       "forecastSubtitle": "AI-placeholder",
       "supplierActions": "Acties van leveranciers",
@@ -804,7 +859,7 @@
     "delete": "Verwijderen",
     "search": "Zoekopdracht",
     "filter": "Filter",
-    "reset": "Reset",
+    "reset": "Opnieuw instellen",
     "close": "Dichtbij",
     "back": "Rug",
     "next": "Volgende",
@@ -963,7 +1018,7 @@
   },
   "seo": {
     "home": {
-      "title": "Harvics Global Ventures | Premium Global Trading",
+      "title": "Harvics Global Ventures | Premium wereldwijde handel",
       "description": "Toonaangevend wereldwijd handelsbedrijf dat hoogwaardige producten levert aan meer dan 10 sectoren. Actief in meer dan 50 landen sinds 2019."
     },
     "about": {
@@ -1031,7 +1086,7 @@
       "description": "De onderzoeksinitiatieven en innovatieprogramma's van Harvic vormen de basis van onze wereldwijde strategie."
     },
     "investorRelations": {
-      "title": "Investor Relations | Harvics",
+      "title": "Beleggersrelaties | Harvics",
       "description": "Beleggersinformatie, financiële rapporten en bedrijfsmededelingen van Harvics Global Ventures."
     }
   },
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "Over Harvics",
-    "subtitle": "Uitmuntendheid in hoogwaardige consumentengoederen sinds 2019.",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "Ons verhaal",
     "story1": "Harvics, opgericht in 2019, is uitgegroeid van een visionair idee tot een wereldwijde leider in hoogwaardige consumentengoederen. Onze reis wordt gekenmerkt door een onophoudelijke zoektocht naar kwaliteit en een toewijding aan innovatie.",
     "story2": "We zijn actief in meer dan 40 landen en leveren producten die levens verrijken en nieuwe normen in de branche stellen. Van onze bescheiden beginjaren tot onze wereldwijde aanwezigheid zijn onze waarden onveranderd gebleven.",
@@ -1150,181 +1205,279 @@
   },
   "help": {
     "page": {
-      "title": "Help Center",
-      "subtitle": "Find the help you need"
+      "title": "Helpcentrum",
+      "subtitle": "Vind de hulp die u nodig heeft"
     },
-    "backToHelpCenter": "Back to Help Center",
+    "backToHelpCenter": "Terug naar Helpcentrum",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "Veelgestelde vragen",
+        "description": "Vind antwoorden op veelgestelde vragen"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "Neem contact op met ondersteuning",
+        "description": "Neem contact op met ons ondersteuningsteam"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "Gebruikershandleidingen",
+        "description": "Stapsgewijze handleidingen en tutorials"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "Problemen oplossen",
+        "description": "Los veelvoorkomende problemen op"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "Accounthulp",
+        "description": "Beheer uw account en instellingen"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "Bestelondersteuning",
+        "description": "Hulp bij bestellingen en leveringen"
       }
     },
     "account": {
-      "title": "Account Help",
-      "subtitle": "Manage your account settings and preferences",
-      "placeholder": "Account management and settings help content will appear here."
+      "title": "Accounthulp",
+      "subtitle": "Beheer uw accountinstellingen en voorkeuren",
+      "placeholder": "Hier verschijnt de Help-inhoud voor accountbeheer en instellingen."
     },
     "orders": {
-      "title": "Order Support",
-      "subtitle": "Track and manage your orders and deliveries",
-      "placeholder": "Order and delivery support content will appear here."
+      "title": "Bestelondersteuning",
+      "subtitle": "Volg en beheer uw bestellingen en leveringen",
+      "placeholder": "Ondersteuningsinhoud voor bestellingen en leveringen wordt hier weergegeven."
     },
     "guides": {
-      "title": "User Guides",
-      "subtitle": "Step-by-step guides to help you get the most out of Harvics",
+      "title": "Gebruikershandleidingen",
+      "subtitle": "Stapsgewijze handleidingen waarmee u het meeste uit Harvics kunt halen",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "Aan de slag",
+          "description": "Leer de basis"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "Accountconfiguratie",
+          "description": "Stel uw account in"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "Hoe te bestellen",
+          "description": "Bestellingen plaatsen en volgen"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "Betaalmethoden",
+          "description": "Betaalmogelijkheden en veiligheid"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "Verzending en levering",
+          "description": "Leveringsinformatie"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "Retouren en terugbetalingen",
+          "description": "Retourbeleid en -proces"
         }
       }
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "subtitle": "Common issues and quick solutions",
+      "title": "Problemen oplossen",
+      "subtitle": "Veelvoorkomende problemen en snelle oplossingen",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "Inlogproblemen",
+          "description": "Problemen met inloggen"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "Betalingsproblemen",
+          "description": "Betaling wordt niet verwerkt"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "Vertragingen bij levering",
+          "description": "Bestelling komt niet aan"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "Websitefouten",
+          "description": "Pagina laadt niet"
         }
       }
     }
   },
   "checkout": {
-    "secureCheckout": "Secure Checkout",
-    "title": "Complete Your Order",
-    "subtitle": "Review your items, enter shipping details, and confirm payment securely.",
-    "shippingInfo": "Shipping Information",
-    "paymentMethod": "Payment Method",
+    "secureCheckout": "Veilig afrekenen",
+    "title": "Voltooi uw bestelling",
+    "subtitle": "Controleer uw artikelen, voer de verzendgegevens in en bevestig de betaling veilig.",
+    "shippingInfo": "Verzendinformatie",
+    "paymentMethod": "Betaalmethode",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "Creditcard/betaalkaart",
+      "bankTransfer": "Bankoverschrijving (LC/TT)",
       "wallet": "HPay Digital Wallet"
     },
-    "orderSummary": "Order Summary",
+    "orderSummary": "Besteloverzicht",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
-      "total": "Total"
+      "subtotal": "Subtotaal",
+      "shipping": "Verzending",
+      "calculatedNextStep": "Berekend bij de volgende stap",
+      "tax": "Belasting",
+      "total": "Totaal"
     },
-    "placeOrder": "Place Order",
-    "sslNotice": "Secured with 256-bit SSL encryption",
-    "continueShopping": "Continue Shopping",
+    "placeOrder": "Bestelling plaatsen",
+    "sslNotice": "Beveiligd met 256-bit SSL-codering",
+    "continueShopping": "Ga door met winkelen",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "Voornaam",
+      "lastName": "Achternaam",
+      "email": "E-mail",
+      "address": "Adres",
+      "city": "Stad",
+      "country": "Land"
     }
   },
   "history": {
     "hero": {
-      "title": "Our Journey",
-      "subtitle": "From a Dubai startup to a global enterprise spanning 42+ countries, 10 industry verticals, and 38 languages."
+      "title": "Onze reis",
+      "subtitle": "Van een startup in Dubai tot een wereldwijde onderneming in meer dan 42 landen, 10 verticale sectoren en 38 talen."
     },
     "cta": {
-      "title": "Be Part of the Next Chapter",
-      "subtitle": "Join us as we scale to 60+ countries and build the future of AI-driven global commerce.",
-      "button": "View Careers"
+      "title": "Maak deel uit van het volgende hoofdstuk",
+      "subtitle": "Sluit u bij ons aan terwijl we naar meer dan 60 landen opschalen en bouwen aan de toekomst van AI-gestuurde mondiale handel.",
+      "button": "Bekijk carrières"
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "Opgericht in Dubai",
+        "description": "Harvics Global Ventures is opgericht in de VAE met de visie om een ​​FMCG en multi-verticaal handelsconglomeraat van wereldklasse te worden. Eerste activiteiten gelanceerd op het gebied van textiel en consumptiegoederen.",
+        "highlight": "Jaar één"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "Eerste internationale expansie",
+        "description": "Uitgebreid naar 10 landen in Europa, het Midden-Oosten en Zuid-Azië, ondanks mondiale pandemische uitdagingen. Gelanceerde digitale supply chain-activiteiten en partnerschappen voor distributie op afstand.",
+        "highlight": "10 landen"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "Multi-verticale uitbreiding",
+        "description": "Lancering van 5 nieuwe branches: grondstoffen, industriële apparatuur, mineralen en mijnbouw, olie en gas en onroerend goed. De totale productcatalogus overschreed de 500 SKU's in alle branches.",
+        "highlight": "5 nieuwe verticale markten"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "Digitale Transformatie",
+        "description": "Bouwde de eerste versie van Harvics OS: het AI-aangedreven ondernemingsplatform. Gelanceerd distributeurportals, e-commercemogelijkheden en realtime GPS-tracking van het wagenpark in alle markten.",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "Duurzaamheid & Schaal",
+        "description": "Toegewijd aan een CO2-neutrale bedrijfsvoering. Meer dan 30 landen bereikt. Lancering van HPay (digitaal betalingsplatform), handelsfinancieringsoplossingen en AI-gestuurde vraagvoorspelling in alle branches.",
+        "highlight": "30+ landen"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "Mondiale onderneming",
+        "description": "Mijlpaal voor meer dan 42 landen overschreden. Geïmplementeerde AI-engine met 6 ML-modellen voor strategie, vraag, prijzen, dekking en SKU-optimalisatie. Meertalig platform gelanceerd dat 38 talen ondersteunt.",
+        "highlight": "42+ landen"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "AI-First-besturingssysteem",
+        "description": "Harvics OS v2 gelanceerd: uniform bedrijfsbesturingssysteem met realtime intelligentie, Socket.io live feeds, Alpha Engine voor marktaanvalplannen en een volledige geografische hiërarchie van 8 niveaus.",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "De visie vooruit",
+        "description": "Schalen naar meer dan 60 landen. Het bouwen van 's werelds eerste AI-gestuurde FMCG-onderneming waar elke functie (inkoop, logistiek, financiën, CRM) draait op voorspellende intelligentie met menselijke goedkeuringspoorten.",
+        "highlight": "60+ doel"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "Praktische handel, sourcing en AI-academie voor oprichters – zes weken, livesessies, Harvics-corridors.",
+    "navLabel": "Startup Academie",
+    "teaser": {
+      "eyebrow": "Academie · Corridorprogramma",
+      "title": "Startup Academie.",
+      "body": "Klassiek handelsambacht voor oprichters – inkoop, kwaliteitscontrole, financieringsdesks en geletterdheid in de gangen – naast de Harvics-marktplaats.",
+      "cta": "Voer Academie in"
+    },
+    "hero": {
+      "alt": "Klassieke collegezaal — Harvics Startup Academy",
+      "eyebrow": "Cohort 01 · Q4 2026 · Ondersteunend programma",
+      "title": "Harvics Startup Academy",
+      "body": "Een klassieke handelsschool voor oprichters: sourcing, corridorhandel en AI die werkt. Zes weken. Live-sessies. Echte exploitanten.",
+      "apply": "Solliciteer voor Cohort 01",
+      "seeProgramme": "Zie programma"
+    },
+    "stats": {
+      "founders": "Oprichters / cohort",
+      "sessions": "Live-sessies",
+      "weeks": "Weken",
+      "verticals": "Handel in verticale markten"
+    },
+    "why": {
+      "eyebrow": "01 · Waarom lid worden",
+      "title": "Bouw een bedrijf dat daadwerkelijk kan handelen.",
+      "body": "Geen pitchtheater. Leer van offerteaanvragen tot afhandeling, sourcing diligence, kopersbereik en automatisering – van operators in de Harvics-corridors.",
+      "item1Title": "Praktische handelssystemen",
+      "item1Body": "Hoe institutionele kopers kopen – en hoe u hieraan voldoet.",
+      "item2Title": "Netwerk dat verzendt",
+      "item2Body": "Oprichters, distributeurs en exploitanten in verschillende branches.",
+      "item3Title": "AI die werkt",
+      "item3Body": "HarvyX, Fin Voice en operationele automatisering zonder modewoorden.",
+      "imageAlt": "Klassiek handelsstilleven"
+    },
+    "knowledge": {
+      "eyebrow": "Kennis",
+      "title": "Bestudeer de gang als een discipline.",
+      "body": "Curriculum gebaseerd op echte handelspraktijken – niet op generieke startup-dia’s.",
+      "imageAlt": "Grote klassieke bibliotheek"
+    },
+    "programme": {
+      "eyebrow": "02 · Programma",
+      "title": "Waar je doorheen gaat",
+      "m1Title": "Merk en herkomst",
+      "m1Body": "MOQ's, QC-poorten, textiel en FMCG - van atelier tot gang.",
+      "m2Title": "Intelligentie en bereik",
+      "m2Body": "HarvyX-labs, koper ICP, follow-ups die antwoorden krijgen.",
+      "m3Title": "Kapitaal & partners",
+      "m3Body": "Financieringstrajecten en partnerschappen – geen valse bankclaims.",
+      "m4Title": "Ganghandel",
+      "m4Body": "Havens, rijstroken en hoe goederen zich daadwerkelijk over markten verplaatsen.",
+      "m5Title": "Kwaliteit & zorgvuldigheid",
+      "m5Body": "Inspectiegewoonten die de reputatie en afwikkeling beschermen.",
+      "m6Title": "Grondstoffen en FMCG",
+      "m6Body": "Van magazijnrealiteit tot merk- en groothandelsvraag."
+    },
+    "tracks": {
+      "aEyebrow": "Spoor A",
+      "aTitle": "Merk & commercie",
+      "aBody": "Oprichters van kleding en FMCG bouwen aan merk-, groothandel- en corridorvraag.",
+      "aAlt": "Klassieke directiekamer",
+      "bEyebrow": "Spoor B",
+      "bTitle": "Handel & ops",
+      "bBody": "Inkoop-, logistieke en B2B-exploitanten die de institutionele handel opschalen.",
+      "bAlt": "Salonnetwerken"
+    },
+    "network": {
+      "eyebrow": "03 · Netwerk",
+      "title": "Maak kennis met operators, niet met het publiek.",
+      "body": "Live sessies en kantooruren in salonstijl met oprichters, distributeurs en Harvics-corridors.",
+      "imageAlt": "Netwerken van oprichters"
+    },
+    "rhythm": {
+      "eyebrow": "04 · Ritme",
+      "title": "Zes weken. Duidelijke cadans.",
+      "w1": "Week 1",
+      "w1Body": "Oriëntatie · Gangplan · ICP workshop",
+      "w2": "Week 2",
+      "w2Body": "Kopersbereik · HarvyX-lab",
+      "w3": "Week 3",
+      "w3Body": "Inkoop en kwaliteitscontrole · Zorgvuldigheid van leveranciers",
+      "w4": "Week 4",
+      "w4Body": "Automatisering · Fin voice · ops-stack",
+      "w5": "Week 5",
+      "w5Body": "Financiering en partnerschappen",
+      "w6": "Week 6",
+      "w6Body": "Oprichtersshowcase · volgende stappen"
+    },
+    "apply": {
+      "eyebrow": "Toepassingen",
+      "title": "Solliciteer voor Cohort 01",
+      "body": "Beperkt aantal zitplaatsen. Vertel ons uw bedrijf, branche en wat u aan het bouwen bent.",
+      "emailCta": "Solliciteer per e-mail →",
+      "back": "Terug naar Harvics"
     }
   }
 }

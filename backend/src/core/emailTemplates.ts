@@ -38,7 +38,7 @@ const EMAIL_FALLBACK_EN = {
     body: 'Your order {{orderNumber}} has been confirmed and is being processed.',
     estimatedDelivery: 'Estimated Delivery',
     viewOrder: 'View Order',
-    footer: 'This email was sent by Harvics Global Ventures. If you have questions, contact sales.uk@harvics.com',
+    footer: 'This email was sent by Harvics Global Ventures. If you have questions, contact info@harvics.com',
   },
   orderShipped: {
     subject: 'Your Order Has Shipped — {{orderNumber}}',
@@ -74,7 +74,7 @@ const EMAIL_FALLBACK_EN = {
     greeting: 'Invoice Ready',
     body: 'Invoice {{invoiceNumber}} for {{amount}} has been generated and is due on {{dueDate}}.',
     viewInvoice: 'View Invoice',
-    footer: 'Harvics Global Ventures | sales.uk@harvics.com',
+    footer: 'Harvics Global Ventures | info@harvics.com',
   },
   paymentReceived: {
     subject: 'Payment Received — {{amount}}',
@@ -110,7 +110,7 @@ const EMAIL_LOCALES: Record<string, Partial<typeof EMAIL_FALLBACK_EN>> = {
       body: 'تم تأكيد طلبك {{orderNumber}} وهو قيد المعالجة.',
       estimatedDelivery: 'الموعد المتوقع للتسليم',
       viewOrder: 'عرض الطلب',
-      footer: 'تم إرسال هذا البريد من هارفيكس للمشاريع العالمية. للاستفسار: sales.uk@harvics.com',
+      footer: 'تم إرسال هذا البريد من هارفيكس للمشاريع العالمية. للاستفسار: info@harvics.com',
     },
     orderShipped: {
       subject: 'تم شحن طلبك — {{orderNumber}}',
@@ -146,7 +146,7 @@ const EMAIL_LOCALES: Record<string, Partial<typeof EMAIL_FALLBACK_EN>> = {
       greeting: 'الفاتورة جاهزة',
       body: 'تم إصدار الفاتورة {{invoiceNumber}} بمبلغ {{amount}}، تاريخ الاستحقاق: {{dueDate}}.',
       viewInvoice: 'عرض الفاتورة',
-      footer: 'هارفيكس للمشاريع العالمية | sales.uk@harvics.com',
+      footer: 'هارفيكس للمشاريع العالمية | info@harvics.com',
     },
     paymentReceived: {
       subject: 'تم استلام الدفعة — {{amount}}',
@@ -177,7 +177,7 @@ const EMAIL_LOCALES: Record<string, Partial<typeof EMAIL_FALLBACK_EN>> = {
       body: 'Su pedido {{orderNumber}} ha sido confirmado y está siendo procesado.',
       estimatedDelivery: 'Entrega Estimada',
       viewOrder: 'Ver Pedido',
-      footer: 'Harvics Global Ventures. Consultas: sales.uk@harvics.com',
+      footer: 'Harvics Global Ventures. Consultas: info@harvics.com',
     },
     welcome: {
       subject: '¡Bienvenido a Harvics OS, {{name}}!',
@@ -198,7 +198,7 @@ const EMAIL_LOCALES: Record<string, Partial<typeof EMAIL_FALLBACK_EN>> = {
       greeting: 'Factura Lista',
       body: 'Se ha generado la factura {{invoiceNumber}} por {{amount}}, con vencimiento el {{dueDate}}.',
       viewInvoice: 'Ver Factura',
-      footer: 'Harvics Global Ventures | sales.uk@harvics.com',
+      footer: 'Harvics Global Ventures | info@harvics.com',
     },
     approvalRequired: {
       subject: 'Acción Requerida — {{documentType}} Pendiente de Aprobación',
@@ -215,7 +215,7 @@ const EMAIL_LOCALES: Record<string, Partial<typeof EMAIL_FALLBACK_EN>> = {
       body: 'Votre commande {{orderNumber}} a été confirmée et est en cours de traitement.',
       estimatedDelivery: 'Livraison Estimée',
       viewOrder: 'Voir la Commande',
-      footer: 'Harvics Global Ventures. Questions : sales.uk@harvics.com',
+      footer: 'Harvics Global Ventures. Questions : info@harvics.com',
     },
     welcome: {
       subject: 'Bienvenue sur Harvics OS, {{name}} !',
@@ -236,7 +236,7 @@ const EMAIL_LOCALES: Record<string, Partial<typeof EMAIL_FALLBACK_EN>> = {
       greeting: 'Facture Prête',
       body: "La facture {{invoiceNumber}} d'un montant de {{amount}} a été générée, échéance le {{dueDate}}.",
       viewInvoice: 'Voir la Facture',
-      footer: 'Harvics Global Ventures | sales.uk@harvics.com',
+      footer: 'Harvics Global Ventures | info@harvics.com',
     },
     approvalRequired: {
       subject: 'Action Requise — {{documentType}} en Attente d\'Approbation',
@@ -253,7 +253,7 @@ const EMAIL_LOCALES: Record<string, Partial<typeof EMAIL_FALLBACK_EN>> = {
       body: 'Ihre Bestellung {{orderNumber}} wurde bestätigt und wird bearbeitet.',
       estimatedDelivery: 'Voraussichtliche Lieferung',
       viewOrder: 'Bestellung ansehen',
-      footer: 'Harvics Global Ventures. Fragen: sales.uk@harvics.com',
+      footer: 'Harvics Global Ventures. Fragen: info@harvics.com',
     },
     welcome: {
       subject: 'Willkommen bei Harvics OS, {{name}}!',
@@ -274,7 +274,7 @@ const EMAIL_LOCALES: Record<string, Partial<typeof EMAIL_FALLBACK_EN>> = {
       greeting: 'Rechnung bereit',
       body: 'Rechnung {{invoiceNumber}} über {{amount}} wurde erstellt, fällig am {{dueDate}}.',
       viewInvoice: 'Rechnung ansehen',
-      footer: 'Harvics Global Ventures | sales.uk@harvics.com',
+      footer: 'Harvics Global Ventures | info@harvics.com',
     },
     approvalRequired: {
       subject: 'Aktion erforderlich — {{documentType}} wartet auf Genehmigung',

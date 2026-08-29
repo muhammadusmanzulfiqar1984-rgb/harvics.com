@@ -20,17 +20,59 @@ const verticalFolders: Record<string, string> = {
   ai:            '10-ai-tech',
 }
 
+/** Same campaign slide sets as industry landings — auto-slider, no pagination chrome. */
 const verticalFallbackSlides: Record<string, string[]> = {
-  textiles:      ['/assets/verticals/01-apparels/hero.jpg'],
-  fmcg:          ['/assets/verticals/02-fmcg/hero.jpg'],
-  commodities:   ['/assets/verticals/03-commodities/hero.jpg'],
-  industrial:    ['/assets/verticals/04-industrial/hero.jpg'],
-  minerals:      ['/assets/verticals/05-minerals/hero.jpg'],
-  'oil-gas':     ['/assets/verticals/06-oil-gas/hero.jpg'],
-  'real-estate': ['/assets/verticals/07-real-estate/hero.jpg'],
-  sourcing:      ['/assets/verticals/08-sourcing/hero.jpg'],
-  finance:       ['/assets/verticals/09-finance/hero.jpg'],
-  ai:            ['/assets/verticals/10-ai-tech/hero.jpg'],
+  textiles: [
+    '/assets/harvictrade/heroes/textiles/01-trench.webp',
+    '/assets/harvictrade/heroes/textiles/02-rack.webp',
+    '/assets/harvictrade/heroes/textiles/03-denim.webp',
+    '/assets/harvictrade/heroes/textiles/04-silk.webp',
+  ],
+  fmcg: [
+    '/assets/harvictrade/heroes/fmcg/01-still.webp',
+    '/assets/harvictrade/heroes/fmcg/02-warehouse.webp',
+    '/assets/harvictrade/heroes/fmcg/03-flatlay.webp',
+  ],
+  commodities: [
+    '/assets/harvictrade/heroes/commodities/01-grain.webp',
+    '/assets/harvictrade/heroes/commodities/02-coffee.webp',
+    '/assets/harvictrade/heroes/commodities/03-port.webp',
+  ],
+  industrial: [
+    '/assets/harvictrade/heroes/industrial/01-cnc.webp',
+    '/assets/harvictrade/heroes/industrial/02-ppe.webp',
+    '/assets/harvictrade/heroes/industrial/03-factory.webp',
+  ],
+  minerals: [
+    '/assets/harvictrade/heroes/minerals/01-copper.webp',
+    '/assets/harvictrade/heroes/minerals/02-ore.webp',
+    '/assets/harvictrade/heroes/minerals/03-gold.webp',
+  ],
+  'oil-gas': [
+    '/assets/harvictrade/heroes/oil-gas/01-offshore.webp',
+    '/assets/harvictrade/heroes/oil-gas/02-refinery.webp',
+    '/assets/harvictrade/heroes/oil-gas/03-tanker.webp',
+  ],
+  'real-estate': [
+    '/assets/harvictrade/heroes/real-estate/01-tower.webp',
+    '/assets/harvictrade/heroes/real-estate/02-interior.webp',
+    '/assets/harvictrade/heroes/real-estate/03-aerial.webp',
+  ],
+  sourcing: [
+    '/assets/harvictrade/heroes/sourcing/01-factory.webp',
+    '/assets/harvictrade/heroes/sourcing/02-qc.webp',
+    '/assets/harvictrade/heroes/sourcing/03-containers.webp',
+  ],
+  finance: [
+    '/assets/harvictrade/heroes/finance/01-desk.webp',
+    '/assets/harvictrade/heroes/finance/02-lobby.webp',
+    '/assets/harvictrade/heroes/finance/03-fintech.webp',
+  ],
+  ai: [
+    '/assets/harvictrade/heroes/ai/01-datacenter.webp',
+    '/assets/harvictrade/heroes/ai/02-vision.webp',
+    '/assets/harvictrade/heroes/ai/03-analytics.webp',
+  ],
 }
 
 const defaultSlides = [
@@ -110,8 +152,8 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
         className="relative bg-gradient-to-br from-harvics-burgundy via-[#5a1a24] to-[#4a1520] py-20 md:py-24 px-4 overflow-hidden"
       >
         {/* Background image for all categories */}
-        <div className="absolute inset-0">
-          <ImageCarousel images={categorySlides} autoSlideInterval={4500} height="h-full" />
+        <div className="absolute inset-0 pointer-events-none">
+          <ImageCarousel images={categorySlides} autoSlideInterval={4500} height="h-full" showControls={false} />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.85) 0%, rgba(107,31,43,0.5) 45%, rgba(107,31,43,0.25) 100%)' }} />
         </div>
         

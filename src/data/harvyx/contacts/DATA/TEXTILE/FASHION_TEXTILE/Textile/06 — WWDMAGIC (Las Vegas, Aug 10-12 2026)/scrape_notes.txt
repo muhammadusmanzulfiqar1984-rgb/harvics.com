@@ -1,0 +1,6 @@
+WWDMAGIC 2026
+- Approach A: https://www.wwdmagic.com/exhibitors/ and https://wwdmagic.com/directory/ timed out in Playwright; direct HTTP returned only a JS redirect/lander page.
+- Approach B: https://www.magicfashionevents.com/en/events/magic-las-vegas/exhibitors.html returned a Cloudflare block page in both requests and Playwright.
+- Approach C: https://magicmarket.mapyourshow.com/ returned 403 Forbidden, and candidate domain https://wwdmagic2026.mapyourshow.com/ returned invalid show code / no public directory.
+- Web search indicated the official 2026 exhibitor data is currently routed through the MAGIC mobile app rather than an open public web directory.
+- Result: 0 public exhibitor records could be scraped live from the requested WWDMAGIC sources in this environment, so the CSV contains headers only.

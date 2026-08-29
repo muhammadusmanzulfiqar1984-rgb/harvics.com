@@ -5,8 +5,6 @@
  * View and manage invoices
  */
 
-'use client'
-
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { useLocale } from 'next-intl'
@@ -15,49 +13,77 @@ import OSDomainPageWrapper from '@/components/os-domains/OSDomainPageWrapper'
 import GlobalFilters from '@/components/shared/GlobalFilters'
 import SectionCard from '@/components/shared/SectionCard'
 import InvoiceCard from '@/components/finance/payments/InvoiceCard'
+import { apiClient } from '@/lib/api'
 
-// Mock invoice data - Replace with API call
-const mockInvoices = [
-  {
-    id: 'inv-1',
-    invoice_number: 'INV-2024-001',
-    invoice_date: '2024-01-15',
-    due_date: '2024-02-15',
-    amount: 50000,
-    paid_amount: 0,
-    currency: 'USD',
-    status: 'pending',
-    pdf_url: '/invoices/INV-2024-001.pdf'
-  },
-  {
-    id: 'inv-2',
-    invoice_number: 'INV-2024-002',
-    invoice_date: '2024-01-20',
-    due_date: '2024-02-20',
-    amount: 75000,
-    paid_amount: 75000,
-    currency: 'USD',
-    status: 'paid',
-    pdf_url: '/invoices/INV-2024-002.pdf'
+interface PortalInvoice {
+  id: string
+  invoice_number: string
+  invoice_date: string
+  due_date?: string
+  amount: number
+  paid_amount?: number
+  currency: string
+  status: string
+  pdf_url?: string
+}
+
+function mapInvoice(inv: any): PortalInvoice {
+  const paid = inv.paidAmount ?? inv.paid_amount ?? 0
+  const amount = Number(inv.amount) || 0
+  const rawStatus = String(inv.status || 'Unpaid').toLowerCase()
+  let status = 'pending'
+  if (rawStatus === 'paid') status = 'paid'
+  else if (paid > 0 && paid < amount) status = 'partial'
+
+  return {
+    id: inv.id,
+    invoice_number: inv.invoiceNo || inv.invoice_number || inv.id,
+    invoice_date: inv.invoiceDate || inv.invoice_date || inv.createdAt?.slice?.(0, 10) || '',
+    due_date: inv.dueDate || inv.due_date,
+    amount,
+    paid_amount: paid,
+    currency: inv.currency || 'USD',
+    status,
+    pdf_url: inv.pdfUrl || inv.pdf_url,
   }
-]
+}
 
 export default function InvoicesPage() {
   const locale = useLocale()
   const router = useRouter()
-  const [invoices, setInvoices] = useState(mockInvoices)
+  const [invoices, setInvoices] = useState<PortalInvoice[]>([])
+  const [loading, setLoading] = useState(true)
   const [statusFilter, setStatusFilter] = useState<string>('ALL')
 
-  const filteredInvoices = statusFilter === 'ALL' 
-    ? invoices 
-    : invoices.filter(inv => inv.status === statusFilter.toLowerCase())
+  useEffect(() => {
+    void loadInvoices()
+  }, [])
+
+  const loadInvoices = async () => {
+    setLoading(true)
+    try {
+      const res = await apiClient.request('/finance/invoices?type=AR&limit=100')
+      const payload = (res?.data as any)
+      const rows: any[] = Array.isArray(payload) ? payload : (payload?.data ?? [])
+      setInvoices(rows.map(mapInvoice))
+    } catch (error) {
+      console.error('Error loading invoices:', error)
+      setInvoices([])
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  const filteredInvoices = statusFilter === 'ALL'
+    ? invoices
+    : invoices.filter((inv) => inv.status === statusFilter.toLowerCase())
 
   const handlePay = (invoiceId: string) => {
     router.push(`/${locale}/portal/distributor/payments/make-payment?invoiceId=${invoiceId}`)
   }
 
   const handleView = (invoiceId: string) => {
-    const invoice = invoices.find(inv => inv.id === invoiceId)
+    const invoice = invoices.find((inv) => inv.id === invoiceId)
     if (invoice?.pdf_url) {
       window.open(invoice.pdf_url, '_blank')
     }
@@ -90,7 +116,9 @@ export default function InvoicesPage() {
               </select>
             }
           >
-            {filteredInvoices.length === 0 ? (
+            {loading ? (
+              <div className="text-center py-12 text-black/70">Loading invoices…</div>
+            ) : filteredInvoices.length === 0 ? (
               <div className="text-center py-12 text-black/70">
                 <p className="text-lg mb-2">No invoices found</p>
                 <p className="text-sm">Your invoices will appear here</p>

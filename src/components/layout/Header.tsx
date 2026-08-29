@@ -167,6 +167,7 @@ const Header: React.FC<HeaderProps> = ({ categories = [] }) => {
                 { href: `/${locale}/csr`, label: t('esgReport') },
                 { href: `/${locale}/investor-relations`, label: t('investors') },
                 { href: `/${locale}/media`, label: t('media') },
+                { href: `/${locale}/startup-academy`, label: t('startupAcademy') },
               ].map((link) => (
                 <Link key={link.href} href={link.href}
                   className="transition-opacity duration-200 hover:opacity-70"

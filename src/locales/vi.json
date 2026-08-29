@@ -3,13 +3,13 @@
   "home": {
     "welcome": "Chào mừng đến với",
     "companyName": "Harwich",
-    "tagline": "Xuất sắc trong lĩnh vực hàng tiêu dùng cao cấp từ năm 2019.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "Khám phá sản phẩm",
     "contact": "Liên hệ với chúng tôi",
     "learnMore": "Tìm hiểu thêm",
-    "brandStatement": "Một công ty hàng tiêu dùng toàn cầu hàng đầu cung cấp các sản phẩm thực phẩm cao cấp thuộc nhiều danh mục khác nhau với tiêu chuẩn chất lượng quốc tế.",
-    "taglineStart": "Xuất sắc trong lĩnh vực hàng tiêu dùng cao cấp từ năm...",
-    "taglineYear": "2019",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "Luân Đôn • Milan • New York",
     "categories": {
       "bakery": "Tiệm bánh",
@@ -81,7 +81,8 @@
       "specialOffers": "Ưu đãi đặc biệt",
       "promotions": "Khuyến mãi",
       "bulkOrders": "Chiết khấu cho đơn hàng số lượng lớn"
-    }
+    },
+    "startupAcademy": "Học viện khởi nghiệp"
   },
   "products": {
     "ourProducts": "Sản phẩm của chúng tôi",
@@ -119,7 +120,40 @@
     "whatsapp": "WhatsApp",
     "callNow": "Gọi ngay",
     "sendEmail": "Gửi email",
-    "messageUs": "Liên hệ với chúng tôi"
+    "messageUs": "Liên hệ với chúng tôi",
+    "getInTouch": "Liên hệ",
+    "locations": "Địa điểm",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "Gửi tin nhắn",
+    "firstName": "Tên",
+    "firstNamePlaceholder": "Nhập tên của bạn",
+    "lastName": "Họ",
+    "lastNamePlaceholder": "Nhập họ của bạn",
+    "emailPlaceholder": "Nhập địa chỉ email của bạn",
+    "subject": "Chủ thể",
+    "subjectPlaceholder": "Nhập chủ đề",
+    "message": "Tin nhắn",
+    "messagePlaceholder": "Viết tin nhắn của bạn",
+    "send": "Gửi",
+    "eyebrow": "Bắt đầu một bản tóm tắt",
+    "headline1": "Bắt đầu một bản tóm tắt.",
+    "headline2": "Chúng tôi trả lời trong 24 giờ.",
+    "subhead": "Hãy cho chúng tôi biết danh mục, khối lượng và thị trường mục tiêu của bạn. Một chuyên gia sẽ liên hệ lại với bạn với các lựa chọn tìm nguồn cung ứng và giá cả chỉ dẫn.",
+    "fullName": "Tên đầy đủ",
+    "fullNamePlaceholder": "Shah Tabraiz",
+    "company": "Công ty",
+    "companyPlaceholder": "Tổ chức của bạn",
+    "businessEmail": "Email doanh nghiệp",
+    "howCanWeHelp": "Chúng tôi có thể giúp gì?",
+    "sending": "Đang gửi...",
+    "sendEnquiry": "Gửi yêu cầu",
+    "sentTitle": "Đã gửi tin nhắn.",
+    "sentSub": "Nhóm của chúng tôi sẽ trả lời trong vòng 24 giờ.",
+    "directChannels": "Kênh trực tiếp",
+    "trust1": "Đảm bảo phản hồi 24 giờ",
+    "trust2": "Người quản lý tài khoản chuyên dụng",
+    "trust3": "NDA available on request",
+    "trust4": "42 thị trường · 1.247 lô hàng hôm nay"
   },
   "media": {
     "title": "Trung tâm truyền thông",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "Harvics Global Ventures",
-    "tagline": "Xuất sắc trong lĩnh vực hàng tiêu dùng cao cấp từ năm 2019.",
-    "brandStatement": "Một công ty hàng tiêu dùng toàn cầu hàng đầu cung cấp các sản phẩm thực phẩm cao cấp thuộc nhiều danh mục khác nhau với tiêu chuẩn chất lượng quốc tế.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "Luân Đôn • Milan • New York",
     "since": "Từ năm 2019",
     "harvicsNews": "Tin tức Harvics",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "Tham Gia Mạng Lưới Của Chúng Tôi",
     "newsletterTagline": "Nhận thông tin thương mại mới nhất và cập nhật thị trường",
     "activeShipments": "Lô Hàng Đang Vận Chuyển",
-    "certifiedAudited": "Đã Chứng Nhận & Kiểm Toán"
+    "certifiedAudited": "Đã Chứng Nhận & Kiểm Toán",
+    "invalidEmail": "Vui lòng nhập địa chỉ email hợp lệ",
+    "subscriptionSuccess": "Cảm ơn bạn đã đăng ký!",
+    "subscriptionError": "Đã xảy ra lỗi. Vui lòng thử lại."
   },
   "search": {
     "placeholder": "Tìm kiếm sản phẩm, thương hiệu hoặc danh mục",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "Tôi xin lỗi, tôi không hiểu. Bạn có thể diễn đạt lại được không?",
       "help": "Tôi có thể giúp bạn về thông tin sản phẩm, đặt hàng hoặc các thắc mắc chung. Bạn muốn biết điều gì?",
-      "contact": "Để được hỗ trợ thêm, vui lòng liên hệ với chúng tôi qua địa chỉ support@harvics.com hoặc gọi điện đến số +1-800-HARVICS."
-    }
+      "contact": "Để được hỗ trợ thêm, vui lòng liên hệ với chúng tôi qua địa chỉ support@harvics.com hoặc gọi điện đến số +1-800-HARVICS.",
+      "product": "Duyệt qua danh mục sản phẩm của chúng tôi từ menu hoặc cho tôi biết danh mục nào bạn quan tâm - FMCG, dệt may, hậu cần, v.v.",
+      "order": "Để đặt hàng hoặc kiểm tra trạng thái, hãy truy cập cổng nhà phân phối hoặc liên hệ với người quản lý tài khoản của bạn.",
+      "about": "Harvics Global Ventures là một công ty cơ sở hạ tầng thương mại có chủ quyền với hơn 20 năm hoạt động tại hơn 40 quốc gia."
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "Nhấn Enter để gửi"
   },
   "common": {
     "chatWithUs": "Trò chuyện với chúng tôi",
@@ -730,12 +772,17 @@
       "gps-tracking": "Theo dõi GPS",
       "localization": "Định vị",
       "workflows": "Quy trình làm việc",
-      "admin": "Quản trị viên"
+      "admin": "Quản trị viên",
+      "modules": "Mô-đun"
     },
     "kpis": {
       "customers": "Khách hàng",
       "employees": "Người lao động",
-      "profit": "Lợi nhuận"
+      "profit": "Lợi nhuận",
+      "totalOrders": "Tổng số đơn đặt hàng",
+      "inventoryValue": "Giá trị hàng tồn kho",
+      "logisticsEfficiency": "Hiệu quả hậu cần",
+      "revenue": "Doanh thu"
     },
     "domain": {
       "title": "Hệ điều hành CRM",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "Xem và quản lý các mối quan hệ, tương tác và chiến dịch với khách hàng.",
       "loading": "Đang tải...",
       "error": "Lỗi khi tải dữ liệu CRM"
+    },
+    "roleIndicator": {
+      "manager": "Chế độ xem người quản lý",
+      "executive": "Chế độ xem điều hành",
+      "investor": "Xem nhà đầu tư",
+      "distributor": "Xem nhà phân phối",
+      "supplier": "Xem nhà cung cấp",
+      "customer": "Xem khách hàng"
     }
   },
   "supplierPortal": {
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "Giới thiệu về Harvics",
-    "subtitle": "Xuất sắc trong lĩnh vực hàng tiêu dùng cao cấp từ năm 2019.",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "Câu chuyện của chúng tôi",
     "story1": "Được thành lập vào năm 2019, Harvics đã phát triển từ một ý tưởng đầy tầm nhìn thành một nhà lãnh đạo toàn cầu trong lĩnh vực hàng tiêu dùng cao cấp. Hành trình của chúng tôi được định hình bởi sự theo đuổi không ngừng nghỉ chất lượng và cam kết đổi mới.",
     "story2": "Chúng tôi hoạt động tại hơn 40 quốc gia, cung cấp các sản phẩm làm phong phú thêm cuộc sống và thiết lập các tiêu chuẩn mới trong ngành. Từ những khởi đầu khiêm tốn đến sự hiện diện toàn cầu, các giá trị của chúng tôi vẫn không thay đổi.",
@@ -1150,181 +1205,279 @@
   },
   "help": {
     "page": {
-      "title": "Help Center",
-      "subtitle": "Find the help you need"
+      "title": "Trung tâm trợ giúp",
+      "subtitle": "Tìm sự trợ giúp bạn cần"
     },
-    "backToHelpCenter": "Back to Help Center",
+    "backToHelpCenter": "Quay lại Trung tâm trợ giúp",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "Câu hỏi thường gặp",
+        "description": "Tìm câu trả lời cho các câu hỏi phổ biến"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "Liên hệ hỗ trợ",
+        "description": "Hãy liên hệ với nhóm hỗ trợ của chúng tôi"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "Hướng dẫn sử dụng",
+        "description": "Hướng dẫn và hướng dẫn từng bước"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "Khắc phục sự cố",
+        "description": "Giải quyết các vấn đề chung"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "Trợ giúp tài khoản",
+        "description": "Quản lý tài khoản và cài đặt của bạn"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "Hỗ trợ đặt hàng",
+        "description": "Hỗ trợ đặt hàng và giao hàng"
       }
     },
     "account": {
-      "title": "Account Help",
-      "subtitle": "Manage your account settings and preferences",
-      "placeholder": "Account management and settings help content will appear here."
+      "title": "Trợ giúp tài khoản",
+      "subtitle": "Quản lý cài đặt tài khoản và tùy chọn của bạn",
+      "placeholder": "Nội dung trợ giúp về quản lý và cài đặt tài khoản sẽ xuất hiện tại đây."
     },
     "orders": {
-      "title": "Order Support",
-      "subtitle": "Track and manage your orders and deliveries",
-      "placeholder": "Order and delivery support content will appear here."
+      "title": "Hỗ trợ đặt hàng",
+      "subtitle": "Theo dõi và quản lý đơn đặt hàng và giao hàng của bạn",
+      "placeholder": "Nội dung hỗ trợ đặt hàng và giao hàng sẽ xuất hiện tại đây."
     },
     "guides": {
-      "title": "User Guides",
-      "subtitle": "Step-by-step guides to help you get the most out of Harvics",
+      "title": "Hướng dẫn sử dụng",
+      "subtitle": "Hướng dẫn từng bước để giúp bạn tận dụng tối đa Harvics",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "Bắt đầu",
+          "description": "Tìm hiểu những điều cơ bản"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "Thiết lập tài khoản",
+          "description": "Thiết lập tài khoản của bạn"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "Cách đặt hàng",
+          "description": "Đặt và theo dõi đơn hàng"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "Phương thức thanh toán",
+          "description": "Tùy chọn thanh toán và bảo mật"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "Vận chuyển & Giao hàng",
+          "description": "Thông tin giao hàng"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "Trả lại & Hoàn tiền",
+          "description": "Chính sách và quy trình hoàn trả"
         }
       }
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "subtitle": "Common issues and quick solutions",
+      "title": "Khắc phục sự cố",
+      "subtitle": "Các vấn đề thường gặp và giải pháp nhanh chóng",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "Sự cố đăng nhập",
+          "description": "Sự cố khi đăng nhập"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "Vấn đề thanh toán",
+          "description": "Thanh toán không được xử lý"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "Trì hoãn giao hàng",
+          "description": "Đơn hàng không đến"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "Lỗi trang web",
+          "description": "Trang không tải"
         }
       }
     }
   },
   "checkout": {
-    "secureCheckout": "Secure Checkout",
-    "title": "Complete Your Order",
-    "subtitle": "Review your items, enter shipping details, and confirm payment securely.",
-    "shippingInfo": "Shipping Information",
-    "paymentMethod": "Payment Method",
+    "secureCheckout": "Thanh toán an toàn",
+    "title": "Hoàn tất đơn hàng của bạn",
+    "subtitle": "Xem lại các mặt hàng của bạn, nhập chi tiết vận chuyển và xác nhận thanh toán một cách an toàn.",
+    "shippingInfo": "Thông tin vận chuyển",
+    "paymentMethod": "Phương thức thanh toán",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "Thẻ tín dụng / thẻ ghi nợ",
+      "bankTransfer": "Chuyển khoản ngân hàng (LC/TT)",
       "wallet": "HPay Digital Wallet"
     },
-    "orderSummary": "Order Summary",
+    "orderSummary": "Tóm tắt đơn hàng",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
-      "total": "Total"
+      "subtotal": "Tổng phụ",
+      "shipping": "vận chuyển",
+      "calculatedNextStep": "Tính toán ở bước tiếp theo",
+      "tax": "Thuế",
+      "total": "Tổng cộng"
     },
-    "placeOrder": "Place Order",
-    "sslNotice": "Secured with 256-bit SSL encryption",
-    "continueShopping": "Continue Shopping",
+    "placeOrder": "Đặt hàng",
+    "sslNotice": "Được bảo mật bằng mã hóa SSL 256-bit",
+    "continueShopping": "Tiếp tục mua sắm",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "Tên",
+      "lastName": "Họ",
+      "email": "E-mail",
+      "address": "Địa chỉ",
+      "city": "Thành phố",
+      "country": "Quốc gia"
     }
   },
   "history": {
     "hero": {
-      "title": "Our Journey",
-      "subtitle": "From a Dubai startup to a global enterprise spanning 42+ countries, 10 industry verticals, and 38 languages."
+      "title": "Hành trình của chúng tôi",
+      "subtitle": "Từ một công ty khởi nghiệp ở Dubai đến một doanh nghiệp toàn cầu trải dài trên 42 quốc gia, 10 ngành dọc và 38 ngôn ngữ."
     },
     "cta": {
-      "title": "Be Part of the Next Chapter",
-      "subtitle": "Join us as we scale to 60+ countries and build the future of AI-driven global commerce.",
-      "button": "View Careers"
+      "title": "Hãy là một phần của chương tiếp theo",
+      "subtitle": "Hãy tham gia cùng chúng tôi khi chúng tôi mở rộng quy mô tới hơn 60 quốc gia và xây dựng tương lai của thương mại toàn cầu do AI điều khiển.",
+      "button": "Xem việc làm"
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "Được thành lập ở Dubai",
+        "description": "Harvics Global Ventures được thành lập tại UAE với tầm nhìn trở thành tập đoàn thương mại đa ngành và FMCG đẳng cấp thế giới. Các hoạt động đầu tiên được triển khai trên lĩnh vực dệt may và hàng tiêu dùng.",
+        "highlight": "Năm Một"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "Mở rộng quốc tế đầu tiên",
+        "description": "Mở rộng tới 10 quốc gia trên khắp Châu Âu, Trung Đông và Nam Á bất chấp những thách thức của đại dịch toàn cầu. Triển khai các hoạt động chuỗi cung ứng kỹ thuật số và quan hệ đối tác phân phối từ xa.",
+        "highlight": "10 quốc gia"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "Mở rộng theo chiều dọc",
+        "description": "Ra mắt 5 ngành dọc mới: Hàng hóa, Thiết bị công nghiệp, Khoáng sản & Khai thác, Dầu khí và Bất động sản. Tổng danh mục sản phẩm đã vượt quá 500 SKU trên tất cả các ngành dọc.",
+        "highlight": "5 ngành dọc mới"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "Chuyển đổi kỹ thuật số",
+        "description": "Xây dựng phiên bản đầu tiên của Harvics OS — nền tảng doanh nghiệp được hỗ trợ bởi AI. Ra mắt cổng nhà phân phối, khả năng thương mại điện tử và theo dõi đội tàu GPS theo thời gian thực trên tất cả các thị trường.",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "Tính bền vững & Quy mô",
+        "description": "Cam kết hoạt động trung hòa carbon. Đã tiếp cận hơn 30 quốc gia. Ra mắt HPay (nền tảng thanh toán kỹ thuật số), giải pháp tài chính thương mại và dự báo nhu cầu dựa trên AI trên tất cả các ngành dọc.",
+        "highlight": "Hơn 30 quốc gia"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "Doanh nghiệp toàn cầu",
+        "description": "Vượt qua cột mốc 42+ quốc gia. Đã triển khai công cụ AI với 6 mô hình ML để tối ưu hóa chiến lược, nhu cầu, giá cả, phạm vi phủ sóng và SKU. Ra mắt nền tảng đa ngôn ngữ hỗ trợ 38 ngôn ngữ.",
+        "highlight": "Hơn 42 quốc gia"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "Hệ điều hành AI-First",
+        "description": "Ra mắt Harvics OS v2 — hệ điều hành doanh nghiệp hợp nhất với trí thông minh thời gian thực, nguồn cấp dữ liệu trực tiếp của Socket.io, Alpha Engine cho các kế hoạch tấn công thị trường và hệ thống phân cấp địa lý 8 cấp hoàn chỉnh.",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "Tầm nhìn phía trước",
+        "description": "Mở rộng tới hơn 60 quốc gia. Xây dựng doanh nghiệp FMCG vận hành bằng AI đầu tiên trên thế giới, nơi mọi chức năng — mua sắm, hậu cần, tài chính, CRM — đều chạy trên trí thông minh dự đoán với cổng phê duyệt của con người.",
+        "highlight": "60+ Mục tiêu"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "Học viện thương mại, tìm nguồn cung ứng và AI thực tế dành cho người sáng lập - sáu tuần, phiên trực tiếp, hành lang Harvics.",
+    "navLabel": "Học viện khởi nghiệp",
+    "teaser": {
+      "eyebrow": "Học viện · Chương trình hành lang",
+      "title": "Học viện khởi nghiệp.",
+      "body": "Nghề thương mại cổ điển dành cho người sáng lập — tìm nguồn cung ứng, QC, bộ phận cấp vốn và hiểu biết về hành lang — cùng với thị trường Harvics.",
+      "cta": "Vào Học viện"
+    },
+    "hero": {
+      "alt": "Giảng đường cổ điển — Harvics Startup Academy",
+      "eyebrow": "Nhóm 01 · Q4 2026 · Chương trình hỗ trợ",
+      "title": "Harvics Startup Academy",
+      "body": "Một trường phái thương mại cổ điển dành cho những người sáng lập — tìm nguồn cung ứng, thương mại hành lang và AI hoạt động. Sáu tuần. Phiên trực tiếp. Các nhà khai thác thực sự.",
+      "apply": "Đăng ký vào Nhóm 01",
+      "seeProgramme": "Xem chương trình"
+    },
+    "stats": {
+      "founders": "Người sáng lập/nhóm",
+      "sessions": "Phiên trực tiếp",
+      "weeks": "Tuần",
+      "verticals": "Ngành dọc thương mại"
+    },
+    "why": {
+      "eyebrow": "01 · Tại sao nên tham gia",
+      "title": "Xây dựng một công ty thực sự có thể giao dịch.",
+      "body": "Không phải sân khấu. Tìm hiểu RFQ để giải quyết, tìm nguồn cung ứng, tiếp cận người mua và tự động hóa - từ các nhà khai thác trên khắp hành lang Harvics.",
+      "item1Title": "Hệ thống thương mại thực tế",
+      "item1Body": "Cách người mua tổ chức mua - và cách bạn thực hiện.",
+      "item2Title": "Mạng vận chuyển",
+      "item2Body": "Người sáng lập, nhà phân phối và nhà điều hành trên các ngành dọc.",
+      "item3Title": "AI hoạt động được",
+      "item3Body": "HarvyX, giọng nói Fin và tự động hóa hoạt động mà không cần từ thông dụng.",
+      "imageAlt": "Tranh tĩnh vật thương mại cổ điển"
+    },
+    "knowledge": {
+      "eyebrow": "Kiến thức",
+      "title": "Nghiên cứu hành lang như một kỷ luật.",
+      "body": "Chương trình giảng dạy được rút ra từ thực tiễn giao dịch thực tế — không phải các slide khởi nghiệp chung chung.",
+      "imageAlt": "Thư viện cổ điển lớn"
+    },
+    "programme": {
+      "eyebrow": "02 · Chương trình",
+      "title": "Những gì bạn sẽ làm việc thông qua",
+      "m1Title": "Thương hiệu & nguồn cung ứng",
+      "m1Body": "MOQ, cổng QC, dệt may và FMCG - xưởng may đến hành lang.",
+      "m2Title": "Thông minh và tiếp cận",
+      "m2Body": "Phòng thí nghiệm HarvyX, ICP của người mua, các hoạt động theo dõi sẽ nhận được phản hồi.",
+      "m3Title": "Vốn & đối tác",
+      "m3Body": "Con đường tài trợ và quan hệ đối tác - không có yêu cầu ngân hàng giả mạo.",
+      "m4Title": "Hành lang thương mại",
+      "m4Body": "Cảng, làn đường và cách hàng hóa thực sự di chuyển qua các thị trường.",
+      "m5Title": "Chất lượng và sự tận tâm",
+      "m5Body": "Thói quen kiểm tra bảo vệ danh tiếng và giải quyết.",
+      "m6Title": "Hàng hóa & FMCG",
+      "m6Body": "Từ thực tế kho hàng đến thương hiệu và nhu cầu bán buôn."
+    },
+    "tracks": {
+      "aEyebrow": "Theo dõi A",
+      "aTitle": "Thương hiệu & thương mại",
+      "aBody": "Những người sáng lập ngành may mặc và FMCG xây dựng thương hiệu, nhu cầu bán buôn và hành lang.",
+      "aAlt": "Phòng họp cổ điển",
+      "bEyebrow": "Đường B",
+      "bTitle": "Thương mại & hoạt động",
+      "bBody": "Các nhà khai thác nguồn cung ứng, hậu cần và B2B mở rộng quy mô thương mại của tổ chức.",
+      "bAlt": "Mạng lưới thẩm mỹ viện"
+    },
+    "network": {
+      "eyebrow": "03 · Mạng",
+      "title": "Gặp gỡ các nhà điều hành, không phải khán giả.",
+      "body": "Các phiên trực tiếp và giờ làm việc theo phong cách thẩm mỹ viện với những người sáng lập, nhà phân phối và nhà điều hành hành lang Harvics.",
+      "imageAlt": "Mạng lưới người sáng lập"
+    },
+    "rhythm": {
+      "eyebrow": "04 · Nhịp điệu",
+      "title": "Sáu tuần. Nhịp điệu rõ ràng.",
+      "w1": "Tuần 1",
+      "w1Body": "Định hướng · Bản đồ hành lang · Hội thảo ICP",
+      "w2": "Tuần 2",
+      "w2Body": "Tiếp cận người mua · Phòng thí nghiệm HarvyX",
+      "w3": "Tuần 3",
+      "w3Body": "Tìm nguồn cung ứng & QC · Thẩm định nhà cung cấp",
+      "w4": "Tuần 4",
+      "w4Body": "Tự động hóa · Giọng nói vây · ngăn xếp hoạt động",
+      "w5": "Tuần 5",
+      "w5Body": "Tài trợ và hợp tác",
+      "w6": "Tuần 6",
+      "w6Body": "Buổi giới thiệu của người sáng lập · các bước tiếp theo"
+    },
+    "apply": {
+      "eyebrow": "Ứng dụng",
+      "title": "Đăng ký vào Nhóm 01",
+      "body": "Chỗ ngồi có hạn. Hãy cho chúng tôi biết công ty của bạn, ngành dọc và những gì bạn đang xây dựng.",
+      "emailCta": "Nộp đơn qua email →",
+      "back": "Quay lại Harvics"
     }
   }
 }

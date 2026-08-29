@@ -191,6 +191,18 @@ router.post('/enroll', async (req: Request, res: Response): Promise<void> => {
 
     const enrollment = await enrollContact(body.contact_id, body.sequence_id);
     res.status(201).json(ok(enrollment));
+
+    const { emitOsEvent } = await import('../../../packages/lib/kafka');
+    void emitOsEvent({
+      sourceModule: 'Harvics_Outreach',
+      eventType: 'campaign.sent',
+      payload: {
+        action: 'enrolled',
+        contact_id: body.contact_id,
+        sequence_id: body.sequence_id,
+        enrollment_id: (enrollment as { id?: string })?.id,
+      },
+    });
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err);
     const map: Record<string, number> = {

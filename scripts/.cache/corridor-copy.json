@@ -1,0 +1,96 @@
+{
+  "metaDescription": "Harvics Global Ventures — sovereign trade infrastructure across 10 verticals and 42+ markets. Verified supply. Protected settlement.",
+  "heroTag": "Global trade operating system",
+  "heroLine": "One corridor. Every industry.",
+  "heroSupport": "We connect verified supply with protected settlement across ten verticals and forty-two markets — source, quote, move and close with institutional discipline.",
+  "ctaPrimary": "Explore verticals",
+  "ctaSecondary": "See the model",
+  "manifestoTitle": "We do not list products. We run trade.",
+  "manifestoBody": "Harvics is the operating layer between buyer and supplier — from first RFQ to final settlement. Ten industries, one governed path, and no catalogue theatre. Every listing is vetted. Every milestone is tracked. Every payment is protected.",
+  "campaignEye": "03 · Proof of corridor",
+  "campaignTitleLine1": "Certainty at",
+  "campaignTitleLine2": "every milestone.",
+  "campaignCta": "Enter HarvicTrade",
+  "industriesTitle": "Ten industries. One governed stack.",
+  "marquee": "VERIFIED SUPPLY · ESCROW SETTLEMENT · 42+ MARKETS · RFQ TO DOCK · HARVICTRADE · INSTITUTIONAL TRADE",
+  "opEyebrow": "06 · The HARVICS Operating Model",
+  "opTitle": "Built like infrastructure.|Sold like a service.",
+  "opLead": "The system behind every shipment, every approval, every relationship — explained on your terms.",
+  "wheelEyebrow": "07 · End-to-end operating system",
+  "wheelTitle": "14 stages.|One supply chain.",
+  "wheelLead": "Every brief flows through the same operating system — one cockpit, 42 markets, one accountable team.",
+  "marketEyebrow": "08 · HarvicTrade",
+  "marketTitle": "HarvicTrade.",
+  "marketLead": "The enterprise marketplace where verified listings meet protected settlement — built for buyers who cannot afford guesswork.",
+  "productsEyebrow": "09 · Live listings",
+  "productsTitle": "Moving through the corridor now.",
+  "closeEyebrow": "10 · Trade desk",
+  "closeTitle": "Start a transaction.",
+  "closeLead": "Speak to our desk for sourcing, corridor routing, finance structures or marketplace access — response within one business day.",
+  "closeCtaPrimary": "Contact the desk",
+  "closeCtaSecondary": "Submit an RFQ",
+  "verticalCards": [
+    {
+      "name": "Textiles & Apparel",
+      "line": "Denim, fabrics, finished goods"
+    },
+    {
+      "name": "FMCG & Food",
+      "line": "Packaged goods, distribution"
+    },
+    {
+      "name": "Commodities",
+      "line": "Agri, softs, metals, energy"
+    },
+    {
+      "name": "Industrial & PPE",
+      "line": "Machinery, MRO, safety"
+    },
+    {
+      "name": "Minerals & Metals",
+      "line": "Industrial & precious metals"
+    },
+    {
+      "name": "Oil, Gas & Energy",
+      "line": "Upstream to downstream"
+    },
+    {
+      "name": "Electronics",
+      "line": "Consumer & enterprise devices"
+    }
+  ],
+  "productCards": [
+    {
+      "title": "Premium Basmati Rice 1121 Sella",
+      "meta": "Pakistan · FOB Karachi · MOQ 1×20ft"
+    },
+    {
+      "title": "Hi-Vis Safety Jacket EN20471 Class 3",
+      "meta": "Turkey · EXW Istanbul · 5,000 pcs"
+    },
+    {
+      "title": "Copper Cathode Grade A — LME Registered",
+      "meta": "Chile · CIF Rotterdam · 500 MT"
+    },
+    {
+      "title": "iPhone 17 Pro Max — 256GB",
+      "meta": "Global · DDP · Bulk allocation"
+    },
+    {
+      "title": "Extra Virgin Olive Oil — 1L Glass",
+      "meta": "Spain · FOB Valencia · 2×40ft"
+    },
+    {
+      "title": "Diesel EN590 10ppm — FOB",
+      "meta": "UAE · FOB Jebel Ali · 5,000 MT"
+    },
+    {
+      "title": "Portland Cement 42.5N — Bulk",
+      "meta": "UAE · CIF East Africa · 10,000 MT"
+    },
+    {
+      "title": "Samsung Galaxy S25 Ultra — 256GB",
+      "meta": "Global · DDP · Enterprise lot"
+    }
+  ]
+}

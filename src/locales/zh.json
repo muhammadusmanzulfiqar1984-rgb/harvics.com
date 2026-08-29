@@ -3,13 +3,13 @@
   "home": {
     "welcome": "欢迎来到",
     "companyName": "哈里奇",
-    "tagline": "自2019年以来，我们始终致力于打造卓越的高端消费品。",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "探索产品",
     "contact": "联系我们",
     "learnMore": "了解更多",
-    "brandStatement": "一家领先的全球消费品公司，提供符合国际质量标准的各类优质食品。",
-    "taglineStart": "自成立以来，我们始终致力于打造卓越的高端消费品。",
-    "taglineYear": "2019",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "伦敦 • 米兰 • 纽约",
     "categories": {
       "bakery": "面包店",
@@ -81,7 +81,8 @@
       "specialOffers": "特价优惠",
       "promotions": "促销",
       "bulkOrders": "批量订购折扣"
-    }
+    },
+    "startupAcademy": "创业学院"
   },
   "products": {
     "ourProducts": "我们的产品",
@@ -119,7 +120,40 @@
     "whatsapp": "WhatsApp",
     "callNow": "立即致电",
     "sendEmail": "发送电子邮件",
-    "messageUs": "联系我们"
+    "messageUs": "联系我们",
+    "getInTouch": "联系我们",
+    "locations": "地点",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "发送消息",
+    "firstName": "名",
+    "firstNamePlaceholder": "输入您的名字",
+    "lastName": "姓",
+    "lastNamePlaceholder": "输入您的姓氏",
+    "emailPlaceholder": "输入您的电子邮件地址",
+    "subject": "主题",
+    "subjectPlaceholder": "输入主题",
+    "message": "信息",
+    "messagePlaceholder": "写下您的留言",
+    "send": "发送",
+    "eyebrow": "开始简介",
+    "headline1": "开始一个简短的介绍。",
+    "headline2": "我们会在 24 小时内回复。",
+    "subhead": "告诉我们您的类别、数量和目标市场。专家会向您提供采购选项和指示性定价。",
+    "fullName": "姓名",
+    "fullNamePlaceholder": "沙阿·塔布拉兹",
+    "company": "公司",
+    "companyPlaceholder": "您的组织",
+    "businessEmail": "企业邮箱",
+    "howCanWeHelp": "我们能提供什么帮助？",
+    "sending": "正在发送...",
+    "sendEnquiry": "发送询问",
+    "sentTitle": "消息已发送。",
+    "sentSub": "我们的团队将在 24 小时内回复。",
+    "directChannels": "直接渠道",
+    "trust1": "24小时响应保证",
+    "trust2": "专属客户经理",
+    "trust3": "NDA available on request",
+    "trust4": "42 个市场 · 今日发货 1,247 件"
   },
   "media": {
     "title": "媒体中心",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "哈维克全球风险投资公司",
-    "tagline": "自2019年以来，我们始终致力于打造卓越的高端消费品。",
-    "brandStatement": "一家领先的全球消费品公司，提供符合国际质量标准的各类优质食品。",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "伦敦 • 米兰 • 纽约",
     "since": "自2019年以来",
     "harvicsNews": "哈维克新闻",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "加入我们的网络",
     "newsletterTagline": "获取最新的贸易信息和市场更新",
     "activeShipments": "活跃货运",
-    "certifiedAudited": "已认证和审计"
+    "certifiedAudited": "已认证和审计",
+    "invalidEmail": "请输入有效的电子邮件地址",
+    "subscriptionSuccess": "感谢您的订阅！",
+    "subscriptionError": "出了点问题。请再试一次。"
   },
   "search": {
     "placeholder": "搜索产品、品牌或类别",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "抱歉，我没听懂。您能换个说法吗？",
       "help": "我可以帮您查询产品信息、下单或解答一般性问题。您想了解什么？",
-      "contact": "如需更多帮助，请联系 support@harvics.com 或致电 +1-800-HARVICS。"
-    }
+      "contact": "如需更多帮助，请联系 support@harvics.com 或致电 +1-800-HARVICS。",
+      "product": "从菜单中浏览我们的产品目录，或者告诉我您对哪个类别感兴趣 - 快速消费品、纺织品、物流等。",
+      "order": "要下订单或检查状态，请访问经销商门户或联系您的客户经理。",
+      "about": "Harvics Global Ventures 是一家主权贸易基础设施公司，在 40 多个国家/地区拥有 20 多年的历史。"
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "按 Enter 发送"
   },
   "common": {
     "chatWithUs": "与我们聊天",
@@ -730,12 +772,17 @@
       "gps-tracking": "GPS追踪",
       "localization": "本土化",
       "workflows": "工作流程",
-      "admin": "行政"
+      "admin": "行政",
+      "modules": "模块"
     },
     "kpis": {
       "customers": "顾客",
       "employees": "雇员",
-      "profit": "利润"
+      "profit": "利润",
+      "totalOrders": "订单总数",
+      "inventoryValue": "库存价值",
+      "logisticsEfficiency": "物流效率",
+      "revenue": "收入"
     },
     "domain": {
       "title": "CRM操作系统",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "查看和管理您的客户关系、互动和营销活动。",
       "loading": "加载中...",
       "error": "加载 CRM 数据时出错"
+    },
+    "roleIndicator": {
+      "manager": "经理视图",
+      "executive": "行政景观",
+      "investor": "投资者观点",
+      "distributor": "经销商视图",
+      "supplier": "供应商视图",
+      "customer": "客户观点"
     }
   },
   "supplierPortal": {
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "关于哈维克斯",
-    "subtitle": "自2019年以来，我们始终致力于打造卓越的高端消费品。",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "我们的故事",
     "story1": "Harvics成立于2019年，从一个富有远见的理念发展成为全球领先的高端消费品公司。我们始终坚持对品质的不懈追求和对创新的执着承诺，并以此为基石，不断前行。",
     "story2": "我们的业务遍及40多个国家，致力于提供丰富人们生活并树立行业新标杆的产品。从最初的创业到如今的全球布局，我们的价值观始终如一。",
@@ -1156,67 +1211,67 @@
     "backToHelpCenter": "返回帮助中心",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "常见问题解答",
+        "description": "查找常见问题的答案"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "联系支持人员",
+        "description": "与我们的支持团队联系"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "用户指南",
+        "description": "分步指南和教程"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "故障排除",
+        "description": "解决常见问题"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "账户帮助",
+        "description": "管理您的帐户和设置"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "订单支持",
+        "description": "帮助订单和送货"
       }
     },
     "account": {
       "title": "账户帮助",
       "subtitle": "管理您的帐户设置和首选项",
-      "placeholder": "Account management and settings help content will appear here."
+      "placeholder": "帐户管理和设置帮助内容将显示在此处。"
     },
     "orders": {
       "title": "订单支持",
       "subtitle": "跟踪和管理您的订单和交货",
-      "placeholder": "Order and delivery support content will appear here."
+      "placeholder": "订单和交付支持内容将显示在此处。"
     },
     "guides": {
       "title": "用户指南",
       "subtitle": "分步指南可帮助您充分利用 Harvics",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "入门",
+          "description": "学习基础知识"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "账户设置",
+          "description": "设置您的帐户"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "如何订购",
+          "description": "下订单并跟踪"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "付款方式",
+          "description": "付款方式和安全性"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "运输与交付",
+          "description": "发货信息"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "退货与退款",
+          "description": "退货政策和流程"
         }
       }
     },
@@ -1225,20 +1280,20 @@
       "subtitle": "常见问题和快速解决方案",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "登录问题",
+          "description": "登录时出现问题"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "付款问题",
+          "description": "付款未处理"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "交货延误",
+          "description": "订单未到达"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "网站错误",
+          "description": "页面未加载"
         }
       }
     }
@@ -1250,28 +1305,28 @@
     "shippingInfo": "运输信息",
     "paymentMethod": "付款方式",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "信用卡/借记卡",
+      "bankTransfer": "银行转账（LC/TT）",
       "wallet": "HPay Digital Wallet"
     },
     "orderSummary": "订单摘要",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
-      "total": "Total"
+      "subtotal": "小计",
+      "shipping": "船运",
+      "calculatedNextStep": "下一步计算",
+      "tax": "税",
+      "total": "全部的"
     },
     "placeOrder": "下订单",
-    "sslNotice": "Secured with 256-bit SSL encryption",
+    "sslNotice": "采用 256 位 SSL 加密保护",
     "continueShopping": "继续购物",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "名",
+      "lastName": "姓",
+      "email": "电子邮件",
+      "address": "地址",
+      "city": "城市",
+      "country": "国家"
     }
   },
   "history": {
@@ -1286,45 +1341,143 @@
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "成立于迪拜",
+        "description": "Harvics Global Ventures 在阿联酋成立，愿景是成为世界一流的快速消费品和多垂直贸易集团。首次开展纺织品和消费品业务。",
+        "highlight": "第一年"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "首次国际扩张",
+        "description": "尽管面临全球大流行的挑战，但业务已扩展到欧洲、中东和南亚的 10 个国家。推出数字供应链运营和远程分销合作伙伴关系。",
+        "highlight": "10个国家"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "多垂直拓展",
+        "description": "推出 5 个新的垂直行业：大宗商品、工业设备、矿产和采矿、石油和天然气以及房地产。所有垂直领域的总产品目录超过 500 个 SKU。",
+        "highlight": "5 个新垂直领域"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "数字化转型",
+        "description": "构建了 Harvics OS 的第一个版本——人工智能驱动的企业平台。在所有市场推出分销商门户、电子商务功能和实时 GPS 车队跟踪。",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "可持续性和规模",
+        "description": "致力于碳中和运营。覆盖 30 多个国家。推出 HPay（数字支付平台）、贸易融资解决方案以及跨所有垂直领域的人工智能驱动的需求预测。",
+        "highlight": "30+ 个国家"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "全球企业",
+        "description": "突破了 42 多个国家/地区的里程碑。部署了具有 6 个 ML 模型的 AI 引擎，用于策略、需求、定价、覆盖范围和 SKU 优化。推出支持38种语言的多语言平台。",
+        "highlight": "42+ 个国家"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "人工智能优先操作系统",
+        "description": "Harvics OS v2 推出——具有实时智能、Socket.io 实时反馈、用于市场攻击计划的 Alpha Engine 和完整的 8 级地理层次结构的统一企业操作系统。",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "未来愿景",
+        "description": "扩展到 60 多个国家/地区。打造世界上第一家由人工智能运营的快速消费品企业，其中每个职能（采购、物流、财务、CRM）都基于预测智能和人工审批关卡运行。",
+        "highlight": "60+ 目标"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "面向创始人的实用贸易、采购和人工智能学院——六周、现场会议、Harvics 走廊。",
+    "navLabel": "创业学院",
+    "teaser": {
+      "eyebrow": "学院·走廊项目",
+      "title": "创业学院。",
+      "body": "创始人的经典贸易技巧——采购、质量控制、资金柜台和走廊知识——以及 Harvics 市场。",
+      "cta": "进入学院"
+    },
+    "hero": {
+      "alt": "古典演讲厅——Harvics Startup Academy",
+      "eyebrow": "第 01 组 · 2026 年第 4 季度 · 支持计划",
+      "title": "Harvics Startup Academy",
+      "body": "创始人的经典贸易学校——采购、走廊贸易和有效的人工智能。六个星期。现场会议。真正的运营商。",
+      "apply": "申请群组 01",
+      "seeProgramme": "查看节目"
+    },
+    "stats": {
+      "founders": "创始人/群体",
+      "sessions": "现场会议",
+      "weeks": "周数",
+      "verticals": "贸易垂直领域"
+    },
+    "why": {
+      "eyebrow": "01 · 为什么加入",
+      "title": "建立一家真正可以交易的公司。",
+      "body": "不是音高剧院。从 Harvics 走廊的运营商处学习询价到结算、采购尽职调查、买家外展和自动化。",
+      "item1Title": "实用的贸易系统",
+      "item1Body": "机构买家如何购买——以及您如何履行。",
+      "item2Title": "运送网络",
+      "item2Body": "各个垂直领域的创始人、分销商和运营商。",
+      "item3Title": "确实有效的人工智能",
+      "item3Body": "HarvyX、Fin 语音和操作自动化，无需流行语。",
+      "imageAlt": "古典贸易静物"
+    },
+    "knowledge": {
+      "eyebrow": "知识",
+      "title": "像一门学科一样研究走廊。",
+      "body": "课程取自真实的贸易实践——而不是通用的创业幻灯片。",
+      "imageAlt": "宏伟的古典图书馆"
+    },
+    "programme": {
+      "eyebrow": "02 · 节目",
+      "title": "你将要经历什么",
+      "m1Title": "品牌及采购",
+      "m1Body": "最小起订量、质量控制门、纺织品和快速消费品——工作室到走廊。",
+      "m2Title": "情报与外展",
+      "m2Body": "HarvyX 实验室、买家 ICP、得到回复的后续行动。",
+      "m3Title": "资本与合作伙伴",
+      "m3Body": "融资途径和合作伙伴关系——没有虚假的银行索赔。",
+      "m4Title": "走廊商业",
+      "m4Body": "港口、航线以及货物在市场上的实际运输方式。",
+      "m5Title": "品质与勤奋",
+      "m5Body": "保护声誉和结算的检查习惯。",
+      "m6Title": "大宗商品及快速消费品",
+      "m6Body": "从仓库现实到品牌和批发需求。"
+    },
+    "tracks": {
+      "aEyebrow": "A轨",
+      "aTitle": "品牌与商业",
+      "aBody": "服装和快速消费品创始人建立品牌、批发和走廊需求。",
+      "aAlt": "古典会议室",
+      "bEyebrow": "B轨",
+      "bTitle": "贸易与运营",
+      "bBody": "采购、物流和 B2B 运营商扩大机构贸易。",
+      "bAlt": "沙龙网络"
+    },
+    "network": {
+      "eyebrow": "03·网络",
+      "title": "与运营商见面，而不是观众。",
+      "body": "与创始人、分销商和 Harvics 走廊运营商进行现场会议和沙龙式办公时间。",
+      "imageAlt": "创始人网络"
+    },
+    "rhythm": {
+      "eyebrow": "04 · 节奏",
+      "title": "六个星期。节奏清晰。",
+      "w1": "第一周",
+      "w1Body": "定位·走廊图·ICP车间",
+      "w2": "第 2 周",
+      "w2Body": "买家外展 · HarvyX 实验室",
+      "w3": "第三周",
+      "w3Body": "采购和质量控制 · 供应商尽职调查",
+      "w4": "第 4 周",
+      "w4Body": "自动化 · Fin 语音 · 操作栈",
+      "w5": "第 5 周",
+      "w5Body": "资金与合作伙伴关系",
+      "w6": "第 6 周",
+      "w6Body": "创始人展示·下一步计划"
+    },
+    "apply": {
+      "eyebrow": "应用领域",
+      "title": "申请群组 01",
+      "body": "座位有限。告诉我们您的公司、行业以及您正在构建的产品。",
+      "emailCta": "通过电子邮件申请→",
+      "back": "回到哈维斯"
     }
   }
 }

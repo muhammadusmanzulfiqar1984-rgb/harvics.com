@@ -5,6 +5,7 @@ import OSDomainTierStructure, { Tier2Module } from '@/components/shared/OSDomain
 import OrderListContent from '@/components/domains/orders/OrderListContent'
 import InvoiceListContent from '@/components/domains/orders/InvoiceListContent'
 import CreditLimitsContent from '@/components/domains/orders/CreditLimitsContent'
+import SalesOrdersContent from '@/components/domains/orders/SalesOrdersContent'
 import OrderAnalyticsContent from '@/components/domains/orders/OrderAnalyticsContent'
 import { SalesAnalyticsCharts } from '@/components/os-domains/DomainAnalyticsCharts'
 
@@ -13,39 +14,50 @@ interface OrdersDomainContentProps {
   locale: string
 }
 
-// Live KPI bar
+// Live KPI bar — from /api/orders/summary only
 function OrdersKPIBar() {
-  const [kpis, setKpis] = useState([
-    { label: 'Orders Today',    value: 23,    delta: '+3',    up: true,  fmt: (n:number) => n.toString(),                accent: 'var(--harvics-burgundy)' },
-    { label: 'Revenue MTD',     value: 1840000, delta: '+$42K', up: true, fmt: (n:number) => `$${(n/1000000).toFixed(2)}M`, accent: 'var(--harvics-gold)' },
-    { label: 'Pending Approval',value: 7,     delta: '+2',    up: false, fmt: (n:number) => n.toString(),                accent: '#f59e0b' },
-    { label: 'On-Time Delivery',value: 94,    delta: '+1%',   up: true,  fmt: (n:number) => `${n}%`,                     accent: '#16a34a' },
-    { label: 'Avg Order Value', value: 18400, delta: '+$340', up: true,  fmt: (n:number) => `$${Math.round(n/100)*100}`, accent: 'var(--harvics-burgundy)' },
-  ])
-  const [flash, setFlash] = useState<number|null>(null)
+  const [summary, setSummary] = useState<{ totalOrders?: number; pending?: number; completed?: number; totalAmount?: number } | null>(null)
+  const [status, setStatus] = useState<'loading' | 'live' | 'empty'>('loading')
+
   useEffect(() => {
-    const t = setInterval(() => {
-      const idx = Math.floor(Math.random() * kpis.length)
-      setKpis(prev => prev.map((k, i) => i !== idx ? k : {
-        ...k,
-        value: k.value + (Math.random() > 0.4 ? 1 : -1) * Math.round(Math.random() * (i === 1 ? 2000 : 1))
-      }))
-      setFlash(idx)
-      setTimeout(() => setFlash(null), 600)
-    }, 2000)
-    return () => clearInterval(t)
+    const token = typeof window !== 'undefined' ? localStorage.getItem('auth_token') || '' : ''
+    fetch('/api/orders/summary', { headers: token ? { Authorization: `Bearer ${token}` } : {} })
+      .then((r) => r.json())
+      .then((d) => {
+        if (d?.success && d.data) {
+          setSummary(d.data)
+          setStatus((d.data.totalOrders || 0) > 0 ? 'live' : 'empty')
+        } else setStatus('empty')
+      })
+      .catch(() => setStatus('empty'))
   }, [])
+
+  const kpis = [
+    { label: 'Total orders', value: summary?.totalOrders ?? 0, fmt: (n: number) => String(n) },
+    { label: 'Pending', value: summary?.pending ?? 0, fmt: (n: number) => String(n) },
+    { label: 'Completed', value: summary?.completed ?? 0, fmt: (n: number) => String(n) },
+    {
+      label: 'Order value',
+      value: summary?.totalAmount ?? 0,
+      fmt: (n: number) => (n >= 1_000_000 ? `$${(n / 1_000_000).toFixed(2)}M` : n >= 1000 ? `$${Math.round(n / 1000)}K` : `$${n}`),
+    },
+  ]
+
   return (
-    <div className="grid grid-cols-5 gap-3 px-4 pt-4 pb-2">
-      {kpis.map((k, i) => (
-        <div key={i} className={`rounded-xl px-4 py-3 border transition-colors duration-300 ${
-          flash === i ? (k.up ? 'bg-emerald-50 border-emerald-300' : 'bg-red-50 border-red-300') : 'bg-white border-[#E5E5EA]'
-        }`} style={{ boxShadow: '0 1px 8px rgba(107,31,43,0.06)' }}>
-          <div className="text-[10px] text-[#8E8E93] uppercase tracking-wider mb-1">{k.label}</div>
-          <div className="text-2xl font-black tabular-nums" style={{ color: k.accent }}>{k.fmt(k.value)}</div>
-          <div className={`text-[11px] font-bold mt-0.5 ${k.up ? 'text-emerald-600' : 'text-red-500'}`}>{k.up ? '▲' : '▼'} {k.delta} today</div>
-        </div>
-      ))}
+    <div className="px-4 pt-4 pb-2">
+      <div className="mb-2 flex items-center gap-2">
+        <span className={`text-[10px] font-semibold uppercase tracking-wider ${status === 'live' ? 'text-emerald-700' : 'text-[#6B5E52]'}`}>
+          {status === 'loading' ? 'Loading…' : status === 'live' ? 'Live · Orders API' : 'No orders yet'}
+        </span>
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+        {kpis.map((k) => (
+          <div key={k.label} className="rounded-xl px-4 py-3 border border-[#E8E0D4] bg-white">
+            <div className="text-[10px] text-[#8E8E93] uppercase tracking-wider mb-1">{k.label}</div>
+            <div className="text-2xl font-semibold tabular-nums text-[#3D1212]">{k.fmt(k.value)}</div>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
@@ -109,6 +121,12 @@ export default function OrdersDomainContent({ persona, locale }: OrdersDomainCon
               }
             }
           ]
+        },
+        {
+          id: 'sales-orders',
+          label: 'Sales Orders (CPQ)',
+          icon: '',
+          component: <SalesOrdersContent locale={locale} />,
         },
         {
           id: 'order-analytics',

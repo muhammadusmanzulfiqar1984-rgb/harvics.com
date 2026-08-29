@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Suspense } from 'react'
 import UnifiedLoginForm from './UnifiedLoginForm'
 import type { Metadata } from 'next'
 import { generateLocalizedMetadata } from '@/lib/seo'
@@ -156,7 +157,9 @@ export default async function LoginPage({ params }: { params: Promise<{ locale: 
               </p>
             </div>
 
-            <UnifiedLoginForm />
+            <Suspense fallback={<div className="h-48 animate-pulse bg-harvics-cream/60 border border-harvics-gold/20" />}>
+              <UnifiedLoginForm />
+            </Suspense>
 
             {/* Secondary access — La Pres (not company login) */}
             <div className="mt-6 border border-harvics-gold/25 bg-harvics-burgundy/95 p-6 sm:p-7">

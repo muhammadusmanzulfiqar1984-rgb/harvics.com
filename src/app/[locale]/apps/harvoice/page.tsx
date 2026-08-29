@@ -1,77 +1,79 @@
-import { Metadata } from 'next'
 import Link from 'next/link'
+import { auth } from '@clerk/nextjs/server'
+import { redirect } from 'next/navigation'
 import { generateAllLocaleParams } from '@/lib/generateLocaleParams'
+import { getHarvoiceAppUrl } from '@/lib/harvoice'
+
+export const dynamic = 'force-dynamic'
 
 export async function generateStaticParams() {
   return generateAllLocaleParams()
 }
 
-export const metadata: Metadata = {
-  title: 'Harvoice — AI Voice Assistant | Harvics Apps',
-  description: 'Smart conversational voice assistant for B2B lead generation and operator workflows. Powered by Groq AI with natural language buyer discovery.',
+export const metadata = {
+  title: 'Harvoice — Encrypted Messenger | Harvics Apps',
+  description:
+    'Military-grade encrypted P2P messenger — E2EE text and attachments, vaults, self-destruct, and WebRTC calls. Login required.',
 }
 
-const FEATURES = [
-  { title: 'AI Chat Assistant', desc: 'Natural language interface for lead discovery, buyer search, and outreach drafting.', icon: '💬' },
-  { title: 'Voice Input', desc: 'Speak commands hands-free — browser speech recognition with real-time transcription.', icon: '🎙️' },
-  { title: 'Buyer Discovery', desc: 'Search buyers by city, industry, and product category across global databases.', icon: '🔍' },
-  { title: 'Lead Capture', desc: 'AI-assisted lead qualification and automatic CRM entry from conversations.', icon: '📇' },
-  { title: 'Outreach Console', desc: 'Draft personalized outreach emails and messages with AI writing assistance.', icon: '✉️' },
-  { title: 'Data Intelligence', desc: 'Real-time metrics on lead pipeline, conversion rates, and market signals.', icon: '📊' },
-]
+function clerkOn() {
+  return Boolean(
+    (process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY || process.env.CLERK_PUBLISHABLE_KEY || '').trim() &&
+      (process.env.CLERK_SECRET_KEY || '').trim(),
+  )
+}
 
-export default function HarvoicePage() {
+export default async function HarvoicePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  const launchUrl = getHarvoiceAppUrl()
+  const returnPath = `/${locale}/apps/harvoice`
+
+  if (clerkOn()) {
+    const session = await auth()
+    if (!session?.userId) {
+      redirect(`/app/sign-in?redirect_url=${encodeURIComponent(returnPath)}`)
+    }
+  }
+
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#F5F1E8] to-white">
-      <section className="max-w-5xl mx-auto px-6 pt-24 pb-16">
-        <div className="flex items-center gap-4 mb-6">
-          <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-harvics-burgundy to-harvics-gold flex items-center justify-center text-white text-2xl font-bold shadow-lg">H</div>
-          <div>
-            <span className="inline-block px-3 py-0.5 text-xs font-semibold rounded-full bg-amber-100 text-amber-800 mb-1">Beta</span>
-            <h1 className="text-3xl font-bold text-harvics-burgundy">Harvoice</h1>
-          </div>
+    <main className="fixed inset-0 z-[80] bg-black flex flex-col">
+      <header className="shrink-0 flex items-center justify-between gap-4 px-4 md:px-6 py-3 border-b border-harvics-gold/20 bg-[#0a0a0a]/95 backdrop-blur-sm">
+        <div className="min-w-0">
+          <p className="text-[9px] uppercase tracking-[0.22em] text-harvics-gold font-bold">
+            Harvics · Secure Comms · Secured
+          </p>
+          <h1 className="text-sm md:text-base font-semibold text-white truncate">
+            Harvoice — Encrypted Messenger
+          </h1>
         </div>
-        <p className="text-lg text-gray-700 max-w-2xl mb-10">
-          A smart conversational voice assistant for B2B operator workflows. Natural language buyer discovery, AI-powered lead capture, and intelligent outreach — all through voice or text.
-        </p>
-
-        <div className="flex gap-4 mb-16">
+        <div className="flex flex-wrap gap-2 shrink-0">
+          <Link
+            href={`/${locale}/apps`}
+            className="inline-flex items-center justify-center px-4 py-2 border border-harvics-gold/40 text-harvics-gold text-[10px] font-bold uppercase tracking-[0.14em] hover:bg-harvics-gold/10 transition-colors"
+          >
+            ← Apps
+          </Link>
           <a
-            href="/launch/harvoice"
+            href={launchUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-harvics-burgundy text-white font-semibold shadow-md hover:bg-[#5a1824] transition"
+            className="inline-flex items-center justify-center px-4 py-2 bg-harvics-gold text-[#1a0d00] text-[10px] font-bold uppercase tracking-[0.14em] hover:bg-[#d4b46e] transition-colors"
           >
-            Launch App ↗
+            Full Screen
           </a>
-          <Link
-            href="/en/apps"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-harvics-burgundy/20 text-harvics-burgundy font-semibold hover:bg-harvics-burgundy/5 transition"
-          >
-            ← Back to Apps
-          </Link>
         </div>
-
-        <h2 className="text-xl font-bold text-harvics-burgundy mb-6">Features</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {FEATURES.map((f) => (
-            <div key={f.title} className="p-6 rounded-2xl bg-white border border-gray-100 shadow-sm">
-              <div className="text-3xl mb-3">{f.icon}</div>
-              <h3 className="font-semibold text-harvics-burgundy mb-1">{f.title}</h3>
-              <p className="text-sm text-gray-600">{f.desc}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="p-8 rounded-2xl bg-harvics-burgundy/5 border border-harvics-burgundy/10">
-          <h3 className="font-bold text-harvics-burgundy mb-2">Tech Stack</h3>
-          <div className="flex flex-wrap gap-2 text-xs">
-            {['Groq AI', 'Express', 'Web Speech API', 'OpenAI TTS', 'Zustand', 'Vanilla JS'].map(t => (
-              <span key={t} className="px-3 py-1 rounded-full bg-white border border-gray-200 text-gray-700">{t}</span>
-            ))}
-          </div>
-        </div>
-      </section>
+      </header>
+      <iframe
+        title="Harvoice — Encrypted Messenger"
+        src={launchUrl}
+        className="flex-1 w-full border-0 bg-black"
+        allow="microphone; camera; display-capture; autoplay; clipboard-write; fullscreen"
+        referrerPolicy="no-referrer"
+      />
     </main>
   )
 }

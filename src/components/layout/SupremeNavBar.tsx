@@ -70,9 +70,19 @@ const SupremeNavBar: React.FC = () => {
     return () => window.removeEventListener('keydown', handleEsc)
   }, [])
 
-  const isActive = (href: string) => {
+  const isActive = (href: string, verticalKey?: string) => {
     if (!pathname) return false
+    if (verticalKey === 'oil-gas' && /(?:^|\/)energies(?:\/|$)/.test(pathname)) return true
     return pathname.startsWith(href)
+  }
+
+  const blockHref = (vertical: NavVertical, block: MegaMenuBlock) =>
+    `/${locale}${block.href || `/${vertical.key}/${slugify(block.title)}`}`
+
+  const itemHref = (vertical: NavVertical, block: MegaMenuBlock, item: string) => {
+    const custom = block.itemHrefs?.[item]
+    if (custom) return `/${locale}${custom}`
+    return `/${locale}/${vertical.key}/${slugify(block.title)}/${slugify(item)}`
   }
 
   const activeVertical = navVerticals.find(v => v.key === activeDropdown)
@@ -135,7 +145,8 @@ const SupremeNavBar: React.FC = () => {
               >
                 <Link
                   href={`/${locale}${vertical.href}`}
-                  className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${activeDropdown === vertical.key || isActive(`/${locale}${vertical.href}`) ? 'bg-harvics-burgundy text-white' : 'text-harvics-burgundy hover:bg-harvics-gold/10 hover:text-harvics-gold'}`}
+                  prefetch={false}
+                  className={`text-[10px] font-semibold tracking-[0.12em] uppercase px-3 py-1.5 transition-all duration-200 whitespace-nowrap ${activeDropdown === vertical.key || isActive(`/${locale}${vertical.href}`, vertical.key) ? 'bg-harvics-burgundy text-white' : 'text-harvics-burgundy hover:bg-harvics-gold/10 hover:text-harvics-gold'}`}
                   role="menuitem"
                   aria-haspopup="true"
                   aria-expanded={activeDropdown === vertical.key}
@@ -238,7 +249,8 @@ const SupremeNavBar: React.FC = () => {
                       }}
                     >
                       <Link
-                        href={`/${locale}/${activeVertical.key}/${slugify(block.title)}`}
+                        href={blockHref(activeVertical, block)}
+                        prefetch={false}
                         className="block mb-4 group/title"
                         style={{
                           color: 'var(--harvics-burgundy)',
@@ -249,6 +261,19 @@ const SupremeNavBar: React.FC = () => {
                           textDecoration: 'none',
                         }}
                       >
+                        {block.href === '/energies' && (
+                          <div
+                            style={{
+                              fontSize: '9px',
+                              letterSpacing: '0.22em',
+                              color: 'var(--harvics-gold)',
+                              marginBottom: '6px',
+                              fontWeight: 600,
+                            }}
+                          >
+                            Oil &amp; Gas · Initiative
+                          </div>
+                        )}
                         <span className="transition-colors duration-200 group-hover/title:text-harvics-gold">
                           {block.title}
                         </span>
@@ -257,7 +282,8 @@ const SupremeNavBar: React.FC = () => {
                         {block.items.map((item, itemIdx) => (
                           <Link
                             key={item}
-                            href={`/${locale}/${activeVertical.key}/${slugify(block.title)}/${slugify(item)}`}
+                            href={itemHref(activeVertical, block, item)}
+                            prefetch={false}
                             className="group/item relative pl-0 transition-all duration-200 hover:pl-2.5 py-1"
                             style={{
                               display: 'block',

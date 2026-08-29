@@ -22,34 +22,39 @@ export default function PerformanceReviewsContent({ persona, locale }: Performan
   const loadPerformance = async () => {
     setLoading(true)
     try {
-      const [employeesRes, summaryRes] = await Promise.all([
-        apiClient.request('/hr/employees?status=Active&limit=100'),
-        apiClient.request('/hr/summary')
+      const [reviewsRes, summaryRes] = await Promise.all([
+        apiClient.request('/wave5/perf-reviews'),
+        apiClient.request('/hr/summary'),
       ])
-      
-      const rawEmployees = (employeesRes?.data as any)
-      const employees: any[] = Array.isArray(rawEmployees) ? rawEmployees : (rawEmployees?.data ?? [])
+
+      const rawReviews = (reviewsRes?.data as any)
+      const reviews: any[] = Array.isArray(rawReviews) ? rawReviews : (rawReviews?.data ?? [])
       const summary = (summaryRes?.data as any) || {}
-      
-      // Mock performance metrics based on employee data
       const totalEmployees = summary.totalEmployees || 0
-      const reviewsCompleted = Math.floor(totalEmployees * 0.7) // 70% reviewed
-      const pending = totalEmployees - reviewsCompleted
-      
+
+      const reviewsCompleted = reviews.filter((r) => r.overallScore > 0 || r.mgrRating > 0).length
+      const pending = Math.max(0, totalEmployees - reviewsCompleted)
+      const scored = reviews.filter((r) => r.overallScore > 0)
+      const averageRating = scored.length
+        ? scored.reduce((s, r) => s + Number(r.overallScore), 0) / scored.length
+        : null
+      const topPerformers = reviews.filter((r) => r.mgrRating >= 4).length
+
       setPerformanceData({
         reviewsCompleted,
         pending,
-        averageRating: 4.2, // Mock rating
-        topPerformers: Math.floor(totalEmployees * 0.1), // Top 10%
-        employees: employees
+        averageRating,
+        topPerformers,
+        reviews,
       })
     } catch (error) {
       console.error('Error loading performance:', error)
       setPerformanceData({
         reviewsCompleted: 0,
         pending: 0,
-        averageRating: 4.2,
-        topPerformers: 0
+        averageRating: null,
+        topPerformers: 0,
+        reviews: [],
       })
     } finally {
       setLoading(false)
@@ -66,7 +71,7 @@ export default function PerformanceReviewsContent({ persona, locale }: Performan
 
   const reviewsCompleted = performanceData?.reviewsCompleted || 0
   const pending = performanceData?.pending || 0
-  const averageRating = performanceData?.averageRating || 0
+  const averageRating = performanceData?.averageRating
   const topPerformers = performanceData?.topPerformers || 0
 
   return (
@@ -91,7 +96,7 @@ export default function PerformanceReviewsContent({ persona, locale }: Performan
         />
         <KPICard
           label="Avg. Rating"
-          value={averageRating.toFixed(1)}
+          value={averageRating != null ? averageRating.toFixed(1) : '—'}
           icon={<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><circle cx="8" cy="8" r="6.5"/><path d="M5.5 8.5s.6 1.5 2.5 1.5 2.5-1.5 2.5-1.5"/><circle cx="6" cy="6.5" r="0.5" fill="currentColor"/><circle cx="10" cy="6.5" r="0.5" fill="currentColor"/></svg>}
         />
         <KPICard
@@ -109,26 +114,26 @@ export default function PerformanceReviewsContent({ persona, locale }: Performan
             <thead>
               <tr className="border-b border-[#E5E5EA] bg-[#F5F5F7]">
                 <th className="text-left px-5 py-3 text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Employee</th>
-                <th className="text-left px-5 py-3 text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Department</th>
+                <th className="text-left px-5 py-3 text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Period</th>
                 <th className="text-left px-5 py-3 text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Rating</th>
-                <th className="text-left px-5 py-3 text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Status</th>
+                <th className="text-left px-5 py-3 text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Potential</th>
               </tr>
             </thead>
             <tbody>
-              {(performanceData?.employees || []).map((emp: any, idx: number) => (
-                <tr key={emp.id || idx} className="hover:bg-[#F5F5F7] transition-colors">
-                  <td className="px-5 py-3.5 text-sm text-[#8E8E93]">{emp.name}</td>
-                  <td className="px-5 py-3.5 text-sm text-[#8E8E93]">{emp.department}</td>
-                  <td className="px-5 py-3.5 text-sm text-[#8E8E93]">{idx < reviewsCompleted ? `${(4.0 + Math.random() * 0.8).toFixed(1)} ⭐` : '-'}</td>
+              {(performanceData?.reviews || []).map((rev: any) => (
+                <tr key={rev.id} className="hover:bg-[#F5F5F7] transition-colors">
+                  <td className="px-5 py-3.5 text-sm text-[#8E8E93]">{rev.employeeId || '—'}</td>
+                  <td className="px-5 py-3.5 text-sm text-[#8E8E93]">{rev.period || '—'}</td>
+                  <td className="px-5 py-3.5 text-sm text-[#8E8E93]">
+                    {rev.overallScore > 0 ? `${Number(rev.overallScore).toFixed(1)} ⭐` : '—'}
+                  </td>
                   <td className="py-2">
-                    <span className={`px-2 py-1 rounded text-xs ${idx < reviewsCompleted ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`}>
-                      {idx < reviewsCompleted ? 'Completed' : 'Pending'}
-                    </span>
+                    <span className="px-2 py-1 rounded text-xs bg-[#F5F5F7] text-[#1A1A1A]">{rev.potential || '—'}</span>
                   </td>
                 </tr>
               ))}
-              {(!performanceData?.employees || performanceData.employees.length === 0) && (
-                <tr><td colSpan={4} className="py-4 text-center text-gray-500">No employee data</td></tr>
+              {(!performanceData?.reviews || performanceData.reviews.length === 0) && (
+                <tr><td colSpan={4} className="py-4 text-center text-gray-500">No performance reviews yet</td></tr>
               )}
             </tbody>
           </table>
@@ -137,4 +142,3 @@ export default function PerformanceReviewsContent({ persona, locale }: Performan
     </div>
   )
 }
-

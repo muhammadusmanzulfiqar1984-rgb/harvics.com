@@ -1,0 +1,5 @@
+-- Module #3 AR — invoice line items (document entry)
+ALTER TABLE "Invoice" ADD COLUMN IF NOT EXISTS "lines" JSONB;
+ALTER TABLE "Invoice" ADD COLUMN IF NOT EXISTS "subtotal" DOUBLE PRECISION;
+ALTER TABLE "Invoice" ADD COLUMN IF NOT EXISTS "taxAmount" DOUBLE PRECISION DEFAULT 0;
+ALTER TABLE "Invoice" ADD COLUMN IF NOT EXISTS "notes" TEXT;

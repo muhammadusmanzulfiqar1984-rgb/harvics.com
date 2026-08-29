@@ -18,7 +18,17 @@ export default function CustomerListContent({ persona, locale }: CustomerListCon
   const { data, loading, source, lastUpdated } = useDomainData('crm')
   const [tab, setTab] = useState<'customers' | 'leads' | 'complaints'>('customers')
 
-  if (!data) return <div className="p-8 text-sm text-harvics-muted">Loading…</div>
+  if (loading) return <div className="p-8 text-sm text-harvics-muted">Loading…</div>
+  if (!data) {
+    return (
+      <div className="space-y-4 p-8">
+        <p className="text-sm text-harvics-muted">No CRM data yet — add customers in Smart CRM or import from HarvyX.</p>
+        <a href={`/${locale}/os/crm`} className="text-sm font-bold uppercase tracking-wider text-harvics-gold">
+          Open Smart CRM →
+        </a>
+      </div>
+    )
+  }
 
   return (
     <div className="space-y-6">

@@ -97,7 +97,7 @@ export async function GET() {
 
     contact: {
       phone: '+44 7405 527427',
-      email: 'sales.uk@harvics.com',
+      email: 'info@harvics.com',
       whatsapp: '+44 7405 527427',
     },
 

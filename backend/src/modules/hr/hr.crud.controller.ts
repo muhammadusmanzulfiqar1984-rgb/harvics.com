@@ -12,6 +12,7 @@ import { Router, Request, Response } from 'express';
 import { employeesDb, payrollDb } from '../../core/db';
 import { translateDepartment, translateError, translateMessage, t } from '../../core/translate';
 import '../../middleware/locale';
+import { emitAudit } from '../../services/audit.service';
 
 const router = Router();
 
@@ -79,6 +80,7 @@ router.post('/employees', async (req: Request, res: Response) => {
     salary: salary || 0, currency: currency || 'USD',
     status: 'Active', joinDate: new Date().toISOString().slice(0, 10)
   }, 'hr.employee.created');
+  void emitAudit(req, 'employee.created', 'Employee', emp.id, { module: 'hr', payload: { department } });
   res.status(201).json({ success: true, data: localizeEmployee(emp, locale), message: t('hr.messages.employeeCreated', locale) });
 });
 
@@ -112,6 +114,7 @@ router.post('/payroll', async (req: Request, res: Response) => {
     employeeCount: employeeCount || activeEmployees.total,
     status: 'Processed', processedDate: new Date().toISOString().slice(0, 10)
   }, 'hr.payroll.run');
+  void emitAudit(req, 'payroll.processed', 'PayrollRun', run.id, { module: 'hr', payload: { period } });
   res.status(201).json({ success: true, data: run });
 });
 

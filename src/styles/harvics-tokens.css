@@ -9,6 +9,10 @@
 	--harvics-burgundy-overlay: rgba(61, 18, 18, 0.85);
 	--harvics-gold-muted: rgba(195, 163, 94, 0.6);
 	--harvics-gold-divider: rgba(195, 163, 94, 0.2);
+	/* Canonical grid surface — same on every dark panel across the site */
+	--harvics-grid-bg: rgba(14, 12, 9, 0.78);
+	--harvics-grid-border: rgba(197, 160, 89, 0.35);
+	--harvics-grid-line: rgba(197, 160, 89, 0.18);
 	--harvics-card: #EFE8DC;
 	--harvics-card-muted: #e5dccb;
 	--harvics-burgundy-deep: #2A0C0C;

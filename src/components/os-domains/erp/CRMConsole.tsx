@@ -102,10 +102,10 @@ export default function CRMConsole() {
   const funnelMax = Math.max(...STAGES.map(s => leads.filter(l => l.stage === s).length), 1)
 
   const KPI_CARDS = [
-    { label: 'Total Customers', value: customers.length, sub: `LTV $${(totalLtv/1000).toFixed(0)}k`, icon: '👥', color: 'from-harvics-burgundy to-[#3d0f17]' },
-    { label: 'Pipeline Value', value: `$${(pipelineValue/1000).toFixed(0)}k`, sub: `${leads.filter(l=>l.stage!=='Won'&&l.stage!=='Lost').length} open deals`, icon: '💰', color: 'from-[#1a4a7a] to-[#0f2d4d]' },
-    { label: 'Won Revenue', value: `$${(wonValue/1000).toFixed(0)}k`, sub: `${leads.filter(l=>l.stage==='Won').length} deals closed`, icon: '🏆', color: 'from-[#1a5c3a] to-[#0f3621]' },
-    { label: 'Conversion Rate', value: `${conversionRate}%`, sub: `${leads.length} total leads`, icon: '📈', color: 'from-[#5c3d1a] to-[#3a2410]' },
+    { label: 'Total Customers', value: customers.length, sub: `LTV $${(totalLtv/1000).toFixed(0)}k` },
+    { label: 'Pipeline Value', value: `$${(pipelineValue/1000).toFixed(0)}k`, sub: `${leads.filter(l=>l.stage!=='Won'&&l.stage!=='Lost').length} open deals` },
+    { label: 'Won Revenue', value: `$${(wonValue/1000).toFixed(0)}k`, sub: `${leads.filter(l=>l.stage==='Won').length} deals closed` },
+    { label: 'Conversion Rate', value: `${conversionRate}%`, sub: `${leads.length} total leads` },
   ]
 
   return (
@@ -114,11 +114,10 @@ export default function CRMConsole() {
       {/* Hero KPI bar */}
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         {KPI_CARDS.map(k => (
-          <div key={k.label} className={`relative overflow-hidden rounded-2xl bg-gradient-to-br ${k.color} p-4 text-white shadow-lg`}>
-            <div className="absolute -right-4 -top-4 text-5xl opacity-20">{k.icon}</div>
-            <p className="text-[10px] font-bold uppercase tracking-widest text-white/60">{k.label}</p>
-            <p className="mt-1 text-2xl font-black">{k.value}</p>
-            <p className="mt-0.5 text-[10px] text-white/50">{k.sub}</p>
+          <div key={k.label} className="rounded-xl border border-[#E8E0D4] bg-white p-4">
+            <p className="text-[10px] font-bold uppercase tracking-widest text-[#6B5E52]">{k.label}</p>
+            <p className="mt-1 text-2xl font-semibold text-[#3D1212]">{k.value}</p>
+            <p className="mt-0.5 text-[10px] text-[#6B5E52]">{k.sub}</p>
           </div>
         ))}
       </div>

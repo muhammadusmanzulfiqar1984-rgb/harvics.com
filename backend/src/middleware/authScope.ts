@@ -20,10 +20,23 @@ export const requireAuthScope = (req: Request, res: Response, next: NextFunction
     return res.status(401).json({ error: 'Missing Authorization header' });
   }
 
-  // Allow frontend demo tokens (local dev only \u2014 NEVER in production)
+  const internalKey = process.env.INTERNAL_API_KEY;
+  if (internalKey && token === internalKey) {
+    const demo = DEMO_SCOPES['demo-token-hq'];
+    req.userScope = demo.scope;
+    req.user = { id: demo.sub, role: demo.scope.role };
+    return next();
+  }
+
+  // Allow frontend demo tokens ONLY in local development (or explicit ALLOW_DEMO_TOKENS=1)
   if (token.startsWith('demo-token-') && DEMO_SCOPES[token]) {
-    if (process.env.NODE_ENV === 'production') {
-      return res.status(401).json({ error: 'Demo tokens are disabled in production', code: 'TOKEN_INVALID' });
+    const allowDemo =
+      process.env.ALLOW_DEMO_TOKENS === '1' || process.env.NODE_ENV === 'development';
+    if (!allowDemo) {
+      return res.status(401).json({
+        error: 'Demo tokens are disabled outside local development',
+        code: 'TOKEN_INVALID',
+      });
     }
     const demo = DEMO_SCOPES[token];
     req.userScope = demo.scope;

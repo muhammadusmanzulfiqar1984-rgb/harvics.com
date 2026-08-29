@@ -10,11 +10,11 @@ const investorHighlights = [
   },
   {
     title: 'Institutional Operating Backbone',
-    detail: 'HarvicsOS integrates 71 modules with board-grade reporting, controlled approvals, and AI decision support for long-horizon capital confidence.',
+    detail: 'Harvics OS is a 72-module catalogue. Commercial CRM is the operating spine today; remaining modules are on the OS floor, not 72 independent products. See the board briefing.',
   },
   {
     title: 'Commercial Proof',
-    detail: 'Demonstrated $700M+ track record through private label, strategic sourcing, and trade corridor execution in complex multi-jurisdiction markets.',
+    detail: 'Proven private label, strategic sourcing, and trade corridor execution across complex multi-jurisdiction markets.',
   },
 ];
 
@@ -44,6 +44,15 @@ export default function InvestorsPage() {
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="/en/investor-relations" className="bg-[#D4A843] px-6 py-3 text-xs font-bold uppercase tracking-[0.14em] text-[#111]">
               Open Investor Briefing
+            </Link>
+            <Link href="/doha" className="border border-[#D4A843]/70 px-6 py-3 text-xs font-bold uppercase tracking-[0.14em] text-[#D4A843]">
+              Strategic Partner Brief
+            </Link>
+            <Link href="/ventures" className="border border-[#D4A843]/70 px-6 py-3 text-xs font-bold uppercase tracking-[0.14em] text-[#D4A843]">
+              Global Ventures Presentation
+            </Link>
+            <Link href="/en/energies" className="border border-[#D4A843]/70 px-6 py-3 text-xs font-bold uppercase tracking-[0.14em] text-[#D4A843]">
+              Harvics Energies
             </Link>
             <Link href="/en/contact" className="border border-[#D4A843]/70 px-6 py-3 text-xs font-bold uppercase tracking-[0.14em] text-[#D4A843]">
               Request Management Call

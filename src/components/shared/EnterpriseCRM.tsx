@@ -1613,12 +1613,7 @@ function OverviewTab({ data, persona, selectedCountry, countryData, aiStrategy, 
                   <span className="font-medium text-black">{sku}</span>
                 </div>
                 <div className="flex items-center gap-4">
-                  <span className="text-sm text-black">
-                    Contribution: {(Math.random() * 15 + 10).toFixed(1)}%
-                  </span>
-                  <span className="text-sm font-semibold text-white">
-                    {(countryData as any)?.currency?.symbol || '$'}{(Math.random() * 50000 + 20000).toFixed(0)}
-                  </span>
+                  <span className="text-sm text-black/60">Rank #{idx + 1} — contribution metrics require sales order line data (Module #9)</span>
                 </div>
               </div>
             ))
@@ -2695,19 +2690,19 @@ function FinanceTab({ data, selectedCountry, countryData, countryProfile, aiStra
           {/* Payment Breakdown */}
           <div className="bg-white border border-black/5 rounded-lg p-6 shadow-sm">
             <h4 className="font-bold text-slate-900 mb-4 font-serif">Payment Breakdown (Last 30 Days)</h4>
+            {paymentConnectors.length > 0 ? (
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {paymentConnectors.slice(0, 4).map((connector: any, idx: number) => (
                 <div key={idx} className="bg-white rounded-lg p-4 border border-black/5">
                   <div className="text-sm text-slate-900/70 mb-1 font-medium">{connector.name}</div>
-                  <div className="text-xl font-bold text-slate-900">
-                    {currency.symbol}{((Math.random() * 50000 + 10000) / 1000).toFixed(1)}K
-                  </div>
-                  <div className="text-xs text-slate-900/60 mt-1">
-                    {Math.round(Math.random() * 20 + 10)}% of total
-                  </div>
+                  <div className="text-xl font-bold text-slate-900 capitalize">{connector.status}</div>
+                  <div className="text-xs text-slate-900/60 mt-1">Priority {connector.priority ?? '—'}</div>
                 </div>
               ))}
             </div>
+            ) : (
+              <p className="text-sm text-slate-600 py-4 text-center">No payment connectors configured. Volume appears in Module #6 Payment Runs after processing.</p>
+            )}
           </div>
 
           {/* Settlement Summary */}
@@ -2729,12 +2724,12 @@ function FinanceTab({ data, selectedCountry, countryData, countryProfile, aiStra
               <div className="bg-red-50 rounded-lg p-4 border border-red-200">
                 <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase tracking-wide">Failed</div>
                 <div className="text-2xl font-bold text-slate-900">
-                  {currency.symbol}{((Math.random() * 5000) / 1000).toFixed(1)}K
+                  {currency.symbol}{((data?.failedPayments ?? 0) / 1000).toFixed(1)}K
                 </div>
               </div>
               <div className="bg-green-50 rounded-lg p-4 border border-green-200">
                 <div className="text-sm text-slate-900/70 mb-1 font-medium uppercase tracking-wide">Reconciliation</div>
-                <div className="text-2xl font-bold text-slate-900">98%</div>
+                <div className="text-2xl font-bold text-slate-900">{data?.reconciliationRate != null ? `${data.reconciliationRate}%` : '—'}</div>
               </div>
             </div>
           </div>
@@ -2742,35 +2737,8 @@ function FinanceTab({ data, selectedCountry, countryData, countryProfile, aiStra
           {/* Failed/Flagged Payments */}
           <div className="bg-white border border-black/5 rounded-lg p-4 shadow-sm">
             <h4 className="font-bold text-slate-900 mb-4 font-serif">Failed/Flagged Payments</h4>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead className="bg-[#F8F9FA] border-b border-black/5">
-                  <tr>
-                    <th className="px-4 py-2 text-left font-bold text-slate-900 uppercase tracking-wider">Payment ID</th>
-                    <th className="px-4 py-2 text-left font-bold text-slate-900 uppercase tracking-wider">Method</th>
-                    <th className="px-4 py-2 text-left font-bold text-slate-900 uppercase tracking-wider">Amount</th>
-                    <th className="px-4 py-2 text-left font-bold text-slate-900 uppercase tracking-wider">Status</th>
-                    <th className="px-4 py-2 text-left font-bold text-slate-900 uppercase tracking-wider">Date</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-[#C3A35E]/10">
-                  {[1, 2, 3].map((idx) => (
-                    <tr key={idx} className="hover:bg-[#F8F9FA]">
-                      <td className="px-4 py-2 font-medium text-slate-900">#PAY{String(idx).padStart(6, '0')}</td>
-                      <td className="px-4 py-2 text-slate-900">{paymentConnectors[idx % paymentConnectors.length]?.name || 'N/A'}</td>
-                      <td className="px-4 py-2 text-slate-900 font-bold">
-                        {currency.symbol}{(Math.random() * 5000 + 1000).toFixed(2)}
-                      </td>
-                      <td className="px-4 py-2">
-                        <span className="px-2 py-1 rounded bg-red-100 text-red-800 text-xs font-bold uppercase tracking-wide">Failed</span>
-                      </td>
-                      <td className="px-4 py-2 text-slate-900">
-                        {new Date(Date.now() - Math.random() * 7 * 24 * 60 * 60 * 1000).toLocaleDateString()}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+            <div className="text-center py-8 text-slate-600 text-sm">
+              No failed payments on record. Failed transactions from Module #6 will appear here when connected.
             </div>
           </div>
         </div>
@@ -3712,8 +3680,8 @@ function ExecutiveTab({ data, selectedCountry, countryData, whitespaceReport, ai
               <h5 className="font-semibold text-black">Amazon/Noon</h5>
               <div className="w-2 h-2 bg-white/100 rounded-full"></div>
             </div>
-            <div className="text-xs text-black mb-1">Status: Mock</div>
-            <div className="text-xs text-black">Marketplace connectors (mock)</div>
+            <div className="text-xs text-black mb-1">Status: Not connected</div>
+            <div className="text-xs text-black">Marketplace connectors pending integration</div>
           </div>
 
           {/* Integration Alerts */}
@@ -5589,8 +5557,8 @@ function LocalizationTab({ selectedCountry, countryData, data: apiData }: any) {
       exchangeRates: currencies.map((c: Currency) => ({
         currency: c.code,
         rate: c.rate,
-        lastUpdate: '2024-12-15',
-        change24h: (Math.random() * 2 - 1).toFixed(2) + '%'
+        lastUpdate: apiData?.currency?.lastSync || '—',
+        change24h: apiData?.currency?.changes?.[c.code] ?? '—',
       }))
     },
     tax: {

@@ -1,0 +1,322 @@
+[
+  {
+    "product_module_id": 1,
+    "slug": "01-finance-core",
+    "name": "Finance Core",
+    "plane": "OS / Finance",
+    "owner_domain": "Finance",
+    "source_defined_scope": "General Ledger; Chart of Accounts; Cost Centers; AR + Credit Limits; AP + 3-Way Match; Period Close Engine",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 2,
+    "slug": "02-treasury",
+    "name": "Treasury & Banking",
+    "plane": "OS / Finance",
+    "owner_domain": "Treasury",
+    "source_defined_scope": "Treasury Management; Bank Register; MT940 Import; Auto-Reconciliation; Payment Factory; Cash Dashboard; Cash Pooling; Debt Register; Hedge Accounting; FX Exposure",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 3,
+    "slug": "03-hpay-payments",
+    "name": "HPay / Payments",
+    "plane": "OS / Finance",
+    "owner_domain": "HPay",
+    "source_defined_scope": "Multi-currency wallet; SWIFT/SEPA/ACH; crypto BTC/ETH/USDT; stablecoin; auto FX; CBDC readiness; escrow; invoice financing; KYC/AML; FX desk",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 4,
+    "slug": "04-bi-planning",
+    "name": "BI + Planning",
+    "plane": "OS / Finance",
+    "owner_domain": "Finance / BI",
+    "source_defined_scope": "Budget Planning; Rolling Forecast; Scenario Modelling; P&L by BU/Country/Product; Board Pack; Custom Reports; KPI Library; OKRs; ESG Reporting",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 5,
+    "slug": "05-crm-sales",
+    "name": "CRM + Sales",
+    "plane": "OS / Commercial",
+    "owner_domain": "Commercial",
+    "source_defined_scope": "Customer 360; Lead Management; Opportunity/Pipeline; Quote/CPQ; Sales Orders; Credit Limits; Pricing; Contracts; Billing; Subscriptions; Loyalty; Rebates; Returns; Support Tickets; SLA",
+    "status": "S3 approaching S4",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 6,
+    "slug": "06-marketing",
+    "name": "Marketing",
+    "plane": "OS / Commercial",
+    "owner_domain": "Marketing",
+    "source_defined_scope": "Campaign Management; Email/SMS/Social; Journey Builder; CDP; Segmentation; Promo Calendar; Brand Assets; Content; Events; NPS; Marketing ROI; Affiliate Management",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 7,
+    "slug": "07-procurement",
+    "name": "Procurement",
+    "plane": "OS / Commercial",
+    "owner_domain": "Procurement",
+    "source_defined_scope": "Vendor Master + KYC; RFQ; Quote Comparison; PR; PO; Goods Receipt; 3-Way Match; Contract Mgmt; Vendor Evaluation; Supplier Portal; Spend Analytics; Approval Workflow",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 8,
+    "slug": "08-legal-compliance",
+    "name": "Legal + Compliance",
+    "plane": "OS / Commercial",
+    "owner_domain": "Legal / Compliance",
+    "source_defined_scope": "Contract Lifecycle; Templates; Redline/Negotiation; E-Signature; Obligation Tracking; Renewal Alerts; Legal Matter; IP Portfolio; Regulatory Filing; AML/KYB; Counterfeit Detection",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 9,
+    "slug": "09-manufacturing",
+    "name": "Manufacturing",
+    "plane": "OS / Operations",
+    "owner_domain": "Operations",
+    "source_defined_scope": "BOM; Production Orders; MRP; Capacity Planning; Work Centre; Shop Floor; Yield; Subcontracting; GMP/HACCP; Allergen Checklist; Batch Records",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 10,
+    "slug": "10-inventory-wms",
+    "name": "Inventory + WMS",
+    "plane": "OS / Operations",
+    "owner_domain": "Operations",
+    "source_defined_scope": "Stock; Batch/Lot; Serial; Warehouse Bin/Rack/Zone; Put-Away/Pick/Pack; GR/GI; FEFO/FIFO/LIFO; Consignment; UOM; Reorder; Dead Stock",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 11,
+    "slug": "11-quality-management",
+    "name": "Quality Management",
+    "plane": "OS / Operations",
+    "owner_domain": "Quality",
+    "source_defined_scope": "Inspection Plans; QC Inspection; NCR; COA; Batch Release Gate; Supplier QC Scorecard; Recall; CAPA; ISO/HACCP/GMP/BRC Audit; Lab Results; Spec vs Actual",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 12,
+    "slug": "12-projects",
+    "name": "Project Management",
+    "plane": "OS / Operations",
+    "owner_domain": "Operations",
+    "source_defined_scope": "Project Portfolio; Gantt/Timeline; Milestones; Resource Allocation; Project P&L; Billable Time; Project Billing; Risk Register; Issue Log; Change Request; Client Portal; Health Dashboard",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 13,
+    "slug": "13-logistics-fleet",
+    "name": "Logistics + Fleet",
+    "plane": "OS / Support",
+    "owner_domain": "Support",
+    "source_defined_scope": "Route Planning; Fleet; Freight Orders; Carrier Management; GPS Tracking; Driver; Vehicle Maintenance; Cold Chain; Returns; Dock Scheduling; Delivery SLA",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 14,
+    "slug": "14-shipping-trade",
+    "name": "Shipping + Trade",
+    "plane": "OS / Support",
+    "owner_domain": "Trade",
+    "source_defined_scope": "Freight Booking; BL; Container; Multimodal; Incoterms; HS Code DB; Landed Cost; Customs Declaration; Sanctions; FTA; LC",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 15,
+    "slug": "15-hr-payroll",
+    "name": "HR + Payroll",
+    "plane": "OS / Support",
+    "owner_domain": "People",
+    "source_defined_scope": "Employee Master; Org Chart; Multi-Country Payroll; Time/Attendance; Leave; ATS; Onboarding; LMS; Performance 360; Succession; Benefits; People Analytics",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 16,
+    "slug": "16-admin-security",
+    "name": "Admin + Security",
+    "plane": "OS / Support",
+    "owner_domain": "Platform",
+    "source_defined_scope": "User Management; RBAC; Permission Matrix; Audit; SSO/MFA; API Keys; Data Retention; Session Management; IP Whitelisting; GDPR/PDPA; System Health",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 17,
+    "slug": "17-tax-engine",
+    "name": "Tax Engine",
+    "plane": "Shared Core",
+    "owner_domain": "Shared Core",
+    "source_defined_scope": "190-country VAT/GST/WHT rules; auto-calculation",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 18,
+    "slug": "18-fx-engine",
+    "name": "FX Engine",
+    "plane": "Shared Core",
+    "owner_domain": "Shared Core",
+    "source_defined_scope": "Live exchange rates; multi-currency posting; FX conversion",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 19,
+    "slug": "19-audit-log",
+    "name": "Audit Log",
+    "plane": "Shared Core",
+    "owner_domain": "Shared Core",
+    "source_defined_scope": "Immutable event ledger; full traceability",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 20,
+    "slug": "20-notifications",
+    "name": "Notifications",
+    "plane": "Shared Core",
+    "owner_domain": "Shared Core",
+    "source_defined_scope": "Email; SMS; WhatsApp; Push; in-app",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 21,
+    "slug": "21-document-vault",
+    "name": "Document Vault",
+    "plane": "Shared Core",
+    "owner_domain": "Shared Core",
+    "source_defined_scope": "S3/object storage; presigned URLs; version control",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 22,
+    "slug": "22-neural-governance",
+    "name": "Neural Governance",
+    "plane": "Shared Core",
+    "owner_domain": "Shared Core",
+    "source_defined_scope": "Legal; Budget; Contract; Compliance rules engine",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 23,
+    "slug": "23-funfeed",
+    "name": "FunFeed",
+    "plane": "Universe",
+    "owner_domain": "Universe",
+    "source_defined_scope": "AI-personalised feed; text/photo/video/polls; reactions; comments; shares; Harvicoins; anti-gaming",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 24,
+    "slug": "24-harvics-mall",
+    "name": "Harvics Mall",
+    "plane": "Universe",
+    "owner_domain": "Universe",
+    "source_defined_scope": "B2C marketplace; seller onboarding; catalogue; variants; cart; HPay checkout; cashback; recommendations; reverse logistics; reviews; seller dashboard",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 25,
+    "slug": "25-trade-floor",
+    "name": "Trade Floor",
+    "plane": "Universe",
+    "owner_domain": "Universe",
+    "source_defined_scope": "Digital promotional assets; sponsored slots; social boosts; closed-loop non-crypto trading; AI pricing",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 26,
+    "slug": "26-playroom",
+    "name": "Playroom",
+    "plane": "Universe",
+    "owner_domain": "Universe",
+    "source_defined_scope": "Games; tournaments; leaderboards; achievements; server-side verification; anti-cheat; Harvicoins",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 27,
+    "slug": "27-experts-hub",
+    "name": "Experts Hub",
+    "plane": "Universe",
+    "owner_domain": "Universe",
+    "source_defined_scope": "Social media experts; creators; digital marketers; profiles; portfolios; reviews; orders; milestones; disputes; KYC-gated onboarding",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 28,
+    "slug": "28-jobs-travel",
+    "name": "Jobs + Travel",
+    "plane": "Universe",
+    "owner_domain": "Universe",
+    "source_defined_scope": "Job listings; applications; status tracking; travel events; trips; destination guides; skill-based connections",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 29,
+    "slug": "29-crypto-lite",
+    "name": "Crypto Lite",
+    "plane": "Universe",
+    "owner_domain": "Universe",
+    "source_defined_scope": "Closed-loop spot trading; BTC/ETH/USDT/USDC/DAI; KYC-gated; limits; risk checks; no leverage/derivatives",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 30,
+    "slug": "30-harvicoins",
+    "name": "Harvicoins",
+    "plane": "Universe",
+    "owner_domain": "Universe",
+    "source_defined_scope": "Earned coins; redemption; transfer; configurable earn rules; caps",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 31,
+    "slug": "31-hpay-fiat-wallet",
+    "name": "HPay Fiat Wallet",
+    "plane": "Universe / HPay",
+    "owner_domain": "Universe / HPay",
+    "source_defined_scope": "AED + multi-currency; top-up; withdrawal; balance/history",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  },
+  {
+    "product_module_id": 32,
+    "slug": "32-circle",
+    "name": "Circle",
+    "plane": "Universe",
+    "owner_domain": "Universe",
+    "source_defined_scope": "2-level referral system; commission pool; transparent earnings",
+    "status": "TARGET / UNKNOWN",
+    "implementation_rule": "Verify repository evidence before claiming implementation."
+  }
+]

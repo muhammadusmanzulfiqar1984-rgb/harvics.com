@@ -3,13 +3,13 @@
   "home": {
     "welcome": "Καλώς ορίσατε στο",
     "companyName": "Χάργουιτς",
-    "tagline": "Αριστεία σε καταναλωτικά αγαθά υψηλής ποιότητας από το 2019",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "Εξερευνήστε Προϊόντα",
     "contact": "Επικοινωνήστε μαζί μας",
     "learnMore": "Μάθετε περισσότερα",
-    "brandStatement": "Μια κορυφαία παγκόσμια εταιρεία καταναλωτικών αγαθών που προσφέρει προϊόντα υψηλής ποιότητας σε διάφορες κατηγορίες με διεθνή πρότυπα ποιότητας.",
-    "taglineStart": "Αριστεία σε καταναλωτικά αγαθά υψηλής ποιότητας από τότε",
-    "taglineYear": "2019",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "Λονδίνο • Μιλάνο • Νέα Υόρκη",
     "categories": {
       "bakery": "Αρτοποιείο",
@@ -81,7 +81,8 @@
       "specialOffers": "Ειδικές Προσφορές",
       "promotions": "Προσφορές",
       "bulkOrders": "Εκπτώσεις μαζικών παραγγελιών"
-    }
+    },
+    "startupAcademy": "Startup Academy"
   },
   "products": {
     "ourProducts": "Τα προϊόντα μας",
@@ -119,7 +120,40 @@
     "whatsapp": "WhatsApp",
     "callNow": "Καλέστε τώρα",
     "sendEmail": "Αποστολή ηλεκτρονικού ταχυδρομείου",
-    "messageUs": "Στείλτε μας μήνυμα"
+    "messageUs": "Στείλτε μας μήνυμα",
+    "getInTouch": "Επικοινωνήστε",
+    "locations": "Τοποθεσίες",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "Αποστολή μηνύματος",
+    "firstName": "Ονομα",
+    "firstNamePlaceholder": "Εισαγάγετε το όνομά σας",
+    "lastName": "Επώνυμο",
+    "lastNamePlaceholder": "Εισαγάγετε το επώνυμό σας",
+    "emailPlaceholder": "Εισαγάγετε τη διεύθυνση email σας",
+    "subject": "Θέμα",
+    "subjectPlaceholder": "Εισαγάγετε θέμα",
+    "message": "Μήνυμα",
+    "messagePlaceholder": "Γράψτε το μήνυμά σας",
+    "send": "Στέλνω",
+    "eyebrow": "Ξεκινήστε μια σύντομη",
+    "headline1": "Ξεκινήστε μια σύντομη.",
+    "headline2": "Απαντάμε σε 24 ώρες.",
+    "subhead": "Πείτε μας την κατηγορία, τον όγκο και την αγορά-στόχο σας. Ένας ειδικός επικοινωνεί μαζί σας με επιλογές προμήθειας και ενδεικτική τιμολόγηση.",
+    "fullName": "Ονοματεπώνυμο",
+    "fullNamePlaceholder": "Σαχ Ταμπρέιζ",
+    "company": "Εταιρεία",
+    "companyPlaceholder": "Ο οργανισμός σας",
+    "businessEmail": "Email επιχείρησης",
+    "howCanWeHelp": "Πώς μπορούμε να βοηθήσουμε;",
+    "sending": "Αποστολή...",
+    "sendEnquiry": "Αποστολή Ερώτησης",
+    "sentTitle": "Το μήνυμα στάλθηκε.",
+    "sentSub": "Η ομάδα μας θα απαντήσει εντός 24 ωρών.",
+    "directChannels": "Απευθείας κανάλια",
+    "trust1": "24ωρη εγγύηση ανταπόκρισης",
+    "trust2": "Αποκλειστικός διαχειριστής λογαριασμού",
+    "trust3": "NDA available on request",
+    "trust4": "42 αγορές · 1.247 αποστολές σήμερα"
   },
   "media": {
     "title": "Κέντρο Μέσων Ενημέρωσης",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "Harvics Global Ventures",
-    "tagline": "Αριστεία σε καταναλωτικά αγαθά υψηλής ποιότητας από το 2019",
-    "brandStatement": "Μια κορυφαία παγκόσμια εταιρεία καταναλωτικών αγαθών που προσφέρει προϊόντα υψηλής ποιότητας σε διάφορες κατηγορίες με διεθνή πρότυπα ποιότητας.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "Λονδίνο • Μιλάνο • Νέα Υόρκη",
     "since": "Από το 2019",
     "harvicsNews": "Νέα του Χάρβικς",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "Γίνετε μέλος του δικτύου μας",
     "newsletterTagline": "Λάβετε τις τελευταίες εμπορικές πληροφορίες και ενημερώσεις αγοράς",
     "activeShipments": "Ενεργές αποστολές",
-    "certifiedAudited": "Πιστοποιημένο & Ελεγμένο"
+    "certifiedAudited": "Πιστοποιημένο & Ελεγμένο",
+    "invalidEmail": "Εισαγάγετε μια έγκυρη διεύθυνση email",
+    "subscriptionSuccess": "Σας ευχαριστούμε για την εγγραφή σας!",
+    "subscriptionError": "Κάτι πήγε στραβά. Δοκιμάστε ξανά."
   },
   "search": {
     "placeholder": "Αναζήτηση προϊόντων, επωνυμιών ή κατηγοριών",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "Συγγνώμη, δεν το κατάλαβα. Μπορείτε να το αναδιατυπώσετε παρακαλώ;",
       "help": "Μπορώ να σας βοηθήσω με πληροφορίες προϊόντων, παραγγελίες ή γενικές ερωτήσεις. Τι θα θέλατε να μάθετε;",
-      "contact": "Για περισσότερη βοήθεια, επικοινωνήστε μαζί μας στη διεύθυνση support@harvics.com ή καλέστε στο +1-800-HARVICS."
-    }
+      "contact": "Για περισσότερη βοήθεια, επικοινωνήστε μαζί μας στη διεύθυνση support@harvics.com ή καλέστε στο +1-800-HARVICS.",
+      "product": "Περιηγηθείτε στον κατάλογο προϊόντων μας από το μενού ή πείτε μου ποια κατηγορία σας ενδιαφέρει — FMCG, υφάσματα, logistics και άλλα.",
+      "order": "Για να κάνετε μια παραγγελία ή να ελέγξετε την κατάσταση, επισκεφτείτε την πύλη του διανομέα ή επικοινωνήστε με τον διαχειριστή του λογαριασμού σας.",
+      "about": "Η Harvics Global Ventures είναι μια κυρίαρχη εταιρεία εμπορικών υποδομών με 20+ χρόνια σε 40+ χώρες."
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "Πατήστε Enter για αποστολή"
   },
   "common": {
     "chatWithUs": "Συνομιλήστε μαζί μας",
@@ -730,12 +772,17 @@
       "gps-tracking": "Παρακολούθηση GPS",
       "localization": "Εντοπισμός",
       "workflows": "Ροές εργασίας",
-      "admin": "Διαχειριστής"
+      "admin": "Διαχειριστής",
+      "modules": "Ενότητες"
     },
     "kpis": {
       "customers": "Πελάτες",
       "employees": "Υπάλληλοι",
-      "profit": "Κέρδος"
+      "profit": "Κέρδος",
+      "totalOrders": "Σύνολο παραγγελιών",
+      "inventoryValue": "Αξία αποθέματος",
+      "logisticsEfficiency": "Αποτελεσματικότητα Logistics",
+      "revenue": "Πρόσοδος"
     },
     "domain": {
       "title": "Λειτουργικό Σύστημα Διαχείρισης Πόρων (CRM)",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "Δείτε και διαχειριστείτε τις σχέσεις, τις αλληλεπιδράσεις και τις καμπάνιες με τους πελάτες σας.",
       "loading": "Φόρτωση...",
       "error": "Σφάλμα κατά τη φόρτωση δεδομένων CRM κατά τη φόρτωση δεδομένων CRM"
+    },
+    "roleIndicator": {
+      "manager": "Προβολή διαχειριστή",
+      "executive": "Executive View",
+      "investor": "Προβολή επενδυτών",
+      "distributor": "Προβολή διανομέα",
+      "supplier": "Προβολή προμηθευτή",
+      "customer": "Προβολή Πελατών"
     }
   },
   "supplierPortal": {
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "Σχετικά με τον Χάρβικς",
-    "subtitle": "Αριστεία σε καταναλωτικά αγαθά υψηλής ποιότητας από το 2019",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "Η ιστορία μας",
     "story1": "Ιδρυμένη το 2019, η Harvics έχει εξελιχθεί από μια οραματική ιδέα σε έναν παγκόσμιο ηγέτη στα καταναλωτικά αγαθά υψηλής ποιότητας. Το ταξίδι μας χαρακτηρίζεται από μια αδιάκοπη επιδίωξη της ποιότητας και μια δέσμευση στην καινοτομία.",
     "story2": "Δραστηριοποιούμαστε σε περισσότερες από 40 χώρες, παρέχοντας προϊόντα που εμπλουτίζουν ζωές και θέτουν νέα πρότυπα στον κλάδο. Από το ταπεινό μας ξεκίνημα μέχρι την παγκόσμια παρουσία μας, οι αξίες μας παραμένουν αμετάβλητες.",
@@ -1150,181 +1205,279 @@
   },
   "help": {
     "page": {
-      "title": "Help Center",
-      "subtitle": "Find the help you need"
+      "title": "Κέντρο βοήθειας",
+      "subtitle": "Βρείτε τη βοήθεια που χρειάζεστε"
     },
-    "backToHelpCenter": "Back to Help Center",
+    "backToHelpCenter": "Επιστροφή στο Κέντρο βοήθειας",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "Συχνές Ερωτήσεις",
+        "description": "Βρείτε απαντήσεις σε κοινές ερωτήσεις"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "Επικοινωνήστε με την Υποστήριξη",
+        "description": "Επικοινωνήστε με την ομάδα υποστήριξής μας"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "Οδηγοί χρήσης",
+        "description": "Βήμα προς βήμα οδηγοί και σεμινάρια"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "Αντιμετώπιση προβλημάτων",
+        "description": "Λύστε κοινά ζητήματα"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "Βοήθεια λογαριασμού",
+        "description": "Διαχειριστείτε τον λογαριασμό και τις ρυθμίσεις σας"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "Υποστήριξη παραγγελίας",
+        "description": "Βοήθεια με παραγγελίες και παραδόσεις"
       }
     },
     "account": {
-      "title": "Account Help",
-      "subtitle": "Manage your account settings and preferences",
-      "placeholder": "Account management and settings help content will appear here."
+      "title": "Βοήθεια λογαριασμού",
+      "subtitle": "Διαχειριστείτε τις ρυθμίσεις και τις προτιμήσεις του λογαριασμού σας",
+      "placeholder": "Το περιεχόμενο βοήθειας διαχείρισης λογαριασμού και ρυθμίσεων θα εμφανίζεται εδώ."
     },
     "orders": {
-      "title": "Order Support",
-      "subtitle": "Track and manage your orders and deliveries",
-      "placeholder": "Order and delivery support content will appear here."
+      "title": "Υποστήριξη παραγγελίας",
+      "subtitle": "Παρακολουθήστε και διαχειριστείτε τις παραγγελίες και τις παραδόσεις σας",
+      "placeholder": "Το περιεχόμενο υποστήριξης παραγγελιών και παράδοσης θα εμφανίζεται εδώ."
     },
     "guides": {
-      "title": "User Guides",
-      "subtitle": "Step-by-step guides to help you get the most out of Harvics",
+      "title": "Οδηγοί χρήσης",
+      "subtitle": "Οδηγοί βήμα προς βήμα που θα σας βοηθήσουν να αξιοποιήσετε στο έπακρο το Harvics",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "Ξεκινώντας",
+          "description": "Μάθετε τα βασικά"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "Ρύθμιση λογαριασμού",
+          "description": "Ρυθμίστε τον λογαριασμό σας"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "Πώς να παραγγείλετε",
+          "description": "Τοποθετήστε και παρακολουθήστε παραγγελίες"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "Τρόποι Πληρωμής",
+          "description": "Επιλογές πληρωμής και ασφάλεια"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "Αποστολή & Παράδοση",
+          "description": "Πληροφορίες παράδοσης"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "Επιστροφές & Επιστροφές χρημάτων",
+          "description": "Πολιτική και διαδικασία επιστροφής"
         }
       }
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "subtitle": "Common issues and quick solutions",
+      "title": "Αντιμετώπιση προβλημάτων",
+      "subtitle": "Κοινά προβλήματα και γρήγορες λύσεις",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "Ζητήματα σύνδεσης",
+          "description": "Προβλήματα κατά τη σύνδεση"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "Προβλήματα πληρωμών",
+          "description": "Η πληρωμή δεν διεκπεραιώνεται"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "Καθυστερήσεις παράδοσης",
+          "description": "Η παραγγελία δεν φτάνει"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "Σφάλματα ιστότοπου",
+          "description": "Η σελίδα δεν φορτώνεται"
         }
       }
     }
   },
   "checkout": {
-    "secureCheckout": "Secure Checkout",
-    "title": "Complete Your Order",
-    "subtitle": "Review your items, enter shipping details, and confirm payment securely.",
-    "shippingInfo": "Shipping Information",
-    "paymentMethod": "Payment Method",
+    "secureCheckout": "Ασφαλής ολοκλήρωση αγοράς",
+    "title": "Ολοκληρώστε την παραγγελία σας",
+    "subtitle": "Ελέγξτε τα προϊόντα σας, εισαγάγετε τα στοιχεία αποστολής και επιβεβαιώστε την πληρωμή με ασφάλεια.",
+    "shippingInfo": "Πληροφορίες Αποστολής",
+    "paymentMethod": "Τρόπος πληρωμής",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "Πιστωτική/Χρεωστική Κάρτα",
+      "bankTransfer": "Τραπεζική μεταφορά (LC/TT)",
       "wallet": "HPay Digital Wallet"
     },
-    "orderSummary": "Order Summary",
+    "orderSummary": "Περίληψη παραγγελίας",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
-      "total": "Total"
+      "subtotal": "Υποσύνολο",
+      "shipping": "Αποστολή",
+      "calculatedNextStep": "Υπολογίστηκε στο επόμενο βήμα",
+      "tax": "Φόρος",
+      "total": "Σύνολο"
     },
-    "placeOrder": "Place Order",
-    "sslNotice": "Secured with 256-bit SSL encryption",
-    "continueShopping": "Continue Shopping",
+    "placeOrder": "Κάντε παραγγελία",
+    "sslNotice": "Ασφαλής με κρυπτογράφηση SSL 256-bit",
+    "continueShopping": "Συνεχίστε τις αγορές",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "Ονομα",
+      "lastName": "Επώνυμο",
+      "email": "E-mail",
+      "address": "Διεύθυνση",
+      "city": "Πόλη",
+      "country": "Χώρα"
     }
   },
   "history": {
     "hero": {
-      "title": "Our Journey",
-      "subtitle": "From a Dubai startup to a global enterprise spanning 42+ countries, 10 industry verticals, and 38 languages."
+      "title": "Το Ταξίδι μας",
+      "subtitle": "Από μια startup στο Ντουμπάι σε μια παγκόσμια επιχείρηση που εκτείνεται σε 42+ χώρες, 10 κλάδους του κλάδου και 38 γλώσσες."
     },
     "cta": {
-      "title": "Be Part of the Next Chapter",
-      "subtitle": "Join us as we scale to 60+ countries and build the future of AI-driven global commerce.",
-      "button": "View Careers"
+      "title": "Γίνετε μέρος του επόμενου κεφαλαίου",
+      "subtitle": "Ελάτε μαζί μας καθώς εξελισσόμαστε σε 60+ χώρες και χτίζουμε το μέλλον του παγκόσμιου εμπορίου που βασίζεται στην τεχνητή νοημοσύνη.",
+      "button": "Δείτε Καριέρες"
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "Ιδρύθηκε στο Ντουμπάι",
+        "description": "Η Harvics Global Ventures ιδρύθηκε στα Ηνωμένα Αραβικά Εμιράτα με όραμα να γίνει ένας παγκόσμιος όμιλος FMCG και πολυκάθετης εμπορίας. Ξεκίνησαν οι πρώτες δραστηριότητες σε κλωστοϋφαντουργικά προϊόντα και καταναλωτικά αγαθά.",
+        "highlight": "Ένα έτος"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "Πρώτη Διεθνής Επέκταση",
+        "description": "Επεκτάθηκε σε 10 χώρες σε όλη την Ευρώπη, τη Μέση Ανατολή και τη Νότια Ασία παρά τις παγκόσμιες προκλήσεις της πανδημίας. Ξεκίνησε λειτουργίες ψηφιακής αλυσίδας εφοδιασμού και συνεργασίες εξ αποστάσεως διανομής.",
+        "highlight": "10 Χώρες"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "Πολλαπλή Κατακόρυφη Επέκταση",
+        "description": "Κυκλοφόρησε 5 νέους κλάδους του κλάδου: Εμπορεύματα, Βιομηχανικός Εξοπλισμός, Ορυκτά & Εξόρυξη, Πετρέλαιο & Αέριο και Ακίνητα. Ο συνολικός κατάλογος προϊόντων ξεπέρασε τα 500 SKU σε όλους τους κλάδους.",
+        "highlight": "5 Νέα Κάθετα"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "Ψηφιακός Μετασχηματισμός",
+        "description": "Κατασκευάστηκε η πρώτη έκδοση του Harvics OS — της επιχειρηματικής πλατφόρμας με τεχνητή νοημοσύνη. Κυκλοφόρησε πύλες διανομέων, δυνατότητες ηλεκτρονικού εμπορίου και παρακολούθηση στόλου GPS σε πραγματικό χρόνο σε όλες τις αγορές.",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "Βιωσιμότητα & Κλίμακα",
+        "description": "Δεσμευμένος σε λειτουργίες ουδέτερου άνθρακα. Προσέγγισε 30+ χώρες. Κυκλοφόρησε το HPay (πλατφόρμα ψηφιακών πληρωμών), λύσεις χρηματοδότησης εμπορίου και πρόβλεψη ζήτησης βάσει τεχνητής νοημοσύνης σε όλους τους κλάδους.",
+        "highlight": "30+ Χώρες"
       },
       "2024": {
         "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "description": "Ξεπέρασε το ορόσημο 42+ χωρών. Αναπτύχθηκε κινητήρας AI με μοντέλα 6 ML για βελτιστοποίηση στρατηγικής, ζήτησης, τιμολόγησης, κάλυψης και SKU. Κυκλοφόρησε πολυγλωσσική πλατφόρμα που υποστηρίζει 38 γλώσσες.",
+        "highlight": "42+ Χώρες"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "Λειτουργικό Σύστημα AI-First",
+        "description": "Κυκλοφόρησε το Harvics OS v2 — ενοποιημένο επιχειρησιακό λειτουργικό σύστημα με ευφυΐα σε πραγματικό χρόνο, ζωντανές ροές Socket.io, Alpha Engine για σχέδια επίθεσης στην αγορά και πλήρης γεωγραφική ιεραρχία 8 επιπέδων.",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "Το Όραμα Μπροστά",
+        "description": "Κλιμάκωση σε 60+ χώρες. Δημιουργία της πρώτης στον κόσμο επιχείρησης FMCG που λειτουργεί με τεχνητή νοημοσύνη, όπου κάθε λειτουργία — προμήθειες, εφοδιαστική, χρηματοδότηση, CRM — λειτουργεί με προγνωστική νοημοσύνη με ανθρώπινες πύλες έγκρισης.",
+        "highlight": "60+ Στόχος"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "Πρακτικό εμπόριο, προμήθεια και ακαδημία AI για ιδρυτές — έξι εβδομάδες, ζωντανές συνεδρίες, διάδρομοι Harvics.",
+    "navLabel": "Startup Academy",
+    "teaser": {
+      "eyebrow": "Ακαδημία · Πρόγραμμα διαδρόμου",
+      "title": "Startup Academy.",
+      "body": "Κλασική εμπορική τέχνη για ιδρυτές - προμήθεια, QC, γραφεία χρηματοδότησης και παιδεία για τους διαδρόμους - παράλληλα με την αγορά Harvics.",
+      "cta": "Μπείτε στην Ακαδημία"
+    },
+    "hero": {
+      "alt": "Κλασική αίθουσα διαλέξεων — Harvics Startup Academy",
+      "eyebrow": "Κοόρτη 01 · Q4 2026 · Υποστηρικτικό πρόγραμμα",
+      "title": "Harvics Startup Academy",
+      "body": "Μια κλασική σχολή εμπορίου για ιδρυτές — προμήθεια, εμπόριο διαδρόμου και τεχνητή νοημοσύνη που λειτουργεί. Έξι εβδομάδες. Ζωντανές συνεδρίες. Πραγματικοί χειριστές.",
+      "apply": "Αίτηση για την Κοόρτη 01",
+      "seeProgramme": "Δείτε το πρόγραμμα"
+    },
+    "stats": {
+      "founders": "Ιδρυτές / κοόρτη",
+      "sessions": "Ζωντανές συνεδρίες",
+      "weeks": "Εβδομάδες",
+      "verticals": "Εμπορικοί κλάδοι"
+    },
+    "why": {
+      "eyebrow": "01 · Γιατί να εγγραφείτε",
+      "title": "Φτιάξτε μια εταιρεία που μπορεί πραγματικά να συναλλάσσεται.",
+      "body": "Όχι γήπεδο θέατρο. Μάθετε RFQ για διακανονισμό, επιμέλεια προμήθειας, προσέγγιση αγοραστών και αυτοματισμό — από χειριστές σε όλους τους διαδρόμους Harvics.",
+      "item1Title": "Πρακτικά συστήματα εμπορίου",
+      "item1Body": "Πώς αγοράζουν οι θεσμικοί αγοραστές — και πώς εκπληρώνετε.",
+      "item2Title": "Δίκτυο που αποστέλλεται",
+      "item2Body": "Ιδρυτές, διανομείς και χειριστές σε κάθε κλάδο.",
+      "item3Title": "AI που λειτουργεί",
+      "item3Body": "HarvyX, Fin voice και αυτοματισμός λειτουργιών χωρίς τσιτάτα.",
+      "imageAlt": "Νεκρή φύση κλασικού εμπορίου"
+    },
+    "knowledge": {
+      "eyebrow": "Γνώση",
+      "title": "Μελετήστε το διάδρομο σαν πειθαρχία.",
+      "body": "Πρόγραμμα σπουδών βασισμένο σε πραγματικές εμπορικές πρακτικές — όχι γενικές διαφάνειες εκκίνησης.",
+      "imageAlt": "Μεγάλη κλασική βιβλιοθήκη"
+    },
+    "programme": {
+      "eyebrow": "02 · Πρόγραμμα",
+      "title": "Αυτό που θα δουλέψεις",
+      "m1Title": "Μάρκα και προμήθεια",
+      "m1Body": "MOQ, πύλες QC, υφάσματα και FMCG — ατελιέ μέχρι διάδρομο.",
+      "m2Title": "Ευφυΐα και προσέγγιση",
+      "m2Body": "Εργαστήρια HarvyX, ICP αγοραστών, παρακολούθηση που λαμβάνουν απαντήσεις.",
+      "m3Title": "Κεφάλαιο & συνεργάτες",
+      "m3Body": "Διαδρομές χρηματοδότησης και συνεργασίες — χωρίς ψεύτικες τραπεζικές απαιτήσεις.",
+      "m4Title": "Εμπόριο διαδρόμων",
+      "m4Body": "Λιμάνια, λωρίδες και πώς πραγματικά τα αγαθά κινούνται στις αγορές.",
+      "m5Title": "Ποιότητα & επιμέλεια",
+      "m5Body": "Συνήθειες επιθεώρησης που προστατεύουν τη φήμη και τον οικισμό.",
+      "m6Title": "Εμπορεύματα & FMCG",
+      "m6Body": "Από την πραγματικότητα της αποθήκης στη ζήτηση επωνυμίας και χονδρικής."
+    },
+    "tracks": {
+      "aEyebrow": "Κομμάτι Α",
+      "aTitle": "Μάρκα & εμπόριο",
+      "aBody": "Οι ιδρυτές ένδυσης και FMCG χτίζουν εμπορικό σήμα, ζήτηση χονδρικής και διαδρόμου.",
+      "aAlt": "Κλασική αίθουσα συνεδριάσεων",
+      "bEyebrow": "Κομμάτι Β",
+      "bTitle": "Εμπόριο & ΕΠ",
+      "bBody": "Πηγές, logistics και φορείς εκμετάλλευσης B2B που κλιμακώνουν το θεσμικό εμπόριο.",
+      "bAlt": "Δικτύωση σαλονιών"
+    },
+    "network": {
+      "eyebrow": "03 · Δίκτυο",
+      "title": "Γνωρίστε χειριστές, όχι κοινό.",
+      "body": "Ζωντανές συνεδρίες και ώρες γραφείου σε στυλ κομμωτηρίου με ιδρυτές, διανομείς και χειριστές διαδρόμου Harvics.",
+      "imageAlt": "Δικτύωση ιδρυτών"
+    },
+    "rhythm": {
+      "eyebrow": "04 · Ρυθμός",
+      "title": "Έξι εβδομάδες. Καθαρός ρυθμός.",
+      "w1": "Εβδομάδα 1",
+      "w1Body": "Προσανατολισμός · Χάρτης διαδρόμου · Εργαστήριο ICP",
+      "w2": "Εβδομάδα 2",
+      "w2Body": "Προσέγγιση αγοραστών · Εργαστήριο HarvyX",
+      "w3": "Εβδομάδα 3",
+      "w3Body": "Προμήθεια & QC · Επιμέλεια προμηθευτή",
+      "w4": "Εβδομάδα 4",
+      "w4Body": "Αυτοματισμός · Fin voice · στοίβα λειτουργιών",
+      "w5": "Εβδομάδα 5",
+      "w5Body": "Χρηματοδότηση & συνεργασίες",
+      "w6": "Εβδομάδα 6",
+      "w6Body": "Βιτρίνα ιδρυτών · επόμενα βήματα"
+    },
+    "apply": {
+      "eyebrow": "Εφαρμογές",
+      "title": "Αίτηση για την Κοόρτη 01",
+      "body": "Περιορισμένες θέσεις. Πείτε μας την εταιρεία σας, την κατακόρυφο και τι χτίζετε.",
+      "emailCta": "Αίτηση μέσω email →",
+      "back": "Επιστροφή στο Harvics"
     }
   }
 }

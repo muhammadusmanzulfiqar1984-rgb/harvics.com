@@ -7,6 +7,10 @@
 export interface MegaMenuBlock {
   title: string
   items: string[]
+  /** If set, the block title links here instead of /{vertical}/{slug} */
+  href?: string
+  /** Per-item paths (locale prefix added in the nav). */
+  itemHrefs?: Record<string, string>
 }
 
 export interface NavVertical {
@@ -48,10 +52,20 @@ export const megaMenuData: Record<string, MegaMenuBlock[]> = {
     { title: 'Industrial', items: ['Sand', 'Gravel', 'Limestone'] },
   ],
   'oil-gas': [
+    {
+      title: 'Harvics Energies',
+      href: '/energies',
+      items: ['Platform', 'Plant', 'Fuels', 'Trade Desk'],
+      itemHrefs: {
+        Platform: '/energies#system',
+        Plant: '/energies#plant',
+        Fuels: '/energies#fuels',
+        'Trade Desk': '/energies#trade',
+      },
+    },
     { title: 'Upstream', items: ['Exploration', 'Drilling', 'OSV'] },
     { title: 'Midstream', items: ['Pipelines', 'Storage', 'Terminals'] },
     { title: 'Downstream', items: ['Refining', 'Trading', 'Distribution'] },
-    { title: 'Services', items: ['EPC', 'HSE', 'Inspection'] },
   ],
   'real-estate': [
     { title: 'Commercial', items: ['Offices', 'Retail', 'Mixed Use'] },

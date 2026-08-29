@@ -138,3 +138,10 @@ Harvioce/node_modules/
 Harvioce/HarvyX-ALL-MERGED/
 .env.hx
 HARVY-X/
+.env.outreach
+harvyx-mcp-server/.env
+harvyx-outreach/.env
+
+# GitHub 100MB limit — keep local only
+_originals/video/french.original.mp4
+src/data/harvyx/contacts/DATA/FMCG/master_enriched.csv

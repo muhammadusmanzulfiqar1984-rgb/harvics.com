@@ -3,13 +3,13 @@
   "home": {
     "welcome": "Vítejte v",
     "companyName": "Harwich",
-    "tagline": "Excelence v oblasti prémiového spotřebního zboží od roku 2019",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "Prozkoumat produkty",
     "contact": "Kontaktujte nás",
     "learnMore": "Zjistěte více",
-    "brandStatement": "Přední světová společnost spotřebního zboží dodávající prémiové potravinářské výrobky v různých kategoriích s mezinárodními standardy kvality.",
-    "taglineStart": "Excelence v prémiovém spotřebním zboží od roku",
-    "taglineYear": "2019",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "Londýn • Milán • New York",
     "categories": {
       "bakery": "Pekárna",
@@ -81,7 +81,8 @@
       "specialOffers": "Speciální nabídky",
       "promotions": "Propagace",
       "bulkOrders": "Slevy za hromadné objednávky"
-    }
+    },
+    "startupAcademy": "Startup Academy"
   },
   "products": {
     "ourProducts": "Naše produkty",
@@ -119,7 +120,40 @@
     "whatsapp": "WhatsApp",
     "callNow": "Zavolejte nyní",
     "sendEmail": "Odeslat e-mail",
-    "messageUs": "Napište nám"
+    "messageUs": "Napište nám",
+    "getInTouch": "Kontaktujte nás",
+    "locations": "Místa",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "Odeslat zprávu",
+    "firstName": "Křestní jméno",
+    "firstNamePlaceholder": "Zadejte své křestní jméno",
+    "lastName": "Příjmení",
+    "lastNamePlaceholder": "Zadejte své příjmení",
+    "emailPlaceholder": "Zadejte svou e-mailovou adresu",
+    "subject": "Podrobit",
+    "subjectPlaceholder": "Zadejte předmět",
+    "message": "Zpráva",
+    "messagePlaceholder": "Napište zprávu",
+    "send": "Poslat",
+    "eyebrow": "Začněte krátký",
+    "headline1": "Začněte stručný.",
+    "headline2": "Odpovídáme do 24 hodin.",
+    "subhead": "Sdělte nám svou kategorii, objem a cílový trh. Specialista se vám ozve s možnostmi získávání zdrojů a orientačními cenami.",
+    "fullName": "Celé jméno",
+    "fullNamePlaceholder": "Shah Tabraiz",
+    "company": "Společnost",
+    "companyPlaceholder": "Vaše organizace",
+    "businessEmail": "Obchodní e-mail",
+    "howCanWeHelp": "Jak můžeme pomoci?",
+    "sending": "Odesílání...",
+    "sendEnquiry": "Odeslat dotaz",
+    "sentTitle": "Zpráva odeslána.",
+    "sentSub": "Náš tým odpoví do 24 hodin.",
+    "directChannels": "Přímé kanály",
+    "trust1": "Garance odezvy 24 hodin",
+    "trust2": "Dedikovaný account manager",
+    "trust3": "NDA available on request",
+    "trust4": "42 trhů · Dnes 1 247 zásilek"
   },
   "media": {
     "title": "Mediální centrum",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "Harvics Global Ventures",
-    "tagline": "Excelence v oblasti prémiového spotřebního zboží od roku 2019",
-    "brandStatement": "Přední světová společnost spotřebního zboží dodávající prémiové potravinářské výrobky v různých kategoriích s mezinárodními standardy kvality.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "Londýn • Milán • New York",
     "since": "Od roku 2019",
     "harvicsNews": "Harvics News",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "Připojte se k naší síti",
     "newsletterTagline": "Získejte nejnovější obchodní informace a aktualizace trhu",
     "activeShipments": "Aktivní zásilky",
-    "certifiedAudited": "Certifikováno a auditováno"
+    "certifiedAudited": "Certifikováno a auditováno",
+    "invalidEmail": "Zadejte prosím platnou e-mailovou adresu",
+    "subscriptionSuccess": "Děkujeme, že jste se přihlásili k odběru!",
+    "subscriptionError": "Něco se pokazilo. Zkuste to prosím znovu."
   },
   "search": {
     "placeholder": "Hledat produkty, značky nebo kategorie",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "Promiňte, nerozuměl jsem tomu. Mohl byste to prosím přeformulovat?",
       "help": "Mohu vám pomoci s informacemi o produktech, objednávkami nebo obecnými dotazy. Co byste chtěli vědět?",
-      "contact": "Pro další pomoc nás prosím kontaktujte na adrese support@harvics.com nebo volejte na číslo +1-800-HARVICS."
-    }
+      "contact": "Pro další pomoc nás prosím kontaktujte na adrese support@harvics.com nebo volejte na číslo +1-800-HARVICS.",
+      "product": "Prohlédněte si náš produktový katalog z nabídky nebo mi řekněte, která kategorie vás zajímá — FMCG, textil, logistika a další.",
+      "order": "Chcete-li zadat objednávku nebo zkontrolovat stav, navštivte portál distributora nebo kontaktujte svého správce účtu.",
+      "about": "Harvics Global Ventures je suverénní společnost zabývající se obchodní infrastrukturou s více než 20 lety ve více než 40 zemích."
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "Odešlete stisknutím klávesy Enter"
   },
   "common": {
     "chatWithUs": "Chatujte s námi",
@@ -730,12 +772,17 @@
       "gps-tracking": "GPS sledování",
       "localization": "Lokalizace",
       "workflows": "Pracovní postupy",
-      "admin": "Administrátor"
+      "admin": "Administrátor",
+      "modules": "Moduly"
     },
     "kpis": {
       "customers": "Zákazníci",
       "employees": "Zaměstnanci",
-      "profit": "Zisk"
+      "profit": "Zisk",
+      "totalOrders": "Celkový počet objednávek",
+      "inventoryValue": "Hodnota zásob",
+      "logisticsEfficiency": "Efektivita logistiky",
+      "revenue": "Příjmy"
     },
     "domain": {
       "title": "CRM operační systém",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "Zobrazte a spravujte vztahy se zákazníky, interakce a kampaně.",
       "loading": "Načítání...",
       "error": "Chyba při načítání dat CRM"
+    },
+    "roleIndicator": {
+      "manager": "Manažerský pohled",
+      "executive": "Executive View",
+      "investor": "Pohled investora",
+      "distributor": "Pohled distributora",
+      "supplier": "Pohled dodavatele",
+      "customer": "Pohled zákazníka"
     }
   },
   "supplierPortal": {
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "O Harvics",
-    "subtitle": "Excelence v oblasti prémiového spotřebního zboží od roku 2019",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "Náš příběh",
     "story1": "Společnost Harvics, založená v roce 2019, se z vizionářské myšlenky rozrostla v globálního lídra v oblasti prémiového spotřebního zboží. Naše cesta je definována neúnavnou snahou o kvalitu a závazkem k inovacím.",
     "story2": "Působíme ve více než 40 zemích a dodáváme produkty, které obohacují životy a nastavují nové standardy v oboru. Od našich skromných začátků až po naši globální působnost zůstávají naše hodnoty nezměněny.",
@@ -1150,181 +1205,279 @@
   },
   "help": {
     "page": {
-      "title": "Help Center",
-      "subtitle": "Find the help you need"
+      "title": "Centrum nápovědy",
+      "subtitle": "Najděte potřebnou pomoc"
     },
-    "backToHelpCenter": "Back to Help Center",
+    "backToHelpCenter": "Zpět do centra nápovědy",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "Často kladené otázky",
+        "description": "Najděte odpovědi na běžné otázky"
       },
       "contact": {
-        "title": "Contact Support",
+        "title": "Kontaktujte podporu",
         "description": "Get in touch with our support team"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "Uživatelské příručky",
+        "description": "Návody a návody krok za krokem"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "Odstraňování problémů",
+        "description": "Vyřešte běžné problémy"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "Nápověda k účtu",
+        "description": "Spravujte svůj účet a nastavení"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "Objednávka podpory",
+        "description": "Pomoc s objednávkami a dodávkami"
       }
     },
     "account": {
-      "title": "Account Help",
-      "subtitle": "Manage your account settings and preferences",
-      "placeholder": "Account management and settings help content will appear here."
+      "title": "Nápověda k účtu",
+      "subtitle": "Spravujte nastavení a předvolby svého účtu",
+      "placeholder": "Zde se zobrazí obsah nápovědy ke správě účtu a nastavení."
     },
     "orders": {
-      "title": "Order Support",
-      "subtitle": "Track and manage your orders and deliveries",
-      "placeholder": "Order and delivery support content will appear here."
+      "title": "Objednávka podpory",
+      "subtitle": "Sledujte a spravujte své objednávky a dodávky",
+      "placeholder": "Zde se zobrazí obsah podpory objednávek a doručení."
     },
     "guides": {
-      "title": "User Guides",
-      "subtitle": "Step-by-step guides to help you get the most out of Harvics",
+      "title": "Uživatelské příručky",
+      "subtitle": "Návody krok za krokem, které vám pomohou využít Harvics na maximum",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "Začínáme",
+          "description": "Naučte se základy"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "Nastavení účtu",
+          "description": "Nastavte si účet"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "Jak objednat",
+          "description": "Zadávejte a sledujte objednávky"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "Platební metody",
+          "description": "Platební možnosti a bezpečnost"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "Doprava a doručení",
+          "description": "Informace o doručení"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "Vrácení zboží a vrácení peněz",
+          "description": "Návratová politika a proces"
         }
       }
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "subtitle": "Common issues and quick solutions",
+      "title": "Odstraňování problémů",
+      "subtitle": "Běžné problémy a rychlá řešení",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "Problémy s přihlášením",
+          "description": "Problémy s přihlášením"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "Problémy s platbou",
+          "description": "Platba se nezpracovává"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "Zpoždění doručení",
+          "description": "Objednávka nedorazila"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "Chyby webových stránek",
+          "description": "Stránka se nenačítá"
         }
       }
     }
   },
   "checkout": {
-    "secureCheckout": "Secure Checkout",
-    "title": "Complete Your Order",
-    "subtitle": "Review your items, enter shipping details, and confirm payment securely.",
-    "shippingInfo": "Shipping Information",
-    "paymentMethod": "Payment Method",
+    "secureCheckout": "Bezpečná pokladna",
+    "title": "Dokončete svou objednávku",
+    "subtitle": "Zkontrolujte své položky, zadejte dodací údaje a bezpečně potvrďte platbu.",
+    "shippingInfo": "Informace o odeslání",
+    "paymentMethod": "Způsob platby",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "Kreditní / debetní karta",
+      "bankTransfer": "Bankovní převod (LC/TT)",
       "wallet": "HPay Digital Wallet"
     },
-    "orderSummary": "Order Summary",
+    "orderSummary": "Shrnutí objednávky",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
-      "total": "Total"
+      "subtotal": "Mezisoučet",
+      "shipping": "Doprava",
+      "calculatedNextStep": "Vypočteno v dalším kroku",
+      "tax": "Daň",
+      "total": "Celkový"
     },
-    "placeOrder": "Place Order",
-    "sslNotice": "Secured with 256-bit SSL encryption",
-    "continueShopping": "Continue Shopping",
+    "placeOrder": "Zadat objednávku",
+    "sslNotice": "Zabezpečeno 256bitovým šifrováním SSL",
+    "continueShopping": "Pokračovat v nákupu",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "Křestní jméno",
+      "lastName": "Příjmení",
+      "email": "E-mail",
+      "address": "Adresa",
+      "city": "Město",
+      "country": "Země"
     }
   },
   "history": {
     "hero": {
-      "title": "Our Journey",
-      "subtitle": "From a Dubai startup to a global enterprise spanning 42+ countries, 10 industry verticals, and 38 languages."
+      "title": "Naše cesta",
+      "subtitle": "Od dubajského startupu po globální společnost zahrnující více než 42 zemí, 10 průmyslových odvětví a 38 jazyků."
     },
     "cta": {
-      "title": "Be Part of the Next Chapter",
-      "subtitle": "Join us as we scale to 60+ countries and build the future of AI-driven global commerce.",
-      "button": "View Careers"
+      "title": "Staňte se součástí další kapitoly",
+      "subtitle": "Připojte se k nám, když se rozšíříme do více než 60 zemí a budeme budovat budoucnost globálního obchodu řízeného umělou inteligencí.",
+      "button": "Zobrazit kariéry"
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "Společnost byla založena v Dubaji",
+        "description": "Harvics Global Ventures se sídlem ve Spojených arabských emirátech s vizí stát se prvotřídním FMCG a multivertikálním obchodním konglomerátem. První operace zahájeny v oblasti textilu a spotřebního zboží.",
+        "highlight": "Rok jedna"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "První mezinárodní expanze",
+        "description": "I přes globální pandemické výzvy se rozšířil do 10 zemí v Evropě, na Středním východě a v jižní Asii. Zahájení operací digitálního dodavatelského řetězce a partnerství pro vzdálenou distribuci.",
+        "highlight": "10 zemí"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "Multi-vertikální expanze",
+        "description": "Zahájeno 5 nových průmyslových vertikál: Komodity, Průmyslová zařízení, Minerály a těžba, Ropa a plyn a Nemovitosti. Celkový produktový katalog přesáhl 500 SKU ve všech odvětvích.",
+        "highlight": "5 nových vertikál"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "Digitální transformace",
+        "description": "Postavil první verzi Harvics OS — podnikové platformy založené na umělé inteligenci. Spustili distribuční portály, možnosti elektronického obchodování a sledování vozového parku GPS v reálném čase na všech trzích.",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "Udržitelnost a měřítko",
+        "description": "Zavázán k uhlíkově neutrálním operacím. Dosáhl více než 30 zemí. Spustili HPay (platformu pro digitální platby), řešení pro financování obchodu a prognózování poptávky řízené umělou inteligencí ve všech vertikálách.",
+        "highlight": "30+ zemí"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "Globální podnikání",
+        "description": "Překonal milník ve více než 42 zemích. Nasazený AI engine s 6 modely ML pro strategii, poptávku, ceny, pokrytí a optimalizaci SKU. Spuštěna vícejazyčná platforma podporující 38 jazyků.",
+        "highlight": "42+ zemí"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "Operační systém AI-First",
+        "description": "Spuštěn Harvics OS v2 — jednotný podnikový operační systém s inteligencí v reálném čase, živými kanály Socket.io, Alpha Engine pro plány útoků na trh a kompletní 8-úrovňovou geografickou hierarchií.",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "Vize vpřed",
+        "description": "Škálování na 60+ zemí. Budování prvního FMCG podniku provozovaného umělou inteligencí, kde každá funkce – zásobování, logistika, finance, CRM – běží na prediktivní inteligenci s branami lidského schvalování.",
+        "highlight": "Cíl 60+"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "Praktická akademie obchodu, sourcingu a umělé inteligence pro zakladatele – šest týdnů, živá setkání, koridory Harvics.",
+    "navLabel": "Startup Academy",
+    "teaser": {
+      "eyebrow": "Akademie · Koridorový program",
+      "title": "Startup Academy.",
+      "body": "Klasické obchodní řemeslo pro zakladatele – získávání zdrojů, kontrola kvality, finanční oddělení a koridorová gramotnost – vedle tržiště Harvics.",
+      "cta": "Vstupte do Akademie"
+    },
+    "hero": {
+      "alt": "Klasický přednáškový sál — Harvics Startup Academy",
+      "eyebrow": "Kohorta 01 · 4. čtvrtletí 2026 · Podpůrný program",
+      "title": "Harvics Startup Academy",
+      "body": "Klasická škola obchodu pro zakladatele – sourcing, koridorový obchod a umělá inteligence, která funguje. Šest týdnů. Živé relace. Skuteční operátoři.",
+      "apply": "Přihlaste se do kohorty 01",
+      "seeProgramme": "Viz program"
+    },
+    "stats": {
+      "founders": "Zakladatelé / kohorta",
+      "sessions": "Živé relace",
+      "weeks": "týdny",
+      "verticals": "Obchodní vertikály"
+    },
+    "why": {
+      "eyebrow": "01 · Proč se připojit",
+      "title": "Vybudujte společnost, která může skutečně obchodovat.",
+      "body": "Ne divadlo na hřišti. Naučte se RFQ k vypořádání, sourcingu, oslovení kupujících a automatizaci – od operátorů napříč koridory Harvics.",
+      "item1Title": "Praktické obchodní systémy",
+      "item1Body": "Jak nakupují institucionální kupující – a jak plníte.",
+      "item2Title": "Síť, která dodává",
+      "item2Body": "Zakladatelé, distributoři a operátoři napříč vertikálami.",
+      "item3Title": "AI, která funguje",
+      "item3Body": "HarvyX, hlas Fin a automatizace operací bez módních slov.",
+      "imageAlt": "Klasické obchodní zátiší"
+    },
+    "knowledge": {
+      "eyebrow": "Znalost",
+      "title": "Studujte chodbu jako disciplínu.",
+      "body": "Osnovy čerpané ze skutečné obchodní praxe – nikoli generické úvodní snímky.",
+      "imageAlt": "Velká klasická knihovna"
+    },
+    "programme": {
+      "eyebrow": "02 · Program",
+      "title": "Čím se propracujete",
+      "m1Title": "Značka a zdroje",
+      "m1Body": "MOQ, QC brány, textilie a FMCG — ateliér do chodby.",
+      "m2Title": "Inteligence a dosah",
+      "m2Body": "Laboratoře HarvyX, ICP kupujícího, sledování, která dostávají odpovědi.",
+      "m3Title": "Kapitál a partneři",
+      "m3Body": "Cesty financování a partnerství – žádné falešné bankovní pohledávky.",
+      "m4Title": "Koridorový obchod",
+      "m4Body": "Přístavy, uličky a to, jak se zboží skutečně pohybuje na trzích.",
+      "m5Title": "Kvalita a pečlivost",
+      "m5Body": "Inspekční návyky, které chrání pověst a vyrovnání.",
+      "m6Title": "Komodity a FMCG",
+      "m6Body": "Od reality skladu po značku a velkoobchodní poptávku."
+    },
+    "tracks": {
+      "aEyebrow": "Skladba A",
+      "aTitle": "Značka a obchod",
+      "aBody": "Zakladatelé oděvů a FMCG budují poptávku po značce, velkoobchodu a koridoru.",
+      "aAlt": "Klasická zasedací místnost",
+      "bEyebrow": "Stopa B",
+      "bTitle": "Obchod & ops",
+      "bBody": "Operátoři sourcingu, logistiky a B2B rozšiřují institucionální obchod.",
+      "bAlt": "Networking salonu"
+    },
+    "network": {
+      "eyebrow": "03 · Síť",
+      "title": "Seznamte se s operátory, ne s publikem.",
+      "body": "Živá setkání a úřední hodiny ve stylu salonu se zakladateli, distributory a provozovateli koridorů Harvics.",
+      "imageAlt": "Networking zakladatelů"
+    },
+    "rhythm": {
+      "eyebrow": "04 · Rytmus",
+      "title": "Šest týdnů. Jasná kadence.",
+      "w1": "1. týden",
+      "w1Body": "Orientace · Mapa koridoru · Workshop ICP",
+      "w2": "2. týden",
+      "w2Body": "Oslovení kupujících · HarvyX lab",
+      "w3": "3. týden",
+      "w3Body": "Sourcing & QC · Pečlivost dodavatele",
+      "w4": "4. týden",
+      "w4Body": "Automatizace · Hlas Fin · Zásobník operací",
+      "w5": "5. týden",
+      "w5Body": "Financování a partnerství",
+      "w6": "6. týden",
+      "w6Body": "Prezentace zakladatele · další kroky"
+    },
+    "apply": {
+      "eyebrow": "Aplikace",
+      "title": "Přihlaste se do kohorty 01",
+      "body": "Omezený počet míst. Sdělte nám svou společnost, odvětví a to, co budujete.",
+      "emailCta": "Přihlaste se e-mailem →",
+      "back": "Zpět k Harvicsovi"
     }
   }
 }

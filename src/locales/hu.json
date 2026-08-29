@@ -3,13 +3,13 @@
   "home": {
     "welcome": "Üdvözöljük a",
     "companyName": "Harvics",
-    "tagline": "Kiválóság a prémium fogyasztási cikkek terén 2019 óta",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "Termékek felfedezése",
     "contact": "Kapcsolat",
     "learnMore": "Tudj meg többet",
-    "brandStatement": "Vezető globális fogyasztási cikkeket gyártó vállalat, amely prémium élelmiszertermékeket szállít változatos kategóriákban, nemzetközi minőségi szabványoknak megfelelően.",
-    "taglineStart": "Kiválóság a prémium fogyasztási cikkek terén azóta",
-    "taglineYear": "2019",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "London • Milánó • New York",
     "categories": {
       "bakery": "Pékség",
@@ -81,7 +81,8 @@
       "specialOffers": "Különleges ajánlatok",
       "promotions": "Promóciók",
       "bulkOrders": "Tömeges rendelési kedvezmények"
-    }
+    },
+    "startupAcademy": "Startup Akadémia"
   },
   "products": {
     "ourProducts": "Termékeink",
@@ -119,7 +120,40 @@
     "whatsapp": "WhatsApp",
     "callNow": "Hívjon most",
     "sendEmail": "E-mail küldése",
-    "messageUs": "Üzenet nekünk"
+    "messageUs": "Üzenet nekünk",
+    "getInTouch": "Vegye fel a kapcsolatot",
+    "locations": "Helyszínek",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "Üzenet küldése",
+    "firstName": "Keresztnév",
+    "firstNamePlaceholder": "Írja be a keresztnevét",
+    "lastName": "Vezetéknév",
+    "lastNamePlaceholder": "Írja be vezetéknevét",
+    "emailPlaceholder": "Adja meg e-mail címét",
+    "subject": "Téma",
+    "subjectPlaceholder": "Írja be a tárgyat",
+    "message": "Üzenet",
+    "messagePlaceholder": "Írja meg üzenetét",
+    "send": "Elküld",
+    "eyebrow": "Indítson el egy rövidet",
+    "headline1": "Indítson el egy rövidet.",
+    "headline2": "24 órán belül válaszolunk.",
+    "subhead": "Mondja el kategóriáját, mennyiségét és célpiacát. A szakember felveszi Önnel a kapcsolatot a beszerzési lehetőségekkel és az indikatív árakkal.",
+    "fullName": "Teljes név",
+    "fullNamePlaceholder": "Tabraiz sah",
+    "company": "Vállalat",
+    "companyPlaceholder": "Az Ön szervezete",
+    "businessEmail": "Üzleti e-mail",
+    "howCanWeHelp": "Hogyan segíthetünk?",
+    "sending": "Küldés...",
+    "sendEnquiry": "Kérdés küldése",
+    "sentTitle": "Üzenet elküldve.",
+    "sentSub": "Csapatunk 24 órán belül válaszol.",
+    "directChannels": "Közvetlen csatornák",
+    "trust1": "24 órás válasz garancia",
+    "trust2": "Elkötelezett fiókkezelő",
+    "trust3": "NDA available on request",
+    "trust4": "42 piac · 1 247 szállítás ma"
   },
   "media": {
     "title": "Médiaközpont",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "Harvics Global Ventures",
-    "tagline": "Kiválóság a prémium fogyasztási cikkek terén 2019 óta",
-    "brandStatement": "Vezető globális fogyasztási cikkeket gyártó vállalat, amely prémium élelmiszertermékeket szállít változatos kategóriákban, nemzetközi minőségi szabványoknak megfelelően.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "London • Milánó • New York",
     "since": "2019 óta",
     "harvicsNews": "Harvics Hírek",
@@ -173,7 +207,7 @@
     "contactDescription": "Lépjen kapcsolatba csapatunkkal",
     "contactUsButton": "Kapcsolat",
     "usefulLinks": "Hasznos linkek",
-    "askHarvics": "Ask Harvics",
+    "askHarvics": "Kérdezd meg Harvicst",
     "searchForJobs": "Álláskeresés",
     "signUpForNews": "Iratkozzon fel hírlevelünkre",
     "company": "Vállalat",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "Csatlakozzon hálózatunkhoz",
     "newsletterTagline": "Szerezze meg a legfrissebb kereskedelmi információkat és piaci frissítéseket",
     "activeShipments": "Aktív szállítmányok",
-    "certifiedAudited": "Tanúsított és auditált"
+    "certifiedAudited": "Tanúsított és auditált",
+    "invalidEmail": "Kérjük, adjon meg egy érvényes e-mail címet",
+    "subscriptionSuccess": "Köszönjük a feliratkozást!",
+    "subscriptionError": "Valami elromlott. Kérjük, próbálja újra."
   },
   "search": {
     "placeholder": "Termékek, márkák vagy kategóriák keresése",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "Bocsánat, ezt nem értettem. Megtennéd, hogy újrafogalmazod?",
       "help": "Segíthetek termékinformációkkal, megrendelésekkel vagy általános kérdésekkel kapcsolatban. Mit szeretne tudni?",
-      "contact": "További segítségért kérjük, vegye fel velünk a kapcsolatot a support@harvics.com címen, vagy hívja a +1-800-HARVICS telefonszámot."
-    }
+      "contact": "További segítségért kérjük, vegye fel velünk a kapcsolatot a support@harvics.com címen, vagy hívja a +1-800-HARVICS telefonszámot.",
+      "product": "Böngésszen termékkatalógusunkban a menüből, vagy mondja meg, melyik kategória érdekli – FMCG, textil, logisztika stb.",
+      "order": "Megrendelés leadásához vagy állapotának ellenőrzéséhez látogasson el a forgalmazói portálra, vagy lépjen kapcsolatba fiókkezelőjével.",
+      "about": "A Harvics Global Ventures egy szuverén kereskedelmi infrastrukturális vállalat, több mint 20 éves múlttal 40+ országban."
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "Nyomja meg az Entert a küldéshez"
   },
   "common": {
     "chatWithUs": "Csevegjen velünk",
@@ -730,12 +772,17 @@
       "gps-tracking": "GPS-követés",
       "localization": "Lokalizáció",
       "workflows": "Munkafolyamatok",
-      "admin": "Adminisztrátor"
+      "admin": "Adminisztrátor",
+      "modules": "Modulok"
     },
     "kpis": {
       "customers": "Ügyfelek",
       "employees": "Alkalmazottak",
-      "profit": "Nyereség"
+      "profit": "Nyereség",
+      "totalOrders": "Összes rendelés",
+      "inventoryValue": "Készletérték",
+      "logisticsEfficiency": "Logisztikai hatékonyság",
+      "revenue": "Bevétel"
     },
     "domain": {
       "title": "CRM operációs rendszer",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "Ügyfélkapcsolatok, interakciók és kampányok megtekintése és kezelése.",
       "loading": "Terhelés...",
       "error": "Hiba történt a CRM-adatok betöltése során"
+    },
+    "roleIndicator": {
+      "manager": "Menedzser nézet",
+      "executive": "Executive kilátás",
+      "investor": "Befektetői nézet",
+      "distributor": "Forgalmazói nézet",
+      "supplier": "Beszállítói nézet",
+      "customer": "Ügyfélnézet"
     }
   },
   "supplierPortal": {
@@ -935,7 +990,7 @@
   },
   "strategy": {
     "title": "Stratégiánk",
-    "pageTitle": "Strategy | Harvics",
+    "pageTitle": "Stratégia | Harvics",
     "description": "Fenntartható jövő építése az innováció és a kiválóság révén",
     "heroSubtitle": "Fenntartható jövő építése az innováció és a kiválóság révén",
     "pillars": {
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "Harvicsról",
-    "subtitle": "Kiválóság a prémium fogyasztási cikkek terén 2019 óta",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "Történetünk",
     "story1": "A 2019-ben alapított Harvics egy előremutató ötletből a prémium fogyasztási cikkek globális vezetőjévé nőtte ki magát. Utunk meghatározó eleme a minőség iránti szüntelen törekvés és az innováció iránti elkötelezettség.",
     "story2": "Több mint 40 országban működünk, olyan termékeket szállítva, amelyek gazdagítják az életet és új mércét állítanak fel az iparágban. Szerény kezdeteinktől globális jelenlétünkig értékeink változatlanok maradtak.",
@@ -1150,181 +1205,279 @@
   },
   "help": {
     "page": {
-      "title": "Help Center",
-      "subtitle": "Find the help you need"
+      "title": "Súgó",
+      "subtitle": "Keresse meg a szükséges segítséget"
     },
-    "backToHelpCenter": "Back to Help Center",
+    "backToHelpCenter": "Vissza a Súgóhoz",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "Gyakran Ismételt Kérdések",
+        "description": "Keressen választ a gyakori kérdésekre"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "Lépjen kapcsolatba az ügyfélszolgálattal",
+        "description": "Vegye fel a kapcsolatot támogató csapatunkkal"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "Felhasználói útmutatók",
+        "description": "Lépésről lépésre útmutatók és oktatóanyagok"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "Hibaelhárítás",
+        "description": "Gyakori problémák megoldása"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "Fiók súgója",
+        "description": "Kezelje fiókját és beállításait"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "Rendelési támogatás",
+        "description": "Segítség a megrendelésekben és a szállításban"
       }
     },
     "account": {
-      "title": "Account Help",
-      "subtitle": "Manage your account settings and preferences",
-      "placeholder": "Account management and settings help content will appear here."
+      "title": "Fiók súgója",
+      "subtitle": "Kezelje fiókbeállításait és preferenciáit",
+      "placeholder": "Itt jelennek meg a fiókkezelési és -beállítási súgótartalom."
     },
     "orders": {
-      "title": "Order Support",
-      "subtitle": "Track and manage your orders and deliveries",
-      "placeholder": "Order and delivery support content will appear here."
+      "title": "Rendelési támogatás",
+      "subtitle": "Kövesse nyomon és kezelje megrendeléseit és szállításait",
+      "placeholder": "Itt jelennek meg a rendelési és szállítási támogatási tartalmak."
     },
     "guides": {
-      "title": "User Guides",
-      "subtitle": "Step-by-step guides to help you get the most out of Harvics",
+      "title": "Felhasználói útmutatók",
+      "subtitle": "Lépésről lépésre útmutatók, amelyek segítségével a legtöbbet hozhatja ki a Harvicsból",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "Kezdő lépések",
+          "description": "Tanuld meg az alapokat"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "Fiók beállítása",
+          "description": "Állítsa be fiókját"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "Hogyan rendeljünk",
+          "description": "Megrendelések leadása és nyomon követése"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "Fizetési módok",
+          "description": "Fizetési lehetőségek és biztonság"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "Szállítás és szállítás",
+          "description": "Szállítási információk"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "Visszaküldések és visszatérítések",
+          "description": "Visszaküldési politika és folyamat"
         }
       }
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "subtitle": "Common issues and quick solutions",
+      "title": "Hibaelhárítás",
+      "subtitle": "Gyakori problémák és gyors megoldások",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "Bejelentkezési problémák",
+          "description": "Problémák a bejelentkezéssel"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "Fizetési problémák",
+          "description": "A fizetés nem feldolgozása"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "Szállítási késések",
+          "description": "A rendelés nem érkezik meg"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "Webhelyhibák",
+          "description": "Az oldal nem töltődik be"
         }
       }
     }
   },
   "checkout": {
-    "secureCheckout": "Secure Checkout",
-    "title": "Complete Your Order",
-    "subtitle": "Review your items, enter shipping details, and confirm payment securely.",
-    "shippingInfo": "Shipping Information",
-    "paymentMethod": "Payment Method",
+    "secureCheckout": "Biztonságos fizetés",
+    "title": "Végezze el megrendelését",
+    "subtitle": "Tekintse át tételeit, adja meg a szállítási adatokat, és erősítse meg biztonságosan a fizetést.",
+    "shippingInfo": "Szállítási információk",
+    "paymentMethod": "Fizetési mód",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "Hitel-/betéti kártya",
+      "bankTransfer": "Banki átutalás (LC/TT)",
       "wallet": "HPay Digital Wallet"
     },
-    "orderSummary": "Order Summary",
+    "orderSummary": "Rendelési összefoglaló",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
-      "total": "Total"
+      "subtotal": "Részösszeg",
+      "shipping": "Szállítás",
+      "calculatedNextStep": "Kiszámolva a következő lépésben",
+      "tax": "Adó",
+      "total": "Teljes"
     },
-    "placeOrder": "Place Order",
-    "sslNotice": "Secured with 256-bit SSL encryption",
-    "continueShopping": "Continue Shopping",
+    "placeOrder": "Rendelés leadása",
+    "sslNotice": "256 bites SSL titkosítással védett",
+    "continueShopping": "Vásárlás folytatása",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
+      "firstName": "Keresztnév",
+      "lastName": "Vezetéknév",
       "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "address": "Cím",
+      "city": "Város",
+      "country": "Ország"
     }
   },
   "history": {
     "hero": {
-      "title": "Our Journey",
-      "subtitle": "From a Dubai startup to a global enterprise spanning 42+ countries, 10 industry verticals, and 38 languages."
+      "title": "A mi utazásunk",
+      "subtitle": "Egy dubai startuptól a több mint 42 országot, 10 iparágat és 38 nyelvet felölelő globális vállalkozásig."
     },
     "cta": {
-      "title": "Be Part of the Next Chapter",
-      "subtitle": "Join us as we scale to 60+ countries and build the future of AI-driven global commerce.",
-      "button": "View Careers"
+      "title": "Legyen részese a következő fejezetnek",
+      "subtitle": "Csatlakozzon hozzánk, amikor több mint 60 országra lépünk, és építjük az AI-vezérelt globális kereskedelem jövőjét.",
+      "button": "Karrier megtekintése"
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "Dubaiban alapították",
+        "description": "A Harvics Global Ventures az Egyesült Arab Emírségekben alakult azzal a céllal, hogy világszínvonalú FMCG-vé és több vertikális kereskedelmi konglomerátummá váljon. Az első műveletek a textil- és fogyasztási cikkek területén indultak.",
+        "highlight": "Első év"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "Első nemzetközi terjeszkedés",
+        "description": "A globális pandémiás kihívások ellenére 10 országra terjeszkedett Európában, Közel-Keleten és Dél-Ázsiában. Digitális ellátási lánc műveletek és távelosztási partnerségek elindítása.",
+        "highlight": "10 ország"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "Több függőleges bővítés",
+        "description": "Öt új iparági vertikumot indított: árucikkeket, ipari berendezéseket, ásványokat és bányászatot, olajat és gázt, valamint ingatlanokat. A teljes termékkatalógus meghaladta az 500 SKU-t az összes ágazatban.",
+        "highlight": "5 új függőleges"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "Digitális átalakítás",
+        "description": "Megépítette a Harvics OS első verzióját – az AI-alapú vállalati platformot. Elosztói portálokat, e-kereskedelmi lehetőségeket és valós idejű GPS-flottakövetést indítottak el minden piacon.",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "Fenntarthatóság és méretarány",
+        "description": "Elkötelezett a szén-dioxid-semleges műveletek mellett. 30+ országot ért el. Bevezette a HPay-t (digitális fizetési platform), a kereskedelemfinanszírozási megoldásokat és az AI-vezérelt kereslet-előrejelzést minden ágazatban.",
+        "highlight": "30+ ország"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "Globális Vállalkozás",
+        "description": "Túllépte a 42+ ország mérföldkövét. Beépített mesterséges intelligencia motor 6 ML modellel a stratégia, a kereslet, az árképzés, a lefedettség és az SKU optimalizálásához. Elindítottuk a többnyelvű platformot, amely 38 nyelvet támogat.",
+        "highlight": "42+ ország"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "AI-First operációs rendszer",
+        "description": "Elindult a Harvics OS v2 – egységes vállalati operációs rendszer valós idejű intelligenciával, Socket.io élő hírfolyamokkal, Alpha Engine piaci támadási tervekhez és teljes 8 szintű földrajzi hierarchiával.",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "A jövőkép",
+        "description": "Méretezés 60+ országra. A világ első mesterséges intelligencia által üzemeltetett FMCG-vállalatának felépítése, ahol minden funkció – beszerzés, logisztika, pénzügy, CRM – prediktív intelligencián működik emberi jóváhagyási kapukkal.",
+        "highlight": "60+ Cél"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "Gyakorlati kereskedelem, beszerzés és mesterséges intelligencia akadémia alapítóknak – hat hét, élő előadások, Harvics folyosók.",
+    "navLabel": "Startup Akadémia",
+    "teaser": {
+      "eyebrow": "Akadémia · Folyosó program",
+      "title": "Startup Akadémia.",
+      "body": "Klasszikus mesterség az alapítóknak – beszerzés, minőségellenőrzés, finanszírozási pultok és folyosói írástudás – a Harvics piactér mellett.",
+      "cta": "Lépj be az Akadémiába"
+    },
+    "hero": {
+      "alt": "Klasszikus előadóterem — Harvics Startup Academy",
+      "eyebrow": "01. kohorsz · 2026. negyedik negyedév · Támogató program",
+      "title": "Harvics Startup Academy",
+      "body": "Klasszikus kereskedelmi iskola az alapítóknak – beszerzés, folyosói kereskedelem és működő mesterséges intelligencia. Hat hét. Élő ülések. Valódi operátorok.",
+      "apply": "Jelentkezés a 01-es kohorszba",
+      "seeProgramme": "Lásd a programot"
+    },
+    "stats": {
+      "founders": "Alapítók / kohorsz",
+      "sessions": "Élő ülések",
+      "weeks": "Hetek",
+      "verticals": "Kereskedelmi vertikumok"
+    },
+    "why": {
+      "eyebrow": "01 · Miért érdemes csatlakozni?",
+      "title": "Építs fel egy olyan céget, amely ténylegesen tud kereskedni.",
+      "body": "Nem szurokszínház. Tanuljon meg ajánlatkéréseket az elszámoláshoz, a beszerzési gondossághoz, a vásárlók megszólításához és az automatizáláshoz – a Harvics folyosói üzemeltetőitől.",
+      "item1Title": "Praktikus kereskedelmi rendszerek",
+      "item1Body": "Hogyan vásárolnak az intézményi vásárlók – és hogyan teljesítenek.",
+      "item2Title": "Szállítási hálózat",
+      "item2Body": "Alapítók, forgalmazók és üzemeltetők a különböző ágazatokban.",
+      "item3Title": "AI, ami működik",
+      "item3Body": "HarvyX, Fin voice és műveletek automatizálása hívószavak nélkül.",
+      "imageAlt": "Klasszikus kereskedelmi csendélet"
+    },
+    "knowledge": {
+      "eyebrow": "Tudás",
+      "title": "Tanulmányozza a folyosót, mint egy fegyelmet.",
+      "body": "Valódi kereskedelmi gyakorlatból készült tananyag – nem általános induló diák.",
+      "imageAlt": "Nagy klasszikus könyvtár"
+    },
+    "programme": {
+      "eyebrow": "02 · Program",
+      "title": "Amit végig fogsz dolgozni",
+      "m1Title": "Márka és beszerzés",
+      "m1Body": "MOQ-k, QC-kapuk, textíliák és FMCG – műhely a folyosóig.",
+      "m2Title": "Intelligencia és tájékoztatás",
+      "m2Body": "HarvyX laborok, vásárlói ICP, nyomon követések, amelyek választ kapnak.",
+      "m3Title": "Tőke és partnerek",
+      "m3Body": "Finanszírozási utak és partnerségek – nincsenek hamis banki követelések.",
+      "m4Title": "Folyosói kereskedelem",
+      "m4Body": "Kikötők, sávok és az áruk tényleges mozgása a piacokon.",
+      "m5Title": "Minőség és szorgalom",
+      "m5Body": "A hírnevet és a települést védő ellenőrzési szokások.",
+      "m6Title": "Áruk és FMCG",
+      "m6Body": "A raktári valóságtól a márka- és nagykereskedelmi keresletig."
+    },
+    "tracks": {
+      "aEyebrow": "A pálya",
+      "aTitle": "Márka és kereskedelem",
+      "aBody": "Ruházati és FMCG alapítók márka-, nagykereskedelmi és folyosói keresletet építenek.",
+      "aAlt": "Klasszikus tárgyalóterem",
+      "bEyebrow": "B pálya",
+      "bTitle": "Trade & ops",
+      "bBody": "Sourcing, logisztika és B2B operátorok az intézményi kereskedelmet skálázva.",
+      "bAlt": "Szalon hálózatépítés"
+    },
+    "network": {
+      "eyebrow": "03 · Hálózat",
+      "title": "Az operátorokkal találkozzon, ne a közönséggel.",
+      "body": "Élő ülések és szalon stílusú irodai órák alapítókkal, forgalmazókkal és Harvics folyosó üzemeltetőivel.",
+      "imageAlt": "A hálózatépítés alapítói"
+    },
+    "rhythm": {
+      "eyebrow": "04 · Ritmus",
+      "title": "Hat hét. Tiszta ütem.",
+      "w1": "1. hét",
+      "w1Body": "Tájékozódás · Folyosótérkép · ICP workshop",
+      "w2": "2. hét",
+      "w2Body": "Vevői kapcsolatfelvétel · HarvyX labor",
+      "w3": "3. hét",
+      "w3Body": "Beszerzés és minőségellenőrzés · Szállítói gondosság",
+      "w4": "4. hét",
+      "w4Body": "Automatizálás · Fin voice · műveleti verem",
+      "w5": "5. hét",
+      "w5Body": "Finanszírozás és partnerségek",
+      "w6": "6. hét",
+      "w6Body": "Alapító kirakat · következő lépések"
+    },
+    "apply": {
+      "eyebrow": "Alkalmazások",
+      "title": "Jelentkezés a 01-es kohorszba",
+      "body": "Korlátozott férőhelyek. Mondja el nekünk cégét, ágazatát és azt, hogy mit épít.",
+      "emailCta": "Jelentkezés e-mailben →",
+      "back": "Vissza Harvicshoz"
     }
   }
 }

@@ -1,0 +1,4 @@
+# Drop company / people / email files here.
+# Supported: .csv .tsv .txt .xlsx .xls .xlsm .xlsb .ods
+# Then run:  npm run import:leads
+# The importer maps columns, dedupes, and merges into ../leads.json

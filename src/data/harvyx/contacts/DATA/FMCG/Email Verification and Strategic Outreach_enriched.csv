@@ -1,0 +1,4 @@
+Route Type,Email Address,Strategic Logic,enrichment_status,score
+"The ""Safe"" Private Node",khaulahamoud@gmail.com,"Highest Probability. High-level officials in the region often use a dedicated private Gmail to manage high-stakes, non-routine correspondence away from strict government filters.",partial,0
+The CEO Node,khaula.alharthy@injaz-oman.org,"As the CEO of Injaz Oman, this is her primary operational inbox. It is much more likely to be active than a secondary government alias.",partial,0
+"The ""RAM"" Alternative",kalharthy@ram.gov.om,"In Omani government circles, the ""initial + lastname"" format is often the default over the full name.",partial,0

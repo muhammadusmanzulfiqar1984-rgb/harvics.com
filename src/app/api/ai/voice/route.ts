@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { transcribeWithDeepgram } from '@/lib/deepgram'
 import { transcribeWithNvidia, transcribeWithOpenAI, callNvidia, callOpenAI, ttsWithNvidia, ttsWithOpenAI } from '@/lib/openai'
 
 export const runtime = 'nodejs'
@@ -13,7 +14,7 @@ export const dynamic = 'force-dynamic'
  *   voice?  — TTS voice name
  *
  * Pipeline:
- *   1. STT:  NVIDIA Parakeet → OpenAI Whisper → CF Whisper binding
+ *   1. STT:  Deepgram Nova → NVIDIA Parakeet → OpenAI Whisper → CF Whisper
  *   2. LLM:  OpenAI gpt-4o-mini → NVIDIA Nemotron-70B → CF Workers AI
  *   3. TTS:  NVIDIA Riva → OpenAI TTS-1
  *
@@ -32,7 +33,8 @@ export async function POST(req: NextRequest) {
     }
 
     // ── Step 1: Speech → Text ─────────────────────────────────────────────────
-    let transcript = await transcribeWithNvidia(audioFile, 'audio.webm')
+    let transcript = await transcribeWithDeepgram(audioFile, 'audio.webm')
+    if (!transcript) transcript = await transcribeWithNvidia(audioFile, 'audio.webm')
     if (!transcript) transcript = await transcribeWithOpenAI(audioFile, 'audio.webm')
 
     // CF Workers AI Whisper fallback

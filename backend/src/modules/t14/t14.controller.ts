@@ -15,30 +15,12 @@
 import { Request, Response, Router } from 'express';
 import { z } from 'zod';
 import { prisma } from '../../core/prisma';
+import { emitAudit } from '../../services/audit.service';
+import { eventBus } from '../../core/eventBus';
 
 export const t14Router = Router();
 
 // ── helpers ───────────────────────────────────────────────────────────────
-async function audit(req: Request, action: string, entity: string, entityId: string, payload?: any) {
-  try {
-    await prisma.auditEvent.create({
-      data: {
-        actorId: (req as any).user?.userId || null,
-        actorRole: (req as any).user?.role || null,
-        action,
-        module: 't14',
-        entity,
-        entityId,
-        ipAddress: req.ip || null,
-        userAgent: req.headers['user-agent'] || null,
-        payload: payload ? (payload as any) : undefined,
-        result: 'success',
-      },
-    });
-  } catch {
-    // never break a request on audit failure
-  }
-}
 
 function handleZod(err: unknown, res: Response): Response | undefined {
   if (err instanceof z.ZodError) {
@@ -90,7 +72,7 @@ t14Router.post('/deal-desk', async (req: Request, res: Response) => {
   try {
     const body = DealCreateSchema.parse(req.body);
     const row = await prisma.dealDesk.create({ data: { ...body, status: 'Pending' } });
-    await audit(req, 'deal.created', 'DealDesk', row.id, { value: row.opportunityValue });
+    void emitAudit(req, 'deal.created', 'DealDesk', row.id, { module: 't14', payload: { value: row.opportunityValue } });
     return res.status(201).json({ success: true, data: row });
   } catch (err) {
     const z = handleZod(err, res); if (z) return z;
@@ -114,7 +96,7 @@ t14Router.post('/deal-desk/:id/approve', async (req: Request, res: Response) => 
         decisionDate: new Date(),
       },
     });
-    await audit(req, 'deal.approved', 'DealDesk', row.id, { discount: row.approvedDiscount });
+    void emitAudit(req, 'deal.approved', 'DealDesk', row.id, { module: 't14', payload: { discount: row.approvedDiscount } });
     return res.json({ success: true, data: row });
   } catch (err) {
     const z = handleZod(err, res); if (z) return z;
@@ -132,7 +114,7 @@ t14Router.post('/deal-desk/:id/reject', async (req: Request, res: Response) => {
     where: { id: existing.id },
     data: { status: 'Rejected', decisionDate: new Date() },
   });
-  await audit(req, 'deal.rejected', 'DealDesk', row.id);
+  void emitAudit(req, 'deal.rejected', 'DealDesk', row.id, { module: 't14' });
   return res.json({ success: true, data: row });
 });
 
@@ -140,7 +122,7 @@ t14Router.delete('/deal-desk/:id', async (req: Request, res: Response) => {
   const existing = await prisma.dealDesk.findUnique({ where: { id: req.params.id } });
   if (!existing) return res.status(404).json({ success: false, error: 'Deal not found' });
   await prisma.dealDesk.delete({ where: { id: existing.id } });
-  await audit(req, 'deal.deleted', 'DealDesk', existing.id);
+  void emitAudit(req, 'deal.deleted', 'DealDesk', existing.id, { module: 't14' });
   return res.json({ success: true, data: { id: existing.id, deleted: true } });
 });
 
@@ -185,7 +167,7 @@ t14Router.post('/commissions', async (req: Request, res: Response) => {
     const row = await prisma.commission.create({
       data: { ...body, commissionAmount, status: 'Calculated' },
     });
-    await audit(req, 'commission.calculated', 'Commission', row.id, { amount: commissionAmount });
+    void emitAudit(req, 'commission.calculated', 'Commission', row.id, { module: 't14', payload: { amount: commissionAmount } });
     return res.status(201).json({ success: true, data: row });
   } catch (err) {
     const z = handleZod(err, res); if (z) return z;
@@ -200,7 +182,7 @@ t14Router.post('/commissions/:id/approve', async (req: Request, res: Response) =
     return res.status(409).json({ success: false, error: `Cannot approve from '${existing.status}'` });
   }
   const row = await prisma.commission.update({ where: { id: existing.id }, data: { status: 'Approved' } });
-  await audit(req, 'commission.approved', 'Commission', row.id);
+  void emitAudit(req, 'commission.approved', 'Commission', row.id, { module: 't14' });
   return res.json({ success: true, data: row });
 });
 
@@ -214,7 +196,7 @@ t14Router.post('/commissions/:id/pay', async (req: Request, res: Response) => {
     where: { id: existing.id },
     data: { status: 'Paid', paidDate: new Date() },
   });
-  await audit(req, 'commission.paid', 'Commission', row.id, { amount: row.commissionAmount });
+  void emitAudit(req, 'commission.paid', 'Commission', row.id, { module: 't14', payload: { amount: row.commissionAmount } });
   return res.json({ success: true, data: row });
 });
 
@@ -225,7 +207,7 @@ t14Router.delete('/commissions/:id', async (req: Request, res: Response) => {
     return res.status(409).json({ success: false, error: 'Cannot delete a paid commission' });
   }
   await prisma.commission.delete({ where: { id: existing.id } });
-  await audit(req, 'commission.deleted', 'Commission', existing.id);
+  void emitAudit(req, 'commission.deleted', 'Commission', existing.id, { module: 't14' });
   return res.json({ success: true, data: { id: existing.id, deleted: true } });
 });
 
@@ -273,7 +255,7 @@ t14Router.post('/forecasts', async (req: Request, res: Response) => {
       return res.status(400).json({ success: false, error: 'Must have worstCase ≤ baseCase ≤ bestCase' });
     }
     const row = await prisma.salesForecast.create({ data: body });
-    await audit(req, 'forecast.created', 'SalesForecast', row.id, { period: body.forecastPeriod });
+    void emitAudit(req, 'forecast.created', 'SalesForecast', row.id, { module: 't14', payload: { period: body.forecastPeriod } });
     return res.status(201).json({ success: true, data: row });
   } catch (err) {
     const z = handleZod(err, res); if (z) return z;
@@ -291,7 +273,7 @@ t14Router.patch('/forecasts/:id', async (req: Request, res: Response) => {
       return res.status(400).json({ success: false, error: 'Must have worstCase ≤ baseCase ≤ bestCase' });
     }
     const row = await prisma.salesForecast.update({ where: { id: existing.id }, data: body });
-    await audit(req, 'forecast.updated', 'SalesForecast', row.id);
+    void emitAudit(req, 'forecast.updated', 'SalesForecast', row.id, { module: 't14' });
     return res.json({ success: true, data: row });
   } catch (err) {
     const z = handleZod(err, res); if (z) return z;
@@ -303,7 +285,7 @@ t14Router.delete('/forecasts/:id', async (req: Request, res: Response) => {
   const existing = await prisma.salesForecast.findUnique({ where: { id: req.params.id } });
   if (!existing) return res.status(404).json({ success: false, error: 'Forecast not found' });
   await prisma.salesForecast.delete({ where: { id: existing.id } });
-  await audit(req, 'forecast.deleted', 'SalesForecast', existing.id);
+  void emitAudit(req, 'forecast.deleted', 'SalesForecast', existing.id, { module: 't14' });
   return res.json({ success: true, data: { id: existing.id, deleted: true } });
 });
 
@@ -354,7 +336,8 @@ t14Router.post('/incidents', async (req: Request, res: Response) => {
         status: 'Open',
       },
     });
-    await audit(req, 'incident.reported', 'Incident', row.id, { severity: row.severity });
+    void emitAudit(req, 'incident.reported', 'Incident', row.id, { module: 'grc', payload: { severity: row.severity } });
+    eventBus.emitDomain('grc.incident.reported', row, 'grc');
     return res.status(201).json({ success: true, data: row });
   } catch (err) {
     const z = handleZod(err, res); if (z) return z;
@@ -369,7 +352,7 @@ t14Router.post('/incidents/:id/start', async (req: Request, res: Response) => {
     return res.status(409).json({ success: false, error: `Cannot start from '${existing.status}'` });
   }
   const row = await prisma.incident.update({ where: { id: existing.id }, data: { status: 'In Progress' } });
-  await audit(req, 'incident.started', 'Incident', row.id);
+  void emitAudit(req, 'incident.started', 'Incident', row.id, { module: 'grc' });
   return res.json({ success: true, data: row });
 });
 
@@ -385,7 +368,7 @@ t14Router.post('/incidents/:id/resolve', async (req: Request, res: Response) => 
       where: { id: existing.id },
       data: { status: 'Resolved', resolution: body.resolution, resolvedDate: new Date() },
     });
-    await audit(req, 'incident.resolved', 'Incident', row.id);
+    void emitAudit(req, 'incident.resolved', 'Incident', row.id, { module: 'grc' });
     return res.json({ success: true, data: row });
   } catch (err) {
     const z = handleZod(err, res); if (z) return z;
@@ -400,7 +383,7 @@ t14Router.post('/incidents/:id/close', async (req: Request, res: Response) => {
     return res.status(409).json({ success: false, error: `Cannot close from '${existing.status}'` });
   }
   const row = await prisma.incident.update({ where: { id: existing.id }, data: { status: 'Closed' } });
-  await audit(req, 'incident.closed', 'Incident', row.id);
+  void emitAudit(req, 'incident.closed', 'Incident', row.id, { module: 'grc' });
   return res.json({ success: true, data: row });
 });
 
@@ -448,7 +431,8 @@ t14Router.post('/okr', async (req: Request, res: Response) => {
     const row = await prisma.oKR.create({
       data: { ...body, progress: 0, completed: 0, status: 'On Track' },
     });
-    await audit(req, 'okr.created', 'OKR', row.id, { objective: body.objective });
+    void emitAudit(req, 'okr.created', 'OKR', row.id, { module: 'okr', payload: { objective: body.objective } });
+    eventBus.emitDomain('okr.created', row, 'okr');
     return res.status(201).json({ success: true, data: row });
   } catch (err) {
     const z = handleZod(err, res); if (z) return z;
@@ -470,7 +454,7 @@ t14Router.post('/okr/:id/checkin', async (req: Request, res: Response) => {
         status: newStatus,
       },
     });
-    await audit(req, 'okr.checkin', 'OKR', row.id, { progress: body.progress });
+    void emitAudit(req, 'okr.checkin', 'OKR', row.id, { module: 'okr', payload: { progress: body.progress, status: newStatus } });
     return res.json({ success: true, data: row });
   } catch (err) {
     const z = handleZod(err, res); if (z) return z;
@@ -478,10 +462,33 @@ t14Router.post('/okr/:id/checkin', async (req: Request, res: Response) => {
   }
 });
 
+t14Router.post('/okr/:id/status', async (req: Request, res: Response) => {
+  const Body = z.object({ status: z.enum(['On Track', 'At Risk', 'Behind', 'Completed']) });
+  try {
+    const body = Body.parse(req.body);
+    const existing = await prisma.oKR.findUnique({ where: { id: req.params.id } });
+    if (!existing) return res.status(404).json({ success: false, error: 'OKR not found' });
+    if (existing.status === 'Completed' && body.status !== 'Completed') {
+      return res.status(409).json({ success: false, error: 'Completed OKRs cannot be reopened via status' });
+    }
+    const data: any = { status: body.status };
+    if (body.status === 'Completed') {
+      data.progress = 100;
+      data.completed = existing.keyResults;
+    }
+    const row = await prisma.oKR.update({ where: { id: existing.id }, data });
+    void emitAudit(req, 'okr.status', 'OKR', row.id, { module: 'okr', payload: { from: existing.status, to: body.status } });
+    return res.json({ success: true, data: row });
+  } catch (err) {
+    const z = handleZod(err, res); if (z) return z;
+    return res.status(500).json({ success: false, error: 'status failed' });
+  }
+});
+
 t14Router.delete('/okr/:id', async (req: Request, res: Response) => {
   const existing = await prisma.oKR.findUnique({ where: { id: req.params.id } });
   if (!existing) return res.status(404).json({ success: false, error: 'OKR not found' });
   await prisma.oKR.delete({ where: { id: existing.id } });
-  await audit(req, 'okr.deleted', 'OKR', existing.id);
+  void emitAudit(req, 'okr.deleted', 'OKR', existing.id, { module: 'okr' });
   return res.json({ success: true, data: { id: existing.id, deleted: true } });
 });

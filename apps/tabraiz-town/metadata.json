@@ -1,0 +1,6 @@
+{
+  "name": "Tabraiz Town",
+  "description": "An ultra-premium, interactive cinematic digital experience for Tabraiz Town, Rahim Yar Khan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

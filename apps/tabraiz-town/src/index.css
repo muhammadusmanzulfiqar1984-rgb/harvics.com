@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Sen", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Sen", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-ivory: #FDFBF7;
+  --color-graphite: #1C1A17;
+  --color-champagne: #E3C193;
+  --color-sand: #D4B996;
+  
+  --ease-luxury: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Custom Scrollbar Architecture */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #1C1A17;
+}
+::-webkit-scrollbar-thumb {
+  background: #E3C193;
+  border-radius: 2px;
+}
+
+/* Frosted Glass Theme Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-panel-light {
+  background: rgba(253, 251, 247, 0.65);
+  border: 1px solid rgba(28, 26, 23, 0.06);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-panel-dark {
+  background: rgba(28, 26, 23, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-nav {
+  background: rgba(15, 14, 13, 0.85);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-nav-light {
+  background: rgba(253, 251, 247, 0.55);
+  border-bottom: 1px solid rgba(28, 26, 23, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-card-interactive {
+  transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-interactive:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(227, 193, 147, 0.3);
+  box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.3);
+}
+
+.glass-card-interactive-light:hover {
+  background: rgba(253, 251, 247, 0.95);
+  border-color: rgba(212, 185, 150, 0.4);
+  box-shadow: 0 30px 60px -15px rgba(28, 26, 23, 0.08);
+}
+
+/* Cinematic light-wave shimmer sweeping across hero/banner imagery */
+@keyframes shimmer-wave {
+  0% {
+    transform: translateX(-120%) skewX(-18deg);
+  }
+  55% {
+    transform: translateX(220%) skewX(-18deg);
+  }
+  100% {
+    transform: translateX(220%) skewX(-18deg);
+  }
+}
+
+.shimmer-wave {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.shimmer-wave::after {
+  content: "";
+  position: absolute;
+  top: -20%;
+  bottom: -20%;
+  left: 0;
+  width: 45%;
+  background: linear-gradient(
+    100deg,
+    transparent 0%,
+    rgba(227, 193, 147, 0.05) 30%,
+    rgba(253, 251, 247, 0.12) 50%,
+    rgba(227, 193, 147, 0.05) 70%,
+    transparent 100%
+  );
+  filter: blur(6px);
+  animation: shimmer-wave 9s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Rust-gold shimmering brand wordmark */
+@keyframes text-shimmer {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+.brand-shimmer {
+  background: linear-gradient(
+    100deg,
+    #8a4a1f 0%,
+    #b06a2c 20%,
+    #e3c193 38%,
+    #f7e7c8 50%,
+    #e3c193 62%,
+    #b06a2c 80%,
+    #8a4a1f 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: text-shimmer 7s linear infinite;
+}
+
+/* Abstract Radial glow in background to enhance glass depth */
+.glass-glow-orb {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle at center, rgba(227, 193, 147, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.glass-glow-orb-light {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle at center, rgba(212, 185, 150, 0.07) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+

@@ -3,13 +3,13 @@
   "home": {
     "welcome": "Bine ați venit la",
     "companyName": "Harwich",
-    "tagline": "Excelență în bunuri de larg consum premium din 2019",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "Explorează produsele",
     "contact": "Contactaţi-ne",
     "learnMore": "Află mai multe",
-    "brandStatement": "O companie globală de top în domeniul bunurilor de larg consum, care livrează produse alimentare premium din diverse categorii, la standarde internaționale de calitate.",
-    "taglineStart": "Excelență în bunuri de larg consum premium de la",
-    "taglineYear": "2019",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "Londra • Milano • New York",
     "categories": {
       "bakery": "Brutărie",
@@ -52,7 +52,7 @@
       "creditCard": {
         "title": "Card de credit",
         "msRewards": "Card de credit M&S Rewards",
-        "clubRewards": "Club Rewards",
+        "clubRewards": "Recompensele clubului",
         "ourCards": "Cardurile noastre de credit"
       },
       "insurance": {
@@ -81,7 +81,8 @@
       "specialOffers": "Oferte speciale",
       "promotions": "Promoții",
       "bulkOrders": "Reduceri la comenzi în vrac"
-    }
+    },
+    "startupAcademy": "Academia Startup"
   },
   "products": {
     "ourProducts": "Produsele noastre",
@@ -119,7 +120,40 @@
     "whatsapp": "WhatsApp",
     "callNow": "Sunați acum",
     "sendEmail": "Trimiteți e-mail",
-    "messageUs": "Trimite-ne un mesaj"
+    "messageUs": "Trimite-ne un mesaj",
+    "getInTouch": "Luați legătura",
+    "locations": "Locații",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "Trimite mesaj",
+    "firstName": "Prenume",
+    "firstNamePlaceholder": "Introduceți prenumele dvs",
+    "lastName": "Nume",
+    "lastNamePlaceholder": "Introduceți numele de familie",
+    "emailPlaceholder": "Introdu adresa ta de e-mail",
+    "subject": "Subiect",
+    "subjectPlaceholder": "Introduceți subiectul",
+    "message": "Mesaj",
+    "messagePlaceholder": "Scrie-ți mesajul",
+    "send": "Trimite",
+    "eyebrow": "Începeți un Brief",
+    "headline1": "Începeți un scurt.",
+    "headline2": "Raspundem in 24 de ore.",
+    "subhead": "Spuneți-ne categoria, volumul și piața țintă. Un specialist vă răspunde cu opțiuni de aprovizionare și prețuri orientative.",
+    "fullName": "Numele complet",
+    "fullNamePlaceholder": "Şah Tabraiz",
+    "company": "Companie",
+    "companyPlaceholder": "Organizația dvs",
+    "businessEmail": "Email de afaceri",
+    "howCanWeHelp": "Cum putem ajuta?",
+    "sending": "Se trimite...",
+    "sendEnquiry": "Trimiteți întrebarea",
+    "sentTitle": "Mesaj trimis.",
+    "sentSub": "Echipa noastră va răspunde în 24 de ore.",
+    "directChannels": "Canale directe",
+    "trust1": "Garanție de răspuns 24 de ore",
+    "trust2": "Manager de cont dedicat",
+    "trust3": "NDA available on request",
+    "trust4": "42 de piețe · 1.247 de expedieri astăzi"
   },
   "media": {
     "title": "Centru media",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "Harvics Global Ventures",
-    "tagline": "Excelență în bunuri de larg consum premium din 2019",
-    "brandStatement": "O companie globală de top în domeniul bunurilor de larg consum, care livrează produse alimentare premium din diverse categorii, la standarde internaționale de calitate.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "Londra • Milano • New York",
     "since": "Din 2019",
     "harvicsNews": "Știri Harvics",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "Alăturați-vă Rețelei Noastre",
     "newsletterTagline": "Primiți cele mai recente informații comerciale și actualizări de piață",
     "activeShipments": "Livrări Active",
-    "certifiedAudited": "Certificat și Auditat"
+    "certifiedAudited": "Certificat și Auditat",
+    "invalidEmail": "Vă rugăm să introduceți o adresă de email validă",
+    "subscriptionSuccess": "Vă mulțumim că v-ați abonat!",
+    "subscriptionError": "Ceva a mers prost. Vă rugăm să încercați din nou."
   },
   "search": {
     "placeholder": "Căutați produse, mărci sau categorii",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "Îmi pare rău, nu am înțeles. Ai putea, te rog, să reformulezi?",
       "help": "Vă pot ajuta cu informații despre produse, comenzi sau întrebări generale. Ce doriți să știți?",
-      "contact": "Pentru asistență suplimentară, vă rugăm să ne contactați la adresa support@harvics.com sau să sunați la +1-800-HARVICS."
-    }
+      "contact": "Pentru asistență suplimentară, vă rugăm să ne contactați la adresa support@harvics.com sau să sunați la +1-800-HARVICS.",
+      "product": "Răsfoiți catalogul nostru de produse din meniu sau spuneți-mi ce categorie vă interesează - FMCG, textile, logistică și multe altele.",
+      "order": "Pentru a plasa o comandă sau a verifica starea, vizitați portalul distribuitorului sau contactați managerul de cont.",
+      "about": "Harvics Global Ventures este o companie suverană de infrastructură comercială cu peste 20 de ani în peste 40 de țări."
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "Apăsați Enter pentru a trimite"
   },
   "common": {
     "chatWithUs": "Discută cu noi",
@@ -730,12 +772,17 @@
       "gps-tracking": "Urmărire GPS",
       "localization": "Localizare",
       "workflows": "Fluxuri de lucru",
-      "admin": "Administrator"
+      "admin": "Administrator",
+      "modules": "Module"
     },
     "kpis": {
       "customers": "Clienți",
       "employees": "Angajați",
-      "profit": "Profit"
+      "profit": "Profit",
+      "totalOrders": "Total comenzi",
+      "inventoryValue": "Valoarea de inventar",
+      "logisticsEfficiency": "Eficiența logistică",
+      "revenue": "Venituri"
     },
     "domain": {
       "title": "Sistem de operare CRM",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "Vizualizați și gestionați relațiile, interacțiunile și campaniile cu clienții.",
       "loading": "Încărcare...",
       "error": "Eroare la încărcarea datelor CRM"
+    },
+    "roleIndicator": {
+      "manager": "Vizualizare manager",
+      "executive": "Executive View",
+      "investor": "Vedere investitor",
+      "distributor": "Vedere distribuitor",
+      "supplier": "Vizualizare furnizor",
+      "customer": "Vedere client"
     }
   },
   "supplierPortal": {
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "Despre Harvics",
-    "subtitle": "Excelență în bunuri de larg consum premium din 2019",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "Povestea noastră",
     "story1": "Fondată în 2019, Harvics a evoluat de la o idee vizionară la un lider global în domeniul bunurilor de larg consum premium. Călătoria noastră este definită de o căutare neobosită a calității și de un angajament față de inovație.",
     "story2": "Operăm în peste 40 de țări, oferind produse care îmbogățesc vieți și stabilesc noi standarde în industrie. De la începuturile noastre umile până la prezența noastră globală, valorile noastre rămân neschimbate.",
@@ -1150,181 +1205,279 @@
   },
   "help": {
     "page": {
-      "title": "Help Center",
-      "subtitle": "Find the help you need"
+      "title": "Centrul de ajutor",
+      "subtitle": "Găsiți ajutorul de care aveți nevoie"
     },
-    "backToHelpCenter": "Back to Help Center",
+    "backToHelpCenter": "Înapoi la Centrul de ajutor",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "Întrebări frecvente",
+        "description": "Găsiți răspunsuri la întrebările frecvente"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "Contactați asistența",
+        "description": "Luați legătura cu echipa noastră de asistență"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "Ghiduri de utilizare",
+        "description": "Ghiduri și tutoriale pas cu pas"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "Depanare",
+        "description": "Rezolvați probleme comune"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "Ajutor pentru cont",
+        "description": "Gestionați-vă contul și setările"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "Suport pentru comenzi",
+        "description": "Ajutor la comenzi si livrari"
       }
     },
     "account": {
-      "title": "Account Help",
-      "subtitle": "Manage your account settings and preferences",
-      "placeholder": "Account management and settings help content will appear here."
+      "title": "Ajutor pentru cont",
+      "subtitle": "Gestionați setările și preferințele contului dvs",
+      "placeholder": "Conținutul de ajutor pentru gestionarea contului și setări va apărea aici."
     },
     "orders": {
-      "title": "Order Support",
-      "subtitle": "Track and manage your orders and deliveries",
-      "placeholder": "Order and delivery support content will appear here."
+      "title": "Suport pentru comenzi",
+      "subtitle": "Urmăriți și gestionați comenzile și livrările",
+      "placeholder": "Conținutul de asistență pentru comandă și livrare va apărea aici."
     },
     "guides": {
-      "title": "User Guides",
-      "subtitle": "Step-by-step guides to help you get the most out of Harvics",
+      "title": "Ghiduri de utilizare",
+      "subtitle": "Ghiduri pas cu pas pentru a vă ajuta să profitați la maximum de Harvics",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "Noțiuni de bază",
+          "description": "Învață elementele de bază"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "Configurarea contului",
+          "description": "Configurați-vă contul"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "Cum se comandă",
+          "description": "Plasați și urmăriți comenzile"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "Metode de plată",
+          "description": "Opțiuni de plată și securitate"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "Livrare și livrare",
+          "description": "Informații de livrare"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "Retururi și rambursări",
+          "description": "Politica și procesul de returnare"
         }
       }
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "subtitle": "Common issues and quick solutions",
+      "title": "Depanare",
+      "subtitle": "Probleme comune și soluții rapide",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "Probleme de conectare",
+          "description": "Probleme la conectare"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "Probleme de plată",
+          "description": "Plata nu se procesează"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "Întârzieri de livrare",
+          "description": "Comanda nu ajunge"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "Erori de site",
+          "description": "Pagina nu se încarcă"
         }
       }
     }
   },
   "checkout": {
-    "secureCheckout": "Secure Checkout",
-    "title": "Complete Your Order",
-    "subtitle": "Review your items, enter shipping details, and confirm payment securely.",
-    "shippingInfo": "Shipping Information",
-    "paymentMethod": "Payment Method",
+    "secureCheckout": "Checkout securizat",
+    "title": "Finalizați Comanda",
+    "subtitle": "Examinați-vă articolele, introduceți detaliile de expediere și confirmați plata în siguranță.",
+    "shippingInfo": "Informații de livrare",
+    "paymentMethod": "Modalitate de plată",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "Card de credit/debit",
+      "bankTransfer": "Transfer bancar (LC/TT)",
       "wallet": "HPay Digital Wallet"
     },
-    "orderSummary": "Order Summary",
+    "orderSummary": "Rezumatul comenzii",
     "summary": {
       "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
+      "shipping": "Transport",
+      "calculatedNextStep": "Calculat la pasul următor",
+      "tax": "Taxa",
       "total": "Total"
     },
-    "placeOrder": "Place Order",
-    "sslNotice": "Secured with 256-bit SSL encryption",
-    "continueShopping": "Continue Shopping",
+    "placeOrder": "Plasați Comanda",
+    "sslNotice": "Securizat cu criptare SSL pe 256 de biți",
+    "continueShopping": "Continuați cumpărăturile",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "Prenume",
+      "lastName": "Nume",
+      "email": "E-mail",
+      "address": "Adresa",
+      "city": "Oraş",
+      "country": "Ţară"
     }
   },
   "history": {
     "hero": {
-      "title": "Our Journey",
-      "subtitle": "From a Dubai startup to a global enterprise spanning 42+ countries, 10 industry verticals, and 38 languages."
+      "title": "Călătoria noastră",
+      "subtitle": "De la un startup din Dubai la o întreprindere globală care acoperă peste 42 de țări, 10 sectoare industriale și 38 de limbi."
     },
     "cta": {
-      "title": "Be Part of the Next Chapter",
-      "subtitle": "Join us as we scale to 60+ countries and build the future of AI-driven global commerce.",
-      "button": "View Careers"
+      "title": "Fii parte din următorul capitol",
+      "subtitle": "Alăturați-vă nouă în timp ce ne extindem în peste 60 de țări și construim viitorul comerțului global bazat pe inteligență artificială.",
+      "button": "Vedeți Cariere"
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "Fondată în Dubai",
+        "description": "Harvics Global Ventures s-a stabilit în Emiratele Arabe Unite cu viziunea de a deveni un conglomerat de comerț multi-vertical și FMCG de clasă mondială. Au fost lansate primele operațiuni în textile și bunuri de larg consum.",
+        "highlight": "Anul unu"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "Prima extindere internațională",
+        "description": "S-a extins în 10 țări din Europa, Orientul Mijlociu și Asia de Sud, în ciuda provocărilor pandemice globale. Am lansat operațiunile din lanțul de aprovizionare digital și parteneriate de distribuție la distanță.",
+        "highlight": "10 țări"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "Expansiune multi-verticală",
+        "description": "Au fost lansate 5 noi domenii industriale: mărfuri, echipamente industriale, minerale și minerit, petrol și gaze și imobiliare. Catalogul total de produse a depășit 500 de SKU-uri în toate domeniile.",
+        "highlight": "5 noi verticale"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "Transformare digitală",
+        "description": "Am construit prima versiune a sistemului de operare Harvics — platforma de întreprindere alimentată de AI. S-au lansat portaluri pentru distribuitori, capabilități de comerț electronic și urmărire GPS în timp real a flotei pe toate piețele.",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "Sustenabilitate și scară",
+        "description": "Angajat în operațiuni neutre din punct de vedere al carbonului. A ajuns în peste 30 de țări. S-a lansat HPay (platformă de plăți digitale), soluții de finanțare a comerțului și previziuni ale cererii bazate pe inteligență artificială pentru toate verticalele.",
+        "highlight": "Peste 30 de țări"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "Întreprindere globală",
+        "description": "A depășit reperul din peste 42 de țări. Motor AI implementat cu 6 modele ML pentru strategie, cerere, prețuri, acoperire și optimizare SKU. S-a lansat platforma multilingvă care acceptă 38 de limbi.",
+        "highlight": "Peste 42 de țări"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "Sistemul de operare AI-First",
+        "description": "S-a lansat Harvics OS v2 — sistem de operare unificat pentru întreprindere cu informații în timp real, fluxuri live Socket.io, Alpha Engine pentru planuri de atac pe piață și ierarhie geografică completă pe 8 nivele.",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "Viziunea dinainte",
+        "description": "Scalare la peste 60 de țări. Construirea primei întreprinderi FMCG din lume, operată de IA, în care fiecare funcție - achiziții, logistică, finanțe, CRM - funcționează pe baza inteligenței predictive cu porți de aprobare umane.",
+        "highlight": "60+ țintă"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "Comerț practic, aprovizionare și academie AI pentru fondatori — șase săptămâni, sesiuni live, coridoare Harvics.",
+    "navLabel": "Academia Startup",
+    "teaser": {
+      "eyebrow": "Academie · Programul Coridor",
+      "title": "Academia Startup.",
+      "body": "Meșteșuguri clasice pentru fondatori — aprovizionare, QC, birouri de finanțare și alfabetizare pe coridor — alături de piața Harvics.",
+      "cta": "Intră în Academie"
+    },
+    "hero": {
+      "alt": "Sala de curs clasică — Harvics Startup Academy",
+      "eyebrow": "Cohorta 01 · Q4 2026 · Program de sprijin",
+      "title": "Harvics Startup Academy",
+      "body": "O școală clasică de comerț pentru fondatori - aprovizionare, comerț pe coridor și IA care funcționează. Șase săptămâni. Sesiuni live. Operatori reali.",
+      "apply": "Aplicați pentru Cohorta 01",
+      "seeProgramme": "Vezi programul"
+    },
+    "stats": {
+      "founders": "Fondatori/cohortă",
+      "sessions": "Sesiuni live",
+      "weeks": "Săptămâni",
+      "verticals": "Verticale comerciale"
+    },
+    "why": {
+      "eyebrow": "01 · De ce să vă alăturați",
+      "title": "Construiește o companie care poate face comerț.",
+      "body": "Nu lansează teatru. Aflați RFQ la decontare, diligența în aprovizionare, sensibilizarea cumpărătorilor și automatizare - de la operatorii de pe coridoarele Harvics.",
+      "item1Title": "Sisteme practice de comerț",
+      "item1Body": "Cum cumpără cumpărătorii instituționali – și cum vă îndepliniți.",
+      "item2Title": "Rețea care trimite",
+      "item2Body": "Fondatori, distribuitori și operatori de pe verticală.",
+      "item3Title": "AI care funcționează",
+      "item3Body": "HarvyX, Fin voce și automatizare operațiuni fără cuvinte la modă.",
+      "imageAlt": "Comerțul clasic natură moartă"
+    },
+    "knowledge": {
+      "eyebrow": "Cunoştinţe",
+      "title": "Studiază coridorul ca pe o disciplină.",
+      "body": "Curriculum extras din practica comercială reală - nu slide-uri generice de pornire.",
+      "imageAlt": "Marea bibliotecă clasică"
+    },
+    "programme": {
+      "eyebrow": "02 · Program",
+      "title": "Prin ce vei lucra",
+      "m1Title": "Brand și sursă",
+      "m1Body": "MOQ-uri, porți QC, textile și FMCG - de la atelier la coridor.",
+      "m2Title": "Inteligență și extindere",
+      "m2Body": "Laboratoarele HarvyX, ICP cumpărător, urmăriri care primesc răspunsuri.",
+      "m3Title": "Capital și parteneri",
+      "m3Body": "Căi de finanțare și parteneriate – fără pretenții bancare false.",
+      "m4Title": "Comerțul pe coridor",
+      "m4Body": "Porturile, benzile și modul în care mărfurile se deplasează efectiv pe piețe.",
+      "m5Title": "Calitate și diligență",
+      "m5Body": "Obiceiuri de inspecție care protejează reputația și așezarea.",
+      "m6Title": "Mărfuri și FMCG",
+      "m6Body": "De la realitatea depozitului la cererea de marcă și angro."
+    },
+    "tracks": {
+      "aEyebrow": "Pista A",
+      "aTitle": "Brand și comerț",
+      "aBody": "Fondatorii de articole de îmbrăcăminte și FMCG construiesc cererea de brand, angro și coridoare.",
+      "aAlt": "Sala de ședințe clasică",
+      "bEyebrow": "Pista B",
+      "bTitle": "Comerț și operațiuni",
+      "bBody": "Operatorii de aprovizionare, logistică și B2B cresc comerțul instituțional.",
+      "bAlt": "Rețea de salon"
+    },
+    "network": {
+      "eyebrow": "03 · Rețea",
+      "title": "Faceți cunoștință cu operatorii, nu cu publicul.",
+      "body": "Sesiuni live și ore de birou în stil salon cu fondatori, distribuitori și operatori de coridoare Harvics.",
+      "imageAlt": "Rețeaua fondatorilor"
+    },
+    "rhythm": {
+      "eyebrow": "04 · Ritm",
+      "title": "Șase săptămâni. cadență clară.",
+      "w1": "Săptămâna 1",
+      "w1Body": "Orientare · Harta coridorului · Atelier ICP",
+      "w2": "Săptămâna 2",
+      "w2Body": "Sensibilizarea cumpărătorilor · Laboratorul HarvyX",
+      "w3": "Săptămâna 3",
+      "w3Body": "Aprovizionare și QC · Diligența furnizorilor",
+      "w4": "Săptămâna 4",
+      "w4Body": "Automatizare · Fin voce · ops stack",
+      "w5": "Săptămâna 5",
+      "w5Body": "Finanțare și parteneriate",
+      "w6": "Săptămâna 6",
+      "w6Body": "Vitrina fondatorului · pașii următori"
+    },
+    "apply": {
+      "eyebrow": "Aplicații",
+      "title": "Aplicați pentru Cohorta 01",
+      "body": "Locuri limitate. Spune-ne compania ta, verticala și ce construiești.",
+      "emailCta": "Aplicați prin e-mail →",
+      "back": "Înapoi la Harvics"
     }
   }
 }

@@ -2,6 +2,7 @@
  * CRM CRUD Controller (Prisma-backed)
  * 
  * Customers:  POST/GET/PUT/DELETE /api/crm/customers
+ *             GET /api/crm/customers/:id/orders
  * Leads:      POST/GET/PUT/DELETE /api/crm/leads
  * Campaigns:  POST/GET/PUT/DELETE /api/crm/campaigns
  * Summary:    GET /api/crm/summary
@@ -12,6 +13,7 @@
 import { Router, Request, Response } from 'express';
 import { z } from 'zod';
 import { customersDb, leadsDb, campaignsDb } from '../../core/db';
+import { prisma } from '../../core/prisma';
 import { translateCustomerSegment, translateError, translateMessage, t } from '../../core/translate';
 import '../../middleware/locale';
 
@@ -26,14 +28,34 @@ const CustomerCreateSchema = z.object({
   contactEmail: z.string().email().optional().or(z.literal('')),
 });
 
+const CustomerUpdateSchema = z.object({
+  name: z.string().min(1).max(200).optional(),
+  segment: z.string().max(50).optional(),
+  country: z.string().max(80).optional(),
+  city: z.string().max(120).optional(),
+  contactEmail: z.string().email().optional().or(z.literal('')),
+  creditRating: z.string().max(10).optional(),
+  lifetimeValue: z.number().nonnegative().max(1_000_000_000).optional(),
+}).strict();
+
 const LeadCreateSchema = z.object({
   company: z.string().min(1).max(200),
   contact: z.string().max(120).optional(),
   email: z.string().email().optional().or(z.literal('')),
-  stage: z.enum(['Lead', 'Qualified', 'Proposal', 'Negotiation', 'Won', 'Lost']).optional(),
+  stage: z.enum(['Lead', 'Qualified', 'Proposal', 'Negotiation', 'Won', 'Lost', 'Converted']).optional(),
   value: z.number().nonnegative().max(1_000_000_000).optional(),
   source: z.string().max(80).optional(),
 });
+
+const LeadUpdateSchema = z.object({
+  company: z.string().min(1).max(200).optional(),
+  contact: z.string().max(120).optional().nullable(),
+  email: z.string().email().optional().or(z.literal('')).nullable(),
+  stage: z.enum(['Lead', 'Qualified', 'Proposal', 'Negotiation', 'Won', 'Lost', 'Converted']).optional(),
+  value: z.number().nonnegative().max(1_000_000_000).optional(),
+  source: z.string().max(80).optional().nullable(),
+  notes: z.string().max(5000).optional().nullable(),
+}).strict();
 
 const CampaignCreateSchema = z.object({
   name: z.string().min(1).max(200),
@@ -124,7 +146,9 @@ router.post('/customers', async (req: Request, res: Response) => {
 
 router.put('/customers/:id', async (req: Request, res: Response) => {
   const locale = getLocale(req);
-  const updated = await customersDb.update(req.params.id, req.body);
+  const parsed = CustomerUpdateSchema.safeParse(req.body || {});
+  if (!parsed.success) return validationError(res, parsed.error, locale);
+  const updated = await customersDb.update(req.params.id, parsed.data);
   if (!updated) return res.status(404).json({ success: false, error: t('crm.messages.customerNotFound', locale) });
   res.json({ success: true, data: localizeCustomer(updated, locale), message: t('crm.messages.customerUpdated', locale) });
 });
@@ -135,6 +159,204 @@ router.delete('/customers/:id', async (req: Request, res: Response) => {
   if (!exists) return res.status(404).json({ success: false, error: t('crm.messages.customerNotFound', locale) });
   await customersDb.delete(req.params.id);
   res.json({ success: true, message: t('crm.messages.customerDeleted', locale) });
+});
+
+// ── CONTACTS (CrmContact — was modelled, never exposed) ───────────────
+const ContactCreateSchema = z.object({
+  name: z.string().min(1).max(200),
+  title: z.string().max(120).optional().nullable(),
+  email: z.string().email().optional().or(z.literal('')).nullable(),
+  phone: z.string().max(40).optional().nullable(),
+  linkedin: z.string().max(300).optional().nullable(),
+  notes: z.string().max(5000).optional().nullable(),
+  isPrimary: z.boolean().optional().default(false),
+  leadId: z.string().optional().nullable(),
+  dealId: z.string().optional().nullable(),
+});
+
+const ContactUpdateSchema = ContactCreateSchema.partial().strict();
+
+router.get('/customers/:id/contacts', async (req: Request, res: Response) => {
+  const customer = await customersDb.get(req.params.id);
+  if (!customer) {
+    return res.status(404).json({ success: false, error: t('crm.messages.customerNotFound', getLocale(req)) });
+  }
+  const rows = await prisma.crmContact.findMany({
+    where: { customerId: req.params.id },
+    orderBy: [{ isPrimary: 'desc' }, { createdAt: 'desc' }],
+  });
+  res.json({ success: true, data: rows, total: rows.length });
+});
+
+router.post('/customers/:id/contacts', async (req: Request, res: Response) => {
+  const locale = getLocale(req);
+  const customer = await customersDb.get(req.params.id);
+  if (!customer) return res.status(404).json({ success: false, error: t('crm.messages.customerNotFound', locale) });
+  const parsed = ContactCreateSchema.safeParse(req.body || {});
+  if (!parsed.success) return validationError(res, parsed.error, locale);
+  if (parsed.data.isPrimary) {
+    await prisma.crmContact.updateMany({
+      where: { customerId: req.params.id, isPrimary: true },
+      data: { isPrimary: false },
+    });
+  }
+  const row = await prisma.crmContact.create({
+    data: {
+      customerId: req.params.id,
+      name: parsed.data.name,
+      title: parsed.data.title ?? null,
+      email: parsed.data.email || null,
+      phone: parsed.data.phone ?? null,
+      linkedin: parsed.data.linkedin ?? null,
+      notes: parsed.data.notes ?? null,
+      isPrimary: parsed.data.isPrimary ?? false,
+      leadId: parsed.data.leadId ?? null,
+      dealId: parsed.data.dealId ?? null,
+    },
+  });
+  res.status(201).json({ success: true, data: row });
+});
+
+router.patch('/contacts/:id', async (req: Request, res: Response) => {
+  const locale = getLocale(req);
+  const parsed = ContactUpdateSchema.safeParse(req.body || {});
+  if (!parsed.success) return validationError(res, parsed.error, locale);
+  const existing = await prisma.crmContact.findUnique({ where: { id: req.params.id } });
+  if (!existing) return res.status(404).json({ success: false, error: 'Contact not found' });
+  if (parsed.data.isPrimary && existing.customerId) {
+    await prisma.crmContact.updateMany({
+      where: { customerId: existing.customerId, isPrimary: true, NOT: { id: existing.id } },
+      data: { isPrimary: false },
+    });
+  }
+  const row = await prisma.crmContact.update({
+    where: { id: existing.id },
+    data: {
+      ...(parsed.data.name !== undefined ? { name: parsed.data.name } : {}),
+      ...(parsed.data.title !== undefined ? { title: parsed.data.title } : {}),
+      ...(parsed.data.email !== undefined ? { email: parsed.data.email || null } : {}),
+      ...(parsed.data.phone !== undefined ? { phone: parsed.data.phone } : {}),
+      ...(parsed.data.linkedin !== undefined ? { linkedin: parsed.data.linkedin } : {}),
+      ...(parsed.data.notes !== undefined ? { notes: parsed.data.notes } : {}),
+      ...(parsed.data.isPrimary !== undefined ? { isPrimary: parsed.data.isPrimary } : {}),
+    },
+  });
+  res.json({ success: true, data: row });
+});
+
+router.delete('/contacts/:id', async (req: Request, res: Response) => {
+  const existing = await prisma.crmContact.findUnique({ where: { id: req.params.id } });
+  if (!existing) return res.status(404).json({ success: false, error: 'Contact not found' });
+  await prisma.crmContact.delete({ where: { id: existing.id } });
+  res.json({ success: true, message: 'Contact deleted' });
+});
+
+// ── CUSTOMER ORDERS ──────────────────────────────────────────────────
+router.get('/customers/:id/orders', async (req: Request, res: Response) => {
+  const locale = getLocale(req);
+  const customer = await customersDb.get(req.params.id);
+  if (!customer) return res.status(404).json({ success: false, error: t('crm.messages.customerNotFound', locale) });
+  const rows = await prisma.order.findMany({
+    where: {
+      OR: [
+        { customerId: req.params.id },
+        ...(customer.name ? [{ customerName: customer.name }] : []),
+      ],
+    },
+    include: { items: true },
+    orderBy: { createdAt: 'desc' },
+    take: 50,
+  });
+  res.json({ success: true, data: rows, total: rows.length });
+});
+
+// ── CREDIT LIMIT ─────────────────────────────────────────────────────
+router.get('/customers/:id/credit', async (req: Request, res: Response) => {
+  const customer = await customersDb.get(req.params.id);
+  if (!customer) {
+    return res.status(404).json({ success: false, error: t('crm.messages.customerNotFound', getLocale(req)) });
+  }
+  const row = await prisma.creditLimit.findUnique({ where: { customerId: req.params.id } });
+  res.json({ success: true, data: row });
+});
+
+router.put('/customers/:id/credit', async (req: Request, res: Response) => {
+  const locale = getLocale(req);
+  const customer = await customersDb.get(req.params.id);
+  if (!customer) return res.status(404).json({ success: false, error: t('crm.messages.customerNotFound', locale) });
+  const Body = z.object({
+    approvedLimit: z.number().positive(),
+    currency: z.string().default('USD'),
+    usedAmount: z.number().min(0).optional().default(0),
+    basis: z.string().optional().nullable(),
+    notes: z.string().optional().nullable(),
+    approvedBy: z.string().optional().nullable(),
+  });
+  const parsed = Body.safeParse(req.body || {});
+  if (!parsed.success) return validationError(res, parsed.error, locale);
+  const used = parsed.data.usedAmount ?? 0;
+  const available = Math.max(0, parsed.data.approvedLimit - used);
+  const row = await prisma.creditLimit.upsert({
+    where: { customerId: req.params.id },
+    create: {
+      customerId: req.params.id,
+      approvedLimit: parsed.data.approvedLimit,
+      currency: parsed.data.currency,
+      usedAmount: used,
+      availableAmount: available,
+      basis: parsed.data.basis ?? null,
+      notes: parsed.data.notes ?? null,
+      approvedBy: parsed.data.approvedBy ?? (req as any).user?.userId ?? null,
+      approvedAt: new Date(),
+    },
+    update: {
+      approvedLimit: parsed.data.approvedLimit,
+      currency: parsed.data.currency,
+      usedAmount: used,
+      availableAmount: available,
+      basis: parsed.data.basis ?? null,
+      notes: parsed.data.notes ?? null,
+      approvedBy: parsed.data.approvedBy ?? (req as any).user?.userId ?? null,
+      approvedAt: new Date(),
+    },
+  });
+  res.json({ success: true, data: row });
+});
+
+router.get('/credit-limits', async (req: Request, res: Response) => {
+  try {
+    const rows = await prisma.creditLimit.findMany({ orderBy: { updatedAt: 'desc' }, take: 200 });
+    const customers = await customersDb.list({}, 1, 500);
+    const nameById = new Map((customers.data || []).map((c: any) => [c.id, c.name]));
+    const data = rows.map((r) => {
+      const utilization = r.approvedLimit > 0 ? (r.usedAmount / r.approvedLimit) * 100 : 0;
+      let riskLevel: 'low' | 'medium' | 'high' = 'low';
+      if (utilization >= 90 || r.availableAmount <= 0) riskLevel = 'high';
+      else if (utilization >= 70) riskLevel = 'medium';
+      return {
+        id: r.customerId,
+        customerId: r.customerId,
+        name: nameById.get(r.customerId) || r.customerId,
+        limit: r.approvedLimit,
+        used: r.usedAmount,
+        available: r.availableAmount,
+        currency: r.currency,
+        riskLevel,
+        status: r.availableAmount <= 0 ? 'hold' : 'active',
+        reviewDate: r.reviewDate,
+        notes: r.notes,
+      };
+    });
+    res.json({ success: true, data, total: data.length });
+  } catch (err: any) {
+    if (err?.code === 'P2021') {
+      return res.status(503).json({
+        success: false,
+        error: 'CreditLimit table missing — apply prisma/manual/module_crm_q2c_additive.sql',
+      });
+    }
+    res.status(500).json({ success: false, error: err?.message || 'list failed' });
+  }
 });
 
 // ── LEADS ────────────────────────────────────────────────────────────
@@ -166,7 +388,9 @@ router.post('/leads', async (req: Request, res: Response) => {
 
 router.put('/leads/:id', async (req: Request, res: Response) => {
   const locale = getLocale(req);
-  const updated = await leadsDb.update(req.params.id, req.body);
+  const parsed = LeadUpdateSchema.safeParse(req.body || {});
+  if (!parsed.success) return validationError(res, parsed.error, locale);
+  const updated = await leadsDb.update(req.params.id, parsed.data);
   if (!updated) return res.status(404).json({ success: false, error: t('crm.messages.leadNotFound', locale) });
   res.json({ success: true, data: updated, message: t('crm.messages.leadUpdated', locale) });
 });

@@ -1,0 +1,234 @@
+{
+  "generatedAt": "2026-07-23T18:22:26.366Z",
+  "homepageFirstLoadJsKb": 259,
+  "homepagePageKb": 78.3,
+  "topPackages": [
+    {
+      "pkg": "app-src",
+      "gzip": 1367283,
+      "parsed": 4305906
+    },
+    {
+      "pkg": "@cloudflare/realtimekit-ui",
+      "gzip": 867672,
+      "parsed": 3101206
+    },
+    {
+      "pkg": "@cloudflare/realtimekit",
+      "gzip": 132415,
+      "parsed": 574017
+    },
+    {
+      "pkg": "next",
+      "gzip": 73835,
+      "parsed": 207256
+    },
+    {
+      "pkg": "@daily-co/daily-js",
+      "gzip": 65661,
+      "parsed": 242100
+    },
+    {
+      "pkg": "recharts",
+      "gzip": 50566,
+      "parsed": 135770
+    },
+    {
+      "pkg": "gsap › gsap-core.js",
+      "gzip": 19651,
+      "parsed": 51459
+    },
+    {
+      "pkg": "motion-dom",
+      "gzip": 14158,
+      "parsed": 30208
+    },
+    {
+      "pkg": "gsap › ScrollTrigger.js",
+      "gzip": 14147,
+      "parsed": 35188
+    },
+    {
+      "pkg": "socket.io-client",
+      "gzip": 12624,
+      "parsed": 41218
+    },
+    {
+      "pkg": "lucide-react",
+      "gzip": 10502,
+      "parsed": 20159
+    },
+    {
+      "pkg": "@protobuf-ts/runtime",
+      "gzip": 7986,
+      "parsed": 26421
+    },
+    {
+      "pkg": "gsap › CSSPlugin.js",
+      "gzip": 7849,
+      "parsed": 18761
+    },
+    {
+      "pkg": "immer",
+      "gzip": 3454,
+      "parsed": 8528
+    },
+    {
+      "pkg": "gsap › Observer.js",
+      "gzip": 3244,
+      "parsed": 8069
+    },
+    {
+      "pkg": "framer-motion",
+      "gzip": 2593,
+      "parsed": 5382
+    },
+    {
+      "pkg": "scheduler › cjs › scheduler.production.min.js",
+      "gzip": 1571,
+      "parsed": 3794
+    },
+    {
+      "pkg": "next-intl",
+      "gzip": 1152,
+      "parsed": 1662
+    },
+    {
+      "pkg": "@cloudflare › realtimekit-react-ui/dist",
+      "gzip": 1042,
+      "parsed": 2280
+    },
+    {
+      "pkg": "uuid",
+      "gzip": 709,
+      "parsed": 1219
+    }
+  ],
+  "topModules": [
+    {
+      "path": "static/chunks/199f16df.51cd581455bceda2.js › node_modules/@cloudflare/realtimekit-ui/dist/esm › loader.js",
+      "gzip": 368261,
+      "parsed": 1472039
+    },
+    {
+      "path": "static/chunks/dcb3a1b8.a328bac246d12139.js › node_modules/@cloudflare/realtimekit-ui/dist/esm › rtk-livestream-indicator_3.entry.js",
+      "gzip": 161496,
+      "parsed": 534840
+    },
+    {
+      "path": "static/chunks/c2832a3e.fa992332bf468a95.js › node_modules/@cloudflare/realtimekit/dist › index.es.js",
+      "gzip": 132415,
+      "parsed": 574017
+    },
+    {
+      "path": "static/chunks/d50e61c5.3a197f41c1f387c8.js › node_modules/@daily-co/daily-js/dist › daily-esm.js",
+      "gzip": 65661,
+      "parsed": 242100
+    },
+    {
+      "path": "static/chunks/4bd1b696-bad92808725a934a.js › node_modules/next/dist/compiled/react-dom/cjs › react-dom-client.production.js",
+      "gzip": 54194,
+      "parsed": 172938
+    },
+    {
+      "path": "static/chunks/framework-41cff820f565b52e.js › node_modules › react-dom › cjs › react-dom.production.min.js",
+      "gzip": 41022,
+      "parsed": 128593
+    },
+    {
+      "path": "static/chunks/55498-39f3bf6ff21786e8.js › src › components › shared › EnterpriseCRM.tsx + 6 modules (concatenated) › src › components › shared › EnterpriseCRM.tsx",
+      "gzip": 39249,
+      "parsed": 258399
+    },
+    {
+      "path": "static/chunks/e2063735.09499cf17cf85fdd.js › node_modules/@cloudflare/realtimekit-ui/dist/esm › ui-store-76bb0e8e.js",
+      "gzip": 35013,
+      "parsed": 115916
+    },
+    {
+      "path": "static/chunks/c8a541bc.c636fe52f741f353.js › node_modules/@cloudflare/realtimekit-ui/dist/esm › rtk-avatar_26.entry.js",
+      "gzip": 26850,
+      "parsed": 128312
+    },
+    {
+      "path": "static/chunks/a5f5da32.f8b9d1b64133bd0c.js › node_modules/@cloudflare/realtimekit-ui/dist/esm › index-55463a54.js",
+      "gzip": 22548,
+      "parsed": 65925
+    },
+    {
+      "path": "static/chunks/c15bf2b0-0ef1d54a0210b522.js › node_modules/gsap › gsap-core.js",
+      "gzip": 19651,
+      "parsed": 51459
+    },
+    {
+      "path": "static/chunks/app/[locale]/[vertical]/page-a7077fd337ccc935.js › src › app/[locale]/[vertical] › VerticalPageClient.tsx + 1 modules (concatenated) › src › data › verticalDescriptions.ts",
+      "gzip": 16883,
+      "parsed": 50772
+    },
+    {
+      "path": "static/chunks/47220-c1dd6cb6c8aba715.js › src/data › leafImageMap.ts",
+      "gzip": 14546,
+      "parsed": 114395
+    },
+    {
+      "path": "static/chunks/19402-8b1805592dfbb740.js › node_modules › gsap › ScrollTrigger.js + 1 modules (concatenated) › node_modules/gsap › ScrollTrigger.js",
+      "gzip": 14147,
+      "parsed": 35188
+    },
+    {
+      "path": "static/chunks/77352.6ee3fdf789f434af.js › node_modules/@cloudflare/realtimekit-ui/dist/esm › rtk-breakout-rooms-manager_9.entry.js",
+      "gzip": 11804,
+      "parsed": 61495
+    },
+    {
+      "path": "static/chunks/app/[locale]/os/finance/page-27ed81850d1a19b0.js › src › app/[locale]/os/finance › page.tsx + 5 modules (concatenated) › src › components › os-domains › FinanceDomainContent.tsx",
+      "gzip": 10938,
+      "parsed": 49017
+    },
+    {
+      "path": "static/chunks/app/[locale]/[vertical]/page-a7077fd337ccc935.js › src › app/[locale]/[vertical] › VerticalPageClient.tsx + 1 modules (concatenated) › src › app/[locale]/[vertical] › VerticalPageClient.tsx",
+      "gzip": 9126,
+      "parsed": 27447
+    },
+    {
+      "path": "static/chunks/4882-5b8c0b4b859b0177.js › src › components/shared › OSDomainTierStructure.tsx",
+      "gzip": 8949,
+      "parsed": 27498
+    },
+    {
+      "path": "static/chunks/74755-433b2275d29c90c5.js › src/data › productCatalog.ts",
+      "gzip": 8490,
+      "parsed": 38673
+    },
+    {
+      "path": "static/chunks/18101-14840e8090c27d4c.js › src/components/shared › CompanyDashboard.tsx + 4 modules (concatenated) › src › components/shared › CompanyDashboard.tsx",
+      "gzip": 8198,
+      "parsed": 42134
+    },
+    {
+      "path": "static/chunks/19402-8b1805592dfbb740.js › node_modules › gsap › index.js + 1 modules (concatenated) › node_modules/gsap › CSSPlugin.js",
+      "gzip": 7849,
+      "parsed": 18761
+    },
+    {
+      "path": "static/chunks/main-0869053db0411fa7.js › node_modules › next/dist › shared/lib › router › router.js",
+      "gzip": 7724,
+      "parsed": 24039
+    },
+    {
+      "path": "static/chunks/app/[locale]/apps/page-003b9bf4f3a9e5f6.js › src/app/[locale]/apps › AppsPageClient.tsx",
+      "gzip": 7593,
+      "parsed": 29331
+    },
+    {
+      "path": "static/chunks/31255-4bb242b2656d06a0.js › node_modules › next/dist › compiled › react-server-dom-webpack › cjs › react-server-dom-webpack-client.browser.production.js",
+      "gzip": 7532,
+      "parsed": 23068
+    },
+    {
+      "path": "static/chunks/71534.d7257e19b7d64e40.js › node_modules › bowser › es5.js",
+      "gzip": 7493,
+      "parsed": 36347
+    }
+  ]
+}

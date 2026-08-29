@@ -1,6 +1,7 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
+import Link from 'next/link'
 import OSDomainTierStructure, { Tier2Module } from '@/components/shared/OSDomainTierStructure'
 import KPICard from '@/components/shared/KPICard'
 
@@ -9,351 +10,403 @@ interface LegalIPRDomainContentProps {
   locale: string
 }
 
-// Demo data — will be replaced with real API calls when backend endpoints are ready
-const legalData = {
-  overview: {
-    iprRisk: 'Medium', counterfeitRisk: 'High', complianceScore: 85,
-    activeTrademarks: 124, activePatents: 23, pendingRenewals: 8, activeLitigations: 3
-  },
-  ipr: {
-    trademarks: [
-      { id: 'TM-001', name: 'Harvics Logo', status: 'Active', registrationDate: '2020-01-15', expiryDate: '2030-01-15', class: 'Class 30, 32' },
-      { id: 'TM-002', name: 'Harvics Premium', status: 'Active', registrationDate: '2021-03-20', expiryDate: '2031-03-20', class: 'Class 29, 30' },
-      { id: 'TM-003', name: 'Harvics Global', status: 'Pending', registrationDate: '2024-06-10', expiryDate: '—', class: 'Class 35' }
-    ],
-    patents: [
-      { id: 'PAT-001', title: 'Beverage Preservation Method', status: 'Active', filingDate: '2019-05-12', expiryDate: '2039-05-12', number: 'US12345678' },
-      { id: 'PAT-002', title: 'Packaging Innovation', status: 'Active', filingDate: '2020-08-30', expiryDate: '2040-08-30', number: 'US87654321' }
-    ]
-  },
-  counterfeit: {
-    totalReports: 47, resolved: 38, pending: 9,
-    cases: [
-      { id: 'CF-001', product: 'Harvics Carbonated Beverage', location: 'Market District A', reportedDate: '2024-12-10', status: 'Under Investigation', severity: 'High' },
-      { id: 'CF-002', product: 'Harvics Premium Snacks', location: 'Retail Chain B', reportedDate: '2024-12-08', status: 'Legal Action Initiated', severity: 'Critical' },
-      { id: 'CF-003', product: 'Harvics Logo Usage', location: 'Online Marketplace', reportedDate: '2024-12-05', status: 'Resolved', severity: 'Medium' }
-    ]
-  },
-  compliance: {
-    countries: [
-      { country: 'UAE', complianceScore: 85, lastAudit: '2024-11-15', nextAudit: '2025-05-15', issues: 2 },
-      { country: 'United States', complianceScore: 92, lastAudit: '2024-10-20', nextAudit: '2025-04-20', issues: 0 },
-      { country: 'United Kingdom', complianceScore: 88, lastAudit: '2024-11-01', nextAudit: '2025-05-01', issues: 1 }
-    ],
-    regulations: [
-      { name: 'Food Safety Standards', status: 'Compliant', lastCheck: '2024-12-01' },
-      { name: 'Labeling Requirements', status: 'Compliant', lastCheck: '2024-11-28' },
-      { name: 'Import/Export Regulations', status: 'Review Required', lastCheck: '2024-11-15' }
-    ]
-  },
-  contracts: {
-    active: 156, expiring: 12, pending: 5,
-    contracts: [
-      { id: 'CNT-001', type: 'Distribution Agreement', party: 'ABC Distributors', startDate: '2023-01-01', endDate: '2025-12-31', status: 'Active', value: '$2.5M' },
-      { id: 'CNT-002', type: 'Supplier Agreement', party: 'XYZ Manufacturing', startDate: '2022-06-15', endDate: '2025-06-15', status: 'Active', value: '$5.8M' },
-      { id: 'CNT-003', type: 'License Agreement', party: 'Global Retail Chain', startDate: '2024-03-01', endDate: '2027-03-01', status: 'Active', value: '$1.2M' }
-    ]
-  },
-  litigation: {
-    active: 3, resolved: 12,
-    cases: [
-      { id: 'LIT-001', title: 'Trademark Infringement Case', filedDate: '2024-09-15', status: 'In Progress', type: 'IPR', nextHearing: '2025-01-20' },
-      { id: 'LIT-002', title: 'Contract Dispute', filedDate: '2024-10-05', status: 'Settlement Negotiation', type: 'Contract', nextHearing: '2025-02-10' },
-      { id: 'LIT-003', title: 'Regulatory Compliance Issue', filedDate: '2024-11-20', status: 'Under Review', type: 'Regulatory', nextHearing: '2025-01-15' }
-    ]
+function authHeaders() {
+  const token = typeof window !== 'undefined' ? localStorage.getItem('auth_token') || '' : ''
+  return token ? { Authorization: `Bearer ${token}` } : {}
+}
+
+async function legalGet(path: string) {
+  const res = await fetch(`/api/v2/legal${path}`, { headers: { ...authHeaders(), 'Content-Type': 'application/json' }, cache: 'no-store' })
+  if (!res.ok) return null
+  return res.json()
+}
+
+function useLegalData() {
+  const [summary, setSummary] = useState<any>(null)
+  const [cases, setCases] = useState<any[]>([])
+  const [trademarks, setTrademarks] = useState<any[]>([])
+  const [patents, setPatents] = useState<any[]>([])
+  const [counterfeit, setCounterfeit] = useState<any[]>([])
+  const [compliance, setCompliance] = useState<any[]>([])
+  const [contracts, setContracts] = useState<any[]>([])
+  const [loading, setLoading] = useState(true)
+
+  const refresh = useCallback(async () => {
+    setLoading(true)
+    try {
+      const [sumJ, casesJ, tmJ, patJ, cfJ, compJ, cntJ] = await Promise.all([
+        legalGet('/summary'),
+        legalGet('/cases'),
+        legalGet('/ipr/trademarks'),
+        legalGet('/ipr/patents'),
+        legalGet('/ipr/counterfeit'),
+        legalGet('/ipr/compliance'),
+        legalGet('/ipr/contracts'),
+      ])
+      setSummary(sumJ?.data || null)
+      setCases(casesJ?.data || [])
+      setTrademarks(tmJ?.data || [])
+      setPatents(patJ?.data || [])
+      setCounterfeit(cfJ?.data || [])
+      setCompliance(compJ?.data || [])
+      setContracts(cntJ?.data || [])
+    } finally {
+      setLoading(false)
+    }
+  }, [])
+
+  useEffect(() => { void refresh() }, [refresh])
+
+  return { summary, cases, trademarks, patents, counterfeit, compliance, contracts, loading, refresh }
+}
+
+function Empty({ msg }: { msg: string }) {
+  return <p className="text-sm text-[#8E8E93] py-8 text-center">{msg}</p>
+}
+
+function LegalIPRCreatePanel({
+  docType,
+  fields,
+  onCreated,
+}: {
+  docType: 'trademarks' | 'patents' | 'counterfeit' | 'compliance' | 'contracts'
+  fields: { key: string; label: string; placeholder?: string }[]
+  onCreated: () => void
+}) {
+  const [form, setForm] = useState<Record<string, string>>({})
+  const [msg, setMsg] = useState('')
+  const [err, setErr] = useState('')
+  const [busy, setBusy] = useState(false)
+
+  const create = async () => {
+    setBusy(true)
+    setErr('')
+    setMsg('')
+    try {
+      if (!form.title?.trim()) throw new Error('Title required')
+      const token = typeof window !== 'undefined' ? localStorage.getItem('auth_token') || '' : ''
+      const headers: HeadersInit = { 'Content-Type': 'application/json' }
+      if (token) (headers as Record<string, string>).Authorization = `Bearer ${token}`
+      const metadata: Record<string, unknown> = {}
+      if (form.score) metadata.score = Number(form.score)
+      if (form.severity) metadata.severity = form.severity
+      const res = await fetch(`/api/v2/legal/ipr/${docType}`, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify({
+          title: form.title,
+          category: form.category || null,
+          status: form.status || 'Active',
+          effectiveDate: form.effectiveDate || null,
+          expiryDate: form.expiryDate || null,
+          metadata: Object.keys(metadata).length ? metadata : undefined,
+        }),
+      })
+      const json = await res.json()
+      if (!res.ok) throw new Error(json?.error || `HTTP ${res.status}`)
+      setForm({})
+      setMsg(`Created: ${json.data?.title || form.title}`)
+      onCreated()
+    } catch (e: any) {
+      setErr(e.message)
+    } finally {
+      setBusy(false)
+    }
   }
-}
 
-function IPROverviewScreen() {
   return (
-    <div className="space-y-6">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <KPICard label="IPR Risk Level" value={legalData.overview.iprRisk} icon="️" />
-        <KPICard label="Counterfeit Risk" value={legalData.overview.counterfeitRisk} icon="" />
-        <KPICard label="Compliance Score" value={`${legalData.overview.complianceScore}%`} icon="" />
-        <KPICard label="Active Litigations" value={legalData.overview.activeLitigations} icon="️" />
-      </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <KPICard label="Active Trademarks" value={legalData.overview.activeTrademarks} icon="™️" />
-        <KPICard label="Active Patents" value={legalData.overview.activePatents} icon="" />
-        <KPICard label="Pending Renewals" value={legalData.overview.pendingRenewals} icon="" />
-        <KPICard label="Active Contracts" value={legalData.contracts.active} icon="" />
+    <div className="mb-6 p-4 border border-[#E5E5EA] bg-[#F5F0E8]/50 rounded-xl space-y-2">
+      <p className="text-[10px] font-bold uppercase tracking-wider text-harvics-burgundy">Add record · POST /api/v2/legal/ipr/{docType}</p>
+      {err && <p className="text-sm text-red-700">{err}</p>}
+      {msg && <p className="text-sm text-green-800">{msg}</p>}
+      <div className="grid gap-2 md:grid-cols-4">
+        {fields.map((f) => (
+          <label key={f.key} className="text-xs">
+            <span className="font-semibold text-[#8E8E93]">{f.label}</span>
+            <input
+              className="mt-1 w-full border px-2 py-1.5 text-sm bg-white"
+              placeholder={f.placeholder}
+              value={form[f.key] || ''}
+              onChange={(e) => setForm({ ...form, [f.key]: e.target.value })}
+            />
+          </label>
+        ))}
+        <button
+          type="button"
+          disabled={busy}
+          onClick={() => void create()}
+          className="self-end px-4 py-2 bg-harvics-burgundy text-white text-xs font-semibold disabled:opacity-50"
+        >
+          {busy ? 'Saving…' : 'Create'}
+        </button>
       </div>
     </div>
   )
 }
 
-function IPRPortfolioScreen() {
-  return (
-    <div className="space-y-6">
-      <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Trademarks</h4>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
-              <th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">ID</th><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Name</th>
-              <th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Status</th><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Registration</th>
-              <th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Expiry</th><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Class</th>
-            </tr></thead>
-            <tbody>
-              {legalData.ipr.trademarks.map((tm, i) => (
-                <tr key={tm.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{tm.id}</td>
-                  <td className="px-4 py-3">{tm.name}</td>
-                  <td className="px-4 py-3"><span className={`px-2 py-1 text-xs font-bold ${tm.status === 'Active' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{tm.status}</span></td>
-                  <td className="px-4 py-3 text-[#8E8E93]">{tm.registrationDate}</td>
-                  <td className="px-4 py-3 text-[#8E8E93]">{tm.expiryDate}</td>
-                  <td className="px-4 py-3 text-[#8E8E93]">{tm.class}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Patents</h4>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
-              <th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">ID</th><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Title</th>
-              <th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Status</th><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Patent #</th>
-              <th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Filed</th><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Expiry</th>
-            </tr></thead>
-            <tbody>
-              {legalData.ipr.patents.map((pat, i) => (
-                <tr key={pat.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{pat.id}</td>
-                  <td className="px-4 py-3">{pat.title}</td>
-                  <td className="px-4 py-3"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1A1A1A]" style={{ borderRadius: 0 }}>{pat.status}</span></td>
-                  <td className="px-4 py-3 font-mono text-[#8E8E93]">{pat.number}</td>
-                  <td className="px-4 py-3 text-[#8E8E93]">{pat.filingDate}</td>
-                  <td className="px-4 py-3 text-[#8E8E93]">{pat.expiryDate}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-function CounterfeitScreen() {
+function IPROverviewScreen({ locale, data }: { locale: string; data: ReturnType<typeof useLegalData> }) {
+  const s = data.summary || {}
+  if (data.loading) return <Empty msg="Loading legal summary…" />
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <KPICard label="Total Reports" value={legalData.counterfeit.totalReports} icon="" />
-        <KPICard label="Resolved" value={legalData.counterfeit.resolved} icon="" />
-        <KPICard label="Pending" value={legalData.counterfeit.pending} icon="⏳" />
-        <KPICard label="Resolution Rate" value={`${Math.round((legalData.counterfeit.resolved / legalData.counterfeit.totalReports) * 100)}%`} icon="" />
+        <KPICard label="IPR Risk" value={s.iprRisk || '—'} icon="⚖️" />
+        <KPICard label="Counterfeit Risk" value={s.counterfeitRisk || '—'} icon="🛡️" />
+        <KPICard label="Compliance Score" value={s.complianceScore != null ? `${s.complianceScore}%` : '—'} icon="✓" />
+        <KPICard label="Active Litigations" value={s.activeLitigations ?? 0} icon="📋" />
       </div>
-      <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Active Counterfeit Cases</h4>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
-              <th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Case ID</th><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Product</th>
-              <th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Location</th><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Reported</th>
-              <th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Status</th><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Severity</th>
-            </tr></thead>
-            <tbody>
-              {legalData.counterfeit.cases.map((c, i) => (
-                <tr key={c.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{c.id}</td>
-                  <td className="px-4 py-3">{c.product}</td>
-                  <td className="px-4 py-3">{c.location}</td>
-                  <td className="px-4 py-3 text-[#8E8E93]">{c.reportedDate}</td>
-                  <td className="px-4 py-3"><span className={`px-2 py-1 text-xs font-bold ${c.status === 'Resolved' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : c.status === 'Legal Action Initiated' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{c.status}</span></td>
-                  <td className="px-4 py-3"><span className={`px-2 py-1 text-xs font-bold ${c.severity === 'Critical' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : c.severity === 'High' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{c.severity}</span></td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <KPICard label="Active Trademarks" value={s.activeTrademarks ?? 0} icon="™️" />
+        <KPICard label="Active Patents" value={s.activePatents ?? 0} icon="📜" />
+        <KPICard label="Pending Renewals" value={s.pendingRenewals ?? 0} icon="🔄" />
+        <KPICard label="Active Contracts" value={s.activeContracts ?? 0} icon="📄" />
+      </div>
+      <div className="flex gap-3">
+        <Link href={`/${locale}/os/legal/cases`} className="px-4 py-2 bg-harvics-burgundy text-white text-xs font-medium rounded-xl">
+          Manage Cases →
+        </Link>
+        <a href="/api/v2/legal/reports/dashboard" target="_blank" rel="noreferrer" className="px-4 py-2 border border-[#E5E5EA] text-xs font-medium rounded-xl">
+          Legal Report (JSON)
+        </a>
       </div>
     </div>
   )
 }
 
-function ComplianceScreen() {
+function DocTable({ rows, cols }: { rows: any[]; cols: { key: string; label: string; render?: (r: any) => React.ReactNode }[] }) {
+  if (!rows.length) return <Empty msg="No records yet — add via Legal OS or API." />
   return (
-    <div className="space-y-6">
-      <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Country Compliance Status</h4>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
-              <th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Country</th><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Score</th>
-              <th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Last Audit</th><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Next Audit</th>
-              <th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Issues</th>
-            </tr></thead>
-            <tbody>
-              {legalData.compliance.countries.map((c, i) => (
-                <tr key={c.country} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{c.country}</td>
-                  <td className="px-4 py-3"><span className="font-semibold text-[#1A1A1A]">{c.complianceScore}%</span></td>
-                  <td className="px-4 py-3 text-[#8E8E93]">{c.lastAudit}</td>
-                  <td className="px-4 py-3 text-[#8E8E93]">{c.nextAudit}</td>
-                  <td className="px-4 py-3"><span className={`px-2 py-1 text-xs font-bold ${c.issues === 0 ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{c.issues}</span></td>
-                </tr>
+    <div className="overflow-x-auto">
+      <table className="w-full text-sm">
+        <thead>
+          <tr className="border-b border-[#E5E5EA] bg-[#F5F5F7]">
+            {cols.map((c) => <th key={c.key} className="text-left px-5 py-3 text-xs font-semibold text-[#8E8E93] uppercase">{c.label}</th>)}
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((r) => (
+            <tr key={r.id} className="hover:bg-[#F5F5F7]">
+              {cols.map((c) => (
+                <td key={c.key} className="px-5 py-3.5 text-[#8E8E93]">{c.render ? c.render(r) : r[c.key] || '—'}</td>
               ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Regulatory Compliance Checklist</h4>
-        <div className="space-y-3">
-          {legalData.compliance.regulations.map((reg, idx) => (
-            <div key={idx} className="flex items-center justify-between p-3 border border-[#E5E5EA]/20" style={{ borderRadius: 0 }}>
-              <div><div className="font-semibold text-[#1A1A1A]">{reg.name}</div><div className="text-sm text-[#8E8E93]">Last Check: {reg.lastCheck}</div></div>
-              <span className={`px-3 py-1 text-sm font-bold ${reg.status === 'Compliant' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{reg.status}</span>
-            </div>
+            </tr>
           ))}
-        </div>
+        </tbody>
+      </table>
+    </div>
+  )
+}
+
+function IPRPortfolioScreen({ data }: { data: ReturnType<typeof useLegalData> }) {
+  if (data.loading) return <Empty msg="Loading IPR portfolio…" />
+  return (
+    <div className="space-y-8">
+      <LegalIPRCreatePanel
+        docType="trademarks"
+        fields={[
+          { key: 'title', label: 'Trademark name *' },
+          { key: 'category', label: 'Class' },
+          { key: 'effectiveDate', label: 'Registered (YYYY-MM-DD)' },
+          { key: 'expiryDate', label: 'Expiry (YYYY-MM-DD)' },
+        ]}
+        onCreated={data.refresh}
+      />
+      <div>
+        <h4 className="text-sm font-semibold text-[#1A1A1A] mb-3">Trademarks</h4>
+        <DocTable rows={data.trademarks} cols={[
+          { key: 'title', label: 'Name' },
+          { key: 'category', label: 'Class' },
+          { key: 'status', label: 'Status' },
+          { key: 'effectiveDate', label: 'Registered' },
+          { key: 'expiryDate', label: 'Expiry' },
+        ]} />
+      </div>
+      <div>
+        <h4 className="text-sm font-semibold text-[#1A1A1A] mb-3">Patents</h4>
+        <LegalIPRCreatePanel
+          docType="patents"
+          fields={[
+            { key: 'title', label: 'Patent title *' },
+            { key: 'category', label: 'Patent number' },
+            { key: 'effectiveDate', label: 'Filed' },
+            { key: 'expiryDate', label: 'Expiry' },
+          ]}
+          onCreated={data.refresh}
+        />
+        <DocTable rows={data.patents} cols={[
+          { key: 'title', label: 'Title' },
+          { key: 'status', label: 'Status' },
+          { key: 'effectiveDate', label: 'Filed' },
+          { key: 'expiryDate', label: 'Expiry' },
+          { key: 'category', label: 'Number' },
+        ]} />
       </div>
     </div>
   )
 }
 
-function ContractsScreen() {
+function CounterfeitScreen({ data }: { data: ReturnType<typeof useLegalData> }) {
+  const s = data.summary || {}
+  if (data.loading) return <Empty msg="Loading counterfeit cases…" />
   return (
-    <div className="space-y-6">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <KPICard label="Active Contracts" value={legalData.contracts.active} icon="" />
-        <KPICard label="Expiring Soon" value={legalData.contracts.expiring} icon="️" />
-        <KPICard label="Pending Review" value={legalData.contracts.pending} icon="⏳" />
-        <KPICard label="Total Value" value="$9.5M" icon="" />
+    <div className="space-y-4">
+      <LegalIPRCreatePanel
+        docType="counterfeit"
+        fields={[
+          { key: 'title', label: 'Product / issue *' },
+          { key: 'category', label: 'Location' },
+          { key: 'effectiveDate', label: 'Reported date' },
+          { key: 'severity', label: 'Severity (low/medium/high)' },
+        ]}
+        onCreated={data.refresh}
+      />
+      <div className="grid grid-cols-3 gap-4">
+        <KPICard label="Open" value={s.counterfeitOpen ?? 0} icon="⚠️" />
+        <KPICard label="Resolved" value={s.counterfeitResolved ?? 0} icon="✓" />
+        <KPICard label="Total Reports" value={(s.counterfeitOpen ?? 0) + (s.counterfeitResolved ?? 0)} icon="📊" />
       </div>
-      <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Active Contracts</h4>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
-              <th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">ID</th><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Type</th>
-              <th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Party</th><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Start</th>
-              <th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">End</th><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Value</th>
-              <th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Status</th>
-            </tr></thead>
-            <tbody>
-              {legalData.contracts.contracts.map((c, i) => (
-                <tr key={c.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{c.id}</td>
-                  <td className="px-4 py-3">{c.type}</td>
-                  <td className="px-4 py-3">{c.party}</td>
-                  <td className="px-4 py-3 text-[#8E8E93]">{c.startDate}</td>
-                  <td className="px-4 py-3 text-[#8E8E93]">{c.endDate}</td>
-                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{c.value}</td>
-                  <td className="px-4 py-3"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1A1A1A]" style={{ borderRadius: 0 }}>{c.status}</span></td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
+      <DocTable rows={data.counterfeit} cols={[
+        { key: 'title', label: 'Product / Issue' },
+        { key: 'category', label: 'Location' },
+        { key: 'effectiveDate', label: 'Reported' },
+        { key: 'status', label: 'Status' },
+        { key: 'metadata', label: 'Severity', render: (r) => (r.metadata as any)?.severity || '—' },
+      ]} />
     </div>
   )
 }
 
-function LitigationScreen() {
+function ComplianceScreen({ data }: { data: ReturnType<typeof useLegalData> }) {
+  if (data.loading) return <Empty msg="Loading compliance records…" />
   return (
-    <div className="space-y-6">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <KPICard label="Active Cases" value={legalData.litigation.active} icon="️" />
-        <KPICard label="Resolved" value={legalData.litigation.resolved} icon="" />
-        <KPICard label="IPR Cases" value={1} icon="™️" />
-        <KPICard label="Contract Disputes" value={1} icon="" />
+    <>
+      <LegalIPRCreatePanel
+        docType="compliance"
+        fields={[
+          { key: 'title', label: 'Regulation *' },
+          { key: 'category', label: 'Country' },
+          { key: 'effectiveDate', label: 'Last check' },
+          { key: 'score', label: 'Score (0-100)' },
+        ]}
+        onCreated={data.refresh}
+      />
+    <DocTable rows={data.compliance} cols={[
+      { key: 'title', label: 'Regulation' },
+      { key: 'category', label: 'Country' },
+      { key: 'status', label: 'Status' },
+      { key: 'effectiveDate', label: 'Last Check' },
+      { key: 'metadata', label: 'Score', render: (r) => { const s = (r.metadata as any)?.score; return s != null ? `${s}%` : '—' } },
+    ]} />
+    </>
+  )
+}
+
+function ContractsScreen({ data }: { data: ReturnType<typeof useLegalData> }) {
+  const s = data.summary || {}
+  if (data.loading) return <Empty msg="Loading contracts…" />
+  return (
+    <div className="space-y-4">
+      <LegalIPRCreatePanel
+        docType="contracts"
+        fields={[
+          { key: 'title', label: 'Contract name *' },
+          { key: 'category', label: 'Type' },
+          { key: 'effectiveDate', label: 'Start' },
+          { key: 'expiryDate', label: 'End' },
+        ]}
+        onCreated={data.refresh}
+      />
+      <div className="grid grid-cols-2 gap-4">
+        <KPICard label="Active" value={s.activeContracts ?? 0} icon="📄" />
+        <KPICard label="Expiring (60d)" value={s.expiringContracts ?? 0} icon="⏰" />
       </div>
-      <div className="bg-white border border-[#E5E5EA]/30 p-6" style={{ borderRadius: 0 }}>
-        <h4 className="text-lg font-semibold text-[#1A1A1A] mb-4">Active Litigation Cases</h4>
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead><tr className="bg-[#F5F5F7] border-b border-[#E5E5EA]">
-              <th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Case ID</th><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Title</th>
-              <th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Type</th><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Filed</th>
-              <th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Status</th><th className="px-5 py-3 text-left text-xs font-semibold text-[#8E8E93] uppercase tracking-wider">Next Hearing</th>
-            </tr></thead>
-            <tbody>
-              {legalData.litigation.cases.map((c, i) => (
-                <tr key={c.id} className={i % 2 === 0 ? 'bg-white' : 'bg-[#F5F5F7]'}>
-                  <td className="px-4 py-3 font-semibold text-[#1A1A1A]">{c.id}</td>
-                  <td className="px-4 py-3">{c.title}</td>
-                  <td className="px-4 py-3"><span className="px-2 py-1 text-xs font-bold bg-[#F5F5F7] text-[#1A1A1A]" style={{ borderRadius: 0 }}>{c.type}</span></td>
-                  <td className="px-4 py-3 text-[#8E8E93]">{c.filedDate}</td>
-                  <td className="px-4 py-3"><span className={`px-2 py-1 text-xs font-bold ${c.status === 'In Progress' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : c.status === 'Settlement Negotiation' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`} style={{ borderRadius: 0 }}>{c.status}</span></td>
-                  <td className="px-4 py-3 text-[#8E8E93]">{c.nextHearing}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+      <DocTable rows={data.contracts} cols={[
+        { key: 'title', label: 'Contract' },
+        { key: 'category', label: 'Type' },
+        { key: 'effectiveDate', label: 'Start' },
+        { key: 'expiryDate', label: 'End' },
+        { key: 'status', label: 'Status' },
+      ]} />
+    </div>
+  )
+}
+
+function LitigationScreen({ locale, data }: { locale: string; data: ReturnType<typeof useLegalData> }) {
+  if (data.loading) return <Empty msg="Loading litigation cases…" />
+  return (
+    <div className="space-y-4">
+      <div className="flex justify-between items-center">
+        <div className="grid grid-cols-2 gap-4 flex-1 mr-4">
+          <KPICard label="Active" value={data.summary?.activeLitigations ?? data.cases.filter((c) => c.status !== 'closed').length} icon="⚖️" />
+          <KPICard label="Resolved" value={data.summary?.resolvedLitigations ?? data.cases.filter((c) => c.status === 'closed').length} icon="✓" />
         </div>
+        <Link href={`/${locale}/os/legal/cases`} className="px-4 py-2 bg-harvics-burgundy text-white text-xs font-medium rounded-xl whitespace-nowrap">
+          Full Case CRUD →
+        </Link>
       </div>
+      <DocTable rows={data.cases} cols={[
+        { key: 'caseTitle', label: 'Title' },
+        { key: 'caseType', label: 'Type' },
+        { key: 'country', label: 'Country' },
+        { key: 'status', label: 'Status' },
+        { key: 'hearingDate', label: 'Next Hearing', render: (r) => r.hearingDate ? new Date(r.hearingDate).toLocaleDateString() : '—' },
+      ]} />
     </div>
   )
 }
 
 export default function LegalIPRDomainContent({ persona, locale }: LegalIPRDomainContentProps) {
+  const legalData = useLegalData()
+
   const tier2Modules: Tier2Module[] = [
     {
       id: 'ipr-overview',
       label: 'Legal Dashboard',
       icon: '',
-      description: 'Overview of legal, IPR, compliance, and litigation status',
-      component: <IPROverviewScreen />,
-      tier3Screens: [
-        { id: 'overview', label: 'Dashboard Overview', icon: '', component: <IPROverviewScreen /> }
-      ]
+      description: 'Live legal, IPR, compliance, and litigation KPIs',
+      component: <IPROverviewScreen locale={locale} data={legalData} />,
+      tier3Screens: [{ id: 'overview', label: 'Dashboard Overview', icon: '', component: <IPROverviewScreen locale={locale} data={legalData} /> }],
     },
     {
       id: 'ipr-portfolio',
       label: 'IPR Portfolio',
       icon: '',
-      description: 'Trademarks, patents, copyrights, and design rights management',
-      component: <IPRPortfolioScreen />,
-      tier3Screens: [
-        { id: 'trademarks', label: 'Trademarks', icon: '™️', component: <IPRPortfolioScreen /> }
-      ]
+      description: 'Trademarks and patents from Document store',
+      component: <IPRPortfolioScreen data={legalData} />,
+      tier3Screens: [{ id: 'trademarks', label: 'Trademarks', icon: '™️', component: <IPRPortfolioScreen data={legalData} /> }],
     },
     {
       id: 'counterfeit',
       label: 'Counterfeit Detection',
       icon: '',
-      description: 'Counterfeit product reporting, investigation, and resolution tracking',
-      component: <CounterfeitScreen />,
-      tier3Screens: [
-        { id: 'cases', label: 'Active Cases', icon: '', component: <CounterfeitScreen /> }
-      ]
+      description: 'Counterfeit reports and investigations',
+      component: <CounterfeitScreen data={legalData} />,
+      tier3Screens: [{ id: 'cases', label: 'Active Cases', icon: '', component: <CounterfeitScreen data={legalData} /> }],
     },
     {
       id: 'compliance',
       label: 'Compliance',
       icon: '',
-      description: 'Country compliance status, regulatory checks, and audit tracking',
-      component: <ComplianceScreen />,
-      tier3Screens: [
-        { id: 'status', label: 'Compliance Status', icon: '', component: <ComplianceScreen /> }
-      ]
+      description: 'Country compliance and regulatory checks',
+      component: <ComplianceScreen data={legalData} />,
+      tier3Screens: [{ id: 'status', label: 'Compliance Status', icon: '', component: <ComplianceScreen data={legalData} /> }],
     },
     {
       id: 'contracts',
       label: 'Contracts',
       icon: '',
-      description: 'Contract management — distribution, supplier, and license agreements',
-      component: <ContractsScreen />,
-      tier3Screens: [
-        { id: 'active', label: 'Active Contracts', icon: '', component: <ContractsScreen /> }
-      ]
+      description: 'Distribution, supplier, and license agreements',
+      component: <ContractsScreen data={legalData} />,
+      tier3Screens: [{ id: 'active', label: 'Active Contracts', icon: '', component: <ContractsScreen data={legalData} /> }],
     },
     {
       id: 'litigation',
       label: 'Litigation',
-      icon: '️',
-      description: 'Active and resolved litigation cases, hearing schedules',
-      component: <LitigationScreen />,
-      tier3Screens: [
-        { id: 'cases', label: 'Active Cases', icon: '️', component: <LitigationScreen /> }
-      ]
-    }
+      icon: '',
+      description: 'LegalCase records — full CRUD at /os/legal/cases',
+      component: <LitigationScreen locale={locale} data={legalData} />,
+      tier3Screens: [{ id: 'cases', label: 'Active Cases', icon: '', component: <LitigationScreen locale={locale} data={legalData} /> }],
+    },
   ]
 
   return (

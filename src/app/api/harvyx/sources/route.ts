@@ -18,14 +18,24 @@ const ENV_BY_NAME: Record<string, string> = {
   Serper: 'SERPER_API_KEY',
   Firecrawl: 'FIRECRAWL_API_KEY',
   Instantly: 'INSTANTLY_API_KEY',
+  Resend: 'HX_RESEND_API_KEY',
   SendGrid: 'SENDGRID_API_KEY',
+  Twilio: 'HX_TWILIO_ACCOUNT_SID',
   Gemini: 'GEMINI_API_KEY',
   Groq: 'GROQ_API_KEY',
 };
 
 function hasKey(envName: string) {
-  const v = process.env[envName];
-  return Boolean(v && v.trim() && !v.includes('your-') && v !== 'changeme');
+  const aliases: Record<string, string[]> = {
+    HX_RESEND_API_KEY: ['HX_RESEND_API_KEY', 'RESEND_API_KEY'],
+    SENDGRID_API_KEY: ['SENDGRID_API_KEY', 'HX_SENDGRID_API_KEY'],
+    HX_TWILIO_ACCOUNT_SID: ['HX_TWILIO_ACCOUNT_SID', 'TWILIO_ACCOUNT_SID'],
+  };
+  for (const name of aliases[envName] || [envName]) {
+    const v = process.env[name];
+    if (v && v.trim() && !v.includes('your-') && v !== 'changeme') return true;
+  }
+  return false;
 }
 
 export async function GET() {

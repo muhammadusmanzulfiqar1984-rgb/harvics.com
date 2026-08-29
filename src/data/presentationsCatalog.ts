@@ -6,6 +6,7 @@ export type PresentationId =
   | 'fmcg-mafi'
   | 'textiles-lpp'
   | 'textiles-vietnam-denim'
+  | 'tabraiz-town'
 
 export interface PresentationEntry {
   id: PresentationId
@@ -106,6 +107,19 @@ export const presentationsCatalog: PresentationEntry[] = [
     duration: 'Executive deck',
     format: 'Cinematic scroll',
     verticalKeys: ['textiles', 'apparels'],
+  },
+  {
+    id: 'tabraiz-town',
+    category: 'lobby',
+    title: 'Tabraiz Town — Rahim Yar Khan',
+    subtitle: 'Real estate flagship project',
+    verticals: ['Real Estate'],
+    description:
+      'Cinematic investor experience for a 30-Kanal vertical mixed-use monolith — vision, architecture, materiality, alliances, and interactive underwriting.',
+    launchPath: '/tabraiz-town/index.html',
+    duration: '7 chapters',
+    format: 'Cinematic scroll',
+    verticalKeys: ['real-estate'],
   },
 ]
 

@@ -3,13 +3,13 @@
   "home": {
     "welcome": "خوش آمدید به",
     "companyName": "هارویچ",
-    "tagline": "برتری در کالاهای مصرفی ممتاز از سال ۲۰۱۹",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "محصولات را کاوش کنید",
     "contact": "تماس با ما",
     "learnMore": "اطلاعات بیشتر",
-    "brandStatement": "یک شرکت پیشرو در زمینه کالاهای مصرفی جهانی که محصولات غذایی ممتاز را در دسته‌بندی‌های متنوع و با استانداردهای کیفیت بین‌المللی ارائه می‌دهد.",
-    "taglineStart": "برتری در کالاهای مصرفی ممتاز از سال",
-    "taglineYear": "۲۰۱۹",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "لندن • میلان • نیویورک",
     "categories": {
       "bakery": "نانوایی",
@@ -81,7 +81,8 @@
       "specialOffers": "پیشنهادات ویژه",
       "promotions": "تبلیغات",
       "bulkOrders": "تخفیف‌های سفارش عمده"
-    }
+    },
+    "startupAcademy": "آکادمی استارتاپ"
   },
   "products": {
     "ourProducts": "محصولات ما",
@@ -119,7 +120,40 @@
     "whatsapp": "واتساپ",
     "callNow": "همین حالا تماس بگیرید",
     "sendEmail": "ارسال ایمیل",
-    "messageUs": "به ما پیام دهید"
+    "messageUs": "به ما پیام دهید",
+    "getInTouch": "تماس بگیرید",
+    "locations": "مکان ها",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "ارسال پیام",
+    "firstName": "نام",
+    "firstNamePlaceholder": "نام کوچک خود را وارد کنید",
+    "lastName": "نام خانوادگی",
+    "lastNamePlaceholder": "نام خانوادگی خود را وارد کنید",
+    "emailPlaceholder": "آدرس ایمیل خود را وارد کنید",
+    "subject": "موضوع",
+    "subjectPlaceholder": "موضوع را وارد کنید",
+    "message": "پیام",
+    "messagePlaceholder": "پیام خود را بنویسید",
+    "send": "ارسال کنید",
+    "eyebrow": "یک مختصر را شروع کنید",
+    "headline1": "خلاصه ای را شروع کنید.",
+    "headline2": "ما در 24 ساعت پاسخ می دهیم.",
+    "subhead": "دسته، حجم و بازار هدف خود را به ما بگویید. یک متخصص با گزینه های منبع یابی و قیمت های مشخص به شما پاسخ می دهد.",
+    "fullName": "نام کامل",
+    "fullNamePlaceholder": "شاه تبریز",
+    "company": "شرکت",
+    "companyPlaceholder": "سازمان شما",
+    "businessEmail": "ایمیل تجاری",
+    "howCanWeHelp": "چگونه می توانیم کمک کنیم؟",
+    "sending": "ارسال...",
+    "sendEnquiry": "ارسال استعلام",
+    "sentTitle": "پیام ارسال شد.",
+    "sentSub": "تیم ما در عرض 24 ساعت پاسخ خواهد داد.",
+    "directChannels": "کانال های مستقیم",
+    "trust1": "ضمانت پاسخگویی 24 ساعته",
+    "trust2": "مدیر حساب اختصاصی",
+    "trust3": "NDA available on request",
+    "trust4": "42 بازار · 1,247 محموله امروز"
   },
   "media": {
     "title": "مرکز رسانه",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "هارویکس گلوبال ونچرز",
-    "tagline": "برتری در کالاهای مصرفی ممتاز از سال ۲۰۱۹",
-    "brandStatement": "یک شرکت پیشرو در زمینه کالاهای مصرفی جهانی که محصولات غذایی ممتاز را در دسته‌بندی‌های متنوع و با استانداردهای کیفیت بین‌المللی ارائه می‌دهد.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "لندن • میلان • نیویورک",
     "since": "از سال ۲۰۱۹",
     "harvicsNews": "اخبار هارویکس",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "به شبکه ما بپیوندید",
     "newsletterTagline": "جدیدترین اطلاعات تجاری و به‌روزرسانی‌های بازار را دریافت کنید",
     "activeShipments": "محموله‌های فعال",
-    "certifiedAudited": "تأیید شده و حسابرسی شده"
+    "certifiedAudited": "تأیید شده و حسابرسی شده",
+    "invalidEmail": "لطفا یک آدرس ایمیل معتبر وارد کنید",
+    "subscriptionSuccess": "با تشکر از شما برای اشتراک!",
+    "subscriptionError": "مشکلی پیش آمد. لطفا دوباره امتحان کنید."
   },
   "search": {
     "placeholder": "جستجوی محصولات، برندها یا دسته‌بندی‌ها",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "ببخشید، من متوجه منظورتان نشدم. لطفاً دوباره بنویسید؟",
       "help": "من می‌توانم در مورد اطلاعات محصول، سفارش یا سوالات عمومی به شما کمک کنم. چه چیزی می‌خواهید بدانید؟",
-      "contact": "برای اطلاعات بیشتر، لطفاً با ما از طریق support@harvics.com یا با شماره +1-800-HARVICS تماس بگیرید."
-    }
+      "contact": "برای اطلاعات بیشتر، لطفاً با ما از طریق support@harvics.com یا با شماره +1-800-HARVICS تماس بگیرید.",
+      "product": "کاتالوگ محصولات ما را از منو مرور کنید، یا به من بگویید کدام دسته به شما علاقه دارد - FMCG، منسوجات، تدارکات و موارد دیگر.",
+      "order": "برای ثبت سفارش یا بررسی وضعیت، به پورتال توزیع کننده مراجعه کنید یا با مدیر حساب خود تماس بگیرید.",
+      "about": "Harvics Global Ventures یک شرکت زیرساخت تجاری مستقل با بیش از 20 سال در بیش از 40 کشور است."
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "برای ارسال اینتر را فشار دهید"
   },
   "common": {
     "chatWithUs": "با ما چت کنید",
@@ -730,12 +772,17 @@
       "gps-tracking": "ردیابی GPS",
       "localization": "محلی سازی",
       "workflows": "گردش‌های کاری",
-      "admin": "مدیر"
+      "admin": "مدیر",
+      "modules": "ماژول ها"
     },
     "kpis": {
       "customers": "مشتریان",
       "employees": "کارمندان",
-      "profit": "سود"
+      "profit": "سود",
+      "totalOrders": "کل سفارشات",
+      "inventoryValue": "ارزش موجودی",
+      "logisticsEfficiency": "بهره وری لجستیک",
+      "revenue": "درآمد"
     },
     "domain": {
       "title": "سیستم عامل CRM",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "روابط، تعاملات و کمپین‌های مشتریان خود را مشاهده و مدیریت کنید.",
       "loading": "در حال بارگذاری...",
       "error": "خطا در بارگیری داده‌های CRM"
+    },
+    "roleIndicator": {
+      "manager": "نمای مدیر",
+      "executive": "نمای اجرایی",
+      "investor": "نمای سرمایه گذار",
+      "distributor": "نمای توزیع کننده",
+      "supplier": "نمای تامین کننده",
+      "customer": "نمای مشتری"
     }
   },
   "supplierPortal": {
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "درباره هارویکس",
-    "subtitle": "برتری در کالاهای مصرفی ممتاز از سال ۲۰۱۹",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "داستان ما",
     "story1": "هارویکس که در سال ۲۰۱۹ تأسیس شد، از یک ایده‌ی رؤیایی به یک رهبر جهانی در کالاهای مصرفی ممتاز تبدیل شده است. سفر ما با پیگیری بی‌وقفه‌ی کیفیت و تعهد به نوآوری تعریف می‌شود.",
     "story2": "ما در بیش از ۴۰ کشور فعالیت می‌کنیم و محصولاتی ارائه می‌دهیم که زندگی‌ها را غنی‌تر کرده و استانداردهای جدیدی را در صنعت تعیین می‌کنند. از آغاز فروتنانه تا حضور جهانی‌مان، ارزش‌های ما بدون تغییر باقی مانده‌اند.",
@@ -1150,181 +1205,279 @@
   },
   "help": {
     "page": {
-      "title": "Help Center",
-      "subtitle": "Find the help you need"
+      "title": "مرکز راهنمایی",
+      "subtitle": "کمک مورد نیاز خود را پیدا کنید"
     },
-    "backToHelpCenter": "Back to Help Center",
+    "backToHelpCenter": "بازگشت به مرکز راهنمایی",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "سوالات متداول",
+        "description": "پاسخ سوالات رایج را بیابید"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "با پشتیبانی تماس بگیرید",
+        "description": "با تیم پشتیبانی ما در تماس باشید"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "راهنمای کاربر",
+        "description": "راهنماها و آموزش های گام به گام"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "عیب یابی",
+        "description": "مسائل رایج را حل کنید"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "راهنمای حساب",
+        "description": "حساب کاربری و تنظیمات خود را مدیریت کنید"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "پشتیبانی سفارش",
+        "description": "در سفارشات و تحویل کمک کنید"
       }
     },
     "account": {
-      "title": "Account Help",
-      "subtitle": "Manage your account settings and preferences",
-      "placeholder": "Account management and settings help content will appear here."
+      "title": "راهنمای حساب",
+      "subtitle": "تنظیمات و تنظیمات برگزیده حساب خود را مدیریت کنید",
+      "placeholder": "محتوای راهنمای مدیریت حساب و تنظیمات در اینجا ظاهر می شود."
     },
     "orders": {
-      "title": "Order Support",
-      "subtitle": "Track and manage your orders and deliveries",
-      "placeholder": "Order and delivery support content will appear here."
+      "title": "پشتیبانی سفارش",
+      "subtitle": "سفارشات و تحویل های خود را پیگیری و مدیریت کنید",
+      "placeholder": "محتوای پشتیبانی سفارش و تحویل در اینجا ظاهر می شود."
     },
     "guides": {
-      "title": "User Guides",
-      "subtitle": "Step-by-step guides to help you get the most out of Harvics",
+      "title": "راهنمای کاربر",
+      "subtitle": "راهنماهای گام به گام برای کمک به شما برای استفاده بیشتر از Harvics",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "شروع به کار",
+          "description": "اصول اولیه را بیاموزید"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "راه اندازی حساب",
+          "description": "حساب کاربری خود را تنظیم کنید"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "نحوه سفارش",
+          "description": "ثبت و پیگیری سفارشات"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "روش های پرداخت",
+          "description": "گزینه های پرداخت و امنیت"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "حمل و نقل و تحویل",
+          "description": "اطلاعات تحویل"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "بازگشت و بازپرداخت",
+          "description": "سیاست و فرآیند بازگشت"
         }
       }
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "subtitle": "Common issues and quick solutions",
+      "title": "عیب یابی",
+      "subtitle": "مسائل رایج و راه حل های سریع",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "مشکلات ورود",
+          "description": "مشکلات ورود به سیستم"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "مشکلات پرداخت",
+          "description": "پرداخت پردازش نمی شود"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "تاخیر در تحویل",
+          "description": "سفارش نمی رسد"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "خطاهای وب سایت",
+          "description": "صفحه بارگیری نمی شود"
         }
       }
     }
   },
   "checkout": {
-    "secureCheckout": "Secure Checkout",
-    "title": "Complete Your Order",
-    "subtitle": "Review your items, enter shipping details, and confirm payment securely.",
-    "shippingInfo": "Shipping Information",
-    "paymentMethod": "Payment Method",
+    "secureCheckout": "تسویه حساب امن",
+    "title": "سفارش خود را تکمیل کنید",
+    "subtitle": "اقلام خود را بررسی کنید، جزئیات حمل و نقل را وارد کنید، و پرداخت را ایمن تأیید کنید.",
+    "shippingInfo": "اطلاعات حمل و نقل",
+    "paymentMethod": "روش پرداخت",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "کارت اعتباری / بدهی",
+      "bankTransfer": "حواله بانکی (LC/TT)",
       "wallet": "HPay Digital Wallet"
     },
-    "orderSummary": "Order Summary",
+    "orderSummary": "خلاصه سفارش",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
-      "total": "Total"
+      "subtotal": "جمع فرعی",
+      "shipping": "حمل و نقل",
+      "calculatedNextStep": "در مرحله بعد محاسبه می شود",
+      "tax": "مالیات",
+      "total": "مجموع"
     },
-    "placeOrder": "Place Order",
-    "sslNotice": "Secured with 256-bit SSL encryption",
-    "continueShopping": "Continue Shopping",
+    "placeOrder": "ثبت سفارش",
+    "sslNotice": "با رمزگذاری 256 بیتی SSL ایمن شده است",
+    "continueShopping": "به خرید ادامه دهید",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "نام",
+      "lastName": "نام خانوادگی",
+      "email": "ایمیل",
+      "address": "آدرس",
+      "city": "شهر",
+      "country": "کشور"
     }
   },
   "history": {
     "hero": {
-      "title": "Our Journey",
-      "subtitle": "From a Dubai startup to a global enterprise spanning 42+ countries, 10 industry verticals, and 38 languages."
+      "title": "سفر ما",
+      "subtitle": "از یک استارتاپ در دبی گرفته تا یک شرکت جهانی که بیش از 42 کشور، 10 صنعت عمودی و 38 زبان را در بر می گیرد."
     },
     "cta": {
-      "title": "Be Part of the Next Chapter",
-      "subtitle": "Join us as we scale to 60+ countries and build the future of AI-driven global commerce.",
-      "button": "View Careers"
+      "title": "بخشی از فصل بعدی باشید",
+      "subtitle": "به ما بپیوندید تا به بیش از 60 کشور رسیده و آینده تجارت جهانی مبتنی بر هوش مصنوعی را بسازیم.",
+      "button": "مشاهده مشاغل"
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "در دبی تاسیس شد",
+        "description": "Harvics Global Ventures در امارات متحده عربی با هدف تبدیل شدن به یک FMCG در سطح جهانی و یک مجموعه تجاری چند عمودی تاسیس شد. اولین عملیات در منسوجات و کالاهای مصرفی راه اندازی شد.",
+        "highlight": "سال اول"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "اولین گسترش بین المللی",
+        "description": "به 10 کشور در سراسر اروپا، خاورمیانه و آسیای جنوبی علیرغم چالش های همه گیر جهانی گسترش یافت. عملیات زنجیره تامین دیجیتال و مشارکت توزیع از راه دور را راه اندازی کرد.",
+        "highlight": "10 کشور"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "گسترش چند عمودی",
+        "description": "5 صنعت جدید را راه اندازی کرد: کالاها، تجهیزات صنعتی، مواد معدنی و معدن، نفت و گاز، و املاک و مستغلات. کل کاتالوگ محصولات از 500 SKU در تمام عمودی ها فراتر رفت.",
+        "highlight": "5 عمودی جدید"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "تحول دیجیتال",
+        "description": "اولین نسخه سیستم عامل Harvics - پلتفرم سازمانی مبتنی بر هوش مصنوعی را ساخته است. راه اندازی پورتال های توزیع کننده، قابلیت های تجارت الکترونیک و ردیابی ناوگان جی پی اس در تمام بازارها.",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "پایداری و مقیاس",
+        "description": "متعهد به عملیات کربن خنثی. به بیش از 30 کشور رسیده است. راه‌اندازی HPay (پلت‌فرم پرداخت دیجیتال)، راه‌حل‌های مالی تجارت، و پیش‌بینی تقاضا مبتنی بر هوش مصنوعی در همه بخش‌ها.",
+        "highlight": "بیش از 30 کشور"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "شرکت جهانی",
+        "description": "از 42+ کشور نقطه عطف پیشی گرفت. موتور هوش مصنوعی مستقر با 6 مدل ML برای استراتژی، تقاضا، قیمت گذاری، پوشش و بهینه سازی SKU. پلتفرم چند زبانه راه اندازی شد که از 38 زبان پشتیبانی می کند.",
+        "highlight": "42+ کشور"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "سیستم عامل AI-First",
+        "description": "Harvics OS v2 راه‌اندازی شد – سیستم عامل سازمانی یکپارچه با هوش بی‌درنگ، فیدهای زنده Socket.io، موتور آلفا برای طرح‌های حمله به بازار، و سلسله‌مراتب جغرافیایی 8 سطحی کامل.",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "چشم انداز پیش رو",
+        "description": "گسترش به بیش از 60 کشور. ساخت اولین شرکت FMCG با هوش مصنوعی در جهان که در آن همه عملکردها - تدارکات، تدارکات، امور مالی، CRM - با هوش پیش‌بینی با دروازه‌های تایید انسانی اجرا می‌شوند.",
+        "highlight": "60+ هدف"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "تجارت عملی، منبع یابی و آکادمی هوش مصنوعی برای بنیانگذاران - شش هفته، جلسات زنده، راهروهای هارویکس.",
+    "navLabel": "آکادمی استارتاپ",
+    "teaser": {
+      "eyebrow": "آکادمی · برنامه راهرو",
+      "title": "آکادمی استارتاپ.",
+      "body": "صنایع دستی تجاری کلاسیک برای بنیانگذاران - منبع یابی، کنترل کیفیت، میزهای تامین مالی، و سواد راهروی - در کنار بازار هارویکس.",
+      "cta": "وارد آکادمی شوید"
+    },
+    "hero": {
+      "alt": "سالن سخنرانی کلاسیک - آکادمی استارتاپ هارویکس",
+      "eyebrow": "گروه 01 · Q4 2026 · برنامه حمایتی",
+      "title": "Harvics Startup Academy",
+      "body": "یک مدرسه کلاسیک تجارت برای بنیانگذاران - منبع یابی، تجارت راهرو، و هوش مصنوعی که کار می کند. شش هفته جلسات زنده اپراتورهای واقعی",
+      "apply": "برای گروه 01 درخواست دهید",
+      "seeProgramme": "برنامه را ببینید"
+    },
+    "stats": {
+      "founders": "بنیانگذاران / گروه",
+      "sessions": "جلسات زنده",
+      "weeks": "هفته ها",
+      "verticals": "عمودی تجارت"
+    },
+    "why": {
+      "eyebrow": "01 · چرا بپیوندید",
+      "title": "شرکتی بسازید که واقعاً بتواند تجارت کند.",
+      "body": "نه تئاتر زمینی RFQ برای تسویه حساب، تلاش منابع، دسترسی به خریداران و اتوماسیون - از اپراتورها در سراسر راهروهای Harvics را بیاموزید.",
+      "item1Title": "سیستم های تجاری عملی",
+      "item1Body": "خریداران نهادی چگونه خرید می کنند - و چگونه انجام می دهید.",
+      "item2Title": "شبکه ای که ارسال می شود",
+      "item2Body": "بنیانگذاران، توزیع کنندگان و اپراتورها در سراسر عمودی.",
+      "item3Title": "هوش مصنوعی که کار می کند",
+      "item3Body": "هاروی ایکس، صدای فین، و اتوماسیون عملیات بدون کلیدواژه.",
+      "imageAlt": "طبیعت بی جان تجارت کلاسیک"
+    },
+    "knowledge": {
+      "eyebrow": "دانش",
+      "title": "راهرو را مانند یک رشته مطالعه کنید.",
+      "body": "برنامه درسی برگرفته از شیوه تجارت واقعی - نه اسلایدهای عمومی استارتاپ.",
+      "imageAlt": "کتابخانه بزرگ کلاسیک"
+    },
+    "programme": {
+      "eyebrow": "02 · برنامه",
+      "title": "آنچه از طریق آن کار خواهید کرد",
+      "m1Title": "نام تجاری و منبع",
+      "m1Body": "MOQs، دروازه‌های QC، منسوجات و FMCG - آتلیه تا راهرو.",
+      "m2Title": "هوش و فراگیر",
+      "m2Body": "آزمایشگاه‌های HarvyX، خریدار ICP، پیگیری‌هایی که پاسخ دریافت می‌کنند.",
+      "m3Title": "سرمایه و شرکا",
+      "m3Body": "مسیرهای تامین مالی و مشارکت - بدون ادعای جعلی بانکی.",
+      "m4Title": "تجارت کریدور",
+      "m4Body": "بنادر، خطوط و نحوه حرکت کالاها در بازارها.",
+      "m5Title": "کیفیت و پشتکار",
+      "m5Body": "عادات بازرسی که از شهرت و شهرت محافظت می کند.",
+      "m6Title": "کالاها و FMCG",
+      "m6Body": "از واقعیت انبار تا تقاضای برند و عمده فروشی."
+    },
+    "tracks": {
+      "aEyebrow": "آهنگ A",
+      "aTitle": "نام تجاری و تجارت",
+      "aBody": "بنیانگذاران پوشاک و FMCG برای ساخت برند، عمده فروشی و تقاضای راهرو.",
+      "aAlt": "اتاق هیئت کلاسیک",
+      "bEyebrow": "آهنگ B",
+      "bTitle": "تجارت و عملیات",
+      "bBody": "منبع یابی، تدارکات، و اپراتورهای B2B تجارت سازمانی را مقیاس می دهند.",
+      "bAlt": "شبکه سازی سالن"
+    },
+    "network": {
+      "eyebrow": "03 · شبکه",
+      "title": "ملاقات با اپراتورها، نه مخاطبان.",
+      "body": "جلسات زنده و ساعات اداری به سبک سالن با موسسان، توزیع کنندگان، و اپراتورهای راهرو Harvics.",
+      "imageAlt": "شبکه سازی بنیانگذاران"
+    },
+    "rhythm": {
+      "eyebrow": "04 · ریتم",
+      "title": "شش هفته آهنگ پاک کردن.",
+      "w1": "هفته 1",
+      "w1Body": "جهت گیری · نقشه راهرو · کارگاه ICP",
+      "w2": "هفته 2",
+      "w2Body": "ارتباط با خریداران · آزمایشگاه هاروی ایکس",
+      "w3": "هفته 3",
+      "w3Body": "منبع یابی و کنترل کیفیت · کوشش تامین کننده",
+      "w4": "هفته 4",
+      "w4Body": "اتوماسیون · صدای فین · پشته عملیات",
+      "w5": "هفته 5",
+      "w5Body": "تامین مالی و مشارکت",
+      "w6": "هفته 6",
+      "w6Body": "ویترین موسس · مراحل بعدی"
+    },
+    "apply": {
+      "eyebrow": "برنامه های کاربردی",
+      "title": "برای گروه 01 درخواست دهید",
+      "body": "صندلی های محدود شرکت، عمودی، و آنچه می‌سازید به ما بگویید.",
+      "emailCta": "درخواست از طریق ایمیل →",
+      "back": "بازگشت به هارویکس"
     }
   }
 }

@@ -13,6 +13,7 @@
 import { Router, Request, Response } from 'express';
 import { ordersDb } from '../../core/db';
 import { eventBus } from '../../core/eventBus';
+import { emitAudit } from '../../services/audit.service';
 import { translateOrderStatus, translateError, translateMessage } from '../../core/translate';
 // Import locale middleware types
 import '../../middleware/locale';
@@ -71,14 +72,16 @@ router.get('/:id', async (req: Request, res: Response) => {
 
 router.post('/', async (req: Request, res: Response) => {
   const locale = getLocale(req);
-  const { customer, city, channel, amount, currency, items, shippingAddress } = req.body;
-  if (!customer || !items) {
+  const { customer, customerName, customerId, city, channel, amount, currency, items, shippingAddress } = req.body;
+  const name = customerName || customer;
+  if (!name || !items) {
     return res.status(400).json({ success: false, error: translateError('missingFields', locale) });
   }
   const order = await ordersDb.create({
-    customer, city, channel, amount: amount || 0, currency: currency || 'USD',
+    customerName: name, customerId: customerId || null, city, channel: channel || 'distributor', amount: amount || 0, currency: currency || 'USD',
     items, shippingAddress, status: 'Pending',
   }, 'order.created');
+  void emitAudit(req, 'order.created', 'Order', order.id, { module: 'distributor' });
   res.status(201).json({ success: true, data: localizeOrder(order, locale), message: translateMessage('created', locale) });
 });
 
@@ -93,9 +96,39 @@ router.patch('/:id/status', async (req: Request, res: Response) => {
   const locale = getLocale(req);
   const { status } = req.body;
   if (!status) return res.status(400).json({ success: false, error: translateError('missingFields', locale) });
+
+  /** Distributor / channel order spine */
+  const ORDER_TRANSITIONS: Record<string, string[]> = {
+    Pending: ['Processing', 'On Hold', 'Cancelled'],
+    Processing: ['In Transit', 'On Hold', 'Cancelled'],
+    'On Hold': ['Processing', 'Cancelled'],
+    'In Transit': ['Delivered', 'Completed'],
+    Delivered: ['Completed'],
+    Completed: [],
+    Cancelled: [],
+  };
+
+  const existing = await ordersDb.get(req.params.id);
+  if (!existing) return res.status(404).json({ success: false, error: translateError('notFound', locale) });
+  if (existing.status === status) {
+    return res.json({ success: true, data: localizeOrder(existing, locale), message: 'Status unchanged' });
+  }
+  const allowed = ORDER_TRANSITIONS[existing.status] || [];
+  if (!allowed.includes(status)) {
+    return res.status(409).json({
+      success: false,
+      error: `Cannot transition order from '${existing.status}' to '${status}'`,
+      allowed,
+    });
+  }
+
   const updated = await ordersDb.update(req.params.id, { status }, 'order.updated');
   if (!updated) return res.status(404).json({ success: false, error: translateError('notFound', locale) });
-  if (status === 'Completed') {
+  void emitAudit(req, 'order.status', 'Order', updated.id, {
+    module: 'distributor',
+    payload: { from: existing.status, to: status },
+  });
+  if (status === 'Completed' || status === 'Delivered') {
     eventBus.emitDomain('order.completed', updated, 'orders');
   }
   if (status === 'Cancelled') {

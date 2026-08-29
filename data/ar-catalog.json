@@ -1,0 +1,74 @@
+[
+  {
+    "id": "cat-basmati",
+    "sku": "RICE-1121",
+    "hsCode": "1006.30",
+    "description": "Basmati rice 1121 — 50kg bags",
+    "uom": "BAG",
+    "unitPrice": 42.5,
+    "taxPercent": 5,
+    "currency": "USD",
+    "active": true,
+    "updatedAt": "2026-08-27T18:31:03.377Z"
+  },
+  {
+    "id": "cat-freight",
+    "sku": "FRT-OCEAN",
+    "hsCode": "9900.00",
+    "description": "Ocean freight allocation",
+    "uom": "LOT",
+    "unitPrice": 850,
+    "taxPercent": 0,
+    "currency": "USD",
+    "active": true,
+    "updatedAt": "2026-08-27T18:31:03.377Z"
+  },
+  {
+    "id": "cat-pack",
+    "sku": "PKG-EXP",
+    "hsCode": "9900.00",
+    "description": "Export packing / fumigation",
+    "uom": "LOT",
+    "unitPrice": 120,
+    "taxPercent": 0,
+    "currency": "USD",
+    "active": true,
+    "updatedAt": "2026-08-27T18:31:03.377Z"
+  },
+  {
+    "id": "cat-mtbyjuez",
+    "sku": "BAS1121",
+    "hsCode": "100630",
+    "description": "Basmati rice 1121 – 50kg bags",
+    "uom": "BAG",
+    "unitPrice": 42.5,
+    "taxPercent": 5,
+    "currency": "USD",
+    "active": true,
+    "updatedAt": "2026-08-27T20:10:58.619Z"
+  },
+  {
+    "id": "cat-mtbyjuf0",
+    "sku": "FRT001",
+    "hsCode": "9801",
+    "description": "Ocean freight allocation",
+    "uom": "EA",
+    "unitPrice": 850,
+    "taxPercent": 0,
+    "currency": "USD",
+    "active": true,
+    "updatedAt": "2026-08-27T20:10:58.620Z"
+  },
+  {
+    "id": "cat-mtbyjuf1",
+    "sku": "PKG001",
+    "hsCode": "9801",
+    "description": "Export packing / fumigation",
+    "uom": "EA",
+    "unitPrice": 120,
+    "taxPercent": 0,
+    "currency": "USD",
+    "active": true,
+    "updatedAt": "2026-08-27T20:10:58.621Z"
+  }
+]

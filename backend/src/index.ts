@@ -26,6 +26,7 @@ import http from 'http';
 import { Server } from 'socket.io';
 import routes from './routes';
 import { localeMiddleware } from './middleware/locale';
+import { auditCaptureMiddleware } from './middleware/auditCapture.middleware';
 import { ProfitSentinel } from './services/profitSentinel';
 import { HarvicsAlphaEngine } from './services/harvicsAlphaEngine';
 import { setNotificationPushFn } from './modules/comms/notification.service';
@@ -197,6 +198,7 @@ io.on('connection', (socket) => {
 // When frontend selects country/language, backend will automatically return localized responses
 app.use(localeMiddleware);
 
+app.use('/api', auditCaptureMiddleware);
 app.use('/api', routes);
 
 app.get('/', (_req, res) => {

@@ -2,11 +2,13 @@ import { groq } from '@ai-sdk/groq';
 import { streamText, tool } from 'ai';
 import { z } from 'zod';
 
+const GROQ_MODEL = process.env.GROQ_MODEL || 'openai/gpt-oss-120b';
+
 export async function POST(req: Request) {
   const { messages } = await req.json();
 
   const result = await streamText({
-    model: groq('llama3-70b-8192'),
+    model: groq(GROQ_MODEL),
     system: 'You are Harvoice, an AI assistant for B2B lead generation. Use tools to show data to the user.',
     messages,
     tools: {

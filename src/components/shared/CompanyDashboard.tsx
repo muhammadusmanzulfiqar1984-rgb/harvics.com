@@ -130,8 +130,12 @@ export default function CompanyDashboard() {
       
       if (response.error) {
         console.error('Error loading dashboard:', response.error)
-        // Fall back to mock data if API fails
-        loadMockData()
+        setKpiData({ totalRevenue: 0, totalOrders: 0, activeDistributors: 0, activeCountries: 0 })
+        setTrendData([])
+        setAiInsights([])
+        setTopMarkets([])
+        setTopDistributors([])
+        setRiskAlerts([])
         return
       }
 
@@ -171,94 +175,25 @@ export default function CompanyDashboard() {
           setRiskAlerts(data.riskAlerts)
         }
       } else {
-        // No data returned, use mock data
-        loadMockData()
+        setKpiData({ totalRevenue: 0, totalOrders: 0, activeDistributors: 0, activeCountries: 0 })
+        setTrendData([])
+        setAiInsights([])
+        setTopMarkets([])
+        setTopDistributors([])
+        setRiskAlerts([])
       }
 
     } catch (error) {
       console.error('Error loading dashboard data:', error)
-      // Fall back to mock data on error
-      loadMockData()
+      setKpiData({ totalRevenue: 0, totalOrders: 0, activeDistributors: 0, activeCountries: 0 })
+      setTrendData([])
+      setAiInsights([])
+      setTopMarkets([])
+      setTopDistributors([])
+      setRiskAlerts([])
     } finally {
       setLoading(false)
     }
-  }
-
-  // Fallback mock data loader
-  const loadMockData = () => {
-    // Generate trend data based on period
-    const days = filters.period === 'last30days' ? 30 : filters.period === 'lastquarter' ? 90 : 365
-    const trend: TrendData[] = []
-    const baseRevenue = 4500000
-    const baseOrders = 500
-    
-    for (let i = days - 1; i >= 0; i--) {
-      const date = new Date()
-      date.setDate(date.getDate() - i)
-      
-      // Generate realistic trend data with slight upward trend
-      const dayFactor = (days - i) / days
-      const randomFactor = 0.8 + Math.random() * 0.4 // 0.8 to 1.2
-      const trendFactor = 1 + (dayFactor * 0.1) // 10% growth over period
-      
-      trend.push({
-        date: date.toISOString().split('T')[0],
-        revenue: Math.round(baseRevenue * trendFactor * randomFactor),
-        orders: Math.round(baseOrders * trendFactor * randomFactor)
-      })
-    }
-    setTrendData(trend)
-
-    // Mock AI insights
-    setAiInsights([
-      {
-        id: '1',
-        title: 'Revenue Growth Trend',
-        description: 'Revenue increased 12.5% compared to previous period',
-        category: 'finance',
-        priority: 'high'
-      },
-      {
-        id: '2',
-        title: 'Inventory Optimization',
-        description: '3 warehouses showing low stock levels - recommend replenishment',
-        category: 'inventory',
-        priority: 'medium'
-      },
-      {
-        id: '3',
-        title: 'Top Market Performance',
-        description: 'UAE and Pakistan markets showing strongest growth',
-        category: 'markets',
-        priority: 'medium'
-      }
-    ])
-
-    // Mock top markets
-    setTopMarkets([
-      { country: 'United States', revenue: 1250000000, change: 12.5 },
-      { country: 'United Arab Emirates', revenue: 850000000, change: 18.2 },
-      { country: 'Pakistan', revenue: 650000000, change: 15.7 },
-      { country: 'United Kingdom', revenue: 420000000, change: 8.3 },
-      { country: 'Saudi Arabia', revenue: 380000000, change: 10.1 }
-    ])
-
-    // Mock top distributors
-    setTopDistributors([
-      { name: 'Global Distribution Network', country: 'US', revenue: 45000000, onTimePercentage: 98 },
-      { name: 'Middle East Distributors', country: 'AE', revenue: 32000000, onTimePercentage: 95 },
-      { name: 'Pakistani Distributors Ltd', country: 'PK', revenue: 28000000, onTimePercentage: 97 },
-      { name: 'UK Distribution Partners', country: 'UK', revenue: 25000000, onTimePercentage: 96 },
-      { name: 'Gulf Distributors Group', country: 'SA', revenue: 22000000, onTimePercentage: 94 }
-    ])
-
-    // Mock risk alerts
-    setRiskAlerts([
-      { id: '1', domain: 'Finance', title: '3 invoices overdue > 60 days', severity: 'critical', date: '2024-01-20' },
-      { id: '2', domain: 'Inventory', title: 'Low stock alert: 5 SKUs below reorder point', severity: 'warning', date: '2024-01-21' },
-      { id: '3', domain: 'Legal/IPR', title: '2 IPR renewals due in 30 days', severity: 'info', date: '2024-01-22' },
-      { id: '4', domain: 'Logistics', title: 'Route delay: 2 shipments delayed', severity: 'warning', date: '2024-01-23' }
-    ])
   }
 
   const handleKPIClick = (kpiTitle: string) => {

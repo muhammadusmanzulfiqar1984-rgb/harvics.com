@@ -765,7 +765,7 @@ class ApiClient {
   async getCompanyDashboard(filters?: Record<string, string>) {
     const params = new URLSearchParams(filters || {})
     const query = params.toString() ? `?${params.toString()}` : ''
-    return this.request(`/bff/company${query}`)
+    return this.request(`/bff/company-dashboard${query}`)
   }
 
   // Distributor methods

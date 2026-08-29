@@ -8,7 +8,7 @@ import { MODULES_BY_BAND, TOTAL_MODULES } from '@/lib/modules/registry'
 // Mapped into the legacy shape this component consumes — DO NOT inline modules here.
 const MODULE_ARCHITECTURE: Record<
   string,
-  Array<{ id: number; name: string; route: string; intelligence: string; reporting: string }>
+  Array<{ id: number; name: string; route: string; osPath?: string; intelligence: string; reporting: string }>
 > = Object.fromEntries(
   Object.entries(MODULES_BY_BAND).map(([band, mods]) => [
     band,
@@ -16,6 +16,7 @@ const MODULE_ARCHITECTURE: Record<
       id: m.id,
       name: m.name,
       route: m.route,
+      osPath: m.osPath,
       intelligence: m.intelligence,
       reporting: m.reporting,
     })),
@@ -50,6 +51,7 @@ interface ModuleDefinition {
   id: number
   name: string
   route: string
+  osPath?: string
   intelligence: string
   reporting: string
   band: string
@@ -631,7 +633,7 @@ export default function ModuleArchitectureExplorer() {
                         Open Workspace
                       </button>
                       <a
-                        href={`/en/os/module/${module.id}`}
+                        href={`/en${module.osPath || `/os/module/${module.id}`}`}
                         target="_blank"
                         rel="noreferrer"
                         className="rounded-xl border border-harvics-gold bg-harvics-gold px-3 py-2 text-xs font-bold text-harvics-burgundy"

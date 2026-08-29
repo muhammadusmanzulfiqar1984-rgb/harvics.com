@@ -42,8 +42,8 @@ export default function ManifestoSection() {
         <div className="grid items-end gap-8 md:grid-cols-[1fr_1.2fr] md:gap-[clamp(32px,6vw,80px)]">
           <div>
             <motion.p
-              initial={{ opacity: 0, y: 12 }}
-              animate={inView ? { opacity: 1, y: 0 } : undefined}
+              initial={false}
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
               className="mb-4 text-[10px] font-bold uppercase tracking-[0.22em] text-harvics-gold"
             >
@@ -51,8 +51,8 @@ export default function ManifestoSection() {
             </motion.p>
 
             <motion.h2
-              initial={{ opacity: 0, y: 28 }}
-              animate={inView ? { opacity: 1, y: 0 } : undefined}
+              initial={false}
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 1, y: 8 }}
               transition={{ duration: 0.9, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
               className="harvics-corridor-display max-w-[14ch] text-harvics-burgundy"
               style={{
@@ -64,8 +64,8 @@ export default function ManifestoSection() {
           </div>
 
           <motion.p
-            initial={{ opacity: 0, y: 22 }}
-            animate={inView ? { opacity: 1, y: 0 } : undefined}
+            initial={false}
+            animate={inView ? { opacity: 1, y: 0 } : { opacity: 1, y: 6 }}
             transition={{ duration: 0.85, delay: 0.22, ease: [0.16, 1, 0.3, 1] }}
             className="m-0 max-w-[44ch] harvics-corridor-body md:text-[17px]"
           >
@@ -82,8 +82,8 @@ export default function ManifestoSection() {
           style={{
             background: 'linear-gradient(90deg, var(--harvics-gold) 0%, rgba(195, 163, 94,0.35) 45%, transparent 100%)',
           }}
-          initial={{ scaleX: 0, opacity: 0.4 }}
-          animate={inView ? { scaleX: 1, opacity: 1 } : undefined}
+          initial={false}
+          animate={inView ? { scaleX: 1, opacity: 1 } : { scaleX: 1, opacity: 0.85 }}
           transition={{ duration: 1.15, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
         />
       </div>

@@ -16,6 +16,8 @@
 import { Request, Response, Router } from 'express';
 import { z } from 'zod';
 import { prisma } from '../../core/prisma';
+import { emitAudit } from '../../services/audit.service';
+import { eventBus } from '../../core/eventBus';
 
 export const wave3Router = Router();
 
@@ -224,6 +226,22 @@ wave3Router.get('/crm/deals', async (req, res) => {
   return res.json({ success: true, data: rows, total: rows.length });
 });
 
+wave3Router.get('/crm/deals/:id', async (req, res) => {
+  const row = await prisma.deal.findUnique({ where: { id: req.params.id } });
+  if (!row) return res.status(404).json({ success: false, error: 'Deal not found' });
+  const [customer, activities] = await Promise.all([
+    row.customerId
+      ? prisma.customer.findUnique({ where: { id: row.customerId } }).catch(() => null)
+      : Promise.resolve(null),
+    prisma.crmActivity.findMany({
+      where: { dealId: row.id },
+      orderBy: { occurredAt: 'desc' },
+      take: 50,
+    }).catch(() => []),
+  ]);
+  return res.json({ success: true, data: row, customer, activities });
+});
+
 wave3Router.get('/crm/pipeline', async (_req, res) => {
   const rows = await prisma.deal.findMany();
   const pipeline = STAGES.map(stage => {
@@ -255,6 +273,20 @@ wave3Router.post('/crm/deals/:id/stage', async (req, res) => {
       'Prospecting': 20, 'Qualified': 40, 'Proposal': 60, 'Negotiation': 80, 'Closed Won': 100, 'Closed Lost': 0,
     };
     const row = await prisma.deal.update({ where: { id: existing.id }, data: { stage: body.stage, probability: probMap[body.stage] } });
+    if (body.stage !== existing.stage) {
+      await prisma.crmActivity.create({
+        data: {
+          type: 'note',
+          subject: `Stage change: ${existing.stage} → ${body.stage}`,
+          body: `Deal stage updated from ${existing.stage} to ${body.stage}`,
+          dealId: row.id,
+          customerId: row.customerId || null,
+          ownerId: row.ownerId || (req as any).user?.id || null,
+          occurredAt: new Date(),
+          outcome: body.stage === 'Closed Won' ? 'positive' : body.stage === 'Closed Lost' ? 'negative' : 'neutral',
+        },
+      }).catch(() => null);
+    }
     return res.json({ success: true, data: row });
   } catch (err) { const z = zerr(err, res); if (z) return z; return res.status(500).json({ success: false, error: 'update failed' }); }
 });
@@ -294,10 +326,18 @@ wave3Router.get('/procurement/rfqs', async (req, res) => {
   return res.json({ success: true, data: rows, total: rows.length });
 });
 
+wave3Router.get('/procurement/rfqs/:id', async (req, res) => {
+  const row = await prisma.rFQ.findUnique({ where: { id: req.params.id }, include: { responses: true } });
+  if (!row) return res.status(404).json({ success: false, error: 'RFQ not found' });
+  return res.json({ success: true, data: row });
+});
+
 wave3Router.post('/procurement/rfqs', async (req, res) => {
   try {
     const body = RfqCreate.parse(req.body);
     const row = await prisma.rFQ.create({ data: { ...body, status: 'Draft' } });
+    void emitAudit(req, 'rfq.created', 'RFQ', row.id, { module: 'procurement' });
+    eventBus.emitDomain('procurement.rfq.created', row, 'procurement');
     return res.status(201).json({ success: true, data: row });
   } catch (err: any) {
     const z = zerr(err, res); if (z) return z;
@@ -311,6 +351,27 @@ wave3Router.post('/procurement/rfqs/:id/open', async (req, res) => {
   if (!existing) return res.status(404).json({ success: false, error: 'RFQ not found' });
   if (existing.status !== 'Draft') return res.status(409).json({ success: false, error: `Cannot open from '${existing.status}'` });
   const row = await prisma.rFQ.update({ where: { id: existing.id }, data: { status: 'Open' } });
+  void emitAudit(req, 'rfq.opened', 'RFQ', row.id, { module: 'procurement', payload: { from: existing.status, to: 'Open' } });
+  return res.json({ success: true, data: row });
+});
+
+wave3Router.post('/procurement/rfqs/:id/close', async (req, res) => {
+  const existing = await prisma.rFQ.findUnique({ where: { id: req.params.id } });
+  if (!existing) return res.status(404).json({ success: false, error: 'RFQ not found' });
+  if (existing.status !== 'Open') return res.status(409).json({ success: false, error: `Cannot close from '${existing.status}'` });
+  const row = await prisma.rFQ.update({ where: { id: existing.id }, data: { status: 'Closed' } });
+  void emitAudit(req, 'rfq.closed', 'RFQ', row.id, { module: 'procurement', payload: { from: existing.status, to: 'Closed' } });
+  return res.json({ success: true, data: row });
+});
+
+wave3Router.post('/procurement/rfqs/:id/cancel', async (req, res) => {
+  const existing = await prisma.rFQ.findUnique({ where: { id: req.params.id } });
+  if (!existing) return res.status(404).json({ success: false, error: 'RFQ not found' });
+  if (!['Draft', 'Open'].includes(existing.status)) {
+    return res.status(409).json({ success: false, error: `Cannot cancel from '${existing.status}'` });
+  }
+  const row = await prisma.rFQ.update({ where: { id: existing.id }, data: { status: 'Cancelled' } });
+  void emitAudit(req, 'rfq.cancelled', 'RFQ', row.id, { module: 'procurement', payload: { from: existing.status, to: 'Cancelled' } });
   return res.json({ success: true, data: row });
 });
 
@@ -321,6 +382,10 @@ wave3Router.post('/procurement/rfqs/:id/responses', async (req, res) => {
     if (!rfq) return res.status(404).json({ success: false, error: 'RFQ not found' });
     if (rfq.status !== 'Open') return res.status(409).json({ success: false, error: 'RFQ not open for responses' });
     const row = await prisma.rFQResponse.create({ data: { rfqId: rfq.id, ...body } });
+    void emitAudit(req, 'rfq.response', 'RFQResponse', row.id, {
+      module: 'procurement',
+      payload: { rfqId: rfq.id, vendorId: body.vendorId, amount: body.amount },
+    });
     return res.status(201).json({ success: true, data: row });
   } catch (err) { const z = zerr(err, res); if (z) return z; return res.status(500).json({ success: false, error: 'create failed' }); }
 });
@@ -336,6 +401,10 @@ wave3Router.post('/procurement/rfqs/:id/award/:respId', async (req, res) => {
     prisma.rFQResponse.update({ where: { id: resp.id }, data: { status: 'Awarded' } }),
     prisma.rFQResponse.updateMany({ where: { rfqId: rfq.id, id: { not: resp.id } }, data: { status: 'Rejected' } }),
   ]);
+  void emitAudit(req, 'rfq.awarded', 'RFQ', updatedRfq.id, {
+    module: 'procurement',
+    payload: { from: rfq.status, to: 'Awarded', vendorId: resp.vendorId, responseId: resp.id },
+  });
   return res.json({ success: true, data: updatedRfq });
 });
 
@@ -364,8 +433,15 @@ wave3Router.get('/vendors/scorecards', async (req, res) => {
   const where: any = {};
   if (req.query.period) where.period = String(req.query.period);
   if (req.query.vendorId) where.vendorId = String(req.query.vendorId);
+  if (req.query.recommendation) where.recommendation = String(req.query.recommendation);
   const rows = await prisma.vendorScorecard.findMany({ where, orderBy: { overallScore: 'desc' } });
   return res.json({ success: true, data: rows, total: rows.length });
+});
+
+wave3Router.get('/vendors/scorecards/:id', async (req, res) => {
+  const row = await prisma.vendorScorecard.findUnique({ where: { id: req.params.id } });
+  if (!row) return res.status(404).json({ success: false, error: 'Scorecard not found' });
+  return res.json({ success: true, data: row });
 });
 
 wave3Router.post('/vendors/scorecards', async (req, res) => {
@@ -377,6 +453,11 @@ wave3Router.post('/vendors/scorecards', async (req, res) => {
       create: { ...body, overallScore: overall, recommendation: recommend(overall) },
       update: { ...body, overallScore: overall, recommendation: recommend(overall) },
     });
+    void emitAudit(req, 'scorecard.created', 'VendorScorecard', row.id, {
+      module: 'procurement',
+      payload: { overallScore: overall, recommendation: row.recommendation },
+    });
+    eventBus.emitDomain('procurement.scorecard.created', row, 'procurement');
     return res.status(201).json({ success: true, data: row });
   } catch (err) { const z = zerr(err, res); if (z) return z; return res.status(500).json({ success: false, error: 'create failed' }); }
 });
@@ -401,19 +482,62 @@ wave3Router.get('/inventory/cycle-counts', async (req, res) => {
   return res.json({ success: true, data: rows, total: rows.length });
 });
 
+wave3Router.get('/inventory/cycle-counts/:id', async (req, res) => {
+  const row = await prisma.cycleCount.findUnique({ where: { id: req.params.id } });
+  if (!row) return res.status(404).json({ success: false, error: 'Count not found' });
+  return res.json({ success: true, data: row });
+});
+
 wave3Router.post('/inventory/cycle-counts', async (req, res) => {
   try {
     const body = CycleCreate.parse(req.body);
     const variance = body.countedQty - body.systemQty;
     const row = await prisma.cycleCount.create({ data: { ...body, variance, status: 'Pending' } });
+    void emitAudit(req, 'cycleCount.created', 'CycleCount', row.id, { module: 'inventory' });
+    eventBus.emitDomain('inventory.cyclecount.created', row, 'inventory');
     return res.status(201).json({ success: true, data: row });
   } catch (err) { const z = zerr(err, res); if (z) return z; return res.status(500).json({ success: false, error: 'create failed' }); }
+});
+
+const CYCLE_NEXT: Record<string, string[]> = {
+  Pending: ['Confirmed', 'Adjusted', 'Cancelled'],
+  Confirmed: [],
+  Adjusted: [],
+  Cancelled: [],
+};
+
+wave3Router.post('/inventory/cycle-counts/:id/status', async (req, res) => {
+  const Body = z.object({ status: z.enum(['Confirmed', 'Adjusted', 'Cancelled']) });
+  try {
+    const body = Body.parse(req.body);
+    const existing = await prisma.cycleCount.findUnique({ where: { id: req.params.id } });
+    if (!existing) return res.status(404).json({ success: false, error: 'Count not found' });
+    const allowed = CYCLE_NEXT[existing.status] || [];
+    if (!allowed.includes(body.status)) {
+      return res.status(409).json({ success: false, error: `Cannot move '${existing.status}' → '${body.status}'` });
+    }
+    const row = await prisma.cycleCount.update({ where: { id: existing.id }, data: { status: body.status } });
+    void emitAudit(req, 'cycleCount.status', 'CycleCount', row.id, {
+      module: 'inventory',
+      payload: { from: existing.status, to: body.status, variance: row.variance },
+    });
+    eventBus.emitDomain('inventory.cyclecount.status', row, 'inventory');
+    return res.json({ success: true, data: row });
+  } catch (err) { const z = zerr(err, res); if (z) return z; return res.status(500).json({ success: false, error: 'status failed' }); }
 });
 
 wave3Router.post('/inventory/cycle-counts/:id/confirm', async (req, res) => {
   const existing = await prisma.cycleCount.findUnique({ where: { id: req.params.id } });
   if (!existing) return res.status(404).json({ success: false, error: 'Count not found' });
+  if (existing.status !== 'Pending') {
+    return res.status(409).json({ success: false, error: `Cannot confirm '${existing.status}'` });
+  }
   const row = await prisma.cycleCount.update({ where: { id: existing.id }, data: { status: 'Confirmed' } });
+  void emitAudit(req, 'cycleCount.confirmed', 'CycleCount', row.id, {
+    module: 'inventory',
+    payload: { variance: row.variance },
+  });
+  eventBus.emitDomain('inventory.cyclecount.confirmed', row, 'inventory');
   return res.json({ success: true, data: row });
 });
 
@@ -489,6 +613,8 @@ wave3Router.post('/shipping/shipments', async (req, res) => {
   try {
     const body = ShipCreate.parse(req.body);
     const row = await prisma.shipment.create({ data: { ...body, status: 'Booked' } });
+    void emitAudit(req, 'shipment.created', 'Shipment', row.id, { module: 'shipping' });
+    eventBus.emitDomain('shipment.created', row, 'shipping');
     return res.status(201).json({ success: true, data: row });
   } catch (err: any) {
     const z = zerr(err, res); if (z) return z;
@@ -497,22 +623,68 @@ wave3Router.post('/shipping/shipments', async (req, res) => {
   }
 });
 
+const SHIP_NEXT: Record<string, string[]> = {
+  Booked: ['InTransit', 'Exception'],
+  InTransit: ['Delivered', 'Exception'],
+  Delivered: [],
+  Exception: ['InTransit'],
+};
+
+wave3Router.post('/shipping/shipments/:id/status', async (req, res) => {
+  const Body = z.object({ status: z.enum(['Booked', 'InTransit', 'Delivered', 'Exception']) });
+  try {
+    const body = Body.parse(req.body);
+    const ship = await prisma.shipment.findUnique({ where: { id: req.params.id } });
+    if (!ship) return res.status(404).json({ success: false, error: 'Shipment not found' });
+    const allowed = SHIP_NEXT[ship.status] || [];
+    if (!allowed.includes(body.status)) {
+      return res.status(409).json({ success: false, error: `Cannot move '${ship.status}' → '${body.status}'` });
+    }
+    const row = await prisma.shipment.update({
+      where: { id: ship.id },
+      data: {
+        status: body.status,
+        ...(body.status === 'Delivered' ? { actualDelivery: new Date() } : {}),
+      },
+      include: { events: { orderBy: { eventTime: 'desc' } } },
+    });
+    void emitAudit(req, 'shipment.status', 'Shipment', row.id, {
+      module: 'shipping',
+      payload: { from: ship.status, to: body.status },
+    });
+    eventBus.emitDomain('shipment.status', row, 'shipping');
+    return res.json({ success: true, data: row });
+  } catch (err) { const z = zerr(err, res); if (z) return z; return res.status(500).json({ success: false, error: 'status failed' }); }
+});
+
 wave3Router.post('/shipping/shipments/:id/events', async (req, res) => {
   try {
     const body = TrackEventCreate.parse(req.body);
     const ship = await prisma.shipment.findUnique({ where: { id: req.params.id } });
     if (!ship) return res.status(404).json({ success: false, error: 'Shipment not found' });
     const ev = await prisma.trackingEvent.create({ data: { shipmentId: ship.id, ...body } });
+    void emitAudit(req, 'shipment.trackingEvent', 'TrackingEvent', ev.id, {
+      module: 'shipping',
+      payload: { shipmentId: ship.id, status: body.status, location: body.location },
+    });
     // Auto-advance shipment status based on event status
     let newStatus = ship.status;
     if (body.status.toLowerCase().includes('transit')) newStatus = 'InTransit';
     else if (body.status.toLowerCase().includes('deliver')) newStatus = 'Delivered';
     else if (body.status.toLowerCase().includes('exception')) newStatus = 'Exception';
     if (newStatus !== ship.status) {
-      await prisma.shipment.update({
+      const updated = await prisma.shipment.update({
         where: { id: ship.id },
         data: { status: newStatus, ...(newStatus === 'Delivered' ? { actualDelivery: new Date() } : {}) },
       });
+      void emitAudit(req, 'shipment.status', 'Shipment', updated.id, {
+        module: 'shipping',
+        payload: { from: ship.status, to: newStatus, via: 'trackingEvent' },
+      });
+      if (newStatus === 'Delivered') {
+        void emitAudit(req, 'shipment.delivered', 'Shipment', updated.id, { module: 'shipping' });
+        eventBus.emitDomain('shipment.delivered', updated, 'shipping');
+      }
     }
     return res.status(201).json({ success: true, data: ev });
   } catch (err) { const z = zerr(err, res); if (z) return z; return res.status(500).json({ success: false, error: 'create failed' }); }
@@ -549,10 +721,18 @@ wave3Router.get('/trade/hs-codes', async (req, res) => {
   return res.json({ success: true, data: rows, total: rows.length });
 });
 
+wave3Router.get('/trade/hs-codes/:id', async (req, res) => {
+  const row = await prisma.hSCode.findUnique({ where: { id: req.params.id } });
+  if (!row) return res.status(404).json({ success: false, error: 'HS code not found' });
+  return res.json({ success: true, data: row });
+});
+
 wave3Router.post('/trade/hs-codes', async (req, res) => {
   try {
     const body = HSCreate.parse(req.body);
     const row = await prisma.hSCode.create({ data: body });
+    void emitAudit(req, 'hsCode.created', 'HSCode', row.id, { module: 'trade' });
+    eventBus.emitDomain('trade.hscode.created', row, 'trade');
     return res.status(201).json({ success: true, data: row });
   } catch (err: any) {
     const z = zerr(err, res); if (z) return z;
@@ -593,12 +773,20 @@ wave3Router.get('/hr/leave', async (req, res) => {
   return res.json({ success: true, data: rows, total: rows.length });
 });
 
+wave3Router.get('/hr/leave/:id', async (req, res) => {
+  const row = await prisma.leaveRequest.findUnique({ where: { id: req.params.id } });
+  if (!row) return res.status(404).json({ success: false, error: 'Leave not found' });
+  return res.json({ success: true, data: row });
+});
+
 wave3Router.post('/hr/leave', async (req, res) => {
   try {
     const body = LeaveCreate.parse(req.body);
     if (body.endDate < body.startDate) return res.status(400).json({ success: false, error: 'endDate must be ≥ startDate' });
     const days = Math.max(1, Math.ceil((body.endDate.getTime() - body.startDate.getTime()) / 86400000) + 1);
     const row = await prisma.leaveRequest.create({ data: { ...body, days, status: 'Pending' } });
+    void emitAudit(req, 'leave.created', 'LeaveRequest', row.id, { module: 'hr' });
+    eventBus.emitDomain('hr.leave.created', row, 'hr');
     return res.status(201).json({ success: true, data: row });
   } catch (err) { const z = zerr(err, res); if (z) return z; return res.status(500).json({ success: false, error: 'create failed' }); }
 });
@@ -611,6 +799,10 @@ wave3Router.post('/hr/leave/:id/approve', async (req, res) => {
     where: { id: existing.id },
     data: { status: 'Approved', approvedAt: new Date(), approvedBy: (req as any).user?.userId || null },
   });
+  void emitAudit(req, 'leave.approved', 'LeaveRequest', row.id, {
+    module: 'hr',
+    payload: { from: existing.status, to: 'Approved' },
+  });
   return res.json({ success: true, data: row });
 });
 
@@ -619,6 +811,24 @@ wave3Router.post('/hr/leave/:id/reject', async (req, res) => {
   if (!existing) return res.status(404).json({ success: false, error: 'Leave not found' });
   if (existing.status !== 'Pending') return res.status(409).json({ success: false, error: `Cannot reject '${existing.status}'` });
   const row = await prisma.leaveRequest.update({ where: { id: existing.id }, data: { status: 'Rejected' } });
+  void emitAudit(req, 'leave.rejected', 'LeaveRequest', row.id, {
+    module: 'hr',
+    payload: { from: existing.status, to: 'Rejected' },
+  });
+  return res.json({ success: true, data: row });
+});
+
+wave3Router.post('/hr/leave/:id/cancel', async (req, res) => {
+  const existing = await prisma.leaveRequest.findUnique({ where: { id: req.params.id } });
+  if (!existing) return res.status(404).json({ success: false, error: 'Leave not found' });
+  if (!['Pending', 'Approved'].includes(existing.status)) {
+    return res.status(409).json({ success: false, error: `Cannot cancel '${existing.status}'` });
+  }
+  const row = await prisma.leaveRequest.update({ where: { id: existing.id }, data: { status: 'Cancelled' } });
+  void emitAudit(req, 'leave.cancelled', 'LeaveRequest', row.id, {
+    module: 'hr',
+    payload: { from: existing.status, to: 'Cancelled' },
+  });
   return res.json({ success: true, data: row });
 });
 
@@ -648,6 +858,8 @@ wave3Router.post('/hr/attendance', async (req, res) => {
       create: { ...body, hoursWorked },
       update: { ...body, hoursWorked },
     });
+    void emitAudit(req, 'attendance.recorded', 'Attendance', row.id, { module: 'hr' });
+    eventBus.emitDomain('hr.attendance.recorded', row, 'hr');
     return res.status(201).json({ success: true, data: row });
   } catch (err) { const z = zerr(err, res); if (z) return z; return res.status(500).json({ success: false, error: 'create failed' }); }
 });

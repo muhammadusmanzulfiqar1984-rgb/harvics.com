@@ -3,13 +3,13 @@
   "home": {
     "welcome": "Dobrodošli u",
     "companyName": "Harwich",
-    "tagline": "Izvrsnost u premium potrošačkoj robi od 2019.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "Istražite proizvode",
     "contact": "Kontaktirajte nas",
     "learnMore": "Saznajte više",
-    "brandStatement": "Vodeća globalna tvrtka za robu široke potrošnje koja isporučuje vrhunske prehrambene proizvode u različitim kategorijama s međunarodnim standardima kvalitete.",
-    "taglineStart": "Izvrsnost u premium potrošačkim dobrima od",
-    "taglineYear": "2019.",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "London • Milano • New York",
     "categories": {
       "bakery": "Pekara",
@@ -81,7 +81,8 @@
       "specialOffers": "Posebne ponude",
       "promotions": "Promocije",
       "bulkOrders": "Popusti za velike narudžbe"
-    }
+    },
+    "startupAcademy": "Startup akademija"
   },
   "products": {
     "ourProducts": "Naši proizvodi",
@@ -119,7 +120,40 @@
     "whatsapp": "WhatsApp",
     "callNow": "Nazovite odmah",
     "sendEmail": "Pošalji e-poštu",
-    "messageUs": "Pošaljite nam poruku"
+    "messageUs": "Pošaljite nam poruku",
+    "getInTouch": "Javite nam se",
+    "locations": "Lokacije",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "Pošalji poruku",
+    "firstName": "Ime",
+    "firstNamePlaceholder": "Unesite svoje ime",
+    "lastName": "Prezime",
+    "lastNamePlaceholder": "Unesite svoje prezime",
+    "emailPlaceholder": "Unesite svoju email adresu",
+    "subject": "Predmet",
+    "subjectPlaceholder": "Unesite predmet",
+    "message": "Poruka",
+    "messagePlaceholder": "Napišite svoju poruku",
+    "send": "Poslati",
+    "eyebrow": "Započni brief",
+    "headline1": "Započni kratki pregled.",
+    "headline2": "Odgovaramo u roku od 24 sata.",
+    "subhead": "Recite nam svoju kategoriju, opseg i ciljno tržište. Stručnjak će vam se javiti s opcijama odabira izvora i indikativnom cijenom.",
+    "fullName": "Puno ime",
+    "fullNamePlaceholder": "Šah Tabraiz",
+    "company": "Tvrtka",
+    "companyPlaceholder": "Vaša organizacija",
+    "businessEmail": "Poslovna e-pošta",
+    "howCanWeHelp": "Kako možemo pomoći?",
+    "sending": "Slanje...",
+    "sendEnquiry": "Pošaljite upit",
+    "sentTitle": "Poruka poslana.",
+    "sentSub": "Naš tim će odgovoriti u roku od 24 sata.",
+    "directChannels": "Izravni kanali",
+    "trust1": "24-satno jamstvo odgovora",
+    "trust2": "Posvećeni upravitelj računa",
+    "trust3": "NDA available on request",
+    "trust4": "42 tržišta · 1247 pošiljki danas"
   },
   "media": {
     "title": "Medijski centar",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "Harvics Global Ventures",
-    "tagline": "Izvrsnost u premium potrošačkoj robi od 2019.",
-    "brandStatement": "Vodeća globalna tvrtka za robu široke potrošnje koja isporučuje vrhunske prehrambene proizvode u različitim kategorijama s međunarodnim standardima kvalitete.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "London • Milano • New York",
     "since": "Od 2019.",
     "harvicsNews": "Harvics News",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "Pridružite se Našoj Mreži",
     "newsletterTagline": "Primajte najnovije trgovinske informacije i ažuriranja tržišta",
     "activeShipments": "Aktivne Pošiljke",
-    "certifiedAudited": "Certificirano i Revidirano"
+    "certifiedAudited": "Certificirano i Revidirano",
+    "invalidEmail": "Unesite važeću adresu e-pošte",
+    "subscriptionSuccess": "Hvala što ste se pretplatili!",
+    "subscriptionError": "Nešto nije u redu. Molimo pokušajte ponovo."
   },
   "search": {
     "placeholder": "Pretražite proizvode, marke ili kategorije",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "Žao mi je, nisam to razumio/la. Možete li, molim vas, preformulirati?",
       "help": "Mogu vam pomoći s informacijama o proizvodima, narudžbama ili općim upitima. Što biste željeli znati?",
-      "contact": "Za dodatnu pomoć, kontaktirajte nas na support@harvics.com ili nazovite +1-800-HARVICS."
-    }
+      "contact": "Za dodatnu pomoć, kontaktirajte nas na support@harvics.com ili nazovite +1-800-HARVICS.",
+      "product": "Pregledajte naš katalog proizvoda iz izbornika ili mi recite koja vas kategorija zanima — FMCG, tekstil, logistika i više.",
+      "order": "Za naručivanje ili provjeru statusa posjetite distributerski portal ili kontaktirajte svog upravitelja računa.",
+      "about": "Harvics Global Ventures suverena je tvrtka za trgovinsku infrastrukturu s više od 20 godina u više od 40 zemalja."
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "Pritisnite Enter za slanje"
   },
   "common": {
     "chatWithUs": "Razgovarajte s nama",
@@ -324,7 +366,7 @@
       "namePlaceholder": "Unesite svoje puno ime",
       "nameRequired": "Ime je obavezno",
       "email": "E-mail adresa",
-      "emailPlaceholder": "your.email@example.com",
+      "emailPlaceholder": "vaša.e-pošta@example.com",
       "emailRequired": "E-pošta je obavezna",
       "emailInvalid": "Molimo unesite važeću adresu e-pošte",
       "phone": "Broj telefona",
@@ -730,12 +772,17 @@
       "gps-tracking": "GPS praćenje",
       "localization": "Lokalizacija",
       "workflows": "Tijekovi rada",
-      "admin": "Administrator"
+      "admin": "Administrator",
+      "modules": "Moduli"
     },
     "kpis": {
       "customers": "Kupci",
       "employees": "Zaposlenici",
-      "profit": "Dobit"
+      "profit": "Dobit",
+      "totalOrders": "Ukupno narudžbi",
+      "inventoryValue": "Inventarna vrijednost",
+      "logisticsEfficiency": "Logistička učinkovitost",
+      "revenue": "Prihod"
     },
     "domain": {
       "title": "CRM OS",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "Pregledajte i upravljajte odnosima s kupcima, interakcijama i kampanjama.",
       "loading": "Učitavanje...",
       "error": "Pogreška pri učitavanju CRM podataka"
+    },
+    "roleIndicator": {
+      "manager": "Prikaz upravitelja",
+      "executive": "Executive View",
+      "investor": "Pogled investitora",
+      "distributor": "Prikaz distributera",
+      "supplier": "Prikaz dobavljača",
+      "customer": "Pogled kupca"
     }
   },
   "supplierPortal": {
@@ -963,7 +1018,7 @@
   },
   "seo": {
     "home": {
-      "title": "Harvics Global Ventures | Premium Global Trading",
+      "title": "Harvics Global Ventures | Vrhunsko globalno trgovanje",
       "description": "Vodeća globalna trgovačka tvrtka koja isporučuje vrhunske proizvode u više od 10 industrija. Posluje u više od 50 zemalja od 2019. godine."
     },
     "about": {
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "O Harvicsu",
-    "subtitle": "Izvrsnost u premium potrošačkoj robi od 2019.",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "Naša priča",
     "story1": "Osnovan 2019. godine, Harvics je od vizionarske ideje izrastao u globalnog lidera u premium potrošačkoj robi. Naše putovanje definirano je neumornom težnjom za kvalitetom i predanošću inovacijama.",
     "story2": "Poslujemo u više od 40 zemalja, isporučujući proizvode koji obogaćuju živote i postavljaju nove standarde u industriji. Od naših skromnih početaka do naše globalne prisutnosti, naše vrijednosti ostaju nepromijenjene.",
@@ -1150,181 +1205,279 @@
   },
   "help": {
     "page": {
-      "title": "Help Center",
-      "subtitle": "Find the help you need"
+      "title": "Centar za pomoć",
+      "subtitle": "Pronađite pomoć koja vam je potrebna"
     },
-    "backToHelpCenter": "Back to Help Center",
+    "backToHelpCenter": "Povratak na centar za pomoć",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "Često postavljana pitanja",
+        "description": "Pronađite odgovore na uobičajena pitanja"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "Obratite se podršci",
+        "description": "Stupite u kontakt s našim timom za podršku"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "Korisnički vodiči",
+        "description": "Vodiči i upute korak po korak"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "Rješavanje problema",
+        "description": "Riješite uobičajene probleme"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "Pomoć za račun",
+        "description": "Upravljajte svojim računom i postavkama"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "Podrška za narudžbe",
+        "description": "Pomoć oko narudžbi i dostave"
       }
     },
     "account": {
-      "title": "Account Help",
-      "subtitle": "Manage your account settings and preferences",
-      "placeholder": "Account management and settings help content will appear here."
+      "title": "Pomoć za račun",
+      "subtitle": "Upravljajte postavkama i preferencijama svog računa",
+      "placeholder": "Ovdje će se pojaviti sadržaj pomoći za upravljanje računom i postavke."
     },
     "orders": {
-      "title": "Order Support",
-      "subtitle": "Track and manage your orders and deliveries",
-      "placeholder": "Order and delivery support content will appear here."
+      "title": "Podrška za narudžbe",
+      "subtitle": "Pratite i upravljajte svojim narudžbama i isporukama",
+      "placeholder": "Ovdje će se pojaviti sadržaj podrške za narudžbu i isporuku."
     },
     "guides": {
-      "title": "User Guides",
-      "subtitle": "Step-by-step guides to help you get the most out of Harvics",
+      "title": "Korisnički vodiči",
+      "subtitle": "Vodiči korak po korak koji će vam pomoći da izvučete najviše iz Harvicsa",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "Početak rada",
+          "description": "Naučite osnove"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "Postavljanje računa",
+          "description": "Postavite svoj račun"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "Kako naručiti",
+          "description": "Postavite i pratite narudžbe"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "Načini plaćanja",
+          "description": "Mogućnosti plaćanja i sigurnost"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "Slanje i dostava",
+          "description": "Informacije o isporuci"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "Povrati i povrat novca",
+          "description": "Politika i postupak povrata"
         }
       }
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "subtitle": "Common issues and quick solutions",
+      "title": "Rješavanje problema",
+      "subtitle": "Uobičajeni problemi i brza rješenja",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "Problemi s prijavom",
+          "description": "Problemi s prijavom"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "Problemi s plaćanjem",
+          "description": "Plaćanje se ne obrađuje"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "Kašnjenja isporuke",
+          "description": "Narudžba ne stiže"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "Pogreške web stranice",
+          "description": "Stranica se ne učitava"
         }
       }
     }
   },
   "checkout": {
-    "secureCheckout": "Secure Checkout",
-    "title": "Complete Your Order",
-    "subtitle": "Review your items, enter shipping details, and confirm payment securely.",
-    "shippingInfo": "Shipping Information",
-    "paymentMethod": "Payment Method",
+    "secureCheckout": "Sigurna naplata",
+    "title": "Dovršite svoju narudžbu",
+    "subtitle": "Pregledajte svoje artikle, unesite podatke o otpremi i sigurno potvrdite plaćanje.",
+    "shippingInfo": "Informacije o otpremi",
+    "paymentMethod": "Način plaćanja",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "Kreditna/debitna kartica",
+      "bankTransfer": "Bankovni prijenos (LC/TT)",
       "wallet": "HPay Digital Wallet"
     },
-    "orderSummary": "Order Summary",
+    "orderSummary": "Sažetak narudžbe",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
-      "total": "Total"
+      "subtotal": "Međuzbroj",
+      "shipping": "Dostava",
+      "calculatedNextStep": "Izračunato u sljedećem koraku",
+      "tax": "Porez",
+      "total": "Ukupno"
     },
-    "placeOrder": "Place Order",
-    "sslNotice": "Secured with 256-bit SSL encryption",
-    "continueShopping": "Continue Shopping",
+    "placeOrder": "Naručite",
+    "sslNotice": "Zaštićeno 256-bitnom SSL enkripcijom",
+    "continueShopping": "Nastavite kupovati",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "Ime",
+      "lastName": "Prezime",
+      "email": "E-mail",
+      "address": "Adresa",
+      "city": "Grad",
+      "country": "Zemlja"
     }
   },
   "history": {
     "hero": {
-      "title": "Our Journey",
-      "subtitle": "From a Dubai startup to a global enterprise spanning 42+ countries, 10 industry verticals, and 38 languages."
+      "title": "Naše putovanje",
+      "subtitle": "Od startupa iz Dubaija do globalnog poduzeća koje obuhvaća više od 42 zemlje, 10 industrijskih vertikala i 38 jezika."
     },
     "cta": {
-      "title": "Be Part of the Next Chapter",
-      "subtitle": "Join us as we scale to 60+ countries and build the future of AI-driven global commerce.",
-      "button": "View Careers"
+      "title": "Budite dio sljedećeg poglavlja",
+      "subtitle": "Pridružite nam se dok se širimo na više od 60 zemalja i gradimo budućnost globalne trgovine vođene umjetnom inteligencijom.",
+      "button": "Pogledajte karijere"
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "Osnovano u Dubaiju",
+        "description": "Harvics Global Ventures osnovan u UAE s vizijom da postane svjetska klasa FMCG i multi-vertikalni trgovački konglomerat. Pokrenute prve operacije vezane uz tekstil i robu široke potrošnje.",
+        "highlight": "Godina prva"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "Prvo međunarodno proširenje",
+        "description": "Prošireno na 10 zemalja diljem Europe, Bliskog istoka i južne Azije unatoč izazovima globalne pandemije. Pokrenute operacije digitalnog opskrbnog lanca i partnerstva za daljinsku distribuciju.",
+        "highlight": "10 zemalja"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "Viševertikalno širenje",
+        "description": "Pokrenuto 5 novih industrijskih vertikala: roba, industrijska oprema, minerali i rudarstvo, nafta i plin te nekretnine. Ukupni katalog proizvoda premašio je 500 SKU-ova u svim vertikalama.",
+        "highlight": "5 novih vertikala"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "Digitalna transformacija",
+        "description": "Napravio prvu verziju Harvics OS-a — poslovne platforme koju pokreće AI. Pokrenuti distributerski portali, mogućnosti e-trgovine i GPS praćenje voznog parka u stvarnom vremenu na svim tržištima.",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "Održivost i skala",
+        "description": "Predani poslovanju bez emisija ugljika. Dosegnuto više od 30 zemalja. Pokrenut HPay (platforma za digitalno plaćanje), rješenja za financiranje trgovine i predviđanje potražnje vođeno umjetnom inteligencijom u svim vertikalama.",
+        "highlight": "30+ zemalja"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "Globalno poduzeće",
+        "description": "Premašili ste prag od 42+ zemlje. Ugrađeni AI mehanizam sa 6 ML modela za optimizaciju strategije, potražnje, cijena, pokrivenosti i SKU-a. Pokrenuta višejezična platforma koja podržava 38 jezika.",
+        "highlight": "42+ zemlje"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "AI-First operativni sustav",
+        "description": "Lansiran Harvics OS v2 — objedinjeni operativni sustav za poduzeća s inteligencijom u stvarnom vremenu, Socket.io live feedovima, Alpha Engineom za planove napada na tržište i potpunom geografskom hijerarhijom od 8 razina.",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "Vizija naprijed",
+        "description": "Skaliranje na 60+ zemalja. Izgradnja prvog poduzeća FMCG-a kojim upravlja umjetna inteligencija u kojem svaka funkcija — nabava, logistika, financije, CRM — radi na prediktivnoj inteligenciji s pristupima ljudskog odobrenja.",
+        "highlight": "60+ Cilj"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "Praktična trgovina, nabava i AI akademija za osnivače — šest tjedana, sesije uživo, Harvics koridori.",
+    "navLabel": "Startup akademija",
+    "teaser": {
+      "eyebrow": "Akademija · Koridor program",
+      "title": "Startup akademija.",
+      "body": "Klasični trgovački obrt za osnivače - pronalaženje izvora, QC, stolovi za financiranje i opismenjavanje hodnika - uz Harvics tržnicu.",
+      "cta": "Uđite u Akademiju"
+    },
+    "hero": {
+      "alt": "Klasična predavaonica — Harvics Startup Academy",
+      "eyebrow": "Kohorta 01 · Q4 2026 · Program podrške",
+      "title": "Harvics Startup Academy",
+      "body": "Klasična škola trgovine za osnivače — pronalaženje izvora, koridorska trgovina i umjetna inteligencija koja funkcionira. Šest tjedana. Sesije uživo. Pravi operateri.",
+      "apply": "Prijavite se za Kohortu 01",
+      "seeProgramme": "Vidi program"
+    },
+    "stats": {
+      "founders": "Osnivači / kohorta",
+      "sessions": "Sesije uživo",
+      "weeks": "tjedna",
+      "verticals": "Trgovačke vertikale"
+    },
+    "why": {
+      "eyebrow": "01 · Zašto se pridružiti",
+      "title": "Izgradite tvrtku koja zapravo može trgovati.",
+      "body": "Ne predstavljanje kazališta. Naučite Zahtjev za ponudu do nagodbe, revnost traženja izvora, dopiranje do kupaca i automatizaciju — od operatera diljem Harvics koridora.",
+      "item1Title": "Praktični trgovinski sustavi",
+      "item1Body": "Kako institucionalni kupci kupuju — i kako vi ispunjavate.",
+      "item2Title": "Mreža koja šalje",
+      "item2Body": "Osnivači, distributeri i operateri u svim vertikalama.",
+      "item3Title": "AI koja radi",
+      "item3Body": "HarvyX, Fin voice i automatizacija operacija bez poštapalica.",
+      "imageAlt": "Klasična trgovačka mrtva priroda"
+    },
+    "knowledge": {
+      "eyebrow": "Znanje",
+      "title": "Proučavajte hodnik kao disciplinu.",
+      "body": "Kurikulum izvučen iz stvarne trgovačke prakse — ne generičkih slajdova za pokretanje.",
+      "imageAlt": "Velika klasična knjižnica"
+    },
+    "programme": {
+      "eyebrow": "02 · Program",
+      "title": "Kroz što ćete raditi",
+      "m1Title": "Marka i izvori",
+      "m1Body": "MOQ, QC vrata, tekstil i FMCG — od ateljea do hodnika.",
+      "m2Title": "Obavještajni podaci i dohvat",
+      "m2Body": "HarvyX laboratoriji, kupac ICP, praćenje koje dobiva odgovore.",
+      "m3Title": "Kapital i partneri",
+      "m3Body": "Putovi financiranja i partnerstva — nema lažnih bankovnih potraživanja.",
+      "m4Title": "Koridor komerc",
+      "m4Body": "Luke, putevi i kako se roba zapravo kreće preko tržišta.",
+      "m5Title": "Kvaliteta i marljivost",
+      "m5Body": "Navike inspekcije koje štite ugled i naselje.",
+      "m6Title": "Roba & FMCG",
+      "m6Body": "Od stvarnosti skladišta do robne marke i veleprodajne potražnje."
+    },
+    "tracks": {
+      "aEyebrow": "Staza A",
+      "aTitle": "Marka i trgovina",
+      "aBody": "Osnivači odjeće i robe široke potrošnje grade brend, veleprodaju i široku potražnju.",
+      "aAlt": "Klasična sala za sastanke",
+      "bEyebrow": "Staza B",
+      "bTitle": "Trgovina i ops",
+      "bBody": "Operateri za nabavu, logistiku i B2B povećavaju institucionalnu trgovinu.",
+      "bAlt": "Umrežavanje salona"
+    },
+    "network": {
+      "eyebrow": "03 · Mreža",
+      "title": "Upoznajte operatere, a ne publiku.",
+      "body": "Sastanci uživo i uredsko vrijeme u stilu salona s osnivačima, distributerima i operaterima Harvics koridora.",
+      "imageAlt": "Umrežavanje osnivača"
+    },
+    "rhythm": {
+      "eyebrow": "04 · Ritam",
+      "title": "Šest tjedana. Jasna kadenca.",
+      "w1": "1. tjedan",
+      "w1Body": "Orijentacija · Karta koridora · ICP radionica",
+      "w2": "2. tjedan",
+      "w2Body": "Dosezanje kupaca · HarvyX laboratorij",
+      "w3": "3. tjedan",
+      "w3Body": "Izvor & QC · Marljivost dobavljača",
+      "w4": "4. tjedan",
+      "w4Body": "Automatizacija · Fin voice · ops stog",
+      "w5": "5. tjedan",
+      "w5Body": "Financiranje i partnerstva",
+      "w6": "6. tjedan",
+      "w6Body": "Izlog osnivača · sljedeći koraci"
+    },
+    "apply": {
+      "eyebrow": "Prijave",
+      "title": "Prijavite se za Kohortu 01",
+      "body": "Ograničeno mjesto. Recite nam svoju tvrtku, vertikalu i što gradite.",
+      "emailCta": "Prijavite se mailom →",
+      "back": "Natrag u Harvics"
     }
   }
 }

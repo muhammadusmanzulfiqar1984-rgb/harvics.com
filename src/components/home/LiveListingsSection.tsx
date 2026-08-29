@@ -10,6 +10,11 @@ const PRODUCTS = [
     img: '/assets/harvictrade/products/harvics-energy-drink.jpg',
   },
   {
+    name: 'Premium Linen Shirt Capsule — SS26',
+    meta: 'EU · EXW Milan · MOQ 2,000 pcs',
+    img: '/assets/harvictrade/products/apparel-linen-still.webp',
+  },
+  {
     name: 'Hi-Vis Safety Jacket EN20471 Class 3',
     meta: 'Turkey · EXW Istanbul · 5,000 pcs',
     img: '/assets/harvictrade/products/safety-jacket.jpg',

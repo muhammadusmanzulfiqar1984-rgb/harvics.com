@@ -1,0 +1,190 @@
+Route,Size_Bytes,Severity,Is_Redirect,Has_TODO,Has_Placeholder,Has_Heading,Status_Summary
+[locale]/[vertical]/[category]/[item],2251,LOW,No,No,No,No,OK  
+[locale]/[vertical]/[category],1887,LOW,No,No,No,No,OK  
+[locale]/[vertical],645,LOW,No,No,No,No,OK  
+[locale]/about/brand-story,8719,LOW,No,No,No,Yes,OK  
+[locale]/about,1398,LOW,No,No,No,No,OK  
+[locale]/admin/company-dashboard,774,LOW,Yes,No,No,No,OK  
+[locale]/admin,447,CRITICAL,Yes,No,No,No,Empty  
+[locale]/admin/portal/[persona]/crm,1674,LOW,No,No,No,No,OK  
+[locale]/admin/portal/[persona],1663,LOW,No,No,No,No,OK  
+[locale]/admin/portal,8116,LOW,No,No,No,Yes,OK  
+[locale]/apps,513,CRITICAL,No,No,No,No,Empty  
+[locale]/careers,5717,LOW,No,No,No,Yes,OK  
+[locale]/checkout,5168,MEDIUM,No,No,Yes,Yes,OK   | Placeholder
+[locale]/competitor/dashboard,5461,LOW,No,No,No,Yes,OK  
+[locale]/competitor,449,CRITICAL,Yes,No,No,No,Empty  
+[locale]/competitor/products,10123,LOW,No,No,No,Yes,OK  
+[locale]/compliance,6301,LOW,No,No,No,Yes,OK  
+[locale]/contact,1805,MEDIUM,No,No,Yes,No,OK   | Placeholder
+[locale]/csr,12530,LOW,No,No,No,Yes,OK  
+[locale]/dashboard/company,673,LOW,No,No,No,No,OK  
+[locale]/dashboard/distributor/analytics,15588,LOW,No,No,No,Yes,OK  
+[locale]/dashboard/distributor/checkout,19481,MEDIUM,No,No,Yes,Yes,OK   | Placeholder
+[locale]/dashboard/distributor,235,CRITICAL,Yes,No,No,No,Empty  
+[locale]/dashboard,445,CRITICAL,Yes,No,No,No,Empty  
+[locale]/dashboard/supplier/analytics,10504,LOW,No,No,No,Yes,OK  
+[locale]/dashboard/supplier/checkout,16902,MEDIUM,No,No,Yes,Yes,OK   | Placeholder
+[locale]/dashboard/supplier,230,CRITICAL,Yes,No,No,No,Empty  
+[locale]/distributor/dashboard,3904,LOW,No,No,No,Yes,OK  
+[locale]/distributor/invoices,10097,LOW,No,No,No,Yes,OK  
+[locale]/distributor/orders/[id],10899,LOW,No,No,No,Yes,OK  
+[locale]/distributor/orders/new,13413,LOW,No,No,No,Yes,OK  
+[locale]/distributor/orders,11932,LOW,No,No,No,Yes,OK  
+[locale]/distributor/profile,11766,LOW,No,No,No,Yes,OK  
+[locale]/distributor-portal/account/documents,6036,LOW,No,No,No,Yes,OK  
+[locale]/distributor-portal/account,473,CRITICAL,Yes,No,No,No,Empty  
+[locale]/distributor-portal/account/profile,8582,MEDIUM,No,No,Yes,Yes,OK   | Placeholder
+[locale]/distributor-portal/account/users,6694,LOW,No,No,No,Yes,OK  
+[locale]/distributor-portal/coverage/heatmap,3821,MEDIUM,No,No,Yes,Yes,OK   | Placeholder
+[locale]/distributor-portal/coverage,479,CRITICAL,Yes,No,No,No,Empty  
+[locale]/distributor-portal/coverage/request,7021,MEDIUM,No,No,Yes,Yes,OK   | Placeholder
+[locale]/distributor-portal/coverage/territories,3425,LOW,No,No,No,Yes,OK  
+[locale]/distributor-portal/market/competitors,6068,MEDIUM,No,No,Yes,Yes,OK   | Placeholder
+[locale]/distributor-portal/market,471,CRITICAL,Yes,No,No,No,Empty  
+[locale]/distributor-portal/market/sellout,3357,LOW,No,No,No,Yes,OK  
+[locale]/distributor-portal/orders/history,6639,LOW,No,No,No,Yes,OK  
+[locale]/distributor-portal/orders/invoices,6442,LOW,No,No,No,Yes,OK  
+[locale]/distributor-portal/orders/new,9941,LOW,No,No,No,Yes,OK  
+[locale]/distributor-portal/orders/new/review,6136,LOW,No,No,No,Yes,OK  
+[locale]/distributor-portal/orders,471,CRITICAL,Yes,No,No,No,Empty  
+[locale]/distributor-portal,1220,LOW,No,No,No,Yes,OK  
+[locale]/distributor-portal/products/catalogue,5404,LOW,No,No,No,Yes,OK  
+[locale]/distributor-portal/products,477,CRITICAL,Yes,No,No,No,Empty  
+[locale]/distributor-portal/products/pricing,4856,LOW,No,No,No,Yes,OK  
+[locale]/distributor-portal/products/promotions,3438,LOW,No,No,No,Yes,OK  
+[locale]/distributor-portal/support/knowledge,5905,MEDIUM,No,No,Yes,Yes,OK   | Placeholder
+[locale]/distributor-portal/support,473,CRITICAL,Yes,No,No,No,Empty  
+[locale]/distributor-portal/support/tickets,7854,LOW,No,No,No,Yes,OK  
+[locale]/faq,4727,LOW,No,No,No,Yes,OK  
+[locale]/find-store,7993,LOW,No,No,No,Yes,OK  
+[locale]/global-map,205,CRITICAL,No,No,No,No,Empty  
+[locale]/harvics-house,2501,LOW,No,No,No,Yes,OK  
+[locale]/harvictrade/category/[slug],16271,LOW,No,No,No,Yes,OK  
+[locale]/harvictrade,16049,MEDIUM,No,No,Yes,Yes,OK   | Placeholder
+[locale]/harvictrade/rfq,10691,MEDIUM,No,No,Yes,Yes,OK   | Placeholder
+[locale]/harvictrade/sell,7692,LOW,No,No,No,Yes,OK  
+[locale]/health,2034,LOW,No,No,No,Yes,OK  
+[locale]/help/account,2226,LOW,No,No,No,Yes,OK  
+[locale]/help/guides,3462,LOW,No,No,No,Yes,OK  
+[locale]/help/orders,2215,LOW,No,No,No,Yes,OK  
+[locale]/help,4658,LOW,No,No,No,Yes,OK  
+[locale]/help/troubleshooting,3147,LOW,No,No,No,Yes,OK  
+[locale]/history,6408,LOW,No,No,No,Yes,OK  
+[locale]/investor-relations,24227,LOW,No,No,No,Yes,OK  
+[locale]/investors/governance,6696,LOW,No,No,No,Yes,OK  
+[locale]/investors,225,CRITICAL,Yes,No,No,No,Empty  
+[locale]/investors/publications,5384,LOW,No,No,No,Yes,OK  
+[locale]/investors/shares,5892,LOW,No,No,No,Yes,OK  
+[locale]/kids,20185,MEDIUM,No,No,Yes,Yes,OK   | Placeholder
+[locale]/leadership,4476,LOW,No,No,No,Yes,OK  
+[locale]/locations,8239,LOW,No,No,No,Yes,OK  
+[locale]/login/company,474,CRITICAL,Yes,No,No,No,Empty  
+[locale]/login/distributor,478,CRITICAL,Yes,No,No,No,Empty  
+[locale]/login/employee,3849,LOW,No,No,No,Yes,OK  
+[locale]/login/investor,4091,LOW,No,No,No,Yes,OK  
+[locale]/login,5584,LOW,No,No,No,Yes,OK  
+[locale]/login/supplier,474,CRITICAL,Yes,No,No,No,Empty  
+[locale]/media/contacts,5111,LOW,No,No,No,Yes,OK  
+[locale]/media/images,4679,LOW,No,No,No,Yes,OK  
+[locale]/media/news,5304,LOW,No,No,No,Yes,OK  
+[locale]/media,5753,LOW,No,No,No,Yes,OK  
+[locale]/money/club-rewards,5962,LOW,No,No,No,Yes,OK  
+[locale]/money/credit-cards,5614,LOW,No,No,No,Yes,OK  
+[locale]/money/exchange-rates,8661,LOW,No,No,No,Yes,OK  
+[locale]/money/financial-support,6906,LOW,No,No,No,Yes,OK  
+[locale]/money/home-insurance,4614,LOW,No,No,No,Yes,OK  
+[locale]/money,444,CRITICAL,Yes,No,No,No,Empty  
+[locale]/money/personal-loans,6667,LOW,No,No,No,Yes,OK  
+[locale]/money/rewards-card,4565,LOW,No,No,No,Yes,OK  
+[locale]/money/savings-investing,6085,LOW,No,No,No,Yes,OK  
+[locale]/money/travel-insurance,5643,LOW,No,No,No,Yes,OK  
+[locale]/money/travel-money,3581,LOW,No,No,No,Yes,OK  
+[locale]/newsletter,5079,MEDIUM,No,No,Yes,Yes,OK   | Placeholder
+[locale]/offers/bulk-orders,6500,LOW,No,No,No,Yes,OK  
+[locale]/offers,442,CRITICAL,Yes,No,No,No,Empty  
+[locale]/offers/promotions,5311,LOW,No,No,No,Yes,OK  
+[locale]/offers/special-offers,7236,LOW,No,No,No,Yes,OK  
+[locale]/os/competitor/analysis,4583,MEDIUM,No,No,Yes,Yes,OK   | Placeholder
+[locale]/os/competitor,775,LOW,No,No,No,No,OK  
+[locale]/os/competitor-intel,757,LOW,No,No,No,No,OK  
+[locale]/os/crm,741,LOW,No,No,No,No,OK  
+[locale]/os/executive,745,LOW,No,No,No,No,OK  
+[locale]/os/export/orders,4875,LOW,No,No,No,Yes,OK  
+[locale]/os/finance,724,LOW,No,No,No,No,OK  
+[locale]/os/finance/payments,466,CRITICAL,Yes,No,No,No,Empty  
+[locale]/os/finance/payments/reconciliation,9870,MEDIUM,No,No,Yes,No,OK   | Placeholder
+[locale]/os/finance/payments/verification-queue,9853,LOW,No,No,No,Yes,OK  
+[locale]/os/geo,6024,LOW,No,No,No,Yes,OK  
+[locale]/os/gps-tracking,745,LOW,No,No,No,No,OK  
+[locale]/os/hr,699,LOW,No,No,No,No,OK  
+[locale]/os/identity,2908,LOW,No,No,No,Yes,OK  
+[locale]/os/import/customs,3282,MEDIUM,No,No,Yes,Yes,OK   | Placeholder
+[locale]/os/import/dashboard,5957,LOW,No,No,No,Yes,OK  
+[locale]/os/import/orders/[id],7856,LOW,No,No,No,Yes,OK  
+[locale]/os/import/orders,9935,LOW,No,No,No,Yes,OK  
+[locale]/os/import-export,750,LOW,No,No,No,No,OK  
+[locale]/os/inventory,734,LOW,No,No,No,No,OK  
+[locale]/os/investor-relations,748,LOW,No,No,No,No,OK  
+[locale]/os/legal/cases,14280,HIGH,No,Yes,No,Yes,OK  | TODO 
+[locale]/os/legal/compliance,5344,LOW,No,No,No,Yes,OK  
+[locale]/os/legal/contracts,11781,HIGH,No,Yes,No,Yes,OK  | TODO 
+[locale]/os/legal/counterfeit,9082,HIGH,No,Yes,No,Yes,OK  | TODO 
+[locale]/os/legal,729,LOW,No,No,No,No,OK  
+[locale]/os/legal/trademarks,21519,LOW,No,No,No,Yes,OK  
+[locale]/os/localization,749,LOW,No,No,No,No,OK  
+[locale]/os/logistics/analytics,2671,LOW,No,No,No,Yes,OK  
+[locale]/os/logistics/fleet,4294,LOW,No,No,No,Yes,OK  
+[locale]/os/logistics/gps,3404,MEDIUM,No,No,Yes,Yes,OK   | Placeholder
+[locale]/os/logistics/map,3831,MEDIUM,No,No,Yes,Yes,OK   | Placeholder
+[locale]/os/logistics,735,LOW,No,No,No,No,OK  
+[locale]/os/market-distribution,4597,LOW,No,No,No,Yes,OK  
+[locale]/os/orders-sales,732,LOW,No,No,No,No,OK  
+[locale]/os,429,CRITICAL,Yes,No,No,No,Empty  
+[locale]/os/satellite,8637,LOW,No,No,No,Yes,OK  
+[locale]/os/supplier-procurement,16548,MEDIUM,No,No,Yes,Yes,OK   | Placeholder
+[locale]/os/supply-chain,8452,LOW,No,No,No,Yes,OK  
+[locale]/os/tier0,3044,LOW,No,No,No,No,OK  
+[locale]/os/workflows,747,LOW,No,No,No,No,OK  
+[locale],7128,LOW,No,No,No,No,OK  
+[locale]/portal/[persona]/crm,757,LOW,Yes,No,No,No,OK  
+[locale]/portal/[persona],1467,LOW,No,No,No,No,OK  
+[locale]/portal/distributor/ai,1788,LOW,No,No,No,No,OK  
+[locale]/portal/distributor/compliance,1984,LOW,No,No,No,Yes,OK  
+[locale]/portal/distributor/inventory,1994,LOW,No,No,No,Yes,OK  
+[locale]/portal/distributor/orders,4952,LOW,No,No,No,Yes,OK  
+[locale]/portal/distributor,612,LOW,No,No,No,No,OK  
+[locale]/portal/distributor/payments/history,7069,LOW,No,No,No,Yes,OK  
+[locale]/portal/distributor/payments/invoices,3495,LOW,No,No,No,No,OK  
+[locale]/portal/distributor/payments/make-payment,5331,MEDIUM,No,No,Yes,No,OK   | Placeholder
+[locale]/portal/distributor/payments,3620,LOW,No,No,No,Yes,OK  
+[locale]/portal/distributor/payments/receipts,5557,LOW,No,No,No,Yes,OK  
+[locale]/portal/distributor/retailers,1997,LOW,No,No,No,Yes,OK  
+[locale]/portal,432,CRITICAL,Yes,No,No,No,Empty  
+[locale]/portal/supplier/ai,1786,LOW,No,No,No,No,OK  
+[locale]/portal/supplier/contracts,1967,LOW,No,No,No,Yes,OK  
+[locale]/portal/supplier/deliveries,1991,LOW,No,No,No,Yes,OK  
+[locale]/portal/supplier,1815,LOW,No,No,No,Yes,OK  
+[locale]/portal/supplier/payments,1971,LOW,No,No,No,Yes,OK  
+[locale]/portal/supplier/payments/payment-status,7610,LOW,No,No,No,Yes,OK  
+[locale]/portal/supplier/payments/upload-invoice,8763,HIGH,No,Yes,Yes,No,OK  | TODO  | Placeholder
+[locale]/portal/supplier/pos,1952,LOW,No,No,No,Yes,OK  
+[locale]/portal/supplier/qc,1945,LOW,No,No,No,Yes,OK  
+[locale]/portal/supplier/rfqs,1899,LOW,No,No,No,Yes,OK  
+[locale]/portals,6545,LOW,No,No,No,Yes,OK  
+[locale]/privacy,4865,LOW,No,No,No,Yes,OK  
+[locale]/products/[category]/[subcategory],3175,LOW,No,No,No,No,OK  
+[locale]/products/[category],2071,LOW,No,No,No,No,OK  
+[locale]/products/confectionery/[productLine],9632,LOW,No,No,No,No,OK  
+[locale]/products,6195,LOW,No,No,No,Yes,OK  
+[locale]/reports/analytics,5935,LOW,No,No,No,Yes,OK  
+[locale]/reports,443,CRITICAL,Yes,No,No,No,Empty  
+[locale]/research,7431,LOW,No,No,No,Yes,OK  
+[locale]/sales/clearance,6641,LOW,No,No,No,Yes,OK  
+[locale]/sales/current-sales,6599,LOW,No,No,No,Yes,OK  
+[locale]/sales,443,CRITICAL,Yes,No,No,No,Empty  
+[locale]/sales/seasonal,5757,LOW,No,No,No,Yes,OK  
+[locale]/sitemap,4815,LOW,No,No,No,Yes,OK  
+[locale]/sourcing,19962,LOW,No,No,No,Yes,OK  
+[locale]/strategy,4529,LOW,No,No,No,Yes,OK  
+[locale]/terms,4931,LOW,No,No,No,Yes,OK  

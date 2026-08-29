@@ -256,6 +256,124 @@ router.get('/credits', async (_req: Request, res: Response): Promise<void> => {
   }
 });
 
+// ── POST /api/v1/databank/contacts/import ────────────────────────────────────
+// Body: { contacts: HxMappedContact[], dry_run?: boolean }
+// Insert-only with ON CONFLICT (source, source_id) DO NOTHING + email fingerprint skip.
+
+router.post('/contacts/import', async (req: Request, res: Response): Promise<void> => {
+  const contacts = Array.isArray(req.body?.contacts) ? req.body.contacts : [];
+  const dryRun = Boolean(req.body?.dry_run);
+  if (!contacts.length) {
+    res.status(400).json(fail('contacts[] required'));
+    return;
+  }
+  if (contacts.length > 200) {
+    res.status(400).json(fail('Max 200 contacts per request'));
+    return;
+  }
+
+  try {
+    const { pool } = await import('../../../packages/db');
+    let inserted = 0;
+    let skippedDup = 0;
+    let skippedEmpty = 0;
+    const results: Array<{ source_id: string | null; action: string }> = [];
+
+    for (const c of contacts) {
+      const source = String(c.source || 'd1').slice(0, 50);
+      const sourceId = c.source_id ? String(c.source_id).slice(0, 255) : null;
+      if (!sourceId) {
+        skippedEmpty++;
+        results.push({ source_id: null, action: 'skipped_empty' });
+        continue;
+      }
+      const email = c.email_pattern ? String(c.email_pattern).toLowerCase() : null;
+
+      if (email) {
+        const exist = await pool.query(
+          `SELECT id FROM hx_contacts WHERE lower(email_pattern) = $1 LIMIT 1`,
+          [email],
+        );
+        if (exist.rowCount && exist.rowCount > 0) {
+          skippedDup++;
+          results.push({ source_id: sourceId, action: 'skipped_email' });
+          continue;
+        }
+      }
+
+      if (dryRun) {
+        results.push({ source_id: sourceId, action: 'would_insert' });
+        inserted++;
+        continue;
+      }
+
+      const r = await pool.query(
+        `INSERT INTO hx_contacts (
+           source, source_id, first_name, last_name, full_name, title,
+           company_name, company_domain, country, vertical, email_pattern,
+           phone, linkedin_url, icp_score, in_nurture_pool, raw_json
+         ) VALUES (
+           $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16::jsonb
+         )
+         ON CONFLICT (source, source_id) DO NOTHING
+         RETURNING id`,
+        [
+          source,
+          sourceId,
+          c.first_name ?? null,
+          c.last_name ?? null,
+          c.full_name ?? null,
+          c.title ?? null,
+          c.company_name ?? null,
+          c.company_domain ?? null,
+          c.country ?? null,
+          c.vertical ?? null,
+          email,
+          c.phone ?? null,
+          c.linkedin_url ?? null,
+          Number.isFinite(Number(c.icp_score)) ? Math.round(Number(c.icp_score)) : 0,
+          Boolean(c.in_nurture_pool),
+          JSON.stringify(c.raw_json ?? {}),
+        ],
+      );
+      if (r.rowCount && r.rowCount > 0) {
+        inserted++;
+        results.push({ source_id: sourceId, action: 'inserted' });
+      } else {
+        skippedDup++;
+        results.push({ source_id: sourceId, action: 'skipped_conflict' });
+      }
+    }
+
+    res.json(
+      ok({
+        inserted,
+        skipped_dup: skippedDup,
+        skipped_empty: skippedEmpty,
+        dry_run: dryRun,
+        results: results.slice(0, 50),
+      }),
+    );
+
+    if (!dryRun && inserted > 0) {
+      const { emitOsEvent } = await import('../../../packages/lib/kafka');
+      void emitOsEvent({
+        sourceModule: 'HarvicsX',
+        eventType: 'lead.synced',
+        payload: {
+          inserted,
+          skipped_dup: skippedDup,
+          skipped_empty: skippedEmpty,
+          direction: 'd1_to_hx',
+        },
+      });
+    }
+  } catch (err) {
+    hxLogger.error(MODULE, '/contacts/import error', err);
+    res.status(500).json(fail('Failed to import contacts'));
+  }
+});
+
 // ── POST /api/v1/databank/enrich/:id ────────────────────────────────────────
 // Body: { job_type: 'apollo_enrich' | 'lusha_reveal' | 'email_verify' }
 
@@ -308,6 +426,21 @@ router.post('/enrich/:id', async (req: Request, res: Response): Promise<void> =>
 
     hxLogger.info(MODULE, 'manual enrich queued', { contactId, jobType, jobId, operatorId });
     res.status(202).json(ok({ job_id: jobId, job_type: jobType, contact_id: contactId }));
+
+    const { emitOsEvent } = await import('../../../packages/lib/kafka');
+    void emitOsEvent({
+      sourceModule: 'HarvicsX',
+      eventType: 'lead.enriched',
+      payload: {
+        contact_id: contactId,
+        job_id: jobId,
+        job_type: jobType,
+        stage: 'queued',
+        source_id: contact.source_id,
+        source: contact.source,
+      },
+      meta: { correlationId: jobId },
+    });
   } catch (err) {
     hxLogger.error(MODULE, '/enrich/:id error', err);
     res.status(500).json(fail('Failed to queue enrichment job'));

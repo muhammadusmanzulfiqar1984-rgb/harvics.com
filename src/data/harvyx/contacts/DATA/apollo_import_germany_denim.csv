@@ -1,0 +1,30 @@
+First Name,Last Name,Title,Company,Company Website,Email,Mobile Phone,Company Phone,LinkedIn URL,Notes
+Marco,Lanowy,Managing Director,Alberto GmbH & Co. KG,alberto-pants.com,m.lanowy@alberto-pants.com,+49 173 8762245,,https://de.linkedin.com/in/marco-lanowy-bb28901b,Tech-jeans golf/bike performance wear
+Marc,Freyberg,Managing Director,BRAX Leineweber GmbH & Co. KG,brax.com,marc.freyberg@brax.com,+49 173 8822365,,https://de.linkedin.com/in/marc-freyberg-824180b3,Premium casual trousers Brax Golf
+Valeska,Erkens,Chief Sales Officer,Closed GmbH,closed.com,valeska.erkens@closed.com,,,https://www.linkedin.com/in/valeska-erkens-3404b8232,New ownership Marc O'Polo — sourcing review window. HOT
+Maria,Berliant,Director Buying & Allocation,Closed GmbH,closed.com,maria.berliant@closed.com,,,https://de.linkedin.com/in/maria-berliant-ab42b5153,11+ yrs tenure
+Eveline,Schönleber,Managing Director & Partner,MAC Mode GmbH & Co. KGaA,mac-jeans.com,e.schoenleber@mac-jeans.com,,,https://de.linkedin.com/in/eveline-schoenleber-4731b869,Shareholder — top MAC target
+Alexandra,Storg,Head of Purchasing Accessories/Trims,MAC Mode GmbH & Co. KGaA,mac-jeans.com,astorg@mac-jeans.com,,,https://de.linkedin.com/in/alexandra-storg-33238019a,Trims pocketing hardware
+Margarethe,Pihofsky,Head of eCommerce,MAC Mode GmbH & Co. KGaA,mac-jeans.com,m.pihofsky@mac-jeans.com,,,https://de.linkedin.com/in/margarethe-pihofsky-71a4a38a,Corporate email only — gmail bypass dropped (UWG/GDPR). Low priority ecom role
+Sven,Wandres,Vorstand / Managing Director,MEYER-Hosen AG,meyer-hosen.de,s.wandres@meyer-hosen.com,,,https://www.linkedin.com/in/svenudo,Verify profile match on enrich. Own EU production
+Gerhard,Kränzle,EX-Hiltl — now Hirmer Group,Hirmer Group,hirmer.de,,,,https://de.linkedin.com/in/gerhard-kränzle-4a4a4a181,LEFT HILTL AUG 2023 — g.kraenzle@hiltl.de is dead. Do not import as Hiltl
+Roland,Strauss,CEO,HILTL Hosen-Manufaktur GmbH,hiltl.de,,,,,Kränzle's replacement — enrich for email+phone
+Thomas,Platen,Head of Product & Sourcing,Club of Comfort,club-of-comfort.de,t.platen@club-of-comfort.de,,,,High-stretch technical trousers. No LinkedIn found
+Thomas,Werschmöller,Head of Product & Sourcing,Atelier Gardeur GmbH,gardeur.de,t.werschmoeller@gardeur.de,,,,Fine chinos clean denim. No LinkedIn found
+Matthias,Panig,Regional GM Commerce Western Europe,Nudie Jeans,nudiejeans.com,matthias@nudiejeans.com,,,https://www.linkedin.com/in/matthias-panig-a6300217a,Commerce role — sourcing sits in Gothenburg HQ
+Chiara,Neri,Head of Production & Sourcing,ARMEDANGELS,armedangels.com,chiara.neri@armedangels.com,,,https://www.linkedin.com/in/chiara-neri-8156a96,Verified title upgrade — owns full pipeline. GOTS pitch. HOT
+Christian,Podlaha,Einkaufsleiter,Niemöller & Abel GmbH & Co. KG,niemoeller-abel.de,c.podlaha@niemoeller-abel.de,,,https://www.linkedin.com/in/christian-podlaha-ba26a11bb,B2B protective/uniform pants. Email pattern-guessed — verify
+Tolga,Taş,Head of Sourcing & Product,UNKNOWN — Cologne Bonn region,,,,,,COMPANY MISSING — enrich via Apollo name+region match. web.de address excluded (UWG risk)
+Kh.,Harbring,Director SCM,UNKNOWN — Regensburg (likely MAC cluster),,,,,,COMPANY MISSING — enrich via Apollo. freenet.de address excluded (UWG risk)
+Eva-Maria,Tinnefeld,Senior Sourcing Buyer,UNKNOWN — Düsseldorf,,,,,,COMPANY MISSING — enrich via Apollo. gmx.de address excluded (UWG risk)
+Sabine,Tramontana,Head of Sourcing and Design,CBR Fashion Group,cbr.de,sabine.tramontana@cbr.de,,,https://www.linkedin.com/in/sabine-tramontana-1a0ba394,Street One / Cecil volume denim. Ex-Esprit. HOT
+Miro,P.,Head of Buying,TAM Fashion GmbH (HAILYS),tamfashion.de,,,,,Surname hidden — Apollo people-search TAM Fashion. hotmail address excluded
+Yaw,Afram,Director of Ecommerce,CLINTON Großhandels-GmbH (Camp David),clinton.de,y.afram@clinton.de,,,https://de.linkedin.com/in/yaw-afram-97862822,Corporate email only — personal addresses dropped. Low priority ecom role
+Mirza,Mannan,Head of Buying & Procurement,cfab (formerly creamy fabrics),cfab.com,mirza@cfab.com,,,,Fabric sourcing + garment procurement. gmail excluded
+Kirsten,Klatte,Head of Buying & Product,Liberty Damenmoden GmbH,liberty-woman.com,k.klatte@liberty-woman.com,,,,Women's trousers casual separates
+Ersin,Binicioglu,Managing Director & Head of Product,Cross Jeans,cross-jeans.com,,,+49 30 40364120,,Pure-play denim 5-pocket. shop@ address useless — enrich for direct email
+,,Zentraleinkauf Bekleidung,Jeans Fritz Handelsgesellschaft mbH,jeans-fritz.de,,,+49 5731 8680,,COMPANY ONLY — Apollo people-search central buying titles. info@ is a black hole
+,,Sourcing & Quality Procurement,LERROS Moden GmbH,lerros.com,,,+49 2131 36610,,COMPANY ONLY — people-search purchasing titles
+,,Head of International Sourcing,Engelbert Strauss GmbH & Co. KG,strauss.de,,,+49 6050 9710,,COMPANY ONLY — people-search sourcing titles. Workwear cargo — biggest volume upside on list
+,,Strategic Sourcing Denim/Bottoms,Esprit Europe GmbH,esprit.com,,,+49 2102 1230,,CAUTION — Esprit insolvent 2024 EU ops wound down. Verify entity still buys before spending credits
+,,Head of Trouser Sourcing,Bugatti Fashion GmbH,bugatti-fashion.com,,,+49 5221 6380,,COMPANY ONLY — people-search trouser/product titles

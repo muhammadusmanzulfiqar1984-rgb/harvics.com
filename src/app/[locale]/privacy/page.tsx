@@ -40,7 +40,7 @@ export default function PrivacyPage() {
 
         <section>
           <h2 style={{ fontSize: '18px', fontWeight: 700, color: 'var(--harvics-burgundy)', marginBottom: '10px', letterSpacing: '-0.01em' }}>4. Data Retention</h2>
-          <p>We retain enquiry and contact data for a maximum of 24 months unless a longer period is required by law or an active commercial relationship exists. You may request deletion of your data at any time by contacting us at <a href="mailto:sales.uk@harvics.com" style={{ color: 'var(--harvics-gold)', textDecoration: 'none' }}>sales.uk@harvics.com</a>.</p>
+          <p>We retain enquiry and contact data for a maximum of 24 months unless a longer period is required by law or an active commercial relationship exists. You may request deletion of your data at any time by contacting us at <a href="mailto:info@harvics.com" style={{ color: 'var(--harvics-gold)', textDecoration: 'none' }}>info@harvics.com</a>.</p>
         </section>
 
         <section>
@@ -50,13 +50,13 @@ export default function PrivacyPage() {
 
         <section>
           <h2 style={{ fontSize: '18px', fontWeight: 700, color: 'var(--harvics-burgundy)', marginBottom: '10px', letterSpacing: '-0.01em' }}>6. Your Rights</h2>
-          <p>Under GDPR and applicable UK data protection law, you have the right to access, correct, delete, or restrict the processing of your personal data. To exercise these rights, contact our Data Protection contact at <a href="mailto:sales.uk@harvics.com" style={{ color: 'var(--harvics-gold)', textDecoration: 'none' }}>sales.uk@harvics.com</a>.</p>
+          <p>Under GDPR and applicable UK data protection law, you have the right to access, correct, delete, or restrict the processing of your personal data. To exercise these rights, contact our Data Protection contact at <a href="mailto:info@harvics.com" style={{ color: 'var(--harvics-gold)', textDecoration: 'none' }}>info@harvics.com</a>.</p>
         </section>
 
         <section>
           <h2 style={{ fontSize: '18px', fontWeight: 700, color: 'var(--harvics-burgundy)', marginBottom: '10px', letterSpacing: '-0.01em' }}>7. Contact</h2>
           <p>Harvics Global Ventures Ltd<br />London, United Kingdom<br />
-          Email: <a href="mailto:sales.uk@harvics.com" style={{ color: 'var(--harvics-gold)', textDecoration: 'none' }}>sales.uk@harvics.com</a><br />
+          Email: <a href="mailto:info@harvics.com" style={{ color: 'var(--harvics-gold)', textDecoration: 'none' }}>info@harvics.com</a><br />
           Phone: +44 7405 527427</p>
         </section>
 

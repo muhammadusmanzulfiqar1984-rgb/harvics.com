@@ -1,79 +1,103 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import LocalizationBar from '@/components/shared/LocalizationBar'
 
 interface LegalCase {
   id: string
-  case_title: string
-  case_type: string
+  caseTitle: string
+  caseType: string
   country: string
-  description: string
-  assigned_to: string
+  description?: string | null
+  assignedTo?: string | null
   status: string
-  hearing_date: string | null
-  documents: string[]
-  created_at: string
+  hearingDate?: string | null
+  documents?: string[]
+  createdAt: string
+}
+
+function authHeaders(): HeadersInit {
+  const token = typeof window !== 'undefined' ? localStorage.getItem('auth_token') || '' : ''
+  const h: HeadersInit = { 'Content-Type': 'application/json' }
+  if (token) (h as Record<string, string>).Authorization = `Bearer ${token}`
+  return h
 }
 
 export default function LegalCasesPage() {
   const [cases, setCases] = useState<LegalCase[]>([])
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
   const [showForm, setShowForm] = useState(false)
   const [selectedCase, setSelectedCase] = useState<LegalCase | null>(null)
   const [formData, setFormData] = useState({
-    case_title: '',
-    case_type: '',
+    caseTitle: '',
+    caseType: '',
     country: '',
     description: '',
-    assigned_to: '',
+    assignedTo: '',
     status: 'open',
-    hearing_date: '',
-    documents: [] as string[]
+    hearingDate: '',
   })
 
-  useEffect(() => {
-    loadCases()
-  }, [])
-
-  const loadCases = async () => {
+  const loadCases = useCallback(async () => {
     setLoading(true)
+    setError(null)
     try {
-      // TODO: Replace with actual API call
-      // const response = await apiClient.getLegalCases()
-      // if (response.data) {
-      //   setCases(response.data)
-      // }
-      
-      // Mock data for now
-      setCases([
-        {
-          id: '1',
-          case_title: 'Trademark Dispute - Brand XYZ',
-          case_type: 'Trademark',
-          country: 'US',
-          description: 'Dispute regarding trademark infringement',
-          assigned_to: 'John Doe',
-          status: 'open',
-          hearing_date: '2024-02-15',
-          documents: ['complaint.pdf'],
-          created_at: '2024-01-10T10:00:00Z'
-        }
-      ])
-    } catch (error) {
-      console.error('Error loading cases:', error)
+      const res = await fetch('/api/v2/legal/cases', { cache: 'no-store', headers: authHeaders() })
+      const json = await res.json()
+      if (!res.ok || json.success === false) throw new Error(json.error || `HTTP ${res.status}`)
+      setCases(json.data || [])
+    } catch (e: any) {
+      setError(e.message || 'Failed to load cases')
     } finally {
       setLoading(false)
     }
-  }
+  }, [])
+
+  useEffect(() => {
+    void loadCases()
+  }, [loadCases])
 
   const handleStatusUpdate = async (caseId: string, newStatus: string) => {
     try {
-      // TODO: Replace with actual API call
-      // await apiClient.updateLegalCaseStatus(caseId, newStatus)
-      setCases(cases.map(c => c.id === caseId ? { ...c, status: newStatus } : c))
-    } catch (error) {
-      console.error('Error updating case status:', error)
+      const res = await fetch(`/api/v2/legal/cases/${caseId}`, {
+        method: 'PATCH',
+        headers: authHeaders(),
+        body: JSON.stringify({ status: newStatus }),
+      })
+      const json = await res.json()
+      if (!res.ok || json.success === false) throw new Error(json.error)
+      await loadCases()
+    } catch (e) {
+      console.error(e)
+    }
+  }
+
+  const saveCase = async () => {
+    try {
+      setError(null)
+      const body = {
+        caseTitle: formData.caseTitle,
+        caseType: formData.caseType,
+        country: formData.country.toUpperCase(),
+        description: formData.description || null,
+        assignedTo: formData.assignedTo || null,
+        status: formData.status,
+        hearingDate: formData.hearingDate || null,
+      }
+      const url = selectedCase ? `/api/v2/legal/cases/${selectedCase.id}` : '/api/v2/legal/cases'
+      const res = await fetch(url, {
+        method: selectedCase ? 'PATCH' : 'POST',
+        headers: authHeaders(),
+        body: JSON.stringify(body),
+      })
+      const json = await res.json()
+      if (!res.ok || json.success === false) throw new Error(json.error)
+      setShowForm(false)
+      setSelectedCase(null)
+      await loadCases()
+    } catch (e: any) {
+      setError(e.message)
     }
   }
 
@@ -82,7 +106,7 @@ export default function LegalCasesPage() {
       open: 'bg-blue-100 text-blue-800',
       'in-progress': 'bg-harvics-gold/20 text-harvics-gold',
       closed: 'bg-green-100 text-green-800',
-      cancelled: 'bg-white text-harvics-gold/90'
+      cancelled: 'bg-white text-harvics-gold/90',
     }
     return statusStyles[status] || 'bg-white text-harvics-gold/90'
   }
@@ -92,147 +116,97 @@ export default function LegalCasesPage() {
   return (
     <div>
       <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
-      {/* Page Header - V16 Spec */}
       <div className="mb-6">
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-3xl font-bold text-harvics-gold mb-2">Legal Cases</h1>
-            <p className="text-harvics-gold/90">Manage legal cases and track their status</p>
+            <h1 className="mb-2 text-3xl font-bold text-harvics-gold">Legal Cases</h1>
+            <p className="text-harvics-gold/90">Module #39 — live case registry</p>
           </div>
-        <button
-          onClick={() => {
-            setSelectedCase(null)
-            setFormData({
-              case_title: '',
-              case_type: '',
-              country: '',
-              description: '',
-              assigned_to: '',
-              status: 'open',
-              hearing_date: '',
-              documents: []
-            })
-            setShowForm(true)
-          }}
-          className="bg-white text-harvics-gold/90 px-6 py-2 font-semibold hover:bg-white/90 transition-colors"
-        >
+          <button
+            type="button"
+            onClick={() => {
+              setSelectedCase(null)
+              setFormData({
+                caseTitle: '',
+                caseType: '',
+                country: '',
+                description: '',
+                assignedTo: '',
+                status: 'open',
+                hearingDate: '',
+              })
+              setShowForm(true)
+            }}
+            className="bg-white px-6 py-2 font-semibold text-harvics-gold/90 transition-colors hover:bg-white/90"
+          >
             + New Case
           </button>
         </div>
       </div>
 
-      {/* Case Form Modal */}
+      {error && <div className="mb-4 border border-red-300 bg-red-50 px-4 py-3 text-sm text-red-800">{error}</div>}
+
       {showForm && (
         <div className="fixed inset-0 z-50 overflow-y-auto">
-          <div className="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-            <div className="fixed inset-0 bg-white0 bg-opacity-75 transition-opacity" onClick={() => setShowForm(false)}></div>
-            
-            <div className="inline-block align-bottom bg-white text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full">
-              <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-2xl font-bold text-harvics-gold">
-                    {selectedCase ? 'Edit Case' : 'New Legal Case'}
-                  </h3>
-                  <button
-                    onClick={() => setShowForm(false)}
-                    className="text-harvics-gold/90 hover:text-harvics-gold/90"
-                  >
-                    <span className="text-2xl">&times;</span>
-                  </button>
-                </div>
-
+          <div className="flex min-h-screen items-center justify-center px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+            <div className="fixed inset-0 bg-black/40" onClick={() => setShowForm(false)} />
+            <div className="relative inline-block w-full max-w-2xl overflow-hidden bg-white text-left shadow-xl sm:my-8">
+              <div className="px-6 py-5">
+                <h3 className="mb-4 text-2xl font-bold text-harvics-gold">
+                  {selectedCase ? 'Edit Case' : 'New Legal Case'}
+                </h3>
                 <div className="space-y-4">
-                  <div>
-                    <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Case Title *</label>
-                    <input
-                      type="text"
-                      value={formData.case_title}
-                      onChange={(e) => setFormData({ ...formData, case_title: e.target.value })}
-                      className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
-                      required
-                    />
-                  </div>
+                  <input
+                    className="w-full border border-gray-200 px-3 py-2"
+                    placeholder="Case title *"
+                    value={formData.caseTitle}
+                    onChange={(e) => setFormData({ ...formData, caseTitle: e.target.value })}
+                  />
                   <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Case Type *</label>
-                      <input
-                        type="text"
-                        value={formData.case_type}
-                        onChange={(e) => setFormData({ ...formData, case_type: e.target.value })}
-                        className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Country *</label>
-                      <input
-                        type="text"
-                        value={formData.country}
-                        onChange={(e) => setFormData({ ...formData, country: e.target.value })}
-                        className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Description</label>
-                    <textarea
-                      value={formData.description}
-                      onChange={(e) => setFormData({ ...formData, description: e.target.value })}
-                      rows={4}
-                      className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
-                    />
-                  </div>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Assigned To</label>
-                      <input
-                        type="text"
-                        value={formData.assigned_to}
-                        onChange={(e) => setFormData({ ...formData, assigned_to: e.target.value })}
-                        className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Status</label>
-                      <select
-                        value={formData.status}
-                        onChange={(e) => setFormData({ ...formData, status: e.target.value })}
-                        className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
-                      >
-                        {statusOptions.map(status => (
-                          <option key={status} value={status}>{status.charAt(0).toUpperCase() + status.slice(1).replace('-', ' ')}</option>
-                        ))}
-                      </select>
-                    </div>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-harvics-gold/90 mb-1">Hearing Date</label>
                     <input
-                      type="date"
-                      value={formData.hearing_date}
-                      onChange={(e) => setFormData({ ...formData, hearing_date: e.target.value })}
-                      className="w-full px-3 py-2 border border-gray-200 focus:ring-2 focus:ring-black focus:border-transparent"
+                      className="border border-gray-200 px-3 py-2"
+                      placeholder="Case type *"
+                      value={formData.caseType}
+                      onChange={(e) => setFormData({ ...formData, caseType: e.target.value })}
+                    />
+                    <input
+                      className="border border-gray-200 px-3 py-2"
+                      placeholder="Country ISO *"
+                      value={formData.country}
+                      onChange={(e) => setFormData({ ...formData, country: e.target.value.toUpperCase() })}
                     />
                   </div>
+                  <textarea
+                    className="w-full border border-gray-200 px-3 py-2"
+                    placeholder="Description"
+                    rows={3}
+                    value={formData.description}
+                    onChange={(e) => setFormData({ ...formData, description: e.target.value })}
+                  />
+                  <input
+                    className="w-full border border-gray-200 px-3 py-2"
+                    placeholder="Assigned to"
+                    value={formData.assignedTo}
+                    onChange={(e) => setFormData({ ...formData, assignedTo: e.target.value })}
+                  />
+                  <input
+                    className="w-full border border-gray-200 px-3 py-2"
+                    type="date"
+                    value={formData.hearingDate}
+                    onChange={(e) => setFormData({ ...formData, hearingDate: e.target.value })}
+                  />
                 </div>
               </div>
-
-              <div className="bg-white px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-                <button
-                  onClick={() => {
-                    // TODO: Save case
-                    setShowForm(false)
-                  }}
-                  className="w-full inline-flex justify-center border border-transparent shadow-sm px-4 py-2 bg-white text-harvics-gold/90 font-semibold hover:bg-white/90 sm:ml-3 sm:w-auto"
-                >
-                  Save
+              <div className="flex justify-end gap-2 border-t px-6 py-4">
+                <button type="button" onClick={() => setShowForm(false)} className="border px-4 py-2 text-sm">
+                  Cancel
                 </button>
                 <button
-                  onClick={() => setShowForm(false)}
-                  className="mt-3 w-full inline-flex justify-center border border-gray-200 shadow-sm px-4 py-2 bg-white text-sm font-medium text-harvics-gold/90 hover:bg-white sm:mt-0 sm:w-auto"
+                  type="button"
+                  onClick={() => void saveCase()}
+                  className="bg-harvics-burgundy px-4 py-2 text-sm font-semibold text-harvics-cream"
                 >
-                  Cancel
+                  Save
                 </button>
               </div>
             </div>
@@ -240,77 +214,63 @@ export default function LegalCasesPage() {
         </div>
       )}
 
-      {/* Cases Table */}
-      <div className="bg-white border border-black200 overflow-hidden">
+      <div className="overflow-hidden border border-black200 bg-white">
         {loading ? (
-          <div className="p-8 text-center">
-            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-white mx-auto mb-4"></div>
-            <p className="text-harvics-gold/90">Loading cases...</p>
-          </div>
+          <div className="p-8 text-center text-harvics-gold/90">Loading cases…</div>
         ) : cases.length === 0 ? (
-          <div className="p-8 text-center">
-            <p className="text-harvics-gold/90">No legal cases found</p>
-          </div>
+          <div className="p-8 text-center text-harvics-gold/90">No legal cases — create the first case.</div>
         ) : (
           <div className="overflow-x-auto">
             <table className="w-full">
-              <thead className="bg-white border-b border-black200">
+              <thead className="border-b border-black200 bg-white">
                 <tr>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">Case Title</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">Type</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">Country</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">Assigned To</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">Status</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">Hearing Date</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-harvics-gold/90 uppercase tracking-wider">Actions</th>
+                  {['Title', 'Type', 'Country', 'Assigned', 'Status', 'Hearing', ''].map((h) => (
+                    <th key={h || 'act'} className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-harvics-gold/90">
+                      {h}
+                    </th>
+                  ))}
                 </tr>
               </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
+              <tbody className="divide-y divide-gray-200 bg-white">
                 {cases.map((legalCase) => (
-                  <tr key={legalCase.id} className="hover:bg-white">
-                    <td className="px-6 py-4 text-sm font-medium text-harvics-gold/90">
-                      {legalCase.case_title}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">
-                      {legalCase.case_type}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">
-                      {legalCase.country}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">
-                      {legalCase.assigned_to || 'Unassigned'}
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap">
+                  <tr key={legalCase.id} className="hover:bg-harvics-cream/30">
+                    <td className="px-6 py-4 text-sm font-medium text-harvics-gold/90">{legalCase.caseTitle}</td>
+                    <td className="px-6 py-4 text-sm">{legalCase.caseType}</td>
+                    <td className="px-6 py-4 text-sm">{legalCase.country}</td>
+                    <td className="px-6 py-4 text-sm">{legalCase.assignedTo || '—'}</td>
+                    <td className="px-6 py-4">
                       <select
                         value={legalCase.status}
-                        onChange={(e) => handleStatusUpdate(legalCase.id, e.target.value)}
-                        className={`px-2 py-1 text-xs font-semibold rounded-full border-0 ${getStatusBadge(legalCase.status)}`}
+                        onChange={(e) => void handleStatusUpdate(legalCase.id, e.target.value)}
+                        className={`rounded-full border-0 px-2 py-1 text-xs font-semibold ${getStatusBadge(legalCase.status)}`}
                       >
-                        {statusOptions.map(status => (
-                          <option key={status} value={status}>{status.charAt(0).toUpperCase() + status.slice(1).replace('-', ' ')}</option>
+                        {statusOptions.map((status) => (
+                          <option key={status} value={status}>
+                            {status}
+                          </option>
                         ))}
                       </select>
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-harvics-gold/90">
-                      {legalCase.hearing_date ? new Date(legalCase.hearing_date).toLocaleDateString() : 'N/A'}
+                    <td className="px-6 py-4 text-sm">
+                      {legalCase.hearingDate ? new Date(legalCase.hearingDate).toLocaleDateString() : '—'}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                    <td className="px-6 py-4 text-sm">
                       <button
+                        type="button"
                         onClick={() => {
                           setSelectedCase(legalCase)
                           setFormData({
-                            case_title: legalCase.case_title,
-                            case_type: legalCase.case_type,
+                            caseTitle: legalCase.caseTitle,
+                            caseType: legalCase.caseType,
                             country: legalCase.country,
-                            description: legalCase.description,
-                            assigned_to: legalCase.assigned_to,
+                            description: legalCase.description || '',
+                            assignedTo: legalCase.assignedTo || '',
                             status: legalCase.status,
-                            hearing_date: legalCase.hearing_date || '',
-                            documents: legalCase.documents
+                            hearingDate: legalCase.hearingDate ? legalCase.hearingDate.slice(0, 10) : '',
                           })
                           setShowForm(true)
                         }}
-                        className="text-white hover:text-harvics-gold/90"
+                        className="font-semibold text-harvics-gold"
                       >
                         Edit
                       </button>
@@ -325,4 +285,3 @@ export default function LegalCasesPage() {
     </div>
   )
 }
-

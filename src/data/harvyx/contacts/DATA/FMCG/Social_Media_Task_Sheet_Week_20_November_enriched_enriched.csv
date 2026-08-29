@@ -1,0 +1,34 @@
+Day,Category / Sub-Category,Images Required,Status,Remarks,Email,Website,Title,Fair,Phone,email_is_business,website_ok,title_valid,tier1_passes,tier2_points,outreach_category,company_name,description,phone,address,linkedin_url,industry,enrichment_status,company_name_scraped,phone_scraped,linkedin_company_url,score
+Monday,Sauces & Condiments,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Monday,Spices & Marinades,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Monday,Cooking Oils & Dressings,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Monday,Ready to Cook Items,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Monday,Pickles & Chutneys,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Tuesday,Biscuits & Cookies,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Tuesday,Cakes & Pastries,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Tuesday,Wafers & Wafer Bars,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Tuesday,Dry Cakes & Bakery Snacks,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Wednesday,Jellies,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Wednesday,Bubble Gum,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Wednesday,Sugar Candy,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Wednesday,Toffees,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Thursday,Non-Carbonated Drinks,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Thursday,Carbonated Drinks,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Thursday,Functional Drinks,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Thursday,Hot & Ready Drinks,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Thursday,Health Drinks,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Friday,Farfalle,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Friday,Fettuccine,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Friday,Bucatini,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Friday,Linguine,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Friday,Fusilli,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Friday,Savory Snacks,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Friday,Chips & Crisps,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Friday,Baked & Roasted Snacks,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Friday,Ready to Eat Bites,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Friday,Fusion Snacks,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Saturday,Frozen Vegetables,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Saturday,Frozen Meat,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Saturday,Chicken Nuggets,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Saturday,Fish Fillets,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0
+Sunday,Review / Fixes,4,,,,,,,,False,False,False,0,0,skip,,,,,,,partial,,,,0

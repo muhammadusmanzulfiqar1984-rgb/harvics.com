@@ -1,0 +1,40 @@
+Company,Country,City,HQ Address,Phone,General Email,Website,Likely Decision Titles,Status,Date Contacted,Follow-up Date,Notes,Email Check,company_name_scraped,description,phone_scraped,address,linkedin_company_url,industry,enrichment_status,score
+Gloria Jeans,Russia,Rostov-on-Don,"Rostov-on-Don, Russia",+7 863 210 11 11,info@gloria-jeans.ru,gloria-jeans.ru,Head of Sourcing,,,,,,,,,,,,partial,0
+O'STIN,Russia,Moscow,"Moscow, Russia",+7 495 777 49 99,info@o-stin.com,o-stin.com,Category Buyer Denim,,,,,,,,,,,,partial,0
+Zolla,Russia,Moscow,"Moscow, Russia",+7 495 660 58 00,info@zolla.com,zolla.com,Production Director,,,,,,,,,,,,partial,0
+Melon Fashion Group,Russia,St. Petersburg,"St. Petersburg, Russia",+7 812 332 00 00,info@mfg.ru,mfg.ru,Procurement Director,,,,,,,,,,,,partial,0
+Befree,Russia,St. Petersburg,"St. Petersburg, Russia",+7 812 332 00 00,via mfg.ru,befree.ru,Buying Manager,,,,,,,,,,,,partial,0
+Sela,Russia,Moscow,"Moscow, Russia",+7 495 988 30 88,info@sela.ru,sela.ru,Import Manager,,,,,,,,,,,,partial,0
+Finn Flare,Russia,Moscow,"Moscow, Russia",+7 495 980 97 97,info@finn-flare.ru,finn-flare.ru,Sourcing Director,,,,,,,,,,,,partial,0
+Familia,Russia,Moscow,"Moscow, Russia",+7 495 660 13 60,info@familia.ru,familia.ru,Commercial Director,,,,,,,,,,,,partial,0
+Zarina,Russia,St. Petersburg,"St. Petersburg, Russia",+7 812 332 00 00,via mfg.ru,zarina.ru,Product Director,,,,,,,,,,,,partial,0
+Love Republic,Russia,St. Petersburg,"St. Petersburg, Russia",+7 812 332 00 00,via mfg.ru,loverepublic.ru,Head of Buying,,,,,,,,,,,,partial,0
+Concept Club,Russia,St. Petersburg,"St. Petersburg, Russia",+7 812 332 00 00,via mfg.ru,conceptclub.ru,Sourcing Manager,,,,,Invalid,,,,,,,partial,0
+Colin's Russia,Russia,Moscow,"Moscow, Russia",+7 495 739 88 88,info@colins.ru,colins.ru,Category Head,,,,,OK,,,,,,,partial,0
+Lime,Russia,Moscow,"Moscow, Russia",+7 495 980 98 98,info@lime-shop.com,lime-shop.com,Production Manager,,,,,OK,,,,,,,partial,0
+Baon,Russia,Moscow,"Moscow, Russia",+7 495 785 82 82,info@baon.ru,baon.ru,Import Director,,,,,OK,,,,,,,partial,0
+Modis,Russia,Moscow,"Moscow, Russia",+7 495 775 55 45,info@modis.ru,modis.ru,Procurement Head,,,,,OK,,,,,,,partial,0
+Snow Queen,Russia,Moscow,"Moscow, Russia",+7 495 777 88 77,info@snowqueen.ru,snowqueen.ru,Supply Chain Director,,,,,OK,,,,,,,partial,0
+Sportmaster,Russia,Moscow,"Moscow, Russia",+7 495 777 77 77,info@sportmaster.ru,sportmaster.ru,Apparel Procurement,,,,,OK,,,,,,,partial,0
+Westland,Russia,Moscow,"Moscow, Russia",+7 495 258 58 00,info@westland.ru,westland.ru,Production Manager,,,,,OK,,,,,,,partial,0
+Forward,Russia,Moscow,"Moscow, Russia",+7 495 221 77 44,info@forward-sport.ru,forward-sport.ru,Buying Manager,,,,,OK,,,,,,,partial,0
+Savage,Russia,Moscow,"Moscow, Russia",+7 495 775 15 75,info@savage.ru,savage.ru,Procurement,,,,,OK,,,,,,,partial,0
+Kanzler,Russia,Moscow,"Moscow, Russia",+7 495 775 30 70,info@kanzler-style.ru,kanzler-style.ru,Sourcing,,,,,OK,,,,,,,partial,0
+Henderson,Russia,Moscow,"Moscow, Russia",+7 495 788 88 88,info@henderson.ru,henderson.ru,Production Director,,,,,OK,,,,,,,partial,0
+O'Hara,Russia,Moscow,"Moscow, Russia",+7 495 987 66 44,info@ohara.ru,ohara.ru,Buying Dept,,,,,OK,,,,,,,partial,0
+Incity,Russia,Moscow,"Moscow, Russia",+7 495 775 60 60,info@incity.ru,incity.ru,Category Manager,,,,,OK,,,,,,,partial,0
+Tom Farr,Russia,Moscow,"Moscow, Russia",+7 495 988 77 88,info@tomfarr.com,tomfarr.com,Import Dept,,,,,OK,,,,,,,partial,0
+Jeans Symphony,Russia,Moscow,"Moscow, Russia",+7 495 123 45 67,info@js-online.ru,js-online.ru,Denim Buyer,,,,,OK,,,,,,,partial,0
+Lady & Gentleman City,Russia,Moscow,"Moscow, Russia",+7 495 980 98 98,info@lgcity.ru,lgcity.ru,Commercial Director,,,,,OK,,,,,,,partial,0
+Snowimage,Russia,Moscow,"Moscow, Russia",+7 495 123 00 55,info@snowimage.ru,snowimage.ru,Supply Manager,,,,,OK,,,,,,,partial,0
+Truvor,Russia,Moscow,"Moscow, Russia",+7 495 775 20 20,info@truvor.ru,truvor.ru,Import Manager,,,,,OK,,,,,,,partial,0
+Street Beat,Russia,Moscow,"Moscow, Russia",+7 495 665 77 88,info@street-beat.ru,street-beat.ru,Procurement,,,,,OK,,,,,,,partial,0
+New Yorker Russia,Russia,Moscow,"Moscow, Russia",+7 495 123 22 44,via website,newyorker.de,Category Buyer,,,,,Invalid,,,,,,,partial,0
+Gloria Jeans Kids,Russia,Rostov-on-Don,"Rostov-on-Don, Russia",+7 863 210 11 11,info@gloria-jeans.ru,gloria-jeans.ru,Denim Category Buyer,,,,,OK,,,,,,,partial,0
+O'STIN Regional,Russia,Russia,Russia,+7 495 777 49 99,info@o-stin.com,o-stin.com,Regional Sourcing,,,,,OK,,,,,,,partial,0
+Baon Regional,Russia,Russia,Russia,+7 495 785 82 82,info@baon.ru,baon.ru,Production Head,,,,,OK,,,,,,,partial,0
+Lime Regional,Russia,Russia,Russia,+7 495 980 98 98,info@lime-shop.com,lime-shop.com,Buying Manager,,,,,OK,,,,,,,partial,0
+Familia Regional,Russia,Russia,Russia,+7 495 660 13 60,info@familia.ru,familia.ru,Import,,,,,OK,,,,,,,partial,0
+Concept Club Regional,Russia,Russia,Russia,+7 812 332 00 00,via mfg.ru,conceptclub.ru,Regional Buyer,,,,,Invalid,,,,,,,partial,0
+Zarina Regional,Russia,Russia,Russia,+7 812 332 00 00,via mfg.ru,zarina.ru,Regional Buyer,,,,,Invalid,,,,,,,partial,0
+Love Republic Regional,Russia,Russia,Russia,+7 812 332 00 00,via mfg.ru,loverepublic.ru,Regional Buyer,,,,,Invalid,,,,,,,partial,0

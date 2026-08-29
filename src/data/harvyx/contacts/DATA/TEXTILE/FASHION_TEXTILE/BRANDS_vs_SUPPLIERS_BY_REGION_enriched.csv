@@ -1,0 +1,24 @@
+category,count,with_email,warm,Email,Website,Title,Fair,Phone,email_is_business,website_ok,title_valid,tier1_passes,tier2_points,score,outreach_category,company_name,description,phone,address,linkedin_url,industry,enrichment_status
+BRANDS - UK,11,1,0,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+BRANDS - Europe,24,2,2,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+BRANDS - Americas,15,2,1,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+BRANDS - Middle East,14,0,0,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+BRANDS - Pakistan,25,2,3,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+BRANDS - India,9,2,0,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+BRANDS - China,13,0,1,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+BRANDS - Bangladesh,4,0,0,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+BRANDS - Africa,0,0,0,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+BRANDS - Asia Other,6,0,0,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+--- TOTAL BRANDS ---,1075,49,107,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+,,,,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+SUPPLIERS - UK,4,0,0,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+SUPPLIERS - Europe,11,0,1,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+SUPPLIERS - Americas,8,1,2,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+SUPPLIERS - Middle East,6,1,0,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+SUPPLIERS - Pakistan,11,1,0,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+SUPPLIERS - India,6,0,0,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+SUPPLIERS - China,8,0,0,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+SUPPLIERS - Bangladesh,1,0,0,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+SUPPLIERS - Africa,0,0,0,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+SUPPLIERS - Asia Other,7,1,1,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+--- TOTAL SUPPLIERS ---,461,20,25,,,,,,False,False,False,0,0,0,skip,,,,,,,partial

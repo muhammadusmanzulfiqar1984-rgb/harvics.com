@@ -10,11 +10,12 @@ const fmtMoney = (v: number) =>
 const channelColors = ['var(--harvics-burgundy)', '#007AFF', '#34C759', '#FF9500']
 
 export default function OrderListContent({ persona, locale }: { persona: string; locale: string }) {
-  const { data, source, lastUpdated } = useDomainData('orders')
+  const { data, source, lastUpdated, loading } = useDomainData('orders')
   const [tab, setTab] = useState<'orders' | 'analytics'>('orders')
   const [filter, setFilter] = useState<string>('All')
 
-  if (!data) return <div className="p-8 text-sm text-[#8E8E93]">Loading…</div>
+  if (loading) return <div className="p-8 text-sm text-[#8E8E93]">Loading…</div>
+  if (!data) return <div className="p-8 text-sm text-[#8E8E93]">No orders yet — create orders in Orders OS.</div>
 
   const statuses = ['All', 'Pending', 'In Transit', 'Completed']
   const filtered = filter === 'All' ? (data.orders || []) : (data.orders || []).filter((o: any) => o.status === filter)
@@ -31,16 +32,16 @@ export default function OrderListContent({ persona, locale }: { persona: string;
 
       {/* KPIs */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-        <KPICard label="Total Orders" value={data.total?.toLocaleString() || '2,140'} trend={14.2} sparkline={data.revenueByMonth}
+        <KPICard label="Total Orders" value={(data.total ?? 0).toLocaleString()} sparkline={data.revenueByMonth}
           icon={<svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" /></svg>}
         />
-        <KPICard label="Revenue" value={fmtMoney(data.revenue || 28400000)} trend={18.6} sparkline={data.revenueByMonth}
+        <KPICard label="Revenue" value={fmtMoney(data.revenue || 0)} sparkline={data.revenueByMonth}
           icon={<svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>}
         />
-        <KPICard label="In Transit" value={data.inTransit || 133} trend={-2.1}
+        <KPICard label="In Transit" value={data.inTransit || 0}
           icon={<svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10l2 .001M13 16H9m4 0h3m3 0h.01M16 6l3 4h.99" /></svg>}
         />
-        <KPICard label="Pending" value={data.pending || 187} trend={5.4}
+        <KPICard label="Pending" value={data.pending || 0}
           icon={<svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>}
         />
       </div>

@@ -31,12 +31,15 @@ export interface ProductCategory {
   products: Product[]
 }
 
+let cachedCategories: ProductCategory[] | null = null
+
 // Based on actual folder structure in public/assets/verticals/02-fmcg/categories
 export const getFolderBasedCategories = (): ProductCategory[] => {
+  if (cachedCategories) return cachedCategories
   try {
     const folderCategories = getAllCategories()
     
-    return folderCategories.map(category => ({
+    cachedCategories = folderCategories.map(category => ({
       name: category.name,
       key: category.key,
       icon: category.icon,
@@ -47,6 +50,7 @@ export const getFolderBasedCategories = (): ProductCategory[] => {
       subcategories: category.subcategories.map(sub => sub.slug),
       products: [] // Products are now loaded per subcategory
     }))
+    return cachedCategories
   } catch (error) {
     console.error('Error getting folder-based categories:', error)
     return []

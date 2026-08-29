@@ -9,7 +9,7 @@ const https = require('https');
 const app = express();
 const PORT = process.env.PORT || 5050;
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
-const MODEL = process.env.GROQ_MODEL || 'llama-3.1-8b-instant';
+const MODEL = process.env.GROQ_MODEL || 'openai/gpt-oss-120b';
 const HISTORY_TURNS = Number(process.env.HISTORY_TURNS || 2);
 const LEADS_FILE = path.join(__dirname, 'data', 'leads.json');
 const OUTREACH_FILE = path.join(__dirname, 'data', 'outreach.json');
@@ -1488,6 +1488,31 @@ app.get('/dashboard', async (req, res) => {
 
 app.get('/api/status', (req, res) => {
   res.json({ status: 'ok', model: MODEL, hasKey: !!GROQ_API_KEY });
+});
+
+/** Quick Groq connectivity check — GET /api/groq-test */
+app.get('/api/groq-test', async (req, res) => {
+  if (!GROQ_API_KEY || GROQ_API_KEY === 'your-groq-key-here') {
+    return res.status(500).json({ ok: false, model: MODEL, error: 'GROQ_API_KEY missing' });
+  }
+  try {
+    const r = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${GROQ_API_KEY}` },
+      body: JSON.stringify({
+        model: MODEL,
+        messages: [{ role: 'user', content: 'Reply OK' }],
+        max_tokens: 5,
+      }),
+    });
+    const data = await r.json();
+    if (!r.ok) {
+      return res.status(r.status).json({ ok: false, model: MODEL, error: data.error?.message || 'Groq request failed' });
+    }
+    res.json({ ok: true, model: MODEL, sample: data.choices?.[0]?.message?.content?.trim() || '' });
+  } catch (err) {
+    res.status(500).json({ ok: false, model: MODEL, error: err.message });
+  }
 });
 
 app.get('/api/vapi-config', (req, res) => {

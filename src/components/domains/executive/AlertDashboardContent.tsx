@@ -29,14 +29,18 @@ export default function AlertDashboardContent({ persona, locale }: AlertDashboar
   const loadAlerts = async () => {
     setLoading(true)
     try {
-      const anomaliesRes = await apiClient.request('/intelligence/anomalies')
+      const [anomaliesRes, incidentsRes] = await Promise.all([
+        apiClient.request('/intelligence/anomalies'),
+        apiClient.request('/t14/incidents'),
+      ])
       const anomalies = (anomaliesRes?.data as any)?.anomalies || []
-      
-      // Categorize anomalies by severity
+      const incPayload = (incidentsRes?.data as any)
+      const incidents: any[] = Array.isArray(incPayload) ? incPayload : (incPayload?.data ?? [])
+
       let critical = 0
       let warning = 0
       let info = 0
-      
+
       anomalies.forEach((anomaly: any) => {
         if (anomaly.severity === 'high' || anomaly.severity === 'critical') {
           critical++
@@ -46,13 +50,15 @@ export default function AlertDashboardContent({ persona, locale }: AlertDashboar
           info++
         }
       })
-      
+
+      const resolved = incidents.filter((i) => i.status === 'Resolved' || i.status === 'Closed').length
+
       setAlertData({
         critical,
         warning,
         info,
-        resolved: 234, // Mock resolved count
-        anomalies: anomalies
+        resolved,
+        anomalies,
       })
     } catch (error) {
       console.error('Error loading alerts:', error)

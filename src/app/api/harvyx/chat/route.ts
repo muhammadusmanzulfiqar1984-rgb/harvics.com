@@ -10,7 +10,7 @@ import { addOutreachItem } from '@/lib/harvyx/outreachStore';
 import { callOpenAI, callNvidia, OPENAI_CHAT_MODEL, NVIDIA_CHAT_MODEL } from '@/lib/openai';
 
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
-const GROQ_MODEL = process.env.GROQ_MODEL || 'llama-3.1-8b-instant';
+const GROQ_MODEL = process.env.GROQ_MODEL || 'openai/gpt-oss-120b';
 const GROQ_URL = 'https://api.groq.com/openai/v1/chat/completions';
 
 const SYSTEM_PROMPT = `You are HarvyX — the Sovereign Growth OS for Harvics Global, a denim textile trade company.
@@ -73,7 +73,7 @@ export async function POST(req: Request) {
 
     // 1. Groq — primary (fastest, free, reliable)
     if (GROQ_API_KEY) {
-      const modelsToTry = [GROQ_MODEL, 'llama-3.1-8b-instant', 'llama3-70b-8192'].filter(
+      const modelsToTry = [GROQ_MODEL, 'openai/gpt-oss-120b'].filter(
         (m, i, arr) => m && arr.indexOf(m) === i,
       );
       for (const model of modelsToTry) {

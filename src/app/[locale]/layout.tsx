@@ -2,8 +2,6 @@ import type { Metadata } from 'next'
 import { Inter, Playfair_Display, Noto_Sans_Arabic, JetBrains_Mono } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, setRequestLocale } from 'next-intl/server'
-import { notFound } from 'next/navigation'
-import dynamic from 'next/dynamic'
 import { RegionProvider } from '@/contexts/RegionContext';
 import { CountryProvider } from '@/contexts/CountryContext';
 import { FoundationProviders } from '@/components/shared/FoundationProviders';
@@ -13,35 +11,47 @@ import { SUPPORTED_LOCALES, getValidLocale } from '@/config/locales';
 import { isRTL } from '@/utils/rtl';
 import ConditionalHeader from '@/components/layout/ConditionalHeader';
 import ConditionalFooter from '@/components/layout/ConditionalFooter';
-import TrialChromeGuard from '@/components/layout/TrialChromeGuard';
-import HomeMotionGuard from '@/components/layout/HomeMotionGuard';
+import DeferredSiteChrome from '@/components/layout/DeferredSiteChrome';
 import { BackendStatusProvider } from '@/context/BackendStatusContext';
 import { GeographicSyncWrapper } from '@/components/shared/GeographicSyncWrapper';
 import { getFolderBasedCategories } from '@/data/folderBasedProducts';
 import { generateSEOMetadata, generateOrganizationSchema } from '@/lib/seo';
-import { Analytics } from '@vercel/analytics/next';
+import SiteAnalytics from '@/components/layout/SiteAnalytics';
 import '../globals.css'
 import '@/styles/apple-effects.css'
 
-// Lazy-load non-critical widgets so they don't block initial page render
-const GlobalScrollReveal = dynamic(() => import('@/components/shared/GlobalScrollReveal'))
-const FrontendWatchdogClient = dynamic(() => import('@/components/shared/FrontendWatchdogClient'))
-const ChatbotWidget = dynamic(() => import('@/features/ai/ChatbotWidget'))
-const AppleStyleScrollEffects = dynamic(() => import('@/components/effects/AppleStyleScrollEffects'))
-
-const inter = Inter({ subsets: ['latin'], display: 'swap' })
-const playfairDisplay = Playfair_Display({
-  subsets: ['latin', 'latin-ext'],
-  variable: '--font-playfair-display',
-  weight: ['400', '600', '700'],
+const inter = Inter({
+  subsets: ['latin'],
   display: 'swap',
+  preload: true,
+  adjustFontFallback: true,
 })
-const notoSansArabic = Noto_Sans_Arabic({ subsets: ['arabic'], variable: '--font-arabic', weight: ['400', '500', '600', '700'], display: 'swap' });
-const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono', weight: ['400', '500', '700'], display: 'swap' });
+const playfairDisplay = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair-display',
+  weight: ['400', '700'],
+  display: 'swap',
+  // Display font — don't compete with body Inter on first paint
+  preload: false,
+})
+const notoSansArabic = Noto_Sans_Arabic({
+  subsets: ['arabic'],
+  variable: '--font-arabic',
+  weight: ['400', '700'],
+  display: 'swap',
+  preload: false,
+})
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-mono',
+  weight: ['400', '700'],
+  display: 'swap',
+  preload: false,
+})
 
 export const metadata: Metadata = generateSEOMetadata({
   title: 'Harvics Global Ventures',
-  description: 'Leading global trading company delivering premium products across 10 industries. Textiles, FMCG, commodities, industrial solutions, minerals, oil & gas, real estate, sourcing, technology, and AI automation. Operating in 42+ countries since 2019.',
+  description: '42 Markets. 10 Industries. 14 Stages — Harvics Global Ventures. Verified supply. Protected settlement.',
   url: 'https://www.harvics.com',
 })
 
@@ -60,90 +70,14 @@ export default async function LocaleLayout({
   
   try {
     const resolvedParams = await params;
-    locale = resolvedParams?.locale || 'en';
-    
-    // Validate that the incoming `locale` parameter is valid
-    locale = getValidLocale(locale);
-
-    // Set request locale to enable static rendering
+    locale = getValidLocale(resolvedParams?.locale || 'en');
     setRequestLocale(locale);
-
-    // Providing all messages to the client side
-    // getMessages() automatically uses the locale from the request context and handles all fallbacks via i18n.ts
-    try {
-      const loadedMessages = await getMessages({ locale });
-      messages = loadedMessages || {};
-      
-      // If messages are empty, try direct import as fallback
-      if (!messages || Object.keys(messages).length === 0) {
-        console.warn('getMessages() returned empty, trying direct import...');
-        try {
-          const localeModule = await import(`@/locales/${locale}.json`);
-          messages = (localeModule.default as Record<string, any>) || {};
-        } catch (staticError) {
-          // Final fallback to English
-          try {
-            const enModule = await import(`@/locales/en.json`);
-            messages = (enModule.default as Record<string, any>) || {};
-            locale = 'en';
-          } catch (enError) {
-            console.error('Failed to load any translations:', enError);
-            messages = {};
-          }
-        }
-      }
-    } catch (error) {
-      // If getMessages fails, try direct import
-      console.warn('getMessages() failed, trying direct import:', error);
-      try {
-        const localeModule = await import(`@/locales/${locale}.json`);
-        messages = (localeModule.default as Record<string, any>) || {};
-      } catch (staticError) {
-        // Final fallback to English
-        try {
-          const enModule = await import(`@/locales/en.json`);
-          messages = (enModule.default as Record<string, any>) || {};
-          locale = 'en';
-        } catch (enError) {
-          console.error('Failed to load any translations:', enError);
-          messages = {};
-        }
-      }
-    }
+    messages = (await getMessages({ locale })) || {};
   } catch (error) {
     console.error('Error in LocaleLayout:', error);
-    // Use defaults if anything fails
     locale = 'en';
     messages = {};
     setRequestLocale('en');
-  }
-
-  // Ensure CRM namespace is always available for all locales.
-  // If the current locale messages don't define `crm`, fetch English from static file or backend
-  // so the whole CRM UI still works when you switch language.
-  // Only do this if messages were successfully loaded
-  if (messages && Object.keys(messages).length > 0) {
-    try {
-      if (!messages.crm) {
-        // Try static English file first
-        try {
-          const enModule = await import(`@/locales/en.json`);
-          const enMessages = (enModule.default as Record<string, any>) || {};
-          if (enMessages.crm) {
-            messages = {
-              ...messages,
-              crm: enMessages.crm,
-            };
-          }
-        } catch (staticError) {
-          // Silently fail - CRM messages are optional
-          console.warn('Could not load CRM messages from static file:', staticError);
-        }
-      }
-    } catch (crmError) {
-      // Silently fail - CRM messages are optional
-      console.warn('Failed to merge fallback CRM messages:', crmError);
-    }
   }
 
   // Determine text direction based on locale
@@ -168,6 +102,16 @@ export default async function LocaleLayout({
             __html: JSON.stringify(generateOrganizationSchema()),
           }}
         />
+        {/* LCP poster — hero paints before video loads */}
+        <link
+          rel="preload"
+          as="image"
+          href="/assets/shared/heroes/corridor-reel-poster.webp"
+          type="image/webp"
+        />
+        <link rel="dns-prefetch" href="https://widget.intercom.io" />
+        <link rel="dns-prefetch" href="https://js.intercomcdn.com" />
+        <link rel="dns-prefetch" href="https://static.zdassets.com" />
       </head>
       <body className={`${inter.className} ${playfairDisplay.variable} ${notoSansArabic.variable} ${jetbrainsMono.variable}`} suppressHydrationWarning>
         {/* Accessibility: Skip to content */}
@@ -180,37 +124,27 @@ export default async function LocaleLayout({
             <BackendStatusProvider>
             <FoundationProviders initialLocale={locale}>
               {/* Legacy Providers - Keep for backward compatibility */}
-              <ErrorBoundary>
-                  <RegionProvider>
-                    <CountryProvider>
-                      <GeographicSyncWrapper />
-                      {/* Header - global across all routes */}
-                      <ConditionalHeader categories={categories} />
-                      {/* Page content with transition */}
-                      <PageTransition>
-                        <div id="main-content" suppressHydrationWarning>
-                          {children}
-                        </div>
-                      </PageTransition>
-                      {/* Footer - global across all routes */}
-                      <ConditionalFooter />
-                      <FrontendWatchdogClient />
-                      {/* <BackgroundMusic /> — disabled per user request */}
-                      {/* <AutoBugDetector /> — hidden; re-enable when debugging */}
-                      <TrialChromeGuard>
-                        <GlobalScrollReveal />
-                        <ChatbotWidget />
-                      </TrialChromeGuard>
-                      <HomeMotionGuard>
-                        <AppleStyleScrollEffects />
-                      </HomeMotionGuard>
-                      <Analytics />
-                    </CountryProvider>
-                  </RegionProvider>
-              </ErrorBoundary>
+              <RegionProvider>
+                <CountryProvider>
+                  <GeographicSyncWrapper />
+                  {/* Header - global across all routes */}
+                  <ConditionalHeader categories={categories} />
+                  {/* Isolate page crashes so header/footer stay up */}
+                  <PageTransition>
+                    <div id="main-content" suppressHydrationWarning>
+                      {children}
+                    </div>
+                  </PageTransition>
+                  {/* Footer - global across all routes */}
+                  <ConditionalFooter />
+                  <SiteAnalytics />
+                </CountryProvider>
+              </RegionProvider>
             </FoundationProviders>
             </BackendStatusProvider>
           </ErrorBoundary>
+          {/* Must stay outside ALL ErrorBoundaries — Intercom/scroll must not blank the site */}
+          <DeferredSiteChrome />
         </NextIntlClientProvider>
       </body>
     </html>

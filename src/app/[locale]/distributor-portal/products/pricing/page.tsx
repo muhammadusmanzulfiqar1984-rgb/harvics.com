@@ -1,100 +1,105 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import { useLocale } from 'next-intl'
 import LocalizationBar from '@/components/shared/LocalizationBar'
 
+function authHeaders(): HeadersInit {
+  const token = typeof window !== 'undefined' ? localStorage.getItem('auth_token') || '' : ''
+  const h: HeadersInit = { 'Content-Type': 'application/json' }
+  if (token) (h as Record<string, string>).Authorization = `Bearer ${token}`
+  return h
+}
+
 export default function PriceLists() {
   const locale = useLocale()
-  const [selectedCountry, setSelectedCountry] = useState('US')
-  const [selectedChannel, setSelectedChannel] = useState('All')
+  const [lists, setLists] = useState<any[]>([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
 
-  const priceList = [
-    { sku: 'SKU-001', packSize: '200g', mrp: 3.50, distributorPrice: 2.50, margin: 28.6, vat: 5, effectiveFrom: '2025-01-01' },
-    { sku: 'SKU-002', packSize: '500ml', mrp: 2.50, distributorPrice: 1.80, margin: 28.0, vat: 5, effectiveFrom: '2025-01-01' },
-    { sku: 'SKU-003', packSize: '150g', mrp: 4.50, distributorPrice: 3.20, margin: 28.9, vat: 5, effectiveFrom: '2025-01-01' },
-    { sku: 'SKU-004', packSize: '250ml', mrp: 1.80, distributorPrice: 1.20, margin: 33.3, vat: 5, effectiveFrom: '2025-01-01' },
-    { sku: 'SKU-005', packSize: '100g', mrp: 2.00, distributorPrice: 1.40, margin: 30.0, vat: 5, effectiveFrom: '2025-01-01' },
-  ]
+  const load = useCallback(async () => {
+    setLoading(true)
+    setError(null)
+    try {
+      const res = await fetch('/api/wave5/price-lists', { cache: 'no-store', headers: authHeaders() })
+      const json = await res.json()
+      if (!res.ok || json.success === false) throw new Error(json.error || `HTTP ${res.status}`)
+      setLists(json.data || [])
+    } catch (e: any) {
+      setError(e.message)
+    } finally {
+      setLoading(false)
+    }
+  }, [])
+
+  useEffect(() => {
+    void load()
+  }, [load])
+
+  const rows = lists.flatMap((pl) =>
+    (pl.entries || []).map((e: any) => ({
+      sku: e.sku,
+      listName: pl.name,
+      currency: pl.currency,
+      unitPrice: e.unitPrice,
+      minQty: e.minQty,
+      discount: e.discount,
+      isDefault: pl.isDefault,
+    })),
+  )
 
   return (
     <div className="space-y-6">
       <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-harvics-gold">Price Lists</h1>
-        <div className="flex space-x-2">
-          <button className="bg-green-600 text-white px-4 py-2 font-semibold hover:opacity-90 transition-opacity">
-            Download Excel
-          </button>
-          <button className="bg-red-600 text-white px-4 py-2 font-semibold hover:opacity-90 transition-opacity">
-            Download PDF
-          </button>
+        <div>
+          <h1 className="text-2xl font-bold text-harvics-gold">Price Lists</h1>
+          <p className="text-sm text-harvics-gold/80">Live from CPQ Module #9 — manage lists in OS CPQ</p>
         </div>
+        <a
+          href={`/${locale}/os/cpq`}
+          className="border border-harvics-gold/40 px-4 py-2 text-sm font-semibold text-harvics-burgundy"
+        >
+          Open CPQ
+        </a>
       </div>
 
-      {/* Filters */}
-      <div className="bg-white p-4 border border-black200 shadow-sm">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Country</label>
-            <select
-              value={selectedCountry}
-              onChange={(e) => setSelectedCountry(e.target.value)}
-              className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
-            >
-              <option value="US">United States</option>
-              <option value="PK">Pakistan</option>
-              <option value="AE">UAE</option>
-            </select>
-          </div>
-          <div>
-            <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Channel</label>
-            <select
-              value={selectedChannel}
-              onChange={(e) => setSelectedChannel(e.target.value)}
-              className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
-            >
-              <option value="All">All Channels</option>
-              <option value="GT">GT</option>
-              <option value="MT">MT</option>
-              <option value="HoReCa">HoReCa</option>
-            </select>
-          </div>
-        </div>
-      </div>
+      {error && <div className="border border-red-300 bg-red-50 px-4 py-3 text-sm text-red-800">{error}</div>}
 
-      {/* Price List Table */}
-      <div className="bg-white border border-black200 shadow-sm overflow-hidden">
-        <div className="overflow-x-auto">
-          <table className="w-full">
-            <thead className="bg-white">
-              <tr>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">SKU</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Pack Size</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">MRP</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Distributor Price</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Margin %</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">VAT/GST</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Effective From</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-200">
-              {priceList.map((item) => (
-                <tr key={item.sku} className="hover:bg-white">
-                  <td className="px-6 py-4 font-semibold text-harvics-gold/90">{item.sku}</td>
-                  <td className="px-6 py-4 text-sm text-harvics-gold/90">{item.packSize}</td>
-                  <td className="px-6 py-4 font-semibold text-harvics-gold/90">${item.mrp.toFixed(2)}</td>
-                  <td className="px-6 py-4 font-semibold text-white">${item.distributorPrice.toFixed(2)}</td>
-                  <td className="px-6 py-4 text-sm font-semibold text-green-600">{item.margin.toFixed(1)}%</td>
-                  <td className="px-6 py-4 text-sm text-harvics-gold/90">{item.vat}%</td>
-                  <td className="px-6 py-4 text-sm text-harvics-gold/90">{item.effectiveFrom}</td>
+      <div className="overflow-hidden border border-black200 bg-white shadow-sm">
+        {loading ? (
+          <p className="p-8 text-center text-harvics-gold/90">Loading price lists…</p>
+        ) : rows.length === 0 ? (
+          <p className="p-8 text-center text-harvics-gold/90">No SKUs priced yet — add entries in CPQ → Price lists.</p>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full">
+              <thead className="bg-white">
+                <tr>
+                  {['SKU', 'List', 'Min qty', 'Unit price', 'Discount %', 'Currency', 'Default'].map((h) => (
+                    <th key={h} className="px-6 py-3 text-left text-xs font-semibold uppercase text-harvics-gold/90">
+                      {h}
+                    </th>
+                  ))}
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                {rows.map((item, i) => (
+                  <tr key={`${item.sku}-${i}`} className="hover:bg-harvics-cream/30">
+                    <td className="px-6 py-4 font-semibold text-harvics-gold/90">{item.sku}</td>
+                    <td className="px-6 py-4 text-sm">{item.listName}</td>
+                    <td className="px-6 py-4 text-sm">{item.minQty}</td>
+                    <td className="px-6 py-4 font-semibold">{item.unitPrice.toFixed(2)}</td>
+                    <td className="px-6 py-4 text-sm">{item.discount}%</td>
+                    <td className="px-6 py-4 text-sm">{item.currency}</td>
+                    <td className="px-6 py-4 text-sm">{item.isDefault ? 'Yes' : '—'}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
       </div>
     </div>
   )
 }
-

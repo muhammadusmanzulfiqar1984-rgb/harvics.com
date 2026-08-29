@@ -1,0 +1,14 @@
+{
+  "name": "harvyx-outreach",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "HarvyX outreach pipeline: leads → DeepSeek → Resend",
+  "scripts": {
+    "start": "node index.js",
+    "dry": "DRY_RUN=true node index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

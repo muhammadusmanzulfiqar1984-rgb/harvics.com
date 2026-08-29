@@ -1,24 +1,21 @@
 'use client'
 
-import React from 'react'
-import { useLocale } from 'next-intl'
-import { usePathname } from 'next/navigation'
-import DashboardLayout from '@/components/layouts/DashboardLayout'
-import HRDomainContent from '@/components/os-domains/HRDomainContent'
+import HarvicsOSShell from '@/components/shared/HarvicsOSShell'
+import HRModuleTwentyNine from '@/components/os-domains/HRModuleTwentyNine'
 
+/** Module #29 — HR Core & Payroll */
 export default function HROSPage() {
-  const locale = useLocale()
-  const pathname = usePathname()
-  
-  const persona = pathname?.includes('/portal/distributor') ? 'distributor' :
-                  pathname?.includes('/portal/supplier') ? 'supplier' : 'company'
-
   return (
-    <DashboardLayout
-      portal={persona}
-      pageTitle="HR OS"
+    <HarvicsOSShell
+      title="HR Core & Payroll"
+      subtitle="Module #29 — SAP+ people · leave · attendance · payroll"
+      activeDomain="hr"
+      breadcrumbs={[
+        { label: 'OS', href: '/os' },
+        { label: 'HR' },
+      ]}
     >
-      <HRDomainContent persona={persona} locale={locale} />
-    </DashboardLayout>
+      <HRModuleTwentyNine />
+    </HarvicsOSShell>
   )
 }

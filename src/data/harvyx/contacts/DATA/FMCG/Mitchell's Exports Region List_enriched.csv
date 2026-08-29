@@ -1,0 +1,11 @@
+Europe,Unnamed: 1,Middle East,Unnamed: 3,North Africa,Unnamed: 5,West Africa,Unnamed: 7,East Africa,Unnamed: 9,Central Africa,Unnamed: 11,North America,Unnamed: 13,South America,Unnamed: 15,South-East Asia,Unnamed: 17,Central Asia,Unnamed: 19,South Asia,Unnamed: 21,East Asia,Unnamed: 23,Email,Website,Title,Fair,Phone,email_is_business,website_ok,title_valid,tier1_passes,tier2_points,score,outreach_category,company_name,description,phone,address,linkedin_url,industry,enrichment_status
+Positive,Negative,Positive,Negative,Positive,Negative,Positive,Negative,Positive,Negative,Positive,Negative,Positive,Negative,Positive,Negative,Positive,Negative,Positive,Negative,Positive,Negative,Positive,Negative,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Germany,Poland,UAE,Qatar,,Egypt,,Nigeria,,Kenya,,Cameroon,United States,Mexico,,Brazil,,Singapore,,Kazakhstan,,Sri Lanka,,China,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+United Kingdom,Sweden,KSA,Kuwait,,Morocco,,Ghana,,Tanzania,,Democratic Republic of Congo,Canada,,,Argentina,,Malaysia,,Uzbekistan,,Nepal,,Japan,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Italy,Switzerland,,Oman,,Algeria,,Côte d’Ivoire,,Uganda,,Gabon,,,,Chile,,Thailand,,Turkmeensitan,,,,South Korea,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Spain,Farance,,Bahrain,,Tunissia,,Senegal,,Rwanda,,Republic of Cong,,,,Colombia,,Indonesia,,Kyrgyzstan,,,,Taiwan,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Netherlands,,,Jordan,,Libya,,Benin,,Ethiopia,,Equatorial Guinea,,,,Peru,,Vietnam,,Tajikistan,,,,Hong Kong,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+Belgium,,,Turkey,,,,Togo,,South Sudan,,,,,,Ecuador,,Philippines,,,,,,,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+,,,Iraq,,,,Guinea,,,,,,,,,,Cambodia,,,,,,,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+,,,Lebanon,,,,,,,,,,,,,,Myanmar,,,,,,,,,,,,False,False,False,0,0,0,skip,,,,,,,partial
+,,,Syria,,,,,,,,,,,,,,,,,,,,,,,,,,False,False,False,0,0,0,skip,,,,,,,partial

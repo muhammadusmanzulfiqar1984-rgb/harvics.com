@@ -17,7 +17,7 @@ async function getLeadsDb(): Promise<D1Database | null> {
 }
 
 export async function GET(request: Request) {
-  const authError = authenticate(request)
+  const authError = await authenticate(request)
   if (authError) return authError
 
   try {

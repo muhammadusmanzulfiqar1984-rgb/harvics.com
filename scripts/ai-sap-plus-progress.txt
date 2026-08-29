@@ -1,0 +1,27 @@
+# HARVICS AI-SAP+ progress
+
+## Difference vs classic SAP
+Classic SAP = transactions + reports.
+HARVICS AI-SAP+ = same document spine **plus** Groq LLM advisors on live OS data (with heuristic fallback).
+
+## Core AI layer
+- `backend/src/services/aiService.ts` — Groq helpers: scoreLead, draftEmail, explainVariance, arCollectionsCoach, apPaymentAdvisor, glCloseAdvisor, dealRiskCoach, domainCopilot, domainAdvise, varianceLineCommentary
+- `OsSapAiPanel` — shared UI in every module workspace
+- `POST /api/intelligence/advise` — domain facts → LLM advice
+- `POST /api/intelligence/copilot/chat` — facts-first Groq copilot
+- Finance specialty: `/api/finance/ai/{gl-close,ar-collections,ap-payments,controlling-variance}`
+- Variance #44 generate uses real Groq line commentary
+- CRM #8: AI score / bulk score / email draft in Module8 (not only Smart CRM)
+
+## Try locally
+1. Ensure `GROQ_API_KEY` in `.env.local` (already set)
+2. Backend :4000 · Frontend :3333
+3. Open `/en/os/finance` → **Period-close AI**
+4. `/en/os/ar-aging` → **Collections coach**
+5. `/en/os/ap-aging` → **Payment-run AI**
+6. `/en/os/controlling` → **Variance AI (CFO)**
+7. `/en/os/crm` → **AI bulk score** / per-lead **AI score** + **AI email**
+
+## Depth note
+Finance + CRM have the deepest domain-specific AI.
+#9–#72 all have OsSapAiPanel via `/api/intelligence/advise` with domain prompts + live facts where wired.

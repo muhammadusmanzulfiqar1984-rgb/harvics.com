@@ -283,7 +283,7 @@ const OperatingModelSection: React.FC<{ tone?: OpModelTone }> = ({ tone = 'dark'
                     { num: '100%', label: 'Tested', sub: 'Quality Assured', body: 'Every product passes ISO, HACCP, BRC and Halal multi-stage certification before dispatch.' },
                     { num: '72h', label: 'Transit', sub: 'Fast Logistics', body: 'Multi-modal freight — air, sea, road — with real-time container tracking and SLA guarantees.' },
                     { num: '24/7', label: 'Monitoring', sub: 'AI-Powered', body: 'Predictive demand forecasting and automated compliance checks running around the clock.' },
-                    { num: '$1.2B+', label: 'Volume', sub: 'Trade Finance', body: 'Letters of credit, escrow, and HPAY digital settlements enabling seamless cross-border trade.' },
+                    { num: 'Escrow', label: 'Protected', sub: 'Trade Finance', body: 'Letters of credit, escrow, and HPAY digital settlements enabling seamless cross-border trade.' },
                     { num: '10', label: 'Verticals', sub: 'Multi-Industry', body: 'FMCG to Oil & Gas, Real Estate to AI — one commercial engine powering every sector.' },
                     { num: '200+', label: 'Specialists', sub: 'Dedicated Teams', body: 'Category experts, compliance officers, and field agents embedded in every market we serve.' },
                     { num: '190+', label: 'Jurisdictions', sub: 'Full Compliance', body: 'Sanctions checks, AML controls, and regulatory filing across every country we operate in.' },

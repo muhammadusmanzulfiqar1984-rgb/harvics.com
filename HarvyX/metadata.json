@@ -1,0 +1,5 @@
+{
+  "name": "Aura Concierge",
+  "description": "A real-time AI concierge and translator with live voice interaction, providing a welcoming and helpful host experience.",
+  "requestFramePermissions": ["microphone"]
+}

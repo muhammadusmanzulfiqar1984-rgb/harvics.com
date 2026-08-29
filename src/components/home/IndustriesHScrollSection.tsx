@@ -12,49 +12,49 @@ const INDUSTRIES = [
   {
     name: 'Textiles & Apparel',
     sub: 'Denim, fabrics, finished goods',
-    img: '/assets/harvictrade/heroes/textiles-hero.jpg',
+    img: '/assets/harvictrade/heroes/textiles/01-trench.webp',
     slug: 'textiles',
   },
   {
     name: 'FMCG & Food',
     sub: 'Packaged goods, distribution',
-    img: '/assets/harvictrade/heroes/fmcg-hero.jpg',
+    img: '/assets/harvictrade/heroes/fmcg-hero.webp',
     slug: 'fmcg',
   },
   {
     name: 'Commodities',
     sub: 'Agri, softs, metals, energy',
-    img: '/assets/harvictrade/heroes/commodities-hero.jpg',
+    img: '/assets/harvictrade/heroes/commodities-hero.webp',
     slug: 'commodities',
   },
   {
     name: 'Industrial & PPE',
     sub: 'Machinery, MRO, safety',
-    img: '/assets/harvictrade/heroes/industrial-hero.jpg',
+    img: '/assets/harvictrade/heroes/industrial-hero.webp',
     slug: 'industrial',
   },
   {
     name: 'Minerals & Metals',
     sub: 'Industrial & precious metals',
-    img: '/assets/harvictrade/heroes/minerals-hero.jpg',
+    img: '/assets/harvictrade/heroes/minerals-hero.webp',
     slug: 'minerals',
   },
   {
     name: 'Oil, Gas & Energy',
     sub: 'Upstream to downstream',
-    img: '/assets/harvictrade/heroes/energy-hero.jpg',
+    img: '/assets/harvictrade/heroes/energy-hero.webp',
     slug: 'energy',
   },
   {
     name: 'Electronics',
     sub: 'Consumer & enterprise devices',
-    img: '/assets/harvictrade/heroes/electronics-hero.jpg',
+    img: '/assets/harvictrade/heroes/electronics-hero.webp',
     slug: 'electronics',
   },
 ]
 
 /**
- * Trial-style sticky horizontal industries strip (scroll-hijack cards).
+ * Sticky horizontal industries — CSS sticky + scrub (no GSAP pin-spacer voids).
  */
 export default function IndustriesHScrollSection() {
   const locale = useLocale()
@@ -72,25 +72,28 @@ export default function IndustriesHScrollSection() {
     const isMobile = window.matchMedia('(max-width: 800px)').matches
 
     const build = () => {
-      const existing = ScrollTrigger.getById('industries-hscroll')
-      if (existing) existing.kill()
-
+      ScrollTrigger.getById('industries-hscroll')?.kill()
       gsap.set(track, { x: 0 })
-      const travel = Math.max(track.scrollWidth - window.innerWidth, 0)
-      section.style.height = `${window.innerHeight + travel}px`
 
-      if (reduceMotion || isMobile || travel < 20) {
+      const travel = Math.max(track.scrollWidth - window.innerWidth, 0)
+
+      if (reduceMotion || isMobile || travel < 40) {
         section.style.height = 'auto'
         if (fill) fill.style.width = '100%'
         return
       }
+
+      // Tall runway; sticky panel fills the viewport while scrubbing cards.
+      section.style.height = `${window.innerHeight + travel}px`
+      if (fill) fill.style.width = '0%'
 
       ScrollTrigger.create({
         id: 'industries-hscroll',
         trigger: section,
         start: 'top top',
         end: 'bottom bottom',
-        scrub: true,
+        scrub: 0.55,
+        invalidateOnRefresh: true,
         onUpdate: (self) => {
           gsap.set(track, { x: -travel * self.progress })
           if (fill) fill.style.width = `${self.progress * 100}%`
@@ -99,13 +102,14 @@ export default function IndustriesHScrollSection() {
     }
 
     const imgs = Array.from(track.querySelectorAll('img'))
-    let loaded = 0
+    let pending = Math.max(imgs.length, 1)
     const ready = () => {
-      loaded += 1
-      if (loaded >= Math.max(imgs.length, 1)) {
+      pending -= 1
+      if (pending > 0) return
+      requestAnimationFrame(() => {
         build()
         ScrollTrigger.refresh()
-      }
+      })
     }
 
     if (!imgs.length) ready()
@@ -117,6 +121,11 @@ export default function IndustriesHScrollSection() {
       }
     })
 
+    const t1 = window.setTimeout(() => {
+      build()
+      ScrollTrigger.refresh()
+    }, 400)
+
     const onResize = () => {
       build()
       ScrollTrigger.refresh()
@@ -124,8 +133,10 @@ export default function IndustriesHScrollSection() {
     window.addEventListener('resize', onResize)
 
     return () => {
+      window.clearTimeout(t1)
       window.removeEventListener('resize', onResize)
       ScrollTrigger.getById('industries-hscroll')?.kill()
+      section.style.height = ''
     }
   }, [])
 
@@ -179,6 +190,8 @@ export default function IndustriesHScrollSection() {
                 <img
                   src={item.img}
                   alt={item.name}
+                  loading="eager"
+                  decoding="async"
                   className="h-full w-full object-cover brightness-[0.68]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent" />

@@ -3,13 +3,13 @@
   "home": {
     "welcome": "환영합니다",
     "companyName": "하위치",
-    "tagline": "2019년부터 프리미엄 소비재 분야에서 탁월한 성과를 거두고 있습니다.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "제품 살펴보기",
     "contact": "문의하기",
     "learnMore": "더 알아보기",
-    "brandStatement": "세계적인 소비재 기업으로서 국제적인 품질 기준에 부합하는 다양한 종류의 프리미엄 식품을 제공합니다.",
-    "taglineStart": "프리미엄 소비재 분야의 탁월함",
-    "taglineYear": "2019",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "런던 • 밀라노 • 뉴욕",
     "categories": {
       "bakery": "빵집",
@@ -81,7 +81,8 @@
       "specialOffers": "특별 할인",
       "promotions": "프로모션",
       "bulkOrders": "대량 주문 할인"
-    }
+    },
+    "startupAcademy": "스타트업 아카데미"
   },
   "products": {
     "ourProducts": "저희 제품",
@@ -119,7 +120,40 @@
     "whatsapp": "왓츠앱",
     "callNow": "지금 바로 전화하세요",
     "sendEmail": "이메일 보내기",
-    "messageUs": "저희에게 메시지를 보내주세요"
+    "messageUs": "저희에게 메시지를 보내주세요",
+    "getInTouch": "연락하세요",
+    "locations": "위치",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "메시지 보내기",
+    "firstName": "이름",
+    "firstNamePlaceholder": "이름을 입력하세요",
+    "lastName": "성",
+    "lastNamePlaceholder": "성을 입력하세요",
+    "emailPlaceholder": "이메일 주소를 입력하세요",
+    "subject": "주제",
+    "subjectPlaceholder": "제목을 입력하세요",
+    "message": "메시지",
+    "messagePlaceholder": "메시지를 작성하세요",
+    "send": "보내다",
+    "eyebrow": "브리핑 시작",
+    "headline1": "브리핑을 시작하세요.",
+    "headline2": "우리는 24시간 내에 응답합니다.",
+    "subhead": "귀하의 카테고리, 규모, 목표 시장을 알려주십시오. 전문가가 소싱 옵션과 대략적인 가격을 안내해 드립니다.",
+    "fullName": "성명",
+    "fullNamePlaceholder": "샤 타브라이즈",
+    "company": "회사",
+    "companyPlaceholder": "귀하의 조직",
+    "businessEmail": "비즈니스 이메일",
+    "howCanWeHelp": "어떻게 도와드릴까요?",
+    "sending": "배상...",
+    "sendEnquiry": "문의 보내기",
+    "sentTitle": "메시지가 전송되었습니다.",
+    "sentSub": "저희 팀이 24시간 이내에 답변을 드릴 것입니다.",
+    "directChannels": "다이렉트 채널",
+    "trust1": "24시간 응답 보장",
+    "trust2": "전담 계정 관리자",
+    "trust3": "NDA available on request",
+    "trust4": "42개 시장 · 오늘 1,247개 출하"
   },
   "media": {
     "title": "미디어 센터",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "하빅스 글로벌 벤처스",
-    "tagline": "2019년부터 프리미엄 소비재 분야에서 탁월한 성과를 거두고 있습니다.",
-    "brandStatement": "세계적인 소비재 기업으로서 국제적인 품질 기준에 부합하는 다양한 종류의 프리미엄 식품을 제공합니다.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "런던 • 밀라노 • 뉴욕",
     "since": "2019년부터",
     "harvicsNews": "하빅스 뉴스",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "네트워크에 가입하세요",
     "newsletterTagline": "최신 무역 정보와 시장 업데이트를 받아보세요",
     "activeShipments": "활성 배송",
-    "certifiedAudited": "인증 및 감사 완료"
+    "certifiedAudited": "인증 및 감사 완료",
+    "invalidEmail": "유효한 이메일 주소를 입력하세요.",
+    "subscriptionSuccess": "구독해주셔서 감사합니다!",
+    "subscriptionError": "문제가 발생했습니다. 다시 시도해 주세요."
   },
   "search": {
     "placeholder": "제품, 브랜드 또는 카테고리를 검색하세요.",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "죄송합니다, 잘 이해하지 못했습니다. 다시 설명해 주시겠습니까?",
       "help": "제품 정보, 주문 또는 일반 문의 사항에 대해 도와드릴 수 있습니다. 무엇을 알고 싶으신가요?",
-      "contact": "추가적인 도움이 필요하시면 support@harvics.com으로 이메일을 보내시거나 +1-800-HARVICS로 전화해 주십시오."
-    }
+      "contact": "추가적인 도움이 필요하시면 support@harvics.com으로 이메일을 보내시거나 +1-800-HARVICS로 전화해 주십시오.",
+      "product": "메뉴에서 제품 카탈로그를 찾아보거나 FMCG, 직물, 물류 등 관심 있는 카테고리를 알려주세요.",
+      "order": "주문하거나 상태를 확인하려면 유통업체 포털을 방문하거나 계정 관리자에게 문의하세요.",
+      "about": "Harvics Global Ventures는 40개 이상의 국가에서 20년 이상의 경력을 보유한 주권 무역 인프라 회사입니다."
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "Enter를 눌러 보내세요"
   },
   "common": {
     "chatWithUs": "저희와 채팅하세요",
@@ -730,12 +772,17 @@
       "gps-tracking": "GPS 추적",
       "localization": "현지화",
       "workflows": "워크플로",
-      "admin": "관리자"
+      "admin": "관리자",
+      "modules": "모듈"
     },
     "kpis": {
       "customers": "고객",
       "employees": "직원",
-      "profit": "이익"
+      "profit": "이익",
+      "totalOrders": "총 주문",
+      "inventoryValue": "재고 가치",
+      "logisticsEfficiency": "물류 효율성",
+      "revenue": "수익"
     },
     "domain": {
       "title": "CRM OS",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "고객 관계, 상호 작용 및 캠페인을 확인하고 관리하세요.",
       "loading": "로딩 중...",
       "error": "CRM 데이터 불러오는 중 오류 발생"
+    },
+    "roleIndicator": {
+      "manager": "관리자 보기",
+      "executive": "이그제큐티브 뷰",
+      "investor": "투자자 관점",
+      "distributor": "대리점 보기",
+      "supplier": "공급업체 보기",
+      "customer": "고객보기"
     }
   },
   "supplierPortal": {
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "하빅스 소개",
-    "subtitle": "2019년부터 프리미엄 소비재 분야에서 탁월한 성과를 거두고 있습니다.",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "우리의 이야기",
     "story1": "2019년에 설립된 하빅스는 혁신적인 아이디어에서 출발하여 프리미엄 소비재 분야의 글로벌 리더로 성장했습니다. 하빅스의 여정은 품질에 대한 끊임없는 추구와 혁신에 대한 헌신으로 특징지어집니다.",
     "story2": "저희는 40개국 이상에서 사업을 운영하며 삶을 풍요롭게 하고 업계에 새로운 기준을 제시하는 제품을 제공합니다. 소규모 기업으로 시작하여 세계적인 기업으로 성장했지만, 저희의 핵심 가치는 변함없이 지켜지고 있습니다.",
@@ -1150,181 +1205,279 @@
   },
   "help": {
     "page": {
-      "title": "Help Center",
-      "subtitle": "Find the help you need"
+      "title": "도움말 센터",
+      "subtitle": "필요한 도움을 찾아보세요"
     },
-    "backToHelpCenter": "Back to Help Center",
+    "backToHelpCenter": "도움말 센터로 돌아가기",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "자주 묻는 질문",
+        "description": "일반적인 질문에 대한 답변 찾기"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "지원팀에 문의",
+        "description": "지원팀에 문의하세요"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "사용자 가이드",
+        "description": "단계별 가이드 및 튜토리얼"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "문제 해결",
+        "description": "일반적인 문제 해결"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "계정 도움말",
+        "description": "계정 및 설정 관리"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "주문 지원",
+        "description": "주문 및 배송에 대한 도움"
       }
     },
     "account": {
-      "title": "Account Help",
-      "subtitle": "Manage your account settings and preferences",
-      "placeholder": "Account management and settings help content will appear here."
+      "title": "계정 도움말",
+      "subtitle": "계정 설정 및 기본 설정 관리",
+      "placeholder": "계정 관리 및 설정 도움말 콘텐츠가 여기에 표시됩니다."
     },
     "orders": {
-      "title": "Order Support",
-      "subtitle": "Track and manage your orders and deliveries",
-      "placeholder": "Order and delivery support content will appear here."
+      "title": "주문 지원",
+      "subtitle": "주문과 배송을 추적하고 관리하세요.",
+      "placeholder": "주문 및 배송 지원 콘텐츠가 여기에 표시됩니다."
     },
     "guides": {
-      "title": "User Guides",
-      "subtitle": "Step-by-step guides to help you get the most out of Harvics",
+      "title": "사용자 가이드",
+      "subtitle": "Harvics를 최대한 활용하는 데 도움이 되는 단계별 가이드",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "시작하기",
+          "description": "기본 사항 알아보기"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "계정 설정",
+          "description": "계정 설정"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "주문 방법",
+          "description": "주문 및 추적"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "결제 방법",
+          "description": "결제 옵션 및 보안"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "배송 및 배송",
+          "description": "배송정보"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "반품 및 환불",
+          "description": "반품 정책 및 절차"
         }
       }
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "subtitle": "Common issues and quick solutions",
+      "title": "문제 해결",
+      "subtitle": "일반적인 문제와 빠른 해결 방법",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "로그인 문제",
+          "description": "로그인 문제"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "결제 문제",
+          "description": "결제가 처리되지 않음"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "배송 지연",
+          "description": "주문이 도착하지 않음"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "웹사이트 오류",
+          "description": "페이지가 로드되지 않음"
         }
       }
     }
   },
   "checkout": {
-    "secureCheckout": "Secure Checkout",
-    "title": "Complete Your Order",
-    "subtitle": "Review your items, enter shipping details, and confirm payment securely.",
-    "shippingInfo": "Shipping Information",
-    "paymentMethod": "Payment Method",
+    "secureCheckout": "안전한 결제",
+    "title": "주문을 완료하세요",
+    "subtitle": "상품을 검토하고 배송 세부정보를 입력한 후 안전하게 결제를 확인하세요.",
+    "shippingInfo": "배송정보",
+    "paymentMethod": "결제수단",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "신용/직불카드",
+      "bankTransfer": "은행 송금(LC/TT)",
       "wallet": "HPay Digital Wallet"
     },
-    "orderSummary": "Order Summary",
+    "orderSummary": "주문 요약",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
-      "total": "Total"
+      "subtotal": "소계",
+      "shipping": "해운",
+      "calculatedNextStep": "다음 단계에서 계산됨",
+      "tax": "세",
+      "total": "총"
     },
-    "placeOrder": "Place Order",
-    "sslNotice": "Secured with 256-bit SSL encryption",
-    "continueShopping": "Continue Shopping",
+    "placeOrder": "주문하기",
+    "sslNotice": "256비트 SSL 암호화로 보호됨",
+    "continueShopping": "계속 쇼핑하기",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "이름",
+      "lastName": "성",
+      "email": "이메일",
+      "address": "주소",
+      "city": "도시",
+      "country": "국가"
     }
   },
   "history": {
     "hero": {
-      "title": "Our Journey",
-      "subtitle": "From a Dubai startup to a global enterprise spanning 42+ countries, 10 industry verticals, and 38 languages."
+      "title": "우리의 여정",
+      "subtitle": "두바이 스타트업에서 42개 이상의 국가, 10개 산업 분야, 38개 언어를 아우르는 글로벌 기업으로 성장했습니다."
     },
     "cta": {
-      "title": "Be Part of the Next Chapter",
-      "subtitle": "Join us as we scale to 60+ countries and build the future of AI-driven global commerce.",
-      "button": "View Careers"
+      "title": "다음 장에 참여하세요",
+      "subtitle": "60개 이상의 국가로 확장하고 AI 기반 글로벌 상거래의 미래를 구축하는 과정에 동참하세요.",
+      "button": "채용정보 보기"
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "두바이에서 설립됨",
+        "description": "Harvics Global Ventures는 세계적 수준의 FMCG 및 다중 수직 무역 대기업이 되겠다는 비전을 가지고 UAE에 설립되었습니다. 섬유 및 소비재 전반에 걸쳐 첫 번째 사업을 시작했습니다.",
+        "highlight": "1년차"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "첫 번째 해외 확장",
+        "description": "전 세계적 팬데믹 상황에도 불구하고 유럽, 중동, 남아시아 전역의 10개국으로 확장되었습니다. 디지털 공급망 운영 및 원격 유통 파트너십을 시작했습니다.",
+        "highlight": "10개국"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "다중 수직 확장",
+        "description": "원자재, 산업 장비, 광물 및 광업, 석유 및 가스, 부동산 등 5가지 새로운 산업 분야를 출시했습니다. 모든 업종에 걸쳐 총 제품 카탈로그가 500개 SKU를 초과했습니다.",
+        "highlight": "5가지 새로운 업종"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "디지털 혁신",
+        "description": "AI 기반 엔터프라이즈 플랫폼인 Harvics OS의 첫 번째 버전을 구축했습니다. 모든 시장에 걸쳐 유통업체 포털, 전자상거래 기능, 실시간 GPS 차량 추적 기능을 출시했습니다.",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "지속 가능성 및 규모",
+        "description": "탄소 중립 운영을 약속합니다. 30개 이상의 국가에 도달했습니다. 모든 업종에 걸쳐 HPay(디지털 결제 플랫폼), 무역 금융 솔루션, AI 기반 수요 예측을 출시했습니다.",
+        "highlight": "30개 이상의 국가"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "글로벌 기업",
+        "description": "42개 이상의 국가 이정표를 초과했습니다. 전략, 수요, 가격 책정, 적용 범위 및 SKU 최적화를 위한 6가지 ML 모델이 포함된 AI 엔진을 배포했습니다. 38개 언어를 지원하는 다국어 플랫폼 출시",
+        "highlight": "42개 이상의 국가"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "AI 우선 운영 체제",
+        "description": "Harvics OS v2 출시 — 실시간 인텔리전스, Socket.io 라이브 피드, 시장 공격 계획을 위한 Alpha Engine 및 완전한 8레벨 지리적 계층 구조를 갖춘 통합 엔터프라이즈 운영 체제입니다.",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "앞으로의 비전",
+        "description": "60개 이상의 국가로 확장. 조달, 물류, 재무, CRM 등 모든 기능이 인간 승인 게이트를 통해 예측 인텔리전스를 기반으로 실행되는 세계 최초의 AI 운영 FMCG 엔터프라이즈를 구축합니다.",
+        "highlight": "60+ 타겟"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "창업자를 위한 실무 무역, 소싱 및 AI 아카데미 — 6주, 라이브 세션, Harvics 복도.",
+    "navLabel": "스타트업 아카데미",
+    "teaser": {
+      "eyebrow": "아카데미 · 복도 프로그램",
+      "title": "스타트업 아카데미.",
+      "body": "Harvics 마켓플레이스와 함께 창업자를 위한 소싱, QC, 펀딩 데스크, 통로 활용 능력 등 고전적인 무역 기술을 제공합니다.",
+      "cta": "아카데미 입학"
+    },
+    "hero": {
+      "alt": "고전강의실 — 하빅스 스타트업 아카데미",
+      "eyebrow": "코호트 01 · 2026년 4분기 · 지원 프로그램",
+      "title": "Harvics Startup Academy",
+      "body": "창업자를 위한 전통적인 무역 학교 - 소싱, 통로 상업, 작동하는 AI. 6주. 라이브 세션. 실제 운영자.",
+      "apply": "코호트 01 신청",
+      "seeProgramme": "프로그램 보기"
+    },
+    "stats": {
+      "founders": "창립자/코호트",
+      "sessions": "라이브 세션",
+      "weeks": "주",
+      "verticals": "무역 분야"
+    },
+    "why": {
+      "eyebrow": "01 · 가입해야 하는 이유",
+      "title": "실제로 거래할 수 있는 회사를 만들어 보세요.",
+      "body": "피치 극장이 아닙니다. Harvics 전반의 운영자로부터 결제, 소싱 실사, 구매자 지원 및 자동화에 대한 RFQ를 알아보세요.",
+      "item1Title": "실용적인 무역 시스템",
+      "item1Body": "기관 구매자의 구매 방법 및 이행 방법.",
+      "item2Title": "배송되는 네트워크",
+      "item2Body": "다양한 분야의 창립자, 유통업체, 운영자.",
+      "item3Title": "작동하는 AI",
+      "item3Body": "전문 용어가 없는 HarvyX, Fin 음성 및 운영 자동화.",
+      "imageAlt": "고전 무역 정물"
+    },
+    "knowledge": {
+      "eyebrow": "지식",
+      "title": "복도를 학문처럼 연구하십시오.",
+      "body": "일반적인 스타트업 슬라이드가 아닌 실제 무역 실무에서 나온 커리큘럼입니다.",
+      "imageAlt": "그랜드 클래식 도서관"
+    },
+    "programme": {
+      "eyebrow": "02 · 프로그램",
+      "title": "당신이 겪게 될 일",
+      "m1Title": "브랜드 및 소싱",
+      "m1Body": "MOQ, QC 게이트, 직물 및 FMCG — 아뜰리에에서 복도까지.",
+      "m2Title": "인텔리전스 및 홍보",
+      "m2Body": "HarvyX 연구소, 구매자 ICP, 답변을 받는 후속 조치.",
+      "m3Title": "캐피털 & 파트너",
+      "m3Body": "자금 경로 및 파트너십 — 가짜 은행 청구가 없습니다.",
+      "m4Title": "복도 상업",
+      "m4Body": "항구, 항로, 상품이 실제로 시장을 가로질러 이동하는 방식.",
+      "m5Title": "품질과 근면",
+      "m5Body": "평판과 정착을 보호하는 검사 습관.",
+      "m6Title": "원자재 및 FMCG",
+      "m6Body": "창고 현실부터 브랜드 및 도매 수요까지."
+    },
+    "tracks": {
+      "aEyebrow": "트랙 A",
+      "aTitle": "브랜드 및 커머스",
+      "aBody": "의류 및 FMCG 창립자는 브랜드, 도매 및 복도 수요를 구축합니다.",
+      "aAlt": "클래식 회의실",
+      "bEyebrow": "트랙 B",
+      "bTitle": "무역 및 운영",
+      "bBody": "기관 거래를 확장하는 소싱, 물류 및 B2B 운영자입니다.",
+      "bAlt": "살롱 네트워킹"
+    },
+    "network": {
+      "eyebrow": "03 · 네트워크",
+      "title": "청중이 아닌 운영자를 만나십시오.",
+      "body": "창립자, 유통업체 및 Harvics 복도 운영자와 함께하는 라이브 세션 및 미용실 스타일의 근무 시간입니다.",
+      "imageAlt": "창업자 네트워킹"
+    },
+    "rhythm": {
+      "eyebrow": "04 · 리듬",
+      "title": "6주. 명확한 케이던스.",
+      "w1": "1주차",
+      "w1Body": "오리엔테이션 · 복도 지도 · ICP 워크숍",
+      "w2": "2주차",
+      "w2Body": "구매자 지원 · HarvyX 연구소",
+      "w3": "3주차",
+      "w3Body": "소싱 및 QC · 공급업체 실사",
+      "w4": "4주차",
+      "w4Body": "자동화 · Fin voice · 운영 스택",
+      "w5": "5주차",
+      "w5Body": "자금 조달 및 파트너십",
+      "w6": "6주차",
+      "w6Body": "창립자 쇼케이스 · 다음 단계"
+    },
+    "apply": {
+      "eyebrow": "응용",
+      "title": "코호트 01 신청",
+      "body": "제한된 좌석. 회사, 업종, 구축 중인 제품을 알려주세요.",
+      "emailCta": "이메일로 신청 →",
+      "back": "하빅스(Harvics)로 돌아가기"
     }
   }
 }

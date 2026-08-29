@@ -113,10 +113,22 @@ async function seedOnce() {
         })),
       });
     }
-  } catch (err) {
+  } catch (err: any) {
     // Seeding must never crash the backend. Log and continue.
-    // eslint-disable-next-line no-console
-    console.error('[t14.store] seed failed:', err);
+    const code = err?.code || err?.errorCode;
+    const msg = String(err?.message || err || '');
+    if (code === 'P1001' || msg.includes("Can't reach database server")) {
+      // eslint-disable-next-line no-console
+      console.warn('[t14.store] Neon unreachable — skipping T14 seed');
+    } else if (code === 'P2021' || msg.includes('does not exist')) {
+      // eslint-disable-next-line no-console
+      console.warn(
+        '[t14.store] T14 tables missing — apply prisma/manual/module_t14_additive.sql then restart',
+      );
+    } else {
+      // eslint-disable-next-line no-console
+      console.error('[t14.store] seed failed:', err);
+    }
   }
 }
 

@@ -10,6 +10,12 @@ interface EmployeeListContentProps {
   locale: string
 }
 
+function attendanceRateFromRows(rows: any[]): number | null {
+  if (!rows.length) return null
+  const present = rows.filter((r) => r.status === 'Present' || r.status === 'WFH' || r.status === 'Half-Day').length
+  return Math.round((present / rows.length) * 100)
+}
+
 export default function EmployeeListContent({ persona, locale }: EmployeeListContentProps) {
   const { selectedCountry } = useCountry()
   const [loading, setLoading] = useState(true)
@@ -22,21 +28,25 @@ export default function EmployeeListContent({ persona, locale }: EmployeeListCon
   const loadHR = async () => {
     setLoading(true)
     try {
-      const [summaryRes, employeesRes] = await Promise.all([
+      const [summaryRes, employeesRes, attendanceRes] = await Promise.all([
         apiClient.request('/hr/summary'),
-        apiClient.request('/hr/employees?limit=50')
+        apiClient.request('/hr/employees?limit=50'),
+        apiClient.request('/wave3/hr/attendance'),
       ])
-      
+
       const summary = (summaryRes?.data as any) || {}
       const rawEmployees = (employeesRes?.data as any)
       const employees: any[] = Array.isArray(rawEmployees) ? rawEmployees : (rawEmployees?.data ?? [])
-      
+      const attPayload = (attendanceRes?.data as any)
+      const attRows: any[] = Array.isArray(attPayload) ? attPayload : (attPayload?.data ?? [])
+      const attendance = attendanceRateFromRows(attRows)
+
       setHrData({
         totalEmployees: summary.totalEmployees || 0,
         active: summary.activeEmployees || 0,
         departments: Object.keys(summary.byDepartment || {}).length,
-        attendance: 98, // Mock for now
-        employees: employees
+        attendance,
+        employees,
       })
     } catch (error) {
       console.error('Error loading HR:', error)
@@ -44,7 +54,8 @@ export default function EmployeeListContent({ persona, locale }: EmployeeListCon
         totalEmployees: 0,
         active: 0,
         departments: 0,
-        attendance: 98
+        attendance: null,
+        employees: [],
       })
     } finally {
       setLoading(false)
@@ -62,7 +73,7 @@ export default function EmployeeListContent({ persona, locale }: EmployeeListCon
   const totalEmployees = hrData?.totalEmployees || 0
   const active = hrData?.active || 0
   const departments = hrData?.departments || 0
-  const attendance = hrData?.attendance || 0
+  const attendance = hrData?.attendance
 
   return (
     <div className="space-y-6">
@@ -91,7 +102,7 @@ export default function EmployeeListContent({ persona, locale }: EmployeeListCon
         />
         <KPICard
           label="Attendance"
-          value={`${attendance}%`}
+          value={attendance != null ? `${attendance}%` : '—'}
           icon={<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><rect x="2" y="9" width="3" height="5" rx="0.5"/><rect x="6.5" y="6" width="3" height="8" rx="0.5"/><rect x="11" y="3" width="3" height="11" rx="0.5"/></svg>}
         />
       </div>
@@ -118,12 +129,12 @@ export default function EmployeeListContent({ persona, locale }: EmployeeListCon
                   <td className="px-5 py-3.5 text-sm text-[#8E8E93]">{emp.department}</td>
                   <td className="px-5 py-3.5 text-sm text-[#8E8E93]">{emp.country}</td>
                   <td className="py-2">
-                    <span className={`px-2 py-1 rounded text-xs ${emp.status === 'Active' ? 'bg-[#F5F5F7] text-[#1A1A1A]' : 'bg-[#F5F5F7] text-[#1A1A1A]'}`}>{emp.status}</span>
+                    <span className="px-2 py-1 rounded text-xs bg-[#F5F5F7] text-[#1A1A1A]">{emp.status || 'Active'}</span>
                   </td>
                 </tr>
               ))}
               {(!hrData?.employees || hrData.employees.length === 0) && (
-                <tr><td colSpan={5} className="py-4 text-center text-gray-500">No employees found</td></tr>
+                <tr><td colSpan={5} className="py-4 text-center text-gray-500">No employees yet</td></tr>
               )}
             </tbody>
           </table>
@@ -132,4 +143,3 @@ export default function EmployeeListContent({ persona, locale }: EmployeeListCon
     </div>
   )
 }
-

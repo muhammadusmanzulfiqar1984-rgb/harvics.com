@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 import OSDomainTierStructure, { Tier2Module } from '@/components/shared/OSDomainTierStructure'
 import StockOverviewContent from '@/components/domains/inventory/StockOverviewContent'
 import SmartReplenishmentDashboard from '@/components/domains/inventory/SmartReplenishmentDashboard'
+import { InventoryAnalyticsCharts } from '@/components/os-domains/DomainAnalyticsCharts'
 
 interface InventoryDomainContentProps {
   persona: 'company' | 'distributor' | 'supplier'
@@ -22,10 +23,19 @@ export default function InventoryDomainContent({ persona, locale }: InventoryDom
   const [expiringBatches, setExpiringBatches] = useState<ExpiryRow[]>([])
   const [warehouses, setWarehouses] = useState<WhRow[]>([])
   const [movements, setMovements] = useState<MovRow[]>([])
+  const [summary, setSummary] = useState<any>(null)
+  const [invSource, setInvSource] = useState<'loading' | 'live' | 'empty'>('loading')
 
   useEffect(() => {
-    fetch('/api/inventory/batch').then(r => r.json()).then(({ success, data }) => {
+    const token = typeof window !== 'undefined' ? localStorage.getItem('auth_token') || 'demo-token-company_admin' : 'demo-token-company_admin'
+    const headers = { Authorization: `Bearer ${token}` }
+    let got = false
+    fetch('/api/inventory/summary', { headers }).then(r => r.json()).then((j) => {
+      if (j?.success) { setSummary(j.data); got = true }
+    }).catch(() => {})
+    fetch('/api/inventory/batch', { headers }).then(r => r.json()).then(({ success, data }) => {
       if (!success || !data) return
+      got = true
       const now = Date.now()
       setBatches(data.map((b: any) => ({ batch: b.batchNo, sku: b.sku, wh: b.warehouse, qty: b.remainingQty, mfg: b.mfgDate || '—', exp: b.expiryDate || '—', status: b.status, industryVertical: b.industryVertical || '' })))
       setLots(data.map((b: any) => ({ lot: 'LOT-' + b.id.slice(0, 5).toUpperCase(), batch: b.batchNo, supplier: b.supplierId || '—', received: b.qty, remaining: b.remainingQty, loc: b.warehouse + (b.bin ? ' / ' + b.bin : '') })))
@@ -35,14 +45,18 @@ export default function InventoryDomainContent({ persona, locale }: InventoryDom
         .sort((a: ExpiryRow, b: ExpiryRow) => a.days - b.days)
       setExpiringBatches(expiring)
     }).catch(() => {})
-    fetch('/api/inventory/location').then(r => r.json()).then(({ success, data }) => {
+    fetch('/api/inventory/location', { headers }).then(r => r.json()).then(({ success, data }) => {
       if (!success || !data) return
+      got = true
       setWarehouses(data.map((d: any) => ({ name: d.locationCode, loc: d.name, cap: d.capacityM2, used: d.utilPct, skus: d.activeSKUs, status: d.status })))
     }).catch(() => {})
-    fetch('/api/inventory/movement').then(r => r.json()).then(({ success, data }) => {
+    fetch('/api/inventory/movement', { headers }).then(r => r.json()).then(({ success, data }) => {
       if (!success || !data) return
+      got = true
       setMovements(data.map((d: any) => ({ date: (d.createdAt || '').slice(0, 16).replace('T', ' '), batch: d.batchNo || '—', event: d.movementType, loc: d.fromLocation || d.toLocation || '—', qty: d.qty, user: d.user || '—' })))
-    }).catch(() => {})
+    }).catch(() => {}).finally(() => {
+      setInvSource(got || summary ? 'live' : 'empty')
+    })
   }, [])
 
   // Tier 2 Modules for Inventory Domain
@@ -449,13 +463,34 @@ export default function InventoryDomainContent({ persona, locale }: InventoryDom
     }
   ]
 
+  tier2Modules.unshift({
+    id: 'inventory-analytics',
+    label: 'Analytics',
+    icon: '',
+    description: 'Live inventory summary from the Inventory API',
+    component: <InventoryAnalyticsCharts />,
+    tier3Screens: [{ id: 'inventory-charts', label: 'Inventory Charts', icon: '', component: <InventoryAnalyticsCharts /> }],
+  })
+
   return (
-    <OSDomainTierStructure
-      domainId="inventory"
-      domainName="Inventory OS"
-      tier2Modules={tier2Modules}
-      defaultModule="smart-inventory"
-    />
+    <div>
+      <div className="mb-4 flex flex-wrap items-center gap-3 border border-harvics-gold/25 bg-white px-4 py-3">
+        <span className={`text-[10px] font-black uppercase tracking-widest ${invSource === 'live' ? 'text-emerald-700' : 'text-amber-700'}`}>
+          {invSource === 'live' ? 'Live inventory' : invSource === 'loading' ? 'Loading…' : 'No live stock yet'}
+        </span>
+        {summary && (
+          <span className="text-[12px] text-harvics-burgundy/70">
+            SKUs {summary.totalSKUs ?? 0} · Value {Number(summary.totalValue || 0).toLocaleString()} · Low stock {summary.lowStockItems ?? 0} · Expiring batches {summary.expiringBatches ?? 0}
+          </span>
+        )}
+      </div>
+      <OSDomainTierStructure
+        domainId="inventory"
+        domainName="Inventory OS"
+        tier2Modules={tier2Modules}
+        defaultModule="smart-inventory"
+      />
+    </div>
   )
 }
 

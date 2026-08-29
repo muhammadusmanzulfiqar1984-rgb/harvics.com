@@ -1,74 +1,62 @@
-import { Metadata } from 'next'
 import Link from 'next/link'
 import { generateAllLocaleParams } from '@/lib/generateLocaleParams'
+import { getHPayAppUrl } from '@/lib/hpay'
+
+export const dynamic = 'force-dynamic'
 
 export async function generateStaticParams() {
   return generateAllLocaleParams()
 }
 
-export const metadata: Metadata = {
+export const metadata = {
   title: 'HPay — Settlement & Treasury | Harvics Apps',
   description:
-    'Escrow wallets, FX rails and compliant settlement for cross-border corridor commerce.',
+    'Escrow wallets, FX rails and corridor settlement. Sign in or create an HPay account to open the live desk.',
 }
 
-const FEATURES = [
-  { title: 'Multi-currency wallets', desc: 'Hold and route value across corridor currencies.', icon: '💳' },
-  { title: 'Escrow', desc: 'Release on milestone — buyer and supplier aligned.', icon: '🔒' },
-  { title: 'FX rails', desc: 'Quote, hedge, and settle without guesswork.', icon: '💱' },
-  { title: 'Compliance', desc: 'KYC/AML checks wired into payment flows.', icon: '✓' },
-  { title: 'Trade finance', desc: 'LC and documentary instruments on the desk.', icon: '📜' },
-  { title: 'Reconciliation', desc: 'Match bank, ledger, and shipment events.', icon: '🔄' },
-]
-
-export default async function HPayAppPage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function HPayAppPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
   const { locale } = await params
+  const launchUrl = getHPayAppUrl()
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-harvics-cream to-white">
-      <section className="max-w-5xl mx-auto px-6 pt-24 pb-16">
-        <div className="flex items-center gap-4 mb-6">
-          <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#1A3A5C] to-harvics-gold flex items-center justify-center text-white text-2xl font-bold shadow-lg">
-            H
-          </div>
-          <div>
-            <span className="inline-block px-3 py-0.5 text-xs font-semibold rounded-full bg-amber-100 text-amber-800 mb-1">
-              Coming soon
-            </span>
-            <h1 className="text-3xl font-bold text-harvics-burgundy">HPay</h1>
-          </div>
+    <main className="fixed inset-0 z-[80] bg-[#1a0a0e] flex flex-col">
+      <header className="shrink-0 flex items-center justify-between gap-4 px-4 md:px-6 py-3 border-b border-harvics-gold/20 bg-[#1a0a0e]/95 backdrop-blur-sm">
+        <div className="min-w-0">
+          <p className="text-[9px] uppercase tracking-[0.22em] text-harvics-gold font-bold">
+            Harvics · Settlement · HPay
+          </p>
+          <h1 className="text-sm md:text-base font-semibold text-white truncate">
+            HPay — Treasury & Payments
+          </h1>
         </div>
-        <p className="text-lg text-gray-700 max-w-2xl mb-10">
-          Digital payments and treasury for Harvics corridor operators. This is the product page — the
-          live wallet opens at launch with invite-only access from the app store.
-        </p>
-
-        <div className="flex flex-wrap gap-4 mb-16">
-          <Link
-            href={`/${locale}/contact`}
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-harvics-burgundy text-white font-semibold shadow-md hover:opacity-90 transition"
-          >
-            Submit interest →
-          </Link>
+        <div className="flex flex-wrap gap-2 shrink-0">
           <Link
             href={`/${locale}/apps`}
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-harvics-burgundy/20 text-harvics-burgundy font-semibold hover:bg-harvics-burgundy/5 transition"
+            className="inline-flex items-center justify-center px-4 py-2 border border-harvics-gold/40 text-harvics-gold text-[10px] font-bold uppercase tracking-[0.14em] hover:bg-harvics-gold/10 transition-colors"
           >
-            ← Back to Apps
+            ← Apps
           </Link>
+          <a
+            href={launchUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-4 py-2 bg-harvics-gold text-[#1a0d00] text-[10px] font-bold uppercase tracking-[0.14em] hover:bg-[#d4b46e] transition-colors"
+          >
+            Full Screen
+          </a>
         </div>
-
-        <h2 className="text-xl font-bold text-harvics-burgundy mb-6">Planned capabilities</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {FEATURES.map((f) => (
-            <div key={f.title} className="p-6 rounded-2xl bg-white border border-gray-100 shadow-sm">
-              <div className="text-3xl mb-3">{f.icon}</div>
-              <h3 className="font-semibold text-harvics-burgundy mb-1">{f.title}</h3>
-              <p className="text-sm text-gray-600">{f.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      </header>
+      <iframe
+        title="HPay — Settlement & Treasury"
+        src={launchUrl}
+        className="flex-1 w-full border-0 bg-[#1a0a0e]"
+        allow="clipboard-write; fullscreen; payment"
+        referrerPolicy="no-referrer"
+      />
     </main>
   )
 }

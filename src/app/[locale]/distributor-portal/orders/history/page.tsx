@@ -1,33 +1,51 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useLocale } from 'next-intl'
 import LocalizationBar from '@/components/shared/LocalizationBar'
+import { fetchSalesOrders } from '@/lib/distributorPortal'
 
 export default function OrderHistory() {
   const locale = useLocale()
-  const [dateRange, setDateRange] = useState('all')
+  const [orders, setOrders] = useState<any[]>([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState('')
   const [status, setStatus] = useState('All')
-  const [country, setCountry] = useState('All')
 
-  const orders = [
-    { id: 'ORD-12345', date: '2025-01-15', country: 'US', warehouse: 'US West', total: 15000, status: 'Delivered', eta: '2025-01-20' },
-    { id: 'ORD-12346', date: '2025-01-16', country: 'US', warehouse: 'US East', total: 8500, status: 'Dispatched', eta: '2025-01-22' },
-    { id: 'ORD-12347', date: '2025-01-17', country: 'PK', warehouse: 'PK North', total: 22000, status: 'Processing', eta: '2025-01-25' },
-    { id: 'ORD-12348', date: '2025-01-18', country: 'AE', warehouse: 'AE Dubai', total: 12500, status: 'Confirmed', eta: '2025-01-28' },
-    { id: 'ORD-12349', date: '2025-01-19', country: 'US', warehouse: 'US West', total: 18000, status: 'Draft', eta: '-' },
-  ]
+  useEffect(() => {
+    void (async () => {
+      setLoading(true)
+      setError('')
+      try {
+        setOrders(await fetchSalesOrders())
+      } catch (e: any) {
+        setError(e.message)
+        setOrders([])
+      } finally {
+        setLoading(false)
+      }
+    })()
+  }, [])
 
-  const getStatusColor = (status: string) => {
-    switch(status) {
-      case 'Delivered': return 'bg-green-100 text-green-800'
-      case 'Dispatched': return 'bg-blue-100 text-blue-800'
-      case 'Processing': return 'bg-harvics-gold/20 text-harvics-gold'
-      case 'Confirmed': return 'bg-purple-100 text-purple-800'
-      case 'Draft': return 'bg-white text-harvics-gold/90'
-      case 'Cancelled': return 'bg-red-100 text-red-800'
-      default: return 'bg-white text-harvics-gold/90'
+  const filtered = status === 'All' ? orders : orders.filter((o) => String(o.status) === status)
+
+  const getStatusColor = (s: string) => {
+    switch (s) {
+      case 'DELIVERED':
+      case 'INVOICED':
+        return 'bg-green-100 text-green-800'
+      case 'SHIPPED':
+      case 'IN_FULFILLMENT':
+        return 'bg-blue-100 text-blue-800'
+      case 'CONFIRMED':
+        return 'bg-purple-100 text-purple-800'
+      case 'CREDIT_HOLD':
+        return 'bg-red-100 text-red-800'
+      case 'DRAFT':
+        return 'bg-gray-100 text-gray-700'
+      default:
+        return 'bg-gray-100 text-gray-600'
     }
   }
 
@@ -35,110 +53,51 @@ export default function OrderHistory() {
     <div className="space-y-6">
       <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-harvics-gold">Order History</h1>
-        <Link
-          href={`/${locale}/distributor-portal/orders/new`}
-          className="bg-harvics-gold text-harvics-burgundy px-6 py-2 font-semibold hover:opacity-90 transition-opacity"
-        >
+        <h1 className="text-2xl font-bold text-harvics-burgundy">Order History</h1>
+        <Link href={`/${locale}/distributor-portal/orders/new`} className="bg-harvics-gold text-harvics-burgundy px-6 py-2 font-semibold">
           Place New Order
         </Link>
       </div>
-
-      {/* Filters */}
-      <div className="bg-white p-4 border border-black200 shadow-sm">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div>
-            <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Date Range</label>
-            <select
-              value={dateRange}
-              onChange={(e) => setDateRange(e.target.value)}
-              className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
-            >
-              <option value="all">All Time</option>
-              <option value="today">Today</option>
-              <option value="week">This Week</option>
-              <option value="month">This Month</option>
-              <option value="quarter">This Quarter</option>
-            </select>
-          </div>
-          <div>
-            <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Status</label>
-            <select
-              value={status}
-              onChange={(e) => setStatus(e.target.value)}
-              className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
-            >
-              <option value="All">All</option>
-              <option value="Draft">Draft</option>
-              <option value="Submitted">Submitted</option>
-              <option value="Confirmed">Confirmed</option>
-              <option value="Dispatched">Dispatched</option>
-              <option value="Delivered">Delivered</option>
-              <option value="Cancelled">Cancelled</option>
-            </select>
-          </div>
-          <div>
-            <label className="block text-sm font-semibold text-harvics-gold/90 mb-2">Country</label>
-            <select
-              value={country}
-              onChange={(e) => setCountry(e.target.value)}
-              className="w-full px-4 py-2 border border-gray-200 focus:ring-2 focus:ring-black"
-            >
-              <option value="All">All</option>
-              <option value="US">United States</option>
-              <option value="PK">Pakistan</option>
-              <option value="AE">UAE</option>
-            </select>
-          </div>
-        </div>
+      {error && <p className="text-sm text-red-700">{error}</p>}
+      <div className="bg-white p-4 border border-black/10">
+        <label className="block text-sm font-semibold text-harvics-burgundy mb-2">Status</label>
+        <select value={status} onChange={(e) => setStatus(e.target.value)} className="w-full max-w-xs px-4 py-2 border">
+          {['All', 'DRAFT', 'CONFIRMED', 'CREDIT_HOLD', 'IN_FULFILLMENT', 'SHIPPED', 'DELIVERED', 'INVOICED', 'CANCELLED'].map((s) => (
+            <option key={s} value={s}>{s}</option>
+          ))}
+        </select>
       </div>
-
-      {/* Orders Table */}
-      <div className="bg-white border border-black200 shadow-sm overflow-hidden">
-        <div className="overflow-x-auto">
-          <table className="w-full">
-            <thead className="bg-white">
+      <div className="bg-white border border-black/10 overflow-hidden">
+        {loading ? (
+          <p className="p-8 text-center text-sm text-gray-600">Loading sales orders…</p>
+        ) : filtered.length === 0 ? (
+          <p className="p-8 text-center text-sm text-gray-600">No orders yet — place one from New Order.</p>
+        ) : (
+          <table className="w-full text-sm">
+            <thead className="bg-[#F5F0E8]">
               <tr>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Order ID</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Date</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Country / Warehouse</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Total Value</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Status</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">ETA</th>
-                <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Action</th>
+                {['Order #', 'Customer', 'Date', 'Total', 'Status', 'Lines'].map((h) => (
+                  <th key={h} className="px-4 py-3 text-left text-xs font-semibold uppercase">{h}</th>
+                ))}
               </tr>
             </thead>
-            <tbody className="divide-y divide-gray-200">
-              {orders.map((order) => (
-                <tr key={order.id} className="hover:bg-white">
-                  <td className="px-6 py-4 font-semibold text-harvics-gold/90">{order.id}</td>
-                  <td className="px-6 py-4 text-sm text-harvics-gold/90">{order.date}</td>
-                  <td className="px-6 py-4 text-sm text-harvics-gold/90">
-                    <div>{order.country}</div>
-                    <div className="text-xs text-harvics-gold/90">{order.warehouse}</div>
+            <tbody className="divide-y">
+              {filtered.map((o) => (
+                <tr key={o.id}>
+                  <td className="px-4 py-3 font-semibold">{o.orderNumber}</td>
+                  <td className="px-4 py-3">{o.customerName}</td>
+                  <td className="px-4 py-3">{o.orderDate ? new Date(o.orderDate).toLocaleDateString() : '—'}</td>
+                  <td className="px-4 py-3">${Number(o.totalAmount || 0).toLocaleString()}</td>
+                  <td className="px-4 py-3">
+                    <span className={`px-2 py-1 rounded text-xs font-semibold ${getStatusColor(o.status)}`}>{o.status}</span>
                   </td>
-                  <td className="px-6 py-4 font-semibold text-harvics-gold/90">${order.total.toLocaleString()}</td>
-                  <td className="px-6 py-4">
-                    <span className={`px-3 py-1 rounded-full text-xs font-semibold ${getStatusColor(order.status)}`}>
-                      {order.status}
-                    </span>
-                  </td>
-                  <td className="px-6 py-4 text-sm text-harvics-gold/90">{order.eta}</td>
-                  <td className="px-6 py-4">
-                    <Link
-                      href={`/${locale}/distributor-portal/orders/${order.id}`}
-                      className="text-white hover:underline text-sm font-semibold"
-                    >
-                      View
-                    </Link>
-                  </td>
+                  <td className="px-4 py-3">{Array.isArray(o.lines) ? o.lines.length : 0}</td>
                 </tr>
               ))}
             </tbody>
           </table>
-        </div>
+        )}
       </div>
     </div>
   )
 }
-

@@ -11,8 +11,8 @@ import ContactSection from '@/components/layout/ContactSection'
 gsap.registerPlugin(ScrollTrigger)
 
 const INDUSTRIES = [
-  { name: 'Textiles', img: '/assets/harvictrade/heroes/textiles-hero.jpg', slug: 'textiles' },
-  { name: 'FMCG', img: '/assets/harvictrade/heroes/fmcg-hero.jpg', slug: 'fmcg' },
+  { name: 'Textiles', img: '/assets/harvictrade/heroes/textiles-hero.webp', slug: 'textiles' },
+  { name: 'FMCG', img: '/assets/harvictrade/heroes/fmcg-hero.webp', slug: 'fmcg' },
   { name: 'Commodities', img: '/assets/harvictrade/heroes/commodities-hero.jpg', slug: 'commodities' },
   { name: 'Industrial', img: '/assets/harvictrade/heroes/industrial-hero.jpg', slug: 'industrial' },
   { name: 'Minerals', img: '/assets/harvictrade/heroes/minerals-hero.jpg', slug: 'minerals' },

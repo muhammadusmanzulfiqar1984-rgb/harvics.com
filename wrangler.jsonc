@@ -8,6 +8,7 @@
     "nodejs_compat",
     "global_fetch_strictly_public"
   ],
+  "minify": true,
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"
@@ -25,10 +26,19 @@
   // out to deploy with a route-restricted token.
   "routes": [
     { "pattern": "harvics.com/*", "zone_name": "harvics.com" },
-    { "pattern": "www.harvics.com/*", "zone_name": "harvics.com" }
+    { "pattern": "www.harvics.com/*", "zone_name": "harvics.com" },
+    { "pattern": "app.harvics.com/*", "zone_name": "harvics.com" }
   ],
   "vars": {
-    "CLOUDFLARE_ACCOUNT_ID": "c606ef34847cc91452c3e27a2a7a91e6"
+    "CLOUDFLARE_ACCOUNT_ID": "c606ef34847cc91452c3e27a2a7a91e6",
+    "HARVYX_APP_ORIGIN": "https://app.harvics.com",
+    "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY": "pk_test_dG91Z2gtc2tpbmstMzMuY2xlcmsuYWNjb3VudHMuZGV2JA",
+    "CLERK_PUBLISHABLE_KEY": "pk_test_dG91Z2gtc2tpbmstMzMuY2xlcmsuYWNjb3VudHMuZGV2JA",
+    "NEXT_PUBLIC_CLERK_SIGN_IN_URL": "/app/sign-in",
+    "NEXT_PUBLIC_CLERK_SIGN_UP_URL": "/app/sign-up",
+    "NEXT_PUBLIC_INTERCOM_APP_ID": "tnuivmad",
+    "NEXT_PUBLIC_INTERCOM_API_BASE": "https://api-iam.intercom.io",
+    "NEXT_PUBLIC_HPAY_URL": "https://hpay.muhammadusmanzulfiqar1984.workers.dev"
   },
   "d1_databases": [
     {
@@ -37,10 +47,28 @@
       "database_id": "8e599b2a-e9ef-47dd-a163-bdec26188bc8",
       "migrations_dir": "migrations"
     }
+  ],
+  // Next.js ISR/SSG incremental cache (OpenNext) — homepage revalidate=300 etc.
+  "r2_buckets": [
+    {
+      "binding": "NEXT_INC_CACHE_R2_BUCKET",
+      "bucket_name": "harvics-cache"
+    }
+  ],
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "harvics-com"
+    }
+  ],
+  // DO queue removed from open-next.config.ts (OOM/500 on homepage).
+  // Keep the applied migration tag so Wrangler does not try to re-create it.
+  "migrations": [
+    {
+      "tag": "opennext-cache-do-queue-v1",
+      "new_sqlite_classes": ["DOQueueHandler"]
+    }
   ]
-  // To enable Next.js ISR/SSG caching, create an R2 bucket and uncomment:
-  // "r2_buckets": [
-  //   { "binding": "NEXT_INC_CACHE_R2_BUCKET", "bucket_name": "harvics-cache" }
-  // ],
+  // Optional later: D1/DO tag cache + Cache Purge for revalidateTag/revalidatePath
   // "images": { "binding": "IMAGES" }
 }

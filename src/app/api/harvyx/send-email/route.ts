@@ -1,69 +1,88 @@
 import { NextResponse } from 'next/server';
+import { appendSendLog } from '@/lib/harvyx/sendLog';
+import { sendHarvyxEmail } from '@/lib/harvyx/email';
+import { resolveAuthContext } from '../auth';
 
 export const dynamic = 'force-dynamic';
 
-const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
-const SENDGRID_FROM = process.env.SENDGRID_FROM || process.env.OUTREACH_FROM || '';
-const SENDGRID_FROM_NAME = process.env.SENDGRID_FROM_NAME || 'Harvics Global';
-
-function isEmail(v: string) {
-  return /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v);
+async function markLeadContacted(leadId: string, origin: string) {
+  try {
+    await fetch(`${origin}/api/harvyx/leads`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+        ...(process.env.HARVYX_API_KEY
+          ? { 'x-api-key': process.env.HARVYX_API_KEY }
+          : {}),
+      },
+      body: JSON.stringify({ id: leadId, status: 'contacted' }),
+    });
+  } catch {
+    /* non-fatal — send already succeeded */
+  }
 }
 
 export async function POST(req: Request) {
   try {
+    const auth = await resolveAuthContext(req);
+    if (auth instanceof Response) return auth;
+
     const body = await req.json();
     const to = String(body.to || '').trim();
     const subject = String(body.subject || '').trim();
     const content = String(body.content || body.body || '').trim();
-    const from = String(body.from || SENDGRID_FROM).trim();
+    const leadId = body.leadId ? String(body.leadId).trim() : '';
+    const updateStatus = body.updateStatus !== false;
+    const fromRaw = body.from ? String(body.from).trim() : undefined;
 
-    if (!SENDGRID_API_KEY) {
-      return NextResponse.json({ error: 'SENDGRID_API_KEY not configured.' }, { status: 500 });
-    }
-    if (!from || !isEmail(from)) {
-      return NextResponse.json(
-        { error: 'No verified sender. Set SENDGRID_FROM in .env.local to a SendGrid-verified email.' },
-        { status: 400 },
-      );
-    }
-    if (!isEmail(to)) {
-      return NextResponse.json({ error: 'Recipient "to" is missing or invalid.' }, { status: 400 });
-    }
-    if (!subject || !content) {
-      return NextResponse.json({ error: 'subject and content are required.' }, { status: 400 });
-    }
-
-    // Convert plain-text body to simple HTML (preserve line breaks).
-    const html = content
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/\n/g, '<br>');
-
-    const res = await fetch('https://api.sendgrid.com/v3/mail/send', {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${SENDGRID_API_KEY}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        personalizations: [{ to: [{ email: to }] }],
-        from: { email: from, name: SENDGRID_FROM_NAME },
-        subject,
-        content: [
-          { type: 'text/plain', value: content },
-          { type: 'text/html', value: html },
-        ],
-      }),
+    const result = await sendHarvyxEmail({
+      to,
+      subject,
+      content,
+      fromRaw,
+      resendApiKeyOverride: auth.org.resendApiKey,
     });
 
-    if (!res.ok) {
-      const err = await res.text();
-      return NextResponse.json({ error: `SendGrid ${res.status}: ${err}` }, { status: res.status });
+    if (!result.ok) {
+      await appendSendLog({
+        to,
+        subject,
+        body: content,
+        leadId: leadId || null,
+        provider: result.provider || 'sendgrid',
+        channel: 'email',
+        status: 'failed',
+        error: result.error,
+      });
+      return NextResponse.json(
+        { error: result.error },
+        { status: result.status && result.status >= 400 ? result.status : 500 },
+      );
     }
 
-    return NextResponse.json({ ok: true, to, messageId: res.headers.get('x-message-id') || null });
+    await appendSendLog({
+      to,
+      subject,
+      body: content,
+      leadId: leadId || null,
+      provider: result.provider,
+      channel: 'email',
+      messageId: result.messageId,
+      status: 'sent',
+    });
+
+    if (leadId && updateStatus) {
+      const origin = new URL(req.url).origin;
+      await markLeadContacted(leadId, origin);
+    }
+
+    return NextResponse.json({
+      ok: true,
+      provider: result.provider,
+      to,
+      messageId: result.messageId,
+      leadId: leadId || null,
+    });
   } catch (e: unknown) {
     return NextResponse.json({ error: String(e) }, { status: 500 });
   }

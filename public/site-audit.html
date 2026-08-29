@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harvics — Full Site Corner Audit · Aug 2, 2026</title>
+  <style>
+    :root {
+      --burgundy: #3d1212;
+      --burgundy-deep: #1a0708;
+      --gold: #c3a35e;
+      --cream: #f7f3ec;
+      --ink: #2a1014;
+      --muted: #6b5458;
+      --ok: #1f6b3a;
+      --ok-bg: #e8f5ec;
+      --bad: #8b1e1e;
+      --bad-bg: #f8e8e8;
+      --warn: #8a5a00;
+      --warn-bg: #f8efd8;
+      --info: #1e4a6b;
+      --info-bg: #e6eef5;
+      --line: rgba(61, 18, 18, 0.12);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.55;
+    }
+    a { color: var(--burgundy); }
+    .hero {
+      background: linear-gradient(145deg, var(--burgundy-deep), var(--burgundy));
+      color: var(--cream);
+      padding: 48px 24px 40px;
+      border-bottom: 3px solid var(--gold);
+    }
+    .hero-inner, .wrap { max-width: 1100px; margin: 0 auto; }
+    .eyebrow {
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 600;
+      margin: 0 0 12px;
+      line-height: 1.15;
+    }
+    .hero p { margin: 0; max-width: 70ch; opacity: 0.92; }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid rgba(195, 163, 94, 0.45);
+      padding: 6px 12px;
+      font-size: 12px;
+      color: var(--cream);
+    }
+    nav.toc {
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+    nav.toc .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 14px;
+      padding: 12px 24px;
+      font-size: 13px;
+    }
+    nav.toc a {
+      text-decoration: none;
+      color: var(--muted);
+    }
+    nav.toc a:hover { color: var(--burgundy); }
+    main { padding: 32px 24px 80px; }
+    section {
+      background: #fff;
+      border: 1px solid var(--line);
+      margin: 0 0 22px;
+      padding: 28px 24px;
+    }
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 24px;
+      margin: 0 0 8px;
+      color: var(--burgundy);
+    }
+    h3 {
+      font-size: 15px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin: 24px 0 10px;
+    }
+    .lead { color: var(--muted); margin: 0 0 18px; max-width: 80ch; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin: 18px 0 8px;
+    }
+    .stat {
+      background: var(--cream);
+      border: 1px solid var(--line);
+      padding: 16px;
+    }
+    .stat b {
+      display: block;
+      font-size: 28px;
+      font-family: Georgia, serif;
+      color: var(--burgundy);
+      line-height: 1.1;
+    }
+    .stat span { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+    .callout {
+      border-left: 4px solid var(--gold);
+      background: var(--warn-bg);
+      padding: 14px 16px;
+      margin: 16px 0;
+      color: var(--ink);
+    }
+    .callout.danger { border-color: var(--bad); background: var(--bad-bg); }
+    .callout.info { border-color: var(--info); background: var(--info-bg); }
+    .callout strong { display: block; margin-bottom: 4px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    th {
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: var(--cream);
+    }
+    tr:hover td { background: rgba(247, 243, 236, 0.55); }
+    .sev, .code {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 3px 8px;
+      border: 1px solid transparent;
+    }
+    .sev-P0, .code-404 { background: var(--bad-bg); color: var(--bad); border-color: #e0b4b4; }
+    .sev-P1, .code-405 { background: var(--warn-bg); color: var(--warn); border-color: #e4d2a0; }
+    .sev-P2 { background: var(--info-bg); color: var(--info); border-color: #b9cfe0; }
+    .sev-P3 { background: #eee; color: #555; border-color: #ddd; }
+    .code-200 { background: var(--ok-bg); color: var(--ok); border-color: #b6d8c1; }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+    }
+    .card {
+      border: 1px solid var(--line);
+      background: var(--cream);
+      padding: 16px;
+    }
+    .card h4 {
+      margin: 0 0 8px;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--burgundy);
+    }
+    .card ul { margin: 0; padding-left: 18px; }
+    .card li { margin: 4px 0; }
+    ol.actions { padding-left: 22px; }
+    ol.actions li { margin: 8px 0; }
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 14px;
+    }
+    .filters button {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+      padding: 6px 12px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .filters button.active {
+      background: var(--burgundy);
+      color: var(--cream);
+      border-color: var(--burgundy);
+    }
+    footer.page-foot {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px 40px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.92em;
+      background: rgba(61, 18, 18, 0.06);
+      padding: 1px 5px;
+    }
+    @media print {
+      nav.toc { position: static; }
+      .hero { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      section { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Harvics Global Ventures · Internal</div>
+      <h1>Full Site Corner Audit</h1>
+      <p>
+        End-to-end check of www.harvics.com and localhost:3333 — App Router inventory,
+        live HTTP probes across marketing / OS / portals / HarvyX / Tabraiz, plus deploy,
+        auth, CSP, and hygiene findings.
+      </p>
+      <div class="meta">
+        <span class="chip">Date · 2 Aug 2026</span>
+        <span class="chip">Live · www.harvics.com</span>
+        <span class="chip">Local · :3333</span>
+        <span class="chip">Worker · d8f26db6…</span>
+        <span class="chip">Scope · route map + HTTP + config</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="Contents">
+    <div class="wrap">
+      <a href="#summary">Summary</a>
+      <a href="#blockers">Ship blockers</a>
+      <a href="#findings">Findings</a>
+      <a href="#surfaces">Surfaces</a>
+      <a href="#routes">Route map</a>
+      <a href="#probes">HTTP probes</a>
+      <a href="#health">HarvyX health</a>
+      <a href="#actions">Fix order</a>
+      <a href="#scope">Scope</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section id="summary">
+      <h2>Executive summary</h2>
+      <p class="lead">
+        The marketing site, core verticals, apps, OS shells, HarvyX, and Tabraiz embeds are largely
+        responding. The urgent gaps are operational: Intercom chat fix not redeployed, production CSP
+        still permits localhost, Clerk still on test keys, and the full OpenNext R2 cache deploy path
+        is fragile. Architecture debt (duplicate portal/OS URL trees) is real but secondary.
+      </p>
+      <div class="stats">
+        <div class="stat"><b>295</b><span>App pages</span></div>
+        <div class="stat"><b>74</b><span>API routes</span></div>
+        <div class="stat"><b>38</b><span>Locales</span></div>
+        <div class="stat"><b>116</b><span>OS module pages</span></div>
+        <div class="stat"><b>47</b><span>Paths probed</span></div>
+        <div class="stat"><b>40</b><span>Probe 200 OK</span></div>
+        <div class="stat"><b>6</b><span>Probe 404</span></div>
+        <div class="stat"><b>65.9k</b><span>HarvyX leads</span></div>
+      </div>
+    </section>
+
+    <section id="blockers">
+      <h2>Ship blockers</h2>
+      <div class="callout danger">
+        <strong>Do these before the next public polish pass</strong>
+        1) Redeploy so Intercom no longer scrolls to Contact ·
+        2) Rotate the Cloudflare API token pasted in chat ·
+        3) Strip localhost from production CSP ·
+        4) Prefer worker-only deploy until R2 cache populate is stable.
+      </div>
+    </section>
+
+    <section id="findings">
+      <h2>Ranked findings</h2>
+      <p class="lead">Severity · P0 must fix now · P1 before next release · P2 planned cleanup · P3 hygiene.</p>
+      <div class="filters" id="sev-filters">
+        <button type="button" class="active" data-sev="ALL">All</button>
+        <button type="button" data-sev="P0">P0</button>
+        <button type="button" data-sev="P1">P1</button>
+        <button type="button" data-sev="P2">P2</button>
+        <button type="button" data-sev="P3">P3</button>
+      </div>
+      <table id="findings-table">
+        <thead>
+          <tr><th>Sev</th><th>Area</th><th>Finding</th><th>Action</th></tr>
+        </thead>
+        <tbody>
+          <tr data-sev="P0"><td><span class="sev sev-P0">P0</span></td><td>Intercom</td><td>Chat→Contact footer scroll fix is local only — not redeployed to production</td><td>Worker-only deploy with <code>OPEN_NEXT_DEPLOY=true</code> so live picks up <code>IntercomWidget.tsx</code></td></tr>
+          <tr data-sev="P0"><td><span class="sev sev-P0">P0</span></td><td>Security</td><td>Cloudflare API token was pasted in chat</td><td>Roll / rotate Harvyx API token in Cloudflare dashboard</td></tr>
+          <tr data-sev="P1"><td><span class="sev sev-P1">P1</span></td><td>CSP</td><td>Production CSP <code>connect-src</code> still allows localhost:4000 and localhost:8080</td><td>Strip localhost from production CSP in <code>next.config.js</code></td></tr>
+          <tr data-sev="P1"><td><span class="sev sev-P1">P1</span></td><td>Auth</td><td>Production Clerk keys are <code>pk_test_*</code> (test mode on live)</td><td>Move to live keys when ready for real sign-in</td></tr>
+          <tr data-sev="P1"><td><span class="sev sev-P1">P1</span></td><td>Deploy</td><td>Full <code>npm run deploy</code> fails on R2 cache populate (~13k files / network retries)</td><td>Use worker-only deploy or raise <code>--cacheChunkSize</code> and retry R2</td></tr>
+          <tr data-sev="P1"><td><span class="sev sev-P1">P1</span></td><td>Routing</td><td>Wrong vertical slugs 404: <code>/en/ai-tech</code>, <code>/en/apparels</code>, <code>/en/electronics</code></td><td>Canonical: <code>/en/ai</code>, <code>/en/textiles</code>; add redirects for common wrong URLs</td></tr>
+          <tr data-sev="P2"><td><span class="sev sev-P2">P2</span></td><td>Billing</td><td>Stripe not configured (<code>stripe.configured=false</code>)</td><td>Add Stripe keys or hide Upgrade UI until ready</td></tr>
+          <tr data-sev="P2"><td><span class="sev sev-P2">P2</span></td><td>Architecture</td><td>Overlapping portal trees: <code>/portal</code>, <code>/portals</code>, <code>/distributor-portal</code>, <code>/distributor</code>, <code>/dashboard/*</code></td><td>Pick one canonical portal URL map; redirect the rest</td></tr>
+          <tr data-sev="P2"><td><span class="sev sev-P2">P2</span></td><td>Architecture</td><td>Dual OS: <code>/{locale}/os/*</code> (116 pages) vs bare <code>/os/*</code> stubs</td><td>Redirect <code>/os/*</code> → <code>/en/os/*</code> or delete stubs</td></tr>
+          <tr data-sev="P2"><td><span class="sev sev-P2">P2</span></td><td>Hygiene</td><td>Trial/test/demo HTML removed from repo and routes</td><td>Done — redeploy to clear production assets</td></tr>
+          <tr data-sev="P2"><td><span class="sev sev-P2">P2</span></td><td>Repo</td><td>35MB <code>leads.json</code> + enriched contact CSVs under <code>src/data/harvyx</code></td><td>Keep leads in D1 only; gitignore large CSV dumps</td></tr>
+          <tr data-sev="P3"><td><span class="sev sev-P3">P3</span></td><td>Orphans</td><td>Empty dirs: <code>src/app/harvyx/</code>, <code>src/app/%5Blocale%5D/videos</code>, localization-dashboard</td><td>Delete accidental folders</td></tr>
+          <tr data-sev="P3"><td><span class="sev sev-P3">P3</span></td><td>Wrangler</td><td>DOQueueHandler binding removed locally; migration tag kept</td><td>Confirm next deploy no longer warns about missing DO class</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="surfaces">
+      <h2>Surface health</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h4>Live stack</h4>
+          <ul>
+            <li>www.harvics.com Worker version <code>d8f26db6-d84f-4fb0-8a29-1275eee1038b</code></li>
+            <li>Routes: harvics.com · www · app.harvics.com</li>
+            <li>OpenNext on Cloudflare Workers + R2 incremental cache bucket <code>harvics-cache</code></li>
+            <li>Localhost <code>http://localhost:3333</code> serving core paths 200</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>HarvyX / ops</h4>
+          <ul>
+            <li>Phase <code>4b-saas</code> · 65,900 leads in D1</li>
+            <li>Clerk configured · Stripe not configured</li>
+            <li>Twilio SMS + WhatsApp on</li>
+            <li>SendGrid + Resend on · Hx API OK · Kafka configured</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Product surfaces</h4>
+          <ul>
+            <li>Marketing site — Live</li>
+            <li>HarvyX Growth OS — Live (billing Partial)</li>
+            <li>HarvicTrade — Partial (RFQ UI live)</li>
+            <li>Harvics OS UI — Partial (large module set)</li>
+            <li>Partner portals — Partial / overlapping URLs</li>
+            <li>Tabraiz Town — Partial (embed live)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Intercom</h4>
+          <ul>
+            <li>App ID <code>tnuivmad</code> wired in site chrome</li>
+            <li>Local fix: chat button no longer scrolls to <code>#contact</code></li>
+            <li>Production still needs redeploy to pick up that fix</li>
+            <li>Fallback now shows “Chat unavailable” note only</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="routes">
+      <h2>Route map (App Router)</h2>
+      <p class="lead">
+        Almost everything lives under <code>/{locale}/…</code> (localePrefix always). No route groups.
+        API routes are unprefixed under <code>/api/…</code>.
+      </p>
+      <h3>Counts</h3>
+      <table>
+        <thead><tr><th>Kind</th><th>Count</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td><code>page.tsx</code></td><td>295</td><td>289 under [locale], 6 outside</td></tr>
+          <tr><td><code>route.ts</code> APIs</td><td>74</td><td>harvyx 32 · ai 14 · wave8 9 · meet 2 · auth 2 · others</td></tr>
+          <tr><td>Layouts</td><td>16</td><td>Locale shell owns html/header/footer/Intercom</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Special areas</h3>
+      <table>
+        <thead><tr><th>Area</th><th>URLs</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>HarvyX app</td><td><code>/{locale}/harvyx</code>, <code>…/console</code>, <code>/app/harvyx</code></td><td>Clerk scoped here; marketing is <code>/apps/harvyx</code></td></tr>
+          <tr><td>Portals</td><td><code>/portal</code>, <code>/portals</code>, <code>/distributor-portal</code>, <code>/dashboard/*</code></td><td>Conceptual overlap — needs canonical map</td></tr>
+          <tr><td>OS</td><td><code>/{locale}/os/**</code> (116) + bare <code>/os/*</code></td><td>Locale OS is primary</td></tr>
+          <tr><td>Apps</td><td><code>/apps/{harvyx,harvoice,hpay,vatify,event-os,harvics-os}</code></td><td>Marketing + static embeds</td></tr>
+          <tr><td>Tabraiz</td><td><code>/projects/tabraiz-town</code> and <code>/real-estate/projects/tabraiz-town</code></td><td>Both launch <code>/tabraiz-town/index.html</code></td></tr>
+          <tr><td>Verticals</td><td><code>/{locale}/{vertical}/…</code></td><td>Catch-all; static segments win collisions</td></tr>
+          <tr><td>Meet / Admin</td><td><code>/meet</code>, <code>/admin</code></td><td>Ops / RBAC gated</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Canonical vertical slugs</h3>
+      <table>
+        <thead><tr><th>Use this</th><th>Not this</th><th>Asset folder</th></tr></thead>
+        <tbody>
+          <tr><td><code>/en/textiles</code></td><td><code>/en/apparels</code> (404)</td><td>01-apparels</td></tr>
+          <tr><td><code>/en/fmcg</code></td><td>—</td><td>02-fmcg</td></tr>
+          <tr><td><code>/en/commodities</code></td><td>—</td><td>03-commodities</td></tr>
+          <tr><td><code>/en/industrial</code></td><td>—</td><td>04-industrial</td></tr>
+          <tr><td><code>/en/minerals</code></td><td>—</td><td>05-minerals</td></tr>
+          <tr><td><code>/en/oil-gas</code></td><td>—</td><td>06-oil-gas</td></tr>
+          <tr><td><code>/en/real-estate</code></td><td>—</td><td>07-real-estate</td></tr>
+          <tr><td><code>/en/sourcing</code></td><td>—</td><td>08-sourcing</td></tr>
+          <tr><td><code>/en/finance</code></td><td>—</td><td>09-finance</td></tr>
+          <tr><td><code>/en/ai</code></td><td><code>/en/ai-tech</code> (404)</td><td>10-ai-tech</td></tr>
+          <tr><td>—</td><td><code>/en/electronics</code> (404)</td><td>Not a top-level vertical</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="probes">
+      <h2>HTTP probe matrix (live)</h2>
+      <p class="lead">
+        Method: <code>curl -I -L</code> against <code>https://www.harvics.com</code>. Localhost core paths also returned 200.
+        Filter by status below.
+      </p>
+      <div class="filters" id="code-filters">
+        <button type="button" class="active" data-code="ALL">All</button>
+        <button type="button" data-code="200">200</button>
+        <button type="button" data-code="404">404</button>
+        <button type="button" data-code="405">405</button>
+      </div>
+      <table id="probe-table">
+        <thead><tr><th>Path</th><th>Status</th><th>Note</th></tr></thead>
+        <tbody>
+          <tr data-code="200"><td>/en</td><td><span class="code code-200">200</span></td><td>Homepage</td></tr>
+          <tr data-code="200"><td>/en/contact</td><td><span class="code code-200">200</span></td><td>Contact</td></tr>
+          <tr data-code="200"><td>/en/about</td><td><span class="code code-200">200</span></td><td>About</td></tr>
+          <tr data-code="200"><td>/en/apps</td><td><span class="code code-200">200</span></td><td>Apps hub</td></tr>
+          <tr data-code="200"><td>/en/harvyx</td><td><span class="code code-200">200</span></td><td>HarvyX app gate</td></tr>
+          <tr data-code="200"><td>/en/apps/harvyx</td><td><span class="code code-200">200</span></td><td>Marketing HarvyX</td></tr>
+          <tr data-code="200"><td>/en/harvictrade</td><td><span class="code code-200">200</span></td><td>Marketplace</td></tr>
+          <tr data-code="200"><td>/en/harvictrade/rfq</td><td><span class="code code-200">200</span></td><td>RFQ</td></tr>
+          <tr data-code="200"><td>/en/portals</td><td><span class="code code-200">200</span></td><td>Portals hub</td></tr>
+          <tr data-code="200"><td>/en/portal</td><td><span class="code code-200">200</span></td><td>Portal tree</td></tr>
+          <tr data-code="200"><td>/en/distributor-portal</td><td><span class="code code-200">200</span></td><td>Distributor portal</td></tr>
+          <tr data-code="200"><td>/en/os</td><td><span class="code code-200">200</span></td><td>OS hub</td></tr>
+          <tr data-code="200"><td>/en/os/crm</td><td><span class="code code-200">200</span></td><td>OS CRM</td></tr>
+          <tr data-code="200"><td>/en/os/finance</td><td><span class="code code-200">200</span></td><td>OS Finance</td></tr>
+          <tr data-code="200"><td>/en/meet</td><td><span class="code code-200">200</span></td><td>Meet</td></tr>
+          <tr data-code="200"><td>/en/textiles</td><td><span class="code code-200">200</span></td><td>Vertical (correct)</td></tr>
+          <tr data-code="200"><td>/en/fmcg</td><td><span class="code code-200">200</span></td><td>Vertical</td></tr>
+          <tr data-code="200"><td>/en/finance</td><td><span class="code code-200">200</span></td><td>Vertical</td></tr>
+          <tr data-code="200"><td>/en/ai</td><td><span class="code code-200">200</span></td><td>AI vertical (correct)</td></tr>
+          <tr data-code="404"><td>/en/ai-tech</td><td><span class="code code-404">404</span></td><td>Wrong slug — use /en/ai</td></tr>
+          <tr data-code="404"><td>/en/apparels</td><td><span class="code code-404">404</span></td><td>Wrong slug — use /en/textiles</td></tr>
+          <tr data-code="404"><td>/en/electronics</td><td><span class="code code-404">404</span></td><td>No top-level vertical</td></tr>
+          <tr data-code="200"><td>/en/minerals</td><td><span class="code code-200">200</span></td><td>Vertical</td></tr>
+          <tr data-code="200"><td>/en/commodities</td><td><span class="code code-200">200</span></td><td>Vertical</td></tr>
+          <tr data-code="200"><td>/en/industrial</td><td><span class="code code-200">200</span></td><td>Vertical</td></tr>
+          <tr data-code="200"><td>/en/oil-gas</td><td><span class="code code-200">200</span></td><td>Vertical</td></tr>
+          <tr data-code="200"><td>/en/real-estate</td><td><span class="code code-200">200</span></td><td>Vertical</td></tr>
+          <tr data-code="200"><td>/en/sourcing</td><td><span class="code code-200">200</span></td><td>Vertical</td></tr>
+          <tr data-code="200"><td>/en/projects/tabraiz-town</td><td><span class="code code-200">200</span></td><td>Tabraiz route A</td></tr>
+          <tr data-code="200"><td>/en/real-estate/projects/tabraiz-town</td><td><span class="code code-200">200</span></td><td>Tabraiz route B</td></tr>
+          <tr data-code="200"><td>/tabraiz-town/index.html</td><td><span class="code code-200">200</span></td><td>Static embed</td></tr>
+          <tr data-code="200"><td>/harvyx.html</td><td><span class="code code-200">200</span></td><td>Console HTML</td></tr>
+          <tr data-code="200"><td>/api/harvyx/health</td><td><span class="code code-200">200</span></td><td>Ops health</td></tr>
+          <tr data-code="200"><td>/api/health</td><td><span class="code code-200">200</span></td><td>Health</td></tr>
+          <tr data-code="405"><td>/api/search</td><td><span class="code code-405">405</span></td><td>HEAD not allowed (GET expected)</td></tr>
+          <tr data-code="200"><td>/sitemap.xml</td><td><span class="code code-200">200</span></td><td>Sitemap</td></tr>
+          <tr data-code="200"><td>/robots.txt</td><td><span class="code code-200">200</span></td><td>Robots</td></tr>
+          <tr data-code="200"><td>/en/admin</td><td><span class="code code-200">200</span></td><td>Redirects toward login (RBAC)</td></tr>
+          <tr data-code="200"><td>/en/dashboard</td><td><span class="code code-200">200</span></td><td>Dashboard shell</td></tr>
+          <tr data-code="200"><td>/en/login</td><td><span class="code code-200">200</span></td><td>Login</td></tr>
+          <tr data-code="200"><td>/en/faq</td><td><span class="code code-200">200</span></td><td>FAQ</td></tr>
+          <tr data-code="200"><td>/en/privacy</td><td><span class="code code-200">200</span></td><td>Privacy</td></tr>
+          <tr data-code="200"><td>/en/terms</td><td><span class="code code-200">200</span></td><td>Terms</td></tr>
+          <tr data-code="200"><td>/en/apps/harvoice</td><td><span class="code code-200">200</span></td><td>App page</td></tr>
+          <tr data-code="200"><td>/en/apps/hpay</td><td><span class="code code-200">200</span></td><td>App page</td></tr>
+          <tr data-code="200"><td>/en/apps/vatify</td><td><span class="code code-200">200</span></td><td>App page</td></tr>
+          <tr data-code="200"><td>/en/apps/event-os</td><td><span class="code code-200">200</span></td><td>App page</td></tr>
+          <tr data-code="200"><td>/en/apps/harvics-os</td><td><span class="code code-200">200</span></td><td>App page</td></tr>
+          <tr data-code="404"><td>/en/homepage-trial</td><td><span class="code code-404">404</span></td><td>Removed</td></tr>
+          <tr data-code="200"><td>/en/test</td><td><span class="code code-200">200</span></td><td>Test page live in prod</td></tr>
+          <tr data-code="404"><td>/en/localization-dashboard</td><td><span class="code code-404">404</span></td><td>Empty orphan dir</td></tr>
+          <tr data-code="200"><td>/fr</td><td><span class="code code-200">200</span></td><td>Locale root works</td></tr>
+          <tr data-code="404"><td>/en/ar</td><td><span class="code code-404">404</span></td><td>Locale is /ar not /en/ar</td></tr>
+          <tr data-code="404"><td>/en/fr</td><td><span class="code code-404">404</span></td><td>Locale is /fr not /en/fr</td></tr>
+          <tr data-code="200"><td>/app/harvyx</td><td><span class="code code-200">200</span></td><td>App host path</td></tr>
+          <tr data-code="200"><td>/app/sign-in</td><td><span class="code code-200">200</span></td><td>Clerk sign-in</td></tr>
+          <tr data-code="200"><td>/os/intelligence</td><td><span class="code code-200">200</span></td><td>Non-locale OS stub</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="health">
+      <h2>HarvyX health snapshot</h2>
+      <p class="lead">From <code>GET /api/harvyx/health</code> on live (2 Aug 2026).</p>
+      <table>
+        <thead><tr><th>Check</th><th>Status</th><th>Detail</th></tr></thead>
+        <tbody>
+          <tr><td>Phase</td><td><span class="code code-200">OK</span></td><td>4b-saas</td></tr>
+          <tr><td>Leads</td><td><span class="code code-200">OK</span></td><td>65,900</td></tr>
+          <tr><td>Clerk</td><td><span class="code code-200">OK</span></td><td>configured (test keys in wrangler vars)</td></tr>
+          <tr><td>Stripe</td><td><span class="code code-405">OFF</span></td><td>not configured</td></tr>
+          <tr><td>Twilio</td><td><span class="code code-200">OK</span></td><td>sms=on · whatsapp=on</td></tr>
+          <tr><td>Email</td><td><span class="code code-200">OK</span></td><td>SendGrid + Resend</td></tr>
+          <tr><td>Hx API</td><td><span class="code code-200">OK</span></td><td>reachable</td></tr>
+          <tr><td>AI providers</td><td><span class="code code-200">OK</span></td><td>groq · openai · deepseek · nvidia flags true</td></tr>
+          <tr><td>Kafka</td><td><span class="code code-200">OK</span></td><td>configured</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+        <section id="cleanup-done">
+      <h2>Cleanup completed (local)</h2>
+      <p class="lead">Removed trial App routes, public trial/demo/preview HTML, agent preview PNGs, empty orphan dirs (<code>src/app/harvyx</code>, <code>%5Blocale%5D</code>, presentations shell, localization-dashboard, /test), HarvicTrade v2–v4 concept pages, flowchart/wiring draft HTML, and <code>.env.local.p2bak</code>. Kept <code>harvyx.html</code> (live console) and <code>site-audit.html</code>.</p>
+    </section>
+
+    <section id="actions">
+      <h2>Recommended fix order</h2>
+      <ol class="actions">
+        <li>Redeploy with Intercom fix (worker-only is fine).</li>
+        <li>Rotate Cloudflare API token pasted in chat.</li>
+        <li>Remove localhost from production CSP.</li>
+        <li>Add redirects: <code>/ai-tech → /ai</code>, <code>/apparels → /textiles</code>.</li>
+        <li>Trial/demo HTML + orphan routes removed locally — redeploy to sync production.</li>
+        <li>Collapse portal URL trees to one canonical map.</li>
+        <li>Clean orphan empty dirs and large lead CSV dumps from the repo.</li>
+      </ol>
+      <div class="callout info">
+        <strong>Fast deploy command (skips R2 cache populate)</strong>
+        <code>OPEN_NEXT_DEPLOY=true npx wrangler deploy</code>
+        — requires a built <code>.open-next/</code> (already present from last build) and valid <code>CLOUDFLARE_API_TOKEN</code>.
+      </div>
+    </section>
+
+    <section id="scope">
+      <h2>Scope &amp; limits</h2>
+      <p class="lead">
+        Covered: App Router inventory, live/local HTTP corners, HarvyX health, CSP/auth/deploy signals,
+        Intercom chat behavior, orphan paths. Not covered in this pass: Lighthouse on all 295 pages,
+        full click-through of every OS module UI, visual QA of every locale, or penetration testing.
+      </p>
+      <p class="lead" style="margin-bottom:0">
+        Suggested deep-dives next: homepage performance · portals auth · HarvyX console · OS modules · Intercom Fin content.
+      </p>
+    </section>
+  </main>
+
+  <footer class="page-foot">
+    Harvics Global Ventures — Site Corner Audit · generated for internal review · open via
+    <code>http://localhost:3333/site-audit.html</code> or this file in <code>public/site-audit.html</code>
+  </footer>
+
+  <script>
+    ;(function () {
+      function bind(groupId, dataAttr, tableId) {
+        const group = document.getElementById(groupId)
+        const table = document.getElementById(tableId)
+        if (!group || !table) return
+        group.addEventListener('click', (e) => {
+          const btn = e.target.closest('button')
+          if (!btn) return
+          group.querySelectorAll('button').forEach((b) => b.classList.remove('active'))
+          btn.classList.add('active')
+          const val = btn.getAttribute(dataAttr)
+          table.querySelectorAll('tbody tr').forEach((row) => {
+            row.style.display = val === 'ALL' || row.getAttribute(dataAttr) === val ? '' : 'none'
+          })
+        })
+      }
+      bind('sev-filters', 'data-sev', 'findings-table')
+      bind('code-filters', 'data-code', 'probe-table')
+    })()
+  </script>
+</body>
+</html>

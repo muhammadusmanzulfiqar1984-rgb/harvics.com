@@ -1,0 +1,388 @@
+title,totalScore,reviewsCount,street,city,state,countryCode,website,phone,categories/0,categories/1,categories/2,categories/3,categories/4,categories/5,categories/6,categories/7,categories/8,categories/9,url,categoryName,company_name_scraped,description,phone_scraped,address,linkedin_company_url,industry,enrichment_status,score
+GÜVEN-AL Lebensmittel Großhandel,4.3,39.0,Josef-Eicher-Straße 10,Frankfurt am Main,,DE,https://guvenal.de/,+49 69 4365454,Wholesale grocer,Food manufacturer,Food products supplier,Grocery store,,,,,,,https://www.google.com/maps/search/?api=1&query=G%C3%9CVEN-AL%20Lebensmittel%20Gro%C3%9Fhandel&query_place_id=ChIJEfMkiysGvUcRkVU3Q1s6RUs,Wholesale grocer,haubtseite,,,,,,partial,1
+Okle GmbH Wholesale Central,3.9,50.0,Hochwaldstraße 1-7,Singen,,DE,http://www.okle.de/,+49 7731 8290,Wholesale grocer,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Okle%20GmbH%20Wholesale%20Central&query_place_id=ChIJTWi68rZimkcRG4pcdc1vcEk,Wholesale grocer,Okle GmbH Singen | Großhandel | Nahversorger,"Die Okle GmbH ist eine Lebensmittelgroßhandlung, mit Fokus auf dem regionalen Einzelhandel. Wir bieten alle Services rund um Ihren Markt.",7731 829,,,,partial,1
+ALTUN Lebensmittel e.K.,4.7,84.0,Gaußstraße 7,Berlin,,DE,https://altun-lebensmittel.de/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=15063414987751134022,+49 30 3951984,Wholesale food store,Import export company,,,,,,,,,https://www.google.com/maps/search/?api=1&query=ALTUN%20Lebensmittel%20e.K.&query_place_id=ChIJHX4MBFtRqEcRBcXjGGEUXHQ,Wholesale food store,"Altun Lebensmittelgroßmarkt | Großhandel | Gaußstraße 7, 10589 Berlin, Germany","Altun Lebensmittel e.K. ist ein Lebensmittelgroßhandel in Berlin. Wir führen in unserem Großmarkt qualitativ hochwertige Lebensmittel zu günstigen Preisen, die den Berliner Gastronomen eine hervorragende Gewinnspanne ermöglichen. Der Großmarkt befindet sich in der Gaußstr. 7 10589 Berlin.",030 395,,,,partial,1
+Transfood Großhandel (Wholesale),4.4,46.0,Gothaer Str. 6,Ratingen,,DE,http://www.transfoodgrosshandel.com/,+49 211 4371890,Wholesale grocer,Wholesaler,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Transfood%20Gro%C3%9Fhandel%20(Wholesale)&query_place_id=ChIJm2TgHkfIuEcRg41X2eDM3ps,Wholesale grocer,,,,,,,partial,0
+Bodan Großhandel für Naturkost GmbH,4.4,35.0,Zum Degenhardt 26,Überlingen,,DE,http://www.bodan.de/,+49 7551 94790,Wholesale grocer,Wholesaler,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Bodan%20Gro%C3%9Fhandel%20f%C3%BCr%20Naturkost%20GmbH&query_place_id=ChIJJ9Qn-nBZmkcRbkhRrnQEI58,Wholesale grocer,Bodan GmbH,,,,https://www.linkedin.com/company/bodan-gro%C3%9Fhandel-f%C3%BCr-naturkost-gmbh/,,partial,1
+Grossmarkt Stuttgart,4.3,857.0,Langwiesenweg 30,Stuttgart,,DE,http://www.grossmarkt-stuttgart.de/,+49 711 480410,Warehouse store,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Grossmarkt%20Stuttgart&query_place_id=ChIJRUXakPfEmUcRojnVCJ8faU0,Warehouse store,Home – Grossmarkt Stuttgart,Grossmarkt Stuttgart,400000,,,Grossmarkt Stuttgart,partial,1
+MEGA,4.1,225.0,Schlachthofstraße 6,Stuttgart,,DE,http://www.mega-stuttgart.de/,+49 711 16840,Wholesale grocer,Wholesaler,,,,,,,,,https://www.google.com/maps/search/?api=1&query=MEGA&query_place_id=ChIJvyWhWeTEmUcRUBbx94CZBbk,Wholesale grocer,MEGA - Großhandel für die Metzgerei & Gastronomie,Die MEGA blickt auf eine lange Tradition zurück. Angefangen hat alles als Einkaufs- und Lieferungsgenossenschaft für das Metzgerhandwerk vor 80 Jahren.,,,https://www.linkedin.com/company/mega-das-fach-zentrum-f%C3%BCr-die-metzgerei-und-gastronomie-eg/,,partial,1
+Foodservice Werner Ebert GmbH & Co. KG,4.8,57.0,Langwiesenweg 30,Stuttgart,,DE,https://www.werner-ebert.de/,+49 711 4804510,Wholesale grocer,Deli,Manufacturer,Produce market,Wholesaler,,,,,,https://www.google.com/maps/search/?api=1&query=Foodservice%20Werner%20Ebert%20GmbH%20%26%20Co.%20KG&query_place_id=ChIJ2b8uAFnEmUcRrNf5_FC66WI,Wholesale grocer,Großhandel Obst und Gemüse Stuttgart - Foodservice Werner Ebert Stuttgart,"Großhandel für Obst und Gemüse Werner Ebert: von Stuttgart bis an den Bodensee liefern wir täglich hochwertige Frische, Feinkost und Convenience. Jetzt bestellen!",49 711 4804,,,,partial,1
+Ikram Lebensmittel Großhandel GmbH,4.4,33.0,Flottenstraße 24 c,Berlin,,DE,http://www.ikram-food.de/,+49 30 39885216,Wholesale grocer,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Ikram%20Lebensmittel%20Gro%C3%9Fhandel%20GmbH&query_place_id=ChIJh8N3T7pTqEcRM3MzpGMBBqE,Wholesale grocer,Ikram Lebensmittel Grosshandel GmbH – Ikram Lebensmittel Grosshandel GmbH Berlin,,030 398,,https://www.linkedin.com/company/ikram-lebensmittel-gro%C3%9Fhandel-gmbh,,partial,1
+Utz GmbH & Co.KG Lebensmittel-Großhandel,4.5,43.0,Kolpingstraße 40,Ochsenhausen,,DE,http://www.utz-lebensmittel.de/,+49 7352 92020,Wholesale grocer,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Utz%20GmbH%20%26%20Co.KG%20Lebensmittel-Gro%C3%9Fhandel&query_place_id=ChIJKxEZZMrDm0cR4RGvXOLB4m0,Wholesale grocer,Utz Lebensmittel Großhandel,,07352 9202,,,,partial,1
+Netzhammer Gross Handels GmbH,4.5,131.0,Güterstraße 23,Singen,,DE,http://www.netzhammer.de/,+49 7731 99880,Wholesale grocer,Grocery delivery service,Grocery store,Wholesaler,,,,,,,https://www.google.com/maps/search/?api=1&query=Netzhammer%20Gross%20Handels%20GmbH&query_place_id=ChIJDTEfHUt9mkcRy26mVbHEt6o,Wholesale grocer,Ihr C&C Großmarkt & Lieferservice - Netzhammer Grosshandels GmbH,"Startseite. Ihr C&C Großmarkt in der Region. Für Gastronomie, Hotellerie, Großküchen, Handel,Gewerbetreibende, Freie Berufe und Vereine.",,,,,partial,1
+MELEDI Gastronomie Großhandel,4.3,47.0,Fichtenstraße 105,Düsseldorf,,DE,https://www.meledi.de/duesseldorf/,+49 211 88233733,Wholesale grocer,Wholesale market,,,,,,,,,https://www.google.com/maps/search/?api=1&query=MELEDI%20Gastronomie%20Gro%C3%9Fhandel&query_place_id=ChIJJ0m4xXfLuEcROG9K-8Tm6ds,Wholesale grocer,Gastronomie Grosshandel in Düsseldorf - MELEDI Gastronomie Großhandel,Entdecke den günstigsten Großhandel Deutschlands. Beantrage eine Kundenkarte und profitiere von den besten Angeboten.,49 3221 2288,,,"großhandel, großhändler, catering, gastronomie, lebensmittel",partial,1
+Can wholesale GmbH & Co KG,4.6,139.0,Gustav-Hagemann-Straße 46,Salzgitter,,DE,http://www.can-grosshandel.de/,+49 5341 7906860,Wholesaler,Kitchen supply store,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Can%20wholesale%20GmbH%20%26%20Co%20KG&query_place_id=ChIJz0SyWK1QpUcR351m0xK2BaM,Wholesaler,CAN Großhandel GmbH & Co. KG,Ihr Qualitätslieferant für die Bereiche Großküchen und Gastronomie. Durch den Standpunkt in Salzgitter können wir in einem Umkreis von 200 Kilometern liefern.,,,,,partial,1
+MEGA Stockach Das Fach-Zentrum für die Metzgerei und Gastronomie GmbH,4.5,99.0,Reichenauring 1,Stockach,,DE,https://www.mega-stuttgart.de/,+49 7771 93400,Wholesale grocer,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=MEGA%20Stockach%20Das%20Fach-Zentrum%20f%C3%BCr%20die%20Metzgerei%20und%20Gastronomie%20GmbH&query_place_id=ChIJAzsl1MZgCEERLN0KVqIIuO8,Wholesale grocer,MEGA - Großhandel für die Metzgerei & Gastronomie,Die MEGA blickt auf eine lange Tradition zurück. Angefangen hat alles als Einkaufs- und Lieferungsgenossenschaft für das Metzgerhandwerk vor 80 Jahren.,,,https://www.linkedin.com/company/mega-das-fach-zentrum-f%C3%BCr-die-metzgerei-und-gastronomie-eg/,,partial,1
+Han „Hantat“ Lebensmittel Großhandel GmbH,5.0,1.0,Langwiesenweg 30,Stuttgart,,DE,http://www.hantatfood.de/,+49 711 4860430,Wholesaler,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Han%20%E2%80%9EHantat%E2%80%9C%20Lebensmittel%20Gro%C3%9Fhandel%20GmbH&query_place_id=ChIJP7HwkffEmUcRuBTilXtK6wo,Wholesaler,Hauptseite - 1539256423s Webseite!,Ihr zuverlässiger Lebensmittel Lieferant,1539256423,,,,partial,1
+Koza Großhandel,5.0,2.0,Kirchheimer Str. 180,Dettingen unter Teck,,DE,https://koza-handel.de/,+49 176 20147087,Wholesale grocer,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Koza%20Gro%C3%9Fhandel&query_place_id=ChIJF32YD7GXmUcRrOucWrsAcEY,Wholesale grocer,,,,,,,partial,0
+Alfapack GmbH,4.8,18.0,Maria-Probst-Straße 37,Munich,,DE,http://www.alfapack.de/,+49 89 82010760,Wholesale grocer,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Alfapack%20GmbH&query_place_id=ChIJMct3qd13nkcRsNbwpqLNDEI,Wholesale grocer,,,,,,,partial,0
+MULTI Grosshandel - Hannover,4.9,62.0,Am Großmarkt 15,Hanover,,DE,http://www.multi-grosshandel.de/,+49 511 26215020,Wholesale grocer,Beverage distributor,Dairy store,Fish store,Food products supplier,Greengrocer,Meat wholesaler,Spice store,Supermarket,Wholesaler,https://www.google.com/maps/search/?api=1&query=MULTI%20Grosshandel%20-%20Hannover&query_place_id=ChIJJ_2jkOd1sEcRJ9DuMFHbqF8,Wholesale grocer,Kiosk und Lebensmittel Großhandel - Multi Großhandel Hannover,"Kiosk und Lebensmittel Großhandel Multi bietet über 4500 Produkte auf 2600m² Verkaufsfläche, komm uns besuchen!",49 511 262,,,,partial,1
+Rhein Food GmbH,4.9,22.0,Feldchenweg 40,Bornheim,,DE,https://www.rheinfood.de/,+49 2227 9269494,Wholesale grocer,Food manufacturing supply,Food products supplier,Grocery store,Restaurant supply store,,,,,,https://www.google.com/maps/search/?api=1&query=Rhein%20Food%20GmbH&query_place_id=ChIJIfqpudYYv0cReE2yPg_r0uc,Wholesale grocer,RheinFood GmbH - Ihr Partner für Lebensmittel & Gastronomiebedarf,"Seit 2004 Ihr zuverlässiger Großhändler für hochwertige Lebensmittel, Getränke & Verpackungen im Raum Köln/Bonn.",2227 926 949,,,,partial,1
+PROHOGA GmbH & Co. KG,4.3,130.0,Salinenstraße 56,Villingen-Schwenningen,,DE,https://www.prohoga.de/,+49 7720 83350,Wholesale grocer,Seafood wholesaler,Warehouse club,Warehouse store,Wine wholesaler and importer,,,,,,https://www.google.com/maps/search/?api=1&query=PROHOGA%20GmbH%20%26%20Co.%20KG&query_place_id=ChIJC_g-_5eXkEcRkgHTE-zrby8,Wholesale grocer,Startseite - PROHOGA,"Ø 4,3 / 5",180443016047,,,,partial,1
+HR Puls GmbH // Schlaue HR Software,5.0,11.0,Falkenried 88,Hamburg,,DE,http://www.hrpuls.de/,+49 40 22821138,Software company,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=HR%20Puls%20GmbH%20%2F%2F%20Schlaue%20HR%20Software&query_place_id=ChIJJeAItbOIsUcRP7bIOKsLijA,Software company,HR Puls // Schlaue HR Software für effizientes Arbeiten,"Schlaue und selbsterklärende HR Software für die Themen Recruiting, HR Management und Performance mit Servern in Deutschland",40 228 211,,https://www.linkedin.com/company/hrpuls/,,partial,1
+HR WORKS,3.6,29.0,Waldkircher Str. 28,Freiburg im Breisgau,,DE,https://www.hrworks.de/?utm_source=gmb&utm_medium=organic&content=freiburg,+49 761 479540,Software company,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=HR%20WORKS&query_place_id=ChIJExk_5lsbkUcRYZPYn9zhTkU,Software company,HR WORKS: Mehr Zeit für Menschen. Mehr Zeit für Erfolg.,"Ihre Software für Personalverwaltung, Reisekosten, Zeiterfassung, LoBu-Schnittstellen für kleine und mittlere Unternehmen: Jetzt starten!",761 479,"Arbeiten  geht: Welche Kollegen im Büro sind und wer im Homeoffice arbeitet, sehen Sie in der  Team-Übersicht . 
+ 
+ 
+ Ze",,,partial,1
+HRTime Software GmbH,5.0,10.0,Huyssenallee 13,Essen,,DE,https://www.hrtime.de/,+49 201 4374983,Software company,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=HRTime%20Software%20GmbH&query_place_id=ChIJl8128pv6Z2IRJk_16jAadQA,Software company,"Digitale Zeiterfassung ab 4,50€ – Made in Germany | HRTime","Digitale Zeiterfassung per App, Terminal & Browser ab 4,50€. DSGVO-konform, BAG-Urteil erfüllt. Jetzt 45 Min. Demo buchen! HRTime",,"Flexible Stempelmethoden 
+ 
+ Ob Baustelle, Büro oder Homeoffice – mit HRTime erfassen Ihre Mitarbeiter Arbeitszeiten",https://www.linkedin.com/company/hrtime-software-gmbh/,,partial,1
+HR WORKS,4.1,9.0,Barckhausstraße 12-16,Frankfurt am Main,,DE,https://www.hrworks.de/?utm_source=gmb&utm_medium=organic&content=frankfurt,+49 761 479540,Software company,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=HR%20WORKS&query_place_id=ChIJxZip6FIPvUcRQ1XHkG_dyVQ,Software company,HR WORKS: Mehr Zeit für Menschen. Mehr Zeit für Erfolg.,"Ihre Software für Personalverwaltung, Reisekosten, Zeiterfassung, LoBu-Schnittstellen für kleine und mittlere Unternehmen: Jetzt starten!",761 479,"Arbeiten  geht: Welche Kollegen im Büro sind und wer im Homeoffice arbeitet, sehen Sie in der  Team-Übersicht . 
+ 
+ 
+ Ze",,,partial,1
+"HRNeeds, das Vergleichsportal",5.0,7.0,Weißbuchenweg 5,Mannheim,,DE,https://hrneeds.de/,+49 621 16616673,Business management consultant,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=HRNeeds%2C%20das%20Vergleichsportal&query_place_id=ChIJPc9NqszPl0cR-kmMXDGstfA,Business management consultant,"HRNeeds, das Vergleichsportal für HR-Softwarelösungen europaweit",Mit dem Vergleichsportal HRNeeds zur passenden HR-Lösung inklusive individueller Beratung mit zahlreichen Tipps. Jetzt Ihre kostenlose Empfehlung erhalten,,"r   
+ 
+   Führerscheinkontrolle (softwareunterstützt)   Homeoffice-Plattform mit Ausstattung   Internationale Gehaltsabr",https://www.linkedin.com/company/hrneeds-de,,partial,1
+HaDre GmbH,5.0,86.0,Rothenburger Str. 241,Nuremberg,,DE,http://3rpms-hotelsoftware.de/,+49 911 13131900,Software company,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=HaDre%20GmbH&query_place_id=ChIJ15YY1gFXn0cRYpYS-1p5Ujc,Software company,3RPMSÂ® Hotelsoftware,"3RPMSÂ® ist die cloudbasierte KomplettlÃ¶sung fÃ¼r Beherbergungsbetriebe jeder GrÃ¶Ãe â von der Reservierung bis zur Abrechnung. Intuitiv, skalierbar und sofort einsatzbereit â ganz ohne IT-Chaos.",,en durch pure Effizienz.  MaidConnect  synchronisiert Front Office und Housekeeping vollautomatisch. Das Ergebnis: Schne,,,partial,1
+HRWare Consulting GmbH & Co. KG,5.0,1.0,Feldstraße 2,Sigmaringen,,DE,http://www.hrware.de/,+49 7571 757240,Software company,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=HRWare%20Consulting%20GmbH%20%26%20Co.%20KG&query_place_id=ChIJRQH-RvE-mkcRe4ziQzK95uA,Software company,HRWare Consulting | Ihr Partner für digitale HR-Lösungen,HRWare Consulting. Mehrfach ausgezeichneter Sage Premium-Partner für die Sage HR Suite. Über 500 HR-Kunden deutschlandweit vertrauen auf uns,06131 8888,,https://www.linkedin.com/company/79960892/,,partial,1
+HRlab GmbH,5.0,2.0,Reinhardtstraße 58,Berlin,,DE,https://www.hrlab.de/,+49 30 28098680,Software company,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=HRlab%20GmbH&query_place_id=ChIJc7s_9FFOqEcR6ymOM9RTHvM,Software company,Ihr Personal. Ihre Zeit. Ihre HR Software. - HRlab,Damit Sie als Personalabteilung wieder Zeit für die wirkliche Personalarbeit haben! Jederzeit und von überall.,30 28098680,,https://www.linkedin.com/company/tridiondigitalsolutions/,,partial,1
+HR-IT-Solutions GmbH,4.9,11.0,Am Griesberg 29,Buch am Erlbach,,DE,https://www.hr-it-solutions.com/,+49 8709 5079950,Software company,Advertising agency,Web hosting company,,,,,,,,https://www.google.com/maps/search/?api=1&query=HR-IT-Solutions%20GmbH&query_place_id=ChIJ8_sNFeAinkcR9aj9NBlE2tI,Software company,HR-IT-Solutions,,318457221,,,,partial,1
+H+H Software GmbH,4.9,11.0,Maschmühlenweg 8,Göttingen,,DE,https://www.hh-software.com/,+49 551 522080,Software company,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=H%2BH%20Software%20GmbH&query_place_id=ChIJoXNnJMfUpEcR1as9ebLHQCY,Software company,H+H Software GmbH,,,,,,partial,1
+HS - Hamburger Software GmbH,4.1,30.0,Überseering 29,Hamburg,,DE,https://www.hamburger-software.de/,+49 40 63297333,Software company,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=HS%20-%20Hamburger%20Software%20GmbH&query_place_id=ChIJ3YwW1x2JsUcROqvd03-xhhQ,Software company,ERP Lösungen von HS - Hamburger Software,"Zuverlässige ERP-Lösungen von HS ✓ ausgezeichneter Service für WaWi, FiBu etc. ✓ führender Hersteller für ERP Lösungen ► Jetzt informieren!",040 6329,,https://www.linkedin.com/company/hs---hamburger-software-gmbh-%26-co-kg,,partial,1
+HR factory GmbH,4.3,11.0,Konrad-Zuse-Platz 9,Munich,,DE,https://hrfactory.com/de/,+49 89 921310610,Human resource consulting,Business management consultant,,,,,,,,,https://www.google.com/maps/search/?api=1&query=HR%20factory%20GmbH&query_place_id=ChIJmVTYSzpznkcRBtB0vNPK0U4,Human resource consulting,Personaldienstleistung | HR Beratung | Deutschland,HR factory | Personaldienstleistung & HR Beratung deutschlandweit ✓ Branchen- & unternehmensgrößenübergreifende Beratung ▶ Mehr erfahren.,89 9213106,,https://www.linkedin.com/company/hrfactorygmbh/,,partial,1
+HYBRID Software GmbH,5.0,5.0,Uhlandstraße 9,Freiburg im Breisgau,,DE,http://www.hybridsoftware.com/,+49 761 70776700,Software company,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=HYBRID%20Software%20GmbH&query_place_id=ChIJWe6ZV6IckUcRd1HAIakQTe0,Software company,Innovative Workflow Solutions for the Print Industry | Hybrid Software,"Discover HYBRID Software – global leader in prepress workflow solutions for packaging, labels, and digital printing. Smarter software for efficient print production.",215-550-6243,service for OEMs Bring your press to market faster Support Contact our regional team of experts Products PDF Editors PA,https://www.linkedin.com/company/hybrid-software/,,partial,1
+H & R Netzwerk GmbH - IT Partner der Unternehmen,4.9,64.0,Am Königsweg 9,Gronau,,DE,https://www.hrnetzwerk.de/,+49 2565 93500,Computer service,Computer consultant,Computer support and services,Software company,Telecommunications service provider,,,,,,https://www.google.com/maps/search/?api=1&query=H%20%26%20R%20Netzwerk%20GmbH%20-%20IT%20Partner%20der%20Unternehmen&query_place_id=ChIJib3BRRM_uEcRzBB3sQYaHN0,Computer service,Willkommen bei der H & R Netzwerk GmbHIhrem,Die H & R Netzwerk GmbH ist seit 1995 als IT - Systemhaus tätig. Seit 2007 sind wir einer der bundesweit ersten 150 Tobit Premium Partner (heute: 5-Sterne,02565 9350,ie gerne und kompetent: Hotline: +49 2565 93500 Support für Office 2016 und Office 2019 läuft aus Microsoft stellt seit,,"Windows,IT,Support,Microsoft,Tobit,Software,Unternehmen,Email,david,Partner",partial,1
+HRF GmbH & Co. KG,5.0,2.0,Darmstädter Str. 62,Reinheim,,DE,http://www.hrf.de/,+49 6162 94920,Software company,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=HRF%20GmbH%20%26%20Co.%20KG&query_place_id=ChIJ57GXxTBmvUcRY6DgEYr1RW8,Software company,HRF,Software Solutions,0571 3877,,https://www.linkedin.com/company/37755282,,partial,1
+Hard 'n Software Consulting GmbH,5.0,1.0,An d. Schäferbuche 4-6,Marburg,,DE,http://hnsc.de/,,Software company,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Hard%20'n%20Software%20Consulting%20GmbH&query_place_id=ChIJ_____xuIvEcRkxi-nxSTVZo,Software company,,,,,,,partial,1
+HRS Germany GmbH,5.0,2.0,Hanauer Landstraße 204,Frankfurt am Main,,DE,https://www.hrsgermany.com/,+49 69 870039148,Recruiter,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=HRS%20Germany%20GmbH&query_place_id=ChIJi-8S57QPvUcRZnPJHXXaMjI,Recruiter,Personalvermittlung | HRS Germany,"Entdecken Sie neue Möglichkeiten mit HRS Germany, Ihrem Spezialist in der Personalvermittlung. Spezialisiert auf die Vermittlung von qualifizierten Kandidaten an Top-Unternehmen. Entdecken Sie unseren Service.",,,https://www.linkedin.com/company/hrs-germany/,,partial,1
+HYPE Innovation,5.0,15.0,Trierer Str. 70-72,Bonn,,DE,https://www.hypeinnovation.com/,+49 228 22760,Software company,Computer consultant,Computer service,,,,,,,,https://www.google.com/maps/search/?api=1&query=HYPE%20Innovation&query_place_id=ChIJDU-5LYbhvkcRlU--_0hCHVI,Software company,HYPE Innovation Management Software and Consulting,"The only AI-powered platform connecting strategy, ideation, and execution—delivering faster innovation with higher impact.",,"HYPE 
+ 
+ 
+ 
+ 
+ 
+ 
+ Careers 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Contact us 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ X",https://www.linkedin.com/company/90989,,partial,1
+HR Software,,,Tilsiter Str. 38,Steinfurt,,DE,https://www.h-roehrich.de/,+49 2552 7505,Software company,Website designer,,,,,,,,,https://www.google.com/maps/search/?api=1&query=HR%20Software&query_place_id=ChIJ2ZcKNbZKuEcR1HRkhEaGtzM,Software company,HR Software | Webdesign Steinfurt Borghorst responsive Webentwicklung ERP CRM Development Programmierung EDV  Datenbanken Rheine Emsdetten Gronau Ochtrup Greven Altenberge Nordwalde Ahaus SchÃ¶ppingen Metelen Wettringen Neuenkirchen Havixbeck Horstmar IbbenbÃ¼ren Telgte Warendorf Borken Coesfeld MÃ¼nster Roxel Hamburg,,2552 7505,,,,partial,1
+Messe Stuttgart,4.4,22779.0,Messepiazza 1,Stuttgart,,DE,http://www.messe-stuttgart.de/,+49 711 185600,Exhibition and trade center,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Messe%20Stuttgart&query_place_id=ChIJ-wTdyJLCmUcRnC7h1pP691g,Exhibition and trade center,Messe Stuttgart,"Entdecken Sie alle Veranstaltungen der Messe Stuttgart: Fachmessen, Publikumsmessen, Kongresse, Ausstellerinfos und Services für Veranstalter.",,,,,partial,1
+Cologne Fair,4.3,28013.0,Messepl. 1,Cologne,,DE,http://www.koelnmesse.de/,+49 221 8210,Event management company,Exhibition and trade center,Event venue,,,,,,,,https://www.google.com/maps/search/?api=1&query=Cologne%20Fair&query_place_id=ChIJLxCB8MMlv0cRu0Tw4eU4T3M,Event management company,Startseite | Koelnmesse,"Koelnmesse organisiert mehr als 80 Messen, Ausstellungen und Events in Köln und weltweit. Diese geben Ihrem Geschäft wichtige Impulse.",,"Kontakt 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Übersicht 
+ 
+ Termine 
+ 
+ Location und Services 
+ 
+ Unternehmen 
+ 
+ Karriere 
+ 
+ Press",https://www.linkedin.com/company/koelnmesse-gmbh,"Koelnmesse, Veranstaltungen, Messen, Events, Köln, Termine, Oeffnungszeiten, Hallenplan, Aussteller, Besucher, Messeveranstalter, Eventveranstalter",partial,1
+Messe Düsseldorf,4.4,22600.0,Stockumer Kirchstraße 61,Düsseldorf,,DE,https://www.messe-duesseldorf.de/?utm_source=local&utm_medium=messe_duesseldorf&utm_campaign=mybusiness,+49 211 456001,Exhibition and trade center,Event venue,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Messe%20D%C3%BCsseldorf&query_place_id=ChIJ7xLIlRe2uEcRvU8BOmpYyKE,Exhibition and trade center,Startseite -- Messe Düsseldorf GmbH,"Entdecken Sie die Messe Düsseldorf: auf unseren Leitmessen in Düsseldorf, rund um den Globus und über unsere digitalen Angebote.",,,https://www.linkedin.com/company/messe-dusseldorf-gmbh/,,partial,1
+BIOFACH,4.6,324.0,Messezentrum 1,Nuremberg,,DE,http://www.biofach.de/,+49 911 86069696,Event management company,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=BIOFACH&query_place_id=ChIJ66PvdOZZn0cRsIQfEUIAAPc,Event management company,The world’s leading trade fair for organic food: Biofach Trade Fair | BIOFACH,"BIOFACH, the world’s leading trade fair for organic food. Visit the organic fair at the Exhibition centre in Nuremberg! You can find all your benefits here!",,nic food: Biofach Trade Fair | BIOFACH skip navigation mail Contact BIOFACH digital language EN   DEUTSCH     ENGLISH,https://www.linkedin.com/company/biofach/,,partial,1
+EDEKA Foodservice Handelshof Management GmbH,4.1,46.0,Viktoriastraße 26,Cologne,,DE,http://www.handelshof.de/,+49 2203 17060,Wholesale grocer,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=EDEKA%20Foodservice%20Handelshof%20Management%20GmbH&query_place_id=ChIJ85CeDN0mv0cR33RPyKrL1SE,Wholesale grocer,Handelshof | Ihr C+C Großhandelspartner,Breites Food &  Non Food-Sortiment ✓ Tolle Angebote ✓ Tipps & Trends ✓ Großhändler für Ihre Großküche ► Finden Sie Ihren Markt - wir freuen uns auf Sie!,,,,,partial,1
+Gourmet Festival Köln,3.0,2.0,Im Zollhafen 1,Cologne,,DE,https://gourmetfestivals.de/exhibition/gourmet-festival-koeln-2024/,,Festival,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Gourmet%20Festival%20K%C3%B6ln&query_place_id=ChIJEQKvJQAlv0cROrboI7WZgmw,Festival,Gourmet Festival Köln 2024 - Gourmet Festivals,,49 175 7465,https://www.instagram.com/explore/locations/1031669720/looye-kwekers/?hl=de,,,partial,1
+Textil-Grosshandel,4.7,341.0,Bookenburgweg 1,Dortmund,,DE,https://www.textil-grosshandel.eu/,+49 231 58689120,E-commerce service,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Textil-Grosshandel&query_place_id=ChIJCa8MQ-wTuUcRFNJY3rK9hCY,E-commerce service,Textil-Großhandel | Ihr Partner für Textilhandel & -druck,6000+ Textilien ✓ Textildruck ✓ Lieferung in 1-3 Tagen ✓ 100.000+ zufriedene Kunden ✓ Veredelbare Basis- & Firmenbekleidung bei Textil-Großhandel kaufen!,0157 92468700,,,,partial,1
+Atlas Cash & Carry GmbH,4.8,142.0,Marktstraße 10,Cologne,,DE,https://www.atlas-cc.de/,+49 221 37917003,Wholesale grocer,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Atlas%20Cash%20%26%20Carry%20GmbH&query_place_id=ChIJwQlq6EElv0cRRro-zicgS14,Wholesale grocer,Atlas Cash and Carry – Gastronomie Großhandel,,49 221 3791,,,,partial,1
+Arasco Germany GmbH,3.9,75.0,Sterkenhofweg 5B,Krefeld,,DE,http://www.arasco.de/,+49 2151 565760,Wholesaler,Coffee wholesaler,Grocery store,Italian grocery store,Seafood wholesaler,Wine wholesaler and importer,,,,,https://www.google.com/maps/search/?api=1&query=Arasco%20Germany%20GmbH&query_place_id=ChIJj4wdbkfKuEcRZ5P6UVaEfsk,Wholesaler,"Arasco - Fachlieferant Gastronomiebedarf, Lebensmittelgroßhandel",Mit mehr als 30 Jahren Erfahrung sind wir Ihr Fachlieferant für Gastronomiebedarf und hochwertige Lebensmittel in Nordrhein-Westfalen.,565760,,,,partial,1
+Dortmund Wholesale Market,4.1,86.0,Heiliger Weg 60g,Dortmund,,DE,https://grossmarkt-dortmund.de/,+49 231 522143,Wholesale market,Food products supplier,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Dortmund%20Wholesale%20Market&query_place_id=ChIJTyNZ6mcXuUcRD6MVR2sbbFw,Wholesale market,GROSSMARKT DORTMUND,,,,,,partial,1
+GB Foods Deutschland GmbH,3.3,71.0,Geniner Str. 88-100,Lübeck,,DE,https://www.thegbfoods.com/de/deutschland,+49 451 53060,Wholesale grocer,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=GB%20Foods%20Deutschland%20GmbH&query_place_id=ChIJq1JrLDQJskcRU16jKBtmAi4,Wholesale grocer,,,,,,,partial,0
+Oskar Großhandel für Lebensmitteln & Lagerverkauf,4.9,25.0,Bendhecker Str. 12,M. Gladbach,,DE,,+49 172 5859134,Wholesale grocer,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Oskar%20Gro%C3%9Fhandel%20f%C3%BCr%20Lebensmitteln%20%26%20Lagerverkauf&query_place_id=ChIJv56tsBxTv0cR3JTVPB7AlM4,Wholesale grocer,,,,,,,partial,0
+INFORM GmbH,4.6,99.0,Pascalstraße 35,Aachen,,DE,http://www.inform-software.com/,+49 2408 94560,Software company,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=INFORM%20GmbH&query_place_id=ChIJ77dYQO6cwEcRpJRskSTZjBs,Software company,AI systems to optimize business processes - INFORM,"We develop software with Decision Intelligence. Our mathematical algorithms and AI methods are proven with well over 1,000 active customers worldwide.",,w Digital Sustainability Sustainable Actions kids at INFORM Contact Career Overview Vacancies Application Process Benefi,https://www.linkedin.com/company/inform,"INFORM, AI, artificial intelligence, AI, OR, operations research, software, fuzzy logic, IT, business processes, optimization",partial,1
+Software Company - E. Hunko,5.0,1.0,Vaalser Str. 68,Aachen,,DE,,,Software company,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Software%20Company%20-%20E.%20Hunko&query_place_id=ChIJmc1RqIKbwEcRUkR2kw50dS8,Software company,,,,,,,partial,0
+Hard & Software Dienstleistungen Horsch GmbH,,,Zieglerstraße 13,Aachen,,DE,http://www.horschweb.de/,+49 241 60847130,Software company,Computer store,Electrical engineer,Electronics company,,,,,,,https://www.google.com/maps/search/?api=1&query=Hard%20%26%20Software%20Dienstleistungen%20Horsch%20GmbH&query_place_id=ChIJ8av7MTCZwEcRvR4fTjqUMVI,Software company,Horsch – Hard- & Softwaredienstleistungen GmbH,HORSCH - Hard- und Software Dienstleistungen GmbH,0241 60847130,,,,partial,1
+Thoughtworks Deutschland GmbH,5.0,18.0,Lichtstraße 43I,Cologne,,DE,https://www.thoughtworks.com/en-de,+49 221 64307060,Software company,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Thoughtworks%20Deutschland%20GmbH&query_place_id=ChIJhRxRJTolv0cRZcyHTwbLEAE,Software company,Thoughtworks: A leading technology consultancy | Thoughtworks Germany,"We are laser-focused on transforming your digital journey so you can make extraordinary impact today, tomorrow and beyond.",,"Go to overview 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Contact
+            
+             
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Search",https://www.linkedin.com/company/thoughtworks/,"software development company, technology consultancy, thoughtworks, Thoughtworks",partial,1
+Milchwerk Radolfzell | Conference: Culture: Exhibition,4.3,869.0,Werner-Messmer-Straße 14,Radolfzell,,DE,http://www.milchwerk-radolfzell.de/,+49 7732 81362,Event venue,Cultural center,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Milchwerk%20Radolfzell%20%7C%20Conference%3A%20Culture%3A%20Exhibition&query_place_id=ChIJwb3hSehhmkcRddCR54DtmO4,Event venue,Startseite – Milchwerk Radolfzell,"Milchwerk Radolfzell – Ihr Veranstaltungsort am Bodensee! Buchen Sie exklusive Tagungsräume und Säle für Meetings, Vorträge, Märkte, Messen, Shows und Konzerte.",07732 8136,"Region. 
+ #1 Eventort Wir sind die führende Veranstal­tungs­location in Radolfzell und Umgebung. 
+ 300+ Events pro Jahr",,,partial,1
+Messe Speis&Trank,4.4,10.0,Albstraße 9,Neuhausen auf den Fildern,,DE,http://www.messe-speisundtrank.de/,+49 7158 902462,Event management company,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Messe%20Speis%26Trank&query_place_id=ChIJzxHRE0DBmUcR1qCWcgy9qcQ,Event management company,Speis & Trank - Die Messe für Handverlesene Spezialitäten,,,,,,partial,1
+AixTextiles GmbH,4.4,9.0,Sigsfeldstraße 7,Aachen,,DE,http://www.aixtextiles.de/,+49 1575 3708530,Clothes and fabric manufacturer,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=AixTextiles%20GmbH&query_place_id=ChIJoQ__F8GdwEcRITj-oPWGDCU,Clothes and fabric manufacturer,Startseite - Textilproduktion Türkei- Aixtextiles - Textilproduktion & Fullfillment - All in One,Textilproduktion Türkei Hoch qualitative mit Büro und Lager in Deutschland. Textilagentur Deutschland mit Jahrelange Expertise in Textilien.,49 1575 370,,,,partial,1
+Aytex Textil-Vertriebs GmbH,4.5,11.0,Eilendorfer Str. 179,Aachen,,DE,https://www.aytex.de/,+49 241 928190,Wholesaler,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Aytex%20Textil-Vertriebs%20GmbH&query_place_id=ChIJIXcutCycwEcRmf814s4tTUE,Wholesaler,Start - Aytex,,,"Fashion und Design 
+ Videos 
+ Kontakt 
+ 
+ 
+ 
+ 
+ 
+ 
+ Login Contact 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ You are using an outdated",,,partial,1
+LUSITEX Produktion & Großhandel von Textilien,5.0,4.0,Trajanstraße 76,Moers,,DE,http://strauss-home.com/,,Fabric product manufacturer,Textile exporter,Textile mill,,,,,,,,https://www.google.com/maps/search/?api=1&query=LUSITEX%20Produktion%20%26%20Gro%C3%9Fhandel%20von%20Textilien&query_place_id=ChIJg5c8FJ-9uEcR1CnRa4DAXF8,Fabric product manufacturer,Strauss Home Deutschland,"Strauss Home – Heimtextilien mit Liebe gemacht 💛 Entdecke weiche Stoffe, zeitloses Design & Wohlfühlqualität für dein gemütliches Zuhause.",,,,,partial,1
+House Style - Textil-Großhandel | wholesale fashion clothing | hurtownia odziezy,3.9,11.0,Max-Planck-Straße 34,Karben,,DE,http://www.house-style.de/,+49 6039 938080,Clothes and fabric wholesaler,Clothing store,,,,,,,,,https://www.google.com/maps/search/?api=1&query=House%20Style%20-%20Textil-Gro%C3%9Fhandel%20%7C%20wholesale%20fashion%20clothing%20%7C%20hurtownia%20odziezy&query_place_id=ChIJRQWmmvEEvUcRWOiPHPDPIv0,Clothes and fabric wholesaler,House Style,"House Style, Textilgrosshandel",49-6039-9380,,,"House Style, Textilgrosshandel",partial,1
+NONZ GmbH Textil Großhandel,4.9,31.0,Ernestinenstraße 85,Essen,,DE,https://nonzfashion.fashion123.de/,+49 177 4415588,Clothing wholesale market place,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=NONZ%20GmbH%20Textil%20Gro%C3%9Fhandel&query_place_id=ChIJDQSR97DCuEcR6rizxLK5e2k,Clothing wholesale market place,,,,,,,partial,0
+RE TEXTIL Deutschland GmbH,4.0,30.0,Im Gohl 4-8,Polch,,DE,http://www.re-textil.de/,+49 2654 8810800,Clothes and fabric manufacturer,Waste management service,,,,,,,,,https://www.google.com/maps/search/?api=1&query=RE%20TEXTIL%20Deutschland%20GmbH&query_place_id=ChIJ4x6vbh1dvkcRZEaUEJUBCzc,Clothes and fabric manufacturer,Textilrecycling // RE TEXTIL,RE TEXTIL Deutschland aus Polch bei Koblenz ist ein Textilrecycling- und Sortierbetrieb für Altkleider und Schuhe.,49 2654 8810,,,,partial,1
+Gür GmbH Textil Näherei Großhandel,4.9,7.0,Hahnerberger Str. 287,Wuppertal,,DE,http://www.guertextil.com/,+49 202 40868340,Clothes and fabric manufacturer,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=G%C3%BCr%20GmbH%20Textil%20N%C3%A4herei%20Gro%C3%9Fhandel&query_place_id=ChIJQWTpIQvWuEcRxyWMc8lErH4,Clothes and fabric manufacturer,STRATO - Domain reserved,,,,,,partial,1
+Jumbo-Textil GmbH & Co. KG,4.8,9.0,Stennert 7,Sprockhövel,,DE,http://www.jumbo-textil.de/,+49 2339 9293970,Clothes and fabric manufacturer,Fabric product manufacturer,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Jumbo-Textil%20GmbH%20%26%20Co.%20KG&query_place_id=ChIJ37UxJi0muUcRAeIZsHBvMr8,Clothes and fabric manufacturer,JUMBO-Textil – IHR LÃSUNGSPARTNER FÃR HIGHTECH-TEXTILIEN,,49 2339 9293,,https://de.linkedin.com/company/jumbo-textil-gmbh-&-co.-kg,,partial,1
+Müller Textil GmbH,4.3,6.0,Industriegelände 8,Wiehl,,DE,https://www.mullertextiles.com/,+49 2262 8070,Clothes and fabric manufacturer,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=M%C3%BCller%20Textil%20GmbH&query_place_id=ChIJtRpDUOy3vkcRI-pVbteZjN8,Clothes and fabric manufacturer,Innovative Abstandsgewirke | MÜLLER TEXTIL,MÜLLER TEXTIL ist der führende Hersteller innovativer Abstandsgewirke und erfüllt als global tätiges Familienunternehmen höchste Ansprüche unterschiedlichster Branchen.,,,https://www.linkedin.com/company/mueller-textil-gmbh/,,partial,1
+Cristaltex Deutschland GmbH,5.0,2.0,Breslauer Str. 8,Neuss,,DE,http://www.cristaltex.fashion123.de/,+49 2131 1538900,Wholesaler,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Cristaltex%20Deutschland%20GmbH&query_place_id=ChIJAWVS5o--cUERT0mdB8ilCxI,Wholesaler,"Your & Self by Cristaltex GmbH | Modecenter, Label your & self Wholesale,","B2B | Your &amp; Self | Textilien Grosshandel, Grosshandel Bekleidung, Gro&#223;handel Textil, Fashion Wholesale, Mode Groothandel",49 176 6681,ONE BEFORE ORDERING!  Bei Fragen/ any question feel free to contact us  +49 2131 1538901  ( Mo-Fr von 9-16 )   FOR  YOUR,,"B2B | Your &amp; Self by Cristaltex GmbH | Textilien Grosshandel, Grosshandel Bekleidung, Gro&#223;handel Textil, Fashion Wholesale, Mode Groothandel",partial,1
+Akdogan Textil & Fabric & Textilagency,4.5,22.0,Lise-Meitner-Straße 1,Hohenbrunn,,DE,https://akdogantextilien.de/,+49 163 1409045,Clothes and fabric manufacturer,Clothes and fabric wholesaler,Clothing wholesaler,Custom t-shirt store,Embroidery service,Fabric product manufacturer,Fabric store,Fabric wholesaler,Textile exporter,Textile mill,https://www.google.com/maps/search/?api=1&query=Akdogan%20Textil%20%26%20Fabric%20%26%20Textilagency&query_place_id=ChIJO6IThwrhnUcRrVeEXyM82Sk,Clothes and fabric manufacturer,Akdogan Textilien & Stoffe & Textilproduktion,"Textilproduktion Türkei, Textilproduktion Deutschland , Textilagentur,Stoffgroßhändler,Textilagency,Hoodies,T-Shirt,Jacke,Poloshirt,Regenjacke Produktion-",2003-2021,"Contact us                     
+ 
+ Als Textilagentur können",,"Stoffe, T-shirt, Poloshirt, Sweatshirt, oversizeshirt, Großhandel Turkei, Textil Großhandel Deutschland, Textilhersteller Turkei, textilhersteller Deutshland, grosshandel textil, t shirt bedrucken, pullover bedrucken, t shirt druck, regenjacke, hoodies",partial,1
+Textil-Grosshandel24.de,2.2,13.0,Am Osterbrauck 14,Hemer,,DE,http://www.textil-grosshandel24.de/,+49 2372 9359625,Clothes and fabric manufacturer,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Textil-Grosshandel24.de&query_place_id=ChIJ41KUIaNBuUcRr4PkX7AYwrs,Clothes and fabric manufacturer,,,,,,,partial,0
+B&D Textiles,3.5,11.0,Wörnitzstraße 115A,Nuremberg,,DE,https://bd-textiles.de/,+49 911 8155440,Clothes and fabric manufacturer,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=B%26D%20Textiles&query_place_id=ChIJo4_wZR1Rn0cRRdxVZjLM9DY,Clothes and fabric manufacturer,Startseite | B&D Textiles,"Frische Farben, zeitlose Designs, langlebig und nachhaltig! Hochwertig, zuverlässig, strapazierfähig und individuell! Funktional, bequem, langlebig und mode ...",911 8155 440,,,,partial,1
+Style Textilhandel GmbH Germany,5.0,1.0,Mumbacher Talstraße 130,Mörlenbach,,DE,https://www.style-textilhandel.eu/,+49 6209 794648,Clothes and fabric manufacturer,Clothing wholesaler,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Style%20Textilhandel%20GmbH%20Germany&query_place_id=ChIJYf0pHU7cl0cRpwXLR65TQk8,Clothes and fabric manufacturer,Startseite - Style Textilhandel GmbH Germany,,,,,,partial,1
+La Maglietta GmbH,4.1,13.0,Gewerbepark Brand 61,Aachen,,DE,http://www.la-maglietta.de/,+49 241 9160680,Clothing wholesaler,Internet marketing service,,,,,,,,,https://www.google.com/maps/search/?api=1&query=La%20Maglietta%20GmbH&query_place_id=ChIJAcNtF5yZwEcRthRBENPYTWA,Clothing wholesaler,La Maglietta - Das T-Shirt,Offizieller Webshop der Marke La Maglietta,,,,,partial,1
+Ecotex Germany & Helppack | Altkleidersammlung und Textilverwertung | Used Clothing Collection & Recycling,4.8,4.0,Derken 10,Wuppertal,,DE,http://ecotexgroup.com/,+49 202 273300,Recycling center,Clothing supplier,Clothing wholesale market place,Clothing wholesaler,Footwear wholesaler,Textile exporter,,,,,https://www.google.com/maps/search/?api=1&query=Ecotex%20Germany%20%26%20Helppack%20%7C%20Altkleidersammlung%20und%20Textilverwertung%20%7C%20Used%20Clothing%20Collection%20%26%20Recycling&query_place_id=ChIJXwVP7lzRuEcRbkxYUwt1R6A,Recycling center,,,,,,,partial,0
+Cotty Textiles GmbH | Textilhersteller & Textil Manufaktur,5.0,5.0,Im Dorf 3,Leverkusen,,DE,https://www.cottytextiles.de/,+49 15566 288306,Textile mill,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Cotty%20Textiles%20GmbH%20%7C%20Textilhersteller%20%26%20Textil%20Manufaktur&query_place_id=ChIJffTVcZMrv0cRIESL3FqzpgQ,Textile mill,Cotty Textiles I Homepage,,49 155 6628,"Women’s Wear 
+ 
+ 
+ 
+ 
+ 
+ 
+ FAQ 
+ 
+ 
+ 
+ 
+ Blog 
+ 
+ 
+ 
+ 
+ Contact us 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ +49 155 66288306",,"cotty textiles,Clothing Manufacturer,Innovative Designs,garment,Clothing",partial,1
+Jansen Fashion Group GmbH,4.4,7.0,Widdiger Str. 1-9,Wesseling,,DE,http://www.jansen-fashiongroup.de/,+49 2236 89210,Clothes and fabric manufacturer,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Jansen%20Fashion%20Group%20GmbH&query_place_id=ChIJmfEYxWchv0cRumtm7dUWRtU,Clothes and fabric manufacturer,Jansen Fashion Group,,,,,,partial,1
+WIMS TEXTILES GERMANY,5.0,2.0,Bergstraße 34,Solingen,,DE,http://www.wims-textiles.com/,+49 212 65001564,Clothes and fabric manufacturer,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=WIMS%20TEXTILES%20GERMANY&query_place_id=ChIJi5qAi9DVuEcRsLGZNvw4KDM,Clothes and fabric manufacturer,WIMS,,49 212 6500,"spital
+                   
+ 
+ 
+ 
+ E-BROCHURE 
+ SHOP 
+ 
+ 
+ 
+ CONTACT US 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            Glob",,,partial,1
+SUSE Software Solutions Germany GmbH,4.9,84.0,Frankenstraße 146,Nuremberg,,DE,http://www.suse.com/,+49 911 740530,Software company,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=SUSE%20Software%20Solutions%20Germany%20GmbH&query_place_id=ChIJn6hKULpXn0cRUFJe_C0-aB0,Software company,Open Source Software Solutions for Enterprise Servers & Cloud | SUSE,"Modernize your infrastructure with SUSE Linux Enterprise servers, cloud technology for IaaS, and SUSE's software-defined storage.",,"Contact Us 
+ 
+ 
+ 
+ 
+ Free Downloads 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   Accoun",https://www.linkedin.com/company/suse,"Linux, best linux server, enterprise Linux, Linux operating system, linux server os",partial,1
+Hattrick Software GmbH,4.3,17.0,Hoheneichstraße 79A,Herzogenrath,,DE,https://www.hattrick24.de/,+49 2407 96000,Software company,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Hattrick%20Software%20GmbH&query_place_id=ChIJgT4Ca4mYwEcRtEb-4MGzgiU,Software company,Hattrick Software,,,,,,partial,1
+NürnbergMesse GmbH,4.4,16954.0,Messezentrum 1,Nuremberg,,DE,http://www.nuernbergmesse.de/,+49 911 86060,Exhibition and trade center,Event management company,,,,,,,,,https://www.google.com/maps/search/?api=1&query=N%C3%BCrnbergMesse%20GmbH&query_place_id=ChIJ66PvdOZZn0cRAModaPiPvnU,Exhibition and trade center,Home | NürnbergMesse,"Discover NürnbergMesse: Current Exhibitions, Events, News, and Information about the Nuremberg Exhibition Centre!",,Home | NürnbergMesse skip navigation mail Contact language EN   DEUTSCH     ENGLISH   search arrow_bac,https://www.linkedin.com/company/n-rnbergmesse-gmbh,NürnbergMesse Group,partial,1
+MESSE ESSEN GmbH,4.3,17636.0,Messepl. 1,Essen,,DE,http://www.messe-essen.de/,+49 201 72440,Event management company,Event venue,Exhibition and trade center,Fairground,,,,,,,https://www.google.com/maps/search/?api=1&query=MESSE%20ESSEN%20GmbH&query_place_id=ChIJOy5gRSbDuEcRJ1rKKuvEm8w,Event management company,Messe Essen |  One location - countless possibilities,"With 50 trade fairs and exhibitions, including ten leading trade fairs, the Essen exhibition centre is among the top ten exhibition locations in Germany. An appealing mix of international, national and regional professional and consumer trade fairs attracts around 1.4 million visitors annually. MESSE ESSEN offers exhibitors the ideal environment to present their company and to establish important contacts with experts, key customers and opinion leaders.",,", conferences & events 
+ 
+ 
+ Room for your events 
+ 
+ 
+ 
+ 
+ Contact 
+ 
+ 
+ Global Network 
+ 
+ 
+ Regio Center 
+ 
+ 
+ 
+ 
+ Th",https://www.linkedin.com/company/messe-essen-gmbh,"messe essen, congress center essen, grugahalle, leading trade fairs,key customers",partial,1
+Messe Düsseldorf Halle 8b,4.6,278.0,"Halle 8b, Sportpark Nord/Europaplatz, Halle 8b",Düsseldorf,,DE,https://www.messe-duesseldorf.de/,,Event venue,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Messe%20D%C3%BCsseldorf%20Halle%208b&query_place_id=ChIJj-yScDu3uEcRewhCRZnvnck,Event venue,Startseite -- Messe Düsseldorf GmbH,"Entdecken Sie die Messe Düsseldorf: auf unseren Leitmessen in Düsseldorf, rund um den Globus und über unsere digitalen Angebote.",,,https://www.linkedin.com/company/messe-dusseldorf-gmbh/,,partial,1
+Wellfairs GmbH,4.3,16.0,Düsseldorfer Str. 41,Meerbusch,,DE,http://wellfairs.de/,+49 2132 5102240,Event management company,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Wellfairs%20GmbH&query_place_id=ChIJB-K3dDe0uEcRnZGgGpk4pQU,Event management company,Wellfairs GmbH,Internationaler Messeveranstalter,49 2132 5102,"markt vom 11. Juni bis 19. Juli 2026 in eine überdachte Fan-Location mit großem Screen, Stadion-Sound, Food & Drinks und",https://www.linkedin.com/company/73098209/admin/dashboard/,,partial,1
+Messe Dortmund,4.2,3907.0,Rheinlanddamm 200,Dortmund,,DE,http://messe-dortmund.de/,+49 231 1204521,Event venue,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Messe%20Dortmund&query_place_id=ChIJ41O6n9YZuUcRUPVIEha6JrU,Event venue,Messe Dortmund - Der Messeplatz in NRW | Messe Dortmund,Dortmund ist der perfekte Standort für Ihre Messe! Das Messegelände bietet Ihnen flexible Kapazitäten für Ihre Gastmesse - jetzt informieren!,0231 1204-272,,,,partial,1
+Messe Düsseldorf Halle 11,4.5,1369.0,Halle 11,Düsseldorf,,DE,https://www.messe-duesseldorf.de/,,Event venue,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Messe%20D%C3%BCsseldorf%20Halle%2011&query_place_id=ChIJ4zzjiTy2uEcRIqq-RtckAz4,Event venue,Startseite -- Messe Düsseldorf GmbH,"Entdecken Sie die Messe Düsseldorf: auf unseren Leitmessen in Düsseldorf, rund um den Globus und über unsere digitalen Angebote.",,,https://www.linkedin.com/company/messe-dusseldorf-gmbh/,,partial,1
+Gourmet Festival Düsseldorf - Königsallee,3.0,5.0,Königsallee,Düsseldorf,,DE,,,Festival,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Gourmet%20Festival%20D%C3%BCsseldorf%20-%20K%C3%B6nigsallee&query_place_id=ChIJIfKtaQDLuEcRhXUdcM2bmAs,Festival,,,,,,,partial,0
+foodjobs GmbH,4.9,11.0,Kaarster Weg 19,Düsseldorf,,DE,http://www.foodjobs.de/,+49 211 95764770,Recruiter,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=foodjobs%20GmbH&query_place_id=ChIJ7YiliXS2uEcRZUZ00bcp5Qs,Recruiter,foodjobs.de - Die Jobbörse für die Lebensmittelbranche - foodjobs,"Für alle, die im Lebensmittelbereich ein- und aufsteigen möchten. foodjobs.de ist das Jobportal speziell für die Lebensmittelwirtschaft. Als Karrierebegleiter für all diejenigen, die in der Lebensmittelwirtschaft ein- und aufsteigen möchten, bietet foodjobs.de Job-Angebote, Orientierung und Hilfe rund um das Thema Karriere.",,"chhaltigkeit 5 
+ F & E 35 
+ Lebensmittelmanagement 34 
+ Homeoffice Option 33 
+ Produktion, Technik 39 
+ BWL, WiWi 90",,"foodjobs, food jobs, foodjob, jobs lebensmittelindustrie, foodjobs.de, lebensmittel jobs, testing, jobs lebensmittel",partial,1
+CCD Congress Center Düsseldorf - Düsseldorf Congress,4.4,3325.0,Stockumer Kirchstraße 61,Düsseldorf,,DE,https://www.duesseldorfcongress.de/,+49 211 45608401,Convention center,Business to business service,Event management company,Event venue,Function room facility,,,,,,https://www.google.com/maps/search/?api=1&query=CCD%20Congress%20Center%20D%C3%BCsseldorf%20-%20D%C3%BCsseldorf%20Congress&query_place_id=ChIJ8-TJlRe2uEcRJWSpnnolG9E,Convention center,CCD Congress Center Düsseldorf - Kongresszentrum,"Kongresszentrum für Kongresse, Tagungen, HVs, Konferenzen und Ausstellungen mit bis zu 100.000 Besuchern in Düsseldorf",49 211 4560,"sseldorf - Internationales Kongresszentrum, Tagungs- & Eventlocation 60 Eventprofis, flexible Hallen- und Raumkonzepte,",https://www.linkedin.com/company/duesseldorfcongress/,,partial,1
+Eventkirche Dortmund by Stolzenhoff Catering in Dortmund,4.7,336.0,Hochstraße 12,Dortmund,,DE,,+49 231 427860,Function room facility,Wedding bakery,Wedding buffet,Wedding planner,Wedding service,Wedding venue,,,,,https://www.google.com/maps/search/?api=1&query=Eventkirche%20Dortmund%20by%20Stolzenhoff%20Catering%20in%20Dortmund&query_place_id=ChIJWz3FRKIZuUcRHjIQ9oa90ZA,Function room facility,,,,,,,partial,0
+Congress-Centrum Ost Koelnmesse,4.3,892.0,Deutz-Mülheimer Str. 51,Cologne,,DE,https://www.koelnmesse.de/,+49 221 8212121,Event venue,Convention center,Function room facility,,,,,,,,https://www.google.com/maps/search/?api=1&query=Congress-Centrum%20Ost%20Koelnmesse&query_place_id=ChIJIddCWcQlv0cRKzChBYq2moY,Event venue,Startseite | Koelnmesse,"Koelnmesse organisiert mehr als 80 Messen, Ausstellungen und Events in Köln und weltweit. Diese geben Ihrem Geschäft wichtige Impulse.",,"Kontakt 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Übersicht 
+ 
+ Termine 
+ 
+ Location und Services 
+ 
+ Unternehmen 
+ 
+ Karriere 
+ 
+ Press",https://www.linkedin.com/company/koelnmesse-gmbh,"Koelnmesse, Veranstaltungen, Messen, Events, Köln, Termine, Oeffnungszeiten, Hallenplan, Aussteller, Besucher, Messeveranstalter, Eventveranstalter",partial,1
+Wissenschaftspark Gelsenkirchen GmbH,4.3,1038.0,Munscheidstraße 14,Gelsenkirchen,,DE,http://www.wipage.de/,+49 209 1671000,Conference center,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Wissenschaftspark%20Gelsenkirchen%20GmbH&query_place_id=ChIJ5dkWdxfnuEcRRWNpsBuJTQ0,Conference center,Wissenschaftspark Gelsenkirchen - Wissenschaftspark Gelsenkirchen,"Preisgekrönter Technologiepark, Business-Center im Kreativquartier, Veranstaltungszentrum, Branchentreff, Coworking Space für StartUps. Branchenfokus Klimaschutz, IT-Cluster, Gesundheitswirtschaft, Design.",49 209 167,"nferenzsaal 
+ 
+ 
+ Plenarsaal 
+ 
+ 
+ Konferenzräume 
+ 
+ 
+ Fotolocation 
+ 
+ 
+ Imagevideo - Link auf Youtube.com 
+ 
+ 
+ 
+ 
+ T",https://www.linkedin.com/company/wissenschaftspark-gelsenkirchen,,partial,1
+Zoo Event,4.4,295.0,Riehler Str. 173,Cologne,,DE,http://zoo-event.com/,+49 221 767574,Event planner,Breakfast restaurant,Function room facility,Event venue,Wedding venue,,,,,,https://www.google.com/maps/search/?api=1&query=Zoo%20Event&query_place_id=ChIJ_2d8AZMlv0cRYrShYnxV2_o,Event planner,Zoo Event - Home,,,"JOB 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Neue Eventlocation im Zoo															
+ 
+ 
+…Ihr Firmen-Event bei uns",,,partial,1
+Foodsharing Fairteiler,4.4,8.0,,Cologne,,DE,https://foodsharing.de/?page=fairteiler&sub=ft&id=1535,,Food bank,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Foodsharing%20Fairteiler&query_place_id=ChIJU6v_VAgnv0cRhaWrAhOEuCc,Food bank,foodsharing,Auf foodsharing.de kannst du deine Lebensmittel vor dem Verfall an soziale Einrichtungen oder andere Personen abgeben,,,,"foodsharing, essen, lebensmittel, ablaufdatum, Lebensmittelverschwendung, essen wegschmeißen, spenden, lebensmitteltausch",partial,1
+Koln Messe/Deutz,4.0,1845.0,Ottopl. 7,Cologne,,DE,,,Transportation service,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Koln%20Messe%2FDeutz&query_place_id=ChIJ8fGkWiclv0cRhhcuYChng58,Transportation service,,,,,,,partial,0
+Koelncongress GmbH,4.3,68.0,Messepl. 1,Cologne,,DE,http://www.koelncongress.de/,+49 221 8212121,Convention center,Event venue,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Koelncongress%20GmbH&query_place_id=ChIJCWBQ6sYlv0cReQIp2657ti8,Convention center,,,,,,,partial,0
+Messe CAKE & BAKE,3.1,30.0,Rheinlanddamm 200,Dortmund,,DE,https://www.cakeandbakemesse.de/,+49 231 1204521,Business networking company,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Messe%20CAKE%20%26%20BAKE&query_place_id=ChIJVVVVONEZuUcRTKmdlLJwtvk,Business networking company,CAKE & BAKE Dortmund 2026 – Die Messe für Tortenkunst,Erlebe am 28. & 29. März 2026 in der Messe Dortmund Deutschlands größte Torten- & Backmesse. Die CAKE & BAKE.,,,,,partial,1
+Industry Perfect GmbH,5.0,3.0,u. Weidenstraße 26,Munich,,DE,http://www.industry-perfect.de/,+49 89 62509527,Clothes and fabric manufacturer,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Industry%20Perfect%20GmbH&query_place_id=ChIJpdT1jmvfnUcRxLo2-apUl5Y,Clothes and fabric manufacturer,Home - Industry Perfect,NEWS!,89 625 095,"Untere Weidenstraße 26 
+81543 München Tel +49 89 625 095 27 contact@industry-perfect.de 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Industry Perfect",https://de.linkedin.com/company/industryperfect,,partial,1
+Fashion Stocks GmbH,5.0,1.0,Tegernseer Landstraße 64,Munich,,DE,,+49 173 3879328,Clothing wholesaler,Clothing supplier,,,,,,,,,https://www.google.com/maps/search/?api=1&query=Fashion%20Stocks%20GmbH&query_place_id=ChIJF9Y2uFZ_nkcRQ9RB9j36TL0,Clothing wholesaler,,,,,,,partial,0
+Textilmacher GmbH,5.0,76.0,Lindberghstraße 7,Munich,,DE,http://www.textilmacher.com/,+49 89 45244580,Clothes and fabric manufacturer,Custom t-shirt store,Embroidery service,Screen printer,Uniform store,Work clothes store,,,,,https://www.google.com/maps/search/?api=1&query=Textilmacher%20GmbH&query_place_id=ChIJpUfS4EpynkcRE-4flsdK3ls,Clothes and fabric manufacturer,Textilmacher GmbH München - Stickerei - Textildruck - Corporate Wear,"Nachhaltige Stickerei und Textildruck in München – Made in Germany.
+Wir gestalten und produzieren hochwertige und langlebige Unternehmensbekleidung bei maximaler Qualität und Umweltverträglichkeit.",,r erfahren           Sustainability Mehr erfahren           Contact us!             VISIT US Showroom & Produktion #fabr,https://www.linkedin.com/company/die-textilmacher-gmbh/about/,"Textildruck München, Stickerei München, Firmenlogo besticken, T-Shirt bedrucken, Corporate Fashion, Unternehmensbekleidung, Bio-Baumwolle",partial,1
+MORELAND GmbH,5.0,1.0,Industriestraße 25,Markt Indersdorf,,DE,http://www.moreland-store.de/,,Clothes and fabric manufacturer,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=MORELAND%20GmbH&query_place_id=ChIJA_EeRvBjnkcREWtNIs2JAEY,Clothes and fabric manufacturer,,,,,,,partial,0
+GREEN SHIRTS,4.0,51.0,Nikolausstraße 13,Berg,,DE,https://green-shirts.com/,+49 177 5179746,Clothes and fabric manufacturer,,,,,,,,,,https://www.google.com/maps/search/?api=1&query=GREEN%20SHIRTS&query_place_id=ChIJX5Jwy3rFnUcRyyBEqGJ2Gtc,Clothes and fabric manufacturer,"Bio Mode, Faire Kleidung & Öko T-Shirts | GREEN SHIRTS",Bio Mode Onlineshop für Fair Trade Kleidung und Ökologische Mode. Bio T-Shirts und Hoodies aus Bio Baumwolle online kaufen. Nachhaltige Bekleidung online kaufen,49 177 517,,,"bedruckte shirts, bio baumwoll kleidung, bio baumwolle, bio kleidung, bio mode, bio shirt, bio t-shirts, eco fashion, eco shirt, fair fashion, fair trade Kleidung",partial,1

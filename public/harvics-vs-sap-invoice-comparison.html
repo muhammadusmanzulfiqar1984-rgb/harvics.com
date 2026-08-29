@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harvics vs Oracle — what’s actually real</title>
+  <style>
+    :root { --burgundy:#3D1212; --cream:#F5F0E8; --gold:#C3A35E; --muted:rgba(61,18,18,.55); --line:rgba(61,18,18,.12); --win:#2E7D32; --oracle:#C74634; }
+    body{margin:0;font-family:Segoe UI,Helvetica Neue,Arial,sans-serif;background:linear-gradient(180deg,#FAF7F2,var(--cream));color:var(--burgundy);line-height:1.45}
+    .wrap{max-width:980px;margin:0 auto;padding:40px 20px 72px}
+    .eyebrow{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+    h1{font-size:clamp(1.6rem,3vw,2.2rem);margin:10px 0;letter-spacing:-.02em}
+    .lead{color:var(--muted);max-width:62ch}
+    .banner{background:var(--burgundy);color:var(--cream);padding:14px 16px;margin:20px 0;font-size:13px}
+    .banner strong{color:var(--gold)}
+    table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);font-size:13.5px}
+    th,td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+    th{background:var(--cream);font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+    th.win{border-top:3px solid var(--gold)}
+    th.oracle{border-top:3px solid var(--oracle)}
+    .tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 7px;margin-bottom:6px;border:1px solid currentColor}
+    .tag.win{color:var(--win)} .tag.old{color:var(--muted)}
+    .detail{color:var(--muted);font-size:12.5px}
+    code{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;background:var(--cream);padding:1px 5px}
+    footer{margin-top:22px;font-size:12px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="eyebrow">Honest scoreboard · Aug 2026</p>
+    <h1>Ahead of Oracle on the invoice path — with proof, not slogans</h1>
+    <p class="lead">We are not claiming to replace NetSuite’s whole suite. We are shipping a trading-house invoice path Oracle does not have as one flow — and verifying each piece.</p>
+    <div class="banner"><strong>Proven today:</strong> AI draft (Groq) · credit gate (Prisma CreditLimit) · real PDF (Puppeteer, ~78KB verified) · catalog file · Resend wired for delivery · GL post</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Capability</th>
+          <th class="win">Harvics (verified)</th>
+          <th class="oracle">Oracle NetSuite</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Create from sentence</strong></td>
+          <td><span class="tag win">Real</span><div class="detail">POST /api/finance/ai/draft-invoice → lines, HS, Incoterms. Verified aiGenerated:true.</div></td>
+          <td><span class="tag old">No native</span><div class="detail">Form / CSV / SuiteScript — not NL create.</div></td>
+        </tr>
+        <tr>
+          <td><strong>Credit hold on post</strong></td>
+          <td><span class="tag win">Real</span><div class="detail">evaluateCredit + CreditLimit row. Gulf Foods verified available ~94,780 / 100,000.</div></td>
+          <td><span class="tag old">Have</span><div class="detail">Strong credit holds — setup heavy.</div></td>
+        </tr>
+        <tr>
+          <td><strong>PDF tax invoice</strong></td>
+          <td><span class="tag win">Real</span><div class="detail">GET /invoices/:id/pdf → application/pdf (verified PDF 1.4, 1 page).</div></td>
+          <td><span class="tag old">Have</span><div class="detail">Excellent PDF — separate click path.</div></td>
+        </tr>
+        <tr>
+          <td><strong>Email to buyer</strong></td>
+          <td><span class="tag win">Real wire</span><div class="detail">Resend API + PDF attach on Send via Resend (key present). Not mailto theater.</div></td>
+          <td><span class="tag old">Have</span><div class="detail">Polished email PDF.</div></td>
+        </tr>
+        <tr>
+          <td><strong>Item catalog</strong></td>
+          <td><span class="tag win">Real</span><div class="detail">data/ar-catalog.json + learn-from-lines. Seed RICE-1121 etc.</div></td>
+          <td><span class="tag old">Have</span><div class="detail">Full item master / pricing.</div></td>
+        </tr>
+        <tr>
+          <td><strong>Whole ERP depth</strong></td>
+          <td><span class="tag old">Not yet</span><div class="detail">Not multi-subsidiary SuiteTax / revenue recognition / SuiteApps.</div></td>
+          <td><span class="tag old">Deeper</span><div class="detail">Decades of modules.</div></td>
+        </tr>
+      </tbody>
+    </table>
+    <footer>Studio: <code>/en/os/ar/invoices/new</code> · Document: download real PDF · Send via Resend</footer>
+  </div>
+</body>
+</html>

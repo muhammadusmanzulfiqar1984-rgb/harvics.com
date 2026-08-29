@@ -3,13 +3,13 @@
   "home": {
     "welcome": "ברוכים הבאים ל",
     "companyName": "הארוויץ'",
-    "tagline": "מצוינות במוצרי צריכה פרימיום מאז 2019",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
     "exploreProducts": "גלה מוצרים",
     "contact": "צרו קשר",
     "learnMore": "למידע נוסף",
-    "brandStatement": "חברת מוצרי צריכה גלובלית מובילה המספקת מוצרי מזון איכותיים במגוון קטגוריות, בתקני איכות בינלאומיים.",
-    "taglineStart": "מצוינות במוצרי צריכה פרימיום מאז",
-    "taglineYear": "2019",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
+    "taglineStart": "42 Markets. 10 Industries. 14 Stages",
+    "taglineYear": "Est. 2019",
     "locations": "לונדון • מילאנו • ניו יורק",
     "categories": {
       "bakery": "מַאֲפִיָה",
@@ -81,7 +81,8 @@
       "specialOffers": "מבצעים מיוחדים",
       "promotions": "מבצעים",
       "bulkOrders": "הנחות על הזמנות בכמויות גדולות"
-    }
+    },
+    "startupAcademy": "אקדמיית סטארטאפ"
   },
   "products": {
     "ourProducts": "המוצרים שלנו",
@@ -119,7 +120,40 @@
     "whatsapp": "וואטסאפ",
     "callNow": "התקשרו עכשיו",
     "sendEmail": "שלח אימייל",
-    "messageUs": "שלחו לנו הודעה"
+    "messageUs": "שלחו לנו הודעה",
+    "getInTouch": "לְהִתְקַשֵׁר",
+    "locations": "מיקומים",
+    "locationsValue": "London, Milan, New York",
+    "sendMessage": "שלח הודעה",
+    "firstName": "שֵׁם פְּרַטִי",
+    "firstNamePlaceholder": "הזן את שמך הפרטי",
+    "lastName": "שֵׁם מִשׁפָּחָה",
+    "lastNamePlaceholder": "הזן את שם המשפחה שלך",
+    "emailPlaceholder": "הזן את כתובת הדוא\"ל שלך",
+    "subject": "נוֹשֵׂא",
+    "subjectPlaceholder": "הזן נושא",
+    "message": "הוֹדָעָה",
+    "messagePlaceholder": "כתוב את ההודעה שלך",
+    "send": "לִשְׁלוֹחַ",
+    "eyebrow": "התחל בריף",
+    "headline1": "התחל ברצר.",
+    "headline2": "אנו מגיבים תוך 24 שעות.",
+    "subhead": "ספר לנו על הקטגוריה, הנפח ושוק היעד שלך. מומחה יחזור אליך עם אפשרויות מיקור ותמחור אינדיקטיבי.",
+    "fullName": "שם מלא",
+    "fullNamePlaceholder": "שאה תבראיז",
+    "company": "חֶברָה",
+    "companyPlaceholder": "הארגון שלך",
+    "businessEmail": "אימייל עסקי",
+    "howCanWeHelp": "איך אנחנו יכולים לעזור?",
+    "sending": "שְׁלִיחָה...",
+    "sendEnquiry": "שלח שאילתה",
+    "sentTitle": "הודעה נשלחה.",
+    "sentSub": "הצוות שלנו יענה תוך 24 שעות.",
+    "directChannels": "ערוצים ישירים",
+    "trust1": "אחריות תגובה 24 שעות",
+    "trust2": "מנהל חשבונות מסור",
+    "trust3": "NDA available on request",
+    "trust4": "42 שווקים · 1,247 משלוחים היום"
   },
   "media": {
     "title": "מרכז המדיה",
@@ -159,8 +193,8 @@
   },
   "footer": {
     "companyName": "הארוויקס גלובל ונצ'רס",
-    "tagline": "מצוינות במוצרי צריכה פרימיום מאז 2019",
-    "brandStatement": "חברת מוצרי צריכה גלובלית מובילה המספקת מוצרי מזון איכותיים במגוון קטגוריות, בתקני איכות בינלאומיים.",
+    "tagline": "42 Markets. 10 Industries. 14 Stages",
+    "brandStatement": "42 Markets. 10 Industries. 14 Stages",
     "locations": "לונדון • מילאנו • ניו יורק",
     "since": "מאז 2019",
     "harvicsNews": "חדשות הרוויקס",
@@ -219,7 +253,10 @@
     "newsletterHeadline2": "הצטרף לרשת שלנו",
     "newsletterTagline": "קבל את המידע המסחרי האחרון ועדכוני שוק",
     "activeShipments": "משלוחים פעילים",
-    "certifiedAudited": "מאושר ומבוקר"
+    "certifiedAudited": "מאושר ומבוקר",
+    "invalidEmail": "נא להזין כתובת אימייל חוקית",
+    "subscriptionSuccess": "תודה שנרשמת!",
+    "subscriptionError": "משהו השתבש. אנא נסה שוב."
   },
   "search": {
     "placeholder": "חיפוש מוצרים, מותגים או קטגוריות",
@@ -236,8 +273,13 @@
     "fallback": {
       "default": "סליחה, לא הבנתי. האם תוכל בבקשה לנסח מחדש?",
       "help": "אני יכול לעזור לך עם מידע על מוצרים, הזמנות או שאלות כלליות. מה תרצה לדעת?",
-      "contact": "לסיוע נוסף, אנא צרו עמנו קשר בכתובת support@harvics.com או התקשרו למספר ‎+1-800-HARVICS."
-    }
+      "contact": "לסיוע נוסף, אנא צרו עמנו קשר בכתובת support@harvics.com או התקשרו למספר ‎+1-800-HARVICS.",
+      "product": "עיין בקטלוג המוצרים שלנו מהתפריט, או ספר לי איזו קטגוריה מעניינת אותך - FMCG, טקסטיל, לוגיסטיקה ועוד.",
+      "order": "כדי לבצע הזמנה או לבדוק סטטוס, בקר בפורטל המפיצים או צור קשר עם מנהל החשבון שלך.",
+      "about": "Harvics Global Ventures היא חברת תשתית סחר ריבונית עם 20+ שנים על פני 40+ מדינות."
+    },
+    "typing": "HarvyX is typing…",
+    "pressEnter": "הקש Enter כדי לשלוח"
   },
   "common": {
     "chatWithUs": "צ'אט איתנו",
@@ -730,12 +772,17 @@
       "gps-tracking": "מעקב GPS",
       "localization": "לוקליזציה",
       "workflows": "זרימות עבודה",
-      "admin": "מנהל"
+      "admin": "מנהל",
+      "modules": "מודולים"
     },
     "kpis": {
       "customers": "לקוחות",
       "employees": "עובדים",
-      "profit": "לְהַרְוִיחַ"
+      "profit": "לְהַרְוִיחַ",
+      "totalOrders": "סך ההזמנות",
+      "inventoryValue": "ערך מלאי",
+      "logisticsEfficiency": "יעילות לוגיסטית",
+      "revenue": "הַכנָסָה"
     },
     "domain": {
       "title": "מערכת הפעלה CRM",
@@ -771,6 +818,14 @@
       "customerManagementDescription": "צפה ונהל את קשרי הלקוחות, האינטראקציות והקמפיינים שלך.",
       "loading": "טְעִינָה...",
       "error": "שגיאה בטעינת נתוני CRM"
+    },
+    "roleIndicator": {
+      "manager": "תצוגת מנהל",
+      "executive": "נוף מנהלים",
+      "investor": "תצוגת משקיעים",
+      "distributor": "תצוגת מפיץ",
+      "supplier": "תצוגת ספק",
+      "customer": "תצוגת לקוח"
     }
   },
   "supplierPortal": {
@@ -1060,7 +1115,7 @@
   },
   "about": {
     "title": "אודות הארוויקס",
-    "subtitle": "מצוינות במוצרי צריכה פרימיום מאז 2019",
+    "subtitle": "42 Markets. 10 Industries. 14 Stages",
     "ourStory": "הסיפור שלנו",
     "story1": "חברת Harvics, שנוסדה בשנת 2019, צמחה מרעיון בעל חזון למובילה עולמית בתחום מוצרי צריכה פרימיום. המסע שלנו מוגדר על ידי חתירה בלתי פוסקת לאיכות ומחויבות לחדשנות.",
     "story2": "אנו פועלים ביותר מ-40 מדינות, ומספקים מוצרים המעשירים חיים וקובעים סטנדרטים חדשים בתעשייה. מהתחלותינו הצנועות ועד לנוכחותנו הגלובלית, הערכים שלנו נותרו ללא שינוי.",
@@ -1150,181 +1205,279 @@
   },
   "help": {
     "page": {
-      "title": "Help Center",
-      "subtitle": "Find the help you need"
+      "title": "מרכז העזרה",
+      "subtitle": "מצא את העזרה שאתה צריך"
     },
-    "backToHelpCenter": "Back to Help Center",
+    "backToHelpCenter": "חזרה למרכז העזרה",
     "categories": {
       "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions"
+        "title": "שאלות נפוצות",
+        "description": "מצא תשובות לשאלות נפוצות"
       },
       "contact": {
-        "title": "Contact Support",
-        "description": "Get in touch with our support team"
+        "title": "צור קשר עם התמיכה",
+        "description": "צור קשר עם צוות התמיכה שלנו"
       },
       "guides": {
-        "title": "User Guides",
-        "description": "Step-by-step guides and tutorials"
+        "title": "מדריכים למשתמש",
+        "description": "מדריכים והדרכות שלב אחר שלב"
       },
       "troubleshooting": {
-        "title": "Troubleshooting",
-        "description": "Solve common issues"
+        "title": "פתרון בעיות",
+        "description": "לפתור בעיות נפוצות"
       },
       "account": {
-        "title": "Account Help",
-        "description": "Manage your account and settings"
+        "title": "עזרה לחשבון",
+        "description": "נהל את החשבון וההגדרות שלך"
       },
       "orders": {
-        "title": "Order Support",
-        "description": "Help with orders and deliveries"
+        "title": "תמיכה בהזמנה",
+        "description": "עזרה בהזמנות ומשלוחים"
       }
     },
     "account": {
-      "title": "Account Help",
-      "subtitle": "Manage your account settings and preferences",
-      "placeholder": "Account management and settings help content will appear here."
+      "title": "עזרה לחשבון",
+      "subtitle": "נהל את הגדרות והעדפות החשבון שלך",
+      "placeholder": "תוכן עזרה לניהול חשבון והגדרות יופיע כאן."
     },
     "orders": {
-      "title": "Order Support",
-      "subtitle": "Track and manage your orders and deliveries",
-      "placeholder": "Order and delivery support content will appear here."
+      "title": "תמיכה בהזמנה",
+      "subtitle": "עקוב וניהול ההזמנות והמשלוחים שלך",
+      "placeholder": "תוכן תמיכה בהזמנה ומשלוח יופיע כאן."
     },
     "guides": {
-      "title": "User Guides",
-      "subtitle": "Step-by-step guides to help you get the most out of Harvics",
+      "title": "מדריכים למשתמש",
+      "subtitle": "מדריכים שלב אחר שלב שיעזרו לך להפיק את המרב מהרוויקס",
       "items": {
         "gettingStarted": {
-          "title": "Getting Started",
-          "description": "Learn the basics"
+          "title": "תחילת העבודה",
+          "description": "למד את היסודות"
         },
         "accountSetup": {
-          "title": "Account Setup",
-          "description": "Set up your account"
+          "title": "הגדרת חשבון",
+          "description": "הגדר את החשבון שלך"
         },
         "ordering": {
-          "title": "How to Order",
-          "description": "Place and track orders"
+          "title": "איך להזמין",
+          "description": "בצע ומעקב אחר הזמנות"
         },
         "payment": {
-          "title": "Payment Methods",
-          "description": "Payment options and security"
+          "title": "דרכי תשלום",
+          "description": "אפשרויות תשלום ואבטחה"
         },
         "shipping": {
-          "title": "Shipping & Delivery",
-          "description": "Delivery information"
+          "title": "משלוח ומשלוח",
+          "description": "מידע על משלוח"
         },
         "returns": {
-          "title": "Returns & Refunds",
-          "description": "Return policy and process"
+          "title": "החזרות והחזרים",
+          "description": "מדיניות החזרה ותהליך"
         }
       }
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "subtitle": "Common issues and quick solutions",
+      "title": "פתרון בעיות",
+      "subtitle": "בעיות נפוצות ופתרונות מהירים",
       "items": {
         "login": {
-          "title": "Login Issues",
-          "description": "Problems signing in"
+          "title": "בעיות התחברות",
+          "description": "בעיות בכניסה"
         },
         "payment": {
-          "title": "Payment Problems",
-          "description": "Payment not processing"
+          "title": "בעיות תשלום",
+          "description": "התשלום לא מעובד"
         },
         "delivery": {
-          "title": "Delivery Delays",
-          "description": "Order not arriving"
+          "title": "עיכובים באספקה",
+          "description": "ההזמנה לא מגיעה"
         },
         "website": {
-          "title": "Website Errors",
-          "description": "Page not loading"
+          "title": "שגיאות באתר",
+          "description": "הדף לא נטען"
         }
       }
     }
   },
   "checkout": {
-    "secureCheckout": "Secure Checkout",
-    "title": "Complete Your Order",
-    "subtitle": "Review your items, enter shipping details, and confirm payment securely.",
-    "shippingInfo": "Shipping Information",
-    "paymentMethod": "Payment Method",
+    "secureCheckout": "קופה מאובטחת",
+    "title": "השלם את ההזמנה שלך",
+    "subtitle": "בדוק את הפריטים שלך, הזן את פרטי המשלוח ואשר את התשלום בצורה מאובטחת.",
+    "shippingInfo": "מידע על משלוח",
+    "paymentMethod": "שיטת תשלום",
     "paymentMethods": {
-      "card": "Credit / Debit Card",
-      "bankTransfer": "Bank Transfer (LC/TT)",
+      "card": "כרטיס אשראי / חיוב",
+      "bankTransfer": "העברה בנקאית (LC/TT)",
       "wallet": "HPay Digital Wallet"
     },
-    "orderSummary": "Order Summary",
+    "orderSummary": "סיכום הזמנה",
     "summary": {
-      "subtotal": "Subtotal",
-      "shipping": "Shipping",
-      "calculatedNextStep": "Calculated at next step",
-      "tax": "Tax",
-      "total": "Total"
+      "subtotal": "סכום משנה",
+      "shipping": "מִשׁלוֹחַ",
+      "calculatedNextStep": "מחושב בשלב הבא",
+      "tax": "מַס",
+      "total": "סַך הַכֹּל"
     },
-    "placeOrder": "Place Order",
-    "sslNotice": "Secured with 256-bit SSL encryption",
-    "continueShopping": "Continue Shopping",
+    "placeOrder": "בצע הזמנה",
+    "sslNotice": "מאובטח עם הצפנת SSL של 256 סיביות",
+    "continueShopping": "המשך קניות",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
-      "address": "Address",
-      "city": "City",
-      "country": "Country"
+      "firstName": "שֵׁם פְּרַטִי",
+      "lastName": "שֵׁם מִשׁפָּחָה",
+      "email": "אֶלֶקטרוֹנִי",
+      "address": "כְּתוֹבֶת",
+      "city": "עִיר",
+      "country": "מְדִינָה"
     }
   },
   "history": {
     "hero": {
-      "title": "Our Journey",
-      "subtitle": "From a Dubai startup to a global enterprise spanning 42+ countries, 10 industry verticals, and 38 languages."
+      "title": "המסע שלנו",
+      "subtitle": "מסטארט-אפ בדובאי ועד לארגון גלובלי המשתרע על פני 42+ מדינות, 10 ענפי תעשייה ו-38 שפות."
     },
     "cta": {
-      "title": "Be Part of the Next Chapter",
-      "subtitle": "Join us as we scale to 60+ countries and build the future of AI-driven global commerce.",
-      "button": "View Careers"
+      "title": "היו חלק מהפרק הבא",
+      "subtitle": "הצטרפו אלינו כשאנחנו מתרחבים ל-60+ מדינות ובונים את העתיד של מסחר גלובלי מונע בינה מלאכותית.",
+      "button": "הצג קריירה"
     },
     "milestones": {
       "2019": {
-        "title": "Founded in Dubai",
-        "description": "Harvics Global Ventures established in the UAE with a vision to become a world-class FMCG and multi-vertical trading conglomerate. First operations launched across textiles and consumer goods.",
-        "highlight": "Year One"
+        "title": "נוסדה בדובאי",
+        "description": "Harvics Global Ventures הוקמה באיחוד האמירויות עם חזון להפוך לקונגלומרט FMCG ומסחר רב-אנכי ברמה עולמית. מבצעים ראשונים הושקו על פני טקסטיל ומוצרי צריכה.",
+        "highlight": "שנה א'"
       },
       "2020": {
-        "title": "First International Expansion",
-        "description": "Expanded to 10 countries across Europe, Middle East, and South Asia despite global pandemic challenges. Launched digital supply chain operations and remote distribution partnerships.",
-        "highlight": "10 Countries"
+        "title": "התרחבות בינלאומית ראשונה",
+        "description": "התרחב ל-10 מדינות ברחבי אירופה, המזרח התיכון ודרום אסיה למרות אתגרי המגיפה העולמית. השיקה פעילות שרשרת אספקה ​​דיגיטלית ושותפויות הפצה מרחוק.",
+        "highlight": "10 מדינות"
       },
       "2021": {
-        "title": "Multi-Vertical Expansion",
-        "description": "Launched 5 new industry verticals: Commodities, Industrial Equipment, Minerals & Mining, Oil & Gas, and Real Estate. Total product catalog exceeded 500 SKUs across all verticals.",
-        "highlight": "5 New Verticals"
+        "title": "הרחבה רב-אנכית",
+        "description": "השיקה 5 ענפים חדשים בתעשייה: סחורות, ציוד תעשייתי, מינרלים וכרייה, נפט וגז ונדל\"ן. קטלוג המוצרים הכולל עלה על 500 מק\"ט בכל הענפים.",
+        "highlight": "5 אנכיים חדשים"
       },
       "2022": {
-        "title": "Digital Transformation",
-        "description": "Built the first version of Harvics OS — the AI-powered enterprise platform. Launched distributor portals, e-commerce capabilities, and real-time GPS fleet tracking across all markets.",
+        "title": "טרנספורמציה דיגיטלית",
+        "description": "בנה את הגרסה הראשונה של Harvics OS - הפלטפורמה הארגונית המופעלת על ידי בינה מלאכותית. השיקה פורטלי מפיצים, יכולות מסחר אלקטרוני ומעקב אחר צי GPS בזמן אמת בכל השווקים.",
         "highlight": "Harvics OS v1"
       },
       "2023": {
-        "title": "Sustainability & Scale",
-        "description": "Committed to carbon-neutral operations. Reached 30+ countries. Launched HPay (digital payments platform), trade finance solutions, and AI-driven demand forecasting across all verticals.",
-        "highlight": "30+ Countries"
+        "title": "קיימות וקנה מידה",
+        "description": "מחויב לפעולות ניטרליות פחמן. הגיע ל-30+ מדינות. השיק את HPay (פלטפורמת תשלומים דיגיטליים), פתרונות מימון סחר וחיזוי ביקוש מונע בינה מלאכותית בכל הענפים.",
+        "highlight": "30+ מדינות"
       },
       "2024": {
-        "title": "Global Enterprise",
-        "description": "Surpassed 42+ countries milestone. Deployed AI engine with 6 ML models for strategy, demand, pricing, coverage, and SKU optimization. Launched multi-language platform supporting 38 languages.",
-        "highlight": "42+ Countries"
+        "title": "ארגונים גלובליים",
+        "description": "עבר את אבן הדרך של 42+ מדינות. מנוע AI פרוס עם 6 דגמי ML לאסטרטגיה, ביקוש, תמחור, כיסוי ואופטימיזציה של מק\"ט. השיקה פלטפורמה מרובת שפות התומכת ב-38 שפות.",
+        "highlight": "42+ מדינות"
       },
       "2025": {
-        "title": "AI-First Operating System",
-        "description": "Harvics OS v2 launched — unified enterprise operating system with real-time intelligence, Socket.io live feeds, Alpha Engine for market attack plans, and complete 8-level geographic hierarchy.",
+        "title": "מערכת הפעלה AI-First",
+        "description": "Harvics OS v2 הושקה - מערכת הפעלה ארגונית מאוחדת עם אינטליגנציה בזמן אמת, הזנות חיים של Socket.io, Alpha Engine לתוכניות תקיפות שוק והיררכיה גיאוגרפית מלאה של 8 רמות.",
         "highlight": "Harvics OS v2"
       },
       "2026": {
-        "title": "The Vision Ahead",
-        "description": "Scaling to 60+ countries. Building the world's first AI-operated FMCG enterprise where every function — procurement, logistics, finance, CRM — runs on predictive intelligence with human approval gates.",
-        "highlight": "60+ Target"
+        "title": "החזון קדימה",
+        "description": "קנה מידה ל-60+ מדינות. בניית מיזם FMCG הראשון בעולם המופעל על ידי AI שבו כל פונקציה - רכש, לוגיסטיקה, כספים, CRM - פועלת על מודיעין חזוי עם שערי אישור אנושיים.",
+        "highlight": "60+ יעד"
       }
+    }
+  },
+  "startupAcademy": {
+    "metaTitle": "Harvics Startup Academy",
+    "metaDescription": "סחר מעשי, מקורות מידע ואקדמיה לבינה מלאכותית למייסדים - שישה שבועות, מפגשים חיים, מסדרונות Harvics.",
+    "navLabel": "אקדמיית סטארטאפ",
+    "teaser": {
+      "eyebrow": "אקדמיה · תכנית מסדרון",
+      "title": "אקדמיית סטארטאפ.",
+      "body": "מלאכת מסחר קלאסית למייסדים - מקורות מידע, QC, שולחנות מימון ואוריינות מסדרון - לצד השוק של Harvics.",
+      "cta": "היכנסו לאקדמיה"
+    },
+    "hero": {
+      "alt": "אולם הרצאות קלאסיות - Harvics Startup Academy",
+      "eyebrow": "מחזור 01 · Q4 2026 · תוכנית תומכת",
+      "title": "Harvics Startup Academy",
+      "body": "בית ספר קלאסי למסחר למייסדים - מקורות מידע, מסחר במסדרונות ובינה מלאכותית שעובדת. שישה שבועות. הפעלות בשידור חי. מפעילים אמיתיים.",
+      "apply": "הגש בקשה לקבוצה 01",
+      "seeProgramme": "ראה תוכנית"
+    },
+    "stats": {
+      "founders": "מייסדים / קבוצה",
+      "sessions": "הפעלות בשידור חי",
+      "weeks": "שבועות",
+      "verticals": "מסחר אנכיים"
+    },
+    "why": {
+      "eyebrow": "01 · למה להצטרף",
+      "title": "בנה חברה שבאמת יכולה לסחור.",
+      "body": "לא תיאטרון מגרש. למד בקשת הצעה להסדר, הקפדה על מיקור חוץ, פנייה לקונים ואוטומציה - ממפעילים ברחבי מסדרונות Harvics.",
+      "item1Title": "מערכות סחר מעשיות",
+      "item1Body": "איך קונים מוסדיים קונים - ואיך אתה ממלא.",
+      "item2Title": "רשת ששולחת",
+      "item2Body": "מייסדים, מפיצים ומפעילים בכל ענפים.",
+      "item3Title": "AI שכן עובד",
+      "item3Body": "אוטומציה של HarvyX, Fin voice ואוטומציה ללא מילות באזז.",
+      "imageAlt": "טבע דומם מסחר קלאסי"
+    },
+    "knowledge": {
+      "eyebrow": "יֶדַע",
+      "title": "למד את המסדרון כמו דיסציפלינה.",
+      "body": "תוכנית הלימודים שנלקחה משיטות מסחר אמיתיות - לא שקופיות סטארט-אפ גנריות.",
+      "imageAlt": "ספרייה קלאסית מפוארת"
+    },
+    "programme": {
+      "eyebrow": "02 · תוכנית",
+      "title": "על מה תעבוד",
+      "m1Title": "מותג ומקור",
+      "m1Body": "MOQs, שערי QC, טקסטיל וFMCG - אטליה למסדרון.",
+      "m2Title": "מודיעין והסברה",
+      "m2Body": "מעבדות HarvyX, ICP לקונים, מעקבים שמקבלים תשובות.",
+      "m3Title": "הון ושותפים",
+      "m3Body": "נתיבי מימון ושותפויות - אין תביעות מזויפות של הבנק.",
+      "m4Title": "מסחר במסדרון",
+      "m4Body": "נמלים, נתיבים וכיצד סחורות נעות בפועל בשווקים.",
+      "m5Title": "איכות וחריצות",
+      "m5Body": "הרגלי בדיקה המגנים על המוניטין וההתיישבות.",
+      "m6Title": "סחורות ו-FMCG",
+      "m6Body": "ממציאות מחסן ועד לביקוש למותג ולביקוש הסיטונאי."
+    },
+    "tracks": {
+      "aEyebrow": "מסלול א'",
+      "aTitle": "מותג ומסחר",
+      "aBody": "מייסדי ביגוד ו-FMCG בונים ביקוש למותג, סיטונאי ומסדרון.",
+      "aAlt": "חדר ישיבות קלאסי",
+      "bEyebrow": "מסלול ב'",
+      "bTitle": "סחר ומבצעים",
+      "bBody": "מפעילי מקורות, לוגיסטיקה ו-B2B בקנה מידה של סחר מוסדי.",
+      "bAlt": "רשת סלון"
+    },
+    "network": {
+      "eyebrow": "03 · רשת",
+      "title": "הכירו מפעילים, לא קהלים.",
+      "body": "מפגשים חיים ושעות משרד בסגנון סלון עם מייסדים, מפיצים ומפעילי מסדרונות Harvics.",
+      "imageAlt": "מייסד נטוורקינג"
+    },
+    "rhythm": {
+      "eyebrow": "04 · קצב",
+      "title": "שישה שבועות. קצב ברור.",
+      "w1": "שבוע 1",
+      "w1Body": "התמצאות · מפת מסדרונות · סדנת ICP",
+      "w2": "שבוע 2",
+      "w2Body": "פנייה לקונים · מעבדת HarvyX",
+      "w3": "שבוע 3",
+      "w3Body": "מקורות מידע ו-QC · הקפדה על ספקים",
+      "w4": "שבוע 4",
+      "w4Body": "אוטומציה · קול סנפיר · מחסנית פעולות",
+      "w5": "שבוע 5",
+      "w5Body": "מימון ושותפויות",
+      "w6": "שבוע 6",
+      "w6Body": "חלון הראווה של המייסד · השלבים הבאים"
+    },
+    "apply": {
+      "eyebrow": "יישומים",
+      "title": "הגש בקשה לקבוצה 01",
+      "body": "מספר מקומות מוגבל. ספר לנו על החברה שלך, האנכית, ומה אתה בונה.",
+      "emailCta": "הגש בקשה במייל →",
+      "back": "חזרה להרוויקס"
     }
   }
 }

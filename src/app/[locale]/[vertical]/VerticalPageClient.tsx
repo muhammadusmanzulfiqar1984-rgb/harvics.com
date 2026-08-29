@@ -6,35 +6,9 @@ import { slugify, type NavVertical } from '@/data/megaMenuData'
 import { getVerticalProducts, getVerticalSubcategories, getSubcategoryProducts, getProductImage, type Product } from '@/data/productCatalog'
 import { getVerticalLanding, getAllCategoryDescriptions } from '@/data/verticalDescriptions'
 import SmartImage from '@/components/ui/SmartImage'
-import ImageCarousel from '@/components/ui/ImageCarousel'
 import PresentationAccessBanner from '@/components/presentations/PresentationAccessBanner'
-
-/* ───── Animated Counter Hook ───── */
-function useAnimatedCounter(target: string, isVisible: boolean) {
-  const [display, setDisplay] = useState('0')
-  const numericPart = parseInt(target.replace(/[^0-9]/g, ''), 10)
-  const suffix = target.replace(/[0-9,]/g, '')
-
-  useEffect(() => {
-    if (!isVisible || isNaN(numericPart)) {
-      setDisplay(target)
-      return
-    }
-    let frame = 0
-    const totalFrames = 40
-    const timer = setInterval(() => {
-      frame++
-      const progress = frame / totalFrames
-      const eased = 1 - Math.pow(1 - progress, 3)
-      const current = Math.round(numericPart * eased)
-      setDisplay(current.toLocaleString() + suffix)
-      if (frame >= totalFrames) clearInterval(timer)
-    }, 30)
-    return () => clearInterval(timer)
-  }, [isVisible, numericPart, suffix, target])
-
-  return display
-}
+import TabraizTownProjectBanner from '@/components/real-estate/TabraizTownProjectBanner'
+import EnergiesInitiativeBanner from '@/components/energies/EnergiesInitiativeBanner'
 
 /* ───── Intersection Observer Hook ───── */
 function useInView(threshold = 0.2) {
@@ -50,123 +24,136 @@ function useInView(threshold = 0.2) {
   return { ref, inView }
 }
 
-/* ───── Stat Card ───── */
-const StatCard: React.FC<{ label: string; value: string; isVisible: boolean; delay: number }> = ({ label, value, isVisible, delay }) => {
-  const display = useAnimatedCounter(value, isVisible)
-  return (
-    <div
-      className="text-center transition-all duration-700 ease-out"
-      style={{
-        opacity: isVisible ? 1 : 0,
-        transform: isVisible ? 'translateY(0)' : 'translateY(24px)',
-        transitionDelay: `${delay}ms`,
-      }}
-    >
-      <div className="text-3xl md:text-4xl font-bold text-harvics-gold tabular-nums">{display}</div>
-      <div className="text-xs text-white/50 uppercase tracking-[0.15em] mt-1.5 font-medium">{label}</div>
-    </div>
-  )
-}
-
-/** Rich descriptions & stats for each vertical */
-const verticalMeta: Record<string, { tagline: string; description: string; stats: { label: string; value: string }[]; icon: string; gradient: string }> = {
+/** Rich descriptions for each vertical */
+const verticalMeta: Record<string, { tagline: string; description: string; icon: string; gradient: string }> = {
   textiles: {
     tagline: 'Apparel, Fabrics & Home Textiles',
     description: 'From premium menswear and womenswear to home textiles and accessories — Harvics sources, manufactures, and distributes across the full textile value chain. Factory-direct partnerships in South Asia, Turkey, and China.',
-    stats: [{ label: 'Categories', value: '17' }, { label: 'SKUs', value: '2,400+' }, { label: 'Countries', value: '22' }],
     icon: '🧵',
     gradient: 'from-harvics-burgundy via-[#120303] to-harvics-burgundy',
   },
   fmcg: {
     tagline: 'Food, Personal Care & Home Care',
     description: 'Full FMCG distribution — staples, dairy, packaged foods, beverages, personal care, and home care. Cold chain logistics, in-market distribution, and AI-driven demand forecasting.',
-    stats: [{ label: 'Product Lines', value: '6' }, { label: 'SKUs', value: '1,800+' }, { label: 'Retail Points', value: '15,000+' }],
     icon: '🛒',
     gradient: 'from-harvics-burgundy via-[#120303] to-harvics-burgundy',
   },
   commodities: {
     tagline: 'Agri, Energy, Metals & Softs',
     description: 'Strategic commodities trading — energy, metals, agricultural products, edible oils, proteins, and industrial chemicals. Spot and contract-based trading with global counterparties.',
-    stats: [{ label: 'Verticals', value: '10' }, { label: 'Trade Volume', value: '$120M+' }, { label: 'Partners', value: '80+' }],
     icon: '📦',
     gradient: 'from-harvics-burgundy via-[#120303] to-harvics-burgundy',
   },
   industrial: {
     tagline: 'Chemicals, Machinery & Safety',
     description: 'Industrial procurement and supply — CNC machinery, safety equipment, copper wire, iron ore, and MRO supplies. Turnkey solutions for manufacturing and construction sectors.',
-    stats: [{ label: 'Product Range', value: '500+' }, { label: 'Industries Served', value: '12' }, { label: 'Countries', value: '15' }],
     icon: '🏭',
     gradient: 'from-harvics-burgundy via-[#120303] to-harvics-burgundy',
   },
   minerals: {
     tagline: 'Metals, Energy & Precious Minerals',
     description: 'Mining and minerals trading — iron ore, copper, aluminum, coal, lithium, gold, silver, and platinum. From mine to market with full compliance and traceability.',
-    stats: [{ label: 'Mineral Types', value: '14' }, { label: 'Mining Partners', value: '25+' }, { label: 'Regions', value: '8' }],
     icon: '⛏️',
     gradient: 'from-harvics-burgundy via-[#120303] to-harvics-burgundy',
   },
   'oil-gas': {
     tagline: 'Upstream, Midstream & Downstream',
     description: 'End-to-end oil & gas services — exploration, pipeline EPC, refinery operations, trading & offtake, and HSE compliance. Operating across the Middle East, Africa, and Central Asia.',
-    stats: [{ label: 'Service Lines', value: '4' }, { label: 'Projects', value: '30+' }, { label: 'Countries', value: '11' }],
     icon: '🛢️',
     gradient: 'from-harvics-burgundy via-[#120303] to-harvics-burgundy',
   },
   'real-estate': {
     tagline: 'Commercial, Residential & Industrial',
-    description: 'Real estate development and facilities management — Grade-A offices, luxury residences, industrial parks, SEZ facilities, and full FM services across the GCC and South Asia.',
-    stats: [{ label: 'Asset Classes', value: '4' }, { label: 'Sq Ft Managed', value: '2M+' }, { label: 'Cities', value: '8' }],
+    description: 'Real estate development and facilities management — Grade-A offices, luxury residences, industrial parks, and landmark upcoming projects including Tabraiz Town, Rahim Yar Khan.',
     icon: '🏢',
     gradient: 'from-harvics-burgundy via-[#120303] to-harvics-burgundy',
   },
   sourcing: {
     tagline: 'Global Sourcing & Quality Control',
     description: 'Strategic sourcing, OEM/ODM manufacturing, quality inspection, logistics consulting, and sustainable procurement. AI-powered supplier matching and blockchain traceability.',
-    stats: [{ label: 'Services', value: '8' }, { label: 'Factories Audited', value: '400+' }, { label: 'Countries', value: '18' }],
     icon: '🔍',
     gradient: 'from-harvics-burgundy via-[#120303] to-harvics-burgundy',
   },
   finance: {
     tagline: 'Trade Finance, HPay & Risk',
     description: 'Financial services for global trade — letters of credit, forfaiting, digital wallets (HPay), invoicing, reconciliation, KYC/AML compliance, and risk scoring.',
-    stats: [{ label: 'Products', value: '12' }, { label: 'Transactions/Mo', value: '50K+' }, { label: 'Compliance', value: '100%' }],
     icon: '💳',
     gradient: 'from-harvics-burgundy via-[#120303] to-harvics-burgundy',
   },
   ai: {
     tagline: 'Forecasting, Vision & Integration',
     description: 'AI-powered enterprise solutions — demand forecasting, computer vision for QC, conversational AI, data pipelines, ERP integration, and mobile apps. Built on Harvics\' proprietary ML models.',
-    stats: [{ label: 'Models', value: '6' }, { label: 'Accuracy', value: '94%+' }, { label: 'Integrations', value: '15+' }],
     icon: '🤖',
     gradient: 'from-harvics-burgundy via-[#120303] to-harvics-burgundy',
   },
 }
 
-/** Hero images for each vertical — generated flux heroes (with safe Unsplash fallbacks for missing ones). */
+/** Hero images for each vertical — 3 sliding campaign frames each. */
 const verticalHeroImages: Record<string, string> = {
-  textiles: '/assets/verticals/01-apparels/hero.jpg',
-  fmcg: '/assets/verticals/02-fmcg/hero.jpg',
-  commodities: '/assets/verticals/03-commodities/hero.jpg',
-  industrial: '/assets/verticals/04-industrial/hero.jpg',
-  minerals: '/assets/verticals/05-minerals/hero.jpg',
-  'oil-gas': '/assets/verticals/06-oil-gas/hero.jpg',
-  'real-estate': '/assets/verticals/07-real-estate/hero.jpg',
-  sourcing: '/assets/verticals/08-sourcing/hero.jpg',
-  finance: '/assets/verticals/09-finance/hero.jpg',
-  ai: '/assets/verticals/10-ai-tech/hero.jpg',
+  textiles: '/assets/harvictrade/heroes/textiles/01-trench.webp',
+  fmcg: '/assets/harvictrade/heroes/fmcg/01-still.webp',
+  commodities: '/assets/harvictrade/heroes/commodities/01-grain.webp',
+  industrial: '/assets/harvictrade/heroes/industrial/01-cnc.webp',
+  minerals: '/assets/harvictrade/heroes/minerals/01-copper.webp',
+  'oil-gas': '/assets/harvictrade/heroes/oil-gas/01-offshore.webp',
+  'real-estate': '/assets/harvictrade/heroes/real-estate/01-tower.webp',
+  sourcing: '/assets/harvictrade/heroes/sourcing/01-factory.webp',
+  finance: '/assets/harvictrade/heroes/finance/01-desk.webp',
+  ai: '/assets/harvictrade/heroes/ai/01-datacenter.webp',
 }
 
 const verticalHeroSlides: Record<string, string[]> = {
-  textiles: ['/assets/verticals/01-apparels/hero.jpg'],
-  fmcg: ['/assets/verticals/02-fmcg/hero.jpg'],
-  commodities: ['/assets/verticals/03-commodities/hero.jpg'],
-  industrial: ['/assets/verticals/04-industrial/hero.jpg'],
-  minerals: ['/assets/verticals/05-minerals/hero.jpg'],
-  'oil-gas': ['/assets/verticals/06-oil-gas/hero.jpg'],
-  'real-estate': ['/assets/verticals/07-real-estate/hero.jpg'],
-  sourcing: ['/assets/verticals/08-sourcing/hero.jpg'],
-  finance: ['/assets/verticals/09-finance/hero.jpg'],
-  ai: ['/assets/verticals/10-ai-tech/hero.jpg'],
+  textiles: [
+    '/assets/harvictrade/heroes/textiles/01-trench.webp',
+    '/assets/harvictrade/heroes/textiles/02-rack.webp',
+    '/assets/harvictrade/heroes/textiles/03-denim.webp',
+    '/assets/harvictrade/heroes/textiles/04-silk.webp',
+  ],
+  fmcg: [
+    '/assets/harvictrade/heroes/fmcg/01-still.webp',
+    '/assets/harvictrade/heroes/fmcg/02-warehouse.webp',
+    '/assets/harvictrade/heroes/fmcg/03-flatlay.webp',
+  ],
+  commodities: [
+    '/assets/harvictrade/heroes/commodities/01-grain.webp',
+    '/assets/harvictrade/heroes/commodities/02-coffee.webp',
+    '/assets/harvictrade/heroes/commodities/03-port.webp',
+  ],
+  industrial: [
+    '/assets/harvictrade/heroes/industrial/01-cnc.webp',
+    '/assets/harvictrade/heroes/industrial/02-ppe.webp',
+    '/assets/harvictrade/heroes/industrial/03-factory.webp',
+  ],
+  minerals: [
+    '/assets/harvictrade/heroes/minerals/01-copper.webp',
+    '/assets/harvictrade/heroes/minerals/02-ore.webp',
+    '/assets/harvictrade/heroes/minerals/03-gold.webp',
+  ],
+  'oil-gas': [
+    '/assets/harvictrade/heroes/oil-gas/01-offshore.webp',
+    '/assets/harvictrade/heroes/oil-gas/02-refinery.webp',
+    '/assets/harvictrade/heroes/oil-gas/03-tanker.webp',
+  ],
+  'real-estate': [
+    '/assets/harvictrade/heroes/real-estate/01-tower.webp',
+    '/assets/harvictrade/heroes/real-estate/02-interior.webp',
+    '/assets/harvictrade/heroes/real-estate/03-aerial.webp',
+  ],
+  sourcing: [
+    '/assets/harvictrade/heroes/sourcing/01-factory.webp',
+    '/assets/harvictrade/heroes/sourcing/02-qc.webp',
+    '/assets/harvictrade/heroes/sourcing/03-containers.webp',
+  ],
+  finance: [
+    '/assets/harvictrade/heroes/finance/01-desk.webp',
+    '/assets/harvictrade/heroes/finance/02-lobby.webp',
+    '/assets/harvictrade/heroes/finance/03-fintech.webp',
+  ],
+  ai: [
+    '/assets/harvictrade/heroes/ai/01-datacenter.webp',
+    '/assets/harvictrade/heroes/ai/02-vision.webp',
+    '/assets/harvictrade/heroes/ai/03-analytics.webp',
+  ],
 }
 
 const defaultHeroSlides = [
@@ -185,7 +172,7 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
   const [activeFilter, setActiveFilter] = useState<string | null>(null)
   const [sortBy, setSortBy] = useState<'name' | 'price'>('name')
   const [hoveredProduct, setHoveredProduct] = useState<number | null>(null)
-  const meta = verticalMeta[vertical.key] || { tagline: '', description: '', stats: [], icon: '📊', gradient: 'from-harvics-burgundy to-harvics-burgundy' }
+  const meta = verticalMeta[vertical.key] || { tagline: '', description: '', icon: '📊', gradient: 'from-harvics-burgundy to-harvics-burgundy' }
   const landing = getVerticalLanding(vertical.key)
   const categoryDescs = getAllCategoryDescriptions(vertical.key)
 
@@ -204,132 +191,131 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
     return 0
   })
 
-  const heroSlides = verticalHeroSlides[vertical.key] || [
+  const heroSlides = (verticalHeroSlides[vertical.key] || [
     verticalHeroImages[vertical.key],
     ...defaultHeroSlides,
-  ]
+  ]).filter(Boolean) as string[]
+
+  const [heroIndex, setHeroIndex] = useState(0)
+
+  useEffect(() => {
+    setHeroIndex(0)
+  }, [vertical.key])
+
+  useEffect(() => {
+    if (heroSlides.length <= 1) return
+    if (typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      return
+    }
+    const id = window.setInterval(() => {
+      setHeroIndex((i) => (i + 1) % heroSlides.length)
+    }, 4200)
+    return () => window.clearInterval(id)
+  }, [heroSlides.length, vertical.key])
 
   return (
     <main className="min-h-screen" style={{ background: '#ffffff' }}>
-      {/* ═══════ HERO BANNER ═══════ */}
+      {/* ═══════ HERO — full-bleed auto-slider (no floating cards) ═══════ */}
       <section
         ref={heroSection.ref}
-        className="relative min-h-[660px] overflow-hidden border-b border-harvics-gold/20"
+        className="relative min-h-[72vh] overflow-hidden border-b border-harvics-gold/30 md:min-h-[78vh]"
       >
-        {/* Hero Background Image */}
-        {heroSlides.length > 0 ? (
-          <div className="absolute inset-0">
-            <ImageCarousel images={heroSlides} autoSlideInterval={4500} height="h-full" />
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,2,4,0.58)_0%,rgba(8,2,4,0.25)_35%,rgba(8,2,4,0.95)_100%)]" />
-          </div>
-        ) : verticalHeroImages[vertical.key] && (
-          <>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={verticalHeroImages[vertical.key]}
-              alt=""
-              className="absolute inset-0 w-full h-full object-cover"
-              style={{ filter: 'brightness(0.4) contrast(1.15) saturate(0.95)' }}
-            />
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,2,4,0.65)_0%,rgba(8,2,4,0.4)_35%,rgba(8,2,4,0.95)_100%)]" />
-          </>
-        )}
+        {heroSlides.map((src, i) => (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            key={src}
+            src={src}
+            alt=""
+            className="absolute inset-0 h-full w-full object-cover"
+            style={{
+              opacity: i === heroIndex ? 1 : 0,
+              transform: i === heroIndex ? 'scale(1)' : 'scale(1.05)',
+              transition: 'opacity 1.15s ease, transform 7s ease',
+            }}
+            loading={i === 0 ? 'eager' : 'lazy'}
+            decoding="async"
+            aria-hidden={i !== heroIndex}
+          />
+        ))}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              'linear-gradient(105deg, rgba(61,18,18,0.88) 0%, rgba(61,18,18,0.55) 48%, rgba(13,13,13,0.35) 100%)',
+          }}
+        />
 
-        {/* Centered copy */}
-        <div className="relative z-10 flex min-h-[660px] items-center justify-center px-4">
-          <div className="text-center max-w-[880px]">
-            <nav
-              className="flex items-center justify-center text-xs text-white/60 mb-6 transition-all duration-700"
-              style={{
-                opacity: heroSection.inView ? 1 : 0,
-                transform: heroSection.inView ? 'translateY(0)' : 'translateY(12px)',
-              }}
-            >
-              <Link href={`/${locale}`} className="hover:text-harvics-gold transition-colors">Home</Link>
-              <span className="mx-2 text-harvics-gold/40">—</span>
-              <span className="text-harvics-gold font-medium">{vertical.label}</span>
-            </nav>
+        <div className="relative z-10 mx-auto flex min-h-[72vh] max-w-[1200px] flex-col justify-end px-4 py-14 md:min-h-[78vh] md:py-20">
+          <nav className="mb-5 flex items-center gap-2 text-xs text-white/55">
+            <Link href={`/${locale}`} className="transition-colors hover:text-harvics-gold">
+              Home
+            </Link>
+            <span>→</span>
+            <span className="text-harvics-gold/90">{vertical.label}</span>
+          </nav>
 
-            <div
-              className="inline-block text-xs text-harvics-gold font-bold uppercase tracking-[0.25em] mb-6 border border-harvics-gold/30 px-3 py-1"
-              style={{
-                opacity: heroSection.inView ? 1 : 0,
-                transform: heroSection.inView ? 'translateY(0)' : 'translateY(16px)',
-                transitionDuration: '700ms',
-                transitionDelay: '100ms',
-              }}
-            >
-              {meta.tagline || 'Harvics Global Ventures'}
-            </div>
+          <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-harvics-gold">
+            {meta.tagline || 'Harvics Global Ventures'}
+          </p>
 
-            <h1
-              className="text-5xl md:text-6xl lg:text-[76px] font-bold text-white leading-[0.98] mb-6 transition-all duration-700"
-              style={{
-                letterSpacing: '-0.03em',
-                opacity: heroSection.inView ? 1 : 0,
-                transform: heroSection.inView ? 'translateY(0)' : 'translateY(20px)',
-                transitionDelay: '200ms',
-              }}
-            >
-              {vertical.label}
-            </h1>
+          <h1
+            className="mb-4 max-w-[18ch] text-4xl font-bold leading-[0.95] text-white md:text-6xl lg:text-[72px]"
+            style={{ letterSpacing: '-0.03em' }}
+          >
+            {vertical.label}
+          </h1>
 
-            <p
-              className="text-base md:text-xl text-white/78 leading-relaxed max-w-[700px] mx-auto mb-10 transition-all duration-700"
-              style={{
-                opacity: heroSection.inView ? 1 : 0,
-                transform: heroSection.inView ? 'translateY(0)' : 'translateY(16px)',
-                transitionDelay: '300ms',
-              }}
-            >
-              {meta.description || `Comprehensive supply chain solutions across ${vertical.blocks.length} categories and ${allProducts.length}+ products.`}
-            </p>
+          <p className="mb-8 max-w-[540px] text-base leading-relaxed text-white/75 md:text-lg">
+            {meta.description ||
+              `Comprehensive supply chain solutions across ${vertical.blocks.length} categories and ${allProducts.length}+ products.`}
+          </p>
 
-            <div
-              className="flex flex-wrap justify-center gap-4"
-              style={{
-                opacity: heroSection.inView ? 1 : 0,
-                transform: heroSection.inView ? 'translateY(0)' : 'translateY(16px)',
-                transitionDelay: '400ms',
-              }}
-            >
-              <Link
-                href={`/${locale}/contact`}
-                className="inline-flex items-center justify-center rounded-sm px-8 py-3 bg-harvics-gold text-harvics-burgundy text-sm font-semibold uppercase tracking-[0.18em] transition-all duration-300 hover:bg-[#d4b46e]"
-              >
-                Get a Quote
-              </Link>
-              <a
-                href="#products"
-                className="inline-flex items-center justify-center rounded-sm px-8 py-3 border border-white/30 text-white text-sm font-semibold uppercase tracking-[0.18em] hover:border-harvics-gold hover:bg-white/10 transition-all duration-300"
-              >
-                Browse Products
-              </a>
-            </div>
+          <div className="flex flex-wrap gap-3">
+            {vertical.key === 'real-estate' ? (
+              <>
+                <Link
+                  href={`/${locale}/projects/tabraiz-town`}
+                  className="inline-flex items-center justify-center bg-harvics-gold px-7 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-harvics-burgundy transition hover:bg-[#d4b46e]"
+                >
+                  Landmark Project
+                </Link>
+                <a
+                  href="#products"
+                  className="inline-flex items-center justify-center border border-white/35 px-7 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-white transition hover:border-harvics-gold"
+                >
+                  Browse Categories
+                </a>
+              </>
+            ) : (
+              <>
+                <Link
+                  href={`/${locale}/contact`}
+                  className="inline-flex items-center justify-center bg-harvics-gold px-7 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-harvics-burgundy transition hover:bg-[#d4b46e]"
+                >
+                  Get a Quote
+                </Link>
+                <a
+                  href="#products"
+                  className="inline-flex items-center justify-center border border-white/35 px-7 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-white transition hover:border-harvics-gold"
+                >
+                  Browse Products
+                </a>
+              </>
+            )}
           </div>
         </div>
-
-        <div className="absolute bottom-0 left-0 right-0 h-2 bg-harvics-gold" />
       </section>
 
-      {meta.stats.length > 0 && (
-        <div className="relative z-10 max-w-[1100px] mx-auto -mt-16 mb-12 px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {meta.stats.map((s, index) => (
-              <div
-                key={s.label}
-                className="bg-white border border-harvics-burgundy/10 p-8 text-center shadow-[0_30px_80px_rgba(74,21,32,0.18),0_4px_14px_rgba(74,21,32,0.08)]"
-                style={{
-                  opacity: heroSection.inView ? 1 : 0,
-                  transform: heroSection.inView ? 'translateY(0)' : 'translateY(20px)',
-                  transition: `opacity 0.7s ease-out ${150 + index * 100}ms, transform 0.7s ease-out ${150 + index * 100}ms`,
-                }}
-              >
-                <div className="font-serif text-[48px] md:text-[56px] font-bold text-harvics-burgundy leading-none tabular-nums">{s.value}</div>
-                <div className="text-[11px] uppercase tracking-[0.25em] text-harvics-burgundy/70 mt-3 font-semibold">{s.label}</div>
-              </div>
-            ))}
-          </div>
+      {/* Landmark upcoming project — Real Estate only */}
+      {vertical.key === 'real-estate' && (
+        <div className="max-w-[1200px] mx-auto px-4 mt-6 mb-4">
+          <TabraizTownProjectBanner />
+        </div>
+      )}
+
+      {vertical.key === 'oil-gas' && (
+        <div className="max-w-[1200px] mx-auto px-4 mt-6 mb-4">
+          <EnergiesInitiativeBanner />
         </div>
       )}
 

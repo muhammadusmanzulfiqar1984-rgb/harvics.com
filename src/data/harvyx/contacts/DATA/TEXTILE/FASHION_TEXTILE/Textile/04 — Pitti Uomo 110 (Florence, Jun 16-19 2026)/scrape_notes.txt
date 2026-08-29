@@ -1,0 +1,4 @@
+Pitti Uomo 110
+- Approach A worked on the public Pitti Connect exhibitors page.
+- Playwright network interception revealed two useful live endpoints: /en/exhibitors?brandtitles=true&section= and /en/exhibitors?fetchpage=true...
+- Scraped 727 brand records from the official fetchpage JSON responses, including country, style/category tags, stand location, detail URL, and website when publicly exposed.

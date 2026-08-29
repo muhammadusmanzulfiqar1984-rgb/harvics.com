@@ -70,8 +70,13 @@ export const verifyAIEngine = async (): Promise<boolean> => {
  * Ensure all AI requests are routed through Python
  */
 export const requireAIEngine = async (req: Request, res: Response, next: NextFunction) => {
-  const isAIEndpoint = req.path.includes('/ai/') || 
-                       req.path.includes('/strategy');
+  // Model registry CRUD (#56) is metadata — does not require Python inference engine
+  const path = req.path || ''
+  if (path === '/models' || path.startsWith('/models/')) {
+    return next()
+  }
+
+  const isAIEndpoint = path.includes('/ai/') || path.includes('/strategy');
 
   if (isAIEndpoint) {
     const aiEngineAvailable = await verifyAIEngine();

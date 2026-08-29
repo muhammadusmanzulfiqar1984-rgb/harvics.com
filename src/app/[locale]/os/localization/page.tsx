@@ -3,7 +3,7 @@
 import React from 'react'
 import { useLocale } from 'next-intl'
 import { usePathname } from 'next/navigation'
-import DashboardLayout from '@/components/layouts/DashboardLayout'
+import HarvicsOSShell from '@/components/shared/HarvicsOSShell'
 import LocalizationDomainContent from '@/components/os-domains/LocalizationDomainContent'
 
 export default function LocalizationOSPage() {
@@ -14,11 +14,17 @@ export default function LocalizationOSPage() {
                   pathname?.includes('/portal/supplier') ? 'supplier' : 'company'
 
   return (
-    <DashboardLayout
+    <HarvicsOSShell
+      title="Localization Lab"
+      subtitle="Legacy geo/i18n lab — Tax Engine is /os/tax-engine (#48); Locales is /os/locales (#58)"
+      activeDomain="locales"
       portal={persona}
-      pageTitle="Localization OS"
+      breadcrumbs={[
+        { label: 'OS', href: '/os' },
+        { label: 'Localization Lab' },
+      ]}
     >
       <LocalizationDomainContent persona={persona} locale={locale} />
-    </DashboardLayout>
+    </HarvicsOSShell>
   )
 }

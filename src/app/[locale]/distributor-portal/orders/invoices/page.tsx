@@ -1,142 +1,93 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useLocale } from 'next-intl'
 import LocalizationBar from '@/components/shared/LocalizationBar'
+import { fetchArInvoices, fetchCreditLimits } from '@/lib/distributorPortal'
 
 export default function InvoicesAndPayments() {
   const locale = useLocale()
   const [activeTab, setActiveTab] = useState('Open')
+  const [invoices, setInvoices] = useState<any[]>([])
+  const [credit, setCredit] = useState<any>(null)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState('')
 
-  const invoices = {
-    Open: [
-      { id: 'INV-001', orderId: 'ORD-12345', date: '2025-01-10', amount: 15000, dueDate: '2025-01-25', aging: 15, status: 'Open' },
-      { id: 'INV-002', orderId: 'ORD-12346', date: '2025-01-05', amount: 8500, dueDate: '2025-01-20', aging: 20, status: 'Open' },
-    ],
-    Paid: [
-      { id: 'INV-003', orderId: 'ORD-12340', date: '2024-12-20', amount: 12000, dueDate: '2025-01-05', aging: 0, status: 'Paid' },
-      { id: 'INV-004', orderId: 'ORD-12341', date: '2024-12-15', amount: 9500, dueDate: '2024-12-30', aging: 0, status: 'Paid' },
-    ],
-    Overdue: [
-      { id: 'INV-005', orderId: 'ORD-12338', date: '2024-11-20', amount: 8000, dueDate: '2024-12-20', aging: 65, status: 'Overdue' },
-    ]
+  useEffect(() => {
+    void (async () => {
+      setLoading(true)
+      try {
+        const [inv, limits] = await Promise.all([fetchArInvoices(), fetchCreditLimits()])
+        setInvoices(inv)
+        setCredit(limits[0] || null)
+      } catch (e: any) {
+        setError(e.message)
+      } finally {
+        setLoading(false)
+      }
+    })()
+  }, [])
+
+  const grouped = {
+    Open: invoices.filter((i) => i.status !== 'Paid' && i.status !== 'Overdue'),
+    Paid: invoices.filter((i) => i.status === 'Paid'),
+    Overdue: invoices.filter((i) => i.status === 'Overdue'),
   }
 
-  const creditInfo = {
-    limit: 200000,
-    utilised: 23500,
-    available: 176500
-  }
-
-  const getAgingColor = (aging: number) => {
-    if (aging <= 30) return 'text-green-600'
-    if (aging <= 60) return 'text-white'
-    return 'text-red-600'
-  }
+  const creditInfo = credit
+    ? { limit: credit.limit, utilised: credit.used, available: credit.available }
+    : { limit: 0, utilised: 0, available: 0 }
 
   return (
     <div className="space-y-6">
       <LocalizationBar orientation="horizontal" compact showLabels={false} showGeo={false} className="mb-4" />
-      <h1 className="text-2xl font-bold text-harvics-gold">Invoices & Payments</h1>
-
+      <h1 className="text-2xl font-bold text-harvics-burgundy">Invoices & Payments</h1>
+      {error && <p className="text-sm text-red-700">{error}</p>}
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-        {/* Side Info - Credit */}
-        <div className="lg:col-span-1 bg-white border border-black200 shadow-sm p-6">
-          <h2 className="text-lg font-bold text-harvics-gold mb-4">Credit Information</h2>
-          <div className="space-y-4">
-            <div>
-              <div className="text-sm text-harvics-gold/90 mb-1">Credit Limit</div>
-              <div className="text-xl font-bold text-harvics-gold">${(creditInfo.limit / 1000).toFixed(0)}k</div>
-            </div>
-            <div>
-              <div className="text-sm text-harvics-gold/90 mb-1">Credit Utilised</div>
-              <div className="text-xl font-bold text-white">${(creditInfo.utilised / 1000).toFixed(1)}k</div>
-            </div>
-            <div>
-              <div className="text-sm text-harvics-gold/90 mb-1">Available Credit</div>
-              <div className="text-xl font-bold text-green-600">${(creditInfo.available / 1000).toFixed(1)}k</div>
-            </div>
-            <div className="w-full bg-white rounded-full h-2">
-              <div
-                className="bg-white h-2 rounded-full"
-                style={{ width: `${(creditInfo.utilised / creditInfo.limit) * 100}%` }}
-              ></div>
-            </div>
-            <button className="w-full bg-white text-white px-4 py-2 font-semibold hover:opacity-90 transition-opacity">
-              Request Limit Increase
-            </button>
+        <div className="lg:col-span-1 bg-white border p-6">
+          <h2 className="text-lg font-bold text-harvics-burgundy mb-4">Credit</h2>
+          <div className="space-y-3 text-sm">
+            <div><span className="text-gray-600">Limit</span><div className="text-xl font-bold">${creditInfo.limit.toLocaleString()}</div></div>
+            <div><span className="text-gray-600">Used</span><div className="text-xl font-bold">${creditInfo.utilised.toLocaleString()}</div></div>
+            <div><span className="text-gray-600">Available</span><div className="text-xl font-bold text-green-700">${creditInfo.available.toLocaleString()}</div></div>
           </div>
         </div>
-
-        {/* Main Content - Invoices */}
-        <div className="lg:col-span-3 bg-white border border-black200 shadow-sm overflow-hidden">
-          {/* Tabs */}
-          <div className="border-b border-black200">
-            <div className="flex">
-              {['Open', 'Paid', 'Overdue'].map(tab => (
-                <button
-                  key={tab}
-                  onClick={() => setActiveTab(tab)}
-                  className={`px-6 py-4 font-semibold transition-colors ${
-                    activeTab === tab
-                      ? 'border-b-2 border-white text-harvics-gold/90'
-                      : 'text-harvics-gold/90 hover:text-harvics-gold/90'
-                  }`}
-                >
-                  {tab}
-                </button>
-              ))}
-            </div>
+        <div className="lg:col-span-3 bg-white border overflow-hidden">
+          <div className="flex border-b">
+            {(['Open', 'Paid', 'Overdue'] as const).map((tab) => (
+              <button key={tab} onClick={() => setActiveTab(tab)} className={`px-6 py-3 font-semibold ${activeTab === tab ? 'border-b-2 border-harvics-burgundy' : ''}`}>
+                {tab} ({grouped[tab].length})
+              </button>
+            ))}
           </div>
-
-          {/* Table */}
-          <div className="overflow-x-auto">
-            <table className="w-full">
-              <thead className="bg-white">
+          {loading ? (
+            <p className="p-8 text-center text-sm text-gray-600">Loading invoices…</p>
+          ) : grouped[activeTab as keyof typeof grouped].length === 0 ? (
+            <p className="p-8 text-center text-sm text-gray-600">No {activeTab.toLowerCase()} invoices — AR data appears after Module #3 billing.</p>
+          ) : (
+            <table className="w-full text-sm">
+              <thead className="bg-[#F5F0E8]">
                 <tr>
-                  <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Invoice ID</th>
-                  <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Order ID</th>
-                  <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Date</th>
-                  <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Amount</th>
-                  <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Due Date</th>
-                  <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Status</th>
-                  <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Aging</th>
-                  <th className="px-6 py-3 text-left text-xs font-semibold text-harvics-gold/90">Action</th>
+                  {['Invoice', 'Customer', 'Amount', 'Due', 'Status'].map((h) => (
+                    <th key={h} className="px-4 py-3 text-left text-xs font-semibold uppercase">{h}</th>
+                  ))}
                 </tr>
               </thead>
-              <tbody className="divide-y divide-gray-200">
-                {invoices[activeTab as keyof typeof invoices].map((invoice) => (
-                  <tr key={invoice.id} className="hover:bg-white">
-                    <td className="px-6 py-4 font-semibold text-harvics-gold/90">{invoice.id}</td>
-                    <td className="px-6 py-4 text-sm text-harvics-gold/90">{invoice.orderId}</td>
-                    <td className="px-6 py-4 text-sm text-harvics-gold/90">{invoice.date}</td>
-                    <td className="px-6 py-4 font-semibold text-harvics-gold/90">${invoice.amount.toLocaleString()}</td>
-                    <td className="px-6 py-4 text-sm text-harvics-gold/90">{invoice.dueDate}</td>
-                    <td className="px-6 py-4">
-                      <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                        invoice.status === 'Paid' ? 'bg-green-100 text-green-800' :
-                        invoice.status === 'Overdue' ? 'bg-red-100 text-red-800' :
-                        'bg-harvics-gold/20 text-harvics-gold'
-                      }`}>
-                        {invoice.status}
-                      </span>
-                    </td>
-                    <td className={`px-6 py-4 text-sm font-semibold ${getAgingColor(invoice.aging)}`}>
-                      {invoice.aging} days
-                    </td>
-                    <td className="px-6 py-4">
-                      <button className="text-white hover:underline text-sm font-semibold">
-                        Download PDF
-                      </button>
-                    </td>
+              <tbody className="divide-y">
+                {grouped[activeTab as keyof typeof grouped].map((inv) => (
+                  <tr key={inv.id || inv.invoiceId}>
+                    <td className="px-4 py-3 font-semibold">{inv.invoiceId || inv.id}</td>
+                    <td className="px-4 py-3">{inv.customer || inv.customerName || '—'}</td>
+                    <td className="px-4 py-3">${Number(inv.amount || 0).toLocaleString()}</td>
+                    <td className="px-4 py-3">{inv.dueDate || '—'}</td>
+                    <td className="px-4 py-3">{inv.status}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
-          </div>
+          )}
         </div>
       </div>
     </div>
   )
 }
-

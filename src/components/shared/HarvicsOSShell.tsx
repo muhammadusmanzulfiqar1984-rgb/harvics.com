@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useLocale } from 'next-intl'
+import { OsLivePulse } from '@/components/os/charts/OsCharts'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -37,6 +38,8 @@ interface HarvicsOSShellProps {
   showAIShortcut?: boolean
   /** Custom actions to show in header (right side) */
   headerActions?: React.ReactNode
+  /** Actions next to page title (always visible) */
+  titleActions?: React.ReactNode
   /** Sidebar title override */
   sidebarTitle?: string
 }
@@ -44,25 +47,74 @@ interface HarvicsOSShellProps {
 // ─── Domain Navigation ──────────────────────────────────────────────────────
 
 const OS_DOMAINS: OSNavItem[] = [
-  { id: 'overview', label: 'Dashboard', icon: '📊', path: '/dashboard/company' },
-  { id: 'orders-sales', label: 'Orders & Sales', icon: '📋', path: '/os/orders-sales' },
-  { id: 'inventory', label: 'Inventory', icon: '📦', path: '/os/inventory' },
-  { id: 'logistics', label: 'Logistics', icon: '🚚', path: '/os/logistics' },
-  { id: 'finance', label: 'Finance', icon: '💰', path: '/os/finance' },
-  { id: 'crm', label: 'CRM', icon: '👥', path: '/os/crm' },
-  { id: 'hr', label: 'HR & People', icon: '👔', path: '/os/hr' },
-  { id: 'executive', label: 'Executive', icon: '🎯', path: '/os/executive' },
-  { id: 'legal', label: 'Legal & IPR', icon: '⚖️', path: '/os/legal' },
-  { id: 'gps-tracking', label: 'GPS Tracking', icon: '📍', path: '/os/gps-tracking' },
-  { id: 'competitor', label: 'Competitor Intel', icon: '🔍', path: '/os/competitor' },
-  { id: 'import-export', label: 'Import / Export', icon: '🌐', path: '/os/import-export' },
-  { id: 'market-distribution', label: 'Market & Dist.', icon: '🗺️', path: '/os/market-distribution' },
-  { id: 'procurement', label: 'Procurement', icon: '🏭', path: '/os/procurement' },
+  { id: 'overview', label: 'Command', icon: '◆', path: '/os' },
+  { id: 'modules', label: 'All Modules', icon: '▣', path: '/os/catalog' },
+  { id: 'orders-sales', label: 'Orders & Sales', icon: '☰', path: '/os/orders-sales' },
+  { id: 'inventory', label: 'Inventory', icon: '▢', path: '/os/inventory' },
+  { id: 'logistics', label: 'Logistics', icon: '→', path: '/os/logistics' },
+  { id: 'finance', label: 'Finance', icon: '¤', path: '/os/finance' },
+  { id: 'controlling', label: 'Controlling', icon: '▣', path: '/os/controlling' },
+  { id: 'ar', label: 'AR', icon: '↓', path: '/os/ar-aging' },
+  { id: 'ap', label: 'AP', icon: '↑', path: '/os/ap-aging' },
+  { id: 'budgets', label: 'Planning', icon: '▤', path: '/os/budgets' },
+  { id: 'crm', label: 'CRM', icon: '◎', path: '/os/crm' },
+  { id: 'cpq', label: 'CPQ', icon: '≡', path: '/os/cpq' },
+  { id: 'sales', label: 'Sales', icon: '☰', path: '/os/sales-distribution' },
+  { id: 'marketing', label: 'Marketing', icon: '◈', path: '/os/marketing' },
+  { id: 'distributor', label: 'Distributors', icon: '⬡', path: '/os/distributors' },
+  { id: 'treasury', label: 'Treasury', icon: '¤', path: '/os/treasury-banking' },
+  { id: 'hpay', label: 'HPay', icon: '⇄', path: '/os/payment-runs' },
+  { id: 'rfq', label: 'RFQ', icon: '☰', path: '/os/rfq' },
+  { id: 'vendors', label: 'Vendors', icon: '⬡', path: '/os/vendor-scorecards' },
+  { id: 'contracts', label: 'Contracts', icon: '▤', path: '/os/contracts' },
+  { id: 'warehouses', label: 'Warehouses', icon: '▢', path: '/os/warehouses' },
+  { id: 'sourcing', label: 'Sourcing', icon: '⌕', path: '/os/sourcing' },
+  { id: 'manufacturing', label: 'Manufacturing', icon: '⚙', path: '/os/manufacturing' },
+  { id: 'quality', label: 'Quality', icon: '✓', path: '/os/quality' },
+  { id: 'fleet', label: 'Fleet', icon: '▷', path: '/os/fleet' },
+  { id: 'shipping', label: 'Shipping', icon: '→', path: '/os/shipping-trade' },
+  { id: 'talent', label: 'Talent', icon: '◎', path: '/os/talent' },
+  { id: 'bi', label: 'BI', icon: '▦', path: '/os/bi-reports' },
+  { id: 'board', label: 'Board Pack', icon: '◈', path: '/os/board-pack' },
+  { id: 'okr', label: 'OKR', icon: '◎', path: '/os/okr' },
+  { id: 'projects', label: 'Projects', icon: '▣', path: '/os/project-management' },
+  { id: 'tickets', label: 'Service', icon: '☎', path: '/os/service-tickets' },
+  { id: 'bus', label: 'Integrations', icon: '⇄', path: '/os/integration-bus' },
+  { id: 'portals', label: 'Portals', icon: '⬡', path: '/os/portals' },
+  { id: 'portal-customer', label: 'Customer Portal', icon: '○', path: '/os/portal-customer' },
+  { id: 'portal-vendor', label: 'Vendor Portal', icon: '⬡', path: '/os/portal-vendor' },
+  { id: 'portal-field', label: 'Field Officer', icon: '⌖', path: '/os/portal-field' },
+  { id: 'universe-feed', label: 'Universe Feed', icon: '✦', path: '/os/feed' },
+  { id: 'harvicoins', label: 'Harvicoins', icon: '◎', path: '/os/wallet' },
+  { id: 'hpay-wallet', label: 'HPay Wallet', icon: '⇄', path: '/os/hpay-wallet' },
+  { id: 'customers', label: 'Customers', icon: '○', path: '/os/crm/customers' },
+  { id: 'import-harvyx', label: 'Import HarvyX', icon: '↓', path: '/os/crm/import-harvyx' },
+  { id: 'hr', label: 'HR & People', icon: '◉', path: '/os/hr' },
+  { id: 'executive', label: 'Executive', icon: '◈', path: '/os/executive' },
+  { id: 'legal', label: 'Legal & IPR', icon: '§', path: '/os/legal' },
+  { id: 'gps-tracking', label: 'GPS Tracking', icon: '⌖', path: '/os/gps-tracking' },
+  { id: 'competitor', label: 'Competitor Intel', icon: '⌕', path: '/os/competitor-intel' },
+  { id: 'import-export', label: 'Import / Export', icon: '⇄', path: '/os/import-export' },
+  { id: 'market-distribution', label: 'Market & Dist.', icon: '▦', path: '/os/market-distribution' },
+  { id: 'procurement', label: 'Procurement', icon: '⬡', path: '/os/supplier-procurement' },
+  { id: 'tax-engine', label: 'Tax Engine', icon: '%', path: '/os/tax-engine' },
+  { id: 'fx-engine', label: 'FX Engine', icon: '¤', path: '/os/fx-engine' },
+  { id: 'notifications', label: 'Notifications', icon: '◉', path: '/os/notifications' },
+  { id: 'document-vault', label: 'Documents', icon: '▤', path: '/os/document-vault' },
+  { id: 'admin-users', label: 'Admin', icon: '⚙', path: '/os/admin-users' },
+  { id: 'audit-log', label: 'Audit Log', icon: '⌕', path: '/os/audit-log' },
+  { id: 'locales', label: 'Locales', icon: '◎', path: '/os/locales' },
+  { id: 'data-ocean', label: 'Data Ocean', icon: '≈', path: '/os/data-ocean' },
+  { id: 'harvoice', label: 'Harvoice', icon: '♫', path: '/os/harvoice' },
 ]
 
 const AI_NAV: OSNavItem[] = [
-  { id: 'ai-copilot', label: 'AI Copilot', icon: '🤖', path: '/copilot' },
-  { id: 'ai-automation', label: 'Automation', icon: '⚡', path: '/os/automation' },
+  { id: 'ai-engine', label: 'AI Engine', icon: '✦', path: '/os/ai-engine' },
+  { id: 'data-ocean', label: 'Data Ocean', icon: '≈', path: '/os/data-ocean' },
+  { id: 'harvoice', label: 'Harvoice', icon: '♫', path: '/os/harvoice' },
+  { id: 'ai-copilot', label: 'AI Copilot', icon: '✦', path: '/copilot' },
+  { id: 'ai-automation', label: 'Workflows', icon: '⚡', path: '/os/workflows' },
+  { id: 'governance', label: 'Governance', icon: '⚖', path: '/os/governance' },
 ]
 
 const PORTAL_LABELS: Record<string, { title: string; abbreviation: string }> = {
@@ -82,6 +134,7 @@ export default function HarvicsOSShell({
   subtitle,
   showAIShortcut = true,
   headerActions,
+  titleActions,
   sidebarTitle,
 }: HarvicsOSShellProps) {
   const locale = useLocale()
@@ -106,16 +159,37 @@ export default function HarvicsOSShell({
     }
   }, [])
 
-  // Live clock
+  const [apiLive, setApiLive] = useState(false)
+
+  // Live clock + API pulse
   useEffect(() => {
-    const timer = setInterval(() => setCurrentTime(new Date()), 60000)
+    const timer = setInterval(() => setCurrentTime(new Date()), 1000)
     return () => clearInterval(timer)
+  }, [])
+
+  useEffect(() => {
+    let cancelled = false
+    const ping = async () => {
+      try {
+        const res = await fetch('/api/health', { cache: 'no-store' })
+        const j = await res.json().catch(() => ({}))
+        if (!cancelled) setApiLive(res.ok && (j.status === 'ok' || j.success))
+      } catch {
+        if (!cancelled) setApiLive(false)
+      }
+    }
+    void ping()
+    const t = setInterval(ping, 30000)
+    return () => {
+      cancelled = true
+      clearInterval(t)
+    }
   }, [])
 
   const isActive = (path: string) => {
     const fullPath = `/${locale}${path}`
-    if (path === '/dashboard/company') {
-      return pathname === fullPath || pathname === `/${locale}/dashboard/company/`
+    if (path === '/os' || path === '/os/') {
+      return pathname === `/${locale}/os` || pathname === `/${locale}/os/`
     }
     return pathname?.startsWith(fullPath) || false
   }
@@ -289,7 +363,7 @@ export default function HarvicsOSShell({
               ) : (
                 <>
                   <Link
-                    href={`/${locale}/dashboard/company`}
+                    href={`/${locale}/os`}
                     className="text-xs text-harvics-burgundy/60 hover:text-harvics-burgundy transition-colors font-medium"
                   >
                     Harvics OS
@@ -302,6 +376,13 @@ export default function HarvicsOSShell({
           </div>
 
           <div className="flex items-center gap-3">
+            <div className="hidden sm:flex items-center gap-3 pr-2 border-r border-harvics-gold/25">
+              <OsLivePulse label={apiLive ? 'API LIVE' : 'API OFF'} tone={apiLive ? 'ok' : 'down'} />
+              <span className="text-[11px] font-semibold text-harvics-burgundy/55 tabular-nums">
+                {formatTime(currentTime)}
+              </span>
+            </div>
+
             {/* Custom header actions */}
             {headerActions}
 
@@ -313,15 +394,10 @@ export default function HarvicsOSShell({
                 style={{ borderRadius: 0 }}
                 title="Open AI Copilot"
               >
-                <span>🤖</span>
+                <span>✦</span>
                 <span className="hidden sm:inline">AI Copilot</span>
               </Link>
             )}
-
-            {/* Time */}
-            <div className="hidden md:flex items-center gap-2 text-xs text-harvics-burgundy/60 font-medium">
-              <span>{formatTime(currentTime)}</span>
-            </div>
 
             {/* Notifications placeholder */}
             <button
@@ -338,11 +414,12 @@ export default function HarvicsOSShell({
         </header>
 
         {/* Page Title Bar */}
-        <div className="bg-harvics-cream border-b border-harvics-gold/15 px-4 lg:px-6 py-3 flex items-center justify-between">
+        <div className="bg-harvics-cream border-b border-harvics-gold/15 px-4 lg:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
           <div>
             <h1 className="text-xl font-bold text-harvics-burgundy font-serif tracking-tight">{title}</h1>
             {subtitle && <p className="text-xs text-harvics-burgundy/50 mt-0.5">{subtitle}</p>}
           </div>
+          {titleActions ? <div className="flex flex-wrap items-center gap-2">{titleActions}</div> : null}
         </div>
 
         {/* Main Content */}

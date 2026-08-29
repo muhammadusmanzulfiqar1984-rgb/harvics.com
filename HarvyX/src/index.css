@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+/* HARVICS_SYSTEM_RULES.md — burgundy / cream / gold */
+@theme {
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+
+  /* Primary palette */
+  --color-burgundy: #3D1212;
+  --color-burgundy-deep: #2A0C0C;
+  --color-gold: #C3A35E;
+  --color-cream: #F5F0E8;
+  --color-card: #EFE8DC;
+  --color-muted: #8A7D6B;
+  --color-paper: #FFFFFF;
+  --color-ink: #3D1212;
+
+  /* Legacy aliases used throughout App.tsx */
+  --color-maroon: #3D1212;
+}
+
+@layer base {
+  :root {
+    --harvics-burgundy: #3D1212;
+    --harvics-gold: #C3A35E;
+    --harvics-cream: #F5F0E8;
+    --harvics-muted: #8A7D6B;
+    --harvics-burgundy-deep: #2A0C0C;
+    --harvics-gold-divider: rgba(195, 163, 94, 0.2);
+    --harvics-burgundy-overlay: rgba(61, 18, 18, 0.85);
+  }
+
+  body {
+    @apply bg-cream text-ink font-sans antialiased;
+    accent-color: #C3A35E;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus-visible {
+    outline: 2px solid #C3A35E;
+    outline-offset: 2px;
+  }
+
+  /* Kill browser default blue autofill */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px #3D1212 inset !important;
+    -webkit-text-fill-color: #C3A35E !important;
+    caret-color: #C3A35E;
+    transition: background-color 9999s ease-in-out 0s;
+  }
+
+  ::selection {
+    background: rgba(195, 163, 94, 0.35);
+    color: #3D1212;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #3D1212;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #C3A35E;
+    border-radius: 999px;
+  }
+}
+
+/* Dark executive mode — still Harvics burgundy/gold/cream */
+html.harvyx-dark body {
+  background: #2A0C0C !important;
+  color: #F5F0E8 !important;
+}
+
+html.harvyx-dark .bg-cream {
+  background-color: #2A0C0C !important;
+}
+
+html.harvyx-dark .bg-white,
+html.harvyx-dark .bg-white\/80,
+html.harvyx-dark .bg-white\/95 {
+  background-color: rgba(61, 18, 18, 0.92) !important;
+  color: #F5F0E8 !important;
+}
+
+html.harvyx-dark .text-maroon,
+html.harvyx-dark .text-ink {
+  color: #F5F0E8 !important;
+}
+
+html.harvyx-dark .border-gray-100,
+html.harvyx-dark .border-gray-50 {
+  border-color: rgba(195, 163, 94, 0.2) !important;
+}

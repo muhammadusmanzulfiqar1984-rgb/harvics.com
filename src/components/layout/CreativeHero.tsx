@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useTranslations, useLocale } from 'next-intl'
 import type { ProductCategory } from '@/data/folderBasedProducts'
+import { HARVICS_TAGLINE } from '@/config/brand'
 
 interface CreativeHeroProps {
   categories: ProductCategory[]
@@ -125,7 +126,7 @@ const CreativeHero: React.FC<CreativeHeroProps> = ({ categories }) => {
                   </div>
                 </div>
                 <p className="text-maroon-deep/80 text-sm leading-relaxed max-w-md font-light">
-                  {t('brandStatement') || 'A leading global consumer goods company delivering premium food products across diverse categories with international quality standards.'}
+                  {HARVICS_TAGLINE}
                 </p>
               </div>
 

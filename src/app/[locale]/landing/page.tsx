@@ -34,7 +34,7 @@ const ECOSYSTEM = [
   {
     tag: 'Software',
     title: 'Harvics Apps',
-    desc: 'Vatify, Harvoice and the Harvics OS suite — purpose-built tools for modern trade operations.',
+    desc: 'Vatify, Harvoice encrypted messenger and the Harvics OS suite — purpose-built tools for modern trade.',
     href: (l: string) => `/${l}/apps`,
     cta: 'Explore apps',
   },
