@@ -4,6 +4,7 @@ import React, { use, useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { getProductImage } from '@/data/productCatalog'
 import PresentationAccessBanner from '@/components/presentations/PresentationAccessBanner'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 const SOURCING_HERO_SLIDES = [
   '/assets/harvictrade/heroes/sourcing/01-factory.webp',
@@ -295,20 +296,19 @@ export default function SourcingPage({ params }: { params: Promise<{ locale: str
       {/* ─── Hero — full-bleed auto-slider ─── */}
       <section className="relative min-h-[72vh] overflow-hidden border-b border-harvics-gold/30 md:min-h-[78vh]">
         {SOURCING_HERO_SLIDES.map((src, i) => (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <HarvicsImage
             key={src}
             src={src}
-            alt=""
-            className="absolute inset-0 h-full w-full object-cover"
+            alt="Global Sourcing"
+            fill
+            sizes={IMAGE_SIZES.hero}
+            priority={i === 0}
+            className="object-cover"
             style={{
               opacity: i === heroIndex ? 1 : 0,
               transform: i === heroIndex ? 'scale(1)' : 'scale(1.05)',
               transition: 'opacity 1.15s ease, transform 7s ease',
             }}
-            loading={i === 0 ? 'eager' : 'lazy'}
-            decoding="async"
-            aria-hidden={i !== heroIndex}
           />
         ))}
         <div
@@ -484,16 +484,12 @@ function ServiceCard({ service }: { service: SourcingService }) {
     >
       {/* Image Header */}
       <div className="h-[160px] bg-white border-b border-harvics-gold/20 overflow-hidden relative">
-        <img
+        <HarvicsImage
           src={getProductImage(service.keywords)}
           alt={service.title}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-          loading="lazy"
-          onError={(e) => {
-            (e.target as HTMLImageElement).style.display = 'none'
-            ;(e.target as HTMLImageElement).parentElement!.innerHTML =
-              `<div class="w-full h-full flex items-center justify-center bg-white"><span class="text-5xl opacity-20">${service.icon}</span></div>`
-          }}
+          fill
+          sizes={IMAGE_SIZES.cardSm}
+          className="object-cover group-hover:scale-105 transition-transform duration-700"
         />
         <div className="absolute top-3 left-3 text-2xl">{service.icon}</div>
       </div>

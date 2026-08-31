@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { slugify, type NavVertical } from '@/data/megaMenuData'
 import { getProductImage } from '@/data/productCatalog'
 import SmartImage from '@/components/ui/SmartImage'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 import ImageCarousel from '@/components/ui/ImageCarousel'
 
 const verticalFolders: Record<string, string> = {
@@ -282,11 +283,12 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
                       className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                     />
                   ) : (
-                    <img
+                    <HarvicsImage
                       src={imageUrl}
                       alt={item}
-                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                      loading="lazy"
+                      fill
+                      sizes={IMAGE_SIZES.productGrid}
+                      className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                     />
                   )}
                   {/* Hover overlay */}
@@ -347,11 +349,12 @@ const CategoryPageClient: React.FC<CategoryPageClientProps> = ({
                     {/* Product image */}
                     <div className="relative h-[160px] bg-white overflow-hidden border-b border-harvics-gold/10">
                       {hasImage ? (
-                        <img
+                        <HarvicsImage
                           src={imageUrl}
                           alt={product.name}
-                          className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                          loading="lazy"
+                          fill
+                          sizes={IMAGE_SIZES.productGrid}
+                          className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                         />
                       ) : (
                         <SmartImage

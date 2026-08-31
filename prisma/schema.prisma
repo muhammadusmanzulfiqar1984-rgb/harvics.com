@@ -153,12 +153,16 @@ model Invoice {
   subtotal     Float?
   taxAmount    Float?    @default(0)
   notes        String?
+  /// Global House — invoicing legal entity code (HT-AE, HT-PK, …)
+  legalEntityCode String?
+  shipToCountry   String?
   createdAt    DateTime  @default(now())
   updatedAt    DateTime  @updatedAt
   customer     Customer? @relation(fields: [customerId], references: [id])
   payments     Payment[]
 
   @@index([status])
+  @@index([legalEntityCode])
 }
 
 model Payment {
@@ -187,13 +191,18 @@ model JournalEntry {
   postedDate  String?
   status      String   @default("Posted") // Draft|Posted|Reversed
   periodCode  String?
+  /// Global House — posting entity (also tagged in description + JournalEntityTag)
+  entityCode  String?
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+
+  entityTag JournalEntityTag?
 
   @@index([periodCode])
   @@index([status])
   @@index([debit])
   @@index([credit])
+  @@index([entityCode])
 }
 
 /// Module #1 — Chart of Accounts (balances derived from posted journals)
@@ -2452,4 +2461,262 @@ model ExecutiveSnapshot {
 
   @@index([period])
   @@index([generatedAt])
+}
+
+// ── Global House / Oracle Finance parity (PostgreSQL-backed) ───────────────
+
+model GlobalHouseGroup {
+  id                String   @id @default(cuid())
+  groupCode         String   @unique
+  groupName         String
+  reportingCurrency String   @default("USD")
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+model FhLegalEntity {
+  id                  String   @id
+  code                String   @unique
+  name                String
+  legalName           String
+  entityType          String
+  parentCode          String?
+  country             String
+  region              String
+  city                String?
+  address             String?
+  functionalCurrency  String   @default("USD")
+  reportingCurrency   String   @default("USD")
+  taxId               String?
+  vatNumber           String?
+  consolidationMethod String   @default("FULL")
+  ownershipPercent    Float    @default(100)
+  active              Boolean  @default(true)
+  roles               Json     @default("[]")
+  corridors           Json?
+  groupCode           String   @default("HGH")
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+
+  operatingUnits     FhOperatingUnit[]
+  nexusRegistrations FhTaxNexusRegistration[]
+  icFrom             FhIntercompanyTransaction[] @relation("ICFrom")
+  icTo               FhIntercompanyTransaction[] @relation("ICTo")
+  revenueContracts   FhRevenueContract[]
+  journalTags        JournalEntityTag[]
+
+  @@index([country])
+  @@index([parentCode])
+  @@index([active])
+  @@index([groupCode])
+}
+
+model FhOperatingUnit {
+  id         String        @id
+  code       String        @unique
+  name       String
+  entityCode String
+  entity     FhLegalEntity @relation(fields: [entityCode], references: [code])
+  type       String
+  active     Boolean       @default(true)
+  createdAt  DateTime      @default(now())
+  updatedAt  DateTime      @updatedAt
+
+  @@index([entityCode])
+}
+
+model FhTradeCorridor {
+  id        String   @id
+  fromCode  String
+  toCode    String
+  label     String
+  modes     Json     @default("[]")
+  incoterms Json     @default("[]")
+  isPrimary Boolean  @default(false) @map("primary")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([fromCode])
+  @@index([toCode])
+}
+
+model FhEliminationRule {
+  id            String   @id
+  code          String   @unique
+  label         String
+  debitAccount  String
+  creditAccount String
+  description   String
+  active        Boolean  @default(true)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model JournalEntityTag {
+  id         String        @id @default(cuid())
+  entryNo    String        @unique
+  entityCode String
+  entity     FhLegalEntity @relation(fields: [entityCode], references: [code])
+  createdAt  DateTime      @default(now())
+  journal    JournalEntry? @relation(fields: [entryNo], references: [entryNo])
+
+  @@index([entityCode])
+}
+
+model FhIntercompanyTransaction {
+  id                   String        @id
+  txnNo                String        @unique
+  type                 String
+  fromEntityCode       String
+  toEntityCode         String
+  fromEntity           FhLegalEntity @relation("ICFrom", fields: [fromEntityCode], references: [code])
+  toEntity             FhLegalEntity @relation("ICTo", fields: [toEntityCode], references: [code])
+  amount               Float
+  currency             String        @default("USD")
+  description          String
+  status               String        @default("DRAFT")
+  sellerJournalEntryNo String?
+  buyerJournalEntryNo  String?
+  reference            String?
+  postedAt             DateTime?
+  createdAt            DateTime      @default(now())
+  updatedAt            DateTime      @updatedAt
+
+  @@index([fromEntityCode])
+  @@index([toEntityCode])
+  @@index([status])
+}
+
+model FhTaxNexusRegistration {
+  id                    String        @id
+  entityCode            String
+  entity                FhLegalEntity @relation(fields: [entityCode], references: [code])
+  country               String
+  region                String?
+  nexusType             String
+  taxType               String
+  registrationNumber    String?
+  effectiveFrom         String
+  thresholdAmount       Float?
+  thresholdTransactions Int?
+  ytdSales              Float         @default(0)
+  ytdTransactions       Int           @default(0)
+  defaultTaxCode        String
+  active                Boolean       @default(true)
+  notes                 String?
+  createdAt             DateTime      @default(now())
+  updatedAt             DateTime      @updatedAt
+
+  @@index([entityCode])
+  @@index([country])
+  @@index([active])
+}
+
+model FhTaxJurisdictionRule {
+  id              String   @id @default(cuid())
+  country         String   @unique
+  taxType         String
+  defaultRate     Float    @default(0)
+  originBased     Boolean  @default(false)
+  exportZeroRated Boolean  @default(false)
+  requiresRegion  Boolean  @default(false)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model FhRevenueContract {
+  id               String        @id
+  contractNo       String        @unique
+  invoiceId        String?
+  invoiceNo        String?
+  salesOrderId     String?
+  customerName     String
+  entityCode       String
+  entity           FhLegalEntity @relation(fields: [entityCode], references: [code])
+  currency         String        @default("USD")
+  transactionPrice Float
+  status           String        @default("ACTIVE")
+  obligations      Json          @default("[]")
+  schedule         Json          @default("[]")
+  completedAt      DateTime?
+  createdAt        DateTime      @default(now())
+  updatedAt        DateTime      @updatedAt
+
+  @@index([entityCode])
+  @@index([status])
+  @@index([invoiceId])
+}
+
+model FhConsolidationRun {
+  id          String   @id @default(cuid())
+  runNo       String   @unique
+  periodCode  String?
+  postedAt    DateTime
+  dryRun      Boolean  @default(false)
+  lines       Json     @default("[]")
+  journals    Json     @default("[]")
+  totalAmount Float    @default(0)
+  status      String
+  createdAt   DateTime @default(now())
+
+  @@index([periodCode])
+  @@index([status])
+  @@index([postedAt])
+}
+
+model ArCustomerMaster {
+  id           String   @id
+  code         String   @unique
+  name         String
+  legalName    String?
+  billToLine1  String?
+  billToLine2  String?
+  city         String?
+  country      String?
+  postalCode   String?
+  vatNumber    String?
+  taxId        String?
+  contactEmail String?
+  contactPhone String?
+  paymentTerms String   @default("Net 30")
+  currency     String   @default("USD")
+  creditLimit  Float    @default(100000)
+  active       Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([country])
+  @@index([active])
+}
+
+model ArTaxCode {
+  id        String   @id
+  code      String   @unique
+  name      String
+  rate      Float    @default(0)
+  country   String
+  type      String
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([country])
+  @@index([active])
+}
+
+model ArCatalogItem {
+  id          String   @id @default(cuid())
+  sku         String   @unique
+  description String
+  uom         String   @default("EA")
+  unitPrice   Float    @default(0)
+  taxPercent  Float    @default(0)
+  currency    String   @default("USD")
+  hsCode      String?
+  taxCode     String?
+  active      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([active])
 }

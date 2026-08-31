@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState, useCallback } from 'react'
 import Link from 'next/link'
 import { useLocale } from 'next-intl'
 import { navVerticals } from '@/data/megaMenuData'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 const industryMeta: Record<string, { desc: string; gradient: string; image?: string; products: number; markets: number; bg: string; accent: string; bgPhoto: string }> = {
   textiles:       { desc: 'Premium apparel, fabrics, and home textiles for global markets', gradient: 'from-slate-50 to-blue-50', image: '/assets/verticals/01-apparels/thumb.webp', products: 240, markets: 28, bg: '#f8f9ff', accent: 'rgba(195, 163, 94,0.15)', bgPhoto: '/assets/verticals/01-apparels/hero.jpg' },
@@ -206,13 +207,13 @@ const EnhancedIndustryGrid: React.FC = () => {
                   {/* Card image — full with gradient fade + Samsung-style lift on hover */}
                   {hasImage && (
                     <div className="absolute inset-0 overflow-hidden" style={{ borderRadius: '20px' }}>
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
+                        <HarvicsImage
                           src={meta.image!}
                           alt={vertical.label}
-                          loading={idx <= 2 ? 'eager' : 'lazy'}
-                          decoding="async"
-                          className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 group-hover:-translate-y-3 transition-all duration-300 ease-out"
+                          fill
+                          sizes={IMAGE_SIZES.card}
+                          priority={idx <= 2}
+                          className="object-cover group-hover:scale-105 group-hover:-translate-y-3 transition-all duration-300 ease-out"
                           style={{ opacity: 0.7 }}
                         />
                       <div className="absolute inset-0" style={{

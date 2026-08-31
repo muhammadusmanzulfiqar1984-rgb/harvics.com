@@ -3,15 +3,16 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getProductImage } from '@/data/harvictradeImages'
 import TextileCategoryHero from '@/components/harvictrade/TextileCategoryHero'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 const categoryHero: Record<string, string> = {
   textiles: '/assets/harvictrade/heroes/textiles/01-trench.webp',
   fmcg: '/assets/harvictrade/heroes/fmcg-hero.webp',
-  commodities: '/assets/harvictrade/heroes/commodities-hero.jpg',
-  industrial: '/assets/harvictrade/heroes/industrial-hero.jpg',
-  minerals: '/assets/harvictrade/heroes/minerals-hero.jpg',
-  energy: '/assets/harvictrade/heroes/energy-hero.jpg',
-  electronics: '/assets/harvictrade/heroes/electronics-hero.jpg',
+  commodities: '/assets/harvictrade/heroes/commodities-hero.webp',
+  industrial: '/assets/harvictrade/heroes/industrial-hero.webp',
+  minerals: '/assets/harvictrade/heroes/minerals-hero.webp',
+  energy: '/assets/harvictrade/heroes/energy-hero.webp',
+  electronics: '/assets/harvictrade/heroes/electronics-hero.webp',
 }
 
 const categoryData: Record<string, { name: string; icon: string; desc: string; subcategories: { name: string; count: number; products: { name: string; origin: string; moq: string; price: string; verified: boolean }[] }[] }> = {
@@ -194,7 +195,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ local
       <section 
         className="relative py-16 px-4 border-b border-harvics-gold/40 overflow-hidden"
         style={{
-          backgroundImage: `url(${categoryHero[slug] || '/assets/shared/heroes/harvictrade-hero.jpg'})`,
+          backgroundImage: `url(${categoryHero[slug] || '/assets/shared/heroes/harvictrade-hero.webp'})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -235,11 +236,13 @@ export default async function CategoryPage({ params }: { params: Promise<{ local
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 {sub.products.map((p) => (
                   <div key={p.name} className="bg-white border border-harvics-gold/15 overflow-hidden hover:border-harvics-gold transition-colors group cursor-pointer">
-                    <div className="h-24 w-full overflow-hidden bg-[#f8f5f0]">
-                      <img 
-                        src={getProductImage(p.name, slug)} 
-                        className="w-full h-full object-cover group-hover:scale-[1.05] transition-transform" 
-                        alt={p.name} 
+                    <div className="relative h-24 w-full overflow-hidden bg-[#f8f5f0]">
+                      <HarvicsImage
+                        src={getProductImage(p.name, slug)}
+                        className="object-cover group-hover:scale-[1.05] transition-transform"
+                        alt={p.name}
+                        fill
+                        sizes={IMAGE_SIZES.productGrid}
                       />
                     </div>
                     <div className="p-6">

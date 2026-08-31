@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 import Lightbox from '@/components/ui/Lightbox'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 interface Product {
   id: string
@@ -68,10 +69,12 @@ const ProductLineClient: React.FC<ProductLineClientProps> = ({
       <section className="relative py-24 px-6 overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
-          <img
+          <HarvicsImage
             src={getHeroImage()}
             alt={productLineTitle}
-            className="w-full h-full object-cover"
+            fill
+            sizes={IMAGE_SIZES.hero}
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-black/80"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/50"></div>
@@ -133,11 +136,12 @@ const ProductLineClient: React.FC<ProductLineClientProps> = ({
                         setLightboxAlt(product.name)
                       }}
                     >
-                      <img
+                      <HarvicsImage
                         src={product.image}
                         alt={product.name}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                        loading="lazy"
+                        fill
+                        sizes={IMAGE_SIZES.productGrid}
+                        className="object-cover group-hover:scale-110 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-red-400/0 group-hover:bg-red-400/20 transition-all duration-300"></div>
                       <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

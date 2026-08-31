@@ -4,6 +4,7 @@ import React from 'react'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 import type { Subcategory } from '@/utils/folderScanner'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 interface ProductCategoryClientProps {
   subcategories: Subcategory[]
@@ -55,14 +56,12 @@ const ProductCategoryClient: React.FC<ProductCategoryClientProps> = ({
       <section className="relative py-6 sm:py-8 md:py-12 lg:py-16 overflow-hidden min-h-[180px] sm:min-h-[200px] md:min-h-[250px] lg:min-h-[300px] bg-harvics-burgundy">
         {/* Background Image */}
         <div className="absolute inset-0">
-          <img
+          <HarvicsImage
             src={getBackgroundImage()}
             alt={categoryTitle}
-            className="w-full h-full object-cover opacity-60"
-            onError={(e) => {
-              const target = e.target as HTMLImageElement;
-              target.src = '/assets/brand/photo/logo.png';
-            }}
+            fill
+            sizes={IMAGE_SIZES.hero}
+            className="object-cover opacity-60"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-harvics-burgundy via-[#3D1212]/50 to-transparent"></div>
         </div>
@@ -103,15 +102,12 @@ const ProductCategoryClient: React.FC<ProductCategoryClientProps> = ({
                   >
                     {/* Subcategory Image - Full Square, Full Width */}
                     <div className="absolute inset-0">
-                      <img
+                      <HarvicsImage
                         src={subcategory.images[0] || '/assets/brand/photo/logo.png'}
                         alt={subcategory.name}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                        loading="lazy"
-                        onError={(e) => {
-                          const target = e.target as HTMLImageElement;
-                          target.src = '/assets/brand/photo/logo.png';
-                        }}
+                        fill
+                        sizes={IMAGE_SIZES.productGrid}
+                        className="object-cover group-hover:scale-110 transition-transform duration-700"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
                     </div>

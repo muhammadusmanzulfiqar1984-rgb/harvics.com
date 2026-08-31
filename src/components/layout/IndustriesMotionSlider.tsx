@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from 'react'
 import { useScrollReveal, revealClass } from '@/hooks/useScrollReveal'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 const SLIDES = [
   { src: '/assets/verticals/02-fmcg/categories/food/pantry/pasta-rice/pasta/leaf.jpg', alt: 'Premium Pasta' },
@@ -76,13 +77,13 @@ const IndustriesMotionSlider: React.FC = () => {
               key={idx}
               className="flex-shrink-0 w-[400px] h-[280px] overflow-hidden rounded-sm"
             >
-              <img
+              <HarvicsImage
                 src={slide.src}
                 alt={slide.alt}
                 width={400}
                 height={280}
+                sizes={IMAGE_SIZES.card}
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                loading="lazy"
               />
             </div>
           ))}

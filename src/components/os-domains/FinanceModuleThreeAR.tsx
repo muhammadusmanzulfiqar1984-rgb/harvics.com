@@ -11,7 +11,7 @@ import { useLocale } from 'next-intl'
 import { OsBarChart, OsLivePulse, OsPanel, OsPieChart, OS } from '@/components/os/charts/OsCharts'
 import OsSapAiPanel from '@/components/os/OsSapAiPanel'
 
-type Tab = 'invoices' | 'payments' | 'aging' | 'collections' | 'customers'
+type Tab = 'invoices' | 'payments' | 'aging' | 'collections' | 'dunning' | 'o2c' | 'customers'
 
 function authHeaders(): HeadersInit {
   const token = typeof window !== 'undefined' ? localStorage.getItem('auth_token') || '' : ''
@@ -49,6 +49,11 @@ export default function FinanceModuleThreeAR() {
   const [payments, setPayments] = useState<any[]>([])
   const [aging, setAging] = useState<any[]>([])
   const [collections, setCollections] = useState<any[]>([])
+  const [dunningQueue, setDunningQueue] = useState<any[]>([])
+  const [dunningStages, setDunningStages] = useState<any[]>([])
+  const [o2cPipeline, setO2cPipeline] = useState<any[]>([])
+  const [o2cSummary, setO2cSummary] = useState<Record<string, number>>({})
+  const [o2cStages, setO2cStages] = useState<any[]>([])
   const [customers, setCustomers] = useState<any[]>([])
   const [summary, setSummary] = useState<Record<string, number>>({
     current: 0,
@@ -76,19 +81,28 @@ export default function FinanceModuleThreeAR() {
     setLoading(true)
     setError('')
     try {
-      const [inv, pay, age, coll, cust] = await Promise.all([
+      const [inv, pay, age, coll, dunn, o2c, cust] = await Promise.all([
         api('/api/finance/invoices?type=AR&limit=200'),
         api('/api/finance/payments?limit=500'),
         api('/api/finance/ar/aging'),
         api('/api/finance/ar/collections'),
+        api('/api/finance/ar/dunning/queue'),
+        api('/api/finance/ar/o2c/pipeline').catch(() => ({ data: [], summary: {} })),
         api('/api/finance/ar/customers'),
       ])
+      const stagesRes = await api('/api/finance/ar/dunning/stages').catch(() => ({ data: [] }))
+      const o2cStagesRes = await api('/api/finance/ar/o2c/stages').catch(() => ({ data: [] }))
       const invNos = new Set((inv.data || []).map((i: any) => i.invoiceNo))
       setInvoices(inv.data || [])
       setPayments((pay.data || []).filter((p: any) => invNos.has(p.invoiceNo)))
       setAging(age.data || [])
       setSummary(age.summary || { current: 0, d30: 0, d60: 0, d90: 0, d90plus: 0 })
       setCollections(coll.data || [])
+      setDunningQueue(dunn.data || [])
+      setDunningStages(stagesRes.data || [])
+      setO2cPipeline(o2c.data || [])
+      setO2cSummary(o2c.summary || {})
+      setO2cStages(o2cStagesRes.data || [])
       setCustomers(cust.data || [])
     } catch (e: any) {
       setError(e.message || 'Failed to load Module #3 AR')
@@ -100,6 +114,61 @@ export default function FinanceModuleThreeAR() {
   useEffect(() => {
     void load()
   }, [load])
+
+  const sendDunning = async (invoiceId: string, invoiceNo: string) => {
+    try {
+      setError('')
+      setMessage('')
+      const r = await api(`/api/finance/invoices/${invoiceId}/dunning/send`, { method: 'POST', body: JSON.stringify({}) })
+      setMessage(`Dunning sent for ${invoiceNo} — ${r.dunning?.stage?.label || 'stage complete'}`)
+      await load()
+    } catch (e: any) {
+      setError(e.message)
+    }
+  }
+
+  const runDunningBatch = async (dryRun: boolean) => {
+    try {
+      setError('')
+      setMessage('')
+      const r = await api('/api/finance/ar/dunning/run-batch', {
+        method: 'POST',
+        body: JSON.stringify({ limit: 20, dryRun }),
+      })
+      setMessage(r.message || `Batch: ${r.sent}/${r.processed}`)
+      if (!dryRun) await load()
+    } catch (e: any) {
+      setError(e.message)
+    }
+  }
+
+  const o2cAction = async (orderId: string, action: 'ship' | 'deliver' | 'bill' | 'release_credit', orderNo: string) => {
+    try {
+      setError('')
+      setMessage('')
+      const path =
+        action === 'release_credit'
+          ? `/api/finance/ar/o2c/orders/${orderId}/release-credit`
+          : `/api/finance/ar/o2c/orders/${orderId}/${action}`
+      const r = await api(path, { method: 'POST', body: JSON.stringify({ postToGl: true }) })
+      setMessage(r.message || `${action} complete for ${orderNo}`)
+      await load()
+    } catch (e: any) {
+      setError(e.message)
+    }
+  }
+
+  const runO2CBatch = async () => {
+    try {
+      setError('')
+      setMessage('')
+      const r = await api('/api/finance/ar/o2c/run-batch', { method: 'POST', body: JSON.stringify({ limit: 10 }) })
+      setMessage(r.message || `O2C batch: ${r.billed} billed`)
+      await load()
+    } catch (e: any) {
+      setError(e.message)
+    }
+  }
 
   const createInvoice = async () => {
     try {
@@ -240,6 +309,8 @@ export default function FinanceModuleThreeAR() {
             ['payments', 'Payments'],
             ['aging', 'Aging'],
             ['collections', 'Collections'],
+            ['dunning', 'Dunning'],
+            ['o2c', 'O2C'],
             ['customers', 'Customers'],
           ] as const
         ).map(([id, label]) => (
@@ -270,6 +341,12 @@ export default function FinanceModuleThreeAR() {
                 className="border border-harvics-burgundy/30 px-4 py-2.5 text-[10px] font-bold uppercase tracking-[0.14em]"
               >
                 AR master data
+              </Link>
+              <Link
+                href={`/${locale}/os/finance/global-house`}
+                className="border border-harvics-burgundy/30 px-4 py-2.5 text-[10px] font-bold uppercase tracking-[0.14em]"
+              >
+                Global House
               </Link>
               <Link
                 href={`/${locale}/os/ar/invoices/new`}
@@ -496,6 +573,202 @@ export default function FinanceModuleThreeAR() {
               )}
             </tbody>
           </table>
+        </div>
+      ) : null}
+
+      {!loading && tab === 'dunning' ? (
+        <div className="space-y-4">
+          <div className="flex flex-wrap items-center justify-between gap-3 border border-harvics-burgundy/15 bg-harvics-cream/40 px-4 py-3">
+            <div>
+              <p className="text-[13px] font-semibold text-harvics-burgundy">Oracle-style staged dunning</p>
+              <p className="text-[11px] text-harvics-burgundy/60">
+                5 levels: reminder → 1st notice → 2nd → final → pre-legal. Real Resend email + history on invoice meta.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <button
+                type="button"
+                onClick={() => runDunningBatch(true)}
+                className="border border-harvics-burgundy/30 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.12em]"
+              >
+                Preview batch
+              </button>
+              <button
+                type="button"
+                onClick={() => runDunningBatch(false)}
+                className="bg-harvics-burgundy px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.12em] text-harvics-cream"
+              >
+                Send batch (20)
+              </button>
+            </div>
+          </div>
+          <div className="grid gap-2 sm:grid-cols-5">
+            {dunningStages.map((s: any) => (
+              <div key={s.stage} className="border border-harvics-burgundy/15 bg-white px-3 py-2 text-[10px]">
+                <p className="font-bold uppercase tracking-[0.1em] text-harvics-burgundy">L{s.stage}</p>
+                <p className="text-harvics-burgundy/70">{s.label}</p>
+                <p className="text-harvics-gold">≥{s.minDaysOverdue}d OD</p>
+              </div>
+            ))}
+          </div>
+          <div className="overflow-x-auto border border-harvics-burgundy/15 bg-white">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-harvics-burgundy text-left text-harvics-cream">
+                  {['Invoice', 'Customer', 'Outstanding', 'Days OD', 'Last', 'Next', 'Email', 'Send'].map((h) => (
+                    <th key={h} className="px-3 py-2 text-[10px] uppercase tracking-[0.12em]">
+                      {h}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {dunningQueue.length === 0 ? (
+                  <tr>
+                    <td colSpan={8} className="px-3 py-8 text-center text-harvics-burgundy/45">
+                      No invoices due for next dunning stage.
+                    </td>
+                  </tr>
+                ) : (
+                  dunningQueue.map((r: any, i: number) => (
+                    <tr key={r.id} className={i % 2 ? 'bg-harvics-cream/40' : 'bg-white'}>
+                      <td className="px-3 py-2 font-mono font-semibold">
+                        <Link className="underline decoration-harvics-gold/50 underline-offset-2" href={`/${locale}/os/ar/invoices/${r.id}`}>
+                          {r.invoiceNo}
+                        </Link>
+                      </td>
+                      <td className="px-3 py-2">{r.customerName || '—'}</td>
+                      <td className="px-3 py-2 font-mono font-semibold">{fmt(r.outstanding)}</td>
+                      <td className="px-3 py-2">{r.daysOverdue}</td>
+                      <td className="px-3 py-2">L{r.lastStage || 0}</td>
+                      <td className="px-3 py-2 font-semibold text-harvics-burgundy">L{r.nextStage} {r.nextStageLabel}</td>
+                      <td className="px-3 py-2 text-[11px]">{r.contactEmail || '—'}</td>
+                      <td className="px-3 py-2">
+                        <button
+                          type="button"
+                          onClick={() => sendDunning(r.id, r.invoiceNo)}
+                          disabled={!r.contactEmail}
+                          className="border border-harvics-burgundy/30 px-2 py-1 text-[10px] font-bold uppercase tracking-[0.12em] disabled:opacity-40"
+                        >
+                          Send
+                        </button>
+                      </td>
+                    </tr>
+                  ))
+                )}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      ) : null}
+
+      {!loading && tab === 'o2c' ? (
+        <div className="space-y-4">
+          <div className="flex flex-wrap items-center justify-between gap-3 border border-harvics-burgundy/15 bg-harvics-cream/40 px-4 py-3">
+            <div>
+              <p className="text-[13px] font-semibold text-harvics-burgundy">Order → delivery → billing</p>
+              <p className="text-[11px] text-harvics-burgundy/60">
+                Oracle bill-on-delivery: confirm → ship → deliver → AR invoice + GL. Not bill-on-order.
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={() => runO2CBatch()}
+              className="bg-harvics-burgundy px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.12em] text-harvics-cream"
+            >
+              Bill delivered batch
+            </button>
+          </div>
+          <div className="grid gap-2 sm:grid-cols-6">
+            {[
+              ['confirmed', o2cSummary.confirmed],
+              ['inFulfillment', o2cSummary.inFulfillment],
+              ['shipped', o2cSummary.shipped],
+              ['deliveredUnbilled', o2cSummary.deliveredUnbilled],
+              ['invoiced', o2cSummary.invoiced],
+              ['creditHold', o2cSummary.creditHold],
+            ].map(([key, val]) => (
+              <div key={String(key)} className="border border-harvics-burgundy/15 bg-white px-3 py-2 text-[10px]">
+                <p className="font-bold uppercase tracking-[0.1em] text-harvics-burgundy">{String(key)}</p>
+                <p className="text-lg font-semibold text-harvics-gold">{val ?? 0}</p>
+              </div>
+            ))}
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {o2cStages.map((s: any) => (
+              <span key={s.key} className="border border-harvics-burgundy/15 px-2 py-1 text-[10px] text-harvics-burgundy/70">
+                {s.order}. {s.label}
+              </span>
+            ))}
+          </div>
+          <div className="overflow-x-auto border border-harvics-burgundy/15 bg-white">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-harvics-burgundy text-left text-harvics-cream">
+                  {['Order', 'Customer', 'Status', 'Amount', 'Delivery', 'Invoice', 'Actions'].map((h) => (
+                    <th key={h} className="px-3 py-2 text-[10px] uppercase tracking-[0.12em]">
+                      {h}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {o2cPipeline.length === 0 ? (
+                  <tr>
+                    <td colSpan={7} className="px-3 py-8 text-center text-harvics-burgundy/45">
+                      No sales orders in O2C pipeline. Accept a CPQ quote or create a sales order in Module #9/#10.
+                    </td>
+                  </tr>
+                ) : (
+                  o2cPipeline.map((r: any, i: number) => (
+                    <tr key={r.id} className={i % 2 ? 'bg-harvics-cream/40' : 'bg-white'}>
+                      <td className="px-3 py-2 font-mono font-semibold">{r.orderNumber}</td>
+                      <td className="px-3 py-2">{r.customerName}</td>
+                      <td className="px-3 py-2">
+                        <span className="font-semibold">{r.stageLabel || r.status}</span>
+                      </td>
+                      <td className="px-3 py-2 font-mono">{fmt(r.totalAmount)}</td>
+                      <td className="px-3 py-2 text-[11px]">
+                        {r.delivery ? `${r.delivery.status} · ${new Date(r.delivery.scheduledFor).toLocaleDateString()}` : '—'}
+                      </td>
+                      <td className="px-3 py-2">
+                        {r.invoice?.id ? (
+                          <Link
+                            className="font-mono underline decoration-harvics-gold/50"
+                            href={`/${locale}/os/ar/invoices/${r.invoice.id}`}
+                          >
+                            {r.invoice.invoiceNo}
+                          </Link>
+                        ) : (
+                          '—'
+                        )}
+                      </td>
+                      <td className="px-3 py-2">
+                        <div className="flex flex-wrap gap-1">
+                          {(r.nextActions || []).map((a: string) => (
+                            <button
+                              key={a}
+                              type="button"
+                              onClick={() =>
+                                o2cAction(
+                                  r.id,
+                                  a === 'release_credit' ? 'release_credit' : (a as 'ship' | 'deliver' | 'bill'),
+                                  r.orderNumber,
+                                )
+                              }
+                              className="border border-harvics-burgundy/30 px-2 py-1 text-[10px] font-bold uppercase tracking-[0.1em]"
+                            >
+                              {a.replace('_', ' ')}
+                            </button>
+                          ))}
+                        </div>
+                      </td>
+                    </tr>
+                  ))
+                )}
+              </tbody>
+            </table>
+          </div>
         </div>
       ) : null}
 

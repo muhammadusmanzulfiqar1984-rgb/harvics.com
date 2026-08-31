@@ -2,6 +2,7 @@ import Link from 'next/link'
 import LocalizationBar from '@/components/shared/LocalizationBar'
 import { generateAllLocaleParams } from '@/lib/generateLocaleParams'
 import { LA_PRES_NAME } from '@/data/presentationAccess'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 export async function generateStaticParams() {
   return generateAllLocaleParams()
@@ -68,7 +69,7 @@ export default async function PortalsPage({ params }: { params: Promise<{ locale
       <section 
         className="relative py-20 md:py-24 overflow-hidden"
         style={{
-          backgroundImage: "url('/assets/shared/heroes/portals-hub-hero.jpg')",
+          backgroundImage: "url('/assets/shared/heroes/portals-hub-hero.webp')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -129,18 +130,18 @@ export default async function PortalsPage({ params }: { params: Promise<{ locale
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {enterprisePortals.map((portal) => {
               const portalImg = portal.id === 'distributor' 
-                ? '/assets/shared/heroes/distributor-portal-hero.jpg' 
+                ? '/assets/shared/heroes/distributor-portal-hero.webp' 
                 : portal.id === 'supplier' 
-                  ? '/assets/shared/heroes/supplier-portal-hero.jpg' 
-                  : '/assets/shared/heroes/portals-hub-hero.jpg';
+                  ? '/assets/shared/heroes/supplier-portal-hero.webp' 
+                  : '/assets/shared/heroes/portals-hub-hero.webp';
               return (
                 <Link
                   key={portal.id}
                   href={portal.href}
                   className="group bg-white border border-gray-100 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden flex flex-col"
                 >
-                  <div className="h-32 w-full overflow-hidden bg-[#f5f2ee]">
-                    <img src={portalImg} alt={portal.name} className="w-full h-full object-cover group-hover:scale-[1.04] transition-transform" />
+                  <div className="relative h-32 w-full overflow-hidden bg-[#f5f2ee]">
+                    <HarvicsImage src={portalImg} alt={portal.name} fill sizes={IMAGE_SIZES.portal} className="object-cover group-hover:scale-[1.04] transition-transform" />
                   </div>
                   <div className="p-8 flex-1 flex flex-col">
                     <div className="w-16 h-16 bg-harvics-burgundy text-harvics-gold flex items-center justify-center mb-6 shadow-md group-hover:scale-105 transition-transform duration-300">

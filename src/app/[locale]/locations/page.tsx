@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import { generateLocalizedMetadata } from '@/lib/seo'
 import AnimatedStats from '@/components/ui/AnimatedStats'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
@@ -71,11 +72,13 @@ export default async function LocationsPage({ params }: LocationsPageProps) {
     <main className="min-h-screen pt-[136px]" style={{ background: '#ffffff' }}>
       {/* Hero */}
       <section className="relative bg-harvics-burgundy py-20 px-4 border-b border-harvics-gold/40 overflow-hidden">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <HarvicsImage
           src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=1200&h=600&fit=crop&q=75"
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover"
+          alt="Global Locations"
+          fill
+          sizes={IMAGE_SIZES.hero}
+          priority
+          className="object-cover"
           style={{ filter: 'brightness(0.75) contrast(1.1) saturate(1.05)' }}
         />
         <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.85) 0%, rgba(107,31,43,0.5) 45%, rgba(107,31,43,0.25) 100%)' }} />

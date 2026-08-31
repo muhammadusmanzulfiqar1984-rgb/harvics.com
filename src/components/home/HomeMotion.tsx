@@ -7,7 +7,7 @@ const HomepageLenis = dynamic(() => import('@/components/home/HomepageLenis'), {
   ssr: false,
 })
 
-/** Smooth scroll — isolated so Lenis/GSAP never blanks the homepage. */
+/** Smooth scroll on homepage editorial bands — isolated so Lenis/GSAP never blanks the page. */
 export default function HomeMotion() {
   return (
     <ErrorBoundary fallback={null}>

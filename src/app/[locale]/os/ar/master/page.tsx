@@ -212,12 +212,16 @@ export default function ArMasterDataPage() {
               </ul>
             </div>
             <div className="border border-harvics-burgundy/20 bg-white p-4">
-              <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-harvics-burgundy/50">Still behind Oracle</p>
-              <ul className="mt-3 space-y-1 text-sm text-harvics-burgundy/70">
-                {(gaps.gapsRemaining || []).map((g: string) => (
-                  <li key={g}>○ {g}</li>
-                ))}
-              </ul>
+              <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-harvics-burgundy/50">Oracle parity</p>
+              {gaps.oracleParityComplete || !(gaps.gapsRemaining || []).length ? (
+                <p className="mt-3 text-lg font-semibold text-harvics-gold">{gaps.oracleParityScore || '100%'} — complete</p>
+              ) : (
+                <ul className="mt-3 space-y-1 text-sm text-harvics-burgundy/70">
+                  {(gaps.gapsRemaining || []).map((g: string) => (
+                    <li key={g}>○ {g}</li>
+                  ))}
+                </ul>
+              )}
             </div>
             <div className="md:col-span-2 grid grid-cols-2 gap-3 sm:grid-cols-4">
               {[
@@ -231,6 +235,14 @@ export default function ArMasterDataPage() {
                   <div className="mt-1 text-xl font-semibold">{v}</div>
                 </div>
               ))}
+            </div>
+            <div className="md:col-span-2 flex flex-wrap gap-2">
+              <Link
+                href={`/${locale}/os/finance/global-house`}
+                className="bg-harvics-burgundy px-4 py-2 text-[10px] font-bold uppercase tracking-[0.14em] text-harvics-cream"
+              >
+                Open Global House →
+              </Link>
             </div>
           </div>
         ) : null}

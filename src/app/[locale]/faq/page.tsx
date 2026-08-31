@@ -1,6 +1,7 @@
 
 import Footer from '@/components/layout/Footer'
 import { getTranslations } from 'next-intl/server'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 import { getFolderBasedCategories } from '@/data/folderBasedProducts'
 import { getFooterPageContent } from '@/utils/contentPopulator'
 
@@ -67,11 +68,13 @@ export default async function FAQPage({ params }: FAQPageProps) {
       
       <div className="pt-20">
         <section className="py-12 md:py-24 px-4 md:px-6 bg-harvics-burgundy relative overflow-hidden">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <HarvicsImage
             src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&h=600&fit=crop&q=75"
-            alt=""
-            className="absolute inset-0 w-full h-full object-cover"
+            alt={content.hero.title}
+            fill
+            sizes={IMAGE_SIZES.hero}
+            priority
+            className="object-cover"
             style={{ filter: 'brightness(0.75) contrast(1.1) saturate(1.05)' }}
           />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.85) 0%, rgba(107,31,43,0.5) 45%, rgba(107,31,43,0.25) 100%)' }} />

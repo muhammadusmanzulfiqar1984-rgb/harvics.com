@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 import { useTranslations, useLocale } from 'next-intl'
 import Link from 'next/link'
 import type { ProductCategory } from '@/data/folderBasedProducts'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 interface CreativeProductShowcaseProps {
   categories: ProductCategory[]
@@ -265,10 +266,12 @@ const CreativeProductShowcase: React.FC<CreativeProductShowcaseProps> = ({ categ
                         className="group relative overflow-hidden bg-white border border-gold-soft/60 rounded-lg transition-all duration-500 hover:border-gold hover:-translate-y-1"
                       >
                         <div className="relative aspect-[4/3] overflow-hidden bg-white">
-                          <img 
-                            src={productImage} 
+                          <HarvicsImage
+                            src={productImage}
                             alt={productLabel}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                            fill
+                            sizes={IMAGE_SIZES.productGrid}
+                            className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                           />
                           <div className="absolute inset-0 bg-maroon-deep/0 group-hover:bg-maroon-deep/10 transition-colors duration-500"></div>
                         </div>

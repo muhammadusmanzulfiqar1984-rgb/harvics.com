@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react'
 import { contactsByGroup, HARVICS_PRIMARY } from '@/data/harvicsContacts'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 /* ───── Intersection Observer ───── */
 function useInView(threshold = 0.15) {
@@ -48,11 +49,13 @@ const ContactPageClient: React.FC<ContactPageClientProps> = ({ locale, translati
           className="relative bg-gradient-to-br from-harvics-burgundy via-[#5a1a24] to-[#4a1520] py-28 md:py-32 px-4 overflow-hidden"
         >
           {/* Hero Background Image */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <HarvicsImage
             src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=600&fit=crop&q=75"
-            alt=""
-            className="absolute inset-0 w-full h-full object-cover"
+            alt="Contact Harvics"
+            fill
+            sizes={IMAGE_SIZES.contactHero}
+            priority
+            className="object-cover"
             style={{ filter: 'brightness(0.75) contrast(1.1) saturate(1.05)' }}
           />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.85) 0%, rgba(107,31,43,0.5) 45%, rgba(107,31,43,0.25) 100%)' }} />
@@ -318,9 +321,12 @@ const ContactPageClient: React.FC<ContactPageClientProps> = ({ locale, translati
               </p>
             </div>
             <div className="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg shadow-lg">
-              <img 
-                src="/assets/corporate/privacy/hero.jpg" 
-                alt="Privacy and Security" 
+              <HarvicsImage
+                src="/assets/corporate/privacy/hero.jpg"
+                alt="Privacy and Security"
+                width={896}
+                height={504}
+                sizes={IMAGE_SIZES.contactHero}
                 className="w-full h-auto object-cover"
               />
             </div>

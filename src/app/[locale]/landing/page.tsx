@@ -3,6 +3,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import { generateAllLocaleParams } from '@/lib/generateLocaleParams'
 import { getProductImage } from '@/data/harvictradeImages'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -90,7 +91,7 @@ export default async function LandingPage({ params }: { params: Promise<{ locale
           loop
           playsInline
           preload="auto"
-          poster="/assets/harvictrade/heroes/commodities-hero.jpg"
+          poster="/assets/harvictrade/heroes/commodities-hero.webp"
         >
           <source src="/assets/media/video/french.mp4" type="video/mp4" />
         </video>
@@ -205,10 +206,12 @@ export default async function LandingPage({ params }: { params: Promise<{ locale
                 href={`/${locale}/harvictrade/category/${v.slug}`}
                 className="group relative overflow-hidden bg-harvics-burgundy aspect-[4/3]"
               >
-                <img
+                <HarvicsImage
                   src={v.img}
                   alt={v.name}
-                  className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500"
+                  fill
+                  sizes={IMAGE_SIZES.card}
+                  className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-harvics-burgundy/90 via-transparent to-transparent" />
                 <div className="absolute bottom-0 left-0 p-5">
@@ -264,11 +267,13 @@ export default async function LandingPage({ params }: { params: Promise<{ locale
                 href={`/${locale}/harvictrade/rfq?product=${encodeURIComponent(p.name)}`}
                 className="group bg-white overflow-hidden hover:bg-harvics-cream transition-colors flex flex-col"
               >
-                <div className="h-36 w-full overflow-hidden bg-[#f8f5f0]">
-                  <img
+                <div className="relative h-36 w-full overflow-hidden bg-[#f8f5f0]">
+                  <HarvicsImage
                     src={getProductImage(p.name, p.slug)}
                     alt={p.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    fill
+                    sizes={IMAGE_SIZES.productGrid}
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="p-5 flex-1 flex flex-col">

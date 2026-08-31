@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 type EngineType = 'FLUX' | 'SDXL'
 
@@ -172,10 +173,12 @@ export default function GenerateImagePage() {
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-harvics-gold">
               {result.engineUsed} · {result.model}
             </p>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <HarvicsImage
               src={result.url}
               alt={result.promptUsed}
+              width={672}
+              height={672}
+              sizes={IMAGE_SIZES.lightbox}
               className="mb-4 w-full max-w-2xl rounded border border-white/10"
             />
             <dl className="grid gap-2 text-xs text-white/70">

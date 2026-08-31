@@ -4,6 +4,7 @@ import React from 'react'
 import Link from 'next/link'
 import { useLocale } from 'next-intl'
 import { useScrollReveal, revealClass } from '@/hooks/useScrollReveal'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 /**
  * WhoWeAre — "Built for complex categories" split section.
@@ -54,17 +55,23 @@ const WhoWeAre: React.FC = () => {
 
           {/* Right — Stacked product images */}
           <div className={`grid grid-cols-2 gap-4 ${revealClass(isVisible, 'right')}`}>
-            <div className="overflow-hidden" style={{ borderRadius: 0 }}>
-              <img
+            <div className="relative overflow-hidden" style={{ borderRadius: 0 }}>
+              <HarvicsImage
                 src="/assets/verticals/02-fmcg/products/A Pop of Fun in Every Bite!.png"
                 alt="Harvics Products"
+                width={600}
+                height={320}
+                sizes={IMAGE_SIZES.card}
                 className="w-full h-[320px] object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
-            <div className="overflow-hidden mt-8" style={{ borderRadius: 0 }}>
-              <img
+            <div className="relative overflow-hidden mt-8" style={{ borderRadius: 0 }}>
+              <HarvicsImage
                 src="/assets/verticals/02-fmcg/products/A Pop of Fun in Every Bite! (1).png"
                 alt="Harvics Quality"
+                width={600}
+                height={320}
+                sizes={IMAGE_SIZES.card}
                 className="w-full h-[320px] object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>

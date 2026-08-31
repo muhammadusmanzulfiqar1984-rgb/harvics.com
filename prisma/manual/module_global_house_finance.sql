@@ -1,0 +1,2 @@
+-- Apply Global House finance migration manually:
+-- psql "$DATABASE_URL" -f prisma/migrations/20260830090000_global_house_finance/migration.sql

@@ -1,15 +1,11 @@
 /**
  * AR credit gate + living catalog — durable enough to beat NetSuite path length.
- * CreditLimit via Prisma when available; open-AR fallback always.
- * Catalog persisted as JSON under data/ar-catalog.json (survives restarts).
+ * CreditLimit via Prisma when available; catalog in ArCatalogItem table.
  */
-import fs from 'fs';
-import path from 'path';
 import { prisma } from '../core/prisma';
 import { invoicesDb } from '../core/db';
 import { getCustomerMaster } from './arMasterData.service';
-
-const CATALOG_PATH = path.join(process.cwd(), 'data', 'ar-catalog.json');
+import { ensureFinanceDbSeeded } from './financeDbBootstrap.service';
 
 export type CreditGate = {
   ok: boolean;
@@ -42,7 +38,7 @@ export async function evaluateCredit(customerName: string, thisAmount: number): 
   const name = String(customerName || '').trim();
   const amt = Number(thisAmount) || 0;
   const used = await openArForCustomer(name);
-  const master = getCustomerMaster(name);
+  const master = await getCustomerMaster(name);
   const DEFAULT_LIMIT = master?.creditLimit ?? (Number(process.env.AR_DEFAULT_CREDIT_LIMIT) || 100000);
 
   try {
@@ -123,96 +119,129 @@ export type CatalogItem = {
   updatedAt: string;
 };
 
-function ensureCatalogFile(): CatalogItem[] {
-  const dir = path.dirname(CATALOG_PATH);
-  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-  if (!fs.existsSync(CATALOG_PATH)) {
-    const seed: CatalogItem[] = [
-      {
-        id: 'cat-basmati',
-        sku: 'RICE-1121',
-        hsCode: '1006.30',
-        description: 'Basmati rice 1121 — 50kg bags',
-        uom: 'BAG',
-        unitPrice: 42.5,
-        taxPercent: 5,
-        currency: 'USD',
-        active: true,
-        updatedAt: new Date().toISOString(),
-      },
-      {
-        id: 'cat-freight',
-        sku: 'FRT-OCEAN',
-        hsCode: '9900.00',
-        description: 'Ocean freight allocation',
-        uom: 'LOT',
-        unitPrice: 850,
-        taxPercent: 0,
-        currency: 'USD',
-        active: true,
-        updatedAt: new Date().toISOString(),
-      },
-      {
-        id: 'cat-pack',
-        sku: 'PKG-EXP',
-        hsCode: '9900.00',
-        description: 'Export packing / fumigation',
-        uom: 'LOT',
-        unitPrice: 120,
-        taxPercent: 0,
-        currency: 'USD',
-        active: true,
-        updatedAt: new Date().toISOString(),
-      },
-    ];
-    fs.writeFileSync(CATALOG_PATH, JSON.stringify(seed, null, 2));
-    return seed;
-  }
-  try {
-    return JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf8'));
-  } catch {
-    return [];
-  }
-}
-
-function saveCatalog(items: CatalogItem[]) {
-  const dir = path.dirname(CATALOG_PATH);
-  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(CATALOG_PATH, JSON.stringify(items, null, 2));
-}
-
-export function listCatalog(): CatalogItem[] {
-  return ensureCatalogFile().filter((i) => i.active !== false);
-}
-
-export function upsertCatalogItem(input: Partial<CatalogItem> & { description: string }): CatalogItem {
-  const items = ensureCatalogFile();
-  const id = input.id || `cat-${Date.now().toString(36)}`;
-  const existing = items.findIndex((i) => i.id === id || (input.sku && i.sku === input.sku));
-  const row: CatalogItem = {
-    id: existing >= 0 ? items[existing].id : id,
-    sku: String(input.sku || items[existing]?.sku || 'SKU'),
-    hsCode: input.hsCode || items[existing]?.hsCode,
-    description: String(input.description),
-    uom: String(input.uom || items[existing]?.uom || 'EA'),
-    unitPrice: Number(input.unitPrice ?? items[existing]?.unitPrice ?? 0),
-    taxPercent: Number(input.taxPercent ?? items[existing]?.taxPercent ?? 0),
-    currency: String(input.currency || items[existing]?.currency || 'USD'),
-    active: input.active !== false,
+const SEED_CATALOG: CatalogItem[] = [
+  {
+    id: 'cat-basmati',
+    sku: 'RICE-1121',
+    hsCode: '1006.30',
+    description: 'Basmati rice 1121 — 50kg bags',
+    uom: 'BAG',
+    unitPrice: 42.5,
+    taxPercent: 5,
+    currency: 'USD',
+    active: true,
     updatedAt: new Date().toISOString(),
+  },
+  {
+    id: 'cat-freight',
+    sku: 'FRT-OCEAN',
+    hsCode: '9900.00',
+    description: 'Ocean freight allocation',
+    uom: 'LOT',
+    unitPrice: 850,
+    taxPercent: 0,
+    currency: 'USD',
+    active: true,
+    updatedAt: new Date().toISOString(),
+  },
+  {
+    id: 'cat-pack',
+    sku: 'PKG-EXP',
+    hsCode: '9900.00',
+    description: 'Export packing / fumigation',
+    uom: 'LOT',
+    unitPrice: 120,
+    taxPercent: 0,
+    currency: 'USD',
+    active: true,
+    updatedAt: new Date().toISOString(),
+  },
+];
+
+async function seedCatalogIfEmpty() {
+  await ensureFinanceDbSeeded();
+  if ((await prisma.arCatalogItem.count()) > 0) return;
+  for (const item of SEED_CATALOG) {
+    await prisma.arCatalogItem.create({
+      data: {
+        sku: item.sku,
+        description: item.description,
+        uom: item.uom,
+        unitPrice: item.unitPrice,
+        taxPercent: item.taxPercent,
+        currency: item.currency,
+        hsCode: item.hsCode || null,
+        active: item.active,
+      },
+    });
+  }
+}
+
+function mapCatalog(row: {
+  id: string;
+  sku: string;
+  description: string;
+  uom: string;
+  unitPrice: number;
+  taxPercent: number;
+  currency: string;
+  hsCode: string | null;
+  taxCode: string | null;
+  active: boolean;
+  updatedAt: Date;
+}): CatalogItem {
+  return {
+    id: row.id,
+    sku: row.sku,
+    hsCode: row.hsCode || undefined,
+    description: row.description,
+    uom: row.uom,
+    unitPrice: row.unitPrice,
+    taxPercent: row.taxPercent,
+    currency: row.currency,
+    active: row.active,
+    updatedAt: row.updatedAt.toISOString(),
   };
-  if (existing >= 0) items[existing] = row;
-  else items.push(row);
-  saveCatalog(items);
-  return row;
+}
+
+export async function listCatalog(): Promise<CatalogItem[]> {
+  await seedCatalogIfEmpty();
+  const rows = await prisma.arCatalogItem.findMany({ where: { active: true }, orderBy: { sku: 'asc' } });
+  return rows.map(mapCatalog);
+}
+
+export async function upsertCatalogItem(input: Partial<CatalogItem> & { description: string }): Promise<CatalogItem> {
+  await seedCatalogIfEmpty();
+  const sku = String(input.sku || 'SKU');
+  const existing = input.id
+    ? await prisma.arCatalogItem.findUnique({ where: { id: input.id } })
+    : await prisma.arCatalogItem.findUnique({ where: { sku } });
+
+  const data = {
+    sku,
+    description: String(input.description),
+    uom: String(input.uom || existing?.uom || 'EA'),
+    unitPrice: Number(input.unitPrice ?? existing?.unitPrice ?? 0),
+    taxPercent: Number(input.taxPercent ?? existing?.taxPercent ?? 0),
+    currency: String(input.currency || existing?.currency || 'USD'),
+    hsCode: input.hsCode ?? existing?.hsCode ?? null,
+    taxCode: input.taxCode ?? existing?.taxCode ?? null,
+    active: input.active !== false,
+  };
+
+  const row = existing
+    ? await prisma.arCatalogItem.update({ where: { id: existing.id }, data })
+    : await prisma.arCatalogItem.create({ data });
+
+  return mapCatalog(row);
 }
 
 /** Sync invoice lines into catalog (prices learn like a living master). */
-export function learnCatalogFromLines(lines: any[]) {
+export async function learnCatalogFromLines(lines: any[]) {
   if (!Array.isArray(lines)) return;
   for (const l of lines) {
     if (!l?.description) continue;
-    upsertCatalogItem({
+    await upsertCatalogItem({
       sku: l.sku || undefined,
       hsCode: l.hsCode || undefined,
       description: l.description,

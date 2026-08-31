@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useLocale } from 'next-intl'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 const HERO_IMAGE = '/tabraiz-town/images/tabraiz_hero_aerial_dusk.png'
 
@@ -11,10 +12,12 @@ export default function TabraizTownProjectBanner() {
   return (
     <section className="relative overflow-hidden mb-14 border border-harvics-gold/25 bg-[#0a0a0a]">
       <div className="absolute inset-0">
-        <img
+        <HarvicsImage
           src={HERO_IMAGE}
           alt="Tabraiz Town aerial dusk — Rahim Yar Khan"
-          className="h-full w-full object-cover opacity-55"
+          fill
+          sizes={IMAGE_SIZES.hero}
+          className="object-cover opacity-55"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/85 to-black/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30" />

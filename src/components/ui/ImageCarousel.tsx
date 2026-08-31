@@ -5,6 +5,7 @@
  */
 
 import React, { useState, useEffect } from 'react'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 const FALLBACK_IMAGE = '/assets/brand/photo/logo.png'
 
@@ -19,8 +20,8 @@ interface ImageCarouselProps {
 }
 
 const DEFAULT_IMAGES = [
-  '/assets/shared/heroes/hero-banner-1.jpg',
-  '/assets/shared/heroes/hero-banner-2.jpg',
+  '/assets/shared/heroes/hero-banner-1.webp',
+  '/assets/shared/heroes/hero-banner-2.webp',
 ]
 
 const ImageCarousel: React.FC<ImageCarouselProps> = ({
@@ -89,18 +90,14 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
               }}
               aria-hidden={!isActive}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <HarvicsImage
                 src={image}
                 alt=""
-                className="absolute inset-0 w-full h-full object-cover"
-                loading={index === 0 ? 'eager' : 'lazy'}
-                decoding="async"
-                onError={(e) => {
-                  const target = e.currentTarget
-                  if (target.src.endsWith(FALLBACK_IMAGE)) return
-                  target.src = FALLBACK_IMAGE
-                }}
+                fill
+                className="object-cover"
+                sizes={IMAGE_SIZES.hero}
+                priority={index === 0}
+                fallbackSrc={FALLBACK_IMAGE}
               />
             </div>
           )

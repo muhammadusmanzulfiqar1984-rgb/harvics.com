@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useEffect, useRef } from 'react'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 interface LightboxProps {
   isOpen: boolean
@@ -50,7 +51,15 @@ const Lightbox: React.FC<LightboxProps> = ({ isOpen, onClose, imageSrc, imageAlt
         <button className="lightbox-close" onClick={onClose}>
           &times;
         </button>
-        <img src={imageSrc} alt={imageAlt} className="lightbox-image" />
+        <div className="relative w-full max-w-[1100px] aspect-[4/3] mx-auto">
+          <HarvicsImage
+            src={imageSrc}
+            alt={imageAlt}
+            fill
+            className="lightbox-image object-contain"
+            sizes={IMAGE_SIZES.lightbox}
+          />
+        </div>
       </div>
     </div>
   )

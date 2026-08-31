@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 const TEXTILE_HEROES = [
   '/assets/harvictrade/heroes/textiles/01-trench.webp',
@@ -47,20 +48,19 @@ export default function TextileCategoryHero({
       onMouseLeave={() => setPaused(false)}
     >
       {TEXTILE_HEROES.map((src, i) => (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
+        <HarvicsImage
           key={src}
           src={src}
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover transition-opacity duration-[1100ms] ease-out"
+          alt={name}
+          fill
+          sizes={IMAGE_SIZES.hero}
+          priority={i === 0}
+          className="object-cover transition-opacity duration-[1100ms] ease-out"
           style={{
             opacity: i === index ? 1 : 0,
             transform: i === index ? 'scale(1)' : 'scale(1.04)',
             transition: 'opacity 1.1s ease, transform 6s ease',
           }}
-          loading={i === 0 ? 'eager' : 'lazy'}
-          decoding="async"
-          aria-hidden={i !== index}
         />
       ))}
 

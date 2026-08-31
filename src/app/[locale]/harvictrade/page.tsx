@@ -5,6 +5,7 @@ import HarvicTradeSearch from '@/components/harvictrade/HarvicTradeSearch'
 import HarvicTradeTabs from '@/components/harvictrade/HarvicTradeTabs'
 import { ALL_PRODUCTS, CATEGORY_META } from '@/data/harvictrade-products'
 import { getProductImage } from '@/data/harvictradeImages'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -59,7 +60,7 @@ export default async function HarvicTradePage({ params }: { params: Promise<{ lo
             loop
             playsInline
             preload="auto"
-            poster="/assets/shared/heroes/harvictrade-hero.jpg"
+            poster="/assets/shared/heroes/harvictrade-hero.webp"
           >
             <source src="/assets/media/video/final2.mp4" type="video/mp4" />
           </video>
@@ -133,11 +134,13 @@ export default async function HarvicTradePage({ params }: { params: Promise<{ lo
                   href={`/${locale}/harvictrade/category/${cat.slug}`}
                   className="group bg-white overflow-hidden hover:bg-harvics-cream transition-colors relative flex flex-col"
                 >
-                  <div className="h-28 w-full overflow-hidden bg-[#f5f0e8]">
-                    <img 
-                      src={catHero} 
-                      alt={cat.name} 
-                      className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform" 
+                  <div className="relative h-28 w-full overflow-hidden bg-[#f5f0e8]">
+                    <HarvicsImage
+                      src={catHero}
+                      alt={cat.name}
+                      fill
+                      sizes={IMAGE_SIZES.card}
+                      className="object-cover group-hover:scale-[1.03] transition-transform"
                     />
                   </div>
                   <div className="p-10 flex-1">
@@ -180,11 +183,13 @@ export default async function HarvicTradePage({ params }: { params: Promise<{ lo
                   href={`/${locale}/harvictrade/rfq?product=${encodeURIComponent(p.name)}&category=${encodeURIComponent(p.category)}`}
                   className="group bg-white overflow-hidden hover:bg-harvics-cream transition-colors flex flex-col"
                 >
-                  <div className="h-40 w-full overflow-hidden bg-[#f8f5f0]">
-                    <img 
+                  <div className="relative h-40 w-full overflow-hidden bg-[#f8f5f0]">
+                    <HarvicsImage
                       src={getProductImage(p.name, p.categorySlug)}
-                      alt={p.name} 
-                      className="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-300" 
+                      alt={p.name}
+                      fill
+                      sizes={IMAGE_SIZES.productGrid}
+                      className="object-cover group-hover:scale-[1.04] transition-transform duration-300"
                     />
                   </div>
                   <div className="p-7 flex-1 flex flex-col">
@@ -227,14 +232,14 @@ export default async function HarvicTradePage({ params }: { params: Promise<{ lo
             </div>
             <div className="grid grid-cols-3 md:grid-cols-5 gap-3 mx-auto max-w-[720px]">
               {[
-                { src: '/assets/harvictrade/mobile/phone-marketplace-list.jpg', label: 'Browse' },
-                { src: '/assets/harvictrade/mobile/phone-rfq-form.jpg', label: 'RFQ' },
-                { src: '/assets/harvictrade/mobile/phone-quotes.jpg', label: 'Quotes' },
-                { src: '/assets/harvictrade/mobile/phone-product-detail.jpg', label: 'Detail' },
-                { src: '/assets/harvictrade/mobile/phone-dashboard.jpg', label: 'Dash' },
+                { src: '/assets/harvictrade/mobile/phone-marketplace-list.webp', label: 'Browse' },
+                { src: '/assets/harvictrade/mobile/phone-rfq-form.webp', label: 'RFQ' },
+                { src: '/assets/harvictrade/mobile/phone-quotes.webp', label: 'Quotes' },
+                { src: '/assets/harvictrade/mobile/phone-product-detail.webp', label: 'Detail' },
+                { src: '/assets/harvictrade/mobile/phone-dashboard.webp', label: 'Dash' },
               ].map((m, i) => (
                 <div key={i} className="relative rounded-[2rem] border-[8px] border-[#111] bg-[#111] shadow-xl overflow-hidden aspect-[9/19]">
-                  <img src={m.src} alt={`HarvicTrade ${m.label}`} className="absolute inset-0 w-full h-full object-cover" />
+                  <HarvicsImage src={m.src} alt={`HarvicTrade ${m.label}`} fill sizes={IMAGE_SIZES.phone} className="object-cover" />
                   <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-[9px] text-white/70 tracking-widest bg-black/40 px-2 rounded">{m.label}</div>
                 </div>
               ))}

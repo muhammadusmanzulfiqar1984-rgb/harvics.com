@@ -25,11 +25,14 @@ const nextConfig = {
   outputFileTracingRoot: path.join(__dirname),
   outputFileTracingExcludes: {
     '*': [
-      './public/assets/verticals/**',
+      './public/assets/**',
+      './public/vietnam-denim-presentation/**',
       './public/_originals/**',
       './archive/**',
       './backend/backups/**',
       './ai-engine/**',
+      './src/data/harvyx/contacts/**',
+      './HARVICS MEMORY/**',
       './node_modules/@swc/core-linux-x64-musl/**',
       './node_modules/@esbuild/**',
     ],
@@ -91,8 +94,8 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    // Serve /public assets directly — avoids _next/image failures on Cloudflare/local
-    unoptimized: true,
+    // Opt out on Cloudflare/static hosts via NEXT_IMAGE_UNOPTIMIZED=true
+    unoptimized: process.env.NEXT_IMAGE_UNOPTIMIZED === 'true',
     remotePatterns: [
       { protocol: 'http', hostname: 'localhost' },
       { protocol: 'https', hostname: 'www.harvics.com' },
@@ -100,8 +103,10 @@ const nextConfig = {
       { protocol: 'https', hostname: 'media.harvics.com' },
       { protocol: 'https', hostname: '*.r2.dev' },
       { protocol: 'https', hostname: 'pub-f2496164b9544713bde9dd18d56e3663.r2.dev' },
+      { protocol: 'https', hostname: 'images.unsplash.com' },
+      { protocol: 'https', hostname: 'plus.unsplash.com' },
     ],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     formats: ['image/avif', 'image/webp'],
     minimumCacheTTL: 86400,

@@ -13,11 +13,13 @@ import CinematicTradeMap from '@/components/premium/CinematicTradeMap'
 import SupplyChainWheel from '@/components/layout/SupplyChainWheel'
 import ThreeDErrorBoundary from '@/components/shared/ThreeDErrorBoundary'
 import ContactSection from '@/components/layout/ContactSection'
+import HomeMotion from '@/components/home/HomeMotion'
 
-/** Corridor homepage — full content; Lenis off while next.config keeps restarting the server. */
+/** Corridor homepage — Lenis smooth scroll on editorial bands only (see HomepageLenis). */
 export default function Home() {
   return (
     <>
+      <HomeMotion />
       <div
         aria-hidden="true"
         className="fixed inset-0 pointer-events-none"
@@ -34,7 +36,7 @@ export default function Home() {
       />
 
       <main id="homepage-main" className="w-full min-h-screen bg-transparent flex flex-col text-harvics-burgundy">
-        <section className="relative overflow-hidden flex flex-col w-full min-h-screen border-b border-harvics-gold/10 bg-harvics-burgundy">
+        <section id="hero" className="relative overflow-hidden flex flex-col w-full min-h-screen border-b border-harvics-gold/10 bg-harvics-burgundy">
           <LiquidGlassHero />
         </section>
 

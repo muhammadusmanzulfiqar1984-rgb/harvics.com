@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useLocale, useTranslations } from 'next-intl'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 /**
  * Landing teaser for Startup Academy — copy from startupAcademy.teaser.
@@ -15,11 +16,12 @@ export default function StartupAcademyTeaser() {
       id="startup-academy"
       className="relative flex min-h-[72vh] items-end overflow-hidden bg-harvics-burgundy"
     >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <HarvicsImage
         src="/assets/academy/academy-hero-lecture-hall.png"
-        alt=""
-        className="absolute inset-0 h-full w-full object-cover brightness-[0.45]"
+        alt={t('title')}
+        fill
+        sizes={IMAGE_SIZES.hero}
+        className="object-cover brightness-[0.45]"
       />
       <div
         className="absolute inset-0"

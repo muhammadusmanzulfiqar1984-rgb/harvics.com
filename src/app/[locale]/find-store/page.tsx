@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useLocale } from 'next-intl'
 import { useCountry } from '@/contexts/CountryContext'
 import Link from 'next/link'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 export default function FindStorePage() {
   const locale = useLocale()
@@ -43,12 +44,13 @@ export default function FindStorePage() {
   return (
     <main className="min-h-screen bg-white pt-20">
       <section className="h-[400px] relative bg-harvics-burgundy overflow-hidden">
-        {/* Hero Background Image */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <HarvicsImage
           src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&h=600&fit=crop&q=75"
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover"
+          alt="Find a Harvics Store"
+          fill
+          sizes={IMAGE_SIZES.hero}
+          priority
+          className="object-cover"
           style={{ filter: 'brightness(0.75) contrast(1.1) saturate(1.05)' }}
         />
         <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.85) 0%, rgba(107,31,43,0.5) 45%, rgba(107,31,43,0.25) 100%)' }} />

@@ -6,18 +6,18 @@ import { useLocale } from 'next-intl'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Lenis from '@studio-freight/lenis'
-import ContactSection from '@/components/layout/ContactSection'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 gsap.registerPlugin(ScrollTrigger)
 
 const INDUSTRIES = [
   { name: 'Textiles', img: '/assets/harvictrade/heroes/textiles-hero.webp', slug: 'textiles' },
   { name: 'FMCG', img: '/assets/harvictrade/heroes/fmcg-hero.webp', slug: 'fmcg' },
-  { name: 'Commodities', img: '/assets/harvictrade/heroes/commodities-hero.jpg', slug: 'commodities' },
-  { name: 'Industrial', img: '/assets/harvictrade/heroes/industrial-hero.jpg', slug: 'industrial' },
-  { name: 'Minerals', img: '/assets/harvictrade/heroes/minerals-hero.jpg', slug: 'minerals' },
-  { name: 'Energy', img: '/assets/harvictrade/heroes/energy-hero.jpg', slug: 'energy' },
-  { name: 'Electronics', img: '/assets/harvictrade/heroes/electronics-hero.jpg', slug: 'electronics' },
+  { name: 'Commodities', img: '/assets/harvictrade/heroes/commodities-hero.webp', slug: 'commodities' },
+  { name: 'Industrial', img: '/assets/harvictrade/heroes/industrial-hero.webp', slug: 'industrial' },
+  { name: 'Minerals', img: '/assets/harvictrade/heroes/minerals-hero.webp', slug: 'minerals' },
+  { name: 'Energy', img: '/assets/harvictrade/heroes/energy-hero.webp', slug: 'energy' },
+  { name: 'Electronics', img: '/assets/harvictrade/heroes/electronics-hero.webp', slug: 'electronics' },
 ]
 
 const STEPS = [
@@ -25,33 +25,33 @@ const STEPS = [
     n: '01',
     t: 'Browse & search',
     d: 'Explore verified listings. Filter by origin, MOQ, certification and Incoterms.',
-    img: '/assets/shared/heroes/harvictrade-marketplace.jpg',
+    img: '/assets/shared/heroes/harvictrade-marketplace.webp',
   },
   {
     n: '02',
     t: 'Submit RFQ',
     d: 'Request quotes from vetted suppliers. Specify quantity, delivery and timeline.',
-    img: '/assets/shared/heroes/distributor-portal-hero.jpg',
+    img: '/assets/shared/heroes/distributor-portal-hero.webp',
   },
   {
     n: '03',
     t: 'Compare & negotiate',
     d: 'Receive competitive quotes. Match to the best-fit supplier for your corridor.',
-    img: '/assets/shared/heroes/supplier-portal-hero.jpg',
+    img: '/assets/shared/heroes/supplier-portal-hero.webp',
   },
   {
     n: '04',
     t: 'Trade securely',
     d: 'Execute with escrow, LC/TT and end-to-end shipment tracking.',
-    img: '/assets/shared/heroes/trade-finance-hero.jpg',
+    img: '/assets/shared/heroes/trade-finance-hero.webp',
   },
 ]
 
 const PRODUCTS = [
-  { name: 'Premium Basmati Rice 1121 Sella', origin: 'Pakistan', img: '/assets/harvictrade/products/basmati-rice.jpg' },
-  { name: 'Hi-Vis Safety Jacket EN20471', origin: 'Turkey', img: '/assets/harvictrade/products/safety-jacket.jpg' },
-  { name: 'Copper Cathode Grade A', origin: 'Chile', img: '/assets/harvictrade/products/copper-cathode.jpg' },
-  { name: 'Extra Virgin Olive Oil — 1L', origin: 'Spain', img: '/assets/harvictrade/products/olive-oil.jpg' },
+  { name: 'Premium Basmati Rice 1121 Sella', origin: 'Pakistan', img: '/assets/harvictrade/products/basmati-rice.webp' },
+  { name: 'Hi-Vis Safety Jacket EN20471', origin: 'Turkey', img: '/assets/harvictrade/products/safety-jacket.webp' },
+  { name: 'Copper Cathode Grade A', origin: 'Chile', img: '/assets/harvictrade/products/copper-cathode.webp' },
+  { name: 'Extra Virgin Olive Oil — 1L', origin: 'Spain', img: '/assets/harvictrade/products/olive-oil.webp' },
 ]
 
 export default function CorridorHome() {
@@ -336,7 +336,7 @@ export default function CorridorHome() {
             muted
             loop
             playsInline
-            poster="/assets/shared/heroes/hero-page-1.jpg"
+            poster="/assets/shared/heroes/hero-page-1.webp"
           >
             <source src="/assets/media/video/corridor-reel.mp4?v=night1" type="video/mp4" />
           </video>
@@ -428,11 +428,12 @@ export default function CorridorHome() {
       {/* 03 · CAMPAIGN PIN */}
       <section className="corridor-campaign relative h-[260vh] bg-harvics-burgundy">
         <div className="corridor-campaign-pin relative h-screen w-full overflow-hidden">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/assets/shared/heroes/harvictrade-hero.jpg"
-            alt=""
-            className="corridor-campaign-img absolute inset-0 h-full w-full object-cover"
+          <HarvicsImage
+            src="/assets/shared/heroes/harvictrade-hero.webp"
+            alt="HarvicTrade corridor"
+            fill
+            sizes={IMAGE_SIZES.hero}
+            className="corridor-campaign-img object-cover"
           />
           <div className="absolute inset-0 bg-harvics-burgundy/50" />
           <div className="corridor-campaign-copy absolute inset-0 z-10 flex flex-col justify-end px-5 pb-16 md:px-12 md:pb-24 max-w-[1440px] mx-auto w-full left-0 right-0">
@@ -501,11 +502,12 @@ export default function CorridorHome() {
                   href={`/${locale}/harvictrade/category/${item.slug}`}
                   className="relative h-full w-[min(38vw,480px)] flex-none overflow-hidden bg-[#111]"
                 >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <HarvicsImage
                     src={item.img}
                     alt={item.name}
-                    className="h-full w-full object-cover brightness-[0.68]"
+                    fill
+                    sizes={IMAGE_SIZES.card}
+                    className="object-cover brightness-[0.68]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6">
@@ -601,9 +603,8 @@ export default function CorridorHome() {
                     <h3 className="mt-5 mb-2 text-lg font-semibold text-harvics-burgundy">{s.t}</h3>
                     <p className="max-w-[34ch] text-sm leading-relaxed text-harvics-muted">{s.d}</p>
                   </div>
-                  <div className="h-40 overflow-hidden">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={s.img} alt="" className="h-full w-full object-cover brightness-90" />
+                  <div className="relative h-40 overflow-hidden">
+                    <HarvicsImage src={s.img} alt={s.t} fill sizes={IMAGE_SIZES.cardSm} className="object-cover brightness-90" />
                   </div>
                 </article>
               ))}
@@ -628,9 +629,8 @@ export default function CorridorHome() {
                     <h3 className="mt-5 mb-2 text-lg font-semibold text-harvics-burgundy">{s.t}</h3>
                     <p className="max-w-[34ch] text-sm leading-relaxed text-harvics-muted">{s.d}</p>
                   </div>
-                  <div className="h-40 overflow-hidden">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={s.img} alt="" className="h-full w-full object-cover brightness-90" />
+                  <div className="relative h-40 overflow-hidden">
+                    <HarvicsImage src={s.img} alt={s.t} fill sizes={IMAGE_SIZES.cardSm} className="object-cover brightness-90" />
                   </div>
                 </article>
               ))}
@@ -641,11 +641,12 @@ export default function CorridorHome() {
 
       {/* 07 · GATE */}
       <section className="relative flex min-h-[70vh] items-center overflow-hidden bg-harvics-burgundy">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/assets/shared/heroes/portals-hub-hero.jpg"
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover brightness-50"
+        <HarvicsImage
+          src="/assets/shared/heroes/portals-hub-hero.webp"
+          alt="Harvics portals"
+          fill
+          sizes={IMAGE_SIZES.hero}
+          className="object-cover brightness-50"
         />
         <div
           className="absolute inset-0"
@@ -748,12 +749,13 @@ export default function CorridorHome() {
                 className="group overflow-hidden border border-transparent bg-harvics-cream hover:border-harvics-gold/30"
                 data-corridor-reveal
               >
-                <div className="aspect-square overflow-hidden bg-harvics-cardMuted">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                <div className="relative aspect-square overflow-hidden bg-harvics-cardMuted">
+                  <HarvicsImage
                     src={p.img}
                     alt={p.name}
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    fill
+                    sizes={IMAGE_SIZES.productGrid}
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-4">

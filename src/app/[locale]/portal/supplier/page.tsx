@@ -25,7 +25,7 @@ export default async function SupplierPortalPage({
         {/* Photo hero banner */}
         <div 
           className="h-48 md:h-56 w-full relative overflow-hidden"
-          style={{ backgroundImage: "url('/assets/shared/heroes/supplier-portal-hero.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}
+          style={{ backgroundImage: "url('/assets/shared/heroes/supplier-portal-hero.webp')", backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
           <div className="absolute inset-0 bg-harvics-burgundy/60" />
           <div className="relative max-w-7xl mx-auto px-6 h-full flex items-end pb-6">

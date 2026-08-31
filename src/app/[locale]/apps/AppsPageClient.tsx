@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 /* ─────────────────────────────────────────────
    PIN GATE
@@ -264,7 +265,7 @@ const APPS = [
       { label: 'Transport', value: 'WebRTC' },
       { label: 'Access', value: 'Login' },
     ],
-    unsplash: '/assets/harvictrade/apps/harvoice-hero-new.jpg',
+    unsplash: '/assets/harvictrade/apps/harvoice-hero-new.webp',
   },
   {
     id: 'harvyx',
@@ -299,7 +300,7 @@ const APPS = [
       { label: 'Target Markets', value: 'GCC + Global' },
       { label: 'AI-Powered', value: 'Yes' },
     ],
-    unsplash: '/assets/harvictrade/apps/harvyx-hero-new.jpg',
+    unsplash: '/assets/harvictrade/apps/harvyx-hero-new.webp',
   },
   {
     id: 'harvyx-concierge',
@@ -330,7 +331,7 @@ const APPS = [
       { label: 'Input', value: 'Voice + Text' },
       { label: 'Access', value: 'Login' },
     ],
-    unsplash: '/assets/harvictrade/apps/harvyx-concierge-hero.jpg',
+    unsplash: '/assets/harvictrade/apps/harvyx-concierge-hero.webp',
   },
   {
     id: 'hpay',
@@ -447,10 +448,12 @@ function AppCard({ app, locale, onClick }: { app: typeof APPS[0]; locale: string
     >
       {/* Hero Image */}
       <div className="relative h-[200px] overflow-hidden">
-        <img
+        <HarvicsImage
           src={app.unsplash}
           alt={app.name}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          fill
+          sizes={IMAGE_SIZES.card}
+          className="object-cover transition-transform duration-700 group-hover:scale-105"
         />
         <div
           className="absolute inset-0"
@@ -626,7 +629,7 @@ function AppModal({
       >
         {/* Hero */}
         <div className="relative h-[280px] overflow-hidden">
-          <img src={app.unsplash} alt={app.name} className="w-full h-full object-cover" />
+          <HarvicsImage src={app.unsplash} alt={app.name} fill sizes={IMAGE_SIZES.card} className="object-cover" />
           <div
             className="absolute inset-0"
             style={{ background: `linear-gradient(to bottom, transparent 20%, ${app.color}f0 100%)` }}
@@ -895,10 +898,13 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
             onClick={() => setSelectedApp(APPS[0])}
           >
             <div className="absolute inset-0">
-              <img
+              <HarvicsImage
                 src={APPS[0].unsplash}
                 alt="HarvicHR"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                fill
+                sizes={IMAGE_SIZES.heroHalf}
+                priority
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div
                 className="absolute inset-0"

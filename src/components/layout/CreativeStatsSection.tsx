@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useTranslations, useLocale } from 'next-intl'
 import { getFolderBasedCategories } from '@/data/folderBasedProducts'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 function useCountUp(target: number, duration: number, start: boolean) {
   const [count, setCount] = useState(0)
@@ -119,10 +120,12 @@ const CreativeStatsSection: React.FC = () => {
               >
                 {/* Category Image */}
                 <div className="relative h-64 overflow-hidden">
-                  <img 
-                    src={category.image || '/assets/brand/photo/logo.png'} 
+                  <HarvicsImage
+                    src={category.image || '/assets/brand/photo/logo.png'}
                     alt={t(`products.${category.key}`)}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    fill
+                    sizes={IMAGE_SIZES.card}
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300"></div>
                 </div>

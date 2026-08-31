@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { useLocale } from 'next-intl'
 import Image from 'next/image'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 interface NavigationItem {
   id: string
@@ -71,12 +72,14 @@ const FoodMegaMenu: React.FC<FoodMegaMenuProps> = ({ sections, isOpen, onClose }
                     href={`/${locale}${item.href}`}
                     className="flex items-center space-x-4 p-3 hover:bg-white rounded-lg transition-colors group"
                   >
-                    <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 border-2 border-black200 group-hover:border-harvics-burgundy transition-colors">
+                    <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0 border-2 border-black200 group-hover:border-harvics-burgundy transition-colors">
                       {item.image ? (
-                        <img
+                        <HarvicsImage
                           src={item.image}
                           alt={item.label}
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-200"
+                          fill
+                          sizes={IMAGE_SIZES.thumbnailLg}
+                          className="object-cover group-hover:scale-110 transition-transform duration-200"
                         />
                       ) : (
                         <div className="w-full h-full bg-white flex items-center justify-center">

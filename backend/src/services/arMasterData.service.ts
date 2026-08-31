@@ -1,15 +1,10 @@
 /**
- * AR master data — closes Oracle NetSuite gaps: customer master, tax codes, credit admin.
- * Persisted under data/ (survives restarts; no SuiteScript consulting).
+ * AR master data — customer master, tax codes.
+ * PostgreSQL-backed via ArCustomerMaster + ArTaxCode.
  */
-import fs from 'fs';
-import path from 'path';
 import { prisma } from '../core/prisma';
 import { evaluateCredit } from './arCreditCatalog.service';
-
-const DATA_DIR = path.join(process.cwd(), 'data');
-const CUSTOMERS_PATH = path.join(DATA_DIR, 'ar-customers.json');
-const TAX_CODES_PATH = path.join(DATA_DIR, 'ar-tax-codes.json');
+import { ensureFinanceDbSeeded } from './financeDbBootstrap.service';
 
 export type ArCustomerMaster = {
   id: string;
@@ -41,28 +36,6 @@ export type ArTaxCode = {
   type: 'VAT' | 'GST' | 'Sales' | 'Zero';
   active: boolean;
 };
-
-function ensureDir() {
-  if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
-}
-
-function readJson<T>(file: string, seed: T[]): T[] {
-  ensureDir();
-  if (!fs.existsSync(file)) {
-    fs.writeFileSync(file, JSON.stringify(seed, null, 2));
-    return seed;
-  }
-  try {
-    return JSON.parse(fs.readFileSync(file, 'utf8')) as T[];
-  } catch {
-    return seed;
-  }
-}
-
-function writeJson<T>(file: string, rows: T[]) {
-  ensureDir();
-  fs.writeFileSync(file, JSON.stringify(rows, null, 2));
-}
 
 const SEED_CUSTOMERS: ArCustomerMaster[] = [
   {
@@ -107,48 +80,173 @@ const SEED_TAX: ArTaxCode[] = [
   { id: 'tax-pk-gst', code: 'GST-PK-17', name: 'Pakistan GST 17%', rate: 17, country: 'PK', type: 'GST', active: true },
 ];
 
-export function listCustomerMaster(): ArCustomerMaster[] {
-  return readJson(CUSTOMERS_PATH, SEED_CUSTOMERS).filter((c) => c.active !== false);
-}
-
-export function getCustomerMaster(idOrCode: string): ArCustomerMaster | null {
-  const key = idOrCode.toLowerCase();
-  return (
-    listCustomerMaster().find(
-      (c) => c.id.toLowerCase() === key || c.code.toLowerCase() === key || c.name.toLowerCase() === key,
-    ) || null
-  );
-}
-
-export function upsertCustomerMaster(input: Partial<ArCustomerMaster> & { name: string }): ArCustomerMaster {
-  const rows = readJson<ArCustomerMaster>(CUSTOMERS_PATH, SEED_CUSTOMERS);
-  const id = input.id || `cust-${Date.now().toString(36)}`;
-  const idx = rows.findIndex((r) => r.id === id || (input.code && r.code === input.code));
-  const row: ArCustomerMaster = {
-    id: idx >= 0 ? rows[idx].id : id,
-    code: String(input.code || rows[idx]?.code || `C-${rows.length + 1}`),
-    name: String(input.name),
-    legalName: input.legalName || rows[idx]?.legalName,
-    billToLine1: input.billToLine1 || rows[idx]?.billToLine1,
-    billToLine2: input.billToLine2 || rows[idx]?.billToLine2,
-    city: input.city || rows[idx]?.city,
-    country: input.country || rows[idx]?.country || 'AE',
-    postalCode: input.postalCode || rows[idx]?.postalCode,
-    vatNumber: input.vatNumber || rows[idx]?.vatNumber,
-    taxId: input.taxId || rows[idx]?.taxId,
-    contactEmail: input.contactEmail || rows[idx]?.contactEmail,
-    contactPhone: input.contactPhone || rows[idx]?.contactPhone,
-    paymentTerms: String(input.paymentTerms || rows[idx]?.paymentTerms || 'Net 30'),
-    currency: String(input.currency || rows[idx]?.currency || 'USD'),
-    creditLimit: Number(input.creditLimit ?? rows[idx]?.creditLimit ?? 100000),
-    active: input.active !== false,
-    updatedAt: new Date().toISOString(),
+function mapCustomer(row: {
+  id: string;
+  code: string;
+  name: string;
+  legalName: string | null;
+  billToLine1: string | null;
+  billToLine2: string | null;
+  city: string | null;
+  country: string | null;
+  postalCode: string | null;
+  vatNumber: string | null;
+  taxId: string | null;
+  contactEmail: string | null;
+  contactPhone: string | null;
+  paymentTerms: string;
+  currency: string;
+  creditLimit: number;
+  active: boolean;
+  updatedAt: Date;
+}): ArCustomerMaster {
+  return {
+    id: row.id,
+    code: row.code,
+    name: row.name,
+    legalName: row.legalName || undefined,
+    billToLine1: row.billToLine1 || undefined,
+    billToLine2: row.billToLine2 || undefined,
+    city: row.city || undefined,
+    country: row.country || undefined,
+    postalCode: row.postalCode || undefined,
+    vatNumber: row.vatNumber || undefined,
+    taxId: row.taxId || undefined,
+    contactEmail: row.contactEmail || undefined,
+    contactPhone: row.contactPhone || undefined,
+    paymentTerms: row.paymentTerms,
+    currency: row.currency,
+    creditLimit: row.creditLimit,
+    active: row.active,
+    updatedAt: row.updatedAt.toISOString(),
   };
-  if (idx >= 0) rows[idx] = row;
-  else rows.push(row);
-  writeJson(CUSTOMERS_PATH, rows);
-  void syncCustomerToPrisma(row);
-  return row;
+}
+
+function mapTax(row: {
+  id: string;
+  code: string;
+  name: string;
+  rate: number;
+  country: string;
+  type: string;
+  active: boolean;
+}): ArTaxCode {
+  return {
+    id: row.id,
+    code: row.code,
+    name: row.name,
+    rate: row.rate,
+    country: row.country,
+    type: row.type as ArTaxCode['type'],
+    active: row.active,
+  };
+}
+
+async function seedDefaultsIfEmpty() {
+  await ensureFinanceDbSeeded();
+  if ((await prisma.arCustomerMaster.count()) === 0) {
+    for (const c of SEED_CUSTOMERS) {
+      await prisma.arCustomerMaster.create({
+        data: {
+          id: c.id,
+          code: c.code,
+          name: c.name,
+          legalName: c.legalName || null,
+          billToLine1: c.billToLine1 || null,
+          billToLine2: c.billToLine2 || null,
+          city: c.city || null,
+          country: c.country || null,
+          postalCode: c.postalCode || null,
+          vatNumber: c.vatNumber || null,
+          contactEmail: c.contactEmail || null,
+          paymentTerms: c.paymentTerms,
+          currency: c.currency,
+          creditLimit: c.creditLimit,
+        },
+      });
+    }
+  }
+  if ((await prisma.arTaxCode.count()) === 0) {
+    for (const t of SEED_TAX) {
+      await prisma.arTaxCode.create({ data: t });
+    }
+  }
+}
+
+export async function listCustomerMaster(): Promise<ArCustomerMaster[]> {
+  await seedDefaultsIfEmpty();
+  const rows = await prisma.arCustomerMaster.findMany({ where: { active: true }, orderBy: { name: 'asc' } });
+  return rows.map(mapCustomer);
+}
+
+export async function getCustomerMaster(idOrCode: string): Promise<ArCustomerMaster | null> {
+  await seedDefaultsIfEmpty();
+  const key = idOrCode.toLowerCase();
+  const row = await prisma.arCustomerMaster.findFirst({
+    where: {
+      active: true,
+      OR: [
+        { id: idOrCode },
+        { code: { equals: idOrCode, mode: 'insensitive' } },
+        { name: { equals: idOrCode, mode: 'insensitive' } },
+      ],
+    },
+  });
+  if (row) return mapCustomer(row);
+  const all = await listCustomerMaster();
+  return all.find((c) => c.name.toLowerCase() === key) || null;
+}
+
+export async function upsertCustomerMaster(input: Partial<ArCustomerMaster> & { name: string }): Promise<ArCustomerMaster> {
+  await seedDefaultsIfEmpty();
+  const id = input.id || `cust-${Date.now().toString(36)}`;
+  const existing = input.code
+    ? await prisma.arCustomerMaster.findFirst({ where: { code: input.code } })
+    : await prisma.arCustomerMaster.findUnique({ where: { id } });
+
+  const row = await prisma.arCustomerMaster.upsert({
+    where: { id: existing?.id || id },
+    create: {
+      id,
+      code: String(input.code || `C-${Date.now()}`),
+      name: String(input.name),
+      legalName: input.legalName || null,
+      billToLine1: input.billToLine1 || null,
+      billToLine2: input.billToLine2 || null,
+      city: input.city || null,
+      country: input.country || 'AE',
+      postalCode: input.postalCode || null,
+      vatNumber: input.vatNumber || null,
+      taxId: input.taxId || null,
+      contactEmail: input.contactEmail || null,
+      contactPhone: input.contactPhone || null,
+      paymentTerms: String(input.paymentTerms || 'Net 30'),
+      currency: String(input.currency || 'USD'),
+      creditLimit: Number(input.creditLimit ?? 100000),
+      active: input.active !== false,
+    },
+    update: {
+      name: String(input.name),
+      legalName: input.legalName,
+      billToLine1: input.billToLine1,
+      billToLine2: input.billToLine2,
+      city: input.city,
+      country: input.country,
+      postalCode: input.postalCode,
+      vatNumber: input.vatNumber,
+      taxId: input.taxId,
+      contactEmail: input.contactEmail,
+      contactPhone: input.contactPhone,
+      paymentTerms: input.paymentTerms ? String(input.paymentTerms) : undefined,
+      currency: input.currency ? String(input.currency) : undefined,
+      creditLimit: input.creditLimit != null ? Number(input.creditLimit) : undefined,
+      active: input.active !== false,
+    },
+  });
+
+  const mapped = mapCustomer(row);
+  void syncCustomerToPrisma(mapped);
+  return mapped;
 }
 
 async function syncCustomerToPrisma(row: ArCustomerMaster) {
@@ -208,9 +306,8 @@ async function syncCustomerToPrisma(row: ArCustomerMaster) {
 }
 
 export async function setCustomerCreditLimit(customerName: string, approvedLimit: number, approvedBy?: string) {
-  const row = getCustomerMaster(customerName) || upsertCustomerMaster({ name: customerName, creditLimit: approvedLimit });
-  row.creditLimit = approvedLimit;
-  upsertCustomerMaster(row);
+  const row = (await getCustomerMaster(customerName)) || (await upsertCustomerMaster({ name: customerName, creditLimit: approvedLimit }));
+  await upsertCustomerMaster({ ...row, creditLimit: approvedLimit });
   try {
     const customer = await prisma.customer.findFirst({
       where: { name: { equals: customerName, mode: 'insensitive' } },
@@ -242,40 +339,56 @@ export async function setCustomerCreditLimit(customerName: string, approvedLimit
   return evaluateCredit(customerName, 0);
 }
 
-export function listTaxCodes(): ArTaxCode[] {
-  return readJson(TAX_CODES_PATH, SEED_TAX).filter((t) => t.active !== false);
+export async function listTaxCodes(): Promise<ArTaxCode[]> {
+  await seedDefaultsIfEmpty();
+  const rows = await prisma.arTaxCode.findMany({ where: { active: true }, orderBy: { code: 'asc' } });
+  return rows.map(mapTax);
 }
 
-export function getTaxCode(code: string): ArTaxCode | null {
-  const key = code.toLowerCase();
-  return listTaxCodes().find((t) => t.code.toLowerCase() === key || t.id.toLowerCase() === key) || null;
+export async function getTaxCode(code: string): Promise<ArTaxCode | null> {
+  await seedDefaultsIfEmpty();
+  const row = await prisma.arTaxCode.findFirst({
+    where: {
+      active: true,
+      OR: [{ code: { equals: code, mode: 'insensitive' } }, { id: code }],
+    },
+  });
+  return row ? mapTax(row) : null;
 }
 
-/** Default tax code for a customer country (SuiteTax-lite). */
-export function getTaxCodeForCountry(country?: string): ArTaxCode | null {
-  const codes = listTaxCodes();
-  if (!country) return getTaxCode('ZERO') || codes[0] || null;
+export async function getTaxCodeForCountry(country?: string): Promise<ArTaxCode | null> {
+  const codes = await listTaxCodes();
+  if (!country) return (await getTaxCode('ZERO')) || codes[0] || null;
   const key = country.toUpperCase();
-  return codes.find((t) => t.country === key) || codes.find((t) => t.country === '*') || getTaxCode('ZERO');
+  return codes.find((t) => t.country === key) || codes.find((t) => t.country === '*') || (await getTaxCode('ZERO'));
 }
 
-export function upsertTaxCode(input: Partial<ArTaxCode> & { code: string; name: string; rate: number }): ArTaxCode {
-  const rows = readJson<ArTaxCode>(TAX_CODES_PATH, SEED_TAX);
+export async function upsertTaxCode(input: Partial<ArTaxCode> & { code: string; name: string; rate: number }): Promise<ArTaxCode> {
+  await seedDefaultsIfEmpty();
   const id = input.id || `tax-${Date.now().toString(36)}`;
-  const idx = rows.findIndex((r) => r.code === input.code || r.id === id);
-  const row: ArTaxCode = {
-    id: idx >= 0 ? rows[idx].id : id,
-    code: String(input.code),
-    name: String(input.name),
-    rate: Number(input.rate) || 0,
-    country: String(input.country || rows[idx]?.country || '*'),
-    type: (input.type as ArTaxCode['type']) || rows[idx]?.type || 'VAT',
-    active: input.active !== false,
-  };
-  if (idx >= 0) rows[idx] = row;
-  else rows.push(row);
-  writeJson(TAX_CODES_PATH, rows);
-  return row;
+  const existing = await prisma.arTaxCode.findFirst({
+    where: { OR: [{ code: input.code }, { id }] },
+  });
+  const row = await prisma.arTaxCode.upsert({
+    where: { id: existing?.id || id },
+    create: {
+      id,
+      code: String(input.code),
+      name: String(input.name),
+      rate: Number(input.rate) || 0,
+      country: String(input.country || '*'),
+      type: String(input.type || 'VAT'),
+      active: input.active !== false,
+    },
+    update: {
+      name: String(input.name),
+      rate: Number(input.rate) || 0,
+      country: input.country ? String(input.country) : undefined,
+      type: input.type ? String(input.type) : undefined,
+      active: input.active !== false,
+    },
+  });
+  return mapTax(row);
 }
 
 export function billToFromCustomer(c: ArCustomerMaster): string {

@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useLocale } from 'next-intl'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 /**
  * Trial 08 — HarvicTrade marketplace gate.
@@ -11,11 +12,12 @@ export default function HarvicTradeGateSection() {
 
   return (
     <section className="relative flex min-h-[70vh] items-center overflow-hidden bg-harvics-burgundy" id="market">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src="/assets/shared/heroes/harvictrade-marketplace.jpg"
-        alt=""
-        className="absolute inset-0 h-full w-full object-cover brightness-50"
+      <HarvicsImage
+        src="/assets/shared/heroes/harvictrade-marketplace.webp"
+        alt="HarvicTrade marketplace"
+        fill
+        sizes={IMAGE_SIZES.hero}
+        className="object-cover brightness-50"
       />
       <div
         className="absolute inset-0"

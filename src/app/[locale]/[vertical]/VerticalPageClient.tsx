@@ -6,9 +6,10 @@ import { slugify, type NavVertical } from '@/data/megaMenuData'
 import { getVerticalProducts, getVerticalSubcategories, getSubcategoryProducts, getProductImage, type Product } from '@/data/productCatalog'
 import { getVerticalLanding, getAllCategoryDescriptions } from '@/data/verticalDescriptions'
 import SmartImage from '@/components/ui/SmartImage'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 import PresentationAccessBanner from '@/components/presentations/PresentationAccessBanner'
 import TabraizTownProjectBanner from '@/components/real-estate/TabraizTownProjectBanner'
-import EnergiesInitiativeBanner from '@/components/energies/EnergiesInitiativeBanner'
+import TextileCinematicHero from '@/components/verticals/TextileCinematicHero'
 
 /* ───── Intersection Observer Hook ───── */
 function useInView(threshold = 0.2) {
@@ -215,26 +216,32 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
 
   return (
     <main className="min-h-screen" style={{ background: '#ffffff' }}>
-      {/* ═══════ HERO — full-bleed auto-slider (no floating cards) ═══════ */}
+      {/* ═══════ HERO — textiles cinematic video; others use image slider ═══════ */}
+      {vertical.key === 'textiles' ? (
+        <TextileCinematicHero
+          locale={locale}
+          label={vertical.label}
+          tagline={meta.tagline || 'Apparel, Fabrics & Home Textiles'}
+        />
+      ) : (
       <section
         ref={heroSection.ref}
         className="relative min-h-[72vh] overflow-hidden border-b border-harvics-gold/30 md:min-h-[78vh]"
       >
         {heroSlides.map((src, i) => (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <HarvicsImage
             key={src}
             src={src}
-            alt=""
-            className="absolute inset-0 h-full w-full object-cover"
+            alt={vertical.label}
+            fill
+            sizes={IMAGE_SIZES.hero}
+            priority={i === 0}
+            className="object-cover"
             style={{
               opacity: i === heroIndex ? 1 : 0,
               transform: i === heroIndex ? 'scale(1)' : 'scale(1.05)',
               transition: 'opacity 1.15s ease, transform 7s ease',
             }}
-            loading={i === 0 ? 'eager' : 'lazy'}
-            decoding="async"
-            aria-hidden={i !== heroIndex}
           />
         ))}
         <div
@@ -305,6 +312,7 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
           </div>
         </div>
       </section>
+      )}
 
       {/* Landmark upcoming project — Real Estate only */}
       {vertical.key === 'real-estate' && (
@@ -481,12 +489,12 @@ const VerticalPageClient: React.FC<VerticalPageClientProps> = ({ vertical, local
                   {/* Image */}
                   <div className="relative h-[200px] bg-white border-b border-harvics-gold/10 overflow-hidden">
                     {hasValidImage ? (
-                      <img
+                      <HarvicsImage
                         src={existingImage}
                         alt={product.name}
-                        className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                        loading="lazy"
-                        onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; (e.target as HTMLImageElement).parentElement!.innerHTML = '<span class="absolute inset-0 flex items-center justify-center text-5xl opacity-20">📦</span>' }}
+                        fill
+                        sizes={IMAGE_SIZES.productGrid}
+                        className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                       />
                     ) : (
                       <SmartImage

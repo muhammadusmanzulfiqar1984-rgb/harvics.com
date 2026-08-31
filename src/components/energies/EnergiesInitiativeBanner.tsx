@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useLocale } from 'next-intl'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 export default function EnergiesInitiativeBanner() {
   const locale = useLocale()
@@ -9,10 +10,12 @@ export default function EnergiesInitiativeBanner() {
   return (
     <section className="relative overflow-hidden mb-14 border border-harvics-gold/25 bg-harvics-burgundy">
       <div className="absolute inset-0">
-        <img
+        <HarvicsImage
           src="/assets/energies/hero-complex.png"
-          alt=""
-          className="h-full w-full object-cover opacity-40"
+          alt="Renewable fuels complex"
+          fill
+          sizes={IMAGE_SIZES.hero}
+          className="object-cover opacity-40"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-harvics-burgundy via-harvics-burgundy/90 to-harvics-burgundy/45" />
       </div>

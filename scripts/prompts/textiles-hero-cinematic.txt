@@ -1,0 +1,19 @@
+Use case: luxury textile house hero reel, 5 seconds, 16:9
+Primary request: classical European luxury fashion film — tactile, physical, cinematic, expensive. Not tech, not ecommerce stock.
+
+Scene beats (single continuous shot, no cuts):
+0–2s: extreme macro close-up of premium woven ivory and natural fabric. Slow horizontal dolly across fine threads, visible weave texture, gentle organic movement in soft breeze.
+2–4s: seamless transition from macro textile into refined atelier — skilled hands finishing a premium garment hem (hands only, no faces). Warm side daylight, shallow depth of field.
+4–5s: slow cinematic pull-back revealing a beautifully finished coat or dress hanging on a wooden hanger in a quiet European textile atelier. Cream walls, deep burgundy accent fabric in background, brushed gold light catch on hardware.
+
+Camera: 35mm cinematic lens, very shallow depth of field, slow controlled dolly, natural motion blur, subtle rack focus. No abrupt cuts, no artificial zoom, no drone.
+
+Lighting: warm natural daylight, soft shadows, elegant fabric highlights, slight atmospheric depth, luxury editorial fashion photography.
+
+Color palette: warm ivory cream, deep burgundy accents, subtle brushed gold, natural sophisticated fabric tones.
+
+Mood: European luxury fashion house, heritage textile craftsmanship, modern global manufacturing.
+
+Constraints: no on-screen text, no logos, no UI, no statistics, no buttons, no faces visible, no runway, no neon, no cyberpunk, no 3D icons, no particles, no dashboards, no fast cuts, no plastic-looking fabric, no AI-looking people, no stock footage clichés.
+
+Avoid: cheap commercial aesthetics, generic fashion b-roll, synthetic CGI sheen.

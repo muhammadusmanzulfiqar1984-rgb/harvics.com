@@ -43,6 +43,7 @@ export default function ArInvoiceDocumentPage() {
   const [postToGl, setPostToGl] = useState(true)
   const [sendEmail, setSendEmail] = useState('')
   const [payLinkBusy, setPayLinkBusy] = useState(false)
+  const [dunning, setDunning] = useState<any>(null)
 
   const load = useCallback(async () => {
     if (!id) return
@@ -52,6 +53,8 @@ export default function ArInvoiceDocumentPage() {
       const r = await api(`/api/finance/invoices/${id}`)
       setDoc(r.data)
       if (r.data?.outstanding != null) setPayAmount(String(r.data.outstanding))
+      const d = await api(`/api/finance/invoices/${id}/dunning`).catch(() => null)
+      if (d?.data) setDunning(d.data)
     } catch (e: any) {
       setError(e.message || 'Failed to load invoice')
     } finally {
@@ -208,6 +211,20 @@ export default function ArInvoiceDocumentPage() {
     }
   }
 
+  const sendDunning = async () => {
+    try {
+      setError('')
+      const r = await api(`/api/finance/invoices/${id}/dunning/send`, {
+        method: 'POST',
+        body: JSON.stringify({ toEmail: sendEmail.trim() || undefined }),
+      })
+      setMessage(r.message || `Dunning L${r.dunning?.stage?.stage} sent`)
+      await load()
+    } catch (e: any) {
+      setError(e.message)
+    }
+  }
+
   const downloadPdf = () => {
     const token = localStorage.getItem('auth_token') || 'demo-token-hq'
     void (async () => {
@@ -351,18 +368,33 @@ export default function ArInvoiceDocumentPage() {
               >
                 Send via Resend
               </button>
+              {dunning?.eligible && dunning?.nextStage ? (
+                <button
+                  type="button"
+                  onClick={() => void sendDunning()}
+                  className="border border-harvics-cream/40 bg-harvics-cream/10 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.12em]"
+                >
+                  Dunning L{dunning.nextStage.stage}
+                </button>
+              ) : null}
             </div>
           )}
         </div>
 
         {error ? <div className="no-print border border-red-300 bg-red-50 px-4 py-3 text-sm text-red-800">{error}</div> : null}
         {message ? <div className="no-print border border-harvics-gold/40 bg-harvics-cream px-4 py-3 text-sm">{message}</div> : null}
-        {!loading && doc && (meta.sentAt || meta.payLinkUrl) ? (
+        {!loading && doc && (meta.sentAt || meta.payLinkUrl || meta.dunning?.history?.length) ? (
           <div className="no-print flex flex-wrap gap-3 border border-harvics-burgundy/15 bg-white px-4 py-3 text-[12px]">
             {meta.sentAt ? (
               <span>
                 Sent {new Date(meta.sentAt).toLocaleString()} → {meta.sentTo}
                 {meta.sendCount > 1 ? ` (${meta.sendCount}×)` : ''}
+              </span>
+            ) : null}
+            {meta.dunning?.history?.length ? (
+              <span>
+                Dunning: L{meta.dunning.lastStage} · {meta.dunning.history.length} letter(s)
+                {meta.dunning.lastSentAt ? ` · last ${new Date(meta.dunning.lastSentAt).toLocaleDateString()}` : ''}
               </span>
             ) : null}
             {meta.payLinkUrl ? (

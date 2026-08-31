@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useLocale } from 'next-intl'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -186,13 +187,13 @@ export default function IndustriesHScrollSection() {
                 href={`/${locale}/harvictrade/category/${item.slug}`}
                 className="relative h-full w-[min(78vw,300px)] flex-none overflow-hidden bg-[#111] md:w-[min(38vw,480px)]"
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <HarvicsImage
                   src={item.img}
                   alt={item.name}
-                  loading="eager"
-                  decoding="async"
-                  className="h-full w-full object-cover brightness-[0.68]"
+                  fill
+                  sizes={IMAGE_SIZES.card}
+                  priority
+                  className="object-cover brightness-[0.68]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6 z-[2]">

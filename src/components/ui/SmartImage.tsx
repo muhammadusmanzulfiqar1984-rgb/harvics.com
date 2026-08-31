@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react'
 import { getLeafImage } from '@/data/leafImageMap'
 import { resolveFashionImage } from '@/data/fashionTextilesImages'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 interface SmartImageProps {
   src?: string
@@ -17,6 +18,11 @@ interface SmartImageProps {
   fallbackSrc?: string
   showSkeleton?: boolean
   style?: React.CSSProperties
+  fill?: boolean
+  width?: number
+  height?: number
+  sizes?: string
+  priority?: boolean
 }
 
 /**
@@ -32,10 +38,14 @@ const SmartImage: React.FC<SmartImageProps> = ({
   fallbackSrc = 'https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=800&h=600&fit=crop&q=70',
   showSkeleton = true,
   style,
+  fill = false,
+  width,
+  height,
+  sizes,
+  priority = false,
 }) => {
   const [imageSrc, setImageSrc] = useState<string | null>(src || null)
   const [isLoading, setIsLoading] = useState(!src)
-  const [hasError, setHasError] = useState(false)
 
   // Static Unsplash image map for reliable loading — all 10 verticals
   const PRODUCT_IMAGES: Record<string, string> = {
@@ -49,64 +59,64 @@ const SmartImage: React.FC<SmartImageProps> = ({
     'polyester': 'https://images.unsplash.com/photo-1528459105426-b9548367069b?w=800&h=800&fit=crop&auto=format&q=60',
     'blends': 'https://images.unsplash.com/photo-1528459105426-b9548367069b?w=800&h=800&fit=crop&auto=format&q=60',
     'curtains': 'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&h=800&fit=crop&auto=format&q=60',
-    'shirt': '/assets/harvictrade/products/fashion/textiles/mens.jpg',
+    'shirt': '/assets/harvictrade/products/fashion/textiles/mens.webp',
     'silk': 'https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=800&h=800&fit=crop&auto=format&q=60',
     'scarf': 'https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?w=800&h=800&fit=crop&auto=format&q=60',
-    'denim': '/assets/harvictrade/products/fashion/textiles/denim.jpg',
-    'jeans': '/assets/harvictrade/products/fashion/textiles/denim.jpg',
+    'denim': '/assets/harvictrade/products/fashion/textiles/denim.webp',
+    'jeans': '/assets/harvictrade/products/fashion/textiles/denim.webp',
     'linen': 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&h=800&fit=crop&auto=format&q=60',
-    'dress': '/assets/harvictrade/products/fashion/textiles/ladies.jpg',
+    'dress': '/assets/harvictrade/products/fashion/textiles/ladies.webp',
     'sweater': 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&h=800&fit=crop&auto=format&q=60',
     'leather': 'https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&h=800&fit=crop&auto=format&q=60',
     'jacket': 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&h=800&fit=crop&auto=format&q=60',
-    'textile': '/assets/harvictrade/products/fashion/textiles/ladies.jpg',
-    'fabric': '/assets/harvictrade/products/fashion/textiles/home.jpg',
-    'menswear': '/assets/harvictrade/products/fashion/textiles/mens.jpg',
-    'womenswear': '/assets/harvictrade/products/fashion/textiles/ladies.jpg',
-    'mens wear': '/assets/harvictrade/products/fashion/textiles/mens.jpg',
-    'ladies wear': '/assets/harvictrade/products/fashion/textiles/ladies.jpg',
-    'kids wear': '/assets/harvictrade/products/fashion/textiles/kids.jpg',
-    'sportswear': '/assets/harvictrade/products/fashion/textiles/sportswear.jpg',
-    'swimwear': '/assets/harvictrade/products/fashion/textiles/swim.jpg',
-    'swimsuit': '/assets/harvictrade/products/fashion/textiles/swim.jpg',
-    'bikini': '/assets/harvictrade/products/fashion/textiles/swim.jpg',
-    'yoga': '/assets/harvictrade/products/fashion/textiles/active.jpg',
-    'sports wear': '/assets/harvictrade/products/fashion/textiles/sportswear.jpg',
-    'activewear': '/assets/harvictrade/products/fashion/textiles/sportswear.jpg',
-    'lingerie': '/assets/harvictrade/products/fashion/textiles/lingerie.jpg',
-    'sports-bra': '/assets/harvictrade/products/fashion/textiles/sports-bra.jpg',
-    'underwear': '/assets/harvictrade/products/fashion/textiles/mens-underwear.jpg',
-    'socks': '/assets/harvictrade/products/fashion/textiles/socks.jpg',
-    'hosiery': '/assets/harvictrade/products/fashion/textiles/hosiery.jpg',
-    'shapewear': '/assets/harvictrade/products/fashion/textiles/shapewear.jpg',
-    'briefs': '/assets/harvictrade/products/fashion/textiles/panties.jpg',
-    'panties': '/assets/harvictrade/products/fashion/textiles/panties.jpg',
-    'bra': '/assets/harvictrade/products/fashion/textiles/bra.jpg',
-    'nightwear': '/assets/harvictrade/products/fashion/textiles/robe-model.jpg',
-    'nightgown': '/assets/harvictrade/products/fashion/textiles/robe-model.jpg',
-    'home textiles': '/assets/harvictrade/products/fashion/textiles/home.jpg',
-    'bed linen': '/assets/harvictrade/products/fashion/textiles/home.jpg',
-    'bath linen': '/assets/harvictrade/products/fashion/textiles/home.jpg',
-    'suit': '/assets/harvictrade/products/fashion/textiles/suits.jpg',
-    'denim': '/assets/harvictrade/products/fashion/textiles/denim.jpg',
-    'jeans': '/assets/harvictrade/products/fashion/textiles/denim.jpg',
-    'gown': '/assets/harvictrade/products/fashion/textiles/gown.jpg',
-    'dress': '/assets/harvictrade/products/fashion/textiles/ladies.jpg',
-    'boy': '/assets/harvictrade/products/fashion/textiles/boys.jpg',
-    'girl': '/assets/harvictrade/products/fashion/textiles/girls.jpg',
-    'kids': '/assets/harvictrade/products/fashion/textiles/kids.jpg',
-    'men': '/assets/harvictrade/products/fashion/textiles/mens.jpg',
-    'women': '/assets/harvictrade/products/fashion/textiles/ladies.jpg',
-    'polo': '/assets/harvictrade/products/fashion/textiles/boys.jpg',
-    'blazer': '/assets/harvictrade/products/fashion/textiles/suits.jpg',
+    'textile': '/assets/harvictrade/products/fashion/textiles/ladies.webp',
+    'fabric': '/assets/harvictrade/products/fashion/textiles/home.webp',
+    'menswear': '/assets/harvictrade/products/fashion/textiles/mens.webp',
+    'womenswear': '/assets/harvictrade/products/fashion/textiles/ladies.webp',
+    'mens wear': '/assets/harvictrade/products/fashion/textiles/mens.webp',
+    'ladies wear': '/assets/harvictrade/products/fashion/textiles/ladies.webp',
+    'kids wear': '/assets/harvictrade/products/fashion/textiles/kids.webp',
+    'sportswear': '/assets/harvictrade/products/fashion/textiles/sportswear.webp',
+    'swimwear': '/assets/harvictrade/products/fashion/textiles/swim.webp',
+    'swimsuit': '/assets/harvictrade/products/fashion/textiles/swim.webp',
+    'bikini': '/assets/harvictrade/products/fashion/textiles/swim.webp',
+    'yoga': '/assets/harvictrade/products/fashion/textiles/active.webp',
+    'sports wear': '/assets/harvictrade/products/fashion/textiles/sportswear.webp',
+    'activewear': '/assets/harvictrade/products/fashion/textiles/sportswear.webp',
+    'lingerie': '/assets/harvictrade/products/fashion/textiles/lingerie.webp',
+    'sports-bra': '/assets/harvictrade/products/fashion/textiles/sports-bra.webp',
+    'underwear': '/assets/harvictrade/products/fashion/textiles/mens-underwear.webp',
+    'socks': '/assets/harvictrade/products/fashion/textiles/socks.webp',
+    'hosiery': '/assets/harvictrade/products/fashion/textiles/hosiery.webp',
+    'shapewear': '/assets/harvictrade/products/fashion/textiles/shapewear.webp',
+    'briefs': '/assets/harvictrade/products/fashion/textiles/panties.webp',
+    'panties': '/assets/harvictrade/products/fashion/textiles/panties.webp',
+    'bra': '/assets/harvictrade/products/fashion/textiles/bra.webp',
+    'nightwear': '/assets/harvictrade/products/fashion/textiles/robe-model.webp',
+    'nightgown': '/assets/harvictrade/products/fashion/textiles/robe-model.webp',
+    'home textiles': '/assets/harvictrade/products/fashion/textiles/home.webp',
+    'bed linen': '/assets/harvictrade/products/fashion/textiles/home.webp',
+    'bath linen': '/assets/harvictrade/products/fashion/textiles/home.webp',
+    'suit': '/assets/harvictrade/products/fashion/textiles/suits.webp',
+    'denim': '/assets/harvictrade/products/fashion/textiles/denim.webp',
+    'jeans': '/assets/harvictrade/products/fashion/textiles/denim.webp',
+    'gown': '/assets/harvictrade/products/fashion/textiles/gown.webp',
+    'dress': '/assets/harvictrade/products/fashion/textiles/ladies.webp',
+    'boy': '/assets/harvictrade/products/fashion/textiles/boys.webp',
+    'girl': '/assets/harvictrade/products/fashion/textiles/girls.webp',
+    'kids': '/assets/harvictrade/products/fashion/textiles/kids.webp',
+    'men': '/assets/harvictrade/products/fashion/textiles/mens.webp',
+    'women': '/assets/harvictrade/products/fashion/textiles/ladies.webp',
+    'polo': '/assets/harvictrade/products/fashion/textiles/boys.webp',
+    'blazer': '/assets/harvictrade/products/fashion/textiles/suits.webp',
     'overcoat': 'https://images.unsplash.com/photo-1544923408-75c5cef46f14?w=800&h=800&fit=crop&auto=format&q=60',
-    'blouse': '/assets/harvictrade/products/fashion/textiles/blouse.jpg',
+    'blouse': '/assets/harvictrade/products/fashion/textiles/blouse.webp',
     'handbag': 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&h=800&fit=crop&auto=format&q=60',
     'hoodie': 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&h=800&fit=crop&auto=format&q=60',
     'sneakers': 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=800&fit=crop&auto=format&q=60',
     'boots': 'https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=800&h=800&fit=crop&auto=format&q=60',
-    'bedsheet': '/assets/harvictrade/products/fashion/textiles/home.jpg',
-    'towel': '/assets/harvictrade/products/fashion/textiles/home.jpg',
+    'bedsheet': '/assets/harvictrade/products/fashion/textiles/home.webp',
+    'towel': '/assets/harvictrade/products/fashion/textiles/home.webp',
     'cushion': 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=800&fit=crop&auto=format&q=60',
     'curtain': 'https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&h=800&fit=crop&auto=format&q=60',
     'chinos': 'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=800&h=800&fit=crop&auto=format&q=60',
@@ -114,7 +124,7 @@ const SmartImage: React.FC<SmartImageProps> = ({
     'knitwear': 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=800&h=800&fit=crop&auto=format&q=60',
     // men/women/fashion: keep local textiles model shots (defined above) — do not overwrite with Unsplash
     'wool': 'https://images.unsplash.com/photo-1520903920243-00d872a2d1c9?w=800&h=800&fit=crop&auto=format&q=60',
-    'fashion': '/assets/harvictrade/products/fashion/textiles/ladies.jpg',
+    'fashion': '/assets/harvictrade/products/fashion/textiles/ladies.webp',
     'technical': 'https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?w=800&h=800&fit=crop&auto=format&q=60',
     'pack': 'https://images.unsplash.com/photo-1523381294911-8d3cead13475?w=800&h=800&fit=crop&auto=format&q=60',
     'school': 'https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=800&h=800&fit=crop&auto=format&q=60',
@@ -498,19 +508,17 @@ const SmartImage: React.FC<SmartImageProps> = ({
   }
 
   return (
-    <img
+    <HarvicsImage
       src={imageSrc || fallbackSrc}
       alt={alt}
       className={className}
       style={style}
-      onError={() => {
-        if (!hasError) {
-          setHasError(true)
-          setImageSrc(fallbackSrc)
-        }
-      }}
-      loading="lazy"
-      decoding="async"
+      fill={fill}
+      width={width}
+      height={height}
+      sizes={sizes ?? (fill ? IMAGE_SIZES.card : IMAGE_SIZES.product)}
+      priority={priority}
+      fallbackSrc={fallbackSrc}
     />
   )
 }

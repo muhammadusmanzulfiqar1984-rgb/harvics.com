@@ -55,6 +55,7 @@ function RelatedFinanceLinks({ locale }: { locale: string }) {
     { href: `/${locale}/os/treasury-banking`, label: 'Module #5 · Treasury' },
     { href: `/${locale}/os/payment-runs`, label: 'Module #6 · HPay' },
     { href: `/${locale}/os/budgets`, label: 'Module #7 · Planning' },
+    { href: `/${locale}/os/finance/global-house`, label: 'Global House · Multi-entity' },
   ]
   return (
     <div className="p-6 space-y-3">

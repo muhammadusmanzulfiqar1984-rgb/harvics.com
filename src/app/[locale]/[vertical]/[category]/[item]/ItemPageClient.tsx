@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import SmartImage from '@/components/ui/SmartImage'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 import ImageCarousel from '@/components/ui/ImageCarousel'
 
 const verticalFallbackSlides: Record<string, string[]> = {
@@ -69,12 +70,12 @@ function ImageZoomLightbox({ src, alt, useSmartImage, keyword }: { src: string; 
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
         ) : (
-          <img
+          <HarvicsImage
             src={src}
             alt={alt}
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-            loading="lazy"
-            onError={(e) => { (e.target as HTMLImageElement).src = '/assets/brand/photo/logo.png' }}
+            fill
+            sizes={IMAGE_SIZES.product}
+            className="object-cover transition-transform duration-500 group-hover:scale-110"
           />
         )}
         {/* Zoom icon overlay */}
@@ -102,9 +103,12 @@ function ImageZoomLightbox({ src, alt, useSmartImage, keyword }: { src: string; 
                 style={{ animation: 'zoomIn 0.3s ease-out' }}
               />
             ) : (
-              <img
+              <HarvicsImage
                 src={src}
                 alt={alt}
+                width={1100}
+                height={800}
+                sizes={IMAGE_SIZES.lightbox}
                 className="max-w-full max-h-[85vh] object-contain"
                 style={{ animation: 'zoomIn 0.3s ease-out' }}
               />

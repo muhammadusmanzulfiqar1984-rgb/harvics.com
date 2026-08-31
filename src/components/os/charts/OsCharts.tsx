@@ -6,7 +6,7 @@
  * No blue / purple / indigo.
  */
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   Area,
   AreaChart,
@@ -59,6 +59,17 @@ export const OS_AGING = [
   { key: 'd90', label: '61–90 days', color: '#6B3A3A' },
   { key: 'd90plus', label: '90+ days', color: OS.burgundy },
 ] as const
+
+/** Live clock for OS command center headers — SSR-safe until mount. */
+export function useOsClock(intervalMs = 1000): Date {
+  const [now, setNow] = useState<Date>(() => new Date(0))
+  useEffect(() => {
+    setNow(new Date())
+    const id = window.setInterval(() => setNow(new Date()), intervalMs)
+    return () => window.clearInterval(id)
+  }, [intervalMs])
+  return now
+}
 
 type Point = { name: string; value: number; [k: string]: string | number }
 

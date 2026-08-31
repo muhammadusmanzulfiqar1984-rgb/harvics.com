@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 import '@/styles/energies-tokens.css'
 import {
   HE_CHAPTERS,
@@ -168,7 +169,7 @@ function SitePlan({
 
   return (
     <div ref={rootRef} className="he-siteplan" aria-label="Industrial site plan — development concept">
-      <img src={HE_IMAGES.plant} alt="Renewable fuels complex masterplan — development concept" />
+      <HarvicsImage src={HE_IMAGES.plant} alt="Renewable fuels complex masterplan — development concept" fill sizes={IMAGE_SIZES.hero} />
       <div className="he-scanlamp" aria-hidden />
       <div className="he-scanring" aria-hidden />
       <div className="he-hotmap-frame">Live inspection · Development concept · Move cursor to scan</div>
@@ -287,7 +288,7 @@ function ProcessFilm({
           {HE_PROCESS.map((s) => (
             <article key={s.n} className="he-process-shot" data-process-n={s.n}>
               <div className="he-img-bleed !min-h-[280px]">
-                <img src={s.image} alt="" />
+                <HarvicsImage src={s.image} alt={s.title} fill sizes={IMAGE_SIZES.card} />
               </div>
               <div>
                 <div className="he-meta mb-3 he-num">{s.n}</div>
@@ -305,15 +306,19 @@ function ProcessFilm({
     <div ref={pinRef} className="he-process-pin">
       <div className="he-process-sticky">
         <div className="he-process-film">
-          <img
+          <HarvicsImage
             src={a.image}
-            alt=""
+            alt={a.title}
+            fill
+            sizes={IMAGE_SIZES.hero}
             className="he-process-plate"
             style={{ opacity: 1 - f * 0.92, transform: `scale(${ken})` }}
           />
-          <img
+          <HarvicsImage
             src={b.image}
-            alt=""
+            alt={b.title}
+            fill
+            sizes={IMAGE_SIZES.hero}
             className="he-process-plate"
             style={{ opacity: f, transform: `scale(${1.08 - (raw % 1) * 0.05})` }}
           />
@@ -727,7 +732,7 @@ export default function EnergiesExperience() {
           </h2>
           <div className="he-split items-stretch">
             <div className="he-img-bleed !min-h-[380px] border border-[var(--he-line-ink)]">
-              <img src={fuel.image} alt="" />
+              <HarvicsImage src={fuel.image} alt={fuel.product} fill sizes={IMAGE_SIZES.heroHalf} />
             </div>
             <div>
               {HE_PRODUCTS.map((p, i) => (
@@ -826,7 +831,7 @@ export default function EnergiesExperience() {
         <div className="he-log-film">
           {HE_LOG_STAGES.map((s) => (
             <figure key={s.title} className="he-log-shot">
-              <img src={s.image} alt="" />
+              <HarvicsImage src={s.image} alt={s.title} fill sizes={IMAGE_SIZES.card} />
               <figcaption className="absolute bottom-6 left-6 z-10 he-eyebrow">{s.title}</figcaption>
             </figure>
           ))}
@@ -896,7 +901,7 @@ export default function EnergiesExperience() {
             </p>
           </div>
           <div className="he-reveal he-intel-stack mb-10 relative">
-            <img src={HE_IMAGES.plant} alt="" />
+            <HarvicsImage src={HE_IMAGES.plant} alt="Supply chain intelligence map" fill sizes={IMAGE_SIZES.hero} />
             <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1000 420" aria-hidden>
               <path d="M80 340 L240 220 L420 240 L620 160 L860 120" fill="none" stroke="#C4A470" strokeWidth="1.2" />
               {['SUPPLY', 'PLANT', 'STORAGE', 'MARKET', 'TRADE'].map((t, i) => (
@@ -971,10 +976,12 @@ export default function EnergiesExperience() {
       </section>
 
       <section id="dossier" className="relative he-section he-surface-burgundy overflow-hidden">
-        <img
+        <HarvicsImage
           src={HE_IMAGES.hero}
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover opacity-25"
+          alt="Project dossier background"
+          fill
+          sizes={IMAGE_SIZES.hero}
+          className="object-cover opacity-25"
         />
         <div className="he-shell relative z-10 max-w-3xl he-reveal">
           <p className="he-eyebrow mb-5">Project Dossier</p>
@@ -999,7 +1006,7 @@ export default function EnergiesExperience() {
       </section>
 
       <section id="finale" className="relative min-h-[88svh] flex items-end overflow-hidden">
-        <img src={HE_IMAGES.finale} alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <HarvicsImage src={HE_IMAGES.finale} alt="Renewable fuels finale" fill sizes={IMAGE_SIZES.hero} priority className="object-cover" />
         <div
           className="absolute inset-0"
           style={{

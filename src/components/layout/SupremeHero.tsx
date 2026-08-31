@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import Link from 'next/link'
 import { useLocale } from 'next-intl'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 /**
  * SupremeHero — Premium hero slider with smooth Ken Burns effect.
@@ -84,18 +85,20 @@ const SupremeHero: React.FC = () => {
           }}
         >
           <div
-            className="w-full h-full"
+            className="relative w-full h-full"
             style={{
               animation: idx === current 
                 ? `kenBurns${animationDirection === 'in' ? 'In' : 'Out'} 8s ease-out forwards` 
                 : 'none',
             }}
           >
-            <img
+            <HarvicsImage
               src={slide.img}
               alt={slide.alt}
-              className="w-full h-full object-cover"
-              loading={idx === 0 ? 'eager' : 'lazy'}
+              fill
+              sizes={IMAGE_SIZES.hero}
+              priority={idx === 0}
+              className="object-cover"
             />
           </div>
           {/* Multi-layer gradient for depth */}

@@ -245,3 +245,58 @@ export async function sendInvoiceEmail(opts: {
     pdfAttached: Boolean(opts.pdf?.length),
   };
 }
+
+export type SendDunningResult = {
+  sent: boolean;
+  provider: 'resend' | 'none';
+  messageId?: string;
+  error?: string;
+  to: string;
+};
+
+/** Staged dunning letter via Resend (Oracle FBDI-style escalation). */
+export async function sendDunningEmail(opts: {
+  toEmail: string;
+  subject: string;
+  html: string;
+  invoiceNo?: string;
+  stage?: string;
+}): Promise<SendDunningResult> {
+  const to = String(opts.toEmail || '').trim();
+  if (!to || !to.includes('@')) {
+    return { sent: false, provider: 'none', error: 'Valid toEmail required', to };
+  }
+  const key = RESEND_KEY();
+  if (!key) {
+    return { sent: false, provider: 'none', error: 'RESEND_API_KEY missing', to };
+  }
+
+  const res = await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${key}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      from: RESEND_FROM(),
+      to: [to],
+      subject: opts.subject,
+      html: opts.html,
+      tags: [
+        { name: 'module', value: 'ar-dunning' },
+        { name: 'stage', value: String(opts.stage || 'unknown').slice(0, 40) },
+        { name: 'invoice', value: String(opts.invoiceNo || '').slice(0, 40) },
+      ],
+    }),
+  });
+  const json: any = await res.json().catch(() => ({}));
+  if (!res.ok) {
+    return {
+      sent: false,
+      provider: 'resend',
+      error: json?.message || json?.name || `Resend HTTP ${res.status}`,
+      to,
+    };
+  }
+  return { sent: true, provider: 'resend', messageId: json.id, to };
+}

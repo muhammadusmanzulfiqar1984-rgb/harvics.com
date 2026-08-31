@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 import { useTranslations, useLocale } from 'next-intl'
 import type { ProductCategory } from '@/data/folderBasedProducts'
 import { HARVICS_TAGLINE } from '@/config/brand'
@@ -76,13 +77,13 @@ const CreativeHero: React.FC<CreativeHeroProps> = ({ categories }) => {
               </div>
               {/* Right Side - Image Background */}
               <div className="hidden lg:block lg:w-1/2 bg-maroon-deep relative">
-                 <img 
-                    src={slide.image} 
+                 <HarvicsImage
+                    src={slide.image}
                     alt={slide.name}
-                    className="w-full h-full object-cover opacity-60 mix-blend-overlay"
-                    onError={(e) => {
-                      e.currentTarget.src = 'https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=2574&auto=format&fit=crop'
-                    }}
+                    fill
+                    sizes={IMAGE_SIZES.heroHalf}
+                    priority={index === 0}
+                    className="object-cover opacity-60 mix-blend-overlay"
                   />
                   <div className="absolute inset-0 bg-gradient-to-l from-maroon to-maroon-deep"></div>
               </div>
@@ -90,13 +91,13 @@ const CreativeHero: React.FC<CreativeHeroProps> = ({ categories }) => {
             
             {/* Mobile Image (Full Background) */}
             <div className="lg:hidden absolute inset-0">
-               <img 
-                  src={slide.image} 
+               <HarvicsImage
+                  src={slide.image}
                   alt={slide.name}
-                  className="w-full h-full object-cover opacity-20"
-                  onError={(e) => {
-                    e.currentTarget.src = 'https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=2574&auto=format&fit=crop'
-                  }}
+                  fill
+                  sizes={IMAGE_SIZES.hero}
+                  priority={index === 0}
+                  className="object-cover opacity-20"
                 />
             </div>
           </div>
@@ -184,14 +185,13 @@ const CreativeHero: React.FC<CreativeHeroProps> = ({ categories }) => {
                 >
                   <div className="relative w-[500px] h-[500px]">
                     {/* Floating Product Image */}
-                    <img 
-                      src={slide.image} 
+                    <HarvicsImage
+                      src={slide.image}
                       alt={slide.name}
+                      width={500}
+                      height={500}
+                      sizes={IMAGE_SIZES.product}
                       className="w-full h-full object-contain drop-shadow-2xl"
-                      onError={(e) => {
-                         // Fallback to an icon if image fails
-                         e.currentTarget.style.display = 'none';
-                      }}
                     />
                     {/* Fallback Icon if Image is missing/hidden */}
                      <div className="absolute inset-0 flex items-center justify-center pointer-events-none -z-10">

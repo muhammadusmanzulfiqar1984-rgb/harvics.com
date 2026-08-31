@@ -1,5 +1,6 @@
 // Header and Footer are provided by layout.tsx - DO NOT import them here
 import { getTranslations } from 'next-intl/server'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 import type { Metadata } from 'next'
 import { generateLocalizedMetadata } from '@/lib/seo'
@@ -109,12 +110,13 @@ export default async function CSRPage({ params }: CSRPageProps) {
       <div className="pt-20">
         {/* Hero Section */}
         <section className="h-[400px] relative bg-harvics-burgundy overflow-hidden">
-          {/* Hero Background Image */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <HarvicsImage
             src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=1200&h=600&fit=crop&q=75"
-            alt=""
-            className="absolute inset-0 w-full h-full object-cover"
+            alt={t('hero.title')}
+            fill
+            sizes={IMAGE_SIZES.hero}
+            priority
+            className="object-cover"
             style={{ filter: 'brightness(0.75) contrast(1.1) saturate(1.05)' }}
           />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(105deg, rgba(107,31,43,0.85) 0%, rgba(107,31,43,0.5) 45%, rgba(107,31,43,0.25) 100%)' }} />

@@ -733,7 +733,6 @@ app.post('/api/video', async (c) => {
           aspect_ratio: input.aspect_ratio,
           draft: input.draft,
         },
-        // Video: prefer async-friendly (Try-Sync still attempted; we poll if needed)
         { trySync: true },
       )
       return c.json({
@@ -746,20 +745,28 @@ app.post('/api/video', async (c) => {
       })
     }
 
-    // 2) Direct Replicate API (REPLICATE_API_KEY)
+    // 2) Direct Replicate API — fall through to Workers AI on billing/auth failure
     if (hasReplicate) {
-      const { result, via } = await runPVideoViaReplicate(c.env, input)
-      return c.json({
-        ok: true,
-        model,
-        via,
-        ...input,
-        videoUrl: pickVideoUrl(result),
-        result,
-      })
+      try {
+        const { result, via } = await runPVideoViaReplicate(c.env, input)
+        return c.json({
+          ok: true,
+          model,
+          via,
+          ...input,
+          videoUrl: pickVideoUrl(result),
+          result,
+        })
+      } catch (replicateErr) {
+        const msg = replicateErr instanceof Error ? replicateErr.message : String(replicateErr)
+        const billing =
+          /insufficient credit|billing|payment|quota|402|429/i.test(msg)
+        if (!billing) throw replicateErr
+        console.warn('[api/video] Replicate billing failed, falling back to env.AI.run:', msg)
+      }
     }
 
-    // 3) Workers AI Unified Billing (needs Gateway credits)
+    // 3) Workers AI binding (Cloudflare Neurons)
     const result = await c.env.AI.run(model as Parameters<Ai['run']>[0], input)
     const videoUrl = pickVideoUrl(result)
 

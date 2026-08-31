@@ -133,7 +133,7 @@ const LiquidGlassHero: React.FC = () => {
           loop
           playsInline
           preload="auto"
-          poster="/assets/shared/heroes/corridor-reel-poster.jpg"
+          poster="/assets/shared/heroes/corridor-reel-poster.webp"
           aria-hidden
         />
 

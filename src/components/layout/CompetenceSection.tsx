@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { useScrollReveal, revealClass } from '@/hooks/useScrollReveal'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 /**
  * CompetenceSection — "End-to-end coverage, without chaos."
@@ -19,10 +20,12 @@ const CompetenceSection: React.FC = () => {
     >
       {/* Background image */}
       <div className="absolute inset-0">
-        <img
+        <HarvicsImage
           src="/assets/verticals/02-fmcg/categories/confectionery/jelly/bearpops.jpg"
           alt="Our Competence"
-          className="w-full h-full object-cover"
+          fill
+          sizes={IMAGE_SIZES.hero}
+          className="object-cover"
           style={{ transform: 'scale(1.05)' }}
         />
         <div

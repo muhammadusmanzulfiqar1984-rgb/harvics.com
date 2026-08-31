@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from 'next-intl'
 import LocalizationBar from '@/components/shared/LocalizationBar'
 import { apiClient } from '@/lib/api'
 import { saveCart, type CartLine } from '@/lib/distributorPortal'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 type ProductRow = {
   sku: string
@@ -169,7 +170,7 @@ export default function PlaceNewOrder() {
                   return (
                     <tr key={product.sku}>
                       <td className="px-4 py-3">
-                        <img src={product.image} alt={product.name} className="w-16 h-16 object-contain" />
+                        <HarvicsImage src={product.image} alt={product.name} width={64} height={64} sizes={IMAGE_SIZES.thumbnail} className="object-contain" />
                       </td>
                       <td className="px-4 py-3">
                         <div className="font-semibold text-harvics-gold/90">{product.name}</div>

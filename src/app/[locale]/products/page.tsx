@@ -1,5 +1,6 @@
 // Header and Footer are provided by layout.tsx - DO NOT import them here to avoid duplication
 import ProductSlider from '@/components/ui/ProductSlider'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 import Link from 'next/link'
 import { getTranslations } from 'next-intl/server'
 import { getMergedFolderBasedCategories } from '@/data/folderBasedProducts'
@@ -94,11 +95,12 @@ export default async function ProductsPage({ params }: { params: Promise<{ local
                   className="group relative aspect-[4/3] overflow-hidden border border-harvics-gold/10 hover:border-harvics-gold/40 transition-all duration-500"
                 >
                   <div className="absolute inset-0">
-                    <img 
-                      src={category.image} 
+                    <HarvicsImage
+                      src={category.image}
                       alt={t(category.key)}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
-                      loading="lazy"
+                      fill
+                      sizes={IMAGE_SIZES.card}
+                      className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-harvics-burgundy/90 via-[#3D1212]/30 to-transparent opacity-80 group-hover:opacity-70 transition-opacity duration-300" />
                   </div>

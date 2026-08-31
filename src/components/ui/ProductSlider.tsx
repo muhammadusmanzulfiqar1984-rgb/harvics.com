@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react'
 import Link from 'next/link'
 import { useTranslations, useLocale, useMessages } from 'next-intl'
 import type { ProductCategory } from '@/data/folderBasedProducts'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 interface ProductSliderProps {
   categories: ProductCategory[]
@@ -134,11 +135,13 @@ const ProductSlider: React.FC<ProductSliderProps> = ({ categories }) => {
               >
                 <Link href={`/${locale}${category.url}`} className="block h-full w-full">
                   <div className="relative h-full w-full">
-                    <img
+                    <HarvicsImage
                       src={category.image || '/assets/brand/photo/logo.png'}
                       alt={tSafe(`products.${category.key}`, category.name)}
-                      className="w-full h-full object-cover"
-                      loading={index === 0 ? 'eager' : 'lazy'}
+                      fill
+                      sizes={IMAGE_SIZES.hero}
+                      priority={index === 0}
+                      className="object-cover"
                     />
                     {/* Gradient overlays */}
                     <div className="absolute inset-0 bg-gradient-to-br from-harvics-burgundy/75 via-[#3D1212]/40 to-transparent" />

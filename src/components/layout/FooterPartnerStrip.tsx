@@ -1,5 +1,7 @@
 'use client'
 
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
+
 const CACHE = 'v5'
 
 type PartnerLogo = {
@@ -75,14 +77,13 @@ export default function FooterPartnerStrip() {
                 minWidth: 88,
               }}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <HarvicsImage
                 src={partner.src}
                 alt={partner.name}
                 width={partner.w}
                 height={40}
-                loading="eager"
-                decoding="async"
+                sizes={IMAGE_SIZES.logo}
+                priority
                 style={{
                   height: 40,
                   width: 'auto',

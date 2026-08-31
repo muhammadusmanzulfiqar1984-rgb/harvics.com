@@ -225,6 +225,10 @@ if (process.env.NODE_ENV !== 'test') {
   server.listen(PORT, () => {
     console.log(`Harvics backend running on port ${PORT}`);
 
+    void import('./services/financeDbBootstrap.service').then(({ ensureFinanceDbSeeded }) =>
+      ensureFinanceDbSeeded().then(() => console.log('[finance] Global House PostgreSQL schema ready')),
+    );
+
     // Profit Sentinel only runs against live data feeds. In offline/dev mode
     // there is nothing to monitor and the cycle would just spam fallback logs.
     if (process.env.HARVICS_OFFLINE_DATA === '1' || process.env.NODE_ENV !== 'production') {

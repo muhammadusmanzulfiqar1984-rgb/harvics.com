@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { useLocale } from 'next-intl'
 import LocalizationBar from '@/components/shared/LocalizationBar'
 import { fetchInventoryProducts, fetchPriceForSku } from '@/lib/distributorPortal'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 type ProductRow = {
   sku: string
@@ -70,8 +71,8 @@ export default function ProductCatalogue() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {filtered.map((product) => (
             <div key={product.sku} className="bg-white border overflow-hidden">
-              <div className="h-40 flex items-center justify-center p-4 bg-[#F5F0E8]">
-                <img src={product.image} alt={product.name} className="max-h-full object-contain" />
+              <div className="relative h-40 flex items-center justify-center p-4 bg-[#F5F0E8]">
+                <HarvicsImage src={product.image} alt={product.name} fill sizes={IMAGE_SIZES.product} className="object-contain" />
               </div>
               <div className="p-4">
                 <div className="font-semibold text-harvics-burgundy">{product.name}</div>

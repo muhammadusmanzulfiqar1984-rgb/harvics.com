@@ -167,7 +167,7 @@ export default function CorridorProofSection() {
             ref={mediaRef}
             className="h-full w-full object-cover will-change-transform"
             src="/assets/media/video/goal-score.mp4"
-            poster="/assets/shared/heroes/goal-score-poster.jpg"
+            poster="/assets/shared/heroes/goal-score-poster.webp"
             autoPlay
             muted
             loop

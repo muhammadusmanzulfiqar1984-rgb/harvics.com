@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useLocale } from 'next-intl'
 import { AnimatePresence, motion } from 'framer-motion'
+import HarvicsImage, { IMAGE_SIZES } from '@/components/ui/HarvicsImage'
 
 type AppSpot = {
   code: string
@@ -28,7 +29,7 @@ const APPS: AppSpot[] = [
     href: '/apps/harvoice',
     cta: 'Launch Harvoice',
     img: '/assets/harvictrade/apps/harvoice-hero.webp',
-    phone: '/assets/harvictrade/mobile/phone-quotes.jpg',
+    phone: '/assets/harvictrade/mobile/phone-quotes.webp',
   },
   {
     code: '02',
@@ -39,7 +40,7 @@ const APPS: AppSpot[] = [
     href: '/apps/hpay',
     cta: 'Launch HPay',
     img: '/assets/harvictrade/apps/hpay-hero.webp',
-    phone: '/assets/harvictrade/mobile/phone-dashboard.jpg',
+    phone: '/assets/harvictrade/mobile/phone-dashboard.webp',
   },
   {
     code: '03',
@@ -50,7 +51,7 @@ const APPS: AppSpot[] = [
     href: '/portals',
     cta: 'View portals',
     img: '/assets/harvictrade/apps/portals-hero.webp',
-    phone: '/assets/harvictrade/mobile/phone-rfq-form.jpg',
+    phone: '/assets/harvictrade/mobile/phone-rfq-form.webp',
   },
   {
     code: '04',
@@ -62,7 +63,7 @@ const APPS: AppSpot[] = [
     href: '/apps/harvyx-concierge',
     cta: 'Launch Concierge',
     img: '/assets/harvictrade/apps/harvyx-hero.webp',
-    phone: '/assets/harvictrade/mobile/phone-marketplace-list.jpg',
+    phone: '/assets/harvictrade/mobile/phone-marketplace-list.webp',
   },
 ]
 
@@ -152,11 +153,12 @@ export default function AppsCommercialSection() {
                 transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
                 className="absolute inset-0"
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <HarvicsImage
                   src={app.img}
-                  alt=""
-                  className="h-full w-full object-cover"
+                  alt={app.name}
+                  fill
+                  sizes={IMAGE_SIZES.hero}
+                  className="object-cover"
                   style={{ filter: 'brightness(0.55) contrast(1.08) saturate(1.05)' }}
                 />
                 <div
@@ -170,8 +172,14 @@ export default function AppsCommercialSection() {
                 {app.phone && (
                   <div className="pointer-events-none absolute bottom-[10%] right-[5%] hidden w-[19%] max-w-[187px] md:block">
                     <div className="overflow-hidden rounded-[1.15rem] border border-white/20 bg-black shadow-[0_20px_48px_rgba(0,0,0,0.65)] ring-1 ring-harvics-gold/25">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={app.phone} alt="" className="aspect-[9/19] w-full object-cover" />
+                      <HarvicsImage
+                        src={app.phone}
+                        alt={`${app.name} app preview`}
+                        width={187}
+                        height={395}
+                        sizes={IMAGE_SIZES.phone}
+                        className="aspect-[9/19] w-full object-cover"
+                      />
                     </div>
                   </div>
                 )}
@@ -244,11 +252,12 @@ export default function AppsCommercialSection() {
                   on ? 'ring-2 ring-harvics-gold' : 'ring-1 ring-white/10 hover:ring-harvics-gold/50'
                 }`}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <HarvicsImage
                   src={item.img}
-                  alt=""
-                  className={`h-full w-full object-cover transition-all duration-500 ${
+                  alt={item.name}
+                  fill
+                  sizes={IMAGE_SIZES.thumbnailLg}
+                  className={`object-cover transition-all duration-500 ${
                     on ? 'brightness-75' : 'brightness-40 group-hover:brightness-60'
                   }`}
                 />
