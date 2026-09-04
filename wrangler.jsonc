@@ -38,7 +38,9 @@
     "NEXT_PUBLIC_CLERK_SIGN_UP_URL": "/app/sign-up",
     "NEXT_PUBLIC_INTERCOM_APP_ID": "tnuivmad",
     "NEXT_PUBLIC_INTERCOM_API_BASE": "https://api-iam.intercom.io",
-    "NEXT_PUBLIC_HPAY_URL": "https://hpay.muhammadusmanzulfiqar1984.workers.dev"
+    "NEXT_PUBLIC_HPAY_URL": "https://hpay.muhammadusmanzulfiqar1984.workers.dev",
+    "NEXT_PUBLIC_VAPI_PUBLIC_KEY": "57591feb-232d-4f59-8fb4-52c6fcaa93e8",
+    "NEXT_PUBLIC_VAPI_ASSISTANT_ID": "f2794ca8-3ef4-4f80-82a1-1d3442daa7ea"
   },
   "d1_databases": [
     {

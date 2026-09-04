@@ -1,118 +1,130 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createUserMessage, postConversationNote } from '@/lib/intercom-admin'
-
-export const runtime = 'nodejs'
-export const dynamic = 'force-dynamic'
-
-/**
- * Vapi server webhook → Intercom Fin conversation.
- *
- * In Vapi dashboard → Assistant / Phone Number → Server URL:
- *   https://www.harvics.com/api/vapi/webhook
- *
- * Optional header check: x-vapi-secret === VAPI_WEBHOOK_SECRET
- *
- * On end-of-call-report, posts transcript/summary into the Intercom conversation
- * (metadata.conversation_id) or as a user message when email/user_id is present.
- */
-
-type VapiMessage = {
-  type?: string
-  endedReason?: string
-  transcript?: string
-  summary?: string
-  recordingUrl?: string
-  stereoRecordingUrl?: string
-  messages?: Array<{ role?: string; message?: string; content?: string }>
-  call?: {
-    id?: string
-    metadata?: Record<string, string | undefined>
-  }
-  artifact?: {
-    transcript?: string
-    summary?: string
-  }
-}
-
-function verify(req: NextRequest): boolean {
-  const secret = process.env.VAPI_WEBHOOK_SECRET || ''
-  if (!secret) return true
-  const header = req.headers.get('x-vapi-secret') || req.headers.get('authorization')?.replace(/^Bearer\s+/i, '')
-  return header === secret
-}
-
-function extractTranscript(msg: VapiMessage): string {
-  if (msg.artifact?.transcript) return msg.artifact.transcript
-  if (msg.transcript) return msg.transcript
-  if (Array.isArray(msg.messages) && msg.messages.length) {
-    return msg.messages
-      .map((m) => {
-        const role = m.role || 'unknown'
-        const text = m.message || m.content || ''
-        return `${role}: ${text}`
-      })
-      .join('\n')
-  }
-  return ''
-}
 
 export async function POST(req: NextRequest) {
-  if (!verify(req)) {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
-  }
-
-  let payload: { message?: VapiMessage } & VapiMessage = {}
   try {
-    payload = await req.json()
-  } catch {
-    return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 })
-  }
+    const body = await req.json()
+    const { message } = body
 
-  const msg = (payload.message || payload) as VapiMessage
-  const type = msg.type || ''
+    // Only process end-of-call reports
+    if (message?.type !== 'end-of-call-report') {
+      return NextResponse.json({ received: true })
+    }
 
-  // Ack early events
-  if (type && type !== 'end-of-call-report' && type !== 'hang') {
-    return NextResponse.json({ received: true, type })
-  }
+    const { call } = message
+    const recordingUrl = call?.recordingUrl || null
+    const callId = call?.id || 'unknown'
+    const durationSeconds = call?.duration || 0
+    const transcript = call?.transcript || ''
 
-  const metadata = msg.call?.metadata || {}
-  const conversationId = metadata.conversation_id || metadata.intercom_conversation_id || ''
-  const userId = metadata.user_id || metadata.intercom_user_id || ''
-  const email = metadata.email || ''
-  const transcript = extractTranscript(msg)
-  const summary = msg.artifact?.summary || msg.summary || ''
+    // Run Deepgram Audio Intelligence on the recording
+    let intelligence: any = null
+    if (recordingUrl && process.env.DEEPGRAM_API_KEY) {
+      const dgResponse = await fetch(
+        'https://api.deepgram.com/v1/listen?' +
+          new URLSearchParams({
+            summarize: 'v2',
+            sentiment: 'true',
+            topics: 'true',
+            intents: 'true',
+            detect_entities: 'true',
+            punctuate: 'true',
+          }),
+        {
+          method: 'POST',
+          headers: {
+            Authorization: `Token ${process.env.DEEPGRAM_API_KEY}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ url: recordingUrl }),
+        }
+      )
+      if (dgResponse.ok) {
+        intelligence = await dgResponse.json()
+      }
+    }
 
-  const body = [
-    '**Fin voice call (Vapi + Deepgram)**',
-    summary ? `\nSummary:\n${summary}` : '',
-    transcript ? `\nTranscript:\n${transcript}` : '',
-    msg.call?.id ? `\nCall ID: ${msg.call.id}` : '',
-    msg.endedReason ? `\nEnded: ${msg.endedReason}` : '',
-  ]
-    .filter(Boolean)
-    .join('\n')
-    .slice(0, 7500)
+    // Extract intelligence
+    const summary =
+      intelligence?.results?.summary?.short || message?.summary || 'No summary'
+    const sentiment =
+      intelligence?.results?.sentiments?.average?.sentiment || 'neutral'
+    const sentimentScore =
+      intelligence?.results?.sentiments?.average?.sentiment_score || 0
+    const topics = [
+      ...new Set(
+        intelligence?.results?.topics?.segments?.flatMap((s: any) =>
+          s.topics?.map((t: any) => t.topic)
+        ) || []
+      ),
+    ]
+    const intents = [
+      ...new Set(
+        intelligence?.results?.intents?.segments?.flatMap((s: any) =>
+          s.intents?.map((i: any) => i.intent)
+        ) || []
+      ),
+    ]
+    const entities = [
+      ...new Set(
+        intelligence?.results?.entities?.results?.map(
+          (e: any) => `${e.value} (${e.type})`
+        ) || []
+      ),
+    ]
 
-  if (!body.trim() || body === '**Fin voice call (Vapi + Deepgram)**') {
-    return NextResponse.json({ received: true, posted: false, reason: 'empty' })
-  }
+    const mins = Math.floor(durationSeconds / 60)
+    const secs = durationSeconds % 60
 
-  let posted = false
-  if (conversationId) {
-    posted = await postConversationNote(conversationId, body)
-  }
-  if (!posted && (userId || email)) {
-    posted = await createUserMessage({
-      userId: userId || undefined,
-      email: email || undefined,
-      body: `Voice call with Fin completed.\n\n${body}`,
+    const report = {
+      callId,
+      timestamp: new Date().toISOString(),
+      duration: `${mins}m ${secs}s`,
+      summary,
+      sentiment: `${sentiment} (score: ${sentimentScore.toFixed(2)})`,
+      topics,
+      intents,
+      entities,
+      recordingUrl,
+      transcript,
+    }
+
+    // Log to console (visible in Vercel logs)
+    console.log('========== HARVEY CALL REPORT ==========')
+    console.log(JSON.stringify(report, null, 2))
+    console.log('========================================')
+
+    // Optional: send email notification
+    // Uncomment and configure if you add an email service (Resend, SendGrid, etc.)
+    /*
+    await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        from: 'harvey@harvics.com',
+        to: 'usman@harvics.com',
+        subject: `HARVEY Call Report — ${new Date().toLocaleDateString()}`,
+        text: [
+          `Duration: ${mins}m ${secs}s`,
+          `Summary: ${summary}`,
+          `Sentiment: ${sentiment} (${sentimentScore.toFixed(2)})`,
+          `Topics: ${topics.join(', ') || 'none'}`,
+          `Intents: ${intents.join(', ') || 'none'}`,
+          `Entities: ${entities.join(', ') || 'none'}`,
+          `Recording: ${recordingUrl || 'not available'}`,
+          '',
+          'Transcript:',
+          transcript,
+        ].join('\n'),
+      }),
     })
-  }
+    */
 
-  return NextResponse.json({
-    received: true,
-    posted,
-    conversation_id: conversationId || null,
-  })
+    return NextResponse.json({ success: true, callId })
+  } catch (error) {
+    console.error('VAPI webhook error:', error)
+    return NextResponse.json({ error: 'Failed' }, { status: 500 })
+  }
 }
