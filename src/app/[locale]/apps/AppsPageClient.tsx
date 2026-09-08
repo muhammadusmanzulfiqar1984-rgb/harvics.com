@@ -93,6 +93,7 @@ const APP_LANDING_SLUG: Record<string, string> = {
   harvyx: 'harvyx',
   'harvyx-concierge': 'harvyx-concierge',
   hpay: 'hpay',
+  'harvics-meet': 'meet',
   'harvics-event-os': 'event-os',
   'harvics-os': 'harvics-os',
   'vatify-os': 'vatify',
@@ -120,7 +121,7 @@ const APPS = [
     icon: '👥',
     color: 'var(--harvics-burgundy)',
     accentColor: 'var(--harvics-gold)',
-    url: 'https://www.harvichr.eu',
+    url: 'https://www.harvicshr.eu',
     features: [
       'Recruitment & ATS',
       'Employee Onboarding',
@@ -365,6 +366,38 @@ const APPS = [
     unsplash: '/assets/harvictrade/apps/hpay-hero.webp',
   },
   {
+    id: 'harvics-meet',
+    name: 'Harvics Meet',
+    tagline: 'Secure meetings · invites · AI notes',
+    description:
+      'Production video meetings on LiveKit: schedule with guests, calendar + Resend invites, RSVP, pre-join device checks, waiting room, in-call AV/share, Deepgram transcripts and OpenAI summaries stored on R2.',
+    category: 'Collaboration',
+    status: 'live' as const,
+    badge: 'LIVE',
+    icon: '🎥',
+    color: '#2A1218',
+    accentColor: 'var(--harvics-gold)',
+    // Standalone app: set NEXT_PUBLIC_MEET_APP_URL (e.g. http://localhost:3010). Falls back to in-repo bridge.
+    url: process.env.NEXT_PUBLIC_MEET_APP_URL || '/apps/meet',
+    features: [
+      'Create + schedule',
+      'Email invites + RSVP',
+      'Calendar (.ics)',
+      'Pre-join device check',
+      'Waiting room',
+      'LiveKit WebRTC',
+      'AI transcript + summary',
+      'Meeting artifacts',
+    ],
+    pricing: [],
+    stats: [
+      { label: 'Video', value: 'LiveKit' },
+      { label: 'AI', value: 'Deepgram+GPT' },
+      { label: 'Deploy', value: 'Vercel' },
+    ],
+    unsplash: 'https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=1200&h=600&fit=crop&q=80',
+  },
+  {
     id: 'harvics-crm',
     name: 'Harvics CRM',
     tagline: 'Intelligent Sales & Customer Intelligence',
@@ -397,7 +430,7 @@ const APPS = [
   },
 ]
 
-const CATEGORIES = ['All', 'Human Resources', 'Events & Networking', 'Trade & Logistics', 'Finance & Payments', 'Sales & CRM']
+const CATEGORIES = ['All', 'Human Resources', 'Events & Networking', 'Trade & Logistics', 'Finance & Payments', 'Collaboration', 'Sales & CRM']
 
 /* ─────────────────────────────────────────────
    STATUS BADGE
@@ -926,7 +959,7 @@ export default function AppsPageClient({ locale }: AppsPageClientProps) {
                 </div>
                 <p className="text-white/70 text-base leading-relaxed">
                   Complete HR platform for global enterprises. Recruitment, payroll, performance, 
-                  compliance — live at harvichr.eu
+                  compliance — live at harvicshr.eu
                 </p>
                 <div className="flex gap-3 mt-4">
                   {APPS[0].features.slice(0, 4).map((f) => (
