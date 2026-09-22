@@ -5,7 +5,12 @@ import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js'
 import { CallToolRequestSchema, ListToolsRequestSchema } from '@modelcontextprotocol/sdk/types.js'
 
 const API_BASE = (process.env.HARVYX_API_BASE || 'https://www.harvics.com').replace(/\/$/, '')
-const API_KEY = 'H44GXUK4HUCDUZTR'
+const API_KEY = process.env.HARVYX_API_KEY
+
+if (!API_KEY) {
+  console.error('[harvyx-mcp] HARVYX_API_KEY is not set. Configure it in your MCP client\'s server env (e.g. Claude Desktop config), not in this file.')
+  process.exit(1)
+}
 
 async function api(path, options = {}) {
   const url = `${API_BASE}/api/harvyx${path}`
