@@ -139,7 +139,13 @@ export async function POST(req: Request) {
 
     // 1. Groq — primary (fastest, free, reliable)
     engine = 'groq';
-    raw = await callGroq(system, user);
+    try {
+      raw = await callGroq(system, user);
+    } catch {
+      // Groq failure (e.g. decommissioned model) must not abort the request —
+      // fall through to OpenAI/NVIDIA/Gemini below like the other providers do.
+      raw = null;
+    }
 
     // 2. OpenAI fallback
     if (!raw) {
