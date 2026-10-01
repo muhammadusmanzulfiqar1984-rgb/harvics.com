@@ -1142,4 +1142,17 @@ router.get('/automation-score', async (_req: Request, res: Response) => {
   });
 });
 
+// ── BOT PING (service-to-service health check for HARVYX-BOT) ────────
+// Called by delegate-to-erp.ts to verify ERP connectivity before real queries.
+// Requires the same Authorization: Bearer <INTERNAL_API_KEY> as other routes.
+router.get('/bot/ping', (_req: Request, res: Response) => {
+  res.json({
+    ok: true,
+    service: 'harvics-intelligence',
+    version: '1',
+    domains: ['orders', 'inventory', 'finance', 'crm', 'hr', 'logistics', 'procurement', 'gps', 'territory'],
+    timestamp: new Date().toISOString(),
+  });
+});
+
 export default router;
